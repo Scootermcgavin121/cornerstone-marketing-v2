@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { FeaturesSection } from "@/components/FeaturesSection";
+import { ScreenshotsSection } from "@/components/ScreenshotsSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { PricingSection } from "@/components/PricingSection";
 import { CTASection } from "@/components/CTASection";
@@ -12,6 +13,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <FeaturesSection />
+      <ScreenshotsSection />
       <TestimonialsSection />
       <PricingSection />
       <CTASection />
