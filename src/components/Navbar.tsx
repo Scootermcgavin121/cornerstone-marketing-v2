@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 
@@ -34,13 +35,15 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
-            <div className="relative w-8 h-8">
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 to-teal-600 rounded-lg rotate-3 group-hover:rotate-6 transition-transform duration-300" />
-              <div className="relative flex items-center justify-center w-full h-full">
-                <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5 text-white">
-                  <path d="M3 9L12 2L21 9V20H15V14H9V20H3V9Z" fill="currentColor" />
-                </svg>
-              </div>
+            <div className="relative w-9 h-9 flex-shrink-0">
+              <Image
+                src="/logo-new.png"
+                alt="Cornerstone PM"
+                width={36}
+                height={36}
+                className="object-contain group-hover:scale-105 transition-transform duration-300"
+                priority
+              />
             </div>
             <span className="font-bold text-lg text-white tracking-tight">
               Cornerstone <span className="text-cyan-400">PM</span>

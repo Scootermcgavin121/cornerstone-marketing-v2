@@ -121,10 +121,17 @@ export function Hero() {
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-slate-950 to-transparent pointer-events-none" />
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-600">
-        <span className="text-xs tracking-widest uppercase">Scroll</span>
-        <div className="w-px h-8 bg-gradient-to-b from-slate-600 to-transparent animate-pulse" />
-      </div>
+      <button
+        onClick={() => document.getElementById("features")?.scrollIntoView({ behavior: "smooth" })}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-500 hover:text-slate-300 transition-colors duration-200 cursor-pointer group"
+        aria-label="Scroll to features"
+      >
+        <span className="text-xs tracking-widest uppercase group-hover:text-slate-300 transition-colors">Scroll</span>
+        <div className="w-px h-8 bg-gradient-to-b from-slate-500 to-transparent group-hover:from-slate-300 transition-all" />
+        <svg className="w-4 h-4 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
     </section>
   );
 }

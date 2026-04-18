@@ -28,14 +28,18 @@ const featureDetails = [
     borderColor: "border-cyan-500/20",
     textColor: "text-cyan-400",
     description:
-      "Visual scheduling built for residential construction. Assign subs, track milestones, and spot conflicts before they cost you money.",
+      "Interactive Gantt charts with drag-and-drop task management. 3-tier dependency system with auto-cascade — move one task and every downstream task adjusts automatically. No manual re-dating, no broken timelines.",
     bullets: [
-      "Gantt-style project timeline",
-      "Subcontractor assignment by task",
-      "Automated conflict detection",
-      "Daily schedule notifications to subs",
-      "Phase-based milestone tracking",
-      "Weather delay documentation",
+      "Gantt charts with critical path highlighting",
+      "3-tier task dependency system with auto-cascade",
+      "17 pre-built templates (7 foundation types)",
+      "4-tier cascade email notifications to subs",
+      "Phase-based milestone tracking (5 phases)",
+      "Weekday-only scheduling — auto-skips weekends",
+      "Vendor magic links — no passwords for subs",
+      "Daily & weekly digest emails to subcontractors",
+      "6-step closing workflow (CO → Orientation → Punch List → Close)",
+      "2-year warranty tracking post-close",
     ],
   },
   {
@@ -46,14 +50,18 @@ const featureDetails = [
     borderColor: "border-emerald-500/20",
     textColor: "text-emerald-400",
     description:
-      "Track every purchase order, invoice, and budget variance in real time. Know your margin on every home before you close.",
+      "200+ part catalog with real pricing. Auto-generate ~97 budget lines from floorplan takeoffs when structural options are locked. Full bid management lifecycle with side-by-side vendor comparison and one-click PO generation.",
     bullets: [
-      "Purchase order creation & tracking",
-      "Budget vs actual reporting",
-      "Vendor invoice management",
-      "Cost code tracking",
-      "Margin analysis by home",
-      "Approval workflows for POs",
+      "200+ part catalog with multiple unit types",
+      "3-level budget hierarchy: Scope → Task → Parts",
+      "Auto-budget generation from floorplan takeoffs (~97 lines)",
+      "Structural options pricing (Bonus Room, Finished Basement, and 12+ more)",
+      "Full bid management: send to bid → compare → award",
+      "Side-by-side vendor bid comparison with lowest-price highlighting",
+      "Purchase orders: Draft → Sent → Acknowledged → Invoiced → Paid",
+      "Change order approval workflow with full audit trail",
+      "Active homes dashboard with financial rollup",
+      "BuilderTrend migration support — switch in days",
     ],
   },
   {
@@ -64,14 +72,18 @@ const featureDetails = [
     borderColor: "border-violet-500/20",
     textColor: "text-violet-400",
     description:
-      "Simple CRM built for builders. Track every lead, proposal, and signed buyer — without enterprise complexity.",
+      "Create a new home sale in under 60 seconds. Select community, floorplan, elevation, enter buyer info, pick structural options, apply incentives, and submit. The system auto-generates a 9-step sales checklist and full budget.",
     bullets: [
-      "Kanban pipeline view",
-      "Lead capture & assignment",
-      "Proposal generation",
-      "Contract status tracking",
-      "Follow-up reminders",
-      "Sales performance reporting",
+      "New home sale in under 60 seconds",
+      "9-step auto-generated sales checklist",
+      "Auto-budget generation when structural options are locked",
+      "12+ structural options per floorplan with real-time pricing",
+      "Real-time pricing matrix per floorplan × community",
+      "Active promotions & incentives with expiration countdowns",
+      "Branded PDF price sheets (per community or all)",
+      "Net price calculator with stacked promotions",
+      "Auto-handoff to permitting when sales tasks complete",
+      "Excel/CSV export of pricing matrix",
     ],
   },
   {
@@ -82,14 +94,18 @@ const featureDetails = [
     borderColor: "border-rose-500/20",
     textColor: "text-rose-400",
     description:
-      "Capture buyer selections, manage upgrade pricing, and flow everything directly into your purchasing budget.",
+      "Room-by-room selection walkthrough driven by takeoff quantities. Unlimited spec levels — Standard, Upgrade, Premium, or custom tiers. Buyers pick their finishes and see real-time upgrade pricing.",
     bullets: [
-      "Product selection catalog",
-      "Upgrade pricing & approval",
-      "Buyer confirmation workflows",
-      "Integration with purchasing",
-      "Design appointment scheduling",
-      "Selection sheet generation",
+      "Room-by-room selection walkthrough",
+      "Unlimited custom spec levels per community",
+      "Option classes: Flooring, Cabinets, Countertops, Fixtures, and more",
+      "Real-time upgrade pricing — per-unit and lump sum",
+      "Designer collections — curated bundles with savings badges",
+      "Automatic upgrade delta calculation above base",
+      "Structural option gated rooms with material scopes",
+      "Selection tracking with buyer approval workflow",
+      "Polished customer-facing selection sheet PDF export",
+      "Selections flow directly into purchasing budget",
     ],
   },
   {
@@ -100,14 +116,17 @@ const featureDetails = [
     borderColor: "border-amber-500/20",
     textColor: "text-amber-400",
     description:
-      "Track permit applications, approval status, and inspection schedules all in one place.",
+      "Pre-built permit sequences with correct order, dependencies, and lead times already baked in. Phase-based permit gates prevent downstream construction from starting until permits clear.",
     bullets: [
-      "Permit application tracking",
-      "Status & expiry monitoring",
-      "Inspection scheduling",
-      "Document storage",
-      "Municipality contact notes",
-      "Permit renewal alerts",
+      "Pre-built permit sequences (Foundation, Framing, Final)",
+      "Phase-based permit gate — construction can't start until permits clear",
+      "Permitting agent dashboard with buyer info & floorplan details",
+      "PA workflow with one-click template setup",
+      "Permit status tracking: Applied → Approved → Expired",
+      "Document storage for permit certificates",
+      "Auto-handoff from sales pipeline when all tasks complete",
+      "Buyer portal invite from permitting stage",
+      "Toggle permit gate on/off per account",
     ],
   },
   {
@@ -118,14 +137,18 @@ const featureDetails = [
     borderColor: "border-sky-500/20",
     textColor: "text-sky-400",
     description:
-      "Give your buyers a professional window into their home's progress. Reduce calls, build trust, close referrals.",
+      "Magic link access — no passwords needed. A professional portal that keeps your buyers informed and excited from contract to keys. Reduces inbound calls and builds trust that turns into referrals.",
     bullets: [
-      "Real-time construction progress",
-      "Photo documentation uploads",
-      "Selection approval workflows",
-      "Document sharing (warranty, plans)",
-      "Messaging with builder team",
-      "Move-in checklist",
+      "Magic link access — no app download, no password",
+      "20-phase construction milestone carousel with photos",
+      "Real job site photo uploads at each milestone",
+      "One-click ZIP download of all build photos",
+      "Schedule visibility — buyers see upcoming phases",
+      "Document access (warranty docs, plans, permits)",
+      "Selection review — approve finishes from the portal",
+      "Direct messaging with PM team",
+      "Construction progress percentage tracking",
+      "Invite triggered automatically from permitting stage",
     ],
   },
 ];
@@ -151,7 +174,7 @@ export default function FeaturesPage() {
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto">
             Every tool a home builder needs — from the first lead to the final walkthrough.
-            No add-ons nickel-and-diming you every month.
+            Built specifically for residential construction. Starting at $79.99/mo.
           </p>
         </div>
       </section>
