@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 
 const featureDetails = [
   {
+    id: "construction",
     icon: Calendar,
     name: "Construction Scheduling",
     color: "from-cyan-500 to-teal-600",
@@ -43,6 +44,7 @@ const featureDetails = [
     ],
   },
   {
+    id: "purchasing",
     icon: ShoppingCart,
     name: "Purchasing & Budgets",
     color: "from-emerald-500 to-green-600",
@@ -65,6 +67,7 @@ const featureDetails = [
     ],
   },
   {
+    id: "sales",
     icon: TrendingUp,
     name: "Sales Pipeline",
     color: "from-violet-500 to-purple-600",
@@ -87,6 +90,7 @@ const featureDetails = [
     ],
   },
   {
+    id: "design",
     icon: Palette,
     name: "Design Center",
     color: "from-rose-500 to-pink-600",
@@ -109,6 +113,7 @@ const featureDetails = [
     ],
   },
   {
+    id: "permitting",
     icon: FileText,
     name: "Permitting",
     color: "from-amber-500 to-orange-600",
@@ -130,6 +135,7 @@ const featureDetails = [
     ],
   },
   {
+    id: "portal",
     icon: Users,
     name: "Buyer Portal",
     color: "from-sky-500 to-blue-600",
@@ -188,7 +194,8 @@ export default function FeaturesPage() {
             return (
               <div
                 key={feature.name}
-                className={`flex flex-col ${isEven ? "lg:flex-row" : "lg:flex-row-reverse"} gap-8 items-center p-8 rounded-2xl border border-slate-800/60 bg-slate-900/40 hover:border-slate-700 transition-all duration-300`}
+                id={feature.id}
+                className={`flex flex-col ${isEven ? "lg:flex-row" : "lg:flex-row-reverse"} gap-8 items-center p-8 rounded-2xl border border-slate-800/60 bg-slate-900/40 hover:border-slate-700 transition-all duration-300 scroll-mt-24`}
               >
                 <div className="flex-1 space-y-4">
                   <div className="flex items-center gap-3">
