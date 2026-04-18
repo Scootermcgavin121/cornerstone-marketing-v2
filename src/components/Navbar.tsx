@@ -6,10 +6,18 @@ import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { label: "Features", href: "/features" },
+  { label: "Features", href: "/features", hasDropdown: true },
+  { label: "Compare", href: "/#compare" },
   { label: "Pricing", href: "/#pricing" },
-  { label: "About", href: "/about" },
-  { label: "Blog", href: "/blog" },
+  { label: "Contact", href: "/contact" },
+];
+
+const featureLinks = [
+  { label: "All Features", href: "/features", desc: "Everything included in every plan" },
+  { label: "Construction Scheduling", href: "/features#construction", desc: "Gantt charts, vendors, notifications" },
+  { label: "Purchasing & Design", href: "/features#purchasing", desc: "Budgets, POs, design center" },
+  { label: "Sales Pipeline", href: "/features#sales", desc: "60-second home sale, buyer tracking" },
+  { label: "Buyer Portal", href: "/features#portal", desc: "Milestone journey, photo gallery" },
 ];
 
 export function Navbar() {
@@ -35,7 +43,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
-            <div className="relative w-14 h-14 flex-shrink-0">
+            <div className="relative w-12 h-12 sm:w-14 sm:h-14 flex-shrink-0">
               <Image
                 src="/icon.png"
                 alt="Cornerstone PM"
@@ -45,7 +53,7 @@ export function Navbar() {
                 priority
               />
             </div>
-            <span className="font-bold text-lg text-white tracking-tight">
+            <span className="font-bold text-lg sm:text-xl text-white tracking-tight uppercase">
               Cornerstone <span className="text-cyan-400">PM</span>
             </span>
           </Link>
@@ -53,13 +61,27 @@ export function Navbar() {
           {/* Desktop links */}
           <div className="hidden md:flex items-center space-x-1">
             {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="px-4 py-2 text-sm text-slate-400 hover:text-white rounded-lg hover:bg-white/5 transition-all duration-200"
-              >
-                {link.label}
-              </Link>
+              <div key={link.href} className="relative group">
+                <Link
+                  href={link.href}
+                  className="px-4 py-2 text-sm text-slate-400 hover:text-white rounded-lg hover:bg-white/5 transition-all duration-200 inline-flex items-center gap-1"
+                >
+                  {link.label}
+                  {link.hasDropdown && (
+                    <svg className="w-3.5 h-3.5 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+                  )}
+                </Link>
+                {link.hasDropdown && (
+                  <div className="absolute top-full left-0 mt-1 w-72 bg-slate-900/95 backdrop-blur-xl border border-slate-800 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2">
+                    {featureLinks.map((fl) => (
+                      <Link key={fl.href} href={fl.href} className="block px-4 py-2.5 hover:bg-white/5 transition-colors">
+                        <div className="text-sm text-white font-medium">{fl.label}</div>
+                        <div className="text-xs text-slate-500">{fl.desc}</div>
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
           </div>
 
@@ -69,13 +91,13 @@ export function Navbar() {
               href="/beta"
               className="px-4 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors duration-200"
             >
-              Sign in
+              Sign In
             </Link>
             <Link
               href="/beta"
-              className="px-5 py-2 text-sm font-semibold rounded-xl bg-gradient-to-r from-cyan-500 to-teal-500 text-slate-950 hover:from-cyan-400 hover:to-teal-400 transition-all duration-200 shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40"
+              className="px-5 py-2.5 text-sm font-semibold rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 transition-all duration-200 shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40"
             >
-              Get Beta Access
+              Request Beta Access
             </Link>
           </div>
 
