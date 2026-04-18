@@ -35,12 +35,12 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
-            <div className="relative w-9 h-9 flex-shrink-0">
+            <div className="relative w-14 h-14 flex-shrink-0">
               <Image
                 src="/icon.png"
                 alt="Cornerstone PM"
-                width={36}
-                height={36}
+                width={56}
+                height={56}
                 className="object-contain group-hover:scale-105 transition-transform duration-300"
                 priority
               />
