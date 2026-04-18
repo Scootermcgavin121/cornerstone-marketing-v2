@@ -9,7 +9,7 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <img src="/favicon.png" alt="Cornerstone PM" className="w-8 h-8 rounded-lg object-contain" />
+              <img src="/logo-new.png" alt="Cornerstone PM" className="w-8 h-8 object-contain" />
               <span className="font-bold text-white">
                 Cornerstone <span className="text-cyan-400">PM</span>
               </span>
