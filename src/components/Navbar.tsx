@@ -37,7 +37,7 @@ export function Navbar() {
           <Link href="/" className="flex items-center space-x-3 group">
             <div className="relative w-9 h-9 flex-shrink-0">
               <Image
-                src="/logo-new.png"
+                src="/favicon.png"
                 alt="Cornerstone PM"
                 width={36}
                 height={36}

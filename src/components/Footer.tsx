@@ -9,11 +9,7 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-500 to-teal-600 flex items-center justify-center">
-                <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5 text-white">
-                  <path d="M3 9L12 2L21 9V20H15V14H9V20H3V9Z" fill="currentColor" />
-                </svg>
-              </div>
+              <img src="/favicon.png" alt="Cornerstone PM" className="w-8 h-8 rounded-lg object-contain" />
               <span className="font-bold text-white">
                 Cornerstone <span className="text-cyan-400">PM</span>
               </span>
