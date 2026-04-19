@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import Image from "next/image";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 import {
@@ -29,14 +30,16 @@ function Lightbox({
     return () => window.removeEventListener("keydown", handler);
   }, [onClose]);
 
-  return (
+  if (typeof document === "undefined") return null;
+
+  return createPortal(
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-sm p-4"
+      className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/85 backdrop-blur-sm p-4"
       onClick={onClose}
     >
       <button
         className="absolute top-4 right-4 text-white/70 hover:text-white transition-colors"
-        onClick={onClose}
+        onClick={(e) => { e.stopPropagation(); onClose(); }}
       >
         <X className="w-8 h-8" />
       </button>
@@ -53,7 +56,8 @@ function Lightbox({
           priority
         />
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
 
