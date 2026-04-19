@@ -13,12 +13,12 @@ import {
 
 function ScreenshotHeader({ src, alt }: { src: string; alt: string }) {
   return (
-    <div className="h-48 rounded-xl overflow-hidden border border-slate-700/50 bg-slate-900 relative">
+    <div className="h-72 rounded-xl overflow-hidden border border-slate-700/50 bg-slate-900 relative">
       <Image
         src={src}
         alt={alt}
         fill
-        className="object-cover object-top"
+        className="object-contain object-top"
         sizes="(max-width: 768px) 100vw, 50vw"
       />
     </div>
