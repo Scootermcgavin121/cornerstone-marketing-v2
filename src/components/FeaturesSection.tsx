@@ -200,14 +200,13 @@ export function FeaturesSection() {
             PLATFORM FEATURES
           </div>
           <h2 className="text-4xl sm:text-5xl font-black text-white mb-4 leading-tight">
-            Everything a builder needs.
+            The complete platform
             <br />
-            <span className="text-cyan-400">Nothing you don&apos;t.</span>
+            <span className="text-cyan-400">built for home builders.</span>
           </h2>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto">
             Six integrated modules — from first lead to final walkthrough.
-            Built for home builders who got tired of paying $499/mo for software
-            that does too much.
+            Everything NEWSTAR does, at a price that doesn&apos;t require a board approval.
           </p>
         </div>
 
