@@ -5,6 +5,20 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const screens = [
   {
+    id: "hero-mockup",
+    label: "Platform Overview",
+    tag: "OVERVIEW",
+    tagColor: "text-cyan-400 border-cyan-500/30 bg-cyan-500/10",
+    headline: "Your pipeline. Your pace.",
+    description:
+      "Every home. Every stage. Kanban board meets mobile dashboard — real-time visibility for your whole team, from the office or the job site.",
+    screenshot: "/mockups/hero-mockup.jpg",
+    accent: "from-cyan-500/20 to-slate-900/5",
+    glow: "rgba(6,182,212,0.12)",
+    border: "border-cyan-500/30",
+    isHero: true,
+  },
+  {
     id: "sales-pipeline",
     label: "Sales Pipeline",
     tag: "SALES",
@@ -16,6 +30,7 @@ const screens = [
     accent: "from-violet-500/20 to-purple-600/5",
     glow: "rgba(139,92,246,0.12)",
     border: "border-violet-500/30",
+    isHero: false,
   },
   {
     id: "permitting-pipeline",
@@ -29,6 +44,7 @@ const screens = [
     accent: "from-amber-500/20 to-orange-600/5",
     glow: "rgba(245,158,11,0.12)",
     border: "border-amber-500/30",
+    isHero: false,
   },
   {
     id: "construction-home",
@@ -42,6 +58,7 @@ const screens = [
     accent: "from-cyan-500/20 to-teal-600/5",
     glow: "rgba(6,182,212,0.12)",
     border: "border-cyan-500/30",
+    isHero: false,
   },
   {
     id: "sales-home",
@@ -55,6 +72,7 @@ const screens = [
     accent: "from-emerald-500/20 to-teal-600/5",
     glow: "rgba(16,185,129,0.12)",
     border: "border-emerald-500/30",
+    isHero: false,
   },
 ];
 
@@ -114,23 +132,23 @@ export function ScreenshotsSection() {
             exit={{ opacity: 0, y: -16 }}
             transition={{ duration: 0.25 }}
           >
-            {/* Two-col layout on large screens */}
-            <div className="grid lg:grid-cols-5 gap-8 items-center">
-
-              {/* Left: description */}
-              <div className="lg:col-span-2 space-y-5 order-2 lg:order-1">
-                <div className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full border text-xs font-bold tracking-wider ${current.tagColor}`}>
-                  {current.tag}
+            {current.isHero ? (
+              /* Hero slide — full-width marketing image, no browser chrome */
+              <div className="space-y-6">
+                <div className={`rounded-2xl overflow-hidden border ${current.border} shadow-2xl`}>
+                  <div className="relative w-full" style={{ aspectRatio: "3/2" }}>
+                    <Image
+                      src={current.screenshot}
+                      alt="Cornerstone PM platform overview"
+                      fill
+                      className="object-cover"
+                      sizes="100vw"
+                      priority
+                    />
+                  </div>
                 </div>
-                <h3 className="text-2xl sm:text-3xl font-black text-white leading-tight">
-                  {current.headline}
-                </h3>
-                <p className="text-slate-400 leading-relaxed text-base">
-                  {current.description}
-                </p>
-
                 {/* Dot indicators */}
-                <div className="flex gap-2 pt-2">
+                <div className="flex justify-center gap-2">
                   {screens.map((_, i) => (
                     <button
                       key={i}
@@ -142,37 +160,64 @@ export function ScreenshotsSection() {
                   ))}
                 </div>
               </div>
+            ) : (
+              /* Standard slide — two-col with browser chrome */
+              <div className="grid lg:grid-cols-5 gap-8 items-center">
+                {/* Left: description */}
+                <div className="lg:col-span-2 space-y-5 order-2 lg:order-1">
+                  <div className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full border text-xs font-bold tracking-wider ${current.tagColor}`}>
+                    {current.tag}
+                  </div>
+                  <h3 className="text-2xl sm:text-3xl font-black text-white leading-tight">
+                    {current.headline}
+                  </h3>
+                  <p className="text-slate-400 leading-relaxed text-base">
+                    {current.description}
+                  </p>
+                  {/* Dot indicators */}
+                  <div className="flex gap-2 pt-2">
+                    {screens.map((_, i) => (
+                      <button
+                        key={i}
+                        onClick={() => setActive(i)}
+                        className={`h-1.5 rounded-full transition-all duration-300 ${
+                          active === i ? "w-8 bg-cyan-400" : "w-3 bg-slate-700 hover:bg-slate-600"
+                        }`}
+                      />
+                    ))}
+                  </div>
+                </div>
 
-              {/* Right: browser-frame screenshot */}
-              <div className="lg:col-span-3 order-1 lg:order-2">
-                <div className={`rounded-xl overflow-hidden border ${current.border} shadow-2xl bg-gradient-to-b ${current.accent}`}>
-                  {/* Browser chrome bar */}
-                  <div className="flex items-center gap-1.5 px-4 py-3 bg-slate-800/80 border-b border-slate-700/50">
-                    <div className="w-3 h-3 rounded-full bg-red-500/70" />
-                    <div className="w-3 h-3 rounded-full bg-amber-500/70" />
-                    <div className="w-3 h-3 rounded-full bg-emerald-500/70" />
-                    <div className="flex-1 mx-3">
-                      <div className="bg-slate-700/60 rounded text-slate-500 text-xs px-3 py-1 font-mono">
-                        app.cornerstonepm.ai
+                {/* Right: browser-frame screenshot */}
+                <div className="lg:col-span-3 order-1 lg:order-2">
+                  <div className={`rounded-xl overflow-hidden border ${current.border} shadow-2xl bg-gradient-to-b ${current.accent}`}>
+                    {/* Browser chrome bar */}
+                    <div className="flex items-center gap-1.5 px-4 py-3 bg-slate-800/80 border-b border-slate-700/50">
+                      <div className="w-3 h-3 rounded-full bg-red-500/70" />
+                      <div className="w-3 h-3 rounded-full bg-amber-500/70" />
+                      <div className="w-3 h-3 rounded-full bg-emerald-500/70" />
+                      <div className="flex-1 mx-3">
+                        <div className="bg-slate-700/60 rounded text-slate-500 text-xs px-3 py-1 font-mono">
+                          app.cornerstonepm.ai
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  {/* Screenshot */}
-                  <div className="relative w-full" style={{ aspectRatio: "16/10" }}>
-                    <Image
-                      src={current.screenshot}
-                      alt={`${current.label} screenshot`}
-                      fill
-                      className="object-cover object-top"
-                      sizes="(max-width: 768px) 100vw, 60vw"
-                      priority={active === 0}
-                      unoptimized
-                    />
+                    {/* Screenshot */}
+                    <div className="relative w-full" style={{ aspectRatio: "16/10" }}>
+                      <Image
+                        src={current.screenshot}
+                        alt={`${current.label} screenshot`}
+                        fill
+                        className="object-cover object-top"
+                        sizes="(max-width: 768px) 100vw, 60vw"
+                        priority={active === 0}
+                        unoptimized
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
-
-            </div>
+            )}
           </motion.div>
         </AnimatePresence>
       </div>
