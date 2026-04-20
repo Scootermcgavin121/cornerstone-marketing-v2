@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { FeaturesSection } from "@/components/FeaturesSection";
@@ -23,6 +24,7 @@ const featureDetails = [
   {
     id: "construction",
     icon: Calendar,
+    screenshot: "/mockups/feature-scheduling.png",
     name: "Construction Scheduling",
     color: "from-cyan-500 to-teal-600",
     bgColor: "bg-cyan-500/10",
@@ -46,6 +48,7 @@ const featureDetails = [
   {
     id: "purchasing",
     icon: ShoppingCart,
+    screenshot: "/mockups/feature-purchasing.png",
     name: "Purchasing & Budgets",
     color: "from-emerald-500 to-green-600",
     bgColor: "bg-emerald-500/10",
@@ -69,6 +72,7 @@ const featureDetails = [
   {
     id: "sales",
     icon: TrendingUp,
+    screenshot: "/mockups/feature-sales-pipeline.png",
     name: "Sales Pipeline",
     color: "from-violet-500 to-purple-600",
     bgColor: "bg-violet-500/10",
@@ -92,6 +96,7 @@ const featureDetails = [
   {
     id: "design",
     icon: Palette,
+    screenshot: "/mockups/feature-design-center.png",
     name: "Design Center",
     color: "from-rose-500 to-pink-600",
     bgColor: "bg-rose-500/10",
@@ -115,6 +120,7 @@ const featureDetails = [
   {
     id: "permitting",
     icon: FileText,
+    screenshot: "/mockups/feature-permitting.png",
     name: "Permitting",
     color: "from-amber-500 to-orange-600",
     bgColor: "bg-amber-500/10",
@@ -137,6 +143,7 @@ const featureDetails = [
   {
     id: "portal",
     icon: Users,
+    screenshot: "/mockups/feature-buyer-portal.png",
     name: "Buyer Portal",
     color: "from-sky-500 to-blue-600",
     bgColor: "bg-sky-500/10",
@@ -214,7 +221,17 @@ export default function FeaturesPage() {
                     ))}
                   </ul>
                 </div>
-                <div className={`w-full lg:w-80 h-48 rounded-xl bg-gradient-to-br ${feature.color} opacity-[0.08] border ${feature.borderColor}`} />
+                <div className="w-full lg:w-[480px] flex-shrink-0 rounded-xl overflow-hidden border border-slate-700/50 shadow-xl">
+                  <div className="relative w-full" style={{ aspectRatio: "16/10" }}>
+                    <Image
+                      src={feature.screenshot}
+                      alt={`${feature.name} screenshot`}
+                      fill
+                      className="object-cover object-top"
+                      sizes="(max-width: 1024px) 100vw, 480px"
+                    />
+                  </div>
+                </div>
               </div>
             );
           })}
