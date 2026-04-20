@@ -143,6 +143,17 @@ export function VideoSection() {
             </div>
           </div>
         </div>
+
+        {/* CTA below video */}
+        <div className="text-center mt-8">
+          <a
+            href="/contact"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-cyan-400 text-slate-900 font-bold text-lg hover:bg-cyan-300 transition-all duration-200 shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/50 hover:-translate-y-0.5"
+          >
+            Request Early Access →
+          </a>
+          <p className="text-slate-500 text-sm mt-3">Beta is limited to 100 builders. No credit card required.</p>
+        </div>
       </div>
     </section>
   );
