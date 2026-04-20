@@ -17,7 +17,7 @@ export function CTASection() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-400 text-sm font-medium mb-8">
           <Zap className="w-3.5 h-3.5" />
-          <span>Limited Beta — Free for 5 Years</span>
+          <span>Limited Beta — Free for 2 years</span>
         </div>
 
         <h2 className="text-5xl sm:text-6xl md:text-7xl font-black text-white leading-[0.95] mb-6">

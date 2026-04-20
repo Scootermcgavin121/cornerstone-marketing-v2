@@ -123,7 +123,7 @@ export default function SpreadsheetsPost() {
         <div className="mt-12 p-6 rounded-2xl border border-cyan-500/20 bg-cyan-500/5">
           <h3 className="text-lg font-bold text-white mb-2">See Cornerstone PM scheduling in action</h3>
           <p className="text-slate-400 text-sm mb-4">
-            Request beta access — free for 5 years for early adopters.
+            Request beta access — free for 2 years for early adopters.
           </p>
           <Link
             href="/beta"

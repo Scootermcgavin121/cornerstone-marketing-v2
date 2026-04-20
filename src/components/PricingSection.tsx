@@ -178,7 +178,7 @@ export function PricingSection() {
             <div className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl border border-amber-500/30 bg-amber-500/10 text-amber-400">
               <Zap className="w-4 h-4" />
               <span className="text-sm font-semibold">
-                Beta users get 5 years free — limited to 100 builders
+                Beta users get 2 years free — limited to 100 builders
               </span>
             </div>
             <p className="text-xs text-slate-500">Beta slots are finite. When they&apos;re gone, standard pricing applies.</p>

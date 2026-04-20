@@ -20,7 +20,7 @@ const comparison = [
   { feature: "Commercial Construction Features", buildertrend: true, cornerstone: false },
   { feature: "Price for small builders", buildertrend: false, cornerstone: true },
   { feature: "Simple, builder-first UX", buildertrend: false, cornerstone: true },
-  { feature: "5-Year Free Beta", buildertrend: false, cornerstone: true },
+  { feature: "2-year Free Beta", buildertrend: false, cornerstone: true },
 ];
 
 export default function BuildertrendPost() {
@@ -144,7 +144,7 @@ export default function BuildertrendPost() {
             and $179.98/mo for the full platform, you&apos;re getting everything you actually need.
           </p>
           <p>
-            We&apos;re in beta right now, and early adopters get 5 years free. No credit card required.
+            We&apos;re in beta right now, and early adopters get 2 years free. No credit card required.
             We think that&apos;s a pretty good deal.
           </p>
         </div>
@@ -152,7 +152,7 @@ export default function BuildertrendPost() {
         <div className="mt-12 p-6 rounded-2xl border border-amber-500/20 bg-amber-500/5">
           <h3 className="text-lg font-bold text-white mb-2">Try Cornerstone PM free</h3>
           <p className="text-slate-400 text-sm mb-4">
-            Beta access is open now. 5 years free for early adopters.
+            Beta access is open now. 2 years free for early adopters.
           </p>
           <Link
             href="/beta"

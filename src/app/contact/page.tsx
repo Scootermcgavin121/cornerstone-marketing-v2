@@ -75,7 +75,7 @@ export default function ContactPage() {
                   <span className="font-bold text-amber-400 text-sm">Beta — Limited to 100 builders</span>
                 </div>
                 <p className="text-slate-400 text-sm leading-relaxed">
-                  Sign up now and get 5 years free. Beta slots are finite — when they&apos;re gone, standard pricing applies.
+                  Sign up now and get 2 years free. Beta slots are finite — when they&apos;re gone, standard pricing applies.
                 </p>
               </div>
             </div>

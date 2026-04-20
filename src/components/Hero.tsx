@@ -54,7 +54,7 @@ export function Hero() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-sm font-medium mb-8 backdrop-blur-sm">
           <Zap className="w-3.5 h-3.5" />
-          <span>Free Beta — 5 Years Free for Early Adopters</span>
+          <span>Free Beta — 2 years free for Early Adopters</span>
         </div>
 
         {/* Headline */}

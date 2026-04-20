@@ -7,7 +7,7 @@ import { SparklesCore } from "@/components/ui/sparkles";
 import { Check, Zap, ArrowRight } from "lucide-react";
 
 const perks = [
-  "Free access for 5 years",
+  "Free access for 2 years",
   "All 6 modules included",
   "Priority onboarding support",
   "Lock in beta pricing forever",
@@ -78,7 +78,7 @@ export default function BetaPage() {
 
               <p className="text-lg text-slate-400 mb-8 leading-relaxed">
                 We&apos;re opening beta access to a limited number of home builders.
-                Join now and get 5 years free — your input shapes the product.
+                Join now and get 2 years free — your input shapes the product.
               </p>
 
               <ul className="space-y-3 mb-8">
@@ -95,7 +95,7 @@ export default function BetaPage() {
               <div className="p-4 rounded-xl border border-amber-500/20 bg-amber-500/5">
                 <p className="text-sm text-amber-400/80">
                   <strong className="text-amber-400">Early adopter guarantee:</strong> Beta users
-                  lock in free access for 5 years. No payment ever required during beta.
+                  lock in free access for 2 years. No payment ever required during beta.
                 </p>
               </div>
             </div>

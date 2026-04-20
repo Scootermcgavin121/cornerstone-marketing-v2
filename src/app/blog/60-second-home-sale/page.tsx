@@ -135,7 +135,7 @@ export default function HomeSalePost() {
         <div className="mt-12 p-6 rounded-2xl border border-amber-500/20 bg-amber-500/5">
           <h3 className="text-lg font-bold text-white mb-2">Give your buyers the portal they deserve</h3>
           <p className="text-slate-400 text-sm mb-4">
-            Cornerstone PM includes the buyer portal in every plan. Request beta access — free for 5 years.
+            Cornerstone PM includes the buyer portal in every plan. Request beta access — free for 2 years.
           </p>
           <Link
             href="/beta"
