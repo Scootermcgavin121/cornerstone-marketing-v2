@@ -65,7 +65,7 @@ export default function ContactPage() {
                   <span className="font-bold text-white">Beta Support</span>
                 </div>
                 <p className="text-slate-400 text-sm leading-relaxed">
-                  Beta users get direct Slack access to our team.
+                  Beta users get priority email support from our team.
                 </p>
               </div>
 
