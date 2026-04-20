@@ -16,10 +16,10 @@ const navLinks = [
 
 const featureLinks = [
   { label: "All Features", href: "/features", desc: "Everything included in every plan" },
-  { label: "Construction Scheduling", href: "/features#construction", desc: "Gantt charts, vendors, notifications" },
-  { label: "Purchasing & Budgets", href: "/features#purchasing", desc: "Takeoffs, POs, bid management" },
-  { label: "Sales Pipeline", href: "/features#sales", desc: "60-second home sale, buyer tracking" },
-  { label: "Design Center", href: "/features#design", desc: "Room-by-room selections, spec levels" },
+  { label: "Construction Scheduling", href: "/construction", desc: "Gantt charts, vendors, notifications" },
+  { label: "Purchasing & Budgets", href: "/purchasing", desc: "Takeoffs, POs, bid management" },
+  { label: "Sales Pipeline", href: "/sales", desc: "60-second home sale, buyer tracking" },
+  { label: "Design Center", href: "/design", desc: "Room-by-room selections, spec levels" },
   { label: "Permitting", href: "/features#permitting", desc: "Permit sequences, PA workflow" },
   { label: "Buyer Portal", href: "/features#portal", desc: "Milestone journey, photo gallery" },
 ];
