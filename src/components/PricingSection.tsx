@@ -5,38 +5,65 @@ import { Check, X, Zap } from "lucide-react";
 
 const plans = [
   {
-    name: "Construction",
-    price: "$79.99",
+    name: "Starter",
+    price: "$149",
     period: "/mo",
-    description: "Scheduling, permitting, and buyer portal.",
+    description: "Scheduling, permitting, and homeowner portal.",
     badge: null,
+    bonusBadge: null,
     features: [
-      "Construction Scheduling (Gantt)",
-      "Subcontractor Assignment",
-      "Permitting Tracker",
-      "Buyer Progress Portal",
-      "Up to 10 active projects",
+      "Construction Scheduling (Gantt + Task View)",
+      "3-tier dependency auto-cascade",
+      "17 pre-built templates",
+      "Subcontractor assignment & notifications",
+      "Permitting pipeline tracker",
+      "Homeowner progress portal (magic link)",
+      "Up to 1,000 active homes",
       "Email support",
     ],
-    notIncluded: ["Purchasing & Budgets", "Sales Pipeline", "Design Center"],
+    notIncluded: ["Purchasing & Budgets", "Sales Pipeline", "Design Center", "AI Blueprint Takeoff"],
     cta: "Get Beta Access",
     ctaHref: "/beta",
     highlight: false,
   },
   {
-    name: "Full Platform",
-    price: "$179.98",
+    name: "Builder",
+    price: "$299",
     period: "/mo",
-    description: "All 6 modules. Full builder lifecycle.",
-    badge: "BEST VALUE",
+    description: "Full sales-to-construction workflow.",
+    badge: null,
+    bonusBadge: null,
     features: [
-      "Everything in Construction, plus:",
-      "Purchasing & Budget Tracking",
-      "Sales Pipeline (CRM)",
-      "Design Center & Selections",
-      "Buyer Approval Workflows",
+      "Everything in Starter, plus:",
+      "Structural options pricing engine",
+      "Auto-budget from takeoffs (~97 lines)",
+      "Base price matrix by floorplan × community",
+      "Full PO lifecycle (Draft → Paid)",
+      "Bid management & vendor comparison",
+      "Sales pipeline (60-second home sale)",
+      "Design center selections & change orders",
       "Priority support",
-      "Unlimited projects",
+    ],
+    notIncluded: ["AI Blueprint Takeoff"],
+    cta: "Get Beta Access",
+    ctaHref: "/beta",
+    highlight: false,
+  },
+  {
+    name: "Full Bundle",
+    price: "$399",
+    period: "/mo",
+    description: "Everything. The complete production builder stack.",
+    badge: "BEST VALUE",
+    bonusBadge: "AI Takeoff ($150 value) FREE",
+    features: [
+      "Everything in Builder, plus:",
+      "AI Blueprint Takeoff",
+      "Multi-community management",
+      "Unlimited users & vendors",
+      "Advanced analytics & reporting",
+      "Priority onboarding support",
+      "Early access to new features",
     ],
     notIncluded: [],
     cta: "Start Free Beta",
@@ -76,7 +103,7 @@ export function PricingSection() {
         </div>
 
         {/* Plans */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 max-w-6xl mx-auto">
           {plans.map((plan) => (
             <div
               key={plan.name}
@@ -91,6 +118,14 @@ export function PricingSection() {
                   <span className="px-4 py-1 text-xs font-bold rounded-full bg-gradient-to-r from-cyan-500 to-teal-500 text-slate-900">
                     {plan.badge}
                   </span>
+                </div>
+              )}
+              {(plan as {bonusBadge?: string}).bonusBadge && (
+                <div className="mb-4 -mx-2">
+                  <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-amber-500/15 border border-amber-500/30">
+                    <Zap className="w-3.5 h-3.5 text-amber-400 flex-shrink-0" />
+                    <span className="text-xs font-bold text-amber-400">{(plan as {bonusBadge?: string}).bonusBadge}</span>
+                  </div>
                 </div>
               )}
 
