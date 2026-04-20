@@ -24,7 +24,7 @@ export async function POST(req: Request) {
   // Limit to last 20 messages
   const recentMessages = messages.slice(-20);
 
-  const result = streamText({
+  const result = await streamText({
     model: openai("gpt-4o-mini"),
     system: systemPrompt,
     messages: recentMessages,

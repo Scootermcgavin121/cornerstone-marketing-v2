@@ -83,12 +83,12 @@ export default function ChatWidget() {
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  const { messages, input, handleInputChange, handleSubmit, isLoading, status } =
+  const { messages, input, handleInputChange, handleSubmit, isLoading } =
     useChat({
       api: "/api/chat",
     });
 
-  const isStreaming = status === "streaming";
+  const isStreaming = isLoading;
 
   // Auto-scroll to bottom
   useEffect(() => {
