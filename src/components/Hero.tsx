@@ -37,7 +37,7 @@ export function Hero() {
   }, [displayText, isDeleting, wordIndex]);
 
   return (
-    <section className="relative flex flex-col items-center justify-center overflow-hidden bg-slate-950 pt-32 pb-20">
+    <section className="relative flex flex-col items-center justify-center overflow-hidden bg-slate-950 pt-32 pb-8">
       {/* Background effects */}
       <BackgroundBeams />
       <SparklesCore
@@ -117,8 +117,7 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-slate-950 to-transparent pointer-events-none" />
+
     </section>
   );
 }

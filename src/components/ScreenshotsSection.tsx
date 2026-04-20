@@ -85,7 +85,7 @@ export function ScreenshotsSection() {
   const current = screens[active];
 
   return (
-    <section id="screenshots" className="relative py-24 bg-slate-950 overflow-hidden">
+    <section id="screenshots" className="relative pt-8 pb-24 bg-slate-950 overflow-hidden">
       {/* Background glow that shifts per tab */}
       <div
         className="absolute inset-0 transition-all duration-700 pointer-events-none"
