@@ -12,8 +12,8 @@ export default function Home() {
     <main className="bg-slate-950 text-white">
       <Navbar />
       <Hero />
-      <FeaturesSection />
       <ScreenshotsSection />
+      <FeaturesSection />
       <TestimonialsSection />
       <PricingSection />
       <CTASection />

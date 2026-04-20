@@ -68,10 +68,12 @@ function ScreenshotHeader({
   src,
   alt,
   aspect = "4/3",
+  coverMode = false,
 }: {
   src: string;
   alt: string;
   aspect?: string;
+  coverMode?: boolean;
 }) {
   const [open, setOpen] = useState(false);
 
@@ -81,12 +83,13 @@ function ScreenshotHeader({
         className="w-full rounded-xl overflow-hidden border border-slate-700/50 bg-slate-900 relative group cursor-zoom-in"
         style={{ aspectRatio: aspect }}
         onClick={() => setOpen(true)}
+        data-cover={coverMode}
       >
         <Image
           src={src}
           alt={alt}
           fill
-          className="object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+          className={`${coverMode ? 'object-cover' : 'object-contain'} transition-transform duration-300 group-hover:scale-[1.02]`}
           sizes="(max-width: 768px) 100vw, 50vw"
         />
         {/* Zoom hint */}
@@ -125,6 +128,7 @@ const features = [
         src="/mockups/feature-purchasing.png"
         alt="Purchasing and budget management dashboard"
         aspect="3/4"
+        coverMode={true}
       />
     ),
   },
@@ -135,9 +139,9 @@ const features = [
     icon: <TrendingUp className="w-5 h-5" />,
     header: (
       <ScreenshotHeader
-        src="/mockups/feature-sales-pipeline.png"
+        src="/mockups/feature-sales-pipeline.jpg"
         alt="Sales pipeline kanban board"
-        aspect="4/3"
+        aspect="3/2"
       />
     ),
     className: "md:col-span-2",
