@@ -26,7 +26,8 @@ const screens = [
     headline: "Track every deal from first contact to closed sale.",
     description:
       "Kanban-style pipeline with color-coded stages. See your full book of business at a glance — Sales, Permitting, Design, and Construction columns show exactly where every home stands.",
-    screenshot: "/mockups/sales-pipeline-raw.png",
+    screenshot: "/mockups/ss-sales-pipeline.png",
+    aspect: "16/10",
     accent: "from-violet-500/20 to-purple-600/5",
     glow: "rgba(139,92,246,0.12)",
     border: "border-violet-500/30",
@@ -40,38 +41,41 @@ const screens = [
     headline: "Never miss a permit milestone again.",
     description:
       "Pre-built permit sequences with correct order, dependencies, and lead times. Phase-based locking prevents downstream construction from starting until permits clear.",
-    screenshot: "/mockups/permitting-pipeline-raw.png",
+    screenshot: "/mockups/ss-permitting.png",
+    aspect: "16/10",
     accent: "from-amber-500/20 to-orange-600/5",
     glow: "rgba(245,158,11,0.12)",
     border: "border-amber-500/30",
     isHero: false,
   },
   {
-    id: "construction-home",
-    label: "Construction Hub",
-    tag: "PLATFORM",
+    id: "construction-scheduling",
+    label: "Construction Scheduling",
+    tag: "SCHEDULING",
     tagColor: "text-cyan-400 border-cyan-500/30 bg-cyan-500/10",
-    headline: "Your entire operation in one place.",
+    headline: "Task-level scheduling with auto-cascade.",
     description:
-      "Homes & Scheduling, Team & Vendors, Permitting, Field & Documents — every module connected. 65 homes, 60 vendors, 10 communities, all managed from a single dashboard.",
-    screenshot: "/mockups/construction-home-raw.png",
+      "3-tier dependency system — move one task and everything downstream adjusts. 17 pre-built templates, phase tracking, assigned vendors, and cascade email notifications to subs.",
+    screenshot: "/mockups/ss-construction.png",
+    aspect: "16/10",
     accent: "from-cyan-500/20 to-teal-600/5",
     glow: "rgba(6,182,212,0.12)",
     border: "border-cyan-500/30",
     isHero: false,
   },
   {
-    id: "sales-home",
-    label: "Sales Dashboard",
-    tag: "DASHBOARD",
-    tagColor: "text-emerald-400 border-emerald-500/30 bg-emerald-500/10",
-    headline: "Real-time KPIs the moment you log in.",
+    id: "design-center",
+    label: "Design Center",
+    tag: "DESIGN",
+    tagColor: "text-pink-400 border-pink-500/30 bg-pink-500/10",
+    headline: "Room-by-room selections with real-time upgrade pricing.",
     description:
-      "Active pipeline count, homes sold this month, total buyers, and community performance — all surfaced front and center so you can run your business without digging through reports.",
-    screenshot: "/mockups/sales-home-raw.png",
-    accent: "from-emerald-500/20 to-teal-600/5",
-    glow: "rgba(16,185,129,0.12)",
-    border: "border-emerald-500/30",
+      "Buyers pick flooring, cabinets, countertops, and fixtures. Unlimited spec levels — Standard, Upgrade, Premium. Driven by takeoff quantities so pricing is always accurate.",
+    screenshot: "/mockups/ss-design-center.png",
+    aspect: "16/10",
+    accent: "from-pink-500/20 to-rose-600/5",
+    glow: "rgba(236,72,153,0.12)",
+    border: "border-pink-500/30",
     isHero: false,
   },
 ];
@@ -203,12 +207,12 @@ export function ScreenshotsSection() {
                       </div>
                     </div>
                     {/* Screenshot */}
-                    <div className="relative w-full" style={{ aspectRatio: "16/10" }}>
+                    <div className="relative w-full" style={{ aspectRatio: "16/10", minHeight: "320px" }}>
                       <Image
                         src={current.screenshot}
                         alt={`${current.label} screenshot`}
                         fill
-                        className="object-cover object-top"
+                        className="object-contain object-top bg-white"
                         sizes="(max-width: 768px) 100vw, 60vw"
                         priority={active === 0}
                         unoptimized
