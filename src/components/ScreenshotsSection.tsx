@@ -12,7 +12,7 @@ const screens = [
     headline: "Your pipeline. Your pace.",
     description:
       "Every home. Every stage. Kanban board meets mobile dashboard — real-time visibility for your whole team, from the office or the job site.",
-    screenshot: "/mockups/hero-mockup.jpg",
+    screenshot: "/mockups/hero-mockup.png",
     accent: "from-cyan-500/20 to-slate-900/5",
     glow: "rgba(6,182,212,0.12)",
     border: "border-cyan-500/30",
