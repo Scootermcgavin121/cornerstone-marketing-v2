@@ -73,16 +73,18 @@ export function Hero() {
 
         {/* Subheadline */}
         <p className="text-xl sm:text-2xl md:text-3xl text-slate-300 font-light mb-4 leading-relaxed">
-          Construction management for{" "}
-          <span className="text-white font-semibold">home builders</span> — not for
-          enterprise companies.
+          The production builder platform that{" "}
+          <span className="text-white font-semibold">NEWSTAR charges $100K to implement.</span>
         </p>
 
+        <p className="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto mb-6 leading-relaxed">
+          Structural options pricing engine. Auto-budget from takeoffs. Base price matrix by floorplan × community. Design center selections. Full construction pipeline — all in one platform.
+        </p>
         <p className="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed">
-          Scheduling, purchasing, sales pipeline, and buyer portal — all in one platform.
-          Starting at{" "}
-          <span className="text-amber-400 font-semibold">$79.99/mo</span>.
-          BuilderTrend starts at <span className="line-through text-slate-600">$499/mo</span>.
+          NEWSTAR &amp; BuildPro cost{" "}
+          <span className="text-red-400 font-semibold line-through">$2K–5K/mo + $50K–150K implementation</span>.
+          {" "}Cornerstone starts at{" "}
+          <span className="text-amber-400 font-semibold">$179.98/mo. No implementation fee.</span>
         </p>
 
         {/* CTAs */}

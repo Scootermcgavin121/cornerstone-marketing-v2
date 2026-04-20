@@ -46,10 +46,10 @@ const plans = [
 ];
 
 const competitors = [
-  { name: "Cornerstone PM", price: "$79.99", highlight: true },
-  { name: "BuilderTrend", price: "$499+", highlight: false },
-  { name: "Procore", price: "$700+", highlight: false },
-  { name: "CoConstruct", price: "$399+", highlight: false },
+  { name: "Cornerstone PM", price: "$179.98/mo", note: "Full platform. No implementation.", highlight: true },
+  { name: "BuilderTrend", price: "$499+/mo", note: "No options pricing engine", highlight: false },
+  { name: "CoConstruct", price: "$399+/mo", note: "No structural options", highlight: false },
+  { name: "NEWSTAR / BuildPro / MarkSystems", price: "$2K–5K/mo", note: "+ $50K–150K implementation", highlight: false },
 ];
 
 export function PricingSection() {
@@ -65,13 +65,13 @@ export function PricingSection() {
             PRICING
           </div>
           <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
-            Priced for builders.
+            Enterprise power.
             <br />
-            <span className="text-amber-400">Not for enterprise.</span>
+            <span className="text-amber-400">Not enterprise pricing.</span>
           </h2>
           <p className="text-lg text-slate-400 max-w-xl mx-auto">
-            BuilderTrend starts at $499/mo. We start at $79.99/mo.
-            You do the math.
+            NEWSTAR and BuildPro cost $50K–150K to implement and $2K–5K/mo to run.
+            Cornerstone is $179.98/mo. Everything included. No implementation fee.
           </p>
         </div>
 
@@ -149,9 +149,10 @@ export function PricingSection() {
 
         {/* Competitor comparison */}
         <div className="max-w-2xl mx-auto">
-          <h3 className="text-center text-lg font-semibold text-slate-300 mb-6">
+          <h3 className="text-center text-lg font-semibold text-slate-300 mb-2">
             How we compare
           </h3>
+          <p className="text-center text-sm text-slate-500 mb-6">We&apos;re not a Buildertrend alternative. We&apos;re a NEWSTAR/BuildPro alternative — at 1/20th the price.</p>
           <div className="rounded-2xl overflow-hidden border border-slate-800">
             {competitors.map((c, i) => (
               <div
@@ -164,30 +165,24 @@ export function PricingSection() {
                     : "bg-slate-900/50"
                 }`}
               >
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3 min-w-0">
                   {c.highlight && (
-                    <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
+                    <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse flex-shrink-0" />
                   )}
-                  <span
-                    className={`font-semibold ${
+                  <div className="min-w-0">
+                    <div className={`font-semibold ${
                       c.highlight ? "text-white" : "text-slate-400"
-                    }`}
-                  >
-                    {c.name}
-                  </span>
-                  {c.highlight && (
-                    <span className="text-xs px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-400 border border-cyan-500/30">
-                      You are here
-                    </span>
-                  )}
+                    }`}>{c.name}</div>
+                    {(c as {note?: string}).note && (
+                      <div className={`text-xs mt-0.5 ${ c.highlight ? "text-cyan-400" : "text-slate-600" }`}>{(c as {note?: string}).note}</div>
+                    )}
+                  </div>
                 </div>
-                <span
-                  className={`font-bold text-lg ${
+                <div className="text-right flex-shrink-0 ml-4">
+                  <span className={`font-bold text-base ${
                     c.highlight ? "text-amber-400" : "text-slate-600 line-through"
-                  }`}
-                >
-                  {c.price}
-                </span>
+                  }`}>{c.price}</span>
+                </div>
               </div>
             ))}
           </div>
