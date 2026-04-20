@@ -58,12 +58,12 @@ export function Hero() {
         </div>
 
         {/* Headline */}
-        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight text-white leading-[0.9] mb-6">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight text-white leading-[1.05] mb-6">
           Build{" "}
           <span className="relative inline-block">
             <span
               className="bg-gradient-to-r from-cyan-400 via-teal-300 to-cyan-500 bg-clip-text text-transparent"
-              style={{ minWidth: "4ch", display: "inline-block" }}
+              style={{ minWidth: "4ch", display: "inline-block", paddingBottom: "0.15em" }}
             >
               {displayText}
               <span className="animate-pulse text-cyan-400">|</span>
