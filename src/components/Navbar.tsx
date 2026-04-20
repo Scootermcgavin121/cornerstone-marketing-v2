@@ -8,6 +8,7 @@ import { Menu, X } from "lucide-react";
 const navLinks = [
   { label: "Home", href: "/", hasDropdown: false },
   { label: "Features", href: "/features", hasDropdown: true },
+  { label: "Sales Pipeline", href: "/features#sales", hasDropdown: false },
   { label: "Compare", href: "/#compare" },
   { label: "Pricing", href: "/#pricing" },
   { label: "Contact", href: "/contact" },
