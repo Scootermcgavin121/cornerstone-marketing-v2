@@ -32,6 +32,7 @@ const screens = [
     glow: "rgba(139,92,246,0.12)",
     border: "border-violet-500/30",
     isHero: false,
+    noChrome: true,
   },
   {
     id: "permitting-pipeline",
@@ -207,20 +208,22 @@ export function ScreenshotsSection() {
                   </div>
                 </div>
 
-                {/* Right: browser-frame screenshot */}
+                {/* Right: screenshot */}
                 <div className="lg:col-span-3 order-1 lg:order-2">
                   <div className={`rounded-xl overflow-hidden border ${current.border} shadow-2xl bg-gradient-to-b ${current.accent}`}>
-                    {/* Browser chrome bar */}
-                    <div className="flex items-center gap-1.5 px-4 py-3 bg-slate-800/80 border-b border-slate-700/50">
-                      <div className="w-3 h-3 rounded-full bg-red-500/70" />
-                      <div className="w-3 h-3 rounded-full bg-amber-500/70" />
-                      <div className="w-3 h-3 rounded-full bg-emerald-500/70" />
-                      <div className="flex-1 mx-3">
-                        <div className="bg-slate-700/60 rounded text-slate-500 text-xs px-3 py-1 font-mono">
-                          app.cornerstonepm.ai
+                    {/* Browser chrome bar — hidden when noChrome */}
+                    {!(current as {noChrome?: boolean}).noChrome && (
+                      <div className="flex items-center gap-1.5 px-4 py-3 bg-slate-800/80 border-b border-slate-700/50">
+                        <div className="w-3 h-3 rounded-full bg-red-500/70" />
+                        <div className="w-3 h-3 rounded-full bg-amber-500/70" />
+                        <div className="w-3 h-3 rounded-full bg-emerald-500/70" />
+                        <div className="flex-1 mx-3">
+                          <div className="bg-slate-700/60 rounded text-slate-500 text-xs px-3 py-1 font-mono">
+                            app.cornerstonepm.ai
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    )}
                     {/* Screenshot */}
                     <div className="relative w-full" style={{ aspectRatio: "16/10", minHeight: "320px" }}>
                       <Image
