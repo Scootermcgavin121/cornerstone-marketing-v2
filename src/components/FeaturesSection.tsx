@@ -62,30 +62,31 @@ function Lightbox({
 }
 
 // ── Screenshot card header ────────────────────────────────────────────────────
+// aspect: pass the image's natural "width/height" ratio as a fraction string
+// e.g. "16/9", "4/3", "1/1" — the container height adapts automatically
 function ScreenshotHeader({
   src,
   alt,
-  tall = false,
+  aspect = "4/3",
 }: {
   src: string;
   alt: string;
-  tall?: boolean;
+  aspect?: string;
 }) {
   const [open, setOpen] = useState(false);
 
   return (
     <>
       <div
-        className={`${
-          tall ? "h-80" : "h-64"
-        } rounded-xl overflow-hidden border border-slate-700/50 bg-slate-900 relative group cursor-zoom-in`}
+        className="w-full rounded-xl overflow-hidden border border-slate-700/50 bg-slate-900 relative group cursor-zoom-in"
+        style={{ aspectRatio: aspect }}
         onClick={() => setOpen(true)}
       >
         <Image
           src={src}
           alt={alt}
           fill
-          className="object-contain object-top transition-transform duration-300 group-hover:scale-[1.02]"
+          className="object-contain transition-transform duration-300 group-hover:scale-[1.02]"
           sizes="(max-width: 768px) 100vw, 50vw"
         />
         {/* Zoom hint */}
@@ -109,7 +110,7 @@ const features = [
       <ScreenshotHeader
         src="/mockups/feature-scheduling.png"
         alt="Construction task scheduling view"
-        tall
+        aspect="16/15"
       />
     ),
     className: "md:col-span-2",
@@ -123,6 +124,7 @@ const features = [
       <ScreenshotHeader
         src="/mockups/feature-purchasing.png"
         alt="Purchasing and budget management dashboard"
+        aspect="3/4"
       />
     ),
   },
@@ -135,7 +137,7 @@ const features = [
       <ScreenshotHeader
         src="/mockups/feature-sales-pipeline.png"
         alt="Sales pipeline kanban board"
-        tall
+        aspect="4/3"
       />
     ),
     className: "md:col-span-2",
@@ -149,6 +151,7 @@ const features = [
       <ScreenshotHeader
         src="/mockups/feature-design-center.png"
         alt="Design center fixture and finish selections"
+        aspect="63/100"
       />
     ),
   },
@@ -161,6 +164,7 @@ const features = [
       <ScreenshotHeader
         src="/mockups/feature-permitting.png"
         alt="Permitting pipeline dashboard"
+        aspect="1/1"
       />
     ),
   },
@@ -173,7 +177,7 @@ const features = [
       <ScreenshotHeader
         src="/mockups/feature-buyer-portal.png"
         alt="Buyer portal building journey milestone view"
-        tall
+        aspect="4/3"
       />
     ),
     className: "md:col-span-2",
