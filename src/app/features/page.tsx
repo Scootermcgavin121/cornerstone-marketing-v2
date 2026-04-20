@@ -73,6 +73,7 @@ const featureDetails = [
     id: "sales",
     icon: TrendingUp,
     screenshot: "/mockups/feature-sales-pipeline.png",
+    video: "/video/sale-workflow.mp4",
     name: "Sales Pipeline",
     color: "from-violet-500 to-purple-600",
     bgColor: "bg-violet-500/10",
@@ -221,7 +222,7 @@ export default function FeaturesPage() {
                     ))}
                   </ul>
                 </div>
-                <div className="w-full lg:w-[520px] flex-shrink-0">
+                <div className="w-full lg:w-[520px] flex-shrink-0 space-y-4">
                   <div className="relative w-full rounded-xl border border-slate-700/50 shadow-xl overflow-hidden bg-slate-900">
                     <Image
                       src={feature.screenshot}
@@ -232,6 +233,22 @@ export default function FeaturesPage() {
                       sizes="(max-width: 1024px) 100vw, 520px"
                     />
                   </div>
+                  {(feature as {video?: string}).video && (
+                    <div className="relative w-full rounded-xl border border-slate-700/50 shadow-xl overflow-hidden bg-slate-900">
+                      <div className="absolute top-2 left-2 z-10 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/70 border border-white/10 text-xs text-slate-300 font-medium">
+                        <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
+                        Workflow Demo
+                      </div>
+                      <video
+                        src={(feature as {video?: string}).video}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="w-full h-auto"
+                      />
+                    </div>
+                  )}
                 </div>
               </div>
             );
