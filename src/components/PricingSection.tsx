@@ -30,7 +30,7 @@ const plans = [
     name: "Builder",
     price: "$299",
     period: "/mo",
-    description: "Full sales-to-construction workflow.",
+    description: "Full sales-to-construction workflow. Requires Starter.",
     badge: null,
     bonusBadge: null,
     features: [
