@@ -78,13 +78,13 @@ export function Hero() {
         </p>
 
         <p className="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto mb-6 leading-relaxed">
-          Structural options pricing engine. Auto-budget from takeoffs. Base price matrix by floorplan × community. Design center selections. Full construction pipeline — all in one platform.
+          Structural options pricing engine. Auto-budget from takeoffs. Base price matrix by floorplan × community. Design center selections. Full construction pipeline — without the 6-month implementation and the six-figure contract.
         </p>
         <p className="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed">
-          NEWSTAR &amp; BuildPro cost{" "}
-          <span className="text-red-400 font-semibold line-through">$2K–5K/mo + $50K–150K implementation</span>.
-          {" "}Cornerstone starts at{" "}
-          <span className="text-amber-400 font-semibold">$179.98/mo. No implementation fee.</span>
+          NEWSTAR &amp; BuildPro:{" "}
+          <span className="text-red-400 font-semibold line-through">$50K–150K to implement. $2K–5K/mo.</span>
+          {" "}Cornerstone:{" "}
+          <span className="text-amber-400 font-semibold">$179.98/mo. Live in a day.</span>
         </p>
 
         {/* CTAs */}
