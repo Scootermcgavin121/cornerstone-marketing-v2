@@ -127,11 +127,10 @@ const features = [
       <ScreenshotHeader
         src="/mockups/feature-purchasing.png"
         alt="Purchasing and budget management dashboard"
-        aspect="949/1324"
-        coverMode={false}
+        aspect="3/4"
+        coverMode={true}
       />
     ),
-    className: "self-start",
   },
   {
     title: "Sales Pipeline",
