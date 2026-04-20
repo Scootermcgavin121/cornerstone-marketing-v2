@@ -221,14 +221,15 @@ export default function FeaturesPage() {
                     ))}
                   </ul>
                 </div>
-                <div className="w-full lg:w-[480px] flex-shrink-0 rounded-xl overflow-hidden border border-slate-700/50 shadow-xl">
-                  <div className="relative w-full" style={{ aspectRatio: "16/10" }}>
+                <div className="w-full lg:w-[520px] flex-shrink-0">
+                  <div className="relative w-full rounded-xl border border-slate-700/50 shadow-xl overflow-hidden bg-slate-900">
                     <Image
                       src={feature.screenshot}
                       alt={`${feature.name} screenshot`}
-                      fill
-                      className="object-cover object-top"
-                      sizes="(max-width: 1024px) 100vw, 480px"
+                      width={1780}
+                      height={1321}
+                      className="w-full h-auto object-contain"
+                      sizes="(max-width: 1024px) 100vw, 520px"
                     />
                   </div>
                 </div>
