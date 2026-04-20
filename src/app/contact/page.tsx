@@ -65,7 +65,7 @@ export default function ContactPage() {
                   <span className="font-bold text-white">Beta Support</span>
                 </div>
                 <p className="text-slate-400 text-sm leading-relaxed">
-                  Beta users get priority email support from our team.
+                  Beta users get priority email support directly from our team — guaranteed response within 24 hours.
                 </p>
               </div>
 
