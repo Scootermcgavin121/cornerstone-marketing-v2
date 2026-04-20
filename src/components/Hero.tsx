@@ -77,15 +77,19 @@ export function Hero() {
           <span className="text-white font-semibold">NEWSTAR charges $100K to implement.</span>
         </p>
 
-        <p className="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto mb-6 leading-relaxed">
-          Structural options pricing engine. Auto-budget from takeoffs. Base price matrix by floorplan × community. Design center selections. Full construction pipeline — without the 6-month implementation and the six-figure contract.
+        <p className="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto mb-8 leading-relaxed">
+          Structural options pricing engine. Auto-budget from takeoffs. Base price matrix by floorplan × community × spec level. Design center selections. Full construction pipeline — without the six-month implementation or the six-figure contract.
         </p>
-        <p className="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed">
-          NEWSTAR &amp; BuildPro:{" "}
-          <span className="text-red-400 font-semibold line-through">$50K–150K to implement. $2K–5K/mo.</span>
-          {" "}Cornerstone:{" "}
-          <span className="text-amber-400 font-semibold">$179.98/mo. Live in a day.</span>
-        </p>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-12 text-sm">
+          <div className="px-4 py-2.5 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-400">
+            <span className="text-slate-500">NEWSTAR / BuildPro</span>
+            {" "}<span className="line-through text-red-400/80">$50K–150K setup + $2K–5K/mo</span>
+          </div>
+          <span className="text-slate-600 hidden sm:block">→</span>
+          <div className="px-4 py-2.5 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-400 font-semibold">
+            Cornerstone — from $149/mo. Live in a day.
+          </div>
+        </div>
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">

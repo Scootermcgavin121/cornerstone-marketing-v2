@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
+  { label: "Home", href: "/", hasDropdown: false },
   { label: "Features", href: "/features", hasDropdown: true },
   { label: "Compare", href: "/#compare" },
   { label: "Pricing", href: "/#pricing" },
