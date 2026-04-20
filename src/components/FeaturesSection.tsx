@@ -124,28 +124,14 @@ const features = [
       "200+ part catalog with real pricing. Auto-generate ~97 budget lines from floorplan takeoffs when structural options are locked.",
     icon: <ShoppingCart className="w-5 h-5" />,
     header: (
-      <div className="space-y-3">
-        <ScreenshotHeader
-          src="/mockups/feature-purchasing.png"
-          alt="Purchasing and budget management dashboard"
-          aspect="4/3"
-          coverMode={true}
-        />
-        <div className="grid grid-cols-2 gap-2 pt-1">
-          {[
-            "Full PO lifecycle",
-            "Bid management",
-            "Side-by-side vendor comparison",
-            "Draft → Paid tracking",
-          ].map((item) => (
-            <div key={item} className="flex items-center gap-1.5 text-xs text-slate-400">
-              <span className="w-1.5 h-1.5 rounded-full bg-cyan-500 flex-shrink-0" />
-              {item}
-            </div>
-          ))}
-        </div>
-      </div>
+      <ScreenshotHeader
+        src="/mockups/feature-purchasing.png"
+        alt="Purchasing and budget management dashboard"
+        aspect="949/1324"
+        coverMode={false}
+      />
     ),
+    className: "self-start",
   },
   {
     title: "Sales Pipeline",
@@ -156,7 +142,7 @@ const features = [
       <ScreenshotHeader
         src="/mockups/feature-sales-pipeline.png"
         alt="Sales pipeline kanban board"
-        aspect="3/2"
+        aspect="16/9"
       />
     ),
     className: "md:col-span-2",
