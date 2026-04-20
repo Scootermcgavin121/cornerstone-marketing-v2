@@ -139,7 +139,7 @@ const features = [
     icon: <TrendingUp className="w-5 h-5" />,
     header: (
       <ScreenshotHeader
-        src="/mockups/feature-sales-pipeline.jpg"
+        src="/mockups/feature-sales-pipeline.png"
         alt="Sales pipeline kanban board"
         aspect="3/2"
       />

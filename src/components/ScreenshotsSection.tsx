@@ -26,7 +26,7 @@ const screens = [
     headline: "Track every deal from first contact to closed sale.",
     description:
       "Kanban-style pipeline with color-coded stages. See your full book of business at a glance — Sales, Permitting, Design, and Construction columns show exactly where every home stands.",
-    screenshot: "/mockups/ss-sales-pipeline.jpg",
+    screenshot: "/mockups/ss-sales-pipeline-2.png",
     aspect: "16/10",
     accent: "from-violet-500/20 to-purple-600/5",
     glow: "rgba(139,92,246,0.12)",
@@ -76,6 +76,21 @@ const screens = [
     accent: "from-pink-500/20 to-rose-600/5",
     glow: "rgba(236,72,153,0.12)",
     border: "border-pink-500/30",
+    isHero: false,
+  },
+  {
+    id: "buyer-portal",
+    label: "Homeowner Portal",
+    tag: "PORTAL",
+    tagColor: "text-teal-400 border-teal-500/30 bg-teal-500/10",
+    headline: "Magic link access — no passwords needed.",
+    description:
+      "20-phase construction milestone carousel with real job site photos. Schedule visibility, document access, selection review, and direct messaging with PMs. Buyers stay informed without calling the office.",
+    screenshot: "/mockups/ss-buyer-portal.png",
+    aspect: "16/10",
+    accent: "from-teal-500/20 to-cyan-600/5",
+    glow: "rgba(20,184,166,0.12)",
+    border: "border-teal-500/30",
     isHero: false,
   },
 ];
