@@ -26,7 +26,7 @@ const screens = [
     headline: "Track every deal from first contact to closed sale.",
     description:
       "Kanban-style pipeline with color-coded stages. See your full book of business at a glance — Sales, Permitting, Design, and Construction columns show exactly where every home stands.",
-    screenshot: "/mockups/ss-sales-pipeline.png",
+    screenshot: "/mockups/ss-sales-pipeline.jpg",
     aspect: "16/10",
     accent: "from-violet-500/20 to-purple-600/5",
     glow: "rgba(139,92,246,0.12)",

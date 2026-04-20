@@ -37,7 +37,7 @@ export function Hero() {
   }, [displayText, isDeleting, wordIndex]);
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-slate-950 pt-16">
+    <section className="relative flex flex-col items-center justify-center overflow-hidden bg-slate-950 pt-32 pb-20">
       {/* Background effects */}
       <BackgroundBeams />
       <SparklesCore
