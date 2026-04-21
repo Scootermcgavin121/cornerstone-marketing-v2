@@ -256,11 +256,6 @@ export default function FeaturesPage() {
         </div>
       </section>
 
-      {/* Bento grid overview */}
-      <div className="mt-8">
-        <FeaturesSection />
-      </div>
-
       <CTASection />
       <Footer />
     </main>
