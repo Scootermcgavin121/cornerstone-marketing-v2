@@ -1,6 +1,7 @@
 import { Check, TrendingUp } from "lucide-react";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
+import { VideoPlayer } from "@/components/VideoPlayer";
 
 export const metadata = {
   title: "Sales Pipeline — Cornerstone PM",
@@ -84,23 +85,7 @@ export default function SalesPage() {
       {/* Workflow video */}
       <section className="py-12 px-4">
         <div className="max-w-5xl mx-auto">
-          <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/60 border border-white/10">
-            <div className="absolute top-3 left-3 z-10 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/70 border border-white/10 text-xs text-slate-300 font-semibold">
-              <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
-              Live Workflow Demo
-            </div>
-            <video
-              src="/video/sale-workflow.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full"
-            />
-          </div>
-          <p className="text-center text-slate-500 text-sm mt-4">
-            Muted by default — click speaker icon to enable audio
-          </p>
+          <VideoPlayer src="/video/sale-workflow.mp4" label="Live Workflow Demo" />
         </div>
       </section>
 
