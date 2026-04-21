@@ -214,7 +214,7 @@ export default function AiTakeoffPage() {
                 { ok: false, text: "Low-resolution scans won't work well" },
               ].map((r) => (
                 <div key={r.text} className="flex items-start gap-3 text-sm">
-                  <span className={`text-lg leading-none mt-0.5 ${r.ok ? "text-violet-400" : "text-slate-600"}`}>{r.ok ? "✅" : "❌"}</span>
+                  <span className={`font-bold ${r.ok ? "text-violet-400" : "text-slate-600"}`}>{r.ok ? "Yes" : "No"}</span>
                   <span className={r.ok ? "text-slate-300" : "text-slate-500"}>{r.text}</span>
                 </div>
               ))}
