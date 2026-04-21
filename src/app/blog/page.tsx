@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "permitting-delays-home-builders",
+    title: "Why Permits Are Stalling Your Build Schedule",
+    excerpt:
+      "Permit delays are the silent schedule killer for home builders. Here's how to stop letting city hall derail your close dates — and what connected software changes about the equation.",
+    date: "April 21, 2026",
+    readTime: "5 min read",
+    tag: "Permitting",
+    tagColor: "text-orange-400 bg-orange-500/10 border-orange-500/20",
+  },
+  {
     slug: "buildertrend-vs-cornerstone",
     title: "BuilderTrend vs Cornerstone PM: The Honest Comparison",
     excerpt:
