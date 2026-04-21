@@ -57,7 +57,7 @@ export default function BetaPage() {
     <main className="bg-slate-950 text-white min-h-screen">
       <Navbar />
 
-      <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+      <section className="relative pt-24 pb-20 overflow-hidden">
         <BackgroundBeams />
         <SparklesCore particleColor="#f59e0b" particleDensity={30} className="opacity-40" />
 
