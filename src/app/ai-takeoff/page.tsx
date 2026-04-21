@@ -5,9 +5,9 @@ import { Navbar } from "@/components/Navbar";
 import { VideoPlayer } from "@/components/VideoPlayer";
 
 export const metadata = {
-  title: "AI Blueprint Takeoff â€” Cornerstone PM",
+  title: "AI Blueprint Takeoff Ã¢â‚¬â€ Cornerstone PM",
   description:
-    "Upload a floor plan PDF and get a complete material takeoff in under a minute. Rooms, fixtures, flooring, drywall, roofing â€” extracted by AI so you never have to count manually again.",
+    "Upload a floor plan PDF and get a complete material takeoff in under a minute. Rooms, fixtures, flooring, drywall, roofing Ã¢â‚¬â€ extracted by AI so you never have to count manually again.",
 };
 
 const tabs = [
@@ -19,12 +19,12 @@ const tabs = [
   {
     icon: FileText,
     title: "Room Scopes",
-    desc: "Per-room material extraction â€” fixtures, flooring (tile, LVP, carpet), baseboard linear feet, countertops, cabinets, crown molding.",
+    desc: "Per-room material extraction Ã¢â‚¬â€ fixtures, flooring (tile, LVP, carpet), baseboard linear feet, countertops, cabinets, crown molding.",
   },
   {
     icon: FileText,
     title: "Whole House",
-    desc: "Whole-house quantities: drywall board count, painting coverage, insulation, gutters, siding, roofing squares â€” all in one pass.",
+    desc: "Whole-house quantities: drywall board count, painting coverage, insulation, gutters, siding, roofing squares Ã¢â‚¬â€ all in one pass.",
   },
 ];
 
@@ -40,18 +40,18 @@ const metrics = [
 ];
 
 const features = [
-  { title: "Upload Any CAD PDF", desc: "Digital CAD floor plans up to 25MB. Drop it in and the AI gets to work â€” no manual setup." },
-  { title: "Room Detection", desc: "AI reads room labels from the plan and maps every space automatically. Primary Bedroom, Kitchen, Bath â€” all detected." },
-  { title: "Fixture Extraction", desc: "Toilets, faucets, lights, doors, hardware, appliances â€” counted per room from the plan itself." },
+  { title: "Upload Any CAD PDF", desc: "Digital CAD floor plans up to 25MB. Drop it in and the AI gets to work Ã¢â‚¬â€ no manual setup." },
+  { title: "Room Detection", desc: "AI reads room labels from the plan and maps every space automatically. Primary Bedroom, Kitchen, Bath Ã¢â‚¬â€ all detected." },
+  { title: "Fixture Extraction", desc: "Toilets, faucets, lights, doors, hardware, appliances Ã¢â‚¬â€ counted per room from the plan itself." },
   { title: "Flooring Quantities", desc: "Tile and LVP for all rooms, carpet for dry rooms only. Square footage calculated from dimension lines." },
   { title: "Baseboard & Trim", desc: "Linear feet of baseboard, crown molding, and countertops extracted per room." },
   { title: "Whole-House Scopes", desc: "Drywall, painting, insulation, cleaning, gutters, siding, and roofing quantities in a single analysis." },
   { title: "Edit Before Import", desc: "Review and adjust any quantity the AI extracted. Change units, assign option classes, correct anything before it hits your budget." },
   { title: "Direct Budget Integration", desc: "One click imports rooms and material scopes directly into your floorplan budgets, selections, and design center." },
   { title: "Option Class Assignment", desc: "Assign option classes to scopes during review so selections feed straight into the design center." },
-  { title: "Plan at a Glance", desc: "Key metrics panel: living sqft, footprint, perimeter, garage, porch, slab concrete, roofing, drywall â€” all on one screen." },
+  { title: "Plan at a Glance", desc: "Key metrics panel: living sqft, footprint, perimeter, garage, porch, slab concrete, roofing, drywall Ã¢â‚¬â€ all on one screen." },
   { title: "Under 60 Seconds", desc: "What used to take hours of manual counting is done before your coffee gets cold." },
-  { title: "Powered by Anthropic AI Vision", desc: "Built on Claude's vision model â€” the same AI that reads and understands complex technical drawings." },
+  { title: "Powered by Anthropic AI Vision", desc: "Built on Claude's vision model Ã¢â‚¬â€ the same AI that reads and understands complex technical drawings." },
 ];
 
 export default function AiTakeoffPage() {
@@ -67,7 +67,7 @@ export default function AiTakeoffPage() {
         <div className="relative max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-violet-500/10 border border-violet-500/30 text-violet-400 text-sm font-semibold uppercase tracking-widest mb-6">
             <Zap className="w-4 h-4" />
-            AI-Powered Â· Full Bundle Feature
+            AI-Powered Ã‚Â· Full Bundle Feature
           </div>
           <h1 className="text-5xl sm:text-7xl font-black tracking-tight mb-6 leading-tight">
             Material takeoff.<br />
@@ -76,15 +76,12 @@ export default function AiTakeoffPage() {
           <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-6">
             Upload a floor plan PDF. AI extracts every room, fixture, flooring scope, and whole-house quantity automatically. What used to take hours now takes less than a minute.
           </p>
-          <p className="text-slate-500 text-sm mb-10">
-            ~$0.50â€“$2.00 per analysis Â· Digital CAD PDFs only Â· Powered by Anthropic AI Vision
-          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/beta"
               className="px-8 py-4 rounded-full bg-violet-500 text-white font-bold text-lg hover:bg-violet-400 transition-all duration-200 shadow-lg shadow-violet-500/30 hover:-translate-y-0.5"
             >
-              Request Early Access â†’
+              Request Early Access Ã¢â€ â€™
             </Link>
             <Link
               href="/features"
@@ -134,7 +131,7 @@ export default function AiTakeoffPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
             {[
               { num: "Tab 1", title: "Rooms", desc: "17 rooms detected with square footage and auto-detected names from your plan labels.", img: "/mockups/ai-takeoff-2.png" },
-              { num: "Tab 2", title: "Room Scopes", desc: "116 per-room scopes â€” fixtures, flooring, baseboard, countertops, cabinets, crown molding.", img: "/mockups/ai-takeoff-3.png" },
+              { num: "Tab 2", title: "Room Scopes", desc: "116 per-room scopes Ã¢â‚¬â€ fixtures, flooring, baseboard, countertops, cabinets, crown molding.", img: "/mockups/ai-takeoff-3.png" },
               { num: "Tab 3", title: "Whole House", desc: "17 whole-house quantities: drywall, painting, roofing, insulation, gutters, siding, concrete.", img: "/mockups/ai-takeoff-4.png" },
             ].map((tab) => (
               <div key={tab.title} className="rounded-2xl bg-slate-900/60 border border-violet-500/20 hover:border-violet-500/40 transition-all duration-300 overflow-hidden">
@@ -199,12 +196,12 @@ export default function AiTakeoffPage() {
               </div>
             </div>
             <div className="border-t border-slate-800 pt-6 space-y-3 text-sm text-slate-400">
-              <div className="flex justify-between"><span>Traditional takeoff software</span><span className="line-through text-slate-600">$200â€“500/mo</span></div>
-              <div className="flex justify-between"><span>Manual takeoff (labor)</span><span className="line-through text-slate-600">4â€“8 hrs/plan</span></div>
+              <div className="flex justify-between"><span>Traditional takeoff software</span><span className="line-through text-slate-600">$200Ã¢â‚¬â€œ500/mo</span></div>
+              <div className="flex justify-between"><span>Manual takeoff (labor)</span><span className="line-through text-slate-600">4Ã¢â‚¬â€œ8 hrs/plan</span></div>
               <div className="flex justify-between"><span>Cornerstone AI Takeoff</span><span className="text-violet-400 font-bold">Included in Full Bundle</span></div>
             </div>
-            <Link href="/beta" className="block w-full text-center px-6 py-3.5 rounded-xl bg-violet-500 text-white font-bold hover:bg-violet-400 transition-all duration-200">Get Early Access â†’</Link>
-            <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders Â· No credit card required</p>
+            <Link href="/beta" className="block w-full text-center px-6 py-3.5 rounded-xl bg-violet-500 text-white font-bold hover:bg-violet-400 transition-all duration-200">Get Early Access Ã¢â€ â€™</Link>
+            <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders Ã‚Â· No credit card required</p>
           </div>
 
           <div className="space-y-6">
@@ -218,16 +215,12 @@ export default function AiTakeoffPage() {
                 { ok: false, text: "Low-resolution scans won't work well" },
               ].map((r) => (
                 <div key={r.text} className="flex items-start gap-3 text-sm">
-                  <span className={`text-lg leading-none mt-0.5 ${r.ok ? "text-violet-400" : "text-slate-600"}`}>{r.ok ? "âœ…" : "âŒ"}</span>
+                  <span className={`text-lg leading-none mt-0.5 ${r.ok ? "text-violet-400" : "text-slate-600"}`}>{r.ok ? "Ã¢Å“â€¦" : "Ã¢ÂÅ’"}</span>
                   <span className={r.ok ? "text-slate-300" : "text-slate-500"}>{r.text}</span>
                 </div>
               ))}
             </div>
-            <div className="p-4 rounded-xl bg-violet-500/5 border border-violet-500/20">
-              <p className="text-sm text-slate-400">
-                <span className="text-violet-400 font-semibold">Powered by:</span> Anthropic AI Vision (Claude) — the same AI that reads and understands complex technical drawings.
-              </p>
-            </div>
+
           </div>
         </div>
       </section>
@@ -242,7 +235,7 @@ export default function AiTakeoffPage() {
           href="/beta"
           className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-violet-500 text-white font-bold text-lg hover:bg-violet-400 transition-all duration-200 shadow-lg shadow-violet-500/30"
         >
-          Request Early Access â†’
+          Request Early Access Ã¢â€ â€™
         </Link>
       </section>
     </div>
