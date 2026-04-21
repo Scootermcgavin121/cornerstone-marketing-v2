@@ -11,7 +11,7 @@ const screens = [
     tagColor: "text-cyan-400 border-cyan-500/30 bg-cyan-500/10",
     headline: "Your pipeline. Your pace.",
     description:
-      "Every home. Every stage. Kanban board meets mobile dashboard — real-time visibility for your whole team, from the office or the job site.",
+      "Every home. Every stage. Kanban board meets mobile dashboard - real-time visibility for your whole team, from the office or the job site.",
     screenshot: "/mockups/hero-mockup.jpg",
     accent: "from-cyan-500/20 to-slate-900/5",
     glow: "rgba(6,182,212,0.12)",
@@ -25,7 +25,7 @@ const screens = [
     tagColor: "text-violet-400 border-violet-500/30 bg-violet-500/10",
     headline: "Track every deal from first contact to closed sale.",
     description:
-      "Kanban-style pipeline with color-coded stages. See your full book of business at a glance — Sales, Permitting, Design, and Construction columns show exactly where every home stands.",
+      "Kanban-style pipeline with color-coded stages. See your full book of business at a glance - Sales, Permitting, Design, and Construction columns show exactly where every home stands.",
     screenshot: "/mockups/ss-sales-dashboard.png",
     aspect: "16/10",
     accent: "from-violet-500/20 to-purple-600/5",
@@ -56,7 +56,7 @@ const screens = [
     tagColor: "text-cyan-400 border-cyan-500/30 bg-cyan-500/10",
     headline: "Task-level scheduling with auto-cascade.",
     description:
-      "3-tier dependency system — move one task and everything downstream adjusts. 17 pre-built templates, phase tracking, assigned vendors, and cascade email notifications to subs.",
+      "3-tier dependency system - move one task and everything downstream adjusts. 17 pre-built templates, phase tracking, assigned vendors, and cascade email notifications to subs.",
     screenshot: "/mockups/ss-construction.png",
     aspect: "16/10",
     accent: "from-cyan-500/20 to-teal-600/5",
@@ -71,7 +71,7 @@ const screens = [
     tagColor: "text-pink-400 border-pink-500/30 bg-pink-500/10",
     headline: "Room-by-room selections with real-time upgrade pricing.",
     description:
-      "Buyers pick flooring, cabinets, countertops, and fixtures. Unlimited spec levels — Standard, Upgrade, Premium. Driven by takeoff quantities so pricing is always accurate.",
+      "Buyers pick flooring, cabinets, countertops, and fixtures. Unlimited spec levels - Standard, Upgrade, Premium. Driven by takeoff quantities so pricing is always accurate.",
     screenshot: "/mockups/ss-design-center.png",
     aspect: "16/10",
     accent: "from-pink-500/20 to-rose-600/5",
@@ -84,7 +84,7 @@ const screens = [
     label: "Homeowner Portal",
     tag: "PORTAL",
     tagColor: "text-teal-400 border-teal-500/30 bg-teal-500/10",
-    headline: "Magic link access — no passwords needed.",
+    headline: "Magic link access - no passwords needed.",
     description:
       "20-phase construction milestone carousel with real job site photos. Schedule visibility, document access, selection review, and direct messaging with PMs. Buyers stay informed without calling the office.",
     screenshot: "/mockups/ss-buyer-portal.png",
@@ -122,7 +122,7 @@ export function ScreenshotsSection() {
             <span className="text-cyan-400">actually work.</span>
           </h2>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-            Real screens from a real product. No mockup smoke and mirrors — this is exactly what you get on day one.
+            Real screens from a real product. No mockup smoke and mirrors — this is exactly what you get on day one. Dark mode included. (You&apos;re welcome, night owl builders.)
           </p>
         </div>
 
@@ -153,7 +153,7 @@ export function ScreenshotsSection() {
             transition={{ duration: 0.25 }}
           >
             {current.isHero ? (
-              /* Hero slide — full-width marketing image, no browser chrome */
+              /* Hero slide - full-width marketing image, no browser chrome */
               <div className="space-y-6">
                 <div className={`rounded-2xl overflow-hidden border ${current.border} shadow-2xl`}>
                   <div className="relative w-full" style={{ aspectRatio: "3/2" }}>
@@ -181,7 +181,7 @@ export function ScreenshotsSection() {
                 </div>
               </div>
             ) : (
-              /* Standard slide — two-col with browser chrome */
+              /* Standard slide - two-col with browser chrome */
               <div className="grid lg:grid-cols-5 gap-8 items-center">
                 {/* Left: description */}
                 <div className="lg:col-span-2 space-y-5 order-2 lg:order-1">
@@ -211,7 +211,7 @@ export function ScreenshotsSection() {
                 {/* Right: screenshot */}
                 <div className="lg:col-span-3 order-1 lg:order-2">
                   <div className={`rounded-xl overflow-hidden border ${current.border} shadow-2xl bg-gradient-to-b ${current.accent}`}>
-                    {/* Browser chrome bar — hidden when noChrome */}
+                    {/* Browser chrome bar - hidden when noChrome */}
                     {!(current as {noChrome?: boolean}).noChrome && (
                       <div className="flex items-center gap-1.5 px-4 py-3 bg-slate-800/80 border-b border-slate-700/50">
                         <div className="w-3 h-3 rounded-full bg-red-500/70" />
