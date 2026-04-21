@@ -16,14 +16,14 @@ export function AiTakeoffSection() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-violet-500/10 border border-violet-500/30 text-violet-400 text-sm font-semibold uppercase tracking-widest mb-6">
             <Zap className="w-4 h-4" />
-            AI-Powered · Full Bundle
+            AI-Powered Â· Full Bundle
           </div>
           <h2 className="text-4xl sm:text-6xl font-black mb-4">
             Material takeoff.{" "}
             <span className="text-violet-400">Under 60 seconds.</span>
           </h2>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto">
-            Upload a floor plan PDF. AI extracts every room, fixture, and material scope automatically — replacing hours of manual counting.
+            Upload a floor plan PDF. AI extracts every room, fixture, and material scope automatically â€” replacing hours of manual counting.
           </p>
         </div>
 
@@ -39,7 +39,7 @@ export function AiTakeoffSection() {
 
             {/* Floating badge */}
             <div className="absolute -top-4 -right-4 px-4 py-2 rounded-full bg-violet-500 text-white text-sm font-bold shadow-lg shadow-violet-500/40">
-              ⚡ 47 seconds
+              âš¡ 47 seconds
             </div>
           </div>
 
@@ -54,7 +54,7 @@ export function AiTakeoffSection() {
               {
                 icon: Zap,
                 title: "AI reads the plan",
-                desc: "Claude AI Vision extracts rooms, fixtures, flooring, baseboard, drywall, roofing, and more — across 3 result tabs.",
+                desc: "Claude AI Vision extracts rooms, fixtures, flooring, baseboard, drywall, roofing, and more â€” across 3 result tabs.",
               },
               {
                 icon: FileText,
@@ -81,7 +81,7 @@ export function AiTakeoffSection() {
               className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-violet-500 text-white font-bold text-lg hover:bg-violet-400 transition-all duration-200 shadow-lg shadow-violet-500/30 hover:-translate-y-0.5"
             >
               <Zap className="w-5 h-5" />
-              See AI Takeoff in Action →
+              See AI Takeoff in Action â†’
             </Link>
           </div>
         </div>
@@ -92,7 +92,7 @@ export function AiTakeoffSection() {
             { num: "< 60s", label: "Per takeoff" },
             { num: "~$1", label: "Per analysis" },
             { num: "3 tabs", label: "Of results" },
-            { num: "∞", label: "Plans analyzed" },
+            { num: "âˆž", label: "Plans analyzed" },
           ].map((s) => (
             <div key={s.label} className="text-center">
               <div className="text-3xl font-black text-violet-400 mb-1">{s.num}</div>
