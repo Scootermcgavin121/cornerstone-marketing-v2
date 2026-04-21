@@ -128,8 +128,8 @@ export default function SalesPage() {
           <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-8 space-y-6">
             <div>
               <div className="text-slate-400 text-sm font-semibold uppercase tracking-widest mb-1">Included in</div>
-              <div className="text-2xl font-black text-white">Starter Plan</div>
-              <div className="text-4xl font-black text-cyan-400 mt-1">$149<span className="text-lg text-slate-400 font-normal">/mo</span></div>
+              <div className="text-2xl font-black text-white">Builder Plan</div>
+              <div className="text-4xl font-black text-cyan-400 mt-1">$299<span className="text-lg text-slate-400 font-normal">/mo</span></div>
             </div>
             <div className="border-t border-slate-800 pt-6 space-y-3 text-sm text-slate-400">
               <div className="flex justify-between">
