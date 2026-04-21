@@ -1,6 +1,8 @@
 import { Check, Zap, Upload, FileText, LayoutGrid } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
+import { VideoPlayer } from "@/components/VideoPlayer";
 
 export const metadata = {
   title: "AI Blueprint Takeoff — Cornerstone PM",
@@ -94,6 +96,13 @@ export default function AiTakeoffPage() {
         </div>
       </section>
 
+      {/* Video */}
+      <section className="py-8 px-4">
+        <div className="max-w-5xl mx-auto">
+          <VideoPlayer src="/video/ai-takeoff.mp4" label="AI Blueprint Takeoff Demo" />
+        </div>
+      </section>
+
       {/* How it works */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
@@ -120,19 +129,25 @@ export default function AiTakeoffPage() {
             })}
           </div>
 
-          {/* 3 tabs */}
+          {/* 3 tabs with real screenshots */}
           <h2 className="text-2xl font-black text-center mb-8">Results across 3 tabs</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
-            {tabs.map((tab, i) => {
-              const Icon = tab.icon;
-              return (
-                <div key={tab.title} className="p-6 rounded-2xl bg-slate-900/60 border border-violet-500/20 hover:border-violet-500/40 transition-all duration-300">
-                  <div className="text-violet-400 font-black text-lg mb-1">Tab {i + 1}</div>
-                  <h3 className="text-white font-bold text-xl mb-3">{tab.title}</h3>
+            {[
+              { num: "Tab 1", title: "Rooms", desc: "17 rooms detected with square footage and auto-detected names from your plan labels.", img: "/mockups/ai-takeoff-2.png" },
+              { num: "Tab 2", title: "Room Scopes", desc: "116 per-room scopes — fixtures, flooring, baseboard, countertops, cabinets, crown molding.", img: "/mockups/ai-takeoff-3.png" },
+              { num: "Tab 3", title: "Whole House", desc: "17 whole-house quantities: drywall, painting, roofing, insulation, gutters, siding, concrete.", img: "/mockups/ai-takeoff-4.png" },
+            ].map((tab) => (
+              <div key={tab.title} className="rounded-2xl bg-slate-900/60 border border-violet-500/20 hover:border-violet-500/40 transition-all duration-300 overflow-hidden">
+                <div className="relative w-full h-48 bg-white">
+                  <Image src={tab.img} alt={tab.title} fill className="object-contain object-top" />
+                </div>
+                <div className="p-5">
+                  <div className="text-violet-400 font-black text-sm mb-1">{tab.num}</div>
+                  <h3 className="text-white font-bold text-lg mb-2">{tab.title}</h3>
                   <p className="text-slate-400 text-sm leading-relaxed">{tab.desc}</p>
                 </div>
-              );
-            })}
+              </div>
+            ))}
           </div>
 
           {/* Plan at a glance */}
