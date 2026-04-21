@@ -4,9 +4,9 @@ import { Navbar } from "@/components/Navbar";
 import { VideoPlayer } from "@/components/VideoPlayer";
 
 export const metadata = {
-  title: "Sales Pipeline — Cornerstone PM",
+  title: "Sales Pipeline â€” Cornerstone PM",
   description:
-    "Create a new home sale in under 60 seconds. Floorplan selection, structural options, incentives, and buyer tracking — all in one streamlined workflow.",
+    "Create a new home sale in under 60 seconds. Floorplan selection, structural options, incentives, and buyer tracking â€” all in one streamlined workflow.",
 };
 
 const bullets = [
@@ -14,7 +14,7 @@ const bullets = [
   "9-step auto-generated sales checklist",
   "Auto-budget generation when structural options are locked",
   "12+ structural options per floorplan with real-time pricing",
-  "Real-time pricing matrix per floorplan × community",
+  "Real-time pricing matrix per floorplan Ã— community",
   "Active promotions & incentives with expiration countdowns",
   "Branded PDF price sheets (per community or all)",
   "Net price calculator with stacked promotions",
@@ -41,7 +41,7 @@ const steps = [
   {
     num: "04",
     title: "Review & Submit",
-    desc: "Full summary — buyer, lot, floorplan, options, incentive, total contract price. One button to create.",
+    desc: "Full summary â€” buyer, lot, floorplan, options, incentive, total contract price. One button to create.",
   },
 ];
 
@@ -67,10 +67,10 @@ export default function SalesPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/contact"
+              href="/beta"
               className="px-8 py-4 rounded-full bg-cyan-400 text-slate-900 font-bold text-lg hover:bg-cyan-300 transition-all duration-200 shadow-lg shadow-cyan-500/30 hover:-translate-y-0.5"
             >
-              Request Early Access →
+              Request Early Access â†’
             </Link>
             <Link
               href="/features"
@@ -142,13 +142,13 @@ export default function SalesPage() {
               </div>
             </div>
             <Link
-              href="/contact"
+              href="/beta"
               className="block w-full text-center px-6 py-3.5 rounded-xl bg-cyan-400 text-slate-900 font-bold hover:bg-cyan-300 transition-all duration-200"
             >
-              Get Early Access →
+              Get Early Access â†’
             </Link>
             <p className="text-center text-slate-500 text-xs">
-              Beta limited to 100 builders · No credit card required
+              Beta limited to 100 builders Â· No credit card required
             </p>
           </div>
         </div>
@@ -161,10 +161,10 @@ export default function SalesPage() {
           Join the beta and get 2 years free. Limited to 100 builders.
         </p>
         <Link
-          href="/contact"
+          href="/beta"
           className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-cyan-400 text-slate-900 font-bold text-lg hover:bg-cyan-300 transition-all duration-200 shadow-lg shadow-cyan-500/30"
         >
-          Request Early Access →
+          Request Early Access â†’
         </Link>
       </section>
     </div>

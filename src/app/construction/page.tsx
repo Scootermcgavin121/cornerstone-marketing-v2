@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 
 export const metadata = {
-  title: "Construction Scheduling — Cornerstone PM",
+  title: "Construction Scheduling â€” Cornerstone PM",
   description: "Auto-cascading dependencies, vendor notifications, and Gantt charts built for production home builders.",
 };
 
@@ -11,20 +11,20 @@ const features = [
   { title: "Smart Scheduling", desc: "Interactive Gantt charts, drag-and-drop task management, 3-tier dependency system, auto-cascade on completion." },
   { title: "Task Dependencies with Auto-Cascade", desc: "Move one task and everything downstream adjusts automatically. No manual re-dating, no broken timelines." },
   { title: "Gantt Charts with Critical Path", desc: "Visual timeline with critical path highlighting. Drag-and-drop rescheduling with instant dependency recalculation." },
-  { title: "Milestone Tracking", desc: "Define key milestones — permit approved, dry-in complete, final inspection — and track progress across all homes." },
+  { title: "Milestone Tracking", desc: "Define key milestones â€” permit approved, dry-in complete, final inspection â€” and track progress across all homes." },
   { title: "Calendar & List Views", desc: "Switch between calendar view for the big picture and list view for detail. Filter by vendor, phase, community, or status." },
   { title: "17 Pre-Built Templates", desc: "Reusable schedule templates for every home type. 270+ build combinations out of the box." },
-  { title: "7 Foundation Templates", desc: "Slab, Monolithic, Stem Wall, Crawl Space, Full Basement, Pier & Beam, and Helical Pile — each pre-sequenced." },
+  { title: "7 Foundation Templates", desc: "Slab, Monolithic, Stem Wall, Crawl Space, Full Basement, Pier & Beam, and Helical Pile â€” each pre-sequenced." },
   { title: "Smart Foundation Logic", desc: "Select a home type and the correct foundation template auto-attaches. No manual matching." },
-  { title: "4 Modular Template Types", desc: "Construction, Foundation, Permitting, and Inspection — four template categories that snap together." },
+  { title: "4 Modular Template Types", desc: "Construction, Foundation, Permitting, and Inspection â€” four template categories that snap together." },
   { title: "Template Copy & Clone", desc: "Clone any template and customize per community. Changes never affect the original." },
   { title: "Vendor Management", desc: "Full vendor directory with trade categories, contacts, insurance tracking, and expiry alerts." },
-  { title: "Smart Cascade Notifications", desc: "Automated scheduling emails when tasks are ready. Vendors confirm or decline in one click — no login needed." },
+  { title: "Smart Cascade Notifications", desc: "Automated scheduling emails when tasks are ready. Vendors confirm or decline in one click â€” no login needed." },
   { title: "Daily & Weekly Digests", desc: "Automated summary emails for builders and vendors. Stay informed without checking the app." },
   { title: "In-App Messaging", desc: "Per-task messaging thread visible to all stakeholders. No more scattered texts." },
   { title: "Jobsite Notes & Photos", desc: "Photo and note uploads per task, timestamped. PMs upload, buyers see in real time." },
   { title: "Permit Gate System", desc: "Tasks auto-blocked until permit is approved. No framing before permits clear." },
-  { title: "Phase-Based Scheduling", desc: "Organize tasks by construction phase — foundation, framing, MEP, finishes." },
+  { title: "Phase-Based Scheduling", desc: "Organize tasks by construction phase â€” foundation, framing, MEP, finishes." },
   { title: "Weekday-Only Scheduling", desc: "Auto-skip weekends and holidays. Dates stay realistic." },
   { title: "Multi-Role Access", desc: "Builder, PM, vendor, and homeowner roles with scoped permissions." },
   { title: "Mobile Responsive", desc: "Full functionality on any device. Your PMs can update from the jobsite." },
@@ -50,10 +50,10 @@ export default function ConstructionPage() {
             Schedule subs.<br /><span className="text-amber-400">Hit every deadline.</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10">
-            Auto-cascading dependencies, vendor notifications, and Gantt charts — built for production home builders who run multiple communities.
+            Auto-cascading dependencies, vendor notifications, and Gantt charts â€” built for production home builders who run multiple communities.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="px-8 py-4 rounded-full bg-amber-400 text-slate-900 font-bold text-lg hover:bg-amber-300 transition-all duration-200 shadow-lg shadow-amber-500/30 hover:-translate-y-0.5">Request Early Access →</Link>
+            <Link href="/beta" className="px-8 py-4 rounded-full bg-amber-400 text-slate-900 font-bold text-lg hover:bg-amber-300 transition-all duration-200 shadow-lg shadow-amber-500/30 hover:-translate-y-0.5">Request Early Access â†’</Link>
             <Link href="/features" className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200">See All Features</Link>
           </div>
         </div>
@@ -90,13 +90,13 @@ export default function ConstructionPage() {
               <div className="flex justify-between"><span>Buildertrend</span><span className="line-through text-slate-600">$499+/mo</span></div>
               <div className="flex justify-between"><span>Cornerstone PM</span><span className="text-amber-400 font-bold">Free during beta</span></div>
             </div>
-            <Link href="/contact" className="block w-full text-center px-6 py-3.5 rounded-xl bg-amber-400 text-slate-900 font-bold hover:bg-amber-300 transition-all duration-200">Get Early Access →</Link>
-            <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders · No credit card required</p>
+            <Link href="/beta" className="block w-full text-center px-6 py-3.5 rounded-xl bg-amber-400 text-slate-900 font-bold hover:bg-amber-300 transition-all duration-200">Get Early Access â†’</Link>
+            <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders Â· No credit card required</p>
           </div>
           <div className="space-y-4">
             <h2 className="text-3xl font-black">Why builders choose Cornerstone for scheduling</h2>
-            <p className="text-slate-400 leading-relaxed">Most scheduling tools were built for general contractors. Cornerstone was built specifically for production home builders running 10–200+ homes a year across multiple communities.</p>
-            <p className="text-slate-400 leading-relaxed">The 3-tier dependency system, foundation-aware templates, and vendor email confirmation flow were designed around how home builders actually work — not adapted from commercial construction software.</p>
+            <p className="text-slate-400 leading-relaxed">Most scheduling tools were built for general contractors. Cornerstone was built specifically for production home builders running 10â€“200+ homes a year across multiple communities.</p>
+            <p className="text-slate-400 leading-relaxed">The 3-tier dependency system, foundation-aware templates, and vendor email confirmation flow were designed around how home builders actually work â€” not adapted from commercial construction software.</p>
           </div>
         </div>
       </section>
@@ -104,7 +104,7 @@ export default function ConstructionPage() {
       <section className="py-20 px-4 text-center border-t border-slate-800/60">
         <h2 className="text-4xl font-black mb-4">Ready to stop chasing subs?</h2>
         <p className="text-slate-400 text-lg mb-8 max-w-xl mx-auto">Join the beta and get 2 years free. Limited to 100 builders.</p>
-        <Link href="/contact" className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-amber-400 text-slate-900 font-bold text-lg hover:bg-amber-300 transition-all duration-200 shadow-lg shadow-amber-500/30">Request Early Access →</Link>
+        <Link href="/beta" className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-amber-400 text-slate-900 font-bold text-lg hover:bg-amber-300 transition-all duration-200 shadow-lg shadow-amber-500/30">Request Early Access â†’</Link>
       </section>
     </div>
   );

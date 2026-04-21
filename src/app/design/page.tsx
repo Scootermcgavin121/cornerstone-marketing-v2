@@ -3,27 +3,27 @@ import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 
 export const metadata = {
-  title: "Design Center — Cornerstone PM",
+  title: "Design Center â€” Cornerstone PM",
   description: "Structured options let buyers personalize their home while you lock in profit. Every selection tracked, priced, and approved.",
 };
 
 const features = [
-  { title: "Room-by-Room Selections", desc: "Organize all buyer selections by room — kitchen, baths, flooring, fixtures, paint." },
-  { title: "Spec Level Management", desc: "Community Standard, Premium, Luxury — unlimited levels with included/upgrade pricing." },
+  { title: "Room-by-Room Selections", desc: "Organize all buyer selections by room â€” kitchen, baths, flooring, fixtures, paint." },
+  { title: "Spec Level Management", desc: "Community Standard, Premium, Luxury â€” unlimited levels with included/upgrade pricing." },
   { title: "Designer Collections", desc: "Curated collections that buyers can browse and select from." },
   { title: "Options Engine", desc: "Structural and design options with real-time pricing, tied to budget automatically." },
-  { title: "Buyer Selection Portal", desc: "Buyers make selections online, builder approves — no email chains." },
+  { title: "Buyer Selection Portal", desc: "Buyers make selections online, builder approves â€” no email chains." },
   { title: "Selections PDF Export", desc: "Generate a clean, branded selections PDF for every home." },
   { title: "Upgrade Tracking", desc: "Track every upgrade from selection to install with status updates." },
   { title: "Change Order Integration", desc: "Design changes flow directly into purchasing and budget." },
   { title: "Community-Level Pricing", desc: "Set base included items per community, overrides per floorplan." },
   { title: "Approval Workflow", desc: "Builder approves all selections before they're locked." },
   { title: "Revision History", desc: "Full audit trail of every selection change with timestamps." },
-  { title: "Integration with Purchasing", desc: "Every selection ties to a line item — no manual entry." },
+  { title: "Integration with Purchasing", desc: "Every selection ties to a line item â€” no manual entry." },
   { title: "Mobile-Friendly", desc: "Buyers can make selections from any device." },
   { title: "Branded Experience", desc: "Your logo, your colors on every buyer-facing page." },
   { title: "Unlimited Options per Room", desc: "No limits on how many options you configure per category." },
-  { title: "Margin Lock-In", desc: "Lock options pricing before presenting to buyer — protect your margin." },
+  { title: "Margin Lock-In", desc: "Lock options pricing before presenting to buyer â€” protect your margin." },
 ];
 
 export default function DesignPage() {
@@ -43,7 +43,7 @@ export default function DesignPage() {
             Structured options let buyers personalize their home while you lock in profit. Every selection tracked, priced, and approved.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="px-8 py-4 rounded-full bg-violet-400 text-slate-900 font-bold text-lg hover:bg-violet-300 transition-all duration-200 shadow-lg shadow-violet-500/30 hover:-translate-y-0.5">Request Early Access →</Link>
+            <Link href="/beta" className="px-8 py-4 rounded-full bg-violet-400 text-slate-900 font-bold text-lg hover:bg-violet-300 transition-all duration-200 shadow-lg shadow-violet-500/30 hover:-translate-y-0.5">Request Early Access â†’</Link>
             <Link href="/features" className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200">See All Features</Link>
           </div>
         </div>
@@ -80,12 +80,12 @@ export default function DesignPage() {
               <div className="flex justify-between"><span>Buildertrend Design</span><span className="line-through text-slate-600">$499+/mo</span></div>
               <div className="flex justify-between"><span>Cornerstone PM</span><span className="text-violet-400 font-bold">Free during beta</span></div>
             </div>
-            <Link href="/contact" className="block w-full text-center px-6 py-3.5 rounded-xl bg-violet-400 text-slate-900 font-bold hover:bg-violet-300 transition-all duration-200">Get Early Access →</Link>
-            <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders · No credit card required</p>
+            <Link href="/beta" className="block w-full text-center px-6 py-3.5 rounded-xl bg-violet-400 text-slate-900 font-bold hover:bg-violet-300 transition-all duration-200">Get Early Access â†’</Link>
+            <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders Â· No credit card required</p>
           </div>
           <div className="space-y-4">
             <h2 className="text-3xl font-black">Why builders choose Cornerstone for design</h2>
-            <p className="text-slate-400 leading-relaxed">Most design center tools are bolt-ons that don't talk to your budget or purchasing system. Cornerstone's Design Center was built as a first-class module — every selection automatically updates the budget and purchasing line items.</p>
+            <p className="text-slate-400 leading-relaxed">Most design center tools are bolt-ons that don't talk to your budget or purchasing system. Cornerstone's Design Center was built as a first-class module â€” every selection automatically updates the budget and purchasing line items.</p>
             <p className="text-slate-400 leading-relaxed">Lock your options pricing before the buyer presentation and protect your margin every single time. No spreadsheets, no manual reconciliation, no surprises at closing.</p>
           </div>
         </div>
@@ -94,7 +94,7 @@ export default function DesignPage() {
       <section className="py-20 px-4 text-center border-t border-slate-800/60">
         <h2 className="text-4xl font-black mb-4">Ready to protect your margin?</h2>
         <p className="text-slate-400 text-lg mb-8 max-w-xl mx-auto">Join the beta and get 2 years free. Limited to 100 builders.</p>
-        <Link href="/contact" className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-violet-400 text-slate-900 font-bold text-lg hover:bg-violet-300 transition-all duration-200 shadow-lg shadow-violet-500/30">Request Early Access →</Link>
+        <Link href="/beta" className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-violet-400 text-slate-900 font-bold text-lg hover:bg-violet-300 transition-all duration-200 shadow-lg shadow-violet-500/30">Request Early Access â†’</Link>
       </section>
     </div>
   );
