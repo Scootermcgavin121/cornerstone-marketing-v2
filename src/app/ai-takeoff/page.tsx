@@ -225,7 +225,7 @@ export default function AiTakeoffPage() {
             </div>
             <div className="p-4 rounded-xl bg-violet-500/5 border border-violet-500/20">
               <p className="text-sm text-slate-400">
-                <span className="text-violet-400 font-semibold">Powered by Anthropic AI Vision (Claude) — the same AI that reads and understands complex technical drawings.
+                <span className="text-violet-400 font-semibold">Powered by:</span> Anthropic AI Vision (Claude) — the same AI that reads and understands complex technical drawings.
               </p>
             </div>
           </div>

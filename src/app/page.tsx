@@ -1,9 +1,9 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
-import { FeaturesSection } from "@/components/FeaturesSection";
 import { ScreenshotsSection } from "@/components/ScreenshotsSection";
 import { VideoSection } from "@/components/VideoSection";
 import { AiTakeoffSection } from "@/components/AiTakeoffSection";
+import { ModulesGrid } from "@/components/ModulesGrid";
 import { PricingSection } from "@/components/PricingSection";
 import { CTASection } from "@/components/CTASection";
 import { Footer } from "@/components/Footer";
@@ -16,7 +16,7 @@ export default function Home() {
       <VideoSection />
       <ScreenshotsSection />
       <AiTakeoffSection />
-      <FeaturesSection />
+      <ModulesGrid />
       <PricingSection />
       <CTASection />
       <Footer />
