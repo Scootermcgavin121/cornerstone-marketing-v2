@@ -22,6 +22,7 @@ const featureLinks = [
   { label: "Design Center", href: "/design", desc: "Room-by-room selections, spec levels" },
   { label: "Permitting", href: "/features#permitting", desc: "Permit sequences, PA workflow" },
   { label: "Buyer Portal", href: "/features#portal", desc: "Milestone journey, photo gallery" },
+  { label: "⚡ AI Blueprint Takeoff", href: "/ai-takeoff", desc: "Upload PDF → instant material takeoff", highlight: true },
 ];
 
 export function Navbar() {
@@ -70,8 +71,8 @@ export function Navbar() {
                 {link.hasDropdown && (
                   <div className="absolute top-full left-0 mt-1 w-72 bg-slate-900/95 backdrop-blur-xl border border-slate-800 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2">
                     {featureLinks.map((fl) => (
-                      <Link key={fl.href} href={fl.href} className="block px-4 py-2.5 hover:bg-white/5 transition-colors">
-                        <div className="text-sm text-white font-medium">{fl.label}</div>
+                      <Link key={fl.href} href={fl.href} className={`block px-4 py-2.5 hover:bg-white/5 transition-colors ${'highlight' in fl && fl.highlight ? 'border-t border-slate-800 mt-1 pt-3' : ''}`}>
+                        <div className={`text-sm font-medium ${'highlight' in fl && fl.highlight ? 'text-violet-400' : 'text-white'}`}>{fl.label}</div>
                         <div className="text-xs text-slate-500">{fl.desc}</div>
                       </Link>
                     ))}
