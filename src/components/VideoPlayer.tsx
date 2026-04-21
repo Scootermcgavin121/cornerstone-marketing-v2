@@ -3,6 +3,7 @@ import React, { useRef, useState, useEffect } from "react";
 
 export function VideoPlayer({ src, label }: { src: string; label?: string }) {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const [muted, setMuted] = useState(true);
   const [playing, setPlaying] = useState(true);
   const [progress, setProgress] = useState(0);
@@ -50,8 +51,19 @@ export function VideoPlayer({ src, label }: { src: string; label?: string }) {
     return `${m}:${sec}`;
   };
 
+  const toggleFullscreen = () => {
+    const el = containerRef.current;
+    if (!el) return;
+    if (!document.fullscreenElement) {
+      el.requestFullscreen();
+    } else {
+      document.exitFullscreen();
+    }
+  };
+
   return (
     <div
+      ref={containerRef}
       className="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/60 border border-white/10 group"
       onMouseEnter={() => setShowControls(true)}
       onMouseLeave={() => setShowControls(false)}
@@ -105,6 +117,13 @@ export function VideoPlayer({ src, label }: { src: string; label?: string }) {
           <span className="text-white/60 text-xs font-mono">{fmt(progress)} / {fmt(duration)}</span>
 
           <div className="flex-1" />
+
+          {/* Fullscreen */}
+          <button onClick={toggleFullscreen} className="text-white/80 hover:text-white transition-colors" aria-label="Fullscreen">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+            </svg>
+          </button>
 
           {/* Mute */}
           <button onClick={toggleMute} className="flex items-center gap-1.5 text-white/80 hover:text-white transition-colors text-xs font-semibold">
