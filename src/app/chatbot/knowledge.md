@@ -79,8 +79,21 @@ Cornerstone helps residential builders schedule, track, budget, and manage their
 - **Project Manager (PM)**: Manage assigned projects, schedules, vendors
 - **Vendor**: Limited access - see and respond to their assigned tasks only
 
-## Purchasing & Budget Management (add-on module)
+## AI Blueprint Takeoff (Full Bundle)
+Cornerstone's AI-powered takeoff system eliminates manual material estimation. **Yes, we offer AI-generated takeoffs.**
+
+- **How it works:** Upload a floor plan PDF and Cornerstone's AI automatically extracts rooms, fixtures, flooring, baseboard, cabinets, countertops, and whole-house scopes (drywall, painting, insulation, cleaning, gutters, siding, roofing squares, concrete)
+- **3-Tab Review Editor** — review and refine AI-extracted data across three tabs: Room-by-Room details, Fixture & Finish counts, and Whole-House Scopes
+- **Powered by Anthropic AI Vision** — industry-leading AI analyzes your blueprints with high accuracy
+- **Cost:** ~$0.50–$2.00 per analysis depending on plan complexity
+- **Navigate:** Purchasing → AI Blueprint Takeoff
+- **Included free** with the Full Bundle plan ($399/month) — a $150/month standalone value
+- **Why this matters:** What used to take hours of manual counting and measuring now takes minutes. Upload the PDF, review the AI's work, and move straight to budgeting.
+
+## Purchasing & Budget Management (Builder plan & above)
 - **Parts Catalog** - centralized library of all materials, fixtures, and finishes with part numbers, descriptions, units of measure, and cost/retail pricing
+- **Base Takeoffs** - per-floorplan quantity takeoffs organized by scope with colored headers. Supports BASE (standard for every home) and OPTION (per-option-class) takeoff types. Includes lump sum scope items (HVAC, paint labor, trim, etc.) with rate × quantity pricing. Units: sqft, lf, lnft, each, LUMP, square
+- **Scope Pricing Dashboard** - read-only dashboard showing vendor bid pricing by scope. Vendor pricing matrix lets you compare bids across vendors at a glance — see who's cheapest per scope without digging through individual bid responses
 - **Takeoffs** - per-floorplan quantity takeoffs organized by room/location. Supports BASE (standard for every home) and OPTION (per-option-class) takeoff types. Units: sqft, lf, lnft, each, LUMP, square
 - **Bid Management** - send a floorplan to bid to every vendor with one click. Track vendor responses, compare bids side-by-side, and award - all in one workflow
 - **Budgets** - 3-level budget hierarchy: Scope → Task → Parts. Real-time financial rollups per home showing estimated vs actual costs. Organized by trade (Lumber, Electrical, Plumbing, HVAC, etc.) with collapsible sections. Scopes with takeoff parts show detailed parts lists with quantities.
@@ -90,7 +103,7 @@ Cornerstone helps residential builders schedule, track, budget, and manage their
 - **Purchase Orders** - generate POs from budgets, track vendor deliveries and invoicing
 
 ## Design Center & Selections
-- **Spec Levels** - define finish tiers (e.g., Included, Upgrade I, Upgrade II, Premium) with sort ordering to control upgrade pricing logic
+- **5-Tier Spec Level System** - define up to 5 finish tiers (e.g., Included, Upgrade I, Upgrade II, Premium, Luxury) with sort ordering to control upgrade pricing logic. Buyers pick a material LEVEL per room (not individual products) — they select the tier they want, then choose specific products within that level at their design appointment. This simplifies the selection process and keeps pricing predictable.
 - **Option Classes** - categorize selections by type: Flooring, Cabinets, Countertops, Paint, Hardware, Lighting, Appliances, etc. Each class has a unit of measure that controls pricing math
 - **Room-by-Room Selections** - walkthrough each room of a home and pick finishes for every category. Buyers see options organized by room with clear upgrade pricing
 - **Upgrade Price Tracking** - automatically calculates upgrade costs vs. the community baseline (included) spec level. Only charges the delta - if included flooring is $5/sqft and they pick $12/sqft, the upgrade is $7/sqft x quantity
@@ -109,6 +122,10 @@ Cornerstone helps residential builders schedule, track, budget, and manage their
 - **Expiration Badges** - active promotions show urgency: "Expires Today", "Expires in 3 days", or the end date. Expired promotions are clearly marked
 
 ## Sales Pipeline & New Home Sales
+
+### Sales Task Workflow
+Every new home sale follows a structured task workflow: **Contract Signed → Budget Generated → Purchasing Approval**. Each task is auto-assigned to the right role (Sales, Sales Manager, Purchasing Manager, System). When all sales pipeline tasks are complete, the home automatically hands off to the construction pipeline — no manual transition needed.
+
 - **New Home Sale in Under 60 Seconds** - one-page form to create a complete home sale:
   - Select community, floorplan, elevation
   - Enter buyer info (name, email, phone, contract date) with dual buyer support (primary + secondary)
@@ -149,15 +166,13 @@ Cornerstone helps residential builders schedule, track, budget, and manage their
 - **Construction Kickoff** - once templates are applied, the Gantt chart is generated, vendor notifications go out, and the build begins
 
 ## Pricing
-All plans are monthly subscriptions, no long-term contracts required.
+All plans are monthly subscriptions, no long-term contracts required. Starting at **$149/month**.
 
-| Plan | Price | Best For |
-|------|-------|----------|
-| **Builder** | $60/month | Construction scheduling. Up to 1,000 homes, vendors & users. Self-service - perfect for builders who don't need hand-holding. |
-| **Builder + Purchasing** | $99.98/month | Adds Purchasing, Design Center, and Sales modules to the Builder plan. |
-| **Pro** | $120/month | Construction scheduling + dedicated human support & onboarding assistance. Up to 1,000 homes, vendors & users. |
-| **Pro + Purchasing** | $159.98/month | Adds Purchasing, Design Center, and Sales modules to the Pro plan. |
-| **Enterprise** | $250/month | Everything - all modules + priority human support, custom onboarding, and account management. Up to 1,000 homes, vendors & users. |
+| Plan | Price | What's Included |
+|------|-------|------------------|
+| **Starter** | $149/month | Construction Scheduling + Homeowner Portal. Everything you need to manage builds and keep buyers informed. |
+| **Builder** | $299/month | Everything in Starter + Purchasing, Sales Pipeline, and Design Center modules. Full build lifecycle management. |
+| **Full Bundle** | $399/month | Everything in Builder + AI Blueprint Takeoff (a $150/month value) included free. The complete Cornerstone experience. |
 
 Visit https://cornerstonepm.ai for full pricing details and feature comparison.
 
@@ -184,7 +199,7 @@ Visit https://cornerstonepm.ai for full pricing details and feature comparison.
 ### vs. Buildertrend
 - Buildertrend charges $499+/month and requires a demo/sales presentation before you can even try it
 - Cornerstone has scheduling, purchasing, selections, design center, and sales pricing - the same feature categories Buildertrend offers - at a fraction of the cost
-- Starting at $60/month for scheduling, or $99.98/month for the full platform with purchasing, design center, and sales
+- Starting at $149/month for scheduling, or $299/month for the full platform with purchasing, design center, and sales
 - Simpler to learn and adopt, less training overhead
 - No annual contract required
 - Transparent pricing - no surprises after a sales pitch
@@ -194,13 +209,14 @@ Visit https://cornerstonepm.ai for full pricing details and feature comparison.
 - Requires a demo call before you see pricing - typical setup to justify high monthly fees
 - Cornerstone is simpler, faster to set up, and works for both custom and production builders
 - Better vendor portal experience
-- Transparent pricing - no surprises after a sales pitch
+- Transparent pricing starting at $149/month - no surprises after a sales pitch
 
 ### vs. Spreadsheets / Excel
 - Spreadsheets don't auto-shift when things change
 - No vendor portal - you're still calling and texting
 - No real-time visibility for the team
 - Cornerstone gives you everything a spreadsheet can't: automation, collaboration, and real-time updates
+- Starting at $149/month with no annual contract
 
 ### vs. Generic PM Tools (Monday.com, Asana, etc.)
 - Those tools don't understand construction workflows
@@ -211,7 +227,7 @@ Visit https://cornerstonepm.ai for full pricing details and feature comparison.
 - Built by people who've actually run job sites
 - No corporate buzzwords - we talk like builders because we are builders
 - Full platform that covers the entire build lifecycle - scheduling, purchasing, selections, and sales - without the enterprise price tag
-- Fair pricing - we're not trying to be the most expensive tool in the shed
+- Fair pricing starting at $149/month - we're not trying to be the most expensive tool in the shed
 
 ## Getting Started
 - Sign up at https://cornerstonepm.ai
@@ -410,24 +426,56 @@ When a PM changes a task date, marks a task complete, or adjusts duration, the s
   - Completed and locked tasks are excluded from urgency highlighting
 - **Bulk Mark as Complete:** Checkbox column on task tables allows selecting multiple tasks and marking them all complete at once via a floating action bar. Useful for onboarding homes already under construction.
 
-## Customer Portal - Milestone Carousel & Photo Gallery
+## Buyer Portal (Homeowner Portal)
+The Buyer Portal is the homeowner's window into their build — a cinematic, engaging experience that keeps buyers excited and informed.
 
-### Milestone Carousel (Schell Brothers-style)
+### Cinematic Hero & Dashboard
+- **Cinematic hero section** with daily motivational quote to keep buyers inspired throughout their build journey
+- **Animated stats bar** showing real-time build progress metrics
+- **Completion confetti** celebrates when milestones are reached — turning progress updates into moments of joy
+- **Photo carousel** showcasing the latest job site photos
+
+### Milestone Cards
 - **Horizontal scrollable cards** showing 20 construction milestones from Pre-Construction Meeting through Certificate of Occupancy
 - Each card displays a **real construction photo**, milestone description, and **status badge** (Done / Learn More / Locked)
 - **Phase-colored borders** match the construction phase (e.g., Foundation = amber, Framing = orange, Finishes = emerald)
 - **Scroll arrows** inside the carousel for easy navigation
 - Clicking "Learn More" expands milestone details
 
-### Milestone Photos
+### Selections Page
+- Buyers can view their design selections with **retail pricing** displayed
+- Organized by room — see exactly what finishes were chosen and at what price
+
+### Documents Page
+- Access to all buyer-relevant documents (contracts, specs, selections sheets, etc.)
+- Organized and downloadable
+
+### Milestone Photos Admin
+- **Admin upload/manage** milestone images that display on the Buyer Portal
 - 20 real construction photos mapped to each milestone (site clearing, foundation pour, framing, roofing, mechanicals, drywall, finishes, landscaping, etc.)
 - **PM/PA photo upload** - Project Managers and Permitting Agents can upload up to 5 photos per milestone via a camera button on task rows
-- Photos are stored and displayed in the customer portal
+- Photos are stored and displayed in the Buyer Portal
 
 ### Job Site Photos Gallery
 - **Thumbnail buttons** below the milestone carousel showing uploaded milestone photos
 - Customers can browse actual job site progress photos organized by milestone
 - Gives homeowners a visual timeline of their home being built
+
+## Frame Stage Tour (FST)
+- **Digital FST inspection forms** — replace paper-based frame stage tour checklists with a digital workflow
+- **Signature pads** — buyers and inspectors sign off digitally right on the device
+- **PDF export** — generate a professional PDF of the completed frame stage tour for records, compliance, and buyer files
+- **Why this matters:** Frame stage tours are a critical milestone where buyers walk through their framed home. Digitizing this eliminates lost paperwork and creates a permanent, signed record.
+
+## Community Staff Assignments
+- **Matrix admin page** for assigning staff per community across all key roles:
+  - Project Manager (PM)
+  - Sales
+  - Purchasing
+  - Permitting
+  - Design Center
+- Easily see and update who's responsible for what in each community from a single grid view
+- **Why this matters:** Production builders with multiple communities need clear role assignments. This matrix eliminates confusion about who owns what.
 
 ## Company Documents
 - **Admin-uploaded company documents** visible to all users
