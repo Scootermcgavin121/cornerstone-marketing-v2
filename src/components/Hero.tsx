@@ -5,7 +5,7 @@ import { BackgroundBeams } from "./ui/background-beams";
 import { SparklesCore } from "./ui/sparkles";
 import { ArrowRight, Zap } from "lucide-react";
 
-const words = ["Smarter.", "Faster.", "Confidently."];
+const words = ["Smarter.", "Faster.", "Increase Margin."];
 
 export function Hero() {
   const [wordIndex, setWordIndex] = useState(0);
