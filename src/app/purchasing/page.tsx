@@ -1,28 +1,28 @@
-import { Check } from "lucide-react";
+﻿import { Check } from "lucide-react";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 
 export const metadata = {
-  title: "Purchasing & Budgets â€” Cornerstone PM",
-  description: "From bid to PO to budget â€” every dollar tracked automatically. Structural options, design selections, and change orders all feed the same number.",
+  title: "Purchasing & Budgets â -  Cornerstone PM",
+  description: "From bid to PO to budget â -  every dollar tracked automatically. Structural options, design selections, and change orders all feed the same number.",
 };
 
 const features = [
   { title: "Parts Catalog", desc: "Full parts and materials catalog with unit pricing, synced across all jobs." },
-  { title: "Budget Hierarchy", desc: "Builder â†’ Community â†’ Floorplan â†’ Home â€” budgets cascade and override at each level." },
+  { title: "Budget Hierarchy", desc: "Builder â -  Community â -  Floorplan â -  Home â -  budgets cascade and override at each level." },
   { title: "Base Budgets", desc: "Pre-built budget templates per floorplan, ready to apply at sale." },
   { title: "Auto-Budget Generation", desc: "When a home sale is created with structural options, the budget auto-generates instantly." },
-  { title: "Structural Options Pricing", desc: "Every structural option tied to a line-item budget impact â€” no manual entry." },
+  { title: "Structural Options Pricing", desc: "Every structural option tied to a line-item budget impact â -  no manual entry." },
   { title: "Active Homes Dashboard", desc: "All homes, budget status, and variance at a glance." },
   { title: "Apply Budget Flow", desc: "One-click flow to apply base budget + options to any home." },
   { title: "Design Center Integration", desc: "Room-by-room selections tied directly to purchasing budget." },
   { title: "Designer Collections", desc: "Group selections into curated collections for buyer presentations." },
-  { title: "Unlimited Spec Levels", desc: "Community Standard, Premium, Luxury â€” unlimited spec levels with separate pricing." },
-  { title: "Base Pricing Matrix", desc: "Floorplan Ã— Community pricing matrix with per-community overrides." },
+  { title: "Unlimited Spec Levels", desc: "Community Standard, Premium, Luxury â -  unlimited spec levels with separate pricing." },
+  { title: "Base Pricing Matrix", desc: "Floorplan Ã -  Community pricing matrix with per-community overrides." },
   { title: "Change Orders", desc: "Buyer-requested changes with approval workflow and budget impact." },
   { title: "Bid Management", desc: "Send floorplan to bid to every vendor with one click, track responses, compare side-by-side." },
   { title: "Bid Comparison", desc: "Side-by-side vendor bid comparison with automatic low-bid highlighting." },
-  { title: "Award & Budget Flow", desc: "Award a bid and it flows directly into the budget â€” no double entry." },
+  { title: "Award & Budget Flow", desc: "Award a bid and it flows directly into the budget â -  no double entry." },
   { title: "Purchase Orders", desc: "Generate and send POs directly from approved bids." },
   { title: "Buildertrend Migration", desc: "Import existing budgets from Buildertrend with smart column mapping." },
 ];
@@ -41,10 +41,10 @@ export default function PurchasingPage() {
             Budget smarter.<br /><span className="text-emerald-400">Zero double entry.</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10">
-            From bid to PO to budget â€” every dollar tracked automatically. Structural options, design selections, and change orders all feed the same number.
+            From bid to PO to budget â -  every dollar tracked automatically. Structural options, design selections, and change orders all feed the same number.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/beta" className="px-8 py-4 rounded-full bg-emerald-400 text-slate-900 font-bold text-lg hover:bg-emerald-300 transition-all duration-200 shadow-lg shadow-emerald-500/30 hover:-translate-y-0.5">Request Early Access â†’</Link>
+            <Link href="/beta" className="px-8 py-4 rounded-full bg-emerald-400 text-slate-900 font-bold text-lg hover:bg-emerald-300 transition-all duration-200 shadow-lg shadow-emerald-500/30 hover:-translate-y-0.5">Request Early Access â - </Link>
             <Link href="/features" className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200">See All Features</Link>
           </div>
         </div>
@@ -81,7 +81,7 @@ export default function PurchasingPage() {
               <div className="flex justify-between"><span>NEWSTAR / BuildPro</span><span className="line-through text-slate-600">$800+/mo</span></div>
               <div className="flex justify-between"><span>Cornerstone PM</span><span className="text-emerald-400 font-bold">Free during beta</span></div>
             </div>
-            <Link href="/beta" className="block w-full text-center px-6 py-3.5 rounded-xl bg-emerald-400 text-slate-900 font-bold hover:bg-emerald-300 transition-all duration-200">Get Early Access â†’</Link>
+            <Link href="/beta" className="block w-full text-center px-6 py-3.5 rounded-xl bg-emerald-400 text-slate-900 font-bold hover:bg-emerald-300 transition-all duration-200">Get Early Access â - </Link>
             <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders Â· No credit card required</p>
           </div>
           <div className="space-y-4">
@@ -95,7 +95,7 @@ export default function PurchasingPage() {
       <section className="py-20 px-4 text-center border-t border-slate-800/60">
         <h2 className="text-4xl font-black mb-4">Ready to buy smarter?</h2>
         <p className="text-slate-400 text-lg mb-8 max-w-xl mx-auto">Join the beta and get 2 years free. Limited to 100 builders.</p>
-        <Link href="/beta" className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-emerald-400 text-slate-900 font-bold text-lg hover:bg-emerald-300 transition-all duration-200 shadow-lg shadow-emerald-500/30">Request Early Access â†’</Link>
+        <Link href="/beta" className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-emerald-400 text-slate-900 font-bold text-lg hover:bg-emerald-300 transition-all duration-200 shadow-lg shadow-emerald-500/30">Request Early Access â - </Link>
       </section>
     </div>
   );
