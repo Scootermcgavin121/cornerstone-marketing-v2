@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import Link from "next/link";
 import { Bot, FileText, MessageCircle, Check, Zap, ArrowRight } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
@@ -21,7 +21,7 @@ const agents = [
     color: "amber",
     href: "/foreman",
     highlights: [
-      "18 skills covering parts, vendors, homes & budgets",
+      "24-skills covering parts, vendors, homes & budgets",
       "Chat with your data, execute real actions",
       "Persistent history with auto-titles",
       "Complete org data isolation",

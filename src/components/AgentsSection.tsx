@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
@@ -8,7 +8,7 @@ const agents = [
     emoji: "🪖",
     name: "Foreman AI",
     tagline: "Your AI Construction Agent",
-    desc: "Type a command in plain English. Foreman executes it — scraping suppliers, managing parts, pulling reports, updating homes. 18 skills and counting.",
+    desc: "Type a command in plain English. Foreman executes it — scraping suppliers, managing parts, pulling reports, updating homes. 24-skills and counting.",
     href: "/foreman",
     color: "text-amber-400",
     bg: "bg-amber-500/10",

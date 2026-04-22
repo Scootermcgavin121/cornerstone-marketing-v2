@@ -17,6 +17,7 @@ const bullets = [
   "Real-time pricing matrix per floorplan Ã -  community",
   "Active promotions & incentives with expiration countdowns",
   "Branded PDF price sheets (per community or all)",
+  "MLS-ready listing sheet from live home data (selections, upgrades, room dimensions)",
   "Net price calculator with stacked promotions",
   "Auto-handoff to permitting when sales tasks complete",
   "Excel/CSV export of pricing matrix",

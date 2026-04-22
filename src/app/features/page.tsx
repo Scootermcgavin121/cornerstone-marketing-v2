@@ -89,6 +89,7 @@ const featureDetails = [
       "Real-time pricing matrix per floorplan × community",
       "Active promotions & incentives with expiration countdowns",
       "Branded PDF price sheets (per community or all)",
+      "MLS-ready listing sheet — pulls address, selections, upgrades, room dimensions, and community info",
       "Net price calculator with stacked promotions",
       "Auto-handoff to permitting when sales tasks complete",
       "Excel/CSV export of pricing matrix",

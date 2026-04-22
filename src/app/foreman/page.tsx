@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import Link from "next/link";
 import { Check, MessageSquare, Zap, Bot, Database, Globe, BarChart3, FileText } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Foreman AI — Your AI Construction Agent | Cornerstone PM",
   description:
-    "Type a command. Foreman executes it. 18 skills covering parts, vendors, homes, budgets, and more. No dashboards, no reports to build.",
+    "Type a command. Foreman executes it. 24 skills covering parts, vendors, homes, budgets, design center, exports, and more. No dashboards, no reports to build.",
 };
 
 const skills = [
@@ -27,7 +27,12 @@ const skills = [
   "List scopes and option classes",
   "List all users",
   "View org stats",
-  "MLS listing generation from live home data",
+  "MLS listing sheet generation from live home data",
+  "Design Center management (list/create options, auto-link to parts)",
+  "Export results as CSV, JSON, or styled PDF",
+  "File upload + screenshot analysis (paste images for AI to read)",
+  "Persistent org memory (saves notes across sessions)",
+  "Confirms before writes (shows plan, asks before creating/modifying)",
   "Persistent chat history with auto-titles",
   "Complete org data isolation",
   "Custom reports (coming soon)",
@@ -69,7 +74,7 @@ export default function ForemanPage() {
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-400 text-xs font-semibold mb-6">
             <Zap className="w-3.5 h-3.5" />
-            18-SKILL AI AGENT
+            24-skill AI AGENT
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-4 leading-tight">
             Meet{" "}
@@ -104,7 +109,7 @@ export default function ForemanPage() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-black text-white mb-3">
-              18 Skills. One Agent.
+              24-skills. One Agent.
             </h2>
             <p className="text-slate-400 text-lg">
               Foreman knows your entire operation — parts, vendors, homes, budgets, and more.
