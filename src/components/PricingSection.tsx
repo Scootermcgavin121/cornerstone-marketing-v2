@@ -59,8 +59,8 @@ const plans = [
     bonusBadge: "Foreman AI + Blueprint AI included",
     features: [
       "Everything in Builder, plus:",
-      "Foreman AI — AI agent that takes actions in your app (manage parts, vendors, homes, scrape supplier sites) via plain English chat. Sonnet model, 1,000 messages/mo.",
-      "Blueprint AI — upload a floor plan PDF, get rooms + 130+ material scopes in 60 seconds. 5 takeoffs/mo.",
+      "Foreman AI agent — chat in plain English, takes real actions in your app (parts, vendors, homes, supplier scraping). Sonnet, 1,000 msg/mo.",
+      "Blueprint AI — upload any floor plan PDF, get 130+ material scopes in 60 seconds. 5 takeoffs/mo.",
       "Multi-community management",
       "Unlimited users & vendors",
       "Advanced analytics & reporting",
