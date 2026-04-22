@@ -17,7 +17,7 @@ const agents = [
     badgeColor: "bg-amber-500/20 text-amber-400 border-amber-500/30",
     prompts: [
       "Scrape Home Depot for GE refrigerators and add to parts catalog",
-      "Show homes in Coastal Ridge that are over budget",
+      "Generate an MLS listing for 1234 Oak Street",
     ],
   },
   {

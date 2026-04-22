@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Check, MessageSquare, Zap, Bot, Database, Globe, BarChart3 } from "lucide-react";
+import { Check, MessageSquare, Zap, Bot, Database, Globe, BarChart3, FileText } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import type { Metadata } from "next";
@@ -27,6 +27,7 @@ const skills = [
   "List scopes and option classes",
   "List all users",
   "View org stats",
+  "MLS listing generation from live home data",
   "Persistent chat history with auto-titles",
   "Complete org data isolation",
   "Custom reports (coming soon)",
@@ -48,6 +49,10 @@ const examplePrompts = [
   {
     prompt: "Create a vendor called ABC Plumbing with scope Plumbing",
     icon: <Bot className="w-5 h-5 text-amber-400" />,
+  },
+  {
+    prompt: "Generate an MLS listing for 1234 Oak Street",
+    icon: <FileText className="w-5 h-5 text-amber-400" />,
   },
 ];
 
@@ -147,6 +152,46 @@ export default function ForemanPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* MLS Spotlight */}
+      <section className="py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="rounded-2xl bg-amber-500/5 border border-amber-500/20 p-8 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold uppercase tracking-widest mb-4">
+                <FileText className="w-3.5 h-3.5" />
+                New Skill
+              </div>
+              <h2 className="text-3xl font-black text-white mb-4">MLS Listing Generator</h2>
+              <p className="text-slate-400 leading-relaxed mb-4">
+                One command. Foreman pulls the home address, floorplan, square footage, all buyer selections, structural upgrades, and community info &mdash; then generates a polished, MLS-ready listing sheet.
+              </p>
+              <p className="text-slate-400 leading-relaxed mb-6">
+                No other construction PM software can do this. What used to take an agent 2 hours now takes 10 seconds.
+              </p>
+              <div className="p-4 rounded-xl bg-slate-900 border border-slate-800 border-l-4 border-l-amber-500">
+                <p className="text-slate-300 text-sm italic">&ldquo;Generate an MLS listing for 1234 Oak Street&rdquo;</p>
+              </div>
+            </div>
+            <div className="space-y-3">
+              <p className="text-amber-400 font-bold text-sm uppercase tracking-widest mb-4">What gets included:</p>
+              {[
+                "Property description with all upgrades called out",
+                "Design center selections (flooring, countertops, cabinets, fixtures)",
+                "Structural options (tray ceilings, bonus rooms, extended driveway)",
+                "Spec level and included features",
+                "Community amenities and builder info",
+                "Professional formatting ready for MLS submission",
+              ].map((item) => (
+                <div key={item} className="flex items-start gap-3">
+                  <Check className="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-slate-300 text-sm">{item}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
