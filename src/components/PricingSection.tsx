@@ -18,10 +18,11 @@ const plans = [
       "Subcontractor assignment & notifications",
       "Permitting pipeline tracker",
       "Homeowner progress portal (magic link)",
+      "FAQ Chatbot (AI help desk)",
       "Up to 1,000 active homes",
       "Email support",
     ],
-    notIncluded: ["Purchasing & Budgets", "Sales Pipeline", "Design Center", "AI Blueprint Takeoff"],
+    notIncluded: ["Sales Pipeline", "Purchasing & Budgets", "Design Center", "Foreman AI", "Blueprint AI"],
     cta: "Get Beta Access",
     ctaHref: "/beta",
     highlight: false,
@@ -30,35 +31,36 @@ const plans = [
     name: "Builder",
     price: "$299",
     period: "/mo",
-    description: "Full sales-to-construction workflow. Requires Starter.",
-    badge: null,
+    description: "Full sales-to-construction workflow.",
+    badge: "MOST POPULAR",
     bonusBadge: null,
     features: [
       "Everything in Starter, plus:",
+      "Sales Pipeline (60-second home sale)",
+      "Purchasing & Budgets",
+      "Design Center selections & change orders",
       "Structural options pricing engine",
       "Auto-budget from takeoffs (~97 lines)",
-      "Base price matrix by floorplan × community",
       "Full PO lifecycle (Draft → Paid)",
       "Bid management & vendor comparison",
-      "Sales pipeline (60-second home sale)",
-      "Design center selections & change orders",
       "Priority support",
     ],
-    notIncluded: ["AI Blueprint Takeoff"],
+    notIncluded: ["Foreman AI", "Blueprint AI"],
     cta: "Get Beta Access",
     ctaHref: "/beta",
     highlight: false,
   },
   {
-    name: "Full Bundle",
-    price: "$399",
+    name: "Pro",
+    price: "$499",
     period: "/mo",
-    description: "Everything. The complete production builder stack.",
-    badge: "BEST VALUE",
-    bonusBadge: "AI Takeoff ($150 value) FREE",
+    description: "Everything plus the full AI agent suite.",
+    badge: "NEW",
+    bonusBadge: "Foreman AI + Blueprint AI included",
     features: [
       "Everything in Builder, plus:",
-      "AI Blueprint Takeoff",
+      "Foreman AI (Sonnet model, 1,000 msg/mo)",
+      "Blueprint AI (5 takeoffs/mo)",
       "Multi-community management",
       "Unlimited users & vendors",
       "Advanced analytics & reporting",
@@ -70,10 +72,31 @@ const plans = [
     ctaHref: "/beta",
     highlight: true,
   },
+  {
+    name: "Enterprise",
+    price: "Custom",
+    period: "",
+    description: "Large teams, custom SLAs, and max AI power.",
+    badge: null,
+    bonusBadge: null,
+    features: [
+      "Everything in Pro, plus:",
+      "Opus model (most powerful)",
+      "5,000 messages/month",
+      "Blueprint AI (25 takeoffs/mo)",
+      "Dedicated SLA & onboarding",
+      "Custom integrations",
+      "SSO & advanced permissions",
+    ],
+    notIncluded: [],
+    cta: "Contact Us",
+    ctaHref: "/contact",
+    highlight: false,
+  },
 ];
 
 const competitors = [
-  { name: "Cornerstone PM", price: "$179.98/mo", note: "Full platform. No implementation.", highlight: true },
+  { name: "Cornerstone PM", price: "from $149/mo", note: "Full platform + AI agents. No implementation.", highlight: true },
   { name: "BuilderTrend", price: "$499+/mo", note: "No options pricing engine", highlight: false },
   { name: "CoConstruct", price: "$399+/mo", note: "No structural options", highlight: false },
   { name: "NEWSTAR / BuildPro / MarkSystems", price: "$2K–5K/mo", note: "+ $50K–150K implementation", highlight: false },
@@ -98,24 +121,28 @@ export function PricingSection() {
           </h2>
           <p className="text-lg text-slate-400 max-w-xl mx-auto">
             NEWSTAR and BuildPro cost $50K–150K to implement and $2K–5K/mo to run.
-            Cornerstone is $179.98/mo. Everything included. No implementation fee.
+            Cornerstone starts at $149/mo. Everything included. No implementation fee.
           </p>
         </div>
 
         {/* Plans */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mb-8 max-w-6xl mx-auto">
           {plans.map((plan) => (
             <div
               key={plan.name}
               className={`relative rounded-2xl p-8 transition-all duration-300 ${
                 plan.highlight
-                  ? "bg-gradient-to-b from-slate-800 to-slate-900 border-2 border-cyan-500/50 shadow-xl shadow-cyan-500/10"
+                  ? "bg-gradient-to-b from-slate-800 to-slate-900 border-2 border-amber-500/50 shadow-xl shadow-amber-500/10"
                   : "bg-slate-800/60 border border-slate-700/60 hover:border-slate-600"
               }`}
             >
               {plan.badge && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                  <span className="px-4 py-1 text-xs font-bold rounded-full bg-gradient-to-r from-cyan-500 to-teal-500 text-slate-900">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap">
+                  <span className={`px-4 py-1 text-xs font-bold rounded-full ${
+                    plan.highlight
+                      ? "bg-gradient-to-r from-amber-500 to-amber-400 text-slate-900"
+                      : "bg-gradient-to-r from-slate-600 to-slate-500 text-white"
+                  }`}>
                     {plan.badge}
                   </span>
                 </div>
@@ -130,7 +157,7 @@ export function PricingSection() {
               )}
 
               {plan.highlight && (
-                <div className="absolute inset-0 rounded-2xl bg-[radial-gradient(ellipse_at_top,rgba(6,182,212,0.08),transparent_60%)]" />
+                <div className="absolute inset-0 rounded-2xl bg-[radial-gradient(ellipse_at_top,rgba(251,191,36,0.06),transparent_60%)]" />
               )}
 
               <div className="relative z-10">
@@ -172,13 +199,21 @@ export function PricingSection() {
           ))}
         </div>
 
+        {/* BYOK pill */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
+          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-700 bg-slate-800/60 text-slate-300 text-sm font-semibold">
+            <Zap className="w-4 h-4 text-amber-400" />
+            <span>BYOK Add-On: +$199/mo — Bring Your Own Key, unlimited AI messages</span>
+          </div>
+        </div>
+
         {/* Beta callout */}
         <div className="text-center mb-16">
           <div className="flex flex-col items-center gap-3">
-            <div className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl border border-amber-500/30 bg-amber-500/10 text-amber-400">
+            <div className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl border border-emerald-500/30 bg-emerald-500/10 text-emerald-400">
               <Zap className="w-4 h-4" />
               <span className="text-sm font-semibold">
-                Beta users get 2 years free — limited to 100 builders
+                Free during beta — limited to 100 builders
               </span>
             </div>
             <p className="text-xs text-slate-500">Beta slots are finite. When they&apos;re gone, standard pricing applies.</p>
