@@ -39,11 +39,11 @@ GPT-4o-mini chatbot on every page. Knows every feature, workflow, and role. Avai
 
 ## Pricing Tiers
 
-- **Starter /mo**: Construction Scheduling + Homeowner Portal + FAQ Chatbot
-- **Builder /mo**: Everything in Starter + Sales Pipeline + Purchasing & Budgets + Design Center (no AI agents)
-- **Pro /mo**: Everything in Builder + Foreman AI (Sonnet, 1,000 msg/mo) + Blueprint AI (5/mo)
+- **Starter $149/mo**: Construction Scheduling + Homeowner Portal + FAQ Chatbot
+- **Builder $299/mo**: Everything in Starter + Sales Pipeline + Purchasing & Budgets + Design Center (no AI agents)
+- **Pro $499/mo**: Everything in Builder + Foreman AI (Sonnet, 1,000 msg/mo) + Blueprint AI (5/mo)
 - **Enterprise**: Custom pricing — Opus model, 5,000 msg/mo, Blueprint AI (25/mo), dedicated onboarding, SLA
-- **BYOK Add-on +/mo**: Bring Your Own API Key, unlimited messages, any model
+- **BYOK Add-on +$199/mo**: Bring Your Own API Key, unlimited messages, any model
 
 ---
 # Cornerstone Builder Software - Product Knowledge
