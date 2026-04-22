@@ -1,4 +1,31 @@
-﻿## AI Agents (3 Built-in)
+﻿## MLS Listing Generator (AI-Powered)
+
+One of Cornerstone's most unique features. Generates a professional, print-ready MLS listing sheet from live project data in one click.
+
+**What it pulls automatically:**
+- Community info: city, state, zip, amenities, schools, marketing description
+- Room dimensions: extracted by Blueprint AI from actual floor plan PDFs (L' x W')
+- Lot details: lot number, lot size in acres and sqft, address
+- Structural upgrades: every option the buyer selected
+- Design selections: flooring, countertops, cabinets, fixtures by category
+- Contract price and key stats (sqft, beds, baths, garage, stories)
+
+**AI-written copy:**
+- Word count slider (50-1,000 words) for different MLS region requirements
+- AI writes warm, professional prose that weaves in community character naturally
+- Not a template — generates unique copy per home
+
+**Two ways to generate:**
+1. One-click in the Sales sidebar: open any home, click Listing Sheet, adjust word count, print or save PDF
+2. Via Foreman AI: "Generate an MLS listing for 1234 Oak Street"
+
+**Why it's unique:**
+No other builder platform can do this. Sales CRMs don't have construction data. Construction PM tools don't have sales data. Cornerstone has both — plus Blueprint AI room dimensions that no one else has.
+
+Available on: Builder plan and above for the one-click version. Foreman AI version requires Pro plan.
+
+---
+## AI Agents (3 Built-in)
 
 Cornerstone is the only construction management platform with THREE built-in AI agents:
 

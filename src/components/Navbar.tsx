@@ -20,6 +20,7 @@ const featureLinks = [
   { label: "Construction Scheduling", href: "/construction", desc: "Gantt charts, vendors, notifications" },
   { label: "Purchasing & Budgets", href: "/purchasing", desc: "Takeoffs, POs, bid management" },
   { label: "Sales Pipeline", href: "/sales", desc: "60-second home sale, buyer tracking" },
+  { label: "MLS Listing Generator", href: "/listing-sheet", desc: "AI-written MLS listings from live project data" },
   { label: "Design Center", href: "/design", desc: "Room-by-room selections, spec levels" },
   { label: "Permitting", href: "/features#permitting", desc: "Permit sequences, PA workflow" },
   { label: "Buyer Portal", href: "/features#portal", desc: "Milestone journey, photo gallery" },

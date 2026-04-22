@@ -111,6 +111,45 @@ export default function SalesPage() {
         </div>
       </section>
 
+      {/* MLS Listing Sheet spotlight */}
+      <section className="py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="rounded-2xl bg-cyan-500/5 border border-cyan-500/20 p-8 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold uppercase tracking-widest mb-4">
+                Industry First
+              </div>
+              <h2 className="text-3xl font-black text-white mb-4">AI-Powered MLS Listing Generator</h2>
+              <p className="text-slate-400 leading-relaxed mb-4">
+                One click. Cornerstone pulls community info, room dimensions (from Blueprint AI), lot size, structural upgrades, and design selections &mdash; then AI writes a polished, MLS-ready listing description.
+              </p>
+              <p className="text-slate-400 leading-relaxed mb-6">
+                No other builder platform can do this. Sales CRMs don&apos;t have construction data. Construction PM tools don&apos;t have sales data. We have both.
+              </p>
+              <Link href="/listing-sheet" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-cyan-400 text-slate-900 font-bold hover:bg-cyan-300 transition-all duration-200">
+                See how it works &rarr;
+              </Link>
+            </div>
+            <div className="space-y-3">
+              {[
+                "Room dimensions from Blueprint AI floor plan analysis",
+                "Community description, city, state, zip, amenities",
+                "Lot size (acres + sqft) and lot number",
+                "Structural upgrades and design selections",
+                "Word count slider (50-1,000) for any MLS region",
+                "Print-ready with company branding",
+                "Also available via Foreman AI: \"Generate an MLS listing for 1234 Oak Street\"",
+              ].map((item) => (
+                <div key={item} className="flex items-start gap-3">
+                  <span className="text-cyan-400 font-bold flex-shrink-0 mt-0.5">&#10003;</span>
+                  <span className="text-slate-300 text-sm">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Feature bullets + pricing context */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
