@@ -5,19 +5,25 @@ Cornerstone is the only construction management platform with THREE built-in AI 
 ### 1. Foreman AI - "Your AI Construction Agent"
 The flagship AI feature. Foreman AI is a full intelligent agent that lives inside the app at /agent. Builders type natural language commands and Foreman executes them — it doesn't just talk, it TAKES ACTION.
 
-**18 Skills:**
+**24 Skills:**
 - Parts Management: search, create, bulk import, update, delete parts
 - Web Scraping: fetch any URL (Home Depot, Ferguson, suppliers) and auto-create parts with real pricing
 - Vendor Management: list vendors, create new vendors, search vendor bids
-- Home Management: list all homes, view budgets, update status/assignments
-- Data Lookup: communities, floorplans, scopes, option classes, users, org stats
-- Custom Reports (coming soon): SQL reports, CSV export, vendor bid comparison, budget variance
+- Home Management: list all homes, view budgets, update home status/lot size/assignments
+- Design Center: list/create options (auto-links to parts catalog), list option categories
+- Data Lookup: communities (with city/state/zip/description), floorplans, scopes, option classes, users, org stats
+- File Export: generate CSV, JSON, or styled HTML (print-to-PDF) documents and reports
+- File Upload & Screenshot Analysis: attach files or paste images for AI analysis
+- Persistent Memory: save org-specific notes that survive across sessions
+- Custom Reports: pull data, format as tables/exports, vendor bid comparison, budget variance
 
 **Example prompts:**
 - "Scrape Home Depot for GE Profile refrigerators and add them to our parts catalog"
 - "Show me all homes in Coastal Ridge that are in progress"
 - "How many parts do we have? Break it down by scope"
 - "What's the budget for 1234 Oak Street?"
+- "Generate an MLS listing sheet for 1234 Oak Street"
+- "Create 5 GE Profile refrigerators in the design center with SKUs and pricing"
 
 Available to: Admin, Purchasing Manager, Sales Manager roles
 Pricing: Pro Plan (/mo) — Sonnet model, 1,000 messages/month. BYOK add-on +/mo for unlimited messages.
@@ -166,6 +172,7 @@ Cornerstone's AI-powered takeoff system eliminates manual material estimation. *
 - **Promotions & Incentives** - create time-limited promotions with types: Closing Cost Credit, Discount, Credit, or Custom. Set date ranges, amounts, and optionally tie to specific communities. Show on the Active Promotions section of the Sales Pricing page. Automatically applied during new home creation.
 - **Net After Promotions** - pricing page automatically shows net prices after applying active promotions, so sales agents always quote the right number
 - **PDF Price Sheets** - export branded, customer-facing PDF price sheets per community. Shows floorplan details (beds/baths/sqft), base prices, active promotions with expiry dates, and net prices. Professional formatting with builder branding. No internal cost/margin data exposed
+- **MLS Listing Sheet** (`/sales/listing-sheet`) — generate professional, print-ready MLS listing sheets from any home's data. Includes company logo, address, community description/city/state/zip, room dimensions (L' × W'), structural features, design selections, key stats (sqft, beds, baths, garage, stories, lot), and contract price. Print / Save as PDF with one click.
 - **CSV Export** - export pricing data as CSV for spreadsheets, lender packages, or MLS uploads
 - **Expiration Badges** - active promotions show urgency: "Expires Today", "Expires in 3 days", or the end date. Expired promotions are clearly marked
 
