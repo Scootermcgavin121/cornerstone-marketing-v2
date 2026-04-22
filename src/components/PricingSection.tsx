@@ -59,7 +59,7 @@ const plans = [
     bonusBadge: "Foreman AI + Blueprint AI included",
     features: [
       "Everything in Builder, plus:",
-      "Foreman AI (Sonnet model, 1,000 msg/mo)",
+      "Foreman AI (Sonnet, 1,000 AI agent messages/mo)",
       "Blueprint AI (5 takeoffs/mo)",
       "Multi-community management",
       "Unlimited users & vendors",
@@ -82,7 +82,7 @@ const plans = [
     features: [
       "Everything in Pro, plus:",
       "Opus model (most powerful)",
-      "5,000 messages/month",
+      "5,000 AI agent messages/month",
       "Blueprint AI (25 takeoffs/mo)",
       "Dedicated SLA & onboarding",
       "Custom integrations",
