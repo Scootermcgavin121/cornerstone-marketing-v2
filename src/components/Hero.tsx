@@ -5,7 +5,7 @@ import { BackgroundBeams } from "./ui/background-beams";
 import { SparklesCore } from "./ui/sparkles";
 import { ArrowRight, Zap } from "lucide-react";
 
-const words = ["Smarter.", "Faster.", "Increase Margin"];
+const words = ["Smarter.", "Faster.", "Wider Margins."];
 
 export function Hero() {
   const [wordIndex, setWordIndex] = useState(0);
@@ -59,7 +59,7 @@ export function Hero() {
 
         {/* Headline */}
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight text-white leading-[1.05] mb-6">
-          {displayText.startsWith("Increase") ? "" : "Build "}
+          Build{" "}
           <span className="relative inline-block">
             <span
               className="bg-gradient-to-r from-cyan-400 via-teal-300 to-cyan-500 bg-clip-text text-transparent"
