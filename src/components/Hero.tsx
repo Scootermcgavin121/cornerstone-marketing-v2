@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { BackgroundBeams } from "./ui/background-beams";
@@ -54,7 +54,7 @@ export function Hero() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-sm font-medium mb-8 backdrop-blur-sm">
           <Zap className="w-3.5 h-3.5" />
-          <span>Free Beta — 2 years free for Early Adopters</span>
+          <span>Now with 3 Built-in AI Agents &middot; Free Beta</span>
         </div>
 
         {/* Headline */}
@@ -73,12 +73,11 @@ export function Hero() {
 
         {/* Subheadline */}
         <p className="text-xl sm:text-2xl md:text-3xl text-slate-300 font-light mb-4 leading-relaxed">
-          The production builder platform that{" "}
-          <span className="text-white font-semibold">NEWSTAR charges $100K to implement.</span>
+          The only construction platform with{" "}<span className="text-white font-semibold">three built-in AI agents.</span>
         </p>
 
         <p className="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto mb-8 leading-relaxed">
-          Structural options pricing engine. Auto-budget from takeoffs. Base price matrix by floorplan × community × spec level. Design center selections. Full construction pipeline — without the six-month implementation or the six-figure contract.
+          Foreman AI executes actions from plain English. Blueprint AI reads floor plans and generates material takeoffs in seconds. The FAQ Chatbot knows every feature. All three agents are wired directly to your data &mdash; no setup, no consultants.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-12 text-sm">
           <div className="px-4 py-2.5 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-400">

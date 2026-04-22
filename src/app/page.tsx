@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero";
 import { ScreenshotsSection } from "@/components/ScreenshotsSection";
 import { VideoSection } from "@/components/VideoSection";
 import { AiTakeoffSection } from "@/components/AiTakeoffSection";
+import { AgentsSection } from "@/components/AgentsSection";
 import { ModulesGrid } from "@/components/ModulesGrid";
 import { PricingSection } from "@/components/PricingSection";
 import { CTASection } from "@/components/CTASection";
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <VideoSection />
       <ScreenshotsSection />
+      <AgentsSection />
       <AiTakeoffSection />
       <ModulesGrid />
       <PricingSection />

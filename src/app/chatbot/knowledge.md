@@ -1,3 +1,51 @@
+﻿## AI Agents (3 Built-in)
+
+Cornerstone is the only construction management platform with THREE built-in AI agents:
+
+### 1. Foreman AI - "Your AI Construction Agent"
+The flagship AI feature. Foreman AI is a full intelligent agent that lives inside the app at /agent. Builders type natural language commands and Foreman executes them — it doesn't just talk, it TAKES ACTION.
+
+**18 Skills:**
+- Parts Management: search, create, bulk import, update, delete parts
+- Web Scraping: fetch any URL (Home Depot, Ferguson, suppliers) and auto-create parts with real pricing
+- Vendor Management: list vendors, create new vendors, search vendor bids
+- Home Management: list all homes, view budgets, update status/assignments
+- Data Lookup: communities, floorplans, scopes, option classes, users, org stats
+- Custom Reports (coming soon): SQL reports, CSV export, vendor bid comparison, budget variance
+
+**Example prompts:**
+- "Scrape Home Depot for GE Profile refrigerators and add them to our parts catalog"
+- "Show me all homes in Coastal Ridge that are in progress"
+- "How many parts do we have? Break it down by scope"
+- "What's the budget for 1234 Oak Street?"
+
+Available to: Admin, Purchasing Manager, Sales Manager roles
+Pricing: Pro Plan (/mo) — Sonnet model, 1,000 messages/month. BYOK add-on +/mo for unlimited messages.
+
+### 2. Blueprint AI - "AI Floor Plan Reader"
+Upload a floor plan PDF (up to 25MB, digital CAD only) and Blueprint AI extracts:
+- Rooms with square footage (auto-detected from labels)
+- Fixtures per room (toilets, faucets, sinks, lights, appliances)
+- Material scopes (flooring, baseboard, countertops, cabinets)
+- Whole-house scopes (drywall, paint, insulation, roofing, concrete)
+- Plan at a Glance stats (living sqft, footprint, perimeter, garage)
+One-click import directly into floorplan budgets and design center.
+Pricing: Pro Plan — 5 analyses/month. Enterprise — 25/month.
+
+### 3. FAQ Chatbot - "Always-On Help Desk"
+GPT-4o-mini chatbot on every page. Knows every feature, workflow, and role. Available on all plans including Starter.
+
+---
+
+## Pricing Tiers
+
+- **Starter /mo**: Construction Scheduling + Homeowner Portal + FAQ Chatbot
+- **Builder /mo**: Everything in Starter + Sales Pipeline + Purchasing & Budgets + Design Center (no AI agents)
+- **Pro /mo**: Everything in Builder + Foreman AI (Sonnet, 1,000 msg/mo) + Blueprint AI (5/mo)
+- **Enterprise**: Custom pricing — Opus model, 5,000 msg/mo, Blueprint AI (25/mo), dedicated onboarding, SLA
+- **BYOK Add-on +/mo**: Bring Your Own API Key, unlimited messages, any model
+
+---
 # Cornerstone Builder Software - Product Knowledge
 
 ## Overview
