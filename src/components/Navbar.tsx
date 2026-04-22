@@ -25,7 +25,7 @@ const featureLinks = [
   { label: "Permitting", href: "/features#permitting", desc: "Permit sequences, PA workflow" },
   { label: "Buyer Portal", href: "/features#portal", desc: "Milestone journey, photo gallery" },
   { label: "⚡ AI Blueprint Takeoff", href: "/ai-takeoff", desc: "Upload PDF → instant material takeoff", highlight: true },
-  { label: "🤖 Foreman AI", href: "/foreman", desc: "24-skill AI agent, natural language commands" },
+  { label: "🤖 Foreman AI", href: "/foreman", desc: "27-skill AI agent, natural language commands" },
   { label: "✨ AI Agents Overview", href: "/ai-agents", desc: "Three AI agents built for builders" },
 ];
 

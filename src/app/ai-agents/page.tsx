@@ -21,7 +21,7 @@ const agents = [
     color: "amber",
     href: "/foreman",
     highlights: [
-      "24-skills covering parts, vendors, homes & budgets",
+      "27-skills covering parts, vendors, homes & budgets",
       "Chat with your data, execute real actions",
       "Persistent history with auto-titles",
       "Complete org data isolation",

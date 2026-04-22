@@ -32,7 +32,7 @@ Cornerstone is the only construction management platform with THREE built-in AI 
 ### 1. Foreman AI - "Your AI Construction Agent"
 The flagship AI feature. Foreman AI is a full intelligent agent that lives inside the app at /agent. Builders type natural language commands and Foreman executes them — it doesn't just talk, it TAKES ACTION.
 
-**24 Skills:**
+**27-skills:**
 - Parts Management: search, create, bulk import, update, delete parts
 - Web Scraping: fetch any URL (Home Depot, Ferguson, suppliers) and auto-create parts with real pricing
 - Vendor Management: list vendors, create new vendors, search vendor bids
