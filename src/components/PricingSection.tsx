@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React, { useState } from "react";
 import Link from "next/link";
 import { Check, X, Zap } from "lucide-react";
@@ -20,6 +20,7 @@ const plans = [
       "Homeowner progress portal (magic link)",
       "FAQ Chatbot (AI help desk)",
       "Multi-community support",
+      "Up to 500 active homes",
       "Up to 1,000 users & vendors",
       "Email support",
     ],
@@ -44,6 +45,7 @@ const plans = [
       "Budget auto-generated when a home sale is created",
       "Full PO lifecycle (Draft → Paid)",
       "Bid management & vendor comparison",
+      "Up to 500 active homes",
       "Up to 1,000 users & vendors",
       "Priority support",
     ],
@@ -63,6 +65,7 @@ const plans = [
       "Everything in Builder, plus:",
       "Foreman AI agent — chat in plain English, takes real actions in your app (parts, vendors, homes, supplier scraping). Sonnet, 1,000 msg/mo.",
       "Blueprint AI — upload any floor plan PDF, get 130+ material scopes in 60 seconds. 25 takeoffs/mo.",
+      "Up to 1,000 active homes",
       "Up to 1,000 users & vendors",
       "Advanced analytics & reporting",
       "Priority onboarding support",
