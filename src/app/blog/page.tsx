@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "subcontractor-management-home-builders",
+    title: "Why Your Best Subs Are Choosing Other Builders Over You",
+    excerpt:
+      "Good subcontractors have options. If your scheduling is chaotic and your communication is reactive, they'll quietly prioritize builders who make their lives easier — here's how to be that builder.",
+    date: "April 23, 2026",
+    readTime: "6 min read",
+    tag: "Vendor Management",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+  },
+  {
     slug: "permitting-delays-home-builders",
     title: "Why Permits Are Stalling Your Build Schedule",
     excerpt:
