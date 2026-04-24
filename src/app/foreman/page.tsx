@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import Link from "next/link";
 import { Check, MessageSquare, Zap, Bot, Database, Globe, BarChart3, FileText, ShoppingCart, Home, Users, Layers } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
@@ -160,7 +160,7 @@ export default function ForemanPage() {
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-400 text-xs font-semibold mb-6">
             <Zap className="w-3.5 h-3.5" />
-            27-SKILL AI AGENT &middot; PURPOSE-BUILT FOR CONSTRUCTION
+            37-skill AI AGENT &middot; PURPOSE-BUILT FOR CONSTRUCTION
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-4 leading-tight">
             Meet{" "}
@@ -203,7 +203,7 @@ export default function ForemanPage() {
       {/* Grouped skills */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-black text-center mb-4">27 Skills. One Agent.</h2>
+          <h2 className="text-3xl sm:text-4xl font-black text-center mb-4">37 skills. One Agent.</h2>
           <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">Every skill is a purpose-built tool — not a prompt. Foreman knows your entire operation: parts, vendors, homes, budgets, design center, MLS listings, and more.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
             {skillGroups.map((group) => {

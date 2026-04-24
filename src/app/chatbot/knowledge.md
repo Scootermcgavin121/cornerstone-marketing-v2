@@ -1,4 +1,52 @@
-﻿## API Access / BYOA (Bring Your Own Agent)
+﻿## API Documentation (REST API Reference)
+
+Full API docs at: /api-docs
+
+**Authentication:** Bearer token. Create scoped API keys in Admin > API Keys.
+Available scopes: vendors:read, vendors:write, bids:read, bids:write, payments:write, webhooks:write
+
+**Base URL:** https://app.cornerstonepm.ai
+
+**Endpoints:**
+
+Vendors:
+- GET /api/ext/vendors — List all vendors (filters: scope, outreachStatus, active)
+- POST /api/ext/vendors — Create vendor
+- GET /api/ext/vendors/:id — Get single vendor
+- PATCH /api/ext/vendors/:id — Update vendor (name, scope, scopes[], contactName, phone, email, address, notes, active, outreachStatus, leadTimeDays, isTaxable, qboId, externalId)
+- DELETE /api/ext/vendors/:id — Deactivate vendor
+
+Bid Requests:
+- POST /api/ext/bids/request — Create bid request (vendorIds[], floorplanIds[], scope, message, deadline, communityId). Auto-sends portal emails. Returns bidRequestId + skippedVendors warnings.
+
+Bids:
+- GET /api/ext/bids — List bids (filters: scope, status, vendorId)
+
+Payments:
+- GET /api/ext/payments — List payments (filters: vendorId, homeId, poId, status, dateRange)
+- POST /api/ext/payments — Record payment (vendorId, purchaseOrderId, homeId, amountCents, method, reference, paidAt, notes)
+
+Reference Data:
+- GET /api/ext/communities — List communities
+- GET /api/ext/scopes — List scopes (trade types)
+- GET /api/ext/floorplans — List floorplans
+- GET /api/ext/cost-types — List cost types
+
+Webhooks:
+- GET /api/ext/webhooks — List webhooks
+- POST /api/ext/webhooks — Create webhook (url, eventTypes[], secret)
+- 14 event types: vendor.created, vendor.updated, bid_request.created, bid.submitted, bid.accepted, bid.rejected, payment.created, payment.voided, home.created, home.status_changed, task.completed, task.status_changed, po.created, po.status_changed
+- HMAC SHA-256 signature via X-Webhook-Signature header
+- 10 second timeout, auto-disable after 50 consecutive failures
+
+**Rate Limits:** 100 req/min per key, 10,000 req/day per org
+
+**Integrations:** Foreman AI (37+ skills, uses this API internally), QuickBooks (qboId fields), Zapier (REST webhooks), Automated Bidding Pipeline
+
+**Pricing:** Pro+ plan only — /mo
+
+---
+## API Access / BYOA (Bring Your Own Agent)
 
 Cornerstone PM is the first homebuilder platform with a REST API designed for AI agent automation.
 
