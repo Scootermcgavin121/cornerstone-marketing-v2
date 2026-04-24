@@ -8,7 +8,7 @@ const agents = [
     emoji: "🪖",
     name: "Foreman AI",
     tagline: "Your AI Construction Agent",
-    desc: "27 purpose-built construction skills. Not a generic chatbot — Foreman reads AND writes your data. Parts, vendors, homes, MLS listings, exports, design center, and more.",
+    desc: "37 purpose-built construction skills. Not a generic chatbot — Foreman reads AND writes your data. Parts, vendors, homes, MLS listings, exports, design center, and more.",
     href: "/foreman",
     color: "text-amber-400",
     bg: "bg-amber-500/10",
