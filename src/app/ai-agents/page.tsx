@@ -108,10 +108,11 @@ const pricingTiers = [
     highlight: true,
   },
   {
-    name: "Enterprise",
-    price: "Custom",
-    agents: ["All agents", "Opus model", "5,000 msg/mo", "Blueprint 25/mo", "SLA"],
-    color: "text-slate-300",
+    name: "Pro+",
+    price: "$599",
+    agents: ["All agents", "BYOA API Access", "7-wave bidding pipeline", "Opus model", "5,000 msg/mo"],
+    color: "text-cyan-400",
+    note: "Full API + automation",
   },
 ];
 
@@ -223,7 +224,7 @@ export default function AiAgentsPage() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-black text-white mb-3">AI Agents by Plan</h2>
-            <p className="text-slate-400">Every plan includes the FAQ Chatbot. Upgrade to Pro for the full suite.</p>
+            <p className="text-slate-400">Every plan includes the FAQ Chatbot. Upgrade to Pro for AI agents. Upgrade to Pro+ for full API automation.</p>
           </div>
           <div className="rounded-2xl overflow-hidden border border-slate-800">
             {pricingTiers.map((tier, i) => (
@@ -269,15 +270,11 @@ export default function AiAgentsPage() {
             ))}
           </div>
 
-          {/* Add-on pills */}
-          <div className="mt-5 flex flex-col sm:flex-row items-center justify-center gap-3">
+          {/* Add-on pill */}
+          <div className="mt-5 flex items-center justify-center">
             <div className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-700 bg-slate-800/60 text-slate-300 text-sm font-semibold">
               <Zap className="w-4 h-4 text-amber-400" />
-              <span>BYOK Add-On: +$199/mo &mdash; Bring Your Own Key, unlimited AI messages</span>
-            </div>
-            <div className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 text-sm font-semibold">
-              <Zap className="w-4 h-4 text-cyan-400" />
-              <span>BYOA Add-On: +$100/mo &mdash; Bring Your Own Agent, full API access</span>
+              <span>BYOK Add-On: +$199/mo &mdash; Bring Your Own Key, unlimited AI messages (Pro &amp; above)</span>
             </div>
           </div>
 
