@@ -1,9 +1,9 @@
-﻿import { Check } from "lucide-react";
+﻿﻿import { Check } from "lucide-react";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 
 export const metadata = {
-  title: "Design Center â -  Cornerstone PM",
+  title: "Design Center & Options Engine",
   description: "Structured options let buyers personalize their home while you lock in profit. Every selection tracked, priced, and approved.",
 };
 

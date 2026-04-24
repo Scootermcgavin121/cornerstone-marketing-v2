@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -7,7 +7,7 @@ import { Check, X, ArrowLeft } from "lucide-react";
 export const metadata: Metadata = {
   title: "BuilderTrend vs Cornerstone PM — Cornerstone PM Blog",
   description:
-    "BuilderTrend starts at $499/mo. Cornerstone PM starts at $79.99/mo. Here's what you actually get for the difference.",
+    "BuilderTrend starts at $499/mo. Cornerstone PM starts at $149/mo. Here's what you actually get for the difference.",
 };
 
 const comparison = [
@@ -128,7 +128,7 @@ export default function BuildertrendPost() {
           <div className="grid grid-cols-3 px-6 py-4 items-center bg-slate-900 border-t border-slate-700">
             <div className="text-white font-bold text-sm">Starting Price</div>
             <div className="text-center text-slate-500 line-through text-sm">$499/mo</div>
-            <div className="text-center text-amber-400 font-bold text-sm">$79.99/mo</div>
+            <div className="text-center text-amber-400 font-bold text-sm">$149/mo</div>
           </div>
         </div>
 
@@ -140,7 +140,7 @@ export default function BuildertrendPost() {
           </p>
           <p>
             If you&apos;re building 5–50 homes a year and you want powerful, usable tools without the
-            enterprise price tag — Cornerstone PM was built for you. At $79.99/mo for the base plan
+            enterprise price tag — Cornerstone PM was built for you. At $149/mo for the base plan
             and $179.98/mo for the full platform, you&apos;re getting everything you actually need.
           </p>
           <p>

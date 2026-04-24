@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { CTASection } from "@/components/CTASection";
@@ -67,7 +67,7 @@ export default function AboutPage() {
           <p>
             The full lifecycle — sale, budget, purchasing, design selections, permitting, construction
             scheduling, and buyer communication — all in one platform, all talking to each other.
-            Starting at $79.99/mo. Not $499. Not because we cut corners, but because we only built
+            Starting at $149/mo. Not $499. Not because we cut corners, but because we only built
             what you actually need.
           </p>
         </div>
@@ -107,7 +107,7 @@ export default function AboutPage() {
                 <Check className="w-4 h-4 text-emerald-400 flex-shrink-0" />
                 <span className="text-white font-bold">Cornerstone PM</span>
               </div>
-              <div className="text-amber-400 font-bold">$79.99/mo</div>
+              <div className="text-amber-400 font-bold">$149/mo</div>
               <div className="text-emerald-400 text-sm font-medium">Built for you</div>
             </div>
           </div>

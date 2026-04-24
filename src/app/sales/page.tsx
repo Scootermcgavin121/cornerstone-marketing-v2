@@ -1,10 +1,10 @@
-﻿import { Check, TrendingUp } from "lucide-react";
+﻿﻿import { Check, TrendingUp } from "lucide-react";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { VideoPlayer } from "@/components/VideoPlayer";
 
 export const metadata = {
-  title: "Sales Pipeline â -  Cornerstone PM",
+  title: "Sales Pipeline & Home Sale Management",
   description:
     "Create a new home sale in under 60 seconds. Floorplan selection, structural options, incentives, and buyer tracking â -  all in one streamlined workflow.",
 };

@@ -1,9 +1,9 @@
-﻿import { Check } from "lucide-react";
+﻿﻿import { Check } from "lucide-react";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 
 export const metadata = {
-  title: "Purchasing & Budgets â -  Cornerstone PM",
+  title: "Purchasing, Budgets & Bid Management",
   description: "From bid to PO to budget â -  every dollar tracked automatically. Structural options, design selections, and change orders all feed the same number.",
 };
 

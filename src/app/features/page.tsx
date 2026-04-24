@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -191,7 +191,7 @@ export default function FeaturesPage() {
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto">
             Every tool a home builder needs — from the first lead to the final walkthrough.
-            Built specifically for residential construction. Starting at $79.99/mo.
+            Built specifically for residential construction. Starting at $149/mo.
           </p>
         </div>
       </section>

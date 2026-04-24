@@ -1,9 +1,9 @@
-﻿import { Check } from "lucide-react";
+﻿﻿import { Check } from "lucide-react";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 
 export const metadata = {
-  title: "Construction Scheduling â -  Cornerstone PM",
+  title: "Construction Scheduling Software for Home Builders",
   description: "Auto-cascading dependencies, vendor notifications, and Gantt charts built for production home builders.",
 };
 
