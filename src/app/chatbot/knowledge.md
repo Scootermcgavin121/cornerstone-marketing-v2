@@ -4,7 +4,7 @@
 - 14 webhook event types
 - 15+ external REST API endpoints
 - 4 built-in AI features: Foreman AI (37 skills), Blueprint AI, MLS Listing Agent, FAQ Chatbot
-- 4 pricing tiers: Starter , Builder , Pro , Pro+ 
+- 4 pricing tiers: Starter $149, Builder $299, Pro $499, Pro+ $599 
 
 ---
 
@@ -147,7 +147,7 @@ Cornerstone PM is the first homebuilder platform with a REST API designed for AI
 **Key stats:** 200+ vendors contacted in one afternoon, 0 manual data entry, 3 contact channels (call + voicemail + text), every interaction recorded with transcript.
 
 **Who can connect:**
-- Foreman AI (Cornerstone's built-in 27-skill agent — already wired, no setup)
+- Foreman AI (Cornerstone's built-in 37-skill agent — already wired, no setup)
 - Custom agents built with any framework (LangChain, AutoGen, Claude, GPT-4o)
 - Third-party tools (any system that can make HTTP requests)
 
@@ -190,7 +190,7 @@ Cornerstone is the only construction management platform with THREE built-in AI 
 ### 1. Foreman AI - "Your AI Construction Agent"
 The flagship AI feature. Foreman AI is a full intelligent agent that lives inside the app at /agent. Builders type natural language commands and Foreman executes them — it doesn't just talk, it TAKES ACTION.
 
-**27-skills:**
+**37-skills:**
 - Parts Management: search, create, bulk import, update, delete parts
 - Web Scraping: fetch any URL (Home Depot, Ferguson, suppliers) and auto-create parts with real pricing
 - Vendor Management: list vendors, create new vendors, search vendor bids
@@ -230,9 +230,10 @@ GPT-4o-mini chatbot on every page. Knows every feature, workflow, and role. Avai
 
 ## Pricing Tiers
 
-- **Starter $149/mo**: Construction Scheduling + Homeowner Portal + FAQ Chatbot
+- **Starter $149/mo**: Construction Scheduling, Gantt, 17 templates, vendor assignment, permitting, buyer portal, FAQ Chatbot. Up to 500 active homes, 1,000 users/vendors.
 - **Builder $299/mo**: Everything in Starter + Sales Pipeline + Purchasing & Budgets + Design Center (no AI agents)
-- **Pro $499/mo**: Everything in Builder + Foreman AI (Sonnet, 1,000 msg/mo) + Blueprint AI (5/mo)
+- **Pro $499/mo**: Everything in Builder + Foreman AI (37 skills, Sonnet, 1,000 msg/mo) + Blueprint AI (25 takeoffs/mo) + MLS Listing Agent + advanced analytics. Up to 1,000 active homes.
+- **Pro+ $599/mo**: Everything in Pro + REST API (15+ endpoints, scoped keys), automated bidding pipeline (7-wave), webhooks (14 event types), Opus model, 5,000 AI messages/mo, Blueprint AI (25/mo), SSO, dedicated SLA.
 - **Enterprise**: Custom pricing — Opus model, 5,000 msg/mo, Blueprint AI (25/mo), dedicated onboarding, SLA
 - **BYOK Add-on +$199/mo**: Bring Your Own API Key, unlimited messages
 - **BYOA Add-on +$100/mo**: Bring Your Own Agent — full REST API access to Cornerstone data. Connect external agents, automate bid ingestion from emails, build custom workflows. Pro plan or above required., any model
