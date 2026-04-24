@@ -37,6 +37,22 @@ const agents = [
     ],
   },
   {
+    emoji: "📄",
+    name: "MLS Listing Agent",
+    tagline: "AI Real Estate Listing Writer",
+    desc: "Claude Sonnet writes professional MLS descriptions from your live home data — room dimensions, upgrades, community info, lot size. One click to a print-ready PDF.",
+    href: "/listing-sheet",
+    color: "text-emerald-400",
+    bg: "bg-emerald-500/10",
+    border: "border-emerald-500/20 hover:border-emerald-500/50",
+    badge: "Builder+",
+    badgeColor: "bg-emerald-500/20 text-emerald-400 border-emerald-500/30",
+    prompts: [
+      "Generate an MLS listing for 1234 Oak Street",
+      "Emphasize the pool &amp; school district",
+    ],
+  },
+  {
     emoji: "💬",
     name: "FAQ Chatbot",
     tagline: "Always-On Help Desk",
@@ -64,7 +80,7 @@ export function AgentsSection() {
             Industry First
           </div>
           <h2 className="text-4xl sm:text-6xl font-black mb-6">
-            Three AI agents.<br />
+            Four AI agents.<br />
             <span className="text-cyan-400">Zero other platforms have one.</span>
           </h2>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto">
@@ -72,7 +88,7 @@ export function AgentsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {agents.map((agent) => (
             <div
               key={agent.name}

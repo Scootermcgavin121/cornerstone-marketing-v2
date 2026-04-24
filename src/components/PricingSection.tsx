@@ -45,6 +45,7 @@ const plans = [
       "Budget auto-generated when a home sale is created",
       "Full PO lifecycle (Draft → Paid)",
       "Bid management & vendor comparison",
+      "MLS Listing Agent — AI writes MLS descriptions from live home data, one-click PDF download",
       "Up to 500 active homes",
       "Up to 1,000 users & vendors",
       "Priority support",

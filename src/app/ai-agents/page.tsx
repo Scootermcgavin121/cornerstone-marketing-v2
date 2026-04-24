@@ -6,9 +6,9 @@ import { Footer } from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Agents — Three AI Agents Built for Builders | Cornerstone PM",
+  title: "AI Agents — Four AI Agents Built for Builders | Cornerstone PM",
   description:
-    "ChatGPT doesn't know what a takeoff scope is. Ours do. Three AI agents purpose-built for home builders: Foreman AI, Blueprint AI, and FAQ Chatbot.",
+    "ChatGPT doesn't know what a takeoff scope is. Ours do. Four AI agents purpose-built for home builders: Foreman AI, Blueprint AI, MLS Listing Agent, and FAQ Chatbot.",
 };
 
 const agents = [
@@ -43,6 +43,22 @@ const agents = [
       "Review and adjust before committing",
     ],
     badge: "Pro Plan",
+  },
+  {
+    name: "MLS Listing Agent",
+    tagline: "AI Real Estate Listing Writer",
+    description:
+      "Claude Sonnet writes professional MLS descriptions from your live home data. Room dimensions, upgrades, community details, lot size — all pulled automatically. One click to PDF.",
+    icon: <FileText className="w-8 h-8" />,
+    color: "emerald",
+    href: "/listing-sheet",
+    highlights: [
+      "AI writes compelling 2-3 paragraph descriptions",
+      "Custom prompt: \"emphasize the pool\" or \"mention schools\"",
+      "Word count slider (50-1,000) for any MLS board",
+      "One-click PDF download with smart filename",
+    ],
+    badge: "Builder+",
   },
   {
     name: "FAQ Chatbot",
@@ -84,6 +100,13 @@ const colorMap: Record<string, { border: string; icon: string; badge: string; gl
     glow: "shadow-cyan-500/10",
     button: "bg-gradient-to-r from-cyan-600 to-cyan-500 text-white hover:from-cyan-500 hover:to-cyan-400 shadow-cyan-500/20",
   },
+  emerald: {
+    border: "border-emerald-500/40",
+    icon: "text-emerald-400 bg-emerald-500/10",
+    badge: "border-emerald-500/30 bg-emerald-500/10 text-emerald-400",
+    glow: "shadow-emerald-500/10",
+    button: "bg-gradient-to-r from-emerald-600 to-emerald-500 text-white hover:from-emerald-500 hover:to-emerald-400 shadow-emerald-500/20",
+  },
 };
 
 const pricingTiers = [
@@ -96,14 +119,14 @@ const pricingTiers = [
   {
     name: "Builder",
     price: "$299",
-    agents: ["FAQ Chatbot"],
-    color: "text-slate-300",
-    note: "No AI agents",
+    agents: ["FAQ Chatbot", "MLS Listing Agent"],
+    color: "text-emerald-400",
+    note: "Includes MLS Listing Agent",
   },
   {
     name: "Pro",
     price: "$499",
-    agents: ["FAQ Chatbot", "Foreman AI", "Blueprint AI"],
+    agents: ["FAQ Chatbot", "MLS Listing Agent", "Foreman AI", "Blueprint AI"],
     color: "text-amber-400",
     highlight: true,
   },
@@ -129,7 +152,7 @@ export default function AiAgentsPage() {
             AI AGENTS
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight">
-            Three AI Agents.
+            Four AI Agents.
             <br />
             <span className="text-white">Zero Setup.</span>
             <br />
@@ -224,7 +247,7 @@ export default function AiAgentsPage() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-black text-white mb-3">AI Agents by Plan</h2>
-            <p className="text-slate-400">Every plan includes the FAQ Chatbot. Upgrade to Pro for AI agents. Upgrade to Pro+ for full API automation.</p>
+            <p className="text-slate-400">Every plan includes the FAQ Chatbot. MLS Listing Agent on Builder+. Foreman AI + Blueprint AI on Pro. Full API automation on Pro+.</p>
           </div>
           <div className="rounded-2xl overflow-hidden border border-slate-800">
             {pricingTiers.map((tier, i) => (
