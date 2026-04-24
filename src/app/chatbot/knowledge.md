@@ -2,7 +2,7 @@
 - 110+ database tables and growing
 - 37 Foreman AI skills
 - 14 webhook event types
-- 15+ external REST API endpoints
+- 58 external REST API endpoints
 - 4 built-in AI features: Foreman AI (37 skills), Blueprint AI, MLS Listing Agent, FAQ Chatbot
 - 4 pricing tiers: Starter $149, Builder $299, Pro $499, Pro+ $599 
 
@@ -233,7 +233,7 @@ GPT-4o-mini chatbot on every page. Knows every feature, workflow, and role. Avai
 - **Starter $149/mo**: Construction Scheduling, Gantt, 17 templates, vendor assignment, permitting, buyer portal, FAQ Chatbot. Up to 500 active homes, 1,000 users/vendors.
 - **Builder $299/mo**: Everything in Starter + Sales Pipeline + Purchasing & Budgets + Design Center (no AI agents)
 - **Pro $499/mo**: Everything in Builder + Foreman AI (37 skills, Sonnet, 1,000 msg/mo) + Blueprint AI (25 takeoffs/mo) + MLS Listing Agent + advanced analytics. Up to 1,000 active homes.
-- **Pro+ $599/mo**: Everything in Pro + REST API (15+ endpoints, scoped keys), automated bidding pipeline (7-wave), webhooks (14 event types), Opus model, 5,000 AI messages/mo, Blueprint AI (25/mo), SSO, dedicated SLA.
+- **Pro+ $599/mo**: Everything in Pro + REST API (58 endpoints, scoped keys), automated bidding pipeline (7-wave), webhooks (14 event types), Opus model, 5,000 AI messages/mo, Blueprint AI (25/mo), SSO, dedicated SLA.
 - **Enterprise**: Custom pricing — Opus model, 5,000 msg/mo, Blueprint AI (25/mo), dedicated onboarding, SLA
 - **BYOK Add-on +$199/mo**: Bring Your Own API Key, unlimited messages
 - **BYOA Add-on +$100/mo**: Bring Your Own Agent — full REST API access to Cornerstone data. Connect external agents, automate bid ingestion from emails, build custom workflows. Pro plan or above required., any model
@@ -535,7 +535,7 @@ Builders switching from BuilderTrend, CoConstruct, Procore, or spreadsheets can 
 - **Accepts .xlsx and .csv** formats
 
 All four are **independent and composable** - mix and match any permitting template with any foundation template, any inspection template, and any construction template without creating duplicates for every combination.
-- **Why this matters:** A builder with 5 communities and 3 foundation types doesn't need 15+ templates. One permitting + one foundation + one inspection + one construction template covers everything. Templates run in sync once applied - permitting, foundation, inspection, and construction tasks auto-cascade alongside each other on the same timeline.
+- **Why this matters:** A builder with 5 communities and 3 foundation types doesn't need 58 templates. One permitting + one foundation + one inspection + one construction template covers everything. Templates run in sync once applied - permitting, foundation, inspection, and construction tasks auto-cascade alongside each other on the same timeline.
 - **Template copy/clone** - duplicate any template with all tasks and dependencies in one click. Great for creating variations per community.
 - **Template task reordering** - drag-and-drop task ordering within templates, plus searchable MasterTask dropdown for adding tasks
 - **Master task library** with canonical definitions shared across all templates - change a task once, it updates everywhere
