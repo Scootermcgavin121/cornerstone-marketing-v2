@@ -166,7 +166,7 @@ export default function ComparePage() {
             { num: "$149/mo", label: "Starting price", sub: "vs $499+ elsewhere" },
             { num: "Days", label: "Setup time", sub: "vs 6-12 months for NEWSTAR" },
             { num: "$0", label: "Implementation cost", sub: "vs $25,000+ for BuildPro" },
-            { num: "100%", label: "Built for home builders", sub: "not adapted from commercial" },
+            { num: "110+", label: "Database tables", sub: "and growing — built for construction, not adapted" },
           ].map((s) => (
             <div key={s.label} className="text-center p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
               <div className="text-3xl font-black text-cyan-400 mb-1">{s.num}</div>

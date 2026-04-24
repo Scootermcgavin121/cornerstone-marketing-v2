@@ -248,7 +248,8 @@ export default function ApiDocsPage() {
       <section id="endpoints" className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-black text-center mb-4">API Endpoints</h2>
-          <p className="text-slate-400 text-center mb-12 max-w-xl mx-auto">All endpoints are prefixed with <code className="text-cyan-400 bg-slate-800 px-1.5 py-0.5 rounded text-sm">https://app.cornerstonepm.ai</code></p>
+          <p className="text-slate-400 text-center mb-6 max-w-xl mx-auto">All endpoints are prefixed with <code className="text-cyan-400 bg-slate-800 px-1.5 py-0.5 rounded text-sm">https://app.cornerstonepm.ai</code></p>
+          <p className="text-slate-500 text-center text-sm mb-12">Built on 110+ database tables and growing &mdash; every endpoint reflects real construction data, not generic project management abstractions.</p>
 
           <div className="space-y-8">
             {endpointGroups.map((group) => {

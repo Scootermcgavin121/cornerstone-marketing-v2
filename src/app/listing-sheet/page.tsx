@@ -289,9 +289,10 @@ export default function ListingSheetPage() {
         <div className="max-w-5xl mx-auto">
           <div className="rounded-2xl bg-slate-900 border border-cyan-500/20 p-8 sm:p-12">
             <h2 className="text-3xl font-black mb-4">Why no one else can do this</h2>
-            <p className="text-slate-400 text-lg leading-relaxed mb-8">
+            <p className="text-slate-400 text-lg leading-relaxed mb-4">
               Sales CRM tools don&apos;t have room dimensions. Construction PM tools don&apos;t have buyer selections. No other platform has Blueprint AI floor plan analysis. Cornerstone has all of it &mdash; which is the only reason this feature is possible.
             </p>
+            <p className="text-slate-500 text-sm mb-8">Built on 110+ database tables and growing. Every field on this listing sheet exists because we modeled it from day one &mdash; not bolted on later.</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
                 { bad: "Sales CRMs", issue: "No construction data — can't pull room dimensions or structural upgrades" },
