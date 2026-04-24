@@ -203,13 +203,17 @@ export function PricingSection() {
           ))}
         </div>
 
-        {/* BYOK pill */}
+        {/* Add-on pills */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
           <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-700 bg-slate-800/60 text-slate-300 text-sm font-semibold">
             <Zap className="w-4 h-4 text-amber-400" />
-            <span>BYOK Add-On: +$199/mo — Bring Your Own Key, unlimited AI messages</span>
+            <span>BYOK Add-On: +$199/mo &mdash; Bring Your Own Key, unlimited AI messages</span>
           </div>
         </div>
+          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 text-sm font-semibold">
+            <Zap className="w-4 h-4 text-cyan-400" />
+            <span>BYOA Add-On: +$100/mo &mdash; Bring Your Own Agent, full API access</span>
+          </div>
 
         {/* Beta callout */}
         <div className="text-center mb-16">
