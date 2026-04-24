@@ -1,4 +1,38 @@
-﻿## MLS Listing Generator (AI-Powered)
+﻿## API Access / BYOA (Bring Your Own Agent)
+
+Cornerstone PM is the first homebuilder platform with a REST API designed for AI agent automation.
+
+**What it is:** Full programmatic API access so any AI agent can automate construction operations — especially the subcontractor bidding pipeline.
+
+**3 core endpoints:**
+- POST /api/ext/vendors — Create vendors programmatically (e.g., from AI phone call transcripts)
+- POST /api/ext/bids/request — Send scoped bid requests to one or many vendors with plans/specs attached
+- GET /api/ext/bids — Track all bids by status, scope, or vendor in real time
+
+**Authentication:** Bearer token. Scoped API keys per agent/integration. JSON responses. Standard REST.
+
+**The automated bidding pipeline (7 waves):**
+1. AI agent cold-calls subs, collects contact info, leaves voicemails and texts
+2. Email blast to all verified vendors with plans and bid deadline
+3. Email agent reads responses, creates vendor records via API — zero manual entry
+4. One-click (or programmatic) mass bid request sent to all vendors
+5. Automatic 7-day follow-up reminders if no response
+6. Bids received and tracked with line items, real-time owner notifications
+7. Winners get magic link to self-onboard into scheduling, POs, and invoices
+
+**Key stats:** 200+ vendors contacted in one afternoon, 0 manual data entry, 3 contact channels (call + voicemail + text), every interaction recorded with transcript.
+
+**Who can connect:**
+- Foreman AI (Cornerstone's built-in 27-skill agent — already wired, no setup)
+- Custom agents built with any framework (LangChain, AutoGen, Claude, GPT-4o)
+- Third-party tools (any system that can make HTTP requests)
+
+**Pricing:** BYOA Add-On +/mo on top of Pro plan (/mo) or above.
+
+**Page:** /api-access
+
+---
+## MLS Listing Generator (AI-Powered)
 
 One of Cornerstone's most unique features. Generates a professional, print-ready MLS listing sheet from live project data in one click.
 
