@@ -78,6 +78,24 @@ export default function ListingSheetPage() {
         </div>
       </section>
 
+      {/* Problem / Solution */}
+      <section className="py-16 px-4">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="p-8 rounded-2xl bg-red-500/5 border border-red-500/20">
+            <h2 className="text-2xl font-black text-red-400 mb-4">The Problem</h2>
+            <p className="text-slate-400 leading-relaxed">
+              Sales teams waste hours manually typing room dimensions, copying specs from blueprints, and writing property descriptions for every listing. It&apos;s tedious, error-prone, and pulls your best people away from selling.
+            </p>
+          </div>
+          <div className="p-8 rounded-2xl bg-cyan-500/5 border border-cyan-500/20">
+            <h2 className="text-2xl font-black text-cyan-400 mb-4">The Solution</h2>
+            <p className="text-slate-400 leading-relaxed">
+              One click. Cornerstone PM pulls every detail from your existing data &mdash; room dimensions, structural upgrades, lot size, community features, floorplan specs &mdash; and generates a polished, branded MLS listing sheet instantly.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* AI Description Feature — hero callout */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
@@ -138,6 +156,33 @@ export default function ListingSheetPage() {
                 <p className="text-slate-400 text-sm leading-relaxed">{f.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Zero manual entry checklist */}
+      <section className="py-16 px-4">
+        <div className="max-w-4xl mx-auto">
+          <div className="rounded-2xl bg-slate-900 border border-slate-800 p-8">
+            <h2 className="text-3xl font-black text-white mb-2">Zero manual data entry.</h2>
+            <p className="text-slate-400 mb-8">Everything pulls automatically from your project. Nothing to copy-paste.</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {[
+                "Home address & lot number",
+                "Lot size (0.457 ac / 19,907 sf format)",
+                "Room-by-room dimensions (L x W x sqft)",
+                "Structural options with pricing",
+                "Design selections by category",
+                "Community name, city, state",
+                "Company logo (auto-centered)",
+                "Floorplan specs (sqft, beds, baths, stories, garage)",
+              ].map((item) => (
+                <div key={item} className="flex items-center gap-3 p-3 rounded-xl bg-slate-800/40 border border-slate-700/60">
+                  <span className="text-emerald-400 font-black text-lg leading-none flex-shrink-0">&#10003;</span>
+                  <span className="text-slate-300 text-sm">{item}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
