@@ -1,4 +1,80 @@
-﻿## API Documentation (REST API Reference)
+﻿## Platform Overview (Current Stats)
+- 110+ database tables and growing
+- 37 Foreman AI skills
+- 14 webhook event types
+- 15+ external REST API endpoints
+- 4 built-in AI features: Foreman AI (37 skills), Blueprint AI, MLS Listing Agent, FAQ Chatbot
+- 4 pricing tiers: Starter , Builder , Pro , Pro+ 
+
+---
+
+## New Features (April 2026)
+
+### Custom Fields
+- Admin > Custom Fields
+- Create custom fields on any entity: vendor, home, task, community, bid, purchase order
+- 5 field types: text, number, date, select, boolean
+- Fields auto-render on detail pages with appropriate inputs
+- Save on change (no submit button needed)
+
+### File Tags
+- Admin > File Tags
+- Color-coded tags to categorize uploaded files
+- 8 preset colors
+- Helps organize documents, plans, permits, photos across projects
+
+### Saved Data Views
+- Backend API for saving custom filters and sorts per user per table
+- Remembers each user's preferred view
+- UI coming soon
+
+### Vendor Registration Form
+- Public page at /vendor-register/[orgSlug] — no login required
+- Vendors self-register: company name, scope, contact info
+- Creates an inactive vendor record pending admin approval
+- Shareable link generated from Admin > Vendor Registration
+- Eliminates manual vendor data entry during outreach campaigns
+
+### Payments Tracking
+- Purchasing > Payments
+- Record payments against vendors, purchase orders, and homes
+- Payment methods: check, ACH, wire, card, cash
+- Track reference numbers and payment dates
+- Filter by vendor, home, date range, status
+- Pairs with REST API: GET/POST /api/ext/payments
+
+### Cost Types
+- Classifications: Labor, Material, Subcontract, Equipment, Overhead
+- Default margin percentages per cost type
+- Links to budget lines and parts catalog
+- Available via API: GET /api/ext/cost-types
+
+### Webhooks
+- Admin > Webhooks
+- 14 real-time event types (see full list in API section)
+- HMAC SHA-256 signature verification via X-Webhook-Signature header
+- Webhook logs with HTTP status codes
+- 10 second timeout, auto-disable after 50 consecutive failures
+
+### QuickBooks Sync Fields
+- qboId field on: Vendor, Home, PurchaseOrder, Community, User
+- externalId fields for generic third-party integrations
+- Ready for Zapier or direct QuickBooks sync
+- No official integration yet — use REST API or Zapier webhooks to sync
+
+### Retainage Support
+- defaultRetainagePct on homes
+- retainageAmount on purchase orders
+- Standard construction billing feature
+- Withholds a percentage of payment until project completion
+
+### Hierarchical Scopes
+- parentScopeId on Scope model
+- Supports nested cost code grouping
+- Example: Electrical > Rough-In, Electrical > Trim-Out
+
+---
+## API Documentation (REST API Reference)
 
 Full API docs at: /api-docs
 
