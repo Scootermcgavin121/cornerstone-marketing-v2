@@ -1,115 +1,86 @@
-﻿import React from "react";
 import Link from "next/link";
-import { Check, MessageSquare, Zap, Bot, Database, Globe, BarChart3, FileText, ShoppingCart, Home, Users, Layers } from "lucide-react";
+import { Check, ArrowRight, Zap, Brain, FileText, Cpu } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Foreman AI — Your AI Construction Agent | Cornerstone PM",
+export const metadata = {
+  title: "Foreman AI — 37-Skill Construction Agent | Cornerstone PM",
   description:
-    "27 purpose-built skills. Not a generic chatbot — Foreman reads and writes real data in your account. Parts, vendors, homes, budgets, MLS listings, exports, and more.",
+    "37 purpose-built construction skills. Not a generic chatbot. Foreman AI reads and writes your real data — parts, vendors, homes, budgets, MLS listings, bid requests, and more. Pro plan.",
 };
 
-const skillGroups = [
+const skillCategories = [
   {
-    label: "Parts & Catalog",
-    icon: ShoppingCart,
-    count: 7,
+    icon: Cpu,
     color: "text-amber-400",
     bg: "bg-amber-500/10",
     border: "border-amber-500/20",
+    label: "Core Data Management",
+    count: 12,
+    desc: "Read and write your real construction data — parts, vendors, homes, budgets, design center, and more.",
     skills: [
-      "Search parts catalog",
-      "Create a single part",
-      "Bulk-create multiple parts at once",
-      "Update existing parts",
-      "Delete parts",
-      "Suggest design center options from unlinked parts",
-      "Generate files (CSV, PDF, styled reports)",
+      { name: "Parts Catalog", detail: "Search, create, bulk import, update, and delete parts" },
+      { name: "Design Center Options", detail: "List, create, bulk create, update options; link to parts and option classes" },
+      { name: "Vendor Management", detail: "List, create, search bids, performance scorecards" },
+      { name: "Home Management", detail: "List homes, view budgets, update status and assignments" },
+      { name: "Data Lookup", detail: "Communities, floorplans, scopes, option classes, spec levels, users, org stats" },
     ],
   },
   {
-    label: "Design Center",
-    icon: Layers,
-    count: 5,
-    color: "text-violet-400",
-    bg: "bg-violet-500/10",
-    border: "border-violet-500/20",
-    skills: [
-      "List all design options",
-      "List option categories",
-      "Create a single option",
-      "Bulk-create multiple options",
-      "Suggest options from parts catalog (auto-link)",
-    ],
-  },
-  {
-    label: "Homes & Budgets",
-    icon: Home,
-    count: 3,
-    color: "text-cyan-400",
-    bg: "bg-cyan-500/10",
-    border: "border-cyan-500/20",
-    skills: [
-      "List all homes with status",
-      "Update home status and assignments",
-      "View home budget totals",
-    ],
-  },
-  {
-    label: "Vendors & Bids",
-    icon: Users,
-    count: 3,
-    color: "text-emerald-400",
-    bg: "bg-emerald-500/10",
-    border: "border-emerald-500/20",
-    skills: [
-      "List all vendors",
-      "Create a new vendor",
-      "Search vendor bids",
-    ],
-  },
-  {
-    label: "Sales & Marketing",
-    icon: FileText,
-    count: 3,
-    color: "text-pink-400",
-    bg: "bg-pink-500/10",
-    border: "border-pink-500/20",
-    skills: [
-      "Generate AI-written MLS listing descriptions",
-      "Update floorplan details",
-      "Generate PDFs, CSVs, and styled reports",
-    ],
-  },
-  {
-    label: "Data Intelligence",
-    icon: Database,
-    count: 6,
+    icon: Brain,
     color: "text-blue-400",
     bg: "bg-blue-500/10",
     border: "border-blue-500/20",
+    label: "AI-Powered Analysis",
+    count: 8,
+    desc: "Foreman doesn't just retrieve data — it analyzes it. Budget variances, profitability, vendor performance, competitive intel.",
     skills: [
-      "List communities",
-      "List floorplans",
-      "List scopes",
-      "List option classes",
-      "List users",
-      "View org stats",
+      { name: "Web Scraping", detail: "Fetch any URL for product info, pricing, specs — Home Depot, Ferguson, 84 Lumber" },
+      { name: "Design Center Suggestions", detail: "Scan parts catalog for missing design options, auto-suggest additions" },
+      { name: "Competitive Analysis", detail: "Scrape competitor pages and compare vs your floorplans" },
+      { name: "Sales Description Generator", detail: "AI-powered MLS descriptions for floorplans using real project data" },
+      { name: "Budget Variance Analysis", detail: "Flag cost overruns across all homes in one command" },
+      { name: "Profitability Reports", detail: "Margin analysis by community with upgrade revenue breakdown" },
+      { name: "Vendor Performance Analysis", detail: "Bid response rates, win rates, insurance tracking" },
+      { name: "File Content Reading", detail: "Analyze uploaded CSVs, text files, screenshots — extract and act on data" },
     ],
   },
   {
-    label: "Utility",
-    icon: Globe,
-    count: 3,
-    color: "text-orange-400",
-    bg: "bg-orange-500/10",
-    border: "border-orange-500/20",
+    icon: FileText,
+    color: "text-emerald-400",
+    bg: "bg-emerald-500/10",
+    border: "border-emerald-500/20",
+    label: "Document Generation",
+    count: 9,
+    desc: "Professional documents in seconds. SOWs, bid invitations, comparison reports, punch lists, MLS sheets, Excel exports.",
     skills: [
-      "Scrape any website (Home Depot, Ferguson, suppliers)",
-      "Save notes to persistent org memory",
-      "Screenshot analysis — paste an image, get answers",
+      { name: "SOW Generator", detail: "Professional Scope of Work docs with home counts and specs" },
+      { name: "Bid Request Drafter", detail: "Formatted bid invitations with project details, plans, and deadline" },
+      { name: "Bid Comparison Reports", detail: "Normalize pricing, rank vendors, recommend best value" },
+      { name: "Punch List Generator", detail: "Room-by-room QC checklists by trade" },
+      { name: "Custom File Export", detail: "CSV, JSON, text, and PDF-style documents on demand" },
+      { name: "PDF Document Creation", detail: "Styled HTML with print formatting for professional docs" },
+      { name: "Excel Exports", detail: "Formatted spreadsheets with company branding" },
+      { name: "MLS Listing Sheets", detail: "Auto-generated from floorplan data — room dimensions, upgrades, community info" },
+      { name: "Room Dimension Sheets", detail: "Detailed room specs for sales team handouts" },
+    ],
+  },
+  {
+    icon: Zap,
+    color: "text-violet-400",
+    bg: "bg-violet-500/10",
+    border: "border-violet-500/20",
+    label: "System Intelligence",
+    count: "8+",
+    desc: "The behaviors that make Foreman actually useful — memory, bulk operations, deduplication, smart linking, error recovery.",
+    skills: [
+      { name: "Persistent Memory", detail: "Saves preferences and decisions across sessions — gets smarter over time" },
+      { name: "Bulk Operations", detail: "Create multiple parts or options efficiently vs one-by-one" },
+      { name: "Smart Data Linking", detail: "Auto-connect parts to option classes for the design center" },
+      { name: "Duplicate Prevention", detail: "Always searches before creating to avoid duplicate records" },
+      { name: "Price Conversion", detail: "Handles dollars-to-cents conversion automatically" },
+      { name: "URL Generation", detail: "Build direct links to specific homes, vendors, and reports" },
+      { name: "Error Recovery", detail: "When web scraping fails, uses industry knowledge as backup" },
+      { name: "Context Awareness", detail: "Understands builder terminology and workflows — not generic AI speak" },
     ],
   },
 ];
@@ -117,37 +88,35 @@ const skillGroups = [
 const examplePrompts = [
   {
     prompt: "Scrape Home Depot for GE Profile refrigerators and add them to our parts catalog",
-    icon: <Globe className="w-5 h-5 text-amber-400" />,
-    result: "Fetches product names, SKUs, and prices — creates parts automatically",
+    result: "Found 6 models, added to catalog with SKUs, prices, and specs. Ready to link to design options.",
+    category: "Web Scraping + Parts",
   },
   {
-    prompt: "Scan our parts catalog and suggest design center options we should create",
-    icon: <Layers className="w-5 h-5 text-amber-400" />,
-    result: "Finds unlinked parts and bulk-creates matching design options",
+    prompt: "Show me all homes in Coastal Ridge that are IN_PROGRESS with budget totals and days since construction started",
+    result: "14 homes returned with budget summary, committed vs budgeted, and timeline — formatted as a table.",
+    category: "Home Management + Analysis",
   },
   {
-    prompt: "Show me all homes in Coastal Ridge that are in progress with their budget totals",
-    icon: <BarChart3 className="w-5 h-5 text-amber-400" />,
-    result: "Chains listHomes + getHomeBudget, returns a formatted table",
+    prompt: "Write an MLS description for The Addison at Bayside Preserve, emphasize the chef's kitchen and waterfront views",
+    result: "250-word professional description generated from real room dimensions, upgrades, and community data.",
+    category: "Document Generation",
   },
   {
-    prompt: "Generate an MLS listing for 1234 Oak Street",
-    icon: <FileText className="w-5 h-5 text-amber-400" />,
-    result: "Pulls community info, room dimensions, upgrades, selections — writes the listing",
+    prompt: "Flag any homes where actual costs are more than 10% over budget",
+    result: "3 homes flagged. Breakdown by scope category with variance amounts and recommended actions.",
+    category: "Budget Variance Analysis",
   },
   {
-    prompt: "Create a vendor called ABC Plumbing with scope Plumbing",
-    icon: <Bot className="w-5 h-5 text-amber-400" />,
-    result: "Creates the vendor record in your account instantly",
+    prompt: "Create a bid request for all Plumbing vendors in our system for the Bayshore Commons community",
+    result: "Bid request drafted with specs, deadline, and vendor list. Sent portal invites to 12 vendors.",
+    category: "Bid Request Drafter",
   },
   {
-    prompt: "Export all parts in the Appliances scope to a CSV",
-    icon: <Database className="w-5 h-5 text-amber-400" />,
-    result: "Searches parts, generates a downloadable CSV file",
+    prompt: "Generate a punch list for the finishing trades at 1234 Oak Street",
+    result: "Room-by-room QC checklist for Paint, Flooring, Trim, and Fixtures — exported as PDF.",
+    category: "Punch List Generator",
   },
 ];
-
-const roles = ["Admin", "Purchasing Manager", "Sales Manager"];
 
 export default function ForemanPage() {
   return (
@@ -156,75 +125,116 @@ export default function ForemanPage() {
 
       {/* Hero */}
       <section className="relative pt-32 pb-20 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_20%,rgba(251,191,36,0.12),transparent)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_20%,rgba(251,191,36,0.08),transparent)]" />
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-400 text-xs font-semibold mb-6">
             <Zap className="w-3.5 h-3.5" />
-            37-skill AI AGENT &middot; PURPOSE-BUILT FOR CONSTRUCTION
+            37 SKILLS &middot; PRO PLAN &middot; READS AND WRITES YOUR REAL DATA
           </div>
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-4 leading-tight">
-            Meet{" "}
-            <span className="text-amber-400">Foreman AI</span>
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
+            🪖 Foreman AI
           </h1>
-          <p className="text-2xl sm:text-3xl font-bold text-slate-300 mb-6">Your AI Construction Agent</p>
-          <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-4 leading-relaxed">
-            Type a command. Foreman executes it. Not a generic chatbot &mdash; 27 purpose-built skills that read and write real data in your account.
-          </p>
-          <p className="text-slate-500 max-w-2xl mx-auto mb-10">
-            No other construction platform has an AI agent that actually creates parts, vendors, and options &mdash; or generates MLS listings from live project data.
+          <p className="text-2xl text-amber-400 font-bold mb-4">Not a chatbot. A construction agent.</p>
+          <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
+            37 purpose-built skills across data management, AI analysis, document generation, and system intelligence. Type what you need in plain English &mdash; Foreman executes it against your real data.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/beta" className="px-8 py-4 rounded-full bg-amber-400 text-slate-900 font-bold text-lg hover:bg-amber-300 transition-all duration-200 shadow-lg shadow-amber-500/30 hover:-translate-y-0.5">
-              Request Early Access &rarr;
+              Get Beta Access &rarr;
             </Link>
-            <Link href="/ai-agents" className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200">
-              See All 3 AI Agents
-            </Link>
+            <a href="#skills" className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200">
+              See all 37 skills
+            </a>
           </div>
         </div>
       </section>
 
-      {/* Key angles */}
+      {/* Stats */}
       <section className="py-12 px-4">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-5">
           {[
-            { title: "Reads AND writes", desc: "Creates parts, options, vendors, and listings — it doesn't just answer questions, it takes action." },
-            { title: "27 purpose-built skills", desc: "Every skill is a custom tool designed for construction workflows. Not a generic chatbot with a system prompt." },
-            { title: "Persistent memory", desc: "Remembers your preferences, notes, and context across sessions. Gets smarter the more you use it." },
-          ].map((a) => (
-            <div key={a.title} className="p-6 rounded-2xl bg-amber-500/5 border border-amber-500/20 text-center">
-              <h3 className="text-amber-400 font-black text-lg mb-2">{a.title}</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">{a.desc}</p>
+            { num: "37", label: "Purpose-built skills", sub: "Not generic AI features" },
+            { num: "4", label: "Skill categories", sub: "Data, Analysis, Docs, Intelligence" },
+            { num: "110+", label: "Database tables", sub: "Full access to your real data" },
+            { num: "0", label: "Manual data entry", sub: "Plain English to execution" },
+          ].map((s) => (
+            <div key={s.label} className="text-center p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+              <div className="text-3xl font-black text-amber-400 mb-1">{s.num}</div>
+              <div className="text-white font-bold text-sm mb-1">{s.label}</div>
+              <div className="text-slate-500 text-xs">{s.sub}</div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Grouped skills */}
+      {/* Example prompts */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-black text-center mb-4">37 skills. One Agent.</h2>
-          <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">Every skill is a purpose-built tool — not a prompt. Foreman knows your entire operation: parts, vendors, homes, budgets, design center, MLS listings, and more.</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-            {skillGroups.map((group) => {
-              const Icon = group.icon;
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-black mb-4">Plain English. Real results.</h2>
+            <p className="text-slate-400 max-w-xl mx-auto">These are actual things you can say to Foreman right now.</p>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+            {examplePrompts.map((ex) => (
+              <div key={ex.prompt} className="rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-amber-500/20 transition-all duration-300 overflow-hidden">
+                <div className="p-5 border-b border-slate-800/60">
+                  <div className="flex items-start gap-3 mb-3">
+                    <span className="text-amber-400 font-black text-lg leading-none flex-shrink-0 mt-0.5">You:</span>
+                    <p className="text-white font-medium italic">&ldquo;{ex.prompt}&rdquo;</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-slate-400 font-black text-sm leading-none flex-shrink-0 mt-0.5">🪖</span>
+                    <p className="text-slate-300 text-sm">{ex.result}</p>
+                  </div>
+                </div>
+                <div className="px-5 py-2.5">
+                  <span className="text-amber-400/60 text-xs font-semibold">{ex.category}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Skill categories */}
+      <section id="skills" className="py-16 px-4 bg-slate-900/30">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl sm:text-5xl font-black mb-4">37 skills. 4 categories.</h2>
+            <p className="text-slate-400 max-w-xl mx-auto">Every skill is purpose-built for construction. Not adapted from a generic AI assistant.</p>
+          </div>
+          <div className="space-y-8">
+            {skillCategories.map((cat) => {
+              const Icon = cat.icon;
               return (
-                <div key={group.label} className={`p-5 rounded-2xl bg-slate-900/60 border ${group.border} hover:border-opacity-60 transition-all duration-300`}>
-                  <div className={`w-10 h-10 rounded-xl ${group.bg} border ${group.border} flex items-center justify-center mb-3`}>
-                    <Icon className={`w-5 h-5 ${group.color}`} />
+                <div key={cat.label} className={`rounded-2xl border ${cat.border} overflow-hidden`}>
+                  <div className={`${cat.bg} px-8 py-6 border-b ${cat.border}`}>
+                    <div className="flex items-center gap-4">
+                      <div className={`w-12 h-12 rounded-xl ${cat.bg} border ${cat.border} flex items-center justify-center flex-shrink-0`}>
+                        <Icon className={`w-6 h-6 ${cat.color}`} />
+                      </div>
+                      <div>
+                        <div className="flex items-center gap-3 mb-1">
+                          <h3 className={`text-2xl font-black ${cat.color}`}>{cat.label}</h3>
+                          <span className={`px-2.5 py-0.5 rounded-full text-xs font-black ${cat.bg} border ${cat.border} ${cat.color}`}>{cat.count} skills</span>
+                        </div>
+                        <p className="text-slate-400 text-sm">{cat.desc}</p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex items-center justify-between mb-3">
-                    <h3 className={`font-black ${group.color}`}>{group.label}</h3>
-                    <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${group.bg} ${group.color}`}>{group.count}</span>
+                  <div className="p-6 bg-slate-900/40">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                      {cat.skills.map((skill) => (
+                        <div key={skill.name} className="flex items-start gap-3 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                          <Check className={`w-4 h-4 ${cat.color} flex-shrink-0 mt-0.5`} />
+                          <div>
+                            <div className="text-white font-semibold text-sm mb-0.5">{skill.name}</div>
+                            <div className="text-slate-500 text-xs leading-relaxed">{skill.detail}</div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                  <ul className="space-y-1.5">
-                    {group.skills.map((s) => (
-                      <li key={s} className="flex items-start gap-2 text-xs text-slate-400">
-                        <Check className={`w-3.5 h-3.5 ${group.color} flex-shrink-0 mt-0.5`} />
-                        {s}
-                      </li>
-                    ))}
-                  </ul>
                 </div>
               );
             })}
@@ -232,109 +242,77 @@ export default function ForemanPage() {
         </div>
       </section>
 
-      {/* Example prompts with results */}
-      <section className="py-16 px-4 bg-slate-900/40">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-black text-center mb-4">See it in action</h2>
-          <p className="text-slate-400 text-center mb-12 max-w-xl mx-auto">Real commands. Real results. Foreman chains multiple tools together to answer complex questions.</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            {examplePrompts.map((item, idx) => (
-              <div key={idx} className="p-5 rounded-xl bg-slate-900 border border-slate-800 hover:border-amber-500/30 transition-all duration-200">
-                <div className="flex items-start gap-3 mb-3">
-                  <div className="mt-0.5 flex-shrink-0">{item.icon}</div>
-                  <div className="flex items-start gap-2">
-                    <MessageSquare className="w-4 h-4 text-slate-600 mt-0.5 flex-shrink-0" />
-                    <p className="text-slate-200 text-sm font-medium italic">&ldquo;{item.prompt}&rdquo;</p>
-                  </div>
-                </div>
-                <div className="ml-8 flex items-start gap-2">
-                  <span className="text-amber-400 text-xs font-bold flex-shrink-0 mt-0.5">RESULT</span>
-                  <p className="text-slate-500 text-xs">{item.result}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* MLS Spotlight */}
+      {/* Gets smarter */}
       <section className="py-16 px-4">
-        <div className="max-w-5xl mx-auto">
-          <div className="rounded-2xl bg-amber-500/5 border border-amber-500/20 p-8 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold uppercase tracking-widest mb-4">
-                <FileText className="w-3.5 h-3.5" />
-                Standout Skill
-              </div>
-              <h2 className="text-3xl font-black text-white mb-4">MLS Listing Generator</h2>
-              <p className="text-slate-400 leading-relaxed mb-4">
-                Ask Foreman to generate an MLS listing for any home. It pulls community info, room dimensions (from Blueprint AI), lot size, structural upgrades, and design selections &mdash; then writes polished, professional copy.
-              </p>
-              <p className="text-slate-400 leading-relaxed mb-6">
-                No other construction PM software can do this. What used to take 2 hours of copy-pasting now takes 10 seconds.
-              </p>
-              <div className="p-4 rounded-xl bg-slate-900 border border-slate-800 border-l-4 border-l-amber-500">
-                <p className="text-slate-300 text-sm italic">&ldquo;Generate an MLS listing for 1234 Oak Street&rdquo;</p>
-              </div>
-            </div>
-            <div className="space-y-3">
-              <p className="text-amber-400 font-bold text-sm uppercase tracking-widest mb-4">What gets included:</p>
+        <div className="max-w-4xl mx-auto">
+          <div className="rounded-2xl bg-amber-500/5 border border-amber-500/20 p-8 sm:p-12 text-center">
+            <div className="text-5xl mb-6">🧠</div>
+            <h2 className="text-3xl font-black text-white mb-4">Gets smarter over time.</h2>
+            <p className="text-slate-400 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
+              Foreman uses persistent memory to learn your workflows, preferences, and decisions across sessions. The more you use it, the more it knows about your specific business &mdash; your communities, your vendors, your margin targets.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
               {[
-                "Property description with all upgrades called out",
-                "Design center selections (flooring, countertops, cabinets, fixtures)",
-                "Structural options (tray ceilings, bonus rooms, extended driveway)",
-                "Room dimensions extracted by Blueprint AI",
-                "Community amenities and builder info",
-                "Professional formatting ready for MLS submission",
+                { label: "Remembers your vendors", detail: "Knows which subs you prefer for each scope" },
+                { label: "Learns your margins", detail: "Uses your actual targets in reports and analysis" },
+                { label: "Knows your communities", detail: "Understands each project's context and status" },
               ].map((item) => (
-                <div key={item} className="flex items-start gap-3">
-                  <Check className="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300 text-sm">{item}</span>
+                <div key={item.label} className="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                  <div className="text-amber-400 font-bold text-sm mb-1">{item.label}</div>
+                  <div className="text-slate-500 text-xs">{item.detail}</div>
                 </div>
               ))}
-              <div className="pt-2">
-                <Link href="/listing-sheet" className="text-amber-400 text-sm font-semibold hover:text-amber-300 transition-colors">
-                  See the full MLS feature &rarr;
-                </Link>
-              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Available Roles */}
+      {/* Pricing */}
       <section className="py-16 px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl font-bold text-white mb-6">Available To</h2>
-          <div className="flex flex-wrap items-center justify-center gap-3 mb-12">
-            {roles.map((role) => (
-              <span key={role} className="px-4 py-2 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-300 text-sm font-semibold">
-                {role}
-              </span>
-            ))}
-          </div>
-
-          {/* Pricing */}
-          <div className="rounded-2xl bg-slate-900/60 border border-amber-500/20 p-8 space-y-4">
-            <div>
-              <div className="text-slate-400 text-sm font-semibold uppercase tracking-widest mb-1">Included in</div>
-              <div className="text-2xl font-black text-white">Pro Plan</div>
-              <div className="text-4xl font-black text-amber-400 mt-1">$499<span className="text-lg text-slate-400 font-normal">/mo</span></div>
+        <div className="max-w-2xl mx-auto">
+          <div className="rounded-2xl bg-slate-900/60 border border-amber-500/20 p-8 text-center">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold uppercase tracking-widest mb-6">
+              Pro Plan Feature
             </div>
-            <div className="border-t border-slate-800 pt-4 space-y-2 text-sm text-slate-400">
-              <div className="flex justify-between"><span>Model</span><span className="text-white">Claude Sonnet</span></div>
-              <div className="flex justify-between"><span>AI agent messages</span><span className="text-white">1,000/month</span></div>
-              <div className="flex justify-between"><span>BYOK add-on</span><span className="text-amber-400 font-semibold">+$199/mo, unlimited</span></div>
+            <div className="text-5xl font-black text-amber-400 mb-2">$499<span className="text-xl text-slate-400 font-normal">/mo</span></div>
+            <div className="text-white font-bold text-xl mb-6">Pro Plan</div>
+            <div className="space-y-3 text-left mb-8">
+              {[
+                "Foreman AI — 37 skills, Sonnet model, 1,000 AI messages/mo",
+                "Blueprint AI — 25 blueprint takeoffs/mo",
+                "MLS Listing Agent",
+                "Everything in Builder (Sales, Purchasing, Design Center)",
+                "Up to 1,000 active homes",
+                "Advanced analytics & reporting",
+                "Priority onboarding support",
+              ].map((f) => (
+                <div key={f} className="flex items-center gap-3">
+                  <Check className="w-4 h-4 text-amber-400 flex-shrink-0" />
+                  <span className="text-slate-300 text-sm">{f}</span>
+                </div>
+              ))}
             </div>
-            <Link href="/beta" className="block w-full text-center px-6 py-3.5 rounded-xl bg-amber-400 text-slate-900 font-bold hover:bg-amber-300 transition-all duration-200">
-              Request Early Access &rarr;
+            <Link href="/beta" className="block w-full text-center px-6 py-4 rounded-xl bg-amber-400 text-slate-900 font-bold text-lg hover:bg-amber-300 transition-all duration-200">
+              Get Beta Access &rarr;
             </Link>
-            <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders &middot; No credit card required</p>
+            <p className="text-slate-500 text-xs mt-3">Beta is free for 2 years &middot; Limited to 100 builders</p>
           </div>
         </div>
       </section>
 
-      <Footer />
+      {/* CTA */}
+      <section className="py-20 px-4 text-center border-t border-slate-800/60">
+        <h2 className="text-4xl font-black mb-4">
+          Your builders are paying consultants $5,000<br />
+          <span className="text-amber-400">for custom reports.</span>
+        </h2>
+        <p className="text-slate-400 text-lg mb-10 max-w-xl mx-auto">
+          We built the consultant into the software. 37 skills. Plain English. Real construction data. Pro plan.
+        </p>
+        <Link href="/beta" className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-amber-400 text-slate-900 font-bold text-xl hover:bg-amber-300 transition-all duration-200 shadow-xl shadow-amber-500/30">
+          Get Beta Access <ArrowRight className="w-5 h-5" />
+        </Link>
+      </section>
     </div>
   );
 }
