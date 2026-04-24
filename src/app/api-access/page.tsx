@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { Check, Zap, ArrowRight, Code, Globe, Shield, GitBranch } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 
@@ -322,8 +322,8 @@ export default function ApiAccessPage() {
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-bold uppercase tracking-widest mb-6">
               Add-On Pricing
             </div>
-            <div className="text-5xl font-black text-cyan-400 mb-2">+$100<span className="text-xl text-slate-400 font-normal">/mo</span></div>
-            <div className="text-white font-bold text-xl mb-6">BYOA Add-On</div>
+            <div className="text-5xl font-black text-cyan-400 mb-2">$599<span className="text-xl text-slate-400 font-normal">/mo</span></div>
+            <div className="text-white font-bold text-xl mb-6">Pro+ Plan</div>
             <div className="space-y-3 text-left mb-8">
               {[
                 "Full REST API access (vendors, bids, homes, parts)",
@@ -331,7 +331,7 @@ export default function ApiAccessPage() {
                 "Bearer token auth, JSON responses",
                 "Real-time webhooks on bid events",
                 "Any AI agent can connect",
-                "Requires Pro plan ($499/mo) or above",
+                "Includes everything in Pro, plus full API access",
               ].map((f) => (
                 <div key={f} className="flex items-center gap-3">
                   <Check className="w-4 h-4 text-cyan-400 flex-shrink-0" />

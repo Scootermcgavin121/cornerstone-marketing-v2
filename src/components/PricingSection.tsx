@@ -77,19 +77,24 @@ const plans = [
     highlight: true,
   },
   {
-    name: "Enterprise",
-    price: "Custom",
-    period: "",
-    description: "Large teams, custom SLAs, and max AI power.",
-    badge: null,
-    bonusBadge: null,
+    name: "Pro+",
+    price: "$599",
+    period: "/mo",
+    description: "Full API access for AI agent automation. The complete platform.",
+    badge: "INDUSTRY FIRST",
+    bonusBadge: "BYOA API Access included",
     features: [
       "Everything in Pro, plus:",
-      "Opus model (most powerful)",
+      "Full REST API access — plug in any AI agent to automate vendor outreach, bid requests, and tracking",
+      "Automated subcontractor bidding pipeline (7-wave: cold call \u2192 onboarding)",
+      "Scoped API keys per agent/integration",
+      "Real-time webhooks on bid events",
+      "200+ vendors contacted in one afternoon",
+      "0 manual data entry — end to end",
+      "Opus model (most powerful AI)",
       "5,000 AI agent messages/month",
       "Blueprint AI (25 takeoffs/mo)",
-      "Dedicated SLA & onboarding",
-      "Custom integrations",
+      "Dedicated onboarding & SLA",
       "SSO & advanced permissions",
     ],
     notIncluded: [],
@@ -207,13 +212,9 @@ export function PricingSection() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
           <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-700 bg-slate-800/60 text-slate-300 text-sm font-semibold">
             <Zap className="w-4 h-4 text-amber-400" />
-            <span>BYOK Add-On: +$199/mo &mdash; Bring Your Own Key, unlimited AI messages</span>
+            <span>BYOK Add-On: +$199/mo &mdash; Bring Your Own Key, unlimited AI messages (Pro &amp; above)</span>
           </div>
         </div>
-          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 text-sm font-semibold">
-            <Zap className="w-4 h-4 text-cyan-400" />
-            <span>BYOA Add-On: +$100/mo &mdash; Bring Your Own Agent, full API access</span>
-          </div>
 
         {/* Beta callout */}
         <div className="text-center mb-16">
