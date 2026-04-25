@@ -207,7 +207,7 @@ export default function ComparePage() {
                   "Floorplan base price + options engine = contract price",
                   "Pre-sale workflow: lead &rarr; options &rarr; contract &rarr; close",
                   "Design Center selections built into the sale &mdash; not change orders",
-                  "47 native AI skills that read &amp; write your real data",
+                  "Native AI agents with 47 skills (Pro plan, $499/mo flat)",
                   "Built exclusively for production home builders",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-2 text-slate-300 text-sm">
