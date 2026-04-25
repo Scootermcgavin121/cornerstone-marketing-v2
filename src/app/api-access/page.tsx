@@ -1,5 +1,5 @@
 ﻿import Link from "next/link";
-import { Check, Zap, ArrowRight, Code, Globe, Shield, GitBranch } from "lucide-react";
+import { Check, Zap, ArrowRight, Code, Globe, Shield, GitBranch, Brain, RefreshCw } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 
 export const metadata = {
@@ -223,6 +223,105 @@ export default function ApiAccessPage() {
         </div>
       </section>
 
+      {/* Foreman Skill Pack */}
+      <section className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-14">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-violet-500/30 bg-violet-500/10 text-violet-400 text-xs font-semibold mb-6">
+              <Brain className="w-3.5 h-3.5" />
+              PRO+ ONLY &mdash; NEW
+            </div>
+            <h2 className="text-3xl sm:text-5xl font-black mb-4">
+              Not just an API.<br />
+              <span className="text-violet-400">The intelligence layer.</span>
+            </h2>
+            <p className="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
+              Pro+ users get access to Foreman AI&apos;s complete skill definitions &mdash; the actual tool schemas that make any AI agent instantly fluent in construction workflows. One endpoint. 37 skills. Ready to drop into any agent framework.
+            </p>
+          </div>
+
+          {/* Endpoint highlight */}
+          <div className="rounded-2xl bg-violet-500/5 border border-violet-500/30 overflow-hidden mb-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2">
+              <div className="p-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="px-3 py-1 rounded-lg text-xs font-black bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">GET</span>
+                  <code className="text-slate-300 text-sm font-mono">/api/ext/skills</code>
+                </div>
+                <h3 className="text-2xl font-black text-violet-400 mb-3">Foreman Skill Pack</h3>
+                <p className="text-slate-400 leading-relaxed mb-6">
+                  Returns all 37 Foreman AI skill definitions in your choice of format. Drop them directly into any Claude, GPT-4, or LangChain agent to give it full construction intelligence in seconds.
+                </p>
+                <div className="flex items-center gap-2 text-sm text-slate-400">
+                  <RefreshCw className="w-4 h-4 text-violet-400 flex-shrink-0" />
+                  <span>Auto-syncs &mdash; when we add new skills to Foreman, your spec updates automatically.</span>
+                </div>
+              </div>
+              <div className="bg-slate-950/80 border-t lg:border-t-0 lg:border-l border-violet-500/20 p-6">
+                <p className="text-slate-500 text-xs font-semibold uppercase tracking-widest mb-3">Format options</p>
+                <div className="space-y-3">
+                  {[
+                    { param: "?format=anthropic", label: "Anthropic tool format", badge: "Default", badgeColor: "bg-violet-500/20 text-violet-400 border-violet-500/30" },
+                    { param: "?format=openai", label: "OpenAI function-calling format", badge: "GPT-4 / o3", badgeColor: "bg-emerald-500/20 text-emerald-400 border-emerald-500/30" },
+                    { param: "?format=openapi", label: "Full OpenAPI 3.1 spec", badge: "Any framework", badgeColor: "bg-cyan-500/20 text-cyan-400 border-cyan-500/30" },
+                  ].map((f) => (
+                    <div key={f.param} className="flex items-center justify-between gap-3 p-3 rounded-xl bg-slate-900 border border-slate-800">
+                      <code className="text-violet-300 text-xs font-mono">{f.param}</code>
+                      <div className="flex items-center gap-2 flex-shrink-0">
+                        <span className="text-slate-400 text-xs hidden sm:block">{f.label}</span>
+                        <span className={`px-2 py-0.5 rounded-full border text-xs font-bold ${f.badgeColor}`}>{f.badge}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 37 skills breakdown */}
+          <div className="mb-10">
+            <p className="text-center text-slate-400 text-sm font-semibold uppercase tracking-widest mb-6">37 skills across 7 domains</p>
+            <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3">
+              {[
+                { domain: "Parts", count: 5, skills: "search, create, bulk create, update, delete", color: "text-amber-400", bg: "bg-amber-500/10", border: "border-amber-500/20" },
+                { domain: "Homes", count: 3, skills: "list, update, get budget", color: "text-cyan-400", bg: "bg-cyan-500/10", border: "border-cyan-500/20" },
+                { domain: "Vendors", count: 3, skills: "list, create, search bids", color: "text-emerald-400", bg: "bg-emerald-500/10", border: "border-emerald-500/20" },
+                { domain: "Design Center", count: 8, skills: "classes, categories, options, spec levels, suggestions", color: "text-violet-400", bg: "bg-violet-500/10", border: "border-violet-500/20" },
+                { domain: "Bidding", count: 4, skills: "competitive analysis, SOW, bid comparison, bid request drafter", color: "text-blue-400", bg: "bg-blue-500/10", border: "border-blue-500/20" },
+                { domain: "Reports", count: 4, skills: "budget variance, profitability, punch list, vendor scorecard", color: "text-pink-400", bg: "bg-pink-500/10", border: "border-pink-500/20" },
+                { domain: "Utility", count: 10, skills: "scopes, communities, floorplans, users, web scraping, file export, memory, sales descriptions", color: "text-slate-300", bg: "bg-slate-500/10", border: "border-slate-500/20" },
+              ].map((cat) => (
+                <div key={cat.domain} className={`p-4 rounded-xl ${cat.bg} border ${cat.border} text-center group relative`}>
+                  <div className={`text-2xl font-black ${cat.color} mb-1`}>{cat.count}</div>
+                  <div className={`text-xs font-bold ${cat.color} mb-2`}>{cat.domain}</div>
+                  <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-2.5 rounded-xl bg-slate-900 border border-slate-700 text-slate-300 text-xs leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10 hidden sm:block">
+                    {cat.skills}
+                  </div>
+                </div>
+              ))}
+            </div>
+            <p className="text-center text-slate-600 text-xs mt-3">Hover a category to see included skills</p>
+          </div>
+
+          {/* Why this matters */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+            {[
+                { emoji: "⚡", title: "Instant construction fluency", desc: "Any AI agent — Claude, GPT-4, a custom LangChain bot — becomes a construction expert the moment you load the skill pack." },
+                { emoji: "🔄", title: "Always up to date", desc: "The endpoint reflects Foreman&apos;s live skill set. When we ship new skills, your agent gets them automatically. No version management." },
+                { emoji: "🔌", title: "Works with any framework", desc: "Anthropic tools, OpenAI functions, or raw OpenAPI 3.1. Use whatever your stack already speaks." },
+            ].map((item) => (
+              <div key={item.title} className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-violet-500/20 transition-all duration-300 flex items-start gap-4">
+                <span className="text-3xl flex-shrink-0">{item.emoji}</span>
+                <div>
+                  <h3 className="text-white font-black text-base mb-2">{item.title}</h3>
+                  <p className="text-slate-400 text-sm leading-relaxed" dangerouslySetInnerHTML={{ __html: item.desc }} />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* 7-wave pipeline */}
       <section id="pipeline" className="py-20 px-4 bg-slate-900/40">
         <div className="max-w-5xl mx-auto">
@@ -326,12 +425,13 @@ export default function ApiAccessPage() {
             <div className="text-white font-bold text-xl mb-6">Pro+ Plan</div>
             <div className="space-y-3 text-left mb-8">
               {[
-                "Full REST API access (vendors, bids, homes, parts)",
+                "Full REST API — 58 endpoints (vendors, bids, homes, tasks, POs, parts, options, webhooks)",
+                "Foreman Skill Pack — GET /api/ext/skills in Anthropic, OpenAI, or OpenAPI 3.1 format",
+                "37 skills across 7 domains, auto-synced as new skills ship",
                 "Scoped API keys per agent/integration",
-                "Bearer token auth, JSON responses",
-                "Real-time webhooks on bid events",
-                "Any AI agent can connect",
-                "Includes everything in Pro, plus full API access",
+                "Real-time webhooks (14 event types, HMAC-signed)",
+                "Automated 7-wave bidding pipeline",
+                "Includes everything in Pro (Foreman AI, Blueprint AI, MLS Listing Agent)",
               ].map((f) => (
                 <div key={f} className="flex items-center gap-3">
                   <Check className="w-4 h-4 text-cyan-400 flex-shrink-0" />

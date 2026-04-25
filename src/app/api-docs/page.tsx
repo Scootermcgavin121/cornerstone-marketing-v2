@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { Check, Shield, Zap, Globe, Code, Webhook, CreditCard, Building2, ArrowRight, ClipboardList, Users, Layers, Package, Clock, FileText, Bell, BarChart3 } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 
@@ -209,6 +209,16 @@ const endpointGroups = [
       { method: "POST", path: "/api/ext/webhooks", desc: "Create webhook", detail: "url, eventTypes[], secret. HMAC SHA-256 via X-Webhook-Signature header." },
     ],
   },
+  {
+    label: "Foreman Skill Pack",
+    icon: Zap,
+    color: "text-violet-400",
+    bg: "bg-violet-500/10",
+    border: "border-violet-500/20",
+    endpoints: [
+      { method: "GET", path: "/api/ext/skills", desc: "Get all Foreman AI skill definitions", detail: "?format=anthropic (default) | ?format=openai | ?format=openapi &mdash; Returns 37 skills across 7 domains. Auto-syncs as new skills ship. Pro+ only." },
+    ],
+  },
 ];
 
 const webhookEvents = [
@@ -293,7 +303,7 @@ export default function ApiDocsPage() {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-xs font-semibold mb-6">
             <Code className="w-3.5 h-3.5" />
-            PRO+ PLAN &mdash; 58 ENDPOINTS &mdash; 67+ HTTP METHODS
+            PRO+ PLAN &mdash; 59 ENDPOINTS &mdash; 67+ HTTP METHODS
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
             Cornerstone PM <span className="text-cyan-400">API</span>
@@ -316,7 +326,7 @@ export default function ApiDocsPage() {
       <section className="py-12 px-4">
         <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-5">
           {[
-            { num: "58", label: "REST endpoints", sub: "vs ~40 Pave objects in JobTread" },
+            { num: "59", label: "REST endpoints", sub: "vs ~40 Pave objects in JobTread" },
             { num: "67+", label: "HTTP methods", sub: "GET, POST, PATCH, DELETE" },
             { num: "14", label: "Webhook events", sub: "Real-time, HMAC-signed" },
             { num: "110+", label: "Database tables", sub: "Every endpoint is real data" },
@@ -365,7 +375,7 @@ export default function ApiDocsPage() {
       {/* Endpoints */}
       <section id="endpoints" className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-black text-center mb-4">58 Endpoints</h2>
+          <h2 className="text-3xl font-black text-center mb-4">59 Endpoints</h2>
           <p className="text-slate-400 text-center mb-3 max-w-xl mx-auto">All endpoints prefixed with <code className="text-cyan-400 bg-slate-800 px-1.5 py-0.5 rounded text-sm">https://app.cornerstonepm.ai</code></p>
           <p className="text-slate-500 text-center text-sm mb-12">Built on 110+ database tables &mdash; every endpoint reflects real construction data, not generic project management abstractions.</p>
 
@@ -528,7 +538,7 @@ export default function ApiDocsPage() {
       <section className="py-20 px-4 text-center border-t border-slate-800/60">
         <h2 className="text-4xl font-black mb-4">
           JobTread has ~40 Pave objects.<br />
-          <span className="text-cyan-400">We have 58 REST endpoints.</span>
+          <span className="text-cyan-400">We have 59 REST endpoints.</span>
         </h2>
         <p className="text-slate-400 text-lg mb-10 max-w-xl mx-auto">
           Standard REST. No custom query language. If your AI agent can make an HTTP request, it works with Cornerstone PM.
