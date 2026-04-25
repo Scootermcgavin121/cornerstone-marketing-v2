@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "job-cost-tracking-home-builders",
+    title: "Where Your Margin Goes: How Home Builders Lose Money Without Knowing It",
+    excerpt:
+      "Most builders don't find out they lost margin until the home closes. Here's how real-time job cost tracking — budgets, POs, and change orders in one place — stops the leak before it starts.",
+    date: "April 25, 2026",
+    readTime: "6 min read",
+    tag: "Budgeting",
+    tagColor: "text-green-400 bg-green-500/10 border-green-500/20",
+  },
+  {
     slug: "subcontractor-management-home-builders",
     title: "Why Your Best Subs Are Choosing Other Builders Over You",
     excerpt:
