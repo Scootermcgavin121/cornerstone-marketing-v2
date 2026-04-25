@@ -5,7 +5,7 @@ import { Navbar } from "@/components/Navbar";
 export const metadata = {
   title: "API Documentation — Cornerstone PM Developers",
   description:
-    "58 REST endpoints covering every major entity. Vendors, bids, homes, tasks, POs, payments, options, parts, timesheets, webhooks, and more. Pro+ plan feature.",
+    "59 REST endpoints covering every major entity. Vendors, bids, homes, tasks, POs, payments, options, parts, timesheets, webhooks, and more. Pro+ plan feature.",
 };
 
 const methodColor: Record<string, string> = {
@@ -309,14 +309,35 @@ export default function ApiDocsPage() {
             Cornerstone PM <span className="text-cyan-400">API</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-            58 REST endpoints covering every major entity. Vendors, bids, homes, tasks, POs, payments, options, parts, timesheets, webhooks, and more. Standard auth. JSON in, JSON out.
+            59 REST endpoints covering every major entity. Vendors, bids, homes, tasks, POs, payments, options, parts, timesheets, webhooks, and more. Standard auth. JSON in, JSON out.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
             <Link href="/beta" className="px-8 py-4 rounded-full bg-cyan-400 text-slate-900 font-bold text-lg hover:bg-cyan-300 transition-all duration-200 shadow-lg shadow-cyan-500/30 hover:-translate-y-0.5">
               Request API Access &rarr;
             </Link>
             <a href="#endpoints" className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200">
               Browse endpoints
+            </a>
+          </div>
+          {/* Live reference links */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+            <a href="https://app.cornerstonepm.ai/developers" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-4 rounded-xl bg-slate-900/60 border border-cyan-500/20 hover:border-cyan-500/50 transition-all duration-200 text-left group">
+              <div className="w-9 h-9 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center flex-shrink-0">
+                <Code className="w-4 h-4 text-cyan-400" />
+              </div>
+              <div>
+                <div className="text-white font-bold text-sm group-hover:text-cyan-400 transition-colors">/developers &rarr;</div>
+                <div className="text-slate-500 text-xs">Live API reference &amp; curl examples</div>
+              </div>
+            </a>
+            <a href="https://app.cornerstonepm.ai/skills" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-4 rounded-xl bg-slate-900/60 border border-violet-500/20 hover:border-violet-500/50 transition-all duration-200 text-left group">
+              <div className="w-9 h-9 rounded-lg bg-violet-500/10 border border-violet-500/20 flex items-center justify-center flex-shrink-0">
+                <Zap className="w-4 h-4 text-violet-400" />
+              </div>
+              <div>
+                <div className="text-white font-bold text-sm group-hover:text-violet-400 transition-colors">/skills &rarr;</div>
+                <div className="text-slate-500 text-xs">Foreman AI skill catalog (47 skills)</div>
+              </div>
             </a>
           </div>
         </div>
