@@ -216,7 +216,7 @@ const endpointGroups = [
     bg: "bg-violet-500/10",
     border: "border-violet-500/20",
     endpoints: [
-      { method: "GET", path: "/api/ext/skills", desc: "Get all Foreman AI skill definitions", detail: "?format=anthropic (default) | ?format=openai | ?format=openapi &mdash; Returns 37 skills across 7 domains. Auto-syncs as new skills ship. Pro+ only." },
+      { method: "GET", path: "/api/ext/skills", desc: "Get all Foreman AI skill definitions", detail: "?format=anthropic (default) | ?format=openai | ?format=openapi &mdash; Returns 47 skills across 7 domains. Auto-syncs as new skills ship. Pro+ only." },
     ],
   },
 ];

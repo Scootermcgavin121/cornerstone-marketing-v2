@@ -81,7 +81,7 @@ const rows: { category: string; features: { label: string; values: CellValue[] }
     category: "AI & Innovation",
     features: [
       { label: "AI Blueprint Takeoff (PDF to material list)", values: [YES, NO, NO, NO] },
-      { label: "AI agent with 37 purpose-built construction skills", values: [YES, NO, NO, NO] },
+      { label: "AI agent with 47 purpose-built construction skills", values: [YES, NO, NO, NO] },
       { label: "Standard REST API (no custom query language)", values: [YES, YES, NO, NO] },
       { label: "14 webhook event types with HMAC signing", values: [YES, YES, NO, NO] },
       { label: "Vendor self-registration portal", values: [YES, YES, NO, NO] },

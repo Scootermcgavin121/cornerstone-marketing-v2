@@ -1,4 +1,4 @@
-export function StructuredData() {
+﻿export function StructuredData() {
   const schema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -28,7 +28,7 @@ export function StructuredData() {
           "Purchasing and budget management",
           "Design center with options engine",
           "Blueprint AI material takeoffs",
-          "Foreman AI agent with 37 skills",
+          "Foreman AI agent with 47 skills",
           "MLS listing sheet generator",
           "Homeowner portal",
           "REST API with 58 endpoints",
@@ -72,7 +72,7 @@ export function StructuredData() {
             "name": "What is Foreman AI?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Foreman AI is a purpose-built construction agent with 37 skills. It reads and writes your real data — parts, vendors, homes, budgets, MLS listings, bid requests — using plain English commands. Available on the Pro plan ($499/mo).",
+              "text": "Foreman AI is a purpose-built construction agent with 47 skills. It reads and writes your real data — parts, vendors, homes, budgets, MLS listings, bid requests — using plain English commands. Available on the Pro plan ($499/mo).",
             },
           },
           {

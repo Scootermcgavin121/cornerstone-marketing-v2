@@ -3,9 +3,9 @@ import { Check, ArrowRight, Zap, Brain, FileText, Cpu } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 
 export const metadata = {
-  title: "Foreman AI — 37-Skill Construction Agent | Cornerstone PM",
+  title: "Foreman AI — 47-Skill Construction Agent | Cornerstone PM",
   description:
-    "37 purpose-built construction skills. Not a generic chatbot. Foreman AI reads and writes your real data — parts, vendors, homes, budgets, MLS listings, bid requests, and more. Pro plan.",
+    "47 purpose-built construction skills. Not a generic chatbot. Foreman AI reads and writes your real data — parts, vendors, homes, budgets, sales pipeline, design center selections, and more. Pro plan.",
 };
 
 const skillCategories = [
@@ -15,14 +15,21 @@ const skillCategories = [
     bg: "bg-amber-500/10",
     border: "border-amber-500/20",
     label: "Core Data Management",
-    count: 12,
-    desc: "Read and write your real construction data — parts, vendors, homes, budgets, design center, and more.",
+    count: 17,
+    desc: "Read and write your real construction data — parts, vendors, homes, budgets, sales pipeline, design center, and more.",
     skills: [
       { name: "Parts Catalog", detail: "Search, create, bulk import, update, and delete parts" },
       { name: "Design Center Options", detail: "List, create, bulk create, update options; link to parts and option classes" },
       { name: "Vendor Management", detail: "List, create, search bids, performance scorecards" },
       { name: "Home Management", detail: "List homes, view budgets, update status and assignments" },
       { name: "Data Lookup", detail: "Communities, floorplans, scopes, option classes, spec levels, users, org stats" },
+      { name: "Sales Pipeline", detail: "Get full pipeline overview — homes by stage, buyer info, contract dates, assigned agents" },
+      { name: "Sales Task Management", detail: "List, update, and complete sales tasks across all homes; assign roles and due dates" },
+      { name: "Sales Task Status", detail: "Mark tasks complete, in-progress, blocked, or skipped with optional completion dates" },
+      { name: "Home Selections", detail: "Get all design center selections for a home — option details, category, location, status" },
+      { name: "Selection Status Update", detail: "Confirm, reject, or reset buyer selections across any home or category" },
+      { name: "Option Categories", detail: "List all design center categories and option classes available in your catalog" },
+      { name: "Options by Category", detail: "Pull full option lists filtered by category, spec level, scope, or keyword search" },
     ],
   },
   {
@@ -31,7 +38,7 @@ const skillCategories = [
     bg: "bg-blue-500/10",
     border: "border-blue-500/20",
     label: "AI-Powered Analysis",
-    count: 8,
+    count: 13,
     desc: "Foreman doesn't just retrieve data — it analyzes it. Budget variances, profitability, vendor performance, competitive intel.",
     skills: [
       { name: "Web Scraping", detail: "Fetch any URL for product info, pricing, specs — Home Depot, Ferguson, 84 Lumber" },
@@ -42,6 +49,11 @@ const skillCategories = [
       { name: "Profitability Reports", detail: "Margin analysis by community with upgrade revenue breakdown" },
       { name: "Vendor Performance Analysis", detail: "Bid response rates, win rates, insurance tracking" },
       { name: "File Content Reading", detail: "Analyze uploaded CSVs, text files, screenshots — extract and act on data" },
+      { name: "Sales Pipeline Analysis", detail: "Identify stalled deals, avg days per stage, close rate by agent or community" },
+      { name: "Design Center Revenue Analysis", detail: "Total upgrade revenue by category, top-selling options, margin by spec level" },
+      { name: "Buyer Selections Report", detail: "Full selections summary for any home — what was chosen, confirmed, and at what price" },
+      { name: "Options Gap Analysis", detail: "Find categories with no confirmed selections — flag incomplete buyer decisions before cutoff" },
+      { name: "Spec Level Profitability", detail: "Compare margin across Good/Better/Best tiers; identify which upgrades drive the most profit" },
     ],
   },
   {
@@ -50,7 +62,7 @@ const skillCategories = [
     bg: "bg-emerald-500/10",
     border: "border-emerald-500/20",
     label: "Document Generation",
-    count: 9,
+    count: 11,
     desc: "Professional documents in seconds. SOWs, bid invitations, comparison reports, punch lists, MLS sheets, Excel exports.",
     skills: [
       { name: "SOW Generator", detail: "Professional Scope of Work docs with home counts and specs" },
@@ -62,6 +74,8 @@ const skillCategories = [
       { name: "Excel Exports", detail: "Formatted spreadsheets with company branding" },
       { name: "MLS Listing Sheets", detail: "Auto-generated from floorplan data — room dimensions, upgrades, community info" },
       { name: "Room Dimension Sheets", detail: "Detailed room specs for sales team handouts" },
+      { name: "Design Center Summary PDF", detail: "Full selections export for a home — categories, options chosen, prices, and buyer signature line" },
+      { name: "Sales Stage Report", detail: "Pipeline snapshot by community — homes per stage, days elapsed, next action due" },
     ],
   },
   {
@@ -70,7 +84,7 @@ const skillCategories = [
     bg: "bg-violet-500/10",
     border: "border-violet-500/20",
     label: "System Intelligence",
-    count: "8+",
+    count: "6+",
     desc: "The behaviors that make Foreman actually useful — memory, bulk operations, deduplication, smart linking, error recovery.",
     skills: [
       { name: "Persistent Memory", detail: "Saves preferences and decisions across sessions — gets smarter over time" },
@@ -129,21 +143,21 @@ export default function ForemanPage() {
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-400 text-xs font-semibold mb-6">
             <Zap className="w-3.5 h-3.5" />
-            37 SKILLS &middot; PRO PLAN &middot; READS AND WRITES YOUR REAL DATA
+            47 SKILLS &middot; PRO PLAN &middot; READS AND WRITES YOUR REAL DATA
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
             🪖 Foreman AI
           </h1>
           <p className="text-2xl text-amber-400 font-bold mb-4">Not a chatbot. A construction agent.</p>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
-            37 purpose-built skills across data management, AI analysis, document generation, and system intelligence. Type what you need in plain English &mdash; Foreman executes it against your real data.
+            47 purpose-built skills across data management, AI analysis, document generation, and system intelligence. Type what you need in plain English &mdash; Foreman executes it against your real data.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/beta" className="px-8 py-4 rounded-full bg-amber-400 text-slate-900 font-bold text-lg hover:bg-amber-300 transition-all duration-200 shadow-lg shadow-amber-500/30 hover:-translate-y-0.5">
               Get Beta Access &rarr;
             </Link>
             <a href="#skills" className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200">
-              See all 37 skills
+              See all 47 skills
             </a>
           </div>
         </div>
@@ -153,7 +167,7 @@ export default function ForemanPage() {
       <section className="py-12 px-4">
         <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-5">
           {[
-            { num: "37", label: "Purpose-built skills", sub: "Not generic AI features" },
+            { num: "47", label: "Purpose-built skills", sub: "Not generic AI features" },
             { num: "4", label: "Skill categories", sub: "Data, Analysis, Docs, Intelligence" },
             { num: "110+", label: "Database tables", sub: "Full access to your real data" },
             { num: "0", label: "Manual data entry", sub: "Plain English to execution" },
@@ -200,7 +214,7 @@ export default function ForemanPage() {
       <section id="skills" className="py-16 px-4 bg-slate-900/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-3xl sm:text-5xl font-black mb-4">37 skills. 4 categories.</h2>
+            <h2 className="text-3xl sm:text-5xl font-black mb-4">47 skills. 4 categories.</h2>
             <p className="text-slate-400 max-w-xl mx-auto">Every skill is purpose-built for construction. Not adapted from a generic AI assistant.</p>
           </div>
           <div className="space-y-8">
@@ -278,7 +292,7 @@ export default function ForemanPage() {
             <div className="text-white font-bold text-xl mb-6">Pro Plan</div>
             <div className="space-y-3 text-left mb-8">
               {[
-                "Foreman AI — 37 skills, Sonnet model, 1,000 AI messages/mo",
+                "Foreman AI — 47 skills, Sonnet model, 1,000 AI messages/mo",
                 "Blueprint AI — 25 blueprint takeoffs/mo",
                 "MLS Listing Agent",
                 "Everything in Builder (Sales, Purchasing, Design Center)",
@@ -307,7 +321,7 @@ export default function ForemanPage() {
           <span className="text-amber-400">for custom reports.</span>
         </h2>
         <p className="text-slate-400 text-lg mb-10 max-w-xl mx-auto">
-          We built the consultant into the software. 37 skills. Plain English. Real construction data. Pro plan.
+          We built the consultant into the software. 47 skills. Plain English. Real construction data. Pro plan.
         </p>
         <Link href="/beta" className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-amber-400 text-slate-900 font-bold text-xl hover:bg-amber-300 transition-all duration-200 shadow-xl shadow-amber-500/30">
           Get Beta Access <ArrowRight className="w-5 h-5" />
