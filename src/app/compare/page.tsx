@@ -168,6 +168,62 @@ export default function ComparePage() {
         </div>
       </section>
 
+      {/* JobTread callout */}
+      <section className="py-10 px-4">
+        <div className="max-w-4xl mx-auto">
+          <div className="rounded-2xl bg-slate-900/60 border border-amber-500/20 p-8">
+            <div className="flex items-start gap-4 mb-6">
+              <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center flex-shrink-0">
+                <span className="text-amber-400 font-black text-sm">vs</span>
+              </div>
+              <div>
+                <h2 className="text-xl font-black text-white mb-1">What about JobTread?</h2>
+                <p className="text-slate-400 text-sm">JobTread is great software &mdash; for contractors. It&apos;s not built for home builders.</p>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="space-y-3">
+                <div className="text-amber-400 font-bold text-sm uppercase tracking-widest mb-3">JobTread</div>
+                {[
+                  "$199/mo base + $20/user (10 users = $380/mo)",
+                  "No lot or community management",
+                  "No floorplan pricing engine",
+                  "No pre-sale buyer workflow",
+                  "Selections are change-order based (post-contract)",
+                  "AI is \"bring your own ChatGPT\" middleware",
+                  "Built for remodelers and general contractors",
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-2 text-slate-400 text-sm">
+                    <X className="w-4 h-4 text-slate-600 flex-shrink-0 mt-0.5" />
+                    {item}
+                  </div>
+                ))}
+              </div>
+              <div className="space-y-3">
+                <div className="text-cyan-400 font-bold text-sm uppercase tracking-widest mb-3">Cornerstone PM</div>
+                {[
+                  "$149/mo flat &mdash; unlimited users, no per-seat fees",
+                  "Full lot, community &amp; multi-community management",
+                  "Floorplan base price + options engine = contract price",
+                  "Pre-sale workflow: lead &rarr; options &rarr; contract &rarr; close",
+                  "Design Center selections built into the sale &mdash; not change orders",
+                  "47 native AI skills that read &amp; write your real data",
+                  "Built exclusively for production home builders",
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-2 text-slate-300 text-sm">
+                    <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
+                    <span dangerouslySetInnerHTML={{ __html: item }} />
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="mt-6 pt-6 border-t border-slate-800 text-center">
+              <p className="text-slate-500 text-sm italic">&ldquo;JobTread is for contractors. Cornerstone is for home builders. Different business model, different workflow, different software.&rdquo;</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Quick stats */}
       <section className="py-12 px-4">
         <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6">
