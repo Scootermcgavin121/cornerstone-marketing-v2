@@ -13,6 +13,7 @@ const navLinks = [
   { label: "API Access", href: "/api-access", hasDropdown: false },
   { label: "Developers", href: "/api-docs", hasDropdown: false },
   { label: "Compare", href: "/compare" },
+  { label: "Blog", href: "/blog" },
   { label: "Pricing", href: "/#pricing" },
   { label: "Contact", href: "/contact" },
 ];
