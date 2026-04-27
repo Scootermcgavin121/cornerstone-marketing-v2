@@ -101,7 +101,7 @@ export function Navbar() {
             </Link>
             <Link
               href="/beta"
-              className="px-5 py-2.5 text-sm font-semibold rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 transition-all duration-200 shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40"
+              className="px-5 py-2.5 text-sm font-semibold rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 transition-all duration-200 shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 whitespace-nowrap"
             >
               Request Beta Access
             </Link>
