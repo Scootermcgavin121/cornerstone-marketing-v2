@@ -254,6 +254,92 @@ export default function AiConstructionPurchasingPage() {
         </div>
       </section>
 
+      {/* PO from Task Completion */}
+      <section className="py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="rounded-2xl bg-violet-500/5 border border-violet-500/20 p-8 sm:p-12">
+            <div className="flex items-start gap-4 mb-8">
+              <div className="w-12 h-12 rounded-xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center flex-shrink-0">
+                <FileText className="w-6 h-6 text-violet-400" />
+              </div>
+              <div>
+                <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-400 text-xs font-bold mb-2">Differentiator</div>
+                <h2 className="text-3xl font-black text-white">Your schedule drives your purchasing.</h2>
+              </div>
+            </div>
+            <p className="text-slate-400 text-lg leading-relaxed mb-8">
+              Most construction software treats scheduling and purchasing as two separate systems. In Cornerstone, they&apos;re connected — your task completions can trigger PO generation automatically.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+              {[
+                {
+                  title: "Full PO on task completion",
+                  desc: "When a construction task is marked complete, Cornerstone can auto-generate a full PO for that scope and vendor — no manual step required.",
+                  color: "text-violet-400",
+                },
+                {
+                  title: "Deposit POs earlier in the pipeline",
+                  desc: "Need to pay a deposit at permit pull or contract signing? Generate a deposit PO from any earlier pipeline task, before the work is done.",
+                  color: "text-amber-400",
+                },
+                {
+                  title: "Configurable per task or globally",
+                  desc: "Turn PO generation on or off for specific tasks, or disable it entirely for certain scopes. You control the rules.",
+                  color: "text-emerald-400",
+                },
+              ].map((item) => (
+                <div key={item.title} className="p-5 rounded-xl bg-slate-900/60 border border-slate-800">
+                  <div className={`text-sm font-bold ${item.color} mb-2`}>{item.title}</div>
+                  <p className="text-slate-400 text-sm leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* BYOA — Bring Your Own Agent */}
+      <section className="py-16 px-4 bg-slate-900/30">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-xs font-semibold mb-4">
+              BYOA — BRING YOUR OWN AGENT — PRO+ PLAN
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-black mb-4">
+              Cornerstone isn&apos;t just software you use.<br />
+              <span className="text-cyan-400">It&apos;s a platform your AI agents act on.</span>
+            </h2>
+            <p className="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">
+              Pro+ exposes a full REST API so any AI agent — custom-built, voice-based, or email-scanning — can read and write your Cornerstone data. The optionality is unlimited.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+            {[
+              { emoji: "📞", title: "Call a vendor to get their email", desc: "Your voice agent calls a roofing company, gets their contact info, and Cornerstone adds them as a vendor automatically. Zero manual entry." },
+              { emoji: "📧", title: "Scan your inbox for bid replies", desc: "An email agent reads incoming vendor emails, extracts bid data, and logs it in Cornerstone — no one touches the keyboard." },
+              { emoji: "🏗️", title: "Solicit bids by phone", desc: "Voice agent calls your vendor list, explains the scope, and directs them to your bid portal. 200+ vendors contacted in an afternoon." },
+              { emoji: "✅", title: "Auto-generate POs on task completion", desc: "Agent monitors task completions and triggers PO generation automatically — the schedule drives purchasing without you in the loop." },
+              { emoji: "📱", title: "Follow up on overdue tasks", desc: "Agent calls the framer who hasn&apos;t confirmed their schedule date. Records the outcome. Updates the task status." },
+              { emoji: "🔌", title: "Connect any framework", desc: "Claude, GPT-4, LangChain, custom-built — if it can make an HTTP request, it can act on your Cornerstone data." },
+            ].map((item) => (
+              <div key={item.title} className="p-5 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-cyan-500/20 transition-all duration-300">
+                <div className="text-2xl mb-3">{item.emoji}</div>
+                <div className="text-white font-bold text-sm mb-2">{item.title}</div>
+                <p className="text-slate-400 text-xs leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center">
+            <Link
+              href="/api-access"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-cyan-500/30 text-cyan-400 font-semibold text-sm hover:bg-cyan-500/10 transition-all duration-200"
+            >
+              See the full BYOA platform &rarr;
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 px-4">
         <div className="max-w-3xl mx-auto">

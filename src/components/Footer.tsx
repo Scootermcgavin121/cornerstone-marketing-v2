@@ -5,9 +5,9 @@ export function Footer() {
   return (
     <footer className="bg-slate-950 border-t border-slate-800/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {/* Brand */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-2 lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <img src="/icon.png" alt="Cornerstone PM" className="w-12 h-12 object-contain" />
               <span className="font-bold text-white">
@@ -38,6 +38,8 @@ export function Footer() {
             <ul className="space-y-2">
               {[
                 { label: "Features", href: "/features" },
+                { label: "Foreman AI", href: "/foreman" },
+                { label: "API Access", href: "/api-access" },
                 { label: "Pricing", href: "/#pricing" },
                 { label: "Beta Access", href: "/beta" },
               ].map((link) => (
@@ -60,6 +62,28 @@ export function Footer() {
                 { label: "About", href: "/about" },
                 { label: "Blog", href: "/blog" },
                 { label: "Contact", href: "/contact" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-slate-500 hover:text-slate-300 transition-colors duration-200"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-sm font-semibold text-white mb-4">Resources</h4>
+            <ul className="space-y-2">
+              {[
+                { label: "AI for Home Builders", href: "/ai-for-home-builders" },
+                { label: "AI Construction Management", href: "/ai-construction-management" },
+                { label: "AI Scheduling", href: "/ai-scheduling" },
+                { label: "AI New Home Sales", href: "/ai-new-home-sales" },
+                { label: "AI Purchasing", href: "/ai-construction-purchasing" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
