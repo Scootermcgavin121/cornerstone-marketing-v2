@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "new-home-sales-pipeline",
+    title: "Your Home Builder Sales Pipeline Is Losing You Buyers",
+    excerpt:
+      "Most home builders don't have a real sales pipeline — they have a spreadsheet and a gut feeling. Here's how tracking prospects the right way closes more contracts and wastes less time.",
+    date: "April 27, 2026",
+    readTime: "6 min read",
+    tag: "Sales Pipeline",
+    tagColor: "text-indigo-400 bg-indigo-500/10 border-indigo-500/20",
+  },
+  {
     slug: "jobtread-alternative",
     title: "Looking for a JobTread Alternative? Here's What Home Builders Should Know",
     excerpt:
