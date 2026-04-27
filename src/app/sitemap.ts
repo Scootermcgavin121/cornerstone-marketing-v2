@@ -27,6 +27,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/permitting-delays-home-builders", priority: 0.6, changeFrequency: "yearly" as const },
     { url: "/blog/spreadsheets-killing-schedule", priority: 0.6, changeFrequency: "yearly" as const },
     { url: "/blog/subcontractor-management-home-builders", priority: 0.6, changeFrequency: "yearly" as const },
+    { url: "/blog/job-cost-tracking-home-builders", priority: 0.6, changeFrequency: "yearly" as const },
+    { url: "/blog/ai-construction-management-software", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/builder-ai-software", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/homebuilding-ai", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/ai-construction-management", priority: 0.8, changeFrequency: "monthly" as const },
+    { url: "/ai-for-home-builders", priority: 0.8, changeFrequency: "monthly" as const },
+    { url: "/ai-scheduling", priority: 0.8, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({

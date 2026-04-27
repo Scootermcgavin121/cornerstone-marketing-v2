@@ -11,6 +11,36 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "homebuilding-ai",
+    title: "Homebuilding AI: How AI is Changing Residential Construction in 2026",
+    excerpt:
+      "Homebuilding is one of the last industries to get purpose-built AI — that&apos;s changing fast. Here's where AI is making the biggest impact in residential construction and what's coming next.",
+    date: "April 27, 2026",
+    readTime: "6 min read",
+    tag: "AI & Technology",
+    tagColor: "text-blue-400 bg-blue-500/10 border-blue-500/20",
+  },
+  {
+    slug: "builder-ai-software",
+    title: "Builder AI Software: Why Home Builders Need Purpose-Built AI (Not Generic Tools)",
+    excerpt:
+      "\"Builder AI software\" is a new search — people are looking for AI built specifically for builders. Here's why generic AI fails home builders and what purpose-built looks like.",
+    date: "April 27, 2026",
+    readTime: "5 min read",
+    tag: "AI & Technology",
+    tagColor: "text-blue-400 bg-blue-500/10 border-blue-500/20",
+  },
+  {
+    slug: "ai-construction-management-software",
+    title: "AI Construction Management Software: What Home Builders Need to Know (2026)",
+    excerpt:
+      "AI is everywhere in construction marketing but most tools are generic. Here's what real AI construction management software looks like for home builders — and how to evaluate what you're buying.",
+    date: "April 27, 2026",
+    readTime: "7 min read",
+    tag: "AI & Technology",
+    tagColor: "text-blue-400 bg-blue-500/10 border-blue-500/20",
+  },
+  {
     slug: "job-cost-tracking-home-builders",
     title: "Where Your Margin Goes: How Home Builders Lose Money Without Knowing It",
     excerpt:
