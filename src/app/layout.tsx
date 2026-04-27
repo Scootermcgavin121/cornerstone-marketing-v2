@@ -55,12 +55,21 @@ export const metadata: Metadata = {
     siteName: "Cornerstone PM",
     type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: "https://cornerstonepm.ai/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Cornerstone PM — Home Builder Software with AI",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Cornerstone PM — Home Builder Software with AI",
     description: "The complete platform for home builders. AI agents, scheduling, sales, purchasing, Blueprint AI takeoffs, REST API. Starting at $149/mo.",
     creator: "@cornerstonepm",
+    images: ["https://cornerstonepm.ai/og-image.png"],
   },
   metadataBase: new URL("https://cornerstonepm.ai"),
 };
