@@ -54,13 +54,13 @@ export function Navbar() {
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
             <img
               src="/logo-new.png"
               alt="Cornerstone PM"
-              className="h-10 sm:h-16 w-auto object-contain group-hover:opacity-90 transition-opacity duration-200"
+              className="h-12 sm:h-16 w-auto object-contain group-hover:opacity-90 transition-opacity duration-200"
             />
           </Link>
 
