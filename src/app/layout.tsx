@@ -44,11 +44,11 @@ export const metadata: Metadata = {
   creator: "Cornerstone PM",
   icons: {
     icon: [
+      { url: "/favicon.png", type: "image/png" },
       { url: "/favicon.ico", sizes: "any" },
-      { url: "/icon.png", type: "image/png", sizes: "512x512" },
     ],
-    shortcut: "/favicon.ico",
-    apple: "/icon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
   robots: {
     index: true,
