@@ -42,6 +42,14 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Cornerstone PM" }],
   creator: "Cornerstone PM",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/icon.png",
+  },
   robots: {
     index: true,
     follow: true,
