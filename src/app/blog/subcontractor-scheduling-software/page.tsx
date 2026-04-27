@@ -5,7 +5,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Subcontractor Scheduling Software for Home Builders — Cornerstone PM Blog",
+  title: "Subcontractor Scheduling Software for Home Builders â€” Cornerstone PM Blog",
   description:
     "The best subcontractors have options. If your scheduling is chaotic and your communication is reactive, they'll prioritize builders who make their lives easier. Here's how to be that builder.",
 };
@@ -32,8 +32,8 @@ export default function SubcontractorSchedulingSoftwarePost() {
             Subcontractor Scheduling Software: What Home Builders Actually Need
           </h1>
           <div className="flex items-center gap-3 text-sm text-slate-500">
-            <span>April 27, 2026</span>
-            <span>·</span>
+            <span>March 25, 2026</span>
+            <span>Â·</span>
             <span>6 min read</span>
           </div>
         </div>
@@ -57,13 +57,13 @@ export default function SubcontractorSchedulingSoftwarePost() {
 
           <ul className="space-y-3 my-6">
             {[
-              "Schedules change without notice — they show up and the site isn't ready",
-              "Scope isn't clear — they have to call the PM to get basic specs",
+              "Schedules change without notice â€” they show up and the site isn't ready",
+              "Scope isn't clear â€” they have to call the PM to get basic specs",
               "Payment is slow because POs and invoices are a mess",
               "They can't see the full project schedule, so they can't plan their own crews",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3">
-                <span className="text-red-400 font-bold flex-shrink-0 mt-0.5">✗</span>
+                <span className="text-red-400 font-bold flex-shrink-0 mt-0.5">âœ—</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -82,7 +82,7 @@ export default function SubcontractorSchedulingSoftwarePost() {
             {[
               {
                 title: "Milestone-linked notifications",
-                desc: "When framing is marked complete, plumbing should get automatic notice that they&apos;re up next. Not a text from your PM — an automated, reliable notification. This is the single biggest schedule protection you can buy.",
+                desc: "When framing is marked complete, plumbing should get automatic notice that they&apos;re up next. Not a text from your PM â€” an automated, reliable notification. This is the single biggest schedule protection you can buy.",
               },
               {
                 title: "Scope clarity at scheduling time",
@@ -94,7 +94,7 @@ export default function SubcontractorSchedulingSoftwarePost() {
               },
               {
                 title: "Delay propagation",
-                desc: "When one trade slips, everything downstream needs to adjust. Good scheduling software re-sequences automatically and flags conflicts — instead of leaving you to manually update 40 tasks.",
+                desc: "When one trade slips, everything downstream needs to adjust. Good scheduling software re-sequences automatically and flags conflicts â€” instead of leaving you to manually update 40 tasks.",
               },
               {
                 title: "AI-assisted schedule analysis",
@@ -122,13 +122,13 @@ export default function SubcontractorSchedulingSoftwarePost() {
               <p className="text-white italic text-sm">&ldquo;Which homes have construction that started more than 90 days ago and are still in progress?&rdquo;</p>
             </div>
             <div>
-              <p className="text-slate-400 font-bold text-sm mb-1">🪖 Foreman:</p>
+              <p className="text-slate-400 font-bold text-sm mb-1">ðŸª– Foreman:</p>
               <p className="text-slate-300 text-sm">4 homes flagged: 1421 Maple (97 days, framing complete, HVAC delayed), 33 Cedar Pt (103 days, drywall pending permit), 880 Lakeside (91 days, on track), 220 Summit (94 days, sub conflict next week). Summary table with days elapsed and current stage.</p>
             </div>
           </div>
 
           <p>
-            That kind of cross-portfolio visibility — answered in seconds, in plain English — is what separates AI scheduling tools from traditional schedule management.
+            That kind of cross-portfolio visibility â€” answered in seconds, in plain English â€” is what separates AI scheduling tools from traditional schedule management.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">What to look for when evaluating</h2>
@@ -138,15 +138,15 @@ export default function SubcontractorSchedulingSoftwarePost() {
 
           <ul className="space-y-3 my-6">
             {[
-              "Designed for production home building — repeatable floorplans, community-based scheduling",
-              "Subcontractor portal or access — subs see their schedule without you CC&apos;ing them on emails",
-              "Integrated with purchasing — schedule milestones trigger bid requests and POs automatically",
-              "Permit milestone tracking — the biggest wildcard in residential construction",
-              "Flat-rate pricing — per-seat tools penalize you for including your subs and PMs",
-              "AI that acts on your data — not just a chatbot that gives generic answers",
+              "Designed for production home building â€” repeatable floorplans, community-based scheduling",
+              "Subcontractor portal or access â€” subs see their schedule without you CC&apos;ing them on emails",
+              "Integrated with purchasing â€” schedule milestones trigger bid requests and POs automatically",
+              "Permit milestone tracking â€” the biggest wildcard in residential construction",
+              "Flat-rate pricing â€” per-seat tools penalize you for including your subs and PMs",
+              "AI that acts on your data â€” not just a chatbot that gives generic answers",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3">
-                <span className="text-cyan-400 font-bold flex-shrink-0 mt-0.5">→</span>
+                <span className="text-cyan-400 font-bold flex-shrink-0 mt-0.5">â†’</span>
                 <span>{item}</span>
               </li>
             ))}

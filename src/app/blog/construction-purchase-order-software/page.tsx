@@ -5,9 +5,9 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Construction Purchase Order Software for Home Builders (2026 Guide) — Cornerstone PM Blog",
+  title: "Construction Purchase Order Software for Home Builders (2026 Guide) â€” Cornerstone PM Blog",
   description:
-    "Managing construction POs in Excel is costing home builders time and margin. Here's what modern purchase order software should actually do — and how AI is changing the equation.",
+    "Managing construction POs in Excel is costing home builders time and margin. Here's what modern purchase order software should actually do â€” and how AI is changing the equation.",
 };
 
 export default function ConstructionPurchaseOrderSoftwarePost() {
@@ -32,8 +32,8 @@ export default function ConstructionPurchaseOrderSoftwarePost() {
             Construction Purchase Order Software for Home Builders (2026 Guide)
           </h1>
           <div className="flex items-center gap-3 text-sm text-slate-500">
-            <span>April 27, 2026</span>
-            <span>·</span>
+            <span>April 8, 2026</span>
+            <span>Â·</span>
             <span>6 min read</span>
           </div>
         </div>
@@ -76,7 +76,7 @@ export default function ConstructionPurchaseOrderSoftwarePost() {
               "Export to Excel or PDF for field teams and subs who need offline access",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3">
-                <span className="text-amber-400 font-bold flex-shrink-0 mt-0.5">→</span>
+                <span className="text-amber-400 font-bold flex-shrink-0 mt-0.5">â†’</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -97,7 +97,7 @@ export default function ConstructionPurchaseOrderSoftwarePost() {
           <div className="rounded-xl bg-slate-900 border border-slate-700 p-6 my-6 not-prose">
             <p className="text-amber-400 font-bold text-sm mb-2">You say:</p>
             <p className="text-white italic mb-4">&ldquo;Create a bid request for all Plumbing vendors for Bayshore Commons and send portal invites&rdquo;</p>
-            <p className="text-slate-400 font-bold text-sm mb-2">🪖 Foreman does:</p>
+            <p className="text-slate-400 font-bold text-sm mb-2">ðŸª– Foreman does:</p>
             <p className="text-slate-300 text-sm">Bid request drafted with community specs, scope details, plan references, and submission deadline. Portal invites sent to 8 active plumbing vendors in your system. Responses trackable in your dashboard.</p>
           </div>
 
@@ -122,11 +122,11 @@ export default function ConstructionPurchaseOrderSoftwarePost() {
               "Does it connect purchasing to your schedule and budget?",
               "Can you track vendor performance over time, not just per-project?",
               "Does AI actually read and write your data, or just answer generic questions?",
-              "What does implementation actually look like — days or months?",
+              "What does implementation actually look like â€” days or months?",
               "Is pricing per-seat (penalizes team growth) or flat?",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3">
-                <span className="text-amber-400 font-bold flex-shrink-0 mt-0.5">→</span>
+                <span className="text-amber-400 font-bold flex-shrink-0 mt-0.5">â†’</span>
                 <span>{item}</span>
               </li>
             ))}

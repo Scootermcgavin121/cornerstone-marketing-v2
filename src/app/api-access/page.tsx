@@ -435,6 +435,73 @@ export default function ApiAccessPage() {
         </div>
       </section>
 
+      {/* Real-world use cases */}
+      <section className="py-16 px-4 bg-slate-900/30">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-black mb-4">The optionality is unlimited.</h2>
+            <p className="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
+              If an AI agent can make a phone call or read an email, it can now act on your Cornerstone data. Here&apos;s what builders are already building.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            {[
+              {
+                emoji: "🚚",
+                title: "Migrate from your old software",
+                desc: "An AI agent reads your existing Buildertrend, JobTread, or Excel data and migrates it into Cornerstone automatically. No manual re-entry, no implementation consultant, no $25k fee. You own the process.",
+                tag: "Data Migration",
+                tagColor: "text-amber-400 bg-amber-500/10 border-amber-500/20",
+              },
+              {
+                emoji: "📊",
+                title: "Sync with your accounting software",
+                desc: "Bridge Cornerstone and QuickBooks, Sage, or your accounting system of choice. POs, invoices, and job costs flow both ways automatically — no double entry, no CSV exports.",
+                tag: "Accounting Integration",
+                tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+              },
+              {
+                emoji: "📞",
+                title: "Cold call vendors to build your database",
+                desc: "Your voice agent calls roofing companies, electricians, framers — gets their email and contact info, adds them as vendors in Cornerstone automatically. 200 vendors contacted in an afternoon.",
+                tag: "Vendor Acquisition",
+                tagColor: "text-cyan-400 bg-cyan-500/10 border-cyan-500/20",
+              },
+              {
+                emoji: "📧",
+                title: "Scan your inbox for bid replies",
+                desc: "An email-scanning agent reads incoming vendor emails, extracts bid data, and logs everything in Cornerstone — no manual entry, no missed bids. Your inbox becomes an automated data pipeline.",
+                tag: "Email Automation",
+                tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+              },
+              {
+                emoji: "✅",
+                title: "Task completion triggers purchase orders",
+                desc: "Agent monitors your Cornerstone task completions and generates POs automatically when a scope is finished. Schedule drives purchasing — you never have to manually create a PO again.",
+                tag: "PO Automation",
+                tagColor: "text-blue-400 bg-blue-500/10 border-blue-500/20",
+              },
+              {
+                emoji: "📱",
+                title: "Follow up on overdue tasks by phone",
+                desc: "A voice agent calls the framer who hasn&apos;t confirmed their schedule date. Records the outcome. Updates the task status. Your schedule enforces itself.",
+                tag: "Schedule Enforcement",
+                tagColor: "text-pink-400 bg-pink-500/10 border-pink-500/20",
+              },
+            ].map((item) => (
+              <div key={item.title} className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-cyan-500/20 transition-all duration-300">
+                <div className="flex items-start justify-between gap-3 mb-4">
+                  <span className="text-3xl">{item.emoji}</span>
+                  <span className={`px-2.5 py-1 rounded-full border text-xs font-bold ${item.tagColor}`}>{item.tag}</span>
+                </div>
+                <h3 className="text-white font-black text-base mb-2">{item.title}</h3>
+                <p className="text-slate-400 text-sm leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Pricing */}
       <section className="py-16 px-4">
         <div className="max-w-2xl mx-auto">

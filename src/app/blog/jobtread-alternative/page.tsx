@@ -5,9 +5,9 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "JobTread Alternative for Home Builders — Cornerstone PM Blog",
+  title: "JobTread Alternative for Home Builders â€” Cornerstone PM Blog",
   description:
-    "JobTread is built for general contractors. Cornerstone PM is built for home builders. Here's the honest difference — lot management, design center, sales pipeline, and AI that actually works with your data.",
+    "JobTread is built for general contractors. Cornerstone PM is built for home builders. Here's the honest difference â€” lot management, design center, sales pipeline, and AI that actually works with your data.",
 };
 
 const comparison = [
@@ -46,8 +46,8 @@ export default function JobtreadAlternativePost() {
             Looking for a JobTread Alternative? Here&apos;s What Home Builders Should Know
           </h1>
           <div className="flex items-center gap-3 text-sm text-slate-500">
-            <span>April 27, 2026</span>
-            <span>·</span>
+            <span>April 1, 2026</span>
+            <span>Â·</span>
             <span>6 min read</span>
           </div>
         </div>
@@ -82,7 +82,7 @@ export default function JobtreadAlternativePost() {
               },
               {
                 title: "No design center / options engine",
-                desc: "Managing buyer selections — Good/Better/Best options, design center appointments, upgrade pricing — requires purpose-built tooling. JobTread has none of this.",
+                desc: "Managing buyer selections â€” Good/Better/Best options, design center appointments, upgrade pricing â€” requires purpose-built tooling. JobTread has none of this.",
               },
               {
                 title: "No lot or community management",
@@ -170,7 +170,7 @@ export default function JobtreadAlternativePost() {
               "Flat-rate pricing that doesn&apos;t charge per seat",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3">
-                <span className="text-amber-400 font-bold flex-shrink-0 mt-0.5">→</span>
+                <span className="text-amber-400 font-bold flex-shrink-0 mt-0.5">â†’</span>
                 <span>{item}</span>
               </li>
             ))}
