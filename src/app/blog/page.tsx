@@ -11,6 +11,36 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "jobtread-alternative",
+    title: "Looking for a JobTread Alternative? Here's What Home Builders Should Know",
+    excerpt:
+      "JobTread is built for general contractors. Cornerstone PM is built for home builders. Here's the honest difference — lot management, design center, sales pipeline, and AI that actually works with your data.",
+    date: "April 27, 2026",
+    readTime: "6 min read",
+    tag: "Comparison",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+  },
+  {
+    slug: "subcontractor-scheduling-software",
+    title: "Subcontractor Scheduling Software: What Home Builders Actually Need",
+    excerpt:
+      "Your best subs are evaluating you as a client. Clear schedules, advance notice, and clean communication aren't just nice to have — they're how you keep the crews that keep your builds on schedule.",
+    date: "April 27, 2026",
+    readTime: "6 min read",
+    tag: "Scheduling",
+    tagColor: "text-cyan-400 bg-cyan-500/10 border-cyan-500/20",
+  },
+  {
+    slug: "construction-purchase-order-software",
+    title: "Construction Purchase Order Software for Home Builders (2026 Guide)",
+    excerpt:
+      "Managing construction POs in Excel is costing home builders time and margin. Here's what modern purchase order software should actually do — and how AI is changing the equation.",
+    date: "April 27, 2026",
+    readTime: "6 min read",
+    tag: "Purchasing",
+    tagColor: "text-amber-400 bg-amber-500/10 border-amber-500/20",
+  },
+  {
     slug: "homebuilding-ai",
     title: "Homebuilding AI: How AI is Changing Residential Construction in 2026",
     excerpt:

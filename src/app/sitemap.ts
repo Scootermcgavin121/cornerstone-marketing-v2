@@ -34,6 +34,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/ai-construction-management", priority: 0.8, changeFrequency: "monthly" as const },
     { url: "/ai-for-home-builders", priority: 0.8, changeFrequency: "monthly" as const },
     { url: "/ai-scheduling", priority: 0.8, changeFrequency: "monthly" as const },
+    { url: "/ai-new-home-sales", priority: 0.8, changeFrequency: "monthly" as const },
+    { url: "/ai-construction-purchasing", priority: 0.8, changeFrequency: "monthly" as const },
+    { url: "/blog/construction-purchase-order-software", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/subcontractor-scheduling-software", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/jobtread-alternative", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({
