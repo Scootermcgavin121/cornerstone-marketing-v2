@@ -261,6 +261,26 @@ export default function ApiAccessPage() {
             </p>
           </div>
 
+          {/* Knowledge file callout */}
+          <div className="mb-10 rounded-2xl bg-gradient-to-r from-violet-500/10 to-cyan-500/10 border border-violet-500/30 p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6">
+            <div className="text-5xl flex-shrink-0">🧠</div>
+            <div className="flex-1">
+              <h3 className="text-white font-black text-xl mb-2">One URL. Your agent becomes a Cornerstone expert.</h3>
+              <p className="text-slate-400 leading-relaxed mb-4">
+                Think of it as a knowledge file for your AI. Point any agent at our developer docs and it instantly understands every endpoint, every workflow, every skill in Cornerstone &mdash; before you&apos;ve even signed up.
+              </p>
+              <a
+                href="https://app.cornerstonepm.ai/developers"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-violet-500/20 border border-violet-500/40 text-violet-300 font-bold text-sm hover:bg-violet-500/30 transition-all duration-200"
+              >
+                <Code className="w-4 h-4" />
+                app.cornerstonepm.ai/developers &rarr;
+              </a>
+            </div>
+          </div>
+
           {/* Endpoint highlight */}
           <div className="rounded-2xl bg-violet-500/5 border border-violet-500/30 overflow-hidden mb-10">
             <div className="grid grid-cols-1 lg:grid-cols-2">
