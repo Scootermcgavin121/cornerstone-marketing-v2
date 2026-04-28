@@ -1,12 +1,10 @@
+"use client";
+import { useState } from "react";
 import Link from "next/link";
-import { Check, Shield, Zap, Globe, Code, Webhook, CreditCard, Building2, ArrowRight, ClipboardList, Users, Layers, Package, Clock, FileText, Bell, BarChart3 } from "lucide-react";
+import { Check, Shield, Zap, Globe, Code, Webhook, CreditCard, Building2, ArrowRight, ClipboardList, Users, Layers, Package, Clock, FileText, Bell, BarChart3, ChevronDown } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 
-export const metadata = {
-  title: "API Documentation — Cornerstone PM Developers",
-  description:
-    "59 REST endpoints covering every major entity. Vendors, bids, homes, tasks, POs, payments, options, parts, timesheets, webhooks, and more. Pro+ plan feature.",
-};
+
 
 const methodColor: Record<string, string> = {
   GET: "text-emerald-400 bg-emerald-500/10 border-emerald-500/30",
@@ -293,6 +291,8 @@ const integrations = [
 ];
 
 export default function ApiDocsPage() {
+  const [openGroups, setOpenGroups] = useState<Record<string, boolean>>({});
+  const toggleGroup = (label: string) => setOpenGroups(prev => ({ ...prev, [label]: !prev[label] }));
   return (
     <div className="min-h-screen bg-slate-950 text-white">
       <Navbar />
@@ -400,34 +400,41 @@ export default function ApiDocsPage() {
           <p className="text-slate-400 text-center mb-3 max-w-xl mx-auto">All endpoints prefixed with <code className="text-cyan-400 bg-slate-800 px-1.5 py-0.5 rounded text-sm">https://app.cornerstonepm.ai</code></p>
           <p className="text-slate-500 text-center text-sm mb-12">Built on 110+ database tables &mdash; every endpoint reflects real construction data, not generic project management abstractions.</p>
 
-          <div className="space-y-6">
+          <div className="space-y-3">
             {endpointGroups.map((group) => {
               const Icon = group.icon;
+              const isOpen = !!openGroups[group.label];
               return (
                 <div key={group.label} className="rounded-2xl bg-slate-900/40 border border-slate-800 overflow-hidden">
-                  <div className={`flex items-center gap-3 px-6 py-4 border-b border-slate-800 ${group.bg}`}>
-                    <div className={`w-8 h-8 rounded-lg ${group.bg} border ${group.border} flex items-center justify-center`}>
+                  <button
+                    onClick={() => toggleGroup(group.label)}
+                    className={`w-full flex items-center gap-3 px-6 py-4 hover:bg-slate-800/30 transition-colors ${isOpen ? 'border-b border-slate-800' : ''}`}
+                  >
+                    <div className={`w-8 h-8 rounded-lg ${group.bg} border ${group.border} flex items-center justify-center flex-shrink-0`}>
                       <Icon className={`w-4 h-4 ${group.color}`} />
                     </div>
                     <h3 className={`font-black text-lg ${group.color}`}>{group.label}</h3>
-                    <span className={`ml-auto text-xs font-bold px-2 py-0.5 rounded-full ${group.bg} ${group.color}`}>{group.endpoints.length}</span>
-                  </div>
-                  <div className="divide-y divide-slate-800/60">
-                    {group.endpoints.map((ep) => (
-                      <div key={ep.path} className="px-6 py-4 hover:bg-slate-800/20 transition-colors">
-                        <div className="flex items-start gap-3 flex-wrap">
-                          <span className={`px-2.5 py-1 rounded-lg text-xs font-black border flex-shrink-0 font-mono ${methodColor[ep.method]}`}>
-                            {ep.method}
-                          </span>
-                          <code className="text-slate-200 text-sm font-mono flex-shrink-0 mt-0.5">{ep.path}</code>
-                          <span className="text-slate-400 text-sm mt-0.5">&mdash; {ep.desc}</span>
+                    <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${group.bg} ${group.color}`}>{group.endpoints.length} endpoints</span>
+                    <ChevronDown className={`w-4 h-4 text-slate-500 ml-auto transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
+                  </button>
+                  {isOpen && (
+                    <div className="divide-y divide-slate-800/60">
+                      {group.endpoints.map((ep) => (
+                        <div key={ep.path} className="px-6 py-4 hover:bg-slate-800/20 transition-colors">
+                          <div className="flex items-start gap-3 flex-wrap">
+                            <span className={`px-2.5 py-1 rounded-lg text-xs font-black border flex-shrink-0 font-mono ${methodColor[ep.method]}`}>
+                              {ep.method}
+                            </span>
+                            <code className="text-slate-200 text-sm font-mono flex-shrink-0 mt-0.5">{ep.path}</code>
+                            <span className="text-slate-400 text-sm mt-0.5">&mdash; {ep.desc}</span>
+                          </div>
+                          {ep.detail && (
+                            <p className="text-slate-500 text-xs mt-2 ml-14 leading-relaxed">{ep.detail}</p>
+                          )}
                         </div>
-                        {ep.detail && (
-                          <p className="text-slate-500 text-xs mt-2 ml-14 leading-relaxed">{ep.detail}</p>
-                        )}
-                      </div>
-                    ))}
-                  </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               );
             })}
