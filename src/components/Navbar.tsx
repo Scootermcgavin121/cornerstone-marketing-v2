@@ -122,7 +122,7 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-slate-950/98 backdrop-blur-xl border-b border-slate-800">
+        <div className="md:hidden bg-slate-950/98 backdrop-blur-xl border-b border-slate-800 max-h-[80vh] overflow-y-auto">
           <div className="px-4 py-4 space-y-1">
             {navLinks.map((link) =>
               link.hasDropdown ? (
