@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import { Check, Shield, Zap, Globe, Code, Webhook, CreditCard, Building2, ArrowRight, ClipboardList, Users, Layers, Package, Clock, FileText, Bell, BarChart3 } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 

@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import React from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
@@ -56,7 +56,7 @@ const agents = [
     emoji: "💬",
     name: "FAQ Chatbot",
     tagline: "Always-On Help Desk",
-    desc: "GPT-4o-mini chatbot on every page. Knows every feature, workflow, and permission. Built-in documentation that actually talks back.",
+    desc: "ChatGPT chatbot on every page. Knows every feature, workflow, and permission. Built-in documentation that actually talks back.",
     href: "/contact",
     color: "text-cyan-400",
     bg: "bg-cyan-500/10",

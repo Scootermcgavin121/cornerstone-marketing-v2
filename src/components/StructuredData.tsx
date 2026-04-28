@@ -1,4 +1,4 @@
-﻿export function StructuredData() {
+export function StructuredData() {
   const schema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -41,7 +41,7 @@
           "Vendor self-registration portal",
           "REST API with 59 endpoints and 14 webhook event types",
           "Multi-community and multi-floorplan management",
-          "FAQ chatbot powered by GPT-4o-mini",
+          "FAQ chatbot powered by ChatGPT",
           "Warranty tracking and 2-year warranty management",
           "Unlimited users on all plans — no per-seat pricing",
           "Free 2-year beta for first 100 builders",
