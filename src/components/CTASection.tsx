@@ -21,8 +21,7 @@ export function CTASection() {
         </div>
 
         <h2 className="text-5xl sm:text-6xl md:text-7xl font-black text-white leading-[0.95] mb-6">
-          Stop paying{" "}
-          <span className="line-through text-slate-600">$499</span>
+          Stop paying
           <br />
           <span className="bg-gradient-to-r from-amber-400 to-amber-300 bg-clip-text text-transparent">
             for software that&apos;s
