@@ -114,7 +114,7 @@ const posts = [
     slug: "buildertrend-vs-cornerstone",
     title: "BuilderTrend vs Cornerstone PM: The Honest Comparison",
     excerpt:
-      "BuilderTrend is the big name in builder software. But is it worth $499/mo for a builder closing 10â€“30 homes a year? We break it down.",
+      "BuilderTrend is the big name in builder software. But is it worth $499/mo for a builder closing 10&mdash;€“30 homes a year? We break it down.",
     date: "April 14, 2026",
     readTime: "6 min read",
     tag: "Comparison",

@@ -18,7 +18,7 @@ const features = [
   { title: "Design Center Integration", desc: "Room-by-room selections tied directly to purchasing budget." },
   { title: "Designer Collections", desc: "Group selections into curated collections for buyer presentations." },
   { title: "Unlimited Spec Levels", desc: "Community Standard, Premium, Luxury &mdash; unlimited spec levels with separate pricing." },
-  { title: "Base Pricing Matrix", desc: "Floorplan Ã -  Community pricing matrix with per-community overrides." },
+  { title: "Base Pricing Matrix", desc: "Floorplan &rarr; -  Community pricing matrix with per community overrides." },
   { title: "Change Orders", desc: "Buyer-requested changes with approval workflow and budget impact." },
   { title: "Bid Management", desc: "Send floorplan to bid to every vendor with one click, track responses, compare side-by-side." },
   { title: "Bid Comparison", desc: "Side-by-side vendor bid comparison with automatic low-bid highlighting." },

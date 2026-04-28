@@ -155,7 +155,7 @@ export default function AiNewHomeSalesPage() {
             { num: "100%", label: "Pipeline visibility", sub: "Every buyer, every community" },
             { num: "0", label: "Missed follow-ups", sub: "AI flags stalled deals" },
             { num: "30s", label: "MLS description", sub: "Generated from real data" },
-            { num: "∞", label: "Communities tracked", sub: "No per-community limits" },
+            { num: "∞", label: "Communities tracked", sub: "No per community limits" },
           ].map((s) => (
             <div key={s.label} className="text-center p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
               <div className="text-3xl font-black text-violet-400 mb-1">{s.num}</div>

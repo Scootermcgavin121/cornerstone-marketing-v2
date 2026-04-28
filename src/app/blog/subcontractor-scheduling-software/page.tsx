@@ -63,7 +63,7 @@ export default function SubcontractorSchedulingSoftwarePost() {
               "They can't see the full project schedule, so they can't plan their own crews",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3">
-                <span className="text-red-400 font-bold flex-shrink-0 mt-0.5">âœ—</span>
+                <span className="text-red-400 font-bold flex-shrink-0 mt-0.5">&mdash;œ—</span>
                 <span>{item}</span>
               </li>
             ))}
