@@ -25,7 +25,7 @@ const featureLinks = [
   { label: "Sales Pipeline", href: "/sales", desc: "60-second home sale, buyer tracking" },
   { label: "MLS Listing Generator", href: "/listing-sheet", desc: "AI-written MLS listings from live project data" },
   { label: "Design Center", href: "/design", desc: "Room-by-room selections, spec levels" },
-  { label: "Permitting", href: "/features#permitting", desc: "Permit sequences, PA workflow" },
+  { label: "Permitting &amp; Inspections", href: "/permitting", desc: "Permit sequences, phase gates, auto notifications" },
   { label: "Buyer Portal", href: "/features#portal", desc: "Milestone journey, photo gallery" },
   { label: "⚡ AI Blueprint Takeoff", href: "/ai-takeoff", desc: "Upload PDF → instant material takeoff", highlight: true },
   { label: "🤖 Foreman AI", href: "/foreman", desc: "47-skill AI agent, natural language commands" },
