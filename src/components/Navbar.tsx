@@ -37,6 +37,7 @@ const featureLinks = [
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [featuresOpen, setFeaturesOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -123,16 +124,48 @@ export function Navbar() {
       {mobileOpen && (
         <div className="md:hidden bg-slate-950/98 backdrop-blur-xl border-b border-slate-800">
           <div className="px-4 py-4 space-y-1">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="block px-4 py-3 text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-all duration-200"
-                onClick={() => setMobileOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map((link) =>
+              link.hasDropdown ? (
+                <div key={link.href}>
+                  <button
+                    className="w-full flex items-center justify-between px-4 py-3 text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-all duration-200"
+                    onClick={() => setFeaturesOpen(!featuresOpen)}
+                  >
+                    <span>{link.label}</span>
+                    <svg
+                      className={`w-4 h-4 opacity-50 transition-transform duration-200 ${featuresOpen ? 'rotate-180' : ''}`}
+                      fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  {featuresOpen && (
+                    <div className="ml-4 mt-1 space-y-0.5 border-l border-slate-800 pl-3">
+                      {featureLinks.map((fl) => (
+                        <Link
+                          key={fl.href}
+                          href={fl.href}
+                          className="block px-3 py-2.5 rounded-lg hover:bg-white/5 transition-colors"
+                          onClick={() => { setMobileOpen(false); setFeaturesOpen(false); }}
+                        >
+                          <div className={`text-sm font-medium ${'highlight' in fl && fl.highlight ? 'text-violet-400' : 'text-slate-200'}`}>{fl.label}</div>
+                          <div className="text-xs text-slate-500">{fl.desc}</div>
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="block px-4 py-3 text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-all duration-200"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
             <div className="pt-3 pb-1 border-t border-slate-800 mt-3 space-y-2">
               <Link
                 href="/beta"
