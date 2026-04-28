@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import { Check, Zap, ArrowRight, Code, Globe, Shield, GitBranch, Brain, RefreshCw } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 
@@ -324,13 +324,13 @@ export default function ApiAccessPage() {
             <p className="text-center text-slate-400 text-sm font-semibold uppercase tracking-widest mb-6">47 skills across 7 domains</p>
             <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3">
               {[
-                { domain: "Parts", count: 5, skills: "search, create, bulk create, update, delete", color: "text-amber-400", bg: "bg-amber-500/10", border: "border-amber-500/20" },
-                { domain: "Homes", count: 3, skills: "list, update, get budget", color: "text-cyan-400", bg: "bg-cyan-500/10", border: "border-cyan-500/20" },
-                { domain: "Vendors", count: 3, skills: "list, create, search bids", color: "text-emerald-400", bg: "bg-emerald-500/10", border: "border-emerald-500/20" },
+                { domain: "Parts Catalog", count: 5, skills: "search, create, bulk create, update, delete", color: "text-amber-400", bg: "bg-amber-500/10", border: "border-amber-500/20" },
+                { domain: "Home Mgmt", count: 3, skills: "list, update, get budget", color: "text-cyan-400", bg: "bg-cyan-500/10", border: "border-cyan-500/20" },
+                { domain: "Vendor Mgmt", count: 3, skills: "list, create, search bids", color: "text-emerald-400", bg: "bg-emerald-500/10", border: "border-emerald-500/20" },
                 { domain: "Design Center", count: 8, skills: "classes, categories, options, spec levels, suggestions", color: "text-violet-400", bg: "bg-violet-500/10", border: "border-violet-500/20" },
-                { domain: "Bidding", count: 4, skills: "competitive analysis, SOW, bid comparison, bid request drafter", color: "text-blue-400", bg: "bg-blue-500/10", border: "border-blue-500/20" },
-                { domain: "Reports", count: 4, skills: "budget variance, profitability, punch list, vendor scorecard", color: "text-pink-400", bg: "bg-pink-500/10", border: "border-pink-500/20" },
-                { domain: "Utility", count: 10, skills: "scopes, communities, floorplans, users, web scraping, file export, memory, sales descriptions", color: "text-slate-300", bg: "bg-slate-500/10", border: "border-slate-500/20" },
+                { domain: "Bid Pipeline", count: 4, skills: "competitive analysis, SOW, bid comparison, bid request drafter", color: "text-blue-400", bg: "bg-blue-500/10", border: "border-blue-500/20" },
+                { domain: "AI Reports", count: 4, skills: "budget variance, profitability, punch list, vendor scorecard", color: "text-pink-400", bg: "bg-pink-500/10", border: "border-pink-500/20" },
+                { domain: "Utilities", count: 10, skills: "scopes, communities, floorplans, users, web scraping, file export, memory, sales descriptions", color: "text-slate-300", bg: "bg-slate-500/10", border: "border-slate-500/20" },
               ].map((cat) => (
                 <div key={cat.domain} className={`p-4 rounded-xl ${cat.bg} border ${cat.border} text-center group relative`}>
                   <div className={`text-2xl font-black ${cat.color} mb-1`}>{cat.count}</div>
