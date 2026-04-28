@@ -5,20 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const screens = [
   {
-    id: "hero-mockup",
-    label: "Platform Overview",
-    tag: "OVERVIEW",
-    tagColor: "text-cyan-400 border-cyan-500/30 bg-cyan-500/10",
-    headline: "Your pipeline. Your pace.",
-    description:
-      "Every home. Every stage. Kanban board meets mobile dashboard - real-time visibility for your whole team, from the office or the job site.",
-    screenshot: "/mockups/hero-mockup.jpg",
-    accent: "from-cyan-500/20 to-slate-900/5",
-    glow: "rgba(6,182,212,0.12)",
-    border: "border-cyan-500/30",
-    isHero: true,
-  },
-  {
     id: "sales-pipeline",
     label: "Sales Pipeline",
     tag: "SALES",
