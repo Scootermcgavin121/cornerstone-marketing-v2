@@ -5,7 +5,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Subcontractor Scheduling Software for Home Builders â€” Cornerstone PM Blog",
+  title: "Subcontractor Scheduling Software for Home Builders &mdash;€” Cornerstone PM Blog",
   description:
     "The best subcontractors have options. If your scheduling is chaotic and your communication is reactive, they'll prioritize builders who make their lives easier. Here's how to be that builder.",
 };
@@ -33,7 +33,7 @@ export default function SubcontractorSchedulingSoftwarePost() {
           </h1>
           <div className="flex items-center gap-3 text-sm text-slate-500">
             <span>March 25, 2026</span>
-            <span>Â·</span>
+            <span>&mdash;·</span>
             <span>6 min read</span>
           </div>
         </div>
@@ -57,8 +57,8 @@ export default function SubcontractorSchedulingSoftwarePost() {
 
           <ul className="space-y-3 my-6">
             {[
-              "Schedules change without notice â€” they show up and the site isn't ready",
-              "Scope isn't clear â€” they have to call the PM to get basic specs",
+              "Schedules change without notice &mdash;€” they show up and the site isn't ready",
+              "Scope isn't clear &mdash;€” they have to call the PM to get basic specs",
               "Payment is slow because POs and invoices are a mess",
               "They can't see the full project schedule, so they can't plan their own crews",
             ].map((item) => (
@@ -82,7 +82,7 @@ export default function SubcontractorSchedulingSoftwarePost() {
             {[
               {
                 title: "Milestone-linked notifications",
-                desc: "When framing is marked complete, plumbing should get automatic notice that they&apos;re up next. Not a text from your PM â€” an automated, reliable notification. This is the single biggest schedule protection you can buy.",
+                desc: "When framing is marked complete, plumbing should get automatic notice that they&apos;re up next. Not a text from your PM &mdash;€” an automated, reliable notification. This is the single biggest schedule protection you can buy.",
               },
               {
                 title: "Scope clarity at scheduling time",
@@ -94,7 +94,7 @@ export default function SubcontractorSchedulingSoftwarePost() {
               },
               {
                 title: "Delay propagation",
-                desc: "When one trade slips, everything downstream needs to adjust. Good scheduling software re-sequences automatically and flags conflicts â€” instead of leaving you to manually update 40 tasks.",
+                desc: "When one trade slips, everything downstream needs to adjust. Good scheduling software re-sequences automatically and flags conflicts &mdash;€” instead of leaving you to manually update 40 tasks.",
               },
               {
                 title: "AI-assisted schedule analysis",
@@ -128,7 +128,7 @@ export default function SubcontractorSchedulingSoftwarePost() {
           </div>
 
           <p>
-            That kind of cross-portfolio visibility â€” answered in seconds, in plain English â€” is what separates AI scheduling tools from traditional schedule management.
+            That kind of cross-portfolio visibility &mdash;€” answered in seconds, in plain English &mdash;€” is what separates AI scheduling tools from traditional schedule management.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">What to look for when evaluating</h2>
@@ -138,15 +138,15 @@ export default function SubcontractorSchedulingSoftwarePost() {
 
           <ul className="space-y-3 my-6">
             {[
-              "Designed for production home building â€” repeatable floorplans, community-based scheduling",
-              "Subcontractor portal or access â€” subs see their schedule without you CC&apos;ing them on emails",
-              "Integrated with purchasing â€” schedule milestones trigger bid requests and POs automatically",
-              "Permit milestone tracking â€” the biggest wildcard in residential construction",
-              "Flat-rate pricing â€” per-seat tools penalize you for including your subs and PMs",
-              "AI that acts on your data â€” not just a chatbot that gives generic answers",
+              "Designed for production home building &mdash;€” repeatable floorplans, community-based scheduling",
+              "Subcontractor portal or access &mdash;€” subs see their schedule without you CC&apos;ing them on emails",
+              "Integrated with purchasing &mdash;€” schedule milestones trigger bid requests and POs automatically",
+              "Permit milestone tracking &mdash;€” the biggest wildcard in residential construction",
+              "Flat-rate pricing &mdash;€” per-seat tools penalize you for including your subs and PMs",
+              "AI that acts on your data &mdash;€” not just a chatbot that gives generic answers",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3">
-                <span className="text-cyan-400 font-bold flex-shrink-0 mt-0.5">â†’</span>
+                <span className="text-cyan-400 font-bold flex-shrink-0 mt-0.5">&mdash;†’</span>
                 <span>{item}</span>
               </li>
             ))}

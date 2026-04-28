@@ -1,4 +1,4 @@
-﻿import { Check } from "lucide-react";
+import { Check } from "lucide-react";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 
@@ -91,11 +91,11 @@ export default function ConstructionPage() {
               <div className="flex justify-between"><span>Cornerstone PM</span><span className="text-amber-400 font-bold">Free during beta</span></div>
             </div>
             <Link href="/beta" className="block w-full text-center px-6 py-3.5 rounded-xl bg-amber-400 text-slate-900 font-bold hover:bg-amber-300 transition-all duration-200">Get Early Access &rarr;</Link>
-            <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders Â· No credit card required</p>
+            <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders &mdash;· No credit card required</p>
           </div>
           <div className="space-y-4">
             <h2 className="text-3xl font-black">Why builders choose Cornerstone for scheduling</h2>
-            <p className="text-slate-400 leading-relaxed">Most scheduling tools were built for general contractors. Cornerstone was built specifically for production home builders running 10â - 200+ homes a year across multiple communities.</p>
+            <p className="text-slate-400 leading-relaxed">Most scheduling tools were built for general contractors. Cornerstone was built specifically for production home builders running 10&mdash; 200+ homes a year across multiple communities.</p>
             <p className="text-slate-400 leading-relaxed">The 3-tier dependency system, foundation-aware templates, and vendor email confirmation flow were designed around how home builders actually work &mdash; not adapted from commercial construction software.</p>
           </div>
         </div>

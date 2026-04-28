@@ -1,4 +1,4 @@
-﻿import { Check } from "lucide-react";
+import { Check } from "lucide-react";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 
@@ -81,7 +81,7 @@ export default function DesignPage() {
               <div className="flex justify-between"><span>Cornerstone PM</span><span className="text-violet-400 font-bold">Free during beta</span></div>
             </div>
             <Link href="/beta" className="block w-full text-center px-6 py-3.5 rounded-xl bg-violet-400 text-slate-900 font-bold hover:bg-violet-300 transition-all duration-200">Get Early Access &rarr;</Link>
-            <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders Â· No credit card required</p>
+            <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders &mdash;· No credit card required</p>
           </div>
           <div className="space-y-4">
             <h2 className="text-3xl font-black">Why builders choose Cornerstone for design</h2>

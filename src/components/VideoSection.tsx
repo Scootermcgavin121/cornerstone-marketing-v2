@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import React from "react";
 import Link from "next/link";
 import { VideoPlayer } from "@/components/VideoPlayer";
@@ -27,7 +27,7 @@ export function VideoSection() {
             href="/beta"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-cyan-400 text-slate-900 font-bold text-lg hover:bg-cyan-300 transition-all duration-200 shadow-lg shadow-cyan-500/30 hover:-translate-y-0.5"
           >
-            Request Early Access â &mdash; 
+            Request Early Access &mdash; &mdash; 
           </Link>
           <p className="text-slate-500 text-sm mt-3">Beta is limited to 100 builders. No credit card required.</p>
         </div>

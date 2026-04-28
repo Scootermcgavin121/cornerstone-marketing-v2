@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Blog â€” Cornerstone PM",
+  title: "Blog &mdash;€” Cornerstone PM",
   description: "Insights for home builders on scheduling, technology, and running a smarter building operation.",
 };
 
@@ -24,7 +24,7 @@ const posts = [
     slug: "jobtread-alternative",
     title: "Looking for a JobTread Alternative? Here's What Home Builders Should Know",
     excerpt:
-      "JobTread is built for general contractors. Cornerstone PM is built for home builders. Here's the honest difference â€” lot management, design center, sales pipeline, and AI that actually works with your data.",
+      "JobTread is built for general contractors. Cornerstone PM is built for home builders. Here's the honest difference &mdash;€” lot management, design center, sales pipeline, and AI that actually works with your data.",
     date: "April 1, 2026",
     readTime: "6 min read",
     tag: "Comparison",
@@ -34,7 +34,7 @@ const posts = [
     slug: "subcontractor-scheduling-software",
     title: "Subcontractor Scheduling Software: What Home Builders Actually Need",
     excerpt:
-      "Your best subs are evaluating you as a client. Clear schedules, advance notice, and clean communication aren't just nice to have â€” they're how you keep the crews that keep your builds on schedule.",
+      "Your best subs are evaluating you as a client. Clear schedules, advance notice, and clean communication aren't just nice to have &mdash;€” they're how you keep the crews that keep your builds on schedule.",
     date: "March 25, 2026",
     readTime: "6 min read",
     tag: "Scheduling",
@@ -44,7 +44,7 @@ const posts = [
     slug: "construction-purchase-order-software",
     title: "Construction Purchase Order Software for Home Builders (2026 Guide)",
     excerpt:
-      "Managing construction POs in Excel is costing home builders time and margin. Here's what modern purchase order software should actually do â€” and how AI is changing the equation.",
+      "Managing construction POs in Excel is costing home builders time and margin. Here's what modern purchase order software should actually do &mdash;€” and how AI is changing the equation.",
     date: "April 8, 2026",
     readTime: "6 min read",
     tag: "Purchasing",
@@ -54,7 +54,7 @@ const posts = [
     slug: "homebuilding-ai",
     title: "Homebuilding AI: How AI is Changing Residential Construction in 2026",
     excerpt:
-      "Homebuilding is one of the last industries to get purpose-built AI â€” that&apos;s changing fast. Here's where AI is making the biggest impact in residential construction and what's coming next.",
+      "Homebuilding is one of the last industries to get purpose-built AI &mdash;€” that&apos;s changing fast. Here's where AI is making the biggest impact in residential construction and what's coming next.",
     date: "March 3, 2026",
     readTime: "6 min read",
     tag: "AI & Technology",
@@ -64,7 +64,7 @@ const posts = [
     slug: "builder-ai-software",
     title: "Builder AI Software: Why Home Builders Need Purpose-Built AI (Not Generic Tools)",
     excerpt:
-      "\"Builder AI software\" is a new search â€” people are looking for AI built specifically for builders. Here's why generic AI fails home builders and what purpose-built looks like.",
+      "\"Builder AI software\" is a new search &mdash;€” people are looking for AI built specifically for builders. Here's why generic AI fails home builders and what purpose-built looks like.",
     date: "March 18, 2026",
     readTime: "5 min read",
     tag: "AI & Technology",
@@ -74,7 +74,7 @@ const posts = [
     slug: "ai-construction-management-software",
     title: "AI Construction Management Software: What Home Builders Need to Know (2026)",
     excerpt:
-      "AI is everywhere in construction marketing but most tools are generic. Here's what real AI construction management software looks like for home builders â€” and how to evaluate what you're buying.",
+      "AI is everywhere in construction marketing but most tools are generic. Here's what real AI construction management software looks like for home builders &mdash;€” and how to evaluate what you're buying.",
     date: "March 10, 2026",
     readTime: "7 min read",
     tag: "AI & Technology",
@@ -84,7 +84,7 @@ const posts = [
     slug: "job-cost-tracking-home-builders",
     title: "Where Your Margin Goes: How Home Builders Lose Money Without Knowing It",
     excerpt:
-      "Most builders don't find out they lost margin until the home closes. Here's how real-time job cost tracking â€” budgets, POs, and change orders in one place â€” stops the leak before it starts.",
+      "Most builders don't find out they lost margin until the home closes. Here's how real-time job cost tracking &mdash;€” budgets, POs, and change orders in one place &mdash;€” stops the leak before it starts.",
     date: "April 25, 2026",
     readTime: "6 min read",
     tag: "Budgeting",
@@ -94,7 +94,7 @@ const posts = [
     slug: "subcontractor-management-home-builders",
     title: "Why Your Best Subs Are Choosing Other Builders Over You",
     excerpt:
-      "Good subcontractors have options. If your scheduling is chaotic and your communication is reactive, they'll quietly prioritize builders who make their lives easier â€” here's how to be that builder.",
+      "Good subcontractors have options. If your scheduling is chaotic and your communication is reactive, they'll quietly prioritize builders who make their lives easier &mdash;€” here's how to be that builder.",
     date: "April 23, 2026",
     readTime: "6 min read",
     tag: "Vendor Management",
@@ -104,7 +104,7 @@ const posts = [
     slug: "permitting-delays-home-builders",
     title: "Why Permits Are Stalling Your Build Schedule",
     excerpt:
-      "Permit delays are the silent schedule killer for home builders. Here's how to stop letting city hall derail your close dates â€” and what connected software changes about the equation.",
+      "Permit delays are the silent schedule killer for home builders. Here's how to stop letting city hall derail your close dates &mdash;€” and what connected software changes about the equation.",
     date: "April 21, 2026",
     readTime: "5 min read",
     tag: "Permitting",
@@ -134,7 +134,7 @@ const posts = [
     slug: "60-second-home-sale",
     title: "The 60-Second Home Status Update Your Buyers Actually Want",
     excerpt:
-      "Your buyers call twice a week asking for updates. Your team spends 20 minutes on each call. There's a better way â€” and your buyers will love you for it.",
+      "Your buyers call twice a week asking for updates. Your team spends 20 minutes on each call. There's a better way &mdash;€” and your buyers will love you for it.",
     date: "April 7, 2026",
     readTime: "4 min read",
     tag: "Buyer Experience",
@@ -173,7 +173,7 @@ export default function BlogPage() {
                     {post.tag}
                   </span>
                   <span className="text-xs text-slate-500">{post.date}</span>
-                  <span className="text-xs text-slate-600">Â·</span>
+                  <span className="text-xs text-slate-600">&mdash;·</span>
                   <span className="text-xs text-slate-500">{post.readTime}</span>
                 </div>
               </div>
