@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "design-center-home-builder",
+    title: "Why Your Design Center Process Is Leaking Options Revenue",
+    excerpt:
+      "The design center appointment is one of the highest-margin moments in a home sale. Most builders are leaving money on the table through inconsistent presentations, untracked allowances, and selections that never make it to purchasing.",
+    date: "April 29, 2026",
+    readTime: "6 min read",
+    tag: "Design Center",
+    tagColor: "text-fuchsia-400 bg-fuchsia-500/10 border-fuchsia-500/20",
+  },
+  {
     slug: "new-home-sales-pipeline",
     title: "Your Home Builder Sales Pipeline Is Losing You Buyers",
     excerpt:
