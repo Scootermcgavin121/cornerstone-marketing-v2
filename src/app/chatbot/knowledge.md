@@ -1,14 +1,33 @@
 ﻿## Platform Overview (Current Stats)
-- 110+ database tables and growing
-- 47 Foreman AI skills
+- 125+ database tables and growing
+- 47+ Foreman AI skills
 - 14 webhook event types
-- 58 external REST API endpoints
+- 60+ external REST API endpoints
 - 4 built-in AI features: Foreman AI (47 skills), Blueprint AI, MLS Listing Agent, FAQ Chatbot
 - 4 pricing tiers: Starter $149, Builder $299, Pro $499, Pro+ $599 
 
 ---
 
 ## New Features (April 2026)
+
+### Scope Items
+Builders can now define **reusable scope items** — non-material line items that capture vendor-provided work, services, and deliveries alongside material takeoffs.
+
+**What are scope items?**
+Scope items represent things like labor, delivery charges, equipment rentals, inspections, and lump sum service packages — the vendor services that go into a home budget beyond raw materials.
+
+**How they work:**
+- Organized by trade/scope (HVAC, Plumbing, Electrical, Drywall, Framing, etc.)
+- Can be added to base house takeoffs, structural options, AND design center options
+- Pricing is pulled automatically from the vendor assigned to that scope in the community — no manual entry
+- Default vendor rates apply across all floorplans, with optional per-floorplan overrides for complex or custom homes
+- Swap the assigned vendor for a community and pricing updates automatically across all affected items
+- Total home cost = materials (parts × qty) + scope items (vendor rate × qty) + design selections
+
+**Vendor pricing management:**
+- Vendors are assigned to scopes per community (e.g., one HVAC contractor handles all homes in a given subdivision)
+- Purchasing managers can see at a glance which scope items are missing vendor pricing
+- Export scope item pricing by trade for vendor comparison reviews and bid analysis
 
 ### Custom Fields
 - Admin > Custom Fields
