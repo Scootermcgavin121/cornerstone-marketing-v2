@@ -40,6 +40,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/subcontractor-scheduling-software", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/jobtread-alternative", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/permitting", priority: 0.8, changeFrequency: "monthly" as const },
+    { url: "/home-builder-project-management-software", priority: 0.9, changeFrequency: "monthly" as const },
+    { url: "/buildertrend-alternative", priority: 0.8, changeFrequency: "monthly" as const },
+    { url: "/newstar-alternative", priority: 0.8, changeFrequency: "monthly" as const },
+    { url: "/buildpro-alternative", priority: 0.8, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({

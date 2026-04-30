@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <footer className="bg-slate-950 border-t border-slate-800/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-8">
           {/* Brand */}
           <div className="md:col-span-2 lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
@@ -80,10 +80,33 @@ export function Footer() {
             <ul className="space-y-2">
               {[
                 { label: "AI for Home Builders", href: "/ai-for-home-builders" },
+                { label: "Home Builder PM Software", href: "/home-builder-project-management-software" },
                 { label: "AI Construction Management", href: "/ai-construction-management" },
                 { label: "AI Scheduling", href: "/ai-scheduling" },
                 { label: "AI New Home Sales", href: "/ai-new-home-sales" },
                 { label: "AI Purchasing", href: "/ai-construction-purchasing" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-slate-500 hover:text-slate-300 transition-colors duration-200"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-sm font-semibold text-white mb-4">Alternatives</h4>
+            <ul className="space-y-2">
+              {[
+                { label: "Buildertrend Alternative", href: "/buildertrend-alternative" },
+                { label: "NEWSTAR Alternative", href: "/newstar-alternative" },
+                { label: "BuildPro Alternative", href: "/buildpro-alternative" },
+                { label: "JobTread Alternative", href: "/blog/jobtread-alternative" },
+                { label: "Compare All", href: "/compare" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link

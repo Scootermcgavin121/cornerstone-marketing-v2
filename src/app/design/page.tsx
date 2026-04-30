@@ -1,11 +1,47 @@
 import { Check } from "lucide-react";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
+import { FAQSection, type FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
-  title: "Design Center & Options Engine",
-  description: "Structured options let buyers personalize their home while you lock in profit. Every selection tracked, priced, and approved.",
+  title: "Design Center Software for Home Builders | Cornerstone PM",
+  description: "Design center software for home builders with structured options engine, room-by-room selections, allowance tracking, and budget integration. Built for production builders.",
 };
+
+const faqItems: FAQItem[] = [
+  {
+    q: "What is design center software for home builders?",
+    a: "Design center software lets homebuyers select finishes, fixtures, and upgrades for their new home while builders track allowances, upgrade pricing, and margin per home. Cornerstone PM's Design Center is built as a first-class module integrated with sales, purchasing, and the construction budget &mdash; every selection updates pricing and PO line items automatically.",
+  },
+  {
+    q: "What is an options engine?",
+    a: "An options engine is the rules system that prices structural and design options per floorplan and per community. Cornerstone PM's options engine handles dependencies, incompatibilities, allowance overages, and per-community pricing &mdash; with real-time price rollup as the buyer makes selections. Foreman AI's Design Center domain (8 skills) can configure options, track allowances, and generate selection packages on request.",
+  },
+  {
+    q: "How do design center allowances work?",
+    a: "When a buyer locks structural options on a sale, Cornerstone PM auto-generates a per-room allowance schedule based on community spec levels (Standard, Premium, Luxury, etc.). The buyer's selections debit the allowance, overages flow to a change order, and savings can be applied as buyer credits &mdash; all tracked in real time.",
+  },
+  {
+    q: "Does the design center connect to purchasing?",
+    a: "Yes. The moment a design selection is locked, Cornerstone PM updates the purchasing line items and the construction budget. There's no separate spec sheet to reconcile and no risk of ordering the wrong fixture &mdash; design, purchasing, and the budget share one data source.",
+  },
+  {
+    q: "How is this different from a generic configurator?",
+    a: "Generic configurators (Hubspot CRM add-ons, standalone selection apps) collect buyer preferences but don't update your budget or purchasing system. Cornerstone PM's Design Center is wired to live builder data &mdash; selections immediately become PO line items, change orders, and budget updates with no double entry.",
+  },
+  {
+    q: "Can buyers see their selections in their portal?",
+    a: "Yes. The homeowner portal shows every selection, allowance status, and upgrade pricing in real time. Buyers can review, approve, and digitally sign-off on their selections before construction begins.",
+  },
+  {
+    q: "What does design center software cost?",
+    a: "Cornerstone PM's Design Center is included in the Builder plan at $299/mo with unlimited users. Foreman AI's 8-skill Design Center domain is included on the Pro plan at $499/mo. There are no per-seat fees and no implementation cost.",
+  },
+  {
+    q: "Is this a NEWSTAR / BuildPro design center alternative?",
+    a: "Yes. Cornerstone PM offers the same core options engine and design center capabilities as NEWSTAR and BuildPro &mdash; structured options, allowances, spec levels, change orders &mdash; without the 6-figure implementation cost. Built specifically for small-to-mid production builders.",
+  },
+];
 
 const features = [
   { title: "Room-by-Room Selections", desc: "Organize all buyer selections by room &mdash; kitchen, baths, flooring, fixtures, paint." },
@@ -90,6 +126,12 @@ export default function DesignPage() {
           </div>
         </div>
       </section>
+
+      <FAQSection
+        title="Design Center Software FAQ"
+        subtitle="Common questions about design center and options engine software for home builders."
+        items={faqItems}
+      />
 
       <section className="py-20 px-4 text-center border-t border-slate-800/60">
         <h2 className="text-4xl font-black mb-4">Ready to protect your margin?</h2>

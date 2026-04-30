@@ -5,9 +5,10 @@ import { Navbar } from "@/components/Navbar";
 import { VideoPlayer } from "@/components/VideoPlayer";
 
 export const metadata = {
-  title: "AI Blueprint Takeoff — Cornerstone PM",
+  title: "AI Material Takeoff for Home Builders | Cornerstone PM",
   description:
-    "Upload a floor plan PDF and get a complete material takeoff in under a minute. Rooms, fixtures, flooring, drywall, roofing — extracted by AI so you never have to count manually again.",
+    "AI material takeoff for home builders. Upload a PDF floor plan and get 130+ material scopes &mdash; rooms, fixtures, flooring, drywall, roofing &mdash; extracted in under 60 seconds.",
+  alternates: { canonical: "https://www.cornerstonepm.ai/ai-takeoff" },
 };
 
 const tabs = [
@@ -69,7 +70,7 @@ export default function AiTakeoffPage() {
             AI-Powered &middot; Full Bundle Feature
           </div>
           <h1 className="text-5xl sm:text-7xl font-black tracking-tight mb-6 leading-tight">
-            Material takeoff.<br />
+            AI material takeoff for home builders.<br />
             <span className="text-violet-400">Under 60 seconds.</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10">

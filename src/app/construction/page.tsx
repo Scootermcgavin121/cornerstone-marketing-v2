@@ -1,11 +1,47 @@
 import { Check } from "lucide-react";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
+import { FAQSection, type FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
-  title: "Construction Scheduling Software for Home Builders",
-  description: "Auto-cascading dependencies, vendor notifications, and Gantt charts built for production home builders.",
+  title: "Construction Scheduling Software for Home Builders | Cornerstone PM",
+  description: "AI construction scheduling for home builders. Auto-cascading dependencies, vendor notifications, and Gantt charts &mdash; built for production home builders running multiple communities.",
 };
+
+const faqItems: FAQItem[] = [
+  {
+    q: "What is construction scheduling software for home builders?",
+    a: "Construction scheduling software for home builders is a tool that lets production builders plan, sequence, and notify subcontractors across every home in every community. Cornerstone PM's scheduling module includes Gantt charts, 3-tier auto-cascading dependencies, foundation-aware templates, and one-click vendor email confirmations &mdash; designed specifically for builders managing 10-200+ homes per year, not general contractors.",
+  },
+  {
+    q: "How does AI construction scheduling for home builders work?",
+    a: "Cornerstone PM's AI scheduling watches your live build data and surfaces problems before they cascade: vendor no-shows, missed dependencies, slipping milestones, and weather-blocked tasks. Foreman AI can also reschedule tasks, notify vendors, and rebuild downstream timelines from a plain-English request. Schedules update in real time as conditions change.",
+  },
+  {
+    q: "What is auto-cascading dependency scheduling?",
+    a: "Auto-cascading means when one task moves &mdash; say framing slips three days &mdash; every downstream task automatically shifts to match, vendors get re-notified, and the homeowner portal updates. Cornerstone PM uses a 3-tier dependency system (hard, soft, vendor-driven) so the cascade respects which tasks can run in parallel versus which must wait.",
+  },
+  {
+    q: "Does Cornerstone PM replace Buildertrend for scheduling?",
+    a: "Yes &mdash; for production home builders. Buildertrend was built for custom builders and remodelers; Cornerstone PM was built specifically for production builders managing lot inventories, plan repeats, and multi-community pipelines. Cornerstone PM's scheduling starts at $149/mo (vs $499+/mo for Buildertrend) and includes 17 pre-built schedule templates and 7 foundation templates out of the box.",
+  },
+  {
+    q: "How are subcontractors notified of schedule changes?",
+    a: "Vendors receive automated emails when tasks are ready, when timelines shift, or when permits clear. They confirm or decline in one click &mdash; no app login required. Cornerstone PM also sends daily and weekly digest emails so vendors and PMs stay aligned without checking the dashboard.",
+  },
+  {
+    q: "Can I import my existing schedule from Buildertrend or CoConstruct?",
+    a: "Yes. Cornerstone PM supports schedule import from Buildertrend, CoConstruct, and any Excel-based system using a smart column mapper. Migration typically takes under an hour for a single community.",
+  },
+  {
+    q: "What's a permit gate in construction scheduling?",
+    a: "A permit gate automatically blocks dependent tasks until the permit is approved. Cornerstone PM's permit gate prevents framing from being scheduled before the permit clears, prevents inspections from being booked before required preceding work, and notifies the PM when the gate opens.",
+  },
+  {
+    q: "Does Cornerstone PM include a homeowner portal?",
+    a: "Yes, on every plan. The homeowner portal shows construction milestones, photo updates, schedule progress, and warranty information. It's included in Starter at $149/mo with no per-user fees.",
+  },
+];
 
 const features = [
   { title: "Smart Scheduling", desc: "Interactive Gantt charts, drag-and-drop task management, 3-tier dependency system, auto-cascade on completion." },
@@ -100,6 +136,12 @@ export default function ConstructionPage() {
           </div>
         </div>
       </section>
+
+      <FAQSection
+        title="Construction Scheduling FAQ"
+        subtitle="Common questions about scheduling software built for production home builders."
+        items={faqItems}
+      />
 
       <section className="py-20 px-4 text-center border-t border-slate-800/60">
         <h2 className="text-4xl font-black mb-4">Ready to stop chasing subs?</h2>

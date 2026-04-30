@@ -1,11 +1,47 @@
 import { Check } from "lucide-react";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
+import { FAQSection, type FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
-  title: "Purchasing, Budgets & Bid Management",
-  description: "From bid to PO to budget &mdash; every dollar tracked automatically. Structural options, design selections, and change orders all feed the same number.",
+  title: "Home Builder Purchasing & Bid Management Software | Cornerstone PM",
+  description: "AI construction purchasing for home builders. Bid-to-PO automation, parts catalog, structural options pricing, and auto-budget generation built for production builders.",
 };
+
+const faqItems: FAQItem[] = [
+  {
+    q: "What is home builder purchasing software?",
+    a: "Home builder purchasing software manages the bid-to-purchase-order flow: vendor bids, parts catalogs, purchase orders, payment scheduling, and budget tracking. Cornerstone PM's purchasing module connects directly to your sales pipeline and design center so structural options and design selections automatically feed the budget &mdash; no double entry, no spreadsheets.",
+  },
+  {
+    q: "What is AI construction purchasing for home builders?",
+    a: "AI construction purchasing uses agents to handle bid generation, vendor outreach, bid comparison, and PO creation. Cornerstone PM's Foreman AI includes a 4-skill Bid Pipeline domain plus a 7-wave automated bidding pipeline that contacts vendors, collects bids, normalizes pricing, and recommends an award &mdash; all inside one platform.",
+  },
+  {
+    q: "How does the auto-budget feature work?",
+    a: "When a sales counselor locks structural options on a new home sale, Cornerstone PM automatically generates the home's construction budget using the floorplan's base costs plus the option-specific deltas. Design center selections, change orders, and bid awards continue to flow into the same budget number throughout the build.",
+  },
+  {
+    q: "Is Cornerstone PM a NEWSTAR or BuildPro alternative for purchasing?",
+    a: "Yes. Cornerstone PM was built as a modern, affordable alternative to NEWSTAR and BuildPro for small-to-mid production home builders. It covers the same core purchasing functionality &mdash; parts catalog, budget hierarchy, bid management, POs, payments &mdash; without the 6-figure implementation cost. Starts at $299/mo on the Builder plan.",
+  },
+  {
+    q: "Does Cornerstone PM track retainage?",
+    a: "Yes. Cornerstone PM tracks retainage on payments, classifies cost types, manages payment schedules, and surfaces variance reports against the budget. Vendor 1099 totals are exportable.",
+  },
+  {
+    q: "How does the parts catalog work?",
+    a: "Cornerstone PM's parts catalog maintains SKUs, vendor pricing, and unit costs that sync across every job. Foreman AI's Parts Catalog domain (5 skills) handles SKU lookups, vendor pricing comparisons, material substitutions, catalog updates, and inventory alerts via plain-English requests.",
+  },
+  {
+    q: "Can I use my own AI agent against Cornerstone purchasing data?",
+    a: "Yes. The Pro+ plan ($599/mo) includes Bring Your Own Agent (BYOA) and full REST API access. You can connect Claude, ChatGPT, or any custom agent to live purchasing, bid, vendor, and budget data through 59 endpoints with scoped Bearer-token auth.",
+  },
+  {
+    q: "What does purchasing software for home builders cost?",
+    a: "Cornerstone PM's purchasing module is included in the Builder plan at $299/mo with unlimited users. The Pro plan at $499/mo adds Foreman AI's Bid Pipeline and Parts Catalog skills. Pro+ at $599/mo adds the REST API and BYOA. NEWSTAR and BuildPro typically require $25,000+ implementation budgets before monthly licensing.",
+  },
+];
 
 const features = [
   { title: "Parts Catalog", desc: "Full parts and materials catalog with unit pricing, synced across all jobs." },
@@ -91,6 +127,12 @@ export default function PurchasingPage() {
           </div>
         </div>
       </section>
+
+      <FAQSection
+        title="Home Builder Purchasing FAQ"
+        subtitle="Common questions about purchasing and bid management software for production home builders."
+        items={faqItems}
+      />
 
       <section className="py-20 px-4 text-center border-t border-slate-800/60">
         <h2 className="text-4xl font-black mb-4">Ready to buy smarter?</h2>

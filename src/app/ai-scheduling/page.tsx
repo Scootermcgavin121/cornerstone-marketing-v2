@@ -6,7 +6,8 @@ import { Footer } from "@/components/Footer";
 export const metadata = {
   title: "AI Construction Scheduling for Home Builders | Cornerstone PM",
   description:
-    "Stop managing subcontractor schedules in spreadsheets. Cornerstone PM's AI scheduling keeps your subs on track, flags delays, and keeps every home moving.",
+    "AI construction scheduling for home builders. Auto-cascading dependencies, vendor email confirmations, and Foreman AI scheduling agent &mdash; built for production builders.",
+  alternates: { canonical: "https://www.cornerstonepm.ai/ai-scheduling" },
 };
 
 const schedulingSkills = [

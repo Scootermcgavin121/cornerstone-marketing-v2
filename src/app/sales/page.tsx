@@ -2,12 +2,48 @@ import { Check, TrendingUp } from "lucide-react";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { VideoPlayer } from "@/components/VideoPlayer";
+import { FAQSection, type FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
-  title: "Sales Pipeline & Home Sale Management",
+  title: "Home Builder Sales Pipeline Software | Cornerstone PM",
   description:
-    "Create a new home sale in under 60 seconds. Floorplan selection, structural options, incentives, and buyer tracking &mdash; all in one streamlined workflow.",
+    "Home builder sales pipeline software with floorplan pricing matrix, structural options engine, and 60-second new home sale workflow. Built for production builders.",
 };
+
+const faqItems: FAQItem[] = [
+  {
+    q: "What is home builder sales pipeline software?",
+    a: "Home builder sales pipeline software is a system that tracks prospective buyers from first contact through contract, with built-in floorplan selection, structural options, incentives, and lot inventory. Cornerstone PM's sales pipeline is built specifically for production home builders &mdash; new home sale in under 60 seconds, auto-generated 9-step sales checklist, and auto-budget generation the moment structural options are locked.",
+  },
+  {
+    q: "How is new home sales software different from a generic CRM?",
+    a: "Generic CRMs (Salesforce, HubSpot, Pipedrive) track leads but don't understand homebuilding workflows: floorplan pricing matrix, options engine, lot status, design center allowances, or auto-budget generation when a buyer locks structurals. Cornerstone PM's sales module knows all of those because it's connected to your live build data &mdash; buyers, lots, plans, and budgets stay in sync automatically.",
+  },
+  {
+    q: "What is a structural options engine?",
+    a: "A structural options engine is the rules-based system that prices add-ons (3-car garage, bonus room, finished basement) per floorplan and per community. Cornerstone PM's options engine handles dependencies (you can't pick the gourmet kitchen without the larger pantry), incompatibilities, and per-community pricing &mdash; with real-time price rollup as the buyer makes selections.",
+  },
+  {
+    q: "Can I create a new home sale in 60 seconds?",
+    a: "Yes. Cornerstone PM's sales workflow lets a sales counselor pick a buyer, choose a lot and floorplan, lock structural options, apply incentives, and generate a contract-ready sale in under 60 seconds. The system automatically creates the buyer's design center allowance, generates the 9-step sales checklist, and builds the initial construction budget.",
+  },
+  {
+    q: "Does Cornerstone PM replace BuildPro or NEWSTAR for sales?",
+    a: "Yes. Cornerstone PM is built as a modern alternative to NEWSTAR and BuildPro for small-to-mid production home builders. It includes the same core sales features &mdash; floorplan pricing matrix, options engine, lot inventory, incentive management &mdash; without the 6-figure implementation budget. Starts at $299/mo on the Builder plan.",
+  },
+  {
+    q: "How does the sales pipeline connect to construction?",
+    a: "When a sale is locked, Cornerstone PM auto-generates the construction budget, attaches the correct schedule template, sets up the design center allowance, and notifies the PM. No double entry, no handoff meeting required. Sales, purchasing, design, and construction all share one source of truth.",
+  },
+  {
+    q: "Is there a sales counselor portal?",
+    a: "Yes. Cornerstone PM includes role-scoped access for sales counselors so they can manage prospects, build sales packages, and present floorplans without seeing construction or financial detail outside their scope.",
+  },
+  {
+    q: "What does new home sales software cost?",
+    a: "Cornerstone PM's sales pipeline is included in the Builder plan at $299/mo with unlimited users. There are no per-counselor seat fees. The Pro plan ($499/mo) adds Foreman AI, which can analyze your sales pipeline, draft buyer follow-ups, and generate MLS listings from live home data.",
+  },
+];
 
 const bullets = [
   "New home sale in under 60 seconds",
@@ -193,6 +229,12 @@ export default function SalesPage() {
           </div>
         </div>
       </section>
+
+      <FAQSection
+        title="New Home Sales Software FAQ"
+        subtitle="Common questions about sales pipeline software for production home builders."
+        items={faqItems}
+      />
 
       {/* Footer CTA */}
       <section className="py-20 px-4 text-center border-t border-slate-800/60">

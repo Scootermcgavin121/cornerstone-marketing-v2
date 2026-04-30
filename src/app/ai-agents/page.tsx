@@ -6,9 +6,10 @@ import { Footer } from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Agents — Four AI Agents Built for Builders | Cornerstone PM",
+  title: "AI Agents for Home Builders | Cornerstone PM",
   description:
-    "ChatGPT doesn't know what a takeoff scope is. Ours do. Four AI agents purpose-built for home builders: Foreman AI, Blueprint AI, MLS Listing Agent, and FAQ Chatbot.",
+    "AI agents for home builders: Foreman AI (47 skills), Blueprint AI (PDF takeoffs), MLS Listing Agent, FAQ Chatbot. Native AI built into the platform — not bolted on.",
+  alternates: { canonical: "https://www.cornerstonepm.ai/ai-agents" },
 };
 
 const agents = [
@@ -149,15 +150,15 @@ export default function AiAgentsPage() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_20%,rgba(99,102,241,0.10),transparent)]" />
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-slate-700 bg-slate-800/50 text-slate-400 text-xs font-semibold mb-6">
-            AI AGENTS
+            AI AGENTS FOR HOME BUILDERS
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight">
-            Four AI Agents.
+            AI agents for home builders.
             <br />
-            <span className="text-white">Zero Setup.</span>
+            <span className="text-white">Zero setup.</span>
             <br />
             <span className="bg-gradient-to-r from-amber-400 via-violet-400 to-cyan-400 bg-clip-text text-transparent">
-              Built for Builders.
+              47 skills out of the box.
             </span>
           </h1>
           <p className="text-xl sm:text-2xl text-slate-300 font-semibold max-w-2xl mx-auto mb-4">

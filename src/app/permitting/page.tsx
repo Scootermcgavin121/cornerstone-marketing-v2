@@ -2,12 +2,44 @@ import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { FileCheck, Lock, GitBranch, Bell, Users, FolderOpen } from "lucide-react";
+import { FAQSection, type FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
-  title: "Permitting Workflow Software for Home Builders | Cornerstone PM",
+  title: "Permitting Software for Home Builders | Cornerstone PM",
   description:
-    "Never let a missing permit stall your schedule. Cornerstone PM tracks permit sequences, enforces phase gates, and keeps your pipeline moving from sale to final inspection.",
+    "Permitting software for home builders. Permit gates, phase blocking, automated reminders, and inspection tracking from sale to final &mdash; built for production builders.",
 };
+
+const faqItems: FAQItem[] = [
+  {
+    q: "What is permitting software for home builders?",
+    a: "Permitting software tracks every permit and inspection a home requires &mdash; from foundation to final &mdash; and blocks dependent construction work until permits clear. Cornerstone PM's permitting module includes permit gates, phase blocking, automated reminders, and a full audit trail across the entire build pipeline.",
+  },
+  {
+    q: "What is a permit gate?",
+    a: "A permit gate is an automated rule that blocks downstream construction tasks until a specific permit is approved. In Cornerstone PM, framing tasks won't be scheduled until the building permit clears, slab pours wait for foundation permits, and final inspections wait for required preceding work &mdash; preventing the costly rework that comes from building ahead of permits.",
+  },
+  {
+    q: "How does Cornerstone PM handle inspection scheduling?",
+    a: "Cornerstone PM tracks the full inspection pipeline per home: scheduled, in-progress, passed, failed, with rework. Inspectors are notified, PMs see the status across every home in flight, and failed inspections automatically generate the correction tasks and reschedule downstream work.",
+  },
+  {
+    q: "Does the permitting module connect to the schedule?",
+    a: "Yes. Permitting is wired directly to the construction schedule. When a permit is approved, the gate opens and dependent tasks become schedulable. When a permit is delayed, the schedule cascades automatically and the homeowner portal updates &mdash; no manual re-dating required.",
+  },
+  {
+    q: "Can I track multiple permit types per home?",
+    a: "Yes. Cornerstone PM tracks every permit type a home needs: building, electrical, plumbing, mechanical, septic, well, driveway, and any jurisdiction-specific permits. Each permit has its own status, expiry, gate logic, and document attachments.",
+  },
+  {
+    q: "What happens when a permit expires?",
+    a: "Cornerstone PM alerts the PM in advance of permit expiration, automatically blocks dependent tasks if a permit lapses, and tracks the renewal workflow. Expired permits show as a hard block in the dashboard until renewal is filed and approved.",
+  },
+  {
+    q: "Is permitting software included in the base plan?",
+    a: "Yes. Cornerstone PM's permitting module is included in the Starter plan at $149/mo with unlimited users. Foreman AI on the Pro plan ($499/mo) can also handle permit-related tasks like generating permit application packages from home data and tracking jurisdiction-specific requirements.",
+  },
+];
 
 const stats = [
   { value: "3", label: "Permit sequences", sub: "Foundation, Framing, Final" },
@@ -303,6 +335,12 @@ export default function PermittingPage() {
           </div>
         </div>
       </section>
+
+      <FAQSection
+        title="Permitting Software FAQ"
+        subtitle="Common questions about permitting workflow software for home builders."
+        items={faqItems}
+      />
 
       <Footer />
     </div>
