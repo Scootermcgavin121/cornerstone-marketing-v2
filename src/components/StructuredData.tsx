@@ -61,6 +61,9 @@ export function StructuredData() {
         "description": "Cornerstone PM builds AI-native software exclusively for production home builders. The platform replaces legacy tools like NEWSTAR, BuildPro, and Buildertrend with modern, affordable software that includes native AI agents, an options engine, and a full REST API.",
         "sameAs": [
           "https://www.instagram.com/cornerstone_pm_ai/",
+          "https://www.facebook.com/profile.php?id=61587721750398",
+          "https://x.com/CornerBuildSoft",
+          "https://www.linkedin.com/company/cornerstone-builder-software",
           "https://github.com/Scootermcgavin121/cornerstone-marketing-v2",
         ],
         "contactPoint": {
