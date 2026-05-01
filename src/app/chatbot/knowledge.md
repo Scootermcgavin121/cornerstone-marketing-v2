@@ -29,6 +29,40 @@ Scope items represent things like labor, delivery charges, equipment rentals, in
 - Purchasing managers can see at a glance which scope items are missing vendor pricing
 - Export scope item pricing by trade for vendor comparison reviews and bid analysis
 
+### Vendor Bid Workflow (Apr 2026 update)
+Full end-to-end bidding from request → vendor submission → review → award → lock.
+
+**Builder-side bid review:**
+- **Side-by-side comparison view**: Stack multiple vendors' bids for the same scope across communities/floorplans. Lowest total green-flagged (informational only).
+- **Single-bid drill-down**: Group line items by floorplan with parts and scope items separated. Award/Reject CTAs visible only on PENDING bids.
+- **Award flow**: Click "Award" → bid status moves PENDING → ACCEPTED. All line items mirror into VendorPricing automatically. Old vendor pricing for the same vendor+scope+community is marked SUPERSEDED (history preserved).
+
+**Vendor-side portal:**
+- Token-protected URL (no login required) for vendors to submit/edit bids.
+- Vendors can add line items as either a **Part** (catalog item) or a **Scope Item** (lump sum, labor, mixed work) — explicit type selector eliminates ambiguity.
+- Bids are editable while PENDING. Once accepted by the builder, line items lock and the vendor cannot edit — protects builder's awarded pricing from accidental changes.
+
+**Pricing engine:**
+- Per-takeoff cost resolves via fallback chain: per-takeoff override → ACCEPTED VendorPricing for the home's community → catalog default → $0.
+- Vendor selection always uses the **community-assigned vendor**, not lowest bid — builders maintain trade relationships per community.
+- Multiple bids can be ACCEPTED simultaneously across different communities (one vendor in Community A, a different vendor in Community B for the same scope).
+
+### Notification Preferences (Apr 2026)
+- Per-user toggles for email + in-app notifications
+- Admins can subscribe to additional role notifications (PURCHASING, PM, SCHEDULING, etc.) for one-person-shop scenarios where the admin needs to see everything
+- Self-service settings page — each user manages their own preferences
+- Bid submission notifications dispatched to all PURCHASING-subscribed users (not just the bid request creator)
+
+### Design Options Manager (Apr 2026)
+- Per-floorplan management page for design center options (filtered by category phase)
+- Add parts and scope items per option (e.g., Premium Carpet upgrade carries material delta + carpet install scope item)
+- Mirrors structural options manager pattern — unified UX across the platform
+
+### Area Cost Pricing (Apr 2026)
+- Community-level extras (lot premiums, basement options, etc.) now support full takeoff integration
+- Add parts and scope items to area costs and sub-options — pricing rolls up via the same vendor bid flow
+- Backward compatible with flat-fee area costs (cost falls back to direct AreaCost.costPrice when no takeoffs exist)
+
 ### Custom Fields
 - Admin > Custom Fields
 - Create custom fields on any entity: vendor, home, task, community, bid, purchase order
