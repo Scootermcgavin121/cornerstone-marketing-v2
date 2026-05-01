@@ -14,7 +14,7 @@ export const metadata = {
 const modules = [
   { name: "Construction Scheduling", href: "/construction", desc: "Auto-cascading dependencies, Gantt charts, foundation-aware templates, vendor email confirmations.", color: "amber" },
   { name: "New Home Sales Pipeline", href: "/sales", desc: "Floorplan pricing matrix, structural options engine, 60-second new home sale workflow.", color: "cyan" },
-  { name: "Purchasing & Bids", href: "/purchasing", desc: "Parts catalog, bid-to-PO automation, payment tracking, retainage, 7-wave bidding pipeline.", color: "emerald" },
+  { name: "Purchasing & Bids", href: "/purchasing", desc: "Parts catalog, scope-item bid drill-down, community-assigned vendor wins, lock-after-acceptance, vendor portal scope editing, 7-wave bidding pipeline.", color: "emerald" },
   { name: "Design Center", href: "/design", desc: "Room-by-room selections, allowance tracking, options engine with real-time price rollup.", color: "violet" },
   { name: "Permitting", href: "/permitting", desc: "Permit gates, phase blocking, inspection tracking, automated reminders across the build.", color: "orange" },
   { name: "Foreman AI", href: "/foreman", desc: "47 AI skills across 7 domains. Plain-English commands against live builder data.", color: "blue" },
@@ -41,6 +41,10 @@ const faqItems: FAQItem[] = [
   {
     q: "What does home builder project management software cost?",
     a: "Cornerstone PM starts at $149/mo (Starter) with unlimited users and no implementation fees. Builder is $299/mo (adds purchasing, sales, design center). Pro is $499/mo (adds Foreman AI + Blueprint AI). Pro+ is $599/mo (adds REST API + BYOA). Compare to NEWSTAR or BuildPro at $25,000+ implementation and Buildertrend at $499+/mo.",
+  },
+  {
+    q: "How does Cornerstone PM handle vendor bidding differently?",
+    a: "Cornerstone PM uses scope-item drill-down bid review, community-assigned vendor awards (not lowest-bid auctions), and lock-after-acceptance to protect long-term vendor relationships. Vendors edit their own scope items in their portal; you review side-by-side, award based on relationship + scope coverage, and the winning bid locks down so there's no scope drift. Built around the way production builders actually run vendor pipelines.",
   },
   {
     q: "Does Cornerstone PM include AI agents?",
