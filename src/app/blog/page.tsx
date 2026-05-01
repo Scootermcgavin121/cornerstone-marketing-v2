@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "home-builder-software-buyer-guide-2026",
+    title: "Home Builder Software Buyer's Guide (2026)",
+    excerpt:
+      "Complete 2026 decision framework for home builder software. Compare NEWSTAR, BuildPro, Buildertrend, and Cornerstone PM across features, AI capabilities, implementation cost, and fit for your builder size.",
+    date: "May 1, 2026",
+    readTime: "9 min read",
+    tag: "Buyer's Guide",
+    tagColor: "text-amber-400 bg-amber-500/10 border-amber-500/20",
+  },
+  {
     slug: "design-center-home-builder",
     title: "Why Your Design Center Process Is Leaking Options Revenue",
     excerpt:
