@@ -27,14 +27,15 @@ export function BlogHero({ src, alt, caption }: BlogHeroProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <div className="relative w-full aspect-square sm:aspect-[16/10] overflow-hidden sm:rounded-2xl border-y sm:border border-slate-800">
+      <div className="overflow-hidden sm:rounded-2xl border-y sm:border border-slate-800 bg-slate-950">
         <Image
           src={src}
           alt={alt}
-          fill
+          width={1024}
+          height={1024}
           priority
           sizes="(min-width: 768px) 768px, 100vw"
-          className="object-cover"
+          className="w-full h-auto"
         />
       </div>
       {caption && (
