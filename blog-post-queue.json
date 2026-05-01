@@ -26,8 +26,8 @@
       "wordCount": 1200,
       "heroImage": "/blog/home-builder-software-buyer-guide.png",
       "heroImageAlt": "Home builder team reviewing home builder software comparison on a monitor in their site office",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "77c4d89"
     },
     {
       "slug": "migrating-from-buildertrend-to-cornerstone",
