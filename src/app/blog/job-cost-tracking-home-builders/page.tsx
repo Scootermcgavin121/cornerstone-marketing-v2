@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
+import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 
@@ -8,6 +9,9 @@ export const metadata: Metadata = {
   title: "Where Your Margin Goes: How Home Builders Lose Money Without Knowing It — Cornerstone PM Blog",
   description:
     "Most home builders don't find out they lost margin until the home closes. Here's how job cost tracking works, why it matters, and how to catch budget overruns before they happen.",
+  openGraph: {
+    images: [{ url: "https://www.cornerstonepm.ai/blog/job-cost-tracking.png", width: 1024, height: 1024, alt: "Job cost tracking dashboard for residential home builders showing area cost breakdowns" }],
+  }
 };
 
 export default function JobCostTrackingPost() {
@@ -23,6 +27,8 @@ export default function JobCostTrackingPost() {
           <ArrowLeft className="w-4 h-4" />
           Back to Blog
         </Link>
+
+        <BlogHero src="/blog/job-cost-tracking.png" alt="Job cost tracking dashboard for residential home builders showing area cost breakdowns" />
 
         <div className="mb-8">
           <span className="text-xs font-medium px-2.5 py-0.5 rounded-full border text-green-400 bg-green-500/10 border-green-500/20 mb-4 inline-block">

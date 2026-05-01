@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
+import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 
@@ -8,6 +9,9 @@ export const metadata: Metadata = {
   title: "AI Construction Management Software: What Home Builders Need to Know (2026) &mdash;€” Cornerstone PM Blog",
   description:
     "AI is everywhere in construction marketing but most tools are generic. Here's what real AI construction management software looks like for home builders &mdash;€” and how to evaluate what you're actually buying.",
+  openGraph: {
+    images: [{ url: "https://www.cornerstonepm.ai/blog/foreman-ai-skills.png", width: 1024, height: 1024, alt: "Foreman AI managing residential construction with 47 skills across scheduling, sales, purchasing, and design center" }],
+  }
 };
 
 export default function AiConstructionManagementSoftwarePost() {
@@ -23,6 +27,8 @@ export default function AiConstructionManagementSoftwarePost() {
           <ArrowLeft className="w-4 h-4" />
           Back to Blog
         </Link>
+
+        <BlogHero src="/blog/foreman-ai-skills.png" alt="Foreman AI managing residential construction with 47 skills across scheduling, sales, purchasing, and design center" />
 
         <div className="mb-8">
           <span className="text-xs font-medium px-2.5 py-0.5 rounded-full border text-blue-400 bg-blue-500/10 border-blue-500/20 mb-4 inline-block">

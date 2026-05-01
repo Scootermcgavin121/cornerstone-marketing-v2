@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
+import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 
@@ -8,6 +9,9 @@ export const metadata: Metadata = {
   title: "Builder AI Software: Why Home Builders Need Purpose-Built AI (Not Generic Tools) &mdash;€” Cornerstone PM Blog",
   description:
     "Builder AI software is a new search &mdash;€” people are looking for AI built specifically for builders. Here's why generic AI fails home builders and what purpose-built looks like.",
+  openGraph: {
+    images: [{ url: "https://www.cornerstonepm.ai/blog/foreman-ai-skills.png", width: 1024, height: 1024, alt: "Builder AI software with native Foreman AI agent for residential home builders" }],
+  }
 };
 
 export default function BuilderAiSoftwarePost() {
@@ -23,6 +27,8 @@ export default function BuilderAiSoftwarePost() {
           <ArrowLeft className="w-4 h-4" />
           Back to Blog
         </Link>
+
+        <BlogHero src="/blog/foreman-ai-skills.png" alt="Builder AI software with native Foreman AI agent for residential home builders" />
 
         <div className="mb-8">
           <span className="text-xs font-medium px-2.5 py-0.5 rounded-full border text-blue-400 bg-blue-500/10 border-blue-500/20 mb-4 inline-block">

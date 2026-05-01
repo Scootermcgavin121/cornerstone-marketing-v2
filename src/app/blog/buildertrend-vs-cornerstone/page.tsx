@@ -1,6 +1,7 @@
 ﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
+import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 import { Check, X, ArrowLeft } from "lucide-react";
 
@@ -8,6 +9,9 @@ export const metadata: Metadata = {
   title: "BuilderTrend vs Cornerstone PM — Cornerstone PM Blog",
   description:
     "BuilderTrend starts at $499/mo. Cornerstone PM starts at $149/mo. Here's what you actually get for the difference.",
+  openGraph: {
+    images: [{ url: "https://www.cornerstonepm.ai/blog/migrating-from-buildertrend.png", width: 1024, height: 1024, alt: "Buildertrend vs Cornerstone PM home builder software comparison" }],
+  }
 };
 
 const comparison = [
@@ -36,6 +40,8 @@ export default function BuildertrendPost() {
           <ArrowLeft className="w-4 h-4" />
           Back to Blog
         </Link>
+
+        <BlogHero src="/blog/migrating-from-buildertrend.png" alt="Buildertrend vs Cornerstone PM home builder software comparison" />
 
         <div className="mb-8">
           <span className="text-xs font-medium px-2.5 py-0.5 rounded-full border text-violet-400 bg-violet-500/10 border-violet-500/20 mb-4 inline-block">

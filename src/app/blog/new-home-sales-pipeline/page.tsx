@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
+import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 
@@ -8,6 +9,9 @@ export const metadata: Metadata = {
   title: "Your Home Builder Sales Pipeline Is Losing You Buyers — Cornerstone PM Blog",
   description:
     "Most home builders don't have a real sales pipeline — they have a spreadsheet and a gut feeling. Here's how tracking prospects the right way closes more contracts and wastes less time.",
+  openGraph: {
+    images: [{ url: "https://www.cornerstonepm.ai/blog/home-builder-sales-pipeline.png", width: 1024, height: 1024, alt: "New home sales pipeline for production home builders with floorplan pricing matrix" }],
+  }
 };
 
 export default function NewHomeSalesPipelinePost() {
@@ -23,6 +27,8 @@ export default function NewHomeSalesPipelinePost() {
           <ArrowLeft className="w-4 h-4" />
           Back to Blog
         </Link>
+
+        <BlogHero src="/blog/home-builder-sales-pipeline.png" alt="New home sales pipeline for production home builders with floorplan pricing matrix" />
 
         <div className="mb-8">
           <span className="text-xs font-medium px-2.5 py-0.5 rounded-full border text-indigo-400 bg-indigo-500/10 border-indigo-500/20 mb-4 inline-block">

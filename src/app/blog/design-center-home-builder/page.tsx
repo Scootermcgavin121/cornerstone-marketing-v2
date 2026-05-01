@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
+import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 
@@ -8,6 +9,9 @@ export const metadata: Metadata = {
   title: "Why Your Design Center Process Is Leaking Options Revenue — Cornerstone PM Blog",
   description:
     "The design center appointment is one of the highest-margin moments in a home sale. Most builders are leaving money on the table. Here's why — and how to fix it.",
+  openGraph: {
+    images: [{ url: "https://www.cornerstonepm.ai/blog/design-center-software.png", width: 1024, height: 1024, alt: "Home builder design center software showing structured options and selections" }],
+  }
 };
 
 export default function DesignCenterPost() {
@@ -23,6 +27,8 @@ export default function DesignCenterPost() {
           <ArrowLeft className="w-4 h-4" />
           Back to Blog
         </Link>
+
+        <BlogHero src="/blog/design-center-software.png" alt="Home builder design center software showing structured options and selections" />
 
         <div className="mb-8">
           <span className="text-xs font-medium px-2.5 py-0.5 rounded-full border text-fuchsia-400 bg-fuchsia-500/10 border-fuchsia-500/20 mb-4 inline-block">

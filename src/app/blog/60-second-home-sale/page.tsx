@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
+import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 
@@ -8,6 +9,9 @@ export const metadata: Metadata = {
   title: "The 60-Second Home Status Update Your Buyers Actually Want — Cornerstone PM Blog",
   description:
     "Your buyers call twice a week asking for updates. There's a better way — and your buyers will love you for it.",
+  openGraph: {
+    images: [{ url: "https://www.cornerstonepm.ai/blog/home-builder-sales-pipeline.png", width: 1024, height: 1024, alt: "New home sale created in under 60 seconds in the Cornerstone PM home builder sales pipeline" }],
+  }
 };
 
 export default function HomeSalePost() {
@@ -23,6 +27,8 @@ export default function HomeSalePost() {
           <ArrowLeft className="w-4 h-4" />
           Back to Blog
         </Link>
+
+        <BlogHero src="/blog/home-builder-sales-pipeline.png" alt="New home sale created in under 60 seconds in the Cornerstone PM home builder sales pipeline" />
 
         <div className="mb-8">
           <span className="text-xs font-medium px-2.5 py-0.5 rounded-full border text-amber-400 bg-amber-500/10 border-amber-500/20 mb-4 inline-block">

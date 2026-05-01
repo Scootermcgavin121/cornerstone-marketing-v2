@@ -2,12 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, Check, X } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
+import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "JobTread Alternative for Home Builders &mdash;€” Cornerstone PM Blog",
   description:
     "JobTread is built for general contractors. Cornerstone PM is built for home builders. Here's the honest difference &mdash;€” lot management, design center, sales pipeline, and AI that actually works with your data.",
+  openGraph: {
+    images: [{ url: "https://www.cornerstonepm.ai/blog/production-builder-software.png", width: 1024, height: 1024, alt: "JobTread alternative home builder software with options pricing engine for production builders" }],
+  }
 };
 
 const comparison = [
@@ -37,6 +41,8 @@ export default function JobtreadAlternativePost() {
           <ArrowLeft className="w-4 h-4" />
           Back to Blog
         </Link>
+
+        <BlogHero src="/blog/production-builder-software.png" alt="JobTread alternative home builder software with options pricing engine for production builders" />
 
         <div className="mb-8">
           <span className="text-xs font-medium px-2.5 py-0.5 rounded-full border text-violet-400 bg-violet-500/10 border-violet-500/20 mb-4 inline-block">

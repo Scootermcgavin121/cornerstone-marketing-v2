@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
+import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 
@@ -8,6 +9,9 @@ export const metadata: Metadata = {
   title: "Your Spreadsheet Is Killing Your Schedule — Cornerstone PM Blog",
   description:
     "Excel doesn't notify your framer when the foundation is ready. Here's what running your build schedule in spreadsheets is costing you.",
+  openGraph: {
+    images: [{ url: "https://www.cornerstonepm.ai/blog/spreadsheets-killing-schedule.png", width: 1024, height: 1024, alt: "Spreadsheet-based construction scheduling killing the home builder's schedule" }],
+  }
 };
 
 export default function SpreadsheetsPost() {
@@ -23,6 +27,8 @@ export default function SpreadsheetsPost() {
           <ArrowLeft className="w-4 h-4" />
           Back to Blog
         </Link>
+
+        <BlogHero src="/blog/spreadsheets-killing-schedule.png" alt="Spreadsheet-based construction scheduling killing the home builder's schedule" />
 
         <div className="mb-8">
           <span className="text-xs font-medium px-2.5 py-0.5 rounded-full border text-cyan-400 bg-cyan-500/10 border-cyan-500/20 mb-4 inline-block">

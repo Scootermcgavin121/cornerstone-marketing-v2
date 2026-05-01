@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
+import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 
@@ -8,6 +9,9 @@ export const metadata: Metadata = {
   title: "Homebuilding AI: How AI is Changing Residential Construction in 2026 &mdash;€” Cornerstone PM Blog",
   description:
     "Homebuilding is one of the last industries to get purpose-built AI &mdash;€” that's changing fast. Here's where AI is making the biggest impact in residential construction and what's coming next.",
+  openGraph: {
+    images: [{ url: "https://www.cornerstonepm.ai/blog/foreman-ai-skills.png", width: 1024, height: 1024, alt: "Homebuilding AI agent managing live builder data across 47 construction skills" }],
+  }
 };
 
 export default function HomebuildingAiPost() {
@@ -23,6 +27,8 @@ export default function HomebuildingAiPost() {
           <ArrowLeft className="w-4 h-4" />
           Back to Blog
         </Link>
+
+        <BlogHero src="/blog/foreman-ai-skills.png" alt="Homebuilding AI agent managing live builder data across 47 construction skills" />
 
         <div className="mb-8">
           <span className="text-xs font-medium px-2.5 py-0.5 rounded-full border text-blue-400 bg-blue-500/10 border-blue-500/20 mb-4 inline-block">

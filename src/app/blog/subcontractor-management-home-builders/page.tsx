@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
+import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 
@@ -8,6 +9,9 @@ export const metadata: Metadata = {
   title: "Why Your Best Subs Are Choosing Other Builders — Cornerstone PM Blog",
   description:
     "Good subcontractors have options. If your scheduling is a mess and communication is inconsistent, they'll quietly prioritize builders who make their lives easier. Here's how to be that builder.",
+  openGraph: {
+    images: [{ url: "https://www.cornerstonepm.ai/blog/subcontractor-management.png", width: 1024, height: 1024, alt: "Subcontractor management for home builders with vendor portal and scope item tracking" }],
+  }
 };
 
 export default function SubcontractorManagementPost() {
@@ -23,6 +27,8 @@ export default function SubcontractorManagementPost() {
           <ArrowLeft className="w-4 h-4" />
           Back to Blog
         </Link>
+
+        <BlogHero src="/blog/subcontractor-management.png" alt="Subcontractor management for home builders with vendor portal and scope item tracking" />
 
         <div className="mb-8">
           <span className="text-xs font-medium px-2.5 py-0.5 rounded-full border text-emerald-400 bg-emerald-500/10 border-emerald-500/20 mb-4 inline-block">

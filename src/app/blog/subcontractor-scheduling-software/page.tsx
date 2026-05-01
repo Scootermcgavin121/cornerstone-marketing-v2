@@ -2,12 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
+import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Subcontractor Scheduling Software for Home Builders &mdash;€” Cornerstone PM Blog",
   description:
     "The best subcontractors have options. If your scheduling is chaotic and your communication is reactive, they'll prioritize builders who make their lives easier. Here's how to be that builder.",
+  openGraph: {
+    images: [{ url: "https://www.cornerstonepm.ai/blog/subcontractor-scheduling.png", width: 1024, height: 1024, alt: "Subcontractor scheduling software with Gantt visual timeline for production home builders" }],
+  }
 };
 
 export default function SubcontractorSchedulingSoftwarePost() {
@@ -23,6 +27,8 @@ export default function SubcontractorSchedulingSoftwarePost() {
           <ArrowLeft className="w-4 h-4" />
           Back to Blog
         </Link>
+
+        <BlogHero src="/blog/subcontractor-scheduling.png" alt="Subcontractor scheduling software with Gantt visual timeline for production home builders" />
 
         <div className="mb-8">
           <span className="text-xs font-medium px-2.5 py-0.5 rounded-full border text-cyan-400 bg-cyan-500/10 border-cyan-500/20 mb-4 inline-block">

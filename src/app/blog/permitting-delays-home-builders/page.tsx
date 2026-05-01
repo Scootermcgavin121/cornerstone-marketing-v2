@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
+import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 
@@ -8,6 +9,9 @@ export const metadata: Metadata = {
   title: "Why Permits Are Stalling Your Build Schedule — Cornerstone PM Blog",
   description:
     "Permit delays are the silent schedule killer for home builders. Here's how top builders track permits, avoid costly gaps, and keep construction moving.",
+  openGraph: {
+    images: [{ url: "https://www.cornerstonepm.ai/blog/permitting-delays.png", width: 1024, height: 1024, alt: "Permitting pipeline software preventing permit delays for residential home builders" }],
+  }
 };
 
 export default function PermittingPost() {
@@ -23,6 +27,8 @@ export default function PermittingPost() {
           <ArrowLeft className="w-4 h-4" />
           Back to Blog
         </Link>
+
+        <BlogHero src="/blog/permitting-delays.png" alt="Permitting pipeline software preventing permit delays for residential home builders" />
 
         <div className="mb-8">
           <span className="text-xs font-medium px-2.5 py-0.5 rounded-full border text-orange-400 bg-orange-500/10 border-orange-500/20 mb-4 inline-block">
