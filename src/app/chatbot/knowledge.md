@@ -1,10 +1,86 @@
 ﻿## Platform Overview (Current Stats)
-- 125+ database tables and growing
+- 130+ database tables and growing
 - 47+ Foreman AI skills
 - 14 webhook event types
 - 60+ external REST API endpoints
 - 4 built-in AI features: Foreman AI (47 skills), Blueprint AI, MLS Listing Agent, FAQ Chatbot
 - 4 pricing tiers: Starter $149, Builder $299, Pro $499, Pro+ $599 
+
+---
+
+## New Features (May 2026)
+
+### Designer Packages System (NEW May 2026)
+Pre-curated bundles of design selections that buyers can apply with one click. Inspired by interior designer-led collections.
+
+- **64 packages seeded** across 7 categories: Flooring, Kitchen Essentials, Bath & Fixtures, Smart Home, Lighting, Hardware & Trim, Designer Bundles
+- **Designer Bundles** (Level 3 spec and above only): Designer Kitchen, All Bathrooms, Whole House Package
+- **Standalone package categories** — `PackageCategoryType` is a separate model from OptionCategory, with its own many-to-many join (PackageCategoryLink)
+- **Package override on Selections** — when applied, individual room slots are locked with "Covered by [Package] ✓" badges. Buyer can break the package by overriding (warning modal triggers).
+- Managed at `/design-center/packages` (Designer Collections page)
+
+### Structural Option Override System (NEW May 2026)
+Structural options can now REPLACE base floorplan quantities, not just add to them. Each takeoff has an Override Mode setting:
+
+- **Additive (default)** — quantity adds to whatever the base floorplan has
+- **Overrides: [Room Name]** — quantity REPLACES the base room's quantity for that scope
+- **Per-takeoff granularity** — one option can mix override + additive takeoffs
+- **Retroactive** — works on existing options/homes, no migration needed
+- Both the Selections page and the pricing engine respect the override flag
+
+**Why this matters:** When a buyer adds "Bonus Room Over Garage," the bonus room flooring should REPLACE the attic insulation (not stack on top of it). The override system handles this cleanly.
+
+### Selections Page — Now Driven by FloorplanLocationScope (May 2026)
+The Selections page no longer reads only from Takeoffs — it reads from `FloorplanLocationScope` entries to build slots. This means:
+
+- Each scope on a room with an `optionClassId` creates a buyer-facing selection slot
+- **The FLS scope name is the display label** (not the OptionClass name) — so a bathroom shows "Vanity Faucet", "Master Shower Faucet", and "Tub Spout" as distinct slots even though they all link to the OptionClass `Faucet`
+- Rooms automatically populated with appropriate scopes: Kitchen → appliances/fixtures, Bathrooms → shower/toilet/faucets, Bedrooms → flooring/baseboard/lighting/doors
+
+### Room System Consolidation (May 2026)
+The app now uses **FloorplanLocation** as the single primary room model across Takeoffs, Selections, and Options. The legacy `FloorplanRoom` model still exists but is being deprecated. Behind the scenes:
+
+- `HomeSelection.floorplanLocationId` — new FK to FloorplanLocation
+- `Option.floorplanLocationId` — new FK to FloorplanLocation
+- "Whole House" is no longer a location — whole-house items are scope-driven
+
+### Scope/Parts Library Cleanup (May 2026)
+Large cleanup of the parts catalog and scope library:
+
+- **Foundation scope deleted** (redundant with Concrete/Site)
+- **Roofing split into two scopes**: "Roof Labor" + new "Roof Supplier" (separates labor from material delivery)
+- **"Deliver Roof Shingles" task** added to all 16 templates
+- **24 parts migrated to scope items** — Cabinets, Countertops, Electrical, HVAC, Paint, Shower Door (LUMP install items make more sense as scope items than catalog parts)
+- **44 new scope items** created for design selections (per-room and per-fixture)
+- **All filler pricing zeroed out** — ScopeItem rates, Option prices, OptionClassPrice rows, Takeoff rates, PartsCatalog defaults all reset to $0 where they were placeholders. Real pricing only flows from accepted vendor bids now.
+- **71 total active scope items** across all trades
+
+### Import/Export Overhaul (May 2026)
+Round-trip import/export across all major data tables:
+
+- **Reusable `ImportPreview` component** — shows add/update/delete diff before applying
+- **Parts Catalog import**: preview + soft-delete support
+- **Takeoffs import**: preview + hard-delete support
+- **Vendor Pricing import**: preview + SUPERSEDED soft-delete (preserves history chain)
+- **Every export includes an ID column** for round-trip update/delete matching
+- Excel files become editable templates — export, edit, re-import to update
+
+### UI Polish (May 2026)
+- Location dropdown on Structural + Design Options Manager (filter takeoffs by room)
+- Location columns added to pricing pages
+- Sticky headers on option cards and selection modals (no more scrolling to remember what category you're in)
+- "Items" replaces "Parts" labels (since scope items now live alongside parts)
+- Area Costs + Designer Collections moved into the sidebar Takeoffs section
+
+### Pricing Fallback Chain (formalized)
+Every cost in the system resolves through a deterministic chain:
+
+1. **Per-takeoff override** (`Takeoff.unitRateCents`) — hand-set rate for this specific takeoff
+2. **Vendor Pricing** (`VendorPricing` with status=ACCEPTED for the home's community-assigned vendor)
+3. **Catalog default** (`PartsCatalog.defaultCostCents` for parts, `ScopeItem.defaultUnitRateCents` for scope items)
+4. **$0** — flagged as orphan in UI ("—")
+
+**Vendor selection rule:** the pricing engine uses the **community-assigned vendor**, not the lowest bid. Different communities can have different assigned vendors for the same scope simultaneously — builders maintain their per-community trade relationships.
 
 ---
 
