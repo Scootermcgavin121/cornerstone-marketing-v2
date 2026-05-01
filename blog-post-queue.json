@@ -1,0 +1,149 @@
+{
+  "_comment": "Queue for the Blog Post Writer cron. The cron pulls the first item with status 'pending', writes the post, sets status to 'published' with the commit hash, and moves on. Hub-and-spoke clusters: each post links back to its hub for SEO topic-cluster authority.",
+  "_format": {
+    "slug": "URL slug for /blog/[slug]",
+    "title": "H1 / page title",
+    "metaDescription": "Meta description (150-160 chars)",
+    "primaryKeyword": "Main target keyword",
+    "hub": "URL of the pillar/hub page this post links back to",
+    "angle": "What makes this post unique vs the hub",
+    "schema": "Optional: HowTo, FAQPage, or null",
+    "wordCount": "Target word count (700-1200)",
+    "status": "pending | in-progress | published",
+    "publishedCommit": "Commit hash once published"
+  },
+  "queue": [
+    {
+      "slug": "home-builder-software-buyer-guide-2026",
+      "title": "Home Builder Software Buyer's Guide (2026)",
+      "metaDescription": "Complete 2026 buyer's guide to home builder software. Compare features, pricing, AI capabilities, and implementation costs across NEWSTAR, BuildPro, Buildertrend, and Cornerstone PM.",
+      "primaryKeyword": "home builder software buyer guide",
+      "hub": "/home-builder-project-management-software",
+      "angle": "Long-form 2026 buyer's guide. Decision criteria, must-have features by builder size (5-50 homes vs 50-200 homes), implementation timeline expectations, AI capability checklist. Link to /home-builder-project-management-software, /compare, /buildertrend-alternative, /newstar-alternative.",
+      "schema": "FAQPage",
+      "wordCount": 1200,
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "migrating-from-buildertrend-to-cornerstone",
+      "title": "Migrating from Buildertrend to Cornerstone PM: Step-by-Step Guide",
+      "metaDescription": "Step-by-step guide to migrating from Buildertrend to Cornerstone PM. Schedule import, vendor migration, template conversion, and team onboarding in under a week.",
+      "primaryKeyword": "migrating from Buildertrend",
+      "hub": "/buildertrend-alternative",
+      "angle": "Concrete HowTo guide with numbered steps. Export Buildertrend data → import schedules/vendors/templates → set up communities → train team. Use HowTo schema. Link prominently back to /buildertrend-alternative.",
+      "schema": "HowTo",
+      "wordCount": 900,
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "newstar-implementation-cost-breakdown",
+      "title": "NEWSTAR Implementation Cost Breakdown for Small-to-Mid Builders",
+      "metaDescription": "Real numbers on NEWSTAR implementation cost: licensing, consultants, training, customization, and ongoing fees. Why mid-size builders are looking for alternatives.",
+      "primaryKeyword": "NEWSTAR implementation cost",
+      "hub": "/newstar-alternative",
+      "angle": "Pain-point + data post. Public NEWSTAR pricing intel: ~$25k-$100k+ implementation, 3-12 month timeline, per-seat licensing. Compare to Cornerstone PM at $0 implementation. Highly citable for LLMs because of specific numbers. Link to /newstar-alternative.",
+      "schema": "FAQPage",
+      "wordCount": 900,
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "production-builder-vs-custom-builder-software",
+      "title": "Production Builder vs Custom Builder Software: Which Do You Need?",
+      "metaDescription": "Production builder software vs custom builder software: how the workflows differ and which platform category fits your business model.",
+      "primaryKeyword": "production builder vs custom builder software",
+      "hub": "/home-builder-project-management-software",
+      "angle": "Segmentation explainer. Production builder workflows (lots, models, options, plan repeats, design center, draws) vs custom builder workflows (one-off jobs, progress invoicing, change orders). Why Buildertrend/JobTread fit custom and Cornerstone fits production. Link to /home-builder-project-management-software and /compare.",
+      "schema": null,
+      "wordCount": 800,
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "buildertrend-vs-cornerstone-feature-comparison",
+      "title": "Buildertrend vs Cornerstone PM: Feature-by-Feature Comparison",
+      "metaDescription": "Feature-by-feature comparison of Buildertrend and Cornerstone PM. Scheduling, AI agents, options engine, REST API, and pricing for production home builders.",
+      "primaryKeyword": "Buildertrend vs Cornerstone",
+      "hub": "/buildertrend-alternative",
+      "angle": "Different from /buildertrend-alternative (which is overview/marketing). This is a deep feature-by-feature table broken into 6 categories: Scheduling, Sales, Purchasing, Design Center, AI, API. Note: there is already /blog/buildertrend-vs-cornerstone — REPLACE that one or extend with deeper feature analysis. Link to /buildertrend-alternative.",
+      "schema": "FAQPage",
+      "wordCount": 1000,
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "ai-takeoff-vs-manual-takeoff-cost",
+      "title": "AI Material Takeoff vs Manual Takeoff: True Cost Analysis",
+      "metaDescription": "AI material takeoff vs manual estimating: time savings, error rates, cost-per-takeoff comparison for residential home builders running plan repeats.",
+      "primaryKeyword": "AI takeoff vs manual takeoff",
+      "hub": "/ai-takeoff",
+      "angle": "TCO post with hard numbers. Manual takeoff time per plan (4-8 hours) × $50-100/hr estimator rate vs Blueprint AI (~60 seconds). Error rate comparison. Annual savings for a builder doing 50-200 homes/year. Link to /ai-takeoff.",
+      "schema": null,
+      "wordCount": 800,
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "buildpro-vs-cornerstone-modern-stack",
+      "title": "BuildPro vs Cornerstone PM: Why Production Builders Are Modernizing",
+      "metaDescription": "BuildPro vs Cornerstone PM: how the modern web-native stack compares to BuildPro for small-to-mid production home builders.",
+      "primaryKeyword": "BuildPro vs Cornerstone",
+      "hub": "/buildpro-alternative",
+      "angle": "UI/UX and modern stack focused. Web vs Windows-Citrix, mobile-friendly vs desktop, native AI vs none, public REST API vs enterprise integrations. Link to /buildpro-alternative.",
+      "schema": null,
+      "wordCount": 800,
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "how-to-choose-home-builder-software",
+      "title": "How to Choose Home Builder Software in 7 Steps",
+      "metaDescription": "How to choose home builder software: 7-step decision framework covering business model fit, AI capabilities, implementation cost, and platform integrations.",
+      "primaryKeyword": "how to choose home builder software",
+      "hub": "/home-builder-project-management-software",
+      "angle": "HowTo schema post with 7 numbered steps: (1) define builder type (custom vs production), (2) list must-have modules, (3) check AI capabilities, (4) verify API/integration support, (5) compare TCO not list price, (6) shortlist 3 vendors, (7) demo with real data. Link to /home-builder-project-management-software.",
+      "schema": "HowTo",
+      "wordCount": 1000,
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "why-small-builders-cant-afford-newstar",
+      "title": "Why Small-to-Mid Home Builders Can't Afford NEWSTAR (And What They're Switching To)",
+      "metaDescription": "Why small-to-mid home builders can't afford NEWSTAR's implementation cost — and the modern alternatives production builders are switching to.",
+      "primaryKeyword": "small builders NEWSTAR alternative",
+      "hub": "/newstar-alternative",
+      "angle": "Pain-point post. NEWSTAR was built for top-100 enterprise builders. The 5-200 home/year segment is being underserved. Implementation budgets, IT staffing requirements, modern stack expectations. Link to /newstar-alternative.",
+      "schema": null,
+      "wordCount": 800,
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "buildertrend-pricing-true-cost",
+      "title": "The True Cost of Buildertrend for Production Home Builders",
+      "metaDescription": "Buildertrend's true total cost for production home builders: per-user fees, integration costs, and the workflow gaps that drive switching to purpose-built alternatives.",
+      "primaryKeyword": "Buildertrend true cost",
+      "hub": "/buildertrend-alternative",
+      "angle": "Hard cost analysis. Buildertrend list price + per-user creep + integration plugins + workflow gaps that force manual workarounds. Total annual cost for a 50-home/year builder. Compare to Cornerstone PM. Link to /buildertrend-alternative.",
+      "schema": null,
+      "wordCount": 900,
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "how-blueprint-ai-extracts-material-scopes",
+      "title": "How Blueprint AI Extracts 130+ Material Scopes from a Floor Plan PDF",
+      "metaDescription": "Technical deep-dive on how Blueprint AI extracts 130+ material scopes from a floor plan PDF in under 60 seconds for residential home builders.",
+      "primaryKeyword": "how AI material takeoff works",
+      "hub": "/ai-takeoff",
+      "angle": "Technical/educational post. Walk through how the AI parses a floor plan: room detection, fixture extraction, dimension reading, material scope mapping, vendor pricing lookup. Demystifies the tech, makes it citable for LLMs. Link to /ai-takeoff.",
+      "schema": null,
+      "wordCount": 900,
+      "status": "pending",
+      "publishedCommit": null
+    }
+  ]
+}
