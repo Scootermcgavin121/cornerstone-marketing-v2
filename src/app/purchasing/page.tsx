@@ -38,6 +38,22 @@ const faqItems: FAQItem[] = [
     a: "Yes. The Pro+ plan ($599/mo) includes Bring Your Own Agent (BYOA) and full REST API access. You can connect Claude, ChatGPT, or any custom agent to live purchasing, bid, vendor, and budget data through 59 endpoints with scoped Bearer-token auth.",
   },
   {
+    q: "How do I review competing vendor bids?",
+    a: "Cornerstone PM's bid review uses a side-by-side comparison view with scope-item drill-down. You see every bid against every scope item simultaneously &mdash; not just total price, but full scope coverage so you can spot gaps, exclusions, or scope creep before awarding. Vendors edit their own scope items inside their vendor portal; you review and approve.",
+  },
+  {
+    q: "How do I lock a bid once it's accepted?",
+    a: "Cornerstone PM uses a lock-after-acceptance flow. The moment you award a vendor bid, the scope items, pricing, and terms lock down &mdash; no surprise edits, no scope drift, no last-minute pricing changes. The locked bid feeds directly into the home's budget and PO pipeline.",
+  },
+  {
+    q: "How do I subscribe to bid notifications as an admin?",
+    a: "Cornerstone PM ships per-user notification preferences plus role-level subscriptions for admins. Admins can subscribe to bid events &mdash; new bids submitted, vendor scope edits, awards, lock events &mdash; and choose email, in-app, or both. Each user controls their own notification toggles independently.",
+  },
+  {
+    q: "Does Cornerstone PM use lowest-bid auctions to pick vendors?",
+    a: "No &mdash; and that's intentional. Production home builders rely on long-term community vendor relationships, not lowest-bid auctions. Cornerstone PM supports community-assigned vendor awards: you choose who you want to win based on scope coverage, relationship, and quality &mdash; with the bid comparison data to back the decision. Lowest-bid auctioning destroys vendor relationships in residential homebuilding.",
+  },
+  {
     q: "What does purchasing software for home builders cost?",
     a: "Cornerstone PM's purchasing module is included in the Builder plan at $299/mo with unlimited users. The Pro plan at $499/mo adds Foreman AI's Bid Pipeline and Parts Catalog skills. Pro+ at $599/mo adds the REST API and BYOA. NEWSTAR and BuildPro typically require $25,000+ implementation budgets before monthly licensing.",
   },
@@ -57,7 +73,11 @@ const features = [
   { title: "Base Pricing Matrix", desc: "Floorplan &rarr; -  Community pricing matrix with per community overrides." },
   { title: "Change Orders", desc: "Buyer-requested changes with approval workflow and budget impact." },
   { title: "Bid Management", desc: "Send floorplan to bid to every vendor with one click, track responses, compare side-by-side." },
-  { title: "Bid Comparison", desc: "Side-by-side vendor bid comparison with automatic low-bid highlighting." },
+  { title: "Bid Comparison & Drill-Down", desc: "Side-by-side vendor bid comparison with scope-item drill-down review &mdash; not just price, but full scope coverage." },
+  { title: "Community-Assigned Vendor Wins", desc: "Award based on community vendor relationships and scope coverage &mdash; not lowest-bid auctions. Protects long-term vendor partnerships." },
+  { title: "Lock-After-Acceptance", desc: "Once a bid is accepted, it locks &mdash; no surprise scope changes or pricing edits after award." },
+  { title: "Vendor Portal Scope Editing", desc: "Vendors edit their own scope items in their portal &mdash; you review, you approve, you award." },
+  { title: "Bid Notification Subscriptions", desc: "Admins subscribe to bid events &mdash; new bids, edits, awards &mdash; with per-user notification preferences." },
   { title: "Award & Budget Flow", desc: "Award a bid and it flows directly into the budget &mdash; no double entry." },
   { title: "Purchase Orders", desc: "Generate and send POs directly from approved bids." },
   { title: "Buildertrend Migration", desc: "Import existing budgets from Buildertrend with smart column mapping." },
