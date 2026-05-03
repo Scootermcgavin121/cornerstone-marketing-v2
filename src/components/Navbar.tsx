@@ -53,13 +53,13 @@ export function Navbar() {
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-24">
+        <div className="flex items-center justify-between h-32">
           {/* Logo */}
-          <Link href="/" className="flex items-center group">
+          <Link href="/" className="flex items-center group -my-2">
             <img
               src="/logo-new.png"
               alt="Cornerstone PM"
-              className="h-16 sm:h-20 w-auto object-contain group-hover:opacity-90 transition-opacity duration-200"
+              className="h-24 sm:h-28 lg:h-32 w-auto object-contain group-hover:opacity-90 transition-opacity duration-200"
             />
           </Link>
 
@@ -102,9 +102,10 @@ export function Navbar() {
             </Link>
             <Link
               href="/beta"
-              className="px-5 py-3 text-sm font-semibold rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 transition-all duration-200 shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 whitespace-nowrap leading-tight text-center"
+              className="px-6 py-3 text-sm font-semibold rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 transition-all duration-200 shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 leading-tight text-center min-w-[140px]"
             >
-              Get Beta Access
+              <span className="block">Request</span>
+              <span className="block">Beta Access</span>
             </Link>
           </div>
 
