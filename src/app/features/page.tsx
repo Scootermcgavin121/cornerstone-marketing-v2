@@ -4,6 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { FeaturesSection } from "@/components/FeaturesSection";
 import { CTASection } from "@/components/CTASection";
+import { VideoPlayer } from "@/components/VideoPlayer";
 import {
   Calendar,
   ShoppingCart,
@@ -237,20 +238,10 @@ export default function FeaturesPage() {
                     />
                   </div>
                   {(feature as {video?: string}).video && (
-                    <div className="relative w-full rounded-xl border border-slate-700/50 shadow-xl overflow-hidden bg-slate-900">
-                      <div className="absolute top-2 left-2 z-10 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/70 border border-white/10 text-xs text-slate-300 font-medium">
-                        <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
-                        Workflow Demo
-                      </div>
-                      <video
-                        src={(feature as {video?: string}).video}
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        className="w-full h-auto"
-                      />
-                    </div>
+                    <VideoPlayer
+                      src={(feature as {video?: string}).video!}
+                      label="Workflow Demo"
+                    />
                   )}
                 </div>
               </div>
