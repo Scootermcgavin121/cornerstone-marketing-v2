@@ -18,7 +18,7 @@ const plans = [
       "Subcontractor assignment & notifications",
       "Permitting pipeline tracker",
       "Homeowner progress portal (magic link)",
-      "FAQ Chatbot (AI help desk)",
+      "AI Support Agent (instant answers, zero wait)",
       "Multi-community support",
       "Up to 500 active homes",
       "Up to 1,000 users & vendors",

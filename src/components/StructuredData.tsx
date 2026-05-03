@@ -41,7 +41,7 @@ export function StructuredData() {
           "Vendor self-registration portal",
           "REST API with 59 endpoints and 14 webhook event types",
           "Multi-community and multi-floorplan management",
-          "FAQ chatbot powered by ChatGPT",
+          "AI Support Agent — instant answers, every feature documented",
           "Warranty tracking and 2-year warranty management",
           "Unlimited users on all plans — no per-seat pricing",
           "Free 2-year beta for first 100 builders",

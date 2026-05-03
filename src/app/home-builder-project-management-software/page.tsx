@@ -159,7 +159,7 @@ export default function HomeBuilderPMPage() {
                 "47 Foreman AI skills across 7 domains",
                 "Blueprint AI &mdash; PDF floor plan to material takeoff",
                 "MLS Listing Agent &mdash; auto-generated from home data",
-                "FAQ Chatbot &mdash; powered by ChatGPT, knows every feature",
+                "AI Support Agent &mdash; instant answers, every feature documented",
                 "BYOA support &mdash; bring your own Claude/ChatGPT (Pro+)",
                 "59-endpoint REST API for custom AI integrations",
               ].map((point) => (

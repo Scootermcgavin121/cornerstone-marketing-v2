@@ -77,7 +77,7 @@ export function Hero() {
         </p>
 
         <p className="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto mb-8 leading-relaxed">
-          Foreman AI executes actions from plain English. Blueprint AI reads floor plans and generates material takeoffs in seconds. The FAQ Chatbot knows every feature. All three agents are wired directly to your data &mdash; no setup, no consultants.
+          Foreman AI executes actions from plain English. Blueprint AI reads floor plans and generates material takeoffs in seconds. Bid Import AI parses any vendor bid format. AI Support Agent knows every feature. Five AI agents wired directly to your data &mdash; no setup, no consultants.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-12 text-sm">
           <div className="px-4 py-2.5 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-400">

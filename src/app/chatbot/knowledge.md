@@ -1,9 +1,9 @@
-﻿## Platform Overview (Current Stats)
+## Platform Overview (Current Stats)
 - 130+ database tables and growing
 - 47+ Foreman AI skills
 - 14 webhook event types
 - 60+ external REST API endpoints
-- 4 built-in AI features: Foreman AI (47 skills), Blueprint AI, MLS Listing Agent, FAQ Chatbot
+- 4 built-in AI features: Foreman AI (47 skills), Blueprint AI, MLS Listing Agent, AI Support Agent
 - 4 pricing tiers: Starter $149, Builder $299, Pro $499, Pro+ $599 
 
 ---
@@ -16,7 +16,7 @@ Pre-curated bundles of design selections that buyers can apply with one click. I
 - **64 packages seeded** across 7 categories: Flooring, Kitchen Essentials, Bath & Fixtures, Smart Home, Lighting, Hardware & Trim, Designer Bundles
 - **Designer Bundles** (Level 3 spec and above only): Designer Kitchen, All Bathrooms, Whole House Package
 - **Standalone package categories** — `PackageCategoryType` is a separate model from OptionCategory, with its own many-to-many join (PackageCategoryLink)
-- **Package override on Selections** — when applied, individual room slots are locked with "Covered by [Package] ✓" badges. Buyer can break the package by overriding (warning modal triggers).
+- **Package override on Selections** — when applied, individual room slots are locked with "Covered by [Package] ?" badges. Buyer can break the package by overriding (warning modal triggers).
 - Managed at `/design-center/packages` (Designer Collections page)
 
 ### Structural Option Override System (NEW May 2026)
@@ -35,7 +35,7 @@ The Selections page no longer reads only from Takeoffs — it reads from `Floorp
 
 - Each scope on a room with an `optionClassId` creates a buyer-facing selection slot
 - **The FLS scope name is the display label** (not the OptionClass name) — so a bathroom shows "Vanity Faucet", "Master Shower Faucet", and "Tub Spout" as distinct slots even though they all link to the OptionClass `Faucet`
-- Rooms automatically populated with appropriate scopes: Kitchen → appliances/fixtures, Bathrooms → shower/toilet/faucets, Bedrooms → flooring/baseboard/lighting/doors
+- Rooms automatically populated with appropriate scopes: Kitchen ? appliances/fixtures, Bathrooms ? shower/toilet/faucets, Bedrooms ? flooring/baseboard/lighting/doors
 
 ### Room System Consolidation (May 2026)
 The app now uses **FloorplanLocation** as the single primary room model across Takeoffs, Selections, and Options. The legacy `FloorplanRoom` model still exists but is being deprecated. Behind the scenes:
@@ -106,12 +106,12 @@ Scope items represent things like labor, delivery charges, equipment rentals, in
 - Export scope item pricing by trade for vendor comparison reviews and bid analysis
 
 ### Vendor Bid Workflow (Apr 2026 update)
-Full end-to-end bidding from request → vendor submission → review → award → lock.
+Full end-to-end bidding from request ? vendor submission ? review ? award ? lock.
 
 **Builder-side bid review:**
 - **Side-by-side comparison view**: Stack multiple vendors' bids for the same scope across communities/floorplans. Lowest total green-flagged (informational only).
 - **Single-bid drill-down**: Group line items by floorplan with parts and scope items separated. Award/Reject CTAs visible only on PENDING bids.
-- **Award flow**: Click "Award" → bid status moves PENDING → ACCEPTED. All line items mirror into VendorPricing automatically. Old vendor pricing for the same vendor+scope+community is marked SUPERSEDED (history preserved).
+- **Award flow**: Click "Award" ? bid status moves PENDING ? ACCEPTED. All line items mirror into VendorPricing automatically. Old vendor pricing for the same vendor+scope+community is marked SUPERSEDED (history preserved).
 
 **Vendor-side portal:**
 - Token-protected URL (no login required) for vendors to submit/edit bids.
@@ -119,7 +119,7 @@ Full end-to-end bidding from request → vendor submission → review → award 
 - Bids are editable while PENDING. Once accepted by the builder, line items lock and the vendor cannot edit — protects builder's awarded pricing from accidental changes.
 
 **Pricing engine:**
-- Per-takeoff cost resolves via fallback chain: per-takeoff override → ACCEPTED VendorPricing for the home's community → catalog default → $0.
+- Per-takeoff cost resolves via fallback chain: per-takeoff override ? ACCEPTED VendorPricing for the home's community ? catalog default ? $0.
 - Vendor selection always uses the **community-assigned vendor**, not lowest bid — builders maintain trade relationships per community.
 - Multiple bids can be ACCEPTED simultaneously across different communities (one vendor in Community A, a different vendor in Community B for the same scope).
 
@@ -352,14 +352,14 @@ Upload a floor plan PDF (up to 25MB, digital CAD only) and Blueprint AI extracts
 One-click import directly into floorplan budgets and design center.
 Pricing: Pro Plan — 5 analyses/month. Enterprise — 25/month.
 
-### 3. FAQ Chatbot - "Always-On Help Desk"
+### 3. AI Support Agent - "Always-On Help Desk"
 GPT-4o-mini chatbot on every page. Knows every feature, workflow, and role. Available on all plans including Starter.
 
 ---
 
 ## Pricing Tiers
 
-- **Starter $149/mo**: Construction Scheduling, Gantt, 17 templates, vendor assignment, permitting, buyer portal, FAQ Chatbot. Up to 500 active homes, 1,000 users/vendors.
+- **Starter $149/mo**: Construction Scheduling, Gantt, 17 templates, vendor assignment, permitting, buyer portal, AI Support Agent. Up to 500 active homes, 1,000 users/vendors.
 - **Builder $299/mo**: Everything in Starter + Sales Pipeline + Purchasing & Budgets + Design Center (no AI agents)
 - **Pro $499/mo**: Everything in Builder + Foreman AI (47 skills, Sonnet, 1,000 msg/mo) + Blueprint AI (25 takeoffs/mo) + MLS Listing Agent + advanced analytics. Up to 1,000 active homes.
 - **Pro+ $599/mo**: Everything in Pro + REST API (58 endpoints, scoped keys), automated bidding pipeline (7-wave), webhooks (14 event types), Opus model, 5,000 AI messages/mo, Blueprint AI (25/mo), SSO, dedicated SLA.
@@ -428,7 +428,7 @@ Cornerstone helps residential builders schedule, track, budget, and manage their
 
 ### Communication & Notifications
 - **Four-tier email notifications** for schedule changes: Confirmation, Advance Notice, Date Moved Up, and Date Postponed
-- Automatic vendor notifications when schedule cascades - grouped by vendor, showing old→new dates
+- Automatic vendor notifications when schedule cascades - grouped by vendor, showing old?new dates
 - Keep everyone in the loop automatically
 
 ### AI Assistant
@@ -456,7 +456,7 @@ Cornerstone's AI-powered takeoff system eliminates manual material estimation. *
 - **3-Tab Review Editor** — review and refine AI-extracted data across three tabs: Room-by-Room details, Fixture & Finish counts, and Whole-House Scopes
 - **Powered by Anthropic AI Vision** — industry-leading AI analyzes your blueprints with high accuracy
 - **Cost:** ~$0.50–$2.00 per analysis depending on plan complexity
-- **Navigate:** Purchasing → AI Blueprint Takeoff
+- **Navigate:** Purchasing ? AI Blueprint Takeoff
 - **Included free** with the Full Bundle plan ($399/month) — a $150/month standalone value
 - **Why this matters:** What used to take hours of manual counting and measuring now takes minutes. Upload the PDF, review the AI's work, and move straight to budgeting.
 
@@ -466,7 +466,7 @@ Cornerstone's AI-powered takeoff system eliminates manual material estimation. *
 - **Scope Pricing Dashboard** - read-only dashboard showing vendor bid pricing by scope. Vendor pricing matrix lets you compare bids across vendors at a glance — see who's cheapest per scope without digging through individual bid responses
 - **Takeoffs** - per-floorplan quantity takeoffs organized by room/location. Supports BASE (standard for every home) and OPTION (per-option-class) takeoff types. Units: sqft, lf, lnft, each, LUMP, square
 - **Bid Management** - send a floorplan to bid to every vendor with one click. Track vendor responses, compare bids side-by-side, and award - all in one workflow
-- **Budgets** - 3-level budget hierarchy: Scope → Task → Parts. Real-time financial rollups per home showing estimated vs actual costs. Organized by trade (Lumber, Electrical, Plumbing, HVAC, etc.) with collapsible sections. Scopes with takeoff parts show detailed parts lists with quantities.
+- **Budgets** - 3-level budget hierarchy: Scope ? Task ? Parts. Real-time financial rollups per home showing estimated vs actual costs. Organized by trade (Lumber, Electrical, Plumbing, HVAC, etc.) with collapsible sections. Scopes with takeoff parts show detailed parts lists with quantities.
 - **Auto-Budget Generation** - when structural options are locked in the sales pipeline, the system automatically generates a full home budget from the floorplan's base budget (~97 budget lines per home). Includes structural option selections with cost + retail pricing and elevation cost adders. No manual budget creation needed. Budget can be reset and regenerated if a deal changes.
 - **Active Homes Table** - sortable columns showing budget status, created date, variance tracking across all homes
 - **Change Orders** - track scope changes with cost impact, approval workflow, and automatic budget adjustments
@@ -495,7 +495,7 @@ Cornerstone's AI-powered takeoff system eliminates manual material estimation. *
 ## Sales Pipeline & New Home Sales
 
 ### Sales Task Workflow
-Every new home sale follows a structured task workflow: **Contract Signed → Budget Generated → Purchasing Approval**. Each task is auto-assigned to the right role (Sales, Sales Manager, Purchasing Manager, System). When all sales pipeline tasks are complete, the home automatically hands off to the construction pipeline — no manual transition needed.
+Every new home sale follows a structured task workflow: **Contract Signed ? Budget Generated ? Purchasing Approval**. Each task is auto-assigned to the right role (Sales, Sales Manager, Purchasing Manager, System). When all sales pipeline tasks are complete, the home automatically hands off to the construction pipeline — no manual transition needed.
 
 - **New Home Sale in Under 60 Seconds** - one-page form to create a complete home sale:
   - Select community, floorplan, elevation
@@ -503,9 +503,9 @@ Every new home sale follows a structured task workflow: **Contract Signed → Bu
   - Pick from 12+ structural options (Bonus Room Over Garage ~$42K, Finished Basement ~$112.5K, 8' Interior Doors ~$7.2K, Irrigation Well ~$9.75K, Garage Extension, Kitchen Expansion, Dual Vanity, and more)
   - Apply sales incentives (closing cost credits, discounts, promotions)
   - See real-time price summary: base price + structural options + incentives
-  - One click → home created with full sales pipeline
+  - One click ? home created with full sales pipeline
 - **Buyer Management** - full buyer directory with search, sort, and CSV export. Primary + secondary buyers tracked per home.
-- **9-Step Sales Pipeline** - every new sale automatically generates a 9-step checklist: Contract Signed → Deposit → Financing → Sales Manager Approval → Lot Reservation → Structural Options Selected → Structural Options Locked → Budget Auto-Generated → Purchasing Manager Approval. Gate tasks require completion before downstream tasks unlock. Auto-assigned to the right role (Sales, Sales Manager, Purchasing, System).
+- **9-Step Sales Pipeline** - every new sale automatically generates a 9-step checklist: Contract Signed ? Deposit ? Financing ? Sales Manager Approval ? Lot Reservation ? Structural Options Selected ? Structural Options Locked ? Budget Auto-Generated ? Purchasing Manager Approval. Gate tasks require completion before downstream tasks unlock. Auto-assigned to the right role (Sales, Sales Manager, Purchasing, System).
 - **Auto-Budget Generation** - when "Structural Options Locked" is completed, the system automatically:
   - Generates a full home budget from the floorplan's base budget (~97 budget lines per home)
   - Includes structural option selections with cost + retail pricing
@@ -520,8 +520,8 @@ Every new home sale follows a structured task workflow: **Contract Signed → Bu
 - **Editable Sales Templates** - sales pipeline templates live alongside construction templates in the Templates page. Full editing UI: add/remove/reorder tasks, set durations, edit dependency chains, clone and customize.
 - **Task Dates** - each pipeline task has start date, due date, and duration. Dates auto-compute from the contract date based on task durations.
 - **Automatic Email Notifications** - key milestones trigger branded emails:
-  - Contract Signed → emails Sales Manager + Purchasing Manager ("Approval Needed")
-  - Both Approvals Complete → emails Permitting Agent(s) ("Sale Approved, Ready for Setup")
+  - Contract Signed ? emails Sales Manager + Purchasing Manager ("Approval Needed")
+  - Both Approvals Complete ? emails Permitting Agent(s) ("Sale Approved, Ready for Setup")
   - Smart fallback: if no manager exists for a role, emails Admin(s) instead
 - **Configurable Notification Settings** - admin page to control which roles get notified for each event type, plus add external email addresses for consultants or outside agents
 
@@ -532,7 +532,7 @@ Every new home sale follows a structured task workflow: **Contract Signed → Bu
   - Shows buyer info, structural options selected, floorplan/elevation details
   - Urgency badges highlight homes waiting 3+ days
 - **Template Application Page** - PA applies construction templates (Permitting, Foundation, Site Development, Construction) via dropdown selectors on a one-click template setup page
-- **Status Tracking**: Awaiting Templates → Templates Applied → Permit Submitted → Approved
+- **Status Tracking**: Awaiting Templates ? Templates Applied ? Permit Submitted ? Approved
 - **Sales-to-Construction Handoff** - complete workflow from sale creation through approvals to permitting setup to construction start. No manual handoffs, no dropped balls.
 - **Construction Kickoff** - once templates are applied, the Gantt chart is generated, vendor notifications go out, and the build begins
 
@@ -966,15 +966,15 @@ All exports feature a consistent branded header with builder logo, company name,
 - No access to vendor details, costs, or internal notes
 
 ## Employee Timesheets (opt-in feature)
-- Enable via Construction → Settings toggle ("Employee Timesheets")
+- Enable via Construction ? Settings toggle ("Employee Timesheets")
 - **Shift-based entry** — employees type "8-5" and the system auto-calculates 8 hours (9hrs minus 1hr lunch deduction)
 - Also accepts plain hours (e.g. "8" or "8.5")
 - Supports formats: "8-5", "7:30-4", "7-3:30", plain numbers
 - **Weekly grid** — Mon through Sun with week total
 - **Autofill Week** — enter one day, copy to Mon–Fri
 - **Duplicate Last Week** — copies last week's shift times
-- **Approval workflow**: Employee submits → Manager reviews → Approved or Rejected
-  - PENDING → SUBMITTED → APPROVED or REJECTED
+- **Approval workflow**: Employee submits ? Manager reviews ? Approved or Rejected
+  - PENDING ? SUBMITTED ? APPROVED or REJECTED
   - Rejected timesheets can be edited and resubmitted
 - **Manager reports page** (`/construction/timesheet-reports`):
   - See all team members' timesheets with day-by-day breakdowns

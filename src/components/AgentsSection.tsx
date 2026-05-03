@@ -5,10 +5,10 @@ import { ArrowRight } from "lucide-react";
 
 const agents = [
   {
-    emoji: "🪖",
+    emoji: "ðŸª–",
     name: "Foreman AI",
     tagline: "Your AI Construction Agent",
-    desc: "47 purpose-built construction skills. Not a generic chatbot — Foreman reads AND writes your data. Parts, vendors, homes, MLS listings, exports, design center, and more.",
+    desc: "47 purpose-built construction skills. Not a generic chatbot â€” Foreman reads AND writes your data. Parts, vendors, homes, MLS listings, exports, design center, and more.",
     href: "/foreman",
     color: "text-amber-400",
     bg: "bg-amber-500/10",
@@ -21,7 +21,7 @@ const agents = [
     ],
   },
   {
-    emoji: "📐",
+    emoji: "ðŸ“",
     name: "Blueprint AI",
     tagline: "AI Floor Plan Reader",
     desc: "Upload a floor plan PDF. Blueprint AI extracts every room, fixture, and material scope in under 60 seconds. One click imports 134+ scopes into your budget.",
@@ -37,10 +37,10 @@ const agents = [
     ],
   },
   {
-    emoji: "📄",
+    emoji: "ðŸ“„",
     name: "AI MLS Listing Generator",
     tagline: "AI Real Estate Listing Writer",
-    desc: "Claude Sonnet writes professional MLS descriptions from your live home data — room dimensions, upgrades, community info, lot size. One click to a print-ready PDF.",
+    desc: "Claude Sonnet writes professional MLS descriptions from your live home data â€” room dimensions, upgrades, community info, lot size. One click to a print-ready PDF.",
     href: "/listing-sheet",
     color: "text-emerald-400",
     bg: "bg-emerald-500/10",
@@ -53,8 +53,8 @@ const agents = [
     ],
   },
   {
-    emoji: "💬",
-    name: "Support AI",
+    emoji: "ðŸ’¬",
+    name: "AI Support Agent",
     tagline: "Instant Answers, Zero Wait Time",
     desc: "AI knowledge agent on every page. Knows every feature, workflow, and permission. Built-in documentation that actually talks back.",
     href: "/support-ai",
@@ -69,7 +69,7 @@ const agents = [
     ],
   },
   {
-    emoji: "🧠",
+    emoji: "ðŸ§ ",
     name: "Bid Import AI",
     tagline: "AI-Powered Vendor Bid Parser",
     desc: "Upload vendor bids in any format \u2014 Excel, PDFs, scans, even photos of handwritten quotes. AI extracts every line item, fuzzy-matches your parts catalog and scopes, and imports as a Bid, Vendor Pricing, or Takeoff in one click.",
