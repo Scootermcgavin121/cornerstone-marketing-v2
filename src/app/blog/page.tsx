@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "newstar-implementation-cost-breakdown",
+    title: "NEWSTAR Implementation Cost Breakdown for Small-to-Mid Builders",
+    excerpt:
+      "Total NEWSTAR implementation cost runs $25,000–$100,000+ in year one. Here's where the money goes: licensing, consultants, data migration, training, and ongoing support — and why mid-size builders are rethinking the math.",
+    date: "May 3, 2026",
+    readTime: "6 min read",
+    tag: "Cost Analysis",
+    tagColor: "text-amber-400 bg-amber-500/10 border-amber-500/20",
+  },
+  {
     slug: "migrating-from-buildertrend-to-cornerstone",
     title: "Migrating from Buildertrend to Cornerstone PM: Step-by-Step Guide",
     excerpt:
