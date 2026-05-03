@@ -131,7 +131,7 @@ export default function PurchasingPage() {
       </section>
 
       {/* Bid Import AI Hero Callout */}
-      <section className="py-16 px-4">
+      <section id="bid-import" className="py-16 px-4 scroll-mt-24">
         <div className="max-w-5xl mx-auto">
           <div className="rounded-2xl bg-emerald-500/5 border border-emerald-500/30 p-8 sm:p-12 relative overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(52,211,153,0.08),transparent_60%)]" />

@@ -31,7 +31,8 @@ const featureLinks = [
   { label: "Buyer Portal", href: "/features#portal", desc: "Milestone journey, photo gallery" },
   { label: "⚡ AI Blueprint Takeoff", href: "/ai-takeoff", desc: "Upload PDF — instant material takeoff", highlight: true },
   { label: "🤖 Foreman AI", href: "/foreman", desc: "47-skill AI agent, natural language commands" },
-  { label: "✨ AI Agents Overview", href: "/ai-agents", desc: "Three AI agents built for builders" },
+  { label: "✨ AI Agents Overview", href: "/ai-agents", desc: "Five AI agents built for builders" },
+  { label: "🧠 Bid Import AI", href: "/purchasing#bid-import", desc: "Upload any vendor bid \u2014 AI extracts every line item", highlight: true },
   { label: "⚙️ API Access (BYOA)", href: "/api-access", desc: "REST API for AI agents — automate bidding pipeline", highlight: true },
   { label: "📚 API Docs", href: "/api-docs", desc: "Full endpoint reference, webhooks, code examples" },
 ];

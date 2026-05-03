@@ -1,6 +1,6 @@
 ﻿import React from "react";
 import Link from "next/link";
-import { Bot, FileText, MessageCircle, Check, Zap, ArrowRight } from "lucide-react";
+import { Bot, FileText, MessageCircle, Check, Zap, ArrowRight, Brain } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import type { Metadata } from "next";
@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "AI Agents for Home Builders | Cornerstone PM",
   description:
-    "AI agents for home builders: Foreman AI (47 skills), Blueprint AI (PDF takeoffs), MLS Listing Agent, FAQ Chatbot. Native AI built into the platform — not bolted on.",
+    "5 AI agents for home builders: Foreman AI (47 skills), Blueprint AI (PDF takeoffs), Bid Import AI (parses any vendor bid), MLS Listing Agent, FAQ Chatbot. Native AI built into the platform — not bolted on.",
   alternates: { canonical: "https://www.cornerstonepm.ai/ai-agents" },
 };
 
@@ -77,6 +77,22 @@ const agents = [
     ],
     badge: "All Plans",
   },
+  {
+    name: "Bid Import AI",
+    tagline: "AI-Powered Vendor Bid Parser",
+    description:
+      "Upload vendor bids in any format — Excel, PDFs, scanned documents, even photos of handwritten quotes. AI extracts every line item, fuzzy-matches your parts catalog and scopes, and imports as a Bid, Vendor Pricing, or Takeoff in one click. No more hours of manual data entry from vendor spreadsheets.",
+    icon: <Brain className="w-8 h-8" />,
+    color: "orange",
+    href: "/purchasing#bid-import",
+    highlights: [
+      "Reads Excel, PDF, scans, even handwritten quote photos",
+      "Fuzzy-matches your parts catalog & scope items",
+      "Color-coded confidence table — review before commit",
+      "One-click import to Bid, Vendor Pricing, or Takeoff",
+    ],
+    badge: "Pro+",
+  },
 ];
 
 const colorMap: Record<string, { border: string; icon: string; badge: string; glow: string; button: string }> = {
@@ -108,6 +124,13 @@ const colorMap: Record<string, { border: string; icon: string; badge: string; gl
     glow: "shadow-emerald-500/10",
     button: "bg-gradient-to-r from-emerald-600 to-emerald-500 text-white hover:from-emerald-500 hover:to-emerald-400 shadow-emerald-500/20",
   },
+  orange: {
+    border: "border-orange-500/40",
+    icon: "text-orange-400 bg-orange-500/10",
+    badge: "border-orange-500/30 bg-orange-500/10 text-orange-400",
+    glow: "shadow-orange-500/10",
+    button: "bg-gradient-to-r from-orange-600 to-orange-500 text-white hover:from-orange-500 hover:to-orange-400 shadow-orange-500/20",
+  },
 };
 
 const pricingTiers = [
@@ -134,7 +157,7 @@ const pricingTiers = [
   {
     name: "Pro+",
     price: "$599",
-    agents: ["All agents", "BYOA API Access", "7-wave bidding pipeline", "Opus model", "5,000 msg/mo"],
+    agents: ["All agents", "Bid Import AI", "BYOA API Access", "7-wave bidding pipeline", "Opus model", "5,000 msg/mo"],
     color: "text-cyan-400",
     note: "Full API + automation",
   },
@@ -153,7 +176,7 @@ export default function AiAgentsPage() {
             AI AGENTS FOR HOME BUILDERS
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight">
-            AI agents for home builders.
+            5 AI agents for home builders.
             <br />
             <span className="text-white">Zero setup.</span>
             <br />
@@ -180,7 +203,7 @@ export default function AiAgentsPage() {
 
       {/* Agent Cards */}
       <section className="py-20 px-4">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {agents.map((agent) => {
             const c = colorMap[agent.color];
             return (
@@ -248,7 +271,7 @@ export default function AiAgentsPage() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-black text-white mb-3">AI Agents by Plan</h2>
-            <p className="text-slate-400">Every plan includes the FAQ Chatbot. MLS Listing Agent on Builder+. Foreman AI + Blueprint AI on Pro. Full API automation on Pro+.</p>
+            <p className="text-slate-400">Every plan includes the FAQ Chatbot. MLS Listing Agent on Builder+. Foreman AI + Blueprint AI on Pro. Bid Import AI + full API automation on Pro+.</p>
           </div>
           <div className="rounded-2xl overflow-hidden border border-slate-800">
             {pricingTiers.map((tier, i) => (

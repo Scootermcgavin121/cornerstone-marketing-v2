@@ -68,6 +68,22 @@ const agents = [
       "What roles have access to the options engine?",
     ],
   },
+  {
+    emoji: "🧠",
+    name: "Bid Import AI",
+    tagline: "AI-Powered Vendor Bid Parser",
+    desc: "Upload vendor bids in any format \u2014 Excel, PDFs, scans, even photos of handwritten quotes. AI extracts every line item, fuzzy-matches your parts catalog and scopes, and imports as a Bid, Vendor Pricing, or Takeoff in one click.",
+    href: "/purchasing#bid-import",
+    color: "text-orange-400",
+    bg: "bg-orange-500/10",
+    border: "border-orange-500/20 hover:border-orange-500/50",
+    badge: "Pro+",
+    badgeColor: "bg-orange-500/20 text-orange-400 border-orange-500/30",
+    prompts: [
+      "Upload Tibbetts Lumber PDF &rarr; 18 line items, 16 matched at 90%+",
+      "Import handwritten plumber quote &rarr; bid created in 30 seconds",
+    ],
+  },
 ];
 
 export function AgentsSection() {
@@ -80,7 +96,7 @@ export function AgentsSection() {
             Industry First
           </div>
           <h2 className="text-4xl sm:text-6xl font-black mb-6">
-            Four AI agents.<br />
+            Five AI agents.<br />
             <span className="text-cyan-400">Zero other platforms have one.</span>
           </h2>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto">
@@ -88,7 +104,7 @@ export function AgentsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mb-12">
           {agents.map((agent) => (
             <div
               key={agent.name}
@@ -136,7 +152,7 @@ export function AgentsSection() {
             href="/ai-agents"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-cyan-400 text-slate-900 font-bold hover:bg-cyan-300 transition-all duration-200"
           >
-            See all three agents &rarr;
+            See all five agents &rarr;
           </Link>
         </div>
       </div>
