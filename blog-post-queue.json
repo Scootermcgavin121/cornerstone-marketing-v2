@@ -54,8 +54,8 @@
       "wordCount": 900,
       "heroImage": "/blog/newstar-implementation-cost.png",
       "heroImageAlt": "Home builder reviewing the NEWSTAR implementation cost breakdown for residential construction software",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "9b822f6"
     },
     {
       "slug": "production-builder-vs-custom-builder-software",
