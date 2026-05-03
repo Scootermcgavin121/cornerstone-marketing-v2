@@ -1,4 +1,4 @@
-import { Check } from "lucide-react";
+import { Check, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { FAQSection, type FAQItem } from "@/components/FAQSection";
@@ -104,6 +104,7 @@ const features = [
   { title: "Purchase Orders", desc: "Generate and send POs directly from approved bids." },
   { title: "Data Backup & Export", desc: "Your data is always yours. Download everything as CSV or JSON anytime &mdash; 91 tables, full record sets, sensitive fields excluded. Plus nightly auto-backups with 7-day retention. No vendor lock-in." },
   { title: "Buildertrend Migration", desc: "Import existing budgets from Buildertrend with smart column mapping." },
+  { title: "Bid Import AI", desc: "Upload vendor bids in ANY format — Excel, PDF, scanned docs, even photos of handwritten quotes. AI extracts line items, maps to your parts catalog with confidence scores, and lets you review, edit, approve, or reject before importing." },
 ];
 
 export default function PurchasingPage() {
@@ -125,6 +126,57 @@ export default function PurchasingPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/beta" className="px-8 py-4 rounded-full bg-emerald-400 text-slate-900 font-bold text-lg hover:bg-emerald-300 transition-all duration-200 shadow-lg shadow-emerald-500/30 hover:-translate-y-0.5">Request Early Access &rarr;</Link>
             <Link href="/features" className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200">See All Features</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Bid Import AI Hero Callout */}
+      <section className="py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="rounded-2xl bg-emerald-500/5 border border-emerald-500/30 p-8 sm:p-12 relative overflow-hidden">
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(52,211,153,0.08),transparent_60%)]" />
+            <div className="relative">
+              <div className="flex items-start gap-4 mb-8">
+                <div className="w-12 h-12 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center flex-shrink-0">
+                  <Sparkles className="w-6 h-6 text-emerald-400" />
+                </div>
+                <div>
+                  <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold mb-2">
+                    NEW &mdash; AI FEATURE
+                  </div>
+                  <h2 className="text-3xl font-black text-white">Bid Import AI</h2>
+                  <p className="text-emerald-400 font-semibold text-sm mt-1">Upload any vendor format. AI does the rest.</p>
+                </div>
+              </div>
+              <p className="text-slate-300 text-lg leading-relaxed mb-8">
+                Your vendors don&apos;t use your bid template. They send Excel files, PDFs, scanned quotes, even photos of handwritten estimates.
+                Bid Import AI reads them all &mdash; extracts every line item with quantities, unit prices, part numbers, and scope assignments,
+                fuzzy-matches them to your parts catalog, and gives you a clean review table. No squinting, no manual re-entry.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                {[
+                  { label: "Any format", detail: "Excel, PDF, scanned docs, photos of handwritten quotes" },
+                  { label: "Fuzzy matching", detail: "Maps to your parts catalog with confidence scores" },
+                  { label: "Interactive review", detail: "Edit, approve, or reject items before importing" },
+                  { label: "3 import modes", detail: "Import as a Bid, Vendor Pricing, or Takeoffs" },
+                ].map((item) => (
+                  <div key={item.label} className="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                    <div className="text-emerald-400 font-bold text-sm mb-1">{item.label}</div>
+                    <div className="text-slate-400 text-xs leading-relaxed">{item.detail}</div>
+                  </div>
+                ))}
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4 items-start">
+                <div className="flex-1 p-4 rounded-xl bg-red-500/5 border border-red-500/20">
+                  <p className="text-red-400 font-semibold text-xs uppercase tracking-widest mb-2">Without Bid Import AI</p>
+                  <p className="text-slate-400 text-sm">Open the vendor&apos;s Excel. Find the right column. Type every line item manually. Make a typo. Start over. 2 hours later, the budget&apos;s updated.</p>
+                </div>
+                <div className="flex-1 p-4 rounded-xl bg-emerald-500/5 border border-emerald-500/20">
+                  <p className="text-emerald-400 font-semibold text-xs uppercase tracking-widest mb-2">With Bid Import AI</p>
+                  <p className="text-slate-400 text-sm">Upload the file. Review the AI-extracted table. Approve the items. Done. Costs pennies per import vs. hours of manual data entry.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

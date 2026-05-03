@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Check, Package, ShoppingCart, DollarSign, FileText, BarChart3 } from "lucide-react";
+import { ArrowRight, Check, Package, ShoppingCart, DollarSign, FileText, BarChart3, Sparkles } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
@@ -40,6 +40,12 @@ const prompts = [
     result:
       "Scorecard across 24 vendors: Apex Framing 94% response rate (8/8 bids), City Plumbing 62% (5/8), Roberts Electric 100% (6/6). Win rates and avg bid amounts included.",
     category: "Vendor Performance Analysis",
+  },
+  {
+    prompt: "Import this PDF — it's a bid from our framer, their own format",
+    result:
+      "Extracted 34 line items from the PDF. 29 matched your parts catalog (85% confidence or higher). 5 items need review — quantities differ from your takeoff. Interactive table ready: approve, edit, or reject before importing as a Bid.",
+    category: "Bid Import AI",
   },
 ];
 
@@ -83,6 +89,14 @@ const purchasingAreas = [
     border: "border-cyan-500/20",
     title: "PO Generation",
     desc: "Generate professional purchase orders and Scope of Work documents from your real project data. Excel exports with company branding, ready to sign.",
+  },
+  {
+    icon: Sparkles,
+    color: "text-emerald-400",
+    bg: "bg-emerald-500/10",
+    border: "border-emerald-500/20",
+    title: "Bid Import AI",
+    desc: "Upload vendor bids in ANY format — Excel, PDF, scanned docs, photos of handwritten quotes. AI extracts line items, fuzzy-matches to your parts catalog with confidence scores, and lets you review each item before importing as a Bid, Vendor Pricing, or Takeoffs.",
   },
 ];
 

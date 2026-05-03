@@ -68,6 +68,9 @@ const featureDetails = [
       "Change order approval workflow with full audit trail",
       "Active homes dashboard with financial rollup",
       "BuilderTrend migration support — switch in days",
+      "Bid Import AI — upload any vendor format (Excel, PDF, scanned docs, handwritten quotes), AI extracts and maps line items",
+      "Fuzzy catalog matching with confidence scores — review, approve, or reject before importing",
+      "3 import modes: as a Bid, Vendor Pricing, or Takeoffs",
     ],
   },
   {
