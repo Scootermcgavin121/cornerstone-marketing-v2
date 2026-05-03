@@ -5,7 +5,7 @@ import { FAQSection, type FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
   title: "Home Builder Purchasing & Bid Management Software | Cornerstone PM",
-  description: "AI construction purchasing for home builders. Bid-to-PO automation, parts catalog, structural options pricing, and auto-budget generation built for production builders.",
+  description: "Auto-generated, scope-filtered bid templates. No-login vendor file-upload portal. Side-by-side bid comparison, lock-after-acceptance, parts catalog, auto-budget, POs, and full data export.",
 };
 
 const faqItems: FAQItem[] = [
@@ -42,6 +42,22 @@ const faqItems: FAQItem[] = [
     a: "Cornerstone PM's bid review uses a side-by-side comparison view with scope-item drill-down. You see every bid against every scope item simultaneously &mdash; not just total price, but full scope coverage so you can spot gaps, exclusions, or scope creep before awarding. Vendors edit their own scope items inside their vendor portal; you review and approve.",
   },
   {
+    q: "What's in the auto-generated bid template?",
+    a: "Three tabs: (1) Base &mdash; floorplan-location-scope rows for the vendor's trade with option pricing; (2) Structural &mdash; takeoff-driven structural options for that scope; (3) Designer &mdash; design center option classes the vendor is responsible for. Everything is scope-filtered &mdash; your electrician doesn't see plumbing rows. The template is auto-attached to the vendor invite email and downloadable from the portal.",
+  },
+  {
+    q: "How do vendors submit bids? Do they need a login?",
+    a: "No login, no training. Vendors get a token-protected URL when invited. They download the auto-generated, scope-filtered Excel template (Base / Structural / Designer tabs), fill in their numbers in their own workflow, then upload PDF/Excel/CSV files back to the portal &mdash; up to 10 files, 10 MB each. Two clicks to submit. Builders don't end up doing data entry on behalf of subs who hate logins.",
+  },
+  {
+    q: "How is bid status tracked?",
+    a: "Every bid request flows through Invited &rarr; Viewed &rarr; Submitted &rarr; Declined, with timestamps. You can see at a glance who opened the link, who's working on it, and who never showed up &mdash; so you know who to chase before the bid window closes.",
+  },
+  {
+    q: "Can I get my data out if I leave?",
+    a: "Yes. Settings > Backups lets you download a full org export (91 tables) as CSV or JSON anytime, with sensitive fields automatically excluded. Nightly auto-backups run with 7-day retention. Your data is always yours &mdash; no vendor lock-in, no exit fees.",
+  },
+  {
     q: "How do I lock a bid once it's accepted?",
     a: "Cornerstone PM uses a lock-after-acceptance flow. The moment you award a vendor bid, the scope items, pricing, and terms lock down &mdash; no surprise edits, no scope drift, no last-minute pricing changes. The locked bid feeds directly into the home's budget and PO pipeline.",
   },
@@ -72,7 +88,11 @@ const features = [
   { title: "Unlimited Spec Levels", desc: "Community Standard, Premium, Luxury &mdash; unlimited spec levels with separate pricing." },
   { title: "Base Pricing Matrix", desc: "Floorplan &rarr; -  Community pricing matrix with per community overrides." },
   { title: "Change Orders", desc: "Buyer-requested changes with approval workflow and budget impact." },
-  { title: "Bid Management", desc: "Send floorplan to bid to every vendor with one click, track responses, compare side-by-side." },
+  { title: "Bid Templates That Write Themselves", desc: "The moment you create a bid request, Cornerstone auto-generates a 3-tab Excel template (Base / Structural / Designer) pre-filled from your floorplan takeoffs and emailed to every vendor. Zero spreadsheet babysitting." },
+  { title: "Scope-Filtered Per Trade", desc: "Your electrician doesn't see plumbing rows. Each vendor's template only includes line items relevant to their scope &mdash; pulled from the ScopeOptionClass linkages so nothing gets miscategorized." },
+  { title: "No-Login Vendor Upload Portal", desc: "Vendors click a token-protected link and drag-drop their bid sheet (PDF, Excel, or CSV, up to 10 files). Two clicks to submit. Perfect for subs who already have their own bidding workflow and refuse to retype line items." },
+  { title: "Bid Status Tracking", desc: "Every bid request flows through Invited &rarr; Viewed &rarr; Submitted &rarr; Declined with timestamps &mdash; so you know exactly who to chase before the bid window closes." },
+  { title: "Bid Management", desc: "Send a floorplan to bid to every vendor with one click. Track responses, manage the full RFP lifecycle, and award through a branded portal." },
   { title: "Bid Comparison & Drill-Down", desc: "Side-by-side vendor bid comparison with scope-item drill-down review &mdash; not just price, but full scope coverage." },
   { title: "Community-Assigned Vendor Wins", desc: "Award based on community vendor relationships and scope coverage &mdash; not lowest-bid auctions. Protects long-term vendor partnerships." },
   { title: "Lock-After-Acceptance", desc: "Once a bid is accepted, it locks &mdash; no surprise scope changes or pricing edits after award." },
@@ -80,6 +100,7 @@ const features = [
   { title: "Bid Notification Subscriptions", desc: "Admins subscribe to bid events &mdash; new bids, edits, awards &mdash; with per-user notification preferences." },
   { title: "Award & Budget Flow", desc: "Award a bid and it flows directly into the budget &mdash; no double entry." },
   { title: "Purchase Orders", desc: "Generate and send POs directly from approved bids." },
+  { title: "Data Backup & Export", desc: "Your data is always yours. Download everything as CSV or JSON anytime &mdash; 91 tables, full record sets, sensitive fields excluded. Plus nightly auto-backups with 7-day retention. No vendor lock-in." },
   { title: "Buildertrend Migration", desc: "Import existing budgets from Buildertrend with smart column mapping." },
 ];
 

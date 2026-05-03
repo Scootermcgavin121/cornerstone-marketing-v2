@@ -16,7 +16,7 @@ const modules = [
   {
     icon: ShoppingCart,
     name: "Purchasing & Budgets",
-    desc: "Bid management, POs, auto-budget generation, design center integration.",
+    desc: "Auto-generated bid templates, no-login vendor portal, side-by-side bid comparison, POs, auto-budget.",
     href: "/purchasing",
     color: "text-emerald-400",
     bg: "bg-emerald-500/10",
