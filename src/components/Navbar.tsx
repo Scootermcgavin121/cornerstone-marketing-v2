@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -20,20 +20,30 @@ const navLinks = [
   { label: "Contact", href: "/contact", hasDropdown: false },
 ];
 
+// Standard product features (left column of dropdown)
 const featureLinks = [
   { label: "All Features", href: "/features", desc: "Everything included in every plan" },
   { label: "Construction Scheduling", href: "/construction", desc: "Gantt charts, vendors, notifications" },
   { label: "Purchasing & Budgets", href: "/purchasing", desc: "Takeoffs, POs, bid management" },
   { label: "Sales Pipeline", href: "/sales", desc: "60-second home sale, buyer tracking" },
-  { label: "MLS Listing Generator", href: "/listing-sheet", desc: "AI-written MLS listings from live project data" },
   { label: "Design Center", href: "/design", desc: "Room-by-room selections, spec levels" },
   { label: "Permitting & Inspections", href: "/permitting", desc: "Permit sequences, phase gates, auto notifications" },
   { label: "Buyer Portal", href: "/features#portal", desc: "Milestone journey, photo gallery" },
-  { label: "⚡ AI Blueprint Takeoff", href: "/ai-takeoff", desc: "Upload PDF — instant material takeoff", highlight: true },
-  { label: "🤖 Foreman AI", href: "/foreman", desc: "47-skill AI agent, natural language commands" },
+];
+
+// AI features (right column of dropdown — all violet, grouped together)
+const aiLinks = [
   { label: "✨ AI Agents Overview", href: "/ai-agents", desc: "Five AI agents built for builders" },
-  { label: "🧠 Bid Import AI", href: "/purchasing#bid-import", desc: "Upload any vendor bid \u2014 AI extracts every line item", highlight: true },
-  { label: "⚙️ API Access (BYOA)", href: "/api-access", desc: "REST API for AI agents — automate bidding pipeline", highlight: true },
+  { label: "🤖 Foreman AI", href: "/foreman", desc: "47-skill AI agent, natural language commands" },
+  { label: "⚡ AI Blueprint Takeoff", href: "/ai-takeoff", desc: "Upload PDF — instant material takeoff" },
+  { label: "🧠 Bid Import AI", href: "/bid-import-ai", desc: "Upload any vendor bid — AI extracts every line item" },
+  { label: "📄 AI MLS Listing Generator", href: "/listing-sheet", desc: "AI-written MLS listings from live project data" },
+  { label: "💬 Support AI", href: "/support-ai", desc: "Always-on help desk, every feature & workflow" },
+];
+
+// Developer tools (bottom section)
+const devLinks = [
+  { label: "⚙️ API Access (BYOA)", href: "/api-access", desc: "REST API for AI agents — automate bidding pipeline" },
   { label: "📚 API Docs", href: "/api-docs", desc: "Full endpoint reference, webhooks, code examples" },
 ];
 
@@ -82,14 +92,42 @@ export function Navbar() {
                   )}
                 </Link>
                 {link.hasDropdown && (
-                  <div className="absolute top-full left-0 mt-1 w-[560px] bg-slate-900/95 backdrop-blur-xl border border-slate-800 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2">
-                    <div className="grid grid-cols-2">
-                      {featureLinks.map((fl) => (
-                        <Link key={fl.href} href={fl.href} className={`block px-4 py-2.5 hover:bg-white/5 transition-colors ${'highlight' in fl && fl.highlight ? 'border-t border-slate-800 mt-1 pt-3' : ''}`}>
-                          <div className={`text-sm font-medium ${'highlight' in fl && fl.highlight ? 'text-violet-400' : 'text-white'}`}>{fl.label}</div>
-                          <div className="text-xs text-slate-500">{fl.desc}</div>
-                        </Link>
-                      ))}
+                  <div className="absolute top-full left-0 mt-1 w-[640px] bg-slate-900/95 backdrop-blur-xl border border-slate-800 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2">
+                    <div className="grid grid-cols-2 gap-x-2">
+                      {/* Left column: Product features */}
+                      <div>
+                        <div className="px-4 pt-2 pb-1 text-[10px] font-bold uppercase tracking-widest text-slate-500">Product</div>
+                        {featureLinks.map((fl) => (
+                          <Link key={fl.href} href={fl.href} className="block px-4 py-2.5 hover:bg-white/5 transition-colors">
+                            <div className="text-sm font-medium text-white">{fl.label}</div>
+                            <div className="text-xs text-slate-500">{fl.desc}</div>
+                          </Link>
+                        ))}
+                      </div>
+
+                      {/* Right column: AI agents (all violet) */}
+                      <div className="bg-violet-500/[0.04] rounded-lg border border-violet-500/10">
+                        <div className="px-4 pt-2 pb-1 text-[10px] font-bold uppercase tracking-widest text-violet-400">AI Agents & Features</div>
+                        {aiLinks.map((fl) => (
+                          <Link key={fl.href} href={fl.href} className="block px-4 py-2.5 hover:bg-violet-500/10 transition-colors">
+                            <div className="text-sm font-medium text-violet-300">{fl.label}</div>
+                            <div className="text-xs text-violet-400/60">{fl.desc}</div>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Bottom: Developer tools */}
+                    <div className="border-t border-slate-800 mt-2 pt-2">
+                      <div className="px-4 pt-1 pb-1 text-[10px] font-bold uppercase tracking-widest text-slate-500">For Developers</div>
+                      <div className="grid grid-cols-2">
+                        {devLinks.map((fl) => (
+                          <Link key={fl.href} href={fl.href} className="block px-4 py-2.5 hover:bg-white/5 transition-colors">
+                            <div className="text-sm font-medium text-cyan-300">{fl.label}</div>
+                            <div className="text-xs text-slate-500">{fl.desc}</div>
+                          </Link>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 )}
@@ -114,7 +152,7 @@ export function Navbar() {
             </Link>
           </div>
 
-          {/* Mobile/tablet hamburger — shows below lg breakpoint */}
+          {/* Mobile/tablet hamburger — shows below xl breakpoint */}
           <button
             className="xl:hidden p-2 text-slate-400 hover:text-white"
             onClick={() => setMobileOpen(!mobileOpen)}
@@ -146,14 +184,41 @@ export function Navbar() {
                   </button>
                   {featuresOpen && (
                     <div className="ml-4 mt-1 space-y-0.5 border-l border-slate-800 pl-3">
+                      <div className="px-3 pt-2 pb-1 text-[10px] font-bold uppercase tracking-widest text-slate-500">Product</div>
                       {featureLinks.map((fl) => (
                         <Link
                           key={fl.href}
                           href={fl.href}
-                          className="block px-3 py-2.5 rounded-lg hover:bg-white/5 transition-colors"
+                          className="block px-3 py-2 rounded-lg hover:bg-white/5 transition-colors"
                           onClick={() => { setMobileOpen(false); setFeaturesOpen(false); }}
                         >
-                          <div className={`text-sm font-medium ${'highlight' in fl && fl.highlight ? 'text-violet-400' : 'text-slate-200'}`}>{fl.label}</div>
+                          <div className="text-sm font-medium text-slate-200">{fl.label}</div>
+                          <div className="text-xs text-slate-500">{fl.desc}</div>
+                        </Link>
+                      ))}
+
+                      <div className="px-3 pt-3 pb-1 text-[10px] font-bold uppercase tracking-widest text-violet-400">AI Agents & Features</div>
+                      {aiLinks.map((fl) => (
+                        <Link
+                          key={fl.href}
+                          href={fl.href}
+                          className="block px-3 py-2 rounded-lg hover:bg-violet-500/10 transition-colors"
+                          onClick={() => { setMobileOpen(false); setFeaturesOpen(false); }}
+                        >
+                          <div className="text-sm font-medium text-violet-300">{fl.label}</div>
+                          <div className="text-xs text-violet-400/60">{fl.desc}</div>
+                        </Link>
+                      ))}
+
+                      <div className="px-3 pt-3 pb-1 text-[10px] font-bold uppercase tracking-widest text-slate-500">For Developers</div>
+                      {devLinks.map((fl) => (
+                        <Link
+                          key={fl.href}
+                          href={fl.href}
+                          className="block px-3 py-2 rounded-lg hover:bg-white/5 transition-colors"
+                          onClick={() => { setMobileOpen(false); setFeaturesOpen(false); }}
+                        >
+                          <div className="text-sm font-medium text-cyan-300">{fl.label}</div>
                           <div className="text-xs text-slate-500">{fl.desc}</div>
                         </Link>
                       ))}

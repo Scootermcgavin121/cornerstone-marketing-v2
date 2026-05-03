@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "AI Agents for Home Builders | Cornerstone PM",
   description:
-    "5 AI agents for home builders: Foreman AI (47 skills), Blueprint AI (PDF takeoffs), Bid Import AI (parses any vendor bid), MLS Listing Agent, FAQ Chatbot. Native AI built into the platform — not bolted on.",
+    "5 AI agents for home builders: Foreman AI (47 skills), Blueprint AI (PDF takeoffs), Bid Import AI (parses any vendor bid), AI MLS Listing Generator, Support AI. Native AI built into the platform — not bolted on.",
   alternates: { canonical: "https://www.cornerstonepm.ai/ai-agents" },
 };
 
@@ -46,7 +46,7 @@ const agents = [
     badge: "Pro Plan",
   },
   {
-    name: "MLS Listing Agent",
+    name: "AI MLS Listing Generator",
     tagline: "AI Real Estate Listing Writer",
     description:
       "Claude Sonnet writes professional MLS descriptions from your live home data. Room dimensions, upgrades, community details, lot size — all pulled automatically. One click to PDF.",
@@ -62,13 +62,13 @@ const agents = [
     badge: "Builder+",
   },
   {
-    name: "FAQ Chatbot",
+    name: "Support AI",
     tagline: "Always-On Help Desk",
     description:
-      "Every feature documented, trained on Cornerstone PM. Answers buyer and team questions 24/7 so you don't have to.",
+      "Every feature, workflow, and permission documented and trained on Cornerstone PM. Answers buyer and team questions 24/7 so you don't have to.",
     icon: <MessageCircle className="w-8 h-8" />,
     color: "cyan",
-    href: "/contact",
+    href: "/support-ai",
     highlights: [
       "Every feature documented and searchable",
       "Answers in plain English",
@@ -137,20 +137,20 @@ const pricingTiers = [
   {
     name: "Starter",
     price: "$149",
-    agents: ["FAQ Chatbot"],
+    agents: ["Support AI"],
     color: "text-slate-300",
   },
   {
     name: "Builder",
     price: "$299",
-    agents: ["FAQ Chatbot", "MLS Listing Agent"],
+    agents: ["Support AI", "AI MLS Listing"],
     color: "text-emerald-400",
-    note: "Includes MLS Listing Agent",
+    note: "Includes AI MLS Listing Generator",
   },
   {
     name: "Pro",
     price: "$499",
-    agents: ["FAQ Chatbot", "MLS Listing Agent", "Foreman AI", "Blueprint AI"],
+    agents: ["Support AI", "AI MLS Listing", "Foreman AI", "Blueprint AI"],
     color: "text-amber-400",
     highlight: true,
   },
@@ -271,7 +271,7 @@ export default function AiAgentsPage() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-black text-white mb-3">AI Agents by Plan</h2>
-            <p className="text-slate-400">Every plan includes the FAQ Chatbot. MLS Listing Agent on Builder+. Foreman AI + Blueprint AI on Pro. Bid Import AI + full API automation on Pro+.</p>
+            <p className="text-slate-400">Every plan includes Support AI. AI MLS Listing Generator on Builder+. Foreman AI + Blueprint AI on Pro. Bid Import AI + full API automation on Pro+.</p>
           </div>
           <div className="rounded-2xl overflow-hidden border border-slate-800">
             {pricingTiers.map((tier, i) => (
