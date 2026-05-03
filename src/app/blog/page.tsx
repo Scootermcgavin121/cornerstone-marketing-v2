@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "migrating-from-buildertrend-to-cornerstone",
+    title: "Migrating from Buildertrend to Cornerstone PM: Step-by-Step Guide",
+    excerpt:
+      "Most production home builders can migrate from Buildertrend to Cornerstone PM in 3–5 business days. Here's the full step-by-step: data export, community setup, schedule templates, vendor migration, and team onboarding.",
+    date: "May 3, 2026",
+    readTime: "7 min read",
+    tag: "Migration Guide",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+  },
+  {
     slug: "home-builder-software-buyer-guide-2026",
     title: "Home Builder Software Buyer's Guide (2026)",
     excerpt:
