@@ -55,7 +55,7 @@ const agents = [
   {
     emoji: "💬",
     name: "Support AI",
-    tagline: "Always-On Help Desk",
+    tagline: "Instant Answers, Zero Wait Time",
     desc: "AI knowledge agent on every page. Knows every feature, workflow, and permission. Built-in documentation that actually talks back.",
     href: "/support-ai",
     color: "text-cyan-400",

@@ -63,7 +63,7 @@ const agents = [
   },
   {
     name: "Support AI",
-    tagline: "Always-On Help Desk",
+    tagline: "Instant Answers, Zero Wait Time",
     description:
       "Every feature, workflow, and permission documented and trained on Cornerstone PM. Answers buyer and team questions 24/7 so you don't have to.",
     icon: <MessageCircle className="w-8 h-8" />,
