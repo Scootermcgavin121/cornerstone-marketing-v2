@@ -5,83 +5,78 @@ import { ArrowRight } from "lucide-react";
 
 const agents = [
   {
-    emoji: "ðŸª–",
+    emoji: "🪖",
     name: "Foreman AI",
-    tagline: "Your AI Construction Agent",
-    desc: "47 purpose-built construction skills. Not a generic chatbot â€” Foreman reads AND writes your data. Parts, vendors, homes, MLS listings, exports, design center, and more.",
+    tagline: "AI Construction Agent",
+    desc: "47 purpose-built construction skills. Reads AND writes your data — parts, vendors, homes, exports.",
     href: "/foreman",
     color: "text-amber-400",
-    bg: "bg-amber-500/10",
     border: "border-amber-500/20 hover:border-amber-500/50",
     badge: "Pro",
     badgeColor: "bg-amber-500/20 text-amber-400 border-amber-500/30",
     prompts: [
-      "Scrape Home Depot for GE refrigerators and add to parts catalog",
-      "Generate an MLS listing for 1234 Oak Street",
+      "Scrape Home Depot for GE refrigerators",
+      "Generate an MLS listing for 1234 Oak St",
     ],
   },
   {
-    emoji: "ðŸ“",
+    emoji: "📐",
     name: "Blueprint AI",
     tagline: "AI Floor Plan Reader",
-    desc: "Upload a floor plan PDF. Blueprint AI extracts every room, fixture, and material scope in under 60 seconds. One click imports 134+ scopes into your budget.",
+    desc: "Upload a PDF floor plan. 134+ scopes extracted in under 60 seconds. One-click import to budget.",
     href: "/ai-takeoff",
     color: "text-violet-400",
-    bg: "bg-violet-500/10",
     border: "border-violet-500/20 hover:border-violet-500/50",
     badge: "Pro",
     badgeColor: "bg-violet-500/20 text-violet-400 border-violet-500/30",
     prompts: [
-      "Upload PDF &rarr; 22 rooms, 134 scopes extracted",
-      "One-click import to budget &amp; design center",
+      "Upload PDF → 22 rooms, 134 scopes",
+      "One-click import to design center",
     ],
   },
   {
-    emoji: "ðŸ“„",
+    emoji: "📄",
     name: "AI MLS Listing Generator",
     tagline: "AI Real Estate Listing Writer",
-    desc: "Claude Sonnet writes professional MLS descriptions from your live home data â€” room dimensions, upgrades, community info, lot size. One click to a print-ready PDF.",
+    desc: "Claude Sonnet writes professional MLS descriptions from your live home data. One click to PDF.",
     href: "/listing-sheet",
     color: "text-emerald-400",
-    bg: "bg-emerald-500/10",
     border: "border-emerald-500/20 hover:border-emerald-500/50",
     badge: "Builder+",
     badgeColor: "bg-emerald-500/20 text-emerald-400 border-emerald-500/30",
     prompts: [
-      "Generate an MLS listing for 1234 Oak Street",
-      "Emphasize the pool &amp; school district",
+      "Generate MLS listing for 1234 Oak St",
+      "Emphasize the pool & school district",
     ],
   },
   {
-    emoji: "ðŸ’¬",
+    emoji: "💬",
     name: "AI Support Agent",
-    tagline: "Instant Answers, Zero Wait Time",
-    desc: "AI knowledge agent on every page. Knows every feature, workflow, and permission. Built-in documentation that actually talks back.",
+    tagline: "Instant Answers, Zero Wait",
+    desc: "AI knowledge agent on every page. Knows every feature, workflow, and permission.",
     href: "/support-ai",
     color: "text-cyan-400",
-    bg: "bg-cyan-500/10",
     border: "border-cyan-500/20 hover:border-cyan-500/50",
     badge: "All Plans",
     badgeColor: "bg-cyan-500/20 text-cyan-400 border-cyan-500/30",
     prompts: [
-      "How do I set up a vendor in Cornerstone?",
-      "What roles have access to the options engine?",
+      "How do I set up a vendor?",
+      "What roles can edit the options engine?",
     ],
   },
   {
-    emoji: "ðŸ§ ",
+    emoji: "🧠",
     name: "Bid Import AI",
-    tagline: "AI-Powered Vendor Bid Parser",
-    desc: "Upload vendor bids in any format \u2014 Excel, PDFs, scans, even photos of handwritten quotes. AI extracts every line item, fuzzy-matches your parts catalog and scopes, and imports as a Bid, Vendor Pricing, or Takeoff in one click.",
+    tagline: "AI-Powered Bid Parser",
+    desc: "Upload vendor bids in any format — Excel, PDF, scans, even photos of handwritten quotes.",
     href: "/bid-import-ai",
     color: "text-orange-400",
-    bg: "bg-orange-500/10",
     border: "border-orange-500/20 hover:border-orange-500/50",
     badge: "Pro+",
     badgeColor: "bg-orange-500/20 text-orange-400 border-orange-500/30",
     prompts: [
-      "Upload Tibbetts Lumber PDF &rarr; 18 line items, 16 matched at 90%+",
-      "Import handwritten plumber quote &rarr; bid created in 30 seconds",
+      "Upload Tibbetts Lumber PDF → 18 lines",
+      "Photo of handwritten quote → bid in 30s",
     ],
   },
 ];
@@ -104,11 +99,12 @@ export function AgentsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5 mb-12">
           {agents.map((agent) => (
-            <div
+            <Link
               key={agent.name}
-              className={`group relative p-7 rounded-2xl bg-slate-900/60 border ${agent.border} transition-all duration-300 hover:-translate-y-0.5 flex flex-col`}
+              href={agent.href}
+              className={`group relative p-6 rounded-2xl bg-slate-900/60 border ${agent.border} transition-all duration-300 hover:-translate-y-0.5 flex flex-col`}
             >
               <div className="flex items-start justify-between mb-4">
                 <span className="text-4xl">{agent.emoji}</span>
@@ -116,26 +112,23 @@ export function AgentsSection() {
                   {agent.badge}
                 </span>
               </div>
-              <h3 className={`text-xl font-black ${agent.color} mb-1`}>{agent.name}</h3>
-              <p className="text-white font-semibold text-sm mb-3">{agent.tagline}</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-5 flex-1">{agent.desc}</p>
+              <h3 className={`text-lg font-black ${agent.color} mb-1 leading-tight`}>{agent.name}</h3>
+              <p className="text-white font-semibold text-xs mb-3">{agent.tagline}</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4 flex-1">{agent.desc}</p>
 
-              <div className="space-y-2 mb-6">
+              <div className="space-y-1.5 mb-4">
                 {agent.prompts.map((p, i) => (
-                  <div key={i} className="flex items-start gap-2 text-xs">
-                    <span className={`font-bold ${agent.color} flex-shrink-0`}>&rsaquo;</span>
-                    <span className="text-slate-400 italic" dangerouslySetInnerHTML={{ __html: `&ldquo;${p}&rdquo;` }} />
+                  <div key={i} className="flex items-start gap-1.5 text-xs">
+                    <span className={`font-bold ${agent.color} flex-shrink-0`}>›</span>
+                    <span className="text-slate-500 italic">&ldquo;{p}&rdquo;</span>
                   </div>
                 ))}
               </div>
 
-              <Link
-                href={agent.href}
-                className={`flex items-center gap-1.5 text-sm font-semibold ${agent.color} opacity-0 group-hover:opacity-100 transition-opacity`}
-              >
-                Learn more <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
+              <div className={`flex items-center gap-1.5 text-xs font-semibold ${agent.color} opacity-60 group-hover:opacity-100 transition-opacity mt-auto`}>
+                Learn more <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+              </div>
+            </Link>
           ))}
         </div>
 
