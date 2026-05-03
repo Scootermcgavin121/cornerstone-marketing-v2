@@ -2,6 +2,7 @@ import { Check } from "lucide-react";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { FAQSection, type FAQItem } from "@/components/FAQSection";
+import { VideoPlayer } from "@/components/VideoPlayer";
 
 export const metadata = {
   title: "Home Builder Purchasing & Bid Management Software | Cornerstone PM",
@@ -124,6 +125,13 @@ export default function PurchasingPage() {
             <Link href="/beta" className="px-8 py-4 rounded-full bg-emerald-400 text-slate-900 font-bold text-lg hover:bg-emerald-300 transition-all duration-200 shadow-lg shadow-emerald-500/30 hover:-translate-y-0.5">Request Early Access &rarr;</Link>
             <Link href="/features" className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200">See All Features</Link>
           </div>
+        </div>
+      </section>
+
+      {/* Workflow video */}
+      <section className="py-12 px-4">
+        <div className="max-w-5xl mx-auto">
+          <VideoPlayer src="/video/purchasing-workflow.mp4" label="Live Bid Workflow Demo" />
         </div>
       </section>
 
