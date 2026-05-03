@@ -5,14 +5,18 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 
-// Top-nav links — keep this list short. Anything more specific lives
-// inside the Features dropdown so the navbar never wraps.
+// Top-nav links — full set. whitespace-nowrap on each link prevents
+// mid-word breaks; xl breakpoint (1280px) avoids cramping at smaller widths.
 const navLinks = [
+  { label: "Home", href: "/", hasDropdown: false },
   { label: "Features", href: "/features", hasDropdown: true },
-  { label: "Pricing", href: "/#pricing", hasDropdown: false },
+  { label: "Sales Pipeline", href: "/sales", hasDropdown: false },
   { label: "AI Agents", href: "/ai-agents", hasDropdown: false },
+  { label: "API Access", href: "/api-access", hasDropdown: false },
   { label: "Developers", href: "/api-docs", hasDropdown: false },
+  { label: "Compare", href: "/compare", hasDropdown: false },
   { label: "Blog", href: "/blog", hasDropdown: false },
+  { label: "Pricing", href: "/#pricing", hasDropdown: false },
   { label: "Contact", href: "/contact", hasDropdown: false },
 ];
 
@@ -53,18 +57,18 @@ export function Navbar() {
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-32">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
-          <Link href="/" className="flex items-center group -my-2">
+          <Link href="/" className="flex items-center group -my-1">
             <img
               src="/logo-new.png"
               alt="Cornerstone PM"
-              className="h-24 sm:h-28 lg:h-32 w-auto object-contain group-hover:opacity-90 transition-opacity duration-200"
+              className="h-20 sm:h-24 w-auto object-contain group-hover:opacity-90 transition-opacity duration-200"
             />
           </Link>
 
-          {/* Desktop links — only render at lg+ to avoid wrapping at narrow widths */}
-          <div className="hidden lg:flex items-center space-x-1">
+          {/* Desktop links — render at xl+ (1280px) so 10 links don't cram into a 1024 viewport */}
+          <div className="hidden xl:flex items-center space-x-1">
             {navLinks.map((link) => (
               <div key={link.href} className="relative group">
                 <Link
@@ -92,8 +96,8 @@ export function Navbar() {
             ))}
           </div>
 
-          {/* CTA — same lg breakpoint as desktop links */}
-          <div className="hidden lg:flex items-center space-x-3">
+          {/* CTA — same xl breakpoint as desktop links */}
+          <div className="hidden xl:flex items-center space-x-3">
             <Link
               href="https://app.cornerstonepm.ai/login"
               className="px-3 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors duration-200 whitespace-nowrap"
@@ -111,7 +115,7 @@ export function Navbar() {
 
           {/* Mobile/tablet hamburger — shows below lg breakpoint */}
           <button
-            className="lg:hidden p-2 text-slate-400 hover:text-white"
+            className="xl:hidden p-2 text-slate-400 hover:text-white"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle navigation menu"
           >
@@ -122,7 +126,7 @@ export function Navbar() {
 
       {/* Mobile/tablet menu */}
       {mobileOpen && (
-        <div className="lg:hidden bg-slate-950/98 backdrop-blur-xl border-b border-slate-800 max-h-[80vh] overflow-y-auto">
+        <div className="xl:hidden bg-slate-950/98 backdrop-blur-xl border-b border-slate-800 max-h-[80vh] overflow-y-auto">
           <div className="px-4 py-4 space-y-1">
             {navLinks.map((link) =>
               link.hasDropdown ? (
