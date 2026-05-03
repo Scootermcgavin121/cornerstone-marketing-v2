@@ -5,17 +5,15 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 
+// Top-nav links — keep this list short. Anything more specific lives
+// inside the Features dropdown so the navbar never wraps.
 const navLinks = [
-  { label: "Home", href: "/", hasDropdown: false },
   { label: "Features", href: "/features", hasDropdown: true },
-  { label: "Sales Pipeline", href: "/sales", hasDropdown: false },
+  { label: "Pricing", href: "/#pricing", hasDropdown: false },
   { label: "AI Agents", href: "/ai-agents", hasDropdown: false },
-  { label: "API Access", href: "/api-access", hasDropdown: false },
   { label: "Developers", href: "/api-docs", hasDropdown: false },
-  { label: "Compare", href: "/compare" },
-  { label: "Blog", href: "/blog" },
-  { label: "Pricing", href: "/#pricing" },
-  { label: "Contact", href: "/contact" },
+  { label: "Blog", href: "/blog", hasDropdown: false },
+  { label: "Contact", href: "/contact", hasDropdown: false },
 ];
 
 const featureLinks = [
@@ -65,13 +63,13 @@ export function Navbar() {
             />
           </Link>
 
-          {/* Desktop links */}
-          <div className="hidden md:flex items-center space-x-1">
+          {/* Desktop links — only render at lg+ to avoid wrapping at narrow widths */}
+          <div className="hidden lg:flex items-center space-x-1">
             {navLinks.map((link) => (
               <div key={link.href} className="relative group">
                 <Link
                   href={link.href}
-                  className="px-4 py-2 text-sm text-slate-400 hover:text-white rounded-lg hover:bg-white/5 transition-all duration-200 inline-flex items-center gap-1"
+                  className="px-3 py-2 text-sm text-slate-400 hover:text-white rounded-lg hover:bg-white/5 transition-all duration-200 inline-flex items-center gap-1 whitespace-nowrap"
                 >
                   {link.label}
                   {link.hasDropdown && (
@@ -94,11 +92,11 @@ export function Navbar() {
             ))}
           </div>
 
-          {/* CTA */}
-          <div className="hidden md:flex items-center space-x-3">
+          {/* CTA — same lg breakpoint as desktop links */}
+          <div className="hidden lg:flex items-center space-x-3">
             <Link
               href="https://app.cornerstonepm.ai/login"
-              className="px-4 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors duration-200"
+              className="px-3 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors duration-200 whitespace-nowrap"
             >
               Sign In
             </Link>
@@ -106,23 +104,24 @@ export function Navbar() {
               href="/beta"
               className="px-5 py-3 text-sm font-semibold rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 transition-all duration-200 shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 whitespace-nowrap leading-tight text-center"
             >
-              Request Beta Access
+              Get Beta Access
             </Link>
           </div>
 
-          {/* Mobile hamburger */}
+          {/* Mobile/tablet hamburger — shows below lg breakpoint */}
           <button
-            className="md:hidden p-2 text-slate-400 hover:text-white"
+            className="lg:hidden p-2 text-slate-400 hover:text-white"
             onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label="Toggle navigation menu"
           >
             {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile/tablet menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-slate-950/98 backdrop-blur-xl border-b border-slate-800 max-h-[80vh] overflow-y-auto">
+        <div className="lg:hidden bg-slate-950/98 backdrop-blur-xl border-b border-slate-800 max-h-[80vh] overflow-y-auto">
           <div className="px-4 py-4 space-y-1">
             {navLinks.map((link) =>
               link.hasDropdown ? (
