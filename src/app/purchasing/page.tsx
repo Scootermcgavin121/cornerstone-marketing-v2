@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { FAQSection, type FAQItem } from "@/components/FAQSection";
 import { VideoPlayer } from "@/components/VideoPlayer";
+import { DataOwnership } from "@/components/DataOwnership";
 
 export const metadata = {
   title: "Home Builder Purchasing & Bid Management Software | Cornerstone PM",
@@ -176,6 +177,8 @@ export default function PurchasingPage() {
           </div>
         </div>
       </section>
+
+      <DataOwnership />
 
       <FAQSection
         title="Home Builder Purchasing FAQ"

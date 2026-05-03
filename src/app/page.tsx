@@ -18,6 +18,7 @@ import { VideoSection } from "@/components/VideoSection";
 import { AiTakeoffSection } from "@/components/AiTakeoffSection";
 import { AgentsSection } from "@/components/AgentsSection";
 import { ModulesGrid } from "@/components/ModulesGrid";
+import { DataOwnership } from "@/components/DataOwnership";
 import { PricingSection } from "@/components/PricingSection";
 import { CTASection } from "@/components/CTASection";
 import { Footer } from "@/components/Footer";
@@ -32,6 +33,7 @@ export default function Home() {
       <AgentsSection />
       <AiTakeoffSection />
       <ModulesGrid />
+      <DataOwnership />
       <PricingSection />
       <CTASection />
       <Footer />
