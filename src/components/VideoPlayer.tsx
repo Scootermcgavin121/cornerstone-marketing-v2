@@ -1,7 +1,27 @@
 "use client";
 import React, { useRef, useState, useEffect, useCallback } from "react";
 
-export function VideoPlayer({ src, label }: { src: string; label?: string }) {
+/**
+ * VideoPlayer
+ *
+ * Optional `endCardHref` + `endCardStartSec` add a click-through zone that
+ * activates during the last few seconds of the video (where a painted CTA
+ * button is visible in the frame). The zone is positioned over the painted
+ * button; clicks navigate to endCardHref. Works with looping videos because
+ * we check currentTime relative to duration on every timeupdate.
+ */
+export function VideoPlayer({
+  src,
+  label,
+  endCardHref,
+  endCardStartSec,
+}: {
+  src: string;
+  label?: string;
+  endCardHref?: string;
+  /** Seconds before end of video where the end-card CTA becomes active. Default 5. */
+  endCardStartSec?: number;
+}) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const hideTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -10,6 +30,7 @@ export function VideoPlayer({ src, label }: { src: string; label?: string }) {
   const [progress, setProgress] = useState(0);
   const [duration, setDuration] = useState(0);
   const [controlsVisible, setControlsVisible] = useState(false);
+  const [endCardActive, setEndCardActive] = useState(false);
 
   // Show controls then auto-hide after 2.5s of inactivity
   const revealControls = useCallback(() => {
@@ -29,7 +50,13 @@ export function VideoPlayer({ src, label }: { src: string; label?: string }) {
   useEffect(() => {
     const v = videoRef.current;
     if (!v) return;
-    const onTime = () => setProgress(v.currentTime);
+    const endCardWindow = endCardStartSec ?? 5;
+    const onTime = () => {
+      setProgress(v.currentTime);
+      if (endCardHref && v.duration && !isNaN(v.duration)) {
+        setEndCardActive(v.currentTime >= v.duration - endCardWindow);
+      }
+    };
     const onMeta = () => setDuration(v.duration);
     const onDurationChange = () => setDuration(v.duration);
     const onPlay = () => setPlaying(true);
@@ -150,6 +177,28 @@ export function VideoPlayer({ src, label }: { src: string; label?: string }) {
         className="w-full cursor-pointer"
         onClick={togglePlay}
       />
+
+      {/* End-card click-through zone — only active in the final seconds where
+          the painted CTA button is visible in the video frame. */}
+      {endCardHref && (
+        <a
+          href={endCardHref}
+          aria-label="Request Early Access"
+          onClick={(e) => e.stopPropagation()}
+          className={`absolute left-1/2 -translate-x-1/2 z-20 rounded-full transition-all duration-300 ${
+            endCardActive
+              ? "opacity-100 pointer-events-auto cursor-pointer hover:ring-4 hover:ring-amber-400/40"
+              : "opacity-0 pointer-events-none"
+          }`}
+          style={{
+            // Positioned over the painted "Request Early Access" button in
+            // sale-workflow.mp4 end card (~70% down, centered, ~28% wide).
+            top: "68%",
+            width: "28%",
+            height: "9%",
+          }}
+        />
+      )}
 
       {/* Controls overlay */}
       <div

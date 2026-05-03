@@ -122,22 +122,12 @@ export default function SalesPage() {
       {/* Workflow video */}
       <section className="py-12 px-4">
         <div className="max-w-5xl mx-auto">
-          <VideoPlayer src="/video/sale-workflow.mp4" label="Live Workflow Demo" />
-          <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
-            <Link
-              href="/beta"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-base shadow-lg shadow-amber-500/30 hover:shadow-amber-500/50 transition-all"
-            >
-              Request Early Access
-              <span aria-hidden>→</span>
-            </Link>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl border border-slate-700 hover:border-cyan-500/50 text-slate-200 hover:text-white font-semibold text-sm transition-all"
-            >
-              Talk to us
-            </Link>
-          </div>
+          <VideoPlayer
+            src="/video/sale-workflow.mp4"
+            label="Live Workflow Demo"
+            endCardHref="/beta"
+            endCardStartSec={5}
+          />
         </div>
       </section>
 
