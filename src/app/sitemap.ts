@@ -47,6 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/home-builder-software-buyer-guide-2026", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/migrating-from-buildertrend-to-cornerstone", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/newstar-implementation-cost-breakdown", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/production-builder-vs-custom-builder-software", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({

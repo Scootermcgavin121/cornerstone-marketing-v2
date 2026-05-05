@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "production-builder-vs-custom-builder-software",
+    title: "Production Builder vs Custom Builder Software: Which Do You Need?",
+    excerpt:
+      "Production builder software and custom builder software are built for opposite workflows. If you're a production builder on a custom builder tool, the mismatch is the problem — not your process. Here's how to tell which category fits your business and what to look for when evaluating platforms.",
+    date: "May 5, 2026",
+    readTime: "6 min read",
+    tag: "Platform Fit",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+  },
+  {
     slug: "newstar-implementation-cost-breakdown",
     title: "NEWSTAR Implementation Cost Breakdown for Small-to-Mid Builders",
     excerpt:
