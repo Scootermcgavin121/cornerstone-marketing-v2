@@ -68,8 +68,8 @@
       "wordCount": 800,
       "heroImage": "/blog/production-builder-software.png",
       "heroImageAlt": "Production home builder software showing a multi-community options pricing engine",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "b00234e"
     },
     {
       "slug": "buildertrend-vs-cornerstone-feature-comparison",
