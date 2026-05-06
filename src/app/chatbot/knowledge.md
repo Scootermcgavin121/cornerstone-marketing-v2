@@ -1,7 +1,7 @@
 ## Platform Overview (Current Stats)
 - 130+ database tables and growing
 - 47+ Foreman AI skills
-- 14 webhook event types
+- 20 webhook event types (incl. real-time vendor cascade notifications you can pipe to Twilio/Bland/Retell for SMS or voice)
 - 60+ external REST API endpoints
 - 4 built-in AI features: Foreman AI (47 skills), Blueprint AI, MLS Listing Agent, AI Support Agent
 - 4 pricing tiers: Starter $149, Builder $299, Pro $499, Pro+ $599 
@@ -180,7 +180,8 @@ Full end-to-end bidding from request → vendor submission → review → award 
 
 ### Webhooks
 - Admin > Webhooks
-- 14 real-time event types (see full list in API section)
+- 20 real-time event types (see full list in API section)
+- Includes the **smart cascade vendor notifications** (`vendor.notification.advance`, `vendor.notification.reminder`, `vendor.notification.moved_earlier`, `vendor.notification.postponed`) — same trigger logic as our cascade emails, so you can route them to Twilio for SMS, Bland for voice, Retell for AI calling, etc.
 - HMAC SHA-256 signature verification via X-Webhook-Signature header
 - Webhook logs with HTTP status codes
 - 10 second timeout, auto-disable after 50 consecutive failures
@@ -362,7 +363,7 @@ GPT-4o-mini chatbot on every page. Knows every feature, workflow, and role. Avai
 - **Starter $149/mo**: Construction Scheduling, Gantt, 17 templates, vendor assignment, permitting, buyer portal, AI Support Agent. Up to 500 active homes, 1,000 users/vendors.
 - **Builder $299/mo**: Everything in Starter + Sales Pipeline + Purchasing & Budgets + Design Center (no AI agents)
 - **Pro $499/mo**: Everything in Builder + Foreman AI (47 skills, Sonnet, 1,000 msg/mo) + Blueprint AI (25 takeoffs/mo) + MLS Listing Agent + advanced analytics. Up to 1,000 active homes.
-- **Pro+ $599/mo**: Everything in Pro + REST API (58 endpoints, scoped keys), automated bidding pipeline (7-wave), webhooks (14 event types), Opus model, 5,000 AI messages/mo, Blueprint AI (25/mo), SSO, dedicated SLA.
+- **Pro+ $599/mo**: Everything in Pro + REST API (58 endpoints, scoped keys), automated bidding pipeline (7-wave), webhooks (20 event types incl. cascade vendor notifications routable to Twilio/Bland/Retell), Opus model, 5,000 AI messages/mo, Blueprint AI (25/mo), SSO, dedicated SLA.
 - **Enterprise**: Custom pricing — Opus model, 5,000 msg/mo, Blueprint AI (25/mo), dedicated onboarding, SLA
 - **BYOK Add-on +$199/mo**: Bring Your Own API Key, unlimited messages
 - **BYOA Add-on +$100/mo**: Bring Your Own Agent — full REST API access to Cornerstone data. Connect external agents, automate bid ingestion from emails, build custom workflows. Pro plan or above required., any model
