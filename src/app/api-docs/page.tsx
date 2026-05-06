@@ -25,7 +25,7 @@ const endpointGroups = [
       { method: "POST", path: "/api/ext/vendors", desc: "Create a vendor", detail: "companyName, scope, scopes[], contactName, email, phone, address, notes" },
       { method: "GET", path: "/api/ext/vendors/:id", desc: "Get single vendor", detail: "Full record with outreach history" },
       { method: "PATCH", path: "/api/ext/vendors/:id", desc: "Update vendor", detail: "name, scope, contactName, phone, email, address, notes, active, outreachStatus, leadTimeDays, isTaxable, qboId, externalId" },
-      { method: "DELETE", path: "/api/ext/vendors/:id", desc: "Deactivate vendor", detail: "Soft delete — record preserved" },
+      { method: "DELETE", path: "/api/ext/vendors/:id", desc: "Deactivate vendor", detail: "Soft delete - record preserved" },
     ],
   },
   {
@@ -130,7 +130,7 @@ const endpointGroups = [
       { method: "POST", path: "/api/ext/parts", desc: "Create part", detail: "name, scope, unitCost, unit, vendorId, notes" },
       { method: "GET", path: "/api/ext/parts/:id", desc: "Get single part", detail: "Full part record with vendor and scope" },
       { method: "PATCH", path: "/api/ext/parts/:id", desc: "Update part", detail: "name, unitCost, unit, vendorId, notes, active" },
-      { method: "DELETE", path: "/api/ext/parts/:id", desc: "Soft delete part", detail: "Marks part inactive — record preserved" },
+      { method: "DELETE", path: "/api/ext/parts/:id", desc: "Soft delete part", detail: "Marks part inactive - record preserved" },
     ],
   },
   {
@@ -284,7 +284,7 @@ const codeExamples = [
 ];
 
 const integrations = [
-  { emoji: "🪖", title: "Built for AI Agents", desc: "Foreman AI uses this API internally with 37+ skills. Any AI agent — LangChain, AutoGen, Claude, GPT-4o — can connect via Bearer token." },
+  { emoji: "🪖", title: "Built for AI Agents", desc: "Foreman AI uses this API internally with 47 skills. Any AI agent - LangChain, AutoGen, Claude, GPT-4o - can connect via Bearer token." },
   { emoji: "📊", title: "QuickBooks Ready", desc: "qboId fields on vendors, homes, POs, and communities for seamless QuickBooks sync. Keep your books without double entry." },
   { emoji: "⚡", title: "Zapier Compatible", desc: "Standard REST endpoints work with any Zapier webhook trigger or action. Connect to 5,000+ apps without writing code." },
   { emoji: "📞", title: "Automated Bidding Pipeline", desc: "AI voice agent calls vendors, API creates records, vendor portal collects bids, you compare and award. Zero manual steps." },
@@ -543,7 +543,7 @@ export default function ApiDocsPage() {
                 "Scoped API keys per integration",
                 "14 webhook event types with HMAC signing",
                 "100 req/min, 10,000 req/day rate limits",
-                "Foreman AI (37+ skills, Sonnet, 5,000 msg/mo)",
+                "Foreman AI (47 skills, Sonnet, 5,000 msg/mo)",
                 "Blueprint AI (25 takeoffs/mo)",
                 "Automated 7-wave bidding pipeline",
                 "Dedicated onboarding & SLA",

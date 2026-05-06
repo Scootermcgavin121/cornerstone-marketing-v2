@@ -246,7 +246,7 @@ Webhooks:
 
 **Rate Limits:** 100 req/min per key, 10,000 req/day per org
 
-**Integrations:** Foreman AI (37+ skills, uses this API internally), QuickBooks (qboId fields), Zapier (REST webhooks), Automated Bidding Pipeline
+**Integrations:** Foreman AI (47 skills, uses this API internally), QuickBooks (qboId fields), Zapier (REST webhooks), Automated Bidding Pipeline
 
 **Pricing:** Pro+ plan only — /mo
 
