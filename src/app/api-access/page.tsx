@@ -68,8 +68,8 @@ const endpoints = [
     color: "text-pink-400",
     bg: "bg-pink-500/10",
     border: "border-pink-500/30",
-    label: "Trigger SMS to Subs on Schedule Updates",
-    desc: "Update a construction schedule task. Webhook fires with the assigned sub's phone, the new dates, and the schedule note — wire it to Twilio, Bland, or Retell to text (or auto-call) the sub the moment a task changes. Your agent reschedules a framing crew, the framer gets a text 2 seconds later.",
+    label: "Reach the Trades That Don't Read Email",
+    desc: "Framers, drywallers, masons, painters — they don't check their inbox. They check their texts. Every schedule task update fires a webhook with the assigned sub's phone, dates, and notes — wire it to Twilio, Bland, or Retell to text (or auto-call) the sub the moment something changes. Email-only subs get the email, text-only subs get the text. Per-vendor preference, no missed updates.",
     example: `// 1. Agent updates the task
 PATCH /api/ext/tasks/t_abc123
 {
@@ -155,9 +155,9 @@ export default function ApiAccessPage() {
             Your AI agent handles<br />
             <span className="text-cyan-400">the phone calls.</span>
           </h1>
-          <p className="text-2xl text-slate-300 font-semibold mb-4">Cornerstone fires the webhook. Twilio, Bland, or Retell text your subs the rest.</p>
+          <p className="text-2xl text-slate-300 font-semibold mb-4">And texts the trades that don&apos;t read email.</p>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
-            REST API + webhooks that let any AI agent run the full subcontractor lifecycle &mdash; cold-call vendors, send bid requests, and trigger schedule-update texts to assigned subs the moment a task changes. Bring your own SMS or voice provider (Twilio / Bland / Retell). No lock-in. No manual data entry.
+            REST API + webhooks that let any AI agent run the full subcontractor lifecycle &mdash; cold-call vendors, send bid requests, and reach the framers, drywallers, and masons who never open their inbox. Cornerstone fires the webhook the moment a task changes; you wire it to Twilio, Bland, or Retell to text or auto-call. Bring your own provider. No lock-in.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
             <Link
