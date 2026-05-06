@@ -12,7 +12,7 @@ export const metadata = {
 };
 
 const comparisonRows = [
-  { feature: "Built for production home builders", cornerstone: true, buildertrend: false, note: "Buildertrend is built for custom builders & remodelers." },
+  { feature: "Built specifically for production home builders", cornerstone: true, buildertrend: false, note: "Both serve home builders, but Buildertrend is purpose-built for custom builders & remodelers; Cornerstone is purpose-built for production (tract/spec) builders." },
   { feature: "Native AI agents", cornerstone: true, buildertrend: false, note: "5 native AI agents including Foreman AI (47 skills) and Blueprint AI. Buildertrend has no native AI agents." },
   { feature: "AI floor plan takeoffs (Blueprint AI)", cornerstone: true, buildertrend: false, note: "PDF blueprint to material takeoff in under 60 seconds." },
   { feature: "Structural options engine", cornerstone: true, buildertrend: false, note: "Pre-sale options pricing matrix per floorplan." },

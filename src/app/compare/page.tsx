@@ -23,7 +23,7 @@ const rows: { category: string; features: { label: string; values: CellValue[] }
       { label: "Monthly pricing (no enterprise contract)", values: [YES, NO, YES, YES] },
       { label: "Setup cost", values: ["Free beta", "$25,000+", "$0", "$0"] },
       { label: "Implementation time", values: ["Days", "6-12 months", "Weeks", "Weeks"] },
-      { label: "Built for production home builders", values: [YES, YES, PARTIAL, PARTIAL] },
+      { label: "Purpose-built for production home builders (vs. custom/remodel)", values: [YES, YES, PARTIAL, PARTIAL] },
       { label: "Starting price", values: ["$149/mo", "$500+/mo", "$499/mo", "$399/mo"] },
     ],
   },
