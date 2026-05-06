@@ -59,7 +59,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Is the API really included?",
-    a: "The REST API (59 endpoints, 22 webhook events, scoped Bearer-token auth, public docs) is included on the Pro+ plan at $599/mo. BYOA &mdash; bringing your own Claude or ChatGPT agent against live builder data &mdash; is also included on Pro+.",
+    a: "The REST API (59 endpoints, 30 webhook events, scoped Bearer-token auth, public docs) is included on the Pro+ plan at $599/mo. BYOA &mdash; bringing your own Claude or ChatGPT agent against live builder data &mdash; is also included on Pro+.",
   },
 ];
 
@@ -137,7 +137,7 @@ export default function BuildertrendAlternativePage() {
             {[
               { title: "Production workflows native", desc: "Lots, models, options, plan repeats, design center, draws &mdash; first-class concepts, not workarounds. Buildertrend treats every job as one-off." },
               { title: "AI built in", desc: "Foreman AI (47 skills) and Blueprint AI ship with the platform. No bolt-on plugins, no third-party AI subscriptions, no setup." },
-              { title: "REST API + BYOA", desc: "59 endpoints, 22 webhook events, scoped auth, public docs. Bring your own Claude or ChatGPT agent against your live data." },
+              { title: "REST API + BYOA", desc: "59 endpoints, 30 webhook events, scoped auth, public docs. Bring your own Claude or ChatGPT agent against your live data." },
             ].map((card) => (
               <div key={card.title} className="p-6 rounded-2xl border border-slate-800 bg-slate-900/40">
                 <div className="text-cyan-400 font-bold mb-3">{card.title}</div>

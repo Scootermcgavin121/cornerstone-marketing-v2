@@ -39,7 +39,7 @@ export function StructuredData() {
           "Homeowner portal with milestones and photo uploads",
           "Permit gate system and permitting pipeline tracker",
           "Vendor self-registration portal",
-          "REST API with 59 endpoints and 22 webhook event types",
+          "REST API with 59 endpoints and 30 webhook event types",
           "Multi-community and multi-floorplan management",
           "AI Support Agent — instant answers, every feature documented",
           "Warranty tracking and 2-year warranty management",

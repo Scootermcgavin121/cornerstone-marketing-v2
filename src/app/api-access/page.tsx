@@ -72,6 +72,7 @@ PATCH /api/ext/tasks/t_abc123
   },
   {
     method: "WEBHOOK",
+    group: "Communication",
     path: "message.sent",
     color: "text-blue-400",
     bg: "bg-blue-500/10",
@@ -108,6 +109,7 @@ PATCH /api/ext/tasks/t_abc123
   },
   {
     method: "WEBHOOK",
+    group: "Construction",
     path: "milestone.completed",
     color: "text-violet-400",
     bg: "bg-violet-500/10",
@@ -134,6 +136,7 @@ PATCH /api/ext/tasks/t_abc123
   },
   {
     method: "WEBHOOK",
+    group: "Vendor Notifications",
     path: "vendor.notification.advance",
     color: "text-cyan-400",
     bg: "bg-cyan-500/10",
@@ -168,6 +171,7 @@ PATCH /api/ext/tasks/t_abc123
   },
   {
     method: "WEBHOOK",
+    group: "Vendor Notifications",
     path: "vendor.notification.reminder",
     color: "text-red-400",
     bg: "bg-red-500/10",
@@ -201,6 +205,7 @@ PATCH /api/ext/tasks/t_abc123
   },
   {
     method: "WEBHOOK",
+    group: "Vendor Notifications",
     path: "vendor.notification.moved_earlier",
     color: "text-amber-400",
     bg: "bg-amber-500/10",
@@ -233,6 +238,7 @@ PATCH /api/ext/tasks/t_abc123
   },
   {
     method: "WEBHOOK",
+    group: "Vendor Notifications",
     path: "vendor.notification.postponed",
     color: "text-purple-400",
     bg: "bg-purple-500/10",
@@ -262,6 +268,274 @@ PATCH /api/ext/tasks/t_abc123
 // "📆 Date pushed back: Rough Framing at
 //  123 Oak moved May 12 → May 19.
 //  cornerstonepm.ai/homes/..."`,
+  },
+  {
+    method: "WEBHOOK",
+    group: "Vendor & Bidding",
+    path: "vendor.invited",
+    color: "text-green-400",
+    bg: "bg-green-500/10",
+    border: "border-green-500/30",
+    label: "Vendor Onboard via Text",
+    desc: "Fires when a vendor is invited to onboard with a magic link. Includes their phone number and the one-tap setup URL — text them directly instead of hoping they check email. Link expires in 24 hours.",
+    example: `// Webhook fires → your Twilio handler
+{
+  "event": "vendor.invited",
+  "data": {
+    "vendor": {
+      "companyName": "ABC Framing LLC",
+      "contactName": "Mike Johnson",
+      "cellPhone": "+15550192",
+      "officePhone": "+15550193",
+      "scope": "Framing"
+    },
+    "invite": {
+      "resetUrl": "https://app.cornerstonepm.ai/reset-password?token=abc123...",
+      "loginUrl": "https://app.cornerstonepm.ai/login",
+      "expiresAt": "2026-05-07T14:30:00.000Z"
+    },
+    "builder": { "name": "Scott Alan Homes" }
+  }
+}
+
+// Your SMS:
+// "👋 Scott Alan Homes invited you to their
+//  vendor portal. Tap to set up your account:
+//  cornerstonepm.ai/reset-password?token=abc..."`,
+  },
+  {
+    method: "WEBHOOK",
+    group: "Vendor & Bidding",
+    path: "bid_request.sent",
+    color: "text-orange-400",
+    bg: "bg-orange-500/10",
+    border: "border-orange-500/30",
+    label: "Bid Request via Text",
+    desc: "Fires per-vendor when a bid request goes out. Includes the unique bid portal link and Excel template URL. Text the sub their bid link — they tap once and they're looking at the plans.",
+    example: `// Webhook fires → your Twilio handler
+{
+  "event": "bid_request.sent",
+  "data": {
+    "bidRequest": {
+      "title": "RFB -- Riverside 2400 -- May 6, 2026",
+      "scope": "Framing",
+      "deadline": "2026-05-15T00:00:00.000Z",
+      "floorplans": ["Riverside 2400", "Oakmont 1800"],
+      "templateDownloadUrl": "https://blob.vercel-storage.com/bid-templates/..."
+    },
+    "vendor": {
+      "companyName": "ABC Framing LLC",
+      "cellPhone": "+15550192"
+    },
+    "portalUrl": "https://app.cornerstonepm.ai/vendor-portal/bid/abc123...",
+    "builder": { "name": "Scott Alan Homes" }
+  }
+}
+
+// Your SMS:
+// "📋 New bid request from Scott Alan Homes
+//  Framing — Riverside 2400, Oakmont 1800
+//  Due: May 15. Submit your bid:
+//  cornerstonepm.ai/vendor-portal/bid/abc123..."`,
+  },
+  {
+    method: "WEBHOOK",
+    group: "Sales Pipeline",
+    path: "lead.created",
+    color: "text-lime-400",
+    bg: "bg-lime-500/10",
+    border: "border-lime-500/30",
+    label: "New Lead Captured",
+    desc: "Fires when a new lead enters the pipeline — from your website, a realtor, or manual entry. Push to your CRM, text your sales team, or trigger an automated follow-up call.",
+    example: `// Webhook fires → your CRM / sales team Slack
+{
+  "event": "lead.created",
+  "data": {
+    "lead": {
+      "name": "John Smith",
+      "email": "john@email.com",
+      "phone": "+15551234",
+      "preferredLocation": "Riverside Estates",
+      "desiredSqFt": "2400",
+      "leadSource": "Website",
+      "leadScore": 4,
+      "needs": ["3-car garage", "first floor master"],
+      "status": "NEW"
+    }
+  }
+}
+
+// Your SMS to sales team:
+// "🔥 New lead: John Smith (score: 4/5)
+//  Looking for 2400 sqft in Riverside Estates
+//  Phone: 555-1234 — follow up NOW"`,
+  },
+  {
+    method: "WEBHOOK",
+    group: "Sales Pipeline",
+    path: "lead.converted",
+    color: "text-teal-400",
+    bg: "bg-teal-500/10",
+    border: "border-teal-500/30",
+    label: "Lead → Buyer Conversion",
+    desc: "Fires when a lead converts to a buyer — the moment a prospect becomes a customer. Trigger a welcome text, update your CRM, or alert the sales manager.",
+    example: `// Webhook fires → your CRM + Twilio
+{
+  "event": "lead.converted",
+  "data": {
+    "lead": {
+      "name": "John Smith",
+      "email": "john@email.com",
+      "phone": "+15551234",
+      "leadSource": "Website",
+      "status": "WON",
+      "convertedAt": "2026-05-06T14:30:00.000Z"
+    },
+    "buyer": {
+      "id": "buy_abc123",
+      "name": "John Smith",
+      "email": "john@email.com",
+      "phone": "+15551234"
+    }
+  }
+}
+
+// Your SMS to buyer:
+// "🎉 Welcome to the Scott Alan Homes family,
+//  John! Your sales agent will be in touch
+//  shortly to start your home journey."`,
+  },
+  {
+    method: "WEBHOOK",
+    group: "Sales Pipeline",
+    path: "sale.created",
+    color: "text-emerald-400",
+    bg: "bg-emerald-500/10",
+    border: "border-emerald-500/30",
+    label: "New Home Sale",
+    desc: "Fires when a new home sale is entered — buyer attached, lot assigned, contract signed. Alert your team, update accounting, or text the buyer a welcome message with their portal link.",
+    example: `// Webhook fires → your team Slack + CRM
+{
+  "event": "sale.created",
+  "data": {
+    "home": {
+      "address": "123 Oak Street",
+      "lot": "Lot 14",
+      "community": "Riverside Estates",
+      "floorplan": "Riverside 2400",
+      "contractDate": "2026-05-06",
+      "contractAmount": 48500000
+    },
+    "buyer": {
+      "name": "John Smith",
+      "email": "john@email.com",
+      "phone": "+15551234"
+    },
+    "salesAgent": { "name": "Sarah" },
+    "salesTasks": { "total": 9, "gateCount": 6 }
+  }
+}
+
+// Your SMS to buyer:
+// "🏠 Congratulations John! Your new home at
+//  123 Oak St is officially under contract.
+//  We'll keep you updated every step of the way."`,
+  },
+  {
+    method: "WEBHOOK",
+    group: "Sales Pipeline",
+    path: "sale.approved",
+    color: "text-yellow-400",
+    bg: "bg-yellow-500/10",
+    border: "border-yellow-500/30",
+    label: "Sale Approved",
+    desc: "Fires when the Sales Manager approves a deal — the key gate in the pipeline. Text the buyer, notify accounting, or trigger the next phase of onboarding automatically.",
+    example: `// Webhook fires → your Twilio + accounting
+{
+  "event": "sale.approved",
+  "data": {
+    "home": {
+      "address": "123 Oak Street",
+      "lot": "Lot 14",
+      "community": "Riverside Estates",
+      "buyerName": "John Smith",
+      "buyerPhone": "+15551234",
+      "floorplan": "Riverside 2400",
+      "contractAmount": 48500000
+    },
+    "approvedBy": { "name": "Mike (Sales Manager)" },
+    "approvedAt": "2026-05-06T15:00:00.000Z"
+  }
+}
+
+// Your SMS to buyer:
+// "✅ Great news, John! Your home at 123 Oak St
+//  has been approved. Next up: design selections!"`,
+  },
+  {
+    method: "WEBHOOK",
+    group: "Sales Pipeline",
+    path: "sale.pipeline_complete",
+    color: "text-sky-400",
+    bg: "bg-sky-500/10",
+    border: "border-sky-500/30",
+    label: "Ready for Construction",
+    desc: "Fires when every sales task is complete — contract, deposit, financing, options, approvals, all done. The home is officially moving to construction. Alert the PM, PA, and purchasing team.",
+    example: `// Webhook fires → your team notifications
+{
+  "event": "sale.pipeline_complete",
+  "data": {
+    "home": {
+      "address": "123 Oak Street",
+      "lot": "Lot 14",
+      "community": "Riverside Estates",
+      "buyerName": "John Smith",
+      "floorplan": "Riverside 2400",
+      "status": "IN_PROGRESS"
+    },
+    "completedTasks": 8,
+    "skippedTasks": 1,
+    "totalTasks": 9,
+    "readyForConstruction": true
+  }
+}
+
+// Your SMS to PM:
+// "🚀 123 Oak St (Lot 14) — ALL sales tasks
+//  complete. Home is now IN_PROGRESS.
+//  Ready for permitting and construction."`,
+  },
+  {
+    method: "WEBHOOK",
+    group: "Sales Pipeline",
+    path: "sale.cancelled",
+    color: "text-rose-400",
+    bg: "bg-rose-500/10",
+    border: "border-rose-500/30",
+    label: "Sale Cancelled",
+    desc: "Fires when a sale falls through. Update your CRM, alert management, or trigger the lot-release workflow. Includes the cancel reason so downstream systems know why.",
+    example: `// Webhook fires → management alerts
+{
+  "event": "sale.cancelled",
+  "data": {
+    "home": {
+      "address": "123 Oak Street",
+      "lot": "Lot 14",
+      "community": "Riverside Estates",
+      "buyerName": "John Smith",
+      "floorplan": "Riverside 2400"
+    },
+    "cancelReason": "Financing fell through",
+    "cancelledAt": "2026-05-06T16:00:00.000Z",
+    "cancelledBy": { "name": "Sarah (Sales)" }
+  }
+}
+
+// Your alert to management:
+// "❌ SALE CANCELLED: 123 Oak St (Lot 14)
+//  Buyer: John Smith
+//  Reason: Financing fell through
+//  Lot is now available for reassignment."`,
   },
 ];
 
@@ -400,6 +674,13 @@ export default function ApiAccessPage() {
               // Insert divider before the first WEBHOOK card
               const prev = idx > 0 ? endpoints[idx - 1] : null;
               const showDivider = ep.method === "WEBHOOK" && (!prev || prev.method !== "WEBHOOK");
+              // Insert sub-group label whenever the group changes between two WEBHOOK cards
+              const showGroupLabel =
+                ep.method === "WEBHOOK" &&
+                ep.group &&
+                (!prev ||
+                  prev.method !== "WEBHOOK" ||
+                  prev.group !== ep.group);
               return (
                 <div key={ep.path}>
                   {showDivider && (
@@ -408,8 +689,26 @@ export default function ApiAccessPage() {
                         <Zap className="w-3.5 h-3.5" />
                         REAL-TIME WEBHOOKS
                       </div>
-                      <h3 className="text-2xl sm:text-3xl font-black text-white mb-2">22 HMAC-signed events. Fire to Twilio, Bland, or Retell the moment something happens.</h3>
-                      <p className="text-slate-400 max-w-2xl mx-auto">Other platforms say &ldquo;webhooks exist.&rdquo; We give you 22 named events with typed payloads, HMAC signatures, delivery logs, and auto-retry.</p>
+                      <h3 className="text-2xl sm:text-3xl font-black text-white mb-2">30 HMAC-signed events. Fire to Twilio, Bland, or Retell the moment something happens.</h3>
+                      <p className="text-slate-400 max-w-2xl mx-auto">Other platforms say &ldquo;webhooks exist.&rdquo; We give you 30 named events with typed payloads, HMAC signatures, delivery logs, and auto-retry.</p>
+                    </div>
+                  )}
+                  {showGroupLabel && !showDivider && (
+                    <div className="flex items-center gap-4 mt-10 mb-2">
+                      <div className="h-px flex-1 bg-slate-800" />
+                      <span className="text-slate-500 text-xs font-bold uppercase tracking-widest whitespace-nowrap">
+                        {ep.group}
+                      </span>
+                      <div className="h-px flex-1 bg-slate-800" />
+                    </div>
+                  )}
+                  {showGroupLabel && showDivider && (
+                    <div className="flex items-center gap-4 mb-2">
+                      <div className="h-px flex-1 bg-slate-800" />
+                      <span className="text-slate-500 text-xs font-bold uppercase tracking-widest whitespace-nowrap">
+                        {ep.group}
+                      </span>
+                      <div className="h-px flex-1 bg-slate-800" />
                     </div>
                   )}
                   <div className={`rounded-2xl bg-slate-900/60 border ${ep.border} overflow-hidden`}>
@@ -756,7 +1055,7 @@ export default function ApiAccessPage() {
                 "Foreman Skill Pack — GET /api/ext/skills in Anthropic, OpenAI, or OpenAPI 3.1 format",
                 "47 skills across 7 domains, auto-synced as new skills ship",
                 "Scoped API keys per agent/integration",
-                "Real-time webhooks (22 event types, HMAC-signed)",
+                "Real-time webhooks (30 event types, HMAC-signed)",
                 "Automated 7-wave bidding pipeline",
                 "Includes everything in Pro (Foreman AI, Blueprint AI, MLS Listing Agent)",
               ].map((f) => (
