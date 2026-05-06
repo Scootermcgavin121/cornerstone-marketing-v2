@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "buildertrend-vs-cornerstone-feature-comparison",
+    title: "Buildertrend vs Cornerstone PM: Feature-by-Feature Comparison",
+    excerpt:
+      "Buildertrend and Cornerstone PM both serve home builders — but their feature sets reflect fundamentally different priorities. Here's a category-by-category breakdown: Scheduling, Sales, Purchasing, Design Center, AI Agents, and API & Data.",
+    date: "May 6, 2026",
+    readTime: "7 min read",
+    tag: "Comparison",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+  },
+  {
     slug: "production-builder-vs-custom-builder-software",
     title: "Production Builder vs Custom Builder Software: Which Do You Need?",
     excerpt:

@@ -53,6 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/support-ai", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/design-center-home-builder", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/new-home-sales-pipeline", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/buildertrend-vs-cornerstone-feature-comparison", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({
