@@ -115,7 +115,7 @@ export default function AiForHomeBuildersPage() {
             <span className="text-violet-400">Home Builders Actually Work</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-6 leading-relaxed">
-            Generic AI tools don&apos;t know what a floorplan is. They don&apos;t know what a spec level means. They don&apos;t understand the difference between a pre-sale workflow and a construction workflow. Foreman AI does.
+            Generic AI tools don&apos;t know what a floorplan is. They don&apos;t know what a spec level means. They don&apos;t understand the difference between a pre-sale workflow and a construction workflow. Foreman AI™ does.
           </p>
           <p className="text-lg text-slate-500 max-w-2xl mx-auto mb-10">
             Purpose-built AI for home builders — managing scheduling, purchasing, vendor bids, design center, and sales pipeline in plain English.

@@ -111,7 +111,7 @@ export default function AiConstructionPurchasingPage() {
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-400 text-xs font-semibold mb-6">
             <Package className="w-3.5 h-3.5" />
-            AI CONSTRUCTION PURCHASING &middot; FOREMAN AI &middot; PRO PLAN
+            AI CONSTRUCTION PURCHASING &middot; FOREMAN AI™ &middot; PRO PLAN
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
             AI Construction Purchasing.<br />

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const agents = [
   {
-    name: "Foreman AI",
+    name: "Foreman AI™",
     tagline: "Your AI Construction Agent",
     description:
       "Natural language commands to search, create, and manage your entire operation. Parts, vendors, homes, budgets — just type what you need.",

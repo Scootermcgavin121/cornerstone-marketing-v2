@@ -96,7 +96,7 @@ export default function AiConstructionManagementPage() {
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
             Meet{" "}
-            <span className="text-blue-400">Foreman AI</span>
+            <span className="text-blue-400">Foreman AI™</span>
           </h1>
           <p className="text-2xl sm:text-3xl text-slate-300 max-w-3xl mx-auto mb-6 font-semibold">
             The AI construction agent built for home builders.

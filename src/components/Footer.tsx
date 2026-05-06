@@ -72,7 +72,7 @@ export function Footer() {
             <ul className="space-y-2">
               {[
                 { label: "Features", href: "/features" },
-                { label: "Foreman AI", href: "/foreman" },
+                { label: "Foreman AI™", href: "/foreman" },
                 { label: "API Access", href: "/api-access" },
                 { label: "Pricing", href: "/#pricing" },
                 { label: "Beta Access", href: "/beta" },
@@ -157,7 +157,7 @@ export function Footer() {
 
         <div className="mt-12 pt-6 border-t border-slate-800/60 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-slate-600">
-            © {new Date().getFullYear()} Cornerstone PM. All rights reserved.
+            © {new Date().getFullYear()} Cornerstone PM. All rights reserved. Foreman AI™ and Blueprint AI™ are trademarks of Cornerstone PM.
           </p>
           <div className="flex gap-4">
             <Link href="/privacy" className="text-xs text-slate-600 hover:text-slate-400 transition-colors">

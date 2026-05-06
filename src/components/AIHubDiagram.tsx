@@ -45,7 +45,7 @@ const AGENTS: Agent[] = [
   },
   {
     id: "foreman",
-    name: "Foreman AI",
+    name: "Foreman AI™",
     tagline: "Your AI Construction Agent",
     description: "“Hey Foreman, who's behind on Lot 12?” — plain-English scheduling & status.",
     href: "/ai-construction-management",
@@ -188,14 +188,14 @@ export default function AIHubDiagram() {
         <div className="text-center mb-14 sm:mb-20">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-400/30 bg-cyan-400/10 text-xs uppercase tracking-widest text-cyan-200 mb-6">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Powered by Foreman AI</span>
+            <span>Powered by Foreman AI™</span>
           </div>
           <h2 className="text-5xl sm:text-7xl font-black tracking-tight leading-none">
             <span className="italic font-serif text-emerald-300/90">One AI.</span>{" "}
             <span className="text-white">Every workflow.</span>
           </h2>
           <p className="mt-6 text-base sm:text-lg text-white/60 max-w-2xl mx-auto">
-            <span className="text-cyan-300 font-semibold">Foreman AI</span> is the brain behind Cornerstone — 47 skills, 5 specialized agents, and a full REST API. Build your own phone agent, vendor SMS bot, or workflow automation on top of the same engine that runs your jobs.
+            <span className="text-cyan-300 font-semibold">Foreman AI™</span> is the brain behind Cornerstone — 47 skills, 5 specialized agents, and a full REST API. Build your own phone agent, vendor SMS bot, or workflow automation on top of the same engine that runs your jobs.
           </p>
         </div>
 

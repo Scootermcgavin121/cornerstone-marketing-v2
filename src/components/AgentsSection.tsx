@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 const agents = [
   {
     emoji: "🪖",
-    name: "Foreman AI",
+    name: "Foreman AI™",
     tagline: "AI Construction Agent",
     desc: "47 purpose-built construction skills. Reads AND writes your data — parts, vendors, homes, exports.",
     href: "/foreman",
