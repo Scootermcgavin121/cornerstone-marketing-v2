@@ -200,7 +200,7 @@ export default function AIHubDiagram() {
         </div>
 
         {/* Diagram */}
-        <div ref={containerRef} className="relative grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-y-6 gap-x-6 lg:gap-x-12 items-center">
+        <div ref={containerRef} className="relative grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] gap-y-6 gap-x-6 lg:gap-x-12 items-center justify-items-stretch">
           {/* SVG layer */}
           <svg
             aria-hidden
@@ -260,42 +260,10 @@ export default function AIHubDiagram() {
           {/* Hub */}
           <div className="order-1 lg:order-2 flex justify-center">
             <div ref={hubRef} className="relative w-32 h-32">
-              {/* Inner spinning ring — visible orbit right against the hub */}
+              {/* Mid ring — ambient counter-rotation */}
               <motion.div
                 aria-hidden
-                className="absolute rounded-full pointer-events-none"
-                style={{
-                  width: 156,
-                  height: 156,
-                  left: -14,
-                  top: -14,
-                  border: "1.5px dashed rgba(255,255,255,0.35)",
-                }}
-                animate={{ rotate: 360 }}
-                transition={{ duration: 12, repeat: Infinity, ease: "linear" }}
-              >
-                {/* orbiting accent dots so the spin is unmistakable */}
-                <span
-                  aria-hidden
-                  className="absolute w-2 h-2 rounded-full bg-emerald-300 shadow-[0_0_10px_2px_rgba(52,211,153,0.7)]"
-                  style={{ top: -4, left: "50%", transform: "translateX(-50%)" }}
-                />
-                <span
-                  aria-hidden
-                  className="absolute w-1.5 h-1.5 rounded-full bg-cyan-300 shadow-[0_0_8px_2px_rgba(34,211,238,0.6)]"
-                  style={{ bottom: 6, right: 8 }}
-                />
-                <span
-                  aria-hidden
-                  className="absolute w-1.5 h-1.5 rounded-full bg-violet-300 shadow-[0_0_8px_2px_rgba(167,139,250,0.6)]"
-                  style={{ bottom: 6, left: 8 }}
-                />
-              </motion.div>
-
-              {/* Mid ring — counter-rotates slower */}
-              <motion.div
-                aria-hidden
-                className="absolute rounded-full border border-dashed border-white/20 pointer-events-none"
+                className="absolute rounded-full border border-dashed border-white/15 pointer-events-none"
                 animate={{ rotate: -360 }}
                 transition={{ duration: 28, repeat: Infinity, ease: "linear" }}
                 style={{ width: 210, height: 210, left: -41, top: -41 }}
@@ -304,14 +272,36 @@ export default function AIHubDiagram() {
               {/* Outer ring — ambient drift */}
               <motion.div
                 aria-hidden
-                className="absolute rounded-full border border-dashed border-emerald-400/25 pointer-events-none"
+                className="absolute rounded-full border border-dashed border-emerald-400/20 pointer-events-none"
                 animate={{ rotate: 360 }}
                 transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
                 style={{ width: 290, height: 290, left: -81, top: -81 }}
               />
 
-              <div className="relative w-32 h-32 rounded-full bg-gradient-to-br from-emerald-400 via-cyan-400 to-violet-500 p-[2px] shadow-[0_0_60px_-10px_rgba(52,211,153,0.55)]">
-                <div className="w-full h-full rounded-full bg-black/90 flex flex-col items-center justify-center">
+              {/* Thick rotating gradient ring — sits right on the hub edge.
+                  Conic gradient + clockwise spin = sweeping color flow around the hub. */}
+              <motion.div
+                aria-hidden
+                className="absolute rounded-full pointer-events-none"
+                animate={{ rotate: 360 }}
+                transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+                style={{
+                  width: 152,
+                  height: 152,
+                  left: -12,
+                  top: -12,
+                  background:
+                    "conic-gradient(from 0deg, #34d399 0%, #22d3ee 25%, #a78bfa 50%, #fb7185 65%, #fbbf24 80%, #34d399 100%)",
+                  WebkitMask:
+                    "radial-gradient(circle, transparent 67px, black 68px, black 75px, transparent 76px)",
+                  mask:
+                    "radial-gradient(circle, transparent 67px, black 68px, black 75px, transparent 76px)",
+                  filter: "drop-shadow(0 0 12px rgba(52,211,153,0.45))",
+                }}
+              />
+
+              <div className="relative w-32 h-32 rounded-full bg-black/90 ring-1 ring-white/10 shadow-[0_0_60px_-10px_rgba(52,211,153,0.55)]">
+                <div className="w-full h-full rounded-full flex flex-col items-center justify-center">
                   <Sparkles className="w-7 h-7 text-emerald-300" />
                   <div className="text-[10px] tracking-[0.2em] uppercase text-white/70 mt-2">Cornerstone</div>
                   <div className="text-sm font-bold text-white">AI</div>
@@ -364,7 +354,6 @@ function AgentCard({
           "relative rounded-2xl bg-white/[0.04] backdrop-blur-sm border border-white/10",
           "border-l-2", agent.border,
           "p-4 sm:p-5 transition group-hover:bg-white/[0.07] group-hover:border-white/20",
-          side === "right" ? "lg:ml-2" : "lg:mr-2",
         ].join(" ")}
       >
         {/* status dot */}
