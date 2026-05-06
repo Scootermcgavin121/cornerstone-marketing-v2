@@ -62,7 +62,7 @@ const AGENTS: Agent[] = [
     name: "Bid Import AI",
     tagline: "AI Vendor Bid Parser",
     description: "Spreadsheet, PDF, email — even a back-of-napkin photo. Parts created in the system automatically.",
-    href: "/ai-construction-purchasing",
+    href: "/bid-import-ai",
     color: "text-violet-300",
     bg: "bg-violet-500/15",
     border: "border-violet-400/40",
@@ -90,7 +90,7 @@ const AGENTS: Agent[] = [
     name: "AI Support Agent",
     tagline: "Instant Answers, Zero Wait Time",
     description: "Buyer asked about Camden floorplan — answered with current pricing + availability.",
-    href: "/ai-agents",
+    href: "/support-ai",
     color: "text-rose-300",
     bg: "bg-rose-500/15",
     border: "border-rose-400/40",
@@ -279,26 +279,55 @@ export default function AIHubDiagram() {
               />
 
               {/* Thick rotating gradient ring — sits right on the hub edge.
-                  Conic gradient + clockwise spin = sweeping color flow around the hub. */}
+                  Asymmetric conic gradient (bright arc + dim tail) so rotation is obvious. */}
               <motion.div
                 aria-hidden
                 className="absolute rounded-full pointer-events-none"
                 animate={{ rotate: 360 }}
-                transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+                transition={{ duration: 6, repeat: Infinity, ease: "linear" }}
                 style={{
                   width: 152,
                   height: 152,
                   left: -12,
                   top: -12,
                   background:
-                    "conic-gradient(from 0deg, #34d399 0%, #22d3ee 25%, #a78bfa 50%, #fb7185 65%, #fbbf24 80%, #34d399 100%)",
+                    "conic-gradient(from 0deg, rgba(52,211,153,0) 0deg, rgba(52,211,153,0.15) 30deg, #34d399 90deg, #22d3ee 130deg, #a78bfa 180deg, rgba(167,139,250,0.2) 230deg, rgba(255,255,255,0.05) 280deg, rgba(52,211,153,0) 360deg)",
                   WebkitMask:
                     "radial-gradient(circle, transparent 67px, black 68px, black 75px, transparent 76px)",
                   mask:
                     "radial-gradient(circle, transparent 67px, black 68px, black 75px, transparent 76px)",
-                  filter: "drop-shadow(0 0 12px rgba(52,211,153,0.45))",
+                  filter: "drop-shadow(0 0 14px rgba(34,211,238,0.55))",
                 }}
               />
+
+              {/* Bright leading dot — unmistakable rotation cue */}
+              <motion.div
+                aria-hidden
+                className="absolute pointer-events-none"
+                animate={{ rotate: 360 }}
+                transition={{ duration: 6, repeat: Infinity, ease: "linear" }}
+                style={{
+                  width: 152,
+                  height: 152,
+                  left: -12,
+                  top: -12,
+                }}
+              >
+                <span
+                  aria-hidden
+                  className="absolute rounded-full"
+                  style={{
+                    width: 10,
+                    height: 10,
+                    top: 67,
+                    left: 142,
+                    background: "#22d3ee",
+                    boxShadow:
+                      "0 0 12px 3px rgba(34,211,238,0.85), 0 0 24px 6px rgba(34,211,238,0.4)",
+                    transform: "translate(-50%, 0)",
+                  }}
+                />
+              </motion.div>
 
               <div className="relative w-32 h-32 rounded-full bg-black/90 ring-1 ring-white/10 shadow-[0_0_60px_-10px_rgba(52,211,153,0.55)]">
                 <div className="w-full h-full rounded-full flex flex-col items-center justify-center">
