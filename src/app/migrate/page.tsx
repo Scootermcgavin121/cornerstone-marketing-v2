@@ -129,16 +129,16 @@ const faq: FAQItem[] = [
     a: "Essentially nothing — about $0.002 per file in AI inference cost via GPT-4o-mini, which we absorb. Cornerstone does not charge for data migration, ever. Your data is yours; getting it in shouldn't be a profit center.",
   },
   {
-    q: "Is the migration wizard ready for production data?",
+    q: "Is the AI Migration Wizard ready for production data?",
     a: "It's Live in Beta. The wizard is in production today — builders are running migrations through it as we speak — and we've tested it extensively on real Buildertrend, JobTread, and CoConstruct exports. We recommend running dry-run mode first on any migration and reviewing the preview carefully before committing. Report anything weird and we'll fix it fast.",
   },
   {
-    q: "Where do I find the migration wizard?",
+    q: "Where do I find the AI Migration Wizard?",
     a: "Inside the app at /admin/migrate, available to admin users. If you don't have an account yet, request beta access — migration is included in every plan, including the free tier.",
   },
   {
     q: "How does this compare to the 23 CSV import endpoints?",
-    a: "The migration wizard is the AI-powered front door. Under the hood, Cornerstone has 23 dedicated CSV import endpoints (vendors, homes, communities, templates, scopes, takeoffs, parts, budgets, and more) that you can also hit directly via the REST API. The wizard wraps the most common 7 data types in a one-click flow; the API is there for engineering teams that want full programmatic control.",
+    a: "The AI Migration Wizard is the AI-powered front door. Under the hood, Cornerstone has 23 dedicated CSV import endpoints (vendors, homes, communities, templates, scopes, takeoffs, parts, budgets, and more) that you can also hit directly via the REST API. The wizard wraps the most common 7 data types in a one-click flow; the API is there for engineering teams that want full programmatic control.",
   },
 ];
 
@@ -201,7 +201,7 @@ export default function MigratePage() {
                 Beta feature
               </div>
               <p className="text-slate-200 leading-relaxed">
-                This migration wizard is currently in <strong>Beta</strong>. We've tested it
+                The AI Migration Wizard is currently <strong>Live in Beta</strong>. We've tested it
                 extensively on real Buildertrend, JobTread, and CoConstruct exports, but we strongly
                 recommend running <strong>dry-run mode</strong> first to preview the full import
                 before committing anything to your tenant. Found something weird? Email{" "}
@@ -328,7 +328,7 @@ export default function MigratePage() {
                 <span className="text-violet-400">We charge zero. AI does the work.</span>
               </h2>
               <p className="text-slate-300 text-lg max-w-2xl mx-auto mb-2">
-                Buildertrend onboarding is months long. Newstar implementation runs into 5 figures. Our migration wizard runs in minutes — and it's free.
+                Buildertrend onboarding is months long. Newstar implementation runs into 5 figures. Our AI Migration Wizard runs in minutes — and it's free.
               </p>
               <p className="text-slate-400 text-base max-w-2xl mx-auto">
                 Export from your old platform → drop in the file → AI maps it → click import. Days, not months. No consultants. No data hostages.
