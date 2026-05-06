@@ -5,25 +5,51 @@ import { Navbar } from "@/components/Navbar";
 export const metadata = {
   title: "API Access & Bring Your Own Agent — Cornerstone PM",
   description:
-    "REST API endpoints that let AI agents automate the entire subcontractor bidding pipeline. Create vendors, send bid requests, track responses — programmatically. No other homebuilder platform does this.",
+    "REST API + webhooks that let AI agents automate the full home-building loop — send bid requests, track responses, schedule subs by text, and notify homebuyers the moment a milestone completes. No other homebuilder platform does this.",
 };
 
 const endpoints = [
   {
-    method: "POST",
-    path: "/api/ext/vendors",
-    color: "text-emerald-400",
-    bg: "bg-emerald-500/10",
-    border: "border-emerald-500/30",
-    label: "Create Vendor",
-    desc: "Create a subcontractor or supplier in Cornerstone programmatically. Your AI agent collects contact info from a phone call and writes it directly to the database.",
-    example: `{
-  "name": "ABC Plumbing LLC",
-  "email": "bids@abcplumbing.com",
-  "phone": "555-0192",
-  "scopes": ["Plumbing", "HVAC"],
-  "contacts": [{ "name": "Mike", "role": "Estimator" }]
-}`,
+    method: "WEBHOOK",
+    path: "milestone.completed",
+    color: "text-violet-400",
+    bg: "bg-violet-500/10",
+    border: "border-violet-500/30",
+    label: "Homeowner Milestone Alerts",
+    desc: "Fires the instant a milestone task is marked complete. Wire to Twilio, Bland, or Retell to text your homebuyer the moment their framing finishes, drywall goes up, or final walk is ready. Payload includes buyer contact info, progress percentage, and a link to the live schedule — your agent composes the message, your provider delivers it.",
+    example: `// Webhook fires → your Twilio / SMS handler
+{
+  "event": "milestone.completed",
+  "data": {
+    "milestone": {
+      "taskId": "t_abc123",
+      "taskName": "Framing Complete",
+      "phase": "Framing",
+      "completedAt": "2026-05-06T14:30:00.000Z"
+    },
+    "home": {
+      "id": "h_lot14",
+      "address": "123 Oak Street",
+      "lot": "Lot 14",
+      "community": "Riverside Estates",
+      "buyerName": "John Smith",
+      "buyerEmail": "john@email.com",
+      "buyerPhone": "+15551234"
+    },
+    "builder": { "name": "Scott Alan Homes" },
+    "scheduleUrl": "https://app.cornerstonepm.ai/homes/h_lot14",
+    "progress": {
+      "completedMilestones": 5,
+      "totalMilestones": 12,
+      "percentComplete": 42
+    }
+  }
+}
+
+// Your SMS to the buyer:
+// "🏠 Framing complete at 123 Oak St!
+//  Your home is 42% done (5 of 12 milestones).
+//  Track progress: cornerstonepm.ai/homes/h_lot14"`,
   },
   {
     method: "POST",
@@ -215,8 +241,8 @@ export default function ApiAccessPage() {
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-3xl sm:text-5xl font-black mb-4">Four endpoints.<br />Entire sub pipeline automated.</h2>
-            <p className="text-slate-400 max-w-xl mx-auto">Bearer token auth. JSON responses. Standard REST + webhooks. Cold-call vendors, send bid requests, track responses, and trigger schedule-update texts &mdash; pair with Twilio, Bland, or Retell for SMS / voice. Works with any agent: custom-built, third-party, or Cornerstone&apos;s Foreman AI.</p>
+            <h2 className="text-3xl sm:text-5xl font-black mb-4">Four hooks.<br />Bid → award → schedule → buyer.</h2>
+            <p className="text-slate-400 max-w-xl mx-auto">Bearer token auth. JSON responses. Standard REST + webhooks. Send bid requests, track responses, schedule subs by text, and ping the homebuyer the moment a milestone completes &mdash; pair with Twilio, Bland, or Retell. Works with any agent: custom-built, third-party, or Cornerstone&apos;s Foreman AI.</p>
           </div>
           <div className="space-y-6">
             {endpoints.map((ep) => (
