@@ -68,27 +68,23 @@ const endpoints = [
     color: "text-pink-400",
     bg: "bg-pink-500/10",
     border: "border-pink-500/30",
-    label: "Reach the Trades That Don't Read Email",
-    desc: "Framers, drywallers, masons, painters — they don't check their inbox. They check their texts. Every schedule task update fires a webhook with the assigned sub's phone, dates, and notes — wire it to Twilio, Bland, or Retell to text (or auto-call) the sub the moment something changes. Email-only subs get the email, text-only subs get the text. Per-vendor preference, no missed updates.",
+    label: "Schedule Construction Tasks by Text",
+    desc: "Framers, drywallers, masons, painters — they don't check their inbox. They live in texts. Update a task, the webhook fires with the sub's phone + dates + notes; wire it to Twilio, Bland, or Retell so the sub gets a text (or AI voice call) and can reply to confirm, decline, or reschedule. Your agent parses the reply and PATCHes the task right back — two-way scheduling, no portal login, no missed inbox.",
     example: `// 1. Agent updates the task
 PATCH /api/ext/tasks/t_abc123
-{
-  "status": "ready",
-  "startDate": "2026-05-12",
-  "note": "Lot 14 — ready for framing Monday 7am"
-}
+{ "status": "ready", "startDate": "2026-05-12",
+  "note": "Lot 14 framing ready Mon 7am, confirm?" }
 
-// 2. Webhook → your Twilio / Bland / Retell handler
-{
-  "event": "task.updated",
-  "vendor": { "name": "ABC Framing", "phone": "+15550192" },
-  "task": { "home": "Lot 14", "trade": "Framing",
-            "startDate": "2026-05-12", "status": "ready" }
-}
+// 2. Webhook → your Twilio handler → SMS to sub
+// "Lot 14 framing ready Mon 5/12 7am, confirm?"
 
-// 3. Your provider sends:
-// SMS  (Twilio)         — instant text
-// Voice (Bland/Retell)  — AI confirms in person`,
+// 3. Sub texts back: "can't, start Tuesday"
+//    Your agent parses + PATCHes:
+PATCH /api/ext/tasks/t_abc123
+{ "startDate": "2026-05-13",
+  "note": "Sub confirmed Tue 5/13 via SMS" }
+
+// Two-way scheduling. No portal. No email.`,
   },
 ];
 
@@ -155,9 +151,9 @@ export default function ApiAccessPage() {
             Your AI agent handles<br />
             <span className="text-cyan-400">the phone calls.</span>
           </h1>
-          <p className="text-2xl text-slate-300 font-semibold mb-4">And texts the trades that don&apos;t read email.</p>
+          <p className="text-2xl text-slate-300 font-semibold mb-4">And schedules construction tasks by text.</p>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
-            REST API + webhooks that let any AI agent run the full subcontractor lifecycle &mdash; cold-call vendors, send bid requests, and reach the framers, drywallers, and masons who never open their inbox. Cornerstone fires the webhook the moment a task changes; you wire it to Twilio, Bland, or Retell to text or auto-call. Bring your own provider. No lock-in.
+            REST API + webhooks that let any AI agent run the full subcontractor lifecycle &mdash; cold-call vendors, send bid requests, and schedule the framers, drywallers, and masons who never open their inbox. Text the sub: <em className="text-slate-300 not-italic">&ldquo;Lot 14 framing ready Mon 7am, confirm?&rdquo;</em> &mdash; they reply <em className="text-slate-300 not-italic">&ldquo;yes&rdquo;</em>, your agent parses it and PATCHes the task. Wire Twilio, Bland, or Retell. Bring your own provider. No lock-in.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
             <Link
