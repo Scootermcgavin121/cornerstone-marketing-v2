@@ -62,6 +62,26 @@ const endpoints = [
   ]
 }`,
   },
+  {
+    method: "PATCH",
+    path: "/api/ext/tasks/:id",
+    color: "text-pink-400",
+    bg: "bg-pink-500/10",
+    border: "border-pink-500/30",
+    label: "Text Subs Schedule Updates",
+    desc: "Update a construction schedule task and Cornerstone automatically texts the assigned subcontractor with the new start date, status change, or schedule note. Your AI agent reschedules a framing crew — the framer gets a text 2 seconds later. No phone tag.",
+    example: `// PATCH /api/ext/tasks/t_abc123
+
+{
+  "status": "ready",
+  "startDate": "2026-05-12",
+  "note": "Lot 14 — ready for framing Monday 7am"
+}
+
+// → SMS sent to assigned sub:
+// "Lot 14 framing ready. Start Mon 5/12 7am.
+//  Note: ready for framing Monday 7am"`,
+  },
 ];
 
 const pipeline = [
@@ -127,9 +147,9 @@ export default function ApiAccessPage() {
             Your AI agent handles<br />
             <span className="text-cyan-400">the phone calls.</span>
           </h1>
-          <p className="text-2xl text-slate-300 font-semibold mb-4">Cornerstone handles everything else.</p>
+          <p className="text-2xl text-slate-300 font-semibold mb-4">Cornerstone texts your subs the rest.</p>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
-            REST API endpoints that let any AI agent automate the entire subcontractor bidding pipeline &mdash; from cold call to signed contract. No manual data entry. No other homebuilder platform does this.
+            REST API endpoints that let any AI agent run the full subcontractor lifecycle &mdash; cold-call vendors, send bid requests, and text construction schedule updates straight to assigned subs the moment a task changes. No manual data entry. No other homebuilder platform does this.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
             <Link
@@ -175,7 +195,7 @@ export default function ApiAccessPage() {
           {[
             { num: "200+", label: "Vendors contacted", sub: "In a single afternoon" },
             { num: "0", label: "Manual data entry", sub: "End to end" },
-            { num: "3", label: "Contact channels", sub: "Call + voicemail + text" },
+            { num: "SMS", label: "Schedule updates", sub: "Auto-texted to assigned subs" },
             { num: "7", label: "Automated waves", sub: "Cold call to onboarding" },
           ].map((s) => (
             <div key={s.label} className="text-center p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
@@ -191,8 +211,8 @@ export default function ApiAccessPage() {
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-3xl sm:text-5xl font-black mb-4">Three endpoints.<br />Entire bidding pipeline automated.</h2>
-            <p className="text-slate-400 max-w-xl mx-auto">Bearer token auth. JSON responses. Standard REST. Plug in any agent &mdash; custom-built, third-party, or Cornerstone&apos;s own Foreman AI.</p>
+            <h2 className="text-3xl sm:text-5xl font-black mb-4">Four endpoints.<br />Entire sub pipeline automated.</h2>
+            <p className="text-slate-400 max-w-xl mx-auto">Bearer token auth. JSON responses. Standard REST. Cold-call vendors, send bid requests, track responses, and text schedule updates &mdash; from any agent: custom-built, third-party, or Cornerstone&apos;s own Foreman AI.</p>
           </div>
           <div className="space-y-6">
             {endpoints.map((ep) => (
