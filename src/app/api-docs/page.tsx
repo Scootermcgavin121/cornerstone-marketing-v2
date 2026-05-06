@@ -359,7 +359,7 @@ export default function ApiDocsPage() {
           {[
             { num: "59", label: "REST endpoints", sub: "vs ~40 Pave objects in JobTread" },
             { num: "67+", label: "HTTP methods", sub: "GET, POST, PATCH, DELETE" },
-            { num: "22", label: "Webhook events", sub: "Real-time, HMAC-signed" },
+            { num: "30", label: "Webhook events", sub: "Real-time, HMAC-signed" },
             { num: "110+", label: "Database tables", sub: "Every endpoint is real data" },
           ].map((s) => (
             <div key={s.label} className="text-center p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
