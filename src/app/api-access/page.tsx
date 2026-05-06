@@ -76,7 +76,7 @@ PATCH /api/ext/tasks/t_abc123
     color: "text-blue-400",
     bg: "bg-blue-500/10",
     border: "border-blue-500/30",
-    label: "In-App Message → Instant SMS",
+    label: "In-App Message Text Message",
     desc: "Fires every time someone sends a message inside Cornerstone — PM to vendor, vendor to PM, admin to anyone. Wire to Twilio to text the recipient a preview and a deep link. Emails get buried; texts get read.",
     example: `// Webhook fires → your Twilio handler
 {
@@ -112,7 +112,7 @@ PATCH /api/ext/tasks/t_abc123
     color: "text-violet-400",
     bg: "bg-violet-500/10",
     border: "border-violet-500/30",
-    label: "Homeowner Milestone Alerts",
+    label: "Homeowner Milestone Alerts Text Message",
     desc: "Fires the instant a milestone task is marked complete. Wire to Twilio, Bland, or Retell to text the homebuyer with progress + a live schedule link — your agent composes, your provider delivers.",
     example: `// Webhook → your Twilio / SMS handler
 {
@@ -138,7 +138,7 @@ PATCH /api/ext/tasks/t_abc123
     color: "text-cyan-400",
     bg: "bg-cyan-500/10",
     border: "border-cyan-500/30",
-    label: "Vendor Advance Notice",
+    label: "Vendor Advance Notice Text Message",
     desc: "Heads-up that a vendor's task is coming up within their advance-notice window. Same smart threshold logic as Cornerstone's email cascade — if the email fires, this fires. Text the sub before they even check their inbox.",
     example: `// Webhook → your Twilio handler
 {
@@ -172,7 +172,7 @@ PATCH /api/ext/tasks/t_abc123
     color: "text-red-400",
     bg: "bg-red-500/10",
     border: "border-red-500/30",
-    label: "Vendor Urgent Reminder",
+    label: "Vendor Urgent Reminder Text Message",
     desc: "Final confirmation — the task is within the vendor's lead-time window. This is the \"show up Monday\" text. Includes one-tap confirm link that works over SMS.",
     example: `// Webhook → your Twilio handler
 {
@@ -205,7 +205,7 @@ PATCH /api/ext/tasks/t_abc123
     color: "text-amber-400",
     bg: "bg-amber-500/10",
     border: "border-amber-500/30",
-    label: "Schedule Moved Earlier",
+    label: "Schedule Moved Earlier Text Message",
     desc: "A task date just moved UP — more urgent than a regular change. Thresholds are halved so vendors get notified faster. The sub needs to know NOW that their start date changed.",
     example: `// Webhook → your Twilio handler
 {
@@ -237,7 +237,7 @@ PATCH /api/ext/tasks/t_abc123
     color: "text-purple-400",
     bg: "bg-purple-500/10",
     border: "border-purple-500/30",
-    label: "Schedule Postponed",
+    label: "Schedule Postponed Text Message",
     desc: "A task got pushed back. Vendor needs to know so they can reallocate their crew. Less urgent than moved-earlier, but still important — especially if they've already mobilized.",
     example: `// Webhook → your Twilio handler
 {
