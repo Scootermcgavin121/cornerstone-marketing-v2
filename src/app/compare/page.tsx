@@ -22,7 +22,7 @@ const rows: { category: string; features: { label: string; values: CellValue[] }
     features: [
       { label: "Monthly pricing (no enterprise contract)", values: [YES, NO, YES, YES] },
       { label: "Setup cost", values: ["Free beta", "$25,000+", "$0", "$0"] },
-      { label: "Implementation time", values: ["Days", "6-12 months", "Weeks", "Weeks"] },
+      { label: "Implementation time", values: ["Hours", "6-12 months", "Weeks", "Weeks"] },
       { label: "Purpose-built for production home builders (vs. custom/remodel)", values: [YES, YES, PARTIAL, PARTIAL] },
       { label: "Starting price", values: ["$149/mo", "$500+/mo", "$499/mo", "$399/mo"] },
     ],
@@ -34,7 +34,7 @@ const rows: { category: string; features: { label: string; values: CellValue[] }
       { label: "23 dedicated CSV import endpoints (vendors, homes, communities, templates, scopes, takeoffs, parts, budgets...)", values: [YES, NO, PARTIAL, PARTIAL] },
       { label: "AI-powered bid import (parse any vendor format — Excel, PDF, scanned, handwritten)", values: [YES, NO, NO, NO] },
       { label: "Self-serve migration (no consultant required)", values: [YES, NO, PARTIAL, PARTIAL] },
-      { label: "Migration timeline", values: ["Days", "3-12 months", "1-2 weeks", "1-2 weeks"] },
+      { label: "Migration timeline", values: ["Hours", "3-12 months", "1-2 weeks", "1-2 weeks"] },
       { label: "Migration cost", values: ["$0", "$5,000-$20,000", "$0-$2,500", "$0-$2,500"] },
     ],
   },
@@ -241,7 +241,7 @@ export default function ComparePage() {
         <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6">
           {[
             { num: "$149/mo", label: "Starting price", sub: "vs $499+ elsewhere" },
-            { num: "Days", label: "Setup time", sub: "vs 6-12 months for NEWSTAR" },
+            { num: "Hours", label: "Setup time", sub: "vs 6-12 months for NEWSTAR" },
             { num: "$0", label: "Implementation cost", sub: "vs $25,000+ for BuildPro" },
             { num: "110+", label: "Database tables", sub: "and growing — built for construction, not adapted" },
           ].map((s) => (

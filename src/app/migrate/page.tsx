@@ -331,7 +331,7 @@ export default function MigratePage() {
                 Buildertrend onboarding is months long. Newstar implementation runs into 5 figures. Our AI Migration Wizard runs in minutes — and it's free.
               </p>
               <p className="text-slate-400 text-base max-w-2xl mx-auto">
-                Export from your old platform → drop in the file → AI maps it → click import. Days, not months. No consultants. No data hostages.
+                Export from your old platform → drop in the file → AI maps it → click import. Hours, not months. No consultants. No data hostages.
               </p>
             </div>
           </div>

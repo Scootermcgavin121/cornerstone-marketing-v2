@@ -40,7 +40,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "How long does it take to implement home builder software?",
-    a: "Implementation timelines vary widely. NEWSTAR and BuildPro typically take 3–12 months with dedicated consultants. Buildertrend onboarding usually runs 4–8 weeks. Modern cloud-native platforms like Cornerstone PM can be up and running with real data in days — no IT infrastructure or implementation consultants required.",
+    a: "Implementation timelines vary widely. NEWSTAR and BuildPro typically take 3–12 months with dedicated consultants. Buildertrend onboarding usually runs 4–8 weeks. Modern cloud-native platforms like Cornerstone PM can be up and running with real data in hours — the AI Migration Wizard ingests your existing data in an afternoon, no IT infrastructure or implementation consultants required.",
   },
   {
     q: "Does home builder software have AI capabilities in 2026?",
@@ -264,7 +264,7 @@ export default function BuyerGuidePage() {
             NEWSTAR: $25,000–$100,000+ upfront, 3–12 month timeline, dedicated IT required.
             BuildPro: Enterprise contract, Citrix infrastructure, 2–6 month onboarding.
             Buildertrend: $499/month base, 4–8 weeks to productive use, plugin costs for integrations.
-            Cornerstone PM: $0 implementation, no IT infrastructure, live with real data in days.
+            Cornerstone PM: $0 implementation, no IT infrastructure, live with real data in hours.
           </p>
           <p>
             For a detailed breakdown of what NEWSTAR actually costs for mid-market builders, see the

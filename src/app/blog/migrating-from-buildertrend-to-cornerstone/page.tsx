@@ -303,7 +303,7 @@ export default function MigratingFromBuildertrendPage() {
             Cornerstone PM is currently in free beta for early adopters. There&apos;s no implementation fee,
             no IT setup, and no 90-day onboarding queue. If you&apos;re a production home builder who&apos;s been
             paying Buildertrend $499+/month for a tool that wasn&apos;t designed for your workflow, the migration
-            is worth the 3–5 days of setup time.
+            is worth a single afternoon of setup time — the AI Migration Wizard handles the rest.
           </p>
 
         </div>

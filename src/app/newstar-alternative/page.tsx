@@ -13,7 +13,7 @@ export const metadata = {
 
 const comparisonRows = [
   { feature: "Implementation cost", cornerstone: "$0", newstar: "$25k-$100k+", note: "NEWSTAR requires extensive consultant-led implementation." },
-  { feature: "Time to operational", cornerstone: "Days", newstar: "3-12 months", note: "Cornerstone: AI Migration Wizard (Live in Beta) + 23 CSV import endpoints. Drop files, wizard does the rest." },
+  { feature: "Time to operational", cornerstone: "Hours", newstar: "3-12 months", note: "Cornerstone: AI Migration Wizard (Live in Beta) + 23 CSV import endpoints. Drop files, wizard does the rest — a small builder can be operational in an afternoon." },
   { feature: "Starting monthly price", cornerstone: "$149", newstar: "Enterprise quote", note: "NEWSTAR pricing is custom and not publicly listed." },
   { feature: "Per-user fees", cornerstone: "Unlimited users", newstar: "Per-seat", note: "Cornerstone: no per-seat pricing on any plan." },
   { feature: "Built for small-to-mid builders", cornerstone: true, newstar: false, note: "NEWSTAR is designed for top-100 enterprise home builders." },
@@ -89,7 +89,7 @@ export default function NewstarAlternativePage() {
           <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-8">
             Cornerstone PM is the modern NEWSTAR and BuildPro alternative for small-to-mid production home builders.
             Same core capabilities &mdash; options engine, floorplan pricing matrix, multi-community management &mdash; plus
-            native AI agents and a public REST API. Starts at $149/mo. Operational in days, not months.
+            native AI agents and a public REST API. Starts at $149/mo. Operational in hours, not months.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/beta" className="px-8 py-4 rounded-full bg-purple-400 text-slate-900 font-bold text-lg hover:bg-purple-300 transition-all duration-200 shadow-lg shadow-purple-500/30 hover:-translate-y-0.5 inline-flex items-center justify-center gap-2">
@@ -163,7 +163,7 @@ export default function NewstarAlternativePage() {
       <section className="py-20 px-4 text-center border-t border-slate-800/60">
         <h2 className="text-4xl font-black mb-4">Ready to leave the implementation quagmire?</h2>
         <p className="text-slate-400 text-lg mb-8 max-w-xl mx-auto">
-          Join the beta and get 2 years free. Operational in days, not months.
+          Join the beta and get 2 years free. Operational in hours, not months.
         </p>
         <Link href="/beta" className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-purple-400 text-slate-900 font-bold text-lg hover:bg-purple-300 transition-all duration-200 shadow-lg shadow-purple-500/30">
           Request Early Access <ArrowRight className="w-5 h-5" />

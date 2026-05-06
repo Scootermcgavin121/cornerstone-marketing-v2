@@ -274,7 +274,7 @@ export default function NewstarImplementationCostPage() {
               AI material takeoff
             </Link>
             , vendor bidding, design center, and buyer portal built into a single platform. Implementation
-            cost: $0. Go-live timeline: days, not months. No consultants required.
+            cost: $0. Go-live timeline: hours, not months. No consultants required.
           </p>
           <p>
             For a builder spending $60,000–$100,000 annually on NEWSTAR licensing and support, switching

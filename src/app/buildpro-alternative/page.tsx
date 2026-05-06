@@ -13,7 +13,7 @@ export const metadata = {
 
 const comparisonRows = [
   { feature: "Implementation cost", cornerstone: "$0", buildpro: "$25k-$75k+", note: "BuildPro requires consultant-led implementation." },
-  { feature: "Time to operational", cornerstone: "Days", buildpro: "3-9 months", note: "Cornerstone: import templates, go live in a week." },
+  { feature: "Time to operational", cornerstone: "Hours", buildpro: "3-9 months", note: "Cornerstone: AI Migration Wizard ingests your data in an afternoon — you're live the same day." },
   { feature: "Modern web UI", cornerstone: true, buildpro: false, note: "BuildPro's UI is dated and Windows-centric." },
   { feature: "Native AI agents", cornerstone: true, buildpro: false, note: "Cornerstone: Foreman AI (47 skills) + Blueprint AI." },
   { feature: "Mobile-friendly", cornerstone: true, buildpro: "limited", note: "Cornerstone is fully responsive; BuildPro mobile is limited." },
@@ -34,7 +34,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "How is Cornerstone PM different from BuildPro?",
-    a: "Three key differences: (1) Cornerstone PM is a modern, web-based, mobile-friendly platform &mdash; BuildPro's UI is dated and Windows-centric; (2) Cornerstone ships native AI agents (Foreman AI, Blueprint AI) that BuildPro doesn't offer at any tier; (3) Cornerstone is operational in days at $149/mo with unlimited users, while BuildPro requires $25k-$75k+ implementation budgets.",
+    a: "Three key differences: (1) Cornerstone PM is a modern, web-based, mobile-friendly platform &mdash; BuildPro's UI is dated and Windows-centric; (2) Cornerstone ships native AI agents (Foreman AI, Blueprint AI) that BuildPro doesn't offer at any tier; (3) Cornerstone is operational in hours at $149/mo with unlimited users, while BuildPro requires $25k-$75k+ implementation budgets.",
   },
   {
     q: "Can Cornerstone PM replace BuildPro for a production builder?",
@@ -139,7 +139,7 @@ export default function BuildProAlternativePage() {
       <section className="py-20 px-4 text-center border-t border-slate-800/60">
         <h2 className="text-4xl font-black mb-4">Ready for a modern platform?</h2>
         <p className="text-slate-400 text-lg mb-8 max-w-xl mx-auto">
-          Join the beta and get 2 years free. Operational in days, not months.
+          Join the beta and get 2 years free. Operational in hours, not months.
         </p>
         <Link href="/beta" className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-purple-400 text-slate-900 font-bold text-lg hover:bg-purple-300 transition-all duration-200 shadow-lg shadow-purple-500/30">
           Request Early Access <ArrowRight className="w-5 h-5" />
