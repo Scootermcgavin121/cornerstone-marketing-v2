@@ -26,7 +26,7 @@ const comparisonRows = [
   { feature: "Multi-community management", cornerstone: true, newstar: true, note: "Both support multiple communities and divisions." },
   { feature: "Construction scheduling", cornerstone: true, newstar: true, note: "Both ship full scheduling modules." },
   { feature: "Purchasing & POs", cornerstone: true, newstar: true, note: "Cornerstone adds 7-wave automated bidding pipeline." },
-  { feature: "Modern web-based UI", cornerstone: true, newstar: false, note: "NEWSTAR's UI is dated and Windows-centric." },
+  { feature: "Modern web-based UI", cornerstone: true, newstar: false, note: "NEWSTAR is built on a Windows desktop architecture; Cornerstone is web and mobile native." },
 ];
 
 const faqItems: FAQItem[] = [
@@ -129,6 +129,9 @@ export default function NewstarAlternativePage() {
               </tbody>
             </table>
           </div>
+          <p className="max-w-5xl mx-auto mt-4 text-[11px] text-slate-600 leading-relaxed">
+            Pricing and feature availability reflect publicly available information as of November 2026. Verify current pricing and capabilities directly with each vendor. NEWSTAR® is a trademark of its respective owner; Cornerstone PM is not affiliated with or endorsed by NEWSTAR.
+          </p>
         </div>
       </section>
 

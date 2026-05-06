@@ -127,6 +127,9 @@ export default function BuildertrendAlternativePage() {
               </tbody>
             </table>
           </div>
+          <p className="max-w-5xl mx-auto mt-4 text-[11px] text-slate-600 leading-relaxed">
+            Pricing and feature availability reflect publicly available information as of November 2026. Verify current pricing and capabilities directly with each vendor. Buildertrend® is a trademark of its respective owner; Cornerstone PM is not affiliated with or endorsed by Buildertrend.
+          </p>
         </div>
       </section>
 

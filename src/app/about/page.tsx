@@ -10,11 +10,14 @@ export const metadata: Metadata = {
     "Built by a builder who got tired of paying $499/mo for software that didn't fit. The origin story of Cornerstone PM.",
 };
 
+// Pricing reflects publicly listed starting prices as of November 2026; verify current pricing
+// directly with each vendor. Takeaways below describe our personal experience as production home
+// builders evaluating each option — they're our opinions, not a statement about overall product quality.
 const competitors = [
-  { name: "BuilderTrend", price: "$499/mo", issues: "Bloated, enterprise-first, expensive" },
-  { name: "Procore", price: "$700+/mo", issues: "Built for commercial, not residential" },
-  { name: "CoConstruct", price: "$399+/mo", issues: "Acquired, pricing opacity, slow development" },
-  { name: "Spreadsheets", price: "Free*", issues: "You know exactly why this doesn't work" },
+  { name: "BuilderTrend", price: "$499/mo", takeaway: "Built for custom and remodel builders — we needed production-builder workflows" },
+  { name: "Procore", price: "$700+/mo", takeaway: "Designed for commercial construction — we needed residential" },
+  { name: "CoConstruct", price: "$399+/mo", takeaway: "Custom-builder focus after the Buildertrend acquisition — not our fit" },
+  { name: "Spreadsheets", price: "Free*", takeaway: "You know exactly why this doesn't work" },
 ];
 
 export default function AboutPage() {
@@ -83,8 +86,8 @@ export default function AboutPage() {
             {/* Header */}
             <div className="grid grid-cols-3 px-6 py-3 bg-slate-800/80 text-xs font-semibold text-slate-400 uppercase tracking-wider">
               <div>Software</div>
-              <div>Price</div>
-              <div>Reality</div>
+              <div>Starting price</div>
+              <div>Why it didn't fit us</div>
             </div>
             {competitors.map((c, i) => (
               <div
@@ -98,7 +101,7 @@ export default function AboutPage() {
                   <span className="text-slate-300 font-medium">{c.name}</span>
                 </div>
                 <div className="text-slate-500 text-sm">{c.price}</div>
-                <div className="text-slate-500 text-sm">{c.issues}</div>
+                <div className="text-slate-500 text-sm">{c.takeaway}</div>
               </div>
             ))}
             {/* Us */}

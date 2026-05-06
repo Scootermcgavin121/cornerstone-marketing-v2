@@ -14,7 +14,7 @@ export const metadata = {
 const comparisonRows = [
   { feature: "Implementation cost", cornerstone: "$0", buildpro: "$25k-$75k+", note: "BuildPro requires consultant-led implementation." },
   { feature: "Time to operational", cornerstone: "Hours", buildpro: "3-9 months", note: "Cornerstone: AI Migration Wizard ingests your data in an afternoon — you're live the same day." },
-  { feature: "Modern web UI", cornerstone: true, buildpro: false, note: "BuildPro's UI is dated and Windows-centric." },
+  { feature: "Modern web UI", cornerstone: true, buildpro: false, note: "BuildPro is built on a Windows desktop architecture; Cornerstone is web and mobile native." },
   { feature: "Native AI agents", cornerstone: true, buildpro: false, note: "Cornerstone: Foreman AI (47 skills) + Blueprint AI." },
   { feature: "Mobile-friendly", cornerstone: true, buildpro: "limited", note: "Cornerstone is fully responsive; BuildPro mobile is limited." },
   { feature: "Public REST API", cornerstone: true, buildpro: "limited", note: "Cornerstone: 59 endpoints, public docs." },
@@ -34,7 +34,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "How is Cornerstone PM different from BuildPro?",
-    a: "Three key differences: (1) Cornerstone PM is a modern, web-based, mobile-friendly platform &mdash; BuildPro's UI is dated and Windows-centric; (2) Cornerstone ships native AI agents (Foreman AI, Blueprint AI) that BuildPro doesn't offer at any tier; (3) Cornerstone is operational in hours at $149/mo with unlimited users, while BuildPro requires $25k-$75k+ implementation budgets.",
+    a: "Three key differences: (1) Cornerstone PM is a modern, web-based, mobile-friendly platform, while BuildPro is built on a Windows desktop architecture; (2) Cornerstone ships native AI agents (Foreman AI, Blueprint AI) that BuildPro doesn't offer at any tier; (3) Cornerstone is operational in hours at $149/mo with unlimited users, while BuildPro requires $25k-$75k+ implementation budgets.",
   },
   {
     q: "Can Cornerstone PM replace BuildPro for a production builder?",
@@ -127,6 +127,9 @@ export default function BuildProAlternativePage() {
               </tbody>
             </table>
           </div>
+          <p className="max-w-5xl mx-auto mt-4 text-[11px] text-slate-600 leading-relaxed">
+            Pricing and feature availability reflect publicly available information as of November 2026. Verify current pricing and capabilities directly with each vendor. BuildPro® is a trademark of its respective owner; Cornerstone PM is not affiliated with or endorsed by BuildPro.
+          </p>
         </div>
       </section>
 

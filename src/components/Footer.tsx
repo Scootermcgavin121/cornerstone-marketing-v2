@@ -155,7 +155,12 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-6 border-t border-slate-800/60 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div className="mt-12 pt-6 border-t border-slate-800/60 space-y-3">
+          <p className="text-[11px] text-slate-600 leading-relaxed">
+            Buildertrend®, NEWSTAR®, BuildPro®, CoConstruct®, JobTread®, MarkSystems®, Procore®, and any other competitor names mentioned on this site are trademarks of their respective owners. Cornerstone PM is not affiliated with, endorsed by, or sponsored by any of these companies. Comparative claims reflect publicly available information at the time of writing; verify pricing and feature availability directly with each vendor.
+          </p>
+        </div>
+        <div className="mt-4 pt-4 border-t border-slate-800/60 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-slate-600">
             © {new Date().getFullYear()} Cornerstone PM. All rights reserved. Foreman AI™ and Blueprint AI™ are trademarks of Cornerstone PM.
           </p>

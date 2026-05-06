@@ -313,6 +313,9 @@ export default function ComparePage() {
             <span className="flex items-center gap-1.5"><Minus className="w-3.5 h-3.5 text-slate-600" /> Partial / limited</span>
             <span className="flex items-center gap-1.5"><X className="w-3.5 h-3.5 text-slate-700" /> Not available</span>
           </div>
+          <p className="max-w-5xl mx-auto mt-6 text-[11px] text-slate-600 leading-relaxed text-center">
+            Pricing and feature availability reflect publicly available information as of November 2026. Verify current pricing and capabilities directly with each vendor. NEWSTAR®, BuildPro®, Buildertrend®, and CoConstruct® are trademarks of their respective owners; Cornerstone PM is not affiliated with or endorsed by these companies.
+          </p>
         </div>
       </section>
 
