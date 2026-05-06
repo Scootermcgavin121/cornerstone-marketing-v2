@@ -4,9 +4,9 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 export const metadata = {
-  title: "AI Construction Management Software for Home Builders | Cornerstone PM",
+  title: "Foreman AI — AI Construction Management for Home Builders | Cornerstone PM",
   description:
-    "Cornerstone PM is AI construction management software purpose-built for home builders. Foreman AI handles scheduling, purchasing, sales pipeline, and more.",
+    "Foreman AI is the AI agent built into Cornerstone PM — 47 purpose-built skills for home builder scheduling, purchasing, sales pipeline, and design center. Not a chatbot. Not bolted on.",
 };
 
 const skills = [
@@ -92,17 +92,20 @@ export default function AiConstructionManagementPage() {
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs font-semibold mb-6">
             <Brain className="w-3.5 h-3.5" />
-            47 SKILLS · BUILT FOR HOME BUILDERS · NOT A CHATBOT
+            FOREMAN AI · BY CORNERSTONE PM · 47 SKILLS
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
-            AI Construction Management Software{" "}
-            <span className="text-blue-400">Built for Home Builders</span>
+            Meet{" "}
+            <span className="text-blue-400">Foreman AI</span>
           </h1>
+          <p className="text-2xl sm:text-3xl text-slate-300 max-w-3xl mx-auto mb-6 font-semibold">
+            The AI construction agent built for home builders.
+          </p>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-6 leading-relaxed">
-            Not a project management tool with AI bolted on. Construction management software with AI built in — purpose-built for residential home builders who need scheduling, purchasing, sales pipeline, and design center in one place.
+            <span className="text-white font-semibold">Foreman AI</span> is the brain inside Cornerstone PM — not a chatbot, not a project tool with AI bolted on. It reads and writes your real construction data, runs your schedule, generates documents, and answers in plain English.
           </p>
           <p className="text-lg text-slate-500 max-w-2xl mx-auto mb-10">
-            Foreman AI has 47 purpose-built skills. It reads and writes your real data. It knows what a floorplan is, what a spec level means, and what a punch list looks like for a home under construction.
+            47 purpose-built skills. Knows what a floorplan is, what a spec level means, and what a punch list looks like for a home under construction. Built for home builders specifically — not adapted from generic commercial PM tools.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
