@@ -132,6 +132,137 @@ PATCH /api/ext/tasks/t_abc123
 // "🏠 Framing complete at 123 Oak St!
 //  Your home is 42% done. Track: cornerstonepm.ai/..."`,
   },
+  {
+    method: "WEBHOOK",
+    path: "vendor.notification.advance",
+    color: "text-cyan-400",
+    bg: "bg-cyan-500/10",
+    border: "border-cyan-500/30",
+    label: "Vendor Advance Notice",
+    desc: "Heads-up that a vendor's task is coming up within their advance-notice window. Same smart threshold logic as Cornerstone's email cascade — if the email fires, this fires. Text the sub before they even check their inbox.",
+    example: `// Webhook → your Twilio handler
+{
+  "event": "vendor.notification.advance",
+  "data": {
+    "tier": "advance",
+    "vendor": {
+      "companyName": "ABC Framing LLC",
+      "phone": "+15550192"
+    },
+    "home": { "address": "123 Oak Street",
+              "lot": "Lot 14" },
+    "tasks": [{
+      "taskName": "Rough Framing",
+      "newStart": "2026-05-20",
+      "daysUntilTask": 14,
+      "confirmUrl": "app.cornerstonepm.ai/api/tasks/..."
+    }],
+    "batchConfirmUrl": "app.cornerstonepm.ai/api/tasks/confirm-batch?..."
+  }
+}
+
+// SMS:
+// "📅 Heads up — Rough Framing at 123 Oak St
+//  starts May 20 (14 days). Tap to confirm:
+//  cornerstonepm.ai/api/tasks/..."`,
+  },
+  {
+    method: "WEBHOOK",
+    path: "vendor.notification.reminder",
+    color: "text-red-400",
+    bg: "bg-red-500/10",
+    border: "border-red-500/30",
+    label: "Vendor Urgent Reminder",
+    desc: "Final confirmation — the task is within the vendor's lead-time window. This is the \"show up Monday\" text. Includes one-tap confirm link that works over SMS.",
+    example: `// Webhook → your Twilio handler
+{
+  "event": "vendor.notification.reminder",
+  "data": {
+    "tier": "reminder",
+    "vendor": {
+      "companyName": "ABC Framing LLC",
+      "phone": "+15550192"
+    },
+    "tasks": [{
+      "taskName": "Rough Framing",
+      "newStart": "2026-05-12",
+      "daysUntilTask": 3,
+      "confirmUrl": "app.cornerstonepm.ai/api/tasks/..."
+    }],
+    "home": { "address": "123 Oak Street",
+              "lot": "Lot 14" }
+  }
+}
+
+// SMS:
+// "🔔 Reminder: Rough Framing at 123 Oak St
+//  starts Monday (3 days). Confirm now:
+//  cornerstonepm.ai/api/tasks/..."`,
+  },
+  {
+    method: "WEBHOOK",
+    path: "vendor.notification.moved_earlier",
+    color: "text-amber-400",
+    bg: "bg-amber-500/10",
+    border: "border-amber-500/30",
+    label: "Schedule Moved Earlier",
+    desc: "A task date just moved UP — more urgent than a regular change. Thresholds are halved so vendors get notified faster. The sub needs to know NOW that their start date changed.",
+    example: `// Webhook → your Twilio handler
+{
+  "event": "vendor.notification.moved_earlier",
+  "data": {
+    "tier": "moved_earlier",
+    "vendor": { "companyName": "ABC Framing LLC",
+                "phone": "+15550192" },
+    "tasks": [{
+      "taskName": "Rough Framing",
+      "oldStart": "2026-05-20",
+      "newStart": "2026-05-15",
+      "daysMoved": 5,
+      "movedEarlier": true
+    }],
+    "home": { "address": "123 Oak Street",
+              "lot": "Lot 14" }
+  }
+}
+
+// SMS:
+// "⚠️ Date moved UP: Rough Framing at 123 Oak
+//  moved May 20 → May 15 (5 days earlier).
+//  Confirm: cornerstonepm.ai/api/tasks/..."`,
+  },
+  {
+    method: "WEBHOOK",
+    path: "vendor.notification.postponed",
+    color: "text-purple-400",
+    bg: "bg-purple-500/10",
+    border: "border-purple-500/30",
+    label: "Schedule Postponed",
+    desc: "A task got pushed back. Vendor needs to know so they can reallocate their crew. Less urgent than moved-earlier, but still important — especially if they've already mobilized.",
+    example: `// Webhook → your Twilio handler
+{
+  "event": "vendor.notification.postponed",
+  "data": {
+    "tier": "postponed",
+    "vendor": { "companyName": "ABC Framing LLC",
+                "phone": "+15550192" },
+    "tasks": [{
+      "taskName": "Rough Framing",
+      "oldStart": "2026-05-12",
+      "newStart": "2026-05-19",
+      "daysMoved": 7,
+      "movedEarlier": false
+    }],
+    "home": { "address": "123 Oak Street",
+              "lot": "Lot 14" }
+  }
+}
+
+// SMS:
+// "📆 Date pushed back: Rough Framing at
+//  123 Oak moved May 12 → May 19.
+//  cornerstonepm.ai/homes/..."`,
+  },
 ];
 
 const pipeline = [
@@ -265,29 +396,47 @@ export default function ApiAccessPage() {
             <p className="text-slate-400 max-w-xl mx-auto">Bearer token auth. JSON responses. Standard REST + webhooks. Schedule subs by text, send bid requests, track responses, push every in-app message to SMS, and ping the homebuyer the moment a milestone completes &mdash; pair with Twilio, Bland, or Retell. Works with any agent: custom-built, third-party, or Cornerstone&apos;s Foreman AI.</p>
           </div>
           <div className="space-y-6">
-            {endpoints.map((ep) => (
-              <div key={ep.path} className={`rounded-2xl bg-slate-900/60 border ${ep.border} overflow-hidden`}>
-                <div className="grid grid-cols-1 lg:grid-cols-2">
-                  {/* Left: description */}
-                  <div className="p-8">
-                    <div className="flex items-center gap-3 mb-4">
-                      <span className={`px-3 py-1 rounded-lg text-xs font-black ${ep.bg} ${ep.color} border ${ep.border}`}>
-                        {ep.method}
-                      </span>
-                      <code className="text-slate-300 text-sm font-mono">{ep.path}</code>
+            {endpoints.map((ep, idx) => {
+              // Insert divider before the first WEBHOOK card
+              const prev = idx > 0 ? endpoints[idx - 1] : null;
+              const showDivider = ep.method === "WEBHOOK" && (!prev || prev.method !== "WEBHOOK");
+              return (
+                <div key={ep.path}>
+                  {showDivider && (
+                    <div className="text-center my-12">
+                      <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-violet-500/30 bg-violet-500/10 text-violet-400 text-xs font-semibold mb-4">
+                        <Zap className="w-3.5 h-3.5" />
+                        REAL-TIME WEBHOOKS
+                      </div>
+                      <h3 className="text-2xl sm:text-3xl font-black text-white mb-2">22 HMAC-signed events. Fire to Twilio, Bland, or Retell the moment something happens.</h3>
+                      <p className="text-slate-400 max-w-2xl mx-auto">Other platforms say &ldquo;webhooks exist.&rdquo; We give you 22 named events with typed payloads, HMAC signatures, delivery logs, and auto-retry.</p>
                     </div>
-                    <h3 className={`text-2xl font-black ${ep.color} mb-3`}>{ep.label}</h3>
-                    <p className="text-slate-400 leading-relaxed">{ep.desc}</p>
-                  </div>
-                  {/* Right: code example */}
-                  <div className="bg-slate-950/80 border-t lg:border-t-0 lg:border-l border-slate-800/60 p-6">
-                    <pre className="text-xs text-slate-300 font-mono leading-relaxed overflow-x-auto whitespace-pre-wrap">
-                      {ep.example}
-                    </pre>
+                  )}
+                  <div className={`rounded-2xl bg-slate-900/60 border ${ep.border} overflow-hidden`}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2">
+                      {/* Left: description */}
+                      <div className="p-8">
+                        <div className="flex items-center gap-3 mb-4">
+                          <span className={`px-3 py-1 rounded-lg text-xs font-black ${ep.bg} ${ep.color} border ${ep.border} inline-flex items-center gap-1`}>
+                            {ep.method === "WEBHOOK" && <Zap className="w-3 h-3" />}
+                            {ep.method}
+                          </span>
+                          <code className="text-slate-300 text-sm font-mono">{ep.path}</code>
+                        </div>
+                        <h3 className={`text-2xl font-black ${ep.color} mb-3`}>{ep.label}</h3>
+                        <p className="text-slate-400 leading-relaxed">{ep.desc}</p>
+                      </div>
+                      {/* Right: code example */}
+                      <div className="bg-slate-950/80 border-t lg:border-t-0 lg:border-l border-slate-800/60 p-6">
+                        <pre className="text-xs text-slate-300 font-mono leading-relaxed overflow-x-auto whitespace-pre-wrap">
+                          {ep.example}
+                        </pre>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
           {/* Auth callout */}
