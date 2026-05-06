@@ -13,7 +13,7 @@ export const metadata = {
 
 const comparisonRows = [
   { feature: "Implementation cost", cornerstone: "$0", newstar: "$25k-$100k+", note: "NEWSTAR requires extensive consultant-led implementation." },
-  { feature: "Time to operational", cornerstone: "Days", newstar: "3-12 months", note: "Cornerstone: import templates, go live in a week." },
+  { feature: "Time to operational", cornerstone: "Days", newstar: "3-12 months", note: "Cornerstone: 23 CSV import endpoints + CRM migration wizard. Self-serve in days." },
   { feature: "Starting monthly price", cornerstone: "$149", newstar: "Enterprise quote", note: "NEWSTAR pricing is custom and not publicly listed." },
   { feature: "Per-user fees", cornerstone: "Unlimited users", newstar: "Per-seat", note: "Cornerstone: no per-seat pricing on any plan." },
   { feature: "Built for small-to-mid builders", cornerstone: true, newstar: false, note: "NEWSTAR is designed for top-100 enterprise home builders." },
@@ -48,7 +48,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Does Cornerstone PM support BuildPro and MarkSystems migrations too?",
-    a: "Yes. The same migration tooling that supports NEWSTAR exports also supports BuildPro, MarkSystems, and any Excel-based system using a smart column mapper. White-glove migration is available on Pro and Pro+ plans.",
+    a: "Yes. Cornerstone ships 23 dedicated CSV import endpoints (vendors, homes, communities, schedule templates, master tasks, scopes, takeoffs, parts catalog, budgets, design categories, floorplans, warranties, users, and more) and a CRM migration wizard that orchestrates 17 of them in a single guided flow. The same tooling that ingests NEWSTAR exports also handles BuildPro, MarkSystems, and any Excel-based system. AI bid import covers anything that doesn't fit a CSV — upload PDFs, scans, even handwritten quotes. White-glove migration available on Pro and Pro+ plans.",
   },
   {
     q: "What about NEWSTAR's options engine? Does Cornerstone match it?",

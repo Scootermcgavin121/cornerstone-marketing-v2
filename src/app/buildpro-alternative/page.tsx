@@ -42,7 +42,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "How long does migration from BuildPro take?",
-    a: "Most BuildPro migrations to Cornerstone PM complete in under a week. Cornerstone's import tooling supports BuildPro exports, NEWSTAR, MarkSystems, and any Excel-based system using a smart column mapper. White-glove migration is available on the Pro and Pro+ plans.",
+    a: "Most BuildPro migrations to Cornerstone PM complete in under a week, self-serve. Cornerstone ships with 23 dedicated CSV import endpoints — vendors, homes, communities, schedule templates, master tasks, scopes, takeoffs, parts catalog, budgets, warranties, design categories, floorplans, and more — plus a CRM migration wizard that routes through 17 of them in one guided flow. Supports BuildPro exports, NEWSTAR, MarkSystems, and any Excel-based system. AI bid import handles whatever doesn't fit a CSV — upload any vendor format (Excel, PDF, scanned, handwritten) and Cornerstone parses it. White-glove migration available on Pro and Pro+ plans.",
   },
   {
     q: "What about BuildPro's options engine? Does Cornerstone match it?",

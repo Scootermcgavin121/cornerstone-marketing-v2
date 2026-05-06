@@ -121,7 +121,8 @@ export default function MigratingFromBuildertrendPage() {
           <p className="text-xl text-slate-300 font-light">
             Most production home builders can complete a full migration from Buildertrend to Cornerstone PM in
             3–5 business days — with no data loss, no IT contractor, and no interruption to active builds.
-            Here&apos;s exactly how to do it.
+            Cornerstone ships <strong className="text-white">23 dedicated CSV import endpoints</strong> and a CRM migration wizard that
+            routes through 17 of them in a single guided flow. Here&apos;s exactly how to do it.
           </p>
 
           <p>

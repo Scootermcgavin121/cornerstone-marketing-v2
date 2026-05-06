@@ -43,7 +43,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Can I migrate from Buildertrend to Cornerstone PM?",
-    a: "Yes. Cornerstone PM includes a Buildertrend migration tool that imports schedules, vendors, jobs, and templates with smart column mapping. Most migrations complete in under a day. White-glove migration is available on Pro and Pro+ plans.",
+    a: "Yes — Cornerstone PM ships with 23 dedicated CSV import endpoints (vendors, homes, communities, schedule templates, design categories, floorplans, scopes, takeoffs, parts catalog, budgets, warranties, users, and more) plus a CRM migration wizard that orchestrates the whole thing. Most Buildertrend migrations complete in under a day, self-serve. White-glove migration is available on Pro and Pro+ plans.",
   },
   {
     q: "Does Cornerstone PM have everything Buildertrend has?",
