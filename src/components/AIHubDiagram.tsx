@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Hammer, FileSearch, ClipboardList, Home, MessageSquare, Sparkles } from "lucide-react";
+import { Hammer, FileSearch, ClipboardList, Home, MessageSquare, Sparkles, Code2 } from "lucide-react";
 
 /* ------------------------------------------------------------------
  * AIHubDiagram
@@ -61,7 +61,7 @@ const AGENTS: Agent[] = [
     id: "bid-import",
     name: "Bid Import AI",
     tagline: "AI Vendor Bid Parser",
-    description: "Vendor email parsed → bid logged. Spreadsheet, PDF, or call-in — extracted automatically.",
+    description: "Spreadsheet, PDF, email — even a back-of-napkin photo. Parts created in the system automatically.",
     href: "/ai-construction-purchasing",
     color: "text-violet-300",
     bg: "bg-violet-500/15",
@@ -97,6 +97,20 @@ const AGENTS: Agent[] = [
     glow: "#fb7185",
     icon: MessageSquare,
     side: "left",
+    row: 2,
+  },
+  {
+    id: "api",
+    name: "Full REST API",
+    tagline: "Build Your Own AI Agents",
+    description: "Phone agent texts vendors when bids are due — 47 skills exposed via Bearer token. Connect Claude, GPT, Twilio, anything.",
+    href: "/api-access",
+    color: "text-sky-300",
+    bg: "bg-sky-500/15",
+    border: "border-sky-400/40",
+    glow: "#38bdf8",
+    icon: Code2,
+    side: "right",
     row: 2,
   },
 ];
@@ -181,7 +195,7 @@ export default function AIHubDiagram() {
             <span className="text-white">Every workflow.</span>
           </h2>
           <p className="mt-6 text-base sm:text-lg text-white/60 max-w-2xl mx-auto">
-            Blueprint AI reads your plans. Foreman AI runs your schedule. Bid Import AI handles vendor quotes. All built into Cornerstone.
+            5 native AI agents and a full REST API — build your own phone agent, vendor SMS bot, or workflow automation on top of the same 47 skills Foreman AI uses.
           </p>
         </div>
 
@@ -245,22 +259,57 @@ export default function AIHubDiagram() {
 
           {/* Hub */}
           <div className="order-1 lg:order-2 flex justify-center">
-            <div ref={hubRef} className="relative">
-              {/* dashed pulse rings */}
+            <div ref={hubRef} className="relative w-32 h-32">
+              {/* Inner spinning ring — visible orbit right against the hub */}
               <motion.div
                 aria-hidden
-                className="absolute inset-0 rounded-full border border-dashed border-white/30"
+                className="absolute rounded-full pointer-events-none"
+                style={{
+                  width: 156,
+                  height: 156,
+                  left: -14,
+                  top: -14,
+                  border: "1.5px dashed rgba(255,255,255,0.35)",
+                }}
                 animate={{ rotate: 360 }}
-                transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-                style={{ width: 200, height: 200, left: -36, top: -36 }}
-              />
+                transition={{ duration: 12, repeat: Infinity, ease: "linear" }}
+              >
+                {/* orbiting accent dots so the spin is unmistakable */}
+                <span
+                  aria-hidden
+                  className="absolute w-2 h-2 rounded-full bg-emerald-300 shadow-[0_0_10px_2px_rgba(52,211,153,0.7)]"
+                  style={{ top: -4, left: "50%", transform: "translateX(-50%)" }}
+                />
+                <span
+                  aria-hidden
+                  className="absolute w-1.5 h-1.5 rounded-full bg-cyan-300 shadow-[0_0_8px_2px_rgba(34,211,238,0.6)]"
+                  style={{ bottom: 6, right: 8 }}
+                />
+                <span
+                  aria-hidden
+                  className="absolute w-1.5 h-1.5 rounded-full bg-violet-300 shadow-[0_0_8px_2px_rgba(167,139,250,0.6)]"
+                  style={{ bottom: 6, left: 8 }}
+                />
+              </motion.div>
+
+              {/* Mid ring — counter-rotates slower */}
               <motion.div
                 aria-hidden
-                className="absolute inset-0 rounded-full border border-dashed border-emerald-400/30"
+                className="absolute rounded-full border border-dashed border-white/20 pointer-events-none"
                 animate={{ rotate: -360 }}
-                transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
-                style={{ width: 260, height: 260, left: -66, top: -66 }}
+                transition={{ duration: 28, repeat: Infinity, ease: "linear" }}
+                style={{ width: 210, height: 210, left: -41, top: -41 }}
               />
+
+              {/* Outer ring — ambient drift */}
+              <motion.div
+                aria-hidden
+                className="absolute rounded-full border border-dashed border-emerald-400/25 pointer-events-none"
+                animate={{ rotate: 360 }}
+                transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
+                style={{ width: 290, height: 290, left: -81, top: -81 }}
+              />
+
               <div className="relative w-32 h-32 rounded-full bg-gradient-to-br from-emerald-400 via-cyan-400 to-violet-500 p-[2px] shadow-[0_0_60px_-10px_rgba(52,211,153,0.55)]">
                 <div className="w-full h-full rounded-full bg-black/90 flex flex-col items-center justify-center">
                   <Sparkles className="w-7 h-7 text-emerald-300" />
@@ -279,14 +328,14 @@ export default function AIHubDiagram() {
           </div>
         </div>
 
-        {/* API pill */}
+        {/* CTA pill — API is now its own spoke; this points to the live docs */}
         <div className="mt-16 flex justify-center">
           <Link
             href="/api-docs"
             className="group inline-flex items-center gap-3 px-5 py-3 rounded-full border border-white/15 bg-white/[0.04] hover:bg-white/[0.08] transition text-sm text-white/80"
           >
-            <span className="text-white/50">Need something custom?</span>
-            <span className="font-semibold text-white">Build it with our API</span>
+            <span className="text-white/50">See every skill the API exposes</span>
+            <span className="font-semibold text-white">Open the API docs</span>
             <span className="text-emerald-300 group-hover:translate-x-1 transition">→</span>
           </Link>
         </div>
