@@ -13,7 +13,7 @@ export const metadata = {
 
 const comparisonRows = [
   { feature: "Implementation cost", cornerstone: "$0", newstar: "$25k-$100k+", note: "NEWSTAR requires extensive consultant-led implementation." },
-  { feature: "Time to operational", cornerstone: "Days", newstar: "3-12 months", note: "Cornerstone: beta AI Migration Agent + 23 CSV import endpoints. Drop files, agent does the rest." },
+  { feature: "Time to operational", cornerstone: "Days", newstar: "3-12 months", note: "Cornerstone: AI Migration Agent (Live in Beta) + 23 CSV import endpoints. Drop files, agent does the rest." },
   { feature: "Starting monthly price", cornerstone: "$149", newstar: "Enterprise quote", note: "NEWSTAR pricing is custom and not publicly listed." },
   { feature: "Per-user fees", cornerstone: "Unlimited users", newstar: "Per-seat", note: "Cornerstone: no per-seat pricing on any plan." },
   { feature: "Built for small-to-mid builders", cornerstone: true, newstar: false, note: "NEWSTAR is designed for top-100 enterprise home builders." },
@@ -48,7 +48,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Does Cornerstone PM support BuildPro and MarkSystems migrations too?",
-    a: "Yes — and Cornerstone's beta AI Migration Agent makes it dramatically simpler than NEWSTAR's enterprise rollout. Drop your NEWSTAR export files in, the agent reads them, maps the columns, runs the imports, and tells you what it skipped. Behind the scenes it routes through 23 dedicated CSV import endpoints (vendors, homes, communities, schedule templates, master tasks, scopes, takeoffs, parts catalog, budgets, design categories, floorplans, warranties, users, and more) plus a CRM migration wizard that orchestrates 17 of them in one guided flow. The same tooling that ingests NEWSTAR exports also handles BuildPro, MarkSystems, and any Excel-based system. AI bid import covers anything that doesn't fit a CSV — upload PDFs, scans, even handwritten quotes. White-glove migration available on Pro and Pro+ plans.",
+    a: "Yes — and Cornerstone's AI Migration Agent (Live in Beta) makes it dramatically simpler than NEWSTAR's enterprise rollout. Drop your NEWSTAR export files in, the agent reads them, maps the columns, runs the imports, and tells you what it skipped. Behind the scenes it routes through 23 dedicated CSV import endpoints (vendors, homes, communities, schedule templates, master tasks, scopes, takeoffs, parts catalog, budgets, design categories, floorplans, warranties, users, and more) plus a CRM migration wizard that orchestrates 17 of them in one guided flow. The same tooling that ingests NEWSTAR exports also handles BuildPro, MarkSystems, and any Excel-based system. AI bid import covers anything that doesn't fit a CSV — upload PDFs, scans, even handwritten quotes. White-glove migration available on Pro and Pro+ plans.",
   },
   {
     q: "What about NEWSTAR's options engine? Does Cornerstone match it?",

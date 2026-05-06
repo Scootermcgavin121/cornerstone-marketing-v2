@@ -39,7 +39,7 @@ const aiLinks = [
   { label: "🧠 Bid Import AI", href: "/bid-import-ai", desc: "Upload any vendor bid — AI extracts every line item" },
   { label: "📄 AI MLS Listing Generator", href: "/listing-sheet", desc: "AI-written MLS listings from live project data" },
   { label: "💬 AI Support Agent", href: "/support-ai", desc: "Always-on help desk, every feature & workflow" },
-  { label: "📦 CRM Migration Wizard · Beta", href: "/migrate", desc: "Drop your Buildertrend / JobTread export — AI maps every column" },
+  { label: "📦 CRM Migration Wizard · Live in Beta", href: "/migrate", desc: "Drop your Buildertrend / JobTread export — AI maps every column" },
   { label: "🔌 Bring Your Own AI Agent", href: "/api-access", desc: "REST API + webhooks — plug Claude, GPT, or your own agent into Cornerstone" },
 ];
 

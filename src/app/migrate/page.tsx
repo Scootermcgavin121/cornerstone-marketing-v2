@@ -130,7 +130,7 @@ const faq: FAQItem[] = [
   },
   {
     q: "Is the migration wizard ready for production data?",
-    a: "It's currently in Beta. We've tested it extensively on real Buildertrend, JobTread, and CoConstruct exports, but we recommend running dry-run mode first on any migration and reviewing the preview carefully before committing. Report anything weird and we'll fix it fast.",
+    a: "It's Live in Beta. The wizard is in production today — builders are running migrations through it as we speak — and we've tested it extensively on real Buildertrend, JobTread, and CoConstruct exports. We recommend running dry-run mode first on any migration and reviewing the preview carefully before committing. Report anything weird and we'll fix it fast.",
   },
   {
     q: "Where do I find the migration wizard?",
@@ -157,9 +157,9 @@ export default function MigratePage() {
               <Brain className="w-4 h-4" />
               AI-Powered Migration
             </div>
-            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/40 text-amber-300 text-xs font-bold uppercase tracking-widest">
-              <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
-              Beta
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-500/15 border border-emerald-500/40 text-emerald-300 text-xs font-bold uppercase tracking-widest">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+              Live in Beta
             </span>
           </div>
           <h1 className="text-5xl sm:text-7xl font-black tracking-tight mb-6 leading-tight">
