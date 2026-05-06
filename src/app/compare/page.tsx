@@ -257,18 +257,18 @@ export default function ComparePage() {
       {/* Comparison table */}
       <section className="py-12 px-4 pb-20">
         <div className="max-w-6xl mx-auto">
-          <div className="overflow-x-auto rounded-2xl border border-slate-800">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b border-slate-800">
-                  <th className="px-4 py-4 text-left text-slate-400 font-semibold w-64">Feature</th>
+          <div className="overflow-x-auto overflow-y-visible rounded-2xl border border-slate-800">
+            <table className="w-full text-sm border-separate border-spacing-0">
+              <thead className="sticky top-16 z-30">
+                <tr>
+                  <th className="px-4 py-4 text-left text-slate-400 font-semibold w-64 bg-slate-950 border-b border-slate-800 backdrop-blur-sm">Feature</th>
                   {competitors.map((c, i) => (
                     <th
                       key={c}
-                      className={`px-4 py-4 text-center font-bold text-sm ${
+                      className={`px-4 py-4 text-center font-bold text-sm border-b border-slate-800 backdrop-blur-sm ${
                         i === 0
-                          ? "bg-cyan-500/10 text-cyan-400 border-x border-cyan-500/20"
-                          : "text-slate-400"
+                          ? "bg-cyan-500/10 text-cyan-300 border-x border-cyan-500/20"
+                          : "bg-slate-950 text-slate-400"
                       }`}
                     >
                       {i === 0 && (
