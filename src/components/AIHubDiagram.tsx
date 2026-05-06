@@ -123,7 +123,7 @@ function curvePath(from: { x: number; y: number }, to: { x: number; y: number },
   return `M ${from.x} ${from.y} C ${c1.x} ${c1.y}, ${c2.x} ${c2.y}, ${to.x} ${to.y}`;
 }
 
-export default function AIHubDiagram() {
+export default function AIHubDiagram({ inline = false }: { inline?: boolean } = {}) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const hubRef = useRef<HTMLDivElement | null>(null);
   const cardRefs = useRef<Record<string, HTMLDivElement | null>>({});
@@ -168,25 +168,34 @@ export default function AIHubDiagram() {
   const leftAgents = AGENTS.filter((a) => a.side === "left").sort((a, b) => a.row - b.row);
   const rightAgents = AGENTS.filter((a) => a.side === "right").sort((a, b) => a.row - b.row);
 
+  const Wrapper: React.ElementType = inline ? "div" : "section";
+  const wrapperClass = inline
+    ? "relative w-full overflow-hidden"
+    : "relative w-full bg-slate-950 py-20 sm:py-28 overflow-hidden";
+
   return (
-    <section className="relative w-full bg-slate-950 py-20 sm:py-28 overflow-hidden">
-      {/* soft radial glow — matches AgentsSection for cohesion */}
-      <div
-        aria-hidden
-        className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(34,211,238,0.05)_0%,transparent_60%)]"
-      />
-      {/* faint grid background */}
-      <div
-        aria-hidden
-        className="absolute inset-0 opacity-[0.08]"
-        style={{
-          backgroundImage:
-            "linear-gradient(to right, rgba(255,255,255,0.6) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.6) 1px, transparent 1px)",
-          backgroundSize: "48px 48px",
-          maskImage: "radial-gradient(ellipse at center, black 40%, transparent 80%)",
-          WebkitMaskImage: "radial-gradient(ellipse at center, black 40%, transparent 80%)",
-        }}
-      />
+    <Wrapper className={wrapperClass}>
+      {/* soft radial glow — matches AgentsSection for cohesion (suppressed inline; hero already has bg) */}
+      {!inline && (
+        <>
+          <div
+            aria-hidden
+            className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(34,211,238,0.05)_0%,transparent_60%)]"
+          />
+          {/* faint grid background */}
+          <div
+            aria-hidden
+            className="absolute inset-0 opacity-[0.08]"
+            style={{
+              backgroundImage:
+                "linear-gradient(to right, rgba(255,255,255,0.6) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.6) 1px, transparent 1px)",
+              backgroundSize: "48px 48px",
+              maskImage: "radial-gradient(ellipse at center, black 40%, transparent 80%)",
+              WebkitMaskImage: "radial-gradient(ellipse at center, black 40%, transparent 80%)",
+            }}
+          />
+        </>
+      )}
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
         {/* Headline */}
@@ -196,8 +205,10 @@ export default function AIHubDiagram() {
             <span>Powered by Foreman AI™</span>
           </div>
           <h2 className="text-5xl sm:text-7xl font-black tracking-tight leading-none">
-            <span className="italic font-serif text-emerald-300/90">One AI.</span>{" "}
-            <span className="text-white">Every workflow.</span>
+            <span className="bg-gradient-to-r from-cyan-400 via-teal-300 to-cyan-500 bg-clip-text text-transparent">
+              <span className="italic font-serif">One AI.</span>{" "}
+              <span>Every workflow.</span>
+            </span>
           </h2>
           <p className="mt-6 text-base sm:text-lg text-white/60 max-w-2xl mx-auto">
             <span className="text-cyan-300 font-semibold">Foreman AI™</span> is the brain behind Cornerstone — 47 skills, 5 specialized agents, and a full REST API. Build your own phone agent, vendor SMS bot, or workflow automation on top of the same engine that runs your jobs.
@@ -364,7 +375,7 @@ export default function AIHubDiagram() {
           </Link>
         </div>
       </div>
-    </section>
+    </Wrapper>
   );
 }
 

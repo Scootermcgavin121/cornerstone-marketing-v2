@@ -4,6 +4,7 @@ import Link from "next/link";
 import { BackgroundBeams } from "./ui/background-beams";
 import { SparklesCore } from "./ui/sparkles";
 import { ArrowRight, Zap } from "lucide-react";
+import AIHubDiagram from "./AIHubDiagram";
 
 const words = ["Smarter.", "Faster.", "Wider Margins."];
 
@@ -37,7 +38,7 @@ export function Hero() {
   }, [displayText, isDeleting, wordIndex]);
 
   return (
-    <section className="relative flex flex-col items-center justify-center overflow-hidden bg-slate-950 pt-32 pb-8">
+    <section className="relative flex flex-col items-center justify-center overflow-hidden bg-slate-950 pt-32 pb-16">
       {/* Background effects */}
       <BackgroundBeams />
       <SparklesCore
@@ -50,48 +51,47 @@ export function Hero() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(6,182,212,0.05)_0%,transparent_60%)]" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-4 text-center">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 text-center">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-sm font-medium mb-8 backdrop-blur-sm">
           <Zap className="w-3.5 h-3.5" />
           <span>Now with 5 Built-in AI Agents &middot; Free Beta</span>
         </div>
 
-        {/* Headline */}
+        {/* Headline — vertical box reserved so typewriter rotation does NOT shift the page */}
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight text-white leading-[1.05] mb-6">
-          Build{" "}
-          <span className="relative inline-block">
-            <span
-              className="bg-gradient-to-r from-cyan-400 via-teal-300 to-cyan-500 bg-clip-text text-transparent"
-              style={{ minWidth: "4ch", display: "inline-block", paddingBottom: "0.15em" }}
-            >
-              {displayText}
-              <span className="animate-pulse text-cyan-400">|</span>
+          <span className="block min-h-[1.15em]">
+            Build{" "}
+            <span className="relative inline-block align-baseline">
+              <span
+                className="bg-gradient-to-r from-cyan-400 via-teal-300 to-cyan-500 bg-clip-text text-transparent"
+                style={{
+                  minWidth: "4ch",
+                  display: "inline-block",
+                  paddingBottom: "0.15em",
+                  lineHeight: 1.1,
+                  verticalAlign: "baseline",
+                }}
+              >
+                {displayText}
+                <span className="animate-pulse text-cyan-400">|</span>
+              </span>
             </span>
           </span>
         </h1>
 
         {/* Subheadline */}
-        <p className="text-xl sm:text-2xl md:text-3xl text-slate-300 font-light mb-4 leading-relaxed">
+        <p className="text-xl sm:text-2xl md:text-3xl text-slate-300 font-light mb-10 leading-relaxed">
           The only construction platform with{" "}<span className="text-white font-semibold">five built-in AI agents.</span>
         </p>
 
-        <p className="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto mb-8 leading-relaxed">
-          Foreman AI™ executes actions from plain English. Blueprint AI reads floor plans and generates material takeoffs in seconds. Bid Import AI parses any vendor bid format. AI MLS Listing Generator turns specs into ready-to-publish listings. AI Support Agent knows every feature. Five AI agents wired directly to your data &mdash; no setup, no consultants.
-        </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-12 text-sm">
-          <div className="px-4 py-2.5 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-400">
-            <span className="text-slate-500">NEWSTAR / BuildPro</span>
-            {" "}<span className="line-through text-red-400/80">$50K–150K setup + $2K–5K/mo</span>
-          </div>
-          <span className="text-slate-600 hidden sm:block">→</span>
-          <div className="px-4 py-2.5 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-400 font-semibold">
-            Cornerstone — from $149/mo. Live in a day.
-          </div>
+        {/* AIHubDiagram — inlined into hero flow (no outer section wrapper, inherits hero bg) */}
+        <div className="my-8 sm:my-12">
+          <AIHubDiagram inline />
         </div>
 
         {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-2">
           <Link
             href="/beta"
             className="group relative inline-flex items-center gap-2 px-8 py-4 text-base font-bold rounded-2xl bg-gradient-to-r from-amber-500 to-amber-400 text-slate-900 hover:from-amber-400 hover:to-amber-300 transition-all duration-200 shadow-lg shadow-amber-500/30 hover:shadow-amber-500/50 hover:-translate-y-0.5"
@@ -105,20 +105,6 @@ export function Hero() {
           >
             See All Features
           </Link>
-        </div>
-
-        {/* Social proof strip */}
-        <div className="flex flex-wrap justify-center gap-8 text-sm text-slate-500">
-          {[
-            { val: "84%", label: "cheaper than BuilderTrend" },
-            { val: "5 yrs", label: "free for beta users" },
-            { val: "6", label: "modules in one platform" },
-          ].map((stat) => (
-            <div key={stat.label} className="flex flex-col items-center">
-              <span className="text-2xl font-black text-white">{stat.val}</span>
-              <span className="text-xs text-slate-500 mt-0.5">{stat.label}</span>
-            </div>
-          ))}
         </div>
       </div>
 

@@ -13,7 +13,6 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://cornerstonepm.ai" },
 };
 import { Hero } from "@/components/Hero";
-import AIHubDiagram from "@/components/AIHubDiagram";
 import { ScreenshotsSection } from "@/components/ScreenshotsSection";
 import { VideoSection } from "@/components/VideoSection";
 import { AiTakeoffSection } from "@/components/AiTakeoffSection";
@@ -29,7 +28,6 @@ export default function Home() {
     <main className="bg-slate-950 text-white">
       <Navbar />
       <Hero />
-      <AIHubDiagram />
       <VideoSection />
       <ScreenshotsSection />
       <AgentsSection />
