@@ -221,11 +221,19 @@ const endpointGroups = [
 
 const webhookEvents = [
   "vendor.created", "vendor.updated",
-  "bid_request.created", "bid.submitted", "bid.accepted", "bid.rejected",
+  "bid_request.created", "bid_request.updated",
+  "bid.submitted", "bid.accepted", "bid.rejected",
   "payment.created", "payment.voided",
   "home.created", "home.status_changed",
   "task.completed", "task.status_changed",
   "po.created", "po.status_changed",
+  "user.logged_in",
+  "milestone.completed",
+  "vendor.notification.advance",
+  "vendor.notification.reminder",
+  "vendor.notification.moved_earlier",
+  "vendor.notification.postponed",
+  "message.sent",
 ];
 
 const codeExamples = [
@@ -349,7 +357,7 @@ export default function ApiDocsPage() {
           {[
             { num: "59", label: "REST endpoints", sub: "vs ~40 Pave objects in JobTread" },
             { num: "67+", label: "HTTP methods", sub: "GET, POST, PATCH, DELETE" },
-            { num: "14", label: "Webhook events", sub: "Real-time, HMAC-signed" },
+            { num: "22", label: "Webhook events", sub: "Real-time, HMAC-signed" },
             { num: "110+", label: "Database tables", sub: "Every endpoint is real data" },
           ].map((s) => (
             <div key={s.label} className="text-center p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
@@ -451,7 +459,7 @@ export default function ApiDocsPage() {
                 <Webhook className="w-5 h-5 text-pink-400" />
               </div>
               <div>
-                <h2 className="text-2xl font-black text-white">14 Webhook Event Types</h2>
+                <h2 className="text-2xl font-black text-white">22 Webhook Event Types</h2>
                 <p className="text-slate-400 text-sm">HMAC SHA-256 signature verification via <code className="text-pink-400">X-Webhook-Signature</code> header. 10s timeout, auto-disable after 50 consecutive failures.</p>
               </div>
             </div>
@@ -541,7 +549,7 @@ export default function ApiDocsPage() {
               {[
                 "58 REST endpoints (vendors, bids, homes, tasks, POs, parts, options, timesheets, webhooks)",
                 "Scoped API keys per integration",
-                "14 webhook event types with HMAC signing",
+                "22 webhook event types with HMAC signing",
                 "100 req/min, 10,000 req/day rate limits",
                 "Foreman AI (47 skills, Sonnet, 5,000 msg/mo)",
                 "Blueprint AI (25 takeoffs/mo)",

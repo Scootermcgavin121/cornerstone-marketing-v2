@@ -607,7 +607,7 @@ export default function ApiAccessPage() {
                 "Foreman Skill Pack — GET /api/ext/skills in Anthropic, OpenAI, or OpenAPI 3.1 format",
                 "47 skills across 7 domains, auto-synced as new skills ship",
                 "Scoped API keys per agent/integration",
-                "Real-time webhooks (14 event types, HMAC-signed)",
+                "Real-time webhooks (22 event types, HMAC-signed)",
                 "Automated 7-wave bidding pipeline",
                 "Includes everything in Pro (Foreman AI, Blueprint AI, MLS Listing Agent)",
               ].map((f) => (

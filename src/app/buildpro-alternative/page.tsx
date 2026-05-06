@@ -54,7 +54,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Does Cornerstone PM have a public API like BuildPro?",
-    a: "Cornerstone PM offers a fully public REST API on the Pro+ plan ($599/mo): 59 endpoints, 14 webhook event types, scoped Bearer-token auth, public documentation at app.cornerstonepm.ai/developers. BuildPro offers enterprise integrations only, typically on a custom contract basis.",
+    a: "Cornerstone PM offers a fully public REST API on the Pro+ plan ($599/mo): 59 endpoints, 22 webhook event types, scoped Bearer-token auth, public documentation at app.cornerstonepm.ai/developers. BuildPro offers enterprise integrations only, typically on a custom contract basis.",
   },
   {
     q: "Is there a free trial or beta?",

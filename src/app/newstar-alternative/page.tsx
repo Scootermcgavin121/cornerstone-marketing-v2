@@ -143,7 +143,7 @@ export default function NewstarAlternativePage() {
             {[
               { title: "Modern web platform", desc: "Cloud-native, mobile-friendly, no Citrix or VPN required. PMs update from the jobsite, vendors confirm from their phone." },
               { title: "AI agents native", desc: "47 Foreman AI skills + Blueprint AI floor plan reader ship with the platform. No third-party AI plugins, no separate subscriptions." },
-              { title: "Public REST API", desc: "59 endpoints, 14 webhook events, scoped Bearer-token auth, full public documentation. NEWSTAR offers integrations at the enterprise tier only." },
+              { title: "Public REST API", desc: "59 endpoints, 22 webhook events, scoped Bearer-token auth, full public documentation. NEWSTAR offers integrations at the enterprise tier only." },
             ].map((card) => (
               <div key={card.title} className="p-6 rounded-2xl border border-slate-800 bg-slate-900/40">
                 <div className="text-purple-400 font-bold mb-3">{card.title}</div>
