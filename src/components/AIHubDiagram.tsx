@@ -169,7 +169,12 @@ export default function AIHubDiagram() {
   const rightAgents = AGENTS.filter((a) => a.side === "right").sort((a, b) => a.row - b.row);
 
   return (
-    <section className="relative w-full bg-black py-20 sm:py-28 overflow-hidden">
+    <section className="relative w-full bg-slate-950 py-20 sm:py-28 overflow-hidden">
+      {/* soft radial glow — matches AgentsSection for cohesion */}
+      <div
+        aria-hidden
+        className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(34,211,238,0.05)_0%,transparent_60%)]"
+      />
       {/* faint grid background */}
       <div
         aria-hidden

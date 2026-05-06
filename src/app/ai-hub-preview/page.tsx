@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function AiHubPreviewPage() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-slate-950 text-white">
       <Navbar />
       <AIHubDiagram />
       <div className="max-w-3xl mx-auto px-6 pb-24 text-white/50 text-sm">
