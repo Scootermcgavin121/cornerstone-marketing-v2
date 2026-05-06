@@ -72,6 +72,42 @@ PATCH /api/ext/tasks/t_abc123
   },
   {
     method: "WEBHOOK",
+    path: "message.sent",
+    color: "text-blue-400",
+    bg: "bg-blue-500/10",
+    border: "border-blue-500/30",
+    label: "In-App Message → Instant SMS",
+    desc: "Fires every time someone sends a message inside Cornerstone — PM to vendor, vendor to PM, admin to anyone. Wire to Twilio to text the recipient a preview and a deep link. Emails get buried; texts get read.",
+    example: `// Webhook fires → your Twilio handler
+{
+  "event": "message.sent",
+  "data": {
+    "message": {
+      "subject": "[Riverside] 123 Oak St, Lot 14 — Framing",
+      "bodyPreview": "Hey Mike, need you on site Monday 7am
+                       for the framing inspection...",
+      "hasAttachments": true
+    },
+    "sender": { "name": "John Builder", "role": "PM" },
+    "recipients": [{
+      "name": "Mike",
+      "phone": "+15550192",
+      "vendorCompanyName": "ABC Framing LLC"
+    }],
+    "home": { "address": "123 Oak Street",
+              "lot": "Lot 14" },
+    "threadUrl": "app.cornerstonepm.ai/messages?thread=thr_xyz789"
+  }
+}
+
+// SMS to vendor:
+// "📩 New message from John (PM):
+//  'Need you on site Monday 7am for the framing
+//  inspection. Bring the updated plans.'
+//  View & reply: cornerstonepm.ai/messages?..."`,
+  },
+  {
+    method: "WEBHOOK",
     path: "milestone.completed",
     color: "text-violet-400",
     bg: "bg-violet-500/10",
@@ -226,7 +262,7 @@ export default function ApiAccessPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <h2 className="text-3xl sm:text-5xl font-black mb-4">Build AI agent workflows<br />with APIs and webhooks.</h2>
-            <p className="text-slate-400 max-w-xl mx-auto">Bearer token auth. JSON responses. Standard REST + webhooks. Schedule subs by text, send bid requests, track responses, and ping the homebuyer the moment a milestone completes &mdash; pair with Twilio, Bland, or Retell. Works with any agent: custom-built, third-party, or Cornerstone&apos;s Foreman AI.</p>
+            <p className="text-slate-400 max-w-xl mx-auto">Bearer token auth. JSON responses. Standard REST + webhooks. Schedule subs by text, send bid requests, track responses, push every in-app message to SMS, and ping the homebuyer the moment a milestone completes &mdash; pair with Twilio, Bland, or Retell. Works with any agent: custom-built, third-party, or Cornerstone&apos;s Foreman AI.</p>
           </div>
           <div className="space-y-6">
             {endpoints.map((ep) => (
