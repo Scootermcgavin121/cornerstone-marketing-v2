@@ -10,46 +10,28 @@ export const metadata = {
 
 const endpoints = [
   {
-    method: "WEBHOOK",
-    path: "milestone.completed",
-    color: "text-violet-400",
-    bg: "bg-violet-500/10",
-    border: "border-violet-500/30",
-    label: "Homeowner Milestone Alerts",
-    desc: "Fires the instant a milestone task is marked complete. Wire to Twilio, Bland, or Retell to text your homebuyer the moment their framing finishes, drywall goes up, or final walk is ready. Payload includes buyer contact info, progress percentage, and a link to the live schedule — your agent composes the message, your provider delivers it.",
-    example: `// Webhook fires → your Twilio / SMS handler
-{
-  "event": "milestone.completed",
-  "data": {
-    "milestone": {
-      "taskId": "t_abc123",
-      "taskName": "Framing Complete",
-      "phase": "Framing",
-      "completedAt": "2026-05-06T14:30:00.000Z"
-    },
-    "home": {
-      "id": "h_lot14",
-      "address": "123 Oak Street",
-      "lot": "Lot 14",
-      "community": "Riverside Estates",
-      "buyerName": "John Smith",
-      "buyerEmail": "john@email.com",
-      "buyerPhone": "+15551234"
-    },
-    "builder": { "name": "Scott Alan Homes" },
-    "scheduleUrl": "https://app.cornerstonepm.ai/homes/h_lot14",
-    "progress": {
-      "completedMilestones": 5,
-      "totalMilestones": 12,
-      "percentComplete": 42
-    }
-  }
-}
+    method: "PATCH",
+    path: "/api/ext/tasks/:id",
+    color: "text-pink-400",
+    bg: "bg-pink-500/10",
+    border: "border-pink-500/30",
+    label: "Schedule Construction Tasks by Text",
+    desc: "Framers, drywallers, masons, painters — they don't check their inbox. They live in texts. Update a task, the webhook fires with the sub's phone + dates + notes; wire it to Twilio, Bland, or Retell so the sub gets a text (or AI voice call) and can reply to confirm, decline, or reschedule. Your agent parses the reply and PATCHes the task right back — two-way scheduling, no portal login, no missed inbox.",
+    example: `// 1. Agent updates the task
+PATCH /api/ext/tasks/t_abc123
+{ "status": "ready", "startDate": "2026-05-12",
+  "note": "Lot 14 framing ready Mon 7am, confirm?" }
 
-// Your SMS to the buyer:
-// "🏠 Framing complete at 123 Oak St!
-//  Your home is 42% done (5 of 12 milestones).
-//  Track progress: cornerstonepm.ai/homes/h_lot14"`,
+// 2. Webhook → your Twilio handler → SMS to sub
+// "Lot 14 framing ready Mon 5/12 7am, confirm?"
+
+// 3. Sub texts back: "can't, start Tuesday"
+//    Your agent parses + PATCHes:
+PATCH /api/ext/tasks/t_abc123
+{ "startDate": "2026-05-13",
+  "note": "Sub confirmed Tue 5/13 via SMS" }
+
+// Two-way scheduling. No portal. No email.`,
   },
   {
     method: "POST",
@@ -89,28 +71,30 @@ const endpoints = [
 }`,
   },
   {
-    method: "PATCH",
-    path: "/api/ext/tasks/:id",
-    color: "text-pink-400",
-    bg: "bg-pink-500/10",
-    border: "border-pink-500/30",
-    label: "Schedule Construction Tasks by Text",
-    desc: "Framers, drywallers, masons, painters — they don't check their inbox. They live in texts. Update a task, the webhook fires with the sub's phone + dates + notes; wire it to Twilio, Bland, or Retell so the sub gets a text (or AI voice call) and can reply to confirm, decline, or reschedule. Your agent parses the reply and PATCHes the task right back — two-way scheduling, no portal login, no missed inbox.",
-    example: `// 1. Agent updates the task
-PATCH /api/ext/tasks/t_abc123
-{ "status": "ready", "startDate": "2026-05-12",
-  "note": "Lot 14 framing ready Mon 7am, confirm?" }
+    method: "WEBHOOK",
+    path: "milestone.completed",
+    color: "text-violet-400",
+    bg: "bg-violet-500/10",
+    border: "border-violet-500/30",
+    label: "Homeowner Milestone Alerts",
+    desc: "Fires the instant a milestone task is marked complete. Wire to Twilio, Bland, or Retell to text the homebuyer with progress + a live schedule link — your agent composes, your provider delivers.",
+    example: `// Webhook → your Twilio / SMS handler
+{
+  "event": "milestone.completed",
+  "data": {
+    "milestone": { "taskName": "Framing Complete",
+                   "phase": "Framing" },
+    "home": { "address": "123 Oak Street",
+              "buyerName": "John Smith",
+              "buyerPhone": "+15551234" },
+    "scheduleUrl": "app.cornerstonepm.ai/homes/h_lot14",
+    "progress": { "percentComplete": 42 }
+  }
+}
 
-// 2. Webhook → your Twilio handler → SMS to sub
-// "Lot 14 framing ready Mon 5/12 7am, confirm?"
-
-// 3. Sub texts back: "can't, start Tuesday"
-//    Your agent parses + PATCHes:
-PATCH /api/ext/tasks/t_abc123
-{ "startDate": "2026-05-13",
-  "note": "Sub confirmed Tue 5/13 via SMS" }
-
-// Two-way scheduling. No portal. No email.`,
+// SMS to buyer:
+// "🏠 Framing complete at 123 Oak St!
+//  Your home is 42% done. Track: cornerstonepm.ai/..."`,
   },
 ];
 
@@ -241,8 +225,8 @@ export default function ApiAccessPage() {
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-3xl sm:text-5xl font-black mb-4">Four hooks.<br />Bid → award → schedule → buyer.</h2>
-            <p className="text-slate-400 max-w-xl mx-auto">Bearer token auth. JSON responses. Standard REST + webhooks. Send bid requests, track responses, schedule subs by text, and ping the homebuyer the moment a milestone completes &mdash; pair with Twilio, Bland, or Retell. Works with any agent: custom-built, third-party, or Cornerstone&apos;s Foreman AI.</p>
+            <h2 className="text-3xl sm:text-5xl font-black mb-4">Build AI agent workflows<br />with APIs and webhooks.</h2>
+            <p className="text-slate-400 max-w-xl mx-auto">Bearer token auth. JSON responses. Standard REST + webhooks. Schedule subs by text, send bid requests, track responses, and ping the homebuyer the moment a milestone completes &mdash; pair with Twilio, Bland, or Retell. Works with any agent: custom-built, third-party, or Cornerstone&apos;s Foreman AI.</p>
           </div>
           <div className="space-y-6">
             {endpoints.map((ep) => (
