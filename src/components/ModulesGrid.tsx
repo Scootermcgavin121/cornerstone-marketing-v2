@@ -1,7 +1,18 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { Calendar, ShoppingCart, TrendingUp, Palette, FileText, Users, Zap, ArrowRight } from "lucide-react";
+import {
+  Calendar,
+  ShoppingCart,
+  TrendingUp,
+  Palette,
+  FileText,
+  Users,
+  Send,
+  MessageSquare,
+  HardHat,
+  ArrowRight,
+} from "lucide-react";
 
 const modules = [
   {
@@ -59,14 +70,31 @@ const modules = [
     border: "border-pink-500/20 hover:border-pink-500/40",
   },
   {
-    icon: Zap,
-    name: "AI Blueprint Takeoff",
-    desc: "Upload a floor plan PDF. AI extracts rooms, fixtures, and material scopes in under 60 seconds.",
-    href: "/ai-takeoff",
-    color: "text-violet-300",
-    bg: "bg-violet-500/10",
-    border: "border-violet-400/30 hover:border-violet-400/60",
-    badge: "Full Bundle",
+    icon: Send,
+    name: "Bulk Bid Requests",
+    desc: "Send bid requests to hundreds of vendors with one click. Auto-generated Excel templates per trade. Real-time tracking.",
+    href: "/purchasing#bid-requests",
+    color: "text-orange-400",
+    bg: "bg-orange-500/10",
+    border: "border-orange-500/20 hover:border-orange-500/40",
+  },
+  {
+    icon: MessageSquare,
+    name: "Internal Messaging",
+    desc: "Built-in chat between team, vendors, and homeowners. Tied to the job, community, or scope it relates to.",
+    href: "/features#messaging",
+    color: "text-teal-400",
+    bg: "bg-teal-500/10",
+    border: "border-teal-500/20 hover:border-teal-500/40",
+  },
+  {
+    icon: HardHat,
+    name: "Vendor Management",
+    desc: "Subcontractor profiles, scope assignments per community, contact management, performance tracking.",
+    href: "/features#vendors",
+    color: "text-yellow-400",
+    bg: "bg-yellow-500/10",
+    border: "border-yellow-500/20 hover:border-yellow-500/40",
   },
 ];
 
@@ -84,7 +112,7 @@ export function ModulesGrid() {
             <span className="text-cyan-400">built for home builders.</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-            Six integrated modules — from first lead to final walkthrough. Everything NEWSTAR does, at a price that doesn&apos;t require a board approval.
+            Nine integrated modules — from first lead to final walkthrough. Everything NEWSTAR does, at a price that doesn&apos;t require a board approval.
           </p>
         </div>
 
@@ -97,11 +125,6 @@ export function ModulesGrid() {
                 href={m.href}
                 className={`group relative p-6 rounded-2xl bg-slate-900/60 border ${m.border} transition-all duration-300 hover:-translate-y-0.5`}
               >
-                {m.badge && (
-                  <div className="absolute top-4 right-4 px-2.5 py-0.5 rounded-full bg-violet-500/20 border border-violet-500/30 text-violet-300 text-xs font-bold">
-                    {m.badge}
-                  </div>
-                )}
                 <div className={`w-11 h-11 rounded-xl ${m.bg} border ${m.border} flex items-center justify-center mb-4`}>
                   <Icon className={`w-5 h-5 ${m.color}`} />
                 </div>
