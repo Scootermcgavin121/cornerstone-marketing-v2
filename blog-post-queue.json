@@ -77,13 +77,13 @@
       "metaDescription": "Feature-by-feature comparison of Buildertrend and Cornerstone PM. Scheduling, AI agents, options engine, REST API, and pricing for production home builders.",
       "primaryKeyword": "Buildertrend vs Cornerstone",
       "hub": "/buildertrend-alternative",
-      "angle": "Different from /buildertrend-alternative (which is overview/marketing). This is a deep feature-by-feature table broken into 6 categories: Scheduling, Sales, Purchasing, Design Center, AI, API. Note: there is already /blog/buildertrend-vs-cornerstone - REPLACE that one or extend with deeper feature analysis. Link to /buildertrend-alternative.",
+      "angle": "Different from /buildertrend-alternative (which is overview/marketing). This is a deep feature-by-feature table broken into 6 categories: Scheduling, Sales, Purchasing, Design Center, AI, API. Note: there is already /blog/buildertrend-vs-cornerstone — REPLACE that one or extend with deeper feature analysis. Link to /buildertrend-alternative.",
       "schema": "FAQPage",
       "wordCount": 1000,
       "heroImage": "/blog/migrating-from-buildertrend.png",
       "heroImageAlt": "Buildertrend vs Cornerstone PM home builder software feature comparison",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "566da38"
     },
     {
       "slug": "ai-takeoff-vs-manual-takeoff-cost",
