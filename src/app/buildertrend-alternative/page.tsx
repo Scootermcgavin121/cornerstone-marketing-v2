@@ -43,7 +43,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Can I migrate from Buildertrend to Cornerstone PM?",
-    a: "Yes — Cornerstone PM ships with 23 dedicated CSV import endpoints (vendors, homes, communities, schedule templates, design categories, floorplans, scopes, takeoffs, parts catalog, budgets, warranties, users, and more) plus a CRM migration wizard that orchestrates the whole thing. Most Buildertrend migrations complete in under a day, self-serve. White-glove migration is available on Pro and Pro+ plans.",
+    a: "Yes — and there's a faster path now. Cornerstone PM ships a beta AI Migration Agent: drop your Buildertrend export files in, the agent reads them, maps the columns, runs the imports, and tells you what it skipped. Behind the scenes it routes through 23 dedicated CSV import endpoints (vendors, homes, communities, schedule templates, design categories, floorplans, scopes, takeoffs, parts catalog, budgets, warranties, users, and more) plus a CRM migration wizard. Most Buildertrend migrations complete in under a day, self-serve. White-glove migration is available on Pro and Pro+ plans.",
   },
   {
     q: "Does Cornerstone PM have everything Buildertrend has?",
@@ -144,6 +144,45 @@ export default function BuildertrendAlternativePage() {
                 <p className="text-slate-400 text-sm leading-relaxed">{card.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Migration Wizard CTA — high-intent placement for Buildertrend switchers */}
+      <section className="py-16 px-4 border-t border-slate-900">
+        <div className="max-w-5xl mx-auto">
+          <div className="rounded-3xl border border-violet-500/30 bg-gradient-to-br from-violet-500/[0.08] via-slate-900/40 to-slate-900/40 p-8 sm:p-10 relative overflow-hidden">
+            <div className="absolute -top-24 -right-24 w-72 h-72 bg-violet-500/15 blur-3xl rounded-full pointer-events-none" />
+            <div className="relative z-10 flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-10">
+              <div className="flex-1">
+                <div className="inline-flex items-center gap-2 mb-4">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-violet-500/15 border border-violet-500/30 text-violet-300 text-xs font-bold uppercase tracking-widest">
+                    AI Migration Wizard
+                  </span>
+                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-amber-500/15 border border-amber-500/40 text-amber-300 text-[10px] font-bold uppercase tracking-widest">
+                    Beta
+                  </span>
+                </div>
+                <h2 className="text-2xl sm:text-3xl font-black mb-3 leading-tight">
+                  Already using Buildertrend? <span className="text-violet-400">Drop your export. We'll do the rest.</span>
+                </h2>
+                <p className="text-slate-300 leading-relaxed mb-2">
+                  Export your Buildertrend data, drag the ZIP into our wizard, and AI auto-maps every column across
+                  vendors, homes, communities, users, leads, tasks, and POs. Dry-run before you commit. Free.
+                </p>
+                <p className="text-slate-500 text-sm">
+                  Costs about $0.002 per file in AI — we absorb it. You pay zero.
+                </p>
+              </div>
+              <div className="flex-shrink-0">
+                <Link
+                  href="/migrate"
+                  className="inline-flex items-center gap-2 px-7 py-4 rounded-xl bg-gradient-to-r from-violet-500 to-violet-400 text-slate-900 font-bold hover:from-violet-400 hover:to-violet-300 shadow-lg shadow-violet-500/25 transition-all duration-200 whitespace-nowrap"
+                >
+                  See the Migration Wizard <ArrowRight className="w-5 h-5" />
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>

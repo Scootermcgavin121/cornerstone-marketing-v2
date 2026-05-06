@@ -50,6 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/production-builder-vs-custom-builder-software", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/about", priority: 0.6, changeFrequency: "yearly" as const },
     { url: "/bid-import-ai", priority: 0.8, changeFrequency: "monthly" as const },
+    { url: "/migrate", priority: 0.8, changeFrequency: "monthly" as const },
     { url: "/support-ai", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/design-center-home-builder", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/new-home-sales-pipeline", priority: 0.7, changeFrequency: "monthly" as const },

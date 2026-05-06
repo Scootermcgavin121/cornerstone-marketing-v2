@@ -30,6 +30,7 @@ const rows: { category: string; features: { label: string; values: CellValue[] }
   {
     category: "Data Migration & Imports",
     features: [
+      { label: "AI Migration Agent (beta) — drop your files, agent does the rest", values: [YES, NO, NO, NO] },
       { label: "23 dedicated CSV import endpoints (vendors, homes, communities, templates, scopes, takeoffs, parts, budgets...)", values: [YES, NO, PARTIAL, PARTIAL] },
       { label: "CRM migration wizard (one-click ingest from prior platform)", values: [YES, NO, NO, NO] },
       { label: "AI-powered bid import (parse any vendor format — Excel, PDF, scanned, handwritten)", values: [YES, NO, NO, NO] },
