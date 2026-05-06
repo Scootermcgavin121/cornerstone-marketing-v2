@@ -80,6 +80,11 @@ const steps = [
     title: "Review & Submit",
     desc: "Full summary &mdash; buyer, lot, floorplan, options, incentive, total contract price. One button to create.",
   },
+  {
+    num: "05",
+    title: "Workflow Auto-Generated",
+    desc: "The moment the home is created, 16+ tasks auto-fire across Sales, Permitting, and Design Center &mdash; contract, deposit, structural approvals, budget, permits, design selections.",
+  },
 ];
 
 export default function SalesPage() {
@@ -135,9 +140,9 @@ export default function SalesPage() {
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-black text-center mb-12">
-            The 4-step workflow
+            The 5-step workflow
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {steps.map((step) => (
               <div
                 key={step.num}
