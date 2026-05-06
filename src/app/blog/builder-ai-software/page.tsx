@@ -6,9 +6,9 @@ import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Builder AI Software: Why Home Builders Need Purpose-Built AI (Not Generic Tools) &mdash;€” Cornerstone PM Blog",
+  title: "Builder AI Software: Why Home Builders Need Purpose-Built AI (Not Generic Tools) &mdash; Cornerstone PM Blog",
   description:
-    "Builder AI software is a new search &mdash;€” people are looking for AI built specifically for builders. Here's why generic AI fails home builders and what purpose-built looks like.",
+    "Builder AI software is a new search &mdash; people are looking for AI built specifically for builders. Here's why generic AI fails home builders and what purpose-built looks like.",
   openGraph: {
     images: [{ url: "https://www.cornerstonepm.ai/blog/foreman-ai-skills.png", width: 1024, height: 1024, alt: "Builder AI software with native Foreman AI agent for residential home builders" }],
   }
@@ -46,33 +46,33 @@ export default function BuilderAiSoftwarePost() {
 
         <div className="prose prose-invert prose-lg max-w-none space-y-6 text-slate-300 leading-relaxed">
           <p className="text-xl text-slate-300 font-light">
-            &ldquo;Builder AI software&rdquo; is a new search. People are typing it &mdash;€” home builders who have spent the last year watching AI explode across every industry and wondering: is there anything actually built for us? Not adapted from commercial construction. Not a generic project management tool with a ChatGPT button. Something purpose-built for how home builders work.
+            &ldquo;Builder AI software&rdquo; is a new search. People are typing it &mdash; home builders who have spent the last year watching AI explode across every industry and wondering: is there anything actually built for us? Not adapted from commercial construction. Not a generic project management tool with a ChatGPT button. Something purpose-built for how home builders work.
           </p>
 
           <p>
-            The short answer is: yes, now there is. But it&apos;s worth understanding why generic AI has fallen short for builders &mdash;€” because it explains exactly what to look for in builder AI software that actually delivers.
+            The short answer is: yes, now there is. But it&apos;s worth understanding why generic AI has fallen short for builders &mdash; because it explains exactly what to look for in builder AI software that actually delivers.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
             Why generic AI fails builders
           </h2>
           <p>
-            Generic AI tools &mdash;€” ChatGPT, Copilot, the AI assistant bolted onto your existing construction software &mdash;€” have three fundamental problems for home builders:
+            Generic AI tools &mdash; ChatGPT, Copilot, the AI assistant bolted onto your existing construction software &mdash; have three fundamental problems for home builders:
           </p>
 
           <h3 className="text-xl font-bold text-white mt-6 mb-3">It doesn&apos;t know your data</h3>
           <p>
-            Generic AI doesn&apos;t have access to your vendor list, your floorplans, your margin targets, your design center catalog, or your buyer pipeline. Every session starts from zero. You have to explain who you are, what your communities are, and what you&apos;re trying to do before you can even ask a useful question. That&apos;s not a tool &mdash;€” that&apos;s a search engine with a personality.
+            Generic AI doesn&apos;t have access to your vendor list, your floorplans, your margin targets, your design center catalog, or your buyer pipeline. Every session starts from zero. You have to explain who you are, what your communities are, and what you&apos;re trying to do before you can even ask a useful question. That&apos;s not a tool &mdash; that&apos;s a search engine with a personality.
           </p>
 
           <h3 className="text-xl font-bold text-white mt-6 mb-3">It doesn&apos;t know your vocabulary</h3>
           <p>
-            What&apos;s a spec level? What&apos;s a punch list in a residential construction context? What does &ldquo;under contract&rdquo; mean for a home builder vs a commercial contractor? Generic AI gives you generic answers &mdash;€” definitions from training data, not insights from your actual business. When you ask it to analyze your design center margins, it can&apos;t. When you ask it to flag homes with budget variances, it has nothing to work with.
+            What&apos;s a spec level? What&apos;s a punch list in a residential construction context? What does &ldquo;under contract&rdquo; mean for a home builder vs a commercial contractor? Generic AI gives you generic answers &mdash; definitions from training data, not insights from your actual business. When you ask it to analyze your design center margins, it can&apos;t. When you ask it to flag homes with budget variances, it has nothing to work with.
           </p>
 
           <h3 className="text-xl font-bold text-white mt-6 mb-3">It can&apos;t take action</h3>
           <p>
-            Generic AI generates text. It can help you draft an email or write a job description. But it can&apos;t create a purchase order in your system. It can&apos;t update a home&apos;s construction status. It can&apos;t generate a design center summary PDF from real selection data. It can&apos;t send a bid invitation to your vendor list. Action is the whole point &mdash;€” and generic AI can&apos;t do it.
+            Generic AI generates text. It can help you draft an email or write a job description. But it can&apos;t create a purchase order in your system. It can&apos;t update a home&apos;s construction status. It can&apos;t generate a design center summary PDF from real selection data. It can&apos;t send a bid invitation to your vendor list. Action is the whole point &mdash; and generic AI can&apos;t do it.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
@@ -83,11 +83,11 @@ export default function BuilderAiSoftwarePost() {
           </p>
 
           <p>
-            <strong className="text-white">Persistent memory.</strong> It remembers your vendors. It knows which subcontractors you prefer for which scopes. It learns your margin targets and applies them automatically in analysis. It knows your communities and floorplans without you having to explain them. The more you use it, the more useful it gets &mdash;€” because it accumulates context about your specific business.
+            <strong className="text-white">Persistent memory.</strong> It remembers your vendors. It knows which subcontractors you prefer for which scopes. It learns your margin targets and applies them automatically in analysis. It knows your communities and floorplans without you having to explain them. The more you use it, the more useful it gets &mdash; because it accumulates context about your specific business.
           </p>
 
           <p>
-            <strong className="text-white">Construction vocabulary.</strong> Purpose-built builder AI understands what a spec level is, what a design center option class means, what a Scope of Work document should contain, and what questions to ask when analyzing a vendor bid. It was built around construction workflows &mdash;€” not adapted from generic project management.
+            <strong className="text-white">Construction vocabulary.</strong> Purpose-built builder AI understands what a spec level is, what a design center option class means, what a Scope of Work document should contain, and what questions to ask when analyzing a vendor bid. It was built around construction workflows &mdash; not adapted from generic project management.
           </p>
 
           <p>
@@ -98,13 +98,13 @@ export default function BuilderAiSoftwarePost() {
             Foreman AI&apos;s approach
           </h2>
           <p>
-            Foreman AI is the AI agent inside Cornerstone PM. It was designed from the ground up for home builders &mdash;€” not adapted from a generic AI assistant. Here&apos;s what that means in practice:
+            Foreman AI is the AI agent inside Cornerstone PM. It was designed from the ground up for home builders &mdash; not adapted from a generic AI assistant. Here&apos;s what that means in practice:
           </p>
           <p>
             Foreman has 47 purpose-built skills across four categories: Core Data Management (17 skills), AI-Powered Analysis (13 skills), Document Generation (11 skills), and System Intelligence (6+ skills). Every skill was designed for a specific job that home builders actually need done.
           </p>
           <p>
-            It reads and writes real data &mdash;€” your parts catalog, vendor list, home statuses, buyer selections, budgets, design center options, and sales pipeline. It&apos;s not summarizing text you paste in. It&apos;s running actual queries against your actual database and returning actual results.
+            It reads and writes real data &mdash; your parts catalog, vendor list, home statuses, buyer selections, budgets, design center options, and sales pipeline. It&apos;s not summarizing text you paste in. It&apos;s running actual queries against your actual database and returning actual results.
           </p>
           <p>
             And it uses persistent memory to learn your business. The first time you tell Foreman your margin target for a community, it remembers. The next time you ask for a profitability report, it uses that target without you having to repeat yourself.
@@ -132,7 +132,7 @@ export default function BuilderAiSoftwarePost() {
                 result: "Found 6 models, added to catalog with SKUs, prices, and specs. Ready to link to design options.",
               },
               {
-                prompt: "Show me vendor performance &mdash;€” who's winning our bids and who's behind on insurance renewals",
+                prompt: "Show me vendor performance &mdash; who's winning our bids and who's behind on insurance renewals",
                 result: "Scorecard generated: bid win rates, response rates, and 3 vendors with expiring certificates flagged.",
               },
             ].map((ex) => (
@@ -152,15 +152,15 @@ export default function BuilderAiSoftwarePost() {
           </div>
 
           <p>
-            None of those responses required you to paste in data. None required you to explain what a design center is. Foreman already knows &mdash;€” because it has access to your actual records and it understands how home builders work.
+            None of those responses required you to paste in data. None required you to explain what a design center is. Foreman already knows &mdash; because it has access to your actual records and it understands how home builders work.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">The bottom line</h2>
           <p>
-            Builder AI software is a real thing now &mdash;€” but you have to know what to look for. The difference between generic AI and purpose-built builder AI is the difference between a tool that can answer questions and a tool that can run your business.
+            Builder AI software is a real thing now &mdash; but you have to know what to look for. The difference between generic AI and purpose-built builder AI is the difference between a tool that can answer questions and a tool that can run your business.
           </p>
           <p>
-            Generic AI will tell you what a budget variance is. Purpose-built builder AI will show you exactly which homes have one &mdash;€” and how much it&apos;s going to cost you if you don&apos;t act.
+            Generic AI will tell you what a budget variance is. Purpose-built builder AI will show you exactly which homes have one &mdash; and how much it&apos;s going to cost you if you don&apos;t act.
           </p>
           <p>
             Cornerstone PM&apos;s beta is open now. Foreman AI is included in the Pro plan. Early adopters get two years free.
@@ -170,7 +170,7 @@ export default function BuilderAiSoftwarePost() {
         <div className="mt-12 p-6 rounded-2xl border border-amber-500/20 bg-amber-500/5">
           <h3 className="text-lg font-bold text-white mb-2">Try builder AI built for home builders</h3>
           <p className="text-slate-400 text-sm mb-4">
-            Foreman AI &mdash;€” 47 skills, real data access, persistent memory. Beta is free for 2 years.
+            Foreman AI &mdash; 47 skills, real data access, persistent memory. Beta is free for 2 years.
           </p>
           <Link
             href="/beta"

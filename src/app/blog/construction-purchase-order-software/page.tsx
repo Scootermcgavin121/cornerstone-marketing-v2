@@ -6,9 +6,9 @@ import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Construction Purchase Order Software for Home Builders (2026 Guide) &mdash;€” Cornerstone PM Blog",
+  title: "Construction Purchase Order Software for Home Builders (2026 Guide) &mdash; Cornerstone PM Blog",
   description:
-    "Managing construction POs in Excel is costing home builders time and margin. Here's what modern purchase order software should actually do &mdash;€” and how AI is changing the equation.",
+    "Managing construction POs in Excel is costing home builders time and margin. Here's what modern purchase order software should actually do &mdash; and how AI is changing the equation.",
   openGraph: {
     images: [{ url: "https://www.cornerstonepm.ai/blog/purchase-order-software.png", width: 1024, height: 1024, alt: "Construction purchase order software workflow for residential home builders" }],
   }
@@ -128,7 +128,7 @@ export default function ConstructionPurchaseOrderSoftwarePost() {
               "Does it connect purchasing to your schedule and budget?",
               "Can you track vendor performance over time, not just per-project?",
               "Does AI actually read and write your data, or just answer generic questions?",
-              "What does implementation actually look like &mdash;€” days or months?",
+              "What does implementation actually look like &mdash; days or months?",
               "Is pricing per-seat (penalizes team growth) or flat?",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3">

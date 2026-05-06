@@ -6,9 +6,9 @@ import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "JobTread Alternative for Home Builders &mdash;€” Cornerstone PM Blog",
+  title: "JobTread Alternative for Home Builders &mdash; Cornerstone PM Blog",
   description:
-    "JobTread is built for general contractors. Cornerstone PM is built for home builders. Here's the honest difference &mdash;€” lot management, design center, sales pipeline, and AI that actually works with your data.",
+    "JobTread is built for general contractors. Cornerstone PM is built for home builders. Here's the honest difference &mdash; lot management, design center, sales pipeline, and AI that actually works with your data.",
   openGraph: {
     images: [{ url: "https://www.cornerstonepm.ai/blog/production-builder-software.png", width: 1024, height: 1024, alt: "JobTread alternative home builder software with options pricing engine for production builders" }],
   }
@@ -88,7 +88,7 @@ export default function JobtreadAlternativePost() {
               },
               {
                 title: "No design center / options engine",
-                desc: "Managing buyer selections &mdash;€” Good/Better/Best options, design center appointments, upgrade pricing &mdash;€” requires purpose-built tooling. JobTread has none of this.",
+                desc: "Managing buyer selections &mdash; Good/Better/Best options, design center appointments, upgrade pricing &mdash; requires purpose-built tooling. JobTread has none of this.",
               },
               {
                 title: "No lot or community management",

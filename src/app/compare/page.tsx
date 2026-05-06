@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import { Check, X, Minus } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 
