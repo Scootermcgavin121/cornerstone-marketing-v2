@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Check, ArrowRight, Zap, Brain, FileText, Cpu } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
+import { VideoPlayer } from "@/components/VideoPlayer";
 
 export const metadata = {
   title: "Foreman AI — 45+ Skill Construction Agent | Cornerstone PM",
@@ -160,6 +161,24 @@ export default function ForemanPage() {
               See all 45+ skills
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* Live demo video */}
+      <section className="py-8 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-widest mb-3">
+              Live demo &middot; Real-time. Not sped up.
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-black mb-2">
+              Watch Foreman find a product image, host it, and update Design Center &mdash; in <span className="text-emerald-400">20 seconds</span>.
+            </h2>
+            <p className="text-slate-400 text-sm max-w-2xl mx-auto">
+              One prompt. Foreman searches the web, downloads the official Samsung product photo, saves it to your server, and attaches it to the right Design Options entry. Zero clicks of yours.
+            </p>
+          </div>
+          <VideoPlayer src="/video/foreman-image-search.mp4" label="Foreman AI: Image Search Workflow" />
         </div>
       </section>
 
