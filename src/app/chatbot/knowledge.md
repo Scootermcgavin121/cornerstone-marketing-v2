@@ -39,7 +39,7 @@ Foreman is the in-app AI agent that doesn't just answer questions — it **reads
 **Newest skills (May 7, 2026):**
 - **`searchProductImage`** — Bing Image Search by product name or model number. Returns direct CDN URLs. Free, no API key required.
 - **`downloadImage`** — downloads any image URL and stores it permanently in Vercel Blob. Returns a hosted URL that won't break when the source site disappears.
-- **`fetchWebPage` (Jina AI Reader)** — web scraping now uses [`r.jina.ai`](https://r.jina.ai) as primary strategy for anti-bot bypass, with direct fetch fallback. Reliably reads Home Depot, Ferguson, Lowe's, and other sites that block traditional scrapers.
+- **`fetchWebPage` (anti-bot web scraping)** — web scraping now uses an AI-powered reader as the primary strategy for anti-bot bypass, with direct fetch fallback. Reliably reads Home Depot, Ferguson, Lowe's, and other sites that block traditional scrapers.
 - **4-step product image workflow** built into the system prompt: `searchProductImage` → `downloadImage` → `updateOption` → done. "Find an image of the GE Profile PFE28KYNFS and add it to the design option" just works.
 
 **Reliability fix (May 7, 2026):** Foreman AI silent timeout bug fixed — conversation history is now trimmed before each turn, every tool has its own timeout, and slow tools surface a fallback message instead of dying silently.
@@ -399,7 +399,7 @@ The flagship AI feature. Foreman AI is a full intelligent agent that lives insid
 
 **45+ skills (and growing):**
 - Parts Management: search, create, bulk import, update, delete parts
-- Web Scraping (Jina AI Reader): fetch any URL (Home Depot, Ferguson, suppliers) with anti-bot bypass and auto-create parts with real pricing — falls back to direct fetch if Jina is unreachable
+- Web Scraping (AI-powered, anti-bot): fetch any URL (Home Depot, Ferguson, suppliers) with anti-bot bypass and auto-create parts with real pricing — falls back to direct fetch if the primary reader is unreachable
 - **Product Image Search**: `searchProductImage` uses Bing Image Search to find product images by name or model number — free, no API key, returns direct CDN URLs
 - **Image Hosting**: `downloadImage` saves any image URL permanently to Vercel Blob storage — hosted URL won't break when the source site removes the file
 - **4-step image workflow**: `searchProductImage` → `downloadImage` → `updateOption` → done. "Add a hero image to the GE Profile fridge in the design center" runs end-to-end automatically.
