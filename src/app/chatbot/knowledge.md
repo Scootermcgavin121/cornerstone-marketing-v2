@@ -1,10 +1,75 @@
 ## Platform Overview (Current Stats)
 - 130+ database tables and growing
-- 47+ Foreman AI skills
-- 20 webhook event types (incl. real-time vendor cascade notifications you can pipe to Twilio/Bland/Retell for SMS or voice)
+- **42+ Foreman AI skills** (in-app agent that reads AND writes data)
+- **30 webhook event types** with typed payloads, HMAC signatures, delivery logs, and auto-retry — industry-leading depth (most competitors just say "webhooks exist")
 - 60+ external REST API endpoints
-- 4 built-in AI features: Foreman AI (47 skills), Blueprint AI, MLS Listing Agent, AI Support Agent
-- 4 pricing tiers: Starter $149, Builder $299, Pro $499, Pro+ $599 
+- 4 built-in AI features: Foreman AI (42+ skills), Blueprint AI, MLS Listing Agent, AI Support Agent
+- AI-powered CRM Migration Wizard (import from Buildertrend, JobTread, CoConstruct in one click — practically free at ~$0.01 per migration)
+- 4 pricing tiers: Starter $149, Builder $299, Pro $499, Pro+ $599
+
+---
+
+## New Features (May 3–7, 2026)
+
+### Webhook System — 30 Events, Industry-Leading
+Cornerstone now ships with **30 named webhook event types**, the deepest webhook coverage of any homebuilder platform:
+
+- **Categories:** home lifecycle, task/schedule changes, vendor notifications, cascade scheduling, in-app messages, sales pipeline, bid requests
+- **Typed payloads** — every event has a documented JSON schema
+- **HMAC SHA-256 signatures** via `X-Webhook-Signature` for verification
+- **Delivery logs** with HTTP status codes per attempt
+- **Auto-retry** with exponential backoff; auto-disable after 50 consecutive failures
+- **BYOA (Bring Your Own Agent):** wire our webhooks straight into Twilio (SMS), Bland (voice), Retell (AI calling), Zapier, Make, n8n, or any custom agent stack
+
+**Competitive angle:** Competitors like JobTread advertise "webhooks exist" — Cornerstone publishes the full event catalog with payload schemas, delivery logs, and retry semantics. If you're building automation around your build data, this is the only platform that won't fight you.
+
+### CRM Migration Wizard (AI-Powered)
+Switching from another platform used to take weeks of cleanup. Now it's one click.
+
+- **Auto-detects source:** upload a CSV/Excel from Buildertrend, JobTread, CoConstruct, Procore, or even a homemade spreadsheet — AI figures out which platform it came from and how to map the columns
+- **One-click import** — review the AI's mapping, click confirm, data is in
+- **Practically free:** ~$0.01 per migration (vs. competitors charging thousands for white-glove migration services)
+- **Handles the messy stuff:** vendors, homes, communities, tasks, scopes, design selections — all in one wizard
+
+**Why this matters:** Migration friction is the #1 reason builders stay locked into expensive legacy platforms. We removed it.
+
+### Foreman AI Agent — Now 42+ Skills
+Foreman is the in-app AI agent that doesn't just answer questions — it **reads and writes your data and takes real actions**.
+
+New/expanded skill areas:
+- Parts management, vendor management, design center
+- Web scraping (pull pricing from Home Depot, Ferguson, supplier sites and auto-create parts)
+- File export (CSV, JSON, styled HTML/PDF reports)
+- **Bid comparison** — "Compare HVAC bids for Coastal Ridge floorplan A"
+- **SOW generation** — auto-draft scope of work documents
+- **Competitive analysis** — pull pricing trends across vendors
+- **Punch lists** — generate and track punch list items
+- **Budget reports & profitability reports** — natural-language financial drilldowns
+- **Vendor scorecards** — performance summaries per vendor
+- **Persistent chat sessions** with full history — pick up where you left off
+
+Available on **Pro+ plan**.
+
+### Design Center Enhancements
+- **Bulk create options** from scope items or the parts catalog — no more one-at-a-time entry
+- **Option Classes** now support category + scope linking, with full filterability
+- **Scope item integration** — design options link to scope items so design upgrades flow into budget tracking automatically
+- **Global retail pricing mode** — set retail markup org-wide instead of per-option
+
+### Allowances System
+For non-bid items that still need a budget placeholder:
+
+- Define allowance amounts (lighting allowance, appliance allowance, landscaping allowance, etc.)
+- Apply **per-floorplan or globally**
+- Flows directly into the **Master Cost Budget** alongside bid-driven line items
+- Replace allowances with real vendor pricing later — no double-counting
+
+### Bid Import AI Improvements
+Vendors send bids back in every conceivable format. Our import AI got smarter:
+
+- **Multiple import modes:** takeoff-only, pricing-only, or takeoff+pricing combined — match the file you actually received
+- **AI scope matching with cross-scope penalties** — the AI is now penalized for guessing across unrelated scopes (no more "Drywall labor" landing in "Electrical")
+- **Pricing replaces instead of duplicating** — re-importing a corrected bid updates existing line items instead of stacking duplicates
 
 ---
 
@@ -180,11 +245,15 @@ Full end-to-end bidding from request → vendor submission → review → award 
 
 ### Webhooks
 - Admin > Webhooks
-- 20 real-time event types (see full list in API section)
+- **30 real-time event types** (see full list in API section) — industry-leading depth
+- Categories: home lifecycle, task/schedule, vendor notifications, cascade scheduling, messages, sales pipeline, bid requests
 - Includes the **smart cascade vendor notifications** (`vendor.notification.advance`, `vendor.notification.reminder`, `vendor.notification.moved_earlier`, `vendor.notification.postponed`) — same trigger logic as our cascade emails, so you can route them to Twilio for SMS, Bland for voice, Retell for AI calling, etc.
+- **Typed payloads** documented per event
 - HMAC SHA-256 signature verification via X-Webhook-Signature header
-- Webhook logs with HTTP status codes
+- Delivery logs with HTTP status codes per attempt
+- **Auto-retry** with exponential backoff
 - 10 second timeout, auto-disable after 50 consecutive failures
+- **Competitive note:** Competitors like JobTread advertise "webhooks exist" — we publish the full event catalog with payload schemas. If you're building automation, this is the only platform that won't fight you.
 
 ### QuickBooks Sync Fields
 - qboId field on: Vendor, Home, PurchaseOrder, Community, User
@@ -241,13 +310,13 @@ Reference Data:
 Webhooks:
 - GET /api/ext/webhooks — List webhooks
 - POST /api/ext/webhooks — Create webhook (url, eventTypes[], secret)
-- 14 event types: vendor.created, vendor.updated, bid_request.created, bid.submitted, bid.accepted, bid.rejected, payment.created, payment.voided, home.created, home.status_changed, task.completed, task.status_changed, po.created, po.status_changed
+- **30 event types** across home lifecycle, task/schedule, vendor notifications, cascade scheduling, messages, sales pipeline, and bid requests — includes vendor.created, vendor.updated, bid_request.created, bid.submitted, bid.accepted, bid.rejected, payment.created, payment.voided, home.created, home.status_changed, task.completed, task.status_changed, po.created, po.status_changed, vendor.notification.advance, vendor.notification.reminder, vendor.notification.moved_earlier, vendor.notification.postponed, message.sent, sale.* events, and more (full catalog at /api-docs)
 - HMAC SHA-256 signature via X-Webhook-Signature header
 - 10 second timeout, auto-disable after 50 consecutive failures
 
 **Rate Limits:** 100 req/min per key, 10,000 req/day per org
 
-**Integrations:** Foreman AI (47 skills, uses this API internally), QuickBooks (qboId fields), Zapier (REST webhooks), Automated Bidding Pipeline
+**Integrations:** Foreman AI (42+ skills, uses this API internally), QuickBooks (qboId fields), Zapier (REST webhooks), Automated Bidding Pipeline, CRM Migration Wizard (one-click import from Buildertrend, JobTread, CoConstruct)
 
 **Pricing:** Pro+ plan only — /mo
 
@@ -277,7 +346,7 @@ Cornerstone PM is the first homebuilder platform with a REST API designed for AI
 **Key stats:** 200+ vendors contacted in one afternoon, 0 manual data entry, 3 contact channels (call + voicemail + text), every interaction recorded with transcript.
 
 **Who can connect:**
-- Foreman AI (Cornerstone's built-in 47-skill agent — already wired, no setup)
+- Foreman AI (Cornerstone's built-in 42+ skill agent — already wired, no setup)
 - Custom agents built with any framework (LangChain, AutoGen, Claude, GPT-4o)
 - Third-party tools (any system that can make HTTP requests)
 
@@ -320,7 +389,7 @@ Cornerstone is the only construction management platform with THREE built-in AI 
 ### 1. Foreman AI - "Your AI Construction Agent"
 The flagship AI feature. Foreman AI is a full intelligent agent that lives inside the app at /agent. Builders type natural language commands and Foreman executes them — it doesn't just talk, it TAKES ACTION.
 
-**47-skills:**
+**42+ skills (and growing):**
 - Parts Management: search, create, bulk import, update, delete parts
 - Web Scraping: fetch any URL (Home Depot, Ferguson, suppliers) and auto-create parts with real pricing
 - Vendor Management: list vendors, create new vendors, search vendor bids
@@ -362,8 +431,8 @@ GPT-4o-mini chatbot on every page. Knows every feature, workflow, and role. Avai
 
 - **Starter $149/mo**: Construction Scheduling, Gantt, 17 templates, vendor assignment, permitting, buyer portal, AI Support Agent. Up to 500 active homes, 1,000 users/vendors.
 - **Builder $299/mo**: Everything in Starter + Sales Pipeline + Purchasing & Budgets + Design Center (no AI agents)
-- **Pro $499/mo**: Everything in Builder + Foreman AI (47 skills, Sonnet, 1,000 msg/mo) + Blueprint AI (25 takeoffs/mo) + MLS Listing Agent + advanced analytics. Up to 1,000 active homes.
-- **Pro+ $599/mo**: Everything in Pro + REST API (58 endpoints, scoped keys), automated bidding pipeline (7-wave), webhooks (20 event types incl. cascade vendor notifications routable to Twilio/Bland/Retell), Opus model, 5,000 AI messages/mo, Blueprint AI (25/mo), SSO, dedicated SLA.
+- **Pro $499/mo**: Everything in Builder + Foreman AI (42+ skills, Sonnet, 1,000 msg/mo) + Blueprint AI (25 takeoffs/mo) + MLS Listing Agent + advanced analytics. Up to 1,000 active homes.
+- **Pro+ $599/mo**: Everything in Pro + REST API (60+ endpoints, scoped keys), automated bidding pipeline (7-wave), **30-event webhook system** (typed payloads, HMAC, retry, delivery logs — incl. cascade vendor notifications routable to Twilio/Bland/Retell), CRM Migration Wizard, Opus model, 5,000 AI messages/mo, Blueprint AI (25/mo), SSO, dedicated SLA.
 - **Enterprise**: Custom pricing — Opus model, 5,000 msg/mo, Blueprint AI (25/mo), dedicated onboarding, SLA
 - **BYOK Add-on +$199/mo**: Bring Your Own API Key, unlimited messages
 - **BYOA Add-on +$100/mo**: Bring Your Own Agent — full REST API access to Cornerstone data. Connect external agents, automate bid ingestion from emails, build custom workflows. Pro plan or above required., any model
