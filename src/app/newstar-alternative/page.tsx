@@ -17,7 +17,7 @@ const comparisonRows = [
   { feature: "Starting monthly price", cornerstone: "$149", newstar: "Enterprise quote", note: "NEWSTAR pricing is custom and not publicly listed." },
   { feature: "Per-user fees", cornerstone: "Unlimited users", newstar: "Per-seat", note: "Cornerstone: no per-seat pricing on any plan." },
   { feature: "Built for small-to-mid builders", cornerstone: true, newstar: false, note: "NEWSTAR is designed for top-100 enterprise home builders." },
-  { feature: "Native AI agents", cornerstone: true, newstar: false, note: "Cornerstone: Foreman AI (47 skills) + Blueprint AI." },
+  { feature: "Native AI agents", cornerstone: true, newstar: false, note: "Cornerstone: Foreman AI (45+ skills) + Blueprint AI." },
   { feature: "AI floor plan takeoffs", cornerstone: true, newstar: false, note: "Blueprint AI: PDF to material takeoff in under 60 seconds." },
   { feature: "Public REST API", cornerstone: true, newstar: "limited", note: "Cornerstone: 59 endpoints, public docs. NEWSTAR: enterprise integrations only." },
   { feature: "Bring Your Own Agent (BYOA)", cornerstone: true, newstar: false, note: "Connect Claude or ChatGPT to your live data." },
@@ -145,7 +145,7 @@ export default function NewstarAlternativePage() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { title: "Modern web platform", desc: "Cloud-native, mobile-friendly, no Citrix or VPN required. PMs update from the jobsite, vendors confirm from their phone." },
-              { title: "AI agents native", desc: "47 Foreman AI skills + Blueprint AI floor plan reader ship with the platform. No third-party AI plugins, no separate subscriptions." },
+              { title: "AI agents native", desc: "45+ Foreman AI skills + Blueprint AI floor plan reader ship with the platform. No third-party AI plugins, no separate subscriptions." },
               { title: "Public REST API", desc: "59 endpoints, 30 webhook events, scoped Bearer-token auth, full public documentation. NEWSTAR offers integrations at the enterprise tier only." },
             ].map((card) => (
               <div key={card.title} className="p-6 rounded-2xl border border-slate-800 bg-slate-900/40">

@@ -15,7 +15,7 @@ const comparisonRows = [
   { feature: "Implementation cost", cornerstone: "$0", buildpro: "$25k-$75k+", note: "BuildPro requires consultant-led implementation." },
   { feature: "Time to operational", cornerstone: "Hours", buildpro: "3-9 months", note: "Cornerstone: AI Migration Wizard ingests your data in an afternoon — you're live the same day." },
   { feature: "Modern web UI", cornerstone: true, buildpro: false, note: "BuildPro is built on a Windows desktop architecture; Cornerstone is web and mobile native." },
-  { feature: "Native AI agents", cornerstone: true, buildpro: false, note: "Cornerstone: Foreman AI (47 skills) + Blueprint AI." },
+  { feature: "Native AI agents", cornerstone: true, buildpro: false, note: "Cornerstone: Foreman AI (45+ skills) + Blueprint AI." },
   { feature: "Mobile-friendly", cornerstone: true, buildpro: "limited", note: "Cornerstone is fully responsive; BuildPro mobile is limited." },
   { feature: "Public REST API", cornerstone: true, buildpro: "limited", note: "Cornerstone: 59 endpoints, public docs." },
   { feature: "Bring Your Own Agent (BYOA)", cornerstone: true, buildpro: false, note: "Connect Claude or ChatGPT to live data." },

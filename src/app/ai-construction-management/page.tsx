@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 export const metadata = {
   title: "Foreman AI — AI Construction Management for Home Builders | Cornerstone PM",
   description:
-    "Foreman AI is the AI agent built into Cornerstone PM — 47 purpose-built skills for home builder scheduling, purchasing, sales pipeline, and design center. Not a chatbot. Not bolted on.",
+    "Foreman AI is the AI agent built into Cornerstone PM — 45+ purpose-built skills for home builder scheduling, purchasing, sales pipeline, and design center. Not a chatbot. Not bolted on.",
 };
 
 const skills = [
@@ -92,7 +92,7 @@ export default function AiConstructionManagementPage() {
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs font-semibold mb-6">
             <Brain className="w-3.5 h-3.5" />
-            FOREMAN AI · BY CORNERSTONE PM · 47 SKILLS
+            FOREMAN AI · BY CORNERSTONE PM · 45+ SKILLS
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
             Meet{" "}
@@ -105,7 +105,7 @@ export default function AiConstructionManagementPage() {
             <span className="text-white font-semibold">Foreman AI</span> is the brain inside Cornerstone PM — not a chatbot, not a project tool with AI bolted on. It reads and writes your real construction data, runs your schedule, generates documents, and answers in plain English.
           </p>
           <p className="text-lg text-slate-500 max-w-2xl mx-auto mb-10">
-            47 purpose-built skills. Knows what a floorplan is, what a spec level means, and what a punch list looks like for a home under construction. Built for home builders specifically — not adapted from generic commercial PM tools.
+            45+ purpose-built skills. Knows what a floorplan is, what a spec level means, and what a punch list looks like for a home under construction. Built for home builders specifically — not adapted from generic commercial PM tools.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -118,7 +118,7 @@ export default function AiConstructionManagementPage() {
               href="/foreman"
               className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200"
             >
-              See all 47 skills
+              See all 45+ skills
             </Link>
           </div>
         </div>
@@ -182,7 +182,7 @@ export default function AiConstructionManagementPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-400 mt-0.5 flex-shrink-0" />
-                  47 purpose-built skills — not generic AI features
+                  45+ purpose-built skills — not generic AI features
                 </li>
               </ul>
             </div>
@@ -243,7 +243,7 @@ export default function AiConstructionManagementPage() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-black mb-4">
-              47 skills across 4 categories
+              45+ skills across 4 categories
             </h2>
             <p className="text-slate-400 max-w-xl mx-auto">
               Every skill is purpose-built for construction. Not adapted from a generic AI assistant.
@@ -314,7 +314,7 @@ export default function AiConstructionManagementPage() {
       <section className="py-12 px-4 bg-slate-900/30">
         <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-5">
           {[
-            { num: "47", label: "Purpose-built skills", sub: "Not generic AI features" },
+            { num: "45+", label: "Purpose-built skills", sub: "Not generic AI features" },
             { num: "4", label: "Skill categories", sub: "Data, Analysis, Docs, Intelligence" },
             { num: "110+", label: "Database tables", sub: "Full access to real data" },
             { num: "Plain English", label: "How you talk to it", sub: "No SQL. No configuration." },

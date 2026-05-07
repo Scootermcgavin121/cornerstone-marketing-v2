@@ -288,7 +288,7 @@ export default function AiNewHomeSalesPage() {
                 href="/foreman"
                 className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200"
               >
-                See all 47 Foreman skills
+                See all 45+ Foreman skills
               </Link>
             </div>
             <p className="text-slate-600 text-sm mt-6">Pro plan · $499/mo · Unlimited users · 2 years free in beta</p>

@@ -775,7 +775,7 @@ export default function ApiAccessPage() {
               <span className="text-violet-400">The intelligence layer.</span>
             </h2>
             <p className="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
-              Pro+ users get access to Foreman AI&apos;s complete skill definitions &mdash; the actual tool schemas that make any AI agent instantly fluent in construction workflows. One endpoint. 47 skills. Ready to drop into any agent framework.
+              Pro+ users get access to Foreman AI&apos;s complete skill definitions &mdash; the actual tool schemas that make any AI agent instantly fluent in construction workflows. One endpoint. 45+ skills. Ready to drop into any agent framework.
             </p>
           </div>
 
@@ -809,7 +809,7 @@ export default function ApiAccessPage() {
                 </div>
                 <h3 className="text-2xl font-black text-violet-400 mb-3">Foreman Skill Pack</h3>
                 <p className="text-slate-400 leading-relaxed mb-6">
-                  Returns all 47 Foreman AI skill definitions in your choice of format. Drop them directly into any Claude, GPT-4, or LangChain agent to give it full construction intelligence in seconds.
+                  Returns all 45+ Foreman AI skill definitions in your choice of format. Drop them directly into any Claude, GPT-4, or LangChain agent to give it full construction intelligence in seconds.
                 </p>
                 <div className="flex items-center gap-2 text-sm text-slate-400">
                   <RefreshCw className="w-4 h-4 text-violet-400 flex-shrink-0" />
@@ -837,9 +837,9 @@ export default function ApiAccessPage() {
             </div>
           </div>
 
-          {/* 47 skills breakdown */}
+          {/* 45+ skills breakdown */}
           <div className="mb-10">
-            <p className="text-center text-slate-400 text-sm font-semibold uppercase tracking-widest mb-6">47 skills across 7 domains</p>
+            <p className="text-center text-slate-400 text-sm font-semibold uppercase tracking-widest mb-6">45+ skills across 7 domains</p>
             <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3">
               {[
                 { domain: "Parts Catalog", count: 5, skills: "search, create, bulk create, update, delete", color: "text-amber-400", bg: "bg-amber-500/10", border: "border-amber-500/20" },
@@ -938,7 +938,7 @@ export default function ApiAccessPage() {
                 title: "Foreman AI",
                 badge: "Built-in",
                 badgeColor: "bg-amber-500/20 text-amber-400 border-amber-500/30",
-                desc: "Cornerstone&apos;s own 47-skill construction agent. Already wired to the API. No setup required.",
+                desc: "Cornerstone&apos;s own 45+-skill construction agent. Already wired to the API. No setup required.",
                 link: "/foreman",
               },
               {
@@ -1053,7 +1053,7 @@ export default function ApiAccessPage() {
               {[
                 "Full REST API — 58 endpoints (vendors, bids, homes, tasks, POs, parts, options, webhooks)",
                 "Foreman Skill Pack — GET /api/ext/skills in Anthropic, OpenAI, or OpenAPI 3.1 format",
-                "47 skills across 7 domains, auto-synced as new skills ship",
+                "45+ skills across 7 domains, auto-synced as new skills ship",
                 "Scoped API keys per agent/integration",
                 "Real-time webhooks (30 event types, HMAC-signed)",
                 "Automated 7-wave bidding pipeline",

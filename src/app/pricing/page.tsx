@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const faqs: FAQItem[] = [
   {
     q: "How much does Cornerstone PM cost?",
-    a: "Cornerstone PM starts at $149/mo for the Starter plan with unlimited users. Builder is $299/mo (adds purchasing, sales, and design center). Pro is $499/mo (adds Foreman AI with 47 skills and Blueprint AI). Pro+ is $599/mo (adds the full REST API, automated bidding pipeline, and enterprise AI). Beta access is free for the first 100 builders for two years.",
+    a: "Cornerstone PM starts at $149/mo for the Starter plan with unlimited users. Builder is $299/mo (adds purchasing, sales, and design center). Pro is $499/mo (adds Foreman AI with 45+ skills and Blueprint AI). Pro+ is $599/mo (adds the full REST API, automated bidding pipeline, and enterprise AI). Beta access is free for the first 100 builders for two years.",
   },
   {
     q: "Are there per-seat fees?",
@@ -34,11 +34,11 @@ const faqs: FAQItem[] = [
   },
   {
     q: "What is included in the free beta?",
-    a: "Beta access is free for two years for the first 100 home builders who sign up. Beta includes every feature on the Pro plan: scheduling, sales pipeline, purchasing, design center with options engine, Foreman AI (47 skills), Blueprint AI takeoffs, and the homeowner portal. After the two-year beta, plans start at $149/mo.",
+    a: "Beta access is free for two years for the first 100 home builders who sign up. Beta includes every feature on the Pro plan: scheduling, sales pipeline, purchasing, design center with options engine, Foreman AI (45+ skills), Blueprint AI takeoffs, and the homeowner portal. After the two-year beta, plans start at $149/mo.",
   },
   {
     q: "Which plan includes the AI agents?",
-    a: "Cornerstone PM has 5 native AI agents. Foreman AI (47 skills) and Blueprint AI (25 takeoffs/mo) are on the Pro plan ($499/mo). The AI MLS Listing Generator and AI Support Agent are on Builder plan and above. The full Bid Import AI plus extended message limits are on Pro+ ($599/mo).",
+    a: "Cornerstone PM has 5 native AI agents. Foreman AI (45+ skills) and Blueprint AI (25 takeoffs/mo) are on the Pro plan ($499/mo). The AI MLS Listing Generator and AI Support Agent are on Builder plan and above. The full Bid Import AI plus extended message limits are on Pro+ ($599/mo).",
   },
   {
     q: "Can I export my data?",

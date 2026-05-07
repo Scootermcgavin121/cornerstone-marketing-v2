@@ -13,7 +13,7 @@ export const metadata = {
 
 const comparisonRows = [
   { feature: "Built specifically for production home builders", cornerstone: true, buildertrend: false, note: "Both serve home builders, but Buildertrend is purpose-built for custom builders & remodelers; Cornerstone is purpose-built for production (tract/spec) builders." },
-  { feature: "Native AI agents", cornerstone: true, buildertrend: false, note: "5 native AI agents including Foreman AI (47 skills) and Blueprint AI. Buildertrend has no native AI agents." },
+  { feature: "Native AI agents", cornerstone: true, buildertrend: false, note: "5 native AI agents including Foreman AI (45+ skills) and Blueprint AI. Buildertrend has no native AI agents." },
   { feature: "AI floor plan takeoffs (Blueprint AI)", cornerstone: true, buildertrend: false, note: "PDF blueprint to material takeoff in under 60 seconds." },
   { feature: "Structural options engine", cornerstone: true, buildertrend: false, note: "Pre-sale options pricing matrix per floorplan." },
   { feature: "Floorplan pricing matrix", cornerstone: true, buildertrend: false, note: "Per-community floorplan pricing." },
@@ -35,7 +35,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "How is Cornerstone PM different from Buildertrend?",
-    a: "Three key differences: (1) Cornerstone is built for production builders, Buildertrend for custom and remodel; (2) Cornerstone includes 47 native AI skills via Foreman AI plus Blueprint AI floor plan takeoffs &mdash; Buildertrend has no native AI; (3) Cornerstone offers a structural options engine, floorplan pricing matrix, and multi-community pipelines that Buildertrend doesn't ship.",
+    a: "Three key differences: (1) Cornerstone is built for production builders, Buildertrend for custom and remodel; (2) Cornerstone includes 45+ native AI skills via Foreman AI plus Blueprint AI floor plan takeoffs &mdash; Buildertrend has no native AI; (3) Cornerstone offers a structural options engine, floorplan pricing matrix, and multi-community pipelines that Buildertrend doesn't ship.",
   },
   {
     q: "Is Cornerstone PM cheaper than Buildertrend?",
@@ -139,7 +139,7 @@ export default function BuildertrendAlternativePage() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { title: "Production workflows native", desc: "Lots, models, options, plan repeats, design center, draws &mdash; first-class concepts, not workarounds. Buildertrend treats every job as one-off." },
-              { title: "AI built in", desc: "Foreman AI (47 skills) and Blueprint AI ship with the platform. No bolt-on plugins, no third-party AI subscriptions, no setup." },
+              { title: "AI built in", desc: "Foreman AI (45+ skills) and Blueprint AI ship with the platform. No bolt-on plugins, no third-party AI subscriptions, no setup." },
               { title: "REST API + BYOA", desc: "59 endpoints, 30 webhook events, scoped auth, public docs. Bring your own Claude or ChatGPT agent against your live data." },
             ].map((card) => (
               <div key={card.title} className="p-6 rounded-2xl border border-slate-800 bg-slate-900/40">

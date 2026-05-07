@@ -64,7 +64,7 @@ These are pulled from `AGENTS.md` and `SOUL.md` and apply to every new page or p
 - **Direct, no fluff.** No "in today's fast-paced construction landscape." Cut every sentence that doesn't say something specific.
 - **Real product features only.** If we don't ship it, don't write about it. The thing that kills home-builder marketing trust is software that promises and doesn't deliver.
 - **Production builder framing.** We are not for custom builders or remodelers. Saying "for everyone" makes us sound like Buildertrend. Be the production-builder pick.
-- **Differentiator framing**: vendor wins by community assignment (not lowest bid), lock-after-acceptance, vendor portal with no login, 47-skill Foreman AI, Blueprint AI takeoffs, public REST API, $149/mo flat with unlimited users.
+- **Differentiator framing**: vendor wins by community assignment (not lowest bid), lock-after-acceptance, vendor portal with no login, 45+-skill Foreman AI, Blueprint AI takeoffs, public REST API, $149/mo flat with unlimited users.
 - **Mobile first.** Every page must look right on a phone. Production builders read on phones from the jobsite.
 - **One commit per page.** Marketing repo deploys via Vercel on push. Don't ship without a follow-up `git push`.
 

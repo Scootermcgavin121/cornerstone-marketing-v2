@@ -161,7 +161,7 @@ EXTERNAL CITATIONS (1-2):
 | ✗ DON'T | ✓ DO |
 |---|---|
 | "In today's fast-paced construction landscape…" | "Production builders run 10–200 homes a year. Software has to keep up." |
-| "Leveraging cutting-edge AI solutions…" | "Foreman AI runs the same 47 skills whether you have 5 homes or 200." |
+| "Leveraging cutting-edge AI solutions…" | "Foreman AI runs the same 45+ skills whether you have 5 homes or 200." |
 | "Empower your team with seamless workflows" | Cut it. Just describe what the workflow does. |
 | Vague benefit language ("save time," "improve efficiency") | Specific numbers + before/after ("a sale that took 30 minutes now takes 60 seconds") |
 | Industry-jargon padding | Plain English. If a builder reading this on a phone at a jobsite gets confused, rewrite. |
@@ -265,7 +265,7 @@ In the JSX `<main>` body, render each:
 4. **One product/module page** — `/foreman`, `/listing-sheet`, `/purchasing`, etc.
 5. **One related blog post** — find via the existing blog index; cross-linking blog posts to each other improves rankings on both.
 
-Use **descriptive anchor text** that includes the linked page's primary keyword. Bad: `<Link href="/foreman">click here</Link>`. Good: `<Link href="/foreman">Foreman AI's 47-skill toolkit</Link>`.
+Use **descriptive anchor text** that includes the linked page's primary keyword. Bad: `<Link href="/foreman">click here</Link>`. Good: `<Link href="/foreman">Foreman AI's 45+-skill toolkit</Link>`.
 
 **Acceptance criterion:** Cmd-F the file for `<Link` and count ≥5 internal links to non-blog pages, plus 1 to a related blog post.
 
@@ -301,7 +301,7 @@ If the post is product-feature focused, an existing screenshot from `public/scre
 - Describe the image, not the post.
 - Include 1 keyword if natural, never stuff.
 - Length: 80–125 characters.
-- Bad: `"AI construction management software for home builders"`. Good: `"Foreman AI dashboard showing 47 skills grouped across scheduling, sales, purchasing, and design center"`.
+- Bad: `"AI construction management software for home builders"`. Good: `"Foreman AI dashboard showing 45+ skills grouped across scheduling, sales, purchasing, and design center"`.
 
 **Acceptance criterion:** image is in `public/blog/`, file is < 400KB (run through compression if needed), alt text is descriptive and not stuffed.
 

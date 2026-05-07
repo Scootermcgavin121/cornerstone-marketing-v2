@@ -93,7 +93,7 @@ const rows: { category: string; features: { label: string; values: CellValue[] }
     features: [
       { label: "AI bid import (upload any vendor format — Excel, PDF, scanned, handwritten)", values: [YES, NO, NO, NO] },
       { label: "AI Blueprint Takeoff (PDF to material list)", values: [YES, NO, NO, NO] },
-      { label: "AI agent with 47 purpose-built construction skills", values: [YES, NO, NO, NO] },
+      { label: "AI agent with 45+ purpose-built construction skills", values: [YES, NO, NO, NO] },
       { label: "Standard REST API (no custom query language)", values: [YES, YES, NO, NO] },
       { label: "30 webhook event types with HMAC signing", values: [YES, YES, NO, NO] },
       { label: "Vendor self-registration portal", values: [YES, YES, NO, NO] },
@@ -219,7 +219,7 @@ export default function ComparePage() {
                   "Floorplan base price + options engine = contract price",
                   "Pre-sale workflow: lead &rarr; options &rarr; contract &rarr; close",
                   "Design Center selections built into the sale &mdash; not change orders",
-                  "5 native AI agents — Foreman AI (47 skills), Blueprint AI, Bid Import AI, MLS Generator, Support (Pro plan, $499/mo flat)",
+                  "5 native AI agents — Foreman AI (45+ skills), Blueprint AI, Bid Import AI, MLS Generator, Support (Pro plan, $499/mo flat)",
                   "Built exclusively for production home builders",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-2 text-slate-300 text-sm">

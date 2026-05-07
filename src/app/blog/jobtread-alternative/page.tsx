@@ -154,7 +154,7 @@ export default function JobtreadAlternativePost() {
         <div className="prose prose-invert prose-lg max-w-none space-y-6 text-slate-300 leading-relaxed">
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">The AI difference</h2>
           <p>
-            Cornerstone PM includes Foreman AI &mdash; a 47-skill construction agent that reads and writes your real data. Not a general-purpose chatbot. An agent that knows your parts catalog, your vendor bids, your homes, your sales pipeline, and your budget data.
+            Cornerstone PM includes Foreman AI &mdash; a 45+-skill construction agent that reads and writes your real data. Not a general-purpose chatbot. An agent that knows your parts catalog, your vendor bids, your homes, your sales pipeline, and your budget data.
           </p>
           <p>
             You can ask it things like: <em>&ldquo;Flag homes where actual costs are over 10% of budget&rdquo;</em>, <em>&ldquo;Generate a bid request for all Electrical vendors at Oak Creek&rdquo;</em>, or <em>&ldquo;Write an MLS description for The Addison at Bayside Preserve.&rdquo;</em>
