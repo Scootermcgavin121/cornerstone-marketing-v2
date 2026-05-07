@@ -104,7 +104,7 @@ export function AgentsSection() {
             <Link
               key={agent.name}
               href={agent.href}
-              className={`group relative p-6 rounded-2xl bg-slate-900/60 border ${agent.border} transition-all duration-300 hover:-translate-y-0.5 flex flex-col`}
+              className={`group relative p-6 rounded-2xl bg-slate-900/60 border ${agent.border} transition-colors duration-300 sm:hover:-translate-y-0.5 sm:transition-all flex flex-col`}
             >
               <div className="flex items-start justify-between mb-4">
                 <span className="text-4xl">{agent.emoji}</span>
