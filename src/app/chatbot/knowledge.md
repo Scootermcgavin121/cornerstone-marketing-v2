@@ -1,68 +1,68 @@
 ## Platform Overview (Current Stats)
 - 130+ database tables and growing
-- **45+ Foreman AI skills** (in-app agent that reads AND writes data — including product image search, image hosting, and AI-powered web scraping)
-- **30 webhook event types** with typed payloads, HMAC signatures, delivery logs, and auto-retry — industry-leading depth (most competitors just say "webhooks exist")
+- **45+ Foreman AI skills** (in-app agent that reads AND writes data - including product image search, image hosting, and AI-powered web scraping)
+- **30 webhook event types** with typed payloads, HMAC signatures, delivery logs, and auto-retry - industry-leading depth (most competitors just say "webhooks exist")
 - 60+ external REST API endpoints
 - 4 built-in AI features: Foreman AI (45+ skills), Blueprint AI, MLS Listing Agent, AI Support Agent
-- AI-powered CRM Migration Wizard (import from Buildertrend, JobTread, CoConstruct in one click — practically free at ~$0.01 per migration)
+- AI-powered CRM Migration Wizard (import from Buildertrend, JobTread, CoConstruct in one click - practically free at ~$0.01 per migration)
 - 4 pricing tiers: Starter $149, Builder $299, Pro $499, Pro+ $599
 
 ---
 
-## New Features (May 3–7, 2026)
+## New Features (May 3-7, 2026)
 
-### Webhook System — 30 Events, Industry-Leading
+### Webhook System - 30 Events, Industry-Leading
 Cornerstone now ships with **30 named webhook event types**, the deepest webhook coverage of any homebuilder platform:
 
 - **Categories:** home lifecycle, task/schedule changes, vendor notifications, cascade scheduling, in-app messages, sales pipeline, bid requests
-- **Typed payloads** — every event has a documented JSON schema
+- **Typed payloads** - every event has a documented JSON schema
 - **HMAC SHA-256 signatures** via `X-Webhook-Signature` for verification
 - **Delivery logs** with HTTP status codes per attempt
 - **Auto-retry** with exponential backoff; auto-disable after 50 consecutive failures
 - **BYOA (Bring Your Own Agent):** wire our webhooks straight into Twilio (SMS), Bland (voice), Retell (AI calling), Zapier, Make, n8n, or any custom agent stack
 
-**Competitive angle:** Competitors like JobTread advertise "webhooks exist" — Cornerstone publishes the full event catalog with payload schemas, delivery logs, and retry semantics. If you're building automation around your build data, this is the only platform that won't fight you.
+**Competitive angle:** Competitors like JobTread advertise "webhooks exist" - Cornerstone publishes the full event catalog with payload schemas, delivery logs, and retry semantics. If you're building automation around your build data, this is the only platform that won't fight you.
 
 ### CRM Migration Wizard (AI-Powered)
 Switching from another platform used to take weeks of cleanup. Now it's one click.
 
-- **Auto-detects source:** upload a CSV/Excel from Buildertrend, JobTread, CoConstruct, Procore, or even a homemade spreadsheet — AI figures out which platform it came from and how to map the columns
-- **One-click import** — review the AI's mapping, click confirm, data is in
+- **Auto-detects source:** upload a CSV/Excel from Buildertrend, JobTread, CoConstruct, Procore, or even a homemade spreadsheet - AI figures out which platform it came from and how to map the columns
+- **One-click import** - review the AI's mapping, click confirm, data is in
 - **Practically free:** ~$0.01 per migration (vs. competitors charging thousands for white-glove migration services)
-- **Handles the messy stuff:** vendors, homes, communities, tasks, scopes, design selections — all in one wizard
+- **Handles the messy stuff:** vendors, homes, communities, tasks, scopes, design selections - all in one wizard
 
 **Why this matters:** Migration friction is the #1 reason builders stay locked into expensive legacy platforms. We removed it.
 
-### Foreman AI Agent — Now 45+ Skills (Image Search + Anti-Bot Web Scraping)
-Foreman is the in-app AI agent that doesn't just answer questions — it **reads and writes your data and takes real actions**.
+### Foreman AI Agent - Now 45+ Skills (Image Search + Anti-Bot Web Scraping)
+Foreman is the in-app AI agent that doesn't just answer questions - it **reads and writes your data and takes real actions**.
 
 **Newest skills (May 7, 2026):**
-- **`searchProductImage`** — Bing Image Search by product name or model number. Returns direct CDN URLs. Free, no API key required.
-- **`downloadImage`** — downloads any image URL and stores it permanently in Vercel Blob. Returns a hosted URL that won't break when the source site disappears.
-- **`fetchWebPage` (Jina AI Reader)** — web scraping now uses [`r.jina.ai`](https://r.jina.ai) as primary strategy for anti-bot bypass, with direct fetch fallback. Reliably reads Home Depot, Ferguson, Lowe's, and other sites that block traditional scrapers.
+- **`searchProductImage`** - Bing Image Search by product name or model number. Returns direct CDN URLs. Free, no API key required.
+- **`downloadImage`** - downloads any image URL and stores it permanently in Vercel Blob. Returns a hosted URL that won't break when the source site disappears.
+- **`fetchWebPage` (anti-bot web scraping)** - web scraping now uses an AI-powered reader as the primary strategy for anti-bot bypass, with direct fetch fallback. Reliably reads Home Depot, Ferguson, Lowe's, and other sites that block traditional scrapers.
 - **4-step product image workflow** built into the system prompt: `searchProductImage` → `downloadImage` → `updateOption` → done. "Find an image of the GE Profile PFE28KYNFS and add it to the design option" just works.
 
-**Reliability fix (May 7, 2026):** Foreman AI silent timeout bug fixed — conversation history is now trimmed before each turn, every tool has its own timeout, and slow tools surface a fallback message instead of dying silently.
+**Reliability fix (May 7, 2026):** Foreman AI silent timeout bug fixed - conversation history is now trimmed before each turn, every tool has its own timeout, and slow tools surface a fallback message instead of dying silently.
 
 **Other new/expanded skill areas:**
 - Parts management, vendor management, design center
 - Web scraping (pull pricing from Home Depot, Ferguson, supplier sites and auto-create parts)
 - File export (CSV, JSON, styled HTML/PDF reports)
-- **Bid comparison** — "Compare HVAC bids for Coastal Ridge floorplan A"
-- **SOW generation** — auto-draft scope of work documents
-- **Competitive analysis** — pull pricing trends across vendors
-- **Punch lists** — generate and track punch list items
-- **Budget reports & profitability reports** — natural-language financial drilldowns
-- **Vendor scorecards** — performance summaries per vendor
-- **Persistent chat sessions** with full history — pick up where you left off
+- **Bid comparison** - "Compare HVAC bids for Coastal Ridge floorplan A"
+- **SOW generation** - auto-draft scope of work documents
+- **Competitive analysis** - pull pricing trends across vendors
+- **Punch lists** - generate and track punch list items
+- **Budget reports & profitability reports** - natural-language financial drilldowns
+- **Vendor scorecards** - performance summaries per vendor
+- **Persistent chat sessions** with full history - pick up where you left off
 
 Available on **Pro+ plan**.
 
 ### Design Center Enhancements
-- **Bulk create options** from scope items or the parts catalog — no more one-at-a-time entry
+- **Bulk create options** from scope items or the parts catalog - no more one-at-a-time entry
 - **Option Classes** now support category + scope linking, with full filterability
-- **Scope item integration** — design options link to scope items so design upgrades flow into budget tracking automatically
-- **Global retail pricing mode** — set retail markup org-wide instead of per-option
+- **Scope item integration** - design options link to scope items so design upgrades flow into budget tracking automatically
+- **Global retail pricing mode** - set retail markup org-wide instead of per-option
 
 ### Allowances System
 For non-bid items that still need a budget placeholder:
@@ -70,14 +70,14 @@ For non-bid items that still need a budget placeholder:
 - Define allowance amounts (lighting allowance, appliance allowance, landscaping allowance, etc.)
 - Apply **per-floorplan or globally**
 - Flows directly into the **Master Cost Budget** alongside bid-driven line items
-- Replace allowances with real vendor pricing later — no double-counting
+- Replace allowances with real vendor pricing later - no double-counting
 
 ### Bid Import AI Improvements
 Vendors send bids back in every conceivable format. Our import AI got smarter:
 
-- **Multiple import modes:** takeoff-only, pricing-only, or takeoff+pricing combined — match the file you actually received
-- **AI scope matching with cross-scope penalties** — the AI is now penalized for guessing across unrelated scopes (no more "Drywall labor" landing in "Electrical")
-- **Pricing replaces instead of duplicating** — re-importing a corrected bid updates existing line items instead of stacking duplicates
+- **Multiple import modes:** takeoff-only, pricing-only, or takeoff+pricing combined - match the file you actually received
+- **AI scope matching with cross-scope penalties** - the AI is now penalized for guessing across unrelated scopes (no more "Drywall labor" landing in "Electrical")
+- **Pricing replaces instead of duplicating** - re-importing a corrected bid updates existing line items instead of stacking duplicates
 
 ---
 
@@ -88,34 +88,34 @@ Pre-curated bundles of design selections that buyers can apply with one click. I
 
 - **64 packages seeded** across 7 categories: Flooring, Kitchen Essentials, Bath & Fixtures, Smart Home, Lighting, Hardware & Trim, Designer Bundles
 - **Designer Bundles** (Level 3 spec and above only): Designer Kitchen, All Bathrooms, Whole House Package
-- **Standalone package categories** — `PackageCategoryType` is a separate model from OptionCategory, with its own many-to-many join (PackageCategoryLink)
-- **Package override on Selections** — when applied, individual room slots are locked with "Covered by [Package] ✓" badges. Buyer can break the package by overriding (warning modal triggers).
+- **Standalone package categories** - `PackageCategoryType` is a separate model from OptionCategory, with its own many-to-many join (PackageCategoryLink)
+- **Package override on Selections** - when applied, individual room slots are locked with "Covered by [Package] ✓" badges. Buyer can break the package by overriding (warning modal triggers).
 - Managed at `/design-center/packages` (Designer Collections page)
 
 ### Structural Option Override System (NEW May 2026)
 Structural options can now REPLACE base floorplan quantities, not just add to them. Each takeoff has an Override Mode setting:
 
-- **Additive (default)** — quantity adds to whatever the base floorplan has
-- **Overrides: [Room Name]** — quantity REPLACES the base room's quantity for that scope
-- **Per-takeoff granularity** — one option can mix override + additive takeoffs
-- **Retroactive** — works on existing options/homes, no migration needed
+- **Additive (default)** - quantity adds to whatever the base floorplan has
+- **Overrides: [Room Name]** - quantity REPLACES the base room's quantity for that scope
+- **Per-takeoff granularity** - one option can mix override + additive takeoffs
+- **Retroactive** - works on existing options/homes, no migration needed
 - Both the Selections page and the pricing engine respect the override flag
 
 **Why this matters:** When a buyer adds "Bonus Room Over Garage," the bonus room flooring should REPLACE the attic insulation (not stack on top of it). The override system handles this cleanly.
 
-### Selections Page — Now Driven by FloorplanLocationScope (May 2026)
-The Selections page no longer reads only from Takeoffs — it reads from `FloorplanLocationScope` entries to build slots. This means:
+### Selections Page - Now Driven by FloorplanLocationScope (May 2026)
+The Selections page no longer reads only from Takeoffs - it reads from `FloorplanLocationScope` entries to build slots. This means:
 
 - Each scope on a room with an `optionClassId` creates a buyer-facing selection slot
-- **The FLS scope name is the display label** (not the OptionClass name) — so a bathroom shows "Vanity Faucet", "Master Shower Faucet", and "Tub Spout" as distinct slots even though they all link to the OptionClass `Faucet`
+- **The FLS scope name is the display label** (not the OptionClass name) - so a bathroom shows "Vanity Faucet", "Master Shower Faucet", and "Tub Spout" as distinct slots even though they all link to the OptionClass `Faucet`
 - Rooms automatically populated with appropriate scopes: Kitchen → appliances/fixtures, Bathrooms → shower/toilet/faucets, Bedrooms → flooring/baseboard/lighting/doors
 
 ### Room System Consolidation (May 2026)
 The app now uses **FloorplanLocation** as the single primary room model across Takeoffs, Selections, and Options. The legacy `FloorplanRoom` model still exists but is being deprecated. Behind the scenes:
 
-- `HomeSelection.floorplanLocationId` — new FK to FloorplanLocation
-- `Option.floorplanLocationId` — new FK to FloorplanLocation
-- "Whole House" is no longer a location — whole-house items are scope-driven
+- `HomeSelection.floorplanLocationId` - new FK to FloorplanLocation
+- `Option.floorplanLocationId` - new FK to FloorplanLocation
+- "Whole House" is no longer a location - whole-house items are scope-driven
 
 ### Scope/Parts Library Cleanup (May 2026)
 Large cleanup of the parts catalog and scope library:
@@ -123,20 +123,20 @@ Large cleanup of the parts catalog and scope library:
 - **Foundation scope deleted** (redundant with Concrete/Site)
 - **Roofing split into two scopes**: "Roof Labor" + new "Roof Supplier" (separates labor from material delivery)
 - **"Deliver Roof Shingles" task** added to all 16 templates
-- **24 parts migrated to scope items** — Cabinets, Countertops, Electrical, HVAC, Paint, Shower Door (LUMP install items make more sense as scope items than catalog parts)
+- **24 parts migrated to scope items** - Cabinets, Countertops, Electrical, HVAC, Paint, Shower Door (LUMP install items make more sense as scope items than catalog parts)
 - **44 new scope items** created for design selections (per-room and per-fixture)
-- **All filler pricing zeroed out** — ScopeItem rates, Option prices, OptionClassPrice rows, Takeoff rates, PartsCatalog defaults all reset to $0 where they were placeholders. Real pricing only flows from accepted vendor bids now.
+- **All filler pricing zeroed out** - ScopeItem rates, Option prices, OptionClassPrice rows, Takeoff rates, PartsCatalog defaults all reset to $0 where they were placeholders. Real pricing only flows from accepted vendor bids now.
 - **71 total active scope items** across all trades
 
 ### Import/Export Overhaul (May 2026)
 Round-trip import/export across all major data tables:
 
-- **Reusable `ImportPreview` component** — shows add/update/delete diff before applying
+- **Reusable `ImportPreview` component** - shows add/update/delete diff before applying
 - **Parts Catalog import**: preview + soft-delete support
 - **Takeoffs import**: preview + hard-delete support
 - **Vendor Pricing import**: preview + SUPERSEDED soft-delete (preserves history chain)
 - **Every export includes an ID column** for round-trip update/delete matching
-- Excel files become editable templates — export, edit, re-import to update
+- Excel files become editable templates - export, edit, re-import to update
 
 ### UI Polish (May 2026)
 - Location dropdown on Structural + Design Options Manager (filter takeoffs by room)
@@ -148,27 +148,27 @@ Round-trip import/export across all major data tables:
 ### Pricing Fallback Chain (formalized)
 Every cost in the system resolves through a deterministic chain:
 
-1. **Per-takeoff override** (`Takeoff.unitRateCents`) — hand-set rate for this specific takeoff
+1. **Per-takeoff override** (`Takeoff.unitRateCents`) - hand-set rate for this specific takeoff
 2. **Vendor Pricing** (`VendorPricing` with status=ACCEPTED for the home's community-assigned vendor)
 3. **Catalog default** (`PartsCatalog.defaultCostCents` for parts, `ScopeItem.defaultUnitRateCents` for scope items)
-4. **$0** — flagged as orphan in UI ("—")
+4. **$0** - flagged as orphan in UI ("-")
 
-**Vendor selection rule:** the pricing engine uses the **community-assigned vendor**, not the lowest bid. Different communities can have different assigned vendors for the same scope simultaneously — builders maintain their per-community trade relationships.
+**Vendor selection rule:** the pricing engine uses the **community-assigned vendor**, not the lowest bid. Different communities can have different assigned vendors for the same scope simultaneously - builders maintain their per-community trade relationships.
 
 ---
 
 ## New Features (April 2026)
 
 ### Scope Items
-Builders can now define **reusable scope items** — non-material line items that capture vendor-provided work, services, and deliveries alongside material takeoffs.
+Builders can now define **reusable scope items** - non-material line items that capture vendor-provided work, services, and deliveries alongside material takeoffs.
 
 **What are scope items?**
-Scope items represent things like labor, delivery charges, equipment rentals, inspections, and lump sum service packages — the vendor services that go into a home budget beyond raw materials.
+Scope items represent things like labor, delivery charges, equipment rentals, inspections, and lump sum service packages - the vendor services that go into a home budget beyond raw materials.
 
 **How they work:**
 - Organized by trade/scope (HVAC, Plumbing, Electrical, Drywall, Framing, etc.)
 - Can be added to base house takeoffs, structural options, AND design center options
-- Pricing is pulled automatically from the vendor assigned to that scope in the community — no manual entry
+- Pricing is pulled automatically from the vendor assigned to that scope in the community - no manual entry
 - Default vendor rates apply across all floorplans, with optional per-floorplan overrides for complex or custom homes
 - Swap the assigned vendor for a community and pricing updates automatically across all affected items
 - Total home cost = materials (parts × qty) + scope items (vendor rate × qty) + design selections
@@ -188,28 +188,28 @@ Full end-to-end bidding from request → vendor submission → review → award 
 
 **Vendor-side portal:**
 - Token-protected URL (no login required) for vendors to submit/edit bids.
-- Vendors can add line items as either a **Part** (catalog item) or a **Scope Item** (lump sum, labor, mixed work) — explicit type selector eliminates ambiguity.
-- Bids are editable while PENDING. Once accepted by the builder, line items lock and the vendor cannot edit — protects builder's awarded pricing from accidental changes.
+- Vendors can add line items as either a **Part** (catalog item) or a **Scope Item** (lump sum, labor, mixed work) - explicit type selector eliminates ambiguity.
+- Bids are editable while PENDING. Once accepted by the builder, line items lock and the vendor cannot edit - protects builder's awarded pricing from accidental changes.
 
 **Pricing engine:**
 - Per-takeoff cost resolves via fallback chain: per-takeoff override → ACCEPTED VendorPricing for the home's community → catalog default → $0.
-- Vendor selection always uses the **community-assigned vendor**, not lowest bid — builders maintain trade relationships per community.
+- Vendor selection always uses the **community-assigned vendor**, not lowest bid - builders maintain trade relationships per community.
 - Multiple bids can be ACCEPTED simultaneously across different communities (one vendor in Community A, a different vendor in Community B for the same scope).
 
 ### Notification Preferences (Apr 2026)
 - Per-user toggles for email + in-app notifications
 - Admins can subscribe to additional role notifications (PURCHASING, PM, SCHEDULING, etc.) for one-person-shop scenarios where the admin needs to see everything
-- Self-service settings page — each user manages their own preferences
+- Self-service settings page - each user manages their own preferences
 - Bid submission notifications dispatched to all PURCHASING-subscribed users (not just the bid request creator)
 
 ### Design Options Manager (Apr 2026)
 - Per-floorplan management page for design center options (filtered by category phase)
 - Add parts and scope items per option (e.g., Premium Carpet upgrade carries material delta + carpet install scope item)
-- Mirrors structural options manager pattern — unified UX across the platform
+- Mirrors structural options manager pattern - unified UX across the platform
 
 ### Area Cost Pricing (Apr 2026)
 - Community-level extras (lot premiums, basement options, etc.) now support full takeoff integration
-- Add parts and scope items to area costs and sub-options — pricing rolls up via the same vendor bid flow
+- Add parts and scope items to area costs and sub-options - pricing rolls up via the same vendor bid flow
 - Backward compatible with flat-fee area costs (cost falls back to direct AreaCost.costPrice when no takeoffs exist)
 
 ### Custom Fields
@@ -231,7 +231,7 @@ Full end-to-end bidding from request → vendor submission → review → award 
 - UI coming soon
 
 ### Vendor Registration Form
-- Public page at /vendor-register/[orgSlug] — no login required
+- Public page at /vendor-register/[orgSlug] - no login required
 - Vendors self-register: company name, scope, contact info
 - Creates an inactive vendor record pending admin approval
 - Shareable link generated from Admin > Vendor Registration
@@ -253,21 +253,21 @@ Full end-to-end bidding from request → vendor submission → review → award 
 
 ### Webhooks
 - Admin > Webhooks
-- **30 real-time event types** (see full list in API section) — industry-leading depth
+- **30 real-time event types** (see full list in API section) - industry-leading depth
 - Categories: home lifecycle, task/schedule, vendor notifications, cascade scheduling, messages, sales pipeline, bid requests
-- Includes the **smart cascade vendor notifications** (`vendor.notification.advance`, `vendor.notification.reminder`, `vendor.notification.moved_earlier`, `vendor.notification.postponed`) — same trigger logic as our cascade emails, so you can route them to Twilio for SMS, Bland for voice, Retell for AI calling, etc.
+- Includes the **smart cascade vendor notifications** (`vendor.notification.advance`, `vendor.notification.reminder`, `vendor.notification.moved_earlier`, `vendor.notification.postponed`) - same trigger logic as our cascade emails, so you can route them to Twilio for SMS, Bland for voice, Retell for AI calling, etc.
 - **Typed payloads** documented per event
 - HMAC SHA-256 signature verification via X-Webhook-Signature header
 - Delivery logs with HTTP status codes per attempt
 - **Auto-retry** with exponential backoff
 - 10 second timeout, auto-disable after 50 consecutive failures
-- **Competitive note:** Competitors like JobTread advertise "webhooks exist" — we publish the full event catalog with payload schemas. If you're building automation, this is the only platform that won't fight you.
+- **Competitive note:** Competitors like JobTread advertise "webhooks exist" - we publish the full event catalog with payload schemas. If you're building automation, this is the only platform that won't fight you.
 
 ### QuickBooks Sync Fields
 - qboId field on: Vendor, Home, PurchaseOrder, Community, User
 - externalId fields for generic third-party integrations
 - Ready for Zapier or direct QuickBooks sync
-- No official integration yet — use REST API or Zapier webhooks to sync
+- No official integration yet - use REST API or Zapier webhooks to sync
 
 ### Retainage Support
 - defaultRetainagePct on homes
@@ -293,32 +293,32 @@ Available scopes: vendors:read, vendors:write, bids:read, bids:write, payments:w
 **Endpoints:**
 
 Vendors:
-- GET /api/ext/vendors — List all vendors (filters: scope, outreachStatus, active)
-- POST /api/ext/vendors — Create vendor
-- GET /api/ext/vendors/:id — Get single vendor
-- PATCH /api/ext/vendors/:id — Update vendor (name, scope, scopes[], contactName, phone, email, address, notes, active, outreachStatus, leadTimeDays, isTaxable, qboId, externalId)
-- DELETE /api/ext/vendors/:id — Deactivate vendor
+- GET /api/ext/vendors - List all vendors (filters: scope, outreachStatus, active)
+- POST /api/ext/vendors - Create vendor
+- GET /api/ext/vendors/:id - Get single vendor
+- PATCH /api/ext/vendors/:id - Update vendor (name, scope, scopes[], contactName, phone, email, address, notes, active, outreachStatus, leadTimeDays, isTaxable, qboId, externalId)
+- DELETE /api/ext/vendors/:id - Deactivate vendor
 
 Bid Requests:
-- POST /api/ext/bids/request — Create bid request (vendorIds[], floorplanIds[], scope, message, deadline, communityId). Auto-sends portal emails. Returns bidRequestId + skippedVendors warnings.
+- POST /api/ext/bids/request - Create bid request (vendorIds[], floorplanIds[], scope, message, deadline, communityId). Auto-sends portal emails. Returns bidRequestId + skippedVendors warnings.
 
 Bids:
-- GET /api/ext/bids — List bids (filters: scope, status, vendorId)
+- GET /api/ext/bids - List bids (filters: scope, status, vendorId)
 
 Payments:
-- GET /api/ext/payments — List payments (filters: vendorId, homeId, poId, status, dateRange)
-- POST /api/ext/payments — Record payment (vendorId, purchaseOrderId, homeId, amountCents, method, reference, paidAt, notes)
+- GET /api/ext/payments - List payments (filters: vendorId, homeId, poId, status, dateRange)
+- POST /api/ext/payments - Record payment (vendorId, purchaseOrderId, homeId, amountCents, method, reference, paidAt, notes)
 
 Reference Data:
-- GET /api/ext/communities — List communities
-- GET /api/ext/scopes — List scopes (trade types)
-- GET /api/ext/floorplans — List floorplans
-- GET /api/ext/cost-types — List cost types
+- GET /api/ext/communities - List communities
+- GET /api/ext/scopes - List scopes (trade types)
+- GET /api/ext/floorplans - List floorplans
+- GET /api/ext/cost-types - List cost types
 
 Webhooks:
-- GET /api/ext/webhooks — List webhooks
-- POST /api/ext/webhooks — Create webhook (url, eventTypes[], secret)
-- **30 event types** across home lifecycle, task/schedule, vendor notifications, cascade scheduling, messages, sales pipeline, and bid requests — includes vendor.created, vendor.updated, bid_request.created, bid.submitted, bid.accepted, bid.rejected, payment.created, payment.voided, home.created, home.status_changed, task.completed, task.status_changed, po.created, po.status_changed, vendor.notification.advance, vendor.notification.reminder, vendor.notification.moved_earlier, vendor.notification.postponed, message.sent, sale.* events, and more (full catalog at /api-docs)
+- GET /api/ext/webhooks - List webhooks
+- POST /api/ext/webhooks - Create webhook (url, eventTypes[], secret)
+- **30 event types** across home lifecycle, task/schedule, vendor notifications, cascade scheduling, messages, sales pipeline, and bid requests - includes vendor.created, vendor.updated, bid_request.created, bid.submitted, bid.accepted, bid.rejected, payment.created, payment.voided, home.created, home.status_changed, task.completed, task.status_changed, po.created, po.status_changed, vendor.notification.advance, vendor.notification.reminder, vendor.notification.moved_earlier, vendor.notification.postponed, message.sent, sale.* events, and more (full catalog at /api-docs)
 - HMAC SHA-256 signature via X-Webhook-Signature header
 - 10 second timeout, auto-disable after 50 consecutive failures
 
@@ -326,26 +326,26 @@ Webhooks:
 
 **Integrations:** Foreman AI (45+ skills, uses this API internally), QuickBooks (qboId fields), Zapier (REST webhooks), Automated Bidding Pipeline, CRM Migration Wizard (one-click import from Buildertrend, JobTread, CoConstruct)
 
-**Pricing:** Pro+ plan only — /mo
+**Pricing:** Pro+ plan only - /mo
 
 ---
 ## API Access / BYOA (Bring Your Own Agent)
 
 Cornerstone PM is the first homebuilder platform with a REST API designed for AI agent automation.
 
-**What it is:** Full programmatic API access so any AI agent can automate construction operations — especially the subcontractor bidding pipeline.
+**What it is:** Full programmatic API access so any AI agent can automate construction operations - especially the subcontractor bidding pipeline.
 
 **3 core endpoints:**
-- POST /api/ext/vendors — Create vendors programmatically (e.g., from AI phone call transcripts)
-- POST /api/ext/bids/request — Send scoped bid requests to one or many vendors with plans/specs attached
-- GET /api/ext/bids — Track all bids by status, scope, or vendor in real time
+- POST /api/ext/vendors - Create vendors programmatically (e.g., from AI phone call transcripts)
+- POST /api/ext/bids/request - Send scoped bid requests to one or many vendors with plans/specs attached
+- GET /api/ext/bids - Track all bids by status, scope, or vendor in real time
 
 **Authentication:** Bearer token. Scoped API keys per agent/integration. JSON responses. Standard REST.
 
 **The automated bidding pipeline (7 waves):**
 1. AI agent cold-calls subs, collects contact info, leaves voicemails and texts
 2. Email blast to all verified vendors with plans and bid deadline
-3. Email agent reads responses, creates vendor records via API — zero manual entry
+3. Email agent reads responses, creates vendor records via API - zero manual entry
 4. One-click (or programmatic) mass bid request sent to all vendors
 5. Automatic 7-day follow-up reminders if no response
 6. Bids received and tracked with line items, real-time owner notifications
@@ -354,7 +354,7 @@ Cornerstone PM is the first homebuilder platform with a REST API designed for AI
 **Key stats:** 200+ vendors contacted in one afternoon, 0 manual data entry, 3 contact channels (call + voicemail + text), every interaction recorded with transcript.
 
 **Who can connect:**
-- Foreman AI (Cornerstone's built-in 45+ skill agent — already wired, no setup)
+- Foreman AI (Cornerstone's built-in 45+ skill agent - already wired, no setup)
 - Custom agents built with any framework (LangChain, AutoGen, Claude, GPT-4o)
 - Third-party tools (any system that can make HTTP requests)
 
@@ -378,14 +378,14 @@ One of Cornerstone's most unique features. Generates a professional, print-ready
 **AI-written copy:**
 - Word count slider (50-1,000 words) for different MLS region requirements
 - AI writes warm, professional prose that weaves in community character naturally
-- Not a template — generates unique copy per home
+- Not a template - generates unique copy per home
 
 **Two ways to generate:**
 1. One-click in the Sales sidebar: open any home, click Listing Sheet, adjust word count, print or save PDF
 2. Via Foreman AI: "Generate an MLS listing for 1234 Oak Street"
 
 **Why it's unique:**
-No other builder platform can do this. Sales CRMs don't have construction data. Construction PM tools don't have sales data. Cornerstone has both — plus Blueprint AI room dimensions that no one else has.
+No other builder platform can do this. Sales CRMs don't have construction data. Construction PM tools don't have sales data. Cornerstone has both - plus Blueprint AI room dimensions that no one else has.
 
 Available on: Builder plan and above for the one-click version. Foreman AI version requires Pro plan.
 
@@ -395,13 +395,13 @@ Available on: Builder plan and above for the one-click version. Foreman AI versi
 Cornerstone is the only construction management platform with THREE built-in AI agents:
 
 ### 1. Foreman AI - "Your AI Construction Agent"
-The flagship AI feature. Foreman AI is a full intelligent agent that lives inside the app at /agent. Builders type natural language commands and Foreman executes them — it doesn't just talk, it TAKES ACTION.
+The flagship AI feature. Foreman AI is a full intelligent agent that lives inside the app at /agent. Builders type natural language commands and Foreman executes them - it doesn't just talk, it TAKES ACTION.
 
 **45+ skills (and growing):**
 - Parts Management: search, create, bulk import, update, delete parts
-- Web Scraping (Jina AI Reader): fetch any URL (Home Depot, Ferguson, suppliers) with anti-bot bypass and auto-create parts with real pricing — falls back to direct fetch if Jina is unreachable
-- **Product Image Search**: `searchProductImage` uses Bing Image Search to find product images by name or model number — free, no API key, returns direct CDN URLs
-- **Image Hosting**: `downloadImage` saves any image URL permanently to Vercel Blob storage — hosted URL won't break when the source site removes the file
+- Web Scraping (AI-powered, anti-bot): fetch any URL (Home Depot, Ferguson, suppliers) with anti-bot bypass and auto-create parts with real pricing - falls back to direct fetch if the primary reader is unreachable
+- **Product Image Search**: `searchProductImage` uses Bing Image Search to find product images by name or model number - free, no API key, returns direct CDN URLs
+- **Image Hosting**: `downloadImage` saves any image URL permanently to Vercel Blob storage - hosted URL won't break when the source site removes the file
 - **4-step image workflow**: `searchProductImage` → `downloadImage` → `updateOption` → done. "Add a hero image to the GE Profile fridge in the design center" runs end-to-end automatically.
 - Vendor Management: list vendors, create new vendors, search vendor bids
 - Home Management: list all homes, view budgets, update home status/lot size/assignments
@@ -421,7 +421,7 @@ The flagship AI feature. Foreman AI is a full intelligent agent that lives insid
 - "Create 5 GE Profile refrigerators in the design center with SKUs and pricing"
 
 Available to: Admin, Purchasing Manager, Sales Manager roles
-Pricing: Pro Plan (/mo) — Sonnet model, 1,000 messages/month. BYOK add-on +/mo for unlimited messages.
+Pricing: Pro Plan (/mo) - Sonnet model, 1,000 messages/month. BYOK add-on +/mo for unlimited messages.
 
 ### 2. Blueprint AI - "AI Floor Plan Reader"
 Upload a floor plan PDF (up to 25MB, digital CAD only) and Blueprint AI extracts:
@@ -431,7 +431,7 @@ Upload a floor plan PDF (up to 25MB, digital CAD only) and Blueprint AI extracts
 - Whole-house scopes (drywall, paint, insulation, roofing, concrete)
 - Plan at a Glance stats (living sqft, footprint, perimeter, garage)
 One-click import directly into floorplan budgets and design center.
-Pricing: Pro Plan — 5 analyses/month. Enterprise — 25/month.
+Pricing: Pro Plan - 5 analyses/month. Enterprise - 25/month.
 
 ### 3. AI Support Agent - "Always-On Help Desk"
 GPT-4o-mini chatbot on every page. Knows every feature, workflow, and role. Available on all plans including Starter.
@@ -443,10 +443,10 @@ GPT-4o-mini chatbot on every page. Knows every feature, workflow, and role. Avai
 - **Starter $149/mo**: Construction Scheduling, Gantt, 17 templates, vendor assignment, permitting, buyer portal, AI Support Agent. Up to 500 active homes, 1,000 users/vendors.
 - **Builder $299/mo**: Everything in Starter + Sales Pipeline + Purchasing & Budgets + Design Center (no AI agents)
 - **Pro $499/mo**: Everything in Builder + Foreman AI (45+ skills, Sonnet, 1,000 msg/mo) + Blueprint AI (25 takeoffs/mo) + MLS Listing Agent + advanced analytics. Up to 1,000 active homes.
-- **Pro+ $599/mo**: Everything in Pro + REST API (60+ endpoints, scoped keys), automated bidding pipeline (7-wave), **30-event webhook system** (typed payloads, HMAC, retry, delivery logs — incl. cascade vendor notifications routable to Twilio/Bland/Retell), CRM Migration Wizard, Opus model, 5,000 AI messages/mo, Blueprint AI (25/mo), SSO, dedicated SLA.
-- **Enterprise**: Custom pricing — Opus model, 5,000 msg/mo, Blueprint AI (25/mo), dedicated onboarding, SLA
+- **Pro+ $599/mo**: Everything in Pro + REST API (60+ endpoints, scoped keys), automated bidding pipeline (7-wave), **30-event webhook system** (typed payloads, HMAC, retry, delivery logs - incl. cascade vendor notifications routable to Twilio/Bland/Retell), CRM Migration Wizard, Opus model, 5,000 AI messages/mo, Blueprint AI (25/mo), SSO, dedicated SLA.
+- **Enterprise**: Custom pricing - Opus model, 5,000 msg/mo, Blueprint AI (25/mo), dedicated onboarding, SLA
 - **BYOK Add-on +$199/mo**: Bring Your Own API Key, unlimited messages
-- **BYOA Add-on +$100/mo**: Bring Your Own Agent — full REST API access to Cornerstone data. Connect external agents, automate bid ingestion from emails, build custom workflows. Pro plan or above required., any model
+- **BYOA Add-on +$100/mo**: Bring Your Own Agent - full REST API access to Cornerstone data. Connect external agents, automate bid ingestion from emails, build custom workflows. Pro plan or above required., any model
 
 ---
 # Cornerstone Builder Software - Product Knowledge
@@ -534,17 +534,17 @@ Cornerstone helps residential builders schedule, track, budget, and manage their
 Cornerstone's AI-powered takeoff system eliminates manual material estimation. **Yes, we offer AI-generated takeoffs.**
 
 - **How it works:** Upload a floor plan PDF and Cornerstone's AI automatically extracts rooms, fixtures, flooring, baseboard, cabinets, countertops, and whole-house scopes (drywall, painting, insulation, cleaning, gutters, siding, roofing squares, concrete)
-- **3-Tab Review Editor** — review and refine AI-extracted data across three tabs: Room-by-Room details, Fixture & Finish counts, and Whole-House Scopes
-- **Powered by Anthropic AI Vision** — industry-leading AI analyzes your blueprints with high accuracy
-- **Cost:** ~$0.50–$2.00 per analysis depending on plan complexity
+- **3-Tab Review Editor** - review and refine AI-extracted data across three tabs: Room-by-Room details, Fixture & Finish counts, and Whole-House Scopes
+- **Powered by Anthropic AI Vision** - industry-leading AI analyzes your blueprints with high accuracy
+- **Cost:** ~$0.50-$2.00 per analysis depending on plan complexity
 - **Navigate:** Purchasing → AI Blueprint Takeoff
-- **Included free** with the Full Bundle plan ($399/month) — a $150/month standalone value
+- **Included free** with the Full Bundle plan ($399/month) - a $150/month standalone value
 - **Why this matters:** What used to take hours of manual counting and measuring now takes minutes. Upload the PDF, review the AI's work, and move straight to budgeting.
 
 ## Purchasing & Budget Management (Builder plan & above)
 - **Parts Catalog** - centralized library of all materials, fixtures, and finishes with part numbers, descriptions, units of measure, and cost/retail pricing
 - **Base Takeoffs** - per-floorplan quantity takeoffs organized by scope with colored headers. Supports BASE (standard for every home) and OPTION (per-option-class) takeoff types. Includes lump sum scope items (HVAC, paint labor, trim, etc.) with rate × quantity pricing. Units: sqft, lf, lnft, each, LUMP, square
-- **Scope Pricing Dashboard** - read-only dashboard showing vendor bid pricing by scope. Vendor pricing matrix lets you compare bids across vendors at a glance — see who's cheapest per scope without digging through individual bid responses
+- **Scope Pricing Dashboard** - read-only dashboard showing vendor bid pricing by scope. Vendor pricing matrix lets you compare bids across vendors at a glance - see who's cheapest per scope without digging through individual bid responses
 - **Takeoffs** - per-floorplan quantity takeoffs organized by room/location. Supports BASE (standard for every home) and OPTION (per-option-class) takeoff types. Units: sqft, lf, lnft, each, LUMP, square
 - **Bid Management** - send a floorplan to bid to every vendor with one click. Track vendor responses, compare bids side-by-side, and award - all in one workflow
 - **Budgets** - 3-level budget hierarchy: Scope → Task → Parts. Real-time financial rollups per home showing estimated vs actual costs. Organized by trade (Lumber, Electrical, Plumbing, HVAC, etc.) with collapsible sections. Scopes with takeoff parts show detailed parts lists with quantities.
@@ -554,7 +554,7 @@ Cornerstone's AI-powered takeoff system eliminates manual material estimation. *
 - **Purchase Orders** - generate POs from budgets, track vendor deliveries and invoicing
 
 ## Design Center & Selections
-- **5-Tier Spec Level System** - define up to 5 finish tiers (e.g., Included, Upgrade I, Upgrade II, Premium, Luxury) with sort ordering to control upgrade pricing logic. Buyers pick a material LEVEL per room (not individual products) — they select the tier they want, then choose specific products within that level at their design appointment. This simplifies the selection process and keeps pricing predictable.
+- **5-Tier Spec Level System** - define up to 5 finish tiers (e.g., Included, Upgrade I, Upgrade II, Premium, Luxury) with sort ordering to control upgrade pricing logic. Buyers pick a material LEVEL per room (not individual products) - they select the tier they want, then choose specific products within that level at their design appointment. This simplifies the selection process and keeps pricing predictable.
 - **Option Classes** - categorize selections by type: Flooring, Cabinets, Countertops, Paint, Hardware, Lighting, Appliances, etc. Each class has a unit of measure that controls pricing math
 - **Room-by-Room Selections** - walkthrough each room of a home and pick finishes for every category. Buyers see options organized by room with clear upgrade pricing
 - **Upgrade Price Tracking** - automatically calculates upgrade costs vs. the community baseline (included) spec level. Only charges the delta - if included flooring is $5/sqft and they pick $12/sqft, the upgrade is $7/sqft x quantity
@@ -569,14 +569,14 @@ Cornerstone's AI-powered takeoff system eliminates manual material estimation. *
 - **Promotions & Incentives** - create time-limited promotions with types: Closing Cost Credit, Discount, Credit, or Custom. Set date ranges, amounts, and optionally tie to specific communities. Show on the Active Promotions section of the Sales Pricing page. Automatically applied during new home creation.
 - **Net After Promotions** - pricing page automatically shows net prices after applying active promotions, so sales agents always quote the right number
 - **PDF Price Sheets** - export branded, customer-facing PDF price sheets per community. Shows floorplan details (beds/baths/sqft), base prices, active promotions with expiry dates, and net prices. Professional formatting with builder branding. No internal cost/margin data exposed
-- **MLS Listing Sheet** (`/sales/listing-sheet`) — generate professional, print-ready MLS listing sheets from any home's data. Includes company logo, address, community description/city/state/zip, room dimensions (L' × W'), structural features, design selections, key stats (sqft, beds, baths, garage, stories, lot), and contract price. Print / Save as PDF with one click.
+- **MLS Listing Sheet** (`/sales/listing-sheet`) - generate professional, print-ready MLS listing sheets from any home's data. Includes company logo, address, community description/city/state/zip, room dimensions (L' × W'), structural features, design selections, key stats (sqft, beds, baths, garage, stories, lot), and contract price. Print / Save as PDF with one click.
 - **CSV Export** - export pricing data as CSV for spreadsheets, lender packages, or MLS uploads
 - **Expiration Badges** - active promotions show urgency: "Expires Today", "Expires in 3 days", or the end date. Expired promotions are clearly marked
 
 ## Sales Pipeline & New Home Sales
 
 ### Sales Task Workflow
-Every new home sale follows a structured task workflow: **Contract Signed → Budget Generated → Purchasing Approval**. Each task is auto-assigned to the right role (Sales, Sales Manager, Purchasing Manager, System). When all sales pipeline tasks are complete, the home automatically hands off to the construction pipeline — no manual transition needed.
+Every new home sale follows a structured task workflow: **Contract Signed → Budget Generated → Purchasing Approval**. Each task is auto-assigned to the right role (Sales, Sales Manager, Purchasing Manager, System). When all sales pipeline tasks are complete, the home automatically hands off to the construction pipeline - no manual transition needed.
 
 - **New Home Sale in Under 60 Seconds** - one-page form to create a complete home sale:
   - Select community, floorplan, elevation
@@ -879,12 +879,12 @@ When a PM changes a task date, marks a task complete, or adjusts duration, the s
 - **Bulk Mark as Complete:** Checkbox column on task tables allows selecting multiple tasks and marking them all complete at once via a floating action bar. Useful for onboarding homes already under construction.
 
 ## Buyer Portal (Homeowner Portal)
-The Buyer Portal is the homeowner's window into their build — a cinematic, engaging experience that keeps buyers excited and informed.
+The Buyer Portal is the homeowner's window into their build - a cinematic, engaging experience that keeps buyers excited and informed.
 
 ### Cinematic Hero & Dashboard
 - **Cinematic hero section** with daily motivational quote to keep buyers inspired throughout their build journey
 - **Animated stats bar** showing real-time build progress metrics
-- **Completion confetti** celebrates when milestones are reached — turning progress updates into moments of joy
+- **Completion confetti** celebrates when milestones are reached - turning progress updates into moments of joy
 - **Photo carousel** showcasing the latest job site photos
 
 ### Milestone Cards
@@ -896,7 +896,7 @@ The Buyer Portal is the homeowner's window into their build — a cinematic, eng
 
 ### Selections Page
 - Buyers can view their design selections with **retail pricing** displayed
-- Organized by room — see exactly what finishes were chosen and at what price
+- Organized by room - see exactly what finishes were chosen and at what price
 
 ### Documents Page
 - Access to all buyer-relevant documents (contracts, specs, selections sheets, etc.)
@@ -914,9 +914,9 @@ The Buyer Portal is the homeowner's window into their build — a cinematic, eng
 - Gives homeowners a visual timeline of their home being built
 
 ## Frame Stage Tour (FST)
-- **Digital FST inspection forms** — replace paper-based frame stage tour checklists with a digital workflow
-- **Signature pads** — buyers and inspectors sign off digitally right on the device
-- **PDF export** — generate a professional PDF of the completed frame stage tour for records, compliance, and buyer files
+- **Digital FST inspection forms** - replace paper-based frame stage tour checklists with a digital workflow
+- **Signature pads** - buyers and inspectors sign off digitally right on the device
+- **PDF export** - generate a professional PDF of the completed frame stage tour for records, compliance, and buyer files
 - **Why this matters:** Frame stage tours are a critical milestone where buyers walk through their framed home. Digitizing this eliminates lost paperwork and creates a permanent, signed record.
 
 ## Community Staff Assignments
@@ -1048,12 +1048,12 @@ All exports feature a consistent branded header with builder logo, company name,
 
 ## Employee Timesheets (opt-in feature)
 - Enable via Construction → Settings toggle ("Employee Timesheets")
-- **Shift-based entry** — employees type "8-5" and the system auto-calculates 8 hours (9hrs minus 1hr lunch deduction)
+- **Shift-based entry** - employees type "8-5" and the system auto-calculates 8 hours (9hrs minus 1hr lunch deduction)
 - Also accepts plain hours (e.g. "8" or "8.5")
 - Supports formats: "8-5", "7:30-4", "7-3:30", plain numbers
-- **Weekly grid** — Mon through Sun with week total
-- **Autofill Week** — enter one day, copy to Mon–Fri
-- **Duplicate Last Week** — copies last week's shift times
+- **Weekly grid** - Mon through Sun with week total
+- **Autofill Week** - enter one day, copy to Mon-Fri
+- **Duplicate Last Week** - copies last week's shift times
 - **Approval workflow**: Employee submits → Manager reviews → Approved or Rejected
   - PENDING → SUBMITTED → APPROVED or REJECTED
   - Rejected timesheets can be edited and resubmitted
@@ -1062,7 +1062,7 @@ All exports feature a consistent branded header with builder logo, company name,
   - Role-based visibility: Construction managers see construction crew, Purchasing managers see purchasing agents, etc.
   - Approve, reject, or bulk-approve submitted timesheets
   - CSV export
-- **Not** a GPS time clock — this is simple shift/hour logging for office and field staff
+- **Not** a GPS time clock - this is simple shift/hour logging for office and field staff
 - Default: disabled. Admin enables when ready.
 
 ## Architecture
