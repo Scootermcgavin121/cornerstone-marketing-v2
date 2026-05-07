@@ -1,9 +1,9 @@
 ## Platform Overview (Current Stats)
 - 130+ database tables and growing
-- **42+ Foreman AI skills** (in-app agent that reads AND writes data)
+- **45+ Foreman AI skills** (in-app agent that reads AND writes data — including product image search, image hosting, and AI-powered web scraping)
 - **30 webhook event types** with typed payloads, HMAC signatures, delivery logs, and auto-retry — industry-leading depth (most competitors just say "webhooks exist")
 - 60+ external REST API endpoints
-- 4 built-in AI features: Foreman AI (42+ skills), Blueprint AI, MLS Listing Agent, AI Support Agent
+- 4 built-in AI features: Foreman AI (45+ skills), Blueprint AI, MLS Listing Agent, AI Support Agent
 - AI-powered CRM Migration Wizard (import from Buildertrend, JobTread, CoConstruct in one click — practically free at ~$0.01 per migration)
 - 4 pricing tiers: Starter $149, Builder $299, Pro $499, Pro+ $599
 
@@ -33,10 +33,18 @@ Switching from another platform used to take weeks of cleanup. Now it's one clic
 
 **Why this matters:** Migration friction is the #1 reason builders stay locked into expensive legacy platforms. We removed it.
 
-### Foreman AI Agent — Now 42+ Skills
+### Foreman AI Agent — Now 45+ Skills (Image Search + Anti-Bot Web Scraping)
 Foreman is the in-app AI agent that doesn't just answer questions — it **reads and writes your data and takes real actions**.
 
-New/expanded skill areas:
+**Newest skills (May 7, 2026):**
+- **`searchProductImage`** — Bing Image Search by product name or model number. Returns direct CDN URLs. Free, no API key required.
+- **`downloadImage`** — downloads any image URL and stores it permanently in Vercel Blob. Returns a hosted URL that won't break when the source site disappears.
+- **`fetchWebPage` (Jina AI Reader)** — web scraping now uses [`r.jina.ai`](https://r.jina.ai) as primary strategy for anti-bot bypass, with direct fetch fallback. Reliably reads Home Depot, Ferguson, Lowe's, and other sites that block traditional scrapers.
+- **4-step product image workflow** built into the system prompt: `searchProductImage` → `downloadImage` → `updateOption` → done. "Find an image of the GE Profile PFE28KYNFS and add it to the design option" just works.
+
+**Reliability fix (May 7, 2026):** Foreman AI silent timeout bug fixed — conversation history is now trimmed before each turn, every tool has its own timeout, and slow tools surface a fallback message instead of dying silently.
+
+**Other new/expanded skill areas:**
 - Parts management, vendor management, design center
 - Web scraping (pull pricing from Home Depot, Ferguson, supplier sites and auto-create parts)
 - File export (CSV, JSON, styled HTML/PDF reports)
@@ -316,7 +324,7 @@ Webhooks:
 
 **Rate Limits:** 100 req/min per key, 10,000 req/day per org
 
-**Integrations:** Foreman AI (42+ skills, uses this API internally), QuickBooks (qboId fields), Zapier (REST webhooks), Automated Bidding Pipeline, CRM Migration Wizard (one-click import from Buildertrend, JobTread, CoConstruct)
+**Integrations:** Foreman AI (45+ skills, uses this API internally), QuickBooks (qboId fields), Zapier (REST webhooks), Automated Bidding Pipeline, CRM Migration Wizard (one-click import from Buildertrend, JobTread, CoConstruct)
 
 **Pricing:** Pro+ plan only — /mo
 
@@ -346,7 +354,7 @@ Cornerstone PM is the first homebuilder platform with a REST API designed for AI
 **Key stats:** 200+ vendors contacted in one afternoon, 0 manual data entry, 3 contact channels (call + voicemail + text), every interaction recorded with transcript.
 
 **Who can connect:**
-- Foreman AI (Cornerstone's built-in 42+ skill agent — already wired, no setup)
+- Foreman AI (Cornerstone's built-in 45+ skill agent — already wired, no setup)
 - Custom agents built with any framework (LangChain, AutoGen, Claude, GPT-4o)
 - Third-party tools (any system that can make HTTP requests)
 
@@ -389,9 +397,12 @@ Cornerstone is the only construction management platform with THREE built-in AI 
 ### 1. Foreman AI - "Your AI Construction Agent"
 The flagship AI feature. Foreman AI is a full intelligent agent that lives inside the app at /agent. Builders type natural language commands and Foreman executes them — it doesn't just talk, it TAKES ACTION.
 
-**42+ skills (and growing):**
+**45+ skills (and growing):**
 - Parts Management: search, create, bulk import, update, delete parts
-- Web Scraping: fetch any URL (Home Depot, Ferguson, suppliers) and auto-create parts with real pricing
+- Web Scraping (Jina AI Reader): fetch any URL (Home Depot, Ferguson, suppliers) with anti-bot bypass and auto-create parts with real pricing — falls back to direct fetch if Jina is unreachable
+- **Product Image Search**: `searchProductImage` uses Bing Image Search to find product images by name or model number — free, no API key, returns direct CDN URLs
+- **Image Hosting**: `downloadImage` saves any image URL permanently to Vercel Blob storage — hosted URL won't break when the source site removes the file
+- **4-step image workflow**: `searchProductImage` → `downloadImage` → `updateOption` → done. "Add a hero image to the GE Profile fridge in the design center" runs end-to-end automatically.
 - Vendor Management: list vendors, create new vendors, search vendor bids
 - Home Management: list all homes, view budgets, update home status/lot size/assignments
 - Design Center: list/create options (auto-links to parts catalog), list option categories
@@ -431,7 +442,7 @@ GPT-4o-mini chatbot on every page. Knows every feature, workflow, and role. Avai
 
 - **Starter $149/mo**: Construction Scheduling, Gantt, 17 templates, vendor assignment, permitting, buyer portal, AI Support Agent. Up to 500 active homes, 1,000 users/vendors.
 - **Builder $299/mo**: Everything in Starter + Sales Pipeline + Purchasing & Budgets + Design Center (no AI agents)
-- **Pro $499/mo**: Everything in Builder + Foreman AI (42+ skills, Sonnet, 1,000 msg/mo) + Blueprint AI (25 takeoffs/mo) + MLS Listing Agent + advanced analytics. Up to 1,000 active homes.
+- **Pro $499/mo**: Everything in Builder + Foreman AI (45+ skills, Sonnet, 1,000 msg/mo) + Blueprint AI (25 takeoffs/mo) + MLS Listing Agent + advanced analytics. Up to 1,000 active homes.
 - **Pro+ $599/mo**: Everything in Pro + REST API (60+ endpoints, scoped keys), automated bidding pipeline (7-wave), **30-event webhook system** (typed payloads, HMAC, retry, delivery logs — incl. cascade vendor notifications routable to Twilio/Bland/Retell), CRM Migration Wizard, Opus model, 5,000 AI messages/mo, Blueprint AI (25/mo), SSO, dedicated SLA.
 - **Enterprise**: Custom pricing — Opus model, 5,000 msg/mo, Blueprint AI (25/mo), dedicated onboarding, SLA
 - **BYOK Add-on +$199/mo**: Bring Your Own API Key, unlimited messages
