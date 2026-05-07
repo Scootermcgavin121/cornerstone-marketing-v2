@@ -169,7 +169,7 @@ export default function PurchasingPage() {
               <div className="flex flex-col sm:flex-row gap-4 items-start">
                 <div className="flex-1 p-4 rounded-xl bg-red-500/5 border border-red-500/20">
                   <p className="text-red-400 font-semibold text-xs uppercase tracking-widest mb-2">Without Bid Import AI</p>
-                  <p className="text-slate-400 text-sm">Open the vendor&apos;s Excel. Find the right column. Type every line item manually. Make a typo. Start over. 2 hours later, the budget&apos;s updated.</p>
+                  <p className="text-slate-400 text-sm">Open the vendor&apos;s PDF. Find every line item. Type each one manually. Make a typo. Start over. 2 hours later, the budget&apos;s updated.</p>
                 </div>
                 <div className="flex-1 p-4 rounded-xl bg-emerald-500/5 border border-emerald-500/20">
                   <p className="text-emerald-400 font-semibold text-xs uppercase tracking-widest mb-2">With Bid Import AI</p>
