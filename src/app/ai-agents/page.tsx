@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Bot, FileText, MessageCircle, Check, Zap, ArrowRight, Brain, HardHat } from "lucide-react";
+import { Bot, FileText, MessageCircle, Check, Zap, ArrowRight, Brain, Eye } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import type { Metadata } from "next";
@@ -98,7 +98,7 @@ const agents = [
     tagline: "AI Vendor Presence Detection",
     description:
       "The vendor rolls onto the jobsite. Your schedule already knows. Jobsite AI™ detects vendor arrivals from any camera, doorbell, gate, GPS, or check-in app — and auto-flips the matching scheduled task to In Progress. No phone calls. No manual check-ins. Camera-agnostic, sensor-agnostic.",
-    icon: <HardHat className="w-8 h-8" />,
+    icon: <Eye className="w-8 h-8" />,
     color: "slate",
     href: "/jobsite-ai",
     highlights: [
