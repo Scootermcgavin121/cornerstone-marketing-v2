@@ -96,8 +96,8 @@
       "wordCount": 800,
       "heroImage": "/blog/ai-takeoff-vs-manual.png",
       "heroImageAlt": "AI material takeoff for home builders compared to manual paper-based estimating side by side",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "007e1c5"
     },
     {
       "slug": "buildpro-vs-cornerstone-modern-stack",
