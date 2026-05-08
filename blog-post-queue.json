@@ -110,8 +110,8 @@
       "wordCount": 800,
       "heroImage": "/blog/buildpro-vs-modern-stack.png",
       "heroImageAlt": "BuildPro legacy desktop home builder software next to Cornerstone PM modern web-native stack",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "d2aa08a"
     },
     {
       "slug": "how-to-choose-home-builder-software",
