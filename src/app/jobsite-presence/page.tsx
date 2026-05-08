@@ -291,53 +291,221 @@ export default function JobsitePresencePage() {
               <Webhook className="w-3.5 h-3.5" />
               For developers &amp; integrators
             </div>
-            <h2 className="text-3xl sm:text-4xl font-black mb-3">One endpoint. Any source.</h2>
+            <h2 className="text-3xl sm:text-4xl font-black mb-3">Two endpoints. Any source.</h2>
             <p className="text-slate-400 max-w-2xl mx-auto leading-relaxed">
-              POST a presence event, get a task update. Standard REST, HMAC-signed, scoped API keys.
+              Register a camera once. Stream presence events forever. Standard REST, HMAC-signed, scoped API keys.
+            </p>
+            <div className="inline-flex items-center gap-2 mt-5 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs font-bold">
+              <Check className="w-3.5 h-3.5" />
+              Live in private beta &middot; endpoints are real
+            </div>
+          </div>
+
+          {/* Step 1: Register a camera */}
+          <div className="mb-8">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-8 h-8 rounded-lg bg-emerald-500/15 border border-emerald-500/40 flex items-center justify-center text-emerald-300 text-sm font-black">1</div>
+              <h3 className="text-white text-xl font-black">Register a camera to a home</h3>
+            </div>
+            <p className="text-slate-400 text-sm mb-4 ml-11">
+              One-time setup. After this, every event from this camera auto-resolves to the right home &mdash;
+              <span className="text-emerald-400"> no <code className="text-emerald-300 bg-emerald-500/10 px-1 rounded">homeId</code> needed in webhook calls.</span>
+            </p>
+            <div className="rounded-2xl bg-slate-900/80 border border-slate-800 overflow-hidden">
+              <div className="px-5 py-3 border-b border-slate-800 bg-slate-950/60 flex items-center gap-3">
+                <div className="flex gap-1.5">
+                  <div className="w-2.5 h-2.5 rounded-full bg-rose-500/60" />
+                  <div className="w-2.5 h-2.5 rounded-full bg-amber-500/60" />
+                  <div className="w-2.5 h-2.5 rounded-full bg-emerald-500/60" />
+                </div>
+                <code className="text-emerald-300 text-xs font-mono font-bold">POST</code>
+                <code className="text-slate-300 text-xs font-mono">/api/ext/cameras</code>
+                <span className="ml-auto text-[10px] font-black uppercase tracking-widest px-2 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400">Beta</span>
+              </div>
+              <pre className="p-6 text-sm text-slate-300 overflow-x-auto leading-relaxed font-mono">
+{`Authorization: Bearer {api_key}
+Content-Type: application/json
+
+{
+  "cameraId": "cam_lot25_entrance",
+  "name": "Lot 25 Entrance Camera",
+  "homeId": "h456",
+  "provider": "sensera"
+}`}
+              </pre>
+            </div>
+          </div>
+
+          {/* Step 2: Send a presence event */}
+          <div className="mb-8">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-8 h-8 rounded-lg bg-cyan-500/15 border border-cyan-500/40 flex items-center justify-center text-cyan-300 text-sm font-black">2</div>
+              <h3 className="text-white text-xl font-black">Send a presence event</h3>
+            </div>
+            <p className="text-slate-400 text-sm mb-4 ml-11">
+              Vendor arrives. Camera POSTs the event. Cornerstone auto-resolves the home, finds the active task, flips it to In Progress.
+            </p>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              {/* Request */}
+              <div className="rounded-2xl bg-slate-900/80 border border-slate-800 overflow-hidden">
+                <div className="px-5 py-3 border-b border-slate-800 bg-slate-950/60 flex items-center gap-3">
+                  <code className="text-cyan-300 text-xs font-mono font-bold">POST</code>
+                  <code className="text-slate-300 text-xs font-mono">/api/ext/jobsite-events</code>
+                  <span className="ml-auto text-[10px] font-black uppercase tracking-widest text-slate-500">Request</span>
+                </div>
+                <pre className="p-5 text-xs text-slate-300 overflow-x-auto leading-relaxed font-mono">
+{`{
+  "eventType": "vehicle_detected",
+  "timestamp": "2026-05-08T08:47:00Z",
+  "camera": {
+    "id": "cam_lot25_entrance",
+    "name": "Lot 25 Entrance",
+    "location": "Bayside Preserve Lot 25"
+  },
+  "detection": {
+    "vendorName": "Sussex Framing Co",
+    "confidence": 0.94,
+    "imageUrl": "https://your-camera.com/snap.jpg"
+  }
+}`}
+                </pre>
+              </div>
+              {/* Response */}
+              <div className="rounded-2xl bg-emerald-500/5 border border-emerald-500/30 overflow-hidden">
+                <div className="px-5 py-3 border-b border-emerald-500/30 bg-emerald-500/10 flex items-center gap-3">
+                  <code className="text-emerald-300 text-xs font-mono font-bold">200</code>
+                  <code className="text-emerald-200 text-xs font-mono">application/json</code>
+                  <span className="ml-auto text-[10px] font-black uppercase tracking-widest text-emerald-400">Response</span>
+                </div>
+                <pre className="p-5 text-xs text-emerald-100/90 overflow-x-auto leading-relaxed font-mono">
+{`{
+  "matched": true,
+  "vendor": {
+    "id": "v123",
+    "name": "Sussex Framing Co"
+  },
+  "home": {
+    "id": "h456",
+    "address": "5 Bayside Way"
+  },
+  "tasksUpdated": [{
+    "id": "t789",
+    "name": "First Floor Wall Framing",
+    "status": "IN_PROGRESS",
+    "previousStatus": "NOT_STARTED"
+  }],
+  "event": "vendor.arrived"
+}`}
+                </pre>
+              </div>
+            </div>
+          </div>
+
+          {/* Step 3: Departure */}
+          <div className="mb-8">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-8 h-8 rounded-lg bg-violet-500/15 border border-violet-500/40 flex items-center justify-center text-violet-300 text-sm font-black">3</div>
+              <h3 className="text-white text-xl font-black">Vendor departure</h3>
+            </div>
+            <p className="text-slate-400 text-sm mb-4 ml-11">
+              Same endpoint, different <code className="text-violet-300 bg-violet-500/10 px-1 rounded">eventType</code>. Closes the task or logs hours on site.
+            </p>
+            <div className="rounded-2xl bg-slate-900/80 border border-slate-800 overflow-hidden">
+              <div className="px-5 py-3 border-b border-slate-800 bg-slate-950/60 flex items-center gap-3">
+                <code className="text-violet-300 text-xs font-mono font-bold">POST</code>
+                <code className="text-slate-300 text-xs font-mono">/api/ext/jobsite-events</code>
+              </div>
+              <pre className="p-5 text-xs text-slate-300 overflow-x-auto leading-relaxed font-mono">
+{`{
+  "eventType": "vehicle_departed",
+  "timestamp": "2026-05-08T15:30:00Z",
+  "camera": { "id": "cam_lot25_entrance" },
+  "detection": { "vendorName": "Sussex Framing Co" }
+}`}
+              </pre>
+            </div>
+          </div>
+
+          {/* Camera CRUD */}
+          <div className="mb-10">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-8 h-8 rounded-lg bg-amber-500/15 border border-amber-500/40 flex items-center justify-center text-amber-300 text-sm font-black">4</div>
+              <h3 className="text-white text-xl font-black">Manage cameras</h3>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="rounded-xl bg-slate-900/60 border border-slate-800 p-5">
+                <div className="flex items-center gap-2 mb-2">
+                  <code className="text-emerald-300 text-xs font-mono font-bold">GET</code>
+                  <code className="text-slate-300 text-xs font-mono">/api/ext/cameras</code>
+                </div>
+                <p className="text-slate-400 text-xs leading-relaxed">List every camera registered to your account, with their home assignments.</p>
+              </div>
+              <div className="rounded-xl bg-slate-900/60 border border-slate-800 p-5">
+                <div className="flex items-center gap-2 mb-2">
+                  <code className="text-rose-300 text-xs font-mono font-bold">DELETE</code>
+                  <code className="text-slate-300 text-xs font-mono">/api/ext/cameras?id=xxx</code>
+                </div>
+                <p className="text-slate-400 text-xs leading-relaxed">Deactivate a camera. Existing event history is preserved.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Home resolution priority */}
+          <div className="mb-10 rounded-2xl bg-gradient-to-br from-emerald-500/5 via-slate-900/60 to-cyan-500/5 border border-emerald-500/20 p-6 sm:p-8">
+            <div className="flex items-start gap-4 mb-5">
+              <div className="w-10 h-10 rounded-xl bg-emerald-500/15 border border-emerald-500/40 flex items-center justify-center flex-shrink-0">
+                <Cpu className="w-5 h-5 text-emerald-400" />
+              </div>
+              <div>
+                <h3 className="text-white font-black text-xl mb-2">How Cornerstone resolves the home</h3>
+                <p className="text-slate-400 text-sm leading-relaxed">
+                  Every event runs through a 4-level fallback chain. The matching engine tries each in order until
+                  it locks onto the right home &mdash; so partial data still works, and registered cameras work hands-free.
+                </p>
+              </div>
+            </div>
+            <div className="space-y-3 ml-0 sm:ml-14">
+              {[
+                { n: "01", title: "Registered camera → home mapping", desc: "Best path. Camera ID matches a registered camera; home is implicit. No homeId required in the event.", best: true },
+                { n: "02", title: "Direct homeId in the event body", desc: "Pass homeId explicitly when the source already knows it (e.g. vendor app check-in)." },
+                { n: "03", title: "communityId → finds home", desc: "Community-level event resolves to the active home in that community when only one is in flight." },
+                { n: "04", title: "camera.location → fuzzy match", desc: "Free-text location string fuzzy-matches against community names. Last-resort fallback." },
+              ].map((r) => (
+                <div key={r.n} className={`flex items-start gap-4 p-4 rounded-xl ${r.best ? "bg-emerald-500/10 border border-emerald-500/40" : "bg-slate-950/50 border border-slate-800"}`}>
+                  <span className={`text-xs font-black tracking-wider flex-shrink-0 mt-0.5 ${r.best ? "text-emerald-300" : "text-slate-500"}`}>{r.n}</span>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2 flex-wrap mb-1">
+                      <span className={`font-black text-sm ${r.best ? "text-emerald-200" : "text-white"}`}>{r.title}</span>
+                      {r.best && (
+                        <span className="text-[10px] font-black uppercase tracking-widest px-2 py-0.5 rounded-full bg-emerald-400 text-slate-900">Recommended</span>
+                      )}
+                    </div>
+                    <p className={`text-xs leading-relaxed ${r.best ? "text-emerald-100/80" : "text-slate-400"}`}>{r.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <p className="text-slate-400 text-sm mt-5 ml-0 sm:ml-14 italic">
+              Translation: register the camera once, then every event from it auto-resolves to the right home.
+              Set it up in 30 seconds, then forget it exists.
             </p>
           </div>
 
-          <div className="rounded-2xl bg-slate-900/80 border border-slate-800 overflow-hidden">
-            <div className="px-5 py-3 border-b border-slate-800 bg-slate-950/60 flex items-center gap-3">
-              <div className="flex gap-1.5">
-                <div className="w-2.5 h-2.5 rounded-full bg-rose-500/60" />
-                <div className="w-2.5 h-2.5 rounded-full bg-amber-500/60" />
-                <div className="w-2.5 h-2.5 rounded-full bg-emerald-500/60" />
-              </div>
-              <code className="text-slate-400 text-xs font-mono">POST /api/ext/presence-events</code>
-              <span className="ml-auto text-[10px] font-black uppercase tracking-widest px-2 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400">Beta</span>
+          {/* Webhook events */}
+          <div className="mb-8">
+            <h3 className="text-white font-black text-lg mb-4 text-center">Webhook events fired</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {[
+                { evt: "vendor.arrived", desc: "Vendor detected on site &middot; matching task auto-starts" },
+                { evt: "vendor.departed", desc: "Vendor left &middot; logs hours, can auto-complete task" },
+                { evt: "presence.unknown", desc: "Unrecognized vehicle or person on a tracked site" },
+              ].map((w) => (
+                <div key={w.evt} className="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                  <code className="text-pink-300 text-xs font-mono font-bold block mb-2">{w.evt}</code>
+                  <span className="text-slate-400 text-xs leading-relaxed" dangerouslySetInnerHTML={{ __html: w.desc }} />
+                </div>
+              ))}
             </div>
-            <pre className="p-6 text-sm text-slate-300 overflow-x-auto leading-relaxed font-mono">
-{`{
-  "source": "camera" | "doorbell" | "gate" | "gps" | "app" | "qr" | "lpr" | "custom",
-  "eventType": "arrived" | "departed",
-  "siteId": "home_abc123",          // home, lot, or community ref
-  "detectedAt": "2026-05-08T08:42:11Z",
-  "vendor": {                        // any one is enough to match
-    "vendorId": "ven_xyz",
-    "name": "Tom's Plumbing",
-    "licensePlate": "ABC-1234",
-    "badgeId": "EMP-557"
-  },
-  "evidence": {
-    "imageUrl": "https://...",
-    "confidence": 0.94
-  }
-}`}
-            </pre>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
-            {[
-              { evt: "presence.arrived", desc: "Vendor detected on site &middot; auto-starts matching task" },
-              { evt: "presence.departed", desc: "Vendor left &middot; logs hours, can auto-complete task" },
-              { evt: "presence.unknown", desc: "Unrecognized vehicle / person on a tracked site" },
-            ].map((w) => (
-              <div key={w.evt} className="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
-                <code className="text-pink-300 text-xs font-mono font-bold block mb-2">{w.evt}</code>
-                <span className="text-slate-400 text-xs leading-relaxed" dangerouslySetInnerHTML={{ __html: w.desc }} />
-              </div>
-            ))}
           </div>
 
           <div className="text-center mt-8">
