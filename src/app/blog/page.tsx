@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "ai-takeoff-vs-manual-takeoff-cost",
+    title: "AI Material Takeoff vs Manual Takeoff: True Cost Analysis",
+    excerpt:
+      "AI material takeoff reduces per-plan estimating time from 4\u20138 hours to under 60 seconds. For a production builder closing 50\u2013200 homes per year, that gap is worth $15,000\u2013$160,000 in annual estimator cost \u2014 before accounting for error reduction and rework prevention.",
+    date: "May 8, 2026",
+    readTime: "6 min read",
+    tag: "Cost Analysis",
+    tagColor: "text-amber-400 bg-amber-500/10 border-amber-500/20",
+  },
+  {
     slug: "buildertrend-vs-cornerstone-feature-comparison",
     title: "Buildertrend vs Cornerstone PM: Feature-by-Feature Comparison",
     excerpt:
