@@ -52,11 +52,35 @@ export default function JobsiteAIPage() {
           <p className="text-xl sm:text-2xl text-slate-300 max-w-3xl mx-auto mb-4 leading-relaxed">
             The plumber rolls onto the jobsite. Your schedule already knows.
           </p>
-          <p className="text-lg text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
+          <p className="text-lg text-slate-400 max-w-3xl mx-auto mb-8 leading-relaxed">
             Detect a vendor on site &mdash; from any camera, any sensor, any access system &mdash; and Cornerstone
             instantly flips the matching task to <span className="text-emerald-400 font-semibold">In&nbsp;Progress</span>{" "}
             on the construction schedule. No phone calls. No manual check-ins.
           </p>
+
+          {/* Hours-on-site value prop */}
+          <div className="max-w-3xl mx-auto mb-10">
+            <div className="rounded-2xl bg-gradient-to-r from-emerald-500/10 via-cyan-500/10 to-violet-500/10 border border-emerald-500/30 p-5 backdrop-blur-sm">
+              <div className="flex items-start sm:items-center gap-4 flex-col sm:flex-row text-left sm:text-left">
+                <div className="w-12 h-12 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center flex-shrink-0">
+                  <Clock className="w-6 h-6 text-emerald-300" />
+                </div>
+                <div className="flex-1">
+                  <div className="text-emerald-400 text-xs font-black uppercase tracking-widest mb-1">
+                    🔥 Bonus: Real Hours-On-Site Tracking
+                  </div>
+                  <p className="text-white text-base sm:text-lg font-semibold leading-snug">
+                    Arrival event starts the clock. Departure event stops it.
+                  </p>
+                  <p className="text-slate-300 text-sm sm:text-base leading-relaxed mt-1">
+                    Every vendor and trade gets logged hours on the job &mdash; automatically. No timecards. No “how long were you here?”
+                    Real data feeding vendor scorecards, labor budget actuals, and bid-award decisions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/beta"
