@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "buildpro-vs-cornerstone-modern-stack",
+    title: "BuildPro vs Cornerstone PM: Why Production Builders Are Modernizing",
+    excerpt:
+      "BuildPro is Windows-Citrix. Cornerstone PM is web-native, mobile-ready, and ships with five built-in AI agents. Here's what that stack difference actually means for a production builder doing 5–200 homes per year.",
+    date: "May 8, 2026",
+    readTime: "6 min read",
+    tag: "Comparison",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+  },
+  {
     slug: "ai-takeoff-vs-manual-takeoff-cost",
     title: "AI Material Takeoff vs Manual Takeoff: True Cost Analysis",
     excerpt:
