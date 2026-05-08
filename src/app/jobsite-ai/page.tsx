@@ -3,10 +3,10 @@ import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 
 export const metadata = {
-  title: "AI Jobsite Presence Detection for Home Builders | Cornerstone PM",
+  title: "Jobsite AI™ — Vendor Presence Detection for Home Builders | Cornerstone PM",
   description:
-    "Vendor detected on site → matching task auto-flips to In Progress on the construction schedule. Camera-agnostic, sensor-agnostic. Works with any jobsite camera, doorbell, gate, GPS, or check-in app.",
-  alternates: { canonical: "https://www.cornerstonepm.ai/jobsite-presence" },
+    "Jobsite AI™ detects when a vendor arrives on site — from any camera, doorbell, gate, GPS, or check-in app — and auto-flips the matching scheduled task to In Progress. Camera-agnostic, sensor-agnostic.",
+  alternates: { canonical: "https://www.cornerstonepm.ai/jobsite-ai" },
 };
 
 const sources = [
@@ -29,7 +29,7 @@ const features = [
   { icon: Truck, color: "text-pink-400", bg: "bg-pink-500/10", border: "border-pink-500/30", title: "Vendor scorecards", desc: "On-time %, average hours on site, no-show rate. Real performance data feeding bid-award decisions." },
 ];
 
-export default function JobsitePresencePage() {
+export default function JobsiteAIPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
       <Navbar />
@@ -45,8 +45,9 @@ export default function JobsitePresencePage() {
             Coming Soon &middot; Private Beta
           </div>
           <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tight mb-6 leading-[1.05]">
-            Vendor shows up.<br />
-            <span className="bg-gradient-to-r from-emerald-400 via-cyan-400 to-violet-400 bg-clip-text text-transparent">Task auto-starts.</span>
+            Jobsite AI<sup className="text-2xl sm:text-4xl lg:text-5xl align-super text-emerald-400 ml-1">™</sup>
+            <br />
+            <span className="bg-gradient-to-r from-emerald-400 via-cyan-400 to-violet-400 bg-clip-text text-transparent">Vendor shows up. Task auto-starts.</span>
           </h1>
           <p className="text-xl sm:text-2xl text-slate-300 max-w-3xl mx-auto mb-4 leading-relaxed">
             The plumber rolls onto the jobsite. Your schedule already knows.

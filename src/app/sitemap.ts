@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/ai-takeoff", priority: 0.8, changeFrequency: "weekly" as const },
     { url: "/api-access", priority: 0.8, changeFrequency: "weekly" as const },
     { url: "/api-docs", priority: 0.8, changeFrequency: "weekly" as const },
-    { url: "/jobsite-presence", priority: 0.9, changeFrequency: "weekly" as const },
+    { url: "/jobsite-ai", priority: 0.9, changeFrequency: "weekly" as const },
     { url: "/construction", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/sales", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/purchasing", priority: 0.7, changeFrequency: "monthly" as const },
