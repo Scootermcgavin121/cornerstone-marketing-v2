@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Bot, FileText, MessageCircle, Check, Zap, ArrowRight, Brain } from "lucide-react";
+import { Bot, FileText, MessageCircle, Check, Zap, ArrowRight, Brain, HardHat } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import type { Metadata } from "next";
@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "AI Agents for Home Builders | Cornerstone PM",
   description:
-    "5 AI agents for home builders: Foreman AI (45+ skills), Blueprint AI (PDF takeoffs), Bid Import AI (parses any vendor bid), AI MLS Listing Generator, AI Support Agent. Native AI built into the platform — not bolted on.",
+    "6 AI agents for home builders: Foreman AI (45+ skills), Blueprint AI (PDF takeoffs), Bid Import AI (parses any vendor bid), AI MLS Listing Generator, AI Support Agent, plus Jobsite AI (coming soon). Native AI built into the platform — not bolted on.",
   alternates: { canonical: "https://www.cornerstonepm.ai/ai-agents" },
 };
 
@@ -93,6 +93,22 @@ const agents = [
     ],
     badge: "Pro+",
   },
+  {
+    name: "Jobsite AI™",
+    tagline: "Field-Side AI Agent for Crews",
+    description:
+      "The companion to Foreman AI — built for the field, not the office. Crews snap a photo, dictate a status update, or ask \"what's my next task?\" and Jobsite AI handles the rest. Punch lists, daily logs, RFIs, safety incident reports — all from a phone, on-site, hands-free when needed.",
+    icon: <HardHat className="w-8 h-8" />,
+    color: "slate",
+    href: "/beta",
+    highlights: [
+      "Voice-first — talk to your jobsite, not type at it",
+      "Photo-driven punch list & daily log capture",
+      "Auto-syncs to Foreman AI for back-office workflow",
+      "Built for hard hats, gloves, and bright sunlight",
+    ],
+    badge: "Coming Soon",
+  },
 ];
 
 const colorMap: Record<string, { border: string; icon: string; badge: string; glow: string; button: string }> = {
@@ -130,6 +146,13 @@ const colorMap: Record<string, { border: string; icon: string; badge: string; gl
     badge: "border-orange-500/30 bg-orange-500/10 text-orange-400",
     glow: "shadow-orange-500/10",
     button: "bg-gradient-to-r from-orange-600 to-orange-500 text-white hover:from-orange-500 hover:to-orange-400 shadow-orange-500/20",
+  },
+  slate: {
+    border: "border-slate-500/40",
+    icon: "text-slate-300 bg-slate-500/10",
+    badge: "border-slate-400/40 bg-slate-500/15 text-slate-200",
+    glow: "shadow-slate-500/10",
+    button: "bg-gradient-to-r from-slate-600 to-slate-500 text-white hover:from-slate-500 hover:to-slate-400 shadow-slate-500/20",
   },
 };
 
@@ -176,7 +199,7 @@ export default function AiAgentsPage() {
             AI AGENTS FOR HOME BUILDERS
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight">
-            5 AI agents for home builders.
+            6 AI agents for home builders.
             <br />
             <span className="text-white">Zero setup.</span>
             <br />
