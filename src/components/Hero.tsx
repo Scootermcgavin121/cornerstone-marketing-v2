@@ -58,7 +58,7 @@ export function Hero() {
           <span>Now with 5 Built-in AI Agents &middot; Free Beta</span>
         </div>
 
-        {/* Headline — vertical box reserved so typewriter rotation does NOT shift the page */}
+        {/* Headline - vertical box reserved so typewriter rotation does NOT shift the page */}
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight text-white leading-[1.05] mb-6">
           <span className="block min-h-[1.15em]">
             Build{" "}
@@ -85,8 +85,9 @@ export function Hero() {
           The only construction platform with{" "}<span className="text-white font-semibold">five built-in AI agents.</span>
         </p>
 
-        {/* AIHubDiagram — inlined into hero flow (no outer section wrapper, inherits hero bg) */}
-        <div className="my-8 sm:my-12">
+        {/* AIHubDiagram - inlined into hero flow (no outer section wrapper, inherits hero bg) */}
+        {/* Hidden on mobile - orbital layout doesn't render well on narrow screens */}
+        <div className="hidden md:block my-8 sm:my-12">
           <AIHubDiagram inline />
         </div>
 
