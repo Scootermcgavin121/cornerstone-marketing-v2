@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "how-to-choose-home-builder-software",
+    title: "How to Choose Home Builder Software in 7 Steps",
+    excerpt:
+      "Choosing home builder software starts with one question: does the platform understand how your type of business actually operates? Here's a 7-step decision framework that filters out the wrong tools fast and gets production builders to a confident shortlist.",
+    date: "May 9, 2026",
+    readTime: "7 min read",
+    tag: "Buyer's Guide",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+  },
+  {
     slug: "buildpro-vs-cornerstone-modern-stack",
     title: "BuildPro vs Cornerstone PM: Why Production Builders Are Modernizing",
     excerpt:

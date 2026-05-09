@@ -59,6 +59,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/buildertrend-vs-cornerstone-feature-comparison", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/ai-takeoff-vs-manual-takeoff-cost", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/buildpro-vs-cornerstone-modern-stack", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/how-to-choose-home-builder-software", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({
