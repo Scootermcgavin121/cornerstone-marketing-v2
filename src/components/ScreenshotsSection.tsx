@@ -211,7 +211,7 @@ export function ScreenshotsSection() {
                       </div>
                     )}
                     {/* Screenshot */}
-                    <div className="relative w-full" style={{ aspectRatio: "16/10", minHeight: "320px" }}>
+                    <div className="relative w-full sm:min-h-[320px]" style={{ aspectRatio: "16/10" }}>
                       <Image
                         src={current.screenshot}
                         alt={`${current.label} screenshot`}
