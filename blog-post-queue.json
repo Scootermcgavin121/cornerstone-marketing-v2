@@ -124,8 +124,8 @@
       "wordCount": 1000,
       "heroImage": "/blog/home-builder-software-buyer-guide.png",
       "heroImageAlt": "Home builder team using a 7-step framework to choose home builder software",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "009f229"
     },
     {
       "slug": "why-small-builders-cant-afford-newstar",
