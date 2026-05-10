@@ -411,6 +411,19 @@ The flagship AI feature. Foreman AI is a full intelligent agent that lives insid
 - File Upload & Screenshot Analysis: attach files or paste images for AI analysis
 - Persistent Memory: save org-specific notes that survive across sessions
 - Custom Reports: pull data, format as tables/exports, vendor bid comparison, budget variance
+- SOW Generation: auto-generate scope-of-work documents for vendor contracts
+- Bid Comparison: side-by-side vendor bid analysis with recommendations
+- Profitability Reports: analyze margins across communities, floorplans, or individual homes
+
+**Smart features that set Foreman apart:**
+- **Per-user memory** — Foreman remembers things about each user across conversations. Tell it your name, role, preferences, go-to vendors — it saves personal notes that persist forever. Company-wide memory is shared with the team; personal memory is private to each user. The more you tell Foreman about yourself, the more personalized and efficient it becomes.
+- **Image analysis** — Paste or drag-drop any image (screenshots, product photos, floor plans, supplier pages, jobsite photos) and Foreman uses AI vision to read, analyze, and extract information. "What model is this faucet?" + photo → answer.
+- **Emoji & personality** — Foreman has a friendly, builder-savvy personality. It responds to emoji reactions (🔥, 💪, 👊) naturally. It feels like texting a knowledgeable colleague, not talking to a robot.
+- **Context health meter** — green/yellow/red indicator shows how much conversation context remains, so users know when to start a new chat.
+- **Auto-compaction** — long conversations are automatically summarized in the background so Foreman never loses track mid-conversation.
+- **Persistent chat history** — every conversation is saved and searchable. Pick up any old conversation right where you left off.
+
+**💡 Pro tip for new users:** The first time you use Foreman, introduce yourself! "Hey, I'm Mike, I manage Coastal Ridge and Eagles Landing. I mainly deal with HVAC and Plumbing subs." Foreman saves this and gives you better, more relevant answers in every future conversation.
 
 **Example prompts:**
 - "Scrape Home Depot for GE Profile refrigerators and add them to our parts catalog"
