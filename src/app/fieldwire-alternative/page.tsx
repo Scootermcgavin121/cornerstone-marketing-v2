@@ -31,7 +31,7 @@ const comparisonRows: ComparisonRow[] = [
 
 const whySwitchCards: WhySwitchCard[] = [
   { title: "Residential production workflows", desc: "Lot management, floorplan pricing, structural options, buyer design center, pre-sale pipeline, draw schedules - production builder concepts that don't exist in Fieldwire's commercial-focused platform." },
-  { title: "AI agents native - 45+ skills", desc: "Foreman AI reads AND writes your data. Blueprint AI converts floor plans to takeoffs in 60 seconds. AI image search, anti-bot web scraping, per-user memory. Commercial plan tools have nothing like this." },
+  { title: "AI agents native — 45+ skills", desc: "Foreman AI reads AND writes your data. Blueprint AI converts floor plans to takeoffs in 60 seconds. AI image search, anti-bot web scraping, and per-user memory that greets you by your chosen name and learns your habits over time — all custom-coded into the app. Commercial plan tools have nothing like this." },
   { title: "Full PM platform", desc: "Scheduling, purchasing, bid management, homeowner portal, options engine, multi-community pipeline - all in one residential production platform, not a commercial field tool with added features." },
 ];
 

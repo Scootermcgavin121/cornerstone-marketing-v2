@@ -258,7 +258,7 @@ export default function AiForHomeBuildersPage() {
             <div className="text-5xl mb-6">🧠</div>
             <h2 className="text-3xl font-black text-white mb-4">Gets smarter over time.</h2>
             <p className="text-slate-400 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-              Foreman uses persistent memory to learn your workflows, preferences, and decisions across sessions. It remembers which subcontractors you prefer for each scope, your margin targets by community, and which design center options perform best. The more you use it, the more it understands your business.
+              Foreman learns how YOU work. Tell it the name you want to be greeted by, your role, your go-to subcontractors for each scope, your margin targets by community, your reporting preferences — it remembers everything and gets more intuitive every session. <strong>Custom-coded into Cornerstone, not a generic chatbot bolt-on.</strong> The more you use it, the more it understands your specific business and habits.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {[

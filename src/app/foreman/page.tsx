@@ -64,9 +64,9 @@ const skillCategories = [
     border: "border-violet-500/20",
     label: "System Intelligence",
     count: "12+",
-    desc: "The behaviors that make Foreman actually useful — user memory, personality & emoji, memory compaction, persistent memory, bulk data cleanup, deduplication, smart linking, error recovery.",
+    desc: "The behaviors that make Foreman actually useful — greets you by your chosen name, learns your habits, memory compaction, persistent memory, bulk data cleanup, deduplication, smart linking, error recovery.",
     skills: [
-      { name: "User Memory", detail: "Tell Foreman about yourself — your name, role, preferences, favorite vendors. It remembers you across every conversation and gets more personal over time." },
+      { name: "User Memory", detail: "Tell Foreman about yourself — it greets you by whatever name you want, remembers your role, your favorite vendors, your typical workflows, and how you like things done. Custom-coded into the app (not a generic chatbot bolt-on). Gets more intuitive every session." },
       { name: "Memory Compaction", detail: "Auto-summarizes older messages mid-session so marathon work doesn't crash or forget. Recent context stays word-for-word intact." },
       { name: "Context Health Meter", detail: "Green/yellow/red indicator in the chat UI shows remaining capacity at a glance" },
       { name: "Persistent Memory", detail: "Saves preferences and decisions across sessions — gets smarter over time" },
@@ -291,7 +291,10 @@ export default function ForemanPage() {
             <div className="text-5xl mb-6">🧠</div>
             <h2 className="text-3xl font-black text-white mb-4">Gets smarter over time.</h2>
             <p className="text-slate-400 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-              Foreman uses persistent memory to learn your workflows, preferences, and decisions across sessions. The more you use it, the more it knows about your specific business &mdash; your communities, your vendors, your margin targets.
+              Foreman learns how <em>you</em> work. Tell it the name you want to be greeted by, your role, your
+              go-to vendors, your margin targets, how you like reports structured — it remembers everything across
+              every conversation. Custom-coded into Cornerstone (not a generic chatbot bolt-on), so the more you
+              use it, the more intuitive it becomes about your specific business.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
               {[
