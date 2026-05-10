@@ -191,7 +191,7 @@ export default function BuildproVsCornerstonePage() {
           <p>
             Cornerstone PM ships a public REST API with full documentation. Every core entity —
             schedules, vendors, lots, communities, options, bids — is accessible and modifiable
-            via API. The platform also supports 30 named webhook events with typed payloads and
+            via API. The platform also supports 30+ named webhook events (catalog growing) with typed payloads and
             HMAC signatures, so you can wire in your own tools (SMS, voice, reporting dashboards)
             without waiting on a vendor integration roadmap.
           </p>

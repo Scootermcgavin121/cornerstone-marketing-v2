@@ -17,7 +17,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Buyer design center with packages curated by an actual interior designer — the same playbook K. Hovnanian Homes uses." },
   { feature: "Native AI agents (Foreman AI — 45+ skills)", cornerstone: true, competitor: false, note: "Foreman AI reads AND writes data. Blueprint AI: PDF to takeoff in 60 seconds." },
   { feature: "AI image search, vision & anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, reads supplier product pages with AI-powered web scraping. Plus: paste or drag-drop any screenshot from inside the app and Foreman reads it with AI vision and acts on it." },
-  { feature: "30 webhook events (full named catalog)", cornerstone: true, competitor: "limited", note: "Cornerstone: 30 named events, HMAC signatures, auto-retry." },
+  { feature: "30+ named webhook events (catalog growing)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+: 30+ named events and counting — HMAC signatures, auto-retry. New events ship as the platform grows." },
   { feature: "Public REST API (59 endpoints)", cornerstone: true, competitor: "limited", note: "Cornerstone: 59 endpoints, public docs." },
   { feature: "Free database export (CSV / JSON)", cornerstone: true, competitor: false, note: "Download your full data anytime. Nightly auto-backups." },
   { feature: "AI Migration Wizard", cornerstone: true, competitor: false, note: "AI auto-detects column mapping and runs 23 import endpoints." },

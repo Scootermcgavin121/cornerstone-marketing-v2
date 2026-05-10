@@ -690,7 +690,7 @@ export default function ApiAccessPage() {
                         REAL-TIME WEBHOOKS
                       </div>
                       <h3 className="text-2xl sm:text-3xl font-black text-white mb-2">30 HMAC-signed events. Fire to Twilio, Bland, or Retell the moment something happens.</h3>
-                      <p className="text-slate-400 max-w-2xl mx-auto">Other platforms say &ldquo;webhooks exist.&rdquo; We give you 30 named events with typed payloads, HMAC signatures, delivery logs, and auto-retry.</p>
+                      <p className="text-slate-400 max-w-2xl mx-auto">Other platforms say &ldquo;webhooks exist.&rdquo; We give you 30+ named events and counting — typed payloads, HMAC signatures, delivery logs, and auto-retry. New events ship as the platform grows.</p>
                     </div>
                   )}
                   {showGroupLabel && !showDivider && (
@@ -1055,7 +1055,7 @@ export default function ApiAccessPage() {
                 "Foreman Skill Pack — GET /api/ext/skills in Anthropic, OpenAI, or OpenAPI 3.1 format",
                 "45+ skills across 7 domains, auto-synced as new skills ship",
                 "Scoped API keys per agent/integration",
-                "Real-time webhooks (30 event types, HMAC-signed)",
+                "Real-time webhooks (30+ named event types and growing, HMAC-signed)",
                 "Automated 7-wave bidding pipeline",
                 "Includes everything in Pro (Foreman AI, Blueprint AI, MLS Listing Agent)",
               ].map((f) => (

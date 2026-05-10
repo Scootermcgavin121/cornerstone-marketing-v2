@@ -1,7 +1,7 @@
 ## Platform Overview (Current Stats)
 - 130+ database tables and growing
 - **45+ Foreman AI skills** (in-app agent that reads AND writes data - including product image search, image hosting, and AI-powered web scraping)
-- **30 webhook event types** with typed payloads, HMAC signatures, delivery logs, and auto-retry - industry-leading depth (most competitors just say "webhooks exist")
+- **30+ named webhook event types and growing** — typed payloads, HMAC signatures, delivery logs, and auto-retry. New events ship as the platform grows. Industry-leading depth (most competitors just say "webhooks exist")
 - 60+ external REST API endpoints
 - 5 built-in AI features: Foreman AI (45+ skills), Blueprint AI, MLS Listing Agent, AI Support Agent, AI Jobsite Camera Events (webhook-driven, source-agnostic camera/sensor integration)
 - **Triple QR Code Ecosystem** - vendor jobsite check-in, community/PM check-in (timesheet-validated), and sales model home lead capture. Three QR codes, three audiences, one platform.
@@ -103,8 +103,8 @@ A: Yes - the Sales Model Home QR captures lead info on first scan, recognizes re
 
 ## New Features (May 3-7, 2026)
 
-### Webhook System - 30 Events, Industry-Leading
-Cornerstone now ships with **30 named webhook event types**, the deepest webhook coverage of any homebuilder platform:
+### Webhook System - 30+ Named Events and Growing
+Cornerstone ships with **30+ named webhook event types and counting** — new events ship as the platform grows. This is the deepest webhook coverage of any homebuilder platform:
 
 - **Categories:** home lifecycle, task/schedule changes, vendor notifications, cascade scheduling, in-app messages, sales pipeline, bid requests
 - **Typed payloads** - every event has a documented JSON schema
@@ -410,7 +410,7 @@ Reference Data:
 Webhooks:
 - GET /api/ext/webhooks - List webhooks
 - POST /api/ext/webhooks - Create webhook (url, eventTypes[], secret)
-- **30 event types** across home lifecycle, task/schedule, vendor notifications, cascade scheduling, messages, sales pipeline, and bid requests - includes vendor.created, vendor.updated, bid_request.created, bid.submitted, bid.accepted, bid.rejected, payment.created, payment.voided, home.created, home.status_changed, task.completed, task.status_changed, po.created, po.status_changed, vendor.notification.advance, vendor.notification.reminder, vendor.notification.moved_earlier, vendor.notification.postponed, message.sent, sale.* events, and more (full catalog at /api-docs)
+- **30+ event types and growing** across home lifecycle, task/schedule, vendor notifications, cascade scheduling, messages, sales pipeline, and bid requests - includes vendor.created, vendor.updated, bid_request.created, bid.submitted, bid.accepted, bid.rejected, payment.created, payment.voided, home.created, home.status_changed, task.completed, task.status_changed, po.created, po.status_changed, vendor.notification.advance, vendor.notification.reminder, vendor.notification.moved_earlier, vendor.notification.postponed, message.sent, sale.* events, and more. New events ship as the platform grows. (Full live catalog at /api-docs)
 - HMAC SHA-256 signature via X-Webhook-Signature header
 - 10 second timeout, auto-disable after 50 consecutive failures
 
