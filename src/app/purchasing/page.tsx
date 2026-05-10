@@ -25,7 +25,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Is Cornerstone PM a NEWSTAR or BuildPro alternative for purchasing?",
-    a: "Yes. Cornerstone PM was built as a modern, affordable alternative to NEWSTAR and BuildPro for small-to-mid production home builders. It covers the same core purchasing functionality &mdash; parts catalog, budget hierarchy, bid management, POs, payments &mdash; without the 6-figure implementation cost. Starts at $299/mo on the Builder plan.",
+    a: "Yes. Cornerstone PM was built as a modern, affordable alternative to NEWSTAR and BuildPro for small-to-mid home builders. It covers the same core purchasing functionality &mdash; parts catalog, budget hierarchy, bid management, POs, payments &mdash; without the 6-figure implementation cost. Starts at $299/mo on the Builder plan.",
   },
   {
     q: "Does Cornerstone PM track retainage?",
@@ -234,7 +234,7 @@ export default function PurchasingPage() {
 
       <FAQSection
         title="Home Builder Purchasing FAQ"
-        subtitle="Common questions about purchasing and bid management software for production home builders."
+        subtitle="Common questions about purchasing and bid management software for home builders."
         items={faqItems}
       />
 

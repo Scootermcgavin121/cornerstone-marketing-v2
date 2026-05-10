@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 export const metadata = {
   title: "AI Construction Scheduling for Home Builders | Cornerstone PM",
   description:
-    "AI construction scheduling for home builders. Auto-cascading dependencies, vendor email confirmations, and Foreman AI scheduling agent &mdash; built for production builders.",
+    "AI construction scheduling for home builders. Auto-cascading dependencies, vendor email confirmations, and Foreman AI scheduling agent &mdash; built for home builders.",
   alternates: { canonical: "https://www.cornerstonepm.ai/ai-scheduling" },
 };
 
