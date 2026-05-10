@@ -3,14 +3,14 @@ import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageT
 import type { FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
-  title: "Contractor Foreman Alternative for Production Home Builders | Cornerstone PM",
+  title: "Contractor Foreman Alternative for Home Builders | Cornerstone PM",
   description:
-    "Contractor Foreman is general construction PM software. Cornerstone PM is the alternative for production home builders - AI agents, options engine, 30 webhook events, and multi-community management from $149/mo.",
+    "Contractor Foreman is general construction PM software. Cornerstone PM is the alternative for home builders - AI agents, options engine, 30 webhook events, and multi-community management from $149/mo.",
   alternates: { canonical: "https://www.cornerstonepm.ai/contractor-foreman-alternative" },
 };
 
 const comparisonRows: ComparisonRow[] = [
-  { feature: "Built for production home builders", cornerstone: true, competitor: false, note: "Contractor Foreman is general construction PM software for various contractor types. Cornerstone PM is purpose-built for production (tract/spec) home builders managing communities." },
+  { feature: "Built for home builders", cornerstone: true, competitor: false, note: "Contractor Foreman is general construction PM software for various contractor types. Cornerstone PM is purpose-built for home builders managing communities — production, semi-custom, and custom." },
   { feature: "Structural options engine", cornerstone: true, competitor: false, note: "Pre-sale floorplan options pricing matrix - not a general contractor concept." },
   { feature: "Floorplan pricing matrix", cornerstone: true, competitor: false, note: "Per-community floorplan pricing for production builders." },
   { feature: "Multi-community lot management", cornerstone: true, competitor: false, note: "Native multi-community pipeline. Contractor Foreman is project-centric." },
@@ -18,7 +18,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Native AI agents (Foreman AI - 45+ skills)", cornerstone: true, competitor: false, note: "Foreman AI (45+ skills) reads AND writes data - creates POs, updates options, generates SOWs, compares bids, searches product images. Blueprint AI: PDF to takeoff in 60 seconds." },
   { feature: "AI memory compaction for marathon sessions", cornerstone: true, competitor: false, note: "Foreman auto-summarizes older messages so long workflows never crash or forget. Unique to Cornerstone." },
   { feature: "Per-user AI memory (learns YOU, not just your data)", cornerstone: true, competitor: false, note: "Foreman greets you by whatever name you want to be called, learns your role, your go-to vendors, your typical workflows. Custom-coded into the app — not a generic chatbot bolt-on. Gets more intuitive every session." },
-  { feature: "AI image search + anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, permanently hosts them on CDN, and reads Home Depot/Ferguson/Lowe's product pages with AI-powered web scraping." },
+  { feature: "AI image search, vision & anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, permanently hosts them on CDN, reads Home Depot/Ferguson/Lowe's product pages with AI-powered web scraping. Plus: paste or drag-drop any screenshot from inside the app and Foreman reads it with AI vision and acts on it." },
   { feature: "30 webhook events (full named catalog)", cornerstone: true, competitor: false, note: "30 named events with typed payloads, HMAC signatures, delivery logs, auto-retry. Contractor Foreman has no public webhook catalog." },
   { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Wire Claude or ChatGPT to your live construction data." },
   { feature: "Public REST API (59 endpoints)", cornerstone: true, competitor: false, note: "Cornerstone: 59 endpoints, public docs. Contractor Foreman has no public API." },
@@ -34,7 +34,7 @@ const comparisonRows: ComparisonRow[] = [
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
-  { title: "Production builder workflows native", desc: "Lot management, floorplan pricing, structural options, design center, multi-community pipelines, draw schedules - first-class features in Cornerstone. Contractor Foreman is built for general contractors doing varied work, not production builders doing plan-repeat communities." },
+  { title: "Home builder workflows native", desc: "Lot management, floorplan pricing, structural options, design center, multi-community pipelines, draw schedules - first-class features in Cornerstone. Contractor Foreman is built for general contractors doing varied work, not home builders doing plan-repeat communities." },
   { title: "Foreman AI: 45+ skills, real actions", desc: "Foreman AI creates POs, updates design options, generates SOWs, compares bids, searches product images, and reads supplier websites with AI-powered web scraping. Greets you by your chosen name and learns your habits — custom-coded into the app, not a generic chatbot bolt-on. Built-in session compaction. No other construction platform comes close." },
   { title: "30 webhooks + public REST API", desc: "30 named webhook events with typed payload schemas, HMAC signatures, and auto-retry. Public REST API with 59 endpoints. Wire SMS, voice (Twilio, Bland, Retell), or your own Claude agent to construction events. Contractor Foreman has no public API or webhook catalog." },
 ];
@@ -45,8 +45,8 @@ const faqItems: FAQItem[] = [
     a: "Both are construction management platforms, but they serve different builders. Contractor Foreman is built for general contractors doing varied work (commercial, residential, renovation) and competes on breadth of features at low price. Cornerstone PM is purpose-built for production home builders - it adds a structural options engine, floorplan pricing matrix, multi-community lot management, native AI agents (Foreman AI 45+ skills), 30 webhook events, and a public REST API that Contractor Foreman doesn't offer at any price.",
   },
   {
-    q: "What's the best Contractor Foreman alternative for production home builders?",
-    a: "Cornerstone PM is purpose-built for production home builders. Where Contractor Foreman handles general contractor workflows (scheduling, POs, job costing, basic client portal), Cornerstone adds a structural options engine, pre-sale design center with 64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses), multi-community pipelines, native AI agents (Foreman AI 45+ skills, Blueprint AI), 30 webhook events, and a public REST API.",
+    q: "What's the best Contractor Foreman alternative for home builders?",
+    a: "Cornerstone PM is purpose-built for home builders. Where Contractor Foreman handles general contractor workflows (scheduling, POs, job costing, basic client portal), Cornerstone adds a structural options engine, pre-sale design center with 64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses), multi-community pipelines, native AI agents (Foreman AI 45+ skills, Blueprint AI), 30 webhook events, and a public REST API.",
   },
   {
     q: "Does Cornerstone PM have Contractor Foreman's core features?",
@@ -66,7 +66,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Does Cornerstone PM have a free trial?",
-    a: "Yes. The 2-year free beta is open to the first 100 production builders - no credit card, no contract, no implementation fee.",
+    a: "Yes. The 2-year free beta is open to the first 100 home builders - no credit card, no contract, no implementation fee.",
   },
   {
     q: "Does Cornerstone PM have a public API and webhooks?",
@@ -82,20 +82,20 @@ export default function ContractorForemanAlternativePage() {
       heroLine1="General contractor software."
       heroLine2="Or purpose-built for production?"
       accentColor="emerald"
-      heroParagraph="Contractor Foreman is built for general contractors doing varied work across markets. Cornerstone PM is purpose-built for production home builders - structural options engine, floorplan pricing matrix, multi-community pipelines, Foreman AI with 45+ skills, and 30 webhook events. From $149/mo with unlimited users."
+      heroParagraph="Contractor Foreman is built for general contractors doing varied work across markets. Cornerstone PM is purpose-built for home builders - structural options engine, floorplan pricing matrix, multi-community pipelines, Foreman AI with 45+ skills, and 30 webhook events. From $149/mo with unlimited users."
       secondaryCTA={{ text: "See full comparison", href: "/compare" }}
-      comparisonSubtitle="Contractor Foreman vs Cornerstone PM - general contractor tool vs. production builder platform."
+      comparisonSubtitle="Contractor Foreman vs Cornerstone PM - general contractor tool vs. home builder platform."
       comparisonRows={comparisonRows}
       trademarkName="Contractor Foreman"
-      whySwitchHeadline="Why production builders choose Cornerstone PM"
+      whySwitchHeadline="Why home builders choose Cornerstone PM"
       whySwitchCards={whySwitchCards}
       showMigrationCTA={true}
       migrationHeadline="Already using Contractor Foreman? Drop your export. We'll do the rest."
       migrationDesc="Export your Contractor Foreman data, drop it in our wizard, and AI auto-maps every column - vendors, homes, communities, schedules, budgets. Dry-run before you commit. ~$0.01 per migration in AI - we absorb it."
       faqTitle="Contractor Foreman Alternative FAQ"
-      faqSubtitle="Common questions from production home builders evaluating Contractor Foreman vs Cornerstone PM."
+      faqSubtitle="Common questions from home builders evaluating Contractor Foreman vs Cornerstone PM."
       faqItems={faqItems}
-      footerHeadline="Ready for a production builder platform?"
+      footerHeadline="Ready for a home builder platform?"
       footerSubtext="Join the beta and get 2 years free. Built specifically for home builders."
       relatedPages={[
         { text: "vs Buildertrend", href: "/buildertrend-alternative" },

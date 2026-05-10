@@ -5,18 +5,18 @@ import type { FAQItem } from "@/components/FAQSection";
 export const metadata = {
   title: "Fieldwire Alternative for Residential Home Builders | Cornerstone PM",
   description:
-    "Fieldwire is a commercial construction field management tool. Cornerstone PM is the alternative for residential production home builders - AI agents, options engine, scheduling, and 30 webhook events from $149/mo.",
+    "Fieldwire is a commercial construction field management tool. Cornerstone PM is the alternative for residential home builders - AI agents, options engine, scheduling, and 30 webhook events from $149/mo.",
   alternates: { canonical: "https://www.cornerstonepm.ai/fieldwire-alternative" },
 };
 
 const comparisonRows: ComparisonRow[] = [
-  { feature: "Built for residential production builders", cornerstone: true, competitor: false, note: "Fieldwire is built primarily for commercial GCs and large construction firms. Cornerstone PM is purpose-built for residential production (tract/spec) home builders." },
+  { feature: "Built for residential home builders", cornerstone: true, competitor: false, note: "Fieldwire is built primarily for commercial GCs and large construction firms. Cornerstone PM is purpose-built for residential home builders." },
   { feature: "Structural options engine (residential)", cornerstone: true, competitor: false, note: "Pre-sale floorplan options pricing - a production builder concept, not commercial construction." },
   { feature: "Floorplan pricing matrix", cornerstone: true, competitor: false, note: "Per-community floorplan pricing for production builders." },
   { feature: "Multi-community lot management", cornerstone: true, competitor: false, note: "Native multi-community pipeline for production builders." },
   { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Buyer design center with packages curated by an actual interior designer — the same playbook K. Hovnanian Homes uses. Residential-builder specific." },
   { feature: "Native AI agents (Foreman AI - 45+ skills)", cornerstone: true, competitor: false, note: "Foreman AI reads AND writes data. Blueprint AI: PDF to takeoff in 60 seconds. Fieldwire has no native AI agents." },
-  { feature: "AI image search + anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images and reads supplier product pages with AI-powered web scraping." },
+  { feature: "AI image search, vision & anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, reads supplier product pages with AI-powered web scraping. Plus: paste or drag-drop any screenshot from inside the app and Foreman reads it with AI vision and acts on it." },
   { feature: "30 webhook events (full named catalog)", cornerstone: true, competitor: false, note: "30 named events, HMAC signatures, auto-retry." },
   { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Wire Claude or ChatGPT to your live construction data." },
   { feature: "Public REST API (59 endpoints)", cornerstone: true, competitor: "limited", note: "Cornerstone: 59 endpoints, public docs. Fieldwire: limited API." },
@@ -42,7 +42,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What's the best Fieldwire alternative for residential home builders?",
-    a: "Cornerstone PM is purpose-built for residential production home builders. It includes scheduling, purchasing, bid management, homeowner portal, structural options engine, designer packages, native AI agents (Foreman AI 45+ skills, Blueprint AI), 30 webhook events, and a public REST API - all built for residential production workflows.",
+    a: "Cornerstone PM is purpose-built for residential home builders. It includes scheduling, purchasing, bid management, homeowner portal, structural options engine, designer packages, native AI agents (Foreman AI 45+ skills, Blueprint AI), 30 webhook events, and a public REST API - all built for residential workflows.",
   },
   {
     q: "Can I migrate from Fieldwire to Cornerstone PM?",
@@ -54,7 +54,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Does Cornerstone PM have a free trial?",
-    a: "Yes. The 2-year free beta is open to the first 100 production builders - no credit card, no contract, no implementation fee.",
+    a: "Yes. The 2-year free beta is open to the first 100 home builders - no credit card, no contract, no implementation fee.",
   },
 ];
 
@@ -66,19 +66,19 @@ export default function FieldwireAlternativePage() {
       heroLine1="Fieldwire is for commercial GCs."
       heroLine2="You build homes."
       accentColor="rose"
-      heroParagraph="Fieldwire is a commercial construction field management and plan room tool. Cornerstone PM is the Fieldwire alternative for residential production home builders - structural options engine, floorplan pricing, 45+ AI skills, and multi-community management from $149/mo."
+      heroParagraph="Fieldwire is a commercial construction field management and plan room tool. Cornerstone PM is the Fieldwire alternative for residential home builders - structural options engine, floorplan pricing, 45+ AI skills, and multi-community management from $149/mo."
       secondaryCTA={{ text: "See full comparison", href: "/compare" }}
-      comparisonSubtitle="Fieldwire vs Cornerstone PM - commercial field tool vs. residential production builder platform."
+      comparisonSubtitle="Fieldwire vs Cornerstone PM - commercial field tool vs. residential home builder platform."
       comparisonRows={comparisonRows}
       trademarkName="Fieldwire"
       whySwitchHeadline="Why residential builders choose Cornerstone PM over Fieldwire"
       whySwitchCards={whySwitchCards}
-      honestAngle="If you're a commercial GC who needs plan room management, formal RFI tracking, and punch lists for large commercial projects, Fieldwire is a solid tool. This page is for residential production home builders who found Fieldwire through a search - you need residential-native software, and Cornerstone PM is built for your workflows."
+      honestAngle="If you're a commercial GC who needs plan room management, formal RFI tracking, and punch lists for large commercial projects, Fieldwire is a solid tool. This page is for residential home builders who found Fieldwire through a search - you need residential-native software, and Cornerstone PM is built for your workflows."
       showMigrationCTA={true}
       migrationHeadline="Moving from Fieldwire? Bring your data."
       migrationDesc="Export your Fieldwire data, drop it in our wizard, and AI auto-maps contacts, vendors, and project history. Dry-run before you commit."
       faqTitle="Fieldwire Alternative FAQ"
-      faqSubtitle="For residential production home builders evaluating Fieldwire vs Cornerstone PM."
+      faqSubtitle="For residential home builders evaluating Fieldwire vs Cornerstone PM."
       faqItems={faqItems}
       footerHeadline="Built for home builders, not commercial GCs."
       footerSubtext="Join the beta and get 2 years free. Residential production workflows native."

@@ -4,9 +4,9 @@ import { Navbar } from "@/components/Navbar";
 import { VideoPlayer } from "@/components/VideoPlayer";
 
 export const metadata = {
-  title: "Foreman AI — 45+ Skill Construction Agent with Memory Compaction | Cornerstone PM",
+  title: "Foreman AI - 45+ Skill Construction Agent with Memory Compaction | Cornerstone PM",
   description:
-    "45+ purpose-built construction skills with built-in memory compaction — the only construction AI that doesn't forget mid-session. Reads and writes your real data: parts, vendors, homes, budgets, sales pipeline, design center selections. Pro plan.",
+    "45+ purpose-built construction skills with built-in memory compaction - the only construction AI that doesn't forget mid-session. Reads and writes your real data: parts, vendors, homes, budgets, sales pipeline, design center selections. Pro plan.",
 };
 
 const skillCategories = [
@@ -17,17 +17,17 @@ const skillCategories = [
     border: "border-amber-500/20",
     label: "Core Data Management",
     count: 17,
-    desc: "Read and write your real construction data — parts, vendors, homes, budgets, sales pipeline, design center, and more.",
+    desc: "Read and write your real construction data - parts, vendors, homes, budgets, sales pipeline, design center, and more.",
     skills: [
       { name: "Parts Catalog", detail: "Search, create, bulk import, update, and delete parts" },
       { name: "Design Center Options", detail: "List, create, bulk create, update options; link to parts and option classes" },
       { name: "Vendor Management", detail: "List, create, search bids, performance scorecards" },
       { name: "Home Management", detail: "List homes, view budgets, update status and assignments" },
       { name: "Data Lookup", detail: "Communities, floorplans, scopes, option classes, spec levels, users, org stats" },
-      { name: "Sales Pipeline", detail: "Get full pipeline overview — homes by stage, buyer info, contract dates, assigned agents" },
+      { name: "Sales Pipeline", detail: "Get full pipeline overview - homes by stage, buyer info, contract dates, assigned agents" },
       { name: "Sales Task Management", detail: "List, update, and complete sales tasks across all homes; assign roles and due dates" },
       { name: "Sales Task Status", detail: "Mark tasks complete, in-progress, blocked, or skipped with optional completion dates" },
-      { name: "Home Selections", detail: "Get all design center selections for a home — option details, category, location, status" },
+      { name: "Home Selections", detail: "Get all design center selections for a home - option details, category, location, status" },
       { name: "Selection Status Update", detail: "Confirm, reject, or reset buyer selections across any home or category" },
       { name: "Option Categories", detail: "List all design center categories and option classes available in your catalog" },
       { name: "Options by Category", detail: "Pull full option lists filtered by category, spec level, scope, or keyword search" },
@@ -40,20 +40,21 @@ const skillCategories = [
     border: "border-blue-500/20",
     label: "AI-Powered Analysis",
     count: 13,
-    desc: "Foreman doesn't just retrieve data — it analyzes it. Budget variances, profitability, vendor performance, competitive intel.",
+    desc: "Foreman doesn't just retrieve data - it analyzes it. Budget variances, profitability, vendor performance, competitive intel.",
     skills: [
-      { name: "Web Scraping", detail: "Fetch any URL for product info, pricing, specs — Home Depot, Ferguson, 84 Lumber" },
+      { name: "Web Scraping", detail: "Fetch any URL for product info, pricing, specs - Home Depot, Ferguson, 84 Lumber" },
       { name: "Design Center Suggestions", detail: "Scan parts catalog for missing design options, auto-suggest additions" },
       { name: "Competitive Analysis", detail: "Scrape competitor pages and compare vs your floorplans" },
       { name: "Sales Description Generator", detail: "AI-powered MLS descriptions for floorplans using real project data" },
       { name: "Budget Variance Analysis", detail: "Flag cost overruns across all homes in one command" },
       { name: "Profitability Reports", detail: "Margin analysis by community with upgrade revenue breakdown" },
       { name: "Vendor Performance Analysis", detail: "Bid response rates, win rates, insurance tracking" },
-      { name: "File Content Reading", detail: "Analyze uploaded CSVs, text files, screenshots — extract and act on data" },
+      { name: "Image Vision & Screenshot Acting", detail: "Paste or drag-drop any screenshot, product photo, floor plan, or supplier page from inside the app — Foreman reads it with AI vision and acts on it (vendor quote screenshot → parts catalog entry, faucet photo → model lookup, floor plan PDF → takeoff trigger)." },
+      { name: "File Content Reading", detail: "Analyze uploaded CSVs, text files, and other documents — extract and act on data." },
       { name: "Sales Pipeline Analysis", detail: "Identify stalled deals, avg days per stage, close rate by agent or community" },
       { name: "Design Center Revenue Analysis", detail: "Total upgrade revenue by category, top-selling options, margin by spec level" },
-      { name: "Buyer Selections Report", detail: "Full selections summary for any home — what was chosen, confirmed, and at what price" },
-      { name: "Options Gap Analysis", detail: "Find categories with no confirmed selections — flag incomplete buyer decisions before cutoff" },
+      { name: "Buyer Selections Report", detail: "Full selections summary for any home - what was chosen, confirmed, and at what price" },
+      { name: "Options Gap Analysis", detail: "Find categories with no confirmed selections - flag incomplete buyer decisions before cutoff" },
       { name: "Spec Level Profitability", detail: "Compare margin across Good/Better/Best tiers; identify which upgrades drive the most profit" },
     ],
   },
@@ -64,20 +65,20 @@ const skillCategories = [
     border: "border-violet-500/20",
     label: "System Intelligence",
     count: "12+",
-    desc: "The behaviors that make Foreman actually useful — greets you by your chosen name, learns your habits, memory compaction, persistent memory, bulk data cleanup, deduplication, smart linking, error recovery.",
+    desc: "The behaviors that make Foreman actually useful - greets you by your chosen name, learns your habits, memory compaction, persistent memory, bulk data cleanup, deduplication, smart linking, error recovery.",
     skills: [
-      { name: "User Memory", detail: "Tell Foreman about yourself — it greets you by whatever name you want, remembers your role, your favorite vendors, your typical workflows, and how you like things done. Custom-coded into the app (not a generic chatbot bolt-on). Gets more intuitive every session." },
+      { name: "User Memory", detail: "Tell Foreman about yourself - it greets you by whatever name you want, remembers your role, your favorite vendors, your typical workflows, and how you like things done. Custom-coded into the app (not a generic chatbot bolt-on). Gets more intuitive every session." },
       { name: "Memory Compaction", detail: "Auto-summarizes older messages mid-session so marathon work doesn't crash or forget. Recent context stays word-for-word intact." },
       { name: "Context Health Meter", detail: "Green/yellow/red indicator in the chat UI shows remaining capacity at a glance" },
-      { name: "Persistent Memory", detail: "Saves preferences and decisions across sessions — gets smarter over time" },
-      { name: "Bulk Operations & Data Cleanup", detail: "Foreman is a beast at cleanup work — rename hundreds of options, fix bad pricing, normalize categories, archive stale parts, or rebuild a messy catalog in one prompt instead of 200 manual edits." },
-      { name: "Smart Data Linking", detail: "Auto-connect parts to option classes for the design center — great for stitching legacy data back together after a migration." },
+      { name: "Persistent Memory", detail: "Saves preferences and decisions across sessions - gets smarter over time" },
+      { name: "Bulk Operations & Data Cleanup", detail: "Foreman is a beast at cleanup work - rename hundreds of options, fix bad pricing, normalize categories, archive stale parts, or rebuild a messy catalog in one prompt instead of 200 manual edits." },
+      { name: "Smart Data Linking", detail: "Auto-connect parts to option classes for the design center - great for stitching legacy data back together after a migration." },
       { name: "Duplicate Prevention & Dedup", detail: "Always searches before creating to avoid duplicates, and can sweep your catalog to merge or flag existing dupes." },
-      { name: "Anti-Bot Web Crawling", detail: "Pulls real products, prices, SKUs, and images from Home Depot, Ferguson, Lowe's, and other big-box sites that block traditional scrapers — then turns them into parts and design options in your catalog." },
+      { name: "Anti-Bot Web Crawling", detail: "Pulls real products, prices, SKUs, and images from Home Depot, Ferguson, Lowe's, and other big-box sites that block traditional scrapers - then turns them into parts and design options in your catalog." },
       { name: "URL Generation", detail: "Build direct links to specific homes, vendors, and reports" },
       { name: "Error Recovery", detail: "When web scraping fails, uses industry knowledge as backup" },
-      { name: "Context Awareness", detail: "Understands builder terminology and workflows — not generic AI speak" },
-      { name: "Personality & Emoji", detail: "Foreman uses emojis for fun and reacts to yours — fire it a 🔥💪👊 and it gets the vibe. Feels like texting a knowledgeable colleague, not chatting with a robot." },
+      { name: "Context Awareness", detail: "Understands builder terminology and workflows - not generic AI speak" },
+      { name: "Personality & Emoji", detail: "Foreman uses emojis for fun and reacts to yours - fire it a 🔥💪👊 and it gets the vibe. Feels like texting a knowledgeable colleague, not chatting with a robot." },
     ],
   },
   {
@@ -96,10 +97,10 @@ const skillCategories = [
       { name: "Custom File Export", detail: "CSV, JSON, text, and PDF-style documents on demand" },
       { name: "PDF Document Creation", detail: "Styled HTML with print formatting for professional docs" },
       { name: "Excel Exports", detail: "Formatted spreadsheets with company branding" },
-      { name: "MLS Listing Sheets", detail: "Auto-generated from floorplan data — room dimensions, upgrades, community info" },
+      { name: "MLS Listing Sheets", detail: "Auto-generated from floorplan data - room dimensions, upgrades, community info" },
       { name: "Room Dimension Sheets", detail: "Detailed room specs for sales team handouts" },
-      { name: "Design Center Summary PDF", detail: "Full selections export for a home — categories, options chosen, prices, and buyer signature line" },
-      { name: "Sales Stage Report", detail: "Pipeline snapshot by community — homes per stage, days elapsed, next action due" },
+      { name: "Design Center Summary PDF", detail: "Full selections export for a home - categories, options chosen, prices, and buyer signature line" },
+      { name: "Sales Stage Report", detail: "Pipeline snapshot by community - homes per stage, days elapsed, next action due" },
     ],
   },
 ];
@@ -111,13 +112,13 @@ const examplePrompts = [
     category: "Web Scraping + Parts",
   },
   {
-    prompt: "Clean up the parts catalog — archive anything not used in the last 12 months, fix capitalization, and flag duplicate SKUs",
+    prompt: "Clean up the parts catalog - archive anything not used in the last 12 months, fix capitalization, and flag duplicate SKUs",
     result: "143 parts archived, 387 names normalized, 22 duplicate SKU groups flagged for review. Catalog is tidy.",
     category: "Bulk Data Cleanup",
   },
   {
     prompt: "Show me all homes in Coastal Ridge that are IN_PROGRESS with budget totals and days since construction started",
-    result: "14 homes returned with budget summary, committed vs budgeted, and timeline — formatted as a table.",
+    result: "14 homes returned with budget summary, committed vs budgeted, and timeline - formatted as a table.",
     category: "Home Management + Analysis",
   },
   {
@@ -137,7 +138,7 @@ const examplePrompts = [
   },
   {
     prompt: "Generate a punch list for the finishing trades at 1234 Oak Street",
-    result: "Room-by-room QC checklist for Paint, Flooring, Trim, and Fixtures — exported as PDF.",
+    result: "Room-by-room QC checklist for Paint, Flooring, Trim, and Fixtures - exported as PDF.",
     category: "Punch List Generator",
   },
 ];
@@ -156,7 +157,7 @@ export default function ForemanPage() {
             45+ SKILLS &middot; PRO PLAN &middot; READS AND WRITES YOUR REAL DATA
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
-            🪖 Foreman AI<sup className="text-2xl sm:text-3xl lg:text-4xl align-super text-amber-400 ml-1">™</sup>
+            🪖 Foreman AI<sup className="text-2xl sm:text-3xl lg:text-4xl align-super text-amber-400 ml-1">TM</sup>
           </h1>
           <p className="text-2xl text-amber-400 font-bold mb-4">Not a chatbot. A construction agent.</p>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
@@ -185,6 +186,11 @@ export default function ForemanPage() {
             </h2>
             <p className="text-slate-400 text-sm max-w-2xl mx-auto">
               One prompt. Foreman searches the web, downloads the official Samsung product photo, saves it to your server, and attaches it to the right Design Options entry. Zero clicks of yours.
+            </p>
+            <p className="text-slate-500 text-xs max-w-2xl mx-auto mt-3">
+              Works the other direction too: paste or drag-drop <em>any screenshot</em> from inside the app — a vendor
+              quote, a supplier product page, a faucet photo, a floor plan PDF — and Foreman reads it with AI vision
+              and acts on it (creates the part, updates the option, answers the question).
             </p>
           </div>
           <VideoPlayer src="/video/foreman-image-search.mp4" label="Foreman AI: Image Search Workflow" />
@@ -292,7 +298,7 @@ export default function ForemanPage() {
             <h2 className="text-3xl font-black text-white mb-4">Gets smarter over time.</h2>
             <p className="text-slate-400 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
               Foreman learns how <em>you</em> work. Tell it the name you want to be greeted by, your role, your
-              go-to vendors, your margin targets, how you like reports structured — it remembers everything across
+              go-to vendors, your margin targets, how you like reports structured - it remembers everything across
               every conversation. Custom-coded into Cornerstone (not a generic chatbot bolt-on), so the more you
               use it, the more intuitive it becomes about your specific business.
             </p>
@@ -337,7 +343,7 @@ export default function ForemanPage() {
                   {[
                     "Clean up 200+ design options in one sitting",
                     "Import an entire vendor catalog without losing your place",
-                    "Walk through a full bid review — line by line, vendor by vendor",
+                    "Walk through a full bid review - line by line, vendor by vendor",
                     "Hours of back-and-forth, hundreds of tool calls, zero context loss",
                   ].map((item) => (
                     <div key={item} className="flex items-start gap-3">
@@ -367,7 +373,7 @@ export default function ForemanPage() {
                       <div>
                         <div className="flex items-center justify-between mb-1.5">
                           <span className="text-emerald-400 text-xs font-bold">Green &mdash; Plenty of room</span>
-                          <span className="text-slate-500 text-xs">0–70%</span>
+                          <span className="text-slate-500 text-xs">0-70%</span>
                         </div>
                         <div className="h-2 rounded-full bg-slate-800 overflow-hidden">
                           <div className="h-full w-[35%] bg-emerald-400 rounded-full" />
@@ -376,7 +382,7 @@ export default function ForemanPage() {
                       <div>
                         <div className="flex items-center justify-between mb-1.5">
                           <span className="text-amber-400 text-xs font-bold">Yellow &mdash; Compacting in background</span>
-                          <span className="text-slate-500 text-xs">70–90%</span>
+                          <span className="text-slate-500 text-xs">70-90%</span>
                         </div>
                         <div className="h-2 rounded-full bg-slate-800 overflow-hidden">
                           <div className="h-full w-[80%] bg-amber-400 rounded-full" />
@@ -385,7 +391,7 @@ export default function ForemanPage() {
                       <div>
                         <div className="flex items-center justify-between mb-1.5">
                           <span className="text-rose-400 text-xs font-bold">Red &mdash; Time for a fresh chat</span>
-                          <span className="text-slate-500 text-xs">90–100%</span>
+                          <span className="text-slate-500 text-xs">90-100%</span>
                         </div>
                         <div className="h-2 rounded-full bg-slate-800 overflow-hidden">
                           <div className="h-full w-[95%] bg-rose-400 rounded-full" />
@@ -447,8 +453,8 @@ export default function ForemanPage() {
             <div className="text-white font-bold text-xl mb-6">Pro Plan</div>
             <div className="space-y-3 text-left mb-8">
               {[
-                "Foreman AI — 45+ skills, Sonnet model, 1,000 AI messages/mo",
-                "Blueprint AI — 25 blueprint takeoffs/mo",
+                "Foreman AI - 45+ skills, Sonnet model, 1,000 AI messages/mo",
+                "Blueprint AI - 25 blueprint takeoffs/mo",
                 "MLS Listing Agent",
                 "Everything in Builder (Sales, Purchasing, Design Center)",
                 "Up to 1,000 active homes",

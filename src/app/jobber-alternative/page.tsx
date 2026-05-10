@@ -16,7 +16,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Multi-community lot management", cornerstone: true, competitor: false, note: "Native multi-community pipeline. Jobber is job-centric." },
   { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Buyer design center with packages curated by an actual interior designer — the same playbook K. Hovnanian Homes uses." },
   { feature: "Native AI agents (Foreman AI — 45+ skills)", cornerstone: true, competitor: false, note: "Foreman AI reads AND writes data. Blueprint AI: PDF to takeoff in 60 seconds. Jobber has no native AI agents." },
-  { feature: "AI image search + anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images and reads supplier product pages with AI-powered web scraping." },
+  { feature: "AI image search, vision & anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, reads supplier product pages with AI-powered web scraping. Plus: paste or drag-drop any screenshot from inside the app and Foreman reads it with AI vision and acts on it." },
   { feature: "30 webhook events (full named catalog)", cornerstone: true, competitor: "limited", note: "Cornerstone: 30 named events, HMAC signatures, auto-retry. Jobber: limited webhook support." },
   { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Wire Claude or ChatGPT to your live construction data." },
   { feature: "Public REST API (59 endpoints)", cornerstone: true, competitor: true, note: "Both offer public APIs. Jobber's API is oriented toward service industry workflows." },
@@ -37,12 +37,12 @@ const whySwitchCards: WhySwitchCard[] = [
 
 const faqItems: FAQItem[] = [
   {
-    q: "Is Jobber a good fit for production home builders?",
+    q: "Is Jobber a good fit for home builders?",
     a: "No — and we mean that helpfully. Jobber is excellent for home service businesses: landscaping, cleaning, HVAC, pest control. Its core features are quote-to-invoice workflows, recurring job scheduling, and client communication for service businesses. If you're a production home builder managing lot inventories, pre-sale selections, construction schedules, and multi-community pipelines, Jobber is the wrong tool.",
   },
   {
     q: "What's the best Jobber alternative for home builders?",
-    a: "Cornerstone PM is purpose-built for production home builders. It covers the same basics (scheduling, client portal, quotes, document management) plus a structural options engine, floorplan pricing matrix, multi-community lot management, native AI agents (Foreman AI 45+ skills, Blueprint AI), 30 webhook events, and a public REST API — all the production builder features Jobber doesn't have.",
+    a: "Cornerstone PM is purpose-built for home builders. It covers the same basics (scheduling, client portal, quotes, document management) plus a structural options engine, floorplan pricing matrix, multi-community lot management, native AI agents (Foreman AI 45+ skills, Blueprint AI), 30 webhook events, and a public REST API — all the home builder features Jobber doesn't have.",
   },
   {
     q: "Can I migrate from Jobber to Cornerstone PM?",
@@ -54,7 +54,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Does Cornerstone PM have a free trial?",
-    a: "Yes. The 2-year free beta is open to the first 100 production builders — no credit card, no contract, no implementation fee.",
+    a: "Yes. The 2-year free beta is open to the first 100 home builders — no credit card, no contract, no implementation fee.",
   },
 ];
 
@@ -68,20 +68,20 @@ export default function JobberAlternativePage() {
       accentColor="amber"
       heroParagraph="Jobber is a field service platform for landscapers, cleaners, and HVAC companies. Cornerstone PM is the alternative for production new home builders — structural options engine, floorplan pricing, 45+ AI skills, and multi-community management from $149/mo."
       secondaryCTA={{ text: "See full comparison", href: "/compare" }}
-      comparisonSubtitle="Jobber vs Cornerstone PM — home services platform vs. production builder platform."
+      comparisonSubtitle="Jobber vs Cornerstone PM — home services platform vs. home builder platform."
       comparisonRows={comparisonRows}
       trademarkName="Jobber"
       whySwitchHeadline="What home builders get that Jobber can't offer"
       whySwitchCards={whySwitchCards}
-      honestAngle="If you're a home service business — landscaping, cleaning, pest control, HVAC — Jobber is probably fine. This page is for production home builders who found Jobber through a general search. You need different software, and Cornerstone PM is built for your workflows."
+      honestAngle="If you're a home service business — landscaping, cleaning, pest control, HVAC — Jobber is probably fine. This page is for home builders who found Jobber through a general search. You need different software, and Cornerstone PM is built for your workflows."
       showMigrationCTA={true}
       migrationHeadline="Switching from Jobber? Bring your contacts and vendors."
       migrationDesc="Export your Jobber data, drop it in our wizard, and AI auto-maps vendors, contacts, and job history. Dry-run before you commit."
       faqTitle="Jobber Alternative FAQ"
-      faqSubtitle="For production home builders who need more than a home service platform."
+      faqSubtitle="For home builders who need more than a home service platform."
       faqItems={faqItems}
       footerHeadline="Built for home builders, not home services."
-      footerSubtext="Join the beta and get 2 years free. Production builder workflows native."
+      footerSubtext="Join the beta and get 2 years free. Home builder workflows native."
       relatedPages={[
         { text: "vs Buildertrend", href: "/buildertrend-alternative" },
         { text: "vs Housecall Pro", href: "/housecall-pro-alternative" },
