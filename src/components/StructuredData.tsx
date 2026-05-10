@@ -10,7 +10,7 @@ export function StructuredData() {
         "applicationSubCategory": "Construction Management Software",
         "operatingSystem": "Web",
         "url": "https://cornerstonepm.ai",
-        "description": "Cornerstone PM is the complete home builder software platform with native AI agents. Built exclusively for production home builders and small-to-mid residential builders. Includes construction scheduling, sales pipeline, purchasing, design center with options engine, Blueprint AI material takeoffs, Foreman AI agent with 45+ purpose-built construction skills, MLS listing sheet generator, homeowner portal, and full REST API. Starts at $149/mo with unlimited users. No per-seat fees. No implementation cost.",
+        "description": "Cornerstone PM is the complete home builder software platform with native AI agents. Built for home builders of all types — production, custom, and semi-custom. Includes construction scheduling, sales pipeline, purchasing, design center with options engine, Blueprint AI material takeoffs, Foreman AI agent with 45+ purpose-built construction skills, MLS listing sheet generator, homeowner portal, and full REST API. Starts at $149/mo with unlimited users. No per-seat fees. No implementation cost.",
         "keywords": "home builder software, construction scheduling, residential builder ERP, NEWSTAR alternative, BuildPro alternative, Buildertrend alternative, CoConstruct alternative, JobTread alternative, AI construction agent, Blueprint AI takeoff, options engine, design center, production home builder software, subcontractor bidding, homeowner portal",
         "offers": {
           "@type": "AggregateOffer",
@@ -58,7 +58,7 @@ export function StructuredData() {
         "name": "Cornerstone PM",
         "url": "https://cornerstonepm.ai",
         "logo": "https://cornerstonepm.ai/logo-new.png",
-        "description": "Cornerstone PM builds AI-native software exclusively for production home builders. The platform replaces legacy tools like NEWSTAR, BuildPro, and Buildertrend with modern, affordable software that includes native AI agents, an options engine, and a full REST API.",
+        "description": "Cornerstone PM builds AI-native software for home builders. The platform replaces legacy tools like NEWSTAR, BuildPro, and Buildertrend with modern, affordable software that includes native AI agents, an options engine, and a full REST API.",
         "sameAs": [
           "https://www.instagram.com/cornerstone_pm_ai/",
           "https://www.facebook.com/profile.php?id=61587721750398",
@@ -80,7 +80,7 @@ export function StructuredData() {
             "name": "What is Cornerstone PM?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Cornerstone PM is a complete home builder software platform built exclusively for production home builders and small-to-mid residential builders. It includes construction scheduling, a sales pipeline, purchasing, design center with options engine, AI agents (Foreman AI and Blueprint AI), MLS listing generator, homeowner portal, and REST API. It starts at $149/mo with unlimited users and no implementation fees.",
+              "text": "Cornerstone PM is a complete home builder software platform built for home builders of all types — production, custom, and semi-custom. It includes construction scheduling, a sales pipeline, purchasing, design center with options engine, AI agents (Foreman AI and Blueprint AI), MLS listing generator, homeowner portal, and REST API. It starts at $149/mo with unlimited users and no implementation fees.",
             },
           },
           {
@@ -136,12 +136,12 @@ export function StructuredData() {
             "name": "Is Cornerstone PM a JobTread alternative?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Cornerstone PM and JobTread serve different markets. JobTread is built for general contractors and remodelers. Cornerstone PM is built exclusively for production home builders with lot management, floorplan pricing engines, pre-sale buyer workflows, and design center options - features JobTread does not offer. Cornerstone PM also includes 45+ native AI skills; JobTread's AI is a bring-your-own-ChatGPT connector.",
+              "text": "Cornerstone PM and JobTread serve different markets. JobTread is built for general contractors and remodelers. Cornerstone PM is built for home builders with lot management, floorplan pricing engines, pre-sale buyer workflows, and design center options - features JobTread does not offer. Cornerstone PM also includes 45+ native AI skills; JobTread's AI is a bring-your-own-ChatGPT connector.",
             },
           },
           {
             "@type": "Question",
-            "name": "What is the best software for production home builders?",
+            "name": "What is the best software for home builders?",
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "For small-to-mid production home builders, Cornerstone PM is purpose-built for the production builder workflow: lot and community management, floorplan pricing matrix, pre-sale options engine, design center, construction scheduling, purchasing, and AI agents. Legacy options like NEWSTAR and BuildPro require 6-figure implementation budgets. Cornerstone PM starts at $149/mo with no implementation fees.",

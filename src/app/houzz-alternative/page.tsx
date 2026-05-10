@@ -33,7 +33,7 @@ const comparisonRows: ComparisonRow[] = [
 const whySwitchCards: WhySwitchCard[] = [
   { title: "Production builder workflows, not design portfolio", desc: "Houzz Pro is a design platform and marketplace — great for interior designers building a portfolio and attracting clients. Cornerstone is for production builders running lot inventories, floorplan pricing, multi-community schedules, and construction pipelines." },
   { title: "AI agents native — 45+ skills", desc: "Foreman AI reads AND writes your construction data. Blueprint AI converts floor plans to takeoffs. AI image search and anti-bot web scraping pull product specs from supplier sites. No other builder platform comes close." },
-  { title: "Full PM + options engine", desc: "Scheduling, purchasing, bid management, homeowner portal, structural options engine, 64 curated Designer Packages, multi-community pipeline — all in one production builder platform from $149/mo." },
+  { title: "Full PM + options engine", desc: "Scheduling, purchasing, bid management, homeowner portal, structural options engine, 64 Designer Packages curated by an actual interior designer (à la K. Hovnanian), multi-community pipeline — all in one production builder platform from $149/mo." },
 ];
 
 const faqItems: FAQItem[] = [
@@ -43,7 +43,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What's the best Houzz Pro alternative for production home builders?",
-    a: "Cornerstone PM is purpose-built for production home builders. Beyond the basics (scheduling, client communication, document management), it adds a structural options engine, floorplan pricing matrix, multi-community lot management, 64 curated Designer Packages across 7 categories, native AI agents (Foreman AI 45+ skills, Blueprint AI), 30 webhook events, and a public REST API.",
+    a: "Cornerstone PM is purpose-built for production home builders. Beyond the basics (scheduling, client communication, document management), it adds a structural options engine, floorplan pricing matrix, multi-community lot management, 64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses) across 7 categories, native AI agents (Foreman AI 45+ skills, Blueprint AI), 30 webhook events, and a public REST API.",
   },
   {
     q: "Can I migrate from Houzz Pro to Cornerstone PM?",
@@ -51,7 +51,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Does Cornerstone PM have a design center like Houzz?",
-    a: "Yes — built for production builders, not interior designers. Cornerstone's design center includes structural and design options per floorplan, 64 curated Designer Packages across 7 categories, allowances, per-community pricing, and a homeowner portal for buyer selections. It's production-builder native, not a consumer Pinterest-style inspiration board.",
+    a: "Yes — built for production builders, not interior designers. Cornerstone's design center includes structural and design options per floorplan, 64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses) across 7 categories, allowances, per-community pricing, and a homeowner portal for buyer selections. It's production-builder native, not a consumer Pinterest-style inspiration board.",
   },
   {
     q: "Does Cornerstone PM have a free trial?",

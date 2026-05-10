@@ -19,7 +19,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "AI image search + anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, hosts them on CDN, and reads Home Depot/Ferguson product pages with AI-powered web scraping." },
   { feature: "30 webhook events with typed payloads", cornerstone: true, competitor: false, note: "30 named events, HMAC signatures, delivery logs, auto-retry. NEWSTAR offers no public webhook catalog." },
   { feature: "AI Migration Wizard (one-click CRM import)", cornerstone: true, competitor: false, note: "AI auto-detects NEWSTAR export column mapping and runs 23 import endpoints. ~$0.01 per migration." },
-  { feature: "Designer Packages (64 curated, 7 categories)", cornerstone: true, competitor: false, note: "Buyers pick a package; all category options lock automatically." },
+  { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Packages curated by an actual interior designer — the same playbook K. Hovnanian Homes uses. Buyers pick a package; all category options auto-lock." },
   { feature: "Triple QR check-in ecosystem (vendor + PM + buyer)", cornerstone: true, competitor: false, note: "Cornerstone ships three audience-specific QR codes. NEWSTAR has none." },
   { feature: "Vendor Activity Map (Google Maps, real-time)", cornerstone: true, competitor: false, note: "Live map of every vendor check-in across communities." },
   { feature: "Model home QR for lead capture", cornerstone: true, competitor: false, note: "Replaces paper sign-in sheets at model homes with a scan-and-go lead capture flow." },
@@ -64,7 +64,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What about NEWSTAR's options engine? Does Cornerstone match it?",
-    a: "Cornerstone PM's options engine handles structural and design options per floorplan, dependencies, incompatibilities, allowance overages, per-community pricing, and real-time price rollup as buyers select. Foreman AI's Design Center domain adds plain-English option configuration and 64 curated Designer Packages across 7 categories that NEWSTAR doesn't offer.",
+    a: "Cornerstone PM's options engine handles structural and design options per floorplan, dependencies, incompatibilities, allowance overages, per-community pricing, and real-time price rollup as buyers select. Foreman AI's Design Center domain adds plain-English option configuration and 64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses) across 7 categories — something NEWSTAR doesn't offer.",
   },
   {
     q: "Will Cornerstone PM scale as we grow?",

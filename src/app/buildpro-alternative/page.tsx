@@ -17,7 +17,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "AI image search + anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, hosts them on CDN, and reads Home Depot/Ferguson product pages with AI-powered web scraping." },
   { feature: "30 webhook events with typed payloads", cornerstone: true, competitor: false, note: "30 named events, HMAC signatures, delivery logs, auto-retry. BuildPro offers no public webhook catalog." },
   { feature: "AI Migration Wizard (one-click CRM import)", cornerstone: true, competitor: false, note: "AI auto-detects BuildPro export column mapping and runs 23 import endpoints. ~$0.01 per migration." },
-  { feature: "Designer Packages (64 curated, 7 categories)", cornerstone: true, competitor: false, note: "Buyers pick a package; all category options lock automatically." },
+  { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Packages curated by an actual interior designer — the same playbook K. Hovnanian Homes uses. Buyers pick a package; all category options auto-lock." },
   { feature: "Triple QR check-in ecosystem (vendor + PM + buyer)", cornerstone: true, competitor: false, note: "Cornerstone has three audience-specific QR codes. BuildPro has none." },
   { feature: "Vendor Activity Map (Google Maps, real-time)", cornerstone: true, competitor: false, note: "Live vendor location pins across all communities. BuildPro doesn't ship this." },
   { feature: "Model home QR for lead capture", cornerstone: true, competitor: false, note: "Digital lead capture at model homes — no paper sheets." },
@@ -59,7 +59,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What about BuildPro's options engine? Does Cornerstone match it?",
-    a: "Yes. Cornerstone PM's options engine handles structural and design options per floorplan, dependencies, incompatibilities, allowance overages, per-community pricing, and real-time price rollup. Foreman AI's Design Center domain adds plain-English option configuration and 64 curated Designer Packages across 7 categories that BuildPro doesn't offer.",
+    a: "Yes. Cornerstone PM's options engine handles structural and design options per floorplan, dependencies, incompatibilities, allowance overages, per-community pricing, and real-time price rollup. Foreman AI's Design Center domain adds plain-English option configuration, and 64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses) across 7 categories — something BuildPro doesn't offer.",
   },
   {
     q: "Is Cornerstone PM mobile-friendly?",

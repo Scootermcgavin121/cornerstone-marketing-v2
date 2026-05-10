@@ -822,13 +822,14 @@ const design: Category = {
     {
       q: "What are Designer Packages?",
       aText:
-        "64 curated Designer Packages across 7 categories. Buyer picks a package and all category options auto-lock to that package; à la carte unlocks if the package is removed. Strong differentiator vs spreadsheet-style design centers — and built so a buyer can complete selections in one sitting instead of three.",
+        "64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses), spanning 7 categories. Buyer picks a package and all category options auto-lock to that package; à la carte unlocks if the package is removed. Strong differentiator vs spreadsheet-style design centers — and built so a buyer can complete selections in one sitting instead of three.",
       a: (
         <>
-          <strong>64 curated Designer Packages across 7 categories.</strong> Buyer picks a package and all category
-          options auto-lock to that package; à la carte unlocks if the package is removed. Strong differentiator vs
-          spreadsheet-style design centers — and built so a buyer can complete selections in one sitting instead of
-          three.
+          <strong>64 Designer Packages across 7 categories</strong>, each <em>curated by an actual interior
+          designer</em> — the same playbook K. Hovnanian Homes uses to take the guesswork out of design selections.
+          Buyer picks a package and all category options auto-lock to that package; à la carte unlocks if the package
+          is removed. Strong differentiator vs spreadsheet-style design centers — and built so a buyer can complete
+          selections in one sitting instead of three.
         </>
       ),
     },

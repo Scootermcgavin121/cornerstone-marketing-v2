@@ -5,7 +5,7 @@ import { Navbar } from "@/components/Navbar";
 export const metadata = {
   title: "Cornerstone PM vs NEWSTAR, Buildertrend, CoConstruct — Compare Home Builder Software",
   description:
-    "See how Cornerstone PM stacks up against NEWSTAR, BuildPro, Buildertrend, and CoConstruct. Less cost, faster setup, built specifically for production home builders.",
+    "See how Cornerstone PM stacks up against NEWSTAR, BuildPro, Buildertrend, and CoConstruct. Less cost, faster setup, built specifically for home builders.",
 };
 
 const competitors = ["Cornerstone PM", "NEWSTAR / BuildPro", "Buildertrend", "CoConstruct"];
@@ -23,7 +23,7 @@ const rows: { category: string; features: { label: string; values: CellValue[] }
       { label: "Monthly pricing (no enterprise contract)", values: [YES, NO, YES, YES] },
       { label: "Setup cost", values: ["Free beta", "$25,000+", "$0", "$0"] },
       { label: "Implementation time", values: ["Hours", "6-12 months", "Weeks", "Weeks"] },
-      { label: "Purpose-built for production home builders (vs. custom/remodel)", values: [YES, YES, PARTIAL, PARTIAL] },
+      { label: "Purpose-built for home builders (production, custom & semi-custom)", values: [YES, YES, PARTIAL, PARTIAL] },
       { label: "Starting price", values: ["$149/mo", "$500+/mo", "$499/mo", "$399/mo"] },
     ],
   },
@@ -238,7 +238,7 @@ export default function ComparePage() {
                   "Pre-sale workflow: lead &rarr; options &rarr; contract &rarr; close",
                   "Design Center selections built into the sale &mdash; not change orders",
                   "5 native AI agents — Foreman AI (45+ skills), Blueprint AI, Bid Import AI, MLS Generator, Support (Pro plan, $499/mo flat)",
-                  "Built exclusively for production home builders",
+                  "Built for home builders",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-2 text-slate-300 text-sm">
                     <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />

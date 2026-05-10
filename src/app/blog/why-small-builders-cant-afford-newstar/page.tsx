@@ -257,7 +257,7 @@ export default function WhySmallBuildersCannotAffordNewstarPage() {
             >
               AI material takeoff
             </Link>
-            , vendor bidding, design center with 64 Designer Packages, and a buyer portal in a single
+            , vendor bidding, design center with 64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses), and a buyer portal in a single
             platform. Implementation cost: $0. Go-live: hours, not months. No consultants. No IT staff
             required. And unlike enterprise platforms, every post-launch configuration change is self-serve —
             add a community, update an option package, assign a new vendor — without opening a support

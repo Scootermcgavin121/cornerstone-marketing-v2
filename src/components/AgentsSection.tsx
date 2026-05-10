@@ -139,7 +139,7 @@ export function AgentsSection() {
             <span className="text-cyan-400">Cornerstone has agents.</span>
           </p>
           <p className="text-slate-400 max-w-2xl mx-auto mb-6">
-            No other construction platform gives builders natural language access to their own data. This isn&apos;t a chatbot bolted on &mdash; these are purpose-built agents that understand construction workflows, supplier catalogs, and production builder operations.
+            No other construction platform gives builders natural language access to their own data. This isn&apos;t a chatbot bolted on &mdash; these are purpose-built agents that understand construction workflows, supplier catalogs, and home builder operations.
           </p>
           <Link
             href="/ai-agents"

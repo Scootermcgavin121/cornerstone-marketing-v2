@@ -14,7 +14,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Structural options engine", cornerstone: true, competitor: false, note: "Pre-sale floorplan options pricing matrix — not a field service concept." },
   { feature: "Floorplan pricing matrix", cornerstone: true, competitor: false, note: "Per-community floorplan pricing for production builders." },
   { feature: "Multi-community lot management", cornerstone: true, competitor: false, note: "Native multi-community pipeline. Workiz is job-centric." },
-  { feature: "Designer Packages (64 curated, 7 categories)", cornerstone: true, competitor: false, note: "Buyer design center with curated selection packages." },
+  { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Buyer design center with packages curated by an actual interior designer — the same playbook K. Hovnanian Homes uses." },
   { feature: "Native AI agents (Foreman AI — 45+ skills)", cornerstone: true, competitor: false, note: "Foreman AI reads AND writes data. Blueprint AI: PDF to takeoff in 60 seconds." },
   { feature: "AI image search + anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images and reads supplier product pages with AI-powered web scraping." },
   { feature: "30 webhook events (full named catalog)", cornerstone: true, competitor: "limited", note: "Cornerstone: 30 named events, HMAC signatures, auto-retry." },

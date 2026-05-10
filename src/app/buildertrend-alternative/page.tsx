@@ -3,55 +3,58 @@ import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageT
 import type { FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
-  title: "Buildertrend Alternative for Production Home Builders | Cornerstone PM",
+  title: "Buildertrend Alternative for Home Builders | Cornerstone PM",
   description:
-    "Buildertrend alternative built for production home builders. Native AI agents, options engine, REST API, and multi-community management from $149/mo — not $499+.",
+    "Buildertrend alternative built for home builders. Native AI agents (Pro $499/mo), options engine, REST API, and multi-community management — flat pricing from $149/mo, unlimited users.",
   alternates: { canonical: "https://www.cornerstonepm.ai/buildertrend-alternative" },
 };
 
 const comparisonRows: ComparisonRow[] = [
-  { feature: "Built specifically for production home builders", cornerstone: true, competitor: false, note: "Buildertrend is purpose-built for custom builders & remodelers; Cornerstone is purpose-built for production (tract/spec) builders." },
-  { feature: "Native AI agents (Foreman AI + Blueprint AI)", cornerstone: true, competitor: false, note: "Cornerstone ships 45+ Foreman AI skills and Blueprint AI floor plan takeoffs. Buildertrend has no native AI agents." },
-  { feature: "AI memory compaction for marathon sessions", cornerstone: true, competitor: false, note: "Foreman auto-summarizes older messages mid-session so long workflows never crash or forget. No other construction platform does this." },
-  { feature: "AI image search + anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman AI searches product images, hosts them permanently on CDN, and reads Home Depot/Ferguson/Lowe's product pages using AI-powered web scraping — no other construction AI does this." },
-  { feature: "AI floor plan takeoffs (Blueprint AI)", cornerstone: true, competitor: false, note: "PDF blueprint to material takeoff in under 60 seconds." },
-  { feature: "30 webhook events with typed payloads", cornerstone: true, competitor: false, note: "Cornerstone: 30 named events, HMAC signatures, delivery logs, auto-retry. Buildertrend webhooks: limited scope, no named event catalog." },
-  { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Wire Claude or ChatGPT directly to your live Cornerstone data via our public API. Buildertrend has no BYOA support." },
-  { feature: "Public REST API (59 endpoints)", cornerstone: true, competitor: "limited", note: "Cornerstone: 59 endpoints, public docs. Buildertrend: enterprise API only, not public." },
+  { feature: "Built for home builders", cornerstone: true, competitor: false, note: "Buildertrend is built for custom builders & remodelers; Cornerstone is built across the full home-builder spectrum — production, semi-custom, and custom — with lot management, options engine, and multi-community pipelines that work for all of them." },
+  { feature: "Native AI agents (Foreman AI + Blueprint AI)", cornerstone: true, competitor: false, note: "Cornerstone Pro ($499/mo): 45+ Foreman AI skills that read AND write data, plus Blueprint AI floor plan takeoffs in 60 sec. Buildertrend has no native action-taking AI agents." },
+  { feature: "AI memory compaction for marathon sessions", cornerstone: true, competitor: false, note: "Foreman auto-summarizes older messages mid-session so long workflows never crash or forget. No other construction platform does this. Cornerstone Pro feature." },
+  { feature: "AI image search + anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman AI searches product images, hosts them permanently on CDN, and reads Home Depot/Ferguson/Lowe's product pages using AI-powered web scraping. Cornerstone Pro feature." },
+  { feature: "AI floor plan takeoffs (Blueprint AI)", cornerstone: true, competitor: false, note: "PDF blueprint to material takeoff in under 60 seconds. Blueprint AI included on Cornerstone Pro ($499/mo, 25 takeoffs/mo)." },
+  { feature: "30 webhook events with typed payloads", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): 30 named events, HMAC signatures, delivery logs, auto-retry. Buildertrend webhooks: limited scope, no named event catalog." },
+  { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): wire Claude or ChatGPT to live builder data via the public REST API + 30 named webhook events. Buildertrend has no BYOA support." },
+  { feature: "Public REST API (59 endpoints)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+: 59 endpoints, public docs. Buildertrend: enterprise API access, not self-serve." },
   { feature: "AI Migration Wizard (one-click CRM import)", cornerstone: true, competitor: false, note: "Drop your Buildertrend export — AI auto-detects column mapping and runs 23 import endpoints automatically. ~$0.01 per migration." },
-  { feature: "Structural options engine", cornerstone: true, competitor: false, note: "Pre-sale options pricing matrix per floorplan — not a Buildertrend strength." },
-  { feature: "Designer Packages (64 curated, 7 categories)", cornerstone: true, competitor: false, note: "Buyers pick a package; all category options lock automatically. No spreadsheet-style workarounds." },
+  { feature: "Structural options engine", cornerstone: true, competitor: false, note: "Pre-sale options pricing matrix per floorplan — Cornerstone Builder ($299/mo). Not a Buildertrend strength." },
+  { feature: "Designer Packages (64 curated, 7 categories)", cornerstone: true, competitor: false, note: "Buyers pick a package; all category options lock automatically. Cornerstone Builder+." },
   { feature: "Free database export (CSV / JSON)", cornerstone: true, competitor: false, note: "Download your full data anytime — no hostage-taking. Nightly auto-backups for 7 days." },
   { feature: "Multi-community management", cornerstone: true, competitor: "limited", note: "Cornerstone: native multi-community pipeline. Buildertrend: multi-job, not true multi-community." },
   { feature: "Construction scheduling", cornerstone: true, competitor: true, note: "Both: Gantt charts, dependencies, vendor notifications." },
   { feature: "Homeowner portal", cornerstone: true, competitor: true, note: "Both: client-facing milestone views." },
-  { feature: "Bid management", cornerstone: true, competitor: true, note: "Cornerstone adds 7-wave automated bidding pipeline + vendor portal (no login required)." },
+  { feature: "Bid management", cornerstone: true, competitor: true, note: "Cornerstone Pro+ adds 7-wave automated bidding pipeline + vendor portal (no login required)." },
   { feature: "Triple QR check-in ecosystem (vendor + PM + buyer)", cornerstone: true, competitor: false, note: "Cornerstone has three audience-specific QR codes. Buildertrend has none." },
   { feature: "Vendor Activity Map (Google Maps, real-time)", cornerstone: true, competitor: false, note: "See where every vendor is across every community in one map. Buildertrend has no equivalent." },
   { feature: "Model home QR for lead capture", cornerstone: true, competitor: false, note: "Cornerstone replaces paper sign-in sheets with a digital QR scan that creates Lead records. Buildertrend lead capture is web-form only." },
-  { feature: "AI camera-event auto-task-start", cornerstone: true, competitor: false, note: "Webhook endpoint accepts events from any camera/sensor; auto-flips task to In Progress on vendor arrival." },
-  { feature: "Unlimited users on all plans", cornerstone: true, competitor: false, note: "Buildertrend charges per user above plan limits." },
-  { feature: "Starting price", cornerstone: "$149/mo", competitor: "$499/mo", note: "Cornerstone is ~70% less at the starter tier." },
+  { feature: "AI camera-event auto-task-start", cornerstone: true, competitor: false, note: "Webhook endpoint accepts events from any camera/sensor; auto-flips task to In Progress on vendor arrival. Cornerstone Pro+ feature." },
+  { feature: "Unlimited users on all plans", cornerstone: true, competitor: true, note: "Both now include unlimited users. Cornerstone: every tier from $149. Buildertrend: custom pricing — contact for quote." },
+  { feature: "Starter price", cornerstone: "$149/mo", competitor: "Custom quote", note: "Cornerstone Starter: construction scheduling, subcontractor assignment, permits pipeline, homeowner portal — unlimited users. Buildertrend no longer publishes pricing; custom quotes only." },
+  { feature: "Full platform price (Builder)", cornerstone: "$299/mo", competitor: "Custom quote", note: "Cornerstone Builder ($299/mo) adds sales pipeline, purchasing, design center, and options engine — flat rate, unlimited users." },
+  { feature: "Price at full AI tier (Pro)", cornerstone: "$499/mo", competitor: "Custom quote", note: "Cornerstone Pro ($499/mo) adds Foreman AI (45+ skills) + Blueprint AI — flat, unlimited users. Foreman AI is NOT included on Starter or Builder." },
+  { feature: "Price at full API + AI tier (Pro+)", cornerstone: "$599/mo", competitor: "Custom quote", note: "Cornerstone Pro+ ($599/mo) adds the full public REST API, BYOA, automated bidding pipeline, and Opus AI — flat, no per-user fees at any tier." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
-  { title: "Production workflows native", desc: "Lots, models, options, plan repeats, design center, draws — first-class concepts, not workarounds. Buildertrend treats every job as one-off." },
-  { title: "AI built in — 45+ skills", desc: "Foreman AI reads AND writes data, remembers your preferences, analyzes jobsite photos, and scrapes product pages from Home Depot and Ferguson using AI-powered web scraping. No bolt-on plugins." },
-  { title: "REST API + 30 webhook events", desc: "59 REST endpoints, 30 named webhook events, HMAC signatures, scoped auth, and public docs. Buildertrend's API is enterprise-only. Ours ships with Pro+." },
+  { title: "Home builder workflows native", desc: "Lots, models, options, plan repeats, design center, draws, multi-community pipelines — first-class concepts from Builder ($299/mo) up. Buildertrend treats every job as one-off." },
+  { title: "Action-taking AI on Pro — 45+ skills", desc: "Foreman AI (Cornerstone Pro, $499/mo) reads AND writes data, remembers your preferences, analyzes jobsite photos, and scrapes product pages from Home Depot and Ferguson using AI-powered web scraping. No bolt-on plugins." },
+  { title: "REST API + 30 webhook events on Pro+", desc: "59 REST endpoints, 30 named webhook events, HMAC signatures, scoped auth, and public docs on Pro+ ($599/mo). Buildertrend's API is enterprise-only. Wire Twilio, Bland, or your own Claude agent to our webhooks." },
 ];
 
 const faqItems: FAQItem[] = [
   {
-    q: "What's the best Buildertrend alternative for production home builders?",
-    a: "For production home builders, Cornerstone PM is the closest functional Buildertrend alternative with key advantages: native AI agents (Foreman AI 45+ skills, Blueprint AI), an options engine, floorplan pricing matrix, multi-community management, 30 webhook events, and a public REST API. Buildertrend was built for custom builders and remodelers; Cornerstone PM is purpose-built for production builders managing 5–200+ homes per year.",
+    q: "What's the best Buildertrend alternative for home builders?",
+    a: "For home builders — production, semi-custom, and custom — Cornerstone PM is a strong Buildertrend alternative with key advantages: native AI agents (Foreman AI 45+ skills on Pro $499/mo, Blueprint AI), an options engine (Builder $299/mo), floorplan pricing matrix, multi-community management, 30 webhook events (Pro+), and a public REST API (Pro+). Buildertrend was built for custom builders and remodelers doing one-off jobs; Cornerstone is built for builders who repeat floorplans, run multi-community pipelines, and want AI that takes real actions.",
   },
   {
     q: "How is Cornerstone PM different from Buildertrend?",
-    a: "Three key differences: (1) Cornerstone is built for production builders, Buildertrend for custom and remodel; (2) Cornerstone includes 45+ native AI skills via Foreman AI plus Blueprint AI floor plan takeoffs, AI image search, and anti-bot web scraping — Buildertrend has no native AI; (3) Cornerstone offers a structural options engine, floorplan pricing matrix, multi-community pipelines, 30 webhook events, and free database export that Buildertrend doesn't ship.",
+    a: "Three key differences: (1) Cornerstone is built for plan-repeat home builders (production, semi-custom, custom), Buildertrend for custom and remodel; (2) Cornerstone includes 45+ native AI skills via Foreman AI (Pro $499/mo) plus Blueprint AI floor plan takeoffs, AI image search, and anti-bot web scraping — Buildertrend has no native AI; (3) Cornerstone offers a structural options engine, floorplan pricing matrix, multi-community pipelines, 30 webhook events (Pro+), and free database export that Buildertrend doesn't ship.",
   },
   {
     q: "Is Cornerstone PM cheaper than Buildertrend?",
-    a: "Yes. Cornerstone PM starts at $149/mo with unlimited users; Buildertrend starts at $499/mo. The full Cornerstone Pro+ plan (with Foreman AI, Blueprint AI, and REST API) is $599/mo — and includes capabilities Buildertrend doesn't offer at any price.",
+    a: "Cornerstone PM's tiers start at $149/mo (Starter, unlimited users). Buildertrend no longer publishes pricing — they use custom quotes. For an apples-to-apples platform comparison: Cornerstone Builder ($299/mo, options engine + full pipeline) and Cornerstone Pro ($499/mo, Foreman AI + Blueprint AI) are flat regardless of team size. The full Cornerstone Pro+ plan at $599/mo includes capabilities Buildertrend doesn't offer at any price.",
   },
   {
     q: "Can I migrate from Buildertrend to Cornerstone PM?",
@@ -59,19 +62,19 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Does Cornerstone PM have everything Buildertrend has?",
-    a: "Cornerstone PM covers the same core functions: scheduling, homeowner portal, purchasing, bid management, document storage, and change orders. It adds an options engine, AI agents, Blueprint AI takeoffs, multi-community pipelines, 30 webhook events, and a public REST API that Buildertrend doesn't offer. The one area Buildertrend serves that Cornerstone doesn't: custom builder progress invoicing — because Cornerstone is built for production builders who use draw schedules.",
+    a: "Cornerstone PM covers the same core functions: scheduling, homeowner portal, purchasing, bid management, document storage, and change orders. It adds an options engine, AI agents (Foreman AI on Pro, Blueprint AI on Pro), multi-community pipelines, 30 webhook events, and a public REST API that Buildertrend doesn't offer. The one area Buildertrend serves that Cornerstone doesn't: remodelers doing highly variable one-off work without floorplan repeats.",
+  },
+  {
+    q: "What does $149/mo Cornerstone Starter actually include?",
+    a: "Starter ($149/mo) includes construction scheduling (Gantt + task view), 3-tier dependency auto-cascade, 17 pre-built schedule templates, subcontractor assignment and notifications, the permitting pipeline tracker, homeowner progress portal, and the AI Support Agent. The options engine and design center are on Builder ($299/mo). Foreman AI and Blueprint AI are on Pro ($499/mo). The full REST API and BYOA are on Pro+ ($599/mo). All tiers include unlimited users.",
   },
   {
     q: "Should I switch from Buildertrend if I'm a custom builder or remodeler?",
-    a: "Probably not. Cornerstone PM is optimized for production home builders. If you're a custom builder or remodeler doing one-off jobs without floorplan repeats or pre-sale design centers, Buildertrend is likely a better fit. Cornerstone's value compounds when you're running multi-community production with plan repeats.",
-  },
-  {
-    q: "Does Cornerstone PM have a free trial like Buildertrend?",
-    a: "Cornerstone PM offers a 2-year free beta to the first 100 production builders — no credit card, no contract, no implementation fee.",
+    a: "Possibly — Cornerstone's options engine, design center, and homeowner portal are valuable for custom and semi-custom builders too. If you're doing highly variable one-off remodel work with no floorplan repeats, Buildertrend may still fit. If you're running even a handful of homes with consistent floorplans or buyer selections, Cornerstone's workflow compresses significantly.",
   },
   {
     q: "What are the 30 webhook events?",
-    a: "Cornerstone's 30 named webhook events cover: home lifecycle (created, status changed, closed), task/schedule updates, vendor notifications, cascade scheduling triggers, message events, sales pipeline changes, and bid request events. Every event ships with a typed payload schema, HMAC signature verification, delivery logs, and auto-retry. Buildertrend's webhooks are limited and have no public event catalog.",
+    a: "Cornerstone's 30 named webhook events (Pro+) cover: home lifecycle (created, status changed, closed), task/schedule updates, vendor notifications, cascade scheduling triggers, message events, sales pipeline changes, and bid request events. Every event ships with a typed payload schema, HMAC signature verification, delivery logs, and auto-retry. Buildertrend's webhooks are limited and have no public event catalog.",
   },
 ];
 
@@ -80,15 +83,15 @@ export default function BuildertrendAlternativePage() {
     <AlternativePageTemplate
       competitorName="Buildertrend"
       badgeLabel="Buildertrend Alternative"
-      heroLine1="Built for production builders."
-      heroLine2="Not custom and remodel."
+      heroLine1="Built for home builders."
+      heroLine2="Not custom-and-remodel only."
       accentColor="cyan"
-      heroParagraph="Cornerstone PM is the Buildertrend alternative for production home builders. Native AI agents, options engine, floorplan pricing matrix, multi-community pipelines, 30 webhook events, and a public REST API — from $149/mo with unlimited users."
+      heroParagraph="Cornerstone PM is the Buildertrend alternative for home builders who repeat floorplans, run multi-community pipelines, and want AI that takes real actions. Native Foreman AI (45+ skills, Pro $499/mo), options engine, floorplan pricing matrix, 30 webhook events (Pro+), and a public REST API — flat pricing from $149/mo, unlimited users."
       secondaryCTA={{ text: "See full comparison", href: "/compare" }}
-      comparisonSubtitle="Side-by-side, focused on what matters for production builders."
+      comparisonSubtitle="Side-by-side, focused on what matters for home builders."
       comparisonRows={comparisonRows}
       trademarkName="Buildertrend"
-      whySwitchHeadline="Why production builders switch from Buildertrend"
+      whySwitchHeadline="Why home builders switch from Buildertrend"
       whySwitchCards={whySwitchCards}
       showMigrationCTA={true}
       migrationHeadline="Already using Buildertrend? Drop your export. We'll do the rest."

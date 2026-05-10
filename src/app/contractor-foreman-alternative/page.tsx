@@ -14,7 +14,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Structural options engine", cornerstone: true, competitor: false, note: "Pre-sale floorplan options pricing matrix — not a general contractor concept." },
   { feature: "Floorplan pricing matrix", cornerstone: true, competitor: false, note: "Per-community floorplan pricing for production builders." },
   { feature: "Multi-community lot management", cornerstone: true, competitor: false, note: "Native multi-community pipeline. Contractor Foreman is project-centric." },
-  { feature: "Designer Packages (64 curated, 7 categories)", cornerstone: true, competitor: false, note: "Buyer design center with curated selection packages." },
+  { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Buyer design center with packages curated by an actual interior designer — the same playbook K. Hovnanian Homes uses." },
   { feature: "Native AI agents (Foreman AI — 45+ skills)", cornerstone: true, competitor: false, note: "Foreman AI (45+ skills) reads AND writes data — creates POs, updates options, generates SOWs, compares bids, searches product images. Blueprint AI: PDF to takeoff in 60 seconds." },
   { feature: "AI memory compaction for marathon sessions", cornerstone: true, competitor: false, note: "Foreman auto-summarizes older messages so long workflows never crash or forget. Unique to Cornerstone." },
   { feature: "Per-user AI memory (learns your business)", cornerstone: true, competitor: false, note: "Foreman remembers each user across conversations — name, role, preferences, favorite vendors." },
@@ -46,7 +46,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What's the best Contractor Foreman alternative for production home builders?",
-    a: "Cornerstone PM is purpose-built for production home builders. Where Contractor Foreman handles general contractor workflows (scheduling, POs, job costing, basic client portal), Cornerstone adds a structural options engine, pre-sale design center with 64 curated Designer Packages, multi-community pipelines, native AI agents (Foreman AI 45+ skills, Blueprint AI), 30 webhook events, and a public REST API.",
+    a: "Cornerstone PM is purpose-built for production home builders. Where Contractor Foreman handles general contractor workflows (scheduling, POs, job costing, basic client portal), Cornerstone adds a structural options engine, pre-sale design center with 64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses), multi-community pipelines, native AI agents (Foreman AI 45+ skills, Blueprint AI), 30 webhook events, and a public REST API.",
   },
   {
     q: "Does Cornerstone PM have Contractor Foreman's core features?",

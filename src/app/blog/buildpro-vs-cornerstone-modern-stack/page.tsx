@@ -213,7 +213,7 @@ export default function BuildproVsCornerstonePage() {
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
             <li>
               <strong className="text-white">Design center</strong>: Cornerstone ships 64 curated
-              Designer Packages across 7 categories with auto-lock logic when a buyer picks a
+              Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses) across 7 categories, with auto-lock logic when a buyer picks a
               package. BuildPro&apos;s options engine is functional but doesn&apos;t have this
               package abstraction.
             </li>

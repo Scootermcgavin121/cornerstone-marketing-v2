@@ -236,7 +236,7 @@ export function AlternativePageTemplate({
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl font-black text-center mb-4">Cornerstone PM vs {competitorName}</h2>
           <p className="text-center text-slate-400 mb-12">
-            {comparisonSubtitle ?? `Side-by-side comparison for production home builders.`}
+            {comparisonSubtitle ?? `Side-by-side comparison for home builders.`}
           </p>
           <div className="overflow-x-auto rounded-2xl border border-slate-800">
             <table className="w-full">

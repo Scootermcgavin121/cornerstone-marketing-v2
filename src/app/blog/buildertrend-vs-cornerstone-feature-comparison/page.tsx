@@ -83,7 +83,7 @@ const categories: FeatureCategory[] = [
     rows: [
       { feature: "Buyer option selections", bt: "yes", cp: "yes" },
       { feature: "Per-floorplan design options", bt: "no", cp: "yes" },
-      { feature: "Curated designer packages", bt: "no", cp: "yes" },
+      { feature: "Designer packages curated by an interior designer", bt: "no", cp: "yes" },
       { feature: "Selections → purchasing auto-flow", bt: "partial", cp: "yes" },
       { feature: "Area cost pricing (community-level extras)", bt: "no", cp: "yes" },
     ],

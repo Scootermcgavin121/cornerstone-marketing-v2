@@ -112,7 +112,7 @@ export default function AlternativesPage() {
             <span className="text-cyan-400">compared honestly.</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto">
-            Cornerstone PM is the production home builder platform. See how we stack up against every major construction software — and where we&apos;re genuinely different from service-business tools.
+            Cornerstone PM is the home builder platform. See how we stack up against every major construction software — and where we&apos;re genuinely different from service-business tools.
           </p>
         </div>
       </section>
@@ -151,7 +151,7 @@ export default function AlternativesPage() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">Why builders switch to Cornerstone PM</h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">We didn&apos;t adapt a generic tool for home builders. We built from scratch, for production builders specifically.</p>
+            <p className="text-slate-400 max-w-2xl mx-auto">We didn&apos;t adapt a generic tool for home builders. We built from scratch, for home builders specifically.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {differentiators.map((d) => (

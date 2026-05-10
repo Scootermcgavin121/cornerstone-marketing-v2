@@ -14,7 +14,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Structural options engine", cornerstone: true, competitor: false, note: "Pre-sale floorplan options pricing matrix — not a home service feature." },
   { feature: "Floorplan pricing matrix", cornerstone: true, competitor: false, note: "Per-community floorplan pricing for production builders." },
   { feature: "Multi-community lot management", cornerstone: true, competitor: false, note: "Native multi-community pipeline. Housecall Pro is job-centric." },
-  { feature: "Designer Packages (64 curated, 7 categories)", cornerstone: true, competitor: false, note: "Buyer design center with curated selection packages." },
+  { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Buyer design center with packages curated by an actual interior designer — the same playbook K. Hovnanian Homes uses." },
   { feature: "Native AI agents (Foreman AI — 45+ skills)", cornerstone: true, competitor: false, note: "Foreman AI reads AND writes data. Blueprint AI: PDF to takeoff in 60 seconds." },
   { feature: "AI image search + anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images and reads supplier product pages with AI-powered web scraping." },
   { feature: "30 webhook events (full named catalog)", cornerstone: true, competitor: false, note: "30 named events, HMAC signatures, auto-retry." },
@@ -44,7 +44,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What does Cornerstone PM have that Housecall Pro doesn't?",
-    a: "For production home builders: structural options engine, floorplan pricing matrix, multi-community lot management, pre-sale design center with 64 curated Designer Packages, Blueprint AI floor plan takeoffs, Foreman AI with 45+ skills, 30 webhook events with typed payload schemas, public REST API (59 endpoints), vendor portal with no login required, and free database export (CSV/JSON).",
+    a: "For production home builders: structural options engine, floorplan pricing matrix, multi-community lot management, pre-sale design center with 64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses), Blueprint AI floor plan takeoffs, Foreman AI with 45+ skills, 30 webhook events with typed payload schemas, public REST API (59 endpoints), vendor portal with no login required, and free database export (CSV/JSON).",
   },
   {
     q: "Can I migrate my Housecall Pro data to Cornerstone PM?",

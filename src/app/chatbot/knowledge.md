@@ -176,7 +176,7 @@ Vendors send bids back in every conceivable format. Our import AI got smarter:
 ## New Features (May 2026)
 
 ### Designer Packages System (NEW May 2026)
-Pre-curated bundles of design selections that buyers can apply with one click. Inspired by interior designer-led collections.
+Pre-curated bundles of design selections that buyers can apply with one click. **Curated by an actual interior designer** — the same playbook K. Hovnanian Homes uses to take the guesswork out of buyer design selections. Not AI-generated, not builder-thrown-together; real designer-led collections.
 
 - **64 packages seeded** across 7 categories: Flooring, Kitchen Essentials, Bath & Fixtures, Smart Home, Lighting, Hardware & Trim, Designer Bundles
 - **Designer Bundles** (Level 3 spec and above only): Designer Kitchen, All Bathrooms, Whole House Package
