@@ -1,12 +1,12 @@
 import Link from "next/link";
-import { Check, ArrowRight, Zap, Brain, FileText, Cpu } from "lucide-react";
+import { Check, ArrowRight, Zap, Brain, FileText, Cpu, Activity, X } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { VideoPlayer } from "@/components/VideoPlayer";
 
 export const metadata = {
-  title: "Foreman AI — 45+ Skill Construction Agent | Cornerstone PM",
+  title: "Foreman AI — 45+ Skill Construction Agent with Memory Compaction | Cornerstone PM",
   description:
-    "45+ purpose-built construction skills. Not a generic chatbot. Foreman AI reads and writes your real data — parts, vendors, homes, budgets, sales pipeline, design center selections, and more. Pro plan.",
+    "45+ purpose-built construction skills with built-in memory compaction — the only construction AI that doesn't forget mid-session. Reads and writes your real data: parts, vendors, homes, budgets, sales pipeline, design center selections. Pro plan.",
 };
 
 const skillCategories = [
@@ -85,9 +85,11 @@ const skillCategories = [
     bg: "bg-violet-500/10",
     border: "border-violet-500/20",
     label: "System Intelligence",
-    count: "6+",
-    desc: "The behaviors that make Foreman actually useful — memory, bulk operations, deduplication, smart linking, error recovery.",
+    count: "10+",
+    desc: "The behaviors that make Foreman actually useful — memory compaction, persistent memory, bulk operations, deduplication, smart linking, error recovery.",
     skills: [
+      { name: "Memory Compaction", detail: "Auto-summarizes older messages mid-session so marathon work doesn't crash or forget. Recent context stays word-for-word intact." },
+      { name: "Context Health Meter", detail: "Green/yellow/red indicator in the chat UI shows remaining capacity at a glance" },
       { name: "Persistent Memory", detail: "Saves preferences and decisions across sessions — gets smarter over time" },
       { name: "Bulk Operations", detail: "Create multiple parts or options efficiently vs one-by-one" },
       { name: "Smart Data Linking", detail: "Auto-connect parts to option classes for the design center" },
@@ -295,6 +297,130 @@ export default function ForemanPage() {
                   <div className="text-slate-500 text-xs">{item.detail}</div>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Marathon Sessions / Memory Compaction */}
+      <section className="py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="rounded-3xl bg-gradient-to-br from-emerald-500/10 via-slate-900/60 to-amber-500/5 border border-emerald-500/20 p-8 sm:p-12">
+            <div className="flex flex-col lg:flex-row gap-10 items-start">
+              {/* Left: Pitch */}
+              <div className="flex-1">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-widest mb-5">
+                  <Activity className="w-3.5 h-3.5" />
+                  Built-in Memory Compaction
+                </div>
+                <h2 className="text-3xl sm:text-4xl font-black mb-5 leading-tight">
+                  The only construction AI that<br />
+                  <span className="text-emerald-400">doesn&apos;t forget what you said 5 minutes ago.</span>
+                </h2>
+                <p className="text-slate-300 text-lg leading-relaxed mb-5">
+                  Every other AI chatbot hits a wall. After 50+ messages, ChatGPT, Copilot, and the half-baked &ldquo;AI features&rdquo; bolted onto competing platforms either crash, freeze, or start hallucinating &mdash; right when you&apos;re deep into the work.
+                </p>
+                <p className="text-slate-300 text-lg leading-relaxed mb-6">
+                  Foreman is different. <strong className="text-white">Automatic memory compaction</strong> intelligently summarizes older messages in the background while recent messages stay word-for-word intact. You don&apos;t notice it. Foreman just keeps working.
+                </p>
+                <div className="space-y-3">
+                  {[
+                    "Clean up 200+ design options in one sitting",
+                    "Import an entire vendor catalog without losing your place",
+                    "Walk through a full bid review &mdash; line by line, vendor by vendor",
+                    "Hours of back-and-forth, hundreds of tool calls, zero context loss",
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                      <span className="text-slate-300">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Right: Visual */}
+              <div className="w-full lg:w-96 flex-shrink-0">
+                <div className="rounded-2xl bg-slate-950/80 border border-slate-800 overflow-hidden">
+                  <div className="px-5 py-3 border-b border-slate-800 flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <span className="text-lg">🦖</span>
+                      <span className="text-white font-semibold text-sm">Foreman AI</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                      <span className="text-emerald-400 text-xs font-bold">Healthy</span>
+                    </div>
+                  </div>
+                  <div className="p-5 space-y-4">
+                    <div className="text-xs text-slate-500 uppercase tracking-widest font-bold mb-2">Context Health Meter</div>
+                    <div className="space-y-3">
+                      <div>
+                        <div className="flex items-center justify-between mb-1.5">
+                          <span className="text-emerald-400 text-xs font-bold">Green &mdash; Plenty of room</span>
+                          <span className="text-slate-500 text-xs">0–70%</span>
+                        </div>
+                        <div className="h-2 rounded-full bg-slate-800 overflow-hidden">
+                          <div className="h-full w-[35%] bg-emerald-400 rounded-full" />
+                        </div>
+                      </div>
+                      <div>
+                        <div className="flex items-center justify-between mb-1.5">
+                          <span className="text-amber-400 text-xs font-bold">Yellow &mdash; Compacting in background</span>
+                          <span className="text-slate-500 text-xs">70–90%</span>
+                        </div>
+                        <div className="h-2 rounded-full bg-slate-800 overflow-hidden">
+                          <div className="h-full w-[80%] bg-amber-400 rounded-full" />
+                        </div>
+                      </div>
+                      <div>
+                        <div className="flex items-center justify-between mb-1.5">
+                          <span className="text-rose-400 text-xs font-bold">Red &mdash; Time for a fresh chat</span>
+                          <span className="text-slate-500 text-xs">90–100%</span>
+                        </div>
+                        <div className="h-2 rounded-full bg-slate-800 overflow-hidden">
+                          <div className="h-full w-[95%] bg-rose-400 rounded-full" />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pt-3 border-t border-slate-800/60">
+                      <p className="text-slate-500 text-xs leading-relaxed">
+                        Even when the meter hits yellow, Foreman is actively compacting older messages to stay sharp. No crashes. No context loss.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Comparison strip */}
+            <div className="mt-10 pt-8 border-t border-slate-800/60">
+              <div className="text-center text-xs uppercase tracking-widest font-bold text-slate-500 mb-6">How other AI chatbots handle long sessions</div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="rounded-xl bg-slate-950/60 border border-slate-800 p-5">
+                  <div className="flex items-center gap-2 mb-3">
+                    <X className="w-4 h-4 text-rose-400" />
+                    <div className="text-rose-400 font-bold text-sm">Everyone else</div>
+                  </div>
+                  <ul className="space-y-2 text-slate-400 text-sm">
+                    <li>&bull; Crashes or freezes after 50+ messages</li>
+                    <li>&bull; Forgets earlier instructions and decisions</li>
+                    <li>&bull; Starts hallucinating when context gets full</li>
+                    <li>&bull; Forces you to start over and lose your place</li>
+                  </ul>
+                </div>
+                <div className="rounded-xl bg-emerald-500/5 border border-emerald-500/20 p-5">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Check className="w-4 h-4 text-emerald-400" />
+                    <div className="text-emerald-400 font-bold text-sm">Foreman AI</div>
+                  </div>
+                  <ul className="space-y-2 text-slate-300 text-sm">
+                    <li>&bull; Auto-compacts older messages in the background</li>
+                    <li>&bull; Recent messages stay word-for-word intact</li>
+                    <li>&bull; Health meter shows you exactly where you stand</li>
+                    <li>&bull; Marathon sessions just keep working</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>

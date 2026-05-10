@@ -94,6 +94,8 @@ const rows: { category: string; features: { label: string; values: CellValue[] }
       { label: "AI bid import (upload any vendor format — Excel, PDF, scanned, handwritten)", values: [YES, NO, NO, NO] },
       { label: "AI Blueprint Takeoff (PDF to material list)", values: [YES, NO, NO, NO] },
       { label: "AI agent with 45+ purpose-built construction skills", values: [YES, NO, NO, NO] },
+      { label: "AI memory compaction (marathon sessions without context loss)", values: [YES, NO, NO, NO] },
+      { label: "In-app AI context health meter", values: [YES, NO, NO, NO] },
       { label: "Standard REST API (no custom query language)", values: [YES, YES, NO, NO] },
       { label: "30 webhook event types with HMAC signing", values: [YES, YES, NO, NO] },
       { label: "Vendor self-registration portal", values: [YES, YES, NO, NO] },
