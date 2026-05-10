@@ -138,8 +138,8 @@
       "wordCount": 800,
       "heroImage": "/blog/small-builder-newstar-cost.png",
       "heroImageAlt": "Small-to-mid home builder reviewing the implementation cost of NEWSTAR home builder software",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "7856dd3"
     },
     {
       "slug": "buildertrend-pricing-true-cost",
