@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "why-small-builders-cant-afford-newstar",
+    title: "Why Small-to-Mid Home Builders Can't Afford NEWSTAR (And What They're Switching To)",
+    excerpt:
+      "NEWSTAR was built for the nation's largest builders — 500+ homes a year, IT departments, implementation budgets. For the 5–200 homes/year market, the platform is the wrong tool at the wrong price point. Here's why the math never works, and what mid-size builders are switching to.",
+    date: "May 10, 2026",
+    readTime: "6 min read",
+    tag: "Cost Analysis",
+    tagColor: "text-amber-400 bg-amber-500/10 border-amber-500/20",
+  },
+  {
     slug: "how-to-choose-home-builder-software",
     title: "How to Choose Home Builder Software in 7 Steps",
     excerpt:
