@@ -19,6 +19,7 @@ import { AiTakeoffSection } from "@/components/AiTakeoffSection";
 import { AgentsSection } from "@/components/AgentsSection";
 import { ModulesGrid } from "@/components/ModulesGrid";
 import { DataOwnership } from "@/components/DataOwnership";
+import { CompetitorCompareStrip } from "@/components/CompetitorCompareStrip";
 import { PricingSection } from "@/components/PricingSection";
 import { CTASection } from "@/components/CTASection";
 import { Footer } from "@/components/Footer";
@@ -34,6 +35,7 @@ export default function Home() {
       <AiTakeoffSection />
       <ModulesGrid />
       <DataOwnership />
+      <CompetitorCompareStrip />
       <PricingSection />
       <CTASection />
       <Footer />
