@@ -21,6 +21,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/design", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/listing-sheet", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/compare", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/alternatives", priority: 0.8, changeFrequency: "monthly" as const },
+    { url: "/qr", priority: 0.8, changeFrequency: "monthly" as const },
     { url: "/contact", priority: 0.6, changeFrequency: "yearly" as const },
     { url: "/faq", priority: 0.9, changeFrequency: "monthly" as const },
     { url: "/blog", priority: 0.7, changeFrequency: "weekly" as const },
