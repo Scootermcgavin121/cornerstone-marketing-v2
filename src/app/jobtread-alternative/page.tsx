@@ -30,7 +30,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Job costing / budgets", cornerstone: true, competitor: true, note: "Both ship job costing and budget tracking." },
   { feature: "Bid management", cornerstone: true, competitor: true, note: "Cornerstone adds 7-wave automated bidding pipeline." },
   { feature: "Unlimited users on all plans", cornerstone: true, competitor: false, note: "JobTread charges per user." },
-  { feature: "Starting price", cornerstone: "$149/mo", competitor: "$149/mo+", note: "Similar entry price, but JobTread scales per-user. Cornerstone is flat unlimited." },
+  { feature: "Starting price", cornerstone: "$149/mo", competitor: "$199/mo + $20/user", note: "JobTread: $199/mo base plus $20 per user. A 10-user team runs $399/mo before add-ons. Cornerstone: $149/mo flat with unlimited users on every plan." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
@@ -58,7 +58,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Is Cornerstone PM cheaper than JobTread?",
-    a: "Entry prices are similar, but the total-cost story differs. JobTread charges per user, so teams of 5+ pay substantially more. Cornerstone is flat unlimited users on all plans. Pro+ ($599/mo) includes the REST API, 30 webhook events, Foreman AI, Blueprint AI, and BYOA — all at one price regardless of team size.",
+    a: "Yes — meaningfully so. JobTread starts at $199/mo base plus $20 per user; a 10-user team is $399/mo before add-ons, and a 20-user team is $599/mo. Cornerstone is $149/mo flat with unlimited users on every plan. Pro+ at $599/mo (the same price as JobTread's 20-user bill) includes the REST API, 30 webhook events, Foreman AI, Blueprint AI, and BYOA — regardless of team size.",
   },
   {
     q: "Does Cornerstone PM have JobTread's scheduling features?",
