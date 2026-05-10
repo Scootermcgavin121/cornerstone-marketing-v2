@@ -85,8 +85,8 @@ const skillCategories = [
     bg: "bg-violet-500/10",
     border: "border-violet-500/20",
     label: "System Intelligence",
-    count: "11+",
-    desc: "The behaviors that make Foreman actually useful — user memory, memory compaction, persistent memory, bulk operations, deduplication, smart linking, error recovery.",
+    count: "12+",
+    desc: "The behaviors that make Foreman actually useful — user memory, personality & emoji, memory compaction, persistent memory, bulk operations, deduplication, smart linking, error recovery.",
     skills: [
       { name: "User Memory", detail: "Tell Foreman about yourself — your name, role, preferences, favorite vendors. It remembers you across every conversation and gets more personal over time." },
       { name: "Memory Compaction", detail: "Auto-summarizes older messages mid-session so marathon work doesn't crash or forget. Recent context stays word-for-word intact." },
@@ -99,6 +99,7 @@ const skillCategories = [
       { name: "URL Generation", detail: "Build direct links to specific homes, vendors, and reports" },
       { name: "Error Recovery", detail: "When web scraping fails, uses industry knowledge as backup" },
       { name: "Context Awareness", detail: "Understands builder terminology and workflows — not generic AI speak" },
+      { name: "Personality & Emoji", detail: "Foreman uses emojis for fun and reacts to yours — fire it a 🔥💪👊 and it gets the vibe. Feels like texting a knowledgeable colleague, not chatting with a robot." },
     ],
   },
 ];
