@@ -95,7 +95,7 @@ const skillCategories = [
       { name: "Bulk Operations", detail: "Create multiple parts or options efficiently vs one-by-one" },
       { name: "Smart Data Linking", detail: "Auto-connect parts to option classes for the design center" },
       { name: "Duplicate Prevention", detail: "Always searches before creating to avoid duplicate records" },
-      { name: "Price Conversion", detail: "Handles dollars-to-cents conversion automatically" },
+      { name: "Anti-Bot Web Crawling", detail: "Pulls real products, prices, SKUs, and images from Home Depot, Ferguson, Lowe's, and other big-box sites that block traditional scrapers — then turns them into parts and design options in your catalog." },
       { name: "URL Generation", detail: "Build direct links to specific homes, vendors, and reports" },
       { name: "Error Recovery", detail: "When web scraping fails, uses industry knowledge as backup" },
       { name: "Context Awareness", detail: "Understands builder terminology and workflows — not generic AI speak" },
