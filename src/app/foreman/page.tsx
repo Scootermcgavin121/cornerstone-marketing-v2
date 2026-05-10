@@ -321,13 +321,13 @@ export default function ForemanPage() {
                   Every other AI chatbot hits a wall. After 50+ messages, ChatGPT, Copilot, and the half-baked &ldquo;AI features&rdquo; bolted onto competing platforms either crash, freeze, or start hallucinating &mdash; right when you&apos;re deep into the work.
                 </p>
                 <p className="text-slate-300 text-lg leading-relaxed mb-6">
-                  Foreman is different. <strong className="text-white">Automatic memory compaction</strong> intelligently summarizes older messages in the background while recent messages stay word-for-word intact. You don&apos;t notice it. Foreman just keeps working.
+                  Foreman is different. <strong className="text-white">Automatic memory compaction</strong>{" "}intelligently summarizes older messages in the background while recent messages stay word-for-word intact. You don&apos;t notice it. Foreman just keeps working.
                 </p>
                 <div className="space-y-3">
                   {[
                     "Clean up 200+ design options in one sitting",
                     "Import an entire vendor catalog without losing your place",
-                    "Walk through a full bid review &mdash; line by line, vendor by vendor",
+                    "Walk through a full bid review — line by line, vendor by vendor",
                     "Hours of back-and-forth, hundreds of tool calls, zero context loss",
                   ].map((item) => (
                     <div key={item} className="flex items-start gap-3">
