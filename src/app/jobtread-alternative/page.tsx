@@ -17,7 +17,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "AI image search + anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, permanently hosts them on CDN, and reads Home Depot/Ferguson/Lowe's product pages with AI-powered web scraping." },
   { feature: "AI floor plan takeoffs (Blueprint AI)", cornerstone: true, competitor: false, note: "PDF blueprint to material takeoff in under 60 seconds." },
   { feature: "30 webhook events (full named catalog)", cornerstone: true, competitor: false, note: "30 named events with typed payloads, HMAC signatures, delivery logs, auto-retry. JobTread says webhooks exist — we ship the full event catalog with payload schemas." },
-  { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Wire Claude or ChatGPT to your live Cornerstone data. JobTread has no BYOA support." },
+  { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: true, note: "Both platforms support bringing your own AI. JobTread ships an AI Connector; Cornerstone's BYOA is included on Pro+ via the public REST API and 30-event webhook catalog." },
   { feature: "Public REST API (59 endpoints)", cornerstone: true, competitor: "limited", note: "Cornerstone: 59 endpoints, public docs. JobTread: limited API access." },
   { feature: "Structural options engine", cornerstone: true, competitor: false, note: "Pre-sale options pricing matrix per floorplan — not a JobTread feature." },
   { feature: "Designer Packages (64 curated, 7 categories)", cornerstone: true, competitor: false, note: "Buyers pick a package; all category options lock automatically." },
@@ -36,7 +36,7 @@ const comparisonRows: ComparisonRow[] = [
 const whySwitchCards: WhySwitchCard[] = [
   { title: "AI that acts, not just answers", desc: "Foreman AI takes real actions — creates POs, updates options, generates SOWs, runs bid comparisons. 45+ skills. Per-user memory. JobTread's AI is a chat layer. Ours is an agent." },
   { title: "The only AI that doesn't forget", desc: "Foreman auto-compacts long sessions so marathon workflows never crash. Built-in memory compaction. No other construction AI does this. No more 'start a new conversation' workarounds." },
-  { title: "30 webhooks + BYOA", desc: "30 named webhook events with typed payload schemas. JobTread says webhooks exist — we ship the full catalog. Wire Twilio, Bland, or your own Claude agent to our events. BYOA is native on Pro+." },
+  { title: "30 named webhook events", desc: "30 named webhook events with typed payload schemas, HMAC signing, delivery logs, and auto-retry. JobTread says webhooks exist — we ship the full catalog with docs. Wire Twilio, Bland, or your own Claude agent to our events. BYOA is included on Pro+." },
 ];
 
 const faqItems: FAQItem[] = [
@@ -65,8 +65,8 @@ const faqItems: FAQItem[] = [
     a: "Yes — Gantt charts, dependencies, cascade scheduling, vendor notifications, and task management are all included. Cornerstone adds cascade webhook events for schedule changes, so you can wire external systems (SMS via Twilio, voice via Bland/Retell) to your schedule triggers without code.",
   },
   {
-    q: "What's the BYOA feature?",
-    a: "BYOA (Bring Your Own Agent) lets you connect your own Claude or ChatGPT agent to Cornerstone's live data via the public REST API and webhook events. JobTread has no BYOA capability. Pro+ builders use BYOA to build custom SMS bots, voice assistants, and workflow automations on top of their live construction data.",
+    q: "How does Cornerstone's BYOA compare to JobTread's AI Connector?",
+    a: "Both platforms let you connect external AI to your construction data. JobTread ships an AI Connector for plugging in third-party AI tools. Cornerstone's BYOA is included on Pro+ via the public REST API (59 endpoints) plus 30 named webhook events with typed payload schemas — letting your own Claude or ChatGPT agent both read live data and react to events (home created, bid accepted, schedule cascade, etc.). The richer event catalog is where the depth difference shows up.",
   },
   {
     q: "Does Cornerstone PM have a free trial?",
