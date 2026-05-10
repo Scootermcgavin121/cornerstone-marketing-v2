@@ -3,17 +3,17 @@ import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageT
 import type { FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
-  title: "JobTread Alternative for Production Home Builders | Cornerstone PM",
+  title: "JobTread Alternative for Home Builders | Cornerstone PM",
   description:
-    "JobTread alternative with action-taking AI agents (45+ skills), structural options engine, and 30 named webhook events. Production-builder native. Plans from $149/mo to $599/mo flat - no per-user fees.",
+    "JobTread alternative with action-taking AI agents (45+ skills), structural options engine, and 30 named webhook events. Home-builder native. Plans from $149/mo to $599/mo flat - no per-user fees.",
   alternates: { canonical: "https://www.cornerstonepm.ai/jobtread-alternative" },
 };
 
 const comparisonRows: ComparisonRow[] = [
-  { feature: "Built for production home builders", cornerstone: true, competitor: false, note: "JobTread is built for general contractors and custom builders. Cornerstone is purpose-built for production (tract/spec) home builders." },
+  { feature: "Built for home builders", cornerstone: true, competitor: false, note: "JobTread is built for general contractors and custom builders. Cornerstone is purpose-built for home builders - production, semi-custom, and custom." },
   { feature: "AI agents that take real actions (Cornerstone Pro / Pro+)", cornerstone: true, competitor: "limited", note: "Foreman AI (Pro+ at $499/mo) reads AND writes data - creates POs, updates options, generates SOWs, runs bid comparisons. 45+ purpose-built skills. JobTread's AI Connector lets you plug in third-party AI (ChatGPT, Claude) for chat-style assistance - it doesn't ship native action-taking agents." },
   { feature: "AI memory compaction for marathon sessions", cornerstone: true, competitor: false, note: "Foreman auto-summarizes older messages mid-session so long workflows (200+ option cleanups, full catalog imports) never crash or forget. Available on Pro+." },
-  { feature: "Per-user AI memory (learns YOU, not just your data)", cornerstone: true, competitor: false, note: "Foreman greets you by whatever name you want to be called, learns your role, your go-to vendors, your typical workflows, your reporting preferences. Custom-coded into the app — not a generic chatbot bolt-on. Gets more intuitive every session. Company-wide + personal memory. Pro feature." },
+  { feature: "Per-user AI memory (learns YOU, not just your data)", cornerstone: true, competitor: false, note: "Foreman greets you by whatever name you want to be called, learns your role, your go-to vendors, your typical workflows, your reporting preferences. Custom-coded into the app - not a generic chatbot bolt-on. Gets more intuitive every session. Company-wide + personal memory. Pro feature." },
   { feature: "AI image search, vision & anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, permanently hosts them on CDN, reads Home Depot/Ferguson/Lowe's product pages with AI-powered web scraping. Plus: paste or drag-drop any screenshot from inside the app and Foreman reads it with AI vision and acts on it. Cornerstone Pro feature." },
   { feature: "AI floor plan takeoffs (Blueprint AI)", cornerstone: true, competitor: false, note: "PDF blueprint to material takeoff in under 60 seconds. Blueprint AI is on Cornerstone Pro+ at $499/mo (25 takeoffs/mo)." },
   { feature: "30 named webhook events (typed payloads, HMAC)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+: 30 named events with typed payloads, HMAC signatures, delivery logs, auto-retry. JobTread has webhook capability via Zapier - we ship the full named event catalog with payload schemas and docs." },
@@ -30,25 +30,24 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Job costing / budgets", cornerstone: true, competitor: true, note: "Both ship job costing and budget tracking." },
   { feature: "Bid management", cornerstone: true, competitor: true, note: "Both ship bid management. Cornerstone Pro+ adds the 7-wave automated bidding pipeline (cold call → onboarded)." },
   { feature: "Unlimited users on all plans", cornerstone: true, competitor: false, note: "Cornerstone: every plan, every tier. JobTread: $20/user (tiered breaks above 10 users)." },
-  { feature: "Starter price", cornerstone: "$149/mo", competitor: "$199/mo + $20/user", note: "Cornerstone Starter: scheduling, permits, homeowner portal - unlimited users. JobTread: $199 base plus $20/user; a 10-user team is $399/mo before add-ons." },
-  { feature: "Price at full AI tier", cornerstone: "$499/mo (Pro)", competitor: "$199 + $20/user", note: "Cornerstone Pro adds Foreman AI (45+ skills) + Blueprint AI - flat $499 regardless of team size. JobTread is $199 + per-user ($499 = 15 users on JobTread)." },
-  { feature: "Price at full API + AI tier", cornerstone: "$599/mo (Pro+)", competitor: "$199 + $20/user", note: "Cornerstone Pro+ adds REST API, BYOA, 7-wave bidding, Opus AI - flat $599 regardless of team size. On JobTread, $599 = 20 users." },
+  { feature: "Pricing model", cornerstone: "Flat, unlimited users", competitor: "$199 + $20/user", note: "Cornerstone is flat at every tier. JobTread is $199 base plus $20 per user, so the bill grows with your crew. Different model entirely — but more importantly, these aren't priced against the same product. JobTread doesn't ship an options engine, floorplan pricing matrix, designer packages, or multi-community pipelines at any user count." },
+  { feature: "Cornerstone tiers (flat unlimited users)", cornerstone: "$149 / $299 / $499 / $599", competitor: "—", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30 named webhook events, 7-wave bidding." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
-  { title: "Production builder native", desc: "Floorplan pricing matrix, structural options engine, designer packages, multi-community pipelines - first-class concepts on Cornerstone Builder+ ($299/mo). JobTread is built for general contractors and remodelers, not production home builders." },
+  { title: "Home builder native", desc: "Floorplan pricing matrix, structural options engine, designer packages, multi-community pipelines - first-class concepts on Cornerstone Builder+ ($299/mo). JobTread is built for general contractors and remodelers, not home builders." },
   { title: "Action-taking AI on Pro", desc: "Foreman AI (45+ skills, $499/mo Pro) reads AND writes data - creates POs, runs bid comparisons, generates SOWs, scrapes vendor product pages. JobTread's AI Connector plugs in your own ChatGPT or Claude for chat-style help. Different model: action agent vs chat integration." },
   { title: "Flat pricing, no per-user math", desc: "Cornerstone Starter $149, Builder $299, Pro $499, Pro+ $599 - flat at every tier, unlimited users. JobTread starts $199 + $20/user; a 20-person team is $599/mo. Bring on your whole crew without watching the meter." },
 ];
 
 const faqItems: FAQItem[] = [
   {
-    q: "What's the best JobTread alternative for production home builders?",
-    a: "Cornerstone PM is the purpose-built JobTread alternative for production home builders. Where JobTread is designed for general contractors, remodelers, and custom builders (all on one flat plan), Cornerstone is built specifically for production - with a structural options engine, designer packages, multi-community pipelines, lot management, and pre-sale design center. JobTread covers GC workflows broadly; Cornerstone goes deep on the production-builder workflow.",
+    q: "What's the best JobTread alternative for home builders?",
+    a: "Cornerstone PM is the purpose-built JobTread alternative for home builders. Where JobTread is designed for general contractors, remodelers, and custom builders (all on one flat plan), Cornerstone is built specifically for production - with a structural options engine, designer packages, multi-community pipelines, lot management, and pre-sale design center. JobTread covers GC workflows broadly; Cornerstone goes deep on the production-builder workflow.",
   },
   {
-    q: "How does Cornerstone's pricing actually compare to JobTread's?",
-    a: "They use different models, so the comparison depends on team size and which features you need. JobTread is one flat plan at $199/mo base plus $20 per user, with all features (AI Connector included). Cornerstone is tiered: Starter $149/mo (scheduling + portal), Builder $299/mo (adds pipeline, purchasing, design center), Pro $499/mo (adds Foreman AI + Blueprint AI), Pro+ $599/mo (adds full REST API, BYOA, automated bidding). Every Cornerstone tier is flat with unlimited users. Math: a 10-person team on JobTread is $399/mo; on Cornerstone Builder it's $299/mo. A 20-person team on JobTread is $599/mo; on Cornerstone Pro+ it's also $599/mo - and that's where the action-taking AI agents land.",
+    q: "How does Cornerstone's pricing compare to JobTread's?",
+    a: "Honest answer: they're not really priced against the same product, so per-user math is a distraction. JobTread is one flat plan at $199/mo base plus $20 per user. Cornerstone is tiered: Starter $149/mo (scheduling + portal), Builder $299/mo (adds sales pipeline, purchasing, design center with options engine and designer packages), Pro $499/mo (adds Foreman AI + Blueprint AI), Pro+ $599/mo (adds REST API, BYOA, 30 named webhook events, 7-wave bidding). Every Cornerstone tier is flat with unlimited users. The real difference isn't price-per-user — it's that JobTread doesn't have a structural options engine, floorplan pricing matrix, multi-community pipelines, or designer packages at any plan or any team size. If you need those, JobTread isn't an option regardless of cost.",
   },
   {
     q: "How is Foreman AI different from JobTread's AI Connector?",
@@ -72,7 +71,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Does Cornerstone PM have a free trial?",
-    a: "Yes. The 2-year free beta is open to the first 100 production builders - and the beta unlocks everything on the Pro plan (Foreman AI, Blueprint AI, options engine, full sales-to-construction workflow). No credit card, no contract, no implementation fee.",
+    a: "Yes. The 2-year free beta is open to the first 100 home builders - and the beta unlocks everything on the Pro plan (Foreman AI, Blueprint AI, options engine, full sales-to-construction workflow). No credit card, no contract, no implementation fee.",
   },
 ];
 
@@ -82,14 +81,14 @@ export default function JobtreadAlternativePage() {
       competitorName="JobTread"
       badgeLabel="JobTread Alternative"
       heroLine1="JobTread is for GCs."
-      heroLine2="Cornerstone is for production builders."
+      heroLine2="Cornerstone is for home builders."
       accentColor="emerald"
-      heroParagraph="Cornerstone PM is the JobTread alternative purpose-built for production home builders. Floorplan pricing matrix, structural options engine, designer packages, multi-community pipelines - production-native by design. On Pro ($499/mo flat) you get Foreman AI's 45+ action-taking skills; on Pro+ ($599/mo flat) you add the public REST API and 30 named webhook events. Flat pricing, unlimited users on every tier."
+      heroParagraph="Cornerstone PM is the JobTread alternative purpose-built for home builders. Floorplan pricing matrix, structural options engine, designer packages, multi-community pipelines - home-builder-native by design. On Pro ($499/mo flat) you get Foreman AI's 45+ action-taking skills; on Pro+ ($599/mo flat) you add the public REST API and 30 named webhook events. Flat pricing, unlimited users on every tier."
       secondaryCTA={{ text: "See full comparison", href: "/compare" }}
-      comparisonSubtitle="JobTread vs Cornerstone PM - focused on production builders and AI capability."
+      comparisonSubtitle="JobTread vs Cornerstone PM - focused on home builder workflows and AI capability."
       comparisonRows={comparisonRows}
       trademarkName="JobTread"
-      whySwitchHeadline="Why production builders choose Cornerstone over JobTread"
+      whySwitchHeadline="Why home builders choose Cornerstone over JobTread"
       whySwitchCards={whySwitchCards}
       showMigrationCTA={true}
       migrationHeadline="Already using JobTread? Drop your export. We'll do the rest."
@@ -97,7 +96,7 @@ export default function JobtreadAlternativePage() {
       faqTitle="JobTread Alternative FAQ"
       faqSubtitle="Common questions about switching to Cornerstone PM from JobTread."
       faqItems={faqItems}
-      footerHeadline="Ready for a production-builder platform?"
+      footerHeadline="Ready for a home builder platform?"
       footerSubtext="Join the beta and get 2 years free. Migration tooling included."
       relatedPages={[
         { text: "vs Buildertrend", href: "/buildertrend-alternative" },
