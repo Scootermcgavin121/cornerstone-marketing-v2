@@ -13,12 +13,13 @@ import {
   FileText,
   Users,
   Check,
+  MapPin,
 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Features — Cornerstone PM",
   description:
-    "Six integrated modules for home builders: scheduling, purchasing, sales pipeline, design center, permitting, and buyer portal.",
+    "Seven integrated modules for home builders: scheduling, purchasing, sales pipeline, design center, permitting, buyer portal, and jobsite operations with the industry-first triple QR code ecosystem.",
 };
 
 const featureDetails = [
@@ -44,6 +45,7 @@ const featureDetails = [
       "Daily & weekly digest emails to subcontractors",
       "6-step closing workflow (CO → Orientation → Punch List → Close)",
       "2-year warranty tracking post-close",
+      "QR check-in signs auto-generated for every home — vendors scan to log GPS, weather, and hours on-site",
     ],
   },
   {
@@ -71,6 +73,7 @@ const featureDetails = [
       "Bid Import AI — upload any vendor format (Excel, PDF, scanned docs, handwritten quotes), AI extracts and maps line items",
       "Fuzzy catalog matching with confidence scores — review, approve, or reject before importing",
       "3 import modes: as a Bid, Vendor Pricing, or Takeoffs",
+      "Vendor Activity Map — Google Maps view of every vendor check-in across all communities in real time",
     ],
   },
   {
@@ -99,6 +102,7 @@ const featureDetails = [
       "Net price calculator with stacked promotions",
       "Auto-handoff to permitting when sales tasks complete",
       "Excel/CSV export of pricing matrix",
+      "Model home QR code for buyer lead capture — replaces paper sign-in sheets, recognizes returning visitors, creates Lead records auto-tied to community",
     ],
   },
   {
@@ -172,6 +176,32 @@ const featureDetails = [
       "Invite triggered automatically from permitting stage",
     ],
   },
+  {
+    id: "jobsite",
+    icon: MapPin,
+    screenshot: "/mockups/feature-jobsite-qr.png",
+    name: "Jobsite Operations & QR Ecosystem",
+    color: "from-emerald-500 to-cyan-600",
+    bgColor: "bg-emerald-500/10",
+    borderColor: "border-emerald-500/20",
+    textColor: "text-emerald-400",
+    description:
+      "The only home builder platform with a triple QR code system: vendor jobsite check-in, community/PM check-in, and sales model home lead capture. Plus a live Vendor Activity Map and AI camera-event integration that auto-starts tasks when vendors arrive.",
+    bullets: [
+      "Vendor Jobsite QR — scan to check in, GPS + weather + timestamp captured automatically",
+      "Community QR — builder staff & inspectors log presence; feeds timesheet validation",
+      "Sales Model Home QR — captures buyer leads, recognizes returning visitors, replaces paper sign-in sheets",
+      'Printable 11\u00d78.5" QR signs auto-generated for every community and home',
+      "Vendor Activity Map — Google Maps view of live check-ins across all communities, 30-second refresh",
+      "AI Jobsite Camera Events — webhook-driven, works with any camera (Verkada, Ring, IP cams)",
+      "Auto-task start when vendor arrives, auto-departure logging on exit",
+      "Photo upload at check-in (up to 10 per visit), stored in cloud",
+      "Check-out flow with completion %, notes, and next-visit scheduling",
+      "Configurable safety acknowledgment per community",
+      "Public check-in page — no app install or login required for vendors",
+      "Webhook events: vendor.arrived, vendor.departed (HMAC-signed, retry, delivery logs)",
+    ],
+  },
 ];
 
 export default function FeaturesPage() {
@@ -187,7 +217,7 @@ export default function FeaturesPage() {
             PLATFORM FEATURES
           </div>
           <h1 className="text-5xl sm:text-6xl font-black text-white mb-6 leading-tight">
-            Six modules.
+            Seven modules.
             <br />
             <span className="text-cyan-400">One platform.</span>
             <br />
