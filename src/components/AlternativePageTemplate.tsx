@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Check, X } from "lucide-react";
+import { ArrowRight, Check, ChevronRight, X } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { FAQSection, type FAQItem } from "@/components/FAQSection";
@@ -158,12 +158,49 @@ export function AlternativePageTemplate({
   const badge = badgeLabel ?? `${competitorName} Alternative`;
   const trademark = trademarkName ?? competitorName;
 
+  // Breadcrumb JSON-LD for SEO
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.cornerstonepm.ai/" },
+      { "@type": "ListItem", position: 2, name: "Compare", item: "https://www.cornerstonepm.ai/compare" },
+      { "@type": "ListItem", position: 3, name: "Alternatives", item: "https://www.cornerstonepm.ai/alternatives" },
+      { "@type": "ListItem", position: 4, name: `${competitorName} Alternative` },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-slate-950 text-white">
       <Navbar />
 
+      {/* Breadcrumbs */}
+      <nav aria-label="Breadcrumb" className="pt-24 pb-2 px-4">
+        <ol className="max-w-5xl mx-auto flex flex-wrap items-center gap-1.5 text-xs sm:text-sm text-slate-500">
+          <li>
+            <Link href="/" className="hover:text-slate-300 transition-colors">Home</Link>
+          </li>
+          <ChevronRight className="w-3.5 h-3.5 text-slate-700" aria-hidden="true" />
+          <li>
+            <Link href="/compare" className="hover:text-slate-300 transition-colors">Compare</Link>
+          </li>
+          <ChevronRight className="w-3.5 h-3.5 text-slate-700" aria-hidden="true" />
+          <li>
+            <Link href="/alternatives" className="hover:text-slate-300 transition-colors">Alternatives</Link>
+          </li>
+          <ChevronRight className="w-3.5 h-3.5 text-slate-700" aria-hidden="true" />
+          <li aria-current="page" className="text-slate-300 font-medium">
+            {competitorName}
+          </li>
+        </ol>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        />
+      </nav>
+
       {/* Hero */}
-      <section className="relative pt-32 pb-20 px-4 text-center overflow-hidden">
+      <section className="relative pt-8 pb-20 px-4 text-center overflow-hidden">
         <div
           className="absolute inset-0"
           style={{ background: `radial-gradient(ellipse at center, ${a.glow} 0%, transparent 65%)` }}
