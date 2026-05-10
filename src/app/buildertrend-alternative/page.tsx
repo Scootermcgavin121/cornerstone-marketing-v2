@@ -26,6 +26,10 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Construction scheduling", cornerstone: true, competitor: true, note: "Both: Gantt charts, dependencies, vendor notifications." },
   { feature: "Homeowner portal", cornerstone: true, competitor: true, note: "Both: client-facing milestone views." },
   { feature: "Bid management", cornerstone: true, competitor: true, note: "Cornerstone adds 7-wave automated bidding pipeline + vendor portal (no login required)." },
+  { feature: "Triple QR check-in ecosystem (vendor + PM + buyer)", cornerstone: true, competitor: false, note: "Cornerstone has three audience-specific QR codes. Buildertrend has none." },
+  { feature: "Vendor Activity Map (Google Maps, real-time)", cornerstone: true, competitor: false, note: "See where every vendor is across every community in one map. Buildertrend has no equivalent." },
+  { feature: "Model home QR for lead capture", cornerstone: true, competitor: false, note: "Cornerstone replaces paper sign-in sheets with a digital QR scan that creates Lead records. Buildertrend lead capture is web-form only." },
+  { feature: "AI camera-event auto-task-start", cornerstone: true, competitor: false, note: "Webhook endpoint accepts events from any camera/sensor; auto-flips task to In Progress on vendor arrival." },
   { feature: "Unlimited users on all plans", cornerstone: true, competitor: false, note: "Buildertrend charges per user above plan limits." },
   { feature: "Starting price", cornerstone: "$149/mo", competitor: "$499/mo", note: "Cornerstone is ~70% less at the starter tier." },
 ];
