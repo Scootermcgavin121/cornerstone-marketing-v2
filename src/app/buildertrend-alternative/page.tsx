@@ -1,213 +1,106 @@
-import Link from "next/link";
-import { ArrowRight, Check, X } from "lucide-react";
-import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
-import { FAQSection, type FAQItem } from "@/components/FAQSection";
+import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
+import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageTemplate";
+import type { FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
   title: "Buildertrend Alternative for Production Home Builders | Cornerstone PM",
   description:
-    "Buildertrend alternative built for production home builders. Native AI agents, options engine, REST API, and multi-community management from $149/mo &mdash; not $499+.",
+    "Buildertrend alternative built for production home builders. Native AI agents, options engine, REST API, and multi-community management from $149/mo — not $499+.",
   alternates: { canonical: "https://www.cornerstonepm.ai/buildertrend-alternative" },
 };
 
-const comparisonRows = [
-  { feature: "Built specifically for production home builders", cornerstone: true, buildertrend: false, note: "Both serve home builders, but Buildertrend is purpose-built for custom builders & remodelers; Cornerstone is purpose-built for production (tract/spec) builders." },
-  { feature: "Native AI agents", cornerstone: true, buildertrend: false, note: "5 native AI agents including Foreman AI (45+ skills) and Blueprint AI. Buildertrend has no native AI agents." },
-  { feature: "AI memory compaction for marathon sessions", cornerstone: true, buildertrend: false, note: "Foreman auto-summarizes older messages mid-session so long workflows (200+ option cleanups, full catalog imports) don't crash or forget. No competing platform offers this." },
-  { feature: "AI floor plan takeoffs (Blueprint AI)", cornerstone: true, buildertrend: false, note: "PDF blueprint to material takeoff in under 60 seconds." },
-  { feature: "Structural options engine", cornerstone: true, buildertrend: false, note: "Pre-sale options pricing matrix per floorplan." },
-  { feature: "Floorplan pricing matrix", cornerstone: true, buildertrend: false, note: "Per-community floorplan pricing." },
-  { feature: "Multi-community management", cornerstone: true, buildertrend: "limited", note: "Multi-job, but not multi-community pipeline." },
-  { feature: "Public REST API", cornerstone: true, buildertrend: "limited", note: "Cornerstone: 59 endpoints, public docs. Buildertrend: enterprise API only." },
-  { feature: "Bring Your Own Agent (BYOA)", cornerstone: true, buildertrend: false, note: "Connect Claude or ChatGPT to your live data." },
-  { feature: "Construction scheduling", cornerstone: true, buildertrend: true, note: "Both: Gantt charts, dependencies, vendor notifications." },
-  { feature: "Homeowner portal", cornerstone: true, buildertrend: true, note: "Both: client portal with milestones." },
-  { feature: "Purchasing & POs", cornerstone: true, buildertrend: true, note: "Both: PO generation and tracking." },
-  { feature: "Bid management", cornerstone: true, buildertrend: true, note: "Cornerstone adds 7-wave automated bidding pipeline." },
-  { feature: "Unlimited users on all plans", cornerstone: true, buildertrend: false, note: "Buildertrend charges per user above plan limits." },
-  { feature: "Starting price", cornerstone: "$149/mo", buildertrend: "$499/mo", note: "Cornerstone is ~70% less at the starter tier." },
+const comparisonRows: ComparisonRow[] = [
+  { feature: "Built specifically for production home builders", cornerstone: true, competitor: false, note: "Buildertrend is purpose-built for custom builders & remodelers; Cornerstone is purpose-built for production (tract/spec) builders." },
+  { feature: "Native AI agents (Foreman AI + Blueprint AI)", cornerstone: true, competitor: false, note: "Cornerstone ships 45+ Foreman AI skills and Blueprint AI floor plan takeoffs. Buildertrend has no native AI agents." },
+  { feature: "AI memory compaction for marathon sessions", cornerstone: true, competitor: false, note: "Foreman auto-summarizes older messages mid-session so long workflows never crash or forget. No other construction platform does this." },
+  { feature: "AI image search + anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman AI searches product images, hosts them permanently on CDN, and reads Home Depot/Ferguson/Lowe's product pages using AI-powered web scraping — no other construction AI does this." },
+  { feature: "AI floor plan takeoffs (Blueprint AI)", cornerstone: true, competitor: false, note: "PDF blueprint to material takeoff in under 60 seconds." },
+  { feature: "30 webhook events with typed payloads", cornerstone: true, competitor: false, note: "Cornerstone: 30 named events, HMAC signatures, delivery logs, auto-retry. Buildertrend webhooks: limited scope, no named event catalog." },
+  { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Wire Claude or ChatGPT directly to your live Cornerstone data via our public API. Buildertrend has no BYOA support." },
+  { feature: "Public REST API (59 endpoints)", cornerstone: true, competitor: "limited", note: "Cornerstone: 59 endpoints, public docs. Buildertrend: enterprise API only, not public." },
+  { feature: "AI Migration Wizard (one-click CRM import)", cornerstone: true, competitor: false, note: "Drop your Buildertrend export — AI auto-detects column mapping and runs 23 import endpoints automatically. ~$0.01 per migration." },
+  { feature: "Structural options engine", cornerstone: true, competitor: false, note: "Pre-sale options pricing matrix per floorplan — not a Buildertrend strength." },
+  { feature: "Designer Packages (64 curated, 7 categories)", cornerstone: true, competitor: false, note: "Buyers pick a package; all category options lock automatically. No spreadsheet-style workarounds." },
+  { feature: "Free database export (CSV / JSON)", cornerstone: true, competitor: false, note: "Download your full data anytime — no hostage-taking. Nightly auto-backups for 7 days." },
+  { feature: "Multi-community management", cornerstone: true, competitor: "limited", note: "Cornerstone: native multi-community pipeline. Buildertrend: multi-job, not true multi-community." },
+  { feature: "Construction scheduling", cornerstone: true, competitor: true, note: "Both: Gantt charts, dependencies, vendor notifications." },
+  { feature: "Homeowner portal", cornerstone: true, competitor: true, note: "Both: client-facing milestone views." },
+  { feature: "Bid management", cornerstone: true, competitor: true, note: "Cornerstone adds 7-wave automated bidding pipeline + vendor portal (no login required)." },
+  { feature: "Unlimited users on all plans", cornerstone: true, competitor: false, note: "Buildertrend charges per user above plan limits." },
+  { feature: "Starting price", cornerstone: "$149/mo", competitor: "$499/mo", note: "Cornerstone is ~70% less at the starter tier." },
+];
+
+const whySwitchCards: WhySwitchCard[] = [
+  { title: "Production workflows native", desc: "Lots, models, options, plan repeats, design center, draws — first-class concepts, not workarounds. Buildertrend treats every job as one-off." },
+  { title: "AI built in — 45+ skills", desc: "Foreman AI reads AND writes data, remembers your preferences, analyzes jobsite photos, and scrapes product pages from Home Depot and Ferguson using AI-powered web scraping. No bolt-on plugins." },
+  { title: "REST API + 30 webhook events", desc: "59 REST endpoints, 30 named webhook events, HMAC signatures, scoped auth, and public docs. Buildertrend's API is enterprise-only. Ours ships with Pro+." },
 ];
 
 const faqItems: FAQItem[] = [
   {
     q: "What's the best Buildertrend alternative for production home builders?",
-    a: "For production home builders, Cornerstone PM is the closest functional Buildertrend alternative with key advantages: native AI agents (Foreman AI, Blueprint AI), an options engine, floorplan pricing matrix, multi-community management, and public REST API. Buildertrend was built for custom builders and remodelers; Cornerstone PM is purpose-built for production builders managing 5-200+ homes per year.",
+    a: "For production home builders, Cornerstone PM is the closest functional Buildertrend alternative with key advantages: native AI agents (Foreman AI 45+ skills, Blueprint AI), an options engine, floorplan pricing matrix, multi-community management, 30 webhook events, and a public REST API. Buildertrend was built for custom builders and remodelers; Cornerstone PM is purpose-built for production builders managing 5–200+ homes per year.",
   },
   {
     q: "How is Cornerstone PM different from Buildertrend?",
-    a: "Three key differences: (1) Cornerstone is built for production builders, Buildertrend for custom and remodel; (2) Cornerstone includes 45+ native AI skills via Foreman AI plus Blueprint AI floor plan takeoffs &mdash; Buildertrend has no native AI; (3) Cornerstone offers a structural options engine, floorplan pricing matrix, and multi-community pipelines that Buildertrend doesn't ship.",
+    a: "Three key differences: (1) Cornerstone is built for production builders, Buildertrend for custom and remodel; (2) Cornerstone includes 45+ native AI skills via Foreman AI plus Blueprint AI floor plan takeoffs, AI image search, and anti-bot web scraping — Buildertrend has no native AI; (3) Cornerstone offers a structural options engine, floorplan pricing matrix, multi-community pipelines, 30 webhook events, and free database export that Buildertrend doesn't ship.",
   },
   {
     q: "Is Cornerstone PM cheaper than Buildertrend?",
-    a: "Yes. Cornerstone PM starts at $149/mo with unlimited users; Buildertrend starts at $499/mo. The full Cornerstone Pro plan (with Foreman AI and Blueprint AI) is $499/mo &mdash; the same as Buildertrend's entry tier &mdash; and includes capabilities Buildertrend doesn't offer at any price.",
+    a: "Yes. Cornerstone PM starts at $149/mo with unlimited users; Buildertrend starts at $499/mo. The full Cornerstone Pro+ plan (with Foreman AI, Blueprint AI, and REST API) is $599/mo — and includes capabilities Buildertrend doesn't offer at any price.",
   },
   {
     q: "Can I migrate from Buildertrend to Cornerstone PM?",
-    a: "Yes — and there's a faster path now. Cornerstone PM ships an AI Migration Wizard (Live in Beta): drop your Buildertrend export files in, the wizard reads them, maps the columns, runs the imports, and tells you what it skipped. Behind the scenes it routes through 23 dedicated CSV import endpoints (vendors, homes, communities, schedule templates, design categories, floorplans, scopes, takeoffs, parts catalog, budgets, warranties, users, and more). Most Buildertrend migrations complete in under a day, self-serve. White-glove migration is available on Pro and Pro+ plans.",
+    a: "Yes — the AI Migration Wizard makes it fast. Drop your Buildertrend export files in, the wizard reads them, detects column mapping automatically, runs the imports, and tells you what it skipped. Behind the scenes it routes through 23 dedicated import endpoints. Most migrations complete in under a day, self-serve. White-glove migration is available on Pro and Pro+ plans.",
   },
   {
     q: "Does Cornerstone PM have everything Buildertrend has?",
-    a: "Cornerstone PM covers the same core functions: scheduling, homeowner portal, purchasing, bid management, document storage, change orders, and time tracking. It adds an options engine, AI agents, Blueprint AI takeoffs, multi-community pipelines, and a public REST API that Buildertrend doesn't offer. The one Buildertrend feature Cornerstone doesn't ship is custom builder client invoicing &mdash; because Cornerstone is built for production builders who use draw schedules, not custom builder progress invoicing.",
+    a: "Cornerstone PM covers the same core functions: scheduling, homeowner portal, purchasing, bid management, document storage, and change orders. It adds an options engine, AI agents, Blueprint AI takeoffs, multi-community pipelines, 30 webhook events, and a public REST API that Buildertrend doesn't offer. The one area Buildertrend serves that Cornerstone doesn't: custom builder progress invoicing — because Cornerstone is built for production builders who use draw schedules.",
   },
   {
     q: "Should I switch from Buildertrend if I'm a custom builder or remodeler?",
-    a: "Probably not. Cornerstone PM is optimized for production home builders. If you're a custom builder or remodeler doing one-off jobs without floorplan repeats, lot management, or pre-sale design centers, Buildertrend is likely a better fit. Cornerstone's value compounds when you're running multi-community production with plan repeats.",
+    a: "Probably not. Cornerstone PM is optimized for production home builders. If you're a custom builder or remodeler doing one-off jobs without floorplan repeats or pre-sale design centers, Buildertrend is likely a better fit. Cornerstone's value compounds when you're running multi-community production with plan repeats.",
   },
   {
     q: "Does Cornerstone PM have a free trial like Buildertrend?",
-    a: "Cornerstone PM offers a 2-year free beta to the first 100 production builders &mdash; no credit card, no contract, no implementation fee. After beta, builders stay on whichever plan fits at the price they signed up at.",
+    a: "Cornerstone PM offers a 2-year free beta to the first 100 production builders — no credit card, no contract, no implementation fee.",
   },
   {
-    q: "Is the API really included?",
-    a: "The REST API (59 endpoints, 30 webhook events, scoped Bearer-token auth, public docs) is included on the Pro+ plan at $599/mo. BYOA &mdash; bringing your own Claude or ChatGPT agent against live builder data &mdash; is also included on Pro+.",
+    q: "What are the 30 webhook events?",
+    a: "Cornerstone's 30 named webhook events cover: home lifecycle (created, status changed, closed), task/schedule updates, vendor notifications, cascade scheduling triggers, message events, sales pipeline changes, and bid request events. Every event ships with a typed payload schema, HMAC signature verification, delivery logs, and auto-retry. Buildertrend's webhooks are limited and have no public event catalog.",
   },
 ];
 
-function CheckOrX({ value }: { value: boolean | string }) {
-  if (value === true) return <Check className="w-5 h-5 text-emerald-400" />;
-  if (value === false) return <X className="w-5 h-5 text-slate-600" />;
-  if (value === "limited") return <span className="text-amber-400 text-xs font-semibold uppercase">Limited</span>;
-  return <span className="text-white font-semibold text-sm">{value}</span>;
-}
-
 export default function BuildertrendAlternativePage() {
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
-      <Navbar />
-
-      <section className="relative pt-32 pb-20 px-4 text-center overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(45,212,191,0.07)_0%,transparent_65%)]" />
-        <div className="relative max-w-5xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-sm font-semibold uppercase tracking-widest mb-6">
-            Buildertrend Alternative
-          </div>
-          <h1 className="text-5xl sm:text-7xl font-black tracking-tight mb-6 leading-tight">
-            Built for production builders.<br />
-            <span className="text-cyan-400">Not custom and remodel.</span>
-          </h1>
-          <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-8">
-            Cornerstone PM is the Buildertrend alternative for production home builders. Native AI agents, options engine,
-            floorplan pricing matrix, multi-community pipelines, and a public REST API &mdash; from $149/mo with unlimited users.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/beta" className="px-8 py-4 rounded-full bg-cyan-400 text-slate-900 font-bold text-lg hover:bg-cyan-300 transition-all duration-200 shadow-lg shadow-cyan-500/30 hover:-translate-y-0.5 inline-flex items-center justify-center gap-2">
-              Get 2 Years Free <ArrowRight className="w-5 h-5" />
-            </Link>
-            <Link href="/compare" className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200">
-              See full comparison
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 px-4 border-t border-slate-900">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl font-black text-center mb-4">Cornerstone PM vs Buildertrend</h2>
-          <p className="text-center text-slate-400 mb-12">Side-by-side, focused on what matters for production builders.</p>
-          <div className="overflow-x-auto rounded-2xl border border-slate-800">
-            <table className="w-full">
-              <thead className="bg-slate-900/60">
-                <tr>
-                  <th className="text-left px-6 py-4 text-slate-400 text-sm font-semibold uppercase tracking-widest">Feature</th>
-                  <th className="px-4 py-4 text-cyan-400 text-sm font-bold text-center">Cornerstone PM</th>
-                  <th className="px-4 py-4 text-slate-400 text-sm font-bold text-center">Buildertrend</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-800">
-                {comparisonRows.map((row) => (
-                  <tr key={row.feature} className="hover:bg-slate-900/30">
-                    <td className="px-6 py-4">
-                      <div className="text-white font-medium">{row.feature}</div>
-                      {row.note && <div className="text-slate-500 text-xs mt-1">{row.note}</div>}
-                    </td>
-                    <td className="px-4 py-4 text-center"><div className="flex justify-center"><CheckOrX value={row.cornerstone} /></div></td>
-                    <td className="px-4 py-4 text-center"><div className="flex justify-center"><CheckOrX value={row.buildertrend} /></div></td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="max-w-5xl mx-auto mt-4 text-[11px] text-slate-600 leading-relaxed">
-            Pricing and feature availability reflect publicly available information as of November 2026. Verify current pricing and capabilities directly with each vendor. Buildertrend® is a trademark of its respective owner; Cornerstone PM is not affiliated with or endorsed by Buildertrend.
-          </p>
-        </div>
-      </section>
-
-      <section className="py-20 px-4 border-t border-slate-900">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-black text-center mb-12">Why production builders switch</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { title: "Production workflows native", desc: "Lots, models, options, plan repeats, design center, draws &mdash; first-class concepts, not workarounds. Buildertrend treats every job as one-off." },
-              { title: "AI built in", desc: "Foreman AI (45+ skills) and Blueprint AI ship with the platform. No bolt-on plugins, no third-party AI subscriptions, no setup." },
-              { title: "REST API + BYOA", desc: "59 endpoints, 30 webhook events, scoped auth, public docs. Bring your own Claude or ChatGPT agent against your live data." },
-            ].map((card) => (
-              <div key={card.title} className="p-6 rounded-2xl border border-slate-800 bg-slate-900/40">
-                <div className="text-cyan-400 font-bold mb-3">{card.title}</div>
-                <p className="text-slate-400 text-sm leading-relaxed">{card.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Migration Wizard CTA — high-intent placement for Buildertrend switchers */}
-      <section className="py-16 px-4 border-t border-slate-900">
-        <div className="max-w-5xl mx-auto">
-          <div className="rounded-3xl border border-violet-500/30 bg-gradient-to-br from-violet-500/[0.08] via-slate-900/40 to-slate-900/40 p-8 sm:p-10 relative overflow-hidden">
-            <div className="absolute -top-24 -right-24 w-72 h-72 bg-violet-500/15 blur-3xl rounded-full pointer-events-none" />
-            <div className="relative z-10 flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-10">
-              <div className="flex-1">
-                <div className="inline-flex items-center gap-2 mb-4">
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-violet-500/15 border border-violet-500/30 text-violet-300 text-xs font-bold uppercase tracking-widest">
-                    AI Migration Wizard
-                  </span>
-                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-amber-500/15 border border-amber-500/40 text-amber-300 text-[10px] font-bold uppercase tracking-widest">
-                    Beta
-                  </span>
-                </div>
-                <h2 className="text-2xl sm:text-3xl font-black mb-3 leading-tight">
-                  Already using Buildertrend? <span className="text-violet-400">Drop your export. We'll do the rest.</span>
-                </h2>
-                <p className="text-slate-300 leading-relaxed mb-2">
-                  Export your Buildertrend data, drag the ZIP into our wizard, and AI auto-maps every column across
-                  vendors, homes, communities, users, leads, tasks, and POs. Dry-run before you commit. Free.
-                </p>
-                <p className="text-slate-500 text-sm">
-                  Costs about $0.002 per file in AI — we absorb it. You pay zero.
-                </p>
-              </div>
-              <div className="flex-shrink-0">
-                <Link
-                  href="/migrate"
-                  className="inline-flex items-center gap-2 px-7 py-4 rounded-xl bg-gradient-to-r from-violet-500 to-violet-400 text-slate-900 font-bold hover:from-violet-400 hover:to-violet-300 shadow-lg shadow-violet-500/25 transition-all duration-200 whitespace-nowrap"
-                >
-                  See the Migration Wizard <ArrowRight className="w-5 h-5" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <FAQSection
-        title="Buildertrend Alternative FAQ"
-        subtitle="Common questions about switching to Cornerstone PM from Buildertrend."
-        items={faqItems}
-      />
-
-      <section className="py-20 px-4 text-center border-t border-slate-800/60">
-        <h2 className="text-4xl font-black mb-4">Ready to switch?</h2>
-        <p className="text-slate-400 text-lg mb-8 max-w-xl mx-auto">
-          Join the beta and get 2 years free. Migration tooling included.
-        </p>
-        <Link href="/beta" className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-cyan-400 text-slate-900 font-bold text-lg hover:bg-cyan-300 transition-all duration-200 shadow-lg shadow-cyan-500/30">
-          Request Early Access <ArrowRight className="w-5 h-5" />
-        </Link>
-      </section>
-
-      <Footer />
-    </div>
+    <AlternativePageTemplate
+      competitorName="Buildertrend"
+      badgeLabel="Buildertrend Alternative"
+      heroLine1="Built for production builders."
+      heroLine2="Not custom and remodel."
+      accentColor="cyan"
+      heroParagraph="Cornerstone PM is the Buildertrend alternative for production home builders. Native AI agents, options engine, floorplan pricing matrix, multi-community pipelines, 30 webhook events, and a public REST API — from $149/mo with unlimited users."
+      secondaryCTA={{ text: "See full comparison", href: "/compare" }}
+      comparisonSubtitle="Side-by-side, focused on what matters for production builders."
+      comparisonRows={comparisonRows}
+      trademarkName="Buildertrend"
+      whySwitchHeadline="Why production builders switch from Buildertrend"
+      whySwitchCards={whySwitchCards}
+      showMigrationCTA={true}
+      migrationHeadline="Already using Buildertrend? Drop your export. We'll do the rest."
+      migrationDesc="Export your Buildertrend data, drag the ZIP into our wizard, and AI auto-maps every column across vendors, homes, communities, users, leads, tasks, and POs. Dry-run before you commit. Free."
+      faqTitle="Buildertrend Alternative FAQ"
+      faqSubtitle="Common questions about switching to Cornerstone PM from Buildertrend."
+      faqItems={faqItems}
+      footerHeadline="Ready to switch from Buildertrend?"
+      footerSubtext="Join the beta and get 2 years free. Migration tooling included."
+      relatedPages={[
+        { text: "vs BuildPro", href: "/buildpro-alternative" },
+        { text: "vs NEWSTAR", href: "/newstar-alternative" },
+        { text: "vs JobTread", href: "/jobtread-alternative" },
+        { text: "vs CoConstruct", href: "/coconstruct-alternative" },
+        { text: "Full comparison matrix", href: "/compare" },
+      ]}
+    />
   );
 }
