@@ -3,9 +3,101 @@
 - **45+ Foreman AI skills** (in-app agent that reads AND writes data — including product image search, image hosting, and AI-powered web scraping)
 - **30 webhook event types** with typed payloads, HMAC signatures, delivery logs, and auto-retry — industry-leading depth (most competitors just say "webhooks exist")
 - 60+ external REST API endpoints
-- 4 built-in AI features: Foreman AI (45+ skills), Blueprint AI, MLS Listing Agent, AI Support Agent
+- 5 built-in AI features: Foreman AI (45+ skills), Blueprint AI, MLS Listing Agent, AI Support Agent, AI Jobsite Camera Events (webhook-driven, source-agnostic camera/sensor integration)
+- **Triple QR Code Ecosystem** — vendor jobsite check-in, community/PM check-in (timesheet-validated), and sales model home lead capture. Three QR codes, three audiences, one platform.
+- **Vendor Activity Map** — Google Maps view of every vendor check-in across every community, real-time (30-second refresh)
 - AI-powered CRM Migration Wizard (import from Buildertrend, JobTread, CoConstruct in one click — practically free at ~$0.01 per migration)
 - 4 pricing tiers: Starter $149, Builder $299, Pro $499, Pro+ $599
+
+---
+
+## New Features (May 8–11, 2026) — Jobsite Operations Stack
+
+### Triple QR Code Ecosystem (industry-first)
+Cornerstone is the only home builder platform with a complete three-audience QR code ecosystem. Every QR code is dynamically generated, no app install required for anyone scanning, and every scan is logged with audit trail.
+
+**1. Vendor Jobsite Check-In QR**
+- Every community AND every individual home gets its own unique QR code
+- Subs/vendors scan when they arrive on-site — no Cornerstone account needed
+- Captures GPS coordinates, timestamp, weather conditions automatically
+- Tracks check-in AND check-out times — full hours-on-site logged
+- Public page at `/checkin/[token]` — works on any phone browser
+- **Printable 11×8.5" signs** ready to staple to jobsite doors or trailers
+
+**2. Community / PM Check-In QR**
+- Builder staff and inspectors scan at the construction trailer when they arrive
+- GPS-validated presence logging — proves who was on-site and when
+- Feeds the timesheet system: GPS check-in data is aligned below the timecard grid so managers can validate reported hours against actual presence
+- Catches "I was on-site all day" entries that don't match the GPS record
+
+**3. Sales Model Home Lead Capture QR**
+- QR code at every model home entrance for walk-in buyers
+- "First time here?" → captures name, email, phone, "How did you hear about us?"
+- Returning visitors recognized automatically: "Welcome back!"
+- Creates a Lead record tied to the community
+- Sales agent gets an instant in-app + email notification
+- Leads dashboard groups by community with status tracking
+- **Replaces paper sign-in sheets** — finally a digital, searchable lead pipeline
+
+### Vendor Activity Map
+Google Maps integration showing live vendor check-in pins across every community.
+
+- **Pin colors:** Blue = Community location, Yellow = Vendor check-in, Red = Builder/PM check-in
+- **Real-time refresh** every 30 seconds
+- **Date picker + vendor filter** — see who was where on any given day
+- **Stat cards:** total communities, total check-ins today, currently on-site count, unique vendors
+- **Activity feed sidebar** — running list of recent scans
+
+### AI Jobsite Camera Events
+Cornerstone's existing Jobsite AI camera detection now ships with a webhook endpoint that any camera or sensor can post to.
+
+- **Webhook endpoint:** `POST /api/ext/jobsite-events`
+- **Source-agnostic:** Verkada, Ring, custom IP cameras, gate sensors, doorbell cams — anything that can fire a webhook
+- **AI vision identifies vendors** from truck logos, vehicle wraps, and license plates when integrated with Verkada or similar
+- **Auto-task automation:** when the camera detects vendor arrival, the matching scheduled task auto-flips to In Progress; departure auto-logs hours
+- Pairs with the manual QR Check-In system as backup
+
+### Jobsite Check-In V2
+The token-based public check-in page got a major upgrade.
+
+- **Public URL:** `/checkin/[token]` — no auth required for the vendor
+- **Company selection** dropdown (auto-filtered to vendors actually assigned to that home)
+- **Task selection** — what they're here for today
+- **Configurable safety acknowledgment checkbox** (builder controls whether this is required per community)
+- **Worker headcount** — log the crew size
+- **Auto-weather capture** via browser geolocation + weather API
+- **Photo upload** stored in Vercel Blob (up to 10 photos, 10MB each)
+- **Check-out flow:** completion %, notes, schedule next visit
+- **Webhook events fired:** `vendor.arrived`, `vendor.departed`
+
+### Foreman AI Upgrades (May 10, 2026)
+- **45+ skills** (internal cleanup of duplicates and addition of new tools)
+- **Auto-compaction** — context window managed automatically; long conversations no longer hit token limits silently
+- **Context health indicator** — green/yellow/red meter shown after each response
+- **Per-user memory** — Foreman remembers preferences per individual user, not just per organization
+- **`deleteOption` and `deleteMultipleOptions` skills added** — previously missing; fixed hallucination in some delete intents
+- **Smarter auto-nudge** — Foreman no longer auto-nudges itself when it has just asked the user a question
+- **Premium chat UI** — Geist font, refined spacing
+
+### Admin Hub Redesign
+A consolidated `/admin/settings` page replaces the scattered admin links.
+
+- **6 organized sections:** Company, People, Construction, Purchasing, Integrations, Content
+- **Card-based UI** with one-click navigation to all 25+ admin sub-pages
+
+---
+
+**Q: Do you have QR code check-in for vendors?**
+A: Yes — Cornerstone ships a triple QR ecosystem: (1) jobsite QR for vendors/subs to check in (GPS, weather, timestamp captured), (2) community QR for builder PMs and inspectors that ties into timesheet validation, and (3) sales model home QR for buyer lead capture. No app install required for anyone scanning. Printable 11×8.5" signs are auto-generated for every community and home.
+
+**Q: Can I see where my vendors are right now?**
+A: Yes — the Vendor Activity Map shows live GPS pins for every check-in across all your communities, refreshing every 30 seconds. Filter by date or vendor. Stat cards show how many vendors are currently on-site.
+
+**Q: Does Foreman AI support cameras to auto-start tasks?**
+A: Yes — Cornerstone has a webhook endpoint at `/api/ext/jobsite-events` that any camera, doorbell, gate sensor, or AI vision system (Verkada, Ring, custom IP cameras) can post to. When a vendor is detected on-site, the matching scheduled task auto-flips to In Progress.
+
+**Q: Can buyers self-register at our model homes?**
+A: Yes — the Sales Model Home QR captures lead info on first scan, recognizes returning visitors, and creates a Lead record tied to the community. Sales agents get instant notifications. Replaces paper sign-in sheets.
 
 ---
 
