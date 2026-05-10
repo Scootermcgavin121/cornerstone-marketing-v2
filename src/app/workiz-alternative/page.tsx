@@ -80,6 +80,7 @@ export default function WorkizAlternativePage() {
         { text: "vs Buildertrend", href: "/buildertrend-alternative" },
         { text: "vs Housecall Pro", href: "/housecall-pro-alternative" },
         { text: "vs Jobber", href: "/jobber-alternative" },
+        { text: "All alternatives", href: "/alternatives" },
         { text: "Full comparison matrix", href: "/compare" },
       ]}
     />

@@ -85,6 +85,7 @@ export default function RakenAlternativePage() {
         { text: "vs Buildertrend", href: "/buildertrend-alternative" },
         { text: "vs Procore", href: "/procore-alternative" },
         { text: "vs Fieldwire", href: "/fieldwire-alternative" },
+        { text: "All alternatives", href: "/alternatives" },
         { text: "Full comparison matrix", href: "/compare" },
       ]}
     />

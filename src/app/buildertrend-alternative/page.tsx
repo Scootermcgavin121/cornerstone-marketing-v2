@@ -99,6 +99,7 @@ export default function BuildertrendAlternativePage() {
         { text: "vs NEWSTAR", href: "/newstar-alternative" },
         { text: "vs JobTread", href: "/jobtread-alternative" },
         { text: "vs CoConstruct", href: "/coconstruct-alternative" },
+        { text: "All alternatives", href: "/alternatives" },
         { text: "Full comparison matrix", href: "/compare" },
       ]}
     />

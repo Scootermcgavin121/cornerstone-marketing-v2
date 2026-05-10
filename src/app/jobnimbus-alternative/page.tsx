@@ -85,6 +85,7 @@ export default function JobnimbusAlternativePage() {
         { text: "vs Buildertrend", href: "/buildertrend-alternative" },
         { text: "vs JobTread", href: "/jobtread-alternative" },
         { text: "vs Jobber", href: "/jobber-alternative" },
+        { text: "All alternatives", href: "/alternatives" },
         { text: "Full comparison matrix", href: "/compare" },
       ]}
     />

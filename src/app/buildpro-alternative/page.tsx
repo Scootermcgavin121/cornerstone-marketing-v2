@@ -98,6 +98,7 @@ export default function BuildProAlternativePage() {
         { text: "vs NEWSTAR", href: "/newstar-alternative" },
         { text: "vs Buildertrend", href: "/buildertrend-alternative" },
         { text: "vs JobTread", href: "/jobtread-alternative" },
+        { text: "All alternatives", href: "/alternatives" },
         { text: "Full comparison matrix", href: "/compare" },
       ]}
     />

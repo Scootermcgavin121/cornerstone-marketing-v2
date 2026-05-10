@@ -101,6 +101,7 @@ export default function ContractorForemanAlternativePage() {
         { text: "vs Buildertrend", href: "/buildertrend-alternative" },
         { text: "vs JobTread", href: "/jobtread-alternative" },
         { text: "vs Projul", href: "/projul-alternative" },
+        { text: "All alternatives", href: "/alternatives" },
         { text: "Full comparison matrix", href: "/compare" },
       ]}
     />

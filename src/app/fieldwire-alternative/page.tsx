@@ -86,6 +86,7 @@ export default function FieldwireAlternativePage() {
         { text: "vs Procore", href: "/procore-alternative" },
         { text: "vs Buildertrend", href: "/buildertrend-alternative" },
         { text: "vs Raken", href: "/raken-alternative" },
+        { text: "All alternatives", href: "/alternatives" },
         { text: "Full comparison matrix", href: "/compare" },
       ]}
     />

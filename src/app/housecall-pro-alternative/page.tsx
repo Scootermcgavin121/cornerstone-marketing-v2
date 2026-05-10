@@ -84,6 +84,7 @@ export default function HousecallProAlternativePage() {
         { text: "vs Buildertrend", href: "/buildertrend-alternative" },
         { text: "vs Jobber", href: "/jobber-alternative" },
         { text: "vs JobNimbus", href: "/jobnimbus-alternative" },
+        { text: "All alternatives", href: "/alternatives" },
         { text: "Full comparison matrix", href: "/compare" },
       ]}
     />
