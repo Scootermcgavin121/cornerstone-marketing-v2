@@ -85,9 +85,10 @@ const skillCategories = [
     bg: "bg-violet-500/10",
     border: "border-violet-500/20",
     label: "System Intelligence",
-    count: "10+",
-    desc: "The behaviors that make Foreman actually useful — memory compaction, persistent memory, bulk operations, deduplication, smart linking, error recovery.",
+    count: "11+",
+    desc: "The behaviors that make Foreman actually useful — user memory, memory compaction, persistent memory, bulk operations, deduplication, smart linking, error recovery.",
     skills: [
+      { name: "User Memory", detail: "Tell Foreman about yourself — your name, role, preferences, favorite vendors. It remembers you across every conversation and gets more personal over time." },
       { name: "Memory Compaction", detail: "Auto-summarizes older messages mid-session so marathon work doesn't crash or forget. Recent context stays word-for-word intact." },
       { name: "Context Health Meter", detail: "Green/yellow/red indicator in the chat UI shows remaining capacity at a glance" },
       { name: "Persistent Memory", detail: "Saves preferences and decisions across sessions — gets smarter over time" },
