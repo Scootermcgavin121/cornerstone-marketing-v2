@@ -72,6 +72,7 @@ export function Footer() {
             <ul className="space-y-2">
               {[
                 { label: "Features", href: "/features" },
+                { label: "Jobsite Command Center", href: "/qr" },
                 { label: "Foreman AI™", href: "/foreman" },
                 { label: "API Access", href: "/api-access" },
                 { label: "Pricing", href: "/#pricing" },

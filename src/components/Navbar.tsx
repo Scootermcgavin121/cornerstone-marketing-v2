@@ -25,6 +25,7 @@ const navLinks = [
 // Standard product features (left column of dropdown)
 const featureLinks = [
   { label: "All Features", href: "/features", desc: "Everything included in every plan" },
+  { label: "Jobsite Command Center", href: "/qr", desc: "Live QR check-ins, vendor map, real-time activity feed" },
   { label: "Construction Scheduling", href: "/construction", desc: "Gantt charts, vendors, notifications" },
   { label: "Purchasing & Budgets", href: "/purchasing", desc: "Takeoffs, POs, bid management" },
   { label: "Sales Pipeline", href: "/sales", desc: "60-second home sale, buyer tracking" },
