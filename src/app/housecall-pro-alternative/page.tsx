@@ -45,7 +45,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What does Cornerstone PM have that Housecall Pro doesn't?",
-    a: "For home builders: structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, pre-sale design center with 64 Designer Packages curated by an actual interior designer, Blueprint AI floor plan takeoffs, Foreman AI with 45+ skills (Pro $499/mo), 30+ named webhook events (Pro+), public REST API (Pro+), vendor portal with no login required, and free database export (CSV/JSON).",
+    a: "For home builders: structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, pre-sale design center with 64 Designer Packages curated by an actual interior designer, Blueprint AI floor plan takeoffs, Foreman AI with 45+ skills (Pro $499/mo), 30+ named webhook events (Pro+), public REST API (Pro+), a no-login vendor portal (vendors confirm tasks, accept schedule changes, and submit bids via email magic links — no app, no account, no password), and one-click full database export (CSV/JSON).",
   },
   {
     q: "Can I migrate my Housecall Pro data to Cornerstone PM?",

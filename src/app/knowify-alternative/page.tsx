@@ -23,7 +23,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Take your data with you anytime â€” no lock-in", cornerstone: true, competitor: false, note: "Your data is YOURS. Full database export to CSV or JSON anytime, one click, $0, no fees, no waiting on a support ticket. Nightly auto-backups retained 7 days for instant rollback. If you ever leave us, you leave with everything â€” vendors, homes, schedules, options, budgets, every line. No strings attached." },
   { feature: "AI Migration Wizard", cornerstone: true, competitor: false, note: "AI auto-detects column mapping and runs 23 import endpoints." },
   { feature: "Homeowner portal", cornerstone: true, competitor: false, note: "Buyer-facing milestone, selection, and document views for new construction." },
-  { feature: "Vendor portal (bid management)", cornerstone: true, competitor: false, note: "7-wave automated bidding pipeline + vendor portal (no login required)." },
+  { feature: "Vendor portal — no login required (email magic links)", cornerstone: true, competitor: false, note: "7-wave automated bidding pipeline + a no-login vendor portal: vendors confirm tasks, accept schedule changes, and submit bids via secure email magic links — no app, no account, no password." },
   { feature: "Job costing / T&M billing", cornerstone: "limited", competitor: true, note: "Knowify is strong at time-and-material billing for subcontractors. Cornerstone handles builder cost tracking, not T&M invoicing to GCs." },
   { feature: "Pricing model", cornerstone: "Flat, unlimited users", competitor: "Per-user base", note: "Knowify Core starts at $99/mo (annual) for 1 base user; Advanced at $249/mo. Cornerstone is flat at every tier, unlimited users from $149. More importantly: Knowify is built for subs billing to GCs -- it doesn't ship an options engine, floorplan pricing matrix, multi-community pipelines, or home-builder AI at any price." },
   { feature: "Cornerstone tiers (flat, unlimited users)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30+ named webhook events, 7-wave bidding." },
@@ -50,7 +50,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Does Cornerstone PM handle subcontractor scheduling?",
-    a: "Yes. Cornerstone PM includes construction scheduling with vendor notifications, cascade scheduling, and trade-specific scope assignment. Vendors receive automated notifications, access a no-login vendor portal for bid submission, and get schedule updates via 30+ webhook events that can trigger SMS or voice calls.",
+    a: "Yes. Cornerstone PM includes construction scheduling with vendor notifications, cascade scheduling, and trade-specific scope assignment. Vendors receive automated notifications and confirm tasks, accept schedule changes, and submit bids — all via secure magic links sent to their email. No app, no account, no password. They get schedule updates via 30+ webhook events that can also trigger SMS or voice calls.",
   },
   {
     q: "How does Knowify pricing compare to Cornerstone?",

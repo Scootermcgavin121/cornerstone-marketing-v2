@@ -71,7 +71,7 @@ const categories: FeatureCategory[] = [
       { feature: "Purchase orders", bt: "yes", cp: "yes" },
       { feature: "Vendor bid requests", bt: "partial", cp: "yes" },
       { feature: "Auto-generated Excel bid templates", bt: "no", cp: "yes" },
-      { feature: "Vendor portal (no-login bid submission)", bt: "no", cp: "yes" },
+      { feature: "Vendor portal — magic links, no login required (confirm tasks + bids)", bt: "no", cp: "yes" },
       { feature: "Bid tracking (Invited → Submitted → Declined)", bt: "no", cp: "yes" },
       { feature: "Side-by-side bid comparison", bt: "no", cp: "yes" },
       { feature: "Community-level vendor assignments", bt: "no", cp: "yes" },
@@ -133,7 +133,7 @@ const faqs: FAQItem[] = [
   },
   {
     q: "Does Cornerstone PM have vendor bidding?",
-    a: "Yes, and it goes further than most platforms. Cornerstone PM includes bid requests, auto-generated Excel bid templates scoped to each trade, a vendor portal requiring no login, bid status tracking (Invited → Viewed → Submitted → Declined), and side-by-side comparison when multiple vendors respond.",
+    a: "Yes, and it goes further than most platforms. Cornerstone PM includes bid requests, auto-generated Excel bid templates scoped to each trade, a vendor portal where subs confirm tasks, accept schedule changes, and submit bids via secure email magic links — no account, no app, no password — bid status tracking (Invited → Viewed → Submitted → Declined), and side-by-side comparison when multiple vendors respond.",
   },
   {
     q: "Can I migrate from Buildertrend to Cornerstone PM?",

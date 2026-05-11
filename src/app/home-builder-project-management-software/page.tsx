@@ -14,7 +14,7 @@ export const metadata = {
 const modules = [
   { name: "Construction Scheduling", href: "/construction", desc: "Auto-cascading dependencies, Gantt charts, foundation-aware templates, vendor email confirmations.", color: "amber" },
   { name: "New Home Sales Pipeline", href: "/sales", desc: "Floorplan pricing matrix, structural options engine, 60-second new home sale workflow.", color: "cyan" },
-  { name: "Purchasing & Bids", href: "/purchasing", desc: "Parts catalog, scope-item bid drill-down, community-assigned vendor wins, lock-after-acceptance, vendor portal scope editing, 7-wave bidding pipeline.", color: "emerald" },
+  { name: "Purchasing & Bids", href: "/purchasing", desc: "Parts catalog, scope-item bid drill-down, community-assigned vendor wins, lock-after-acceptance, no-login vendor portal (magic-link access, vendors confirm tasks + edit scope items without an account), 7-wave bidding pipeline.", color: "emerald" },
   { name: "Design Center", href: "/design", desc: "Room-by-room selections, allowance tracking, options engine with real-time price rollup.", color: "violet" },
   { name: "Permitting", href: "/permitting", desc: "Permit gates, phase blocking, inspection tracking, automated reminders across the build.", color: "orange" },
   { name: "Foreman AI", href: "/foreman", desc: "45+ AI skills across 7 domains. Plain-English commands against live builder data.", color: "blue" },

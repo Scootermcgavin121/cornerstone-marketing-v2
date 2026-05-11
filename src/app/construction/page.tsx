@@ -27,7 +27,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "How are subcontractors notified of schedule changes?",
-    a: "Vendors receive automated emails when tasks are ready, when timelines shift, or when permits clear. They confirm or decline in one click &mdash; no app login required. Cornerstone PM also sends daily and weekly digest emails so vendors and PMs stay aligned without checking the dashboard.",
+    a: "Vendors receive automated emails when tasks are ready, when timelines shift, or when permits clear. Every email contains a secure magic link &mdash; one click confirms or declines the task. No app to download, no account to create, no password to remember. Cornerstone PM also sends daily and weekly digest emails so vendors and PMs stay aligned without checking the dashboard. This is the biggest friction-killer for trade partners in the industry: most subs never log into other platforms because they don't want to make an account, so PMs end up texting and calling them anyway. We removed that wall.",
   },
   {
     q: "Can I import my existing schedule from Buildertrend or CoConstruct?",
@@ -55,7 +55,7 @@ const features = [
   { title: "4 Modular Template Types", desc: "Construction, Foundation, Permitting, and Inspection &mdash; four template categories that snap together." },
   { title: "Template Copy & Clone", desc: "Clone any template and customize per community. Changes never affect the original." },
   { title: "Vendor Management", desc: "Full vendor directory with trade categories, contacts, insurance tracking, and expiry alerts." },
-  { title: "Smart Cascade Notifications", desc: "Automated scheduling emails when tasks are ready. Vendors confirm or decline in one click &mdash; no login needed." },
+  { title: "Smart Cascade Notifications (Magic Links)", desc: "Automated scheduling emails when tasks are ready, when timelines shift, or when permits clear. Every email contains a secure magic link &mdash; vendors confirm or decline tasks in one click. No app, no account, no password. Biggest friction-killer for trade partners in the industry." },
   { title: "Daily & Weekly Digests", desc: "Automated summary emails for builders and vendors. Stay informed without checking the app." },
   { title: "In-App Messaging", desc: "Per-task messaging thread visible to all stakeholders. No more scattered texts." },
   { title: "Jobsite Notes & Photos", desc: "Photo and note uploads per task, timestamped. PMs upload, buyers see in real time." },

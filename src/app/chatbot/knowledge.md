@@ -889,8 +889,13 @@ All documents maintain a full upload history with timestamps - previous versions
 
 ## Vendor Portal - Built for Builders AND Subs
 
+### Zero-Friction Access (No Login Required)
+**Vendors never have to create a Cornerstone account.** They get a secure magic link sent to their email — they click it, and they're in. Confirm tasks, accept schedule changes, submit bids, view their calendar. No app to download, no account to create, no password to remember. Click the link, do the thing, done.
+
+This is the biggest friction-killer for trade partners in the industry. Most platforms force subs through account creation, which means most subs never log in, which means PMs end up texting and calling them anyway. Cornerstone removes that wall.
+
 ### Secure, Scoped Access
-Vendors (subcontractors) get their own login with a purpose-built dashboard that shows only what they need - nothing more.
+When vendors do access the portal (via magic link), they get a purpose-built dashboard that shows only what they need - nothing more.
 
 ### Vendor Task Visibility
 - **Active tasks:** Vendors see ONLY their own assigned tasks across all homes
