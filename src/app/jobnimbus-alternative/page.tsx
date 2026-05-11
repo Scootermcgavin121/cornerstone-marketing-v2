@@ -5,35 +5,34 @@ import type { FAQItem } from "@/components/FAQSection";
 export const metadata = {
   title: "JobNimbus Alternative for Home Builders | Cornerstone PM",
   description:
-    "JobNimbus is built for roofing and restoration. Cornerstone PM is the alternative for home builders — AI agents (Pro $499/mo), options engine, and multi-community management from $149/mo.",
+    "JobNimbus is built for roofing and restoration. Cornerstone PM is the alternative for home builders -- AI agents (Pro $499/mo), options engine, and multi-community management from $149/mo.",
   alternates: { canonical: "https://www.cornerstonepm.ai/jobnimbus-alternative" },
 };
 
 const comparisonRows: ComparisonRow[] = [
-  { feature: "Built for home builders", cornerstone: true, competitor: false, note: "JobNimbus is built for roofing, restoration, and home improvement contractors. Cornerstone PM is purpose-built for home builders — production, semi-custom, and custom — with lot management, options engine, and multi-community pipelines that roofing CRMs don't offer." },
-  { feature: "Structural options engine", cornerstone: true, competitor: false, note: "Pre-sale options pricing matrix per floorplan — Cornerstone Builder ($299/mo). Not a JobNimbus feature." },
+  { feature: "Built for home builders", cornerstone: true, competitor: false, note: "JobNimbus is built for roofing, restoration, and home improvement contractors. Cornerstone PM is purpose-built for home builders -- production, semi-custom, and custom -- with lot management, options engine, and multi-community pipelines that roofing CRMs don't offer." },
+  { feature: "Structural options engine", cornerstone: true, competitor: false, note: "Pre-sale options pricing matrix per floorplan -- Cornerstone Builder ($299/mo). Not a JobNimbus feature." },
   { feature: "Floorplan pricing matrix", cornerstone: true, competitor: false, note: "Per-community floorplan pricing. Cornerstone Builder+." },
   { feature: "Multi-community lot management", cornerstone: true, competitor: false, note: "Native multi-community pipeline. JobNimbus is job-centric, not community-centric." },
-  { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Packages curated by an actual interior designer — the same playbook K. Hovnanian Homes uses. Buyer design center. Cornerstone Builder+." },
-  { feature: "Native AI agents (Foreman AI — 45+ skills)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro ($499/mo): Foreman AI reads AND writes construction data — 45+ skills. Blueprint AI: PDF to takeoff in 60 seconds. JobNimbus Scout (beta) is an in-app AI assistant with limited action-taking capability, focused on roofing/restoration workflows." },
-  { feature: "AI image search + anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images and reads supplier product pages with AI-powered web scraping. Cornerstone Pro feature." },
-  { feature: "30 webhook events (full named catalog)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): 30 named events, HMAC signatures, auto-retry. JobNimbus has webhook support but no named construction event catalog." },
+  { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Packages curated by an actual interior designer -- the same playbook K. Hovnanian Homes uses. Buyer design center. Cornerstone Builder+." },
+  { feature: "Native AI agents (Foreman AI -- 45+ skills)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro ($499/mo): Foreman AI reads AND writes construction data -- 45+ skills. Blueprint AI: PDF to takeoff in 60 seconds. JobNimbus Scout (beta) is an in-app AI assistant with limited action-taking capability, focused on roofing/restoration workflows." },
+  { feature: "AI image search, vision & anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, hosts them on CDN, reads supplier product pages with AI-powered web scraping. Plus: paste or drag-drop any screenshot from inside the app and Foreman reads it with AI vision and acts on it. Cornerstone Pro feature." },
+  { feature: "30+ named webhook events (catalog growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): 30+ named events and counting -- typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. JobNimbus has webhook support but no named construction event catalog." },
   { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): wire Claude or ChatGPT to your live construction data." },
-  { feature: "Public REST API", cornerstone: true, competitor: true, note: "Both include unlimited API & webhooks. JobNimbus includes API access on all plans. Cornerstone Pro+: 59 endpoints, public docs, typed webhook payload schemas." },
+  { feature: "Public REST API", cornerstone: true, competitor: true, note: "Both include API access. JobNimbus includes unlimited API & webhooks on all plans. Cornerstone Pro+: 59 endpoints, public docs, typed webhook payload schemas -- purpose-built for construction management workflows." },
   { feature: "Free database export (CSV / JSON)", cornerstone: true, competitor: false, note: "Download your full data anytime. Nightly auto-backups." },
   { feature: "AI Migration Wizard", cornerstone: true, competitor: false, note: "AI auto-detects column mapping and runs 23 import endpoints." },
   { feature: "CRM / Lead pipeline", cornerstone: true, competitor: true, note: "Both include CRM and lead management." },
   { feature: "Construction scheduling", cornerstone: true, competitor: "limited", note: "Cornerstone: full Gantt, dependencies, cascade scheduling. JobNimbus: basic job scheduling, not construction-schedule focused." },
-  { feature: "Roofing / insurance claim workflows", cornerstone: false, competitor: true, note: "JobNimbus specializes in insurance claim management and roofing workflows — not a home builder need." },
-  { feature: "Starter price", cornerstone: "$149/mo", competitor: "Custom quote", note: "Cornerstone Starter: scheduling, permits, homeowner portal — unlimited users. JobNimbus does not publish public pricing; contact for a quote based on user count and plan tier." },
-  { feature: "Full platform price (Builder)", cornerstone: "$299/mo", competitor: "Custom quote", note: "Cornerstone Builder ($299/mo) adds options engine, design center, sales pipeline — home-builder native. JobNimbus has no options engine or design center." },
-  { feature: "Price at full AI tier (Pro)", cornerstone: "$499/mo", competitor: "Custom quote", note: "Cornerstone Pro ($499/mo) adds Foreman AI (45+ skills) + Blueprint AI — flat, unlimited users. Foreman AI is NOT on Starter or Builder." },
+  { feature: "Roofing / insurance claim workflows", cornerstone: false, competitor: true, note: "JobNimbus specializes in insurance claim management and roofing workflows -- not a home builder need." },
+  { feature: "Pricing model", cornerstone: "Flat, unlimited users", competitor: "Custom quote", note: "JobNimbus does not publish public pricing -- contact for a quote. Cornerstone is flat at every tier. More importantly: JobNimbus is built for roofing and restoration -- it doesn't ship an options engine, floorplan pricing matrix, multi-community pipelines, or home-builder AI at any price." },
+  { feature: "Cornerstone tiers (flat, unlimited users)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30+ named webhook events, 7-wave bidding." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
-  { title: "Built for home builders, not roofers", desc: "JobNimbus excels at roofing and restoration. Cornerstone is purpose-built for home builders: lot management, floorplan pricing (Builder $299/mo), options engine, design center, draw schedules — concepts that don't exist in JobNimbus." },
-  { title: "Action-taking AI on Pro — 45+ skills", desc: "Foreman AI (Cornerstone Pro, $499/mo) reads AND writes your data. Blueprint AI converts floor plans to takeoffs. AI image search, anti-bot web scraping. Per-user memory. JobNimbus Scout is in beta and roofing-focused." },
-  { title: "Unlimited users, full platform", desc: "Scheduling from $149, purchasing, bid management, homeowner portal, design center (Builder $299), REST API + 30 webhook events (Pro+ $599) — all in one platform with unlimited users on every tier." },
+  { title: "Built for home builders, not roofers", desc: "JobNimbus excels at roofing and restoration. Cornerstone is purpose-built for home builders: lot management, floorplan pricing (Builder $299/mo), options engine, design center, draw schedules -- concepts that don't exist in JobNimbus." },
+  { title: "Action-taking AI on Pro -- 45+ skills", desc: "Foreman AI (Cornerstone Pro, $499/mo) reads AND writes your data. Blueprint AI converts floor plans to takeoffs. AI image search, vision, anti-bot web scraping. Per-user memory. JobNimbus Scout is in beta and roofing-focused." },
+  { title: "Unlimited users, full platform", desc: "Scheduling from $149, purchasing, bid management, homeowner portal, design center (Builder $299), REST API + 30+ named webhook events (Pro+ $599) -- all in one platform with unlimited users on every tier." },
 ];
 
 const faqItems: FAQItem[] = [
@@ -43,15 +42,15 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What's the best JobNimbus alternative for home builders?",
-    a: "Cornerstone PM is the purpose-built alternative for home builders. It includes CRM, scheduling, purchasing, bid management, homeowner portal, and document management — plus a structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, and native AI agents (Foreman AI 45+ skills on Pro $499/mo, Blueprint AI) that JobNimbus doesn't offer.",
+    a: "Cornerstone PM is the purpose-built alternative for home builders. It includes CRM, scheduling, purchasing, bid management, homeowner portal, and document management -- plus a structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, and native AI agents (Foreman AI 45+ skills on Pro $499/mo, Blueprint AI) that JobNimbus doesn't offer.",
   },
   {
     q: "Does JobNimbus have AI features?",
-    a: "JobNimbus Scout (beta) is an in-app AI assistant designed for roofing and restoration contractors. Cornerstone's Foreman AI (Pro $499/mo) is a native agent with 45+ purpose-built construction skills that takes real actions — creates purchase orders, updates design options, generates scope-of-work documents, runs bid comparisons, scrapes vendor product pages, and remembers preferences across sessions. Different markets, different capabilities.",
+    a: "JobNimbus Scout (beta) is an in-app AI assistant designed for roofing and restoration contractors. Cornerstone's Foreman AI (Pro $499/mo) is a native agent with 45+ purpose-built construction skills that takes real actions -- creates purchase orders, updates design options, generates scope-of-work documents, runs bid comparisons, scrapes vendor product pages, analyzes screenshots with AI vision, and remembers preferences across sessions. Different markets, different capabilities.",
   },
   {
     q: "Can I migrate from JobNimbus to Cornerstone PM?",
-    a: "Yes. The AI Migration Wizard reads your JobNimbus data exports, auto-detects column mapping, and runs 23 import endpoints. Most migrations complete in under a day. ~$0.01 per migration in AI cost — we absorb it.",
+    a: "Yes. The AI Migration Wizard reads your JobNimbus data exports, auto-detects column mapping, and runs 23 import endpoints. Most migrations complete in under a day. ~$0.01 per migration in AI cost -- we absorb it.",
   },
   {
     q: "Does Cornerstone PM have a CRM like JobNimbus?",
@@ -59,11 +58,11 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What does $149/mo Cornerstone Starter include?",
-    a: "Starter ($149/mo) includes construction scheduling, subcontractor assignment, permits pipeline, homeowner progress portal, and the AI Support Agent — unlimited users. Options engine and design center are on Builder ($299/mo). Foreman AI + Blueprint AI are on Pro ($499/mo). REST API + BYOA are on Pro+ ($599/mo).",
+    a: "Starter ($149/mo) includes construction scheduling, subcontractor assignment, permits pipeline, homeowner progress portal, and the AI Support Agent -- unlimited users. Options engine and design center are on Builder ($299/mo). Foreman AI + Blueprint AI are on Pro ($499/mo). REST API + BYOA are on Pro+ ($599/mo).",
   },
   {
     q: "Does Cornerstone PM have a free trial?",
-    a: "Yes. The 2-year free beta is open to the first 100 home builders — no credit card, no contract, no implementation fee.",
+    a: "Yes. The 2-year free beta is open to the first 100 home builders -- no credit card, no contract, no implementation fee.",
   },
 ];
 
@@ -71,21 +70,21 @@ export default function JobnimbusAlternativePage() {
   return (
     <AlternativePageTemplate
       competitorName="JobNimbus"
-      badgeLabel="JobNimbus Alternative — Home Builders"
+      badgeLabel="JobNimbus Alternative -- Home Builders"
       heroLine1="JobNimbus is for roofers."
       heroLine2="You build homes."
       accentColor="emerald"
-      heroParagraph="JobNimbus is built for roofing and restoration contractors. Cornerstone PM is the home-builder alternative — structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, 45+ AI skills (Pro $499/mo), and a public REST API (Pro+) from $149/mo."
+      heroParagraph="JobNimbus is built for roofing and restoration contractors. Cornerstone PM is the home-builder alternative -- structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, 45+ AI skills (Pro $499/mo), and a public REST API (Pro+) from $149/mo."
       secondaryCTA={{ text: "See full comparison", href: "/compare" }}
-      comparisonSubtitle="JobNimbus vs Cornerstone PM — roofing platform vs. home-builder platform."
+      comparisonSubtitle="JobNimbus vs Cornerstone PM -- roofing platform vs. home-builder platform."
       comparisonRows={comparisonRows}
       trademarkName="JobNimbus"
       whySwitchHeadline="What home builders get with Cornerstone PM"
       whySwitchCards={whySwitchCards}
-      honestAngle="If you're a roofing contractor or home improvement company, JobNimbus is probably fine. This page is for home builders who landed on JobNimbus because it showed up in a search — you need a different tool, and that tool is Cornerstone PM."
+      honestAngle="If you're a roofing contractor or home improvement company, JobNimbus is probably fine. This page is for home builders who landed on JobNimbus because it showed up in a search -- you need a different tool, and that tool is Cornerstone PM."
       showMigrationCTA={true}
       migrationHeadline="Moving from JobNimbus? Bring your data."
-      migrationDesc="Export your JobNimbus data, drop it in our wizard, and AI auto-maps every column — contacts, jobs, budgets, vendors. Dry-run before you commit."
+      migrationDesc="Export your JobNimbus data, drop it in our wizard, and AI auto-maps every column -- contacts, jobs, budgets, vendors. Dry-run before you commit."
       faqTitle="JobNimbus Alternative FAQ"
       faqSubtitle="Common questions from home builders evaluating JobNimbus vs Cornerstone PM."
       faqItems={faqItems}

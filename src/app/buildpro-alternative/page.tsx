@@ -16,7 +16,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Built for home builders", cornerstone: true, competitor: true, note: "BuildPro is built for production home builders. Cornerstone is built across the full home-builder spectrum - production, semi-custom, and custom - with lot management, options engine, and design center covering all of them on a modern web platform." },
   { feature: "Native AI agents (Foreman AI + Blueprint AI)", cornerstone: true, competitor: false, note: "Cornerstone Pro ($499/mo): 45+ Foreman AI skills that read AND write data, plus Blueprint AI floor plan takeoffs in 60 sec. BuildPro has no native AI." },
   { feature: "AI image search, vision & anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, hosts them on CDN, reads Home Depot/Ferguson product pages with AI-powered web scraping. Plus: paste or drag-drop any screenshot from inside the app and Foreman reads it with AI vision and acts on it. Cornerstone Pro feature." },
-  { feature: "30 webhook events with typed payloads", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): 30 named events, HMAC signatures, delivery logs, auto-retry. BuildPro offers no public webhook catalog." },
+  { feature: "30+ named webhook events (catalog growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): 30+ named events and counting — typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. BuildPro offers no public webhook catalog." },
   { feature: "AI Migration Wizard (one-click CRM import)", cornerstone: true, competitor: false, note: "AI auto-detects BuildPro export column mapping and runs 23 import endpoints. ~$0.01 per migration." },
   { feature: "Designer Packages (64 curated by an actual interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Packages curated by an actual interior designer - the same playbook K. Hovnanian Homes uses. Buyers pick a package; all category options auto-lock. Cornerstone Builder+." },
   { feature: "Triple QR check-in ecosystem (vendor + PM + buyer)", cornerstone: true, competitor: false, note: "Cornerstone has three audience-specific QR codes. BuildPro has none." },
@@ -25,21 +25,21 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "AI camera-event auto-task-start", cornerstone: true, competitor: false, note: "Camera-agnostic webhook integration auto-starts tasks on vendor arrival. Cornerstone Pro+ feature." },
   { feature: "Free database export (CSV / JSON)", cornerstone: true, competitor: false, note: "Download your full data anytime. Nightly auto-backups for 7 days." },
   { feature: "Mobile-friendly", cornerstone: true, competitor: "limited", note: "Cornerstone is fully responsive; BuildPro mobile is limited." },
-  { feature: "Public REST API (59 endpoints)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+: 59 endpoints, public docs. BuildPro: enterprise integrations only." },
+  { feature: "Public REST API (59+ endpoints, growing)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+: 59+ endpoints and growing rapidly, public docs. New endpoints ship as the platform grows. BuildPro: enterprise integrations only." },
   { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): connect Claude or ChatGPT to live data." },
   { feature: "Options engine", cornerstone: true, competitor: true, note: "Both ship options engines for structural and design selections." },
   { feature: "Multi-community management", cornerstone: true, competitor: true, note: "Both support multi-community pipelines." },
   { feature: "Construction scheduling", cornerstone: true, competitor: true, note: "Both ship full scheduling modules." },
   { feature: "Bid management", cornerstone: true, competitor: true, note: "Cornerstone Pro+ adds 7-wave automated bidding + vendor portal (no login required)." },
   { feature: "Per-user fees", cornerstone: "Unlimited users, every tier", competitor: "Per-seat", note: "Cornerstone: no per-seat pricing on any plan. BuildPro: per-seat licensing." },
-  { feature: "Pricing model", cornerstone: "Flat, unlimited users", competitor: "Enterprise quote + implementation", note: "BuildPro requires enterprise contracts plus $25k–$75k+ implementation fees. Cornerstone starts at $149/mo with zero implementation cost. More importantly: BuildPro doesn't ship Foreman AI, Blueprint AI, 30 named webhook events, or a self-serve public REST API at any price." },
-  { feature: "Cornerstone tiers (flat, unlimited users)", cornerstone: "$149 / $299 / $499 / $599", competitor: "—", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30 named webhook events, 7-wave bidding." },
+  { feature: "Pricing model", cornerstone: "Flat, unlimited users", competitor: "Enterprise quote + implementation", note: "BuildPro requires enterprise contracts plus $25kâ€“$75k+ implementation fees. Cornerstone starts at $149/mo with zero implementation cost. More importantly: BuildPro doesn't ship Foreman AI, Blueprint AI, 30 named webhook events, or a self-serve public REST API at any price." },
+  { feature: "Cornerstone tiers (flat, unlimited users)", cornerstone: "$149 / $299 / $499 / $599", competitor: "â€”", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30 named webhook events, 7-wave bidding." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
   { title: "Modern web platform", desc: "Cloud-native, mobile-friendly, no Citrix or VPN required. PMs update from the jobsite, vendors confirm from their phone, sales counselors present on a tablet." },
   { title: "Action-taking AI on Pro - 45+ skills", desc: "Foreman AI (Cornerstone Pro, $499/mo) reads AND writes data. Blueprint AI converts PDF floor plans to material takeoffs in under 60 seconds. No third-party AI plugins, no separate subscriptions." },
-  { title: "Public REST API + 30 webhooks on Pro+", desc: "59 REST endpoints, 30 named webhook events, HMAC signatures, and public documentation on Pro+ ($599/mo). BuildPro integrations are enterprise-contract only." },
+  { title: "Public REST API + 30+ webhooks on Pro+", desc: "59+ REST endpoints (growing), 30+ named webhook events (catalog growing), HMAC signatures, and public documentation on Pro+ ($599/mo). BuildPro integrations are enterprise-contract only." },
 ];
 
 const faqItems: FAQItem[] = [
@@ -69,7 +69,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Does Cornerstone PM have a public API like BuildPro?",
-    a: "Cornerstone PM offers a fully public REST API on the Pro+ plan ($599/mo): 59 endpoints, 30 webhook event types, HMAC signatures, scoped Bearer-token auth, and public documentation. BuildPro offers enterprise integrations only, typically on a custom contract basis.",
+    a: "Cornerstone PM offers a fully public REST API on the Pro+ plan ($599/mo): 59+ endpoints and growing, 30+ named webhook event types (catalog growing), HMAC signatures, scoped Bearer-token auth, and public documentation. BuildPro offers enterprise integrations only, typically on a custom contract basis.",
   },
   {
     q: "What does $149/mo Cornerstone Starter include?",
