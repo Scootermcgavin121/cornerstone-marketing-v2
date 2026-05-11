@@ -39,7 +39,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Does Cornerstone PM include a homeowner portal?",
-    a: "Yes, on every plan. The homeowner portal shows construction milestones, photo updates, schedule progress, and warranty information. It's included in Starter at $149/mo with no per-user fees.",
+    a: "Yes, on every plan. The homeowner portal is synced in real time with the construction schedule — when framing moves three days, buyers see it instantly, no follow-up call needed. Plus: (1) builder and PM upload job-site photos to every milestone (up to 5 photos per milestone via a camera button on the task row, captured straight from the field), (2) built-in messaging app between builder and customer with a permanent searchable record of every conversation — no more lost text threads or 'wait, what did we agree on?', and (3) one-click ZIP download of all job photos so buyers can save their whole build history. Warranty information and design selections are also visible. Included in Starter at $149/mo with no per-user, per-buyer fees.",
   },
 ];
 

@@ -995,7 +995,7 @@ When a PM changes a task date, marks a task complete, or adjusts duration, the s
 - **Bulk Mark as Complete:** Checkbox column on task tables allows selecting multiple tasks and marking them all complete at once via a floating action bar. Useful for onboarding homes already under construction.
 
 ## Buyer Portal (Homeowner Portal)
-The Buyer Portal is the homeowner's window into their build - a cinematic, engaging experience that keeps buyers excited and informed.
+The Buyer Portal is the homeowner's window into their build - a cinematic, engaging experience that keeps buyers excited and informed. **Synced in real time with the construction schedule**, so when framing moves three days, the buyer sees it instantly - no follow-up call needed. Reduces inbound calls, builds trust, turns into referrals.
 
 ### Cinematic Hero & Dashboard
 - **Cinematic hero section** with daily motivational quote to keep buyers inspired throughout their build journey
@@ -1028,6 +1028,14 @@ The Buyer Portal is the homeowner's window into their build - a cinematic, engag
 - **Thumbnail buttons** below the milestone carousel showing uploaded milestone photos
 - Customers can browse actual job site progress photos organized by milestone
 - Gives homeowners a visual timeline of their home being built
+- **One-click ZIP download** - buyers can download every job photo for their home in a single ZIP archive. Saves the whole build history to their own machine. Standard request after move-in ("can you send me all the photos?") becomes one click for them.
+
+### Built-In Messaging App (Builder ↔ Customer)
+- **In-portal messaging app** between builder and customer with a permanent searchable record of every conversation
+- No more lost text threads or "wait, what did we agree on?" — every message is timestamped and searchable
+- Messages tied to the home, so years later you can pull up exactly what was discussed during framing
+- Internal record protects the builder on warranty / scope-change disputes
+- Cuts inbound calls by giving buyers a real channel that isn't the builder's cell phone at 9pm
 
 ## Frame Stage Tour (FST)
 - **Digital FST inspection forms** - replace paper-based frame stage tour checklists with a digital workflow

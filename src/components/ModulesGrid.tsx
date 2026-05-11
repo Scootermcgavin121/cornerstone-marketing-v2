@@ -63,7 +63,7 @@ const modules = [
   {
     icon: Users,
     name: "Homeowner Portal",
-    desc: "Real-time milestone updates, job site photos, warranty tracking, no inbox overload.",
+    desc: "Real-time sync with construction scheduling, builder-uploaded milestone photos, built-in messaging app between builder and customer (permanent record), and one-click ZIP download of all job photos. Warranty tracking, no inbox overload.",
     href: "/features#portal",
     color: "text-pink-400",
     bg: "bg-pink-500/10",
