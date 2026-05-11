@@ -1,7 +1,7 @@
-## Platform Overview (Current Stats)
+﻿## Platform Overview (Current Stats)
 - 130+ database tables and growing
 - **45+ Foreman AI skills** (in-app agent that reads AND writes data - including product image search, image hosting, and AI-powered web scraping)
-- **30+ named webhook event types and growing** — typed payloads, HMAC signatures, delivery logs, and auto-retry. New events ship as the platform grows. Industry-leading depth (most competitors just say "webhooks exist")
+- **30+ named webhook event types and growing** â€” typed payloads, HMAC signatures, delivery logs, and auto-retry. New events ship as the platform grows. Industry-leading depth (most competitors just say "webhooks exist")
 - 60+ external REST API endpoints
 - 5 built-in AI features: Foreman AI (45+ skills), Blueprint AI, MLS Listing Agent, AI Support Agent, AI Jobsite Camera Events (webhook-driven, source-agnostic camera/sensor integration)
 - **Triple QR Code Ecosystem** - vendor jobsite check-in, community/PM check-in (timesheet-validated), and sales model home lead capture. Three QR codes, three audiences, one platform.
@@ -22,7 +22,7 @@ Cornerstone is the only home builder platform with a complete three-audience QR 
 - Captures GPS coordinates, timestamp, weather conditions automatically
 - Tracks check-in AND check-out times - full hours-on-site logged
 - Public page at `/checkin/[token]` - works on any phone browser
-- **Printable 11×8.5" signs** ready to staple to jobsite doors or trailers
+- **Printable 11Ã—8.5" signs** ready to staple to jobsite doors or trailers
 
 **2. Community / PM Check-In QR**
 - Builder staff and inspectors scan at the construction trailer when they arrive
@@ -32,7 +32,7 @@ Cornerstone is the only home builder platform with a complete three-audience QR 
 
 **3. Sales Model Home Lead Capture QR**
 - QR code at every model home entrance for walk-in buyers
-- "First time here?" → captures name, email, phone, "How did you hear about us?"
+- "First time here?" â†’ captures name, email, phone, "How did you hear about us?"
 - Returning visitors recognized automatically: "Welcome back!"
 - Creates a Lead record tied to the community
 - Sales agent gets an instant in-app + email notification
@@ -88,7 +88,7 @@ A consolidated `/admin/settings` page replaces the scattered admin links.
 ---
 
 **Q: Do you have QR code check-in for vendors?**
-A: Yes - Cornerstone ships a triple QR ecosystem: (1) jobsite QR for vendors/subs to check in (GPS, weather, timestamp captured), (2) community QR for builder PMs and inspectors that ties into timesheet validation, and (3) sales model home QR for buyer lead capture. No app install required for anyone scanning. Printable 11×8.5" signs are auto-generated for every community and home.
+A: Yes - Cornerstone ships a triple QR ecosystem: (1) jobsite QR for vendors/subs to check in (GPS, weather, timestamp captured), (2) community QR for builder PMs and inspectors that ties into timesheet validation, and (3) sales model home QR for buyer lead capture. No app install required for anyone scanning. Printable 11Ã—8.5" signs are auto-generated for every community and home.
 
 **Q: Can I see where my vendors are right now?**
 A: Yes - the Vendor Activity Map shows live GPS pins for every check-in across all your communities, refreshing every 30 seconds. Filter by date or vendor. Stat cards show how many vendors are currently on-site.
@@ -104,7 +104,7 @@ A: Yes - the Sales Model Home QR captures lead info on first scan, recognizes re
 ## New Features (May 3-7, 2026)
 
 ### Webhook System - 30+ Named Events and Growing
-Cornerstone ships with **30+ named webhook event types and counting** — new events ship as the platform grows. This is the deepest webhook coverage of any homebuilder platform:
+Cornerstone ships with **30+ named webhook event types and counting** â€” new events ship as the platform grows. This is the deepest webhook coverage of any homebuilder platform:
 
 - **Categories:** home lifecycle, task/schedule changes, vendor notifications, cascade scheduling, in-app messages, sales pipeline, bid requests
 - **Typed payloads** - every event has a documented JSON schema
@@ -132,7 +132,7 @@ Foreman is the in-app AI agent that doesn't just answer questions - it **reads a
 - **`searchProductImage`** - Bing Image Search by product name or model number. Returns direct CDN URLs. Free, no API key required.
 - **`downloadImage`** - downloads any image URL and stores it permanently in Vercel Blob. Returns a hosted URL that won't break when the source site disappears.
 - **`fetchWebPage` (anti-bot web scraping)** - web scraping now uses an AI-powered reader as the primary strategy for anti-bot bypass, with direct fetch fallback. Reliably reads Home Depot, Ferguson, Lowe's, and other sites that block traditional scrapers.
-- **4-step product image workflow** built into the system prompt: `searchProductImage` → `downloadImage` → `updateOption` → done. "Find an image of the GE Profile PFE28KYNFS and add it to the design option" just works.
+- **4-step product image workflow** built into the system prompt: `searchProductImage` â†’ `downloadImage` â†’ `updateOption` â†’ done. "Find an image of the GE Profile PFE28KYNFS and add it to the design option" just works.
 
 **Reliability fix (May 7, 2026):** Foreman AI silent timeout bug fixed - conversation history is now trimmed before each turn, every tool has its own timeout, and slow tools surface a fallback message instead of dying silently.
 
@@ -181,7 +181,7 @@ Pre-curated bundles of design selections that buyers can apply with one click. *
 - **64 packages seeded** across 7 categories: Flooring, Kitchen Essentials, Bath & Fixtures, Smart Home, Lighting, Hardware & Trim, Designer Bundles
 - **Designer Bundles** (Level 3 spec and above only): Designer Kitchen, All Bathrooms, Whole House Package
 - **Standalone package categories** - `PackageCategoryType` is a separate model from OptionCategory, with its own many-to-many join (PackageCategoryLink)
-- **Package override on Selections** - when applied, individual room slots are locked with "Covered by [Package] ✓" badges. Buyer can break the package by overriding (warning modal triggers).
+- **Package override on Selections** - when applied, individual room slots are locked with "Covered by [Package] âœ“" badges. Buyer can break the package by overriding (warning modal triggers).
 - Managed at `/design-center/packages` (Designer Collections page)
 
 ### Structural Option Override System (NEW May 2026)
@@ -200,7 +200,7 @@ The Selections page no longer reads only from Takeoffs - it reads from `Floorpla
 
 - Each scope on a room with an `optionClassId` creates a buyer-facing selection slot
 - **The FLS scope name is the display label** (not the OptionClass name) - so a bathroom shows "Vanity Faucet", "Master Shower Faucet", and "Tub Spout" as distinct slots even though they all link to the OptionClass `Faucet`
-- Rooms automatically populated with appropriate scopes: Kitchen → appliances/fixtures, Bathrooms → shower/toilet/faucets, Bedrooms → flooring/baseboard/lighting/doors
+- Rooms automatically populated with appropriate scopes: Kitchen â†’ appliances/fixtures, Bathrooms â†’ shower/toilet/faucets, Bedrooms â†’ flooring/baseboard/lighting/doors
 
 ### Room System Consolidation (May 2026)
 The app now uses **FloorplanLocation** as the single primary room model across Takeoffs, Selections, and Options. The legacy `FloorplanRoom` model still exists but is being deprecated. Behind the scenes:
@@ -263,7 +263,7 @@ Scope items represent things like labor, delivery charges, equipment rentals, in
 - Pricing is pulled automatically from the vendor assigned to that scope in the community - no manual entry
 - Default vendor rates apply across all floorplans, with optional per-floorplan overrides for complex or custom homes
 - Swap the assigned vendor for a community and pricing updates automatically across all affected items
-- Total home cost = materials (parts × qty) + scope items (vendor rate × qty) + design selections
+- Total home cost = materials (parts Ã— qty) + scope items (vendor rate Ã— qty) + design selections
 
 **Vendor pricing management:**
 - Vendors are assigned to scopes per community (e.g., one HVAC contractor handles all homes in a given subdivision)
@@ -271,12 +271,12 @@ Scope items represent things like labor, delivery charges, equipment rentals, in
 - Export scope item pricing by trade for vendor comparison reviews and bid analysis
 
 ### Vendor Bid Workflow (Apr 2026 update)
-Full end-to-end bidding from request → vendor submission → review → award → lock.
+Full end-to-end bidding from request â†’ vendor submission â†’ review â†’ award â†’ lock.
 
 **Builder-side bid review:**
 - **Side-by-side comparison view**: Stack multiple vendors' bids for the same scope across communities/floorplans. Lowest total green-flagged (informational only).
 - **Single-bid drill-down**: Group line items by floorplan with parts and scope items separated. Award/Reject CTAs visible only on PENDING bids.
-- **Award flow**: Click "Award" → bid status moves PENDING → ACCEPTED. All line items mirror into VendorPricing automatically. Old vendor pricing for the same vendor+scope+community is marked SUPERSEDED (history preserved).
+- **Award flow**: Click "Award" â†’ bid status moves PENDING â†’ ACCEPTED. All line items mirror into VendorPricing automatically. Old vendor pricing for the same vendor+scope+community is marked SUPERSEDED (history preserved).
 
 **Vendor-side portal:**
 - Token-protected URL (no login required) for vendors to submit/edit bids.
@@ -284,7 +284,7 @@ Full end-to-end bidding from request → vendor submission → review → award 
 - Bids are editable while PENDING. Once accepted by the builder, line items lock and the vendor cannot edit - protects builder's awarded pricing from accidental changes.
 
 **Pricing engine:**
-- Per-takeoff cost resolves via fallback chain: per-takeoff override → ACCEPTED VendorPricing for the home's community → catalog default → $0.
+- Per-takeoff cost resolves via fallback chain: per-takeoff override â†’ ACCEPTED VendorPricing for the home's community â†’ catalog default â†’ $0.
 - Vendor selection always uses the **community-assigned vendor**, not lowest bid - builders maintain trade relationships per community.
 - Multiple bids can be ACCEPTED simultaneously across different communities (one vendor in Community A, a different vendor in Community B for the same scope).
 
@@ -494,7 +494,7 @@ The flagship AI feature. Foreman AI is a full intelligent agent that lives insid
 - Web Scraping (AI-powered, anti-bot): fetch any URL (Home Depot, Ferguson, suppliers) with anti-bot bypass and auto-create parts with real pricing - falls back to direct fetch if the primary reader is unreachable
 - **Product Image Search**: `searchProductImage` uses Bing Image Search to find product images by name or model number - free, no API key, returns direct CDN URLs
 - **Image Hosting**: `downloadImage` saves any image URL permanently to Vercel Blob storage - hosted URL won't break when the source site removes the file
-- **4-step image workflow**: `searchProductImage` → `downloadImage` → `updateOption` → done. "Add a hero image to the GE Profile fridge in the design center" runs end-to-end automatically.
+- **4-step image workflow**: `searchProductImage` â†’ `downloadImage` â†’ `updateOption` â†’ done. "Add a hero image to the GE Profile fridge in the design center" runs end-to-end automatically.
 - Vendor Management: list vendors, create new vendors, search vendor bids
 - Home Management: list all homes, view budgets, update home status/lot size/assignments
 - Design Center: list/create options (auto-links to parts catalog), list option categories
@@ -508,14 +508,14 @@ The flagship AI feature. Foreman AI is a full intelligent agent that lives insid
 - Profitability Reports: analyze margins across communities, floorplans, or individual homes
 
 **Smart features that set Foreman apart:**
-- **Per-user memory** — Foreman learns how each user works. Tell it the name you want to be greeted by ("Call me Mac"), your role, your go-to vendors, how you like reports structured, your typical workflows — it saves personal notes that persist forever and greets you by your chosen name every session. **This is custom-coded into Cornerstone, not a generic chatbot bolt-on.** Company-wide memory is shared with the team; personal memory is private to each user. The more you use Foreman, the more intuitive it gets about your specific habits and preferences.
-- **Image analysis** - Paste or drag-drop any image (screenshots, product photos, floor plans, supplier pages, jobsite photos) and Foreman uses AI vision to read, analyze, and extract information. "What model is this faucet?" + photo → answer.
-- **Emoji & personality** - Foreman has a friendly, builder-savvy personality. It responds to emoji reactions (🔥, 💪, 👊) naturally. It feels like texting a knowledgeable colleague, not talking to a robot.
+- **Per-user memory** â€” Foreman learns how each user works. Tell it the name you want to be greeted by ("Call me Mac"), your role, your go-to vendors, how you like reports structured, your typical workflows â€” it saves personal notes that persist forever and greets you by your chosen name every session. **This is custom-coded into Cornerstone, not a generic chatbot bolt-on.** Company-wide memory is shared with the team; personal memory is private to each user. The more you use Foreman, the more intuitive it gets about your specific habits and preferences.
+- **Image analysis** - Paste or drag-drop any image (screenshots, product photos, floor plans, supplier pages, jobsite photos) and Foreman uses AI vision to read, analyze, and extract information. "What model is this faucet?" + photo â†’ answer.
+- **Emoji & personality** - Foreman has a friendly, builder-savvy personality. It responds to emoji reactions (ðŸ”¥, ðŸ’ª, ðŸ‘Š) naturally. It feels like texting a knowledgeable colleague, not talking to a robot.
 - **Context health meter** - green/yellow/red indicator shows remaining context capacity so users know when to start a new chat.
 - **Built-in memory compaction** - Unlike most AI chatbots that crash, freeze, or forget everything after long conversations, Foreman has intelligent context management. Older messages are automatically summarized in the background while recent messages stay intact. Builders can have marathon work sessions - cleaning up 200 options, importing entire catalogs, reviewing every vendor bid - without Foreman losing track. No other construction platform AI can do this. The context health meter (green/yellow/red) shows remaining capacity so users know when to start fresh.
 - **Persistent chat history** - every conversation is saved and searchable. Pick up any old conversation right where you left off.
 
-**💡 Pro tip for new users:** The first time you use Foreman, introduce yourself! "Hey, I'm Mike, I manage Coastal Ridge and Eagles Landing. I mainly deal with HVAC and Plumbing subs." Foreman saves this and gives you better, more relevant answers in every future conversation.
+**ðŸ’¡ Pro tip for new users:** The first time you use Foreman, introduce yourself! "Hey, I'm Mike, I manage Coastal Ridge and Eagles Landing. I mainly deal with HVAC and Plumbing subs." Foreman saves this and gives you better, more relevant answers in every future conversation.
 
 **Example prompts:**
 - "Scrape Home Depot for GE Profile refrigerators and add them to our parts catalog"
@@ -614,7 +614,7 @@ Cornerstone helps residential builders schedule, track, budget, and manage their
 
 ### Communication & Notifications
 - **Four-tier email notifications** for schedule changes: Confirmation, Advance Notice, Date Moved Up, and Date Postponed
-- Automatic vendor notifications when schedule cascades - grouped by vendor, showing old→new dates
+- Automatic vendor notifications when schedule cascades - grouped by vendor, showing oldâ†’new dates
 - Keep everyone in the loop automatically
 
 ### AI Assistant
@@ -642,17 +642,17 @@ Cornerstone's AI-powered takeoff system eliminates manual material estimation. *
 - **3-Tab Review Editor** - review and refine AI-extracted data across three tabs: Room-by-Room details, Fixture & Finish counts, and Whole-House Scopes
 - **Powered by Anthropic AI Vision** - industry-leading AI analyzes your blueprints with high accuracy
 - **Cost:** ~$0.50-$2.00 per analysis depending on plan complexity
-- **Navigate:** Purchasing → AI Blueprint Takeoff
+- **Navigate:** Purchasing â†’ AI Blueprint Takeoff
 - **Included free** with the Full Bundle plan ($399/month) - a $150/month standalone value
 - **Why this matters:** What used to take hours of manual counting and measuring now takes minutes. Upload the PDF, review the AI's work, and move straight to budgeting.
 
 ## Purchasing & Budget Management (Builder plan & above)
 - **Parts Catalog** - centralized library of all materials, fixtures, and finishes with part numbers, descriptions, units of measure, and cost/retail pricing
-- **Base Takeoffs** - per-floorplan quantity takeoffs organized by scope with colored headers. Supports BASE (standard for every home) and OPTION (per-option-class) takeoff types. Includes lump sum scope items (HVAC, paint labor, trim, etc.) with rate × quantity pricing. Units: sqft, lf, lnft, each, LUMP, square
+- **Base Takeoffs** - per-floorplan quantity takeoffs organized by scope with colored headers. Supports BASE (standard for every home) and OPTION (per-option-class) takeoff types. Includes lump sum scope items (HVAC, paint labor, trim, etc.) with rate Ã— quantity pricing. Units: sqft, lf, lnft, each, LUMP, square
 - **Scope Pricing Dashboard** - read-only dashboard showing vendor bid pricing by scope. Vendor pricing matrix lets you compare bids across vendors at a glance - see who's cheapest per scope without digging through individual bid responses
 - **Takeoffs** - per-floorplan quantity takeoffs organized by room/location. Supports BASE (standard for every home) and OPTION (per-option-class) takeoff types. Units: sqft, lf, lnft, each, LUMP, square
 - **Bid Management** - send a floorplan to bid to every vendor with one click. Track vendor responses, compare bids side-by-side, and award - all in one workflow
-- **Budgets** - 3-level budget hierarchy: Scope → Task → Parts. Real-time financial rollups per home showing estimated vs actual costs. Organized by trade (Lumber, Electrical, Plumbing, HVAC, etc.) with collapsible sections. Scopes with takeoff parts show detailed parts lists with quantities.
+- **Budgets** - 3-level budget hierarchy: Scope â†’ Task â†’ Parts. Real-time financial rollups per home showing estimated vs actual costs. Organized by trade (Lumber, Electrical, Plumbing, HVAC, etc.) with collapsible sections. Scopes with takeoff parts show detailed parts lists with quantities.
 - **Auto-Budget Generation** - when structural options are locked in the sales pipeline, the system automatically generates a full home budget from the floorplan's base budget (~97 budget lines per home). Includes structural option selections with cost + retail pricing and elevation cost adders. No manual budget creation needed. Budget can be reset and regenerated if a deal changes.
 - **Active Homes Table** - sortable columns showing budget status, created date, variance tracking across all homes
 - **Change Orders** - track scope changes with cost impact, approval workflow, and automatic budget adjustments
@@ -680,14 +680,14 @@ Cornerstone's AI-powered takeoff system eliminates manual material estimation. *
 - **Promotions & Incentives** - create time-limited promotions with types: Closing Cost Credit, Discount, Credit, or Custom. Set date ranges, amounts, and optionally tie to specific communities. Show on the Active Promotions section of the Sales Pricing page. Automatically applied during new home creation.
 - **Net After Promotions** - pricing page automatically shows net prices after applying active promotions, so sales agents always quote the right number
 - **PDF Price Sheets** - export branded, customer-facing PDF price sheets per community. Shows floorplan details (beds/baths/sqft), base prices, active promotions with expiry dates, and net prices. Professional formatting with builder branding. No internal cost/margin data exposed
-- **MLS Listing Sheet** (`/sales/listing-sheet`) - generate professional, print-ready MLS listing sheets from any home's data. Includes company logo, address, community description/city/state/zip, room dimensions (L' × W'), structural features, design selections, key stats (sqft, beds, baths, garage, stories, lot), and contract price. Print / Save as PDF with one click.
+- **MLS Listing Sheet** (`/sales/listing-sheet`) - generate professional, print-ready MLS listing sheets from any home's data. Includes company logo, address, community description/city/state/zip, room dimensions (L' Ã— W'), structural features, design selections, key stats (sqft, beds, baths, garage, stories, lot), and contract price. Print / Save as PDF with one click.
 - **CSV Export** - export pricing data as CSV for spreadsheets, lender packages, or MLS uploads
 - **Expiration Badges** - active promotions show urgency: "Expires Today", "Expires in 3 days", or the end date. Expired promotions are clearly marked
 
 ## Sales Pipeline & New Home Sales
 
 ### Sales Task Workflow
-Every new home sale follows a structured task workflow: **Contract Signed → Budget Generated → Purchasing Approval**. Each task is auto-assigned to the right role (Sales, Sales Manager, Purchasing Manager, System). When all sales pipeline tasks are complete, the home automatically hands off to the construction pipeline - no manual transition needed.
+Every new home sale follows a structured task workflow: **Contract Signed â†’ Budget Generated â†’ Purchasing Approval**. Each task is auto-assigned to the right role (Sales, Sales Manager, Purchasing Manager, System). When all sales pipeline tasks are complete, the home automatically hands off to the construction pipeline - no manual transition needed.
 
 - **New Home Sale in Under 60 Seconds** - one-page form to create a complete home sale:
   - Select community, floorplan, elevation
@@ -695,9 +695,9 @@ Every new home sale follows a structured task workflow: **Contract Signed → Bu
   - Pick from 12+ structural options (Bonus Room Over Garage ~$42K, Finished Basement ~$112.5K, 8' Interior Doors ~$7.2K, Irrigation Well ~$9.75K, Garage Extension, Kitchen Expansion, Dual Vanity, and more)
   - Apply sales incentives (closing cost credits, discounts, promotions)
   - See real-time price summary: base price + structural options + incentives
-  - One click → home created with full sales pipeline
+  - One click â†’ home created with full sales pipeline
 - **Buyer Management** - full buyer directory with search, sort, and CSV export. Primary + secondary buyers tracked per home.
-- **9-Step Sales Pipeline** - every new sale automatically generates a 9-step checklist: Contract Signed → Deposit → Financing → Sales Manager Approval → Lot Reservation → Structural Options Selected → Structural Options Locked → Budget Auto-Generated → Purchasing Manager Approval. Gate tasks require completion before downstream tasks unlock. Auto-assigned to the right role (Sales, Sales Manager, Purchasing, System).
+- **9-Step Sales Pipeline** - every new sale automatically generates a 9-step checklist: Contract Signed â†’ Deposit â†’ Financing â†’ Sales Manager Approval â†’ Lot Reservation â†’ Structural Options Selected â†’ Structural Options Locked â†’ Budget Auto-Generated â†’ Purchasing Manager Approval. Gate tasks require completion before downstream tasks unlock. Auto-assigned to the right role (Sales, Sales Manager, Purchasing, System).
 - **Auto-Budget Generation** - when "Structural Options Locked" is completed, the system automatically:
   - Generates a full home budget from the floorplan's base budget (~97 budget lines per home)
   - Includes structural option selections with cost + retail pricing
@@ -712,8 +712,8 @@ Every new home sale follows a structured task workflow: **Contract Signed → Bu
 - **Editable Sales Templates** - sales pipeline templates live alongside construction templates in the Templates page. Full editing UI: add/remove/reorder tasks, set durations, edit dependency chains, clone and customize.
 - **Task Dates** - each pipeline task has start date, due date, and duration. Dates auto-compute from the contract date based on task durations.
 - **Automatic Email Notifications** - key milestones trigger branded emails:
-  - Contract Signed → emails Sales Manager + Purchasing Manager ("Approval Needed")
-  - Both Approvals Complete → emails Permitting Agent(s) ("Sale Approved, Ready for Setup")
+  - Contract Signed â†’ emails Sales Manager + Purchasing Manager ("Approval Needed")
+  - Both Approvals Complete â†’ emails Permitting Agent(s) ("Sale Approved, Ready for Setup")
   - Smart fallback: if no manager exists for a role, emails Admin(s) instead
 - **Configurable Notification Settings** - admin page to control which roles get notified for each event type, plus add external email addresses for consultants or outside agents
 
@@ -724,7 +724,7 @@ Every new home sale follows a structured task workflow: **Contract Signed → Bu
   - Shows buyer info, structural options selected, floorplan/elevation details
   - Urgency badges highlight homes waiting 3+ days
 - **Template Application Page** - PA applies construction templates (Permitting, Foundation, Site Development, Construction) via dropdown selectors on a one-click template setup page
-- **Status Tracking**: Awaiting Templates → Templates Applied → Permit Submitted → Approved
+- **Status Tracking**: Awaiting Templates â†’ Templates Applied â†’ Permit Submitted â†’ Approved
 - **Sales-to-Construction Handoff** - complete workflow from sale creation through approvals to permitting setup to construction start. No manual handoffs, no dropped balls.
 - **Construction Kickoff** - once templates are applied, the Gantt chart is generated, vendor notifications go out, and the build begins
 
@@ -838,13 +838,13 @@ Builders switching from BuilderTrend, CoConstruct, Procore, or spreadsheets can 
 
 ### 8 Importers (recommended order):
 1. **Scopes** - import scope names from Excel/CSV. Shows new vs already-existing. Simple one-column format.
-2. **Master Tasks** - import task library with phases, durations, dependencies, milestone/PM/PA flags. Full diff preview with field-level changes.
+2. **Task Library** - import task library with phases, durations, dependencies, milestone/PM/PA flags. Full diff preview with field-level changes.
 3. **Vendors** - company info, contacts, emails, phones, scopes. Universal Column Mapper for any format.
 4. **Communities** - name and state. Matches existing by name (case-insensitive).
 5. **Homes** - import every home you currently have under construction, in pre-construction, or even completed/closed builds you want on record. Just provide address, lot, community, status, and optional start date. PM and Permitting Agent are auto-assigned. Additive only (no deletions).
 6. **Users/Team** - name, email, role. Creates accounts with temporary passwords. Additive only (no deletions).
 7. **Vendor-Community Assignments** - links vendors to communities with scope defaults. Additive only.
-8. **Templates** - schedule templates with task matching. Auto-creates missing master tasks (optional).
+8. **Templates** - schedule templates with task matching. Auto-creates missing Task Library (optional).
 
 ### Key Features:
 - **Universal Column Mapper** - upload any Excel/CSV file and map its columns to Cornerstone Builder Software fields via dropdowns. Handles duplicate column names (shows "#1", "#2"). No reformatting needed - works with exports from any platform.
@@ -859,7 +859,7 @@ All four are **independent and composable** - mix and match any permitting templ
 - **Why this matters:** A builder with 5 communities and 3 foundation types doesn't need 58 templates. One permitting + one foundation + one inspection + one construction template covers everything. Templates run in sync once applied - permitting, foundation, inspection, and construction tasks auto-cascade alongside each other on the same timeline.
 - **Template copy/clone** - duplicate any template with all tasks and dependencies in one click. Great for creating variations per community.
 - **Template task reordering** - drag-and-drop task ordering within templates, plus searchable MasterTask dropdown for adding tasks
-- **Master task library** with canonical definitions shared across all templates - change a task once, it updates everywhere
+- **Task Library item library** with canonical definitions shared across all templates - change a task once, it updates everywhere
 - **One-click template application** with configurable start date
 
 ## Insurance, Compliance & Document Management
@@ -896,7 +896,7 @@ All documents maintain a full upload history with timestamps - previous versions
 ## Vendor Portal - Built for Builders AND Subs
 
 ### Zero-Friction Access (No Login Required)
-**Vendors never have to create a Cornerstone account.** They get a secure magic link sent to their email — they click it, and they're in. Confirm tasks, accept schedule changes, submit bids, view their calendar. No app to download, no account to create, no password to remember. Click the link, do the thing, done.
+**Vendors never have to create a Cornerstone account.** They get a secure magic link sent to their email â€” they click it, and they're in. Confirm tasks, accept schedule changes, submit bids, view their calendar. No app to download, no account to create, no password to remember. Click the link, do the thing, done.
 
 This is the biggest friction-killer for trade partners in the industry. Most platforms force subs through account creation, which means most subs never log in, which means PMs end up texting and calling them anyway. Cornerstone removes that wall.
 
@@ -1030,9 +1030,9 @@ The Buyer Portal is the homeowner's window into their build - a cinematic, engag
 - Gives homeowners a visual timeline of their home being built
 - **One-click ZIP download** - buyers can download every job photo for their home in a single ZIP archive. Saves the whole build history to their own machine. Standard request after move-in ("can you send me all the photos?") becomes one click for them.
 
-### Built-In Messaging App (Builder ↔ Customer)
+### Built-In Messaging App (Builder â†” Customer)
 - **In-portal messaging app** between builder and customer with a permanent searchable record of every conversation
-- No more lost text threads or "wait, what did we agree on?" — every message is timestamped and searchable
+- No more lost text threads or "wait, what did we agree on?" â€” every message is timestamped and searchable
 - Messages tied to the home, so years later you can pull up exactly what was discussed during framing
 - Internal record protects the builder on warranty / scope-change disputes
 - Cuts inbound calls by giving buyers a real channel that isn't the builder's cell phone at 9pm
@@ -1065,9 +1065,9 @@ The Buyer Portal is the homeowner's window into their build - a cinematic, engag
 - Overdue task alerts with vendor decline warnings (last 24h)
 - Recent activity feed
 
-## Master Task Library
+## Task Library item Library
 
-The Master Task Library is the single source of truth for all task definitions. Changes here propagate to templates.
+The Task Library item Library is the single source of truth for all task definitions. Changes here propagate to templates.
 
 ### Task Dependencies
 - Dependencies define which tasks must complete before another can start (e.g., "Drywall" can't start until "Framing" and "Electrical Rough-In" are done)
@@ -1076,7 +1076,7 @@ The Master Task Library is the single source of truth for all task definitions. 
 - The scheduling engine uses dependencies to auto-cascade dates: when a task's dates shift, all downstream dependent tasks shift too
 
 ### UX Improvements (March 2026)
-- **Delete with warning** - deleting a master task shows how many templates and active homes use it before confirming, instead of greying out the button
+- **Delete with warning** - deleting a Task Library item shows how many templates and active homes use it before confirming, instead of greying out the button
 - **Scope dropdown selector** - choose scope from existing Scopes list via dropdown instead of free-text input
 - **Sticky column headers** - headers stay visible while scrolling through long task lists
 - **Active home count** - each task shows how many active homes currently use it
@@ -1088,7 +1088,7 @@ The Master Task Library is the single source of truth for all task definitions. 
 
 ### Excel Import/Export
 - **Export** downloads the full library as a branded `.xlsx` with phase grouping, color coding, and an info note explaining sort order vs dependencies
-- **Import** reads an `.xlsx` file and shows a diff preview before applying (also available on `/admin/import` -> Master Tasks tab):
+- **Import** reads an `.xlsx` file and shows a diff preview before applying (also available on `/admin/import` -> Task Library tab):
   - New tasks and modified tasks shown separately (additive only - no deletions)
   - **Task Dependencies column** uses comma-separated task names (e.g., `Framing, Electrical Rough-In`)
   - The parser matches dependency names against existing tasks - typos are caught with warnings like *"Drywall" depends on "Framng" which doesn't exist*
@@ -1130,7 +1130,7 @@ All exports feature a consistent branded header with builder logo, company name,
 
 **Admin**
 - Full access to everything - homes, vendors, templates, settings, user management
-- Can create/edit communities, assign vendors, manage master task library
+- Can create/edit communities, assign vendors, manage Task Library item library
 - Access to all reports, exports, and configuration
 - Can impersonate other roles for testing
 
@@ -1139,7 +1139,7 @@ All exports feature a consistent branded header with builder logo, company name,
 - Full schedule management on assigned homes (edit dates, mark tasks, cascade)
 - Messaging with vendors on assigned homes
 - Notifications for vendor declines, task completions, schedule changes
-- Auto-assigned to tasks flagged with "PM Auto-Assign" in master task library
+- Auto-assigned to tasks flagged with "PM Auto-Assign" in Task Library item library
 
 **Permitting Agent (PA)**
 - Dashboard with permitting-focused views
@@ -1171,15 +1171,15 @@ All exports feature a consistent branded header with builder logo, company name,
 - No access to vendor details, costs, or internal notes
 
 ## Employee Timesheets (opt-in feature)
-- Enable via Construction → Settings toggle ("Employee Timesheets")
+- Enable via Construction â†’ Settings toggle ("Employee Timesheets")
 - **Shift-based entry** - employees type "8-5" and the system auto-calculates 8 hours (9hrs minus 1hr lunch deduction)
 - Also accepts plain hours (e.g. "8" or "8.5")
 - Supports formats: "8-5", "7:30-4", "7-3:30", plain numbers
 - **Weekly grid** - Mon through Sun with week total
 - **Autofill Week** - enter one day, copy to Mon-Fri
 - **Duplicate Last Week** - copies last week's shift times
-- **Approval workflow**: Employee submits → Manager reviews → Approved or Rejected
-  - PENDING → SUBMITTED → APPROVED or REJECTED
+- **Approval workflow**: Employee submits â†’ Manager reviews â†’ Approved or Rejected
+  - PENDING â†’ SUBMITTED â†’ APPROVED or REJECTED
   - Rejected timesheets can be edited and resubmitted
 - **Manager reports page** (`/construction/timesheet-reports`):
   - See all team members' timesheets with day-by-day breakdowns
@@ -1199,3 +1199,27 @@ All exports feature a consistent branded header with builder logo, company name,
 ---
 
 _For technical details, see [ARCHITECTURE.md](./ARCHITECTURE.md). For messaging specs, see [MESSAGING_SPEC.md](./MESSAGING_SPEC.md)._
+
+---
+
+## QR Code Check-In System
+Cornerstone PM includes a built-in QR code system for tracking job site activity in real time. Each community gets 4 QR codes:
+- **Vendor Check-In** — Subcontractors scan to check in at job sites with safety acknowledgment, GPS tracking, and photo uploads
+- **PM/Builder Check-In** — Project managers log their site visits
+- **Sales Agent Check-In** — Sales staff check in at model homes
+- **Sales Lead Capture** — Prospective buyers scan to share their contact info
+
+QR codes can be printed as professional signs directly from the app. Builders can upload a PDF safety document that vendors must read before checking in.
+
+## Construction Command Center
+A live Google Maps dashboard showing all field operations across communities:
+- Real-time vendor and builder check-in pins with heat map overlay
+- Activity feed with check-in history, filterable by vendor/builder type
+- Stats: active communities, check-ins today, on-site workers, unique vendors
+- Click any check-in to zoom the map to that location
+
+## Sales Command Center (Coming Soon)
+A companion dashboard for sales operations — tracking sales agent activity, lead capture, model home traffic, and community interest metrics.
+
+## Task Library
+Reusable task templates (formerly called Master Tasks) that define your construction schedule. Create tasks once in the Task Library, organize them by template, set dependencies and default vendors, then apply them to any home with one click.
