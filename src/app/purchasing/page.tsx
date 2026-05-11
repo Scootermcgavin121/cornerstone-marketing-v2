@@ -69,7 +69,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Does Cornerstone PM use lowest-bid auctions to pick vendors?",
-    a: "No &mdash; and that's intentional. Production home builders rely on long-term community vendor relationships, not lowest-bid auctions. Cornerstone PM supports community-assigned vendor awards: you choose who you want to win based on scope coverage, relationship, and quality &mdash; with the bid comparison data to back the decision. Lowest-bid auctioning destroys vendor relationships in residential homebuilding.",
+    a: "No &mdash; and that's intentional. Home builders rely on long-term community vendor relationships, not lowest-bid auctions. Cornerstone PM supports community-assigned vendor awards: you choose who you want to win based on scope coverage, relationship, and quality &mdash; with the bid comparison data to back the decision. Lowest-bid auctioning destroys vendor relationships in residential homebuilding.",
   },
   {
     q: "What does purchasing software for home builders cost?",

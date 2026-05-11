@@ -970,10 +970,10 @@ const purchasing: Category = {
     {
       q: "Does Cornerstone PM use lowest-bid auctions to pick vendors?",
       aText:
-        "No - and that's intentional. Production home builders rely on long-term community vendor relationships, not lowest-bid auctions. Cornerstone supports community-assigned vendor awards: pick who you want to win based on scope coverage, relationship, and quality, with bid comparison data backing the decision.",
+        "No - and that's intentional. Home builders rely on long-term community vendor relationships, not lowest-bid auctions. Cornerstone supports community-assigned vendor awards: pick who you want to win based on scope coverage, relationship, and quality, with bid comparison data backing the decision.",
       a: (
         <>
-          <strong>No - and that's intentional.</strong> Production home builders rely on long-term community vendor
+          <strong>No - and that's intentional.</strong> Home builders rely on long-term community vendor
           relationships, not lowest-bid auctions. Cornerstone supports community-assigned vendor awards: pick who you
           want to win based on scope coverage, relationship, and quality, with bid comparison data backing the
           decision.
