@@ -23,6 +23,9 @@ import {
   Crosshair,
   ShieldCheck,
   Eye,
+  Zap,
+  PlayCircle,
+  Workflow,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -252,8 +255,8 @@ export default function QRPage() {
                   <li className="flex items-start gap-3">
                     <span className="text-emerald-400 text-xs mt-0.5">●</span>
                     <div className="flex-1 min-w-0">
-                      <div className="text-white">VENDOR ON-SITE</div>
-                      <div className="text-slate-500 text-xs truncate">Summit Roofing · Bayside Preserve · 64°F clear</div>
+                      <div className="text-white">VENDOR ON-SITE → TASK STARTED</div>
+                      <div className="text-slate-500 text-xs truncate">Summit Roofing · Roof Dry-In auto-flipped to In Progress · 64°F</div>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
@@ -392,6 +395,62 @@ export default function QRPage() {
               </div>
             );
           })}
+        </div>
+      </section>
+
+      {/* The scan-to-schedule magic */}
+      <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto rounded-3xl border border-emerald-500/30 bg-gradient-to-br from-emerald-950/30 via-slate-950 to-cyan-950/20 p-8 md:p-12 relative overflow-hidden">
+          <div className="max-w-3xl mx-auto text-center mb-10">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-500/40 bg-emerald-500/10 text-emerald-300 text-xs font-bold tracking-widest uppercase mb-4">
+              <Zap className="w-3.5 h-3.5" />
+              The Killer Feature Hiding In Plain Sight
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-black text-white mb-4 leading-tight">
+              The vendor scans. The schedule updates itself.
+            </h2>
+            <p className="text-slate-300 leading-relaxed text-lg">
+              Every other construction platform asks <span className="text-white italic">somebody</span> to remember to flip the task to In Progress. Cornerstone doesn&apos;t. The moment a vendor scans the jobsite QR, the scheduled task auto-flips to <span className="text-emerald-400 font-bold">In Progress</span> — downstream tasks cascade, the PM gets pinged, the homeowner portal updates, and the activity feed lights up. <span className="text-white font-semibold">Zero clicks. Zero forgotten updates. Zero stale schedules.</span>
+            </p>
+          </div>
+          {/* The cascade chain */}
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-3 md:gap-2 items-stretch">
+            <div className="md:col-span-1 rounded-2xl border border-emerald-500/30 bg-slate-900/60 p-5 text-center">
+              <div className="w-10 h-10 mx-auto mb-3 rounded-full bg-emerald-500/15 border border-emerald-500/40 flex items-center justify-center">
+                <QrCode className="w-5 h-5 text-emerald-400" />
+              </div>
+              <div className="text-[10px] uppercase tracking-widest text-emerald-400 font-bold mb-1">Step 1</div>
+              <div className="text-white font-semibold text-sm">Vendor scans the QR</div>
+              <div className="text-slate-500 text-xs mt-1">Arrives at the jobsite, points phone at sign</div>
+            </div>
+            <div className="hidden md:flex items-center justify-center text-emerald-400">
+              <ArrowRight className="w-6 h-6" />
+            </div>
+            <div className="md:col-span-1 rounded-2xl border border-cyan-500/30 bg-slate-900/60 p-5 text-center">
+              <div className="w-10 h-10 mx-auto mb-3 rounded-full bg-cyan-500/15 border border-cyan-500/40 flex items-center justify-center">
+                <PlayCircle className="w-5 h-5 text-cyan-400" />
+              </div>
+              <div className="text-[10px] uppercase tracking-widest text-cyan-400 font-bold mb-1">Step 2</div>
+              <div className="text-white font-semibold text-sm">Task auto-starts</div>
+              <div className="text-slate-500 text-xs mt-1">If the scheduled task hasn&apos;t kicked off yet, it flips to In Progress</div>
+            </div>
+            <div className="hidden md:flex items-center justify-center text-cyan-400">
+              <ArrowRight className="w-6 h-6" />
+            </div>
+            <div className="md:col-span-1 rounded-2xl border border-violet-500/30 bg-slate-900/60 p-5 text-center">
+              <div className="w-10 h-10 mx-auto mb-3 rounded-full bg-violet-500/15 border border-violet-500/40 flex items-center justify-center">
+                <Workflow className="w-5 h-5 text-violet-400" />
+              </div>
+              <div className="text-[10px] uppercase tracking-widest text-violet-400 font-bold mb-1">Step 3</div>
+              <div className="text-white font-semibold text-sm">Downstream cascade fires</div>
+              <div className="text-slate-500 text-xs mt-1">Dependent tasks shift, PM gets push, buyer portal updates, webhooks fan out</div>
+            </div>
+          </div>
+          <div className="mt-8 max-w-3xl mx-auto text-center">
+            <p className="text-slate-400 text-sm leading-relaxed">
+              Pair it with our <Link href="/jobsite-ai" className="text-emerald-400 hover:text-emerald-300 underline underline-offset-4 decoration-emerald-500/30">AI Jobsite Camera Events</Link> and tasks can auto-start the moment a vendor&apos;s truck pulls into the cul-de-sac — no scan required. Same downstream cascade. Same zero clicks. The schedule literally manages itself while you&apos;re on the beach.
+            </p>
+          </div>
         </div>
       </section>
 
