@@ -1,4 +1,5 @@
 ﻿import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -244,10 +245,13 @@ export default function QRPage() {
                 PAIRS WITH
               </div>
               <h2 className="text-3xl font-black text-white mb-4">Vendor Activity Map</h2>
-              <p className="text-slate-400 leading-relaxed mb-6">
+              <p className="text-slate-400 leading-relaxed mb-3">
                 Every QR scan becomes a pin. The Vendor Activity Map shows live check-ins
                 across every community on a Google Maps view. Filter by date, filter by vendor.
-                See who&apos;s currently on-site at a glance â€” refreshes every 30 seconds.
+                See who&apos;s currently on-site at a glance — refreshes every 30 seconds.
+              </p>
+              <p className="text-cyan-400/80 text-sm font-semibold mb-6">
+                Built mobile-first. Pull it up from anywhere — the truck, the jobsite, the dinner table.
               </p>
               <ul className="space-y-2 text-sm text-slate-300">
                 <li className="flex items-start gap-2.5">
@@ -264,9 +268,16 @@ export default function QRPage() {
                 </li>
               </ul>
             </div>
-            <div className="rounded-xl border border-slate-700 bg-slate-900 aspect-video flex items-center justify-center">
-              {/* Replace with /mockups/vendor-activity-map.png when available */}
-              <MapPin className="w-24 h-24 text-cyan-400/40" />
+            <div className="relative rounded-xl border border-slate-700 bg-slate-900 overflow-hidden shadow-2xl shadow-cyan-500/10">
+              <Image
+                src="/mockups/ss-vendor-activity-map.jpg"
+                alt="Vendor Activity Map - live Google Maps view of vendor and PM check-ins across every Scott Alan Homes community, with stat cards for communities, check-ins, on-site count, and unique vendors"
+                width={591}
+                height={1280}
+                className="w-full h-auto block"
+                sizes="(max-width: 1024px) 90vw, 500px"
+                priority
+              />
             </div>
           </div>
         </div>
