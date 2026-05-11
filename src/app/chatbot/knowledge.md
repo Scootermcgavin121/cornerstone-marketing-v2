@@ -656,7 +656,13 @@ Cornerstone's AI-powered takeoff system eliminates manual material estimation. *
 - **Auto-Budget Generation** - when structural options are locked in the sales pipeline, the system automatically generates a full home budget from the floorplan's base budget (~97 budget lines per home). Includes structural option selections with cost + retail pricing and elevation cost adders. No manual budget creation needed. Budget can be reset and regenerated if a deal changes.
 - **Active Homes Table** - sortable columns showing budget status, created date, variance tracking across all homes
 - **Change Orders** - track scope changes with cost impact, approval workflow, and automatic budget adjustments
-- **Purchase Orders** - generate POs from budgets, track vendor deliveries and invoicing
+- **Purchase Orders - Four Generation Patterns** - Most construction platforms hard-code one PO model. Cornerstone gives you four, mixable on the same job:
+  1. **All POs at job start** - generate every PO across the entire build the moment the home is approved. Locks in budget exposure on day one. Best for established builder-vendor relationships where vendors need full upfront visibility.
+  2. **Deposit / partial POs from earlier pipeline tasks** - need to pay a deposit at permit pull, contract signing, or foundation pour? Generate a partial deposit PO from any earlier pipeline task before the work is done, then top it up later.
+  3. **Auto-generate full PO on task completion** - when a construction task is marked complete, the system auto-generates the full PO for that scope and vendor. Cash goes out only when work is verifiably done.
+  4. **Configurable per task, scope, or community** - turn PO generation on/off for specific tasks, scopes, or communities. Mix all three patterns above on the same home (e.g., framing PO at job start, drywall deposit at permit, electrical full PO on task completion).
+  - All four patterns are configurable in Settings. Your cash flow rules drive the system, not the other way around.
+  - POs track vendor deliveries and invoicing. Webhooks fire on po.created and po.status_changed.
 
 ## Design Center & Selections
 - **5-Tier Spec Level System** - define up to 5 finish tiers (e.g., Included, Upgrade I, Upgrade II, Premium, Luxury) with sort ordering to control upgrade pricing logic. Buyers pick a material LEVEL per room (not individual products) - they select the tier they want, then choose specific products within that level at their design appointment. This simplifies the selection process and keeps pricing predictable.

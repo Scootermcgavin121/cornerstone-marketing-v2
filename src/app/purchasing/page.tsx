@@ -64,6 +64,10 @@ const faqItems: FAQItem[] = [
     a: "Cornerstone PM uses a lock-after-acceptance flow. The moment you award a vendor bid, the scope items, pricing, and terms lock down &mdash; no surprise edits, no scope drift, no last-minute pricing changes. The locked bid feeds directly into the home's budget and PO pipeline.",
   },
   {
+    q: "When are POs generated — at job start, after the work is done, or somewhere in between?",
+    a: "All three, plus a fourth. Cornerstone gives you four PO patterns and lets you mix them on the same job: (1) generate every PO across the entire build the moment the home is approved (locks in budget exposure on day one), (2) generate a partial deposit PO from any earlier pipeline task — permit pull, contract sign, foundation pour — then top it up later, (3) auto-generate a full PO when a construction task is marked complete (cash goes out only when work is verifiably done), or (4) configurable per task / scope / community so different trades follow different rules on the same home. Most platforms hard-code one PO model. Cornerstone lets your cash flow rules drive the system, not the other way around.",
+  },
+  {
     q: "How do I subscribe to bid notifications as an admin?",
     a: "Cornerstone PM ships per-user notification preferences plus role-level subscriptions for admins. Admins can subscribe to bid events &mdash; new bids submitted, vendor scope edits, awards, lock events &mdash; and choose email, in-app, or both. Each user controls their own notification toggles independently.",
   },
@@ -101,7 +105,7 @@ const features = [
   { title: "Vendor Portal Scope Editing", desc: "Vendors edit their own scope items in their portal &mdash; you review, you approve, you award." },
   { title: "Bid Notification Subscriptions", desc: "Admins subscribe to bid events &mdash; new bids, edits, awards &mdash; with per-user notification preferences." },
   { title: "Award & Budget Flow", desc: "Award a bid and it flows directly into the budget &mdash; no double entry." },
-  { title: "Purchase Orders", desc: "Generate and send POs directly from approved bids." },
+  { title: "Flexible PO Generation — Four Patterns", desc: "Most platforms hard-code one PO model. Cornerstone gives you four: (1) all POs at job start (lock in budget exposure day one), (2) partial deposit POs from any earlier task (permit pull, contract sign, foundation pour), (3) full PO auto-generated when a construction task is marked complete (cash goes out only when work is done), or (4) configurable per task / scope / community — mix and match on the same job. Your cash flow rules drive the system, not the other way around." },
   { title: "Take Your Data With You, Anytime", desc: "Your data is always yours. Download everything as CSV or JSON in one click &mdash; 91 tables, every vendor, every home, every schedule, every option, every budget line. Sensitive fields excluded automatically. Plus nightly auto-backups with 7-day retention for instant rollback. No vendor lock-in, no exit fees, no strings attached." },
   { title: "Buildertrend Migration", desc: "Import existing budgets from Buildertrend with smart column mapping." },
   { title: "Bid Import AI", desc: "Upload vendor bids in ANY format â€” Excel, PDF, scanned docs, even photos of handwritten quotes. AI extracts line items, maps to your parts catalog with confidence scores, and lets you review, edit, approve, or reject before importing." },

@@ -278,27 +278,32 @@ export default function AiConstructionPurchasingPage() {
               </div>
               <div>
                 <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-400 text-xs font-bold mb-2">Differentiator</div>
-                <h2 className="text-3xl font-black text-white">Your schedule drives your purchasing.</h2>
+                <h2 className="text-3xl font-black text-white">PO generation, on YOUR terms.</h2>
               </div>
             </div>
             <p className="text-slate-400 text-lg leading-relaxed mb-8">
-              Most construction software treats scheduling and purchasing as two separate systems. In Cornerstone, they&apos;re connected — your task completions can trigger PO generation automatically.
+              Most construction software hard-codes one PO model. Cornerstone gives you <strong className="text-white">four ways</strong> to generate purchase orders — mix and match per scope, per community, per task. Your cash flow rules drive the system, not the other way around.
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
               {[
                 {
-                  title: "Full PO on task completion",
-                  desc: "When a construction task is marked complete, Cornerstone can auto-generate a full PO for that scope and vendor — no manual step required.",
-                  color: "text-violet-400",
+                  title: "All POs at job start",
+                  desc: "Generate every PO across the entire build the moment the home is approved. Vendors get full visibility, accounting locks in budget exposure on day one. Best for established builder-vendor relationships.",
+                  color: "text-cyan-400",
                 },
                 {
-                  title: "Deposit POs earlier in the pipeline",
-                  desc: "Need to pay a deposit at permit pull or contract signing? Generate a deposit PO from any earlier pipeline task, before the work is done.",
+                  title: "Deposit POs earlier in pipeline",
+                  desc: "Need to pay a deposit at permit pull or contract signing? Generate a partial deposit PO from any earlier pipeline task, before the work is done — then top it up later.",
                   color: "text-amber-400",
                 },
                 {
+                  title: "Full PO on task completion",
+                  desc: "When a construction task is marked complete, Cornerstone auto-generates a full PO for that scope and vendor — no manual step required. Cash goes out only when work is verifiably done.",
+                  color: "text-violet-400",
+                },
+                {
                   title: "Configurable per task or globally",
-                  desc: "Turn PO generation on or off for specific tasks, or disable it entirely for certain scopes. You control the rules.",
+                  desc: "Turn PO generation on or off for specific tasks, scopes, or communities. Mix all three patterns above on the same job. You control the rules.",
                   color: "text-emerald-400",
                 },
               ].map((item) => (
