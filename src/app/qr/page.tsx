@@ -35,15 +35,15 @@ const qrCodes = [
     icon: HardHat,
     tagline: "Scan on arrival. We log everything.",
     description:
-      "Every community and home gets its own unique QR code. Vendors scan with any phone â€” no app install, no Cornerstone login. GPS coordinates, timestamp, and weather conditions are captured automatically. Check-in and check-out times build a verifiable hours-on-site record.",
+      "Every community and home gets its own unique QR code. Vendors scan with any phone — no app install, no Cornerstone login. GPS coordinates, timestamp, and weather conditions are captured automatically. Check-in and check-out times build a verifiable hours-on-site record.",
     bullets: [
       "GPS + timestamp + weather captured on every scan",
-      "Hours-on-site tracked automatically (check-in â†’ check-out)",
-      "Photo upload at check-in â€” up to 10 photos per visit",
+      "Hours-on-site tracked automatically (check-in → check-out)",
+      "Photo upload at check-in — up to 10 photos per visit",
       "Configurable safety acknowledgment per community",
       "Worker headcount log for crew sizes",
       "Webhook events: vendor.arrived, vendor.departed",
-      'Printable 11Ã—8.5" signs auto-generated for every home',
+      'Printable 11×8.5" signs auto-generated for every home',
     ],
   },
   {
@@ -57,13 +57,13 @@ const qrCodes = [
     icon: Clipboard,
     tagline: "Timesheets that prove who was on-site.",
     description:
-      "PMs, permitting agents, and inspectors scan at the construction trailer when they arrive. GPS-validated presence logging feeds the timesheet system â€” actual on-site presence is aligned below the timecard grid so managers can validate reported hours.",
+      "PMs, permitting agents, and inspectors scan at the construction trailer when they arrive. GPS-validated presence logging feeds the timesheet system — actual on-site presence is aligned below the timecard grid so managers can validate reported hours.",
     bullets: [
       "GPS-validated presence logs",
-      "Timesheet integration â€” actual presence vs. reported hours",
+      "Timesheet integration — actual presence vs. reported hours",
       "Stops \"I was on-site all day\" entries that don't match the GPS record",
       "Per-community QR codes for multi-subdivision builders",
-      "Inspector workflows â€” log site visits with photo evidence",
+      "Inspector workflows — log site visits with photo evidence",
       "All scans attributable to a specific user account",
     ],
   },
@@ -188,7 +188,7 @@ export default function QRPage() {
                   <div
                     className={`rounded-2xl border-2 ${qr.borderColor} ${qr.bgColor} p-12 flex items-center justify-center aspect-square`}
                   >
-                    {/* Placeholder â€” replace with real screenshot when available */}
+                    {/* Placeholder — replace with real screenshot when available */}
                     <QrCode className={`w-48 h-48 ${qr.textColor}`} strokeWidth={1.5} />
                   </div>
                 </div>
@@ -321,7 +321,7 @@ export default function QRPage() {
               </h2>
               <p className="text-slate-400 mb-4 leading-relaxed">
                 Cornerstone&apos;s AI Jobsite Camera Events feature accepts webhook events from
-                any camera, doorbell, gate sensor, or AI vision system â€” Verkada, Ring, custom
+                any camera, doorbell, gate sensor, or AI vision system — Verkada, Ring, custom
                 IP cameras, anything that can fire an HTTP POST. When a vendor is detected
                 on-site, the matching scheduled task auto-flips to In Progress. No QR scan
                 required.

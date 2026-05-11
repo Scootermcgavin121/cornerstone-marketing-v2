@@ -33,13 +33,13 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Takeoff / estimating", cornerstone: true, competitor: true, note: "Both include takeoff and estimating functionality." },
   { feature: "Unlimited users", cornerstone: true, competitor: true, note: "Both include unlimited users. Buildxact Foundation starts at $199/mo (annual)." },
   { feature: "Pricing model", cornerstone: "Flat, unlimited users", competitor: "Flat, unlimited users (higher starting price)", note: "Both are flat-fee with unlimited users. Buildxact Foundation starts at $199/mo (annual) for estimating/takeoffs; Master $599/mo plus Blu AI add-ons. Cornerstone starts at $149/mo. More importantly: Buildxact doesn't ship an options engine, floorplan pricing matrix, multi-community pipelines, homeowner portal, or action-taking AI agents at any tier." },
-  { feature: "Cornerstone tiers (flat, unlimited users)", cornerstone: "$149 / $299 / $499 / $599", competitor: "â€”", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30 named webhook events, 7-wave bidding." },
+  { feature: "Cornerstone tiers (flat, unlimited users)", cornerstone: "$149 / $299 / $499 / $599", competitor: "—", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30 named webhook events, 7-wave bidding." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
   { title: "Beyond estimating: full PM platform", desc: "Buildxact is great at takeoffs and quotes (starting $199/mo). Cornerstone includes all of that - plus scheduling, homeowner portal, purchasing, bid management, multi-community pipeline, and a design center from $149/mo. One platform, not a patchwork." },
   { title: "Blueprint AI + Foreman AI = AI native on Pro", desc: "Blueprint AI converts PDF floor plans to material takeoffs in 60 seconds. Foreman AI (45+ skills on Pro $499/mo) reads and writes your data - SOWs, bid comparisons, design options, image search, web scraping. Buildxact's Blu AI stays within estimating scope." },
-  { title: "30+ webhooks + public API on Pro+", desc: "30+ named webhook events with typed payload schemas, HMAC signatures, and auto-retry on Pro+ ($599/mo) â€” catalog growing. Public REST API with 59+ endpoints and growing. Wire your own tools, SMS bots, or AI agents. Buildxact has no comparable automation layer." },
+  { title: "30+ webhooks + public API on Pro+", desc: "30+ named webhook events with typed payload schemas, HMAC signatures, and auto-retry on Pro+ ($599/mo) — catalog growing. Public REST API with 59+ endpoints and growing. Wire your own tools, SMS bots, or AI agents. Buildxact has no comparable automation layer." },
 ];
 
 const faqItems: FAQItem[] = [

@@ -108,7 +108,7 @@ const features = [
   { title: "Flexible PO Generation — Four Patterns", desc: "Most platforms hard-code one PO model. Cornerstone gives you four: (1) all POs at job start (lock in budget exposure day one), (2) partial deposit POs from any earlier task (permit pull, contract sign, foundation pour), (3) full PO auto-generated when a construction task is marked complete (cash goes out only when work is done), or (4) configurable per task / scope / community — mix and match on the same job. Your cash flow rules drive the system, not the other way around." },
   { title: "Take Your Data With You, Anytime", desc: "Your data is always yours. Download everything as CSV or JSON in one click &mdash; 91 tables, every vendor, every home, every schedule, every option, every budget line. Sensitive fields excluded automatically. Plus nightly auto-backups with 7-day retention for instant rollback. No vendor lock-in, no exit fees, no strings attached." },
   { title: "Buildertrend Migration", desc: "Import existing budgets from Buildertrend with smart column mapping." },
-  { title: "Bid Import AI", desc: "Upload vendor bids in ANY format â€” Excel, PDF, scanned docs, even photos of handwritten quotes. AI extracts line items, maps to your parts catalog with confidence scores, and lets you review, edit, approve, or reject before importing." },
+  { title: "Bid Import AI", desc: "Upload vendor bids in ANY format — Excel, PDF, scanned docs, even photos of handwritten quotes. AI extracts line items, maps to your parts catalog with confidence scores, and lets you review, edit, approve, or reject before importing." },
 ];
 
 export default function PurchasingPage() {
@@ -224,7 +224,7 @@ export default function PurchasingPage() {
               <div className="flex justify-between"><span>Cornerstone PM</span><span className="text-emerald-400 font-bold">Free during beta</span></div>
             </div>
             <Link href="/beta" className="block w-full text-center px-6 py-3.5 rounded-xl bg-emerald-400 text-slate-900 font-bold hover:bg-emerald-300 transition-all duration-200">Get Early Access &rarr;</Link>
-            <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders &mdash;Â· No credit card required</p>
+            <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders &mdash;· No credit card required</p>
           </div>
           <div className="space-y-4">
             <h2 className="text-3xl font-black">Why builders choose Cornerstone for purchasing</h2>

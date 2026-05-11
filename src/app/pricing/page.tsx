@@ -6,7 +6,7 @@ import { PricingSection } from "@/components/PricingSection";
 import { FAQSection, type FAQItem } from "@/components/FAQSection";
 
 export const metadata: Metadata = {
-  title: "Pricing | Cornerstone PM â€” Home Builder Software from $149/mo",
+  title: "Pricing | Cornerstone PM — Home Builder Software from $149/mo",
   description:
     "Simple per-month pricing for home builder software. Starter $149, Builder $299, Pro $499, Pro+ $599. Unlimited users on every plan. No per-seat fees. No implementation cost.",
   alternates: { canonical: "https://www.cornerstonepm.ai/pricing" },

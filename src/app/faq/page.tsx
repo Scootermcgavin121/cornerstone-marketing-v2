@@ -16,19 +16,19 @@ import { ChevronDown } from "lucide-react";
 
  Source pages whose content was lifted (consider redirecting their JSON-LD
  references here in a future pass - not done yet, just flagged):
-   - /pricing                               (8 â†’ merged into Pricing)
-   - /migrate                               (8 â†’ merged into Migration)
-   - /buildertrend-alternative              (8 â†’ merged into Comparisons + Migration)
-   - /buildpro-alternative                  (8 â†’ merged into Comparisons + Migration)
-   - /newstar-alternative                   (8 â†’ merged into Comparisons + Migration)
-   - /home-builder-project-management-software (9 â†’ spread across categories)
-   - /construction                          (8 â†’ merged into Scheduling)
-   - /design                                (8 â†’ merged into Design Center)
-   - /sales                                 (8 â†’ merged into Sales)
-   - /purchasing                            (16 â†’ merged into Purchasing)
-   - /permitting                            (7 â†’ merged into Scheduling/Permitting)
-   - /bid-import-ai                         (8 â†’ merged into AI Agents)
-   - /support-ai                            (12 â†’ merged into AI Agents)
+   - /pricing                               (8 → merged into Pricing)
+   - /migrate                               (8 → merged into Migration)
+   - /buildertrend-alternative              (8 → merged into Comparisons + Migration)
+   - /buildpro-alternative                  (8 → merged into Comparisons + Migration)
+   - /newstar-alternative                   (8 → merged into Comparisons + Migration)
+   - /home-builder-project-management-software (9 → spread across categories)
+   - /construction                          (8 → merged into Scheduling)
+   - /design                                (8 → merged into Design Center)
+   - /sales                                 (8 → merged into Sales)
+   - /purchasing                            (16 → merged into Purchasing)
+   - /permitting                            (7 → merged into Scheduling/Permitting)
+   - /bid-import-ai                         (8 → merged into AI Agents)
+   - /support-ai                            (12 → merged into AI Agents)
    - /blog/buildertrend-vs-cornerstone-feature-comparison (7)
    - /blog/home-builder-software-buyer-guide-2026 (7)
    - /blog/newstar-implementation-cost-breakdown (7)
@@ -791,7 +791,7 @@ const sales: Category = {
 const design: Category = {
   slug: "design-center",
   title: "Design Center & Options",
-  blurb: "Designer packages, structural options, floorplan pricing, Ã  la carte, allowances.",
+  blurb: "Designer packages, structural options, floorplan pricing, à la carte, allowances.",
   accent: "text-violet-400",
   items: [
     {
@@ -821,12 +821,12 @@ const design: Category = {
     {
       q: "What are Designer Packages?",
       aText:
-        "64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses), spanning 7 categories. Buyer picks a package and all category options auto-lock to that package; Ã  la carte unlocks if the package is removed. Strong differentiator vs spreadsheet-style design centers - and built so a buyer can complete selections in one sitting instead of three.",
+        "64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses), spanning 7 categories. Buyer picks a package and all category options auto-lock to that package; à la carte unlocks if the package is removed. Strong differentiator vs spreadsheet-style design centers - and built so a buyer can complete selections in one sitting instead of three.",
       a: (
         <>
           <strong>64 Designer Packages across 7 categories</strong>, each <em>curated by an actual interior
           designer</em> - the same playbook K. Hovnanian Homes uses to take the guesswork out of design selections.
-          Buyer picks a package and all category options auto-lock to that package; Ã  la carte unlocks if the package
+          Buyer picks a package and all category options auto-lock to that package; à la carte unlocks if the package
           is removed. Strong differentiator vs spreadsheet-style design centers - and built so a buyer can complete
           selections in one sitting instead of three.
         </>
@@ -919,12 +919,12 @@ const purchasing: Category = {
     {
       q: "How does Cornerstone PM handle vendor bidding?",
       aText:
-        "Send bid requests to multiple vendors at once. Auto-generated, scope-filtered Excel templates (3 tabs: Base/Structural/Designer) attach to the vendor invite email. Bids flow Invited â†’ Viewed â†’ Submitted â†’ Declined with timestamps. Side-by-side comparison kicks in once 2+ vendors submit. See /purchasing.",
+        "Send bid requests to multiple vendors at once. Auto-generated, scope-filtered Excel templates (3 tabs: Base/Structural/Designer) attach to the vendor invite email. Bids flow Invited → Viewed → Submitted → Declined with timestamps. Side-by-side comparison kicks in once 2+ vendors submit. See /purchasing.",
       a: (
         <>
           Send bid requests to multiple vendors at once. Auto-generated, scope-filtered Excel templates{" "}
           <strong>(3 tabs: Base/Structural/Designer)</strong> attach to the vendor invite email. Bids flow{" "}
-          <strong>Invited â†’ Viewed â†’ Submitted â†’ Declined</strong> with timestamps. Side-by-side comparison kicks in
+          <strong>Invited → Viewed → Submitted → Declined</strong> with timestamps. Side-by-side comparison kicks in
           once 2+ vendors submit. See <A href="/purchasing">/purchasing</A>.
         </>
       ),
@@ -1341,11 +1341,11 @@ const security: Category = {
     {
       q: "Can I export my data from Cornerstone PM?",
       aText:
-        "Yes - every plan. Take all your data with you anytime, no strings attached. Settings â†’ Backups lets you download a full org export (91 tables) as CSV or JSON in one click, with sensitive fields automatically excluded. Every vendor, every home, every schedule, every option, every budget line. Nightly auto-backups run with 7-day retention for instant rollback. Your data is always yours, no exit fees, no support ticket, no waiting period.",
+        "Yes - every plan. Take all your data with you anytime, no strings attached. Settings → Backups lets you download a full org export (91 tables) as CSV or JSON in one click, with sensitive fields automatically excluded. Every vendor, every home, every schedule, every option, every budget line. Nightly auto-backups run with 7-day retention for instant rollback. Your data is always yours, no exit fees, no support ticket, no waiting period.",
       a: (
         <>
           Yes - every plan. <strong>Take all your data with you anytime, no strings attached.</strong>{" "}
-          Settings â†’ Backups lets you download a full org export (91 tables) as CSV or JSON in one click,
+          Settings → Backups lets you download a full org export (91 tables) as CSV or JSON in one click,
           with sensitive fields automatically excluded. Every vendor, every home, every schedule, every
           option, every budget line. Nightly auto-backups run with{" "}
           <strong>7-day retention</strong> for instant rollback. No exit fees, no support ticket, no waiting period.
@@ -1355,11 +1355,11 @@ const security: Category = {
     {
       q: "How often are backups run?",
       aText:
-        "Nightly automatic backups, 7-day retention. You can also trigger manual backups on demand at any time from Settings â†’ Backups (Admin only). Both CSV and JSON formats are available for full-database exports.",
+        "Nightly automatic backups, 7-day retention. You can also trigger manual backups on demand at any time from Settings → Backups (Admin only). Both CSV and JSON formats are available for full-database exports.",
       a: (
         <>
           <strong>Nightly automatic backups, 7-day retention.</strong> You can also trigger manual backups on demand
-          at any time from Settings â†’ Backups (Admin only). Both CSV and JSON formats are available for full-database
+          at any time from Settings → Backups (Admin only). Both CSV and JSON formats are available for full-database
           exports.
         </>
       ),
@@ -1565,7 +1565,7 @@ export default function FAQPage() {
               href="https://app.cornerstonepm.ai/login"
               className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-violet-500 hover:bg-violet-400 text-white font-semibold transition-colors shadow-lg shadow-violet-500/20"
             >
-              âœ¨ Talk to Foreman AI
+              ✨ Talk to Foreman AI
             </Link>
             <Link
               href="/contact"
@@ -1587,7 +1587,7 @@ export default function FAQPage() {
       <section className="py-6 px-4 border-t border-slate-900 bg-slate-950">
         <div className="max-w-4xl mx-auto">
           <p className="text-xs text-slate-600 text-center leading-relaxed">
-            BuildertrendÂ®, NEWSTARÂ®, BuildProÂ®, CoConstructÂ®, JobTreadÂ®, and MarkSystemsÂ® are
+            Buildertrend®, NEWSTAR®, BuildPro®, CoConstruct®, JobTread®, and MarkSystems® are
             trademarks of their respective owners. Cornerstone PM is not affiliated with or
             endorsed by these companies.
           </p>

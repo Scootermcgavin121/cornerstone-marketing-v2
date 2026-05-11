@@ -40,7 +40,7 @@ const comparisonRows: ComparisonRow[] = [
 const whySwitchCards: WhySwitchCard[] = [
   { title: "Home builder workflows native", desc: "Lot management, floorplan pricing, structural options, design center, multi-community pipelines, pre-sale flow - on Cornerstone Builder ($299/mo). None of these exist in Contractor Foreman." },
   { title: "Foreman AI: 45+ skills, real actions (Pro $499)", desc: "Foreman AI creates POs, updates design options, generates SOWs, compares bids, remembers your preferences, searches product images, and reads supplier websites with AI-powered web scraping. Per-user memory. Built-in session compaction. No other construction platform comes close." },
-  { title: "30+ webhooks + public REST API (Pro+)", desc: "30+ named webhook events with typed payload schemas, HMAC signatures, and auto-retry (catalog growing). Public REST API with 59+ endpoints and growing rapidly â€” both on Pro+ ($599/mo). Wire SMS, voice (Twilio, Bland, Retell), or your own Claude agent to construction events. Contractor Foreman has no public API or webhook catalog." },
+  { title: "30+ webhooks + public REST API (Pro+)", desc: "30+ named webhook events with typed payload schemas, HMAC signatures, and auto-retry (catalog growing). Public REST API with 59+ endpoints and growing rapidly — both on Pro+ ($599/mo). Wire SMS, voice (Twilio, Bland, Retell), or your own Claude agent to construction events. Contractor Foreman has no public API or webhook catalog." },
 ];
 
 const faqItems: FAQItem[] = [

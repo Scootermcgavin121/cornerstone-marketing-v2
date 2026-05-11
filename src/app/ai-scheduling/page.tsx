@@ -14,15 +14,15 @@ const schedulingSkills = [
   { name: "Home Status Tracking", detail: "View all IN_PROGRESS homes with current stage, days in construction, and next scheduled trade" },
   { name: "Budget Variance Flags", detail: "Catch cost overruns that signal schedule problems before they compound" },
   { name: "Vendor Performance Analysis", detail: "Track which subs show up on time, which ones create delays, and adjust scheduling accordingly" },
-  { name: "Punch List Generator", detail: "Room-by-room QC checklists by trade â€” no more verbal handoffs" },
-  { name: "Scope of Work Generator", detail: "Professional SOW documents per trade per home â€” clear expectations = fewer delays" },
+  { name: "Punch List Generator", detail: "Room-by-room QC checklists by trade — no more verbal handoffs" },
+  { name: "Scope of Work Generator", detail: "Professional SOW documents per trade per home — clear expectations = fewer delays" },
   { name: "Bid Request Drafter", detail: "Formatted bid invitations with schedule requirements built in" },
-  { name: "Sub Performance Scorecards", detail: "Bid response rates, schedule compliance, insurance status â€” all in one report" },
-  { name: "Community-level Pipeline View", detail: "See all homes across a community by stage â€” where are you bottlenecked?" },
+  { name: "Sub Performance Scorecards", detail: "Bid response rates, schedule compliance, insurance status — all in one report" },
+  { name: "Community-level Pipeline View", detail: "See all homes across a community by stage — where are you bottlenecked?" },
 ];
 
 const comparison = [
-  { task: "Notify a sub their start date changed", spreadsheet: "Text message, hope they read it", cornerstone: "Foreman sends the update â€” logged, timestamped, confirmed" },
+  { task: "Notify a sub their start date changed", spreadsheet: "Text message, hope they read it", cornerstone: "Foreman sends the update — logged, timestamped, confirmed" },
   { task: "Know which homes are behind schedule", spreadsheet: "Manual review of each row", cornerstone: "Ask Foreman: \"Which homes haven't had a status update in 14 days?\"" },
   { task: "Schedule the next trade after inspection passes", spreadsheet: "Phone call + calendar update", cornerstone: "Foreman flags the milestone, prompts next trade assignment" },
   { task: "Track sub performance over time", spreadsheet: "Doesn't happen", cornerstone: "Vendor scorecards: on-time rate, bid win rate, insurance status" },
@@ -39,11 +39,11 @@ const prompts = [
     result: "Bottom 3 vendors by schedule compliance listed. Framing sub at 61% on-time. Electrical at 74%. Recommend review before next bid cycle.",
   },
   {
-    prompt: "Generate punch lists for all finishing trades at 1234 Oak Street â€” closing is in 3 weeks",
+    prompt: "Generate punch lists for all finishing trades at 1234 Oak Street — closing is in 3 weeks",
     result: "5 punch lists generated: Paint, Flooring, Trim, Fixtures, Final Clean. PDF exports ready. Room-by-room QC format.",
   },
   {
-    prompt: "Show me a community-level view of Bayside Preserve â€” where are we bottlenecked?",
+    prompt: "Show me a community-level view of Bayside Preserve — where are we bottlenecked?",
     result: "16 homes shown by stage. 4 homes stalled at drywall inspection. 2 homes waiting on cabinet delivery. Bottleneck flagged at electrical trim.",
   },
 ];
@@ -59,14 +59,14 @@ export default function AiSchedulingPage() {
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-xs font-semibold mb-6">
             <Calendar className="w-3.5 h-3.5" />
-            AI SCHEDULING Â· HOME BUILDER FOCUSED Â· PLAIN ENGLISH COMMANDS
+            AI SCHEDULING · HOME BUILDER FOCUSED · PLAIN ENGLISH COMMANDS
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
             AI That Keeps Your Subs{" "}
             <span className="text-cyan-400">on Schedule</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-6 leading-relaxed">
-            Managing 15 homes across 8 trades via text messages and spreadsheets isn&apos;t a scheduling system â€” it&apos;s controlled chaos. Cornerstone PM&apos;s AI scheduling keeps every home visible, every sub accountable, and every delay caught before it cascades.
+            Managing 15 homes across 8 trades via text messages and spreadsheets isn&apos;t a scheduling system — it&apos;s controlled chaos. Cornerstone PM&apos;s AI scheduling keeps every home visible, every sub accountable, and every delay caught before it cascades.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -159,7 +159,7 @@ export default function AiSchedulingPage() {
                 border: "border-cyan-500/20",
                 step: "01",
                 title: "Visibility, instantly",
-                desc: "Ask Foreman what&apos;s happening across all your homes right now. Every home, every stage, every delay â€” one conversation.",
+                desc: "Ask Foreman what&apos;s happening across all your homes right now. Every home, every stage, every delay — one conversation.",
               },
               {
                 icon: Zap,
@@ -301,7 +301,7 @@ export default function AiSchedulingPage() {
         >
           Get Beta Access <ArrowRight className="w-5 h-5" />
         </Link>
-        <p className="text-slate-600 text-sm mt-4">No credit card required Â· 2 years free Â· Limited to 100 builders</p>
+        <p className="text-slate-600 text-sm mt-4">No credit card required · 2 years free · Limited to 100 builders</p>
       </section>
 
       <Footer />
