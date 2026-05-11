@@ -188,6 +188,96 @@ export default function QRPage() {
         </div>
       </section>
 
+      {/* Vendor Activity Map — hero-adjacent visual proof */}
+      <section className="py-12 px-4">
+        <div className="max-w-6xl mx-auto rounded-2xl border border-slate-800/60 bg-gradient-to-br from-slate-900/80 to-slate-950 p-6 sm:p-8 md:p-12">
+          {/* Header + intro */}
+          <div className="max-w-3xl mx-auto text-center mb-10">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-xs font-semibold mb-4">
+              <Radio className="w-3.5 h-3.5" />
+              THE COMMAND CENTER VIEW
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">Vendor Activity Map</h2>
+            <p className="text-slate-400 leading-relaxed mb-3">
+              Every QR scan becomes a pin. Live Google Maps view of every vendor and PM check-in
+              across every community, with weather overlays, a heat map of activity, and a live
+              feed that refreshes every 30 seconds. Filter by date, filter by vendor. See who&apos;s
+              on-site <span className="text-white font-semibold">right now.</span>
+            </p>
+            <p className="text-cyan-400/90 text-sm font-semibold">
+              Same live command center on desktop, tablet, and phone. Pull it up from the truck,
+              the trailer, the office, or a hammock in Cabo — your build runs the same.
+            </p>
+          </div>
+
+          {/* Hero desktop screenshot — the wow shot */}
+          <div className="relative rounded-xl border border-slate-700 bg-slate-900 overflow-hidden shadow-2xl shadow-cyan-500/10 mb-6">
+            <div className="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-full bg-slate-950/80 backdrop-blur-sm border border-cyan-500/40 text-cyan-400 text-[10px] font-bold tracking-widest uppercase">
+              Desktop · Live Overview
+            </div>
+            <Image
+              src="/mockups/ss-vendor-activity-map-desktop.jpg"
+              alt="Vendor Activity Map desktop overview - Google Maps satellite of coastal Delaware with clustered check-in pins, heat-map overlay showing activity intensity, stat cards (10 communities, 155 check-ins today, 74 on-site now, 60 unique vendors), and a live activity feed with weather conditions per community"
+              width={1440}
+              height={1278}
+              className="w-full h-auto block"
+              sizes="(max-width: 1024px) 100vw, 1100px"
+              priority
+            />
+          </div>
+
+          {/* Detail desktop + phone */}
+          <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-6 lg:gap-8 items-center mb-10">
+            {/* Detail screenshot */}
+            <div className="relative rounded-xl border border-slate-700 bg-slate-900 overflow-hidden shadow-2xl shadow-violet-500/10">
+              <div className="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-full bg-slate-950/80 backdrop-blur-sm border border-violet-500/40 text-violet-300 text-[10px] font-bold tracking-widest uppercase">
+                Drill into any pin
+              </div>
+              <Image
+                src="/mockups/ss-vendor-activity-map-detail.jpg"
+                alt="Vendor Activity Map detail view - clicking a vendor pin opens a popup with vendor name, trade, lot, and time on-site, while the activity feed expands to show every vendor working that community with start/end times"
+                width={1440}
+                height={1296}
+                className="w-full h-auto block"
+                sizes="(max-width: 1024px) 100vw, 660px"
+              />
+            </div>
+            {/* Phone screenshot */}
+            <div className="flex justify-center">
+              <div className="relative max-w-[260px] w-full rounded-[2rem] border-4 border-slate-700 bg-slate-900 overflow-hidden shadow-2xl shadow-cyan-500/20">
+                <div className="absolute top-3 left-1/2 -translate-x-1/2 z-10 px-2.5 py-1 rounded-full bg-slate-950/80 backdrop-blur-sm border border-emerald-500/40 text-emerald-400 text-[10px] font-bold tracking-widest uppercase">
+                  In Your Pocket
+                </div>
+                <Image
+                  src="/mockups/ss-vendor-activity-map.jpg"
+                  alt="Vendor Activity Map mobile view - same live map and activity feed running on a phone, with vendor check-ins, trades, lots, and on-site timestamps for Eagles Landing community"
+                  width={720}
+                  height={1560}
+                  className="w-full h-auto block"
+                  sizes="(max-width: 1024px) 65vw, 260px"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Bullets */}
+          <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto text-sm text-slate-300">
+            <li className="flex items-start gap-2.5">
+              <CheckCircle2 className="w-4 h-4 mt-0.5 text-cyan-400 flex-shrink-0" />
+              Real-time pins for every vendor and PM check-in
+            </li>
+            <li className="flex items-start gap-2.5">
+              <CheckCircle2 className="w-4 h-4 mt-0.5 text-cyan-400 flex-shrink-0" />
+              Heat-map overlay shows where the action is
+            </li>
+            <li className="flex items-start gap-2.5">
+              <CheckCircle2 className="w-4 h-4 mt-0.5 text-cyan-400 flex-shrink-0" />
+              Click any pin for vendor, trade, lot, and time on-site
+            </li>
+          </ul>
+        </div>
+      </section>
+
       {/* Stats */}
       <section className="py-8 px-4">
         <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -546,80 +636,6 @@ export default function QRPage() {
               </p>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Pairs with Vendor Activity Map */}
-      <section className="py-12 px-4">
-        <div className="max-w-6xl mx-auto rounded-2xl border border-slate-800/60 bg-gradient-to-br from-slate-900/80 to-slate-950 p-6 sm:p-8 md:p-12">
-          {/* Header + intro */}
-          <div className="max-w-3xl mx-auto text-center mb-10">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-xs font-semibold mb-4">
-              <Radio className="w-3.5 h-3.5" />
-              THE COMMAND CENTER VIEW
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">Vendor Activity Map</h2>
-            <p className="text-slate-400 leading-relaxed mb-3">
-              Every QR scan becomes a pin. Live Google Maps view of every vendor and PM check-in
-              across every community, with weather overlays and a live activity feed. Filter by
-              date, filter by vendor. See who&apos;s on-site right now — refreshes every 30 seconds.
-            </p>
-            <p className="text-cyan-400/90 text-sm font-semibold">
-              Same live command center on desktop, tablet, and phone. Pull it up from the truck,
-              the trailer, the office, or a hammock in Cabo — your build runs the same.
-            </p>
-          </div>
-
-          {/* Side-by-side: desktop map + phone */}
-          <div className="grid grid-cols-1 lg:grid-cols-[1.7fr_1fr] gap-6 lg:gap-8 items-center mb-10">
-            {/* Desktop screenshot */}
-            <div className="relative rounded-xl border border-slate-700 bg-slate-900 overflow-hidden shadow-2xl shadow-cyan-500/10">
-              <div className="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-full bg-slate-950/80 backdrop-blur-sm border border-cyan-500/40 text-cyan-400 text-[10px] font-bold tracking-widest uppercase">
-                Desktop View
-              </div>
-              <Image
-                src="/mockups/ss-vendor-activity-map-desktop.jpg"
-                alt="Vendor Activity Map desktop view - Google Maps satellite of coastal Delaware with pinned communities, stat cards showing 10 communities and 1 on-site check-in, and live activity feed showing Summit Roofing DE on-site at Bayside Preserve"
-                width={1280}
-                height={1085}
-                className="w-full h-auto block"
-                sizes="(max-width: 1024px) 100vw, 720px"
-                priority
-              />
-            </div>
-            {/* Phone screenshot */}
-            <div className="flex justify-center">
-              <div className="relative max-w-[260px] w-full rounded-[2rem] border-4 border-slate-700 bg-slate-900 overflow-hidden shadow-2xl shadow-cyan-500/20">
-                <div className="absolute top-3 left-1/2 -translate-x-1/2 z-10 px-2.5 py-1 rounded-full bg-slate-950/80 backdrop-blur-sm border border-emerald-500/40 text-emerald-400 text-[10px] font-bold tracking-widest uppercase">
-                  In Your Pocket
-                </div>
-                <Image
-                  src="/mockups/ss-vendor-activity-map.jpg"
-                  alt="Vendor Activity Map mobile view - same live map running on a phone with stat cards and activity feed"
-                  width={591}
-                  height={1280}
-                  className="w-full h-auto block"
-                  sizes="(max-width: 1024px) 65vw, 260px"
-                />
-              </div>
-            </div>
-          </div>
-
-          {/* Bullets */}
-          <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto text-sm text-slate-300">
-            <li className="flex items-start gap-2.5">
-              <CheckCircle2 className="w-4 h-4 mt-0.5 text-cyan-400 flex-shrink-0" />
-              Real-time pins for vendor and PM check-ins
-            </li>
-            <li className="flex items-start gap-2.5">
-              <CheckCircle2 className="w-4 h-4 mt-0.5 text-cyan-400 flex-shrink-0" />
-              Stat cards: communities, on-site count, unique vendors today
-            </li>
-            <li className="flex items-start gap-2.5">
-              <CheckCircle2 className="w-4 h-4 mt-0.5 text-cyan-400 flex-shrink-0" />
-              Activity feed sidebar of recent scans
-            </li>
-          </ul>
         </div>
       </section>
 
