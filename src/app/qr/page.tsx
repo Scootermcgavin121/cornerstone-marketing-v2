@@ -14,12 +14,18 @@ import {
   Cloud,
   CheckCircle2,
   ArrowRight,
+  Plane,
+  Radio,
+  Smartphone,
+  CloudRain,
+  Bell,
+  Activity,
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Triple QR Code Ecosystem for Home Builders | Cornerstone PM",
+  title: "Real-Time Construction Command Center | Cornerstone PM",
   description:
-    "Three QR codes, three audiences, one platform: vendor jobsite check-in (GPS + weather + hours), community/PM check-in (timesheet validated), and sales model home lead capture. Replaces paper sign-in sheets. No app install required.",
+    "The construction PM platform that turns your phone into a real-time command center. Live vendor check-ins, weather conditions, GPS audit trails, and Google Maps presence pinned across every community — manage your entire build from a beach 1,500 miles away. Triple QR ecosystem (vendor, PM, model home buyer) feeds it all. No app install required.",
   alternates: { canonical: "https://www.cornerstonepm.ai/qr" },
 };
 
@@ -92,10 +98,45 @@ const qrCodes = [
 ];
 
 const stats = [
+  { label: "Map refresh interval", value: "30 sec" },
   { label: "Audiences served", value: "3" },
-  { label: "QR codes generated per project", value: "Unlimited" },
   { label: "App installs required", value: "Zero" },
-  { label: "Data captured per scan", value: "GPS + time + weather" },
+  { label: "Captured per scan", value: "GPS + time + weather" },
+];
+
+const commandCenterPillars = [
+  {
+    icon: Activity,
+    color: "text-emerald-400",
+    bg: "bg-emerald-500/10",
+    border: "border-emerald-500/30",
+    title: "Live everywhere, at once",
+    body: "Every check-in, every scan, every status update streams to a single map and feed. See who’s on which jobsite, in which community, right now. Refreshes every 30 seconds. Same view on desktop, tablet, and phone.",
+  },
+  {
+    icon: CloudRain,
+    color: "text-cyan-400",
+    bg: "bg-cyan-500/10",
+    border: "border-cyan-500/30",
+    title: "Weather built in, not bolted on",
+    body: "Real-time conditions captured on every QR scan. Forecast overlays on the schedule. Pour-day weather logged forever — dispute delays with receipts, not memory. No second app, no manual lookup.",
+  },
+  {
+    icon: Bell,
+    color: "text-violet-400",
+    bg: "bg-violet-500/10",
+    border: "border-violet-500/30",
+    title: "Notifications find you, not the office",
+    body: "Vendor arrived. Permit issued. Inspection failed. Buyer just walked into the model. Every event you care about lands on your phone in real time — push, email, SMS, your call. Foreman AI can rebroadcast through webhooks to Twilio, Bland, Retell, or your own automation stack.",
+  },
+  {
+    icon: Smartphone,
+    color: "text-amber-400",
+    bg: "bg-amber-500/10",
+    border: "border-amber-500/30",
+    title: "Built mobile-first, not mobile-after",
+    body: "Most construction software is a desktop dashboard with a sad companion app. We built every screen to work in your hand — the map, the schedule, the bid comparisons, the buyer portal, Foreman AI. Pull it up from the truck, the jobsite, or the dinner table.",
+  },
 ];
 
 export default function QRPage() {
@@ -106,23 +147,26 @@ export default function QRPage() {
       {/* Hero */}
       <section className="relative pt-28 pb-16 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_50%_0%,rgba(16,185,129,0.12),transparent)]" />
-        <div className="max-w-4xl mx-auto text-center relative z-10">
+        <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-xs font-semibold mb-6">
-            <QrCode className="w-3.5 h-3.5" />
-            INDUSTRY-FIRST TRIPLE QR ECOSYSTEM
+            <Radio className="w-3.5 h-3.5" />
+            REAL-TIME COMMAND CENTER
           </div>
           <h1 className="text-5xl sm:text-6xl font-black text-white mb-6 leading-tight">
-            Three QR codes.
+            Manage your entire build
             <br />
             <span className="bg-gradient-to-r from-emerald-400 via-cyan-400 to-violet-400 bg-clip-text text-transparent">
-              Three audiences.
+              from a beach 1,500 miles away.
             </span>
-            <br />
-            One platform.
           </h1>
-          <p className="text-xl text-slate-400 max-w-2xl mx-auto">
-            Vendors check in. PMs validate timesheets. Buyers self-register at the model home.
-            All from a scan. No app install. No login. Every event audit-trailed.
+          <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-6">
+            Live vendor check-ins on a Google Maps view. Weather logged on every scan. Real-time
+            push notifications when a permit drops, a buyer walks into the model, or framing
+            kicks off. Every audience, every event, every community — streaming to your phone.
+          </p>
+          <p className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-300 text-sm font-semibold">
+            <Plane className="w-4 h-4" />
+            Powered by a triple QR check-in ecosystem. No app install. No login.
           </p>
         </div>
       </section>
@@ -139,6 +183,58 @@ export default function QRPage() {
               <div className="text-xs uppercase tracking-widest text-slate-500">{s.label}</div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Real-Time Command Center pillars */}
+      <section className="py-16 px-4 border-t border-slate-800/60">
+        <div className="max-w-6xl mx-auto">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-xs font-semibold mb-4">
+              <Radio className="w-3.5 h-3.5" />
+              FOUR PILLARS OF REMOTE COMMAND
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">
+              Real-time, weather-aware, mobile-first.
+            </h2>
+            <p className="text-slate-400 text-lg">
+              Cornerstone isn’t a dashboard you check at the end of the day. It’s a live
+              command center that streams every event you care about — to your phone, your
+              tablet, your laptop — the second it happens. From anywhere.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {commandCenterPillars.map((p) => {
+              const Icon = p.icon;
+              return (
+                <div
+                  key={p.title}
+                  className="rounded-2xl border border-slate-800/60 bg-slate-900/40 p-6 hover:border-slate-700 transition-colors"
+                >
+                  <div className={`w-12 h-12 rounded-xl ${p.bg} border ${p.border} flex items-center justify-center mb-4`}>
+                    <Icon className={`w-6 h-6 ${p.color}`} />
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-2">{p.title}</h3>
+                  <p className="text-slate-400 leading-relaxed text-sm">{p.body}</p>
+                </div>
+              );
+            })}
+          </div>
+          <div className="mt-10 max-w-3xl mx-auto p-6 rounded-2xl border border-amber-500/30 bg-amber-500/5 text-center">
+            <div className="flex items-center justify-center gap-2 mb-2 text-amber-300">
+              <Plane className="w-5 h-5" />
+              <span className="text-sm font-bold uppercase tracking-widest">The Beach Test</span>
+            </div>
+            <p className="text-white text-lg font-semibold mb-2">
+              Could you run your build from 1,500 miles away?
+            </p>
+            <p className="text-slate-400 text-sm">
+              With Cornerstone, the answer is yes. Same map, same feed, same notifications,
+              whether you’re in the trailer, the truck, or a hammock in Cabo. Builders use
+              Cornerstone to manage active jobsites while on vacation. That isn’t a feature
+              we tacked on — it’s the product’s spine.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -241,17 +337,18 @@ export default function QRPage() {
           {/* Header + intro */}
           <div className="max-w-3xl mx-auto text-center mb-10">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-xs font-semibold mb-4">
-              <MapPin className="w-3.5 h-3.5" />
-              PAIRS WITH
+              <Radio className="w-3.5 h-3.5" />
+              THE COMMAND CENTER VIEW
             </div>
             <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">Vendor Activity Map</h2>
             <p className="text-slate-400 leading-relaxed mb-3">
               Every QR scan becomes a pin. Live Google Maps view of every vendor and PM check-in
-              across every community. Filter by date, filter by vendor. See who&apos;s on-site
-              right now — refreshes every 30 seconds.
+              across every community, with weather overlays and a live activity feed. Filter by
+              date, filter by vendor. See who&apos;s on-site right now — refreshes every 30 seconds.
             </p>
             <p className="text-cyan-400/90 text-sm font-semibold">
-              Same live map on desktop, tablet, and phone. Pull it up from the truck, the jobsite, or the dinner table.
+              Same live command center on desktop, tablet, and phone. Pull it up from the truck,
+              the trailer, the office, or a hammock in Cabo — your build runs the same.
             </p>
           </div>
 
