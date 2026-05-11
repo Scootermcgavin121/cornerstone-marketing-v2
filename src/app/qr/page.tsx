@@ -245,23 +245,7 @@ export default function QRPage() {
 
             {/* Two phone screenshots side-by-side */}
             <div className="grid grid-cols-2 gap-4 items-start">
-              {/* Phone — overview */}
-              <div className="flex justify-center">
-                <div className="relative w-full max-w-[180px] rounded-[1.75rem] border-4 border-slate-700 bg-slate-900 overflow-hidden shadow-2xl shadow-cyan-500/20">
-                  <div className="absolute top-2.5 left-1/2 -translate-x-1/2 z-10 px-2 py-0.5 rounded-full bg-slate-950/80 backdrop-blur-sm border border-emerald-500/40 text-emerald-400 text-[9px] font-bold tracking-widest uppercase whitespace-nowrap">
-                    In Your Pocket
-                  </div>
-                  <Image
-                    src="/mockups/ss-vendor-activity-map.jpg"
-                    alt="Vendor Activity Map mobile overview - the full coastal Delaware map with heat-map overlay and clustered check-in counts running on a phone, with stat cards showing 74 on-site now and 60 unique vendors"
-                    width={720}
-                    height={1560}
-                    className="w-full h-auto block"
-                    sizes="(max-width: 640px) 45vw, 180px"
-                  />
-                </div>
-              </div>
-              {/* Phone — detail */}
+              {/* Phone — detail (zoom & drill in) */}
               <div className="flex justify-center">
                 <div className="relative w-full max-w-[180px] rounded-[1.75rem] border-4 border-slate-700 bg-slate-900 overflow-hidden shadow-2xl shadow-violet-500/20">
                   <div className="absolute top-2.5 left-1/2 -translate-x-1/2 z-10 px-2 py-0.5 rounded-full bg-slate-950/80 backdrop-blur-sm border border-violet-500/40 text-violet-300 text-[9px] font-bold tracking-widest uppercase whitespace-nowrap">
@@ -270,6 +254,22 @@ export default function QRPage() {
                   <Image
                     src="/mockups/ss-vendor-activity-map-mobile-detail.jpg"
                     alt="Vendor Activity Map mobile detail view - zoomed into Eagles Landing community with vendor check-ins, trades, lots, and on-site timestamps in the activity feed below the map"
+                    width={720}
+                    height={1560}
+                    className="w-full h-auto block"
+                    sizes="(max-width: 640px) 45vw, 180px"
+                  />
+                </div>
+              </div>
+              {/* Phone — overview (heatmaps + stats) */}
+              <div className="flex justify-center">
+                <div className="relative w-full max-w-[180px] rounded-[1.75rem] border-4 border-slate-700 bg-slate-900 overflow-hidden shadow-2xl shadow-cyan-500/20">
+                  <div className="absolute top-2.5 left-1/2 -translate-x-1/2 z-10 px-2 py-0.5 rounded-full bg-slate-950/80 backdrop-blur-sm border border-emerald-500/40 text-emerald-400 text-[9px] font-bold tracking-widest uppercase whitespace-nowrap">
+                    Heat Maps &amp; Stats
+                  </div>
+                  <Image
+                    src="/mockups/ss-vendor-activity-map.jpg"
+                    alt="Vendor Activity Map mobile overview - the full coastal Delaware map with heat-map overlay and clustered check-in counts running on a phone, with stat cards showing 74 on-site now and 60 unique vendors"
                     width={720}
                     height={1560}
                     className="w-full h-auto block"
