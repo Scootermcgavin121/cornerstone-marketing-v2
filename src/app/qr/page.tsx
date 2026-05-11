@@ -230,7 +230,7 @@ export default function QRPage() {
           <div className="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-6 lg:gap-8 items-center mb-10">
             {/* Detail desktop screenshot */}
             <div className="relative rounded-xl border border-slate-700 bg-slate-900 overflow-hidden shadow-2xl shadow-violet-500/10">
-              <div className="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-full bg-slate-950/80 backdrop-blur-sm border border-violet-500/40 text-violet-300 text-[10px] font-bold tracking-widest uppercase">
+              <div className="absolute top-3 right-3 z-10 px-2.5 py-1 rounded-full bg-slate-950/80 backdrop-blur-sm border border-violet-500/40 text-violet-300 text-[10px] font-bold tracking-widest uppercase">
                 Drill into any pin
               </div>
               <Image
