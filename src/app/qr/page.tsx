@@ -212,7 +212,7 @@ export default function QRPage() {
 
           {/* Hero desktop screenshot — the wow shot */}
           <div className="relative rounded-xl border border-slate-700 bg-slate-900 overflow-hidden shadow-2xl shadow-cyan-500/10 mb-6">
-            <div className="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-full bg-slate-950/80 backdrop-blur-sm border border-cyan-500/40 text-cyan-400 text-[10px] font-bold tracking-widest uppercase">
+            <div className="absolute top-3 right-3 z-10 px-2.5 py-1 rounded-full bg-slate-950/80 backdrop-blur-sm border border-cyan-500/40 text-cyan-400 text-[10px] font-bold tracking-widest uppercase">
               Desktop · Live Overview
             </div>
             <Image
