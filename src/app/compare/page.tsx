@@ -3,12 +3,12 @@ import { Check, X, Minus } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 
 export const metadata = {
-  title: "Cornerstone PM vs NEWSTAR, Buildertrend, CoConstruct — Compare Home Builder Software",
+  title: "Cornerstone PM vs NEWSTAR, Buildertrend, Buildxact — Compare Home Builder Software",
   description:
-    "See how Cornerstone PM stacks up against NEWSTAR, BuildPro, Buildertrend, and CoConstruct. Less cost, faster setup, built specifically for home builders.",
+    "See how Cornerstone PM stacks up against NEWSTAR, BuildPro, Buildertrend, and Buildxact. Less cost, faster setup, built specifically for home builders — with AI, real-time command center, and a 45+ skill in-app agent none of them have.",
 };
 
-const competitors = ["Cornerstone PM", "NEWSTAR / BuildPro", "Buildertrend", "CoConstruct"];
+const competitors = ["Cornerstone PM", "NEWSTAR / BuildPro", "Buildertrend", "Buildxact"];
 
 const YES = "yes";
 const NO = "no";
@@ -22,28 +22,28 @@ const rows: { category: string; features: { label: string; values: CellValue[] }
     features: [
       { label: "Monthly pricing (no enterprise contract)", values: [YES, NO, YES, YES] },
       { label: "Setup cost", values: ["Free beta", "$25,000+", "$0", "$0"] },
-      { label: "Implementation time", values: ["Hours", "6-12 months", "Weeks", "Weeks"] },
+      { label: "Implementation time", values: ["Hours", "6-12 months", "Weeks", "Days"] },
       { label: "Purpose-built for home builders (production, custom & semi-custom)", values: [YES, YES, PARTIAL, PARTIAL] },
-      { label: "Starting price", values: ["$149/mo", "$500+/mo", "$499/mo", "$399/mo"] },
+      { label: "Starting price", values: ["$149/mo", "$500+/mo", "$499/mo", "$199/mo"] },
     ],
   },
   {
     category: "Data Migration & Imports",
     features: [
       { label: "AI Migration Wizard (Live in Beta) — drop your files, the wizard does the rest", values: [YES, NO, NO, NO] },
-      { label: "23 dedicated CSV import endpoints (vendors, homes, communities, templates, scopes, takeoffs, parts, budgets...)", values: [YES, NO, PARTIAL, PARTIAL] },
+      { label: "23 dedicated CSV import endpoints (vendors, homes, communities, templates, scopes, takeoffs, parts, budgets...)", values: [YES, NO, PARTIAL, NO] },
       { label: "AI-powered bid import (parse any vendor format — Excel, PDF, scanned, handwritten)", values: [YES, NO, NO, NO] },
-      { label: "Self-serve migration (no consultant required)", values: [YES, NO, PARTIAL, PARTIAL] },
+      { label: "Self-serve migration (no consultant required)", values: [YES, NO, PARTIAL, YES] },
       { label: "Migration timeline", values: ["Hours", "3-12 months", "1-2 weeks", "1-2 weeks"] },
-      { label: "Migration cost", values: ["$0", "$5,000-$20,000", "$0-$2,500", "$0-$2,500"] },
+      { label: "Migration cost", values: ["$0", "$5,000-$20,000", "$0-$2,500", "$0"] },
     ],
   },
   {
     category: "Construction Scheduling",
     features: [
-      { label: "Gantt charts", values: [YES, YES, YES, NO] },
-      { label: "Auto-cascading task dependencies", values: [YES, YES, PARTIAL, NO] },
-      { label: "Vendor confirmation via email (no login)", values: [YES, NO, PARTIAL, PARTIAL] },
+      { label: "Gantt charts", values: [YES, YES, YES, YES] },
+      { label: "Auto-cascading task dependencies", values: [YES, YES, PARTIAL, PARTIAL] },
+      { label: "Vendor confirmation via email (no login)", values: [YES, NO, PARTIAL, NO] },
       { label: "Template system per floorplan", values: [YES, YES, PARTIAL, NO] },
       { label: "Foundation-aware scheduling templates", values: [YES, YES, NO, NO] },
       { label: "Weekday-only scheduling", values: [YES, PARTIAL, YES, NO] },
@@ -60,7 +60,7 @@ const rows: { category: string; features: { label: string; values: CellValue[] }
       { label: 'Printable 11\u00d78.5\" jobsite QR signs auto-generated', values: [YES, NO, NO, NO] },
       { label: "AI camera-event integration (Verkada, Ring, IP cams) auto-starts tasks", values: [YES, NO, NO, NO] },
       { label: "Hours-on-site tracking (check-in \u2192 check-out)", values: [YES, NO, PARTIAL, NO] },
-      { label: "Photo upload at vendor check-in", values: [YES, NO, PARTIAL, PARTIAL] },
+      { label: "Photo upload at vendor check-in", values: [YES, NO, PARTIAL, NO] },
       { label: "Webhook events for vendor.arrived / vendor.departed", values: [YES, NO, NO, NO] },
     ],
   },
@@ -71,21 +71,21 @@ const rows: { category: string; features: { label: string; values: CellValue[] }
       { label: "Floorplan + elevation pricing matrix", values: [YES, YES, NO, NO] },
       { label: "Structural options with real-time pricing", values: [YES, YES, NO, NO] },
       { label: "Sales incentives & promotions", values: [YES, YES, PARTIAL, NO] },
-      { label: "Auto-budget generation on sale creation", values: [YES, YES, NO, NO] },
-      { label: "Built-in CRM", values: [YES, YES, YES, YES] },
+      { label: "Auto-budget generation on sale creation", values: [YES, YES, NO, PARTIAL] },
+      { label: "Built-in CRM", values: [YES, YES, YES, PARTIAL] },
     ],
   },
   {
     category: "Purchasing & Budgets",
     features: [
-      { label: "Bid management", values: [YES, YES, YES, PARTIAL] },
-      { label: "Purchase orders", values: [YES, YES, YES, PARTIAL] },
-      { label: "Budget hierarchy (builder to home)", values: [YES, YES, PARTIAL, NO] },
+      { label: "Bid management", values: [YES, YES, YES, YES] },
+      { label: "Purchase orders", values: [YES, YES, YES, YES] },
+      { label: "Budget hierarchy (builder to home)", values: [YES, YES, PARTIAL, YES] },
       { label: "Auto-budget from structural options", values: [YES, YES, NO, NO] },
-      { label: "Side-by-side bid comparison", values: [YES, YES, PARTIAL, NO] },
-      { label: "Payments tracking (check/ACH/wire/card/cash)", values: [YES, YES, PARTIAL, NO] },
+      { label: "Side-by-side bid comparison", values: [YES, YES, PARTIAL, PARTIAL] },
+      { label: "Payments tracking (check/ACH/wire/card/cash)", values: [YES, YES, PARTIAL, PARTIAL] },
       { label: "Retainage tracking on POs", values: [YES, NO, PARTIAL, NO] },
-      { label: "Cost type classifications (labor/material/subcontract)", values: [YES, YES, PARTIAL, NO] },
+      { label: "Cost type classifications (labor/material/subcontract)", values: [YES, YES, PARTIAL, YES] },
       { label: "QuickBooks sync fields (qboId)", values: [YES, NO, PARTIAL, YES] },
       { label: "Custom fields on any entity", values: [YES, YES, NO, NO] },
       { label: "REST API with scoped keys + webhooks", values: [YES, YES, NO, NO] },
@@ -94,19 +94,19 @@ const rows: { category: string; features: { label: string; values: CellValue[] }
   {
     category: "Design Center & Options",
     features: [
-      { label: "Room-by-room selections", values: [YES, YES, PARTIAL, YES] },
-      { label: "Spec level management", values: [YES, YES, NO, PARTIAL] },
+      { label: "Room-by-room selections", values: [YES, YES, PARTIAL, NO] },
+      { label: "Spec level management", values: [YES, YES, NO, NO] },
       { label: "Options engine with margin tracking", values: [YES, YES, NO, NO] },
-      { label: "Selections PDF export", values: [YES, YES, PARTIAL, YES] },
+      { label: "Selections PDF export", values: [YES, YES, PARTIAL, NO] },
       { label: "MLS listing sheet from live project data", values: [YES, NO, NO, NO] },
-      { label: "Buyer online selections portal", values: [YES, PARTIAL, PARTIAL, YES] },
+      { label: "Buyer online selections portal", values: [YES, PARTIAL, PARTIAL, NO] },
     ],
   },
   {
     category: "AI & Innovation",
     features: [
       { label: "AI bid import (upload any vendor format — Excel, PDF, scanned, handwritten)", values: [YES, NO, NO, NO] },
-      { label: "AI Blueprint Takeoff (PDF to material list)", values: [YES, NO, NO, NO] },
+      { label: "AI Blueprint Takeoff (PDF to material list)", values: [YES, NO, NO, PARTIAL] },
       { label: "AI agent with 45+ purpose-built construction skills", values: [YES, NO, NO, NO] },
       { label: "AI memory compaction (marathon sessions without context loss)", values: [YES, NO, NO, NO] },
       { label: "In-app AI context health meter", values: [YES, NO, NO, NO] },
@@ -125,9 +125,9 @@ const rows: { category: string; features: { label: string; values: CellValue[] }
   {
     category: "Homeowner Experience",
     features: [
-      { label: "Homeowner portal with milestones", values: [YES, PARTIAL, YES, YES] },
-      { label: "Job site photo uploads", values: [YES, NO, YES, YES] },
-      { label: "Warranty tracking", values: [YES, YES, NO, PARTIAL] },
+      { label: "Homeowner portal with milestones", values: [YES, PARTIAL, YES, PARTIAL] },
+      { label: "Job site photo uploads", values: [YES, NO, YES, PARTIAL] },
+      { label: "Warranty tracking", values: [YES, YES, NO, NO] },
       { label: "2-year warranty management", values: [YES, YES, NO, NO] },
     ],
   },
@@ -332,7 +332,7 @@ export default function ComparePage() {
             <span className="flex items-center gap-1.5"><X className="w-3.5 h-3.5 text-slate-700" /> Not available</span>
           </div>
           <p className="max-w-5xl mx-auto mt-6 text-[11px] text-slate-600 leading-relaxed text-center">
-            Pricing and feature availability reflect publicly available information as of November 2026. Verify current pricing and capabilities directly with each vendor. NEWSTAR®, BuildPro®, Buildertrend®, and CoConstruct® are trademarks of their respective owners; Cornerstone PM is not affiliated with or endorsed by these companies.
+            Pricing and feature availability reflect publicly available information as of November 2026. Verify current pricing and capabilities directly with each vendor. NEWSTAR®, BuildPro®, Buildertrend®, and Buildxact® are trademarks of their respective owners; Cornerstone PM is not affiliated with or endorsed by these companies.
           </p>
         </div>
       </section>
@@ -353,7 +353,7 @@ export default function ComparePage() {
                 { name: "NEWSTAR", slug: "newstar", note: "Enterprise production builder software" },
                 { name: "BuildPro", slug: "buildpro", note: "Windows-based builder platform" },
                 { name: "Buildertrend", slug: "buildertrend", note: "Most-used builder software" },
-                { name: "CoConstruct", slug: "coconstruct", note: "Now part of Buildertrend" },
+                { name: "Buildxact", slug: "buildxact", note: "Estimating-first builder platform" },
               ].map((c) => (
                 <Link key={c.slug} href={`/${c.slug}-alternative`} className="p-4 rounded-xl border border-slate-800 bg-slate-900/40 hover:border-cyan-500/40 hover:bg-slate-900/80 transition-all duration-200 group">
                   <div className="text-white font-bold text-sm group-hover:text-cyan-400 transition-colors">{c.name}</div>
@@ -371,7 +371,7 @@ export default function ComparePage() {
               {[
                 { name: "JobTread", slug: "jobtread", note: "GC-focused project management" },
                 { name: "Procore", slug: "procore", note: "Enterprise construction OS" },
-                { name: "Buildxact", slug: "buildxact", note: "Estimating + project management" },
+                { name: "CoConstruct", slug: "coconstruct", note: "Now part of Buildertrend" },
                 { name: "Contractor Foreman", slug: "contractor-foreman", note: "General contractor platform" },
               ].map((c) => (
                 <Link key={c.slug} href={`/${c.slug}-alternative`} className="p-4 rounded-xl border border-slate-800 bg-slate-900/40 hover:border-cyan-500/40 hover:bg-slate-900/80 transition-all duration-200 group">
