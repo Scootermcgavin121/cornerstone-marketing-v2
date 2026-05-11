@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "buildertrend-pricing-true-cost",
+    title: "The True Cost of Buildertrend for Production Home Builders",
+    excerpt:
+      "Buildertrend's advertised price is $499/month. For a production home builder doing 50 homes a year, the actual annual cost — once you add per-user fees, integrations, and the hidden labor of working around what the platform doesn't do — is typically $18,000 to $36,000 or more.",
+    date: "May 11, 2026",
+    readTime: "7 min read",
+    tag: "Cost Analysis",
+    tagColor: "text-amber-400 bg-amber-500/10 border-amber-500/20",
+  },
+  {
     slug: "why-small-builders-cant-afford-newstar",
     title: "Why Small-to-Mid Home Builders Can't Afford NEWSTAR (And What They're Switching To)",
     excerpt:
