@@ -124,10 +124,10 @@ const accentMap = {
 };
 
 function CheckOrX({ value }: { value: boolean | string }) {
-  if (value === true) return <Check className="w-5 h-5 text-emerald-400" />;
-  if (value === false) return <X className="w-5 h-5 text-slate-600" />;
-  if (value === "limited") return <span className="text-amber-400 text-xs font-semibold uppercase">Limited</span>;
-  return <span className="text-white font-semibold text-sm">{value}</span>;
+  if (value === true) return <Check className="w-5 h-5 text-emerald-400 mx-auto" aria-label="Yes" />;
+  if (value === false) return <X className="w-5 h-5 text-slate-600 mx-auto" aria-label="No" />;
+  if (value === "limited") return <span className="text-amber-400 text-[10px] sm:text-xs font-semibold uppercase whitespace-nowrap">Limited</span>;
+  return <span className="text-white font-semibold text-xs sm:text-sm break-words">{value}</span>;
 }
 
 export function AlternativePageTemplate({
@@ -239,25 +239,30 @@ export function AlternativePageTemplate({
             {comparisonSubtitle ?? `Side-by-side comparison for home builders.`}
           </p>
           <div className="overflow-x-auto rounded-2xl border border-slate-800">
-            <table className="w-full">
+            <table className="w-full table-fixed sm:table-auto">
+              <colgroup>
+                <col className="w-[60%] sm:w-auto" />
+                <col className="w-[20%] sm:w-auto" />
+                <col className="w-[20%] sm:w-auto" />
+              </colgroup>
               <thead className="bg-slate-900/60">
                 <tr>
-                  <th className="text-left px-6 py-4 text-slate-400 text-sm font-semibold uppercase tracking-widest">Feature</th>
-                  <th className={`px-4 py-4 text-sm font-bold text-center ${a.col}`}>Cornerstone PM</th>
-                  <th className="px-4 py-4 text-slate-400 text-sm font-bold text-center">{competitorName}</th>
+                  <th className="text-left px-3 sm:px-6 py-4 text-slate-400 text-xs sm:text-sm font-semibold uppercase tracking-widest">Feature</th>
+                  <th className={`px-2 sm:px-4 py-4 text-xs sm:text-sm font-bold text-center ${a.col}`}>Cornerstone PM</th>
+                  <th className="px-2 sm:px-4 py-4 text-slate-400 text-xs sm:text-sm font-bold text-center">{competitorName}</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-800">
                 {comparisonRows.map((row) => (
                   <tr key={row.feature} className="hover:bg-slate-900/30">
-                    <td className="px-6 py-4">
-                      <div className="text-white font-medium">{row.feature}</div>
-                      {row.note && <div className="text-slate-500 text-xs mt-1">{row.note}</div>}
+                    <td className="px-3 sm:px-6 py-4 align-top">
+                      <div className="text-white font-medium text-sm sm:text-base break-words">{row.feature}</div>
+                      {row.note && <div className="hidden sm:block text-slate-500 text-xs mt-1 break-words">{row.note}</div>}
                     </td>
-                    <td className="px-4 py-4 text-center">
+                    <td className="px-2 sm:px-4 py-4 text-center align-top">
                       <div className="flex justify-center"><CheckOrX value={row.cornerstone} /></div>
                     </td>
-                    <td className="px-4 py-4 text-center">
+                    <td className="px-2 sm:px-4 py-4 text-center align-top">
                       <div className="flex justify-center"><CheckOrX value={row.competitor} /></div>
                     </td>
                   </tr>
