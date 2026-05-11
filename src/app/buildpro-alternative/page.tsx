@@ -23,7 +23,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Vendor Activity Map (Google Maps, real-time)", cornerstone: true, competitor: false, note: "Live vendor location pins across all communities. BuildPro doesn't ship this." },
   { feature: "Model home QR for lead capture", cornerstone: true, competitor: false, note: "Digital lead capture at model homes - no paper sheets." },
   { feature: "AI camera-event auto-task-start", cornerstone: true, competitor: false, note: "Camera-agnostic webhook integration auto-starts tasks on vendor arrival. Cornerstone Pro+ feature." },
-  { feature: "Free database export (CSV / JSON)", cornerstone: true, competitor: false, note: "Download your full data anytime. Nightly auto-backups for 7 days." },
+  { feature: "Take your data with you anytime — no lock-in", cornerstone: true, competitor: false, note: "Your data is YOURS. Full database export to CSV or JSON anytime, one click, $0, no fees, no waiting on a support ticket. Nightly auto-backups retained 7 days for instant rollback. If you ever leave us, you leave with everything — vendors, homes, schedules, options, budgets, every line. No strings attached." },
   { feature: "Mobile-friendly", cornerstone: true, competitor: "limited", note: "Cornerstone is fully responsive; BuildPro mobile is limited." },
   { feature: "Public REST API (59+ endpoints, growing)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+: 59+ endpoints and growing rapidly, public docs. New endpoints ship as the platform grows. BuildPro: enterprise integrations only." },
   { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): connect Claude or ChatGPT to live data." },

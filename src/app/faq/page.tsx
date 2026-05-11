@@ -1342,12 +1342,14 @@ const security: Category = {
     {
       q: "Can I export my data from Cornerstone PM?",
       aText:
-        "Yes - every plan. Settings â†’ Backups lets you download a full org export (91 tables) as CSV or JSON anytime, with sensitive fields automatically excluded. Nightly auto-backups run with 7-day retention. Your data is always yours, no exit fees.",
+        "Yes - every plan. Take all your data with you anytime, no strings attached. Settings â†’ Backups lets you download a full org export (91 tables) as CSV or JSON in one click, with sensitive fields automatically excluded. Every vendor, every home, every schedule, every option, every budget line. Nightly auto-backups run with 7-day retention for instant rollback. Your data is always yours, no exit fees, no support ticket, no waiting period.",
       a: (
         <>
-          Yes - every plan. <strong>Settings â†’ Backups</strong> lets you download a full org export (91 tables) as
-          CSV or JSON anytime, with sensitive fields automatically excluded. Nightly auto-backups run with{" "}
-          <strong>7-day retention</strong>. Your data is always yours, no exit fees.
+          Yes - every plan. <strong>Take all your data with you anytime, no strings attached.</strong>{" "}
+          Settings â†’ Backups lets you download a full org export (91 tables) as CSV or JSON in one click,
+          with sensitive fields automatically excluded. Every vendor, every home, every schedule, every
+          option, every budget line. Nightly auto-backups run with{" "}
+          <strong>7-day retention</strong> for instant rollback. No exit fees, no support ticket, no waiting period.
         </>
       ),
     },
@@ -1366,11 +1368,13 @@ const security: Category = {
     {
       q: "Who owns the data in Cornerstone PM?",
       aText:
-        "You do. Cornerstone PM operates on a 'your data is always yours' principle: full database export in CSV or JSON anytime, no exit fees, no data hostage situation. The REST API on Pro+ also gives you full programmatic access to every record.",
+        "You do. Cornerstone PM operates on a 'your data is always yours' principle: one-click full database export in CSV or JSON anytime, no exit fees, no support ticket, no waiting period. If you ever leave, you leave with everything - vendors, homes, schedules, options, budgets, every line. No strings attached. The REST API on Pro+ also gives you full programmatic access to every record.",
       a: (
         <>
-          <strong>You do.</strong> Cornerstone PM operates on a &quot;your data is always yours&quot; principle: full
-          database export in CSV or JSON anytime, no exit fees, no data hostage situation. The{" "}
+          <strong>You do.</strong> Cornerstone PM operates on a &quot;your data is always yours&quot; principle:
+          one-click full database export in CSV or JSON anytime, no exit fees, no support ticket, no waiting
+          period. If you ever leave, you leave with everything &mdash; vendors, homes, schedules, options,
+          budgets, every line. No strings attached. The{" "}
           <A href="/api-access">REST API on Pro+</A> also gives you full programmatic access to every record.
         </>
       ),
@@ -1426,10 +1430,10 @@ const security: Category = {
     {
       q: "Is there vendor lock-in if I leave Cornerstone PM?",
       aText:
-        "No. Full database export in CSV or JSON anytime, no exit fees. The REST API gives you full programmatic access. You can re-import to whatever platform you choose. We win by being the best fit, not by holding data hostage.",
+        "No - never. Take all your data with you anytime, no strings attached. One-click full database export in CSV or JSON, $0, no exit fees, no waiting period. The REST API gives you full programmatic access. Re-import to whatever platform you choose. We win by being the best fit, not by holding data hostage.",
       a: (
         <>
-          <strong>No.</strong> Full database export in CSV or JSON anytime, no exit fees. The{" "}
+          <strong>No — never.</strong> Take all your data with you anytime, no strings attached. One-click full database export in CSV or JSON, $0, no exit fees, no waiting period. The{" "}
           <A href="/api-access">REST API</A> gives you full programmatic access. You can re-import to whatever
           platform you choose. We win by being the best fit, not by holding data hostage.
         </>

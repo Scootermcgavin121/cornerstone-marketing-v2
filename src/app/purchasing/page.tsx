@@ -57,7 +57,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Can I get my data out if I leave?",
-    a: "Yes. Settings > Backups lets you download a full org export (91 tables) as CSV or JSON anytime, with sensitive fields automatically excluded. Nightly auto-backups run with 7-day retention. Your data is always yours &mdash; no vendor lock-in, no exit fees.",
+    a: "Yes. Take all your data with you anytime, no strings attached. Settings > Backups lets you download a full org export (91 tables) as CSV or JSON in one click, with sensitive fields automatically excluded. Every vendor, every home, every schedule, every option, every budget line. Nightly auto-backups run with 7-day retention for instant rollback. Your data is always yours — no vendor lock-in, no exit fees, no support ticket.",
   },
   {
     q: "How do I lock a bid once it's accepted?",
@@ -102,7 +102,7 @@ const features = [
   { title: "Bid Notification Subscriptions", desc: "Admins subscribe to bid events &mdash; new bids, edits, awards &mdash; with per-user notification preferences." },
   { title: "Award & Budget Flow", desc: "Award a bid and it flows directly into the budget &mdash; no double entry." },
   { title: "Purchase Orders", desc: "Generate and send POs directly from approved bids." },
-  { title: "Data Backup & Export", desc: "Your data is always yours. Download everything as CSV or JSON anytime &mdash; 91 tables, full record sets, sensitive fields excluded. Plus nightly auto-backups with 7-day retention. No vendor lock-in." },
+  { title: "Take Your Data With You, Anytime", desc: "Your data is always yours. Download everything as CSV or JSON in one click &mdash; 91 tables, every vendor, every home, every schedule, every option, every budget line. Sensitive fields excluded automatically. Plus nightly auto-backups with 7-day retention for instant rollback. No vendor lock-in, no exit fees, no strings attached." },
   { title: "Buildertrend Migration", desc: "Import existing budgets from Buildertrend with smart column mapping." },
   { title: "Bid Import AI", desc: "Upload vendor bids in ANY format â€” Excel, PDF, scanned docs, even photos of handwritten quotes. AI extracts line items, maps to your parts catalog with confidence scores, and lets you review, edit, approve, or reject before importing." },
 ];

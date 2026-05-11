@@ -26,9 +26,9 @@ export function DataOwnership() {
             </span>
           </h2>
           <p className="text-lg sm:text-xl text-slate-400 leading-relaxed">
-            Download your entire database any time. JSON or CSV. One click.
-            Nightly auto-backups. Zero exit fees. We don&apos;t hold your
-            business hostage.
+            Take all your data with you, anytime. <strong className="text-white">No strings attached.</strong>{" "}
+            One-click export to JSON or CSV. Every vendor, every home, every schedule, every option, every
+            budget line. Nightly auto-backups. Zero exit fees. We don&apos;t hold your business hostage.
           </p>
         </div>
 

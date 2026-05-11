@@ -42,7 +42,7 @@ const faqs: FAQItem[] = [
   },
   {
     q: "Can I export my data?",
-    a: "Yes. Every plan includes full database export in CSV or JSON format from Settings. Nightly automatic backups are retained for 7 days, and you can trigger manual backups any time. There is no vendor lock-in and no data hostage situation.",
+    a: "Yes. Take all your data with you anytime, no strings attached. Every plan includes one-click full database export in CSV or JSON format from Settings. Every vendor, every home, every schedule, every option, every budget line. Nightly automatic backups are retained for 7 days for instant rollback, and you can trigger manual backups any time. No vendor lock-in, no exit fees, no support ticket.",
   },
   {
     q: "Do you offer annual billing or discounts?",
@@ -109,7 +109,7 @@ export default function PricingPage() {
               { title: "Construction scheduling", desc: "Gantt + task view, 3-tier dependency cascade, 17 pre-built templates." },
               { title: "Permitting pipeline", desc: "Track every permit and inspection across every active home." },
               { title: "Homeowner portal", desc: "Magic-link buyer portal with progress photos and design center." },
-              { title: "Database export", desc: "Full CSV or JSON export, anytime, plus 7-day rolling auto-backups." },
+              { title: "Take your data with you, anytime", desc: "One-click full CSV or JSON export, $0, no strings attached. Every record. Plus 7-day rolling nightly auto-backups." },
             ].map((f) => (
               <div key={f.title} className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
                 <h3 className="text-lg font-bold text-white mb-2">{f.title}</h3>

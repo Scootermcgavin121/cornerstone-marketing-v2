@@ -75,7 +75,7 @@ const categories: FeatureCategory[] = [
       { feature: "Bid tracking (Invited → Submitted → Declined)", bt: "no", cp: "yes" },
       { feature: "Side-by-side bid comparison", bt: "no", cp: "yes" },
       { feature: "Community-level vendor assignments", bt: "no", cp: "yes" },
-      { feature: "Full database export (CSV / JSON)", bt: "no", cp: "yes" },
+      { feature: "Take your data with you anytime (one-click CSV/JSON)", bt: "no", cp: "yes" },
     ],
   },
   {
