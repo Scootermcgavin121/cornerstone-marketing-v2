@@ -152,8 +152,8 @@
       "wordCount": 900,
       "heroImage": "/blog/migrating-from-buildertrend.png",
       "heroImageAlt": "Production home builder calculating the true cost of Buildertrend home builder software",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "16b7eb9"
     },
     {
       "slug": "how-blueprint-ai-extracts-material-scopes",
