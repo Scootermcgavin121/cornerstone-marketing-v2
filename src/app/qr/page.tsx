@@ -26,6 +26,8 @@ import {
   Zap,
   PlayCircle,
   Workflow,
+  AlarmClock,
+  TrendingUp,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -417,7 +419,7 @@ export default function QRPage() {
               Every other construction platform asks <span className="text-white italic">somebody</span> to remember to flip the task to In Progress. Cornerstone doesn&apos;t. The moment a vendor scans the jobsite QR, the scheduled task auto-flips to <span className="text-emerald-400 font-bold">In Progress</span> — downstream tasks cascade, the PM gets pinged, the homeowner portal updates, and the activity feed lights up. <span className="text-white font-semibold">Zero clicks. Zero forgotten updates. Zero stale schedules.</span>
             </p>
             <p className="text-emerald-300/90 leading-relaxed text-base font-semibold">
-              And the vendor up next? They see it <span className="text-white">the instant it happens.</span> No calls, no texts, no &ldquo;hey when do you think you&apos;ll be done?&rdquo; — just a live schedule that tells every trade partner exactly where they stand.
+              And the vendor up next? They see it <span className="text-white">the instant it happens.</span> No calls, no texts, no &ldquo;hey when do you think you&apos;ll be done?&rdquo; — just a live schedule that tells every trade partner exactly where they stand. <span className="text-white">Better odds the job will actually be ready when their crew rolls up.</span>
             </p>
           </div>
           {/* The cascade chain */}
@@ -453,33 +455,52 @@ export default function QRPage() {
               <div className="text-slate-500 text-xs mt-1">Dependent tasks shift, PM gets push, the next trade sees it live, buyer portal updates, webhooks fan out</div>
             </div>
           </div>
-          {/* Vendor-to-vendor chain reaction */}
-          <div className="mt-10 max-w-4xl mx-auto rounded-2xl border border-slate-800/80 bg-slate-950/70 p-6 md:p-7">
-            <div className="flex items-center justify-center gap-2 mb-5 text-emerald-400">
-              <Workflow className="w-4 h-4" />
-              <span className="text-[10px] uppercase tracking-widest font-bold">The Chain Reaction</span>
-            </div>
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-2 text-sm">
-              <div className="flex-1 rounded-xl bg-emerald-500/10 border border-emerald-500/30 px-4 py-3">
-                <div className="text-emerald-400 text-[10px] font-bold tracking-widest uppercase mb-1">8:53 AM</div>
-                <div className="text-white font-semibold">Summit Roofing scans the QR</div>
-                <div className="text-slate-400 text-xs mt-1">Roof Dry-In → In Progress</div>
+          {/* The 4pm-to-7am Problem */}
+          <div className="mt-10 max-w-5xl mx-auto rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-950/30 via-slate-950 to-slate-950 p-6 md:p-8">
+            <div className="flex flex-col md:flex-row md:items-start gap-4 md:gap-6 mb-6">
+              <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center flex-shrink-0">
+                <AlarmClock className="w-6 h-6 text-amber-400" />
               </div>
-              <ArrowRight className="w-5 h-5 text-slate-500 mx-auto rotate-90 sm:rotate-0" />
-              <div className="flex-1 rounded-xl bg-cyan-500/10 border border-cyan-500/30 px-4 py-3">
-                <div className="text-cyan-400 text-[10px] font-bold tracking-widest uppercase mb-1">8:53 AM</div>
-                <div className="text-white font-semibold">Drywall crew gets the ping</div>
-                <div className="text-slate-400 text-xs mt-1">&ldquo;Your task is now 2 days out — load the truck&rdquo;</div>
-              </div>
-              <ArrowRight className="w-5 h-5 text-slate-500 mx-auto rotate-90 sm:rotate-0" />
-              <div className="flex-1 rounded-xl bg-violet-500/10 border border-violet-500/30 px-4 py-3">
-                <div className="text-violet-400 text-[10px] font-bold tracking-widest uppercase mb-1">8:53 AM</div>
-                <div className="text-white font-semibold">PM sees the whole chain</div>
-                <div className="text-slate-400 text-xs mt-1">Activity Map updated, no phone calls needed</div>
+              <div className="flex-1">
+                <div className="text-[10px] uppercase tracking-widest text-amber-400 font-bold mb-1">The 4pm-to-7am problem</div>
+                <h3 className="text-2xl font-black text-white mb-3 leading-tight">Closes the gap every builder lives with.</h3>
+                <p className="text-slate-300 leading-relaxed mb-3">
+                  Old world: a builder marks Roofing Dry-In complete at 4pm Monday. Drywall is scheduled for 7am Tuesday, but their truck has to load Monday night. The crew rolls the dice and shows up — sometimes the prior trade isn&apos;t actually done, the day is wasted, and everyone&apos;s mad.
+                </p>
+                <p className="text-slate-300 leading-relaxed">
+                  New world: Drywall pulls up Cornerstone at 7am Tuesday and sees Roof Dry-In is <span className="text-emerald-400 font-bold">In Progress — since 6:47 AM</span>. They commit the truck with real information, not a hope. <span className="text-white font-semibold">Better odds. Fewer wasted days. Fewer angry calls.</span>
+                </p>
               </div>
             </div>
-            <p className="text-slate-500 text-xs italic text-center mt-5">
-              No more &ldquo;when are you guys finishing?&rdquo; calls. The schedule is the source of truth, and it&apos;s talking to everyone at the same time.
+            {/* Timeline */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4">
+              <div className="rounded-xl bg-slate-900/60 border border-slate-800 p-4">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-amber-400 text-[10px] font-bold tracking-widest uppercase">Mon 4:00 PM</span>
+                  <Clipboard className="w-3.5 h-3.5 text-slate-500" />
+                </div>
+                <div className="text-white font-semibold text-sm mb-1">PM marks Roofing complete</div>
+                <div className="text-slate-500 text-xs">Drywall is scheduled for tomorrow. Truck has to load tonight. Crew has to commit blind.</div>
+              </div>
+              <div className="rounded-xl bg-slate-900/60 border border-slate-800 p-4">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-cyan-400 text-[10px] font-bold tracking-widest uppercase">Tue 6:47 AM</span>
+                  <QrCode className="w-3.5 h-3.5 text-slate-500" />
+                </div>
+                <div className="text-white font-semibold text-sm mb-1">Summit Roofing scans the QR</div>
+                <div className="text-slate-500 text-xs">Roof Dry-In auto-flips to <span className="text-emerald-400 font-bold">In Progress</span>. No clicks, no calls.</div>
+              </div>
+              <div className="rounded-xl bg-emerald-500/10 border border-emerald-500/40 p-4 shadow-lg shadow-emerald-500/10">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-emerald-400 text-[10px] font-bold tracking-widest uppercase">Tue 7:00 AM</span>
+                  <TrendingUp className="w-3.5 h-3.5 text-emerald-400" />
+                </div>
+                <div className="text-white font-semibold text-sm mb-1">Drywall checks the schedule</div>
+                <div className="text-slate-300 text-xs">Sees the prior trade is <span className="text-emerald-400 font-bold">live on-site</span>, not just &ldquo;scheduled.&rdquo; Loads the truck with confidence.</div>
+              </div>
+            </div>
+            <p className="text-slate-500 text-xs italic text-center mt-6">
+              Multiply this by 40 active homes and 12 trades per home. That gap is where most home-building schedules quietly bleed.
             </p>
           </div>
 
