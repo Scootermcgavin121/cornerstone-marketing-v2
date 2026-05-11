@@ -1,4 +1,4 @@
-import { Check, Sparkles } from "lucide-react";
+﻿import { Check, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { FAQSection, type FAQItem } from "@/components/FAQSection";
@@ -37,7 +37,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Can I use my own AI agent against Cornerstone purchasing data?",
-    a: "Yes. The Pro+ plan ($599/mo) includes Bring Your Own Agent (BYOA) and full REST API access. You can connect Claude, ChatGPT, or any custom agent to live purchasing, bid, vendor, and budget data through 59 endpoints with scoped Bearer-token auth.",
+    a: "Yes. The Pro+ plan ($599/mo) includes Bring Your Own Agent (BYOA) and full REST API access. You can connect Claude, ChatGPT, or any custom agent to live purchasing, bid, vendor, and budget data through 59+ endpoints (and growing) with scoped Bearer-token auth.",
   },
   {
     q: "How do I review competing vendor bids?",
@@ -104,7 +104,7 @@ const features = [
   { title: "Purchase Orders", desc: "Generate and send POs directly from approved bids." },
   { title: "Data Backup & Export", desc: "Your data is always yours. Download everything as CSV or JSON anytime &mdash; 91 tables, full record sets, sensitive fields excluded. Plus nightly auto-backups with 7-day retention. No vendor lock-in." },
   { title: "Buildertrend Migration", desc: "Import existing budgets from Buildertrend with smart column mapping." },
-  { title: "Bid Import AI", desc: "Upload vendor bids in ANY format — Excel, PDF, scanned docs, even photos of handwritten quotes. AI extracts line items, maps to your parts catalog with confidence scores, and lets you review, edit, approve, or reject before importing." },
+  { title: "Bid Import AI", desc: "Upload vendor bids in ANY format â€” Excel, PDF, scanned docs, even photos of handwritten quotes. AI extracts line items, maps to your parts catalog with confidence scores, and lets you review, edit, approve, or reject before importing." },
 ];
 
 export default function PurchasingPage() {
@@ -220,7 +220,7 @@ export default function PurchasingPage() {
               <div className="flex justify-between"><span>Cornerstone PM</span><span className="text-emerald-400 font-bold">Free during beta</span></div>
             </div>
             <Link href="/beta" className="block w-full text-center px-6 py-3.5 rounded-xl bg-emerald-400 text-slate-900 font-bold hover:bg-emerald-300 transition-all duration-200">Get Early Access &rarr;</Link>
-            <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders &mdash;· No credit card required</p>
+            <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders &mdash;Â· No credit card required</p>
           </div>
           <div className="space-y-4">
             <h2 className="text-3xl font-black">Why builders choose Cornerstone for purchasing</h2>

@@ -1,11 +1,11 @@
-import { Check } from "lucide-react";
+﻿import { Check } from "lucide-react";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { FAQSection, type FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
   title: "Design Center Software for Home Builders | Cornerstone PM",
-  description: "Design center software for home builders with structured options engine, room-by-room selections, allowance tracking, and budget integration. Built for production builders.",
+  description: "Design center software for home builders with structured options engine, room-by-room selections, allowance tracking, and budget integration. Built for home builders.",
 };
 
 const faqItems: FAQItem[] = [
@@ -39,7 +39,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Is this a NEWSTAR / BuildPro design center alternative?",
-    a: "Yes. Cornerstone PM offers the same core options engine and design center capabilities as NEWSTAR and BuildPro &mdash; structured options, allowances, spec levels, change orders &mdash; without the 6-figure implementation cost. Built specifically for small-to-mid production builders.",
+    a: "Yes. Cornerstone PM offers the same core options engine and design center capabilities as NEWSTAR and BuildPro &mdash; structured options, allowances, spec levels, change orders &mdash; without the 6-figure implementation cost. Built specifically for small-to-mid home builders.",
   },
 ];
 
@@ -117,7 +117,7 @@ export default function DesignPage() {
               <div className="flex justify-between"><span>Cornerstone PM</span><span className="text-violet-400 font-bold">Free during beta</span></div>
             </div>
             <Link href="/beta" className="block w-full text-center px-6 py-3.5 rounded-xl bg-violet-400 text-slate-900 font-bold hover:bg-violet-300 transition-all duration-200">Get Early Access &rarr;</Link>
-            <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders &mdash;· No credit card required</p>
+            <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders &mdash;Â· No credit card required</p>
           </div>
           <div className="space-y-4">
             <h2 className="text-3xl font-black">Why builders choose Cornerstone for design</h2>

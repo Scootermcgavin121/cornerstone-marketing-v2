@@ -1,16 +1,16 @@
-import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
+﻿import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
 import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageTemplate";
 import type { FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
-  title: "Knowify Alternative for Production Home Builders | Cornerstone PM",
+  title: "Knowify Alternative for Home Builders | Cornerstone PM",
   description:
-    "Knowify is built for subcontractors. Cornerstone PM is the alternative for production home builders - AI agents, options engine, multi-community management, and 30 webhook events from $149/mo.",
+    "Knowify is built for subcontractors. Cornerstone PM is the alternative for home builders - AI agents, options engine, multi-community management, and 30 webhook events from $149/mo.",
   alternates: { canonical: "https://www.cornerstonepm.ai/knowify-alternative" },
 };
 
 const comparisonRows: ComparisonRow[] = [
-  { feature: "Built for production home builders (GC/owner role)", cornerstone: true, competitor: false, note: "Knowify is built for specialty subcontractors (electrical, plumbing, drywall). Cornerstone PM is built for the general contractor / production home builder who manages the whole project." },
+  { feature: "Built for home builders (GC/owner role)", cornerstone: true, competitor: false, note: "Knowify is built for specialty subcontractors (electrical, plumbing, drywall). Cornerstone PM is built for the home builder acting as GC — managing the whole project." },
   { feature: "Structural options engine", cornerstone: true, competitor: false, note: "Pre-sale floorplan options pricing - not a subcontractor concept." },
   { feature: "Floorplan pricing matrix", cornerstone: true, competitor: false, note: "Per-community floorplan pricing for production builders." },
   { feature: "Multi-community lot management", cornerstone: true, competitor: false, note: "Native multi-community pipeline. Knowify is job-centric." },
@@ -25,23 +25,23 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Homeowner portal", cornerstone: true, competitor: false, note: "Buyer-facing milestone, selection, and document views." },
   { feature: "Vendor portal (bid management)", cornerstone: true, competitor: false, note: "7-wave automated bidding pipeline + vendor portal (no login required)." },
   { feature: "Job costing / T&M billing", cornerstone: "limited", competitor: true, note: "Knowify is strong at time-and-material billing for subcontractors. Cornerstone handles builder cost tracking, not T&M invoicing to GCs." },
-  { feature: "Starting price", cornerstone: "$149/mo", competitor: "$149/mo+", note: "Similar entry price. Cornerstone is a full production builder platform; Knowify is a subcontractor tool." },
+  { feature: "Starting price", cornerstone: "$149/mo", competitor: "$149/mo+", note: "Similar entry price. Cornerstone is a full home builder platform; Knowify is a subcontractor tool." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
   { title: "GC / builder role, not subcontractor role", desc: "Knowify is built for subs billing to GCs. Cornerstone is built for the GC - managing subs, vendors, and communities. You assign bids, run schedules, manage lot inventories, and deliver homes." },
-  { title: "AI agents native — 45+ skills", desc: "Foreman AI reads AND writes your data. Blueprint AI converts floor plans to takeoffs. AI image search, anti-bot web scraping, and per-user memory that greets you by your chosen name and learns your habits over time — all custom-coded into the app. No other home builder platform comes close." },
+  { title: "AI agents native â€” 45+ skills", desc: "Foreman AI reads AND writes your data. Blueprint AI converts floor plans to takeoffs. AI image search, anti-bot web scraping, and per-user memory that greets you by your chosen name and learns your habits over time â€” all custom-coded into the app. No other home builder platform comes close." },
   { title: "Full PM + design center", desc: "Scheduling, purchasing, bid management, homeowner portal, structural options engine, multi-community pipeline - all in one platform from $149/mo." },
 ];
 
 const faqItems: FAQItem[] = [
   {
-    q: "Is Knowify a good fit for production home builders?",
-    a: "Knowify is designed for specialty subcontractors - electricians, plumbers, HVAC techs, drywall crews - who bill time-and-material to general contractors. If you're a production home builder acting as the GC, managing subs, running multi-community pipelines, and pre-selling homes with a design center, you need a different tool.",
+    q: "Is Knowify a good fit for home builders?",
+    a: "Knowify is designed for specialty subcontractors - electricians, plumbers, HVAC techs, drywall crews - who bill time-and-material to general contractors. If you're a home builder acting as the GC, managing subs, running multi-community pipelines, and pre-selling homes with a design center, you need a different tool.",
   },
   {
     q: "What's the best Knowify alternative for home builders?",
-    a: "Cornerstone PM is purpose-built for production home builders acting in the GC role. It includes everything from pre-sale options engine and design center through construction scheduling, vendor bid management, purchasing, and homeowner portal - plus native AI agents (Foreman AI 45+ skills, Blueprint AI) and a public REST API with 30 webhook events.",
+    a: "Cornerstone PM is purpose-built for home builders in the GC role. It includes everything from pre-sale options engine and design center through construction scheduling, vendor bid management, purchasing, and homeowner portal - plus native AI agents (Foreman AI 45+ skills, Blueprint AI) and a public REST API with 30 webhook events.",
   },
   {
     q: "Can I migrate from Knowify to Cornerstone PM?",
@@ -53,7 +53,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Does Cornerstone PM have a free trial?",
-    a: "Yes. The 2-year free beta is open to the first 100 production builders - no credit card, no contract, no implementation fee.",
+    a: "Yes. The 2-year free beta is open to the first 100 home builders - no credit card, no contract, no implementation fee.",
   },
 ];
 
@@ -61,26 +61,26 @@ export default function KnowifyAlternativePage() {
   return (
     <AlternativePageTemplate
       competitorName="Knowify"
-      badgeLabel="Knowify Alternative - Production Builders"
+      badgeLabel="Knowify Alternative - Home Builders"
       heroLine1="Knowify is for subcontractors."
       heroLine2="You're the builder."
       accentColor="violet"
-      heroParagraph="Knowify is built for specialty subcontractors billing to GCs. Cornerstone PM is the alternative for production home builders in the GC role - managing subs, running communities, pre-selling homes with a design center, and closing with draws. From $149/mo with unlimited users."
+      heroParagraph="Knowify is built for specialty subcontractors billing to GCs. Cornerstone PM is the alternative for home builders in the GC role - managing subs, running communities, pre-selling homes with a design center, and closing with draws. From $149/mo with unlimited users."
       secondaryCTA={{ text: "See full comparison", href: "/compare" }}
-      comparisonSubtitle="Knowify vs Cornerstone PM - subcontractor tool vs. production builder platform."
+      comparisonSubtitle="Knowify vs Cornerstone PM - subcontractor tool vs. home builder platform."
       comparisonRows={comparisonRows}
       trademarkName="Knowify"
-      whySwitchHeadline="What production builders need that Knowify doesn't have"
+      whySwitchHeadline="What home builders need that Knowify doesn't have"
       whySwitchCards={whySwitchCards}
-      honestAngle="If you're a specialty subcontractor billing T&M to general contractors, Knowify is a solid tool. This page is for production home builders who found Knowify through a search. You're the builder - you need a different platform, and Cornerstone PM is built for your role."
+      honestAngle="If you're a specialty subcontractor billing T&M to general contractors, Knowify is a solid tool. This page is for home builders who found Knowify through a search. You're the builder - you need a different platform, and Cornerstone PM is built for your role."
       showMigrationCTA={true}
       migrationHeadline="Moving from Knowify? Bring your contacts and vendors."
       migrationDesc="Export your Knowify data, drop it in our wizard, and AI auto-maps vendors, contacts, and job history. Dry-run before you commit."
       faqTitle="Knowify Alternative FAQ"
-      faqSubtitle="For production home builders who need a GC-role platform, not a subcontractor tool."
+      faqSubtitle="For home builders who need a GC-role platform, not a subcontractor tool."
       faqItems={faqItems}
       footerHeadline="Built for the builder, not the sub."
-      footerSubtext="Join the beta and get 2 years free. Production builder workflows native."
+      footerSubtext="Join the beta and get 2 years free. Home builder workflows native."
       relatedPages={[
         { text: "vs Buildertrend", href: "/buildertrend-alternative" },
         { text: "vs JobTread", href: "/jobtread-alternative" },

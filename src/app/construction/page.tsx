@@ -1,17 +1,17 @@
-import { Check } from "lucide-react";
+﻿import { Check } from "lucide-react";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { FAQSection, type FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
   title: "Construction Scheduling Software for Home Builders | Cornerstone PM",
-  description: "AI construction scheduling for home builders. Auto-cascading dependencies, vendor notifications, and Gantt charts &mdash; built for production home builders running multiple communities.",
+  description: "AI construction scheduling for home builders. Auto-cascading dependencies, vendor notifications, and Gantt charts &mdash; built for home builders running multiple communities.",
 };
 
 const faqItems: FAQItem[] = [
   {
     q: "What is construction scheduling software for home builders?",
-    a: "Construction scheduling software for home builders is a tool that lets production builders plan, sequence, and notify subcontractors across every home in every community. Cornerstone PM's scheduling module includes Gantt charts, 3-tier auto-cascading dependencies, foundation-aware templates, and one-click vendor email confirmations &mdash; designed specifically for builders managing 10-200+ homes per year, not general contractors.",
+    a: "Construction scheduling software for home builders is a tool that lets home builders plan, sequence, and notify subcontractors across every home in every community. Cornerstone PM's scheduling module includes Gantt charts, 3-tier auto-cascading dependencies, foundation-aware templates, and one-click vendor email confirmations &mdash; designed specifically for builders managing 10-200+ homes per year, not general contractors.",
   },
   {
     q: "How does AI construction scheduling for home builders work?",
@@ -86,7 +86,7 @@ export default function ConstructionPage() {
             Schedule subs.<br /><span className="text-amber-400">Hit every deadline.</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10">
-            Auto-cascading dependencies, vendor notifications, and Gantt charts &mdash; built for production home builders who run multiple communities.
+            Auto-cascading dependencies, vendor notifications, and Gantt charts &mdash; built for home builders who run multiple communities.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/beta" className="px-8 py-4 rounded-full bg-amber-400 text-slate-900 font-bold text-lg hover:bg-amber-300 transition-all duration-200 shadow-lg shadow-amber-500/30 hover:-translate-y-0.5">Request Early Access &rarr;</Link>
@@ -127,11 +127,11 @@ export default function ConstructionPage() {
               <div className="flex justify-between"><span>Cornerstone PM</span><span className="text-amber-400 font-bold">Free during beta</span></div>
             </div>
             <Link href="/beta" className="block w-full text-center px-6 py-3.5 rounded-xl bg-amber-400 text-slate-900 font-bold hover:bg-amber-300 transition-all duration-200">Get Early Access &rarr;</Link>
-            <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders &mdash;· No credit card required</p>
+            <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders &mdash;Â· No credit card required</p>
           </div>
           <div className="space-y-4">
             <h2 className="text-3xl font-black">Why builders choose Cornerstone for scheduling</h2>
-            <p className="text-slate-400 leading-relaxed">Most scheduling tools were built for general contractors. Cornerstone was built specifically for production home builders running 10&mdash; 200+ homes a year across multiple communities.</p>
+            <p className="text-slate-400 leading-relaxed">Most scheduling tools were built for general contractors. Cornerstone was built specifically for home builders running 10&mdash; 200+ homes a year across multiple communities.</p>
             <p className="text-slate-400 leading-relaxed">The 3-tier dependency system, foundation-aware templates, and vendor email confirmation flow were designed around how home builders actually work &mdash; not adapted from commercial construction software.</p>
           </div>
         </div>
@@ -139,7 +139,7 @@ export default function ConstructionPage() {
 
       <FAQSection
         title="Construction Scheduling FAQ"
-        subtitle="Common questions about scheduling software built for production home builders."
+        subtitle="Common questions about scheduling software built for home builders."
         items={faqItems}
       />
 

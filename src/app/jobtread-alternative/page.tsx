@@ -18,7 +18,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "AI floor plan takeoffs (Blueprint AI)", cornerstone: true, competitor: false, note: "PDF blueprint to material takeoff in under 60 seconds. Blueprint AI is on Cornerstone Pro+ at $499/mo (25 takeoffs/mo)." },
   { feature: "30 named webhook events (typed payloads, HMAC)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+: 30 named events with typed payloads, HMAC signatures, delivery logs, auto-retry. JobTread has webhook capability via Zapier - we ship the full named event catalog with payload schemas and docs." },
   { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: true, note: "Both support bringing your own AI. JobTread: AI Connector. Cornerstone Pro+: public REST API + 30 named webhook events with typed payloads. Different approaches; both work." },
-  { feature: "Public REST API", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+: 59 endpoints, public docs. JobTread offers Zapier and AI Connector integrations rather than a full open REST API." },
+  { feature: "Public REST API (59+ endpoints, growing)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+: 59+ endpoints and growing rapidly, public docs. New endpoints ship as the platform grows. JobTread offers Zapier and AI Connector integrations rather than a full open REST API." },
   { feature: "Structural options engine", cornerstone: true, competitor: false, note: "Pre-sale options pricing matrix per floorplan - included on Cornerstone Builder+ ($299/mo). Not a JobTread feature." },
   { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Packages curated by an actual interior designer - the same playbook K. Hovnanian Homes uses. Buyers pick a package; all category options auto-lock. Cornerstone Builder+." },
   { feature: "AI Migration Wizard (one-click CRM import)", cornerstone: true, competitor: false, note: "AI auto-detects JobTread export column mapping and runs 23 import endpoints. ~$0.01 per migration." },
@@ -63,7 +63,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "How does Cornerstone's BYOA compare to JobTread's AI Connector?",
-    a: "Both platforms let you connect external AI to your construction data. JobTread ships the AI Connector for plugging in third-party tools (ChatGPT, Claude). Cornerstone's BYOA is included on Pro+ ($599/mo) via the public REST API (59 endpoints) plus 30 named webhook events with typed payload schemas - letting your own agent both read live data and react to events (home created, bid accepted, schedule cascade, etc.). Different architectures; both work. Cornerstone's edge is the richer named event catalog for event-driven automation.",
+    a: "Both platforms let you connect external AI to your construction data. JobTread ships the AI Connector for plugging in third-party tools (ChatGPT, Claude). Cornerstone's BYOA is included on Pro+ ($599/mo) via the public REST API (59+ endpoints and growing) plus 30+ named webhook events with typed payload schemas (catalog growing) - letting your own agent both read live data and react to events (home created, bid accepted, schedule cascade, etc.). Different architectures; both work. Cornerstone's edge is the richer named event catalog for event-driven automation.",
   },
   {
     q: "What does the $149 Cornerstone Starter include?",

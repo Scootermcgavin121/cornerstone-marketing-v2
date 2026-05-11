@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { ArrowRight, Check, Workflow, Layers, Bot } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -19,7 +19,7 @@ const modules = [
   { name: "Permitting", href: "/permitting", desc: "Permit gates, phase blocking, inspection tracking, automated reminders across the build.", color: "orange" },
   { name: "Foreman AI", href: "/foreman", desc: "45+ AI skills across 7 domains. Plain-English commands against live builder data.", color: "blue" },
   { name: "Blueprint AI Takeoff", href: "/ai-takeoff", desc: "Upload PDF floor plans, get 130+ material scopes and quantities in under 60 seconds.", color: "fuchsia" },
-  { name: "REST API + BYOA", href: "/api-access", desc: "59 endpoints, 30+ named webhook events (growing catalog), scoped Bearer-token auth. Bring your own AI agent.", color: "rose" },
+  { name: "REST API + BYOA", href: "/api-access", desc: "59+ endpoints (growing), 30+ named webhook events (growing catalog), scoped Bearer-token auth. Bring your own AI agent.", color: "rose" },
 ];
 
 const stats = [
@@ -32,11 +32,11 @@ const stats = [
 const faqItems: FAQItem[] = [
   {
     q: "What is home builder project management software?",
-    a: "Home builder project management software is an integrated platform that manages every stage of a residential home build &mdash; from lead capture through closing &mdash; including sales, purchasing, design center, scheduling, permitting, and warranty. Cornerstone PM is built specifically for production home builders running multiple communities, with native AI agents (Foreman AI and Blueprint AI) and a full REST API.",
+    a: "Home builder project management software is an integrated platform that manages every stage of a residential home build &mdash; from lead capture through closing &mdash; including sales, purchasing, design center, scheduling, permitting, and warranty. Cornerstone PM is built specifically for home builders running multiple communities, with native AI agents (Foreman AI and Blueprint AI) and a full REST API.",
   },
   {
     q: "What's the difference between home builder PM software and general construction PM software?",
-    a: "General construction PM software (Procore, Buildertrend, JobTread) is built for general contractors and remodelers. Home builder PM software is built around production homebuilding: lots, models, options, draws, design center, floorplan pricing matrices, and pre-sale workflows. Cornerstone PM is purpose-built for production builders, not adapted from commercial construction tools.",
+    a: "General construction PM software (Procore, Buildertrend, JobTread) is built for general contractors and remodelers. Home builder PM software is built around production homebuilding: lots, models, options, draws, design center, floorplan pricing matrices, and pre-sale workflows. Cornerstone PM is purpose-built for home builders, not adapted from commercial construction tools.",
   },
   {
     q: "What does home builder project management software cost?",
@@ -52,7 +52,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Can I replace Buildertrend, JobTread, or BuildPro with Cornerstone PM?",
-    a: "Yes &mdash; if you're a production home builder. Cornerstone PM is a modern alternative to Buildertrend, JobTread, CoConstruct, NEWSTAR, BuildPro, and MarkSystems for builders managing 5-200+ homes per year across multiple communities. It includes the same core capabilities plus native AI agents and REST API access at a fraction of the implementation cost.",
+    a: "Yes &mdash; if you're a home builder. Cornerstone PM is a modern alternative to Buildertrend, JobTread, CoConstruct, NEWSTAR, BuildPro, and MarkSystems for builders managing 5-200+ homes per year across multiple communities. It includes the same core capabilities plus native AI agents and REST API access at a fraction of the implementation cost.",
   },
   {
     q: "How long does implementation take?",
@@ -64,7 +64,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Is there a free trial?",
-    a: "Yes. The 2-year free beta is open to the first 100 production builders &mdash; no credit card, no contract, no implementation fee. After beta, you stay on whichever plan fits at the price you signed up at.",
+    a: "Yes. The 2-year free beta is open to the first 100 home builders &mdash; no credit card, no contract, no implementation fee. After beta, you stay on whichever plan fits at the price you signed up at.",
   },
 ];
 
@@ -84,7 +84,7 @@ export default function HomeBuilderPMPage() {
             <span className="text-cyan-400">management software.</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-8">
-            Cornerstone PM is the all-in-one platform for production home builders. Sales pipeline, purchasing, design center,
+            Cornerstone PM is the all-in-one platform for home builders. Sales pipeline, purchasing, design center,
             construction scheduling, permitting, and AI agents &mdash; integrated, with a public REST API.
             Starts at $149/mo. No implementation fees.
           </p>
@@ -178,7 +178,7 @@ export default function HomeBuilderPMPage() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-widest mb-4">
-                <Workflow className="w-3 h-3" /> Built for Production Builders
+                <Workflow className="w-3 h-3" /> Built for Home Builders
               </div>
               <h2 className="text-3xl font-black mb-4">Not adapted from commercial construction.</h2>
               <p className="text-slate-400 leading-relaxed mb-4">

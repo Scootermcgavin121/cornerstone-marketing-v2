@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { FileCheck, Lock, GitBranch, Bell, Users, FolderOpen } from "lucide-react";
@@ -7,7 +7,7 @@ import { FAQSection, type FAQItem } from "@/components/FAQSection";
 export const metadata = {
   title: "Permitting Software for Home Builders | Cornerstone PM",
   description:
-    "Permitting software for home builders. Permit gates, phase blocking, automated reminders, and inspection tracking from sale to final &mdash; built for production builders.",
+    "Permitting software for home builders. Permit gates, phase blocking, automated reminders, and inspection tracking from sale to final &mdash; built for home builders.",
 };
 
 const faqItems: FAQItem[] = [

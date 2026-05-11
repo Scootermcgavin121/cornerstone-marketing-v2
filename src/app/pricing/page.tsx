@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -6,7 +6,7 @@ import { PricingSection } from "@/components/PricingSection";
 import { FAQSection, type FAQItem } from "@/components/FAQSection";
 
 export const metadata: Metadata = {
-  title: "Pricing | Cornerstone PM — Home Builder Software from $149/mo",
+  title: "Pricing | Cornerstone PM â€” Home Builder Software from $149/mo",
   description:
     "Simple per-month pricing for home builder software. Starter $149, Builder $299, Pro $499, Pro+ $599. Unlimited users on every plan. No per-seat fees. No implementation cost.",
   alternates: { canonical: "https://www.cornerstonepm.ai/pricing" },
@@ -100,7 +100,7 @@ export default function PricingPage() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-black text-center mb-4">What every plan includes</h2>
           <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
-            Production-builder fundamentals on every tier &mdash; no &ldquo;upgrade to unlock the basics&rdquo; pricing tricks.
+            Home-builder fundamentals on every tier &mdash; no &ldquo;upgrade to unlock the basics&rdquo; pricing tricks.
           </p>
           <div className="grid sm:grid-cols-2 gap-6">
             {[

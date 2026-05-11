@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -16,19 +16,19 @@ import { ChevronDown } from "lucide-react";
 
  Source pages whose content was lifted (consider redirecting their JSON-LD
  references here in a future pass - not done yet, just flagged):
-   - /pricing                               (8 → merged into Pricing)
-   - /migrate                               (8 → merged into Migration)
-   - /buildertrend-alternative              (8 → merged into Comparisons + Migration)
-   - /buildpro-alternative                  (8 → merged into Comparisons + Migration)
-   - /newstar-alternative                   (8 → merged into Comparisons + Migration)
-   - /home-builder-project-management-software (9 → spread across categories)
-   - /construction                          (8 → merged into Scheduling)
-   - /design                                (8 → merged into Design Center)
-   - /sales                                 (8 → merged into Sales)
-   - /purchasing                            (16 → merged into Purchasing)
-   - /permitting                            (7 → merged into Scheduling/Permitting)
-   - /bid-import-ai                         (8 → merged into AI Agents)
-   - /support-ai                            (12 → merged into AI Agents)
+   - /pricing                               (8 â†’ merged into Pricing)
+   - /migrate                               (8 â†’ merged into Migration)
+   - /buildertrend-alternative              (8 â†’ merged into Comparisons + Migration)
+   - /buildpro-alternative                  (8 â†’ merged into Comparisons + Migration)
+   - /newstar-alternative                   (8 â†’ merged into Comparisons + Migration)
+   - /home-builder-project-management-software (9 â†’ spread across categories)
+   - /construction                          (8 â†’ merged into Scheduling)
+   - /design                                (8 â†’ merged into Design Center)
+   - /sales                                 (8 â†’ merged into Sales)
+   - /purchasing                            (16 â†’ merged into Purchasing)
+   - /permitting                            (7 â†’ merged into Scheduling/Permitting)
+   - /bid-import-ai                         (8 â†’ merged into AI Agents)
+   - /support-ai                            (12 â†’ merged into AI Agents)
    - /blog/buildertrend-vs-cornerstone-feature-comparison (7)
    - /blog/home-builder-software-buyer-guide-2026 (7)
    - /blog/newstar-implementation-cost-breakdown (7)
@@ -232,10 +232,10 @@ const pricing: Category = {
     {
       q: "What's included on Pro+ that Pro doesn't have?",
       aText:
-        "Pro+ ($599/mo) adds the full REST API (59 endpoints), 30+ named webhook event types (catalog growing weekly), Bring Your Own Agent (BYOA) so you can plug Claude or ChatGPT into live builder data, Bid Import AI (drag any vendor PDF/Excel/photo and AI extracts every line), the 7-wave automated bidding pipeline, and uncapped active home count.",
+        "Pro+ ($599/mo) adds the full REST API (59+ endpoints and growing rapidly), 30+ named webhook event types (catalog growing weekly), Bring Your Own Agent (BYOA) so you can plug Claude or ChatGPT into live builder data, Bid Import AI (drag any vendor PDF/Excel/photo and AI extracts every line), the 7-wave automated bidding pipeline, and uncapped active home count.",
       a: (
         <>
-          Pro+ ($599/mo) adds the full <A href="/api-access">REST API (59 endpoints)</A>, 30+ named webhook event types (catalog growing),
+          Pro+ ($599/mo) adds the full <A href="/api-access">REST API (59+ endpoints and growing)</A>, 30+ named webhook event types (catalog growing),
           Bring Your Own Agent (BYOA) so you can plug Claude or ChatGPT into live builder data,{" "}
           <A href="/bid-import-ai">Bid Import AI</A> (drag any vendor PDF/Excel/photo and AI extracts every line), the
           7-wave automated bidding pipeline, and uncapped active home count.
@@ -500,11 +500,11 @@ const ai: Category = {
     {
       q: "What is BYOA (Bring Your Own Agent)?",
       aText:
-        "BYOA lets you connect Claude, ChatGPT, or any custom AI agent to live Cornerstone data via the REST API (59 endpoints) and 30+ named webhook event types (catalog growing). Build your own scheduling automations, run your own bid analyses, or wire Cornerstone into an internal workflow. Included on Pro+ ($599/mo).",
+        "BYOA lets you connect Claude, ChatGPT, or any custom AI agent to live Cornerstone data via the REST API (59+ endpoints and growing) and 30+ named webhook event types (catalog growing). Build your own scheduling automations, run your own bid analyses, or wire Cornerstone into an internal workflow. Included on Pro+ ($599/mo).",
       a: (
         <>
           BYOA lets you connect Claude, ChatGPT, or any custom AI agent to live Cornerstone data via the{" "}
-          <A href="/api-access">REST API (59 endpoints)</A> and 30+ named webhook event types (catalog growing). Build your own scheduling
+          <A href="/api-access">REST API (59+ endpoints and growing)</A> and 30+ named webhook event types (catalog growing). Build your own scheduling
           automations, run your own bid analyses, or wire Cornerstone into an internal workflow. Included on Pro+
           ($599/mo).
         </>
@@ -792,7 +792,7 @@ const sales: Category = {
 const design: Category = {
   slug: "design-center",
   title: "Design Center & Options",
-  blurb: "Designer packages, structural options, floorplan pricing, à la carte, allowances.",
+  blurb: "Designer packages, structural options, floorplan pricing, Ã  la carte, allowances.",
   accent: "text-violet-400",
   items: [
     {
@@ -822,12 +822,12 @@ const design: Category = {
     {
       q: "What are Designer Packages?",
       aText:
-        "64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses), spanning 7 categories. Buyer picks a package and all category options auto-lock to that package; à la carte unlocks if the package is removed. Strong differentiator vs spreadsheet-style design centers - and built so a buyer can complete selections in one sitting instead of three.",
+        "64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses), spanning 7 categories. Buyer picks a package and all category options auto-lock to that package; Ã  la carte unlocks if the package is removed. Strong differentiator vs spreadsheet-style design centers - and built so a buyer can complete selections in one sitting instead of three.",
       a: (
         <>
           <strong>64 Designer Packages across 7 categories</strong>, each <em>curated by an actual interior
           designer</em> - the same playbook K. Hovnanian Homes uses to take the guesswork out of design selections.
-          Buyer picks a package and all category options auto-lock to that package; à la carte unlocks if the package
+          Buyer picks a package and all category options auto-lock to that package; Ã  la carte unlocks if the package
           is removed. Strong differentiator vs spreadsheet-style design centers - and built so a buyer can complete
           selections in one sitting instead of three.
         </>
@@ -920,12 +920,12 @@ const purchasing: Category = {
     {
       q: "How does Cornerstone PM handle vendor bidding?",
       aText:
-        "Send bid requests to multiple vendors at once. Auto-generated, scope-filtered Excel templates (3 tabs: Base/Structural/Designer) attach to the vendor invite email. Bids flow Invited → Viewed → Submitted → Declined with timestamps. Side-by-side comparison kicks in once 2+ vendors submit. See /purchasing.",
+        "Send bid requests to multiple vendors at once. Auto-generated, scope-filtered Excel templates (3 tabs: Base/Structural/Designer) attach to the vendor invite email. Bids flow Invited â†’ Viewed â†’ Submitted â†’ Declined with timestamps. Side-by-side comparison kicks in once 2+ vendors submit. See /purchasing.",
       a: (
         <>
           Send bid requests to multiple vendors at once. Auto-generated, scope-filtered Excel templates{" "}
           <strong>(3 tabs: Base/Structural/Designer)</strong> attach to the vendor invite email. Bids flow{" "}
-          <strong>Invited → Viewed → Submitted → Declined</strong> with timestamps. Side-by-side comparison kicks in
+          <strong>Invited â†’ Viewed â†’ Submitted â†’ Declined</strong> with timestamps. Side-by-side comparison kicks in
           once 2+ vendors submit. See <A href="/purchasing">/purchasing</A>.
         </>
       ),
@@ -1090,10 +1090,10 @@ const api: Category = {
     {
       q: "Does Cornerstone PM have a REST API?",
       aText:
-        "Yes - a public REST API with 59 endpoints, scoped Bearer-token authentication, and full documentation at app.cornerstonepm.ai/developers. All core data (schedules, vendors, lots, options, bids, budgets, takeoffs) is accessible. Included on Pro+ ($599/mo). See /api-access.",
+        "Yes - a public REST API with 59+ endpoints and growing rapidly, scoped Bearer-token authentication, and full documentation at app.cornerstonepm.ai/developers. New endpoints ship as the platform grows. All core data (schedules, vendors, lots, options, bids, budgets, takeoffs) is accessible. Included on Pro+ ($599/mo). See /api-access.",
       a: (
         <>
-          Yes - a public REST API with <strong>59 endpoints</strong>, scoped Bearer-token authentication, and full
+          Yes - a public REST API with <strong>59+ endpoints and growing rapidly</strong>, scoped Bearer-token authentication, and full
           documentation at <A href="/api-docs">app.cornerstonepm.ai/developers</A>. All core data (schedules, vendors,
           lots, options, bids, budgets, takeoffs) is accessible. Included on Pro+ ($599/mo). See{" "}
           <A href="/api-access">/api-access</A>.
@@ -1127,11 +1127,11 @@ const api: Category = {
     {
       q: "Can I use my own AI agent against Cornerstone purchasing data?",
       aText:
-        "Yes. Pro+ ($599/mo) includes BYOA + full REST API access. Connect Claude, ChatGPT, or any custom agent to live purchasing, bid, vendor, and budget data through 59 endpoints with scoped Bearer-token auth.",
+        "Yes. Pro+ ($599/mo) includes BYOA + full REST API access. Connect Claude, ChatGPT, or any custom agent to live purchasing, bid, vendor, and budget data through 59+ endpoints (and growing) with scoped Bearer-token auth.",
       a: (
         <>
           Yes. Pro+ ($599/mo) includes BYOA + full <A href="/api-access">REST API access</A>. Connect Claude, ChatGPT,
-          or any custom agent to live purchasing, bid, vendor, and budget data through 59 endpoints with scoped
+          or any custom agent to live purchasing, bid, vendor, and budget data through 59+ endpoints (and growing) with scoped
           Bearer-token auth.
         </>
       ),
@@ -1164,11 +1164,11 @@ const api: Category = {
     {
       q: "Does Buildertrend have a public API like Cornerstone PM?",
       aText:
-        "Buildertrend has limited integration capabilities and historically required enterprise contracts for API access. Cornerstone PM ships a public, documented REST API with 59 endpoints on Pro+ ($599/mo) - no separate contract, no enterprise gating.",
+        "Buildertrend has limited integration capabilities and historically required enterprise contracts for API access. Cornerstone PM ships a public, documented REST API with 59+ endpoints and growing rapidly on Pro+ ($599/mo) - no separate contract, no enterprise gating.",
       a: (
         <>
           Buildertrend has limited integration capabilities and historically required enterprise contracts for API
-          access. Cornerstone PM ships a public, documented REST API with <strong>59 endpoints on Pro+ ($599/mo)</strong>
+          access. Cornerstone PM ships a public, documented REST API with <strong>59+ endpoints (and growing) on Pro+ ($599/mo)</strong>
           - no separate contract, no enterprise gating.
         </>
       ),
@@ -1342,10 +1342,10 @@ const security: Category = {
     {
       q: "Can I export my data from Cornerstone PM?",
       aText:
-        "Yes - every plan. Settings → Backups lets you download a full org export (91 tables) as CSV or JSON anytime, with sensitive fields automatically excluded. Nightly auto-backups run with 7-day retention. Your data is always yours, no exit fees.",
+        "Yes - every plan. Settings â†’ Backups lets you download a full org export (91 tables) as CSV or JSON anytime, with sensitive fields automatically excluded. Nightly auto-backups run with 7-day retention. Your data is always yours, no exit fees.",
       a: (
         <>
-          Yes - every plan. <strong>Settings → Backups</strong> lets you download a full org export (91 tables) as
+          Yes - every plan. <strong>Settings â†’ Backups</strong> lets you download a full org export (91 tables) as
           CSV or JSON anytime, with sensitive fields automatically excluded. Nightly auto-backups run with{" "}
           <strong>7-day retention</strong>. Your data is always yours, no exit fees.
         </>
@@ -1354,11 +1354,11 @@ const security: Category = {
     {
       q: "How often are backups run?",
       aText:
-        "Nightly automatic backups, 7-day retention. You can also trigger manual backups on demand at any time from Settings → Backups (Admin only). Both CSV and JSON formats are available for full-database exports.",
+        "Nightly automatic backups, 7-day retention. You can also trigger manual backups on demand at any time from Settings â†’ Backups (Admin only). Both CSV and JSON formats are available for full-database exports.",
       a: (
         <>
           <strong>Nightly automatic backups, 7-day retention.</strong> You can also trigger manual backups on demand
-          at any time from Settings → Backups (Admin only). Both CSV and JSON formats are available for full-database
+          at any time from Settings â†’ Backups (Admin only). Both CSV and JSON formats are available for full-database
           exports.
         </>
       ),
@@ -1562,7 +1562,7 @@ export default function FAQPage() {
               href="https://app.cornerstonepm.ai/login"
               className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-violet-500 hover:bg-violet-400 text-white font-semibold transition-colors shadow-lg shadow-violet-500/20"
             >
-              ✨ Talk to Foreman AI
+              âœ¨ Talk to Foreman AI
             </Link>
             <Link
               href="/contact"
@@ -1584,7 +1584,7 @@ export default function FAQPage() {
       <section className="py-6 px-4 border-t border-slate-900 bg-slate-950">
         <div className="max-w-4xl mx-auto">
           <p className="text-xs text-slate-600 text-center leading-relaxed">
-            Buildertrend®, NEWSTAR®, BuildPro®, CoConstruct®, JobTread®, and MarkSystems® are
+            BuildertrendÂ®, NEWSTARÂ®, BuildProÂ®, CoConstructÂ®, JobTreadÂ®, and MarkSystemsÂ® are
             trademarks of their respective owners. Cornerstone PM is not affiliated with or
             endorsed by these companies.
           </p>

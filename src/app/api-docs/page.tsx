@@ -313,13 +313,13 @@ export default function ApiDocsPage() {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-xs font-semibold mb-6">
             <Code className="w-3.5 h-3.5" />
-            PRO+ PLAN &mdash; 59 ENDPOINTS &mdash; 67+ HTTP METHODS
+            PRO+ PLAN &mdash; 59+ ENDPOINTS (GROWING) &mdash; 67+ HTTP METHODS
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
             Cornerstone PM <span className="text-cyan-400">API</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-            59 REST endpoints covering every major entity. Vendors, bids, homes, tasks, POs, payments, options, parts, timesheets, webhooks, and more. Standard auth. JSON in, JSON out.
+            59+ REST endpoints and growing rapidly — covering every major entity. Vendors, bids, homes, tasks, POs, payments, options, parts, timesheets, webhooks, and more. New endpoints ship as the platform grows. Standard auth. JSON in, JSON out.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
             <Link href="/beta" className="px-8 py-4 rounded-full bg-cyan-400 text-slate-900 font-bold text-lg hover:bg-cyan-300 transition-all duration-200 shadow-lg shadow-cyan-500/30 hover:-translate-y-0.5">
@@ -406,7 +406,7 @@ export default function ApiDocsPage() {
       {/* Endpoints */}
       <section id="endpoints" className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-black text-center mb-4">59 Endpoints</h2>
+          <h2 className="text-3xl font-black text-center mb-4">59+ Endpoints (and growing)</h2>
           <p className="text-slate-400 text-center mb-3 max-w-xl mx-auto">All endpoints prefixed with <code className="text-cyan-400 bg-slate-800 px-1.5 py-0.5 rounded text-sm">https://app.cornerstonepm.ai</code></p>
           <p className="text-slate-500 text-center text-sm mb-12">Built on 110+ database tables &mdash; every endpoint reflects real construction data, not generic project management abstractions.</p>
 
@@ -576,7 +576,7 @@ export default function ApiDocsPage() {
       <section className="py-20 px-4 text-center border-t border-slate-800/60">
         <h2 className="text-4xl font-black mb-4">
           JobTread has ~40 Pave objects.<br />
-          <span className="text-cyan-400">We have 59 REST endpoints.</span>
+          <span className="text-cyan-400">We have 59+ REST endpoints — and growing rapidly.</span>
         </h2>
         <p className="text-slate-400 text-lg mb-10 max-w-xl mx-auto">
           Standard REST. No custom query language. If your AI agent can make an HTTP request, it works with Cornerstone PM.

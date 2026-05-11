@@ -1,4 +1,4 @@
-import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
+﻿import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
 import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageTemplate";
 import type { FAQItem } from "@/components/FAQSection";
 
@@ -14,24 +14,24 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Structural options engine (residential)", cornerstone: true, competitor: false, note: "Pre-sale floorplan options pricing - a production builder concept, not commercial construction." },
   { feature: "Floorplan pricing matrix", cornerstone: true, competitor: false, note: "Per-community floorplan pricing for production builders." },
   { feature: "Multi-community lot management", cornerstone: true, competitor: false, note: "Native multi-community pipeline for production builders." },
-  { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Buyer design center with packages curated by an actual interior designer — the same playbook K. Hovnanian Homes uses. Residential-builder specific." },
+  { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Buyer design center with packages curated by an actual interior designer â€” the same playbook K. Hovnanian Homes uses. Residential-builder specific." },
   { feature: "Native AI agents (Foreman AI - 45+ skills)", cornerstone: true, competitor: false, note: "Foreman AI reads AND writes data. Blueprint AI: PDF to takeoff in 60 seconds. Fieldwire has no native AI agents." },
   { feature: "AI image search, vision & anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, reads supplier product pages with AI-powered web scraping. Plus: paste or drag-drop any screenshot from inside the app and Foreman reads it with AI vision and acts on it." },
   { feature: "30 webhook events (full named catalog)", cornerstone: true, competitor: false, note: "30 named events, HMAC signatures, auto-retry." },
   { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Wire Claude or ChatGPT to your live construction data." },
-  { feature: "Public REST API (59 endpoints)", cornerstone: true, competitor: "limited", note: "Cornerstone: 59 endpoints, public docs. Fieldwire: limited API." },
+  { feature: "Public REST API (59+ endpoints, growing)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+: 59+ endpoints and growing rapidly, public docs. New endpoints ship as the platform grows. Fieldwire: limited API." },
   { feature: "Free database export (CSV / JSON)", cornerstone: true, competitor: false, note: "Download your full data anytime. Nightly auto-backups." },
   { feature: "AI Migration Wizard", cornerstone: true, competitor: false, note: "AI auto-detects column mapping and runs 23 import endpoints." },
   { feature: "Homeowner portal", cornerstone: true, competitor: false, note: "Buyer-facing milestone, selection, and document views." },
   { feature: "Purchasing / POs / bid management", cornerstone: true, competitor: false, note: "Full purchasing workflow with automated bid pipeline." },
   { feature: "Plan management / markup", cornerstone: "limited", competitor: true, note: "Fieldwire specializes in plan room, markup, and punch list management for commercial projects. Cornerstone has basic plan storage." },
   { feature: "Punch lists (commercial-grade)", cornerstone: "limited", competitor: true, note: "Fieldwire's punch list tools are purpose-built for commercial GC closeout workflows." },
-  { feature: "Starting price", cornerstone: "$149/mo", competitor: "$39/mo+", note: "Fieldwire is cheaper as a plan management tool. Cornerstone is a full production builder platform." },
+  { feature: "Starting price", cornerstone: "$149/mo", competitor: "$39/mo+", note: "Fieldwire is cheaper as a plan management tool. Cornerstone is a full home builder platform." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
-  { title: "Residential production workflows", desc: "Lot management, floorplan pricing, structural options, buyer design center, pre-sale pipeline, draw schedules - production builder concepts that don't exist in Fieldwire's commercial-focused platform." },
-  { title: "AI agents native — 45+ skills", desc: "Foreman AI reads AND writes your data. Blueprint AI converts floor plans to takeoffs in 60 seconds. AI image search, anti-bot web scraping, and per-user memory that greets you by your chosen name and learns your habits over time — all custom-coded into the app. Commercial plan tools have nothing like this." },
+  { title: "Residential production workflows", desc: "Lot management, floorplan pricing, structural options, buyer design center, pre-sale pipeline, draw schedules - home builder concepts that don't exist in Fieldwire's commercial-focused platform." },
+  { title: "AI agents native â€” 45+ skills", desc: "Foreman AI reads AND writes your data. Blueprint AI converts floor plans to takeoffs in 60 seconds. AI image search, anti-bot web scraping, and per-user memory that greets you by your chosen name and learns your habits over time â€” all custom-coded into the app. Commercial plan tools have nothing like this." },
   { title: "Full PM platform", desc: "Scheduling, purchasing, bid management, homeowner portal, options engine, multi-community pipeline - all in one residential production platform, not a commercial field tool with added features." },
 ];
 

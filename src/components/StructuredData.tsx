@@ -39,7 +39,7 @@ export function StructuredData() {
           "Homeowner portal with milestones and photo uploads",
           "Permit gate system and permitting pipeline tracker",
           "Vendor self-registration portal",
-          "REST API with 59 endpoints and 30+ named webhook event types (catalog growing)",
+          "REST API with 59+ endpoints (growing) and 30+ named webhook event types (catalog growing)",
           "Multi-community and multi-floorplan management",
           "AI Support Agent - instant answers, every feature documented",
           "Warranty tracking and 2-year warranty management",
@@ -112,7 +112,7 @@ export function StructuredData() {
             "name": "Does Cornerstone PM have an API?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Cornerstone PM offers a full REST API with 59 endpoints covering vendors, bids, homes, tasks, purchase orders, payments, options, parts catalog, design center, webhooks, and more. Available on the Pro+ plan ($599/mo). Full documentation is available at app.cornerstonepm.ai/developers.",
+              "text": "Yes. Cornerstone PM offers a full REST API with 59+ endpoints and growing rapidly, covering vendors, bids, homes, tasks, purchase orders, payments, options, parts catalog, design center, webhooks, and more. New endpoints ship as the platform grows. Available on the Pro+ plan ($599/mo). Full documentation is available at app.cornerstonepm.ai/developers.",
             },
           },
           {

@@ -1,4 +1,4 @@
-import { Check, TrendingUp } from "lucide-react";
+﻿import { Check, TrendingUp } from "lucide-react";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { VideoPlayer } from "@/components/VideoPlayer";
@@ -7,13 +7,13 @@ import { FAQSection, type FAQItem } from "@/components/FAQSection";
 export const metadata = {
   title: "Home Builder Sales Pipeline Software | Cornerstone PM",
   description:
-    "Home builder sales pipeline software with floorplan pricing matrix, structural options engine, and 60-second new home sale workflow. Built for production builders.",
+    "Home builder sales pipeline software with floorplan pricing matrix, structural options engine, and 60-second new home sale workflow. Built for home builders.",
 };
 
 const faqItems: FAQItem[] = [
   {
     q: "What is home builder sales pipeline software?",
-    a: "Home builder sales pipeline software is a system that tracks prospective buyers from first contact through contract, with built-in floorplan selection, structural options, incentives, and lot inventory. Cornerstone PM's sales pipeline is built specifically for production home builders &mdash; new home sale in under 60 seconds, auto-generated 9-step sales checklist, and auto-budget generation the moment structural options are locked.",
+    a: "Home builder sales pipeline software is a system that tracks prospective buyers from first contact through contract, with built-in floorplan selection, structural options, incentives, and lot inventory. Cornerstone PM's sales pipeline is built specifically for home builders &mdash; new home sale in under 60 seconds, auto-generated 9-step sales checklist, and auto-budget generation the moment structural options are locked.",
   },
   {
     q: "How is new home sales software different from a generic CRM?",
@@ -242,7 +242,7 @@ export default function SalesPage() {
 
       <FAQSection
         title="New Home Sales Software FAQ"
-        subtitle="Common questions about sales pipeline software for production home builders."
+        subtitle="Common questions about sales pipeline software for home builders."
         items={faqItems}
       />
 
