@@ -87,13 +87,15 @@ const screens = [
     tagColor: "text-emerald-400 border-emerald-500/30 bg-emerald-500/10",
     headline: "Live map of every check-in. Built mobile-first.",
     description:
-      "Every QR scan becomes a pin on a Google Maps view. See every vendor, every PM, every check-in across every community in real time. Pull it up from the truck, the jobsite, or the dinner table. Refreshes every 30 seconds.",
-    screenshot: "/mockups/ss-vendor-activity-map.jpg",
-    aspect: "phone",
+      "Every QR scan becomes a pin on a Google Maps satellite view. See every vendor, every PM, every check-in across every community in real time. Live activity feed shows exactly who's on-site right now. Same map on desktop and phone — pull it up from the truck, the jobsite, or the dinner table. Refreshes every 30 seconds.",
+    screenshot: "/mockups/ss-vendor-activity-map-desktop.jpg",
+    aspect: "16/10",
     accent: "from-emerald-500/20 to-cyan-600/5",
     glow: "rgba(52,211,153,0.12)",
     border: "border-emerald-500/30",
     isHero: false,
+    noChrome: true,
+    darkBg: true,
   },
 ];
 
@@ -245,7 +247,7 @@ export function ScreenshotsSection() {
                           src={current.screenshot}
                           alt={`${current.label} screenshot`}
                           fill
-                          className="object-contain object-top bg-white"
+                          className={`object-contain object-top ${(current as {darkBg?: boolean}).darkBg ? "bg-slate-950" : "bg-white"}`}
                           sizes="(max-width: 768px) 100vw, 60vw"
                           priority={active === 0}
                           unoptimized

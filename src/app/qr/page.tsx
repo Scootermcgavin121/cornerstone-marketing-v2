@@ -237,49 +237,74 @@ export default function QRPage() {
 
       {/* Pairs with Vendor Activity Map */}
       <section className="py-12 px-4">
-        <div className="max-w-5xl mx-auto rounded-2xl border border-slate-800/60 bg-gradient-to-br from-slate-900/80 to-slate-950 p-8 md:p-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-xs font-semibold mb-4">
-                <MapPin className="w-3.5 h-3.5" />
-                PAIRS WITH
-              </div>
-              <h2 className="text-3xl font-black text-white mb-4">Vendor Activity Map</h2>
-              <p className="text-slate-400 leading-relaxed mb-3">
-                Every QR scan becomes a pin. The Vendor Activity Map shows live check-ins
-                across every community on a Google Maps view. Filter by date, filter by vendor.
-                See who&apos;s currently on-site at a glance — refreshes every 30 seconds.
-              </p>
-              <p className="text-cyan-400/80 text-sm font-semibold mb-6">
-                Built mobile-first. Pull it up from anywhere — the truck, the jobsite, the dinner table.
-              </p>
-              <ul className="space-y-2 text-sm text-slate-300">
-                <li className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 mt-0.5 text-cyan-400 flex-shrink-0" />
-                  Real-time pins for vendor and PM check-ins
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 mt-0.5 text-cyan-400 flex-shrink-0" />
-                  Stat cards: communities, on-site count, unique vendors today
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 mt-0.5 text-cyan-400 flex-shrink-0" />
-                  Activity feed sidebar of recent scans
-                </li>
-              </ul>
+        <div className="max-w-6xl mx-auto rounded-2xl border border-slate-800/60 bg-gradient-to-br from-slate-900/80 to-slate-950 p-6 sm:p-8 md:p-12">
+          {/* Header + intro */}
+          <div className="max-w-3xl mx-auto text-center mb-10">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-xs font-semibold mb-4">
+              <MapPin className="w-3.5 h-3.5" />
+              PAIRS WITH
             </div>
+            <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">Vendor Activity Map</h2>
+            <p className="text-slate-400 leading-relaxed mb-3">
+              Every QR scan becomes a pin. Live Google Maps view of every vendor and PM check-in
+              across every community. Filter by date, filter by vendor. See who&apos;s on-site
+              right now — refreshes every 30 seconds.
+            </p>
+            <p className="text-cyan-400/90 text-sm font-semibold">
+              Same live map on desktop, tablet, and phone. Pull it up from the truck, the jobsite, or the dinner table.
+            </p>
+          </div>
+
+          {/* Side-by-side: desktop map + phone */}
+          <div className="grid grid-cols-1 lg:grid-cols-[1.7fr_1fr] gap-6 lg:gap-8 items-center mb-10">
+            {/* Desktop screenshot */}
             <div className="relative rounded-xl border border-slate-700 bg-slate-900 overflow-hidden shadow-2xl shadow-cyan-500/10">
+              <div className="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-full bg-slate-950/80 backdrop-blur-sm border border-cyan-500/40 text-cyan-400 text-[10px] font-bold tracking-widest uppercase">
+                Desktop View
+              </div>
               <Image
-                src="/mockups/ss-vendor-activity-map.jpg"
-                alt="Vendor Activity Map - live Google Maps view of vendor and PM check-ins across every Scott Alan Homes community, with stat cards for communities, check-ins, on-site count, and unique vendors"
-                width={591}
-                height={1280}
+                src="/mockups/ss-vendor-activity-map-desktop.jpg"
+                alt="Vendor Activity Map desktop view - Google Maps satellite of coastal Delaware with pinned communities, stat cards showing 10 communities and 1 on-site check-in, and live activity feed showing Summit Roofing DE on-site at Bayside Preserve"
+                width={1280}
+                height={1085}
                 className="w-full h-auto block"
-                sizes="(max-width: 1024px) 90vw, 500px"
+                sizes="(max-width: 1024px) 100vw, 720px"
                 priority
               />
             </div>
+            {/* Phone screenshot */}
+            <div className="flex justify-center">
+              <div className="relative max-w-[260px] w-full rounded-[2rem] border-4 border-slate-700 bg-slate-900 overflow-hidden shadow-2xl shadow-cyan-500/20">
+                <div className="absolute top-3 left-1/2 -translate-x-1/2 z-10 px-2.5 py-1 rounded-full bg-slate-950/80 backdrop-blur-sm border border-emerald-500/40 text-emerald-400 text-[10px] font-bold tracking-widest uppercase">
+                  In Your Pocket
+                </div>
+                <Image
+                  src="/mockups/ss-vendor-activity-map.jpg"
+                  alt="Vendor Activity Map mobile view - same live map running on a phone with stat cards and activity feed"
+                  width={591}
+                  height={1280}
+                  className="w-full h-auto block"
+                  sizes="(max-width: 1024px) 65vw, 260px"
+                />
+              </div>
+            </div>
           </div>
+
+          {/* Bullets */}
+          <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto text-sm text-slate-300">
+            <li className="flex items-start gap-2.5">
+              <CheckCircle2 className="w-4 h-4 mt-0.5 text-cyan-400 flex-shrink-0" />
+              Real-time pins for vendor and PM check-ins
+            </li>
+            <li className="flex items-start gap-2.5">
+              <CheckCircle2 className="w-4 h-4 mt-0.5 text-cyan-400 flex-shrink-0" />
+              Stat cards: communities, on-site count, unique vendors today
+            </li>
+            <li className="flex items-start gap-2.5">
+              <CheckCircle2 className="w-4 h-4 mt-0.5 text-cyan-400 flex-shrink-0" />
+              Activity feed sidebar of recent scans
+            </li>
+          </ul>
         </div>
       </section>
 
