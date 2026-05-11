@@ -20,6 +20,9 @@ import {
   CloudRain,
   Bell,
   Activity,
+  Crosshair,
+  ShieldCheck,
+  Eye,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -119,7 +122,7 @@ const commandCenterPillars = [
     bg: "bg-cyan-500/10",
     border: "border-cyan-500/30",
     title: "Weather built in, not bolted on",
-    body: "Real-time conditions captured on every QR scan. Forecast overlays on the schedule. Pour-day weather logged forever — dispute delays with receipts, not memory. No second app, no manual lookup.",
+    body: "Real-time conditions captured on every QR scan. Forecast overlays on the schedule. Pour-day weather logged forever — dispute delays with receipts, not memory. Same kind of weather + position intel militaries use to plan operations, pointed at your jobsite instead.",
   },
   {
     icon: Bell,
@@ -164,6 +167,9 @@ export default function QRPage() {
             push notifications when a permit drops, a buyer walks into the model, or framing
             kicks off. Every audience, every event, every community — streaming to your phone.
           </p>
+          <p className="text-base text-slate-500 italic max-w-2xl mx-auto mb-6">
+            One builder put it best: <span className="text-white not-italic font-semibold">&ldquo;It&apos;s like some shit the military would use.&rdquo;</span> Yeah. Kind of the point.
+          </p>
           <p className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-300 text-sm font-semibold">
             <Plane className="w-4 h-4" />
             Powered by a triple QR check-in ecosystem. No app install. No login.
@@ -183,6 +189,99 @@ export default function QRPage() {
               <div className="text-xs uppercase tracking-widest text-slate-500">{s.label}</div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Ops-room reality check */}
+      <section className="py-16 px-4">
+        <div className="max-w-5xl mx-auto rounded-3xl border border-emerald-500/30 bg-gradient-to-br from-emerald-950/40 via-slate-950 to-cyan-950/30 p-8 md:p-12 relative overflow-hidden">
+          {/* Subtle grid backdrop */}
+          <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)", backgroundSize: "40px 40px" }} />
+          <div className="relative grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-8 items-center">
+            <div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-500/40 bg-emerald-500/10 text-emerald-300 text-xs font-bold tracking-widest uppercase mb-4">
+                <Crosshair className="w-3.5 h-3.5" />
+                Ops-Room Mentality
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-black text-white mb-4 leading-tight">
+                Built like the systems that run actual operations.
+              </h2>
+              <p className="text-slate-300 leading-relaxed mb-4">
+                Live map of every asset. Geotagged check-ins with timestamp + weather + photo.
+                Audit trail on every action. Push alerts on every event. Webhook fan-out to
+                downstream systems.
+              </p>
+              <p className="text-slate-400 leading-relaxed mb-6">
+                That&apos;s the same vocabulary military and emergency-response ops rooms use —
+                and exactly nothing about it is normal in construction software. Most builders
+                are still on spreadsheets, group texts, and paper sign-in sheets. We pointed a
+                real situational-awareness stack at the home-building workflow and called it a
+                day.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/80 border border-emerald-500/30 text-emerald-300 text-xs font-semibold">
+                  <Eye className="w-3.5 h-3.5" />
+                  Situational awareness
+                </div>
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/80 border border-cyan-500/30 text-cyan-300 text-xs font-semibold">
+                  <Radio className="w-3.5 h-3.5" />
+                  Live comms
+                </div>
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/80 border border-violet-500/30 text-violet-300 text-xs font-semibold">
+                  <ShieldCheck className="w-3.5 h-3.5" />
+                  Audit trail
+                </div>
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/80 border border-amber-500/30 text-amber-300 text-xs font-semibold">
+                  <CloudRain className="w-3.5 h-3.5" />
+                  Weather intel
+                </div>
+              </div>
+            </div>
+            <div className="relative">
+              <div className="rounded-2xl border border-slate-700 bg-slate-950/80 p-6 backdrop-blur-sm shadow-2xl shadow-emerald-500/10">
+                <div className="flex items-center justify-between mb-4 pb-3 border-b border-slate-800">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                    <span className="text-emerald-400 text-xs font-bold tracking-widest uppercase">Live Feed</span>
+                  </div>
+                  <span className="text-slate-500 text-[10px] font-mono">UTC · 30s refresh</span>
+                </div>
+                <ul className="space-y-3 text-sm font-mono">
+                  <li className="flex items-start gap-3">
+                    <span className="text-emerald-400 text-xs mt-0.5">●</span>
+                    <div className="flex-1 min-w-0">
+                      <div className="text-white">VENDOR ON-SITE</div>
+                      <div className="text-slate-500 text-xs truncate">Summit Roofing · Bayside Preserve · 64°F clear</div>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-cyan-400 text-xs mt-0.5">●</span>
+                    <div className="flex-1 min-w-0">
+                      <div className="text-white">PERMIT ISSUED</div>
+                      <div className="text-slate-500 text-xs truncate">Harbor View Lot 14 · framing unblocked</div>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-violet-400 text-xs mt-0.5">●</span>
+                    <div className="flex-1 min-w-0">
+                      <div className="text-white">BUYER AT MODEL</div>
+                      <div className="text-slate-500 text-xs truncate">Marsh Harbor Model · Lead auto-created</div>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-amber-400 text-xs mt-0.5">●</span>
+                    <div className="flex-1 min-w-0">
+                      <div className="text-white">WEATHER ALERT</div>
+                      <div className="text-slate-500 text-xs truncate">Rain 80% Thu · 3 pour-day tasks at risk</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <p className="text-center text-slate-500 text-xs italic mt-3">
+                Representative feed. Real ones include vendor names, GPS pins, and one-tap actions.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
