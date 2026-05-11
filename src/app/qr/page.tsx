@@ -45,16 +45,20 @@ const qrCodes = [
     borderColor: "border-emerald-500/30",
     textColor: "text-emerald-400",
     icon: HardHat,
-    tagline: "Scan on arrival. We log everything.",
+    tagline: "Scan on arrival. The schedule updates itself.",
     description:
-      "Every community and home gets its own unique QR code. Vendors scan with any phone — no app install, no Cornerstone login. GPS coordinates, timestamp, and weather conditions are captured automatically. Check-in and check-out times build a verifiable hours-on-site record.",
+      "Every community and home gets its own unique QR code. Vendors scan with any phone — no app install, no Cornerstone login. The moment a vendor scans, the task on the construction schedule auto-flips to In Progress (if it hasn't started yet), downstream dependencies cascade, the PM gets a push, and the next vendor up the chain sees it the instant it happens. GPS coordinates, timestamp, weather, and an audit trail capture themselves. Nobody has to remember to log anything.",
     bullets: [
+      "Scan auto-starts the scheduled task — In Progress, no manual toggle",
+      "The NEXT vendor up the chain sees it the instant it happens — no calling around",
+      "Downstream cascade fires the moment the task starts (everyone re-syncs)",
+      "PM gets push notification: vendor on-site, task auto-started",
       "GPS + timestamp + weather captured on every scan",
       "Hours-on-site tracked automatically (check-in → check-out)",
       "Photo upload at check-in — up to 10 photos per visit",
       "Configurable safety acknowledgment per community",
       "Worker headcount log for crew sizes",
-      "Webhook events: vendor.arrived, vendor.departed",
+      "Webhook events: vendor.arrived, vendor.departed, task.started",
       'Printable 11×8.5" signs auto-generated for every home',
     ],
   },
@@ -409,8 +413,11 @@ export default function QRPage() {
             <h2 className="text-3xl sm:text-4xl font-black text-white mb-4 leading-tight">
               The vendor scans. The schedule updates itself.
             </h2>
-            <p className="text-slate-300 leading-relaxed text-lg">
+            <p className="text-slate-300 leading-relaxed text-lg mb-4">
               Every other construction platform asks <span className="text-white italic">somebody</span> to remember to flip the task to In Progress. Cornerstone doesn&apos;t. The moment a vendor scans the jobsite QR, the scheduled task auto-flips to <span className="text-emerald-400 font-bold">In Progress</span> — downstream tasks cascade, the PM gets pinged, the homeowner portal updates, and the activity feed lights up. <span className="text-white font-semibold">Zero clicks. Zero forgotten updates. Zero stale schedules.</span>
+            </p>
+            <p className="text-emerald-300/90 leading-relaxed text-base font-semibold">
+              And the vendor up next? They see it <span className="text-white">the instant it happens.</span> No calls, no texts, no &ldquo;hey when do you think you&apos;ll be done?&rdquo; — just a live schedule that tells every trade partner exactly where they stand.
             </p>
           </div>
           {/* The cascade chain */}
@@ -442,10 +449,40 @@ export default function QRPage() {
                 <Workflow className="w-5 h-5 text-violet-400" />
               </div>
               <div className="text-[10px] uppercase tracking-widest text-violet-400 font-bold mb-1">Step 3</div>
-              <div className="text-white font-semibold text-sm">Downstream cascade fires</div>
-              <div className="text-slate-500 text-xs mt-1">Dependent tasks shift, PM gets push, buyer portal updates, webhooks fan out</div>
+              <div className="text-white font-semibold text-sm">Next vendor up gets the heads-up</div>
+              <div className="text-slate-500 text-xs mt-1">Dependent tasks shift, PM gets push, the next trade sees it live, buyer portal updates, webhooks fan out</div>
             </div>
           </div>
+          {/* Vendor-to-vendor chain reaction */}
+          <div className="mt-10 max-w-4xl mx-auto rounded-2xl border border-slate-800/80 bg-slate-950/70 p-6 md:p-7">
+            <div className="flex items-center justify-center gap-2 mb-5 text-emerald-400">
+              <Workflow className="w-4 h-4" />
+              <span className="text-[10px] uppercase tracking-widest font-bold">The Chain Reaction</span>
+            </div>
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-2 text-sm">
+              <div className="flex-1 rounded-xl bg-emerald-500/10 border border-emerald-500/30 px-4 py-3">
+                <div className="text-emerald-400 text-[10px] font-bold tracking-widest uppercase mb-1">8:53 AM</div>
+                <div className="text-white font-semibold">Summit Roofing scans the QR</div>
+                <div className="text-slate-400 text-xs mt-1">Roof Dry-In → In Progress</div>
+              </div>
+              <ArrowRight className="w-5 h-5 text-slate-500 mx-auto rotate-90 sm:rotate-0" />
+              <div className="flex-1 rounded-xl bg-cyan-500/10 border border-cyan-500/30 px-4 py-3">
+                <div className="text-cyan-400 text-[10px] font-bold tracking-widest uppercase mb-1">8:53 AM</div>
+                <div className="text-white font-semibold">Drywall crew gets the ping</div>
+                <div className="text-slate-400 text-xs mt-1">&ldquo;Your task is now 2 days out — load the truck&rdquo;</div>
+              </div>
+              <ArrowRight className="w-5 h-5 text-slate-500 mx-auto rotate-90 sm:rotate-0" />
+              <div className="flex-1 rounded-xl bg-violet-500/10 border border-violet-500/30 px-4 py-3">
+                <div className="text-violet-400 text-[10px] font-bold tracking-widest uppercase mb-1">8:53 AM</div>
+                <div className="text-white font-semibold">PM sees the whole chain</div>
+                <div className="text-slate-400 text-xs mt-1">Activity Map updated, no phone calls needed</div>
+              </div>
+            </div>
+            <p className="text-slate-500 text-xs italic text-center mt-5">
+              No more &ldquo;when are you guys finishing?&rdquo; calls. The schedule is the source of truth, and it&apos;s talking to everyone at the same time.
+            </p>
+          </div>
+
           <div className="mt-8 max-w-3xl mx-auto text-center">
             <p className="text-slate-400 text-sm leading-relaxed">
               Pair it with our <Link href="/jobsite-ai" className="text-emerald-400 hover:text-emerald-300 underline underline-offset-4 decoration-emerald-500/30">AI Jobsite Camera Events</Link> and tasks can auto-start the moment a vendor&apos;s truck pulls into the cul-de-sac — no scan required. Same downstream cascade. Same zero clicks. The schedule literally manages itself while you&apos;re on the beach.
