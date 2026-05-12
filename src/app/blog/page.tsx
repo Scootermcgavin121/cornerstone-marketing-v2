@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "how-blueprint-ai-extracts-material-scopes",
+    title: "How Blueprint AI Extracts 130+ Material Scopes from a Floor Plan PDF",
+    excerpt:
+      "AI material takeoff works by running a floor plan PDF through a four-stage pipeline: geometry parsing, fixture detection, scope mapping, and vendor pricing lookup — producing 130+ named material scopes in under 60 seconds. Here's the full technical breakdown.",
+    date: "May 12, 2026",
+    readTime: "6 min read",
+    tag: "Technical Deep-Dive",
+    tagColor: "text-cyan-400 bg-cyan-500/10 border-cyan-500/20",
+  },
+  {
     slug: "foreman-ai-83-skills",
     title: "Foreman AI Now Has 83 Skills Across 11 Categories",
     excerpt:

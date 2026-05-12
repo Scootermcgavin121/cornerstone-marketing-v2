@@ -65,6 +65,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/why-small-builders-cant-afford-newstar", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/buildertrend-pricing-true-cost", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/foreman-ai-83-skills", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/how-blueprint-ai-extracts-material-scopes", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({
