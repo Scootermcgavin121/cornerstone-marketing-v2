@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { BlogHero } from "@/components/BlogHero";
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "Homebuilding is one of the last industries to get purpose-built AI &mdash; that's changing fast. Here's where AI is making the biggest impact in residential construction and what's coming next.",
   openGraph: {
-    images: [{ url: "https://www.cornerstonepm.ai/blog/foreman-ai-skills.png", width: 1024, height: 1024, alt: "Homebuilding AI agent managing live builder data across 45+ construction skills" }],
+    images: [{ url: "https://www.cornerstonepm.ai/blog/foreman-ai-skills.png", width: 1024, height: 1024, alt: "Homebuilding AI agent managing live builder data across 83 construction skills" }],
   }
 };
 
@@ -28,7 +28,7 @@ export default function HomebuildingAiPost() {
           Back to Blog
         </Link>
 
-        <BlogHero src="/blog/foreman-ai-skills.png" alt="Homebuilding AI agent managing live builder data across 45+ construction skills" />
+        <BlogHero src="/blog/foreman-ai-skills.png" alt="Homebuilding AI agent managing live builder data across 83 construction skills" />
 
         <div className="mb-8">
           <span className="text-xs font-medium px-2.5 py-0.5 rounded-full border text-blue-400 bg-blue-500/10 border-blue-500/20 mb-4 inline-block">
@@ -145,7 +145,7 @@ export default function HomebuildingAiPost() {
           </div>
 
           <p>
-            These examples are from Cornerstone PM&apos;s Foreman AI &mdash; a 45+-skill AI agent purpose-built for home builders that reads and writes real construction data in plain English.
+            These examples are from Cornerstone PM&apos;s Foreman AI &mdash; a 83-skill AI agent purpose-built for home builders that reads and writes real construction data in plain English.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
@@ -172,7 +172,7 @@ export default function HomebuildingAiPost() {
             Homebuilding AI is no longer a future concept. It&apos;s here, it&apos;s working, and the builders who adopt it first are going to have a meaningful operational advantage. The difference between AI adapted to homebuilding and AI built for homebuilding is the difference between a tool that helps you write about your operation and a tool that actually runs it.
           </p>
           <p>
-            Cornerstone PM is building that second kind of tool. Foreman AI &mdash; 45+ purpose-built skills, real data access, persistent memory. Beta is open now.
+            Cornerstone PM is building that second kind of tool. Foreman AI &mdash; 83 purpose-built skills, real data access, persistent memory. Beta is open now.
           </p>
         </div>
 

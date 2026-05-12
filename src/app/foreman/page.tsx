@@ -1,12 +1,12 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { Check, ArrowRight, Zap, Brain, FileText, Cpu, Activity, X } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { VideoPlayer } from "@/components/VideoPlayer";
 
 export const metadata = {
-  title: "Foreman AI - 45+ Skill Construction Agent with Memory Compaction | Cornerstone PM",
+  title: "Foreman AI - 83-Skill Construction Agent with Memory Compaction | Cornerstone PM",
   description:
-    "45+ purpose-built construction skills with built-in memory compaction - the only construction AI that doesn't forget mid-session. Reads and writes your real data: parts, vendors, homes, budgets, sales pipeline, design center selections. Pro plan.",
+    "83 purpose-built construction skills with built-in memory compaction - the only construction AI that doesn't forget mid-session. Reads and writes your real data: parts, vendors, homes, budgets, sales pipeline, design center selections. Pro plan.",
 };
 
 const skillCategories = [
@@ -154,21 +154,21 @@ export default function ForemanPage() {
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-400 text-xs font-semibold mb-6">
             <Zap className="w-3.5 h-3.5" />
-            45+ SKILLS &middot; PRO PLAN &middot; READS AND WRITES YOUR REAL DATA
+            83 skills &middot; PRO PLAN &middot; READS AND WRITES YOUR REAL DATA
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
             🪖 Foreman AI<sup className="text-2xl sm:text-3xl lg:text-4xl align-super text-amber-400 ml-1">TM</sup>
           </h1>
           <p className="text-2xl text-amber-400 font-bold mb-4">Not a chatbot. A construction agent.</p>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
-            45+ purpose-built skills across data management, AI analysis, document generation, and system intelligence. Type what you need in plain English &mdash; Foreman executes it against your real data.
+            83 purpose-built skills across 11 categories &mdash; data, analysis, document generation, takeoffs, bidding, sales, reports, system intelligence and more. Type what you need in plain English. Foreman executes it against your real data.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/beta" className="px-8 py-4 rounded-full bg-amber-400 text-slate-900 font-bold text-lg hover:bg-amber-300 transition-all duration-200 shadow-lg shadow-amber-500/30 hover:-translate-y-0.5">
               Get Beta Access &rarr;
             </Link>
             <a href="#skills" className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200">
-              See all 45+ skills
+              See all 83 skills
             </a>
           </div>
         </div>
@@ -201,8 +201,8 @@ export default function ForemanPage() {
       <section className="py-12 px-4">
         <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-5">
           {[
-            { num: "45+", label: "Purpose-built skills", sub: "Not generic AI features" },
-            { num: "4", label: "Skill categories", sub: "Data, Analysis, Docs, Intelligence" },
+            { num: "83", label: "Purpose-built skills", sub: "Not generic AI features" },
+            { num: "11", label: "Skill categories", sub: "And always growing" },
             { num: "110+", label: "Database tables", sub: "Full access to your real data" },
             { num: "0", label: "Manual data entry", sub: "Plain English to execution" },
           ].map((s) => (
@@ -248,7 +248,7 @@ export default function ForemanPage() {
       <section id="skills" className="py-16 px-4 bg-slate-900/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-3xl sm:text-5xl font-black mb-4">45+ skills. 4 categories.</h2>
+            <h2 className="text-3xl sm:text-5xl font-black mb-4">83 skills. 11 categories.</h2>
             <p className="text-slate-400 max-w-xl mx-auto">Every skill is purpose-built for construction. Not adapted from a generic AI assistant.</p>
           </div>
           <div className="space-y-8">
@@ -453,7 +453,7 @@ export default function ForemanPage() {
             <div className="text-white font-bold text-xl mb-6">Pro Plan</div>
             <div className="space-y-3 text-left mb-8">
               {[
-                "Foreman AI - 45+ skills, Sonnet model, 1,000 AI messages/mo",
+                "Foreman AI - 83 skills, Sonnet model, 1,000 AI messages/mo",
                 "Blueprint AI - 25 blueprint takeoffs/mo",
                 "MLS Listing Agent",
                 "Everything in Builder (Sales, Purchasing, Design Center)",
@@ -482,7 +482,7 @@ export default function ForemanPage() {
           <span className="text-amber-400">for custom reports.</span>
         </h2>
         <p className="text-slate-400 text-lg mb-10 max-w-xl mx-auto">
-          We built the consultant into the software. 45+ skills. Plain English. Real construction data. Pro plan.
+          We built the consultant into the software. 83 skills. Plain English. Real construction data. Pro plan.
         </p>
         <Link href="/beta" className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-amber-400 text-slate-900 font-bold text-xl hover:bg-amber-300 transition-all duration-200 shadow-xl shadow-amber-500/30">
           Get Beta Access <ArrowRight className="w-5 h-5" />

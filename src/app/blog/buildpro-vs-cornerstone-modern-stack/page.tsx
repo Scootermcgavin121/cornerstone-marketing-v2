@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
@@ -151,7 +151,7 @@ export default function BuildproVsCornerstonePage() {
               </Link>
             </li>
             <li>
-              <strong className="text-white">Foreman AI™</strong> — a 45+-skill agent that reads
+              <strong className="text-white">Foreman AI™</strong> — a 83-skill agent that reads
               and writes data in your account. Pulls schedule summaries, generates SOWs, compares
               bids, creates punch lists, and more.{" "}
               <Link

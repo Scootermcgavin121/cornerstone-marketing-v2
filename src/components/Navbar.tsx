@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -37,7 +37,7 @@ const featureLinks = [
 // AI features (right column of dropdown — all violet, grouped together)
 const aiLinks = [
   { label: "✨ AI Agents Overview", href: "/ai-agents", desc: "Five AI agents built for builders" },
-  { label: "🤖 Foreman AI™", href: "/foreman", desc: "45+-skill AI agent, natural language commands" },
+  { label: "🤖 Foreman AI™", href: "/foreman", desc: "83-skill AI agent, natural language commands" },
   { label: "⚡ AI Blueprint Takeoff", href: "/ai-takeoff", desc: "Upload PDF — instant material takeoff" },
   { label: "🧠 Bid Import AI", href: "/bid-import-ai", desc: "Upload any vendor bid — AI extracts every line item" },
   { label: "📄 AI MLS Listing Generator", href: "/listing-sheet", desc: "AI-written MLS listings from live project data" },

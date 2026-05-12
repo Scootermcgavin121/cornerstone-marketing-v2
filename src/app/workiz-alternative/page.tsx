@@ -1,4 +1,4 @@
-import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
+﻿import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
 import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageTemplate";
 import type { FAQItem } from "@/components/FAQSection";
 
@@ -15,7 +15,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Floorplan pricing matrix", cornerstone: true, competitor: false, note: "Per-community floorplan pricing. Cornerstone Builder+." },
   { feature: "Multi-community lot management", cornerstone: true, competitor: false, note: "Native multi-community pipeline. Workiz is job-centric." },
   { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Packages curated by an actual interior designer -- the same playbook K. Hovnanian Homes uses. Buyer design center. Cornerstone Builder+." },
-  { feature: "Native AI agents (Foreman AI -- 45+ skills)", cornerstone: true, competitor: false, note: "Cornerstone Pro ($499/mo): Foreman AI reads AND writes construction data. Blueprint AI: PDF to takeoff in 60 seconds. Workiz has no native construction AI agents." },
+  { feature: "Native AI agents (Foreman AI -- 83 skills)", cornerstone: true, competitor: false, note: "Cornerstone Pro ($499/mo): Foreman AI reads AND writes construction data. Blueprint AI: PDF to takeoff in 60 seconds. Workiz has no native construction AI agents." },
   { feature: "AI image search, vision & anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, hosts them on CDN, reads supplier product pages with AI-powered web scraping. Plus: paste or drag-drop any screenshot and Foreman reads it with AI vision and acts on it. Cornerstone Pro feature." },
   { feature: "30+ named webhook events (catalog growing)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+ ($599/mo): 30+ named events and counting -- typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. Workiz: limited webhook support for field service workflows." },
   { feature: "Public REST API (59+ endpoints, growing)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+: 59+ endpoints and growing rapidly, public docs. New endpoints ship as the platform grows., purpose-built for construction. Workiz: limited API access for field service integrations." },
@@ -33,7 +33,7 @@ const comparisonRows: ComparisonRow[] = [
 
 const whySwitchCards: WhySwitchCard[] = [
   { title: "New construction needs, not field service", desc: "Workiz handles dispatch, call tracking, and service scheduling for locksmiths and appliance repair companies. Cornerstone handles lot management, floorplan pricing, structural options, design centers, and multi-community pipelines for home builders." },
-  { title: "AI agents native -- Pro $499/mo", desc: "Foreman AI (45+ skills) creates POs, updates design options, generates SOWs, and remembers preferences. Blueprint AI converts floor plans to takeoffs in 60 seconds. No other home-builder platform comes close." },
+  { title: "AI agents native -- Pro $499/mo", desc: "Foreman AI (83 skills) creates POs, updates design options, generates SOWs, and remembers preferences. Blueprint AI converts floor plans to takeoffs in 60 seconds. No other home-builder platform comes close." },
   { title: "30+ webhooks + public API (Pro+)", desc: "30+ named webhook events with typed payload schemas and HMAC signatures. Wire your own SMS, voice, or AI agents. Public REST API with 59 endpoints -- both on Pro+ ($599/mo)." },
 ];
 
@@ -44,7 +44,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What's the best Workiz alternative for home builders?",
-    a: "Cornerstone PM is purpose-built for home builders. It covers scheduling, client portal, and document management -- plus a structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, native AI agents (Foreman AI 45+ skills on Pro $499/mo, Blueprint AI), 30+ named webhook events (Pro+), and a public REST API.",
+    a: "Cornerstone PM is purpose-built for home builders. It covers scheduling, client portal, and document management -- plus a structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, native AI agents (Foreman AI 83 skills on Pro $499/mo, Blueprint AI), 30+ named webhook events (Pro+), and a public REST API.",
   },
   {
     q: "Can I migrate from Workiz to Cornerstone PM?",
@@ -68,7 +68,7 @@ export default function WorkizAlternativePage() {
       heroLine1="Workiz is for field service."
       heroLine2="You build homes."
       accentColor="rose"
-      heroParagraph="Workiz is built for locksmiths, appliance repair, and field service businesses. Cornerstone PM is the alternative for home builders -- structural options engine (Builder $299/mo), floorplan pricing, 45+ AI skills (Pro $499/mo), and multi-community management from $149/mo."
+      heroParagraph="Workiz is built for locksmiths, appliance repair, and field service businesses. Cornerstone PM is the alternative for home builders -- structural options engine (Builder $299/mo), floorplan pricing, 83 AI skills (Pro $499/mo), and multi-community management from $149/mo."
       secondaryCTA={{ text: "See full comparison", href: "/compare" }}
       comparisonSubtitle="Workiz vs Cornerstone PM -- field service platform vs. home-builder platform."
       comparisonRows={comparisonRows}

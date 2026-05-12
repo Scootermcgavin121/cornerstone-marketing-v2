@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { BlogHero } from "@/components/BlogHero";
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "AI is everywhere in construction marketing but most tools are generic. Here's what real AI construction management software looks like for home builders &mdash; and how to evaluate what you're actually buying.",
   openGraph: {
-    images: [{ url: "https://www.cornerstonepm.ai/blog/foreman-ai-skills.png", width: 1024, height: 1024, alt: "Foreman AI managing residential construction with 45+ skills across scheduling, sales, purchasing, and design center" }],
+    images: [{ url: "https://www.cornerstonepm.ai/blog/foreman-ai-skills.png", width: 1024, height: 1024, alt: "Foreman AI managing residential construction with 83 skills across scheduling, sales, purchasing, and design center" }],
   }
 };
 
@@ -28,7 +28,7 @@ export default function AiConstructionManagementSoftwarePost() {
           Back to Blog
         </Link>
 
-        <BlogHero src="/blog/foreman-ai-skills.png" alt="Foreman AI managing residential construction with 45+ skills across scheduling, sales, purchasing, and design center" />
+        <BlogHero src="/blog/foreman-ai-skills.png" alt="Foreman AI managing residential construction with 83 skills across scheduling, sales, purchasing, and design center" />
 
         <div className="mb-8">
           <span className="text-xs font-medium px-2.5 py-0.5 rounded-full border text-blue-400 bg-blue-500/10 border-blue-500/20 mb-4 inline-block">
@@ -121,7 +121,7 @@ export default function AiConstructionManagementSoftwarePost() {
             How Foreman AI handles each category
           </h2>
           <p>
-            Foreman AI is the AI agent built into Cornerstone PM &mdash; purpose-built for home builders with 45+ skills across data management, AI-powered analysis, document generation, and system intelligence.
+            Foreman AI is the AI agent built into Cornerstone PM &mdash; purpose-built for home builders with 83 skills across data management, AI-powered analysis, document generation, and system intelligence.
           </p>
           <p>
             On estimating: Foreman can scrape supplier sites (Home Depot, Ferguson, 84 Lumber) for real pricing, add items to your parts catalog, and generate bid comparison reports that normalize pricing across vendors.
@@ -170,7 +170,7 @@ export default function AiConstructionManagementSoftwarePost() {
         <div className="mt-12 p-6 rounded-2xl border border-amber-500/20 bg-amber-500/5">
           <h3 className="text-lg font-bold text-white mb-2">See Foreman AI in action</h3>
           <p className="text-slate-400 text-sm mb-4">
-            45+ purpose-built construction skills. Beta access is free for 2 years for early adopters.
+            83 purpose-built construction skills. Beta access is free for 2 years for early adopters.
           </p>
           <Link
             href="/beta"

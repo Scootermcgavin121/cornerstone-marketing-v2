@@ -1,4 +1,4 @@
-import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
+﻿import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
 import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageTemplate";
 import type { FAQItem } from "@/components/FAQSection";
 
@@ -15,7 +15,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Floorplan pricing matrix", cornerstone: true, competitor: false, note: "Per-community floorplan pricing for home builders. Cornerstone Builder+." },
   { feature: "Multi-community lot management", cornerstone: true, competitor: false, note: "Native multi-community pipeline. Houzz Pro is project-centric." },
   { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Packages curated by an actual interior designer -- the same playbook K. Hovnanian Homes uses. Production builder design center with curated buyer selection packages. Cornerstone Builder+." },
-  { feature: "Native AI agents (Foreman AI -- 45+ skills)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro ($499/mo): Foreman AI reads AND writes construction management data. Blueprint AI: PDF to takeoff in 60 seconds. Houzz Pro has AI tools for design and project management for interior designers -- different market, different purpose." },
+  { feature: "Native AI agents (Foreman AI -- 83 skills)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro ($499/mo): Foreman AI reads AND writes construction management data. Blueprint AI: PDF to takeoff in 60 seconds. Houzz Pro has AI tools for design and project management for interior designers -- different market, different purpose." },
   { feature: "AI image search, vision & anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, hosts them on CDN, reads supplier product pages with AI-powered web scraping. Plus: paste or drag-drop any screenshot and Foreman reads it with AI vision and acts on it. Cornerstone Pro feature." },
   { feature: "30+ named webhook events (catalog growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): 30+ named events and counting -- typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. Houzz Pro has no public webhook catalog." },
   { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): wire Claude or ChatGPT to your live construction data." },
@@ -47,11 +47,11 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What's the best Houzz Pro alternative for home builders?",
-    a: "Cornerstone PM is purpose-built for home builders. Beyond the basics (scheduling, client communication, document management from Starter $149/mo), it adds a structural options engine, floorplan pricing matrix, multi-community lot management, 64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses), native AI agents (Foreman AI 45+ skills on Pro $499/mo, Blueprint AI), 30+ named webhook events (Pro+), and a public REST API.",
+    a: "Cornerstone PM is purpose-built for home builders. Beyond the basics (scheduling, client communication, document management from Starter $149/mo), it adds a structural options engine, floorplan pricing matrix, multi-community lot management, 64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses), native AI agents (Foreman AI 83 skills on Pro $499/mo, Blueprint AI), 30+ named webhook events (Pro+), and a public REST API.",
   },
   {
     q: "Does Houzz Pro have AI features?",
-    a: "Houzz Pro includes AI tools for design assistance and project management -- mood boards, visualizations, and scheduling tools aimed at interior designers and remodelers. Cornerstone's Foreman AI (Pro $499/mo) is a native agent with 45+ construction-specific skills that takes real actions: creates POs, updates design options, generates SOWs, runs bid comparisons, analyzes screenshots with AI vision, and scrapes supplier product pages.",
+    a: "Houzz Pro includes AI tools for design assistance and project management -- mood boards, visualizations, and scheduling tools aimed at interior designers and remodelers. Cornerstone's Foreman AI (Pro $499/mo) is a native agent with 83 construction-specific skills that takes real actions: creates POs, updates design options, generates SOWs, runs bid comparisons, analyzes screenshots with AI vision, and scrapes supplier product pages.",
   },
   {
     q: "Can I migrate from Houzz Pro to Cornerstone PM?",
@@ -79,7 +79,7 @@ export default function HouzzAlternativePage() {
       heroLine1="Houzz is for designers."
       heroLine2="You build communities."
       accentColor="violet"
-      heroParagraph="Houzz Pro is a design platform and marketplace for interior designers and remodelers. Cornerstone PM is the alternative for home builders -- structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, and 45+ AI skills (Pro $499/mo) from $149/mo."
+      heroParagraph="Houzz Pro is a design platform and marketplace for interior designers and remodelers. Cornerstone PM is the alternative for home builders -- structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, and 83 AI skills (Pro $499/mo) from $149/mo."
       secondaryCTA={{ text: "See full comparison", href: "/compare" }}
       comparisonSubtitle="Houzz Pro vs Cornerstone PM -- design platform vs. home-builder platform."
       comparisonRows={comparisonRows}

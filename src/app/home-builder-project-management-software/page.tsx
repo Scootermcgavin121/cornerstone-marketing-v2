@@ -17,13 +17,13 @@ const modules = [
   { name: "Purchasing & Bids", href: "/purchasing", desc: "Parts catalog, scope-item bid drill-down, community-assigned vendor wins, lock-after-acceptance, no-login vendor portal (magic-link access, vendors confirm tasks + edit scope items without an account), 7-wave bidding pipeline.", color: "emerald" },
   { name: "Design Center", href: "/design", desc: "Room-by-room selections, allowance tracking, options engine with real-time price rollup.", color: "violet" },
   { name: "Permitting", href: "/permitting", desc: "Permit gates, phase blocking, inspection tracking, automated reminders across the build.", color: "orange" },
-  { name: "Foreman AI", href: "/foreman", desc: "45+ AI skills across 7 domains. Plain-English commands against live builder data.", color: "blue" },
+  { name: "Foreman AI", href: "/foreman", desc: "83 AI skills across 11 categories. Plain-English commands against live builder data.", color: "blue" },
   { name: "Blueprint AI Takeoff", href: "/ai-takeoff", desc: "Upload PDF floor plans, get 130+ material scopes and quantities in under 60 seconds.", color: "fuchsia" },
   { name: "REST API + BYOA", href: "/api-access", desc: "59+ endpoints (growing), 30+ named webhook events (growing catalog), scoped Bearer-token auth. Bring your own AI agent.", color: "rose" },
 ];
 
 const stats = [
-  { num: "45+", label: "Foreman AI skills" },
+  { num: "83", label: "Foreman AI skills" },
   { num: "59", label: "REST API endpoints" },
   { num: "8", label: "integrated modules" },
   { num: "$149", label: "starting price / mo" },
@@ -48,7 +48,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Does Cornerstone PM include AI agents?",
-    a: "Yes. Cornerstone PM includes two native AI agents: Foreman AI (45+ skills across scheduling, sales, purchasing, design center, bids, vendor management, and reporting) and Blueprint AI (PDF floor plan reader that extracts 130+ material scopes per plan). Both are built into the platform and connected to live builder data &mdash; not bolt-on plugins.",
+    a: "Yes. Cornerstone PM includes two native AI agents: Foreman AI (83 skills across scheduling, sales, purchasing, design center, bids, vendor management, and reporting) and Blueprint AI (PDF floor plan reader that extracts 130+ material scopes per plan). Both are built into the platform and connected to live builder data &mdash; not bolt-on plugins.",
   },
   {
     q: "Can I replace Buildertrend, JobTread, or BuildPro with Cornerstone PM?",
@@ -146,7 +146,7 @@ export default function HomeBuilderPMPage() {
               <h2 className="text-3xl font-black mb-4">AI built into the platform &mdash; not bolted on.</h2>
               <p className="text-slate-400 leading-relaxed mb-4">
                 Most home builder software treats AI as a chatbot bolt-on. Cornerstone PM ships two native AI agents wired
-                directly to your live data: Foreman AI (45+ skills) and Blueprint AI (floor plan reader).
+                directly to your live data: Foreman AI (83 skills) and Blueprint AI (floor plan reader).
               </p>
               <p className="text-slate-400 leading-relaxed">
                 Every action Foreman takes &mdash; updating a vendor bid, generating a PO, drafting an MLS listing,
@@ -156,7 +156,7 @@ export default function HomeBuilderPMPage() {
             </div>
             <div className="space-y-3">
               {[
-                "45+ Foreman AI skills across 7 domains",
+                "83 Foreman AI skills across 11 categories",
                 "Blueprint AI &mdash; PDF floor plan to material takeoff",
                 "MLS Listing Agent &mdash; auto-generated from home data",
                 "AI Support Agent &mdash; instant answers, every feature documented",

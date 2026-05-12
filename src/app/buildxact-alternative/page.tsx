@@ -1,4 +1,4 @@
-import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
+﻿import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
 import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageTemplate";
 import type { FAQItem } from "@/components/FAQSection";
 
@@ -13,7 +13,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Built for home builders", cornerstone: true, competitor: false, note: "Buildxact is takeoff/estimating software popular with custom builders and remodelers. Cornerstone is a full PM platform built across the home-builder spectrum - production, semi-custom, and custom - with lot management, options engine, and multi-community pipelines." },
   { feature: "Full construction PM platform", cornerstone: true, competitor: "limited", note: "Cornerstone: scheduling, purchasing, bid management, homeowner portal, options engine, multi-community pipeline. Buildxact: primarily estimating and quoting; scheduling is an add-on feature." },
   { feature: "AI floor plan takeoffs (Blueprint AI)", cornerstone: true, competitor: true, note: "Both do floor plan takeoffs. Cornerstone Blueprint AI (Pro $499/mo) converts PDF blueprints to material takeoffs in under 60 seconds. Buildxact has Blu AI Takeoff Assistant (add-on, ~$99/mo on Pro plan)." },
-  { feature: "Native AI agents (Foreman AI - 45+ skills)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro ($499/mo): Foreman AI reads AND writes construction data - POs, options, SOWs, bid comparisons, image search, web scraping. Buildxact has 'Blu' AI for estimating assistance (assembly help, estimate generation). Different scope: action agent vs estimating aid." },
+  { feature: "Native AI agents (Foreman AI - 83 skills)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro ($499/mo): Foreman AI reads AND writes construction data - POs, options, SOWs, bid comparisons, image search, web scraping. Buildxact has 'Blu' AI for estimating assistance (assembly help, estimate generation). Different scope: action agent vs estimating aid." },
   { feature: "AI memory compaction for marathon sessions", cornerstone: true, competitor: false, note: "Foreman auto-summarizes older messages so long workflows never crash or forget. No other construction AI does this. Cornerstone Pro feature." },
   { feature: "AI image search, vision & anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, hosts them on CDN, reads supplier product pages with AI-powered web scraping. Plus: paste or drag-drop any screenshot from inside the app and Foreman reads it with AI vision and acts on it. Cornerstone Pro feature." },
   { feature: "30+ named webhook events (catalog growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): 30+ named events and counting — typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. Buildxact has no public webhook catalog." },
@@ -38,7 +38,7 @@ const comparisonRows: ComparisonRow[] = [
 
 const whySwitchCards: WhySwitchCard[] = [
   { title: "Beyond estimating: full PM platform", desc: "Buildxact is great at takeoffs and quotes (starting $199/mo). Cornerstone includes all of that - plus scheduling, homeowner portal, purchasing, bid management, multi-community pipeline, and a design center from $149/mo. One platform, not a patchwork." },
-  { title: "Blueprint AI + Foreman AI = AI native on Pro", desc: "Blueprint AI converts PDF floor plans to material takeoffs in 60 seconds. Foreman AI (45+ skills on Pro $499/mo) reads and writes your data - SOWs, bid comparisons, design options, image search, web scraping. Buildxact's Blu AI stays within estimating scope." },
+  { title: "Blueprint AI + Foreman AI = AI native on Pro", desc: "Blueprint AI converts PDF floor plans to material takeoffs in 60 seconds. Foreman AI (83 skills on Pro $499/mo) reads and writes your data - SOWs, bid comparisons, design options, image search, web scraping. Buildxact's Blu AI stays within estimating scope." },
   { title: "30+ webhooks + public API on Pro+", desc: "30+ named webhook events with typed payload schemas, HMAC signatures, and auto-retry on Pro+ ($599/mo) — catalog growing. Public REST API with 59+ endpoints and growing. Wire your own tools, SMS bots, or AI agents. Buildxact has no comparable automation layer." },
 ];
 
@@ -81,7 +81,7 @@ export default function BuildxactAlternativePage() {
       heroLine1="Estimating is just the start."
       heroLine2="Manage the whole build."
       accentColor="emerald"
-      heroParagraph="Buildxact is great at takeoffs and quotes (from $199/mo). Cornerstone PM is the Buildxact alternative that adds full construction management: scheduling from $149/mo, homeowner portal, purchasing, bid management, options engine (Builder $299/mo), and Foreman AI with 45+ action-taking skills (Pro $499/mo) - all in one platform."
+      heroParagraph="Buildxact is great at takeoffs and quotes (from $199/mo). Cornerstone PM is the Buildxact alternative that adds full construction management: scheduling from $149/mo, homeowner portal, purchasing, bid management, options engine (Builder $299/mo), and Foreman AI with 83 action-taking skills (Pro $499/mo) - all in one platform."
       secondaryCTA={{ text: "See full comparison", href: "/compare" }}
       comparisonSubtitle="Buildxact vs Cornerstone PM - takeoff tool vs. full home-builder platform."
       comparisonRows={comparisonRows}

@@ -1,9 +1,9 @@
 ﻿## Platform Overview (Current Stats)
 - 130+ database tables and growing
-- **45+ Foreman AI skills** (in-app agent that reads AND writes data - including product image search, image hosting, and AI-powered web scraping)
+- **83 Foreman AI skills** (in-app agent that reads AND writes data - including product image search, image hosting, and AI-powered web scraping)
 - **30+ named webhook event types and growing** â€” typed payloads, HMAC signatures, delivery logs, and auto-retry. New events ship as the platform grows. Industry-leading depth (most competitors just say "webhooks exist")
 - 60+ external REST API endpoints
-- 5 built-in AI features: Foreman AI (45+ skills), Blueprint AI, MLS Listing Agent, AI Support Agent, AI Jobsite Camera Events (webhook-driven, source-agnostic camera/sensor integration)
+- 5 built-in AI features: Foreman AI (83 skills), Blueprint AI, MLS Listing Agent, AI Support Agent, AI Jobsite Camera Events (webhook-driven, source-agnostic camera/sensor integration)
 - **Triple QR Code Ecosystem** - vendor jobsite check-in, community/PM check-in (timesheet-validated), and sales model home lead capture. Three QR codes, three audiences, one platform.
 - **Vendor Activity Map** - Google Maps view of every vendor check-in across every community, real-time (30-second refresh)
 - AI-powered CRM Migration Wizard (import from Buildertrend, JobTread, CoConstruct in one click - practically free at ~$0.01 per migration)
@@ -71,7 +71,7 @@ The token-based public check-in page got a major upgrade.
 - **Webhook events fired:** `vendor.arrived`, `vendor.departed`
 
 ### Foreman AI Upgrades (May 10, 2026)
-- **45+ skills** (internal cleanup of duplicates and addition of new tools)
+- **83 skills** (internal cleanup of duplicates and addition of new tools)
 - **Auto-compaction** - context window managed automatically; long conversations no longer hit token limits silently
 - **Context health indicator** - green/yellow/red meter shown after each response
 - **Per-user memory** - Foreman learns each individual user's habits, not just per organization. Custom-coded into the app. Greets you by whatever name you want to be called and gets more intuitive every session.
@@ -125,7 +125,7 @@ Switching from another platform used to take weeks of cleanup. Now it's one clic
 
 **Why this matters:** Migration friction is the #1 reason builders stay locked into expensive legacy platforms. We removed it.
 
-### Foreman AI Agent - Now 45+ Skills (Image Search + Anti-Bot Web Scraping)
+### Foreman AI Agent - Now 83 skills (Image Search + Anti-Bot Web Scraping)
 Foreman is the in-app AI agent that doesn't just answer questions - it **reads and writes your data and takes real actions**.
 
 **Newest skills (May 7, 2026):**
@@ -416,7 +416,7 @@ Webhooks:
 
 **Rate Limits:** 100 req/min per key, 10,000 req/day per org
 
-**Integrations:** Foreman AI (45+ skills, uses this API internally), QuickBooks (qboId fields), Zapier (REST webhooks), Automated Bidding Pipeline, CRM Migration Wizard (one-click import from Buildertrend, JobTread, CoConstruct)
+**Integrations:** Foreman AI (83 skills, uses this API internally), QuickBooks (qboId fields), Zapier (REST webhooks), Automated Bidding Pipeline, CRM Migration Wizard (one-click import from Buildertrend, JobTread, CoConstruct)
 
 **Pricing:** Pro+ plan only - /mo
 
@@ -446,7 +446,7 @@ Cornerstone PM is the first homebuilder platform with a REST API designed for AI
 **Key stats:** 200+ vendors contacted in one afternoon, 0 manual data entry, 3 contact channels (call + voicemail + text), every interaction recorded with transcript.
 
 **Who can connect:**
-- Foreman AI (Cornerstone's built-in 45+ skill agent - already wired, no setup)
+- Foreman AI (Cornerstone's built-in 83 skills agent - already wired, no setup)
 - Custom agents built with any framework (LangChain, AutoGen, Claude, GPT-4o)
 - Third-party tools (any system that can make HTTP requests)
 
@@ -489,7 +489,7 @@ Cornerstone is the only construction management platform with THREE built-in AI 
 ### 1. Foreman AI - "Your AI Construction Agent"
 The flagship AI feature. Foreman AI is a full intelligent agent that lives inside the app at /agent. Builders type natural language commands and Foreman executes them - it doesn't just talk, it TAKES ACTION.
 
-**45+ skills (and growing):**
+**83 skills (and growing):**
 - Parts Management: search, create, bulk import, update, delete parts
 - Web Scraping (AI-powered, anti-bot): fetch any URL (Home Depot, Ferguson, suppliers) with anti-bot bypass and auto-create parts with real pricing - falls back to direct fetch if the primary reader is unreachable
 - **Product Image Search**: `searchProductImage` uses Bing Image Search to find product images by name or model number - free, no API key, returns direct CDN URLs
@@ -547,7 +547,7 @@ GPT-4o-mini chatbot on every page. Knows every feature, workflow, and role. Avai
 
 - **Starter $149/mo**: Construction Scheduling, Gantt, 17 templates, vendor assignment, permitting, buyer portal, AI Support Agent. Up to 500 active homes, 1,000 users/vendors.
 - **Builder $299/mo**: Everything in Starter + Sales Pipeline + Purchasing & Budgets + Design Center (no AI agents)
-- **Pro $499/mo**: Everything in Builder + Foreman AI (45+ skills, Sonnet, 1,000 msg/mo) + Blueprint AI (25 takeoffs/mo) + MLS Listing Agent + advanced analytics. Up to 1,000 active homes.
+- **Pro $499/mo**: Everything in Builder + Foreman AI (83 skills, Sonnet, 1,000 msg/mo) + Blueprint AI (25 takeoffs/mo) + MLS Listing Agent + advanced analytics. Up to 1,000 active homes.
 - **Pro+ $599/mo**: Everything in Pro + REST API (60+ endpoints, scoped keys), automated bidding pipeline (7-wave), **30-event webhook system** (typed payloads, HMAC, retry, delivery logs - incl. cascade vendor notifications routable to Twilio/Bland/Retell), CRM Migration Wizard, Opus model, 5,000 AI messages/mo, Blueprint AI (25/mo), SSO, dedicated SLA.
 - **Enterprise**: Custom pricing - Opus model, 5,000 msg/mo, Blueprint AI (25/mo), dedicated onboarding, SLA
 - **BYOK Add-on +$199/mo**: Bring Your Own API Key, unlimited messages

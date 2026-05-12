@@ -1,4 +1,4 @@
-import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
+﻿import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
 import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageTemplate";
 import type { FAQItem } from "@/components/FAQSection";
 
@@ -15,7 +15,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Floorplan pricing matrix", cornerstone: true, competitor: false, note: "Per-community floorplan pricing for home builders. Cornerstone Builder+." },
   { feature: "Multi-community lot management", cornerstone: true, competitor: false, note: "Native multi-community pipeline. Housecall Pro is job-centric." },
   { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Packages curated by an actual interior designer -- the same playbook K. Hovnanian Homes uses. Buyer design center. Cornerstone Builder+." },
-  { feature: "Native AI agents (Foreman AI -- 45+ skills)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro ($499/mo): Foreman AI reads AND writes construction data -- 45+ skills. Blueprint AI: PDF to takeoff in 60 seconds. Housecall Pro has AI Team features (CSR AI, call answering) for home service dispatch -- different market, different purpose." },
+  { feature: "Native AI agents (Foreman AI -- 83 skills)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro ($499/mo): Foreman AI reads AND writes construction data -- 83 skills. Blueprint AI: PDF to takeoff in 60 seconds. Housecall Pro has AI Team features (CSR AI, call answering) for home service dispatch -- different market, different purpose." },
   { feature: "AI image search, vision & anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, hosts them on CDN, reads supplier product pages with AI-powered web scraping. Plus: paste or drag-drop any screenshot and Foreman reads it with AI vision and acts on it. Cornerstone Pro feature." },
   { feature: "30+ named webhook events (catalog growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): 30+ named events and counting -- typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. Housecall Pro has no named construction event catalog." },
   { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): wire Claude or ChatGPT to your live construction data." },
@@ -33,7 +33,7 @@ const comparisonRows: ComparisonRow[] = [
 
 const whySwitchCards: WhySwitchCard[] = [
   { title: "New construction vs home services", desc: "Housecall Pro runs dispatch, service agreements, and recurring jobs for HVAC and plumbing companies. Cornerstone runs lot management, floorplan pricing, options engines, design centers, and multi-community pipelines for home builders. Different markets entirely." },
-  { title: "AI agents for builders -- Pro $499/mo", desc: "Foreman AI (45+ skills) creates POs, updates design options, generates SOWs, and remembers your preferences. Blueprint AI converts PDF floor plans to takeoffs. Built for construction workflows, not service call scheduling." },
+  { title: "AI agents for builders -- Pro $499/mo", desc: "Foreman AI (83 skills) creates POs, updates design options, generates SOWs, and remembers your preferences. Blueprint AI converts PDF floor plans to takeoffs. Built for construction workflows, not service call scheduling." },
   { title: "Full PM + options engine", desc: "Scheduling (Starter $149), purchasing, bid management, homeowner portal, structural options engine, multi-community pipeline (Builder $299) -- all in one home-builder platform. Housecall Pro has none of these concepts." },
 ];
 
@@ -48,7 +48,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What does Cornerstone PM have that Housecall Pro doesn't?",
-    a: "For home builders: structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, pre-sale design center with 64 Designer Packages curated by an actual interior designer, Blueprint AI floor plan takeoffs, Foreman AI with 45+ skills (Pro $499/mo), 30+ named webhook events (Pro+), public REST API (Pro+), a no-login vendor portal (vendors confirm tasks, accept schedule changes, and submit bids via email magic links — no app, no account, no password), and one-click full database export (CSV/JSON).",
+    a: "For home builders: structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, pre-sale design center with 64 Designer Packages curated by an actual interior designer, Blueprint AI floor plan takeoffs, Foreman AI with 83 skills (Pro $499/mo), 30+ named webhook events (Pro+), public REST API (Pro+), a no-login vendor portal (vendors confirm tasks, accept schedule changes, and submit bids via email magic links — no app, no account, no password), and one-click full database export (CSV/JSON).",
   },
   {
     q: "Can I migrate my Housecall Pro data to Cornerstone PM?",
@@ -72,7 +72,7 @@ export default function HousecallProAlternativePage() {
       heroLine1="Housecall Pro dispatches technicians."
       heroLine2="You build homes."
       accentColor="cyan"
-      heroParagraph="Housecall Pro is a home service platform for HVAC, plumbing, and electrical companies. Cornerstone PM is the alternative for home builders -- structural options engine (Builder $299/mo), floorplan pricing, 45+ AI skills (Pro $499/mo), and multi-community management from $149/mo."
+      heroParagraph="Housecall Pro is a home service platform for HVAC, plumbing, and electrical companies. Cornerstone PM is the alternative for home builders -- structural options engine (Builder $299/mo), floorplan pricing, 83 AI skills (Pro $499/mo), and multi-community management from $149/mo."
       secondaryCTA={{ text: "See full comparison", href: "/compare" }}
       comparisonSubtitle="Housecall Pro vs Cornerstone PM -- home services vs. new home construction."
       comparisonRows={comparisonRows}
