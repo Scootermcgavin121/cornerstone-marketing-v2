@@ -302,6 +302,88 @@ export default function QRPage() {
         </div>
       </section>
 
+      {/* Sales Command Center — the other side of the same coin */}
+      <section className="py-12 px-4">
+        <div className="max-w-6xl mx-auto rounded-2xl border border-slate-800/60 bg-gradient-to-br from-slate-900/80 to-slate-950 p-6 sm:p-8 md:p-12">
+          {/* Header + intro */}
+          <div className="max-w-3xl mx-auto text-center mb-10">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-rose-500/30 bg-rose-500/10 text-rose-300 text-xs font-semibold mb-4">
+              <Users className="w-3.5 h-3.5" />
+              THE OTHER COMMAND CENTER
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">Sales Command Center</h2>
+            <p className="text-slate-400 leading-relaxed mb-3">
+              Same live map architecture, different cast. Every sales rep check-in at the model becomes a pin.
+              Every buyer QR scan becomes a lead pinned to the model address. Managers see who&apos;s actually
+              <span className="text-white font-semibold"> at the model</span>, who&apos;s closing, and which
+              communities are heating up &mdash; in one screen.
+            </p>
+            <p className="text-rose-300/90 text-sm font-semibold">
+              Sales reps check in at the <span className="underline decoration-rose-400/40 underline-offset-4">model</span>, not &ldquo;the lot.&rdquo; The model is the furnished show home where buyers walk in. The lot is dirt.
+            </p>
+          </div>
+
+          {/* Side-by-side: overview + detail */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-10">
+            {/* Overview */}
+            <div className="relative rounded-xl border border-slate-700 bg-slate-900 overflow-hidden shadow-2xl shadow-rose-500/10">
+              <div className="absolute top-3 right-3 z-10 px-2.5 py-1 rounded-full bg-slate-950/80 backdrop-blur-sm border border-rose-500/40 text-rose-300 text-[10px] font-bold tracking-widest uppercase">
+                Regional Overview
+              </div>
+              <Image
+                src="/mockups/ss-sales-command-center.png"
+                alt="Sales Command Center desktop overview - live regional satellite map of coastal Delaware with green community pins, purple sales-agent check-in pins, and green lead pins. KPI cards: 9 communities with activity, 23 sales-agent check-ins today, 10 leads captured today, 6 agents active. Activity feed sidebar shows 33 events grouped by community with named agents and timestamped visits to model homes."
+                width={1537}
+                height={1315}
+                className="w-full h-auto block"
+                sizes="(max-width: 1024px) 100vw, 560px"
+              />
+            </div>
+
+            {/* Detail */}
+            <div className="relative rounded-xl border border-slate-700 bg-slate-900 overflow-hidden shadow-2xl shadow-violet-500/10">
+              <div className="absolute top-3 right-3 z-10 px-2.5 py-1 rounded-full bg-slate-950/80 backdrop-blur-sm border border-violet-500/40 text-violet-300 text-[10px] font-bold tracking-widest uppercase">
+                Drill into the model
+              </div>
+              <Image
+                src="/mockups/ss-sales-command-center-detail.png"
+                alt="Sales Command Center detail view - zoomed in on Coastal Ridge community in Rehoboth Beach with the model home pinned, sales-agent check-in pins clustered around it, and lead-buyer address pins nearby. Activity feed shows named reps with check-in time ranges per address."
+                width={1543}
+                height={1321}
+                className="w-full h-auto block"
+                sizes="(max-width: 1024px) 100vw, 560px"
+              />
+            </div>
+          </div>
+
+          {/* Bullets */}
+          <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto text-sm text-slate-300">
+            <li className="flex items-start gap-2.5">
+              <CheckCircle2 className="w-4 h-4 mt-0.5 text-rose-400 flex-shrink-0" />
+              Sales rep check-ins pinned to the model &mdash; not GPS, not honor system
+            </li>
+            <li className="flex items-start gap-2.5">
+              <CheckCircle2 className="w-4 h-4 mt-0.5 text-rose-400 flex-shrink-0" />
+              Buyer QR scans auto-create Leads pinned to the model address
+            </li>
+            <li className="flex items-start gap-2.5">
+              <CheckCircle2 className="w-4 h-4 mt-0.5 text-rose-400 flex-shrink-0" />
+              Activity heat map shows which communities are converting
+            </li>
+          </ul>
+
+          {/* Two-command-centers callout */}
+          <div className="mt-10 max-w-3xl mx-auto rounded-xl border border-slate-700/60 bg-slate-900/40 px-5 py-4 text-center">
+            <p className="text-slate-300 text-sm leading-relaxed">
+              <span className="text-rose-300 font-bold">Two command centers, one platform.</span>{" "}
+              The Construction Command Center tracks who&apos;s building. The Sales Command Center tracks who&apos;s
+              selling. Both live on the same map architecture, both refresh in real time, both work on your phone
+              from anywhere.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Stats */}
       <section className="py-8 px-4">
         <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
