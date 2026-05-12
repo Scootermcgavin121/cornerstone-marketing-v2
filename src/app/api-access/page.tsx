@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import { Check, Zap, ArrowRight, Code, Globe, Shield, GitBranch, Brain, RefreshCw } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 
@@ -775,7 +775,7 @@ export default function ApiAccessPage() {
               <span className="text-violet-400">The intelligence layer.</span>
             </h2>
             <p className="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
-              Pro+ users get access to Foreman AI&apos;s complete skill definitions &mdash; the actual tool schemas that make any AI agent instantly fluent in construction workflows. One endpoint. 83 skills. Ready to drop into any agent framework.
+              Pro+ users get access to Foreman AI&apos;s complete skill definitions &mdash; the actual tool schemas that make any AI agent instantly fluent in construction workflows. One endpoint. 83+ skills. Ready to drop into any agent framework.
             </p>
           </div>
 
@@ -837,9 +837,9 @@ export default function ApiAccessPage() {
             </div>
           </div>
 
-          {/* 83 skills breakdown */}
+          {/* 83+ skills breakdown */}
           <div className="mb-10">
-            <p className="text-center text-slate-400 text-sm font-semibold uppercase tracking-widest mb-6">83 skills across 11 categories</p>
+            <p className="text-center text-slate-400 text-sm font-semibold uppercase tracking-widest mb-6">83+ skills across 11 categories</p>
             <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3">
               {[
                 { domain: "Design Center", desc: "Options, categories, classes, spec levels, images", color: "text-violet-400", bg: "bg-violet-500/10", border: "border-violet-500/20" },
@@ -860,7 +860,7 @@ export default function ApiAccessPage() {
                 </div>
               ))}
             </div>
-            <p className="text-center text-slate-600 text-xs mt-3">11 categories. 83 skills. Always shipping more.</p>
+            <p className="text-center text-slate-600 text-xs mt-3">11 categories. 83+ skills. Always shipping more.</p>
           </div>
 
           {/* Why this matters */}
@@ -1054,7 +1054,7 @@ export default function ApiAccessPage() {
               {[
                 "Full REST API — 58 endpoints (vendors, bids, homes, tasks, POs, parts, options, webhooks)",
                 "Foreman Skill Pack — GET /api/ext/skills in Anthropic, OpenAI, or OpenAPI 3.1 format",
-                "83 skills across 11 categories, auto-synced as new skills ship",
+                "83+ skills across 11 categories, auto-synced as new skills ship",
                 "Scoped API keys per agent/integration",
                 "Real-time webhooks (30+ named event types and growing, HMAC-signed)",
                 "Automated 7-wave bidding pipeline",

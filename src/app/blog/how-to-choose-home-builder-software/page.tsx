@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { BlogHero } from "@/components/BlogHero";
@@ -223,7 +223,7 @@ export default function HowToChoomeHomeBuilderSoftwarePage() {
               >
                 Foreman AI agent
               </Link>{" "}
-              has 83 skills that take real actions inside the platform — pulling pricing, generating budget
+              has 83+ skills that take real actions inside the platform — pulling pricing, generating budget
               reports, scoring vendor bids — not just answering FAQ questions. Also confirm which AI features
               are included vs. billed as add-ons at $99–$149/month each.
             </p>

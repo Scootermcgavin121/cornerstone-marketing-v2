@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import { ArrowRight, Brain, Zap, Check, Building2, Cpu, FileText } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -92,7 +92,7 @@ export default function AiConstructionManagementPage() {
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs font-semibold mb-6">
             <Brain className="w-3.5 h-3.5" />
-            FOREMAN AI · BY CORNERSTONE PM · 83 skills
+            FOREMAN AI · BY CORNERSTONE PM · 83+ skills
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
             Meet{" "}
@@ -118,7 +118,7 @@ export default function AiConstructionManagementPage() {
               href="/foreman"
               className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200"
             >
-              See all 83 skills
+              See all 83+ skills
             </Link>
           </div>
         </div>
@@ -243,7 +243,7 @@ export default function AiConstructionManagementPage() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-black mb-4">
-              83 skills across 11 categories
+              83+ skills across 11 categories
             </h2>
             <p className="text-slate-400 max-w-xl mx-auto">
               Every skill is purpose-built for construction. Not adapted from a generic AI assistant.

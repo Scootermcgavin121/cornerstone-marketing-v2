@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import { ArrowRight, Check, Workflow, Layers, Bot } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -48,7 +48,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Does Cornerstone PM include AI agents?",
-    a: "Yes. Cornerstone PM includes two native AI agents: Foreman AI (83 skills across scheduling, sales, purchasing, design center, bids, vendor management, and reporting) and Blueprint AI (PDF floor plan reader that extracts 130+ material scopes per plan). Both are built into the platform and connected to live builder data &mdash; not bolt-on plugins.",
+    a: "Yes. Cornerstone PM includes two native AI agents: Foreman AI (83+ skills across scheduling, sales, purchasing, design center, bids, vendor management, and reporting) and Blueprint AI (PDF floor plan reader that extracts 130+ material scopes per plan). Both are built into the platform and connected to live builder data &mdash; not bolt-on plugins.",
   },
   {
     q: "Can I replace Buildertrend, JobTread, or BuildPro with Cornerstone PM?",
@@ -146,7 +146,7 @@ export default function HomeBuilderPMPage() {
               <h2 className="text-3xl font-black mb-4">AI built into the platform &mdash; not bolted on.</h2>
               <p className="text-slate-400 leading-relaxed mb-4">
                 Most home builder software treats AI as a chatbot bolt-on. Cornerstone PM ships two native AI agents wired
-                directly to your live data: Foreman AI (83 skills) and Blueprint AI (floor plan reader).
+                directly to your live data: Foreman AI (83+ skills) and Blueprint AI (floor plan reader).
               </p>
               <p className="text-slate-400 leading-relaxed">
                 Every action Foreman takes &mdash; updating a vendor bid, generating a PO, drafting an MLS listing,

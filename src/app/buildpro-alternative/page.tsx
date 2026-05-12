@@ -1,4 +1,4 @@
-﻿import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
+import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
 import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageTemplate";
 import type { FAQItem } from "@/components/FAQSection";
 
@@ -40,7 +40,7 @@ const comparisonRows: ComparisonRow[] = [
 
 const whySwitchCards: WhySwitchCard[] = [
   { title: "Modern web platform", desc: "Cloud-native, mobile-friendly, no Citrix or VPN required. PMs update from the jobsite, vendors confirm from their phone, sales counselors present on a tablet." },
-  { title: "Action-taking AI on Pro - 83 skills", desc: "Foreman AI (Cornerstone Pro, $499/mo) reads AND writes data. Blueprint AI converts PDF floor plans to material takeoffs in under 60 seconds. No third-party AI plugins, no separate subscriptions." },
+  { title: "Action-taking AI on Pro - 83+ skills", desc: "Foreman AI (Cornerstone Pro, $499/mo) reads AND writes data. Blueprint AI converts PDF floor plans to material takeoffs in under 60 seconds. No third-party AI plugins, no separate subscriptions." },
   { title: "Public REST API + 30+ webhooks on Pro+", desc: "59+ REST endpoints (growing), 30+ named webhook events (catalog growing), HMAC signatures, and public documentation on Pro+ ($599/mo). BuildPro integrations are enterprise-contract only." },
 ];
 
@@ -51,7 +51,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "How is Cornerstone PM different from BuildPro?",
-    a: "Three key differences: (1) Cornerstone PM is a modern, web-based, mobile-friendly platform, while BuildPro is built on a Windows desktop architecture; (2) Cornerstone ships native AI agents (Foreman AI 83 skills on Pro $499/mo, Blueprint AI, AI image search, anti-bot web scraping) that BuildPro doesn't offer at any tier; (3) Cornerstone is operational in hours at $149/mo with unlimited users, while BuildPro requires $25k-$75k+ implementation budgets.",
+    a: "Three key differences: (1) Cornerstone PM is a modern, web-based, mobile-friendly platform, while BuildPro is built on a Windows desktop architecture; (2) Cornerstone ships native AI agents (Foreman AI 83+ skills on Pro $499/mo, Blueprint AI, AI image search, anti-bot web scraping) that BuildPro doesn't offer at any tier; (3) Cornerstone is operational in hours at $149/mo with unlimited users, while BuildPro requires $25k-$75k+ implementation budgets.",
   },
   {
     q: "Can Cornerstone PM replace BuildPro for a home builder?",
@@ -91,7 +91,7 @@ export default function BuildProAlternativePage() {
       heroLine1="BuildPro power."
       heroLine2="Modern UI. Native AI."
       accentColor="violet"
-      heroParagraph="Cornerstone PM is the modern BuildPro alternative for small-to-mid home builders. Same core capabilities - options engine, multi-community pipelines, purchasing, construction scheduling - on a web-native platform with Foreman AI (83 skills on Pro $499/mo), Blueprint AI, and a public REST API (Pro+ $599/mo). Starts at $149/mo, unlimited users."
+      heroParagraph="Cornerstone PM is the modern BuildPro alternative for small-to-mid home builders. Same core capabilities - options engine, multi-community pipelines, purchasing, construction scheduling - on a web-native platform with Foreman AI (83+ skills on Pro $499/mo), Blueprint AI, and a public REST API (Pro+ $599/mo). Starts at $149/mo, unlimited users."
       secondaryCTA={{ text: "Also a NEWSTAR alternative", href: "/newstar-alternative" }}
       comparisonSubtitle="Side-by-side for home builders evaluating modern alternatives."
       comparisonRows={comparisonRows}

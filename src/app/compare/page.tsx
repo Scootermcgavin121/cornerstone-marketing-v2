@@ -1,11 +1,11 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import { Check, X, Minus } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 
 export const metadata = {
   title: "Cornerstone PM vs NEWSTAR, Buildertrend, Buildxact — Compare Home Builder Software",
   description:
-    "See how Cornerstone PM stacks up against NEWSTAR, BuildPro, Buildertrend, and Buildxact. Less cost, faster setup, built specifically for home builders — with AI, real-time command center, and a 83 skills in-app agent none of them have.",
+    "See how Cornerstone PM stacks up against NEWSTAR, BuildPro, Buildertrend, and Buildxact. Less cost, faster setup, built specifically for home builders — with AI, real-time command center, and a 83+ skills in-app agent none of them have.",
 };
 
 const competitors = ["Cornerstone PM", "NEWSTAR / BuildPro", "Buildertrend", "Buildxact"];
@@ -237,7 +237,7 @@ export default function ComparePage() {
                   "Floorplan base price + options engine = contract price",
                   "Pre-sale workflow: lead &rarr; options &rarr; contract &rarr; close",
                   "Design Center selections built into the sale &mdash; not change orders",
-                  "5 native AI agents — Foreman AI (83 skills), Blueprint AI, Bid Import AI, MLS Generator, Support (Pro plan, $499/mo flat)",
+                  "5 native AI agents — Foreman AI (83+ skills), Blueprint AI, Bid Import AI, MLS Generator, Support (Pro plan, $499/mo flat)",
                   "Built for home builders",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-2 text-slate-300 text-sm">

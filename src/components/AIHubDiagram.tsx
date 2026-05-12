@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
@@ -103,7 +103,7 @@ const AGENTS: Agent[] = [
     id: "api",
     name: "Full REST API",
     tagline: "Build Your Own AI Agents",
-    description: "Phone agent texts vendors when bids are due — 83 skills exposed via Bearer token. Connect Claude, GPT, Twilio, anything.",
+    description: "Phone agent texts vendors when bids are due — 83+ skills exposed via Bearer token. Connect Claude, GPT, Twilio, anything.",
     href: "/api-access",
     color: "text-sky-300",
     bg: "bg-sky-500/15",
@@ -211,7 +211,7 @@ export default function AIHubDiagram({ inline = false }: { inline?: boolean } = 
             </span>
           </h2>
           <p className="mt-6 text-base sm:text-lg text-white/60 max-w-2xl mx-auto">
-            <span className="text-cyan-300 font-semibold">Foreman AI™</span> is the brain behind Cornerstone — 83 skills, 5 specialized agents, and a full REST API. Build your own phone agent, vendor SMS bot, or workflow automation on top of the same engine that runs your jobs.
+            <span className="text-cyan-300 font-semibold">Foreman AI™</span> is the brain behind Cornerstone — 83+ skills, 5 specialized agents, and a full REST API. Build your own phone agent, vendor SMS bot, or workflow automation on top of the same engine that runs your jobs.
           </p>
         </div>
 

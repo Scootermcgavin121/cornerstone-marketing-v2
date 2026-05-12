@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import Link from "next/link";
 import { Bot, FileText, MessageCircle, Check, Zap, ArrowRight, Brain, Eye } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "AI Agents for Home Builders | Cornerstone PM",
   description:
-    "6 AI agents for home builders: Foreman AI (83 skills), Blueprint AI (PDF takeoffs), Bid Import AI (parses any vendor bid), AI MLS Listing Generator, AI Support Agent, plus Jobsite AI (coming soon). Native AI built into the platform — not bolted on.",
+    "6 AI agents for home builders: Foreman AI (83+ skills), Blueprint AI (PDF takeoffs), Bid Import AI (parses any vendor bid), AI MLS Listing Generator, AI Support Agent, plus Jobsite AI (coming soon). Native AI built into the platform — not bolted on.",
   alternates: { canonical: "https://www.cornerstonepm.ai/ai-agents" },
 };
 
@@ -204,7 +204,7 @@ export default function AiAgentsPage() {
             <span className="text-white">Zero setup.</span>
             <br />
             <span className="bg-gradient-to-r from-amber-400 via-violet-400 to-cyan-400 bg-clip-text text-transparent">
-              83 skills out of the box.
+              83+ skills out of the box.
             </span>
           </h1>
           <p className="text-xl sm:text-2xl text-slate-300 font-semibold max-w-2xl mx-auto mb-4">

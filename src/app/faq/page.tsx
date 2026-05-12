@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -135,11 +135,11 @@ const pricing: Category = {
     {
       q: "Is there a free trial or free beta?",
       aText:
-        "Yes - the 2-year free beta is open to the first 100 home builders, no credit card and no contract. Beta includes every feature on the Pro plan including Foreman AI (83 skills) and Blueprint AI takeoffs. Request access at /beta.",
+        "Yes - the 2-year free beta is open to the first 100 home builders, no credit card and no contract. Beta includes every feature on the Pro plan including Foreman AI (83+ skills) and Blueprint AI takeoffs. Request access at /beta.",
       a: (
         <>
           Yes - the <strong>2-year free beta</strong> is open to the first 100 home builders, no credit card and
-          no contract. Beta includes every feature on the Pro plan including Foreman AI (83 skills) and Blueprint AI
+          no contract. Beta includes every feature on the Pro plan including Foreman AI (83+ skills) and Blueprint AI
           takeoffs. Request access at <A href="/beta">/beta</A>.
         </>
       ),
@@ -171,12 +171,12 @@ const pricing: Category = {
     {
       q: "Which plan includes the AI agents?",
       aText:
-        "Cornerstone PM ships 5 native AI agents. AI Support Agent is on every plan from Starter ($149/mo). AI MLS Listing Generator is on Builder ($299/mo) and above. Foreman AI (83 skills) and Blueprint AI are on Pro ($499/mo). Bid Import AI and BYOA are on Pro+ ($599/mo).",
+        "Cornerstone PM ships 5 native AI agents. AI Support Agent is on every plan from Starter ($149/mo). AI MLS Listing Generator is on Builder ($299/mo) and above. Foreman AI (83+ skills) and Blueprint AI are on Pro ($499/mo). Bid Import AI and BYOA are on Pro+ ($599/mo).",
       a: (
         <>
           Cornerstone PM ships <strong>5 native AI agents</strong>. <A href="/support-ai">AI Support Agent</A> is on
           every plan from Starter ($149/mo). <A href="/listing-sheet">AI MLS Listing Generator</A> is on Builder
-          ($299/mo) and above. <A href="/foreman">Foreman AI</A> (83 skills) and <A href="/ai-takeoff">Blueprint AI</A>{" "}
+          ($299/mo) and above. <A href="/foreman">Foreman AI</A> (83+ skills) and <A href="/ai-takeoff">Blueprint AI</A>{" "}
           are on Pro ($499/mo). <A href="/bid-import-ai">Bid Import AI</A> and BYOA are on Pro+ ($599/mo).
         </>
       ),
@@ -184,11 +184,11 @@ const pricing: Category = {
     {
       q: "What's included in the free beta?",
       aText:
-        "Beta access for two years is free for the first 100 home builders. It includes every Pro plan feature: scheduling, sales pipeline, purchasing, design center, options engine, Foreman AI (83 skills), Blueprint AI takeoffs, and the homeowner portal. After beta, plans start at $149/mo.",
+        "Beta access for two years is free for the first 100 home builders. It includes every Pro plan feature: scheduling, sales pipeline, purchasing, design center, options engine, Foreman AI (83+ skills), Blueprint AI takeoffs, and the homeowner portal. After beta, plans start at $149/mo.",
       a: (
         <>
           Beta access for two years is free for the first 100 home builders. It includes every Pro plan feature:
-          scheduling, sales pipeline, purchasing, design center, options engine, Foreman AI (83 skills), Blueprint AI
+          scheduling, sales pipeline, purchasing, design center, options engine, Foreman AI (83+ skills), Blueprint AI
           takeoffs, and the homeowner portal. After beta, plans start at $149/mo. Apply at <A href="/beta">/beta</A>.
         </>
       ),
@@ -407,10 +407,10 @@ const ai: Category = {
     {
       q: "What AI agents does Cornerstone PM include?",
       aText:
-        "Five native AI agents: Foreman AI (83 skills across scheduling, sales, purchasing, design center, bids, vendors, reporting), Blueprint AI (PDF floor plan reader extracting 130+ material scopes per plan), Bid Import AI (extracts line items from any vendor PDF/Excel/photo), AI MLS Listing Generator, and AI Support Agent.",
+        "Five native AI agents: Foreman AI (83+ skills across scheduling, sales, purchasing, design center, bids, vendors, reporting), Blueprint AI (PDF floor plan reader extracting 130+ material scopes per plan), Bid Import AI (extracts line items from any vendor PDF/Excel/photo), AI MLS Listing Generator, and AI Support Agent.",
       a: (
         <>
-          Five native AI agents: <A href="/foreman">Foreman AI</A> (83 skills across scheduling, sales, purchasing,
+          Five native AI agents: <A href="/foreman">Foreman AI</A> (83+ skills across scheduling, sales, purchasing,
           design center, bids, vendors, reporting), <A href="/ai-takeoff">Blueprint AI</A> (PDF floor plan reader
           extracting <strong>130+ material scopes</strong> per plan), <A href="/bid-import-ai">Bid Import AI</A>{" "}
           (extracts line items from any vendor PDF/Excel/photo),{" "}
@@ -422,11 +422,11 @@ const ai: Category = {
     {
       q: "What is Foreman AI?",
       aText:
-        "Foreman AI is Cornerstone PM's natural-language AI agent with 83 skills across 11 categories: Schedule, Sales, Purchasing/Bid Pipeline, Design Center, Parts Catalog, Vendor Management, and Reporting. Tell it 'reschedule framing across all active homes by 2 days and notify vendors' in plain English and it executes against live data.",
+        "Foreman AI is Cornerstone PM's natural-language AI agent with 83+ skills across 11 categories: Schedule, Sales, Purchasing/Bid Pipeline, Design Center, Parts Catalog, Vendor Management, and Reporting. Tell it 'reschedule framing across all active homes by 2 days and notify vendors' in plain English and it executes against live data.",
       a: (
         <>
           <A href="/foreman">Foreman AI</A> is Cornerstone PM's natural-language AI agent with{" "}
-          <strong>83 skills across 11 categories</strong>: Schedule, Sales, Purchasing/Bid Pipeline, Design Center,
+          <strong>83+ skills across 11 categories</strong>: Schedule, Sales, Purchasing/Bid Pipeline, Design Center,
           Parts Catalog, Vendor Management, and Reporting. Tell it &quot;reschedule framing across all active
           homes by 2 days and notify vendors&quot; in plain English and it executes against live data.
         </>
@@ -1201,10 +1201,10 @@ const comparisons: Category = {
     {
       q: "What does Cornerstone PM have that Buildertrend doesn't?",
       aText:
-        "Native AI agents (Foreman AI's 83 skills, Blueprint AI takeoffs, Bid Import AI), a structural options engine, floorplan pricing matrix, multi-community pipelines, and a public REST API on Pro+ ($599/mo). Buildertrend's price floor is $499/mo - the same as Cornerstone Pro - and includes none of these.",
+        "Native AI agents (Foreman AI's 83+ skills, Blueprint AI takeoffs, Bid Import AI), a structural options engine, floorplan pricing matrix, multi-community pipelines, and a public REST API on Pro+ ($599/mo). Buildertrend's price floor is $499/mo - the same as Cornerstone Pro - and includes none of these.",
       a: (
         <>
-          Native AI agents (<A href="/foreman">Foreman AI</A>'s 83 skills, <A href="/ai-takeoff">Blueprint AI</A>{" "}
+          Native AI agents (<A href="/foreman">Foreman AI</A>'s 83+ skills, <A href="/ai-takeoff">Blueprint AI</A>{" "}
           takeoffs, <A href="/bid-import-ai">Bid Import AI</A>), a structural options engine, floorplan pricing
           matrix, multi-community pipelines, and a public <A href="/api-access">REST API on Pro+ ($599/mo)</A>.
           Buildertrend's price floor is $499/mo - the same as Cornerstone Pro - and includes none of these.

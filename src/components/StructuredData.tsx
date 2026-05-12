@@ -1,4 +1,4 @@
-﻿export function StructuredData() {
+export function StructuredData() {
   const schema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -20,7 +20,7 @@
           "priceSpecification": [
             { "@type": "UnitPriceSpecification", "price": "149", "priceCurrency": "USD", "name": "Starter - Scheduling + Buyer Portal", "description": "Construction scheduling, Gantt charts, subcontractor confirmations, homeowner portal, permit tracker, multi-community support, up to 500 active homes, unlimited users.", "billingDuration": "P1M" },
             { "@type": "UnitPriceSpecification", "price": "299", "priceCurrency": "USD", "name": "Builder - Full Platform (No AI)", "description": "Adds purchasing, sales pipeline, design center, MLS listing agent. Unlimited users.", "billingDuration": "P1M" },
-            { "@type": "UnitPriceSpecification", "price": "499", "priceCurrency": "USD", "name": "Pro - With AI Agents", "description": "Adds Foreman AI (83 skills), Blueprint AI (25 takeoffs/mo). Up to 1,000 active homes, unlimited users.", "billingDuration": "P1M" },
+            { "@type": "UnitPriceSpecification", "price": "499", "priceCurrency": "USD", "name": "Pro - With AI Agents", "description": "Adds Foreman AI (83+ skills), Blueprint AI (25 takeoffs/mo). Up to 1,000 active homes, unlimited users.", "billingDuration": "P1M" },
             { "@type": "UnitPriceSpecification", "price": "599", "priceCurrency": "USD", "name": "Pro+ - API + Enterprise AI", "description": "Full REST API, BYOA automated bidding pipeline, Opus AI, 5,000 AI messages/mo, scoped API keys, webhooks, SSO, SLA. Unlimited users.", "billingDuration": "P1M" },
           ],
         },
@@ -88,7 +88,7 @@
             "name": "How much does Cornerstone PM cost?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Cornerstone PM starts at $149/mo for the Starter plan (scheduling + buyer portal, unlimited users). Builder is $299/mo (adds purchasing, sales, design center). Pro is $499/mo (adds Foreman AI with 83 skills and Blueprint AI). Pro+ is $599/mo (adds full REST API, automated bidding pipeline, and enterprise AI). All plans include unlimited users with no per-seat fees. Beta access is free for 2 years, limited to the first 100 builders.",
+              "text": "Cornerstone PM starts at $149/mo for the Starter plan (scheduling + buyer portal, unlimited users). Builder is $299/mo (adds purchasing, sales, design center). Pro is $499/mo (adds Foreman AI with 83+ skills and Blueprint AI). Pro+ is $599/mo (adds full REST API, automated bidding pipeline, and enterprise AI). All plans include unlimited users with no per-seat fees. Beta access is free for 2 years, limited to the first 100 builders.",
             },
           },
           {
@@ -96,7 +96,7 @@
             "name": "What is Foreman AI?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Foreman AI is a purpose-built AI construction agent with 83 skills across scheduling, sales, purchasing, design center, and document generation. Unlike generic AI tools, Foreman reads and writes your real data - creating purchase orders, updating vendor bids, generating MLS listings, analyzing your sales pipeline - using plain English commands. Available on the Pro plan ($499/mo).",
+              "text": "Foreman AI is a purpose-built AI construction agent with 83+ skills across scheduling, sales, purchasing, design center, and document generation. Unlike generic AI tools, Foreman reads and writes your real data - creating purchase orders, updating vendor bids, generating MLS listings, analyzing your sales pipeline - using plain English commands. Available on the Pro plan ($499/mo).",
             },
           },
           {

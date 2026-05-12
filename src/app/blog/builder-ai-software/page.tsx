@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { BlogHero } from "@/components/BlogHero";
@@ -170,7 +170,7 @@ export default function BuilderAiSoftwarePost() {
         <div className="mt-12 p-6 rounded-2xl border border-amber-500/20 bg-amber-500/5">
           <h3 className="text-lg font-bold text-white mb-2">Try builder AI built for home builders</h3>
           <p className="text-slate-400 text-sm mb-4">
-            Foreman AI &mdash; 83 skills, real data access, persistent memory. Beta is free for 2 years.
+            Foreman AI &mdash; 83+ skills, real data access, persistent memory. Beta is free for 2 years.
           </p>
           <Link
             href="/beta"

@@ -1,11 +1,11 @@
-﻿import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
+import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
 import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageTemplate";
 import type { FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
   title: "JobTread Alternative for Home Builders | Cornerstone PM",
   description:
-    "JobTread alternative with action-taking AI agents (83 skills), structural options engine, and 30 named webhook events. Home-builder native. Plans from $149/mo to $599/mo flat - no per-user fees.",
+    "JobTread alternative with action-taking AI agents (83+ skills), structural options engine, and 30 named webhook events. Home-builder native. Plans from $149/mo to $599/mo flat - no per-user fees.",
   alternates: { canonical: "https://www.cornerstonepm.ai/jobtread-alternative" },
 };
 
@@ -40,7 +40,7 @@ const comparisonRows: ComparisonRow[] = [
 
 const whySwitchCards: WhySwitchCard[] = [
   { title: "Home builder native", desc: "Floorplan pricing matrix, structural options engine, designer packages, multi-community pipelines - first-class concepts on Cornerstone Builder+ ($299/mo). JobTread is built for general contractors and remodelers, not home builders." },
-  { title: "Action-taking AI on Pro", desc: "Foreman AI (83 skills, $499/mo Pro) reads AND writes data - creates POs, runs bid comparisons, generates SOWs, scrapes vendor product pages. JobTread's AI Connector plugs in your own ChatGPT or Claude for chat-style help. Different model: action agent vs chat integration." },
+  { title: "Action-taking AI on Pro", desc: "Foreman AI (83+ skills, $499/mo Pro) reads AND writes data - creates POs, runs bid comparisons, generates SOWs, scrapes vendor product pages. JobTread's AI Connector plugs in your own ChatGPT or Claude for chat-style help. Different model: action agent vs chat integration." },
   { title: "Flat pricing, no per-user math", desc: "Cornerstone Starter $149, Builder $299, Pro $499, Pro+ $599 - flat at every tier, unlimited users. JobTread starts $199 + $20/user; a 20-person team is $599/mo. Bring on your whole crew without watching the meter." },
 ];
 

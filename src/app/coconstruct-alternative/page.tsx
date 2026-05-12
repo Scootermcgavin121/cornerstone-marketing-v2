@@ -1,4 +1,4 @@
-﻿import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
+import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
 import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageTemplate";
 import type { FAQItem } from "@/components/FAQSection";
 
@@ -38,14 +38,14 @@ const comparisonRows: ComparisonRow[] = [
 
 const whySwitchCards: WhySwitchCard[] = [
   { title: "Migration is the #1 reason builders stay stuck", desc: "We removed it. The AI Migration Wizard reads your CoConstruct/Buildertrend export, auto-maps every column, and runs all 23 import endpoints. Most migrations complete in under a day. ~$0.01 in AI cost - we absorb it." },
-  { title: "Action-taking AI on Pro — 83 skills", desc: "Foreman AI (Cornerstone Pro, $499/mo) creates POs, updates design options, generates SOWs. Greets you by your chosen name, learns your go-to vendors and habits, gets more intuitive every session — custom-coded into the app, not a generic chatbot bolt-on. Built-in session compaction for marathon workflows. No other construction AI does this." },
+  { title: "Action-taking AI on Pro — 83+ skills", desc: "Foreman AI (Cornerstone Pro, $499/mo) creates POs, updates design options, generates SOWs. Greets you by your chosen name, learns your go-to vendors and habits, gets more intuitive every session — custom-coded into the app, not a generic chatbot bolt-on. Built-in session compaction for marathon workflows. No other construction AI does this." },
   { title: "Home builder workflows native", desc: "Lots, models, options, plan repeats, design center, draws, multi-community pipelines. CoConstruct was built for custom builders - Cornerstone Builder ($299/mo) covers all of this." },
 ];
 
 const faqItems: FAQItem[] = [
   {
     q: "CoConstruct was merged into Buildertrend - what are my options?",
-    a: "If you're frustrated with the CoConstruct-to-Buildertrend transition, Cornerstone PM is the cleanest off-ramp. It covers the same core functions (scheduling, homeowner portal, selections, purchasing, bid management) and adds features CoConstruct never had: native AI agents (Foreman AI 83 skills on Pro $499/mo), structural options engine (Builder $299/mo), 30+ named webhook events (Pro+), and a public REST API (Pro+). The AI Migration Wizard ingests your Buildertrend/CoConstruct export in under a day.",
+    a: "If you're frustrated with the CoConstruct-to-Buildertrend transition, Cornerstone PM is the cleanest off-ramp. It covers the same core functions (scheduling, homeowner portal, selections, purchasing, bid management) and adds features CoConstruct never had: native AI agents (Foreman AI 83+ skills on Pro $499/mo), structural options engine (Builder $299/mo), 30+ named webhook events (Pro+), and a public REST API (Pro+). The AI Migration Wizard ingests your Buildertrend/CoConstruct export in under a day.",
   },
   {
     q: "Is Cornerstone PM a good CoConstruct replacement?",

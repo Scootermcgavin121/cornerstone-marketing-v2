@@ -1,4 +1,4 @@
-﻿import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
+import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
 import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageTemplate";
 import type { FAQItem } from "@/components/FAQSection";
 
@@ -38,7 +38,7 @@ const comparisonRows: ComparisonRow[] = [
 
 const whySwitchCards: WhySwitchCard[] = [
   { title: "Right-sized for residential builders", desc: "Procore is built for $100M commercial GCs. Cornerstone is built for residential home builders doing 5-200 homes per year. You get the features you actually need - without paying for RFI workflows and submittal logs." },
-  { title: "Residential-native AI on Pro", desc: "Foreman AI (Cornerstone Pro, $499/mo) has 83 skills specific to home building: design options, vendor bids, takeoffs, buyer allowances, scope management, profitability reports. Not generic construction AI - residential-native." },
+  { title: "Residential-native AI on Pro", desc: "Foreman AI (Cornerstone Pro, $499/mo) has 83+ skills specific to home building: design options, vendor bids, takeoffs, buyer allowances, scope management, profitability reports. Not generic construction AI - residential-native." },
   { title: "Up and running today", desc: "Procore implementations take weeks to months. Cornerstone's AI Migration Wizard gets you operational in an afternoon. Drop your existing data in; the AI maps and imports it. ~$0.01 in AI cost - we absorb it." },
 ];
 
@@ -49,7 +49,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What's the best Procore alternative for residential builders?",
-    a: "Cornerstone PM is purpose-built for residential home builders. It covers the project management backbone you need (scheduling, purchasing, bid management, homeowner portal, document management) and adds features Procore doesn't offer: a structural options engine, 64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses), native AI agents (Foreman AI 83 skills on Pro $499/mo, Blueprint AI), and a public REST API with 30+ named webhook events (Pro+).",
+    a: "Cornerstone PM is purpose-built for residential home builders. It covers the project management backbone you need (scheduling, purchasing, bid management, homeowner portal, document management) and adds features Procore doesn't offer: a structural options engine, 64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses), native AI agents (Foreman AI 83+ skills on Pro $499/mo, Blueprint AI), and a public REST API with 30+ named webhook events (Pro+).",
   },
   {
     q: "Is Cornerstone PM cheaper than Procore?",

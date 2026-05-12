@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import { ArrowRight, Brain, Check, Zap } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -108,7 +108,7 @@ export default function AiForHomeBuildersPage() {
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-violet-500/30 bg-violet-500/10 text-violet-400 text-xs font-semibold mb-6">
             <Brain className="w-3.5 h-3.5" />
-            FOREMAN AI · 83 skills · PURPOSE-BUILT FOR HOME BUILDERS
+            FOREMAN AI · 83+ skills · PURPOSE-BUILT FOR HOME BUILDERS
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
             AI Built for How{" "}
@@ -131,7 +131,7 @@ export default function AiForHomeBuildersPage() {
               href="/foreman"
               className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200"
             >
-              See all 83 skills
+              See all 83+ skills
             </Link>
           </div>
         </div>

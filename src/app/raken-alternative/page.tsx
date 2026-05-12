@@ -1,4 +1,4 @@
-﻿import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
+import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
 import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageTemplate";
 import type { FAQItem } from "@/components/FAQSection";
 
@@ -16,7 +16,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Floorplan pricing matrix", cornerstone: true, competitor: false, note: "Per-community floorplan pricing for home builders. Cornerstone Builder+." },
   { feature: "Multi-community lot management", cornerstone: true, competitor: false, note: "Native multi-community pipeline. Raken is field-log focused." },
   { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Packages curated by an actual interior designer -- the same playbook K. Hovnanian Homes uses. Buyer design center. Cornerstone Builder+." },
-  { feature: "Native AI agents (Foreman AI -- 83 skills)", cornerstone: true, competitor: false, note: "Cornerstone Pro ($499/mo): Foreman AI reads AND writes construction data. Blueprint AI: PDF to takeoff in 60 seconds. Raken has no native AI agents." },
+  { feature: "Native AI agents (Foreman AI -- 83+ skills)", cornerstone: true, competitor: false, note: "Cornerstone Pro ($499/mo): Foreman AI reads AND writes construction data. Blueprint AI: PDF to takeoff in 60 seconds. Raken has no native AI agents." },
   { feature: "AI image search, vision & anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, hosts them on CDN, reads supplier product pages with AI-powered web scraping. Plus: paste or drag-drop any screenshot and Foreman reads it with AI vision and acts on it. Cornerstone Pro feature." },
   { feature: "30+ named webhook events (catalog growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): 30+ named events and counting -- typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. Raken has no webhook catalog." },
   { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): wire Claude or ChatGPT to your live construction data." },
@@ -47,7 +47,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What's the best Raken alternative for home builders?",
-    a: "Cornerstone PM provides the project management backbone Raken doesn't offer. It includes scheduling (Gantt with dependencies, cascade scheduling from Starter $149/mo), purchasing and POs, bid management with vendor portal, homeowner portal, structural options engine (Builder $299/mo), native AI agents (Foreman AI 83 skills on Pro $499/mo, Blueprint AI), 30+ named webhook events (Pro+), and a public REST API -- built specifically for home builders.",
+    a: "Cornerstone PM provides the project management backbone Raken doesn't offer. It includes scheduling (Gantt with dependencies, cascade scheduling from Starter $149/mo), purchasing and POs, bid management with vendor portal, homeowner portal, structural options engine (Builder $299/mo), native AI agents (Foreman AI 83+ skills on Pro $499/mo, Blueprint AI), 30+ named webhook events (Pro+), and a public REST API -- built specifically for home builders.",
   },
   {
     q: "Can I migrate from Raken to Cornerstone PM?",
