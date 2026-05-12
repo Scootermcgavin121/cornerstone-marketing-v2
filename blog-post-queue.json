@@ -166,8 +166,8 @@
       "wordCount": 900,
       "heroImage": "/blog/ai-material-takeoff-home-builders.png",
       "heroImageAlt": "Blueprint AI extracting material scopes from a residential home builder floor plan PDF",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "9ec65b9"
     },
     {
       "slug": "cornerstone-pm-vs-acculynx-home-builder-software",
