@@ -9,9 +9,9 @@ const screens = [
     label: "Sales Pipeline",
     tag: "SALES",
     tagColor: "text-violet-400 border-violet-500/30 bg-violet-500/10",
-    headline: "Every home, every stage &mdash; one kanban board.",
+    headline: "Every home, every stage — one kanban board.",
     description:
-      "Drag-and-drop sales pipeline from contract to construction. See every home in Sales, Permitting, Design, and Construction at a glance &mdash; buyer assigned, current task, community, lot. Filter by community, home type, or status. The board sales managers live in.",
+      "Drag-and-drop sales pipeline from contract to construction. See every home in Sales, Permitting, Design, and Construction at a glance — buyer assigned, current task, community, lot. Filter by community, home type, or status. The board sales managers live in.",
     screenshot: "/mockups/ss-sales-pipeline.png",
     aspect: "16/10",
     accent: "from-violet-500/20 to-purple-600/5",
