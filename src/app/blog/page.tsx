@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "foreman-ai-83-skills",
+    title: "Foreman AI Now Has 83 Skills Across 11 Categories",
+    excerpt:
+      "Six weeks ago Foreman AI shipped with 45 skills across 7 categories. Today it ships with 83 skills across 11 categories — a +84% jump in 42 days. Full CRUD on takeoffs, vendor scorecards, profitability analysis, options gap detection, undo + action history. Here's what got added and why 'more skills' isn't just a vanity number.",
+    date: "May 12, 2026",
+    readTime: "5 min read",
+    tag: "Product Update",
+    tagColor: "text-amber-400 bg-amber-500/10 border-amber-500/20",
+  },
+  {
     slug: "buildertrend-pricing-true-cost",
     title: "The True Cost of Buildertrend for Production Home Builders",
     excerpt:
