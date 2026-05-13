@@ -7,12 +7,12 @@ import { ArrowLeft, Zap, Clock, Users, Shield, Cpu } from "lucide-react";
 export const metadata: Metadata = {
   title: "Usage Rates & AI Limits | Cornerstone PM\u2122",
   description:
-    "Daily AI usage limits by plan for Foreman AI, Blueprint AI, Bid Import AI, Punchlist AI, MLS Listing AI, and the REST API. Role-based access tiers and Power User add-on details.",
+    "Monthly AI usage limits by plan for Foreman AI, Blueprint AI, Bid Import AI, Punchlist AI, MLS Listing AI, and the REST API. Role-based access tiers and Power User add-on details.",
   alternates: { canonical: "https://www.cornerstonepm.ai/usage-rates" },
   openGraph: {
     title: "Usage Rates & AI Limits | Cornerstone PM\u2122",
     description:
-      "See exactly what you get on each plan. Daily AI limits, role-based access, onboarding boosts, and Power User details.",
+      "See exactly what you get on each plan. Monthly AI limits, role-based access, onboarding boosts, and Power User details.",
     url: "https://www.cornerstonepm.ai/usage-rates",
     type: "website",
   },
@@ -35,12 +35,12 @@ const aiFeatures: AIFeature[] = [
   {
     name: "Foreman AI\u2122",
     description:
-      "In-app AI agent with 83+ construction management skills. Reads and writes real data \u2014 takes actions, not just chat.",
+      "In-app AI agent with 45+ construction management skills. Reads and writes real data \u2014 takes actions, not just chat.",
     starter: "\u2014",
     builder: "\u2014",
-    pro: "20/day",
-    proPlus: "30/day",
-    powerUser: "100/day",
+    pro: "600/mo",
+    proPlus: "900/mo",
+    powerUser: "3,000/mo",
     scope: "user",
   },
   {
@@ -49,8 +49,8 @@ const aiFeatures: AIFeature[] = [
       "Automated blueprint/plan analysis. Upload a floor plan PDF and get 130+ material scopes in 60 seconds.",
     starter: "\u2014",
     builder: "\u2014",
-    pro: "5/day",
-    proPlus: "10/day",
+    pro: "150/mo",
+    proPlus: "300/mo",
     powerUser: "Unlimited",
     scope: "user",
   },
@@ -60,8 +60,8 @@ const aiFeatures: AIFeature[] = [
       "Parse vendor bids from PDF attachments automatically. Takeoff-only, pricing-only, or combined modes.",
     starter: "\u2014",
     builder: "\u2014",
-    pro: "20/day",
-    proPlus: "40/day",
+    pro: "600/mo",
+    proPlus: "1,200/mo",
     powerUser: "Unlimited",
     scope: "user",
   },
@@ -69,10 +69,10 @@ const aiFeatures: AIFeature[] = [
     name: "Punchlist AI",
     description:
       "Voice-to-punchlist: speak your items, AI creates the structured list. Works on mobile in the field.",
-    starter: "5/day",
-    builder: "10/day",
-    pro: "20/day",
-    proPlus: "40/day",
+    starter: "150/mo",
+    builder: "300/mo",
+    pro: "600/mo",
+    proPlus: "1,200/mo",
     powerUser: "Unlimited",
     scope: "user",
   },
@@ -80,10 +80,10 @@ const aiFeatures: AIFeature[] = [
     name: "MLS Listing AI",
     description:
       "Generate MLS listing descriptions from live home specs. One-click PDF download for agents.",
-    starter: "5/day",
-    builder: "10/day",
-    pro: "20/day",
-    proPlus: "40/day",
+    starter: "150/mo",
+    builder: "300/mo",
+    pro: "600/mo",
+    proPlus: "1,200/mo",
     powerUser: "Unlimited",
     scope: "user",
   },
@@ -93,8 +93,8 @@ const aiFeatures: AIFeature[] = [
       "24/7 customer-facing FAQ and help chatbot. Answers instantly from your project data.",
     starter: "\u2014",
     builder: "\u2014",
-    pro: "250/day",
-    proPlus: "500/day",
+    pro: "7,500/mo",
+    proPlus: "15,000/mo",
     powerUser: "Same",
     scope: "org",
   },
@@ -104,8 +104,8 @@ const aiFeatures: AIFeature[] = [
       "External API access for integrations and automation. 60+ endpoints, scoped API keys, HMAC-signed webhooks.",
     starter: "\u2014",
     builder: "\u2014",
-    pro: "10K/day",
-    proPlus: "10K/day",
+    pro: "300K/mo",
+    proPlus: "300K/mo",
     powerUser: "Same",
     scope: "org",
   },
@@ -188,7 +188,7 @@ export default function UsageRatesPage() {
             <span className="text-cyan-400">&amp; AI Limits</span>
           </h1>
           <p className="text-lg text-white/70 max-w-2xl mx-auto">
-            Transparent daily limits for every AI feature, by plan. No surprises, no hidden caps. Know exactly what you get before you sign up.
+            Transparent monthly limits for every AI feature, by plan. No surprises, no hidden caps. Monthly limits give you flexibility &mdash; burst when you need it on heavy setup days, use less on quiet days. No daily caps holding you back.
           </p>
         </div>
       </section>
@@ -344,7 +344,7 @@ export default function UsageRatesPage() {
           </div>
 
           <p className="text-xs text-slate-600 text-center">
-            Per-user limits are per individual user per day. Org-wide pools are shared across all users. All limits reset daily at midnight UTC.
+            Per-user limits are per individual user per month. Org-wide pools are shared across all users. All limits reset on the 1st of each month (UTC).
           </p>
         </div>
       </section>
@@ -366,10 +366,10 @@ export default function UsageRatesPage() {
                 </span>
               </div>
               <h3 className="text-xl font-bold text-white mb-2">
-                3&times; limits for 30 days
+                3&times; monthly limits for 30 days
               </h3>
               <p className="text-sm text-slate-400">
-                Every AI feature runs at triple its normal daily limit for your
+                Every AI feature runs at triple its normal monthly limit for your
                 first 30 days. Import your data, train your team, set up your
                 workflows &mdash; without hitting caps during the most
                 critical window.
@@ -382,11 +382,11 @@ export default function UsageRatesPage() {
                 </span>
               </div>
               <h3 className="text-xl font-bold text-white mb-2">
-                3&times; limits for 60 days
+                3&times; monthly limits for 60 days
               </h3>
               <p className="text-sm text-slate-400">
                 Double the onboarding runway. Volume builders migrating
-                thousands of records get the full 60 days at 3&times; limits.
+                thousands of records get the full 60 days at 3&times; monthly limits.
                 Our CRM Migration Wizard pairs perfectly with the
                 extended boost.
               </p>
@@ -410,7 +410,7 @@ export default function UsageRatesPage() {
                 <p className="text-sm text-slate-300 mb-4">
                   For the person who lives in the app all day. The Power User
                   add-on gives one seat dramatically elevated AI limits &mdash;
-                  100 Foreman AI conversations/day, unlimited Blueprint AI and
+                  3,000 Foreman AI conversations/month, unlimited Blueprint AI and
                   Bid Import AI, and unlimited Punchlist &amp; MLS Listing AI.
                 </p>
                 <ul className="space-y-2 text-sm text-slate-400">
@@ -541,7 +541,7 @@ export default function UsageRatesPage() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-700 bg-slate-800/50 text-slate-400 text-sm mb-6">
             <Clock className="w-4 h-4" />
-            <span>All daily limits reset at midnight UTC</span>
+            <span>All monthly limits reset on the 1st of each month (UTC)</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-black mb-4">
             Ready to build smarter?
