@@ -38,7 +38,7 @@ const featureDetails = [
       "Gantt charts with critical path highlighting",
       "3-tier task dependency system with auto-cascade",
       "17 pre-built templates (7 foundation types)",
-      "4-tier cascade email notifications to subs",
+      "4-tier cascade email notifications to subs — delivered in under a second via Cloudflare",
       "Phase-based milestone tracking (5 phases)",
       "Weekday-only scheduling — auto-skips weekends",
       "Vendor magic links — no passwords for subs",

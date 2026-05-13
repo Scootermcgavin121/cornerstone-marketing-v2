@@ -55,7 +55,7 @@ const features = [
   { title: "4 Modular Template Types", desc: "Construction, Foundation, Permitting, and Inspection &mdash; four template categories that snap together." },
   { title: "Template Copy & Clone", desc: "Clone any template and customize per community. Changes never affect the original." },
   { title: "Vendor Management", desc: "Full vendor directory with trade categories, contacts, insurance tracking, and expiry alerts." },
-  { title: "Smart Cascade Notifications (Magic Links)", desc: "Automated scheduling emails when tasks are ready, when timelines shift, or when permits clear. Every email contains a secure magic link &mdash; vendors confirm or decline tasks in one click. No app, no account, no password. Biggest friction-killer for trade partners in the industry." },
+  { title: "Smart Cascade Notifications (Magic Links)", desc: "Automated scheduling emails when tasks are ready, when timelines shift, or when permits clear &mdash; delivered in under a second via Cloudflare's global edge network. Every email contains a secure magic link &mdash; vendors confirm or decline tasks in one click. No app, no account, no password. Biggest friction-killer for trade partners in the industry." },
   { title: "Daily & Weekly Digests", desc: "Automated summary emails for builders and vendors. Stay informed without checking the app." },
   { title: "In-App Messaging", desc: "Per-task messaging thread visible to all stakeholders. No more scattered texts." },
   { title: "Jobsite Notes & Photos", desc: "Photo and note uploads per task, timestamped. PMs upload, buyers see in real time." },
