@@ -75,7 +75,8 @@ export function Footer() {
                 { label: "Jobsite Command Center", href: "/qr" },
                 { label: "Foreman AI™", href: "/foreman" },
                 { label: "API Access", href: "/api-access" },
-                { label: "Pricing", href: "/#pricing" },
+                { label: "Pricing", href: "/pricing" },
+                { label: "Usage Rates", href: "/usage-rates" },
                 { label: "Beta Access", href: "/beta" },
               ].map((link) => (
                 <li key={link.href}>
