@@ -9,7 +9,12 @@
 
 param(
   [Parameter(Mandatory = $true)]
-  [string]$Mark
+  [string]$Mark,
+
+  # Optional live page URL on cornerstonepm.ai associated with this mark.
+  # Used for Wayback save + live HTML snapshot. If omitted the script will
+  # try a couple of slug-based guesses and skip silently if they 404.
+  [string]$PageUrl = ""
 )
 
 $ErrorActionPreference = "Continue"
@@ -80,15 +85,32 @@ Set-Content -Path (Join-Path $dir "mark-commit-history.txt") -Value $historyLine
 # JSON for programmatic use
 $allMatches | Sort-Object date | ConvertTo-Json -Depth 4 | Set-Content -Path (Join-Path $dir "mark-commits.json") -Encoding UTF8
 
-# Check Wayback for the mark's dedicated landing page if any exists
-$markUrlSlug = $markSlug -replace "-ai$", "-ai"
-$candidateUrls = @(
-  "https://www.cornerstonepm.ai/$markUrlSlug",
-  "https://www.cornerstonepm.ai/$markSlug"
-) | Sort-Object -Unique
+# Build list of candidate URLs to capture: explicit -PageUrl if given,
+# otherwise a couple of slug-based guesses.
+$candidateUrls = @()
+if ($PageUrl) {
+  $candidateUrls += $PageUrl
+}
+else {
+  $candidateUrls += "https://www.cornerstonepm.ai/$markSlug"
+}
+$candidateUrls = $candidateUrls | Sort-Object -Unique
+
+# Pre-check: only Wayback-save / snapshot URLs that return 200, so we don't
+# pollute the evidence folder with failed-URL noise.
+$validUrls = @()
+foreach ($u in $candidateUrls) {
+  try {
+    $head = Invoke-WebRequest -Uri $u -Method Head -UseBasicParsing -TimeoutSec 15 -ErrorAction Stop
+    if ($head.StatusCode -eq 200) { $validUrls += $u }
+  }
+  catch {
+    Write-Host ("  Skipping unreachable URL: " + $u)
+  }
+}
 
 $waybackResults = @()
-foreach ($u in $candidateUrls) {
+foreach ($u in $validUrls) {
   try {
     Write-Host "  Wayback save: $u"
     $r = Invoke-WebRequest -Uri ("https://web.archive.org/save/" + $u) -UseBasicParsing -MaximumRedirection 5 -TimeoutSec 90
@@ -96,17 +118,27 @@ foreach ($u in $candidateUrls) {
     $waybackResults += "$u -> $finalUrl (status $($r.StatusCode))"
   }
   catch {
-    $waybackResults += "$u -> FAILED: $($_.Exception.Message)"
+    # Retry once on timeout
+    Start-Sleep -Seconds 5
+    try {
+      $r = Invoke-WebRequest -Uri ("https://web.archive.org/save/" + $u) -UseBasicParsing -MaximumRedirection 5 -TimeoutSec 120
+      $waybackResults += "$u -> $($r.BaseResponse.ResponseUri.AbsoluteUri) (status $($r.StatusCode), retry)"
+    }
+    catch {
+      $waybackResults += "$u -> FAILED after retry: $($_.Exception.Message)"
+    }
   }
 }
-Set-Content -Path (Join-Path $dir "wayback-archive-urls.txt") -Value $waybackResults -Encoding UTF8
+if ($waybackResults.Count -gt 0) {
+  Set-Content -Path (Join-Path $dir "wayback-archive-urls.txt") -Value $waybackResults -Encoding UTF8
+}
 
-# Capture live HTML for any matching landing page
-foreach ($u in $candidateUrls) {
+# Capture live HTML for matching landing pages (only the valid ones)
+foreach ($u in $validUrls) {
   try {
     $r = Invoke-WebRequest -Uri ($u + "?_=" + (Get-Random)) -UseBasicParsing -TimeoutSec 30 -Headers @{"Cache-Control" = "no-cache" }
     if ($r.StatusCode -eq 200) {
-      $fname = ($u -replace "https?://", "" -replace "[^A-Za-z0-9]+", "_") + ".html"
+      $fname = "live-" + (Split-Path $u -Leaf) + ".html"
       $occ = ([regex]::Matches($r.Content, [regex]::Escape($Mark))).Count
       Set-Content -Path (Join-Path $dir $fname) -Value $r.Content -Encoding UTF8
       Write-Host ("  Live page: " + $u + " (" + $occ + " mark mentions, " + $r.Content.Length + " bytes)")
