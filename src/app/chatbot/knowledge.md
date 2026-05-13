@@ -3,7 +3,7 @@
 - **83 Foreman AI skills** (in-app agent that reads AND writes data - including product image search, image hosting, and AI-powered web scraping)
 - **30+ named webhook event types and growing** â€” typed payloads, HMAC signatures, delivery logs, and auto-retry. New events ship as the platform grows. Industry-leading depth (most competitors just say "webhooks exist")
 - 60+ external REST API endpoints
-- 6 built-in AI features: Foreman AI (83 skills), Blueprint AI, MLS Listing Agent, AI Support Agent, AI Jobsite Camera Events (webhook-driven, source-agnostic camera/sensor integration), Punchlist AI (voice-to-punch-list, industry first)
+- 7 built-in AI features: Foreman AI (83 skills), Blueprint AI, MLS Listing Agent, AI Support Agent, Punchlist AI (voice-to-punch-list, industry first), Bid Import AI (AI-powered vendor bid parsing), AI Jobsite Camera Events (webhook-driven, source-agnostic camera/sensor integration)
 - **Triple QR Code Ecosystem** - vendor jobsite check-in, community/PM check-in (timesheet-validated), and sales model home lead capture. Three QR codes, three audiences, one platform.
 - **Vendor Activity Map** - Google Maps view of every vendor check-in across every community, real-time (30-second refresh)
 - AI-powered CRM Migration Wizard (import from Buildertrend, JobTread, CoConstruct in one click - practically free at ~$0.01 per migration)
@@ -482,9 +482,9 @@ No other builder platform can do this. Sales CRMs don't have construction data. 
 Available on: Builder plan and above for the one-click version. Foreman AI version requires Pro plan.
 
 ---
-## AI Agents (4 Built-in)
+## AI Agents (5 Built-in)
 
-Cornerstone is the only construction management platform with FOUR built-in AI agents:
+Cornerstone is the only construction management platform with FIVE built-in AI agents:
 
 ### 1. Foreman AI - "Your AI Construction Agent"
 The flagship AI feature. Foreman AI is a full intelligent agent that lives inside the app at /agent. Builders type natural language commands and Foreman executes them - it doesn't just talk, it TAKES ACTION.
@@ -562,6 +562,29 @@ Pricing: Pro Plan - 5 analyses/month. Enterprise - 25/month.
 
 ### 4. AI Support Agent - "Always-On Help Desk"
 GPT-4o-mini chatbot on every page. Knows every feature, workflow, and role. Available on all plans including Starter.
+
+### 5. Bid Import AI - "Upload Any Bid. AI Does the Rest."
+AI-powered vendor bid import that eliminates manual data entry from vendor quotes. Part of the Purchasing module.
+
+**How it works:**
+1. Upload any vendor's bid spreadsheet (Excel, CSV - no specific template required)
+2. AI reads the file and fuzzy-matches line items to your scopes and parts automatically
+3. Preview everything before importing - see matches, mismatches, and fix with one click
+4. One click to import - creates proper vendor pricing records linked to scopes and communities
+
+**Why it's a game-changer:**
+- **No more manual data entry from vendor quotes** - upload the spreadsheet and AI handles the rest
+- **Fuzzy matching handles real-world vendor naming** - "2x4 SPF Stud" auto-matches to "Framing Lumber", "3/4 OSB" matches to "Sheathing". Different vendors call the same things different names; the AI figures it out.
+- **Cross-scope penalty system** - AI won't accidentally put "Drywall labor" into the "Electrical" scope. Smart matching stays within the right trade.
+- **Multiple import modes** - takeoff-only, pricing-only, or takeoff+pricing combined. Match the format you actually received.
+- **Re-import without duplicating** - corrected bids update existing line items instead of stacking duplicates
+- **Works with any bid format** - no required template. Vendors send bids in every conceivable format; this handles them all.
+
+**What competitors offer:** Manual data entry. Open the vendor's PDF or Excel, then retype every line item into the system. One. At. A. Time.
+
+**What Cornerstone offers:** Upload the file. AI matches it. Review. Import. Done. Saves hours per week for purchasing agents.
+
+Available on: Builder plan and above.
 
 ---
 
