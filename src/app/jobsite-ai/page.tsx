@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 
 export const metadata = {
-  title: "Jobsite AI™ — Vendor Presence Detection for Home Builders | Cornerstone PM",
+  title: "Jobsite AI™ — Vendor Presence Detection for Home Builders | Cornerstone PM™",
   description:
     "Jobsite AI™ detects when a vendor arrives on site — from any camera, doorbell, gate, GPS, or check-in app — and auto-flips the matching scheduled task to In Progress. Camera-agnostic, sensor-agnostic.",
   alternates: { canonical: "https://www.cornerstonepm.ai/jobsite-ai" },
@@ -283,7 +283,7 @@ export default function JobsiteAIPage() {
                     { name: "JobTread", val: "Manual check-ins only" },
                     { name: "Procore", val: "Manual check-ins only" },
                     { name: "CoConstruct", val: "Manual check-ins only" },
-                    { name: "Cornerstone PM", val: "Auto-detect from any source", highlight: true },
+                    { name: "Cornerstone PM™", val: "Auto-detect from any source", highlight: true },
                   ].map((c) => (
                     <div
                       key={c.name}

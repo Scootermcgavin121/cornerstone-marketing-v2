@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "How to Choose Home Builder Software in 7 Steps — Cornerstone PM Blog",
+  title: "How to Choose Home Builder Software in 7 Steps — Cornerstone PM™ Blog",
   description:
     "How to choose home builder software: 7-step decision framework covering business model fit, AI capabilities, implementation cost, and platform integrations.",
   alternates: {
@@ -83,7 +83,7 @@ const imageObjectSchema = {
   contentUrl:
     "https://www.cornerstonepm.ai/blog/home-builder-software-buyer-guide.png",
   description: "Home builder team using a 7-step framework to choose home builder software",
-  creditText: "Cornerstone PM",
+  creditText: "Cornerstone PM™",
 };
 
 export default function HowToChoomeHomeBuilderSoftwarePage() {
@@ -275,7 +275,7 @@ export default function HowToChoomeHomeBuilderSoftwarePage() {
             <p>
               After steps 1–5, you should be able to cut to three credible options. A balanced shortlist
               might include one enterprise incumbent (NEWSTAR, BuildPro), one mid-market tool (Buildertrend),
-              and one modern purpose-built platform (Cornerstone PM). Three vendors keeps the comparison
+              and one modern purpose-built platform (Cornerstone PM™). Three vendors keeps the comparison
               honest and gives you leverage in pricing conversations.
             </p>
             <p>
@@ -358,7 +358,7 @@ export default function HowToChoomeHomeBuilderSoftwarePage() {
 
         <div className="mt-12 p-6 rounded-2xl border border-emerald-500/20 bg-emerald-500/5">
           <h3 className="text-lg font-bold text-white mb-2">
-            Ready to see Cornerstone PM with your data?
+            Ready to see Cornerstone PM™ with your data?
           </h3>
           <p className="text-slate-400 text-sm mb-4">
             Beta access is open now for production home builders. No implementation fee, no IT setup, no

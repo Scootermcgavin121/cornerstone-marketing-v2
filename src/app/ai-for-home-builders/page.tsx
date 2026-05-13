@@ -4,7 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 export const metadata = {
-  title: "AI for Home Builders | Cornerstone PM",
+  title: "AI for Home Builders | Cornerstone PM™",
   description:
     "Purpose-built AI for home builders. Foreman AI manages your scheduling, purchasing, vendor bids, design center, and sales pipeline — in plain English.",
 };

@@ -5,7 +5,7 @@ import { Navbar } from "@/components/Navbar";
 import { VideoPlayer } from "@/components/VideoPlayer";
 
 export const metadata = {
-  title: "AI Material Takeoff for Home Builders | Cornerstone PM",
+  title: "AI Material Takeoff for Home Builders | Cornerstone PM™",
   description:
     "AI material takeoff for home builders. Upload a PDF floor plan and get 130+ material scopes &mdash; rooms, fixtures, flooring, drywall, roofing &mdash; extracted in under 60 seconds.",
   alternates: { canonical: "https://www.cornerstonepm.ai/ai-takeoff" },

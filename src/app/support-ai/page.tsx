@@ -5,9 +5,9 @@ import { Footer } from "@/components/Footer";
 import { FAQSection, type FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
-  title: "AI Support Agent — Instant Answers, Zero Wait Time | Cornerstone PM",
+  title: "AI Support Agent — Instant Answers, Zero Wait Time | Cornerstone PM™",
   description:
-    "AI Support Agent is the always-on AI knowledge agent built into Cornerstone PM. Knows every feature, workflow, and permission. Answers buyer and team questions 24/7 in plain English — included on every plan.",
+    "AI Support Agent is the always-on AI knowledge agent built into Cornerstone PM™. Knows every feature, workflow, and permission. Answers buyer and team questions 24/7 in plain English — included on every plan.",
   alternates: { canonical: "https://www.cornerstonepm.ai/support-ai" },
 };
 
@@ -37,7 +37,7 @@ const examples = [
 ];
 
 const features = [
-  { title: "Trained on Cornerstone PM", desc: "Not a generic LLM. AI Support Agent is grounded in Cornerstone's actual feature documentation, workflows, and permission matrix — so the answers you get match the app you're actually using." },
+  { title: "Trained on Cornerstone PM™", desc: "Not a generic LLM. AI Support Agent is grounded in Cornerstone's actual feature documentation, workflows, and permission matrix — so the answers you get match the app you're actually using." },
   { title: "Every Feature Documented", desc: "Construction scheduling, sales pipeline, design center, purchasing, bidding, options engine, permitting, takeoffs, MLS listings, AI agents — all covered." },
   { title: "Workflow-Aware", desc: "Doesn't just describe a button — explains the multi-step workflows. \"Lock structural options → auto-budget → send to bid → award → PO\" is one conversation, not a wiki crawl." },
   { title: "Permission-Aware", desc: "Knows the role-permission matrix. \"Can a sales counselor edit base pricing?\" returns the actual answer for your tenant — not a generic doc page." },
@@ -54,7 +54,7 @@ const features = [
 const faq: FAQItem[] = [
   {
     q: "What is the AI Support Agent?",
-    a: "AI Support Agent is the always-on AI knowledge agent built into Cornerstone PM. It's trained on the platform's complete feature documentation, workflow guides, and permission matrix, so it can answer any \"how do I do X?\" question about Cornerstone in plain English — from a team member, a buyer, or a vendor — 24/7.",
+    a: "AI Support Agent is the always-on AI knowledge agent built into Cornerstone PM™. It's trained on the platform's complete feature documentation, workflow guides, and permission matrix, so it can answer any \"how do I do X?\" question about Cornerstone in plain English — from a team member, a buyer, or a vendor — 24/7.",
   },
   {
     q: "How is this different from a chatbot like ChatGPT?",
@@ -66,7 +66,7 @@ const faq: FAQItem[] = [
   },
   {
     q: "What kinds of questions can it answer?",
-    a: "Anything documented in Cornerstone PM: setting up vendors, creating bid requests, locking structural options, generating MLS listings, configuring permitting sequences, managing the options engine, running design center, the auto-budget flow, role permissions, notification settings, and the full purchasing → bid → PO pipeline. If a feature exists, AI Support Agent can explain it.",
+    a: "Anything documented in Cornerstone PM™: setting up vendors, creating bid requests, locking structural options, generating MLS listings, configuring permitting sequences, managing the options engine, running design center, the auto-budget flow, role permissions, notification settings, and the full purchasing → bid → PO pipeline. If a feature exists, AI Support Agent can explain it.",
   },
   {
     q: "Does it answer buyer questions too?",
@@ -108,7 +108,7 @@ export default function SupportAiPage() {
             Every feature, every workflow, every permission &mdash; answered in seconds.
           </p>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-10">
-            Trained on Cornerstone PM. Lives on every page. Helps your team, your buyers, and your trades 24/7. Included on every plan.
+            Trained on Cornerstone PM™. Lives on every page. Helps your team, your buyers, and your trades 24/7. Included on every plan.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/beta" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-cyan-400 text-slate-900 font-bold text-lg hover:from-cyan-400 hover:to-cyan-300 shadow-lg shadow-cyan-500/25 transition-all duration-200">
@@ -203,7 +203,7 @@ export default function SupportAiPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-black mb-3">What the AI Support Agent knows</h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">Trained on the full Cornerstone PM platform. Twelve capabilities, no add-ons.</p>
+            <p className="text-slate-400 max-w-2xl mx-auto">Trained on the full Cornerstone PM™ platform. Twelve capabilities, no add-ons.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {features.map((f) => (

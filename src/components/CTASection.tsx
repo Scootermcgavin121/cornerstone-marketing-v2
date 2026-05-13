@@ -31,7 +31,7 @@ export function CTASection() {
         </h2>
 
         <p className="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed">
-          Cornerstone PM was built by a builder who got tired of wrestling with enterprise software.
+          Cornerstone PM™ was built by a builder who got tired of wrestling with enterprise software.
           Request beta access today — no credit card, no catch.
         </p>
 

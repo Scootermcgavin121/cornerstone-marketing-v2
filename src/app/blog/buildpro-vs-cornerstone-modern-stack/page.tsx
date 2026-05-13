@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
@@ -7,13 +7,13 @@ import { ArrowLeft } from "lucide-react";
 
 const heroImage = "/blog/buildpro-vs-modern-stack.png";
 const heroImageAlt =
-  "BuildPro legacy desktop home builder software next to Cornerstone PM modern web-native stack";
+  "BuildPro legacy desktop home builder software next to Cornerstone PM™ modern web-native stack";
 
 export const metadata: Metadata = {
   title:
-    "BuildPro vs Cornerstone PM: Why Production Builders Are Modernizing — Cornerstone PM Blog",
+    "BuildPro vs Cornerstone PM™: Why Production Builders Are Modernizing — Cornerstone PM™ Blog",
   description:
-    "BuildPro vs Cornerstone PM: how the modern web-native stack compares to BuildPro for small-to-mid production home builders.",
+    "BuildPro vs Cornerstone PM™: how the modern web-native stack compares to BuildPro for small-to-mid production home builders.",
   alternates: {
     canonical:
       "https://www.cornerstonepm.ai/blog/buildpro-vs-cornerstone-modern-stack",
@@ -53,7 +53,7 @@ export default function BuildproVsCornerstonePage() {
               "@type": "ImageObject",
               contentUrl: `https://www.cornerstonepm.ai${heroImage}`,
               description: heroImageAlt,
-              creditText: "Cornerstone PM",
+              creditText: "Cornerstone PM™",
             }),
           }}
         />
@@ -72,7 +72,7 @@ export default function BuildproVsCornerstonePage() {
             Comparison
           </span>
           <h1 className="text-4xl sm:text-5xl font-black text-white leading-tight mb-4">
-            BuildPro vs Cornerstone PM: Why Production Builders Are Modernizing
+            BuildPro vs Cornerstone PM™: Why Production Builders Are Modernizing
           </h1>
           <div className="flex items-center gap-3 text-sm text-slate-500">
             <span>May 8, 2026</span>
@@ -85,7 +85,7 @@ export default function BuildproVsCornerstonePage() {
 
           <p className="text-xl text-slate-300 font-light">
             BuildPro is a Windows-based home builder platform built for an era when Citrix was
-            infrastructure and mobile access meant a laptop in a job trailer. Cornerstone PM is a
+            infrastructure and mobile access meant a laptop in a job trailer. Cornerstone PM™ is a
             web-native platform built for the way production builders operate today — from a phone
             at the lot, a tablet in the design center, or a browser at the kitchen table at 10 PM.
           </p>
@@ -120,7 +120,7 @@ export default function BuildproVsCornerstonePage() {
             remount a VPN to look up a buyer&apos;s option selections during a design appointment.
           </p>
           <p>
-            Cornerstone PM is a standard web app. It works in any modern browser on any device —
+            Cornerstone PM™ is a standard web app. It works in any modern browser on any device —
             desktop, tablet, iPhone, Android — with no client software, no VPN, and no IT
             configuration required. That&apos;s not a marketing bullet; it&apos;s a meaningful
             operational difference for small-to-mid production builders.
@@ -136,7 +136,7 @@ export default function BuildproVsCornerstonePage() {
             than building it into a web-native stack from day one.
           </p>
           <p>
-            Cornerstone PM ships five native AI agents, none of which require a separate
+            Cornerstone PM™ ships five native AI agents, none of which require a separate
             subscription or third-party tool:
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
@@ -189,7 +189,7 @@ export default function BuildproVsCornerstonePage() {
             documented public REST API that your team or a developer can call independently.
           </p>
           <p>
-            Cornerstone PM ships a public REST API with full documentation. Every core entity —
+            Cornerstone PM™ ships a public REST API with full documentation. Every core entity —
             schedules, vendors, lots, communities, options, bids — is accessible and modifiable
             via API. The platform also supports 30+ named webhook events (catalog growing) with typed payloads and
             HMAC signatures, so you can wire in your own tools (SMS, voice, reporting dashboards)
@@ -276,7 +276,7 @@ export default function BuildproVsCornerstonePage() {
             See the modern stack in action.
           </h3>
           <p className="text-slate-400 text-sm mb-4">
-            Cornerstone PM is in free beta. Two years free for early adopters — web-native, mobile-ready,
+            Cornerstone PM™ is in free beta. Two years free for early adopters — web-native, mobile-ready,
             AI built in, no IT infrastructure required.
           </p>
           <Link

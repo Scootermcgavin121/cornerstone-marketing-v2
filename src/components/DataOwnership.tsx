@@ -40,7 +40,7 @@ export function DataOwnership() {
             <div className="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl shadow-black/60">
               <Image
                 src="/mockups/feature-backups.jpg"
-                alt="Cornerstone PM Backups & Data Export interface — one-click JSON or CSV download of your entire database"
+                alt="Cornerstone PM™ Backups & Data Export interface — one-click JSON or CSV download of your entire database"
                 width={1200}
                 height={760}
                 className="w-full h-auto block"

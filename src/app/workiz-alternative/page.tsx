@@ -3,14 +3,14 @@ import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageT
 import type { FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
-  title: "Workiz Alternative for Home Builders | Cornerstone PM",
+  title: "Workiz Alternative for Home Builders | Cornerstone PM™",
   description:
-    "Workiz is built for field service businesses. Cornerstone PM is the alternative for home builders -- AI agents (Pro $499/mo), options engine, and multi-community management from $149/mo.",
+    "Workiz is built for field service businesses. Cornerstone PM™ is the alternative for home builders -- AI agents (Pro $499/mo), options engine, and multi-community management from $149/mo.",
   alternates: { canonical: "https://www.cornerstonepm.ai/workiz-alternative" },
 };
 
 const comparisonRows: ComparisonRow[] = [
-  { feature: "Built for home builders", cornerstone: true, competitor: false, note: "Workiz is built for locksmith, appliance repair, carpet cleaning, and other field service businesses. Cornerstone PM is purpose-built for home builders -- production, semi-custom, and custom -- with lot management, options engine, and multi-community pipelines." },
+  { feature: "Built for home builders", cornerstone: true, competitor: false, note: "Workiz is built for locksmith, appliance repair, carpet cleaning, and other field service businesses. Cornerstone PM™ is purpose-built for home builders -- production, semi-custom, and custom -- with lot management, options engine, and multi-community pipelines." },
   { feature: "Structural options engine", cornerstone: true, competitor: false, note: "Pre-sale floorplan options pricing matrix -- Cornerstone Builder ($299/mo). Not a field service concept." },
   { feature: "Floorplan pricing matrix", cornerstone: true, competitor: false, note: "Per-community floorplan pricing. Cornerstone Builder+." },
   { feature: "Multi-community lot management", cornerstone: true, competitor: false, note: "Native multi-community pipeline. Workiz is job-centric." },
@@ -44,10 +44,10 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What's the best Workiz alternative for home builders?",
-    a: "Cornerstone PM is purpose-built for home builders. It covers scheduling, client portal, and document management -- plus a structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, native AI agents (Foreman AI 83+ skills on Pro $499/mo, Blueprint AI), 30+ named webhook events (Pro+), and a public REST API.",
+    a: "Cornerstone PM™ is purpose-built for home builders. It covers scheduling, client portal, and document management -- plus a structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, native AI agents (Foreman AI 83+ skills on Pro $499/mo, Blueprint AI), 30+ named webhook events (Pro+), and a public REST API.",
   },
   {
-    q: "Can I migrate from Workiz to Cornerstone PM?",
+    q: "Can I migrate from Workiz to Cornerstone PM™?",
     a: "Yes. The AI Migration Wizard reads your Workiz export, auto-detects column mapping, and runs 23 import endpoints. Most migrations complete in under a day.",
   },
   {
@@ -55,7 +55,7 @@ const faqItems: FAQItem[] = [
     a: "Starter ($149/mo) includes construction scheduling, subcontractor assignment, permits pipeline, homeowner progress portal, and the AI Support Agent -- unlimited users. Options engine and design center are on Builder ($299/mo). Foreman AI + Blueprint AI are on Pro ($499/mo). REST API + BYOA are on Pro+ ($599/mo).",
   },
   {
-    q: "Does Cornerstone PM have a free trial?",
+    q: "Does Cornerstone PM™ have a free trial?",
     a: "Yes. The 2-year free beta is open to the first 100 home builders -- no credit card, no contract, no implementation fee.",
   },
 ];
@@ -68,14 +68,14 @@ export default function WorkizAlternativePage() {
       heroLine1="Workiz is for field service."
       heroLine2="You build homes."
       accentColor="rose"
-      heroParagraph="Workiz is built for locksmiths, appliance repair, and field service businesses. Cornerstone PM is the alternative for home builders -- structural options engine (Builder $299/mo), floorplan pricing, 83 AI skills (Pro $499/mo), and multi-community management from $149/mo."
+      heroParagraph="Workiz is built for locksmiths, appliance repair, and field service businesses. Cornerstone PM™ is the alternative for home builders -- structural options engine (Builder $299/mo), floorplan pricing, 83 AI skills (Pro $499/mo), and multi-community management from $149/mo."
       secondaryCTA={{ text: "See full comparison", href: "/compare" }}
-      comparisonSubtitle="Workiz vs Cornerstone PM -- field service platform vs. home-builder platform."
+      comparisonSubtitle="Workiz vs Cornerstone PM™ -- field service platform vs. home-builder platform."
       comparisonRows={comparisonRows}
       trademarkName="Workiz"
-      whySwitchHeadline="What home builders get with Cornerstone PM"
+      whySwitchHeadline="What home builders get with Cornerstone PM™"
       whySwitchCards={whySwitchCards}
-      honestAngle="If you're a field service business -- locksmith, appliance repair, carpet cleaning -- Workiz is a solid tool. This page is for home builders who found Workiz through a search. You need a different platform, and Cornerstone PM is built for your workflows."
+      honestAngle="If you're a field service business -- locksmith, appliance repair, carpet cleaning -- Workiz is a solid tool. This page is for home builders who found Workiz through a search. You need a different platform, and Cornerstone PM™ is built for your workflows."
       showMigrationCTA={true}
       migrationHeadline="Moving from Workiz? Bring your contacts and vendors."
       migrationDesc="Export your Workiz data, drop it in our wizard, and AI auto-maps contacts, vendors, and job history. Dry-run before you commit."

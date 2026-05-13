@@ -3,14 +3,14 @@ import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageT
 import type { FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
-  title: "Raken Alternative for Home Builders | Cornerstone PM",
+  title: "Raken Alternative for Home Builders | Cornerstone PM™",
   description:
-    "Raken focuses on daily logs and field reporting. Cornerstone PM is the full alternative for home builders -- AI agents (Pro $499/mo), options engine, scheduling, purchasing, and 30+ webhook events from $149/mo.",
+    "Raken focuses on daily logs and field reporting. Cornerstone PM™ is the full alternative for home builders -- AI agents (Pro $499/mo), options engine, scheduling, purchasing, and 30+ webhook events from $149/mo.",
   alternates: { canonical: "https://www.cornerstonepm.ai/raken-alternative" },
 };
 
 const comparisonRows: ComparisonRow[] = [
-  { feature: "Full construction PM platform", cornerstone: true, competitor: false, note: "Raken is primarily a daily log, field reporting, and time-tracking tool. Cornerstone PM is a full home-builder platform: scheduling, purchasing, bid management, homeowner portal, options engine, and more." },
+  { feature: "Full construction PM platform", cornerstone: true, competitor: false, note: "Raken is primarily a daily log, field reporting, and time-tracking tool. Cornerstone PM™ is a full home-builder platform: scheduling, purchasing, bid management, homeowner portal, options engine, and more." },
   { feature: "Built for home builders", cornerstone: true, competitor: false, note: "Raken targets commercial and residential GCs for field documentation. Cornerstone is purpose-built for home builders -- production, semi-custom, and custom." },
   { feature: "Structural options engine", cornerstone: true, competitor: false, note: "Pre-sale floorplan options pricing matrix -- Cornerstone Builder ($299/mo). Not a daily log feature." },
   { feature: "Floorplan pricing matrix", cornerstone: true, competitor: false, note: "Per-community floorplan pricing for home builders. Cornerstone Builder+." },
@@ -35,34 +35,34 @@ const comparisonRows: ComparisonRow[] = [
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
-  { title: "Beyond field logs: full PM platform", desc: "Raken is excellent for daily logs and field reporting. Cornerstone PM includes all of that plus scheduling (Starter $149), homeowner portal, purchasing, bid management, options engine, and design center (Builder $299). One platform for the entire build." },
+  { title: "Beyond field logs: full PM platform", desc: "Raken is excellent for daily logs and field reporting. Cornerstone PM™ includes all of that plus scheduling (Starter $149), homeowner portal, purchasing, bid management, options engine, and design center (Builder $299). One platform for the entire build." },
   { title: "AI built in -- Pro $499/mo", desc: "Foreman AI reads AND writes your data: POs, options, SOWs, bid comparisons, image search, web scraping. Blueprint AI converts floor plans to takeoffs in 60 seconds. No other home-builder platform comes close." },
   { title: "30+ webhooks + public API (Pro+)", desc: "30+ named webhook events with typed payload schemas and HMAC signatures. Public REST API with 59 endpoints -- both on Pro+ ($599/mo). Wire SMS, voice, or your own AI agent to schedule changes, vendor notifications, and bid events." },
 ];
 
 const faqItems: FAQItem[] = [
   {
-    q: "How is Cornerstone PM different from Raken?",
-    a: "Raken is primarily a field reporting and daily log tool -- it's great at capturing jobsite activity, time tracking, and superintendent notes. Cornerstone PM is a full construction management platform for home builders: scheduling, purchasing, bid management, homeowner portal, structural options engine (Builder $299/mo), design center, multi-community pipelines, and native AI agents (Foreman AI on Pro $499/mo). If you need daily logs only, Raken is fine. If you need to run the whole build, use Cornerstone.",
+    q: "How is Cornerstone PM™ different from Raken?",
+    a: "Raken is primarily a field reporting and daily log tool -- it's great at capturing jobsite activity, time tracking, and superintendent notes. Cornerstone PM™ is a full construction management platform for home builders: scheduling, purchasing, bid management, homeowner portal, structural options engine (Builder $299/mo), design center, multi-community pipelines, and native AI agents (Foreman AI on Pro $499/mo). If you need daily logs only, Raken is fine. If you need to run the whole build, use Cornerstone.",
   },
   {
     q: "What's the best Raken alternative for home builders?",
-    a: "Cornerstone PM provides the project management backbone Raken doesn't offer. It includes scheduling (Gantt with dependencies, cascade scheduling from Starter $149/mo), purchasing and POs, bid management with vendor portal, homeowner portal, structural options engine (Builder $299/mo), native AI agents (Foreman AI 83+ skills on Pro $499/mo, Blueprint AI), 30+ named webhook events (Pro+), and a public REST API -- built specifically for home builders.",
+    a: "Cornerstone PM™ provides the project management backbone Raken doesn't offer. It includes scheduling (Gantt with dependencies, cascade scheduling from Starter $149/mo), purchasing and POs, bid management with vendor portal, homeowner portal, structural options engine (Builder $299/mo), native AI agents (Foreman AI 83+ skills on Pro $499/mo, Blueprint AI), 30+ named webhook events (Pro+), and a public REST API -- built specifically for home builders.",
   },
   {
-    q: "Can I migrate from Raken to Cornerstone PM?",
+    q: "Can I migrate from Raken to Cornerstone PM™?",
     a: "Yes. The AI Migration Wizard reads your Raken export, auto-detects column mapping, and runs 23 import endpoints. Most migrations complete in under a day.",
   },
   {
-    q: "Does Cornerstone PM have daily log capabilities like Raken?",
-    a: "Cornerstone PM includes basic daily log capabilities for superintendents. For production builders who need detailed daily log compliance reporting (common in commercial construction or union environments), Raken is stronger. For residential home builders, Cornerstone's integrated scheduling and vendor notification system typically replaces the need for a separate daily log tool.",
+    q: "Does Cornerstone PM™ have daily log capabilities like Raken?",
+    a: "Cornerstone PM™ includes basic daily log capabilities for superintendents. For production builders who need detailed daily log compliance reporting (common in commercial construction or union environments), Raken is stronger. For residential home builders, Cornerstone's integrated scheduling and vendor notification system typically replaces the need for a separate daily log tool.",
   },
   {
     q: "What does $149/mo Cornerstone Starter include?",
     a: "Starter ($149/mo) includes construction scheduling, subcontractor assignment, permits pipeline, homeowner progress portal, and the AI Support Agent -- unlimited users. Options engine and design center are on Builder ($299/mo). Foreman AI + Blueprint AI are on Pro ($499/mo). REST API + BYOA are on Pro+ ($599/mo).",
   },
   {
-    q: "Does Cornerstone PM have a free trial?",
+    q: "Does Cornerstone PM™ have a free trial?",
     a: "Yes. The 2-year free beta is open to the first 100 home builders -- no credit card, no contract, no implementation fee.",
   },
 ];
@@ -75,9 +75,9 @@ export default function RakenAlternativePage() {
       heroLine1="Daily logs are just the start."
       heroLine2="Manage the whole build."
       accentColor="amber"
-      heroParagraph="Raken is a field reporting and daily log tool. Cornerstone PM is the full Raken alternative for home builders -- scheduling from $149/mo, options engine (Builder $299/mo), 83 AI skills (Pro $499/mo), and a public REST API (Pro+)."
+      heroParagraph="Raken is a field reporting and daily log tool. Cornerstone PM™ is the full Raken alternative for home builders -- scheduling from $149/mo, options engine (Builder $299/mo), 83 AI skills (Pro $499/mo), and a public REST API (Pro+)."
       secondaryCTA={{ text: "See full comparison", href: "/compare" }}
-      comparisonSubtitle="Raken vs Cornerstone PM -- field log tool vs. full home-builder platform."
+      comparisonSubtitle="Raken vs Cornerstone PM™ -- field log tool vs. full home-builder platform."
       comparisonRows={comparisonRows}
       trademarkName="Raken"
       whySwitchHeadline="Why home builders need more than daily logs"

@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Your Home Builder Sales Pipeline Is Losing You Buyers — Cornerstone PM Blog",
+  title: "Your Home Builder Sales Pipeline Is Losing You Buyers — Cornerstone PM™ Blog",
   description:
     "Most home builders don't have a real sales pipeline — they have a spreadsheet and a gut feeling. Here's how tracking prospects the right way closes more contracts and wastes less time.",
   openGraph: {
@@ -177,11 +177,11 @@ export default function NewHomeSalesPipelinePost() {
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            How Cornerstone PM connects sales to production
+            How Cornerstone PM™ connects sales to production
           </h2>
 
           <p>
-            Cornerstone PM&apos;s sales pipeline is built for how home builders actually sell — with
+            Cornerstone PM™&apos;s sales pipeline is built for how home builders actually sell — with
             lot assignments, plan selections, and buyer information connected directly to the
             production side of the platform. When a buyer moves from &quot;contract pending&quot; to
             &quot;under contract,&quot; their lot is already in the build schedule. Their design
@@ -214,7 +214,7 @@ export default function NewHomeSalesPipelinePost() {
 
         <div className="mt-12 p-6 rounded-2xl border border-indigo-500/20 bg-indigo-500/5">
           <h3 className="text-lg font-bold text-white mb-2">
-            See how Cornerstone PM manages your sales pipeline from first inquiry to close
+            See how Cornerstone PM™ manages your sales pipeline from first inquiry to close
           </h3>
           <p className="text-slate-400 text-sm mb-4">
             Join the beta — free for 2 years for early adopters.

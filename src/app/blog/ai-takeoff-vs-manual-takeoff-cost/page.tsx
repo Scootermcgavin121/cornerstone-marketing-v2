@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "AI Material Takeoff vs Manual Takeoff: True Cost Analysis — Cornerstone PM Blog",
+  title: "AI Material Takeoff vs Manual Takeoff: True Cost Analysis — Cornerstone PM™ Blog",
   description:
     "AI material takeoff vs manual estimating: time savings, error rates, cost-per-takeoff comparison for residential home builders running plan repeats.",
   alternates: {
@@ -71,7 +71,7 @@ export default function AiTakeoffVsManualPage() {
             >
               Blueprint AI
             </Link>{" "}
-            is how Cornerstone PM solves this for production home builders.
+            is how Cornerstone PM™ solves this for production home builders.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
@@ -137,7 +137,7 @@ export default function AiTakeoffVsManualPage() {
             pricing. The cost per run: fractions of a cent in compute — effectively <strong className="text-white">$0</strong> compared to the estimator alternative.
           </p>
           <p>
-            The practical ceiling on AI takeoff cost is the Cornerstone PM subscription itself, which covers
+            The practical ceiling on AI takeoff cost is the Cornerstone PM™ subscription itself, which covers
             Blueprint AI as a bundled feature — not a per-run add-on. You&apos;re not paying $99/month extra
             for the AI feature like some platforms charge. It&apos;s included.
           </p>

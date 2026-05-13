@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Why Permits Are Stalling Your Build Schedule — Cornerstone PM Blog",
+  title: "Why Permits Are Stalling Your Build Schedule — Cornerstone PM™ Blog",
   description:
     "Permit delays are the silent schedule killer for home builders. Here's how top builders track permits, avoid costly gaps, and keep construction moving.",
   openGraph: {
@@ -147,7 +147,7 @@ export default function PermittingPost() {
           </p>
 
           <p>
-            Cornerstone PM includes a permitting tracker built into the same platform as your
+            Cornerstone PM™ includes a permitting tracker built into the same platform as your
             construction schedule, sales pipeline, and buyer portal. When a permit clears, the
             system knows — and your schedule responds. No more chasing city hall with one hand
             and texting your sub with the other.
@@ -172,7 +172,7 @@ export default function PermittingPost() {
 
         <div className="mt-12 p-6 rounded-2xl border border-cyan-500/20 bg-cyan-500/5">
           <h3 className="text-lg font-bold text-white mb-2">
-            See how Cornerstone PM tracks permits alongside your build schedule
+            See how Cornerstone PM™ tracks permits alongside your build schedule
           </h3>
           <p className="text-slate-400 text-sm mb-4">
             Join the beta — free for 2 years for early adopters.

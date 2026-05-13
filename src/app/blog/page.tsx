@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Blog &mdash; Cornerstone PM",
+  title: "Blog &mdash; Cornerstone PM™",
   description: "Insights for home builders on scheduling, technology, and running a smarter building operation.",
 };
 
@@ -62,9 +62,9 @@ const posts = [
   },
   {
     slug: "buildpro-vs-cornerstone-modern-stack",
-    title: "BuildPro vs Cornerstone PM: Why Production Builders Are Modernizing",
+    title: "BuildPro vs Cornerstone PM™: Why Production Builders Are Modernizing",
     excerpt:
-      "BuildPro is Windows-Citrix. Cornerstone PM is web-native, mobile-ready, and ships with five built-in AI agents. Here's what that stack difference actually means for a production builder doing 5–200 homes per year.",
+      "BuildPro is Windows-Citrix. Cornerstone PM™ is web-native, mobile-ready, and ships with five built-in AI agents. Here's what that stack difference actually means for a production builder doing 5–200 homes per year.",
     date: "May 8, 2026",
     readTime: "6 min read",
     tag: "Comparison",
@@ -82,9 +82,9 @@ const posts = [
   },
   {
     slug: "buildertrend-vs-cornerstone-feature-comparison",
-    title: "Buildertrend vs Cornerstone PM: Feature-by-Feature Comparison",
+    title: "Buildertrend vs Cornerstone PM™: Feature-by-Feature Comparison",
     excerpt:
-      "Buildertrend and Cornerstone PM both serve home builders — but their feature sets reflect fundamentally different priorities. Here's a category-by-category breakdown: Scheduling, Sales, Purchasing, Design Center, AI Agents, and API & Data.",
+      "Buildertrend and Cornerstone PM™ both serve home builders — but their feature sets reflect fundamentally different priorities. Here's a category-by-category breakdown: Scheduling, Sales, Purchasing, Design Center, AI Agents, and API & Data.",
     date: "May 6, 2026",
     readTime: "7 min read",
     tag: "Comparison",
@@ -112,9 +112,9 @@ const posts = [
   },
   {
     slug: "migrating-from-buildertrend-to-cornerstone",
-    title: "Migrating from Buildertrend to Cornerstone PM: Step-by-Step Guide",
+    title: "Migrating from Buildertrend to Cornerstone PM™: Step-by-Step Guide",
     excerpt:
-      "Most production home builders can migrate from Buildertrend to Cornerstone PM in 3–5 business days. Here's the full step-by-step: data export, community setup, schedule templates, vendor migration, and team onboarding.",
+      "Most production home builders can migrate from Buildertrend to Cornerstone PM™ in 3–5 business days. Here's the full step-by-step: data export, community setup, schedule templates, vendor migration, and team onboarding.",
     date: "May 3, 2026",
     readTime: "7 min read",
     tag: "Migration Guide",
@@ -124,7 +124,7 @@ const posts = [
     slug: "home-builder-software-buyer-guide-2026",
     title: "Home Builder Software Buyer's Guide (2026)",
     excerpt:
-      "Complete 2026 decision framework for home builder software. Compare NEWSTAR, BuildPro, Buildertrend, and Cornerstone PM across features, AI capabilities, implementation cost, and fit for your builder size.",
+      "Complete 2026 decision framework for home builder software. Compare NEWSTAR, BuildPro, Buildertrend, and Cornerstone PM™ across features, AI capabilities, implementation cost, and fit for your builder size.",
     date: "May 1, 2026",
     readTime: "9 min read",
     tag: "Buyer's Guide",
@@ -154,7 +154,7 @@ const posts = [
     slug: "jobtread-alternative",
     title: "Looking for a JobTread Alternative? Here's What Home Builders Should Know",
     excerpt:
-      "JobTread is built for general contractors. Cornerstone PM is built for home builders. Here's the honest difference &mdash; lot management, design center, sales pipeline, and AI that actually works with your data.",
+      "JobTread is built for general contractors. Cornerstone PM™ is built for home builders. Here's the honest difference &mdash; lot management, design center, sales pipeline, and AI that actually works with your data.",
     date: "April 1, 2026",
     readTime: "6 min read",
     tag: "Comparison",
@@ -242,7 +242,7 @@ const posts = [
   },
   {
     slug: "buildertrend-vs-cornerstone",
-    title: "BuilderTrend vs Cornerstone PM: The Honest Comparison",
+    title: "BuilderTrend vs Cornerstone PM™: The Honest Comparison",
     excerpt:
       "BuilderTrend is the big name in builder software. But is it worth $499/mo for a builder closing 10&ndash;30 homes a year? We break it down.",
     date: "April 14, 2026",

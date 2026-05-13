@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Features — Cornerstone PM",
+  title: "Features — Cornerstone PM™",
   description:
     "Seven integrated modules for home builders: scheduling, purchasing, sales pipeline, design center, permitting, buyer portal, and jobsite operations with the industry-first triple QR code ecosystem.",
 };

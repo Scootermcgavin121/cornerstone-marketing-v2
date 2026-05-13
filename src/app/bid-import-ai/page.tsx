@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 import { FAQSection, type FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
-  title: "Bid Import AI — Parse Any Vendor Bid in Seconds | Cornerstone PM",
+  title: "Bid Import AI — Parse Any Vendor Bid in Seconds | Cornerstone PM™",
   description:
     "Upload vendor bids in any format — Excel, PDFs, scanned documents, even photos of handwritten quotes. Bid Import AI extracts every line item, fuzzy-matches your parts catalog, and imports as a Bid, Vendor Pricing, or Takeoff in one click.",
   alternates: { canonical: "https://www.cornerstonepm.ai/bid-import-ai" },

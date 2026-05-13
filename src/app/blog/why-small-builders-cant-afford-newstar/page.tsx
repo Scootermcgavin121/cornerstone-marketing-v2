@@ -11,7 +11,7 @@ const heroImageAlt =
 
 export const metadata: Metadata = {
   title:
-    "Why Small-to-Mid Home Builders Can't Afford NEWSTAR — Cornerstone PM Blog",
+    "Why Small-to-Mid Home Builders Can't Afford NEWSTAR — Cornerstone PM™ Blog",
   description:
     "Why small-to-mid home builders can't afford NEWSTAR's implementation cost - and the modern alternatives production builders are switching to.",
   alternates: {
@@ -52,7 +52,7 @@ export default function WhySmallBuildersCannotAffordNewstarPage() {
               "@type": "ImageObject",
               contentUrl: `https://www.cornerstonepm.ai${heroImage}`,
               description: heroImageAlt,
-              creditText: "Cornerstone PM",
+              creditText: "Cornerstone PM™",
             }),
           }}
         />
@@ -248,7 +248,7 @@ export default function WhySmallBuildersCannotAffordNewstarPage() {
               href="/newstar-alternative"
               className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
             >
-              Cornerstone PM
+              Cornerstone PM™
             </Link>{" "}
             is built specifically for this segment — scheduling,{" "}
             <Link
@@ -306,7 +306,7 @@ export default function WhySmallBuildersCannotAffordNewstarPage() {
             Built for the 5–200 homes/year builder. Zero implementation cost.
           </h3>
           <p className="text-slate-400 text-sm mb-4">
-            Cornerstone PM gives production home builders everything NEWSTAR offers mid-size builders —
+            Cornerstone PM™ gives production home builders everything NEWSTAR offers mid-size builders —
             without the six-figure implementation contract, the consultant dependency, or the 6-month
             ramp. Beta access is open now. Early adopters get two years free.
           </p>

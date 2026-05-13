@@ -3,14 +3,14 @@ import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageT
 import type { FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
-  title: "Jobber Alternative for Home Builders | Cornerstone PM",
+  title: "Jobber Alternative for Home Builders | Cornerstone PM™",
   description:
-    "Jobber is built for home service businesses. Cornerstone PM is the alternative for home builders -- AI agents (Pro $499/mo), options engine, and multi-community management from $149/mo.",
+    "Jobber is built for home service businesses. Cornerstone PM™ is the alternative for home builders -- AI agents (Pro $499/mo), options engine, and multi-community management from $149/mo.",
   alternates: { canonical: "https://www.cornerstonepm.ai/jobber-alternative" },
 };
 
 const comparisonRows: ComparisonRow[] = [
-  { feature: "Built for home builders", cornerstone: true, competitor: false, note: "Jobber is built for home service businesses (landscaping, cleaning, HVAC, etc.). Cornerstone PM is purpose-built for home builders -- production, semi-custom, and custom -- with lot management, options engine, and multi-community pipelines." },
+  { feature: "Built for home builders", cornerstone: true, competitor: false, note: "Jobber is built for home service businesses (landscaping, cleaning, HVAC, etc.). Cornerstone PM™ is purpose-built for home builders -- production, semi-custom, and custom -- with lot management, options engine, and multi-community pipelines." },
   { feature: "Structural options engine", cornerstone: true, competitor: false, note: "Pre-sale floorplan options pricing matrix -- Cornerstone Builder ($299/mo). Not a home service concept." },
   { feature: "Floorplan pricing matrix", cornerstone: true, competitor: false, note: "Per-community floorplan pricing. Cornerstone Builder+." },
   { feature: "Multi-community lot management", cornerstone: true, competitor: false, note: "Native multi-community pipeline. Jobber is job-centric." },
@@ -46,22 +46,22 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What's the best Jobber alternative for home builders?",
-    a: "Cornerstone PM is purpose-built for home builders. It covers the same basics (scheduling, client portal, quotes, document management) plus a structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, native AI agents (Foreman AI 83+ skills on Pro $499/mo, Blueprint AI), 30+ named webhook events (Pro+), and a public REST API -- all the home-builder features Jobber doesn't have.",
+    a: "Cornerstone PM™ is purpose-built for home builders. It covers the same basics (scheduling, client portal, quotes, document management) plus a structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, native AI agents (Foreman AI 83+ skills on Pro $499/mo, Blueprint AI), 30+ named webhook events (Pro+), and a public REST API -- all the home-builder features Jobber doesn't have.",
   },
   {
-    q: "Can I migrate from Jobber to Cornerstone PM?",
+    q: "Can I migrate from Jobber to Cornerstone PM™?",
     a: "Yes. The AI Migration Wizard reads your Jobber export, auto-detects column mapping, and runs 23 import endpoints for vendors, contacts, communities, and more. Most migrations complete in under a day. ~$0.01 per migration in AI cost -- we absorb it.",
   },
   {
-    q: "Does Cornerstone PM have quoting like Jobber?",
-    a: "Cornerstone PM handles builder pricing through floorplan pricing matrices and options engines rather than traditional quote-to-invoice workflows. If you need a per-job quote for a small service like a repair, Jobber is stronger. If you need pre-sale pricing for 20+ floorplans across multiple communities, Cornerstone is purpose-built for it.",
+    q: "Does Cornerstone PM™ have quoting like Jobber?",
+    a: "Cornerstone PM™ handles builder pricing through floorplan pricing matrices and options engines rather than traditional quote-to-invoice workflows. If you need a per-job quote for a small service like a repair, Jobber is stronger. If you need pre-sale pricing for 20+ floorplans across multiple communities, Cornerstone is purpose-built for it.",
   },
   {
     q: "What does $149/mo Cornerstone Starter include?",
     a: "Starter ($149/mo) includes construction scheduling, subcontractor assignment, permits pipeline, homeowner progress portal, and the AI Support Agent -- unlimited users. Options engine and design center are on Builder ($299/mo). Foreman AI + Blueprint AI are on Pro ($499/mo). REST API + BYOA are on Pro+ ($599/mo).",
   },
   {
-    q: "Does Cornerstone PM have a free trial?",
+    q: "Does Cornerstone PM™ have a free trial?",
     a: "Yes. The 2-year free beta is open to the first 100 home builders -- no credit card, no contract, no implementation fee.",
   },
 ];
@@ -74,14 +74,14 @@ export default function JobberAlternativePage() {
       heroLine1="Jobber is for home services."
       heroLine2="You build homes."
       accentColor="amber"
-      heroParagraph="Jobber is a field service platform for landscapers, cleaners, and HVAC companies. Cornerstone PM is the alternative for home builders -- structural options engine (Builder $299/mo), floorplan pricing, 83 AI skills (Pro $499/mo), and multi-community management from $149/mo."
+      heroParagraph="Jobber is a field service platform for landscapers, cleaners, and HVAC companies. Cornerstone PM™ is the alternative for home builders -- structural options engine (Builder $299/mo), floorplan pricing, 83 AI skills (Pro $499/mo), and multi-community management from $149/mo."
       secondaryCTA={{ text: "See full comparison", href: "/compare" }}
-      comparisonSubtitle="Jobber vs Cornerstone PM -- home services platform vs. home-builder platform."
+      comparisonSubtitle="Jobber vs Cornerstone PM™ -- home services platform vs. home-builder platform."
       comparisonRows={comparisonRows}
       trademarkName="Jobber"
       whySwitchHeadline="What home builders get that Jobber can't offer"
       whySwitchCards={whySwitchCards}
-      honestAngle="If you're a home service business -- landscaping, cleaning, pest control, HVAC -- Jobber is probably fine. This page is for home builders who found Jobber through a general search. You need different software, and Cornerstone PM is built for your workflows."
+      honestAngle="If you're a home service business -- landscaping, cleaning, pest control, HVAC -- Jobber is probably fine. This page is for home builders who found Jobber through a general search. You need different software, and Cornerstone PM™ is built for your workflows."
       showMigrationCTA={true}
       migrationHeadline="Switching from Jobber? Bring your contacts and vendors."
       migrationDesc="Export your Jobber data, drop it in our wizard, and AI auto-maps vendors, contacts, and job history. Dry-run before you commit."

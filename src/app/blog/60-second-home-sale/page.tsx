@@ -6,11 +6,11 @@ import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "The 60-Second Home Status Update Your Buyers Actually Want — Cornerstone PM Blog",
+  title: "The 60-Second Home Status Update Your Buyers Actually Want — Cornerstone PM™ Blog",
   description:
     "Your buyers call twice a week asking for updates. There's a better way — and your buyers will love you for it.",
   openGraph: {
-    images: [{ url: "https://www.cornerstonepm.ai/blog/home-builder-sales-pipeline.png", width: 1024, height: 1024, alt: "New home sale created in under 60 seconds in the Cornerstone PM home builder sales pipeline" }],
+    images: [{ url: "https://www.cornerstonepm.ai/blog/home-builder-sales-pipeline.png", width: 1024, height: 1024, alt: "New home sale created in under 60 seconds in the Cornerstone PM™ home builder sales pipeline" }],
   }
 };
 
@@ -28,7 +28,7 @@ export default function HomeSalePost() {
           Back to Blog
         </Link>
 
-        <BlogHero src="/blog/home-builder-sales-pipeline.png" alt="New home sale created in under 60 seconds in the Cornerstone PM home builder sales pipeline" />
+        <BlogHero src="/blog/home-builder-sales-pipeline.png" alt="New home sale created in under 60 seconds in the Cornerstone PM™ home builder sales pipeline" />
 
         <div className="mb-8">
           <span className="text-xs font-medium px-2.5 py-0.5 rounded-full border text-amber-400 bg-amber-500/10 border-amber-500/20 mb-4 inline-block">
@@ -87,7 +87,7 @@ export default function HomeSalePost() {
           </h2>
 
           <p>
-            The Cornerstone PM buyer portal gives your buyers a real-time view of their home&apos;s
+            The Cornerstone PM™ buyer portal gives your buyers a real-time view of their home&apos;s
             progress. Construction milestones, photo documentation, selection approvals, and direct
             messaging with your team — all in one place they can access from their phone at 11pm
             when they can&apos;t sleep because they&apos;re excited about their new house.
@@ -141,7 +141,7 @@ export default function HomeSalePost() {
         <div className="mt-12 p-6 rounded-2xl border border-amber-500/20 bg-amber-500/5">
           <h3 className="text-lg font-bold text-white mb-2">Give your buyers the portal they deserve</h3>
           <p className="text-slate-400 text-sm mb-4">
-            Cornerstone PM includes the buyer portal in every plan. Request beta access — free for 2 years.
+            Cornerstone PM™ includes the buyer portal in every plan. Request beta access — free for 2 years.
           </p>
           <Link
             href="/beta"

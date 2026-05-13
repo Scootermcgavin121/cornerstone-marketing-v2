@@ -6,7 +6,7 @@ import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Subcontractor Scheduling Software for Home Builders &mdash; Cornerstone PM Blog",
+  title: "Subcontractor Scheduling Software for Home Builders &mdash; Cornerstone PM™ Blog",
   description:
     "The best subcontractors have options. If your scheduling is chaotic and your communication is reactive, they'll prioritize builders who make their lives easier. Here's how to be that builder.",
   openGraph: {
@@ -119,7 +119,7 @@ export default function SubcontractorSchedulingSoftwarePost() {
             Traditional scheduling software is reactive: you update the schedule, it shows you the schedule. AI scheduling is proactive: it tells you what&apos;s about to go wrong before it does.
           </p>
           <p>
-            With Foreman AI in Cornerstone PM, a builder can ask plain-English questions like:
+            With Foreman AI in Cornerstone PM™, a builder can ask plain-English questions like:
           </p>
 
           <div className="rounded-xl bg-slate-900 border border-slate-700 p-6 my-6 not-prose space-y-4">
@@ -166,12 +166,12 @@ export default function SubcontractorSchedulingSoftwarePost() {
             Subcontractor scheduling software is only valuable if it makes your subs&apos; lives easier and gives you the visibility to prevent problems before they cascade. That means milestone-linked notifications, integrated purchasing, AI-powered schedule analysis, and flat-rate pricing that doesn&apos;t punish you for including your whole team.
           </p>
           <p>
-            Cornerstone PM is in beta now, and early adopters get 2 years free. If you&apos;re building 5&ndash;50 homes a year and managing subcontractors via text message, this is worth a look.
+            Cornerstone PM™ is in beta now, and early adopters get 2 years free. If you&apos;re building 5&ndash;50 homes a year and managing subcontractors via text message, this is worth a look.
           </p>
         </div>
 
         <div className="mt-12 p-6 rounded-2xl border border-cyan-500/20 bg-cyan-500/5">
-          <h3 className="text-lg font-bold text-white mb-2">See scheduling in Cornerstone PM</h3>
+          <h3 className="text-lg font-bold text-white mb-2">See scheduling in Cornerstone PM™</h3>
           <p className="text-slate-400 text-sm mb-4">
             Beta access is open now. Includes scheduling, purchasing, AI, and the full platform &mdash; free for 2 years.
           </p>

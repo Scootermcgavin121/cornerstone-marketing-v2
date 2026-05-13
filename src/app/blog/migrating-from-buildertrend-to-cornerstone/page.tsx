@@ -6,9 +6,9 @@ import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Migrating from Buildertrend to Cornerstone PM: Step-by-Step Guide — Cornerstone PM Blog",
+  title: "Migrating from Buildertrend to Cornerstone PM™: Step-by-Step Guide — Cornerstone PM™ Blog",
   description:
-    "Step-by-step guide to migrating from Buildertrend to Cornerstone PM. Schedule import, vendor migration, template conversion, and team onboarding in under a week.",
+    "Step-by-step guide to migrating from Buildertrend to Cornerstone PM™. Schedule import, vendor migration, template conversion, and team onboarding in under a week.",
   alternates: {
     canonical:
       "https://www.cornerstonepm.ai/blog/migrating-from-buildertrend-to-cornerstone",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
 const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  name: "How to Migrate from Buildertrend to Cornerstone PM",
+  name: "How to Migrate from Buildertrend to Cornerstone PM™",
   description:
-    "A step-by-step guide for production home builders migrating from Buildertrend to Cornerstone PM, covering data export, community setup, schedule templates, vendor migration, and team onboarding.",
+    "A step-by-step guide for production home builders migrating from Buildertrend to Cornerstone PM™, covering data export, community setup, schedule templates, vendor migration, and team onboarding.",
   totalTime: "P5D",
   step: [
     {
@@ -42,14 +42,14 @@ const howToSchema = {
     {
       "@type": "HowToStep",
       position: 2,
-      name: "Set Up Communities in Cornerstone PM",
-      text: "Create one Community per subdivision or project type in Cornerstone PM. Communities are the top-level container for floor plans, vendors, and schedule templates. Set community-specific vendor assignments here — different framers for different neighborhoods is fully supported.",
+      name: "Set Up Communities in Cornerstone PM™",
+      text: "Create one Community per subdivision or project type in Cornerstone PM™. Communities are the top-level container for floor plans, vendors, and schedule templates. Set community-specific vendor assignments here — different framers for different neighborhoods is fully supported.",
     },
     {
       "@type": "HowToStep",
       position: 3,
       name: "Build or Import Your Schedule Templates",
-      text: "Recreate your master schedule templates inside Cornerstone PM using the schedule builder. Use predecessor logic to chain tasks — Cornerstone automatically calculates start dates and pushes notifications to subs when their task unlocks. Most builders complete a standard production schedule (30–50 tasks) in under two hours.",
+      text: "Recreate your master schedule templates inside Cornerstone PM™ using the schedule builder. Use predecessor logic to chain tasks — Cornerstone automatically calculates start dates and pushes notifications to subs when their task unlocks. Most builders complete a standard production schedule (30–50 tasks) in under two hours.",
     },
     {
       "@type": "HowToStep",
@@ -107,7 +107,7 @@ export default function MigratingFromBuildertrendPage() {
             Migration Guide
           </span>
           <h1 className="text-4xl sm:text-5xl font-black text-white leading-tight mb-4">
-            Migrating from Buildertrend to Cornerstone PM: Step-by-Step Guide
+            Migrating from Buildertrend to Cornerstone PM™: Step-by-Step Guide
           </h1>
           <div className="flex items-center gap-3 text-sm text-slate-500">
             <span>May 3, 2026</span>
@@ -119,7 +119,7 @@ export default function MigratingFromBuildertrendPage() {
         <div className="prose prose-invert prose-lg max-w-none space-y-6 text-slate-300 leading-relaxed">
 
           <p className="text-xl text-slate-300 font-light">
-            Most production home builders can complete a full migration from Buildertrend to Cornerstone PM in
+            Most production home builders can complete a full migration from Buildertrend to Cornerstone PM™ in
             3–5 business days — with no data loss, no IT contractor, and no interruption to active builds.
             Cornerstone ships <strong className="text-white">23 dedicated CSV import endpoints</strong> and a new
             <strong className="text-white"> AI Migration Wizard (Live in Beta)</strong> that
@@ -175,7 +175,7 @@ export default function MigratingFromBuildertrendPage() {
           {/* Step 2 */}
           <div className="border-l-2 border-violet-500/40 pl-6 space-y-2">
             <p className="text-sm font-semibold text-violet-400 uppercase tracking-wide">Step 2</p>
-            <h3 className="text-xl font-bold text-white">Set up communities in Cornerstone PM</h3>
+            <h3 className="text-xl font-bold text-white">Set up communities in Cornerstone PM™</h3>
             <p>
               Create one Community per subdivision, development phase, or project type. This is the foundation
               of how Cornerstone organizes your work — floor plans, vendor assignments, and schedule templates
@@ -278,7 +278,7 @@ export default function MigratingFromBuildertrendPage() {
           </h2>
           <p>
             Buildertrend&apos;s onboarding typically runs 4–8 weeks and requires working through their
-            structured implementation program. Cornerstone PM has no mandatory onboarding queue — you set up
+            structured implementation program. Cornerstone PM™ has no mandatory onboarding queue — you set up
             your account, build your first template, and start a lot. No waiting for a customer success
             manager to schedule your next call.
           </p>
@@ -291,7 +291,7 @@ export default function MigratingFromBuildertrendPage() {
               href="/buildertrend-alternative"
               className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
             >
-              full Buildertrend vs Cornerstone PM breakdown
+              full Buildertrend vs Cornerstone PM™ breakdown
             </Link>
             .
           </p>
@@ -300,7 +300,7 @@ export default function MigratingFromBuildertrendPage() {
             Ready to make the switch?
           </h2>
           <p>
-            Cornerstone PM is currently in free beta for early adopters. There&apos;s no implementation fee,
+            Cornerstone PM™ is currently in free beta for early adopters. There&apos;s no implementation fee,
             no IT setup, and no 90-day onboarding queue. If you&apos;re a production home builder who&apos;s been
             paying Buildertrend $499+/month for a tool that wasn&apos;t designed for your workflow, the migration
             is worth a single afternoon of setup time — the AI Migration Wizard handles the rest.

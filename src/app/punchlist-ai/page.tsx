@@ -6,9 +6,9 @@ import { Footer } from "@/components/Footer";
 import { CTASection } from "@/components/CTASection";
 
 export const metadata = {
-  title: "Punchlist AI — Walk the House, Get the Punchlist | Cornerstone PM",
+  title: "Punchlist AI — Walk the House, Get the Punchlist | Cornerstone PM™",
   description:
-    "Record a walkthrough on your phone. Punchlist AI watches the video, identifies every issue, tags severity and location, and creates a punch list in your build in seconds. Built into Cornerstone PM.",
+    "Record a walkthrough on your phone. Punchlist AI watches the video, identifies every issue, tags severity and location, and creates a punch list in your build in seconds. Built into Cornerstone PM™.",
   openGraph: {
     title: "Punchlist AI — Walk the House, Get the Punchlist",
     description:
@@ -22,7 +22,7 @@ const howItWorks = [
     step: "01",
     icon: Video,
     title: "Walk the house",
-    desc: "Open the home in Cornerstone PM. Tap Record. Walk the rooms and talk through what you see — \"replace this baseboard, repaint the trim above the window, the bottom shelf in the office needs to come out.\" Or upload a video you already recorded.",
+    desc: "Open the home in Cornerstone PM™. Tap Record. Walk the rooms and talk through what you see — \"replace this baseboard, repaint the trim above the window, the bottom shelf in the office needs to come out.\" Or upload a video you already recorded.",
   },
   {
     step: "02",
@@ -165,7 +165,7 @@ export default function PunchlistAIPage() {
               </div>
 
               <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-slate-400">
-                <span className="flex items-center gap-2"><Check className="w-4 h-4 text-emerald-400" /> Built into Cornerstone PM</span>
+                <span className="flex items-center gap-2"><Check className="w-4 h-4 text-emerald-400" /> Built into Cornerstone PM™</span>
                 <span className="flex items-center gap-2"><Check className="w-4 h-4 text-emerald-400" /> Video + voice in one pass</span>
                 <span className="flex items-center gap-2"><Check className="w-4 h-4 text-emerald-400" /> Severity + location auto-tagged</span>
               </div>
@@ -178,7 +178,7 @@ export default function PunchlistAIPage() {
                 <div className="relative bg-slate-900 rounded-3xl border border-slate-700 p-2 shadow-2xl">
                   <Image
                     src="/mockups/ss-punchlist-ai.jpg"
-                    alt="Punchlist AI screen in the Cornerstone PM mobile app — shows Record, Upload Video, and Add Item buttons with a generated punch list item"
+                    alt="Punchlist AI screen in the Cornerstone PM™ mobile app — shows Record, Upload Video, and Add Item buttons with a generated punch list item"
                     width={400}
                     height={800}
                     className="rounded-2xl"

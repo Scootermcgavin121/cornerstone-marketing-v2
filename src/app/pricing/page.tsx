@@ -6,12 +6,12 @@ import { PricingSection } from "@/components/PricingSection";
 import { FAQSection, type FAQItem } from "@/components/FAQSection";
 
 export const metadata: Metadata = {
-  title: "Pricing | Cornerstone PM — Home Builder Software from $149/mo",
+  title: "Pricing | Cornerstone PM™ — Home Builder Software from $149/mo",
   description:
     "Simple per-month pricing for home builder software. Starter $149, Builder $299, Pro $499, Pro+ $599. Unlimited users on every plan. No per-seat fees. No implementation cost.",
   alternates: { canonical: "https://www.cornerstonepm.ai/pricing" },
   openGraph: {
-    title: "Pricing | Cornerstone PM",
+    title: "Pricing | Cornerstone PM™",
     description:
       "Home builder software pricing from $149/mo. Unlimited users on every plan. No per-seat fees.",
     url: "https://www.cornerstonepm.ai/pricing",
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
 
 const faqs: FAQItem[] = [
   {
-    q: "How much does Cornerstone PM cost?",
-    a: "Cornerstone PM starts at $149/mo for the Starter plan with unlimited users. Builder is $299/mo (adds purchasing, sales, and design center). Pro is $499/mo (adds Foreman AI with 83+ skills and Blueprint AI). Pro+ is $599/mo (adds the full REST API, automated bidding pipeline, and enterprise AI). Beta access is free for the first 100 builders for two years.",
+    q: "How much does Cornerstone PM™ cost?",
+    a: "Cornerstone PM™ starts at $149/mo for the Starter plan with unlimited users. Builder is $299/mo (adds purchasing, sales, and design center). Pro is $499/mo (adds Foreman AI with 83+ skills and Blueprint AI). Pro+ is $599/mo (adds the full REST API, automated bidding pipeline, and enterprise AI). Beta access is free for the first 100 builders for two years.",
   },
   {
     q: "Are there per-seat fees?",
@@ -30,7 +30,7 @@ const faqs: FAQItem[] = [
   },
   {
     q: "What is the implementation cost?",
-    a: "Cornerstone PM has zero implementation cost. There are no setup fees, no required consultants, and no separate onboarding contract. You can be running your first community in under a week. NEWSTAR and BuildPro typically require $25,000 to $100,000+ in implementation budget.",
+    a: "Cornerstone PM™ has zero implementation cost. There are no setup fees, no required consultants, and no separate onboarding contract. You can be running your first community in under a week. NEWSTAR and BuildPro typically require $25,000 to $100,000+ in implementation budget.",
   },
   {
     q: "What is included in the free beta?",
@@ -38,7 +38,7 @@ const faqs: FAQItem[] = [
   },
   {
     q: "Which plan includes the AI agents?",
-    a: "Cornerstone PM has 5 native AI agents. Foreman AI (83+ skills) and Blueprint AI (25 takeoffs/mo) are on the Pro plan ($499/mo). The AI MLS Listing Generator and AI Support Agent are on Builder plan and above. The full Bid Import AI plus extended message limits are on Pro+ ($599/mo).",
+    a: "Cornerstone PM™ has 5 native AI agents. Foreman AI (83+ skills) and Blueprint AI (25 takeoffs/mo) are on the Pro plan ($499/mo). The AI MLS Listing Generator and AI Support Agent are on Builder plan and above. The full Bid Import AI plus extended message limits are on Pro+ ($599/mo).",
   },
   {
     q: "Can I export my data?",
@@ -49,8 +49,8 @@ const faqs: FAQItem[] = [
     a: "Annual billing is available for Builder, Pro, and Pro+ plans with a discount versus paying monthly. Contact us for annual quotes and for production builders with more than 1,000 active homes.",
   },
   {
-    q: "How does Cornerstone PM compare to Buildertrend or JobTread on price?",
-    a: "Buildertrend pricing typically lands at $399 to $499+ per month with per-user fees layered on top. JobTread starts around $179/mo with similar per-user limits. Cornerstone PM Starter is $149/mo with unlimited users, and Pro is $499/mo flat with native AI agents that Buildertrend and JobTread do not include at any tier.",
+    q: "How does Cornerstone PM™ compare to Buildertrend or JobTread on price?",
+    a: "Buildertrend pricing typically lands at $399 to $499+ per month with per-user fees layered on top. JobTread starts around $179/mo with similar per-user limits. Cornerstone PM™ Starter is $149/mo with unlimited users, and Pro is $499/mo flat with native AI agents that Buildertrend and JobTread do not include at any tier.",
   },
 ];
 

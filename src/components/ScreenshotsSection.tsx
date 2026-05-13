@@ -162,7 +162,7 @@ export function ScreenshotsSection() {
                   <div className="relative w-full" style={{ aspectRatio: "3/2" }}>
                     <Image
                       src={current.screenshot}
-                      alt="Cornerstone PM platform overview"
+                      alt="Cornerstone PM™ platform overview"
                       fill
                       className="object-cover"
                       sizes="100vw"

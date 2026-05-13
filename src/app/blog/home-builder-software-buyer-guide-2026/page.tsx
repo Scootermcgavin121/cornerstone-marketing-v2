@@ -7,9 +7,9 @@ import { FAQSection, FAQItem } from "@/components/FAQSection";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Home Builder Software Buyer's Guide (2026) — Cornerstone PM Blog",
+  title: "Home Builder Software Buyer's Guide (2026) — Cornerstone PM™ Blog",
   description:
-    "Complete 2026 buyer's guide to home builder software. Compare features, pricing, AI capabilities, and implementation costs across NEWSTAR, BuildPro, Buildertrend, and Cornerstone PM.",
+    "Complete 2026 buyer's guide to home builder software. Compare features, pricing, AI capabilities, and implementation costs across NEWSTAR, BuildPro, Buildertrend, and Cornerstone PM™.",
   alternates: {
     canonical: "https://www.cornerstonepm.ai/blog/home-builder-software-buyer-guide-2026",
   },
@@ -28,11 +28,11 @@ export const metadata: Metadata = {
 const faqItems: FAQItem[] = [
   {
     q: "What is the best home builder software for small builders (5–50 homes/year)?",
-    a: "For builders closing 5–50 homes per year, the best software is purpose-built for residential production — not repurposed general-contractor tools. Cornerstone PM is designed specifically for this segment, with scheduling, design center, purchasing, and AI takeoff in a single platform starting at $149/month. Buildertrend is an option but starts at $499/month with significant complexity overhead for smaller operations.",
+    a: "For builders closing 5–50 homes per year, the best software is purpose-built for residential production — not repurposed general-contractor tools. Cornerstone PM™ is designed specifically for this segment, with scheduling, design center, purchasing, and AI takeoff in a single platform starting at $149/month. Buildertrend is an option but starts at $499/month with significant complexity overhead for smaller operations.",
   },
   {
     q: "How much does home builder software cost in 2026?",
-    a: "Pricing varies significantly by vendor and builder size. Buildertrend starts at $499/month. NEWSTAR typically requires $25,000–$100,000+ in implementation fees plus ongoing per-seat licensing. BuildPro requires Citrix/Windows infrastructure and enterprise contracts. Cornerstone PM starts at $149/month with no implementation fees and offers free beta access for early adopters.",
+    a: "Pricing varies significantly by vendor and builder size. Buildertrend starts at $499/month. NEWSTAR typically requires $25,000–$100,000+ in implementation fees plus ongoing per-seat licensing. BuildPro requires Citrix/Windows infrastructure and enterprise contracts. Cornerstone PM™ starts at $149/month with no implementation fees and offers free beta access for early adopters.",
   },
   {
     q: "What features should home builder software include?",
@@ -40,19 +40,19 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "How long does it take to implement home builder software?",
-    a: "Implementation timelines vary widely. NEWSTAR and BuildPro typically take 3–12 months with dedicated consultants. Buildertrend onboarding usually runs 4–8 weeks. Modern cloud-native platforms like Cornerstone PM can be up and running with real data in hours — the AI Migration Wizard ingests your existing data in an afternoon, no IT infrastructure or implementation consultants required.",
+    a: "Implementation timelines vary widely. NEWSTAR and BuildPro typically take 3–12 months with dedicated consultants. Buildertrend onboarding usually runs 4–8 weeks. Modern cloud-native platforms like Cornerstone PM™ can be up and running with real data in hours — the AI Migration Wizard ingests your existing data in an afternoon, no IT infrastructure or implementation consultants required.",
   },
   {
     q: "Does home builder software have AI capabilities in 2026?",
-    a: "Only newer platforms offer purpose-built AI. Cornerstone PM includes Blueprint AI (automated material takeoff from floor plan PDFs), Foreman AI (schedule anomaly detection and daily construction digests), and an AI-powered chatbot trained on your project data. Legacy platforms like NEWSTAR and BuildPro do not offer native AI capabilities.",
+    a: "Only newer platforms offer purpose-built AI. Cornerstone PM™ includes Blueprint AI (automated material takeoff from floor plan PDFs), Foreman AI (schedule anomaly detection and daily construction digests), and an AI-powered chatbot trained on your project data. Legacy platforms like NEWSTAR and BuildPro do not offer native AI capabilities.",
   },
   {
     q: "What is the difference between production builder software and custom builder software?",
-    a: "Production builders repeat floor plans across multiple lots and communities — they need lot management, design options engines, community templates, and vendor bid workflows. Custom builders run one-off projects with unique scopes and rely on change orders and progress invoicing. Most general-contractor software (JobTread, CoConstruct) is optimized for custom work. Cornerstone PM is built for production.",
+    a: "Production builders repeat floor plans across multiple lots and communities — they need lot management, design options engines, community templates, and vendor bid workflows. Custom builders run one-off projects with unique scopes and rely on change orders and progress invoicing. Most general-contractor software (JobTread, CoConstruct) is optimized for custom work. Cornerstone PM™ is built for production.",
   },
   {
     q: "Is there a free trial for home builder software?",
-    a: "Cornerstone PM is currently in free beta — early adopters get full platform access for two years at no cost. No credit card required. This includes all modules: scheduling, design center, purchasing, sales pipeline, buyer portal, permitting, and AI agents. Request access at cornerstonepm.ai/beta.",
+    a: "Cornerstone PM™ is currently in free beta — early adopters get full platform access for two years at no cost. No credit card required. This includes all modules: scheduling, design center, purchasing, sales pipeline, buyer portal, permitting, and AI agents. Request access at cornerstonepm.ai/beta.",
   },
 ];
 
@@ -168,9 +168,9 @@ export default function BuyerGuidePage() {
             if you&apos;re currently on Buildertrend and reassessing.
           </p>
 
-          <h3 className="text-xl font-semibold text-white mt-6 mb-3">Cornerstone PM</h3>
+          <h3 className="text-xl font-semibold text-white mt-6 mb-3">Cornerstone PM™</h3>
           <p>
-            Cornerstone PM is purpose-built for small-to-mid production home builders — the 5–200 homes/year
+            Cornerstone PM™ is purpose-built for small-to-mid production home builders — the 5–200 homes/year
             segment that NEWSTAR ignores and Buildertrend overcharges. It includes scheduling, purchasing, design
             center, sales pipeline, buyer portal, permitting, and native AI agents in a single platform starting
             at $149/month. Currently in free beta for early adopters.
@@ -264,7 +264,7 @@ export default function BuyerGuidePage() {
             NEWSTAR: $25,000–$100,000+ upfront, 3–12 month timeline, dedicated IT required.
             BuildPro: Enterprise contract, Citrix infrastructure, 2–6 month onboarding.
             Buildertrend: $499/month base, 4–8 weeks to productive use, plugin costs for integrations.
-            Cornerstone PM: $0 implementation, no IT infrastructure, live with real data in hours.
+            Cornerstone PM™: $0 implementation, no IT infrastructure, live with real data in hours.
           </p>
           <p>
             For a detailed breakdown of what NEWSTAR actually costs for mid-market builders, see the
@@ -324,7 +324,7 @@ export default function BuyerGuidePage() {
 
         <div className="mt-12 p-6 rounded-2xl border border-amber-500/20 bg-amber-500/5">
           <h3 className="text-lg font-bold text-white mb-2">
-            Try Cornerstone PM free — no credit card required
+            Try Cornerstone PM™ free — no credit card required
           </h3>
           <p className="text-slate-400 text-sm mb-4">
             Beta access is open now. Early adopters get two years free. Full platform: scheduling,

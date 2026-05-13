@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, Check, X } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
@@ -6,9 +6,9 @@ import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "JobTread Alternative for Home Builders &mdash; Cornerstone PM Blog",
+  title: "JobTread Alternative for Home Builders &mdash; Cornerstone PM™ Blog",
   description:
-    "JobTread is built for general contractors. Cornerstone PM is built for home builders. Here's the honest difference &mdash; lot management, design center, sales pipeline, and AI that actually works with your data.",
+    "JobTread is built for general contractors. Cornerstone PM™ is built for home builders. Here's the honest difference &mdash; lot management, design center, sales pipeline, and AI that actually works with your data.",
   openGraph: {
     images: [{ url: "https://www.cornerstonepm.ai/blog/production-builder-software.png", width: 1024, height: 1024, alt: "JobTread alternative home builder software with options pricing engine for production builders" }],
   }
@@ -118,7 +118,7 @@ export default function JobtreadAlternativePost() {
           <div className="grid grid-cols-3 px-6 py-3 bg-slate-800/80 text-xs font-semibold text-slate-400 uppercase tracking-wider">
             <div>Feature</div>
             <div className="text-center">JobTread</div>
-            <div className="text-center">Cornerstone PM</div>
+            <div className="text-center">Cornerstone PM™</div>
           </div>
           {comparison.map((row, i) => (
             <div
@@ -154,7 +154,7 @@ export default function JobtreadAlternativePost() {
         <div className="prose prose-invert prose-lg max-w-none space-y-6 text-slate-300 leading-relaxed">
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">The AI difference</h2>
           <p>
-            Cornerstone PM includes Foreman AI &mdash; a 83-skill construction agent that reads and writes your real data. Not a general-purpose chatbot. An agent that knows your parts catalog, your vendor bids, your homes, your sales pipeline, and your budget data.
+            Cornerstone PM™ includes Foreman AI &mdash; a 83-skill construction agent that reads and writes your real data. Not a general-purpose chatbot. An agent that knows your parts catalog, your vendor bids, your homes, your sales pipeline, and your budget data.
           </p>
           <p>
             You can ask it things like: <em>&ldquo;Flag homes where actual costs are over 10% of budget&rdquo;</em>, <em>&ldquo;Generate a bid request for all Electrical vendors at Oak Creek&rdquo;</em>, or <em>&ldquo;Write an MLS description for The Addison at Bayside Preserve.&rdquo;</em>
@@ -163,9 +163,9 @@ export default function JobtreadAlternativePost() {
             That&apos;s not something JobTread&apos;s ChatGPT integration can do. It doesn&apos;t have access to your data.
           </p>
 
-          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Who should look at Cornerstone PM</h2>
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Who should look at Cornerstone PM™</h2>
           <p>
-            Cornerstone PM is the right call if you&apos;re a home builder managing 5&ndash;50 homes a year and you need:
+            Cornerstone PM™ is the right call if you&apos;re a home builder managing 5&ndash;50 homes a year and you need:
           </p>
           <ul className="space-y-2 my-4">
             {[
@@ -188,7 +188,7 @@ export default function JobtreadAlternativePost() {
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">The bottom line</h2>
           <p>
-            JobTread is a good product for the customer it was built for. That customer isn&apos;t a home builder. Cornerstone PM is.
+            JobTread is a good product for the customer it was built for. That customer isn&apos;t a home builder. Cornerstone PM™ is.
           </p>
           <p>
             We&apos;re in beta now with 2 years free for early adopters. No credit card, no sales call, no per-seat pricing that makes you think twice before adding your team.
@@ -196,7 +196,7 @@ export default function JobtreadAlternativePost() {
         </div>
 
         <div className="mt-12 p-6 rounded-2xl border border-amber-500/20 bg-amber-500/5">
-          <h3 className="text-lg font-bold text-white mb-2">Try Cornerstone PM free</h3>
+          <h3 className="text-lg font-bold text-white mb-2">Try Cornerstone PM™ free</h3>
           <p className="text-slate-400 text-sm mb-4">
             Beta access is open now. 2 years free for early adopters. Built for home builders, not contractors.
           </p>

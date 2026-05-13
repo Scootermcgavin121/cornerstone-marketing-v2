@@ -4,7 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "AI Hub Preview (Internal) | Cornerstone PM",
+  title: "AI Hub Preview (Internal) | Cornerstone PM™",
   description: "Internal preview of the AI hub-and-spoke hero concept.",
   robots: { index: false, follow: false },
 };

@@ -11,7 +11,7 @@ const heroImageAlt =
 
 export const metadata: Metadata = {
   title:
-    "How Blueprint AI Extracts 130+ Material Scopes from a Floor Plan PDF — Cornerstone PM Blog",
+    "How Blueprint AI Extracts 130+ Material Scopes from a Floor Plan PDF — Cornerstone PM™ Blog",
   description:
     "Technical deep-dive on how Blueprint AI extracts 130+ material scopes from a floor plan PDF in under 60 seconds for residential home builders.",
   alternates: {
@@ -52,7 +52,7 @@ export default function HowBlueprintAIExtractsMaterialScopesPage() {
               "@type": "ImageObject",
               contentUrl: `https://www.cornerstonepm.ai${heroImage}`,
               description: heroImageAlt,
-              creditText: "Cornerstone PM",
+              creditText: "Cornerstone PM™",
             }),
           }}
         />
@@ -305,7 +305,7 @@ export default function HowBlueprintAIExtractsMaterialScopesPage() {
             See Blueprint AI run a takeoff on your floor plans.
           </h3>
           <p className="text-slate-400 text-sm mb-4">
-            Cornerstone PM ships with Blueprint AI built-in &mdash; no third-party takeoff subscription,
+            Cornerstone PM™ ships with Blueprint AI built-in &mdash; no third-party takeoff subscription,
             no manual scope entry. Upload a PDF and get 130+ material scopes, quantities, and pricing
             in under 60 seconds. Beta access is open and early adopters get two years free.
           </p>

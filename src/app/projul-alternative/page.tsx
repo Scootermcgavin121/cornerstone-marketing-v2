@@ -3,14 +3,14 @@ import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageT
 import type { FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
-  title: "Projul Alternative for Home Builders | Cornerstone PM",
+  title: "Projul Alternative for Home Builders | Cornerstone PM™",
   description:
-    "Projul is built for residential contractors and remodelers. Cornerstone PM is the alternative for home builders -- AI agents (Pro $499/mo), options engine, multi-community management, and 30+ webhook events from $149/mo.",
+    "Projul is built for residential contractors and remodelers. Cornerstone PM™ is the alternative for home builders -- AI agents (Pro $499/mo), options engine, multi-community management, and 30+ webhook events from $149/mo.",
   alternates: { canonical: "https://www.cornerstonepm.ai/projul-alternative" },
 };
 
 const comparisonRows: ComparisonRow[] = [
-  { feature: "Built for home builders", cornerstone: true, competitor: false, note: "Projul targets residential remodelers and small contractors. Cornerstone PM is purpose-built for home builders -- production, semi-custom, and custom -- with lot management, options engine, and multi-community pipelines that remodeling tools don't offer." },
+  { feature: "Built for home builders", cornerstone: true, competitor: false, note: "Projul targets residential remodelers and small contractors. Cornerstone PM™ is purpose-built for home builders -- production, semi-custom, and custom -- with lot management, options engine, and multi-community pipelines that remodeling tools don't offer." },
   { feature: "Structural options engine", cornerstone: true, competitor: false, note: "Pre-sale floorplan options pricing matrix -- Cornerstone Builder ($299/mo). Not a Projul feature." },
   { feature: "Floorplan pricing matrix", cornerstone: true, competitor: false, note: "Per-community floorplan pricing. Cornerstone Builder+." },
   { feature: "Multi-community lot management", cornerstone: true, competitor: false, note: "Native multi-community pipeline. Projul is single-job focused." },
@@ -46,18 +46,18 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What's the best Projul alternative for home builders?",
-    a: "Cornerstone PM is purpose-built for home builders. Beyond the basics (scheduling, CRM, client portal from Starter $149/mo), it adds a structural options engine, floorplan pricing matrix, multi-community lot management, native AI agents (Foreman AI 83+ skills on Pro $499/mo, Blueprint AI), 30+ named webhook events (Pro+), and a public REST API with 59+ endpoints (and growing).",
+    a: "Cornerstone PM™ is purpose-built for home builders. Beyond the basics (scheduling, CRM, client portal from Starter $149/mo), it adds a structural options engine, floorplan pricing matrix, multi-community lot management, native AI agents (Foreman AI 83+ skills on Pro $499/mo, Blueprint AI), 30+ named webhook events (Pro+), and a public REST API with 59+ endpoints (and growing).",
   },
   {
     q: "How does Projul pricing compare to Cornerstone?",
     a: "Projul requires annual commitments: Core is approximately $399/mo (annual), Core+ approximately $599/mo, Pro approximately $1,199/mo. Cornerstone starts at $149/mo (Starter) with no annual lock-in required. Builder is $299/mo (adds options engine + design center). Pro is $499/mo (adds Foreman AI + Blueprint AI). Pro+ is $599/mo (adds REST API + BYOA). Projul doesn't ship options engines, multi-community pipelines, or home-builder AI at any price tier.",
   },
   {
-    q: "Can I migrate from Projul to Cornerstone PM?",
+    q: "Can I migrate from Projul to Cornerstone PM™?",
     a: "Yes. The AI Migration Wizard reads your Projul export, auto-detects column mapping, and runs 23 import endpoints for vendors, contacts, communities, and more. Most migrations complete in under a day. ~$0.01 per migration in AI -- we absorb it.",
   },
   {
-    q: "Does Cornerstone PM have scheduling like Projul?",
+    q: "Does Cornerstone PM™ have scheduling like Projul?",
     a: "Yes -- and more. Cornerstone ships full Gantt scheduling with dependencies, cascade scheduling (change one date, the whole schedule shifts), vendor notifications, and 30+ named webhook events (Pro+) that can trigger external SMS or voice notifications when tasks change.",
   },
   {
@@ -65,7 +65,7 @@ const faqItems: FAQItem[] = [
     a: "Starter ($149/mo) includes construction scheduling, subcontractor assignment, permits pipeline, homeowner progress portal, and the AI Support Agent -- unlimited users. Options engine and design center are on Builder ($299/mo). Foreman AI + Blueprint AI are on Pro ($499/mo). REST API + BYOA are on Pro+ ($599/mo).",
   },
   {
-    q: "Does Cornerstone PM have a free trial?",
+    q: "Does Cornerstone PM™ have a free trial?",
     a: "Yes. The 2-year free beta is open to the first 100 home builders -- no credit card, no contract, no implementation fee.",
   },
 ];
@@ -78,18 +78,18 @@ export default function ProjulAlternativePage() {
       heroLine1="Remodeling software won't cut it."
       heroLine2="You're building communities."
       accentColor="cyan"
-      heroParagraph="Projul is built for residential remodelers and small contractors (from ~$399/mo annual). Cornerstone PM is the Projul alternative for home builders -- structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, 83 AI skills (Pro $499/mo), and a public REST API (Pro+) from $149/mo."
+      heroParagraph="Projul is built for residential remodelers and small contractors (from ~$399/mo annual). Cornerstone PM™ is the Projul alternative for home builders -- structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, 83 AI skills (Pro $499/mo), and a public REST API (Pro+) from $149/mo."
       secondaryCTA={{ text: "See full comparison", href: "/compare" }}
-      comparisonSubtitle="Projul vs Cornerstone PM -- remodeling contractor tool vs. home-builder platform."
+      comparisonSubtitle="Projul vs Cornerstone PM™ -- remodeling contractor tool vs. home-builder platform."
       comparisonRows={comparisonRows}
       trademarkName="Projul"
-      whySwitchHeadline="What home builders get with Cornerstone PM"
+      whySwitchHeadline="What home builders get with Cornerstone PM™"
       whySwitchCards={whySwitchCards}
       showMigrationCTA={true}
       migrationHeadline="Moving from Projul? Bring your data with you."
       migrationDesc="Export your Projul data, drop it in our wizard, and AI auto-maps contacts, vendors, and project history. Dry-run before you commit."
       faqTitle="Projul Alternative FAQ"
-      faqSubtitle="For home builders evaluating Projul vs Cornerstone PM."
+      faqSubtitle="For home builders evaluating Projul vs Cornerstone PM™."
       faqItems={faqItems}
       footerHeadline="Ready for a home-builder platform?"
       footerSubtext="Join the beta and get 2 years free. Multi-community pipelines native."

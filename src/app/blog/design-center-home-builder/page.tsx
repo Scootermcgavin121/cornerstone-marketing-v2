@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Why Your Design Center Process Is Leaking Options Revenue — Cornerstone PM Blog",
+  title: "Why Your Design Center Process Is Leaking Options Revenue — Cornerstone PM™ Blog",
   description:
     "The design center appointment is one of the highest-margin moments in a home sale. Most builders are leaving money on the table. Here's why — and how to fix it.",
   openGraph: {
@@ -174,7 +174,7 @@ export default function DesignCenterPost() {
 
         <div className="mt-12 p-6 rounded-2xl border border-fuchsia-500/20 bg-fuchsia-500/5">
           <h3 className="text-lg font-bold text-white mb-2">
-            See how Cornerstone PM connects design selections to purchasing and the build schedule
+            See how Cornerstone PM™ connects design selections to purchasing and the build schedule
           </h3>
           <p className="text-slate-400 text-sm mb-4">
             Join the beta — free for 2 years for early adopters.

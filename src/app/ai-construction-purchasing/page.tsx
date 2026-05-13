@@ -1,13 +1,13 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Check, Package, ShoppingCart, DollarSign, FileText, BarChart3, Sparkles } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "AI Construction Purchasing Software for Home Builders | Cornerstone PM",
+  title: "AI Construction Purchasing Software for Home Builders | Cornerstone PM™",
   description:
-    "Automate your construction purchasing with AI. Cornerstone PM handles vendor bids, purchase orders, budget tracking, and subcontractor management — all in plain English.",
+    "Automate your construction purchasing with AI. Cornerstone PM™ handles vendor bids, purchase orders, budget tracking, and subcontractor management — all in plain English.",
 };
 
 const prompts = [

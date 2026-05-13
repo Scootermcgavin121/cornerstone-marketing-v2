@@ -12,7 +12,7 @@ const heroImageAlt =
 
 export const metadata: Metadata = {
   title:
-    "NEWSTAR Implementation Cost Breakdown for Small-to-Mid Builders — Cornerstone PM Blog",
+    "NEWSTAR Implementation Cost Breakdown for Small-to-Mid Builders — Cornerstone PM™ Blog",
   description:
     "Real numbers on NEWSTAR implementation cost: licensing, consultants, training, customization, and ongoing fees. Why mid-size builders are looking for alternatives.",
   alternates: {
@@ -58,7 +58,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What is a lower-cost alternative to NEWSTAR for production home builders?",
-    a: "Cornerstone PM is purpose-built for small-to-mid production home builders (5–200 homes/year) with $0 implementation cost. The platform includes scheduling, design center, AI material takeoff, vendor bidding, and buyer portal — no consultants, no IT setup, no waiting. Early adopters get two years free during the beta period.",
+    a: "Cornerstone PM™ is purpose-built for small-to-mid production home builders (5–200 homes/year) with $0 implementation cost. The platform includes scheduling, design center, AI material takeoff, vendor bidding, and buyer portal — no consultants, no IT setup, no waiting. Early adopters get two years free during the beta period.",
   },
 ];
 
@@ -84,7 +84,7 @@ export default function NewstarImplementationCostPage() {
               "@type": "ImageObject",
               contentUrl: `https://www.cornerstonepm.ai${heroImage}`,
               description: heroImageAlt,
-              creditText: "Cornerstone PM",
+              creditText: "Cornerstone PM™",
             }),
           }}
         />
@@ -264,7 +264,7 @@ export default function NewstarImplementationCostPage() {
               href="/newstar-alternative"
               className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
             >
-              Cornerstone PM
+              Cornerstone PM™
             </Link>{" "}
             is purpose-built for the 5–200 homes/year production builder — with scheduling,{" "}
             <Link
@@ -285,7 +285,7 @@ export default function NewstarImplementationCostPage() {
             Ready to see a different cost model?
           </h2>
           <p>
-            Cornerstone PM is currently in free beta. Early adopters get two years at no cost — full
+            Cornerstone PM™ is currently in free beta. Early adopters get two years at no cost — full
             platform, no per-seat fees, no implementation contract, no consultants. If you&apos;re re-evaluating
             your{" "}
             <Link
@@ -305,7 +305,7 @@ export default function NewstarImplementationCostPage() {
             No implementation fee. No consultants. No waiting.
           </h3>
           <p className="text-slate-400 text-sm mb-4">
-            Cornerstone PM was built for production home builders who don&apos;t have $50,000–$100,000 to
+            Cornerstone PM™ was built for production home builders who don&apos;t have $50,000–$100,000 to
             spend standing up a platform. Beta access is open now — early adopters get two years free.
           </p>
           <Link

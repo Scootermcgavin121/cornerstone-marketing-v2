@@ -3,12 +3,12 @@ import { Check, X, Minus } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 
 export const metadata = {
-  title: "Cornerstone PM vs NEWSTAR, Buildertrend, Buildxact — Compare Home Builder Software",
+  title: "Cornerstone PM™ vs NEWSTAR, Buildertrend, Buildxact — Compare Home Builder Software",
   description:
-    "See how Cornerstone PM stacks up against NEWSTAR, BuildPro, Buildertrend, and Buildxact. Less cost, faster setup, built specifically for home builders — with AI, real-time command center, and a 83+ skills in-app agent none of them have.",
+    "See how Cornerstone PM™ stacks up against NEWSTAR, BuildPro, Buildertrend, and Buildxact. Less cost, faster setup, built specifically for home builders — with AI, real-time command center, and a 83+ skills in-app agent none of them have.",
 };
 
-const competitors = ["Cornerstone PM", "NEWSTAR / BuildPro", "Buildertrend", "Buildxact"];
+const competitors = ["Cornerstone PM™", "NEWSTAR / BuildPro", "Buildertrend", "Buildxact"];
 
 const YES = "yes";
 const NO = "no";
@@ -230,7 +230,7 @@ export default function ComparePage() {
                 ))}
               </div>
               <div className="space-y-3">
-                <div className="text-cyan-400 font-bold text-sm uppercase tracking-widest mb-3">Cornerstone PM</div>
+                <div className="text-cyan-400 font-bold text-sm uppercase tracking-widest mb-3">Cornerstone PM™</div>
                 {[
                   "$149/mo flat &mdash; unlimited users, no per-seat fees",
                   "Full lot, community &amp; multi-community management",
@@ -332,7 +332,7 @@ export default function ComparePage() {
             <span className="flex items-center gap-1.5"><X className="w-3.5 h-3.5 text-slate-700" /> Not available</span>
           </div>
           <p className="max-w-5xl mx-auto mt-6 text-[11px] text-slate-600 leading-relaxed text-center">
-            Pricing and feature availability reflect publicly available information as of November 2026. Verify current pricing and capabilities directly with each vendor. NEWSTAR®, BuildPro®, Buildertrend®, and Buildxact® are trademarks of their respective owners; Cornerstone PM is not affiliated with or endorsed by these companies.
+            Pricing and feature availability reflect publicly available information as of November 2026. Verify current pricing and capabilities directly with each vendor. NEWSTAR®, BuildPro®, Buildertrend®, and Buildxact® are trademarks of their respective owners; Cornerstone PM™ is not affiliated with or endorsed by these companies.
           </p>
         </div>
       </section>
@@ -342,7 +342,7 @@ export default function ComparePage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-3xl sm:text-4xl font-black text-white mb-3">Compare us to your current software</h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">See how Cornerstone PM stacks up against 17 construction platforms — from enterprise production builder software to field tools and service-biz apps.</p>
+            <p className="text-slate-400 max-w-2xl mx-auto">See how Cornerstone PM™ stacks up against 17 construction platforms — from enterprise production builder software to field tools and service-biz apps.</p>
           </div>
 
           {/* Production builder competitors */}

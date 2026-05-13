@@ -54,7 +54,7 @@ export async function POST(req: NextRequest) {
     });
 
     await transporter.sendMail({
-      from: `"Cornerstone PM Website" <${process.env.SMTP_USER}>`,
+      from: `"Cornerstone PM™ Website" <${process.env.SMTP_USER}>`,
       to: process.env.SMTP_TO,
       replyTo: email,
       subject: `🏗️ Beta Request: ${name}${company ? ` — ${company}` : ""}`,

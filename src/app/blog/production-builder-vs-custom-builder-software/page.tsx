@@ -11,7 +11,7 @@ const heroImageAlt =
 
 export const metadata: Metadata = {
   title:
-    "Production Builder vs Custom Builder Software: Which Do You Need? — Cornerstone PM Blog",
+    "Production Builder vs Custom Builder Software: Which Do You Need? — Cornerstone PM™ Blog",
   description:
     "Production builder software vs custom builder software: how the workflows differ and which platform category fits your business model.",
   alternates: {
@@ -52,7 +52,7 @@ export default function ProductionBuilderVsCustomBuilderSoftwarePage() {
               "@type": "ImageObject",
               contentUrl: `https://www.cornerstonepm.ai${heroImage}`,
               description: heroImageAlt,
-              creditText: "Cornerstone PM",
+              creditText: "Cornerstone PM™",
             }),
           }}
         />
@@ -198,7 +198,7 @@ export default function ProductionBuilderVsCustomBuilderSoftwarePage() {
               <div className="px-4 py-3 text-xs font-bold text-slate-400 uppercase tracking-wider border-b border-slate-700 bg-slate-900/40">Best Fit</div>
               <div className="px-4 py-3 text-xs font-bold text-slate-400 uppercase tracking-wider border-b border-slate-700 bg-slate-900/40">Key Strength</div>
 
-              <div className="px-4 py-3 text-sm text-white border-b border-slate-800">Cornerstone PM</div>
+              <div className="px-4 py-3 text-sm text-white border-b border-slate-800">Cornerstone PM™</div>
               <div className="px-4 py-3 text-sm text-emerald-400 border-b border-slate-800">Production</div>
               <div className="px-4 py-3 text-sm text-slate-300 border-b border-slate-800">Communities, options engine, AI takeoff, vendor bids</div>
 
@@ -326,7 +326,7 @@ export default function ProductionBuilderVsCustomBuilderSoftwarePage() {
             Built for production builders from the ground up
           </h2>
           <p>
-            Cornerstone PM is purpose-built for production home builders doing 5–200 homes per year. The
+            Cornerstone PM™ is purpose-built for production home builders doing 5–200 homes per year. The
             entire platform — communities, floor plans, schedule templates,{" "}
             <Link
               href="/ai-takeoff"
@@ -358,7 +358,7 @@ export default function ProductionBuilderVsCustomBuilderSoftwarePage() {
             Production builder software that actually works like a production builder.
           </h3>
           <p className="text-slate-400 text-sm mb-4">
-            Cornerstone PM is in free beta. Communities, floor plans, AI takeoff, vendor bidding, design
+            Cornerstone PM™ is in free beta. Communities, floor plans, AI takeoff, vendor bidding, design
             center — purpose-built for builders running 10–200 homes per year. Early adopters get two
             years free.
           </p>

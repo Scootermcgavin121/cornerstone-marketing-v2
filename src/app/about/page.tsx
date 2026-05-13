@@ -5,9 +5,9 @@ import { CTASection } from "@/components/CTASection";
 import { X, Check } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About — Cornerstone PM",
+  title: "About — Cornerstone PM™",
   description:
-    "Built by a builder who got tired of paying $499/mo for software that didn't fit. The origin story of Cornerstone PM.",
+    "Built by a builder who got tired of paying $499/mo for software that didn't fit. The origin story of Cornerstone PM™.",
 };
 
 // Pricing reflects publicly listed starting prices as of November 2026; verify current pricing
@@ -55,7 +55,7 @@ export default function AboutPage() {
             actually use.
           </p>
           <p>
-            So we built Cornerstone PM. Not for enterprise builders closing 500 homes a year. For
+            So we built Cornerstone PM™. Not for enterprise builders closing 500 homes a year. For
             builders closing 5 to 50. The ones who need real tools without real enterprise overhead.
           </p>
 
@@ -108,7 +108,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-3 px-6 py-4 items-center bg-cyan-500/5 border-t-2 border-cyan-500/30">
               <div className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                <span className="text-white font-bold">Cornerstone PM</span>
+                <span className="text-white font-bold">Cornerstone PM™</span>
               </div>
               <div className="text-amber-400 font-bold">$149/mo</div>
               <div className="text-emerald-400 text-sm font-medium">Built for you</div>
@@ -128,7 +128,7 @@ export default function AboutPage() {
           <p className="text-lg text-slate-400 leading-relaxed">
             We&apos;re still builders. We still know what it feels like to triple-check a sub schedule
             at 10pm because the framing crew is showing up at 7am and you&apos;re not sure if the
-            foundation is ready. We built Cornerstone PM so you never have to feel that way again.
+            foundation is ready. We built Cornerstone PM™ so you never have to feel that way again.
           </p>
         </div>
       </section>

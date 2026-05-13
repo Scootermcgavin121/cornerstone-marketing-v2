@@ -20,7 +20,7 @@ import { Footer } from "@/components/Footer";
 import { FAQSection, type FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
-  title: "AI CRM Migration Wizard — Switch from Buildertrend in Minutes | Cornerstone PM",
+  title: "AI CRM Migration Wizard — Switch from Buildertrend in Minutes | Cornerstone PM™",
   description:
     "Drag in your CSV, Excel, or full ZIP export. Our AI auto-detects the source CRM (Buildertrend, JobTread, CoConstruct), maps every column, and imports 7 data types in one click. Free, with dry-run preview. Beta.",
   alternates: { canonical: "https://www.cornerstonepm.ai/migrate" },

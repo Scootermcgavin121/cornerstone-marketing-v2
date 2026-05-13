@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -6,9 +6,9 @@ import { CTASection } from "@/components/CTASection";
 import { Check } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Construction Software Alternatives — Compare to Cornerstone PM",
+  title: "Construction Software Alternatives — Compare to Cornerstone PM™",
   description:
-    "See how Cornerstone PM compares to 17 construction software platforms — from NEWSTAR and Buildertrend to Procore, JobTread, Fieldwire, and more. Built specifically for production home builders.",
+    "See how Cornerstone PM™ compares to 17 construction software platforms — from NEWSTAR and Buildertrend to Procore, JobTread, Fieldwire, and more. Built specifically for production home builders.",
   alternates: { canonical: "https://www.cornerstonepm.ai/alternatives" },
 };
 
@@ -76,15 +76,15 @@ const differentiators = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "Cornerstone PM Alternative Pages",
-  "description": "Comparison pages showing how Cornerstone PM compares to 17 construction software platforms",
+  "name": "Cornerstone PM™ Alternative Pages",
+  "description": "Comparison pages showing how Cornerstone PM™ compares to 17 construction software platforms",
   "url": "https://www.cornerstonepm.ai/alternatives",
   "numberOfItems": 17,
   "itemListElement": groups.flatMap((g) =>
     g.competitors.map((c, i) => ({
       "@type": "ListItem",
       "position": i + 1,
-      "name": `Cornerstone PM vs ${c.name}`,
+      "name": `Cornerstone PM™ vs ${c.name}`,
       "url": `https://www.cornerstonepm.ai/${c.slug}-alternative`,
     }))
   ),
@@ -112,7 +112,7 @@ export default function AlternativesPage() {
             <span className="text-cyan-400">compared honestly.</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto">
-            Cornerstone PM is the home builder platform. See how we stack up against every major construction software — and where we&apos;re genuinely different from service-business tools.
+            Cornerstone PM™ is the home builder platform. See how we stack up against every major construction software — and where we&apos;re genuinely different from service-business tools.
           </p>
         </div>
       </section>
@@ -150,7 +150,7 @@ export default function AlternativesPage() {
       <section className="py-16 px-4 border-t border-slate-800/60 mt-8">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">Why builders switch to Cornerstone PM</h2>
+            <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">Why builders switch to Cornerstone PM™</h2>
             <p className="text-slate-400 max-w-2xl mx-auto">We didn&apos;t adapt a generic tool for home builders. We built from scratch, for home builders specifically.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

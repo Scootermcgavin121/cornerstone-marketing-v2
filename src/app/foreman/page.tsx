@@ -4,7 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import { VideoPlayer } from "@/components/VideoPlayer";
 
 export const metadata = {
-  title: "Foreman AI - 83-Skill Construction Agent with Memory Compaction | Cornerstone PM",
+  title: "Foreman AI - 83-Skill Construction Agent with Memory Compaction | Cornerstone PM™",
   description:
     "83 purpose-built construction skills with built-in memory compaction - the only construction AI that doesn't forget mid-session. Reads and writes your real data: parts, vendors, homes, budgets, sales pipeline, design center selections. Pro plan.",
 };

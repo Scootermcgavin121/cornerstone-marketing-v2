@@ -3,14 +3,14 @@ import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageT
 import type { FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
-  title: "Houzz Pro Alternative for Home Builders | Cornerstone PM",
+  title: "Houzz Pro Alternative for Home Builders | Cornerstone PM™",
   description:
-    "Houzz Pro is built for interior designers and remodelers. Cornerstone PM is the Houzz Pro alternative for home builders -- AI agents (Pro $499/mo), options engine, and multi-community management from $149/mo.",
+    "Houzz Pro is built for interior designers and remodelers. Cornerstone PM™ is the Houzz Pro alternative for home builders -- AI agents (Pro $499/mo), options engine, and multi-community management from $149/mo.",
   alternates: { canonical: "https://www.cornerstonepm.ai/houzz-alternative" },
 };
 
 const comparisonRows: ComparisonRow[] = [
-  { feature: "Built for home builders", cornerstone: true, competitor: false, note: "Houzz Pro is built for interior designers, remodelers, and home improvement pros. Cornerstone PM is purpose-built for home builders -- production, semi-custom, and custom -- managing communities of homes, not design portfolios." },
+  { feature: "Built for home builders", cornerstone: true, competitor: false, note: "Houzz Pro is built for interior designers, remodelers, and home improvement pros. Cornerstone PM™ is purpose-built for home builders -- production, semi-custom, and custom -- managing communities of homes, not design portfolios." },
   { feature: "Structural options engine", cornerstone: true, competitor: false, note: "Pre-sale floorplan options pricing matrix -- Cornerstone Builder ($299/mo). Not a design/remodel concept." },
   { feature: "Floorplan pricing matrix", cornerstone: true, competitor: false, note: "Per-community floorplan pricing for home builders. Cornerstone Builder+." },
   { feature: "Multi-community lot management", cornerstone: true, competitor: false, note: "Native multi-community pipeline. Houzz Pro is project-centric." },
@@ -47,18 +47,18 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What's the best Houzz Pro alternative for home builders?",
-    a: "Cornerstone PM is purpose-built for home builders. Beyond the basics (scheduling, client communication, document management from Starter $149/mo), it adds a structural options engine, floorplan pricing matrix, multi-community lot management, 64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses), native AI agents (Foreman AI 83+ skills on Pro $499/mo, Blueprint AI), 30+ named webhook events (Pro+), and a public REST API.",
+    a: "Cornerstone PM™ is purpose-built for home builders. Beyond the basics (scheduling, client communication, document management from Starter $149/mo), it adds a structural options engine, floorplan pricing matrix, multi-community lot management, 64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses), native AI agents (Foreman AI 83+ skills on Pro $499/mo, Blueprint AI), 30+ named webhook events (Pro+), and a public REST API.",
   },
   {
     q: "Does Houzz Pro have AI features?",
     a: "Houzz Pro includes AI tools for design assistance and project management -- mood boards, visualizations, and scheduling tools aimed at interior designers and remodelers. Cornerstone's Foreman AI (Pro $499/mo) is a native agent with 83 construction-specific skills that takes real actions: creates POs, updates design options, generates SOWs, runs bid comparisons, analyzes screenshots with AI vision, and scrapes supplier product pages.",
   },
   {
-    q: "Can I migrate from Houzz Pro to Cornerstone PM?",
+    q: "Can I migrate from Houzz Pro to Cornerstone PM™?",
     a: "Yes. The AI Migration Wizard reads your Houzz Pro export, auto-detects column mapping, and runs 23 import endpoints for contacts, vendors, and project data. Most migrations complete in under a day.",
   },
   {
-    q: "Does Cornerstone PM have a design center like Houzz?",
+    q: "Does Cornerstone PM™ have a design center like Houzz?",
     a: "Yes -- built for home builders, not interior designers. Cornerstone's design center includes structural and design options per floorplan, 64 curated Designer Packages across 7 categories (curated by an actual interior designer, the same playbook K. Hovnanian Homes uses), allowances, per-community pricing, and a homeowner portal for buyer selections. It's home-builder native, not a consumer inspiration board.",
   },
   {
@@ -66,7 +66,7 @@ const faqItems: FAQItem[] = [
     a: "Starter ($149/mo) includes construction scheduling, subcontractor assignment, permits pipeline, homeowner progress portal, and the AI Support Agent -- unlimited users. Options engine and design center are on Builder ($299/mo). Foreman AI + Blueprint AI are on Pro ($499/mo). REST API + BYOA are on Pro+ ($599/mo).",
   },
   {
-    q: "Does Cornerstone PM have a free trial?",
+    q: "Does Cornerstone PM™ have a free trial?",
     a: "Yes. The 2-year free beta is open to the first 100 home builders -- no credit card, no contract, no implementation fee.",
   },
 ];
@@ -79,19 +79,19 @@ export default function HouzzAlternativePage() {
       heroLine1="Houzz is for designers."
       heroLine2="You build communities."
       accentColor="violet"
-      heroParagraph="Houzz Pro is a design platform and marketplace for interior designers and remodelers. Cornerstone PM is the alternative for home builders -- structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, and 83 AI skills (Pro $499/mo) from $149/mo."
+      heroParagraph="Houzz Pro is a design platform and marketplace for interior designers and remodelers. Cornerstone PM™ is the alternative for home builders -- structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, and 83 AI skills (Pro $499/mo) from $149/mo."
       secondaryCTA={{ text: "See full comparison", href: "/compare" }}
-      comparisonSubtitle="Houzz Pro vs Cornerstone PM -- design platform vs. home-builder platform."
+      comparisonSubtitle="Houzz Pro vs Cornerstone PM™ -- design platform vs. home-builder platform."
       comparisonRows={comparisonRows}
       trademarkName="Houzz"
-      whySwitchHeadline="What home builders get with Cornerstone PM"
+      whySwitchHeadline="What home builders get with Cornerstone PM™"
       whySwitchCards={whySwitchCards}
-      honestAngle="If you're an interior designer or home remodeler, Houzz Pro is a great tool for portfolio building and lead generation from the Houzz marketplace. This page is for home builders who found Houzz Pro through a search -- you need a different kind of platform, and Cornerstone PM is built for your workflows."
+      honestAngle="If you're an interior designer or home remodeler, Houzz Pro is a great tool for portfolio building and lead generation from the Houzz marketplace. This page is for home builders who found Houzz Pro through a search -- you need a different kind of platform, and Cornerstone PM™ is built for your workflows."
       showMigrationCTA={true}
       migrationHeadline="Moving from Houzz Pro? Bring your contacts and data."
       migrationDesc="Export your Houzz Pro data, drop it in our wizard, and AI auto-maps contacts, vendors, and project history. Dry-run before you commit."
       faqTitle="Houzz Pro Alternative FAQ"
-      faqSubtitle="For home builders evaluating Houzz Pro vs Cornerstone PM."
+      faqSubtitle="For home builders evaluating Houzz Pro vs Cornerstone PM™."
       faqItems={faqItems}
       footerHeadline="Built for home builders, not design portfolios."
       footerSubtext="Join the beta and get 2 years free. Home-builder workflows native."

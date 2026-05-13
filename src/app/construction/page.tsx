@@ -1,44 +1,44 @@
-﻿import { Check } from "lucide-react";
+import { Check } from "lucide-react";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { FAQSection, type FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
-  title: "Construction Scheduling Software for Home Builders | Cornerstone PM",
+  title: "Construction Scheduling Software for Home Builders | Cornerstone PM™",
   description: "AI construction scheduling for home builders. Auto-cascading dependencies, vendor notifications, and Gantt charts &mdash; built for home builders running multiple communities.",
 };
 
 const faqItems: FAQItem[] = [
   {
     q: "What is construction scheduling software for home builders?",
-    a: "Construction scheduling software for home builders is a tool that lets home builders plan, sequence, and notify subcontractors across every home in every community. Cornerstone PM's scheduling module includes Gantt charts, 3-tier auto-cascading dependencies, foundation-aware templates, and one-click vendor email confirmations &mdash; designed specifically for builders managing 10-200+ homes per year, not general contractors.",
+    a: "Construction scheduling software for home builders is a tool that lets home builders plan, sequence, and notify subcontractors across every home in every community. Cornerstone PM™'s scheduling module includes Gantt charts, 3-tier auto-cascading dependencies, foundation-aware templates, and one-click vendor email confirmations &mdash; designed specifically for builders managing 10-200+ homes per year, not general contractors.",
   },
   {
     q: "How does AI construction scheduling for home builders work?",
-    a: "Cornerstone PM's AI scheduling watches your live build data and surfaces problems before they cascade: vendor no-shows, missed dependencies, slipping milestones, and weather-blocked tasks. Foreman AI can also reschedule tasks, notify vendors, and rebuild downstream timelines from a plain-English request. Schedules update in real time as conditions change.",
+    a: "Cornerstone PM™'s AI scheduling watches your live build data and surfaces problems before they cascade: vendor no-shows, missed dependencies, slipping milestones, and weather-blocked tasks. Foreman AI can also reschedule tasks, notify vendors, and rebuild downstream timelines from a plain-English request. Schedules update in real time as conditions change.",
   },
   {
     q: "What is auto-cascading dependency scheduling?",
-    a: "Auto-cascading means when one task moves &mdash; say framing slips three days &mdash; every downstream task automatically shifts to match, vendors get re-notified, and the homeowner portal updates. Cornerstone PM uses a 3-tier dependency system (hard, soft, vendor-driven) so the cascade respects which tasks can run in parallel versus which must wait.",
+    a: "Auto-cascading means when one task moves &mdash; say framing slips three days &mdash; every downstream task automatically shifts to match, vendors get re-notified, and the homeowner portal updates. Cornerstone PM™ uses a 3-tier dependency system (hard, soft, vendor-driven) so the cascade respects which tasks can run in parallel versus which must wait.",
   },
   {
-    q: "Does Cornerstone PM replace Buildertrend for scheduling?",
-    a: "Yes &mdash; for production home builders. Buildertrend was built for custom builders and remodelers; Cornerstone PM was built specifically for production builders managing lot inventories, plan repeats, and multi-community pipelines. Cornerstone PM's scheduling starts at $149/mo (vs $499+/mo for Buildertrend) and includes 17 pre-built schedule templates and 7 foundation templates out of the box.",
+    q: "Does Cornerstone PM™ replace Buildertrend for scheduling?",
+    a: "Yes &mdash; for production home builders. Buildertrend was built for custom builders and remodelers; Cornerstone PM™ was built specifically for production builders managing lot inventories, plan repeats, and multi-community pipelines. Cornerstone PM™'s scheduling starts at $149/mo (vs $499+/mo for Buildertrend) and includes 17 pre-built schedule templates and 7 foundation templates out of the box.",
   },
   {
     q: "How are subcontractors notified of schedule changes?",
-    a: "Vendors receive automated emails when tasks are ready, when timelines shift, or when permits clear. Every email contains a secure magic link &mdash; one click confirms or declines the task. No app to download, no account to create, no password to remember. Cornerstone PM also sends daily and weekly digest emails so vendors and PMs stay aligned without checking the dashboard. This is the biggest friction-killer for trade partners in the industry: most subs never log into other platforms because they don't want to make an account, so PMs end up texting and calling them anyway. We removed that wall.",
+    a: "Vendors receive automated emails when tasks are ready, when timelines shift, or when permits clear. Every email contains a secure magic link &mdash; one click confirms or declines the task. No app to download, no account to create, no password to remember. Cornerstone PM™ also sends daily and weekly digest emails so vendors and PMs stay aligned without checking the dashboard. This is the biggest friction-killer for trade partners in the industry: most subs never log into other platforms because they don't want to make an account, so PMs end up texting and calling them anyway. We removed that wall.",
   },
   {
     q: "Can I import my existing schedule from Buildertrend or CoConstruct?",
-    a: "Yes. Cornerstone PM supports schedule import from Buildertrend, CoConstruct, and any Excel-based system using a smart column mapper. Migration typically takes under an hour for a single community.",
+    a: "Yes. Cornerstone PM™ supports schedule import from Buildertrend, CoConstruct, and any Excel-based system using a smart column mapper. Migration typically takes under an hour for a single community.",
   },
   {
     q: "What's a permit gate in construction scheduling?",
-    a: "A permit gate automatically blocks dependent tasks until the permit is approved. Cornerstone PM's permit gate prevents framing from being scheduled before the permit clears, prevents inspections from being booked before required preceding work, and notifies the PM when the gate opens.",
+    a: "A permit gate automatically blocks dependent tasks until the permit is approved. Cornerstone PM™'s permit gate prevents framing from being scheduled before the permit clears, prevents inspections from being booked before required preceding work, and notifies the PM when the gate opens.",
   },
   {
-    q: "Does Cornerstone PM include a homeowner portal?",
+    q: "Does Cornerstone PM™ include a homeowner portal?",
     a: "Yes, on every plan. The homeowner portal is synced in real time with the construction schedule — when framing moves three days, buyers see it instantly, no follow-up call needed. Plus: (1) builder and PM upload job-site photos to every milestone (up to 5 photos per milestone via a camera button on the task row, captured straight from the field), (2) built-in messaging app between builder and customer with a permanent searchable record of every conversation — no more lost text threads or 'wait, what did we agree on?', and (3) one-click ZIP download of all job photos so buyers can save their whole build history. Warranty information and design selections are also visible. Included in Starter at $149/mo with no per-user, per-buyer fees.",
   },
 ];
@@ -124,7 +124,7 @@ export default function ConstructionPage() {
             </div>
             <div className="border-t border-slate-800 pt-6 space-y-3 text-sm text-slate-400">
               <div className="flex justify-between"><span>Buildertrend</span><span className="line-through text-slate-600">$499+/mo</span></div>
-              <div className="flex justify-between"><span>Cornerstone PM</span><span className="text-amber-400 font-bold">Free during beta</span></div>
+              <div className="flex justify-between"><span>Cornerstone PM™</span><span className="text-amber-400 font-bold">Free during beta</span></div>
             </div>
             <Link href="/beta" className="block w-full text-center px-6 py-3.5 rounded-xl bg-amber-400 text-slate-900 font-bold hover:bg-amber-300 transition-all duration-200">Get Early Access &rarr;</Link>
             <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders &mdash;· No credit card required</p>

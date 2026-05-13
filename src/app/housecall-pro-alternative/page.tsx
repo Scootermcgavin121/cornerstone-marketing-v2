@@ -3,14 +3,14 @@ import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageT
 import type { FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
-  title: "Housecall Pro Alternative for Home Builders | Cornerstone PM",
+  title: "Housecall Pro Alternative for Home Builders | Cornerstone PM™",
   description:
-    "Housecall Pro is built for home service businesses. Cornerstone PM is the alternative for home builders -- AI agents (Pro $499/mo), options engine, and multi-community management from $149/mo.",
+    "Housecall Pro is built for home service businesses. Cornerstone PM™ is the alternative for home builders -- AI agents (Pro $499/mo), options engine, and multi-community management from $149/mo.",
   alternates: { canonical: "https://www.cornerstonepm.ai/housecall-pro-alternative" },
 };
 
 const comparisonRows: ComparisonRow[] = [
-  { feature: "Built for home builders", cornerstone: true, competitor: false, note: "Housecall Pro is built for HVAC, plumbing, electrical, and home service businesses. Cornerstone PM is purpose-built for home builders -- production, semi-custom, and custom -- with lot management, options engine, and multi-community pipelines that home service tools don't offer." },
+  { feature: "Built for home builders", cornerstone: true, competitor: false, note: "Housecall Pro is built for HVAC, plumbing, electrical, and home service businesses. Cornerstone PM™ is purpose-built for home builders -- production, semi-custom, and custom -- with lot management, options engine, and multi-community pipelines that home service tools don't offer." },
   { feature: "Structural options engine", cornerstone: true, competitor: false, note: "Pre-sale floorplan options pricing matrix -- Cornerstone Builder ($299/mo). Not a home service feature." },
   { feature: "Floorplan pricing matrix", cornerstone: true, competitor: false, note: "Per-community floorplan pricing for home builders. Cornerstone Builder+." },
   { feature: "Multi-community lot management", cornerstone: true, competitor: false, note: "Native multi-community pipeline. Housecall Pro is job-centric." },
@@ -47,11 +47,11 @@ const faqItems: FAQItem[] = [
     a: "Usually because they're a small builder who started with whatever software was recommended to them, or they're a subcontractor who became a builder. Housecall Pro handles the service side well. When you start building homes -- doing pre-sale selections, managing multiple floorplans, running construction schedules -- you need a platform built for new construction, not service dispatch.",
   },
   {
-    q: "What does Cornerstone PM have that Housecall Pro doesn't?",
+    q: "What does Cornerstone PM™ have that Housecall Pro doesn't?",
     a: "For home builders: structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, pre-sale design center with 64 Designer Packages curated by an actual interior designer, Blueprint AI floor plan takeoffs, Foreman AI with 83+ skills (Pro $499/mo), 30+ named webhook events (Pro+), public REST API (Pro+), a no-login vendor portal (vendors confirm tasks, accept schedule changes, and submit bids via email magic links — no app, no account, no password), and one-click full database export (CSV/JSON).",
   },
   {
-    q: "Can I migrate my Housecall Pro data to Cornerstone PM?",
+    q: "Can I migrate my Housecall Pro data to Cornerstone PM™?",
     a: "Yes. The AI Migration Wizard reads your Housecall Pro export, auto-detects column mapping, and runs 23 import endpoints for vendors, contacts, communities, and more. Most migrations complete in under a day.",
   },
   {
@@ -59,7 +59,7 @@ const faqItems: FAQItem[] = [
     a: "Starter ($149/mo) includes construction scheduling, subcontractor assignment, permits pipeline, homeowner progress portal, and the AI Support Agent -- unlimited users. Options engine and design center are on Builder ($299/mo). Foreman AI + Blueprint AI are on Pro ($499/mo). REST API + BYOA are on Pro+ ($599/mo).",
   },
   {
-    q: "Does Cornerstone PM have a free trial?",
+    q: "Does Cornerstone PM™ have a free trial?",
     a: "Yes. The 2-year free beta is open to the first 100 home builders -- no credit card, no contract, no implementation fee.",
   },
 ];
@@ -72,14 +72,14 @@ export default function HousecallProAlternativePage() {
       heroLine1="Housecall Pro dispatches technicians."
       heroLine2="You build homes."
       accentColor="cyan"
-      heroParagraph="Housecall Pro is a home service platform for HVAC, plumbing, and electrical companies. Cornerstone PM is the alternative for home builders -- structural options engine (Builder $299/mo), floorplan pricing, 83 AI skills (Pro $499/mo), and multi-community management from $149/mo."
+      heroParagraph="Housecall Pro is a home service platform for HVAC, plumbing, and electrical companies. Cornerstone PM™ is the alternative for home builders -- structural options engine (Builder $299/mo), floorplan pricing, 83 AI skills (Pro $499/mo), and multi-community management from $149/mo."
       secondaryCTA={{ text: "See full comparison", href: "/compare" }}
-      comparisonSubtitle="Housecall Pro vs Cornerstone PM -- home services vs. new home construction."
+      comparisonSubtitle="Housecall Pro vs Cornerstone PM™ -- home services vs. new home construction."
       comparisonRows={comparisonRows}
       trademarkName="Housecall Pro"
       whySwitchHeadline="What home builders get that Housecall Pro can't offer"
       whySwitchCards={whySwitchCards}
-      honestAngle="If you're a home service business (HVAC, plumbing, electrical, cleaning), Housecall Pro is probably a good fit. This page is for home builders who landed on Housecall Pro through a search. You need different software -- Cornerstone PM is built for your workflows."
+      honestAngle="If you're a home service business (HVAC, plumbing, electrical, cleaning), Housecall Pro is probably a good fit. This page is for home builders who landed on Housecall Pro through a search. You need different software -- Cornerstone PM™ is built for your workflows."
       showMigrationCTA={true}
       migrationHeadline="Switching from Housecall Pro? Bring your contacts and vendors."
       migrationDesc="Export your Housecall Pro data, drop it in our wizard, and AI auto-maps vendors, contacts, and job history. Dry-run before you commit."

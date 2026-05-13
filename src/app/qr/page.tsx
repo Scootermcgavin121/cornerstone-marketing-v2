@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
@@ -31,7 +31,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Real-Time Construction Command Center | Cornerstone PM",
+  title: "Real-Time Construction Command Center | Cornerstone PM™",
   description:
     "The construction PM platform that turns your phone into a real-time command center. Live vendor check-ins, weather conditions, GPS audit trails, and Google Maps presence pinned across every community — manage your entire build from a beach 1,500 miles away. Triple QR ecosystem (vendor, PM, model home buyer) feeds it all. No app install required.",
   alternates: { canonical: "https://www.cornerstonepm.ai/qr" },

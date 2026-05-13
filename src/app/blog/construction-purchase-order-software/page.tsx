@@ -6,7 +6,7 @@ import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Construction Purchase Order Software for Home Builders (2026 Guide) &mdash; Cornerstone PM Blog",
+  title: "Construction Purchase Order Software for Home Builders (2026 Guide) &mdash; Cornerstone PM™ Blog",
   description:
     "Managing construction POs in Excel is costing home builders time and margin. Here's what modern purchase order software should actually do &mdash; and how AI is changing the equation.",
   openGraph: {
@@ -97,7 +97,7 @@ export default function ConstructionPurchaseOrderSoftwarePost() {
             The biggest change in 2025&ndash;2026 is AI integration that actually does something useful. Not a chatbot that answers generic questions about construction &mdash; an agent that reads and writes your real data.
           </p>
           <p>
-            With Foreman AI (Cornerstone PM&apos;s built-in AI agent), a builder can type:
+            With Foreman AI (Cornerstone PM™&apos;s built-in AI agent), a builder can type:
           </p>
 
           <div className="rounded-xl bg-slate-900 border border-slate-700 p-6 my-6 not-prose">
@@ -139,7 +139,7 @@ export default function ConstructionPurchaseOrderSoftwarePost() {
           </ul>
 
           <p>
-            On the last point: most enterprise construction software charges per user. That&apos;s a problem for builders who want their PMs, admins, and field leads all in the system. Cornerstone PM is flat-rate &mdash; unlimited users at every plan tier.
+            On the last point: most enterprise construction software charges per user. That&apos;s a problem for builders who want their PMs, admins, and field leads all in the system. Cornerstone PM™ is flat-rate &mdash; unlimited users at every plan tier.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">The bottom line</h2>
@@ -150,12 +150,12 @@ export default function ConstructionPurchaseOrderSoftwarePost() {
             Modern construction PO software &mdash; especially AI-integrated platforms &mdash; has made this a solvable problem for builders of any size. The question is whether you want to keep paying for it in margin erosion, or invest in tooling that pays for itself on the first budget variance it catches.
           </p>
           <p>
-            Cornerstone PM is in beta right now. The purchasing module, Foreman AI, and the full platform are free for 2 years for early adopters. No credit card required.
+            Cornerstone PM™ is in beta right now. The purchasing module, Foreman AI, and the full platform are free for 2 years for early adopters. No credit card required.
           </p>
         </div>
 
         <div className="mt-12 p-6 rounded-2xl border border-amber-500/20 bg-amber-500/5">
-          <h3 className="text-lg font-bold text-white mb-2">Try Cornerstone PM free</h3>
+          <h3 className="text-lg font-bold text-white mb-2">Try Cornerstone PM™ free</h3>
           <p className="text-slate-400 text-sm mb-4">
             Beta access is open now. 2 years free for early adopters. Includes the full purchasing module and Foreman AI.
           </p>

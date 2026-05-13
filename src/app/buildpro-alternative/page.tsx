@@ -3,7 +3,7 @@ import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageT
 import type { FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
-  title: "BuildPro Alternative for Home Builders | Cornerstone PM",
+  title: "BuildPro Alternative for Home Builders | Cornerstone PM™",
   description:
     "BuildPro alternative for home builders. Native AI agents (Pro $499/mo), options engine, public REST API, and modern web UI from $149/mo - no enterprise implementation fees.",
   alternates: { canonical: "https://www.cornerstonepm.ai/buildpro-alternative" },
@@ -47,15 +47,15 @@ const whySwitchCards: WhySwitchCard[] = [
 const faqItems: FAQItem[] = [
   {
     q: "What is the best BuildPro alternative for home builders?",
-    a: "Cornerstone PM is the closest functional BuildPro alternative for small-to-mid home builders. It includes the same core capabilities - options engine, floorplan pricing matrix, multi-community management, sales pipeline, purchasing, and construction scheduling - plus native AI agents (Foreman AI on Pro $499/mo, Blueprint AI) and a public REST API (Pro+), without BuildPro's enterprise implementation cost.",
+    a: "Cornerstone PM™ is the closest functional BuildPro alternative for small-to-mid home builders. It includes the same core capabilities - options engine, floorplan pricing matrix, multi-community management, sales pipeline, purchasing, and construction scheduling - plus native AI agents (Foreman AI on Pro $499/mo, Blueprint AI) and a public REST API (Pro+), without BuildPro's enterprise implementation cost.",
   },
   {
-    q: "How is Cornerstone PM different from BuildPro?",
-    a: "Three key differences: (1) Cornerstone PM is a modern, web-based, mobile-friendly platform, while BuildPro is built on a Windows desktop architecture; (2) Cornerstone ships native AI agents (Foreman AI 83+ skills on Pro $499/mo, Blueprint AI, AI image search, anti-bot web scraping) that BuildPro doesn't offer at any tier; (3) Cornerstone is operational in hours at $149/mo with unlimited users, while BuildPro requires $25k-$75k+ implementation budgets.",
+    q: "How is Cornerstone PM™ different from BuildPro?",
+    a: "Three key differences: (1) Cornerstone PM™ is a modern, web-based, mobile-friendly platform, while BuildPro is built on a Windows desktop architecture; (2) Cornerstone ships native AI agents (Foreman AI 83+ skills on Pro $499/mo, Blueprint AI, AI image search, anti-bot web scraping) that BuildPro doesn't offer at any tier; (3) Cornerstone is operational in hours at $149/mo with unlimited users, while BuildPro requires $25k-$75k+ implementation budgets.",
   },
   {
-    q: "Can Cornerstone PM replace BuildPro for a home builder?",
-    a: "Yes - for small-to-mid home builders. Cornerstone PM covers BuildPro's core production builder workflows: lots, models, options, plan repeats, design center, draws, multi-community pipelines. For top-100 enterprise builders with deep custom integrations to existing ERPs, BuildPro may still be the right fit.",
+    q: "Can Cornerstone PM™ replace BuildPro for a home builder?",
+    a: "Yes - for small-to-mid home builders. Cornerstone PM™ covers BuildPro's core production builder workflows: lots, models, options, plan repeats, design center, draws, multi-community pipelines. For top-100 enterprise builders with deep custom integrations to existing ERPs, BuildPro may still be the right fit.",
   },
   {
     q: "How long does migration from BuildPro take?",
@@ -63,15 +63,15 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What about BuildPro's options engine? Does Cornerstone match it?",
-    a: "Yes. Cornerstone PM's options engine (Builder plan, $299/mo) handles structural and design options per floorplan, dependencies, incompatibilities, allowance overages, per-community pricing, and real-time price rollup. Foreman AI's Design Center domain (Pro $499/mo) adds plain-English option configuration and 64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses) across 7 categories - something BuildPro doesn't offer.",
+    a: "Yes. Cornerstone PM™'s options engine (Builder plan, $299/mo) handles structural and design options per floorplan, dependencies, incompatibilities, allowance overages, per-community pricing, and real-time price rollup. Foreman AI's Design Center domain (Pro $499/mo) adds plain-English option configuration and 64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses) across 7 categories - something BuildPro doesn't offer.",
   },
   {
-    q: "Is Cornerstone PM mobile-friendly?",
-    a: "Yes. Cornerstone PM is fully responsive on any device - PMs update from the jobsite, vendors confirm from their phone, sales counselors present floorplans on a tablet. BuildPro's mobile experience is limited and largely Windows-desktop focused.",
+    q: "Is Cornerstone PM™ mobile-friendly?",
+    a: "Yes. Cornerstone PM™ is fully responsive on any device - PMs update from the jobsite, vendors confirm from their phone, sales counselors present floorplans on a tablet. BuildPro's mobile experience is limited and largely Windows-desktop focused.",
   },
   {
-    q: "Does Cornerstone PM have a public API like BuildPro?",
-    a: "Cornerstone PM offers a fully public REST API on the Pro+ plan ($599/mo): 59+ endpoints and growing, 30+ named webhook event types (catalog growing), HMAC signatures, scoped Bearer-token auth, and public documentation. BuildPro offers enterprise integrations only, typically on a custom contract basis.",
+    q: "Does Cornerstone PM™ have a public API like BuildPro?",
+    a: "Cornerstone PM™ offers a fully public REST API on the Pro+ plan ($599/mo): 59+ endpoints and growing, 30+ named webhook event types (catalog growing), HMAC signatures, scoped Bearer-token auth, and public documentation. BuildPro offers enterprise integrations only, typically on a custom contract basis.",
   },
   {
     q: "What does $149/mo Cornerstone Starter include?",
@@ -79,7 +79,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Is there a free trial or beta?",
-    a: "Yes. Cornerstone PM offers a 2-year free beta to the first 100 home builders - no credit card, no contract, no implementation fee.",
+    a: "Yes. Cornerstone PM™ offers a 2-year free beta to the first 100 home builders - no credit card, no contract, no implementation fee.",
   },
 ];
 
@@ -91,7 +91,7 @@ export default function BuildProAlternativePage() {
       heroLine1="BuildPro power."
       heroLine2="Modern UI. Native AI."
       accentColor="violet"
-      heroParagraph="Cornerstone PM is the modern BuildPro alternative for small-to-mid home builders. Same core capabilities - options engine, multi-community pipelines, purchasing, construction scheduling - on a web-native platform with Foreman AI (83+ skills on Pro $499/mo), Blueprint AI, and a public REST API (Pro+ $599/mo). Starts at $149/mo, unlimited users."
+      heroParagraph="Cornerstone PM™ is the modern BuildPro alternative for small-to-mid home builders. Same core capabilities - options engine, multi-community pipelines, purchasing, construction scheduling - on a web-native platform with Foreman AI (83+ skills on Pro $499/mo), Blueprint AI, and a public REST API (Pro+ $599/mo). Starts at $149/mo, unlimited users."
       secondaryCTA={{ text: "Also a NEWSTAR alternative", href: "/newstar-alternative" }}
       comparisonSubtitle="Side-by-side for home builders evaluating modern alternatives."
       comparisonRows={comparisonRows}
@@ -102,7 +102,7 @@ export default function BuildProAlternativePage() {
       migrationHeadline="Already using BuildPro? Drop your export. We'll do the rest."
       migrationDesc="Export your BuildPro data, drop it in our wizard, and AI auto-maps every column - vendors, homes, communities, design options, scopes, budgets. Dry-run before you commit. ~$0.01 per migration in AI - we absorb it."
       faqTitle="BuildPro Alternative FAQ"
-      faqSubtitle="Common questions about switching to Cornerstone PM from BuildPro."
+      faqSubtitle="Common questions about switching to Cornerstone PM™ from BuildPro."
       faqItems={faqItems}
       footerHeadline="Ready for a modern platform?"
       footerSubtext="Join the beta and get 2 years free. Operational in hours, not months."

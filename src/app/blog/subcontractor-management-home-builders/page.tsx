@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Why Your Best Subs Are Choosing Other Builders — Cornerstone PM Blog",
+  title: "Why Your Best Subs Are Choosing Other Builders — Cornerstone PM™ Blog",
   description:
     "Good subcontractors have options. If your scheduling is a mess and communication is inconsistent, they'll quietly prioritize builders who make their lives easier. Here's how to be that builder.",
   openGraph: {
@@ -165,7 +165,7 @@ export default function SubcontractorManagementPost() {
           </p>
 
           <p>
-            Cornerstone PM&apos;s scheduling module automates exactly that. When a phase is marked
+            Cornerstone PM™&apos;s scheduling module automates exactly that. When a phase is marked
             complete, the next trade gets notified — no phone tag, no three-day delay. Your schedule
             moves forward on its own, and your subs start to notice that working with you is just
             easier than working with anyone else.
@@ -179,7 +179,7 @@ export default function SubcontractorManagementPost() {
         <div className="mt-12 p-6 rounded-2xl border border-cyan-500/20 bg-cyan-500/5">
           <h3 className="text-lg font-bold text-white mb-2">Build a schedule your subs will actually follow</h3>
           <p className="text-slate-400 text-sm mb-4">
-            Join the Cornerstone PM beta — free for 2 years for early adopters.
+            Join the Cornerstone PM™ beta — free for 2 years for early adopters.
           </p>
           <Link
             href="/beta"

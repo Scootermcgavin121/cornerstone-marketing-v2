@@ -5,7 +5,7 @@ import { InfiniteMovingCards } from "./ui/moving-cards";
 const testimonials = [
   {
     quote:
-      "We were hemorrhaging $499 a month on BuilderTrend and using maybe 20% of it. Cornerstone PM has everything we actually need — scheduling, purchasing, and the buyer portal is something our clients love.",
+      "We were hemorrhaging $499 a month on BuilderTrend and using maybe 20% of it. Cornerstone PM™ has everything we actually need — scheduling, purchasing, and the buyer portal is something our clients love.",
     name: "Rick Harmon",
     title: "Owner, Harmon Custom Homes — 22 homes/year",
   },
@@ -17,7 +17,7 @@ const testimonials = [
   },
   {
     quote:
-      "I built my first spreadsheet tracking system in 2009. I've tried every app out there. Cornerstone PM is the first one that actually makes sense for a builder our size — not a national homebuilder.",
+      "I built my first spreadsheet tracking system in 2009. I've tried every app out there. Cornerstone PM™ is the first one that actually makes sense for a builder our size — not a national homebuilder.",
     name: "Mike Tran",
     title: "Founder, Tran Brothers Development — 30 homes/year",
   },

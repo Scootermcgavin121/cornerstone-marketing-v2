@@ -18,7 +18,7 @@ export function BlogHero({ src, alt, caption }: BlogHeroProps) {
     "@type": "ImageObject",
     contentUrl: absoluteUrl,
     description: alt,
-    creditText: "Cornerstone PM",
+    creditText: "Cornerstone PM™",
   };
 
   return (

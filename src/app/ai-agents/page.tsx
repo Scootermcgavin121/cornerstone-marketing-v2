@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Agents for Home Builders | Cornerstone PM",
+  title: "AI Agents for Home Builders | Cornerstone PM™",
   description:
     "6 AI agents for home builders: Foreman AI (83+ skills), Blueprint AI (PDF takeoffs), Bid Import AI (parses any vendor bid), AI MLS Listing Generator, AI Support Agent, plus Jobsite AI (coming soon). Native AI built into the platform — not bolted on.",
   alternates: { canonical: "https://www.cornerstonepm.ai/ai-agents" },
@@ -65,7 +65,7 @@ const agents = [
     name: "AI Support Agent",
     tagline: "Instant Answers, Zero Wait Time",
     description:
-      "Every feature, workflow, and permission documented and trained on Cornerstone PM. Answers buyer and team questions 24/7 so you don't have to.",
+      "Every feature, workflow, and permission documented and trained on Cornerstone PM™. Answers buyer and team questions 24/7 so you don't have to.",
     icon: <MessageCircle className="w-8 h-8" />,
     color: "cyan",
     href: "/support-ai",

@@ -4,7 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 export const metadata = {
-  title: "AI Construction Scheduling for Home Builders | Cornerstone PM",
+  title: "AI Construction Scheduling for Home Builders | Cornerstone PM™",
   description:
     "AI construction scheduling for home builders. Auto-cascading dependencies, vendor email confirmations, and Foreman AI scheduling agent &mdash; built for home builders.",
   alternates: { canonical: "https://www.cornerstonepm.ai/ai-scheduling" },
@@ -66,7 +66,7 @@ export default function AiSchedulingPage() {
             <span className="text-cyan-400">on Schedule</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-6 leading-relaxed">
-            Managing 15 homes across 8 trades via text messages and spreadsheets isn&apos;t a scheduling system — it&apos;s controlled chaos. Cornerstone PM&apos;s AI scheduling keeps every home visible, every sub accountable, and every delay caught before it cascades.
+            Managing 15 homes across 8 trades via text messages and spreadsheets isn&apos;t a scheduling system — it&apos;s controlled chaos. Cornerstone PM™&apos;s AI scheduling keeps every home visible, every sub accountable, and every delay caught before it cascades.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -264,7 +264,7 @@ export default function AiSchedulingPage() {
             <div className="grid grid-cols-3 px-6 py-3 bg-slate-800/80 text-xs font-semibold text-slate-400 uppercase tracking-wider">
               <div>Task</div>
               <div className="text-center">Spreadsheet</div>
-              <div className="text-center text-amber-400">Cornerstone PM</div>
+              <div className="text-center text-amber-400">Cornerstone PM™</div>
             </div>
             {comparison.map((row, i) => (
               <div

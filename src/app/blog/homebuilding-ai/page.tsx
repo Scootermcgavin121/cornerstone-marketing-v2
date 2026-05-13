@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { BlogHero } from "@/components/BlogHero";
@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Homebuilding AI: How AI is Changing Residential Construction in 2026 &mdash; Cornerstone PM Blog",
+  title: "Homebuilding AI: How AI is Changing Residential Construction in 2026 &mdash; Cornerstone PM™ Blog",
   description:
     "Homebuilding is one of the last industries to get purpose-built AI &mdash; that's changing fast. Here's where AI is making the biggest impact in residential construction and what's coming next.",
   openGraph: {
@@ -145,7 +145,7 @@ export default function HomebuildingAiPost() {
           </div>
 
           <p>
-            These examples are from Cornerstone PM&apos;s Foreman AI &mdash; a 83-skill AI agent purpose-built for home builders that reads and writes real construction data in plain English.
+            These examples are from Cornerstone PM™&apos;s Foreman AI &mdash; a 83-skill AI agent purpose-built for home builders that reads and writes real construction data in plain English.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
@@ -172,14 +172,14 @@ export default function HomebuildingAiPost() {
             Homebuilding AI is no longer a future concept. It&apos;s here, it&apos;s working, and the builders who adopt it first are going to have a meaningful operational advantage. The difference between AI adapted to homebuilding and AI built for homebuilding is the difference between a tool that helps you write about your operation and a tool that actually runs it.
           </p>
           <p>
-            Cornerstone PM is building that second kind of tool. Foreman AI &mdash; 83 purpose-built skills, real data access, persistent memory. Beta is open now.
+            Cornerstone PM™ is building that second kind of tool. Foreman AI &mdash; 83 purpose-built skills, real data access, persistent memory. Beta is open now.
           </p>
         </div>
 
         <div className="mt-12 p-6 rounded-2xl border border-amber-500/20 bg-amber-500/5">
           <h3 className="text-lg font-bold text-white mb-2">See homebuilding AI in action</h3>
           <p className="text-slate-400 text-sm mb-4">
-            Cornerstone PM&apos;s beta is open. Foreman AI is included in the Pro plan. 2 years free for early adopters.
+            Cornerstone PM™&apos;s beta is open. Foreman AI is included in the Pro plan. 2 years free for early adopters.
           </p>
           <Link
             href="/beta"

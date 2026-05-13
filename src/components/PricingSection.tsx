@@ -106,7 +106,7 @@ const plans = [
 ];
 
 const competitors = [
-  { name: "Cornerstone PM", price: "from $149/mo", note: "Full platform + AI agents. No implementation.", highlight: true },
+  { name: "Cornerstone PM™", price: "from $149/mo", note: "Full platform + AI agents. No implementation.", highlight: true },
   { name: "BuilderTrend", price: "$499+/mo", note: "No options pricing engine", highlight: false },
   { name: "CoConstruct", price: "$399+/mo", note: "No structural options", highlight: false },
   { name: "NEWSTAR / BuildPro / MarkSystems", price: "$2K–5K/mo", note: "+ $50K–150K implementation", highlight: false },

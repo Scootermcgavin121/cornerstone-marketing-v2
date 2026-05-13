@@ -234,7 +234,7 @@ export function AlternativePageTemplate({
       {/* Comparison Table */}
       <section className="py-20 px-4 border-t border-slate-900">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl font-black text-center mb-4">Cornerstone PM vs {competitorName}</h2>
+          <h2 className="text-4xl font-black text-center mb-4">Cornerstone PM™ vs {competitorName}</h2>
           <p className="text-center text-slate-400 mb-12">
             {comparisonSubtitle ?? `Side-by-side comparison for home builders.`}
           </p>
@@ -248,7 +248,7 @@ export function AlternativePageTemplate({
               <thead className="bg-slate-900/60">
                 <tr>
                   <th className="text-left px-3 sm:px-6 py-4 text-slate-400 text-xs sm:text-sm font-semibold uppercase tracking-widest">Feature</th>
-                  <th className={`px-2 sm:px-4 py-4 text-xs sm:text-sm font-bold text-center ${a.col}`}>Cornerstone PM</th>
+                  <th className={`px-2 sm:px-4 py-4 text-xs sm:text-sm font-bold text-center ${a.col}`}>Cornerstone PM™</th>
                   <th className="px-2 sm:px-4 py-4 text-slate-400 text-xs sm:text-sm font-bold text-center">{competitorName}</th>
                 </tr>
               </thead>
@@ -272,7 +272,7 @@ export function AlternativePageTemplate({
           </div>
           <p className="max-w-5xl mx-auto mt-4 text-[11px] text-slate-600 leading-relaxed">
             Pricing and feature availability reflect publicly available information as of 2026. Verify current pricing and
-            capabilities directly with each vendor. {trademark}® is a trademark of its respective owner; Cornerstone PM
+            capabilities directly with each vendor. {trademark}® is a trademark of its respective owner; Cornerstone PM™
             is not affiliated with or endorsed by {trademark}.
           </p>
         </div>
@@ -283,7 +283,7 @@ export function AlternativePageTemplate({
         <section className="py-20 px-4 border-t border-slate-900">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-black text-center mb-12">
-              {whySwitchHeadline ?? `Why builders choose Cornerstone PM`}
+              {whySwitchHeadline ?? `Why builders choose Cornerstone PM™`}
             </h2>
             <div className={`grid gap-6 ${whySwitchCards.length === 2 ? "md:grid-cols-2" : "md:grid-cols-3"}`}>
               {whySwitchCards.map((card) => (
@@ -352,7 +352,7 @@ export function AlternativePageTemplate({
       {/* FAQ */}
       <FAQSection
         title={faqTitle ?? `${competitorName} Alternative FAQ`}
-        subtitle={faqSubtitle ?? `Common questions about switching to Cornerstone PM from ${competitorName}.`}
+        subtitle={faqSubtitle ?? `Common questions about switching to Cornerstone PM™ from ${competitorName}.`}
         items={faqItems}
       />
 

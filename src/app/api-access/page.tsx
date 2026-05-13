@@ -3,7 +3,7 @@ import { Check, Zap, ArrowRight, Code, Globe, Shield, GitBranch, Brain, RefreshC
 import { Navbar } from "@/components/Navbar";
 
 export const metadata = {
-  title: "API Access & Bring Your Own Agent — Cornerstone PM",
+  title: "API Access & Bring Your Own Agent — Cornerstone PM™",
   description:
     "REST API + webhooks that let AI agents automate the full home-building loop — send bid requests, track responses, schedule subs by text, and notify homebuyers the moment a milestone completes. No other homebuilder platform does this.",
 };

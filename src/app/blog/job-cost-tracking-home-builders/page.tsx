@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Where Your Margin Goes: How Home Builders Lose Money Without Knowing It — Cornerstone PM Blog",
+  title: "Where Your Margin Goes: How Home Builders Lose Money Without Knowing It — Cornerstone PM™ Blog",
   description:
     "Most home builders don't find out they lost margin until the home closes. Here's how job cost tracking works, why it matters, and how to catch budget overruns before they happen.",
   openGraph: {
@@ -135,11 +135,11 @@ export default function JobCostTrackingPost() {
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            How Cornerstone PM handles purchasing and budgets
+            How Cornerstone PM™ handles purchasing and budgets
           </h2>
 
           <p>
-            Cornerstone PM&apos;s purchasing module is built around this workflow. Every lot has a
+            Cornerstone PM™&apos;s purchasing module is built around this workflow. Every lot has a
             budget broken down by trade and category. Purchase orders issue against those lines.
             Change orders flow through an approval process and update committed costs in real time.
             When an invoice arrives, it gets matched to a PO — and variances surface immediately,
@@ -171,7 +171,7 @@ export default function JobCostTrackingPost() {
 
         <div className="mt-12 p-6 rounded-2xl border border-cyan-500/20 bg-cyan-500/5">
           <h3 className="text-lg font-bold text-white mb-2">
-            See how Cornerstone PM tracks budgets, POs, and job costs in one place
+            See how Cornerstone PM™ tracks budgets, POs, and job costs in one place
           </h3>
           <p className="text-slate-400 text-sm mb-4">
             Join the beta — free for 2 years for early adopters.

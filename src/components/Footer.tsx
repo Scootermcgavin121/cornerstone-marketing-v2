@@ -9,7 +9,7 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-2 lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <img src="/icon.png" alt="Cornerstone PM" className="w-12 h-12 object-contain" />
+              <img src="/icon.png" alt="Cornerstone PM™" className="w-12 h-12 object-contain" />
               <span className="font-bold text-white">
                 Cornerstone <span className="text-cyan-400">PM</span>
               </span>
@@ -23,7 +23,7 @@ export function Footer() {
                 href="https://www.instagram.com/cornerstone_pm_ai/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Cornerstone PM on Instagram"
+                aria-label="Cornerstone PM™ on Instagram"
                 className="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-slate-400 hover:text-white transition-colors duration-200"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
@@ -34,7 +34,7 @@ export function Footer() {
                 href="https://www.facebook.com/profile.php?id=61587721750398"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Cornerstone PM on Facebook"
+                aria-label="Cornerstone PM™ on Facebook"
                 className="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-slate-400 hover:text-white transition-colors duration-200"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
@@ -45,7 +45,7 @@ export function Footer() {
                 href="https://x.com/CornerBuildSoft"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Cornerstone PM on X"
+                aria-label="Cornerstone PM™ on X"
                 className="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-slate-400 hover:text-white transition-colors duration-200"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
@@ -56,7 +56,7 @@ export function Footer() {
                 href="https://www.linkedin.com/company/cornerstone-builder-software"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Cornerstone PM on LinkedIn"
+                aria-label="Cornerstone PM™ on LinkedIn"
                 className="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-slate-400 hover:text-white transition-colors duration-200"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
@@ -158,12 +158,12 @@ export function Footer() {
 
         <div className="mt-12 pt-6 border-t border-slate-800/60 space-y-3">
           <p className="text-[11px] text-slate-600 leading-relaxed">
-            Buildertrend®, NEWSTAR®, BuildPro®, CoConstruct®, JobTread®, MarkSystems®, Procore®, and any other competitor names mentioned on this site are trademarks of their respective owners. Cornerstone PM is not affiliated with, endorsed by, or sponsored by any of these companies. Comparative claims reflect publicly available information at the time of writing; verify pricing and feature availability directly with each vendor.
+            Buildertrend®, NEWSTAR®, BuildPro®, CoConstruct®, JobTread®, MarkSystems®, Procore®, and any other competitor names mentioned on this site are trademarks of their respective owners. Cornerstone PM™ is not affiliated with, endorsed by, or sponsored by any of these companies. Comparative claims reflect publicly available information at the time of writing; verify pricing and feature availability directly with each vendor.
           </p>
         </div>
         <div className="mt-4 pt-4 border-t border-slate-800/60 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-slate-600">
-            © {new Date().getFullYear()} Cornerstone PM. All rights reserved. Foreman AI™ and Blueprint AI™ are trademarks of Cornerstone PM.
+            © {new Date().getFullYear()} Cornerstone PM™. All rights reserved. Foreman AI™ and Blueprint AI™ are trademarks of Cornerstone PM™.
           </p>
           <div className="flex gap-4">
             <Link href="/privacy" className="text-xs text-slate-600 hover:text-slate-400 transition-colors">

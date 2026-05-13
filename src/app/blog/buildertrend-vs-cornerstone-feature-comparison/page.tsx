@@ -9,13 +9,13 @@ import { ArrowLeft, Check, X, Minus } from "lucide-react";
 
 const heroImage = "/blog/migrating-from-buildertrend.png";
 const heroImageAlt =
-  "Buildertrend vs Cornerstone PM home builder software feature comparison";
+  "Buildertrend vs Cornerstone PM™ home builder software feature comparison";
 
 export const metadata: Metadata = {
   title:
-    "Buildertrend vs Cornerstone PM: Feature-by-Feature Comparison — Cornerstone PM Blog",
+    "Buildertrend vs Cornerstone PM™: Feature-by-Feature Comparison — Cornerstone PM™ Blog",
   description:
-    "Feature-by-feature comparison of Buildertrend and Cornerstone PM. Scheduling, AI agents, options engine, REST API, and pricing for production home builders.",
+    "Feature-by-feature comparison of Buildertrend and Cornerstone PM™. Scheduling, AI agents, options engine, REST API, and pricing for production home builders.",
   alternates: {
     canonical:
       "https://www.cornerstonepm.ai/blog/buildertrend-vs-cornerstone-feature-comparison",
@@ -124,28 +124,28 @@ const faqs: FAQItem[] = [
     a: "Buildertrend works for production builders but was designed primarily for custom and semi-custom contractors. It lacks native features like community-level vendor assignments, per-floorplan design options, AI material takeoff, and automated bid templates that production builders need to scale efficiently.",
   },
   {
-    q: "Does Cornerstone PM have a REST API like Buildertrend?",
-    a: "Yes. Cornerstone PM ships a public REST API with full documentation. All core data — schedules, vendors, lots, options, bids — is accessible and exportable. You can also export your full database in CSV or JSON at any time from Settings → Backups.",
+    q: "Does Cornerstone PM™ have a REST API like Buildertrend?",
+    a: "Yes. Cornerstone PM™ ships a public REST API with full documentation. All core data — schedules, vendors, lots, options, bids — is accessible and exportable. You can also export your full database in CSV or JSON at any time from Settings → Backups.",
   },
   {
-    q: "What does Buildertrend cost compared to Cornerstone PM?",
-    a: "Buildertrend starts at $499/month. Cornerstone PM is currently in free beta — early adopters get two years free. After beta, pricing starts at $149/month for the base plan.",
+    q: "What does Buildertrend cost compared to Cornerstone PM™?",
+    a: "Buildertrend starts at $499/month. Cornerstone PM™ is currently in free beta — early adopters get two years free. After beta, pricing starts at $149/month for the base plan.",
   },
   {
-    q: "Does Cornerstone PM have vendor bidding?",
-    a: "Yes, and it goes further than most platforms. Cornerstone PM includes bid requests, auto-generated Excel bid templates scoped to each trade, a vendor portal where subs confirm tasks, accept schedule changes, and submit bids via secure email magic links — no account, no app, no password — bid status tracking (Invited → Viewed → Submitted → Declined), and side-by-side comparison when multiple vendors respond.",
+    q: "Does Cornerstone PM™ have vendor bidding?",
+    a: "Yes, and it goes further than most platforms. Cornerstone PM™ includes bid requests, auto-generated Excel bid templates scoped to each trade, a vendor portal where subs confirm tasks, accept schedule changes, and submit bids via secure email magic links — no account, no app, no password — bid status tracking (Invited → Viewed → Submitted → Declined), and side-by-side comparison when multiple vendors respond.",
   },
   {
-    q: "Can I migrate from Buildertrend to Cornerstone PM?",
+    q: "Can I migrate from Buildertrend to Cornerstone PM™?",
     a: "Yes. Most production builders complete migration in 3–5 business days. See the full step-by-step guide at /blog/migrating-from-buildertrend-to-cornerstone.",
   },
   {
     q: "Does Buildertrend have AI features?",
-    a: "Buildertrend has added some AI-assisted tools over time, but does not ship purpose-built AI agents for material takeoff, bid import, scheduling, or support the way Cornerstone PM does natively.",
+    a: "Buildertrend has added some AI-assisted tools over time, but does not ship purpose-built AI agents for material takeoff, bid import, scheduling, or support the way Cornerstone PM™ does natively.",
   },
   {
     q: "Which is better for a builder doing 20–80 homes per year?",
-    a: "For production builders in that range, Cornerstone PM is purpose-built for your workflow: communities, floor plan libraries, schedule templates, AI takeoff, vendor bidding, and design center options are all designed from the ground up for repeatable production builds.",
+    a: "For production builders in that range, Cornerstone PM™ is purpose-built for your workflow: communities, floor plan libraries, schedule templates, AI takeoff, vendor bidding, and design center options are all designed from the ground up for repeatable production builds.",
   },
 ];
 
@@ -172,7 +172,7 @@ export default function BuildertrendVsCornerstoneFeatureComparisonPage() {
               "@type": "ImageObject",
               contentUrl: `https://www.cornerstonepm.ai${heroImage}`,
               description: heroImageAlt,
-              creditText: "Cornerstone PM",
+              creditText: "Cornerstone PM™",
             }),
           }}
         />
@@ -191,7 +191,7 @@ export default function BuildertrendVsCornerstoneFeatureComparisonPage() {
             Comparison
           </span>
           <h1 className="text-4xl sm:text-5xl font-black text-white leading-tight mb-4">
-            Buildertrend vs Cornerstone PM: Feature-by-Feature Comparison
+            Buildertrend vs Cornerstone PM™: Feature-by-Feature Comparison
           </h1>
           <div className="flex items-center gap-3 text-sm text-slate-500">
             <span>May 6, 2026</span>
@@ -203,9 +203,9 @@ export default function BuildertrendVsCornerstoneFeatureComparisonPage() {
         <div className="prose prose-invert prose-lg max-w-none space-y-6 text-slate-300 leading-relaxed">
 
           <p className="text-xl text-slate-300 font-light">
-            Buildertrend and Cornerstone PM both serve home builders — but their feature sets reflect
+            Buildertrend and Cornerstone PM™ both serve home builders — but their feature sets reflect
             fundamentally different priorities. Buildertrend is a general-purpose construction platform
-            built for custom contractors. Cornerstone PM is purpose-built for production home builders
+            built for custom contractors. Cornerstone PM™ is purpose-built for production home builders
             who run the same floor plans across multiple communities.
           </p>
 
@@ -226,7 +226,7 @@ export default function BuildertrendVsCornerstoneFeatureComparisonPage() {
             Where does Buildertrend still win?
           </h2>
           <p>
-            Buildertrend has 18 years of development behind it. It has depth in areas Cornerstone PM
+            Buildertrend has 18 years of development behind it. It has depth in areas Cornerstone PM™
             doesn&apos;t prioritize: warranty management, commercial construction modules, and a large
             ecosystem of third-party integrations with enterprise accounting platforms. If you&apos;re a
             semi-custom or custom builder, or if you depend on QuickBooks Enterprise with a custom
@@ -263,7 +263,7 @@ export default function BuildertrendVsCornerstoneFeatureComparisonPage() {
                 <div className="grid grid-cols-[1fr_auto_auto] px-5 py-2.5 bg-slate-800/80 text-xs font-semibold text-slate-400 uppercase tracking-wider">
                   <div>Feature</div>
                   <div className="w-28 text-center">Buildertrend</div>
-                  <div className="w-28 text-center">Cornerstone PM</div>
+                  <div className="w-28 text-center">Cornerstone PM™</div>
                 </div>
                 {cat.rows.map((row, i) => (
                   <div
@@ -307,7 +307,7 @@ export default function BuildertrendVsCornerstoneFeatureComparisonPage() {
             The AI gap is the biggest difference
           </h2>
           <p>
-            The category where Cornerstone PM most outpaces Buildertrend is AI. Cornerstone ships five
+            The category where Cornerstone PM™ most outpaces Buildertrend is AI. Cornerstone ships five
             purpose-built AI agents:{" "}
             <Link
               href="/foreman"
@@ -335,7 +335,7 @@ export default function BuildertrendVsCornerstoneFeatureComparisonPage() {
             Purchasing: the vendor bid workflow is different in kind
           </h2>
           <p>
-            Buildertrend has basic purchase order management. Cornerstone PM extends this into a full
+            Buildertrend has basic purchase order management. Cornerstone PM™ extends this into a full
             vendor bid workflow: send a bid request to multiple vendors, auto-generate scoped Excel
             templates, let vendors self-serve via a no-login portal, track bid status per vendor,
             and compare side-by-side before awarding. Once awarded, the bid locks — neither side can
@@ -358,7 +358,7 @@ export default function BuildertrendVsCornerstoneFeatureComparisonPage() {
           </p>
           <p>
             If you&apos;re a <strong className="text-white">production builder running repeating floor plans
-            across communities</strong> — 5 to 200 homes per year — Cornerstone PM is purpose-built
+            across communities</strong> — 5 to 200 homes per year — Cornerstone PM™ is purpose-built
             for your workflow. The community model, floor plan library, AI takeoff, vendor bid engine,
             and design center options exist specifically for the way you build.
           </p>
@@ -381,7 +381,7 @@ export default function BuildertrendVsCornerstoneFeatureComparisonPage() {
             See the production builder difference for yourself.
           </h3>
           <p className="text-slate-400 text-sm mb-4">
-            Cornerstone PM is in free beta. Two years free for early adopters — no credit card, no
+            Cornerstone PM™ is in free beta. Two years free for early adopters — no credit card, no
             obligation. Communities, floor plans, AI takeoff, vendor bidding, design center.
           </p>
           <Link
@@ -395,7 +395,7 @@ export default function BuildertrendVsCornerstoneFeatureComparisonPage() {
 
       {/* FAQ Section */}
       <FAQSection
-        title="Buildertrend vs Cornerstone PM: FAQs"
+        title="Buildertrend vs Cornerstone PM™: FAQs"
         subtitle="Common questions from production home builders comparing the two platforms."
         items={faqs}
         accentTextClass="text-white"

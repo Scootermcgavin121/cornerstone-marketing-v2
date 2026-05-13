@@ -1,4 +1,4 @@
-﻿import { Check, Sparkles } from "lucide-react";
+import { Check, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { FAQSection, type FAQItem } from "@/components/FAQSection";
@@ -6,34 +6,34 @@ import { VideoPlayer } from "@/components/VideoPlayer";
 import { DataOwnership } from "@/components/DataOwnership";
 
 export const metadata = {
-  title: "Home Builder Purchasing & Bid Management Software | Cornerstone PM",
+  title: "Home Builder Purchasing & Bid Management Software | Cornerstone PM™",
   description: "Auto-generated, scope-filtered bid templates. No-login vendor file-upload portal. Side-by-side bid comparison, lock-after-acceptance, parts catalog, auto-budget, POs, and full data export.",
 };
 
 const faqItems: FAQItem[] = [
   {
     q: "What is home builder purchasing software?",
-    a: "Home builder purchasing software manages the bid-to-purchase-order flow: vendor bids, parts catalogs, purchase orders, payment scheduling, and budget tracking. Cornerstone PM's purchasing module connects directly to your sales pipeline and design center so structural options and design selections automatically feed the budget &mdash; no double entry, no spreadsheets.",
+    a: "Home builder purchasing software manages the bid-to-purchase-order flow: vendor bids, parts catalogs, purchase orders, payment scheduling, and budget tracking. Cornerstone PM™'s purchasing module connects directly to your sales pipeline and design center so structural options and design selections automatically feed the budget &mdash; no double entry, no spreadsheets.",
   },
   {
     q: "What is AI construction purchasing for home builders?",
-    a: "AI construction purchasing uses agents to handle bid generation, vendor outreach, bid comparison, and PO creation. Cornerstone PM's Foreman AI includes a 4-skill Bid Pipeline domain plus a 7-wave automated bidding pipeline that contacts vendors, collects bids, normalizes pricing, and recommends an award &mdash; all inside one platform.",
+    a: "AI construction purchasing uses agents to handle bid generation, vendor outreach, bid comparison, and PO creation. Cornerstone PM™'s Foreman AI includes a 4-skill Bid Pipeline domain plus a 7-wave automated bidding pipeline that contacts vendors, collects bids, normalizes pricing, and recommends an award &mdash; all inside one platform.",
   },
   {
     q: "How does the auto-budget feature work?",
-    a: "When a sales counselor locks structural options on a new home sale, Cornerstone PM automatically generates the home's construction budget using the floorplan's base costs plus the option-specific deltas. Design center selections, change orders, and bid awards continue to flow into the same budget number throughout the build.",
+    a: "When a sales counselor locks structural options on a new home sale, Cornerstone PM™ automatically generates the home's construction budget using the floorplan's base costs plus the option-specific deltas. Design center selections, change orders, and bid awards continue to flow into the same budget number throughout the build.",
   },
   {
-    q: "Is Cornerstone PM a NEWSTAR or BuildPro alternative for purchasing?",
-    a: "Yes. Cornerstone PM was built as a modern, affordable alternative to NEWSTAR and BuildPro for small-to-mid home builders. It covers the same core purchasing functionality &mdash; parts catalog, budget hierarchy, bid management, POs, payments &mdash; without the 6-figure implementation cost. Starts at $299/mo on the Builder plan.",
+    q: "Is Cornerstone PM™ a NEWSTAR or BuildPro alternative for purchasing?",
+    a: "Yes. Cornerstone PM™ was built as a modern, affordable alternative to NEWSTAR and BuildPro for small-to-mid home builders. It covers the same core purchasing functionality &mdash; parts catalog, budget hierarchy, bid management, POs, payments &mdash; without the 6-figure implementation cost. Starts at $299/mo on the Builder plan.",
   },
   {
-    q: "Does Cornerstone PM track retainage?",
-    a: "Yes. Cornerstone PM tracks retainage on payments, classifies cost types, manages payment schedules, and surfaces variance reports against the budget. Vendor 1099 totals are exportable.",
+    q: "Does Cornerstone PM™ track retainage?",
+    a: "Yes. Cornerstone PM™ tracks retainage on payments, classifies cost types, manages payment schedules, and surfaces variance reports against the budget. Vendor 1099 totals are exportable.",
   },
   {
     q: "How does the parts catalog work?",
-    a: "Cornerstone PM's parts catalog maintains SKUs, vendor pricing, and unit costs that sync across every job. Foreman AI's Parts Catalog domain (5 skills) handles SKU lookups, vendor pricing comparisons, material substitutions, catalog updates, and inventory alerts via plain-English requests.",
+    a: "Cornerstone PM™'s parts catalog maintains SKUs, vendor pricing, and unit costs that sync across every job. Foreman AI's Parts Catalog domain (5 skills) handles SKU lookups, vendor pricing comparisons, material substitutions, catalog updates, and inventory alerts via plain-English requests.",
   },
   {
     q: "Can I use my own AI agent against Cornerstone purchasing data?",
@@ -41,7 +41,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "How do I review competing vendor bids?",
-    a: "Cornerstone PM's bid review uses a side-by-side comparison view with scope-item drill-down. You see every bid against every scope item simultaneously &mdash; not just total price, but full scope coverage so you can spot gaps, exclusions, or scope creep before awarding. Vendors edit their own scope items inside their vendor portal; you review and approve.",
+    a: "Cornerstone PM™'s bid review uses a side-by-side comparison view with scope-item drill-down. You see every bid against every scope item simultaneously &mdash; not just total price, but full scope coverage so you can spot gaps, exclusions, or scope creep before awarding. Vendors edit their own scope items inside their vendor portal; you review and approve.",
   },
   {
     q: "What's in the auto-generated bid template?",
@@ -61,7 +61,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "How do I lock a bid once it's accepted?",
-    a: "Cornerstone PM uses a lock-after-acceptance flow. The moment you award a vendor bid, the scope items, pricing, and terms lock down &mdash; no surprise edits, no scope drift, no last-minute pricing changes. The locked bid feeds directly into the home's budget and PO pipeline.",
+    a: "Cornerstone PM™ uses a lock-after-acceptance flow. The moment you award a vendor bid, the scope items, pricing, and terms lock down &mdash; no surprise edits, no scope drift, no last-minute pricing changes. The locked bid feeds directly into the home's budget and PO pipeline.",
   },
   {
     q: "When are POs generated — at job start, after the work is done, or somewhere in between?",
@@ -69,15 +69,15 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "How do I subscribe to bid notifications as an admin?",
-    a: "Cornerstone PM ships per-user notification preferences plus role-level subscriptions for admins. Admins can subscribe to bid events &mdash; new bids submitted, vendor scope edits, awards, lock events &mdash; and choose email, in-app, or both. Each user controls their own notification toggles independently.",
+    a: "Cornerstone PM™ ships per-user notification preferences plus role-level subscriptions for admins. Admins can subscribe to bid events &mdash; new bids submitted, vendor scope edits, awards, lock events &mdash; and choose email, in-app, or both. Each user controls their own notification toggles independently.",
   },
   {
-    q: "Does Cornerstone PM use lowest-bid auctions to pick vendors?",
-    a: "No &mdash; and that's intentional. Home builders rely on long-term community vendor relationships, not lowest-bid auctions. Cornerstone PM supports community-assigned vendor awards: you choose who you want to win based on scope coverage, relationship, and quality &mdash; with the bid comparison data to back the decision. Lowest-bid auctioning destroys vendor relationships in residential homebuilding.",
+    q: "Does Cornerstone PM™ use lowest-bid auctions to pick vendors?",
+    a: "No &mdash; and that's intentional. Home builders rely on long-term community vendor relationships, not lowest-bid auctions. Cornerstone PM™ supports community-assigned vendor awards: you choose who you want to win based on scope coverage, relationship, and quality &mdash; with the bid comparison data to back the decision. Lowest-bid auctioning destroys vendor relationships in residential homebuilding.",
   },
   {
     q: "What does purchasing software for home builders cost?",
-    a: "Cornerstone PM's purchasing module is included in the Builder plan at $299/mo with unlimited users. The Pro plan at $499/mo adds Foreman AI's Bid Pipeline and Parts Catalog skills. Pro+ at $599/mo adds the REST API and BYOA. NEWSTAR and BuildPro typically require $25,000+ implementation budgets before monthly licensing.",
+    a: "Cornerstone PM™'s purchasing module is included in the Builder plan at $299/mo with unlimited users. The Pro plan at $499/mo adds Foreman AI's Bid Pipeline and Parts Catalog skills. Pro+ at $599/mo adds the REST API and BYOA. NEWSTAR and BuildPro typically require $25,000+ implementation budgets before monthly licensing.",
   },
 ];
 
@@ -221,7 +221,7 @@ export default function PurchasingPage() {
             </div>
             <div className="border-t border-slate-800 pt-6 space-y-3 text-sm text-slate-400">
               <div className="flex justify-between"><span>NEWSTAR / BuildPro</span><span className="line-through text-slate-600">$800+/mo</span></div>
-              <div className="flex justify-between"><span>Cornerstone PM</span><span className="text-emerald-400 font-bold">Free during beta</span></div>
+              <div className="flex justify-between"><span>Cornerstone PM™</span><span className="text-emerald-400 font-bold">Free during beta</span></div>
             </div>
             <Link href="/beta" className="block w-full text-center px-6 py-3.5 rounded-xl bg-emerald-400 text-slate-900 font-bold hover:bg-emerald-300 transition-all duration-200">Get Early Access &rarr;</Link>
             <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders &mdash;· No credit card required</p>

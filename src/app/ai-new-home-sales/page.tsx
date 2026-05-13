@@ -1,13 +1,13 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Check, TrendingUp, Users, FileText, BarChart3 } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "AI for New Home Sales | Cornerstone PM",
+  title: "AI for New Home Sales | Cornerstone PM™",
   description:
-    "Cornerstone PM's AI manages your entire new home sales pipeline — from first inquiry to contract. Foreman AI tracks every buyer, flags stalled deals, and generates MLS listings automatically.",
+    "Cornerstone PM™'s AI manages your entire new home sales pipeline — from first inquiry to contract. Foreman AI tracks every buyer, flags stalled deals, and generates MLS listings automatically.",
 };
 
 const prompts = [

@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Your Spreadsheet Is Killing Your Schedule — Cornerstone PM Blog",
+  title: "Your Spreadsheet Is Killing Your Schedule — Cornerstone PM™ Blog",
   description:
     "Excel doesn't notify your framer when the foundation is ready. Here's what running your build schedule in spreadsheets is costing you.",
   openGraph: {
@@ -104,7 +104,7 @@ export default function SpreadsheetsPost() {
           </p>
 
           <p>
-            That&apos;s what Cornerstone PM&apos;s scheduling module does. Visual Gantt-style scheduling,
+            That&apos;s what Cornerstone PM™&apos;s scheduling module does. Visual Gantt-style scheduling,
             subcontractor assignments, conflict detection, and automated notifications. All the things
             Excel quietly fails at — without requiring you to become a software expert.
           </p>
@@ -127,7 +127,7 @@ export default function SpreadsheetsPost() {
         </div>
 
         <div className="mt-12 p-6 rounded-2xl border border-cyan-500/20 bg-cyan-500/5">
-          <h3 className="text-lg font-bold text-white mb-2">See Cornerstone PM scheduling in action</h3>
+          <h3 className="text-lg font-bold text-white mb-2">See Cornerstone PM™ scheduling in action</h3>
           <p className="text-slate-400 text-sm mb-4">
             Request beta access — free for 2 years for early adopters.
           </p>

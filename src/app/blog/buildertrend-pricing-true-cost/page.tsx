@@ -11,7 +11,7 @@ const heroImageAlt =
 
 export const metadata: Metadata = {
   title:
-    "The True Cost of Buildertrend for Production Home Builders — Cornerstone PM Blog",
+    "The True Cost of Buildertrend for Production Home Builders — Cornerstone PM™ Blog",
   description:
     "Buildertrend's true total cost for production home builders: per-user fees, integration costs, and the workflow gaps that drive switching to purpose-built alternatives.",
   alternates: {
@@ -52,7 +52,7 @@ export default function BuildertrendPricingTrueCostPage() {
               "@type": "ImageObject",
               contentUrl: `https://www.cornerstonepm.ai${heroImage}`,
               description: heroImageAlt,
-              creditText: "Cornerstone PM",
+              creditText: "Cornerstone PM™",
             }),
           }}
         />
@@ -283,7 +283,7 @@ export default function BuildertrendPricingTrueCostPage() {
               href="/buildertrend-alternative"
               className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
             >
-              Cornerstone PM
+              Cornerstone PM™
             </Link>{" "}
             was built to replace that entire stack: scheduling,{" "}
             <Link
@@ -317,7 +317,7 @@ export default function BuildertrendPricingTrueCostPage() {
             Built for production builders. No per-seat creep. No add-on stack required.
           </h3>
           <p className="text-slate-400 text-sm mb-4">
-            Cornerstone PM replaces Buildertrend and its surrounding tool stack with a single
+            Cornerstone PM™ replaces Buildertrend and its surrounding tool stack with a single
             platform purpose-built for production home builders. AI takeoff, bid management,
             design center, and scheduling in one place. Beta access is open — early adopters
             get two years free.

@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -79,7 +79,7 @@ export function Navbar() {
           <Link href="/" className="flex items-center group -my-1">
             <img
               src="/logo-new.png"
-              alt="Cornerstone PM"
+              alt="Cornerstone PM™"
               className="h-20 sm:h-24 w-auto object-contain group-hover:opacity-90 transition-opacity duration-200"
             />
           </Link>

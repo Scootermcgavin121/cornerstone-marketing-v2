@@ -6,11 +6,11 @@ import { Footer } from "@/components/Footer";
 import { Check, X, ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "BuilderTrend vs Cornerstone PM — Cornerstone PM Blog",
+  title: "BuilderTrend vs Cornerstone PM™ — Cornerstone PM™ Blog",
   description:
-    "BuilderTrend starts at $499/mo. Cornerstone PM starts at $149/mo. Here's what you actually get for the difference.",
+    "BuilderTrend starts at $499/mo. Cornerstone PM™ starts at $149/mo. Here's what you actually get for the difference.",
   openGraph: {
-    images: [{ url: "https://www.cornerstonepm.ai/blog/migrating-from-buildertrend.png", width: 1024, height: 1024, alt: "Buildertrend vs Cornerstone PM home builder software comparison" }],
+    images: [{ url: "https://www.cornerstonepm.ai/blog/migrating-from-buildertrend.png", width: 1024, height: 1024, alt: "Buildertrend vs Cornerstone PM™ home builder software comparison" }],
   }
 };
 
@@ -41,14 +41,14 @@ export default function BuildertrendPost() {
           Back to Blog
         </Link>
 
-        <BlogHero src="/blog/migrating-from-buildertrend.png" alt="Buildertrend vs Cornerstone PM home builder software comparison" />
+        <BlogHero src="/blog/migrating-from-buildertrend.png" alt="Buildertrend vs Cornerstone PM™ home builder software comparison" />
 
         <div className="mb-8">
           <span className="text-xs font-medium px-2.5 py-0.5 rounded-full border text-violet-400 bg-violet-500/10 border-violet-500/20 mb-4 inline-block">
             Comparison
           </span>
           <h1 className="text-4xl sm:text-5xl font-black text-white leading-tight mb-4">
-            BuilderTrend vs Cornerstone PM: The Honest Comparison
+            BuilderTrend vs Cornerstone PM™: The Honest Comparison
           </h1>
           <div className="flex items-center gap-3 text-sm text-slate-500">
             <span>April 14, 2026</span>
@@ -84,9 +84,9 @@ export default function BuildertrendPost() {
             &ldquo;it&apos;s just easier.&rdquo;
           </p>
 
-          <h2 className="text-2xl font-bold text-white mt-10 mb-4">What you get with Cornerstone PM</h2>
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">What you get with Cornerstone PM™</h2>
           <p>
-            Cornerstone PM was built for the builder who needs the core tools — scheduling, purchasing,
+            Cornerstone PM™ was built for the builder who needs the core tools — scheduling, purchasing,
             sales pipeline, design center, permitting, and buyer portal — in a package that a real
             builder can actually use without a 3-day training session.
           </p>
@@ -105,7 +105,7 @@ export default function BuildertrendPost() {
           <div className="grid grid-cols-3 px-6 py-3 bg-slate-800/80 text-xs font-semibold text-slate-400 uppercase tracking-wider">
             <div>Feature</div>
             <div className="text-center">BuilderTrend</div>
-            <div className="text-center">Cornerstone PM</div>
+            <div className="text-center">Cornerstone PM™</div>
           </div>
           {comparison.map((row, i) => (
             <div
@@ -146,7 +146,7 @@ export default function BuildertrendPost() {
           </p>
           <p>
             If you&apos;re building 5–50 homes a year and you want powerful, usable tools without the
-            enterprise price tag — Cornerstone PM was built for you. At $149/mo for the base plan
+            enterprise price tag — Cornerstone PM™ was built for you. At $149/mo for the base plan
             and $179.98/mo for the full platform, you&apos;re getting everything you actually need.
           </p>
           <p>
@@ -156,7 +156,7 @@ export default function BuildertrendPost() {
         </div>
 
         <div className="mt-12 p-6 rounded-2xl border border-amber-500/20 bg-amber-500/5">
-          <h3 className="text-lg font-bold text-white mb-2">Try Cornerstone PM free</h3>
+          <h3 className="text-lg font-bold text-white mb-2">Try Cornerstone PM™ free</h3>
           <p className="text-slate-400 text-sm mb-4">
             Beta access is open now. 2 years free for early adopters.
           </p>

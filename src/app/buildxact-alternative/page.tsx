@@ -3,9 +3,9 @@ import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageT
 import type { FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
-  title: "Buildxact Alternative for Home Builders | Cornerstone PM",
+  title: "Buildxact Alternative for Home Builders | Cornerstone PM™",
   description:
-    "Buildxact focuses on takeoffs and estimating. Cornerstone PM adds full construction PM, native AI agents (Pro $499/mo), options engine, and 30+ named webhook events - from $149/mo.",
+    "Buildxact focuses on takeoffs and estimating. Cornerstone PM™ adds full construction PM, native AI agents (Pro $499/mo), options engine, and 30+ named webhook events - from $149/mo.",
   alternates: { canonical: "https://www.cornerstonepm.ai/buildxact-alternative" },
 };
 
@@ -44,31 +44,31 @@ const whySwitchCards: WhySwitchCard[] = [
 
 const faqItems: FAQItem[] = [
   {
-    q: "How is Cornerstone PM different from Buildxact?",
-    a: "Buildxact is primarily an estimating and takeoff platform (starting $199/mo annual) with scheduling and job management on higher tiers. Cornerstone PM is a full construction management platform for home builders - it includes takeoff (Blueprint AI on Pro $499/mo), estimating, scheduling (from Starter $149/mo), homeowner portal, design center, purchasing, bid management, multi-community pipeline, and native AI agents. Buildxact has Blu AI for estimating assistance; Cornerstone's Foreman AI takes real actions across your entire construction operation.",
+    q: "How is Cornerstone PM™ different from Buildxact?",
+    a: "Buildxact is primarily an estimating and takeoff platform (starting $199/mo annual) with scheduling and job management on higher tiers. Cornerstone PM™ is a full construction management platform for home builders - it includes takeoff (Blueprint AI on Pro $499/mo), estimating, scheduling (from Starter $149/mo), homeowner portal, design center, purchasing, bid management, multi-community pipeline, and native AI agents. Buildxact has Blu AI for estimating assistance; Cornerstone's Foreman AI takes real actions across your entire construction operation.",
   },
   {
-    q: "Does Cornerstone PM do takeoffs like Buildxact?",
+    q: "Does Cornerstone PM™ do takeoffs like Buildxact?",
     a: "Yes. Blueprint AI (Cornerstone Pro, $499/mo) converts PDF floor plans to material takeoffs in under 60 seconds - similar to Buildxact's takeoff engine. Cornerstone also adds AI bid import: upload any vendor quote (PDF, Excel, scanned, even handwritten) and AI parses it against your scopes automatically.",
   },
   {
-    q: "Can I migrate from Buildxact to Cornerstone PM?",
+    q: "Can I migrate from Buildxact to Cornerstone PM™?",
     a: "Yes. The AI Migration Wizard reads your Buildxact data exports, auto-detects column mapping, and runs 23 import endpoints covering vendors, homes, communities, schedules, scopes, budgets, and more. Most migrations complete in under a day. ~$0.01 per migration in AI cost - we absorb it.",
   },
   {
-    q: "Is Cornerstone PM a good fit if I'm growing from custom to production building?",
+    q: "Is Cornerstone PM™ a good fit if I'm growing from custom to production building?",
     a: "Yes - this is a common transition point. Custom builders who start running the same floorplan in multiple communities need a platform with floorplan pricing matrix, lot management, structural options engine, pre-sale design center, and multi-community pipelines - all on Cornerstone Builder ($299/mo). Bring your Buildxact takeoffs - the import tooling handles them.",
   },
   {
     q: "What about Buildxact's quoting and client approval features?",
-    a: "Cornerstone PM includes a homeowner portal where buyers can review milestones, design selections, and documents. The options engine and design center handle pre-sale selections and allowances. The 64 Designer Packages (curated by an actual interior designer, the same playbook K. Hovnanian Homes uses) on Builder+ give buyers a curated path through selections without spreadsheet-style guesswork.",
+    a: "Cornerstone PM™ includes a homeowner portal where buyers can review milestones, design selections, and documents. The options engine and design center handle pre-sale selections and allowances. The 64 Designer Packages (curated by an actual interior designer, the same playbook K. Hovnanian Homes uses) on Builder+ give buyers a curated path through selections without spreadsheet-style guesswork.",
   },
   {
     q: "How does Buildxact pricing compare?",
     a: "Buildxact Foundation starts at $199/mo (annual) - takeoffs, estimating, quoting, unlimited users. Pro is $399/mo (adds scheduling). Master is $599/mo. Blu AI add-ons are $99-$149/mo each. Cornerstone starts at $149/mo (Starter, scheduling + portal). Builder is $299/mo (full platform). Pro is $499/mo (adds Foreman AI + Blueprint AI). Pro+ is $599/mo (adds REST API + BYOA). For a full AI-capable platform, Cornerstone Pro ($499/mo) is comparable or less than Buildxact Master + Blu add-ons.",
   },
   {
-    q: "Does Cornerstone PM have a free trial?",
+    q: "Does Cornerstone PM™ have a free trial?",
     a: "Yes. The 2-year free beta is open to the first 100 home builders - no credit card, no contract, no implementation fee.",
   },
 ];
@@ -81,18 +81,18 @@ export default function BuildxactAlternativePage() {
       heroLine1="Estimating is just the start."
       heroLine2="Manage the whole build."
       accentColor="emerald"
-      heroParagraph="Buildxact is great at takeoffs and quotes (from $199/mo). Cornerstone PM is the Buildxact alternative that adds full construction management: scheduling from $149/mo, homeowner portal, purchasing, bid management, options engine (Builder $299/mo), and Foreman AI with 83 action-taking skills (Pro $499/mo) - all in one platform."
+      heroParagraph="Buildxact is great at takeoffs and quotes (from $199/mo). Cornerstone PM™ is the Buildxact alternative that adds full construction management: scheduling from $149/mo, homeowner portal, purchasing, bid management, options engine (Builder $299/mo), and Foreman AI with 83 action-taking skills (Pro $499/mo) - all in one platform."
       secondaryCTA={{ text: "See full comparison", href: "/compare" }}
-      comparisonSubtitle="Buildxact vs Cornerstone PM - takeoff tool vs. full home-builder platform."
+      comparisonSubtitle="Buildxact vs Cornerstone PM™ - takeoff tool vs. full home-builder platform."
       comparisonRows={comparisonRows}
       trademarkName="Buildxact"
-      whySwitchHeadline="Why builders move from Buildxact to Cornerstone PM"
+      whySwitchHeadline="Why builders move from Buildxact to Cornerstone PM™"
       whySwitchCards={whySwitchCards}
       showMigrationCTA={true}
       migrationHeadline="Already using Buildxact? Bring your data with you."
       migrationDesc="Export your Buildxact data, drop it in our wizard, and AI auto-maps every column - vendors, estimates, budgets, contacts. Dry-run before you commit. ~$0.01 per migration in AI - we absorb it."
       faqTitle="Buildxact Alternative FAQ"
-      faqSubtitle="Common questions from builders evaluating Cornerstone PM vs Buildxact."
+      faqSubtitle="Common questions from builders evaluating Cornerstone PM™ vs Buildxact."
       faqItems={faqItems}
       footerHeadline="Ready for a full platform?"
       footerSubtext="Join the beta and get 2 years free. Blueprint AI takeoffs included on Pro."

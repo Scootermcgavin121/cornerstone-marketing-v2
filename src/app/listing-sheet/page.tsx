@@ -3,7 +3,7 @@ import { Check, FileText, Zap, Building2, Ruler, MapPin, Star, Download, Sparkle
 import { Navbar } from "@/components/Navbar";
 
 export const metadata = {
-  title: "MLS Listing Sheet Generator — AI-Powered | Cornerstone PM",
+  title: "MLS Listing Sheet Generator — AI-Powered | Cornerstone PM™",
   description:
     "Generate professional, print-ready MLS listing sheets in seconds. AI writes the description. Your live data fills the rest. One click to PDF. No other builder platform does this.",
 };
@@ -90,7 +90,7 @@ export default function ListingSheetPage() {
           <div className="p-8 rounded-2xl bg-cyan-500/5 border border-cyan-500/20">
             <h2 className="text-2xl font-black text-cyan-400 mb-4">The Solution</h2>
             <p className="text-slate-400 leading-relaxed">
-              One click. Cornerstone PM pulls every detail from your existing data &mdash; room dimensions, structural upgrades, lot size, community features, floorplan specs &mdash; and generates a polished, branded MLS listing sheet instantly.
+              One click. Cornerstone PM™ pulls every detail from your existing data &mdash; room dimensions, structural upgrades, lot size, community features, floorplan specs &mdash; and generates a polished, branded MLS listing sheet instantly.
             </p>
           </div>
         </div>
@@ -310,7 +310,7 @@ export default function ListingSheetPage() {
               ))}
             </div>
             <div className="mt-6 p-5 rounded-xl bg-cyan-500/5 border border-cyan-500/20">
-              <p className="text-cyan-400 font-bold mb-1">Cornerstone PM:</p>
+              <p className="text-cyan-400 font-bold mb-1">Cornerstone PM™:</p>
               <p className="text-white">One click. Real room dimensions. Live buyer data. AI-written copy. Print-ready PDF. All from the same platform that manages your schedules, budgets, and vendor bids.</p>
             </div>
           </div>

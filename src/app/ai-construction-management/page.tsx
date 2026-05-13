@@ -4,9 +4,9 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 export const metadata = {
-  title: "Foreman AI — AI Construction Management for Home Builders | Cornerstone PM",
+  title: "Foreman AI — AI Construction Management for Home Builders | Cornerstone PM™",
   description:
-    "Foreman AI is the AI agent built into Cornerstone PM — 83 purpose-built skills for home builder scheduling, purchasing, sales pipeline, and design center. Not a chatbot. Not bolted on.",
+    "Foreman AI is the AI agent built into Cornerstone PM™ — 83 purpose-built skills for home builder scheduling, purchasing, sales pipeline, and design center. Not a chatbot. Not bolted on.",
 };
 
 const skills = [
@@ -92,7 +92,7 @@ export default function AiConstructionManagementPage() {
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs font-semibold mb-6">
             <Brain className="w-3.5 h-3.5" />
-            FOREMAN AI · BY CORNERSTONE PM · 83+ skills
+            FOREMAN AI · BY CORNERSTONE PM™ · 83+ skills
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
             Meet{" "}
@@ -102,7 +102,7 @@ export default function AiConstructionManagementPage() {
             The AI construction agent built for home builders.
           </p>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-6 leading-relaxed">
-            <span className="text-white font-semibold">Foreman AI</span> is the brain inside Cornerstone PM — not a chatbot, not a project tool with AI bolted on. It reads and writes your real construction data, runs your schedule, generates documents, and answers in plain English.
+            <span className="text-white font-semibold">Foreman AI</span> is the brain inside Cornerstone PM™ — not a chatbot, not a project tool with AI bolted on. It reads and writes your real construction data, runs your schedule, generates documents, and answers in plain English.
           </p>
           <p className="text-lg text-slate-500 max-w-2xl mx-auto mb-10">
             83 purpose-built skills. Knows what a floorplan is, what a spec level means, and what a punch list looks like for a home under construction. Built for home builders specifically — not adapted from generic commercial PM tools.

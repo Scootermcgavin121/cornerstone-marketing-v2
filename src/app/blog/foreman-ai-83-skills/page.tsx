@@ -6,9 +6,9 @@ import { Footer } from "@/components/Footer";
 import { ArrowLeft, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Foreman AI Now Has 83 Skills Across 11 Categories &mdash; Cornerstone PM Blog",
+  title: "Foreman AI Now Has 83 Skills Across 11 Categories &mdash; Cornerstone PM™ Blog",
   description:
-    "Foreman AI just crossed 83 purpose-built construction skills across 11 categories. Full CRUD on takeoffs, vendor scorecards, bid comparisons, budget variance, profitability reports, sales pipeline analysis, MLS descriptions, image vision &mdash; all from plain English commands. Here&apos;s what the latest milestone means for builders running on Cornerstone PM.",
+    "Foreman AI just crossed 83 purpose-built construction skills across 11 categories. Full CRUD on takeoffs, vendor scorecards, bid comparisons, budget variance, profitability reports, sales pipeline analysis, MLS descriptions, image vision &mdash; all from plain English commands. Here&apos;s what the latest milestone means for builders running on Cornerstone PM™.",
   openGraph: {
     title: "Foreman AI Hits 83 Skills &mdash; The Fastest-Growing AI Agent in Home Building",
     description:
@@ -65,7 +65,7 @@ export default function ForemanAi83SkillsPost() {
           </p>
 
           <p>
-            For builders running on Cornerstone PM, the math is simple: every skill is one more job that doesn&apos;t
+            For builders running on Cornerstone PM™, the math is simple: every skill is one more job that doesn&apos;t
             need a spreadsheet, a separate tool, or a phone call. Foreman doesn&apos;t describe what should happen.
             It does the work.
           </p>
@@ -222,7 +222,7 @@ export default function ForemanAi83SkillsPost() {
           </div>
 
           <p className="text-sm text-slate-500 italic mt-10">
-            Foreman AI is part of Cornerstone PM &mdash; home builder software built for production, semi-custom,
+            Foreman AI is part of Cornerstone PM™ &mdash; home builder software built for production, semi-custom,
             and custom builders running 5&ndash;200 homes a year. Flat pricing from $149/mo with unlimited users.
           </p>
         </div>

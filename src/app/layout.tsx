@@ -8,8 +8,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Cornerstone PM — Home Builder Software with AI",
-    template: "%s | Cornerstone PM",
+    default: "Cornerstone PM™ — Home Builder Software with AI",
+    template: "%s | Cornerstone PM™",
   },
   description:
     "The complete home builder platform with AI agents. Scheduling, sales, purchasing, design center, Blueprint AI takeoffs, and REST API — starting at $149/mo. No implementation fees.",
@@ -40,8 +40,8 @@ export const metadata: Metadata = {
     "Foreman AI",
     "Blueprint AI",
   ],
-  authors: [{ name: "Cornerstone PM" }],
-  creator: "Cornerstone PM",
+  authors: [{ name: "Cornerstone PM™" }],
+  creator: "Cornerstone PM™",
   icons: {
     icon: [
       { url: "/favicon.png", type: "image/png" },
@@ -56,11 +56,11 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true },
   },
   openGraph: {
-    title: "Cornerstone PM — Home Builder Software with AI",
+    title: "Cornerstone PM™ — Home Builder Software with AI",
     description:
       "Scheduling, sales, purchasing, design center, Blueprint AI, Foreman AI agent, MLS listing generator, and REST API. Starting at $149/mo. Built for home builders.",
     url: "https://cornerstonepm.ai",
-    siteName: "Cornerstone PM",
+    siteName: "Cornerstone PM™",
     type: "website",
     locale: "en_US",
     images: [
@@ -68,13 +68,13 @@ export const metadata: Metadata = {
         url: "https://cornerstonepm.ai/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Cornerstone PM — Home Builder Software with AI",
+        alt: "Cornerstone PM™ — Home Builder Software with AI",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cornerstone PM — Home Builder Software with AI",
+    title: "Cornerstone PM™ — Home Builder Software with AI",
     description: "The complete platform for home builders. AI agents, scheduling, sales, purchasing, Blueprint AI takeoffs, REST API. Starting at $149/mo.",
     creator: "@cornerstonepm",
     images: ["https://cornerstonepm.ai/og-image.png"],
