@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { ArrowLeft, Zap, Clock, Users, Shield } from "lucide-react";
+import { ArrowLeft, Zap, Clock, Users, Shield, Cpu } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Usage Rates & AI Limits | Cornerstone PM\u2122",
@@ -482,6 +482,57 @@ export default function UsageRatesPage() {
               </div>
             ))}
           </div>
+
+          <p className="text-xs text-slate-500 mt-6">
+            * REST API access requires the $200/mo add-on on Pro, or is included with Pro+.
+          </p>
+        </div>
+      </section>
+
+      {/* AI Models & Cost Transparency */}
+      <section className="py-16 px-4 border-t border-slate-900">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex items-center gap-3 mb-8">
+            <Cpu className="w-6 h-6 text-emerald-400" />
+            <h2 className="text-2xl sm:text-3xl font-black">
+              AI Models &amp; Cost Transparency
+            </h2>
+          </div>
+          <p className="text-sm text-slate-400 mb-8 max-w-2xl">
+            Every AI feature runs on a specific model. We publish the approximate cost per use so you know
+            exactly what powers your workflows. <strong className="text-white">You are never billed per use</strong> &mdash;
+            your subscription covers everything within your daily limits.
+          </p>
+
+          <div className="space-y-3">
+            {[
+              { name: "Foreman AI\u2122", model: "Claude Sonnet 4 (Anthropic)", cost: "~$0.08/action" },
+              { name: "Blueprint AI", model: "GPT-4o (OpenAI)", cost: "~$0.06/use" },
+              { name: "Bid Import AI", model: "GPT-4o-mini (OpenAI)", cost: "~$0.01/use" },
+              { name: "AI Support Agent", model: "GPT-4o-mini (OpenAI)", cost: "~$0.005/use" },
+              { name: "Punchlist AI", model: "Whisper + GPT-4o-mini (OpenAI)", cost: "~$0.007/use" },
+              { name: "MLS Listing AI", model: "GPT-4o-mini (OpenAI)", cost: "~$0.02/use" },
+            ].map((item) => (
+              <div
+                key={item.name}
+                className="rounded-xl border border-slate-800 bg-slate-900/50 p-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6"
+              >
+                <div className="sm:w-40 flex-shrink-0">
+                  <span className="text-sm font-semibold text-white">{item.name}</span>
+                </div>
+                <div className="flex-1 text-sm text-slate-400">{item.model}</div>
+                <div className="sm:text-right flex-shrink-0">
+                  <span className="text-xs font-mono text-emerald-400/80 px-2 py-1 rounded bg-emerald-500/10 border border-emerald-500/20">
+                    {item.cost}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-xs text-slate-600 text-center mt-6">
+            Cost per use reflects our approximate infrastructure cost. Users pay only their subscription fee plus optional add-ons &mdash; never per-action charges.
+          </p>
         </div>
       </section>
 
