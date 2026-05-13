@@ -1,4 +1,4 @@
-﻿## Platform Overview (Current Stats)
+## Platform Overview (Current Stats)
 - 130+ database tables and growing
 - **83 Foreman AI skills** (in-app agent that reads AND writes data - including product image search, image hosting, and AI-powered web scraping)
 - **30+ named webhook event types and growing** â€” typed payloads, HMAC signatures, delivery logs, and auto-retry. New events ship as the platform grows. Industry-leading depth (most competitors just say "webhooks exist")
@@ -423,7 +423,7 @@ Webhooks:
 ---
 ## API Access / BYOA (Bring Your Own Agent)
 
-Cornerstone PM is the first homebuilder platform with a REST API designed for AI agent automation.
+Cornerstone PM™ is the first homebuilder platform with a REST API designed for AI agent automation.
 
 **What it is:** Full programmatic API access so any AI agent can automate construction operations - especially the subcontractor bidding pipeline.
 
@@ -1248,7 +1248,7 @@ _For technical details, see [ARCHITECTURE.md](./ARCHITECTURE.md). For messaging 
 ---
 
 ## QR Code Check-In System
-Cornerstone PM includes a built-in QR code system for tracking job site activity in real time. Each community gets 4 QR codes:
+Cornerstone PM™ includes a built-in QR code system for tracking job site activity in real time. Each community gets 4 QR codes:
 - **Vendor Check-In** — Subcontractors scan to check in at job sites with safety acknowledgment, GPS tracking, and photo uploads
 - **PM/Builder Check-In** — Project managers log their site visits
 - **Sales Agent Check-In** — Sales staff check in at model homes
