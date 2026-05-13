@@ -99,6 +99,15 @@ A: Yes - Cornerstone has a webhook endpoint at `/api/ext/jobsite-events` that an
 **Q: Can buyers self-register at our model homes?**
 A: Yes - the Sales Model Home QR captures lead info on first scan, recognizes returning visitors, and creates a Lead record tied to the community. Sales agents get instant notifications. Replaces paper sign-in sheets.
 
+**Q: How does the design center work? Can buyers upgrade flooring types?**
+A: Yes! Cornerstone's Design Center is takeoff-driven - it knows exactly how much flooring, how many fixtures, etc. each room needs from the builder's takeoff data. Buyers pick finishes room by room, and they can upgrade across product types within the same category. For example, a room that defaults to carpet can be upgraded to hardwood, LVP, or tile. The system automatically calculates the upgrade cost as the price difference times the room's exact quantity. A real-time running total shows the buyer's cumulative upgrade cost as they make selections.
+
+**Q: Do buyers have to pick every finish individually or can they use packages?**
+A: Both! Cornerstone has 64 Designer Collections curated by an actual interior designer across 7 categories. Buyers can apply a package with one click to auto-fill coordinated selections across all rooms, or pick every finish individually room by room. They can also start with a package and override individual items.
+
+**Q: How does design center pricing work?**
+A: Pricing is takeoff-driven - quantities come from the builder's actual takeoff data, not estimates. Upgrade costs are calculated as the delta from the base/standard product. If standard carpet is $3.25/sqft and the buyer picks hardwood at $8.00/sqft, the upgrade is the difference ($4.75) times the room's exact square footage from takeoffs. Every dollar traces back to real quantities and vendor pricing. Zero double-entry.
+
 ---
 
 ## New Features (May 3-7, 2026)
@@ -710,13 +719,56 @@ Cornerstone's AI-powered takeoff system eliminates manual material estimation. *
   - POs track vendor deliveries and invoicing. Webhooks fire on po.created and po.status_changed.
 
 ## Design Center & Selections
-- **5-Tier Spec Level System** - define up to 5 finish tiers (e.g., Included, Upgrade I, Upgrade II, Premium, Luxury) with sort ordering to control upgrade pricing logic. Buyers pick a material LEVEL per room (not individual products) - they select the tier they want, then choose specific products within that level at their design appointment. This simplifies the selection process and keeps pricing predictable.
-- **Option Classes** - categorize selections by type: Flooring, Cabinets, Countertops, Paint, Hardware, Lighting, Appliances, etc. Each class has a unit of measure that controls pricing math
-- **Room-by-Room Selections** - walkthrough each room of a home and pick finishes for every category. Buyers see options organized by room with clear upgrade pricing
-- **Upgrade Price Tracking** - automatically calculates upgrade costs vs. the community baseline (included) spec level. Only charges the delta - if included flooring is $5/sqft and they pick $12/sqft, the upgrade is $7/sqft x quantity
-- **Selection Sheet PDF Export** - one-click export of a customer's complete selection sheet as a branded PDF. Shows every room, every selection, upgrade costs, and totals. Customer-facing - no internal cost/margin data exposed
-- **Designer Collections / Packages** - pre-curated bundles of selections (e.g., "Modern Farmhouse Package") that buyers can apply as a starting point, then customize individual items
-- **Per-unit pricing that makes sense** - LUMP items (cabinets, countertops priced as whole-house totals) don't multiply by quantity. Per-area items (sqft flooring, lf trim) correctly multiply by takeoff quantity
+Cornerstone's Design Center is **takeoff-driven** - the system knows exactly how much flooring, how many fixtures, and what quantities each room needs because it pulls directly from the builder's takeoff data. Zero double-entry, zero estimating. Buyers see real costs based on real quantities.
+
+### Per-Room Selections (Takeoff-Driven)
+- Buyers pick finishes and fixtures **for each room individually** - not one blanket choice for the whole house
+- Room-by-room selection slots are automatically generated from the builder's takeoff data. If the master bathroom has a "Vanity Faucet" scope and a "Shower Faucet" scope, the buyer sees two separate selection slots - even though both link to the same "Faucet" option class
+- Quantities come from takeoffs, so upgrade pricing is always based on the exact square footage, linear footage, or fixture count for that specific room
+
+### Cross-Class Upgrades
+- Buyers can **upgrade across product types within the same category**. A room that defaults to carpet can be upgraded to hardwood, LVP, or tile - all within the "Flooring" category
+- The grouped selection modal organizes options by type (Carpet, Hardwood, LVP, Tile) with collapsible groups, then by spec level within each type - making it easy to browse and compare
+- Cross-category upgrades are handled seamlessly: carpet to tile, recessed lighting to pendant, laminate countertop to quartz. The pricing engine recalculates automatically
+
+### Smart Upgrade Pricing
+- Upgrade costs are automatically calculated as the **delta from the base/standard product**. If standard carpet is $3.25/sqft and the buyer picks hardwood at $8.00/sqft, the upgrade is ($8.00 - $3.25) x room sqft
+- **Real-time upgrade total** - a running total shows the buyer's cumulative upgrade cost as they make selections, updated instantly with every change
+- Per-unit pricing that makes sense: LUMP items (cabinets, countertops priced as whole-house totals) don't multiply by quantity. Per-area items (sqft flooring, lf trim) correctly multiply by takeoff quantity
+
+### Spec Levels
+- **5-Tier Spec Level System** - define up to 5 finish tiers (e.g., Standard, Upgrade I, Upgrade II, Premium, Luxury) with sort ordering to control upgrade pricing logic
+- Spec levels control which options are available based on the community's base level - builders decide what's included vs. what's an upgrade per community
+- Buyers pick a material level per room, then choose specific products within that level at their design appointment
+
+### Designer Collections / Packages
+- **64 curated packages** across 7 categories (Flooring, Kitchen Essentials, Bath & Fixtures, Smart Home, Lighting, Hardware & Trim, Designer Bundles) - curated by an actual interior designer
+- Buyers apply a package with one click and all matching room slots auto-lock to coordinated selections. Individual overrides are still possible (with a warning modal)
+- Designer Bundles (Level 3+ spec only): Designer Kitchen, All Bathrooms, Whole House Package
+
+### Option Classes
+- Categorize selections by type: Flooring, Cabinets, Countertops, Paint, Hardware, Lighting, Appliances, Faucets, etc.
+- Each class has a unit of measure that controls pricing math
+- Option Classes now support **category + scope linking** with full filterability - controls which option classes appear in bid templates when filtering by trade
+
+### Selection Sheet PDF Export
+- One-click export of a buyer's complete selection sheet as a **branded PDF**
+- Shows every room, every selection, upgrade costs, and totals
+- Customer-facing - no internal cost/margin data exposed
+
+### How It Works for Builders (Setup Flow)
+1. **Set up the parts catalog** with products (materials, fixtures, finishes with pricing and images)
+2. **Define option classes** (types like "Carpet", "Recessed Lighting") under categories ("Flooring", "Lighting")
+3. **Create design options** with pricing, images, and spec level assignments
+4. **Add parts to floorplan takeoffs** with room locations and option classes
+5. **Design center automatically generates** per-room selection slots for each home - no manual configuration per home
+
+### Key Differentiators
+- **Zero double-entry:** takeoff quantities flow directly into design center pricing - what the estimator counted is what the buyer pays on
+- **Buyers see real costs, not estimates** - every dollar traces back to actual takeoff quantities and vendor pricing
+- **Cross-category upgrades handled seamlessly** - carpet to tile, recessed to pendant, laminate to quartz
+- **Builder controls availability per community** via spec levels - different communities can offer different finish tiers
+- **Structural option overrides:** when a buyer adds a "Bonus Room Over Garage," the bonus room flooring replaces the attic insulation quantities (not stacks on top). The override system handles this cleanly with per-takeoff additive vs. override modes
 
 ## Sales & Pricing
 - **Retail Pricing Matrix** - set base prices per floorplan x community x spec level. See all pricing in one grid view with community columns and floorplan rows
