@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Builder AI Software: Why Home Builders Need Purpose-Built AI (Not Generic Tools) &mdash; Cornerstone PM™ Blog",
+  title: "Builder AI Software: Why Home Builders Need Purpose-Built AI (Not Generic Tools) &mdash; Cornerstone PMâ„¢ Blog",
   description:
     "Builder AI software is a new search &mdash; people are looking for AI built specifically for builders. Here's why generic AI fails home builders and what purpose-built looks like.",
   openGraph: {
@@ -39,7 +39,7 @@ export default function BuilderAiSoftwarePost() {
           </h1>
           <div className="flex items-center gap-3 text-sm text-slate-500">
             <span>March 18, 2026</span>
-            <span>&mdash;·</span>
+            <span>&mdash;Â·</span>
             <span>5 min read</span>
           </div>
         </div>
@@ -98,7 +98,7 @@ export default function BuilderAiSoftwarePost() {
             Foreman AI&apos;s approach
           </h2>
           <p>
-            Foreman AI is the AI agent inside Cornerstone PM™. It was designed from the ground up for home builders &mdash; not adapted from a generic AI assistant. Here&apos;s what that means in practice:
+            Foreman AI is the AI agent inside Cornerstone PMâ„¢. It was designed from the ground up for home builders &mdash; not adapted from a generic AI assistant. Here&apos;s what that means in practice:
           </p>
           <p>
             Foreman has 100+ purpose-built skills across four categories: Core Data Management, AI-Powered Analysis, Document Generation, and System Intelligence. Every skill was designed for a specific job that home builders actually need done.
@@ -143,7 +143,7 @@ export default function BuilderAiSoftwarePost() {
                     <p className="text-white font-medium italic text-sm">&ldquo;{ex.prompt}&rdquo;</p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="font-black text-sm leading-none flex-shrink-0 mt-0.5">🪖</span>
+                    <span className="font-black text-sm leading-none flex-shrink-0 mt-0.5">Ã°Å¸Âªâ€“</span>
                     <p className="text-slate-300 text-sm">{ex.result}</p>
                   </div>
                 </div>
@@ -163,7 +163,7 @@ export default function BuilderAiSoftwarePost() {
             Generic AI will tell you what a budget variance is. Purpose-built builder AI will show you exactly which homes have one &mdash; and how much it&apos;s going to cost you if you don&apos;t act.
           </p>
           <p>
-            Cornerstone PM™&apos;s beta is open now. Foreman AI is included in the Pro plan. Early adopters get two years free.
+            Cornerstone PMâ„¢&apos;s beta is open now. Foreman AI is included in the Pro plan. Early adopters get two years free.
           </p>
         </div>
 

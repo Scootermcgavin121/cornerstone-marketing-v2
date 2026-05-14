@@ -6,9 +6,9 @@ import { CTASection } from "@/components/CTASection";
 import { Check } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Construction Software Alternatives — Compare to Cornerstone PM™",
+  title: "Construction Software Alternatives â€” Compare to Cornerstone PMâ„¢",
   description:
-    "See how Cornerstone PM™ compares to 17 construction software platforms — from NEWSTAR and Buildertrend to Procore, JobTread, Fieldwire, and more. Built specifically for production home builders.",
+    "See how Cornerstone PMâ„¢ compares to 17 construction software platforms â€” from NEWSTAR and Buildertrend to Procore, JobTread, Fieldwire, and more. Built specifically for production home builders.",
   alternates: { canonical: "https://www.cornerstonepm.ai/alternatives" },
 };
 
@@ -17,9 +17,9 @@ const groups = [
     label: "Production Builder Platforms",
     color: "text-cyan-400",
     competitors: [
-      { name: "NEWSTAR", slug: "newstar", note: "Enterprise production builder software. $25–100k implementation. We're built for the same workflows at a fraction of the cost." },
+      { name: "NEWSTAR", slug: "newstar", note: "Enterprise production builder software. $25â€“100k implementation. We're built for the same workflows at a fraction of the cost." },
       { name: "BuildPro", slug: "buildpro", note: "Windows-based builder platform with high implementation fees. We're cloud-native and self-serve." },
-      { name: "Buildertrend", slug: "buildertrend", note: "Most-used builder software — but not built for production home builders. We are." },
+      { name: "Buildertrend", slug: "buildertrend", note: "Most-used builder software â€” but not built for production home builders. We are." },
       { name: "CoConstruct", slug: "coconstruct", note: "Now owned by Buildertrend. Frustrated users are switching to purpose-built alternatives." },
     ],
   },
@@ -28,7 +28,7 @@ const groups = [
     color: "text-emerald-400",
     competitors: [
       { name: "JobTread", slug: "jobtread", note: "Great for GCs and remodelers. No lot/community management, no floorplan pricing engine. Different tool for a different market." },
-      { name: "Procore", slug: "procore", note: "Enterprise construction OS for large commercial GCs. Overkill for residential builders — and priced accordingly." },
+      { name: "Procore", slug: "procore", note: "Enterprise construction OS for large commercial GCs. Overkill for residential builders â€” and priced accordingly." },
       { name: "Buildxact", slug: "buildxact", note: "Estimating-first platform. Misses the full PM lifecycle that production builders need." },
       { name: "Contractor Foreman", slug: "contractor-foreman", note: "General contractor platform. Not designed for home builder communities and floorplan workflows." },
     ],
@@ -38,15 +38,15 @@ const groups = [
     color: "text-amber-400",
     competitors: [
       { name: "Fieldwire", slug: "fieldwire", note: "Field management for commercial jobsites. No sales pipeline, no design center, no buyer portal." },
-      { name: "Raken", slug: "raken", note: "Daily reporting and field logs — one piece of the puzzle, not the full platform." },
+      { name: "Raken", slug: "raken", note: "Daily reporting and field logs â€” one piece of the puzzle, not the full platform." },
     ],
   },
   {
     label: "Service Business Tools",
-    note: "Different market — honest comparisons inside",
+    note: "Different market â€” honest comparisons inside",
     color: "text-violet-400",
     competitors: [
-      { name: "Jobber", slug: "jobber", note: "Home services scheduling. Not built for production builders — honest comparison inside." },
+      { name: "Jobber", slug: "jobber", note: "Home services scheduling. Not built for production builders â€” honest comparison inside." },
       { name: "Housecall Pro", slug: "housecall-pro", note: "HVAC, plumbing, and home services. Not a construction PM platform." },
       { name: "JobNimbus", slug: "jobnimbus", note: "Roofing and restoration focus. Very different workflow from production building." },
       { name: "Workiz", slug: "workiz", note: "Field service dispatch. Not built for production home builders." },
@@ -64,27 +64,27 @@ const groups = [
 ];
 
 const differentiators = [
-  { title: "100+ AI skills", desc: "Foreman AI reads and writes your data — bids, options, scheduling, purchasing. Not a chatbot — an agent.", color: "text-violet-400" },
+  { title: "100+ AI skills", desc: "Foreman AI reads and writes your data â€” bids, options, scheduling, purchasing. Not a chatbot â€” an agent.", color: "text-violet-400" },
   { title: "30+ Named Webhook Events (Growing)", desc: "Named event catalog with typed payloads, HMAC signatures, delivery logs, and auto-retry. New events ship as the platform grows. Deepest in the industry.", color: "text-cyan-400" },
-  { title: "$0 Migration", desc: "AI Migration Wizard imports from Buildertrend, JobTread, CoConstruct, or any CSV/Excel in hours. Competitors charge $5k–$20k.", color: "text-emerald-400" },
+  { title: "$0 Migration", desc: "AI Migration Wizard imports from Buildertrend, JobTread, CoConstruct, or any CSV/Excel in hours. Competitors charge $5kâ€“$20k.", color: "text-emerald-400" },
   { title: "Unlimited Users", desc: "Flat monthly fee. No per-seat pricing. $149/mo for your entire team.", color: "text-amber-400" },
   { title: "Hours, Not Months", desc: "Self-serve setup. No 6-month implementation engagement. No consultants required.", color: "text-rose-400" },
-  { title: "Triple QR Ecosystem", desc: "Vendor check-in, PM site visits, and model home lead capture — three audiences, one platform. Industry-first.", color: "text-cyan-400" },
+  { title: "Triple QR Ecosystem", desc: "Vendor check-in, PM site visits, and model home lead capture â€” three audiences, one platform. Industry-first.", color: "text-cyan-400" },
 ];
 
 // JSON-LD ItemList structured data
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "Cornerstone PM™ Alternative Pages",
-  "description": "Comparison pages showing how Cornerstone PM™ compares to 17 construction software platforms",
+  "name": "Cornerstone PMâ„¢ Alternative Pages",
+  "description": "Comparison pages showing how Cornerstone PMâ„¢ compares to 17 construction software platforms",
   "url": "https://www.cornerstonepm.ai/alternatives",
   "numberOfItems": 17,
   "itemListElement": groups.flatMap((g) =>
     g.competitors.map((c, i) => ({
       "@type": "ListItem",
       "position": i + 1,
-      "name": `Cornerstone PM™ vs ${c.name}`,
+      "name": `Cornerstone PMâ„¢ vs ${c.name}`,
       "url": `https://www.cornerstonepm.ai/${c.slug}-alternative`,
     }))
   ),
@@ -112,7 +112,7 @@ export default function AlternativesPage() {
             <span className="text-cyan-400">compared honestly.</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto">
-            Cornerstone PM™ is the home builder platform. See how we stack up against every major construction software — and where we&apos;re genuinely different from service-business tools.
+            Cornerstone PMâ„¢ is the home builder platform. See how we stack up against every major construction software â€” and where we&apos;re genuinely different from service-business tools.
           </p>
         </div>
       </section>
@@ -137,7 +137,7 @@ export default function AlternativesPage() {
                       {c.name}
                     </div>
                     <p className="text-slate-500 text-sm leading-relaxed flex-1">{c.note}</p>
-                    <div className={`${group.color} text-xs mt-3 font-semibold`}>Compare →</div>
+                    <div className={`${group.color} text-xs mt-3 font-semibold`}>Compare â†’</div>
                   </Link>
                 ))}
               </div>
@@ -150,7 +150,7 @@ export default function AlternativesPage() {
       <section className="py-16 px-4 border-t border-slate-800/60 mt-8">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">Why builders switch to Cornerstone PM™</h2>
+            <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">Why builders switch to Cornerstone PMâ„¢</h2>
             <p className="text-slate-400 max-w-2xl mx-auto">We didn&apos;t adapt a generic tool for home builders. We built from scratch, for home builders specifically.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -166,7 +166,7 @@ export default function AlternativesPage() {
           </div>
           <div className="text-center mt-8">
             <Link href="/compare" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-semibold text-sm">
-              See the full feature comparison matrix →
+              See the full feature comparison matrix â†’
             </Link>
           </div>
         </div>

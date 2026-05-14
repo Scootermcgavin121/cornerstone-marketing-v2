@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, Check, X } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
@@ -6,9 +6,9 @@ import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "JobTread Alternative for Home Builders &mdash; Cornerstone PM™ Blog",
+  title: "JobTread Alternative for Home Builders &mdash; Cornerstone PMÃ¢â€žÂ¢ Blog",
   description:
-    "JobTread is built for general contractors. Cornerstone PM™ is built for home builders. Here's the honest difference &mdash; lot management, design center, sales pipeline, and AI that actually works with your data.",
+    "JobTread is built for general contractors. Cornerstone PMÃ¢â€žÂ¢ is built for home builders. Here's the honest difference &mdash; lot management, design center, sales pipeline, and AI that actually works with your data.",
   openGraph: {
     images: [{ url: "https://www.cornerstonepm.ai/blog/production-builder-software.png", width: 1024, height: 1024, alt: "JobTread alternative home builder software with options pricing engine for production builders" }],
   }
@@ -53,7 +53,7 @@ export default function JobtreadAlternativePost() {
           </h1>
           <div className="flex items-center gap-3 text-sm text-slate-500">
             <span>April 1, 2026</span>
-            <span>&mdash;·</span>
+            <span>&mdash;Ã‚Â·</span>
             <span>6 min read</span>
           </div>
         </div>
@@ -118,7 +118,7 @@ export default function JobtreadAlternativePost() {
           <div className="grid grid-cols-3 px-6 py-3 bg-slate-800/80 text-xs font-semibold text-slate-400 uppercase tracking-wider">
             <div>Feature</div>
             <div className="text-center">JobTread</div>
-            <div className="text-center">Cornerstone PM™</div>
+            <div className="text-center">Cornerstone PMÃ¢â€žÂ¢</div>
           </div>
           {comparison.map((row, i) => (
             <div
@@ -154,7 +154,7 @@ export default function JobtreadAlternativePost() {
         <div className="prose prose-invert prose-lg max-w-none space-y-6 text-slate-300 leading-relaxed">
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">The AI difference: 100+ chained skills vs. ~35 basic CRUD calls</h2>
           <p>
-            Cornerstone PM™ includes Foreman AI &mdash; a 100+ skill construction agent that reads and writes your real data and chains skills together intelligently. Not a general-purpose chatbot. An agent that knows your parts catalog, your vendor bids, your homes, your sales pipeline, and your budget data.
+            Cornerstone PMÃ¢â€žÂ¢ includes Foreman AI &mdash; a 100+ skill construction agent that reads and writes your real data and chains skills together intelligently. Not a general-purpose chatbot. An agent that knows your parts catalog, your vendor bids, your homes, your sales pipeline, and your budget data.
           </p>
           <p>
             JobTread&apos;s AI Connector exposes around 35 mostly basic CRUD skills (list homes, create vendor, search parts) and routes the actual thinking back to a third-party LLM (ChatGPT, Claude). Cornerstone&apos;s 100+ Foreman skills are different: they chain into real workflows. One prompt can read a blueprint, learn your fixture preferences from past takeoffs, build a complete fixture-by-fixture lighting package, and tag everything with option classes for the design center &mdash; all in a single call.
@@ -166,9 +166,9 @@ export default function JobtreadAlternativePost() {
             And the kill shot: Foreman&apos;s <code className="text-amber-300">learnBuilderPreferences</code> skill reads your existing floorplan takeoffs and figures out YOUR build defaults automatically. Every other Foreman skill checks learned preferences before falling back to hardcoded values. JobTread&apos;s AI stays static. Foreman gets smarter every time you build a floorplan.
           </p>
 
-          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Who should look at Cornerstone PM™</h2>
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Who should look at Cornerstone PMÃ¢â€žÂ¢</h2>
           <p>
-            Cornerstone PM™ is the right call if you&apos;re a home builder managing 5&ndash;50 homes a year and you need:
+            Cornerstone PMÃ¢â€žÂ¢ is the right call if you&apos;re a home builder managing 5&ndash;50 homes a year and you need:
           </p>
           <ul className="space-y-2 my-4">
             {[
@@ -179,7 +179,7 @@ export default function JobtreadAlternativePost() {
               "Flat-rate pricing that doesn&apos;t charge per seat",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3">
-                <span className="text-amber-400 font-bold flex-shrink-0 mt-0.5">→</span>
+                <span className="text-amber-400 font-bold flex-shrink-0 mt-0.5">&mdash;Ã¢â‚¬Â Ã¢â‚¬â„¢</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -191,7 +191,7 @@ export default function JobtreadAlternativePost() {
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">The bottom line</h2>
           <p>
-            JobTread is a good product for the customer it was built for. That customer isn&apos;t a home builder. Cornerstone PM™ is.
+            JobTread is a good product for the customer it was built for. That customer isn&apos;t a home builder. Cornerstone PMÃ¢â€žÂ¢ is.
           </p>
           <p>
             We&apos;re in beta now with 2 years free for early adopters. No credit card, no sales call, no per-seat pricing that makes you think twice before adding your team.
@@ -199,7 +199,7 @@ export default function JobtreadAlternativePost() {
         </div>
 
         <div className="mt-12 p-6 rounded-2xl border border-amber-500/20 bg-amber-500/5">
-          <h3 className="text-lg font-bold text-white mb-2">Try Cornerstone PM™ free</h3>
+          <h3 className="text-lg font-bold text-white mb-2">Try Cornerstone PMÃ¢â€žÂ¢ free</h3>
           <p className="text-slate-400 text-sm mb-4">
             Beta access is open now. 2 years free for early adopters. Built for home builders, not contractors.
           </p>

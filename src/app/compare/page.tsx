@@ -3,12 +3,12 @@ import { Check, X, Minus } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 
 export const metadata = {
-  title: "Cornerstone PM™ vs NEWSTAR, Buildertrend, Buildxact — Compare Home Builder Software",
+  title: "Cornerstone PMâ„¢ vs NEWSTAR, Buildertrend, Buildxact â€” Compare Home Builder Software",
   description:
-    "See how Cornerstone PM™ stacks up against NEWSTAR, BuildPro, Buildertrend, and Buildxact. Less cost, faster setup, built specifically for home builders — with AI, real-time command center, and a 100+ skills in-app agent none of them have.",
+    "See how Cornerstone PMâ„¢ stacks up against NEWSTAR, BuildPro, Buildertrend, and Buildxact. Less cost, faster setup, built specifically for home builders â€” with AI, real-time command center, and a 100+ skills in-app agent none of them have.",
 };
 
-const competitors = ["Cornerstone PM™", "NEWSTAR / BuildPro", "Buildertrend", "Buildxact"];
+const competitors = ["Cornerstone PMâ„¢", "NEWSTAR / BuildPro", "Buildertrend", "Buildxact"];
 
 const YES = "yes";
 const NO = "no";
@@ -30,9 +30,9 @@ const rows: { category: string; features: { label: string; values: CellValue[] }
   {
     category: "Data Migration & Imports",
     features: [
-      { label: "AI Migration Wizard (Live in Beta) — drop your files, the wizard does the rest", values: [YES, NO, NO, NO] },
+      { label: "AI Migration Wizard (Live in Beta) â€” drop your files, the wizard does the rest", values: [YES, NO, NO, NO] },
       { label: "23 dedicated CSV import endpoints (vendors, homes, communities, templates, scopes, takeoffs, parts, budgets...)", values: [YES, NO, PARTIAL, NO] },
-      { label: "AI-powered bid import (parse any vendor format — Excel, PDF, scanned, handwritten)", values: [YES, NO, NO, NO] },
+      { label: "AI-powered bid import (parse any vendor format â€” Excel, PDF, scanned, handwritten)", values: [YES, NO, NO, NO] },
       { label: "Self-serve migration (no consultant required)", values: [YES, NO, PARTIAL, YES] },
       { label: "Migration timeline", values: ["Hours", "3-12 months", "1-2 weeks", "1-2 weeks"] },
       { label: "Migration cost", values: ["$0", "$5,000-$20,000", "$0-$2,500", "$0"] },
@@ -105,7 +105,7 @@ const rows: { category: string; features: { label: string; values: CellValue[] }
   {
     category: "AI & Innovation",
     features: [
-      { label: "AI bid import (upload any vendor format — Excel, PDF, scanned, handwritten)", values: [YES, NO, NO, NO] },
+      { label: "AI bid import (upload any vendor format â€” Excel, PDF, scanned, handwritten)", values: [YES, NO, NO, NO] },
       { label: "AI Blueprint Takeoff (PDF to material list)", values: [YES, NO, NO, PARTIAL] },
       { label: "AI agent with 100+ purpose-built construction skills", values: [YES, NO, NO, NO] },
       { label: "AI memory compaction (marathon sessions without context loss)", values: [YES, NO, NO, NO] },
@@ -230,14 +230,14 @@ export default function ComparePage() {
                 ))}
               </div>
               <div className="space-y-3">
-                <div className="text-cyan-400 font-bold text-sm uppercase tracking-widest mb-3">Cornerstone PM™</div>
+                <div className="text-cyan-400 font-bold text-sm uppercase tracking-widest mb-3">Cornerstone PMâ„¢</div>
                 {[
                   "$149/mo flat &mdash; unlimited users, no per-seat fees",
                   "Full lot, community &amp; multi-community management",
                   "Floorplan base price + options engine = contract price",
                   "Pre-sale workflow: lead &rarr; options &rarr; contract &rarr; close",
                   "Design Center selections built into the sale &mdash; not change orders",
-                  "5 native AI agents — Foreman AI (100+ skills), Blueprint AI, Bid Import AI, MLS Generator, Support (Pro plan, $499/mo flat)",
+                  "5 native AI agents â€” Foreman AI (100+ skills), Blueprint AI, Bid Import AI, MLS Generator, Support (Pro plan, $499/mo flat)",
                   "Built for home builders",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-2 text-slate-300 text-sm">
@@ -261,7 +261,7 @@ export default function ComparePage() {
             { num: "$149/mo", label: "Starting price", sub: "vs $499+ elsewhere" },
             { num: "Hours", label: "Setup time", sub: "vs 6-12 months for NEWSTAR" },
             { num: "$0", label: "Implementation cost", sub: "vs $25,000+ for BuildPro" },
-            { num: "110+", label: "Database tables", sub: "and growing — built for construction, not adapted" },
+            { num: "110+", label: "Database tables", sub: "and growing â€” built for construction, not adapted" },
           ].map((s) => (
             <div key={s.label} className="text-center p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
               <div className="text-3xl font-black text-cyan-400 mb-1">{s.num}</div>
@@ -332,7 +332,7 @@ export default function ComparePage() {
             <span className="flex items-center gap-1.5"><X className="w-3.5 h-3.5 text-slate-700" /> Not available</span>
           </div>
           <p className="max-w-5xl mx-auto mt-6 text-[11px] text-slate-600 leading-relaxed text-center">
-            Pricing and feature availability reflect publicly available information as of November 2026. Verify current pricing and capabilities directly with each vendor. NEWSTAR®, BuildPro®, Buildertrend®, and Buildxact® are trademarks of their respective owners; Cornerstone PM™ is not affiliated with or endorsed by these companies.
+            Pricing and feature availability reflect publicly available information as of November 2026. Verify current pricing and capabilities directly with each vendor. NEWSTARÂ®, BuildProÂ®, BuildertrendÂ®, and BuildxactÂ® are trademarks of their respective owners; Cornerstone PMâ„¢ is not affiliated with or endorsed by these companies.
           </p>
         </div>
       </section>
@@ -342,7 +342,7 @@ export default function ComparePage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-3xl sm:text-4xl font-black text-white mb-3">Compare us to your current software</h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">See how Cornerstone PM™ stacks up against 17 construction platforms — from enterprise production builder software to field tools and service-biz apps.</p>
+            <p className="text-slate-400 max-w-2xl mx-auto">See how Cornerstone PMâ„¢ stacks up against 17 construction platforms â€” from enterprise production builder software to field tools and service-biz apps.</p>
           </div>
 
           {/* Production builder competitors */}
@@ -358,7 +358,7 @@ export default function ComparePage() {
                 <Link key={c.slug} href={`/${c.slug}-alternative`} className="p-4 rounded-xl border border-slate-800 bg-slate-900/40 hover:border-cyan-500/40 hover:bg-slate-900/80 transition-all duration-200 group">
                   <div className="text-white font-bold text-sm group-hover:text-cyan-400 transition-colors">{c.name}</div>
                   <div className="text-slate-500 text-xs mt-1">{c.note}</div>
-                  <div className="text-cyan-400 text-xs mt-2 font-semibold">Compare →</div>
+                  <div className="text-cyan-400 text-xs mt-2 font-semibold">Compare â†’</div>
                 </Link>
               ))}
             </div>
@@ -377,7 +377,7 @@ export default function ComparePage() {
                 <Link key={c.slug} href={`/${c.slug}-alternative`} className="p-4 rounded-xl border border-slate-800 bg-slate-900/40 hover:border-cyan-500/40 hover:bg-slate-900/80 transition-all duration-200 group">
                   <div className="text-white font-bold text-sm group-hover:text-cyan-400 transition-colors">{c.name}</div>
                   <div className="text-slate-500 text-xs mt-1">{c.note}</div>
-                  <div className="text-cyan-400 text-xs mt-2 font-semibold">Compare →</div>
+                  <div className="text-cyan-400 text-xs mt-2 font-semibold">Compare â†’</div>
                 </Link>
               ))}
             </div>
@@ -394,7 +394,7 @@ export default function ComparePage() {
                 <Link key={c.slug} href={`/${c.slug}-alternative`} className="p-4 rounded-xl border border-slate-800 bg-slate-900/40 hover:border-cyan-500/40 hover:bg-slate-900/80 transition-all duration-200 group">
                   <div className="text-white font-bold text-sm group-hover:text-cyan-400 transition-colors">{c.name}</div>
                   <div className="text-slate-500 text-xs mt-1" dangerouslySetInnerHTML={{ __html: c.note }} />
-                  <div className="text-cyan-400 text-xs mt-2 font-semibold">Compare →</div>
+                  <div className="text-cyan-400 text-xs mt-2 font-semibold">Compare â†’</div>
                 </Link>
               ))}
             </div>
@@ -402,7 +402,7 @@ export default function ComparePage() {
 
           {/* Service businesses */}
           <div className="mb-8">
-            <div className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-4">Service Business Tools <span className="text-slate-600 normal-case">(different market — see honest comparisons)</span></div>
+            <div className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-4">Service Business Tools <span className="text-slate-600 normal-case">(different market â€” see honest comparisons)</span></div>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               {[
                 { name: "Jobber", slug: "jobber", note: "Field service management" },
@@ -415,7 +415,7 @@ export default function ComparePage() {
                 <Link key={c.slug} href={`/${c.slug}-alternative`} className="p-4 rounded-xl border border-slate-800 bg-slate-900/40 hover:border-slate-700 hover:bg-slate-900/80 transition-all duration-200 group">
                   <div className="text-white font-bold text-sm group-hover:text-slate-200 transition-colors">{c.name}</div>
                   <div className="text-slate-500 text-xs mt-1" dangerouslySetInnerHTML={{ __html: c.note }} />
-                  <div className="text-slate-400 text-xs mt-2 font-semibold">Compare →</div>
+                  <div className="text-slate-400 text-xs mt-2 font-semibold">Compare â†’</div>
                 </Link>
               ))}
             </div>
@@ -431,7 +431,7 @@ export default function ComparePage() {
                 <Link key={c.slug} href={`/${c.slug}-alternative`} className="p-4 rounded-xl border border-slate-800 bg-slate-900/40 hover:border-cyan-500/40 hover:bg-slate-900/80 transition-all duration-200 group">
                   <div className="text-white font-bold text-sm group-hover:text-cyan-400 transition-colors">{c.name}</div>
                   <div className="text-slate-500 text-xs mt-1">{c.note}</div>
-                  <div className="text-cyan-400 text-xs mt-2 font-semibold">Compare →</div>
+                  <div className="text-cyan-400 text-xs mt-2 font-semibold">Compare â†’</div>
                 </Link>
               ))}
             </div>
@@ -439,7 +439,7 @@ export default function ComparePage() {
 
           <div className="text-center mt-6">
             <Link href="/alternatives" className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-slate-700 text-slate-300 hover:border-cyan-500/40 hover:text-cyan-400 transition-all duration-200 text-sm font-semibold">
-              See all 17 comparison pages →
+              See all 17 comparison pages â†’
             </Link>
           </div>
         </div>

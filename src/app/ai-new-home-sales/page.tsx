@@ -5,9 +5,9 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "AI for New Home Sales | Cornerstone PM™",
+  title: "AI for New Home Sales | Cornerstone PMâ„¢",
   description:
-    "Cornerstone PM™'s AI manages your entire new home sales pipeline — from first inquiry to contract. Foreman AI tracks every buyer, flags stalled deals, and generates MLS listings automatically.",
+    "Cornerstone PMâ„¢'s AI manages your entire new home sales pipeline â€” from first inquiry to contract. Foreman AI tracks every buyer, flags stalled deals, and generates MLS listings automatically.",
 };
 
 const prompts = [
@@ -26,7 +26,7 @@ const prompts = [
   {
     prompt: "What's our average days-to-contract across all communities this quarter?",
     result:
-      "Q1 average: 34 days pre-inquiry to contract. By community: Coastal Ridge 28 days, Bayside Preserve 41 days, Oak Creek 31 days. Bayside trending longer — 2 stalled deals in negotiation.",
+      "Q1 average: 34 days pre-inquiry to contract. By community: Coastal Ridge 28 days, Bayside Preserve 41 days, Oak Creek 31 days. Bayside trending longer â€” 2 stalled deals in negotiation.",
     category: "Pipeline Analysis",
   },
   {
@@ -99,7 +99,7 @@ const features = [
     bg: "bg-emerald-500/10",
     border: "border-emerald-500/20",
     title: "MLS Listings on Demand",
-    desc: "Generate professional MLS descriptions from your real floorplan data. Room dimensions, finishes, community amenities — auto-populated and ready to publish.",
+    desc: "Generate professional MLS descriptions from your real floorplan data. Room dimensions, finishes, community amenities â€” auto-populated and ready to publish.",
   },
   {
     icon: BarChart3,
@@ -122,7 +122,7 @@ export default function AiNewHomeSalesPage() {
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-violet-500/30 bg-violet-500/10 text-violet-400 text-xs font-semibold mb-6">
             <TrendingUp className="w-3.5 h-3.5" />
-            AI NEW HOME SALES &middot; FOREMAN AI™ &middot; PRO PLAN
+            AI NEW HOME SALES &middot; FOREMAN AIâ„¢ &middot; PRO PLAN
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
             AI That Runs Your<br />
@@ -155,7 +155,7 @@ export default function AiNewHomeSalesPage() {
             { num: "100%", label: "Pipeline visibility", sub: "Every buyer, every community" },
             { num: "0", label: "Missed follow-ups", sub: "AI flags stalled deals" },
             { num: "30s", label: "MLS description", sub: "Generated from real data" },
-            { num: "∞", label: "Communities tracked", sub: "No per community limits" },
+            { num: "âˆž", label: "Communities tracked", sub: "No per community limits" },
           ].map((s) => (
             <div key={s.label} className="text-center p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
               <div className="text-3xl font-black text-violet-400 mb-1">{s.num}</div>
@@ -225,7 +225,7 @@ export default function AiNewHomeSalesPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-black mb-4">Everything your sales pipeline needs</h2>
-            <p className="text-slate-400 max-w-xl mx-auto">Built for residential home builders — not generic CRM software adapted for construction.</p>
+            <p className="text-slate-400 max-w-xl mx-auto">Built for residential home builders â€” not generic CRM software adapted for construction.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {features.map((f) => {
@@ -250,7 +250,7 @@ export default function AiNewHomeSalesPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-black mb-4">The full sales pipeline, tracked</h2>
             <p className="text-slate-400 max-w-xl mx-auto">
-              From first inquiry to closed home — every stage is visible, every buyer is tracked.
+              From first inquiry to closed home â€” every stage is visible, every buyer is tracked.
             </p>
           </div>
           <div className="space-y-4">
@@ -275,7 +275,7 @@ export default function AiNewHomeSalesPage() {
               Stop losing buyers to <span className="text-violet-400">bad follow-up</span>
             </h2>
             <p className="text-slate-400 text-lg mb-8 max-w-xl mx-auto">
-              Foreman AI tracks every buyer, flags every stalled deal, and generates your MLS listings automatically. Beta is free for 2 years — limited to 100 builders.
+              Foreman AI tracks every buyer, flags every stalled deal, and generates your MLS listings automatically. Beta is free for 2 years â€” limited to 100 builders.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -291,7 +291,7 @@ export default function AiNewHomeSalesPage() {
                 See all 100+ Foreman skills
               </Link>
             </div>
-            <p className="text-slate-600 text-sm mt-6">Pro plan · $499/mo · Unlimited users · 2 years free in beta</p>
+            <p className="text-slate-600 text-sm mt-6">Pro plan Â· $499/mo Â· Unlimited users Â· 2 years free in beta</p>
           </div>
         </div>
       </section>
