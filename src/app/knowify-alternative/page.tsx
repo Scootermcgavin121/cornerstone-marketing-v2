@@ -15,7 +15,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Floorplan pricing matrix", cornerstone: true, competitor: false, note: "Per-community floorplan pricing. Cornerstone Builder+." },
   { feature: "Multi-community lot management", cornerstone: true, competitor: false, note: "Native multi-community pipeline. Knowify is job-centric." },
   { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Packages curated by an actual interior designer -- the same playbook K. Hovnanian Homes uses. Buyer design center. Cornerstone Builder+." },
-  { feature: "Native AI agents (Foreman AI -- 99+ skills)", cornerstone: true, competitor: false, note: "Cornerstone Pro ($499/mo): Foreman AI reads AND writes construction data. Blueprint AI: PDF to takeoff in 60 seconds. Knowify has no native AI agents." },
+  { feature: "Native AI agents (Foreman AI -- 100+ skills)", cornerstone: true, competitor: false, note: "Cornerstone Pro ($499/mo): Foreman AI reads AND writes construction data. Blueprint AI: PDF to takeoff in 60 seconds. Knowify has no native AI agents." },
   { feature: "AI image search, vision & anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, hosts them on CDN, reads supplier product pages with AI-powered web scraping. Plus: paste or drag-drop any screenshot and Foreman reads it with AI vision and acts on it. Cornerstone Pro feature." },
   { feature: "30+ named webhook events (catalog growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): 30+ named events and counting -- typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. Knowify has no public webhook catalog." },
   { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): wire Claude or ChatGPT to your live construction data." },
@@ -45,7 +45,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What's the best Knowify alternative for home builders?",
-    a: "Cornerstone PMâ„¢ is purpose-built for home builders acting in the GC role. It includes everything from pre-sale options engine and design center (Builder $299/mo) through construction scheduling, vendor bid management, purchasing, and homeowner portal -- plus native AI agents (Foreman AI 99+ skills on Pro $499/mo, Blueprint AI) and a public REST API with 30+ named webhook events (Pro+).",
+    a: "Cornerstone PMâ„¢ is purpose-built for home builders acting in the GC role. It includes everything from pre-sale options engine and design center (Builder $299/mo) through construction scheduling, vendor bid management, purchasing, and homeowner portal -- plus native AI agents (Foreman AI 100+ skills on Pro $499/mo, Blueprint AI) and a public REST API with 30+ named webhook events (Pro+).",
   },
   {
     q: "Can I migrate from Knowify to Cornerstone PMâ„¢?",

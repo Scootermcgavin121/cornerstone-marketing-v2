@@ -15,7 +15,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Floorplan pricing matrix", cornerstone: true, competitor: false, note: "Per-community floorplan pricing. Cornerstone Builder+." },
   { feature: "Multi-community lot management", cornerstone: true, competitor: false, note: "Native multi-community pipeline. Projul is single-job focused." },
   { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Packages curated by an actual interior designer -- the same playbook K. Hovnanian Homes uses. Buyer design center. Cornerstone Builder+." },
-  { feature: "Native AI agents (Foreman AI -- 99+ skills)", cornerstone: true, competitor: false, note: "Cornerstone Pro ($499/mo): Foreman AI reads AND writes construction data. Blueprint AI: PDF to takeoff in 60 seconds. Projul has no native AI agents." },
+  { feature: "Native AI agents (Foreman AI -- 100+ skills)", cornerstone: true, competitor: false, note: "Cornerstone Pro ($499/mo): Foreman AI reads AND writes construction data. Blueprint AI: PDF to takeoff in 60 seconds. Projul has no native AI agents." },
   { feature: "AI image search, vision & anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, hosts them on CDN, reads supplier product pages with AI-powered web scraping. Plus: paste or drag-drop any screenshot and Foreman reads it with AI vision and acts on it. Cornerstone Pro feature." },
   { feature: "30+ named webhook events (catalog growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): 30+ named events and counting -- typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. Projul has no public REST API or webhook catalog." },
   { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): wire Claude or ChatGPT to your live construction data." },
@@ -46,7 +46,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What's the best Projul alternative for home builders?",
-    a: "Cornerstone PMÃ¢â€žÂ¢ is purpose-built for home builders. Beyond the basics (scheduling, CRM, client portal from Starter $149/mo), it adds a structural options engine, floorplan pricing matrix, multi-community lot management, native AI agents (Foreman AI 99+ skills on Pro $499/mo, Blueprint AI), 30+ named webhook events (Pro+), and a public REST API with 59+ endpoints (and growing).",
+    a: "Cornerstone PMÃ¢â€žÂ¢ is purpose-built for home builders. Beyond the basics (scheduling, CRM, client portal from Starter $149/mo), it adds a structural options engine, floorplan pricing matrix, multi-community lot management, native AI agents (Foreman AI 100+ skills on Pro $499/mo, Blueprint AI), 30+ named webhook events (Pro+), and a public REST API with 59+ endpoints (and growing).",
   },
   {
     q: "How does Projul pricing compare to Cornerstone?",
@@ -78,7 +78,7 @@ export default function ProjulAlternativePage() {
       heroLine1="Remodeling software won't cut it."
       heroLine2="You're building communities."
       accentColor="cyan"
-      heroParagraph="Projul is built for residential remodelers and small contractors (from ~$399/mo annual). Cornerstone PMÃ¢â€žÂ¢ is the Projul alternative for home builders -- structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, 99+ AI skills (Pro $499/mo), and a public REST API (Pro+) from $149/mo."
+      heroParagraph="Projul is built for residential remodelers and small contractors (from ~$399/mo annual). Cornerstone PMÃ¢â€žÂ¢ is the Projul alternative for home builders -- structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, 100+ AI skills (Pro $499/mo), and a public REST API (Pro+) from $149/mo."
       secondaryCTA={{ text: "See full comparison", href: "/compare" }}
       comparisonSubtitle="Projul vs Cornerstone PMÃ¢â€žÂ¢ -- remodeling contractor tool vs. home-builder platform."
       comparisonRows={comparisonRows}

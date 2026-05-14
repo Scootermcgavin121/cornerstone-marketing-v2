@@ -35,7 +35,7 @@ const aiFeatures: AIFeature[] = [
   {
     name: "Foreman AI\u2122",
     description:
-      "In-app AI agent with 45+ construction management skills. Reads and writes real data \u2014 takes actions, not just chat.",
+      "In-app AI agent with 100+ construction management skills. Reads and writes real data \u2014 takes actions, not just chat.",
     starter: "\u2014",
     builder: "\u2014",
     pro: "600/mo",

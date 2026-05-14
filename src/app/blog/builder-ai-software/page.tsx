@@ -101,7 +101,7 @@ export default function BuilderAiSoftwarePost() {
             Foreman AI is the AI agent inside Cornerstone PMâ„¢. It was designed from the ground up for home builders &mdash; not adapted from a generic AI assistant. Here&apos;s what that means in practice:
           </p>
           <p>
-            Foreman has 99+ purpose-built skills across four categories: Core Data Management, AI-Powered Analysis, Document Generation, and System Intelligence. Every skill was designed for a specific job that home builders actually need done.
+            Foreman has 100+ purpose-built skills across four categories: Core Data Management, AI-Powered Analysis, Document Generation, and System Intelligence. Every skill was designed for a specific job that home builders actually need done.
           </p>
           <p>
             It reads and writes real data &mdash; your parts catalog, vendor list, home statuses, buyer selections, budgets, design center options, and sales pipeline. It&apos;s not summarizing text you paste in. It&apos;s running actual queries against your actual database and returning actual results.
@@ -170,7 +170,7 @@ export default function BuilderAiSoftwarePost() {
         <div className="mt-12 p-6 rounded-2xl border border-amber-500/20 bg-amber-500/5">
           <h3 className="text-lg font-bold text-white mb-2">Try builder AI built for home builders</h3>
           <p className="text-slate-400 text-sm mb-4">
-            Foreman AI &mdash; 99+ skills, real data access, persistent memory. Beta is free for 2 years.
+            Foreman AI &mdash; 100+ skills, real data access, persistent memory. Beta is free for 2 years.
           </p>
           <Link
             href="/beta"

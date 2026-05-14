@@ -37,7 +37,7 @@ const featureLinks = [
 // AI features (right column of dropdown Ã¢â‚¬â€ all violet, grouped together)
 const aiLinks = [
   { label: "Ã¢Å“Â¨ AI Agents Overview", href: "/ai-agents", desc: "Five AI agents built for builders" },
-  { label: "Ã°Å¸Â¤â€“ Foreman AIÃ¢â€žÂ¢", href: "/foreman", desc: "99-skill AI agent, natural language commands" },
+  { label: "Ã°Å¸Â¤â€“ Foreman AIÃ¢â€žÂ¢", href: "/foreman", desc: "100-skill AI agent, natural language commands" },
   { label: "Ã¢Å¡Â¡ AI Blueprint Takeoff", href: "/ai-takeoff", desc: "Upload PDF Ã¢â‚¬â€ instant material takeoff" },
   { label: "Ã°Å¸Â§Â  Bid Import AI", href: "/bid-import-ai", desc: "Upload any vendor bid Ã¢â‚¬â€ AI extracts every line item" },
   { label: "Ã°Å¸â€œâ€¹ Punchlist AI Ã‚Â· New", href: "/punchlist-ai", desc: "Walk the house Ã¢â‚¬â€ AI builds the punch list from the video" },

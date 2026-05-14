@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "foreman-ai-100-skills",
+    title: "Foreman AI Hits 100 Skills — And Skill #100 Learns Your Build Patterns",
+    excerpt:
+      "Six weeks ago Foreman shipped with 45 skills. Today it crosses 100 — and skill #100 (learnBuilderPreferences) reads your existing floorplan takeoffs and learns YOUR org's build defaults automatically. No configuration wizards. Your own data is the training set. Different builder, different defaults. The more you build, the smarter Foreman gets.",
+    date: "May 13, 2026",
+    readTime: "6 min read",
+    tag: "Milestone",
+    tagColor: "text-amber-400 bg-amber-500/10 border-amber-500/20",
+  },
+  {
     slug: "how-blueprint-ai-extracts-material-scopes",
     title: "How Blueprint AI Extracts 130+ Material Scopes from a Floor Plan PDF",
     excerpt:

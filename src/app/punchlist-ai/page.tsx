@@ -326,7 +326,7 @@ export default function PunchlistAIPage() {
                   Powered by Foreman AI
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-bold mb-3">
-                  Punchlist AI is a Foreman skill â€” and Foreman has 99+ more.
+                  Punchlist AI is a Foreman skill â€” and Foreman has 100+ more.
                 </h2>
                 <p className="text-slate-300 leading-relaxed mb-6">
                   The same AI that builds your punch list also reads your blueprints, generates MLS
@@ -337,7 +337,7 @@ export default function PunchlistAIPage() {
                   href="/foreman"
                   className="inline-flex items-center gap-2 text-violet-300 hover:text-violet-200 font-medium"
                 >
-                  See all 99+ Foreman AI skills
+                  See all 100+ Foreman AI skills
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>

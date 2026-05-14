@@ -223,7 +223,7 @@ export default function HowToChoomeHomeBuilderSoftwarePage() {
               >
                 Foreman AI agent
               </Link>{" "}
-              has 99+ skills that take real actions inside the platform â€” pulling pricing, generating budget
+              has 100+ skills that take real actions inside the platform â€” pulling pricing, generating budget
               reports, scoring vendor bids â€” not just answering FAQ questions. Also confirm which AI features
               are included vs. billed as add-ons at $99â€“$149/month each.
             </p>

@@ -1,9 +1,9 @@
 ## Platform Overview (Current Stats)
 - 130+ database tables and growing
-- **99+ Foreman AI skills** (in-app agent that reads AND writes data - including product image search, image hosting, and AI-powered web scraping)
+- **100+ Foreman AI skills** (in-app agent that reads AND writes data - including product image search, image hosting, and AI-powered web scraping)
 - **30+ named webhook event types and growing** Ã¢â‚¬â€ typed payloads, HMAC signatures, delivery logs, and auto-retry. New events ship as the platform grows. Industry-leading depth (most competitors just say "webhooks exist")
 - 60+ external REST API endpoints
-- 7 built-in AI features: Foreman AI (99+ skills), Blueprint AI, MLS Listing Agent, AI Support Agent, Punchlist AI (voice-to-punch-list, industry first), Bid Import AI (AI-powered vendor bid parsing), AI Jobsite Camera Events (webhook-driven, source-agnostic camera/sensor integration)
+- 7 built-in AI features: Foreman AI (100+ skills), Blueprint AI, MLS Listing Agent, AI Support Agent, Punchlist AI (voice-to-punch-list, industry first), Bid Import AI (AI-powered vendor bid parsing), AI Jobsite Camera Events (webhook-driven, source-agnostic camera/sensor integration)
 - **Triple QR Code Ecosystem** - vendor jobsite check-in, community/PM check-in (timesheet-validated), and sales model home lead capture. Three QR codes, three audiences, one platform.
 - **Vendor Activity Map** - Google Maps view of every vendor check-in across every community, real-time (30-second refresh)
 - AI-powered CRM Migration Wizard (import from Buildertrend, JobTread, CoConstruct in one click - practically free at ~$0.01 per migration)
@@ -71,7 +71,7 @@ The token-based public check-in page got a major upgrade.
 - **Webhook events fired:** `vendor.arrived`, `vendor.departed`
 
 ### Foreman AI Upgrades (May 10, 2026)
-- **99+ skills** (internal cleanup of duplicates and addition of new tools)
+- **100+ skills** (internal cleanup of duplicates and addition of new tools)
 - **Auto-compaction** - context window managed automatically; long conversations no longer hit token limits silently
 - **Context health indicator** - green/yellow/red meter shown after each response
 - **Per-user memory** - Foreman learns each individual user's habits, not just per organization. Custom-coded into the app. Greets you by whatever name you want to be called and gets more intuitive every session.
@@ -134,11 +134,24 @@ Switching from another platform used to take weeks of cleanup. Now it's one clic
 
 **Why this matters:** Migration friction is the #1 reason builders stay locked into expensive legacy platforms. We removed it.
 
-### Foreman AI Agent - Now 99+ skills (Lighting Package + Image Search + Anti-Bot Web Scraping)
-Foreman is the in-app AI agent that doesn't just answer questions - it **reads and writes your data and takes real actions**.
+### Foreman AI Agent - Now 100+ skills (Learn Builder Preferences + Lighting Package + Image Search + Anti-Bot Web Scraping)
+Foreman is the in-app AI agent that doesn't just answer questions - it **reads and writes your data, chains skills together intelligently, and learns your build patterns from your own data**.
 
-**Newest skill (May 12, 2026):**
-- **`setupLightingPackage`** - builds a complete fixture-by-fixture lighting plan for a home in one command. Foreman knows which fixtures belong in which rooms: recessed cans in living areas, vanity bars over bathroom sinks, pendants over kitchen islands, sconces in hallways, exterior coach lights at entries, chandelier in the foyer. Pulls fixtures from your real catalog and assembles a room-by-room package. Stop manually picking 40+ fixtures per home.
+**MILESTONE: Skill #100 shipped (May 12, 2026)**
+- **`learnBuilderPreferences`** (skill #100) - Foreman analyzes your org's existing floorplan takeoffs and learns YOUR build patterns. Always use recessed cans in bedrooms? Foreman sees that pattern across your Addison and Chesapeake takeoffs and applies it to the next plan. No configuration screens, no setup wizards - your own historical data IS the training set. Different builder = different defaults. The more floorplans you set up, the smarter Foreman gets for YOUR org specifically. Other Foreman skills (like `setupLightingPackage`) check learned preferences BEFORE falling back to hardcoded defaults. This is the meta-skill that makes every other Foreman skill smarter the more you use Cornerstone.
+
+**Skill #99 (May 12, 2026):**
+- **`setupLightingPackage`** - builds a complete fixture-by-fixture lighting plan for a home in one command. Foreman first checks your org's LEARNED preferences (from past takeoffs), then falls back to construction-savvy defaults: recessed cans in living areas, vanity bars over bathroom sinks, pendants over kitchen islands, sconces in hallways, exterior coach lights at entries, chandelier in the foyer. Pulls fixtures from your real catalog and assembles a room-by-room package. Stop manually picking 40+ fixtures per home.
+
+**New skills (May 2026):**
+- **`setupPlumbingPackage`** - one-click plumbing fixture setup for an entire home. Toilets, faucets, showers, tub/shower combos assigned per room from your catalog. Same learn-from-your-data approach as lighting packages.
+- **Location-aware takeoffs** - add parts to specific rooms by name: "Add 6 recessed lights to the Kitchen." Foreman knows which rooms exist in each floorplan.
+- **Option class management** - tag takeoffs for design center linking, bulk assign option classes across floorplans.
+- **Structural options management** - create, edit, and manage structural upgrade options with parts and cost tracking.
+- **Smart fixture defaults** - Foreman knows kitchens get recessed + pendants, foyers get chandeliers, bathrooms get vanity lights. Falls back to these when learned preferences aren't available.
+- **Blueprint AI integration** - after Blueprint AI extracts rooms and quantities, Foreman uses that data as a shopping list to populate actual products from your catalog.
+
+**Why this matters vs. competitors:** JobTread's AI Connector exposes ~35 mostly basic CRUD skills (list, create, search) and routes the thinking back to ChatGPT/Claude. Foreman ships 100+ skills that chain together into real workflows - one prompt can read a blueprint, learn fixture preferences, build a lighting package, and tag everything with option classes for the design center. JobTread's AI stays static; Foreman gets smarter every floorplan.
 
 **Newest skills (May 7, 2026):**
 - **`searchProductImage`** - Bing Image Search by product name or model number. Returns direct CDN URLs. Free, no API key required.
@@ -161,6 +174,11 @@ Foreman is the in-app AI agent that doesn't just answer questions - it **reads a
 - **Persistent chat sessions** with full history - pick up where you left off
 
 Available on **Pro+ plan**.
+
+### Platform Intelligence - Gets Smarter Over Time
+Cornerstone PM learns YOUR building style. The more floorplans you set up, the smarter your AI assistant becomes - automatically applying your fixture preferences, material choices, and specifications to new projects. This isn't generic AI that treats every builder the same. It's a platform that adapts to how YOU build.
+
+**Monthly AI limits (not daily):** All AI features now use monthly limits for maximum flexibility. Pro gets 600 Foreman AI conversations/mo, Pro+ gets 900/mo. Use them when you need them - no more losing unused daily allowance.
 
 ### Design Center Enhancements
 - **Bulk create options** from scope items or the parts catalog - no more one-at-a-time entry
@@ -428,7 +446,7 @@ Webhooks:
 
 **Rate Limits:** 100 req/min per key, 10,000 req/day per org
 
-**Integrations:** Foreman AI (99+ skills, uses this API internally), QuickBooks (qboId fields), Zapier (REST webhooks), Automated Bidding Pipeline, CRM Migration Wizard (one-click import from Buildertrend, JobTread, CoConstruct)
+**Integrations:** Foreman AI (100+ skills, uses this API internally), QuickBooks (qboId fields), Zapier (REST webhooks), Automated Bidding Pipeline, CRM Migration Wizard (one-click import from Buildertrend, JobTread, CoConstruct)
 
 **Pricing:** Pro+ plan only - /mo
 
@@ -458,7 +476,7 @@ Cornerstone PMâ„¢ is the first homebuilder platform with a REST API designed
 **Key stats:** 200+ vendors contacted in one afternoon, 0 manual data entry, 3 contact channels (call + voicemail + text), every interaction recorded with transcript.
 
 **Who can connect:**
-- Foreman AI (Cornerstone's built-in 99+ skills agent - already wired, no setup)
+- Foreman AI (Cornerstone's built-in 100+ skills agent - already wired, no setup)
 - Custom agents built with any framework (LangChain, AutoGen, Claude, GPT-4o)
 - Third-party tools (any system that can make HTTP requests)
 
@@ -501,7 +519,7 @@ Cornerstone is the only construction management platform with FIVE built-in AI a
 ### 1. Foreman AI - "Your AI Construction Agent"
 The flagship AI feature. Foreman AI is a full intelligent agent that lives inside the app at /agent. Builders type natural language commands and Foreman executes them - it doesn't just talk, it TAKES ACTION.
 
-**99+ skills (and growing):**
+**100+ skills (and growing):**
 - Parts Management: search, create, bulk import, update, delete parts
 - Web Scraping (AI-powered, anti-bot): fetch any URL (Home Depot, Ferguson, suppliers) with anti-bot bypass and auto-create parts with real pricing - falls back to direct fetch if the primary reader is unreachable
 - **Product Image Search**: `searchProductImage` uses Bing Image Search to find product images by name or model number - free, no API key, returns direct CDN URLs
@@ -604,7 +622,7 @@ Available on: Builder plan and above.
 
 - **Starter $149/mo**: Construction Scheduling, Gantt, 17 templates, vendor assignment, permitting, buyer portal, AI Support Agent. Up to 500 active homes, 1,000 users/vendors.
 - **Builder $299/mo**: Everything in Starter + Sales Pipeline + Purchasing & Budgets + Design Center (no AI agents)
-- **Pro $499/mo**: Everything in Builder + Foreman AI (99+ skills, Sonnet, 1,000 msg/mo) + Blueprint AI (25 takeoffs/mo) + MLS Listing Agent + advanced analytics. Up to 1,000 active homes.
+- **Pro $499/mo**: Everything in Builder + Foreman AI (100+ skills, Sonnet, 1,000 msg/mo) + Blueprint AI (25 takeoffs/mo) + MLS Listing Agent + advanced analytics. Up to 1,000 active homes.
 - **Pro+ $599/mo**: Everything in Pro + REST API (60+ endpoints, scoped keys), automated bidding pipeline (7-wave), **30-event webhook system** (typed payloads, HMAC, retry, delivery logs - incl. cascade vendor notifications routable to Twilio/Bland/Retell), CRM Migration Wizard, Opus model, 5,000 AI messages/mo, Blueprint AI (25/mo), SSO, dedicated SLA.
 - **Enterprise**: Custom pricing - Opus model, 5,000 msg/mo, Blueprint AI (25/mo), dedicated onboarding, SLA
 - **BYOK Add-on +$199/mo**: Bring Your Own API Key, unlimited messages

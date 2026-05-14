@@ -15,12 +15,12 @@ const tabs = [
   {
     icon: LayoutGrid,
     title: "Rooms",
-    desc: "Every room detected with square footage and auto-detected room names pulled directly from your floor plan labels.",
+    desc: "Every room detected with square footage, dimensions, and auto-detected room names pulled directly from your floor plan labels.",
   },
   {
     icon: FileText,
     title: "Room Scopes",
-    desc: "Per-room material extraction — fixtures, flooring (tile, LVP, carpet), baseboard linear feet, countertops, cabinets, crown molding.",
+    desc: "Per-room material extraction — room-specific fixture types (chandeliers for dining rooms, vanity lights for bathrooms, recessed for kitchens), flooring, baseboard linear feet, countertops, cabinets, crown molding.",
   },
   {
     icon: FileText,
@@ -43,13 +43,15 @@ const metrics = [
 const features = [
   { title: "Upload Any CAD PDF", desc: "Digital CAD floor plans up to 25MB. Drop it in and the AI gets to work — no manual setup." },
   { title: "Room Detection", desc: "AI reads room labels from the plan and maps every space automatically. Primary Bedroom, Kitchen, Bath — all detected." },
-  { title: "Fixture Extraction", desc: "Toilets, faucets, lights, doors, hardware, appliances — counted per room from the plan itself." },
+  { title: "Room-Specific Fixture Types", desc: "Not just generic 'light fixture' — Blueprint AI correctly identifies chandeliers for dining rooms, vanity lights for bathrooms, recessed lights for kitchens, and pendants for islands. Counted per room from the plan itself." },
   { title: "Flooring Quantities", desc: "Tile and LVP for all rooms, carpet for dry rooms only. Square footage calculated from dimension lines." },
   { title: "Baseboard & Trim", desc: "Linear feet of baseboard, crown molding, and countertops extracted per room." },
   { title: "Whole-House Scopes", desc: "Drywall, painting, insulation, cleaning, gutters, siding, and roofing quantities in a single analysis." },
   { title: "Edit Before Import", desc: "Review and adjust any quantity the AI extracted. Change units, assign option classes, correct anything before it hits your budget." },
   { title: "Direct Budget Integration", desc: "One click imports rooms and material scopes directly into your floorplan budgets, selections, and design center." },
   { title: "Option Class Assignment", desc: "Assign option classes to scopes during review so selections feed straight into the design center." },
+  { title: "Room Dimensions Extracted", desc: "Extracts room dimensions (sqft, length, width) for accurate material quantities. Editable right on the takeoffs page if you need to fine-tune." },
+  { title: "Foreman AI Shopping List", desc: "Blueprint AI creates the 'shopping list' that Foreman AI uses to populate actual products from your catalog. Extract rooms and quantities, then let Foreman fill in the real parts." },
   { title: "Plan at a Glance", desc: "Key metrics panel: living sqft, footprint, perimeter, garage, porch, slab concrete, roofing, drywall — all on one screen." },
   { title: "Under 60 Seconds", desc: "What used to take hours of manual counting is done before your coffee gets cold." },
   { title: "Powered by Anthropic AI Vision", desc: "Built on Claude's vision model — the same AI that reads and understands complex technical drawings." },

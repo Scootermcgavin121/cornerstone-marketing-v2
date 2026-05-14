@@ -4,9 +4,9 @@ import { Navbar } from "@/components/Navbar";
 import { VideoPlayer } from "@/components/VideoPlayer";
 
 export const metadata = {
-  title: "Foreman AI - 99-skill construction agent with Memory Compaction | Cornerstone PMÃ¢â€žÂ¢",
+  title: "Foreman AI - 100-skill construction agent with Memory Compaction | Cornerstone PMÃ¢â€žÂ¢",
   description:
-    "99+ purpose-built construction skills with built-in memory compaction - the only construction AI that doesn't forget mid-session. Reads and writes your real data: parts, vendors, homes, budgets, sales pipeline, design center selections. Pro plan.",
+    "100+ purpose-built construction skills with built-in memory compaction - the only construction AI that doesn't forget mid-session. Reads and writes your real data: parts, vendors, homes, budgets, sales pipeline, design center selections. Pro plan.",
 };
 
 const skillCategories = [
@@ -16,8 +16,8 @@ const skillCategories = [
     bg: "bg-amber-500/10",
     border: "border-amber-500/20",
     label: "Core Data Management",
-    count: 17,
-    desc: "Read and write your real construction data - parts, vendors, homes, budgets, sales pipeline, design center, and more.",
+    count: "22+",
+    desc: "Read and write your real construction data - parts, vendors, homes, budgets, sales pipeline, design center, structural options, and more.",
     skills: [
       { name: "Parts Catalog", detail: "Search, create, bulk import, update, and delete parts" },
       { name: "Design Center Options", detail: "List, create, bulk create, update options; link to parts and option classes" },
@@ -31,6 +31,11 @@ const skillCategories = [
       { name: "Selection Status Update", detail: "Confirm, reject, or reset buyer selections across any home or category" },
       { name: "Option Categories", detail: "List all design center categories and option classes available in your catalog" },
       { name: "Options by Category", detail: "Pull full option lists filtered by category, spec level, scope, or keyword search" },
+      { name: "Structural Options Management", detail: "Create, edit, and manage structural upgrade options with parts and cost tracking. Handle everything from covered patios to bonus rooms with full pricing integration." },
+      { name: "Location-Aware Takeoffs", detail: "Add parts to specific rooms by name: 'Add 6 recessed lights to the Kitchen.' Foreman knows which rooms exist in each floorplan and places parts exactly where they belong." },
+      { name: "Option Class Management", detail: "Tag takeoffs for design center linking, bulk assign option classes across floorplans. Controls which options appear in bid templates when filtering by trade." },
+      { name: "Blueprint AI Integration", detail: "After Blueprint AI extracts rooms and quantities from your floor plans, Foreman uses that data as a shopping list to populate actual products from your catalog." },
+      { name: "Room Stats & Dimensions", detail: "See sqft, linear feet, fixture counts, and door counts for every room. Click to update dimensions right on the takeoffs page." },
     ],
   },
   {
@@ -64,9 +69,11 @@ const skillCategories = [
     bg: "bg-violet-500/10",
     border: "border-violet-500/20",
     label: "System Intelligence",
-    count: "12+",
-    desc: "The behaviors that make Foreman actually useful - greets you by your chosen name, learns your habits, memory compaction, persistent memory, bulk data cleanup, deduplication, smart linking, error recovery.",
+    count: "14+",
+    desc: "The behaviors that make Foreman actually useful - learns your org's build patterns from your own data, greets you by your chosen name, memory compaction, persistent memory, bulk data cleanup, deduplication, smart linking, error recovery.",
     skills: [
+      { name: "Learn Builder Preferences", detail: "Foreman analyzes your org's existing floorplan takeoffs and learns YOUR build patterns. Always use recessed cans in bedrooms? Foreman sees it across your Addison and Chesapeake takeoffs and makes that the default for the next plan. No configuration screens, no setup wizards - your own historical data IS the training set. The more floorplans you set up, the smarter Foreman gets for YOUR org." },
+      { name: "Smart Fixture Defaults", detail: "Knows that kitchens get recessed lights plus pendants, foyers get chandeliers, bathrooms get vanity lights, and exteriors get coach lights. When learned preferences aren't available, Foreman's construction-savvy defaults handle it." },
       { name: "User Memory", detail: "Tell Foreman about yourself - it greets you by whatever name you want, remembers your role, your favorite vendors, your typical workflows, and how you like things done. Custom-coded into the app (not a generic chatbot bolt-on). Gets more intuitive every session." },
       { name: "Memory Compaction", detail: "Auto-summarizes older messages mid-session so marathon work doesn't crash or forget. Recent context stays word-for-word intact." },
       { name: "Context Health Meter", detail: "Green/yellow/red indicator in the chat UI shows remaining capacity at a glance" },
@@ -87,7 +94,7 @@ const skillCategories = [
     bg: "bg-emerald-500/10",
     border: "border-emerald-500/20",
     label: "Document Generation",
-    count: 12,
+    count: 13,
     desc: "Professional documents in seconds. SOWs, bid invitations, comparison reports, punch lists, MLS sheets, Excel exports, full lighting packages.",
     skills: [
       { name: "SOW Generator", detail: "Professional Scope of Work docs with home counts and specs" },
@@ -101,7 +108,8 @@ const skillCategories = [
       { name: "Room Dimension Sheets", detail: "Detailed room specs for sales team handouts" },
       { name: "Design Center Summary PDF", detail: "Full selections export for a home - categories, options chosen, prices, and buyer signature line" },
       { name: "Sales Stage Report", detail: "Pipeline snapshot by community - homes per stage, days elapsed, next action due" },
-      { name: "Setup Lighting Package", detail: "Builds a complete fixture-by-fixture lighting plan for a home in one command. Foreman knows which fixtures belong in which rooms - recessed cans in living areas, vanity bars over bathroom sinks, pendants over kitchen islands, sconces in hallways, exterior fixtures at entries - and assembles a room-by-room package against your real catalog. Stop manually picking 40+ fixtures per home." },
+      { name: "Setup Lighting Package", detail: "Builds a complete fixture-by-fixture lighting plan for a home in one command. Foreman first checks your org's LEARNED preferences from past takeoffs, then falls back to construction-savvy defaults. Pulls from your real catalog and assembles a room-by-room package. The more lighting packages you set up, the smarter it gets for YOUR org." },
+      { name: "Setup Plumbing Package", detail: "One-click plumbing fixture setup for an entire home. Toilets, faucets, showers, tub/shower combos - assigned per room from your catalog. Same learn-from-your-data approach as lighting packages." },
     ],
   },
 ];
@@ -160,21 +168,21 @@ export default function ForemanPage() {
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-400 text-xs font-semibold mb-6">
             <Zap className="w-3.5 h-3.5" />
-            99+ skills &middot; PRO PLAN &middot; READS AND WRITES YOUR REAL DATA
+            100+ skills &middot; PRO PLAN &middot; READS AND WRITES YOUR REAL DATA
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
             Ã°Å¸Âªâ€“ Foreman AI<sup className="text-2xl sm:text-3xl lg:text-4xl align-super text-amber-400 ml-1">TM</sup>
           </h1>
           <p className="text-2xl text-amber-400 font-bold mb-4">Not a chatbot. A construction agent.</p>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
-            99+ purpose-built skills across 11 categories &mdash; data, analysis, document generation, takeoffs, bidding, sales, reports, system intelligence and more. Type what you need in plain English. Foreman executes it against your real data.
+            100+ purpose-built skills across 11 categories &mdash; data, analysis, document generation, takeoffs, bidding, sales, reports, system intelligence and more. Type what you need in plain English. Foreman executes it against your real data.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/beta" className="px-8 py-4 rounded-full bg-amber-400 text-slate-900 font-bold text-lg hover:bg-amber-300 transition-all duration-200 shadow-lg shadow-amber-500/30 hover:-translate-y-0.5">
               Get Beta Access &rarr;
             </Link>
             <a href="#skills" className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200">
-              See all 99+ skills
+              See all 100+ skills
             </a>
           </div>
         </div>
@@ -207,7 +215,7 @@ export default function ForemanPage() {
       <section className="py-12 px-4">
         <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-5">
           {[
-            { num: "99+", label: "Purpose-built skills", sub: "Not generic AI features" },
+            { num: "100+", label: "Purpose-built skills", sub: "Not generic AI features" },
             { num: "11", label: "Skill categories", sub: "And always growing" },
             { num: "110+", label: "Database tables", sub: "Full access to your real data" },
             { num: "0", label: "Manual data entry", sub: "Plain English to execution" },
@@ -254,7 +262,7 @@ export default function ForemanPage() {
       <section id="skills" className="py-16 px-4 bg-slate-900/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-3xl sm:text-5xl font-black mb-4">99+ skills. 11 categories.</h2>
+            <h2 className="text-3xl sm:text-5xl font-black mb-4">100+ skills. 11 categories.</h2>
             <p className="text-slate-400 max-w-xl mx-auto">Every skill is purpose-built for construction. Not adapted from a generic AI assistant.</p>
           </div>
           <div className="space-y-8">
@@ -459,7 +467,7 @@ export default function ForemanPage() {
             <div className="text-white font-bold text-xl mb-6">Pro Plan</div>
             <div className="space-y-3 text-left mb-8">
               {[
-                "Foreman AI - 99+ skills, Sonnet model, 1,000 AI messages/mo",
+                "Foreman AI - 100+ skills, Sonnet model, 1,000 AI messages/mo",
                 "Blueprint AI - 25 blueprint takeoffs/mo",
                 "MLS Listing Agent",
                 "Everything in Builder (Sales, Purchasing, Design Center)",
@@ -488,7 +496,7 @@ export default function ForemanPage() {
           <span className="text-amber-400">for custom reports.</span>
         </h2>
         <p className="text-slate-400 text-lg mb-10 max-w-xl mx-auto">
-          We built the consultant into the software. 99+ skills. Plain English. Real construction data. Pro plan.
+          We built the consultant into the software. 100+ skills. Plain English. Real construction data. Pro plan.
         </p>
         <Link href="/beta" className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-amber-400 text-slate-900 font-bold text-xl hover:bg-amber-300 transition-all duration-200 shadow-xl shadow-amber-500/30">
           Get Beta Access <ArrowRight className="w-5 h-5" />

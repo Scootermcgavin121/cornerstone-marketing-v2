@@ -64,7 +64,7 @@ const groups = [
 ];
 
 const differentiators = [
-  { title: "99+ AI skills", desc: "Foreman AI reads and writes your data â€” bids, options, scheduling, purchasing. Not a chatbot â€” an agent.", color: "text-violet-400" },
+  { title: "100+ AI skills", desc: "Foreman AI reads and writes your data â€” bids, options, scheduling, purchasing. Not a chatbot â€” an agent.", color: "text-violet-400" },
   { title: "30+ Named Webhook Events (Growing)", desc: "Named event catalog with typed payloads, HMAC signatures, delivery logs, and auto-retry. New events ship as the platform grows. Deepest in the industry.", color: "text-cyan-400" },
   { title: "$0 Migration", desc: "AI Migration Wizard imports from Buildertrend, JobTread, CoConstruct, or any CSV/Excel in hours. Competitors charge $5kâ€“$20k.", color: "text-emerald-400" },
   { title: "Unlimited Users", desc: "Flat monthly fee. No per-seat pricing. $149/mo for your entire team.", color: "text-amber-400" },

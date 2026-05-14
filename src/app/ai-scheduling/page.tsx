@@ -79,7 +79,7 @@ export default function AiSchedulingPage() {
               href="/foreman"
               className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200"
             >
-              See all 99+ skills
+              See all 100+ skills
             </Link>
           </div>
         </div>

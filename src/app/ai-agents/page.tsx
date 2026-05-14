@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "AI Agents for Home Builders | Cornerstone PMÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢",
   description:
-    "6 AI agents for home builders: Foreman AI (99+ skills), Blueprint AI (PDF takeoffs), Bid Import AI (parses any vendor bid), AI MLS Listing Generator, AI Support Agent, plus Jobsite AI (coming soon). Native AI built into the platform ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â not bolted on.",
+    "6 AI agents for home builders: Foreman AI (100+ skills), Blueprint AI (PDF takeoffs), Bid Import AI (parses any vendor bid), AI MLS Listing Generator, AI Support Agent, plus Jobsite AI (coming soon). Native AI built into the platform ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â not bolted on.",
   alternates: { canonical: "https://www.cornerstonepm.ai/ai-agents" },
 };
 
@@ -22,7 +22,7 @@ const agents = [
     color: "amber",
     href: "/foreman",
     highlights: [
-      "99-skill covering parts, vendors, homes & budgets",
+      "100-skill covering parts, vendors, homes & budgets",
       "Chat with your data, execute real actions",
       "Persistent history with auto-titles",
       "Complete org data isolation",
@@ -204,7 +204,7 @@ export default function AiAgentsPage() {
             <span className="text-white">Zero setup.</span>
             <br />
             <span className="bg-gradient-to-r from-amber-400 via-violet-400 to-cyan-400 bg-clip-text text-transparent">
-              99+ skills out of the box.
+              100+ skills out of the box.
             </span>
           </h1>
           <p className="text-xl sm:text-2xl text-slate-300 font-semibold max-w-2xl mx-auto mb-4">

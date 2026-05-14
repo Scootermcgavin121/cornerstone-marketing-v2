@@ -30,11 +30,11 @@ const faqs: FAQItem[] = [
   },
   {
     q: "What are Power User Seats?",
-    a: "Power User Seats are an add-on for Pro and Pro+ plans at $149/seat/month. A Power User gets dramatically elevated AI limits: 100 Foreman AI conversations/day, unlimited Blueprint AI and Bid Import AI, and unlimited Punchlist and MLS Listing AI. Perfect for the person who lives in the app all day.",
+    a: "Power User Seats are an add-on for Pro and Pro+ plans at $149/seat/month. A Power User gets dramatically elevated monthly AI limits: 3,000 Foreman AI conversations/mo, unlimited Blueprint AI and Bid Import AI, and unlimited Punchlist and MLS Listing AI. Perfect for the person who lives in the app all day.",
   },
   {
-    q: "What are the AI daily limits?",
-    a: "Every AI feature has transparent daily limits that vary by plan. For example, Pro gets 20 Foreman AI conversations/day while Pro+ gets 30. Starter and Builder include Punchlist AI and MLS Listing AI at lower limits. See our full Usage Rates page for the complete breakdown, including role-based access tiers and onboarding boost details.",
+    q: "What are the AI monthly limits?",
+    a: "Every AI feature has transparent monthly limits that vary by plan. For example, Pro gets 600 Foreman AI conversations/mo while Pro+ gets 900. Starter and Builder include Punchlist AI and MLS Listing AI at lower limits. See our full Usage Rates page for the complete breakdown, including role-based access tiers and onboarding boost details.",
   },
   {
     q: "What is the onboarding boost?",
@@ -46,7 +46,7 @@ const faqs: FAQItem[] = [
   },
   {
     q: "What is included in the free beta?",
-    a: "Beta access is free for two years for the first 100 home builders who sign up. Beta includes every feature on the Pro plan: scheduling, sales pipeline, purchasing, design center, Foreman AI\u2122 (99+ skills), Blueprint AI, and the homeowner portal. After the two-year beta, plans start at $149/mo.",
+    a: "Beta access is free for two years for the first 100 home builders who sign up. Beta includes every feature on the Pro plan: scheduling, sales pipeline, purchasing, design center, Foreman AI\u2122 (100+ skills), Blueprint AI, and the homeowner portal. After the two-year beta, plans start at $149/mo.",
   },
   {
     q: "Can I add REST API access?",

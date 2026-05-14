@@ -44,9 +44,14 @@ const faqItems: FAQItem[] = [
 ];
 
 const features = [
+  { title: "Cross-Class Upgrades", desc: "Buyers can switch from carpet to hardwood, recessed lights to pendants, or any option to any other within the same category. One click, real-time price delta shown instantly." },
+  { title: "Per-Room Selections with Sqft", desc: "'Pick your Kitchen flooring (180 sqft)' &mdash; upgrade pricing shown per room based on actual takeoff quantities. No manual area calculations." },
+  { title: "Options Grouped by Type", desc: "Carpet, Hardwood, LVP, and Tile shown as collapsible groups &mdash; not a flat dropdown. Buyers see the full picture before choosing." },
+  { title: "Real-Time Upgrade Pricing", desc: "Shows exact cost delta from base: '+$684 upgrade' or '-$200 credit'. Price flows from takeoff quantities automatically." },
+  { title: "Designer Collections", desc: "64+ curated packages across 7 categories. Pick a package and all category options auto-lock to that collection. Remove the package to unlock individual picks." },
+  { title: "Driven by Takeoffs", desc: "Quantities flow directly from takeoff data &mdash; zero double-entry. Change a room size in the takeoff and the design center pricing updates automatically." },
   { title: "Room-by-Room Selections", desc: "Organize all buyer selections by room &mdash; kitchen, baths, flooring, fixtures, paint." },
   { title: "Spec Level Management", desc: "Community Standard, Premium, Luxury &mdash; unlimited levels with included/upgrade pricing." },
-  { title: "Designer Collections", desc: "Curated collections that buyers can browse and select from." },
   { title: "Options Engine", desc: "Structural and design options with real-time pricing, tied to budget automatically." },
   { title: "Buyer Selection Portal", desc: "Buyers make selections online, builder approves &mdash; no email chains." },
   { title: "Selections PDF Export", desc: "Generate a clean, branded selections PDF for every home." },
@@ -57,8 +62,6 @@ const features = [
   { title: "Revision History", desc: "Full audit trail of every selection change with timestamps." },
   { title: "Integration with Purchasing", desc: "Every selection ties to a line item &mdash; no manual entry." },
   { title: "Mobile-Friendly", desc: "Buyers can make selections from any device." },
-  { title: "Branded Experience", desc: "Your logo, your colors on every buyer-facing page." },
-  { title: "Unlimited Options per Room", desc: "No limits on how many options you configure per category." },
   { title: "Margin Lock-In", desc: "Lock options pricing before presenting to buyer &mdash; protect your margin." },
 ];
 
@@ -76,7 +79,7 @@ export default function DesignPage() {
             Turn upgrades into<br /><span className="text-violet-400">wider margin.</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10">
-            Structured options let buyers personalize their home while you lock in profit. Every selection tracked, priced, and approved.
+            Cross-class upgrades, per-room pricing from real takeoff quantities, and 64+ designer packages. Every selection tracked, priced, and connected to your budget.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/beta" className="px-8 py-4 rounded-full bg-violet-400 text-slate-900 font-bold text-lg hover:bg-violet-300 transition-all duration-200 shadow-lg shadow-violet-500/30 hover:-translate-y-0.5">Request Early Access &rarr;</Link>
