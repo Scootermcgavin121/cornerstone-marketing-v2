@@ -1,4 +1,4 @@
-import { Check, TrendingUp } from "lucide-react";
+import { Check, TrendingUp, QrCode, BellRing } from "lucide-react";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { VideoPlayer } from "@/components/VideoPlayer";
@@ -7,7 +7,7 @@ import { FAQSection, type FAQItem } from "@/components/FAQSection";
 export const metadata = {
   title: "Home Builder Sales Pipeline Software | Cornerstone PM™",
   description:
-    "Home builder sales pipeline software with floorplan pricing matrix, structural options engine, and 60-second new home sale workflow. Built for home builders.",
+    "Home builder sales pipeline software with model home QR lead capture, floorplan pricing matrix, structural options engine, and 60-second new home sale workflow. Built for home builders.",
 };
 
 const faqItems: FAQItem[] = [
@@ -46,6 +46,7 @@ const faqItems: FAQItem[] = [
 ];
 
 const bullets = [
+  "Model home QR lead capture \u2014 walk-in buyers self-register, auto-creates a Lead record, instant agent notification",
   "New home sale in under 60 seconds",
   "9-step auto-generated sales checklist",
   "Auto-budget generation when structural options are locked",
@@ -133,6 +134,53 @@ export default function SalesPage() {
             endCardHref="/beta"
             endCardStartSec={5}
           />
+        </div>
+      </section>
+
+      {/* Sales Model Home QR — Lead Capture callout */}
+      <section className="py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="rounded-2xl bg-gradient-to-br from-violet-500/10 via-slate-900/80 to-pink-500/10 border border-violet-500/30 p-8 lg:p-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/30 text-violet-400 text-xs font-bold uppercase tracking-widest mb-4">
+                  <QrCode className="w-3.5 h-3.5" />
+                  Industry First &mdash; Lead Capture at the Model Home
+                </div>
+                <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">
+                  Goodbye, paper sign-in sheet.<br />
+                  <span className="text-violet-400">Every walk-in becomes a Lead.</span>
+                </h2>
+                <p className="text-slate-300 leading-relaxed mb-4">
+                  One QR code at every model home entrance. Walk-in buyers self-register on their own phone &mdash; no app install, no clipboard, no Monday-morning retyping. Returning visitors get a &ldquo;Welcome back&rdquo; flow; every scan auto-creates a <strong className="text-white">Lead record</strong> tied to the community and assigned to the model&apos;s sales agent.
+                </p>
+                <p className="text-slate-400 leading-relaxed mb-6">
+                  Sales agent gets an instant in-app + email notification the moment a prospect scans. Foundation for nurture sequences and follow-up automation downstream.
+                </p>
+                <Link
+                  href="/qr"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-violet-400 text-slate-900 font-bold hover:bg-violet-300 transition-all duration-200"
+                >
+                  See the full QR ecosystem &rarr;
+                </Link>
+              </div>
+              <div className="space-y-3">
+                {[
+                  { icon: QrCode, text: "Buyer self-registration on first scan; returning visitors recognized automatically" },
+                  { icon: Check, text: "Captures name, email, phone, and \u201CHow did you hear about us?\u201D" },
+                  { icon: BellRing, text: "Lead auto-saved to the database, tied to the community, assigned to the sales agent" },
+                  { icon: BellRing, text: "Sales agent gets instant in-app + email notification per scan" },
+                  { icon: Check, text: "Sales-rep check-in/out at the model = real hours worked (not self-reported)" },
+                  { icon: Check, text: "Replaces paper sign-in sheets with a digital, searchable lead pipeline" },
+                ].map((item) => (
+                  <div key={item.text} className="flex items-start gap-3 p-3 rounded-lg bg-slate-900/40 border border-slate-800">
+                    <item.icon className="w-5 h-5 text-violet-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-300 text-sm">{item.text}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
