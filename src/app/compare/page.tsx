@@ -232,7 +232,7 @@ export default function ComparePage() {
               <div className="space-y-3">
                 <div className="text-cyan-400 font-bold text-sm uppercase tracking-widest mb-3">Cornerstone PM™</div>
                 {[
-                  "$149/mo flat &mdash; unlimited users, no per-seat fees",
+                  "$149/mo flat &mdash; up to 30 users (60 on Pro+), no per-seat fees",
                   "Full lot, community &amp; multi-community management",
                   "Floorplan base price + options engine = contract price",
                   "Pre-sale workflow: lead &rarr; options &rarr; contract &rarr; close",

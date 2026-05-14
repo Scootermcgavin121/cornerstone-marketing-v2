@@ -122,12 +122,12 @@ const pricing: Category = {
     {
       q: "How much does Cornerstone PM™ cost?",
       aText:
-        "Cornerstone PM™ starts at $149/mo (Starter), $299/mo (Builder, adds purchasing/sales/design center), $499/mo (Pro, adds Foreman AI + Blueprint AI), and $599/mo (Pro+, adds REST API, BYOA, and Bid Import AI). Every plan includes unlimited users with no per-seat fees. See full plan details on /pricing.",
+        "Cornerstone PM™ starts at $149/mo (Starter), $299/mo (Builder, adds purchasing/sales/design center), $499/mo (Pro, adds Foreman AI + Blueprint AI), and $599/mo (Pro+, adds REST API, BYOA, and Bid Import AI). Every plan includes up to 30 users (60 on Pro+) with no per-seat fees within your tier. See full plan details on /pricing.",
       a: (
         <>
           Cornerstone PM™ starts at <strong>$149/mo</strong> (Starter), <strong>$299/mo</strong> (Builder, adds
           purchasing/sales/design center), <strong>$499/mo</strong> (Pro, adds Foreman AI + Blueprint AI), and{" "}
-          <strong>$599/mo</strong> (Pro+, adds REST API, BYOA, and Bid Import AI). Every plan includes unlimited users
+          <strong>$599/mo</strong> (Pro+, adds REST API, BYOA, and Bid Import AI). Plans include up to 30 users (60 on Pro+)
           with no per-seat fees. See full plan details on <A href="/pricing">/pricing</A>.
         </>
       ),
@@ -147,10 +147,10 @@ const pricing: Category = {
     {
       q: "Are there per-seat fees?",
       aText:
-        "No. Every Cornerstone PM™ plan includes unlimited users, unlimited subcontractors, and unlimited buyers at no additional charge - add your whole team, every vendor, and every homeowner without per-seat math.",
+        "No. Every Cornerstone PM™ plan includes up to 30 users (60 on Pro+) within your tier, plus unlimited subcontractors and unlimited buyers at no additional charge - add your whole team, every vendor, and every homeowner without per-seat math.",
       a: (
         <>
-          <strong>No.</strong> Every Cornerstone PM™ plan includes unlimited users, unlimited subcontractors, and
+          <strong>No.</strong> Every Cornerstone PM™ plan includes up to 30 users (60 on Pro+), unlimited subcontractors, and
           unlimited buyers at no additional charge - add your whole team, every vendor, and every homeowner without
           per-seat math.
         </>
@@ -207,10 +207,10 @@ const pricing: Category = {
     {
       q: "Is Cornerstone PM™ cheaper than Buildertrend?",
       aText:
-        "Yes. Cornerstone PM™ Starter is $149/mo with unlimited users; Buildertrend starts at $499/mo. The full Cornerstone Pro plan is $499/mo - same as Buildertrend's entry tier - and includes Foreman AI and Blueprint AI that Buildertrend doesn't offer at any price.",
+        "Yes. Cornerstone PM™ Starter is $149/mo with up to 30 users (60 on Pro+); Buildertrend starts at $499/mo. The full Cornerstone Pro plan is $499/mo - same as Buildertrend's entry tier - and includes Foreman AI and Blueprint AI that Buildertrend doesn't offer at any price.",
       a: (
         <>
-          Yes. Cornerstone PM™ Starter is <strong>$149/mo</strong> with unlimited users; Buildertrend starts at{" "}
+          Yes. Cornerstone PM™ Starter is <strong>$149/mo</strong> with up to 30 users (60 on Pro+); Buildertrend starts at{" "}
           <strong>$499/mo</strong>. The full <A href="/pricing">Cornerstone Pro plan</A> is $499/mo - same as
           Buildertrend's entry tier - and includes Foreman AI and Blueprint AI that Buildertrend doesn't offer at any
           price.
@@ -895,10 +895,10 @@ const design: Category = {
     {
       q: "What does Design Center software cost?",
       aText:
-        "Included in the Builder plan at $299/mo with unlimited users - no per-seat fees, no implementation cost. Foreman AI's 8-skill Design Center domain (plain-English option configuration, allowance tracking, selection package generation) is on Pro at $499/mo.",
+        "Included in the Builder plan at $299/mo with up to 30 users (60 on Pro+) - no per-seat fees, no implementation cost. Foreman AI's 8-skill Design Center domain (plain-English option configuration, allowance tracking, selection package generation) is on Pro at $499/mo.",
       a: (
         <>
-          Included in the Builder plan at <strong>$299/mo</strong> with unlimited users - no per-seat fees, no
+          Included in the Builder plan at <strong>$299/mo</strong> with up to 30 users (60 on Pro+) - no per-seat fees, no
           implementation cost. <A href="/foreman">Foreman AI</A>'s 8-skill Design Center domain (plain-English option
           configuration, allowance tracking, selection package generation) is on Pro at $499/mo.
         </>
@@ -1241,12 +1241,12 @@ const comparisons: Category = {
     {
       q: "Cornerstone PM™ vs BuildPro - which is better?",
       aText:
-        "Cornerstone PM™ is a modern, web-based, mobile-friendly platform; BuildPro's UI is dated and Windows/Citrix-centric. Cornerstone ships native AI agents BuildPro doesn't offer at any tier, and is operational in hours at $149/mo with unlimited users vs BuildPro's $25k-$75k+ implementation budgets.",
+        "Cornerstone PM™ is a modern, web-based, mobile-friendly platform; BuildPro's UI is dated and Windows/Citrix-centric. Cornerstone ships native AI agents BuildPro doesn't offer at any tier, and is operational in hours at $149/mo with up to 30 users (60 on Pro+) vs BuildPro's $25k-$75k+ implementation budgets.",
       a: (
         <>
           Cornerstone PM™ is a modern, web-based, mobile-friendly platform; BuildPro's UI is dated and Windows/Citrix-centric.
           Cornerstone ships native AI agents BuildPro doesn't offer at any tier, and is operational in{" "}
-          <strong>hours at $149/mo</strong> with unlimited users vs BuildPro's $25k-$75k+ implementation budgets. See{" "}
+          <strong>hours at $149/mo</strong> with up to 30 users (60 on Pro+) vs BuildPro's $25k-$75k+ implementation budgets. See{" "}
           <A href="/buildpro-alternative">/buildpro-alternative</A>.
         </>
       ),
@@ -1254,12 +1254,12 @@ const comparisons: Category = {
     {
       q: "Cornerstone PM™ vs JobTread - which is better?",
       aText:
-        "JobTread is built for general contractors and custom builders. Cornerstone PM™ is purpose-built for home builders with native lot management, options engine, design center, and multi-community pipelines JobTread doesn't ship. JobTread is $199/mo base + $20/mo per team member (tiered breaks above 10 users); Cornerstone Starter is $149/mo flat with unlimited users.",
+        "JobTread is built for general contractors and custom builders. Cornerstone PM™ is purpose-built for home builders with native lot management, options engine, design center, and multi-community pipelines JobTread doesn't ship. JobTread is $199/mo base + $20/mo per team member (tiered breaks above 10 users); Cornerstone Starter is $149/mo flat with up to 30 users (60 on Pro+).",
       a: (
         <>
           JobTread is built for general contractors and custom builders. Cornerstone PM™ is purpose-built for{" "}
           <strong>home builders</strong> with native lot management, options engine, design center, and
-          multi-community pipelines JobTread doesn't ship. JobTread is $199/mo base + $20/mo per team member (tiered breaks above 10 users); Cornerstone Starter is $149/mo flat with unlimited users. See <A href="/blog/jobtread-alternative">/blog/jobtread-alternative</A>.
+          multi-community pipelines JobTread doesn't ship. JobTread is $199/mo base + $20/mo per team member (tiered breaks above 10 users); Cornerstone Starter is $149/mo flat with up to 30 users (60 on Pro+). See <A href="/blog/jobtread-alternative">/blog/jobtread-alternative</A>.
         </>
       ),
     },

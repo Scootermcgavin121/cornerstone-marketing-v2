@@ -30,9 +30,9 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Multi-community management", cornerstone: true, competitor: "limited", note: "Cornerstone: native multi-community pipeline. Buildertrend: multi-job, not true multi-community." },
   { feature: "Construction scheduling", cornerstone: true, competitor: true, note: "Both: Gantt charts, dependencies, notifications." },
   { feature: "Homeowner portal (realtime sync + photos + messaging + ZIP export)", cornerstone: true, competitor: "limited", note: "Cornerstone gives buyers a real-time portal synced with construction scheduling — when framing moves three days, they see it instantly. Plus: (1) builder/PM uploads job-site photos to every milestone (up to 5 photos per milestone via a camera button on the task row), (2) built-in messaging app between builder and customer with a permanent searchable record, and (3) one-click ZIP download of all job photos. CoConstruct (now Buildertrend) has a client portal but the milestone-photo workflow and bulk ZIP export aren't packaged the same way." },
-  { feature: "Unlimited users on all plans", cornerstone: true, competitor: true, note: "Both now include unlimited users. Cornerstone: every tier from $149. Buildertrend: custom pricing - contact for quote." },
-  { feature: "Pricing model", cornerstone: "Flat, unlimited users", competitor: "Custom quote (Buildertrend)", note: "Buildertrend no longer publishes pricing -- custom quotes only. Cornerstone is flat at every tier, unlimited users. More importantly: Buildertrend doesn't ship a structural options engine, floorplan pricing matrix, native AI agents, or 30+ named webhook events at any price point." },
-  { feature: "Cornerstone tiers (flat, unlimited users)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30+ named webhook events, 7-wave bidding." },
+  { feature: "User caps (30 Starter/Builder/Pro · 60 Pro+)", cornerstone: true, competitor: true, note: "Both include generous user caps. Cornerstone: every tier from $149. Buildertrend: custom pricing - contact for quote." },
+  { feature: "Pricing model", cornerstone: "Flat — up to 30 users (60 on Pro+)", competitor: "Custom quote (Buildertrend)", note: "Buildertrend no longer publishes pricing -- custom quotes only. Cornerstone is flat at every tier — up to 30 users (60 on Pro+). More importantly: Buildertrend doesn't ship a structural options engine, floorplan pricing matrix, native AI agents, or 30+ named webhook events at any price point." },
+  { feature: "Cornerstone tiers (flat — up to 30 users · 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30+ named webhook events, 7-wave bidding." },
   { feature: "Price at full API + AI tier (Pro+)", cornerstone: "$599/mo", competitor: "Custom quote", note: "Cornerstone Pro+ ($599/mo) adds the full public REST API, BYOA, automated bidding pipeline, and Opus AI - flat, no per-user fees." },
 ];
 
@@ -57,7 +57,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Is Cornerstone PM™ cheaper than Buildertrend (the platform CoConstruct became)?",
-    a: "Cornerstone PM™'s tiers start at $149/mo (Starter, unlimited users). Buildertrend no longer publishes pricing - they require a custom quote. For the full platform: Cornerstone Builder ($299/mo, options engine + full pipeline) and Cornerstone Pro ($499/mo, Foreman AI + Blueprint AI) are flat regardless of team size. Pro+ at $599/mo includes capabilities Buildertrend doesn't offer at any price.",
+    a: "Cornerstone PM™'s tiers start at $149/mo (Starter, up to 30 users). Buildertrend no longer publishes pricing - they require a custom quote. For the full platform: Cornerstone Builder ($299/mo, options engine + full pipeline) and Cornerstone Pro ($499/mo, Foreman AI + Blueprint AI) are flat within tier (up to 30 users / 60 on Pro+). Pro+ at $599/mo includes capabilities Buildertrend doesn't offer at any price.",
   },
   {
     q: "Does Cornerstone PM™ have a homeowner portal like CoConstruct had?",
@@ -69,7 +69,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What does $149/mo Cornerstone Starter actually include?",
-    a: "Starter ($149/mo) includes construction scheduling (Gantt + task view), subcontractor assignment and notifications, permits pipeline tracker, homeowner progress portal, and the AI Support Agent - unlimited users. The options engine and design center are on Builder ($299/mo). Foreman AI and Blueprint AI are on Pro ($499/mo). Full REST API and BYOA are on Pro+ ($599/mo).",
+    a: "Starter ($149/mo) includes construction scheduling (Gantt + task view), subcontractor assignment and notifications, permits pipeline tracker, homeowner progress portal, and the AI Support Agent - up to 30 users (60 on Pro+). The options engine and design center are on Builder ($299/mo). Foreman AI and Blueprint AI are on Pro ($499/mo). Full REST API and BYOA are on Pro+ ($599/mo).",
   },
   {
     q: "Does Cornerstone PM™ have a free trial?",
@@ -85,7 +85,7 @@ export default function CoConstructAlternativePage() {
       heroLine1="CoConstruct is gone."
       heroLine2="Here's what's better."
       accentColor="cyan"
-      heroParagraph="CoConstruct was merged into Buildertrend in 2022. If you're frustrated with the transition - higher prices, different workflows, no AI - Cornerstone PM™ is the home-builder alternative. Native AI agents (Foreman AI on Pro $499/mo), options engine (Builder $299/mo), 30+ named webhook events (Pro+), and unlimited users from $149/mo."
+      heroParagraph="CoConstruct was merged into Buildertrend in 2022. If you're frustrated with the transition - higher prices, different workflows, no AI - Cornerstone PM™ is the home-builder alternative. Native AI agents (Foreman AI on Pro $499/mo), options engine (Builder $299/mo), 30+ named webhook events (Pro+), and up to 30 users (60 on Pro+) from $149/mo."
       secondaryCTA={{ text: "vs Buildertrend", href: "/buildertrend-alternative" }}
       comparisonSubtitle="Comparing to Buildertrend, the platform CoConstruct became."
       comparisonRows={comparisonRows}

@@ -29,14 +29,14 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Flexible PO generation (4 patterns, mix on same job)", cornerstone: true, competitor: false, note: "Cornerstone gives you four PO patterns: (1) all POs at job start, (2) partial deposit POs from earlier pipeline tasks (permit pull, contract sign, foundation pour), (3) full PO auto-generated when a task is marked complete, or (4) configurable per task / scope / community. Mix all four on the same job. Jobber is service-business-first — the PO flow isn't built for multi-vendor home construction." },
   { feature: "Client portal", cornerstone: true, competitor: true, note: "Both offer client-facing portals." },
   { feature: "Quoting / invoicing", cornerstone: "limited", competitor: true, note: "Jobber is strong at quote-to-invoice for service businesses. Cornerstone handles builder pricing through floorplan matrices and options engines, not traditional service invoicing." },
-  { feature: "Pricing model", cornerstone: "Flat, unlimited users", competitor: "Per-user tiers", note: "Jobber is priced per user with tiered plans. Cornerstone is flat at every tier, unlimited users. More importantly: Jobber doesn't ship an options engine, floorplan pricing matrix, multi-community pipelines, or home-builder AI at any price." },
-  { feature: "Cornerstone tiers (flat, unlimited users)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30+ named webhook events, 7-wave bidding." },
+  { feature: "Pricing model", cornerstone: "Flat — up to 30 users (60 on Pro+)", competitor: "Per-user tiers", note: "Jobber is priced per user with tiered plans. Cornerstone is flat at every tier — up to 30 users (60 on Pro+). More importantly: Jobber doesn't ship an options engine, floorplan pricing matrix, multi-community pipelines, or home-builder AI at any price." },
+  { feature: "Cornerstone tiers (flat — up to 30 users · 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30+ named webhook events, 7-wave bidding." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
   { title: "New construction vs home services", desc: "Jobber runs quotes, invoices, and recurring service schedules for landscapers and cleaners. Cornerstone runs lot management, floorplan pricing, options engines, design centers, and multi-community pipelines for home builders." },
   { title: "AI agents for builders -- Pro $499/mo", desc: "Foreman AI creates POs, updates design options, generates SOWs, and remembers your preferences. Blueprint AI converts PDF floor plans to takeoffs in 60 seconds. Built for construction, not service scheduling." },
-  { title: "Full PM + options engine", desc: "Scheduling (Starter $149), purchasing, bid management, homeowner portal, structural options engine, multi-community pipeline (Builder $299) -- all in one platform with unlimited users." },
+  { title: "Full PM + options engine", desc: "Scheduling (Starter $149), purchasing, bid management, homeowner portal, structural options engine, multi-community pipeline (Builder $299) -- all in one platform with up to 30 users (60 on Pro+)." },
 ];
 
 const faqItems: FAQItem[] = [
@@ -58,7 +58,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What does $149/mo Cornerstone Starter include?",
-    a: "Starter ($149/mo) includes construction scheduling, subcontractor assignment, permits pipeline, homeowner progress portal, and the AI Support Agent -- unlimited users. Options engine and design center are on Builder ($299/mo). Foreman AI + Blueprint AI are on Pro ($499/mo). REST API + BYOA are on Pro+ ($599/mo).",
+    a: "Starter ($149/mo) includes construction scheduling, subcontractor assignment, permits pipeline, homeowner progress portal, and the AI Support Agent -- up to 30 users (60 on Pro+). Options engine and design center are on Builder ($299/mo). Foreman AI + Blueprint AI are on Pro ($499/mo). REST API + BYOA are on Pro+ ($599/mo).",
   },
   {
     q: "Does Cornerstone PM™ have a free trial?",

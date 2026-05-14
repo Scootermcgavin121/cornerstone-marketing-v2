@@ -10,7 +10,7 @@ export function StructuredData() {
         "applicationSubCategory": "Construction Management Software",
         "operatingSystem": "Web",
         "url": "https://cornerstonepm.ai",
-        "description": "Cornerstone PM is the complete home builder software platform with native AI agents. Built for home builders of all types — production, custom, and semi-custom. Includes construction scheduling, sales pipeline, purchasing, design center with options engine, Blueprint AI material takeoffs, Foreman AI agent with 100+ purpose-built construction skills, MLS listing sheet generator, homeowner portal, and full REST API. Starts at $149/mo with unlimited users. No per-seat fees. No implementation cost.",
+        "description": "Cornerstone PM is the complete home builder software platform with native AI agents. Built for home builders of all types — production, custom, and semi-custom. Includes construction scheduling, sales pipeline, purchasing, design center with options engine, Blueprint AI material takeoffs, Foreman AI agent with 100+ purpose-built construction skills, MLS listing sheet generator, homeowner portal, and full REST API. Starts at $149/mo with up to 30 users (60 on Pro+). No per-seat fees. No implementation cost.",
         "keywords": "home builder software, construction scheduling, residential builder ERP, NEWSTAR alternative, BuildPro alternative, Buildertrend alternative, CoConstruct alternative, JobTread alternative, AI construction agent, Blueprint AI takeoff, options engine, design center, production home builder software, subcontractor bidding, homeowner portal",
         "offers": {
           "@type": "AggregateOffer",
@@ -18,10 +18,10 @@ export function StructuredData() {
           "highPrice": "599",
           "priceCurrency": "USD",
           "priceSpecification": [
-            { "@type": "UnitPriceSpecification", "price": "149", "priceCurrency": "USD", "name": "Starter - Scheduling + Buyer Portal", "description": "Construction scheduling, Gantt charts, subcontractor confirmations, homeowner portal, permit tracker, multi-community support, up to 500 active homes, unlimited users.", "billingDuration": "P1M" },
-            { "@type": "UnitPriceSpecification", "price": "299", "priceCurrency": "USD", "name": "Builder - Full Platform (No AI)", "description": "Adds purchasing, sales pipeline, design center, MLS listing agent. Unlimited users.", "billingDuration": "P1M" },
-            { "@type": "UnitPriceSpecification", "price": "499", "priceCurrency": "USD", "name": "Pro - With AI Agents", "description": "Adds Foreman AI (100+ skills), Blueprint AI (25 takeoffs/mo). Up to 1,000 active homes, unlimited users.", "billingDuration": "P1M" },
-            { "@type": "UnitPriceSpecification", "price": "599", "priceCurrency": "USD", "name": "Pro+ - API + Enterprise AI", "description": "Full REST API, BYOA automated bidding pipeline, Opus AI, 5,000 AI messages/mo, scoped API keys, webhooks, SSO, SLA. Unlimited users.", "billingDuration": "P1M" },
+            { "@type": "UnitPriceSpecification", "price": "149", "priceCurrency": "USD", "name": "Starter - Scheduling + Buyer Portal", "description": "Construction scheduling, Gantt charts, subcontractor confirmations, homeowner portal, permit tracker, multi-community support, up to 500 active homes, up to 30 users.", "billingDuration": "P1M" },
+            { "@type": "UnitPriceSpecification", "price": "299", "priceCurrency": "USD", "name": "Builder - Full Platform (No AI)", "description": "Adds purchasing, sales pipeline, design center, MLS listing agent. Up to 30 users.", "billingDuration": "P1M" },
+            { "@type": "UnitPriceSpecification", "price": "499", "priceCurrency": "USD", "name": "Pro - With AI Agents", "description": "Adds Foreman AI (100+ skills), Blueprint AI (25 takeoffs/mo). Up to 1,000 active homes, up to 30 users.", "billingDuration": "P1M" },
+            { "@type": "UnitPriceSpecification", "price": "599", "priceCurrency": "USD", "name": "Pro+ - API + Enterprise AI", "description": "Full REST API, BYOA automated bidding pipeline, Opus AI, 5,000 AI messages/mo, scoped API keys, webhooks, SSO, SLA. Up to 60 users.", "billingDuration": "P1M" },
           ],
         },
         "featureList": [
@@ -43,7 +43,7 @@ export function StructuredData() {
           "Multi-community and multi-floorplan management",
           "AI Support Agent - instant answers, every feature documented",
           "Warranty tracking and 2-year warranty management",
-          "Unlimited users on all plans - no per-seat pricing",
+          "User caps (30 Starter/Builder/Pro · 60 Pro+) - no per-seat pricing",
           "Free 2-year beta for first 100 builders",
         ],
         "screenshot": "https://cornerstonepm.ai/mockups/feature-sales-pipeline.jpg",
@@ -80,7 +80,7 @@ export function StructuredData() {
             "name": "What is Cornerstone PM?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Cornerstone PM is a complete home builder software platform built for home builders of all types — production, custom, and semi-custom. It includes construction scheduling, a sales pipeline, purchasing, design center with options engine, AI agents (Foreman AI and Blueprint AI), MLS listing generator, homeowner portal, and REST API. It starts at $149/mo with unlimited users and no implementation fees.",
+              "text": "Cornerstone PM is a complete home builder software platform built for home builders of all types — production, custom, and semi-custom. It includes construction scheduling, a sales pipeline, purchasing, design center with options engine, AI agents (Foreman AI and Blueprint AI), MLS listing generator, homeowner portal, and REST API. It starts at $149/mo with up to 30 users (60 on Pro+) and no implementation fees.",
             },
           },
           {
@@ -88,7 +88,7 @@ export function StructuredData() {
             "name": "How much does Cornerstone PM cost?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Cornerstone PM starts at $149/mo for the Starter plan (scheduling + buyer portal, unlimited users). Builder is $299/mo (adds purchasing, sales, design center). Pro is $499/mo (adds Foreman AI with 100+ skills and Blueprint AI). Pro+ is $599/mo (adds full REST API, automated bidding pipeline, and enterprise AI). All plans include unlimited users with no per-seat fees. Beta access is free for 2 years, limited to the first 100 builders.",
+              "text": "Cornerstone PM starts at $149/mo for the Starter plan (scheduling + buyer portal, up to 30 users (60 on Pro+)). Builder is $299/mo (adds purchasing, sales, design center). Pro is $499/mo (adds Foreman AI with 100+ skills and Blueprint AI). Pro+ is $599/mo (adds full REST API, automated bidding pipeline, and enterprise AI). All plans include up to 30 users (60 on Pro+) with no per-seat fees within your tier. Beta access is free for 2 years, limited to the first 100 builders.",
             },
           },
           {
@@ -168,7 +168,7 @@ export function StructuredData() {
             "name": "How is Cornerstone PM priced compared to competitors?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Cornerstone PM starts at $149/mo with unlimited users and no per-seat fees. NEWSTAR and BuildPro require $25,000+ implementation budgets. Buildertrend starts at $499/mo. CoConstruct starts at $399/mo. JobTread starts at $199/mo but adds $20 per user. Cornerstone PM Pro at $499/mo includes native AI agents that no competitor offers at any price.",
+              "text": "Cornerstone PM starts at $149/mo with up to 30 users (60 on Pro+) and no per-seat fees within your tier. NEWSTAR and BuildPro require $25,000+ implementation budgets. Buildertrend starts at $499/mo. CoConstruct starts at $399/mo. JobTread starts at $199/mo but adds $20 per user. Cornerstone PM Pro at $499/mo includes native AI agents that no competitor offers at any price.",
             },
           },
         ],

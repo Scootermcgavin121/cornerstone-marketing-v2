@@ -29,8 +29,8 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Purchasing / POs / bid management", cornerstone: true, competitor: false, note: "Full purchasing workflow with automated bid pipeline." },
   { feature: "Plan management / markup", cornerstone: "limited", competitor: true, note: "Fieldwire specializes in plan room, markup, and punch list management for commercial projects. Cornerstone has basic plan storage." },
   { feature: "Punch lists (commercial-grade)", cornerstone: "limited", competitor: true, note: "Fieldwire's punch list tools are purpose-built for commercial GC closeout workflows." },
-  { feature: "Pricing model", cornerstone: "Flat, unlimited users", competitor: "Per user / month", note: "Fieldwire: $0 (Basic, up to 5 users/3 projects), $39/user/mo (Pro annual), $64/user/mo (Business), $89/user/mo (Business Plus). Cornerstone: flat at every tier, unlimited users from $149. More importantly: Fieldwire doesn't ship a residential options engine, buyer design center, multi-community pipelines, or action-taking AI at any tier." },
-  { feature: "Cornerstone tiers (flat, unlimited users)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30+ named webhook events, 7-wave bidding." },
+  { feature: "Pricing model", cornerstone: "Flat — up to 30 users (60 on Pro+)", competitor: "Per user / month", note: "Fieldwire: $0 (Basic, up to 5 users/3 projects), $39/user/mo (Pro annual), $64/user/mo (Business), $89/user/mo (Business Plus). Cornerstone: flat at every tier — up to 30 users (60 on Pro+) from $149. More importantly: Fieldwire doesn't ship a residential options engine, buyer design center, multi-community pipelines, or action-taking AI at any tier." },
+  { feature: "Cornerstone tiers (flat — up to 30 users · 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30+ named webhook events, 7-wave bidding." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
@@ -62,7 +62,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What does $149/mo Cornerstone Starter include?",
-    a: "Starter ($149/mo) includes construction scheduling, subcontractor assignment, permits pipeline, homeowner progress portal, and the AI Support Agent -- unlimited users. Options engine and design center are on Builder ($299/mo). Foreman AI + Blueprint AI are on Pro ($499/mo). REST API + BYOA are on Pro+ ($599/mo).",
+    a: "Starter ($149/mo) includes construction scheduling, subcontractor assignment, permits pipeline, homeowner progress portal, and the AI Support Agent -- up to 30 users (60 on Pro+). Options engine and design center are on Builder ($299/mo). Foreman AI + Blueprint AI are on Pro ($499/mo). REST API + BYOA are on Pro+ ($599/mo).",
   },
   {
     q: "Does Cornerstone PM™ have a free trial?",

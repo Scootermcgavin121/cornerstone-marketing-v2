@@ -279,7 +279,7 @@ export default function ForemanAi100SkillsPost() {
           <p className="text-sm text-slate-500 italic mt-10">
             Foreman AI is part of Cornerstone PM&trade; &mdash; home builder software built for
             production, semi-custom, and custom builders running 5&ndash;200 homes a year. Flat
-            pricing from $149/mo with unlimited users.
+            pricing from $149/mo with up to 30 users (60 on Pro+).
           </p>
 
           <p className="text-sm text-slate-500 mt-6">

@@ -41,7 +41,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What does new home sales software cost?",
-    a: "Cornerstone PM™'s sales pipeline is included in the Builder plan at $299/mo with unlimited users. There are no per-counselor seat fees. The Pro plan ($499/mo) adds Foreman AI, which can analyze your sales pipeline, draft buyer follow-ups, and generate MLS listings from live home data.",
+    a: "Cornerstone PM™'s sales pipeline is included in the Builder plan at $299/mo with up to 30 users (60 on Pro+). There are no per-counselor seat fees. The Pro plan ($499/mo) adds Foreman AI, which can analyze your sales pipeline, draft buyer follow-ups, and generate MLS listings from live home data.",
   },
 ];
 

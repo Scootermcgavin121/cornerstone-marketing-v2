@@ -32,9 +32,9 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Job costing / budgets", cornerstone: true, competitor: true, note: "Both include job costing and budget tracking." },
   { feature: "Purchasing / POs", cornerstone: true, competitor: true, note: "Both include purchasing and PO management." },
   { feature: "Homeowner portal (realtime sync + photos + messaging + ZIP export)", cornerstone: true, competitor: "limited", note: "Cornerstone gives buyers a real-time portal synced with construction scheduling — when framing moves three days, they see it instantly, no follow-up call needed. Plus: (1) builder/PM uploads job-site photos to every milestone (up to 5 photos per milestone via a camera button on the task row), (2) built-in messaging app between builder and customer with a permanent searchable record of every conversation, and (3) one-click ZIP download of all job photos so buyers can save their whole build history. Keeps buyers excited, reduces inbound calls, turns into referrals. Contractor Foreman has a basic client portal — no milestone-photo upload, no integrated messaging app with permanent record, no bulk photo export." },
-  { feature: "Unlimited users on all plans", cornerstone: true, competitor: "limited", note: "Cornerstone: unlimited users on every tier from $149. Contractor Foreman: unlimited users only on Unlimited plan ($332/mo); entry plans cap at 1-15 users depending on tier." },
-  { feature: "Pricing model", cornerstone: "Flat, unlimited users", competitor: "Per-plan user limits", note: "Contractor Foreman: $49/mo for 1 user; $105/mo (3 users); $166/mo (8 users); $221/mo (15 users); $332/mo (unlimited). Cornerstone: flat at every tier, unlimited users from $149. More importantly: Contractor Foreman doesn't ship an options engine, floorplan pricing matrix, multi-community pipelines, designer packages, or any AI agents at any price." },
-  { feature: "Cornerstone tiers (flat, unlimited users)", cornerstone: "$149 / $299 / $499 / $599", competitor: "—", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30+ named webhook events, 7-wave bidding." },
+  { feature: "User caps (30 Starter/Builder/Pro · 60 Pro+)", cornerstone: true, competitor: "limited", note: "Cornerstone: up to 30 users on Starter, Builder, Pro · 60 users on Pro+ from $149. Contractor Foreman: up to 30 users (60 on Pro+) only on Unlimited plan ($332/mo); entry plans cap at 1-15 users depending on tier." },
+  { feature: "Pricing model", cornerstone: "Flat — up to 30 users (60 on Pro+)", competitor: "Per-plan user limits", note: "Contractor Foreman: $49/mo for 1 user; $105/mo (3 users); $166/mo (8 users); $221/mo (15 users); $332/mo (unlimited). Cornerstone: flat at every tier — up to 30 users (60 on Pro+) from $149. More importantly: Contractor Foreman doesn't ship an options engine, floorplan pricing matrix, multi-community pipelines, designer packages, or any AI agents at any price." },
+  { feature: "Cornerstone tiers (flat — up to 30 users · 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "—", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30+ named webhook events, 7-wave bidding." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
@@ -54,11 +54,11 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Does Cornerstone PM™ have Contractor Foreman's core features?",
-    a: "Yes - Cornerstone PM™ covers Gantt scheduling with dependencies, job costing and budgets, purchasing and POs, document management, and unlimited users. It adds home-builder-specific features on top: floorplan pricing matrix, structural options engine, design center, multi-community lot management, native AI agents, and a 30-event webhook system.",
+    a: "Yes - Cornerstone PM™ covers Gantt scheduling with dependencies, job costing and budgets, purchasing and POs, document management, and up to 30 users (60 on Pro+). It adds home-builder-specific features on top: floorplan pricing matrix, structural options engine, design center, multi-community lot management, native AI agents, and a 30-event webhook system.",
   },
   {
     q: "Is Contractor Foreman cheaper than Cornerstone?",
-    a: "Contractor Foreman's Basic plan starts at $49/mo for 1 user. Cornerstone Starter is $149/mo with unlimited users. But Contractor Foreman lacks the options engine, design center, multi-community pipelines, AI agents, and REST API that home builders need. When you factor in needing the Contractor Foreman Unlimited plan ($332/mo) for team-wide access, the gap narrows - and Cornerstone still includes capabilities CF doesn't offer at any price.",
+    a: "Contractor Foreman's Basic plan starts at $49/mo for 1 user. Cornerstone Starter is $149/mo with up to 30 users (60 on Pro+). But Contractor Foreman lacks the options engine, design center, multi-community pipelines, AI agents, and REST API that home builders need. When you factor in needing the Contractor Foreman Unlimited plan ($332/mo) for team-wide access, the gap narrows - and Cornerstone still includes capabilities CF doesn't offer at any price.",
   },
   {
     q: "Can I migrate from Contractor Foreman to Cornerstone PM™?",
@@ -70,7 +70,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What does $149/mo Cornerstone Starter include?",
-    a: "Starter ($149/mo) includes construction scheduling, subcontractor assignment, permits pipeline, homeowner progress portal, and the AI Support Agent - unlimited users. Options engine and design center are on Builder ($299/mo). Foreman AI + Blueprint AI are on Pro ($499/mo). REST API + BYOA are on Pro+ ($599/mo).",
+    a: "Starter ($149/mo) includes construction scheduling, subcontractor assignment, permits pipeline, homeowner progress portal, and the AI Support Agent - up to 30 users (60 on Pro+). Options engine and design center are on Builder ($299/mo). Foreman AI + Blueprint AI are on Pro ($499/mo). REST API + BYOA are on Pro+ ($599/mo).",
   },
   {
     q: "Does Cornerstone PM™ have a free trial?",
@@ -86,7 +86,7 @@ export default function ContractorForemanAlternativePage() {
       heroLine1="General contractor software."
       heroLine2="Or purpose-built for home builders?"
       accentColor="emerald"
-      heroParagraph="Contractor Foreman is built for general contractors doing varied work across markets. Cornerstone PM™ is purpose-built for home builders - structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community pipelines, Foreman AI with 100+ skills (Pro $499/mo), and 30+ named webhook events (Pro+). From $149/mo with unlimited users."
+      heroParagraph="Contractor Foreman is built for general contractors doing varied work across markets. Cornerstone PM™ is purpose-built for home builders - structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community pipelines, Foreman AI with 100+ skills (Pro $499/mo), and 30+ named webhook events (Pro+). From $149/mo with up to 30 users (60 on Pro+)."
       secondaryCTA={{ text: "See full comparison", href: "/compare" }}
       comparisonSubtitle="Contractor Foreman vs Cornerstone PM™ - general contractor tool vs. home-builder platform."
       comparisonRows={comparisonRows}

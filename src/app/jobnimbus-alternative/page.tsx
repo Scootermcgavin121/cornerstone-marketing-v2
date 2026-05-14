@@ -29,14 +29,14 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "CRM / Lead pipeline", cornerstone: true, competitor: true, note: "Both include CRM and lead management." },
   { feature: "Construction scheduling", cornerstone: true, competitor: "limited", note: "Cornerstone: full Gantt, dependencies, cascade scheduling. JobNimbus: basic job scheduling, not construction-schedule focused." },
   { feature: "Roofing / insurance claim workflows", cornerstone: false, competitor: true, note: "JobNimbus specializes in insurance claim management and roofing workflows -- not a home builder need." },
-  { feature: "Pricing model", cornerstone: "Flat, unlimited users", competitor: "Custom quote", note: "JobNimbus does not publish public pricing -- contact for a quote. Cornerstone is flat at every tier. More importantly: JobNimbus is built for roofing and restoration -- it doesn't ship an options engine, floorplan pricing matrix, multi-community pipelines, or home-builder AI at any price." },
-  { feature: "Cornerstone tiers (flat, unlimited users)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30+ named webhook events, 7-wave bidding." },
+  { feature: "Pricing model", cornerstone: "Flat — up to 30 users (60 on Pro+)", competitor: "Custom quote", note: "JobNimbus does not publish public pricing -- contact for a quote. Cornerstone is flat at every tier. More importantly: JobNimbus is built for roofing and restoration -- it doesn't ship an options engine, floorplan pricing matrix, multi-community pipelines, or home-builder AI at any price." },
+  { feature: "Cornerstone tiers (flat — up to 30 users · 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30+ named webhook events, 7-wave bidding." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
   { title: "Built for home builders, not roofers", desc: "JobNimbus excels at roofing and restoration. Cornerstone is purpose-built for home builders: lot management, floorplan pricing (Builder $299/mo), options engine, design center, draw schedules -- concepts that don't exist in JobNimbus." },
   { title: "Action-taking AI on Pro -- 100+ skills", desc: "Foreman AI (Cornerstone Pro, $499/mo) reads AND writes your data. Blueprint AI converts floor plans to takeoffs. AI image search, vision, anti-bot web scraping. Per-user memory. JobNimbus Scout is in beta and roofing-focused." },
-  { title: "Unlimited users, full platform", desc: "Scheduling from $149, purchasing, bid management, homeowner portal, design center (Builder $299), REST API + 30+ named webhook events (Pro+ $599) -- all in one platform with unlimited users on every tier." },
+  { title: "Generous user caps, full platform", desc: "Scheduling from $149, purchasing, bid management, homeowner portal, design center (Builder $299), REST API + 30+ named webhook events (Pro+ $599) -- all in one platform with up to 30 users on Starter, Builder, Pro · 60 users on Pro+ (no per-seat fees within tier)." },
 ];
 
 const faqItems: FAQItem[] = [
@@ -62,7 +62,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What does $149/mo Cornerstone Starter include?",
-    a: "Starter ($149/mo) includes construction scheduling, subcontractor assignment, permits pipeline, homeowner progress portal, and the AI Support Agent -- unlimited users. Options engine and design center are on Builder ($299/mo). Foreman AI + Blueprint AI are on Pro ($499/mo). REST API + BYOA are on Pro+ ($599/mo).",
+    a: "Starter ($149/mo) includes construction scheduling, subcontractor assignment, permits pipeline, homeowner progress portal, and the AI Support Agent -- up to 30 users (60 on Pro+). Options engine and design center are on Builder ($299/mo). Foreman AI + Blueprint AI are on Pro ($499/mo). REST API + BYOA are on Pro+ ($599/mo).",
   },
   {
     q: "Does Cornerstone PM™ have a free trial?",

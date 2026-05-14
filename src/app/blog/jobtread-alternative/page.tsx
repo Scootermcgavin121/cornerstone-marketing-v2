@@ -25,7 +25,7 @@ const comparison = [
   { feature: "AI Agent (reads & writes your data)", jobtread: false, cornerstone: true },
   { feature: "Blueprint Takeoff AI", jobtread: false, cornerstone: true },
   { feature: "Built for home builders (not remodelers)", jobtread: false, cornerstone: true },
-  { feature: "Flat-rate pricing (unlimited users)", jobtread: false, cornerstone: true },
+  { feature: "Flat-rate pricing (30 users / 60 on Pro+)", jobtread: false, cornerstone: true },
 ];
 
 export default function JobtreadAlternativePost() {

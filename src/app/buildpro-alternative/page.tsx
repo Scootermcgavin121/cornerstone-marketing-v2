@@ -33,9 +33,9 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Multi-community management", cornerstone: true, competitor: true, note: "Both support multi-community pipelines." },
   { feature: "Construction scheduling", cornerstone: true, competitor: true, note: "Both ship full scheduling modules." },
   { feature: "Bid management + vendor portal", cornerstone: true, competitor: true, note: "Cornerstone Pro+ adds 7-wave automated bidding + a no-login vendor portal: vendors confirm tasks, accept schedule changes, and submit bids via secure email magic links — no app, no account, no password." },
-  { feature: "Per-user fees", cornerstone: "Unlimited users, every tier", competitor: "Per-seat", note: "Cornerstone: no per-seat pricing on any plan. BuildPro: per-seat licensing." },
-  { feature: "Pricing model", cornerstone: "Flat, unlimited users", competitor: "Enterprise quote + implementation", note: "BuildPro requires enterprise contracts plus $25k–$75k+ implementation fees. Cornerstone starts at $149/mo with zero implementation cost. More importantly: BuildPro doesn't ship Foreman AI, Blueprint AI, 30 named webhook events, or a self-serve public REST API at any price." },
-  { feature: "Cornerstone tiers (flat, unlimited users)", cornerstone: "$149 / $299 / $499 / $599", competitor: "—", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30 named webhook events, 7-wave bidding." },
+  { feature: "Per-user fees", cornerstone: "Up to 30 users (60 on Pro+), every tier", competitor: "Per-seat", note: "Cornerstone: no per-seat pricing on any plan. BuildPro: per-seat licensing." },
+  { feature: "Pricing model", cornerstone: "Flat — up to 30 users (60 on Pro+)", competitor: "Enterprise quote + implementation", note: "BuildPro requires enterprise contracts plus $25k–$75k+ implementation fees. Cornerstone starts at $149/mo with zero implementation cost. More importantly: BuildPro doesn't ship Foreman AI, Blueprint AI, 30 named webhook events, or a self-serve public REST API at any price." },
+  { feature: "Cornerstone tiers (flat — up to 30 users · 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "—", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30 named webhook events, 7-wave bidding." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
@@ -51,7 +51,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "How is Cornerstone PM™ different from BuildPro?",
-    a: "Three key differences: (1) Cornerstone PM™ is a modern, web-based, mobile-friendly platform, while BuildPro is built on a Windows desktop architecture; (2) Cornerstone ships native AI agents (Foreman AI 100+ skills on Pro $499/mo, Blueprint AI, AI image search, anti-bot web scraping) that BuildPro doesn't offer at any tier; (3) Cornerstone is operational in hours at $149/mo with unlimited users, while BuildPro requires $25k-$75k+ implementation budgets.",
+    a: "Three key differences: (1) Cornerstone PM™ is a modern, web-based, mobile-friendly platform, while BuildPro is built on a Windows desktop architecture; (2) Cornerstone ships native AI agents (Foreman AI 100+ skills on Pro $499/mo, Blueprint AI, AI image search, anti-bot web scraping) that BuildPro doesn't offer at any tier; (3) Cornerstone is operational in hours at $149/mo with up to 30 users (60 on Pro+), while BuildPro requires $25k-$75k+ implementation budgets.",
   },
   {
     q: "Can Cornerstone PM™ replace BuildPro for a home builder?",
@@ -75,7 +75,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What does $149/mo Cornerstone Starter include?",
-    a: "Starter ($149/mo) includes construction scheduling, subcontractor assignment, permits pipeline, homeowner progress portal, and the AI Support Agent - unlimited users. The options engine and design center are on Builder ($299/mo). Foreman AI + Blueprint AI are on Pro ($499/mo). REST API + BYOA are on Pro+ ($599/mo).",
+    a: "Starter ($149/mo) includes construction scheduling, subcontractor assignment, permits pipeline, homeowner progress portal, and the AI Support Agent - up to 30 users (60 on Pro+). The options engine and design center are on Builder ($299/mo). Foreman AI + Blueprint AI are on Pro ($499/mo). REST API + BYOA are on Pro+ ($599/mo).",
   },
   {
     q: "Is there a free trial or beta?",
@@ -91,7 +91,7 @@ export default function BuildProAlternativePage() {
       heroLine1="BuildPro power."
       heroLine2="Modern UI. Native AI."
       accentColor="violet"
-      heroParagraph="Cornerstone PM™ is the modern BuildPro alternative for small-to-mid home builders. Same core capabilities - options engine, multi-community pipelines, purchasing, construction scheduling - on a web-native platform with Foreman AI (100+ skills on Pro $499/mo), Blueprint AI, and a public REST API (Pro+ $599/mo). Starts at $149/mo, unlimited users."
+      heroParagraph="Cornerstone PM™ is the modern BuildPro alternative for small-to-mid home builders. Same core capabilities - options engine, multi-community pipelines, purchasing, construction scheduling - on a web-native platform with Foreman AI (100+ skills on Pro $499/mo), Blueprint AI, and a public REST API (Pro+ $599/mo). Starts at $149/mo, up to 30 users (60 on Pro+)."
       secondaryCTA={{ text: "Also a NEWSTAR alternative", href: "/newstar-alternative" }}
       comparisonSubtitle="Side-by-side for home builders evaluating modern alternatives."
       comparisonRows={comparisonRows}

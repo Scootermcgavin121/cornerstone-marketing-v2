@@ -30,8 +30,8 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Purchasing / POs", cornerstone: true, competitor: false, note: "Full purchasing workflow. Not a Houzz Pro feature." },
   { feature: "Design inspiration / marketplace", cornerstone: false, competitor: true, note: "Houzz Pro's strength is its consumer marketplace and design inspiration platform. Not a home-builder production need." },
   { feature: "Construction scheduling", cornerstone: true, competitor: "limited", note: "Cornerstone: full Gantt with dependencies (Starter+). Houzz Pro: basic project milestones." },
-  { feature: "Pricing model", cornerstone: "Flat, unlimited users", competitor: "Contact for pricing", note: "Houzz Pro does not publish current pricing publicly -- contact for rates. Cornerstone is flat at every tier, unlimited users from $149. More importantly: Houzz Pro is a design platform -- it doesn't ship an options engine, floorplan pricing matrix, multi-community pipelines, or construction-native AI at any price." },
-  { feature: "Cornerstone tiers (flat, unlimited users)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30+ named webhook events, 7-wave bidding." },
+  { feature: "Pricing model", cornerstone: "Flat — up to 30 users (60 on Pro+)", competitor: "Contact for pricing", note: "Houzz Pro does not publish current pricing publicly -- contact for rates. Cornerstone is flat at every tier — up to 30 users (60 on Pro+) from $149. More importantly: Houzz Pro is a design platform -- it doesn't ship an options engine, floorplan pricing matrix, multi-community pipelines, or construction-native AI at any price." },
+  { feature: "Cornerstone tiers (flat — up to 30 users · 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30+ named webhook events, 7-wave bidding." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
@@ -63,7 +63,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What does $149/mo Cornerstone Starter include?",
-    a: "Starter ($149/mo) includes construction scheduling, subcontractor assignment, permits pipeline, homeowner progress portal, and the AI Support Agent -- unlimited users. Options engine and design center are on Builder ($299/mo). Foreman AI + Blueprint AI are on Pro ($499/mo). REST API + BYOA are on Pro+ ($599/mo).",
+    a: "Starter ($149/mo) includes construction scheduling, subcontractor assignment, permits pipeline, homeowner progress portal, and the AI Support Agent -- up to 30 users (60 on Pro+). Options engine and design center are on Builder ($299/mo). Foreman AI + Blueprint AI are on Pro ($499/mo). REST API + BYOA are on Pro+ ($599/mo).",
   },
   {
     q: "Does Cornerstone PM™ have a free trial?",

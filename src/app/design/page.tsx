@@ -35,7 +35,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What does design center software cost?",
-    a: "Cornerstone PM™'s Design Center is included in the Builder plan at $299/mo with unlimited users. Foreman AI's 8-skill Design Center domain is included on the Pro plan at $499/mo. There are no per-seat fees and no implementation cost.",
+    a: "Cornerstone PM™'s Design Center is included in the Builder plan at $299/mo with up to 30 users (60 on Pro+). Foreman AI's 8-skill Design Center domain is included on the Pro plan at $499/mo. There are no per-seat fees and no implementation cost.",
   },
   {
     q: "Is this a NEWSTAR / BuildPro design center alternative?",

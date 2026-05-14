@@ -40,7 +40,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What does home builder project management software cost?",
-    a: "Cornerstone PM™ starts at $149/mo (Starter) with unlimited users and no implementation fees. Builder is $299/mo (adds purchasing, sales, design center). Pro is $499/mo (adds Foreman AI + Blueprint AI). Pro+ is $599/mo (adds REST API + BYOA). Compare to NEWSTAR or BuildPro at $25,000+ implementation and Buildertrend at $499+/mo.",
+    a: "Cornerstone PM™ starts at $149/mo (Starter) with up to 30 users (60 on Pro+) and no implementation fees. Builder is $299/mo (adds purchasing, sales, design center). Pro is $499/mo (adds Foreman AI + Blueprint AI). Pro+ is $599/mo (adds REST API + BYOA). Compare to NEWSTAR or BuildPro at $25,000+ implementation and Buildertrend at $499+/mo.",
   },
   {
     q: "How does Cornerstone PM™ handle vendor bidding differently?",

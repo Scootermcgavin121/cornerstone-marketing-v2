@@ -67,7 +67,7 @@ const differentiators = [
   { title: "100+ AI skills", desc: "Foreman AI reads and writes your data — bids, options, scheduling, purchasing. Not a chatbot — an agent.", color: "text-violet-400" },
   { title: "30+ Named Webhook Events (Growing)", desc: "Named event catalog with typed payloads, HMAC signatures, delivery logs, and auto-retry. New events ship as the platform grows. Deepest in the industry.", color: "text-cyan-400" },
   { title: "$0 Migration", desc: "AI Migration Wizard imports from Buildertrend, JobTread, CoConstruct, or any CSV/Excel in hours. Competitors charge $5k–$20k.", color: "text-emerald-400" },
-  { title: "Unlimited Users", desc: "Flat monthly fee. No per-seat pricing. $149/mo for your entire team.", color: "text-amber-400" },
+  { title: "Generous user caps", desc: "Flat monthly fee. No per-seat pricing. $149/mo for your entire team.", color: "text-amber-400" },
   { title: "Hours, Not Months", desc: "Self-serve setup. No 6-month implementation engagement. No consultants required.", color: "text-rose-400" },
   { title: "Triple QR Ecosystem", desc: "Vendor check-in, PM site visits, and model home lead capture — three audiences, one platform. Industry-first.", color: "text-cyan-400" },
 ];

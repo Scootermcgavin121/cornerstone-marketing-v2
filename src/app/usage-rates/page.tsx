@@ -547,7 +547,7 @@ export default function UsageRatesPage() {
             Ready to build smarter?
           </h2>
           <p className="text-slate-400 mb-8 max-w-lg mx-auto">
-            Every plan includes unlimited users, zero implementation cost, and
+            Plans include up to 30 users (60 on Pro+), zero implementation cost, and
             a full database export anytime. Start free during beta.
           </p>
           <div className="flex flex-wrap justify-center gap-4">

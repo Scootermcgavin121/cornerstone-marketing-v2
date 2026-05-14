@@ -77,7 +77,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What does purchasing software for home builders cost?",
-    a: "Cornerstone PM™'s purchasing module is included in the Builder plan at $299/mo with unlimited users. The Pro plan at $499/mo adds Foreman AI's Bid Pipeline and Parts Catalog skills. Pro+ at $599/mo adds the REST API and BYOA. NEWSTAR and BuildPro typically require $25,000+ implementation budgets before monthly licensing.",
+    a: "Cornerstone PM™'s purchasing module is included in the Builder plan at $299/mo with up to 30 users (60 on Pro+). The Pro plan at $499/mo adds Foreman AI's Bid Pipeline and Parts Catalog skills. Pro+ at $599/mo adds the REST API and BYOA. NEWSTAR and BuildPro typically require $25,000+ implementation budgets before monthly licensing.",
   },
 ];
 

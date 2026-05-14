@@ -139,7 +139,7 @@ export default function ConstructionPurchaseOrderSoftwarePost() {
           </ul>
 
           <p>
-            On the last point: most enterprise construction software charges per user. That&apos;s a problem for builders who want their PMs, admins, and field leads all in the system. Cornerstone PM™ is flat-rate &mdash; unlimited users at every plan tier.
+            On the last point: most enterprise construction software charges per user. That&apos;s a problem for builders who want their PMs, admins, and field leads all in the system. Cornerstone PM™ is flat-rate &mdash; up to 30 users on Starter/Builder/Pro and 60 on Pro+.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">The bottom line</h2>

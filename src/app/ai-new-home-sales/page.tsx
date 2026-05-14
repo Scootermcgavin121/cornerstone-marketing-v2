@@ -291,7 +291,7 @@ export default function AiNewHomeSalesPage() {
                 See all 100+ Foreman skills
               </Link>
             </div>
-            <p className="text-slate-600 text-sm mt-6">Pro plan · $499/mo · Unlimited users · 2 years free in beta</p>
+            <p className="text-slate-600 text-sm mt-6">Pro plan · $499/mo · Up to 30 users · 2 years free in beta</p>
           </div>
         </div>
       </section>

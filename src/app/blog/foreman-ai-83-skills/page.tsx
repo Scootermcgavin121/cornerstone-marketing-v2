@@ -195,7 +195,7 @@ export default function ForemanAi83SkillsPost() {
           </p>
 
           <p>
-            If you want Foreman working on your build pipeline, the Pro plan ($499/mo flat, unlimited users)
+            If you want Foreman working on your build pipeline, the Pro plan ($499/mo flat, up to 30 users)
             includes every skill listed here. The 2-year free beta is open for the first 100 home builders.
           </p>
 
@@ -223,7 +223,7 @@ export default function ForemanAi83SkillsPost() {
 
           <p className="text-sm text-slate-500 italic mt-10">
             Foreman AI is part of Cornerstone PM™ &mdash; home builder software built for production, semi-custom,
-            and custom builders running 5&ndash;200 homes a year. Flat pricing from $149/mo with unlimited users.
+            and custom builders running 5&ndash;200 homes a year. Flat pricing from $149/mo with up to 30 users (60 on Pro+).
           </p>
         </div>
       </article>

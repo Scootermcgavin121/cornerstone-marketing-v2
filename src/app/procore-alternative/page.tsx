@@ -5,7 +5,7 @@ import type { FAQItem } from "@/components/FAQSection";
 export const metadata = {
   title: "Procore Alternative for Residential Home Builders | Cornerstone PM™",
   description:
-    "Procore is built for commercial construction. Cornerstone PM™ is the Procore alternative for residential home builders - AI agents (Pro $499/mo), options engine, and unlimited users from $149/mo.",
+    "Procore is built for commercial construction. Cornerstone PM™ is the Procore alternative for residential home builders - AI agents (Pro $499/mo), options engine, and up to 30 users (60 on Pro+) from $149/mo.",
   alternates: { canonical: "https://www.cornerstonepm.ai/procore-alternative" },
 };
 
@@ -29,11 +29,11 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Vendor Activity Map (Google Maps, real-time)", cornerstone: true, competitor: false, note: "Live Google Maps view of every vendor check-in across every community, 30-second refresh. See exactly who's on which jobsite right now. Filter by date or vendor. Stat cards show how many vendors are currently on-site. Procore has no residential equivalent." },
   { feature: "Flexible PO generation (4 patterns, mix on same job)", cornerstone: true, competitor: "limited", note: "Cornerstone gives you four PO patterns built for residential cash flow: (1) all POs at job start, (2) partial deposit POs from earlier pipeline tasks (permit pull, contract sign, foundation pour), (3) full PO auto-generated when a task is marked complete, or (4) configurable per task / scope / community. Mix all four on the same job. Procore's PO flow is commercial-construction-shaped — not built for residential trade-by-trade cash flow patterns." },
   { feature: "Homeowner portal (realtime sync + photos + messaging + ZIP export)", cornerstone: true, competitor: false, note: "Real-time buyer portal synced with construction scheduling — when framing moves three days, buyers see it instantly. Plus: (1) builder/PM uploads job-site photos to every milestone (up to 5 photos per milestone via a camera button on the task row), (2) built-in messaging app between builder and customer with a permanent searchable record, and (3) one-click ZIP download of all job photos. Procore is commercial-first — no residential homeowner portal." },
-  { feature: "Unlimited users on all plans", cornerstone: true, competitor: false, note: "Cornerstone: every tier from $149. Procore pricing scales by product modules and usage." },
+  { feature: "User caps (30 Starter/Builder/Pro · 60 Pro+)", cornerstone: true, competitor: false, note: "Cornerstone: every tier from $149. Procore pricing scales by product modules and usage." },
   { feature: "Construction scheduling", cornerstone: true, competitor: true, note: "Both ship scheduling. Procore's scheduler is commercial-focused." },
   { feature: "RFIs / Submittals", cornerstone: false, competitor: true, note: "Procore excels at commercial RFI and submittal workflows - not a residential home builder need." },
-  { feature: "Pricing model", cornerstone: "Flat, unlimited users", competitor: "Custom quote + implementation", note: "Procore doesn't publish pricing and requires implementation packages. Cornerstone starts at $149/mo, self-serve, zero implementation cost. More importantly: Procore is a commercial construction platform — it doesn't ship a residential options engine, buyer design center, designer packages, or pre-sale pipeline at any price." },
-  { feature: "Cornerstone tiers (flat, unlimited users)", cornerstone: "$149 / $299 / $499 / $599", competitor: "—", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30 named webhook events, 7-wave bidding." },
+  { feature: "Pricing model", cornerstone: "Flat — up to 30 users (60 on Pro+)", competitor: "Custom quote + implementation", note: "Procore doesn't publish pricing and requires implementation packages. Cornerstone starts at $149/mo, self-serve, zero implementation cost. More importantly: Procore is a commercial construction platform — it doesn't ship a residential options engine, buyer design center, designer packages, or pre-sale pipeline at any price." },
+  { feature: "Cornerstone tiers (flat — up to 30 users · 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "—", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30 named webhook events, 7-wave bidding." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
@@ -53,7 +53,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Is Cornerstone PM™ cheaper than Procore?",
-    a: "Significantly. Cornerstone PM™ starts at $149/mo (Starter, unlimited users) with zero implementation cost. Procore does not publish pricing - custom quotes only - and typically requires implementation and training packages. For small-to-mid residential builders, the total cost of Cornerstone PM™ is a fraction of Procore. The full Cornerstone Pro+ plan ($599/mo) includes capabilities Procore doesn't offer at any price for residential workflows.",
+    a: "Significantly. Cornerstone PM™ starts at $149/mo (Starter, up to 30 users) with zero implementation cost. Procore does not publish pricing - custom quotes only - and typically requires implementation and training packages. For small-to-mid residential builders, the total cost of Cornerstone PM™ is a fraction of Procore. The full Cornerstone Pro+ plan ($599/mo) includes capabilities Procore doesn't offer at any price for residential workflows.",
   },
   {
     q: "Can I migrate from Procore to Cornerstone PM™?",
@@ -69,7 +69,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What does $149/mo Cornerstone Starter include?",
-    a: "Starter ($149/mo) includes construction scheduling, subcontractor assignment, permits pipeline, homeowner progress portal, and the AI Support Agent - unlimited users. The options engine and design center are on Builder ($299/mo). Foreman AI + Blueprint AI are on Pro ($499/mo). REST API + BYOA are on Pro+ ($599/mo).",
+    a: "Starter ($149/mo) includes construction scheduling, subcontractor assignment, permits pipeline, homeowner progress portal, and the AI Support Agent - up to 30 users (60 on Pro+). The options engine and design center are on Builder ($299/mo). Foreman AI + Blueprint AI are on Pro ($499/mo). REST API + BYOA are on Pro+ ($599/mo).",
   },
   {
     q: "Does Cornerstone PM™ have a free trial?",
@@ -85,7 +85,7 @@ export default function ProcoreAlternativePage() {
       heroLine1="Procore is for commercial."
       heroLine2="You build homes."
       accentColor="amber"
-      heroParagraph="Procore is built for commercial GCs running $100M projects. Cornerstone PM™ is the Procore alternative for residential home builders - right-sized, AI-native (Foreman AI on Pro $499/mo), and operational in hours, not months. From $149/mo with unlimited users."
+      heroParagraph="Procore is built for commercial GCs running $100M projects. Cornerstone PM™ is the Procore alternative for residential home builders - right-sized, AI-native (Foreman AI on Pro $499/mo), and operational in hours, not months. From $149/mo with up to 30 users (60 on Pro+)."
       secondaryCTA={{ text: "See full comparison", href: "/compare" }}
       comparisonSubtitle="Procore is commercial-first. Cornerstone PM™ is built for residential home builders."
       comparisonRows={comparisonRows}

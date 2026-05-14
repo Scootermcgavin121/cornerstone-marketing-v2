@@ -31,9 +31,9 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Multi-community management", cornerstone: true, competitor: false, note: "Native multi-community pipeline. Buildxact is job-focused, not community-focused." },
   { feature: "Construction scheduling", cornerstone: true, competitor: "limited", note: "Cornerstone: full Gantt, dependencies, cascade scheduling (Starter+). Buildxact: scheduling included on Pro plan ($399/mo) up." },
   { feature: "Takeoff / estimating", cornerstone: true, competitor: true, note: "Both include takeoff and estimating functionality." },
-  { feature: "Unlimited users", cornerstone: true, competitor: true, note: "Both include unlimited users. Buildxact Foundation starts at $199/mo (annual)." },
-  { feature: "Pricing model", cornerstone: "Flat, unlimited users", competitor: "Flat, unlimited users (higher starting price)", note: "Both are flat-fee with unlimited users. Buildxact Foundation starts at $199/mo (annual) for estimating/takeoffs; Master $599/mo plus Blu AI add-ons. Cornerstone starts at $149/mo. More importantly: Buildxact doesn't ship an options engine, floorplan pricing matrix, multi-community pipelines, homeowner portal, or action-taking AI agents at any tier." },
-  { feature: "Cornerstone tiers (flat, unlimited users)", cornerstone: "$149 / $299 / $499 / $599", competitor: "—", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30 named webhook events, 7-wave bidding." },
+  { feature: "Generous user caps", cornerstone: true, competitor: true, note: "Cornerstone: up to 30 users (60 on Pro+). Buildxact: unlimited (Foundation starts at $199/mo annual)." },
+  { feature: "Pricing model", cornerstone: "Flat — up to 30 users (60 on Pro+)", competitor: "Flat, unlimited users (higher starting price)", note: "Both are flat-fee within tier. Cornerstone: up to 30 users (60 on Pro+) from $149/mo. Buildxact Foundation starts at $199/mo (annual) for estimating/takeoffs; Master $599/mo plus Blu AI add-ons. More importantly: Buildxact doesn't ship an options engine, floorplan pricing matrix, multi-community pipelines, homeowner portal, or action-taking AI agents at any tier." },
+  { feature: "Cornerstone tiers (flat — up to 30 users · 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "—", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30 named webhook events, 7-wave bidding." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
@@ -65,7 +65,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "How does Buildxact pricing compare?",
-    a: "Buildxact Foundation starts at $199/mo (annual) - takeoffs, estimating, quoting, unlimited users. Pro is $399/mo (adds scheduling). Master is $599/mo. Blu AI add-ons are $99-$149/mo each. Cornerstone starts at $149/mo (Starter, scheduling + portal). Builder is $299/mo (full platform). Pro is $499/mo (adds Foreman AI + Blueprint AI). Pro+ is $599/mo (adds REST API + BYOA). For a full AI-capable platform, Cornerstone Pro ($499/mo) is comparable or less than Buildxact Master + Blu add-ons.",
+    a: "Buildxact Foundation starts at $199/mo (annual) - takeoffs, estimating, quoting, unlimited users. Pro is $399/mo (adds scheduling). Master is $599/mo. Blu AI add-ons are $99-$149/mo each. Cornerstone starts at $149/mo (Starter, up to 30 users; 60 on Pro+). Builder is $299/mo (full platform). Pro is $499/mo (adds Foreman AI + Blueprint AI). Pro+ is $599/mo (adds REST API + BYOA). For a full AI-capable platform, Cornerstone Pro ($499/mo) is comparable or less than Buildxact Master + Blu add-ons.",
   },
   {
     q: "Does Cornerstone PM™ have a free trial?",

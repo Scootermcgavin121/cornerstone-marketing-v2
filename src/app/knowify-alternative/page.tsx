@@ -28,8 +28,8 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Vendor Activity Map (Google Maps, real-time)", cornerstone: true, competitor: false, note: "Live Google Maps view of every vendor check-in across every community, 30-second refresh. See exactly who's on which jobsite right now. Filter by date or vendor. Stat cards show how many vendors are currently on-site. Knowify has no equivalent." },
   { feature: "Flexible PO generation (4 patterns, mix on same job)", cornerstone: true, competitor: "limited", note: "Cornerstone gives you four PO patterns: (1) all POs at job start, (2) partial deposit POs from earlier pipeline tasks (permit pull, contract sign, foundation pour), (3) full PO auto-generated when a task is marked complete, or (4) configurable per task / scope / community. Mix all four on the same job. Knowify has POs but the generation flow isn't task-driven." },
   { feature: "Job costing / T&M billing", cornerstone: "limited", competitor: true, note: "Knowify is strong at time-and-material billing for subcontractors. Cornerstone handles builder cost tracking, not T&M invoicing to GCs." },
-  { feature: "Pricing model", cornerstone: "Flat, unlimited users", competitor: "Per-user base", note: "Knowify Core starts at $99/mo (annual) for 1 base user; Advanced at $249/mo. Cornerstone is flat at every tier, unlimited users from $149. More importantly: Knowify is built for subs billing to GCs -- it doesn't ship an options engine, floorplan pricing matrix, multi-community pipelines, or home-builder AI at any price." },
-  { feature: "Cornerstone tiers (flat, unlimited users)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30+ named webhook events, 7-wave bidding." },
+  { feature: "Pricing model", cornerstone: "Flat — up to 30 users (60 on Pro+)", competitor: "Per-user base", note: "Knowify Core starts at $99/mo (annual) for 1 base user; Advanced at $249/mo. Cornerstone is flat at every tier — up to 30 users (60 on Pro+) from $149. More importantly: Knowify is built for subs billing to GCs -- it doesn't ship an options engine, floorplan pricing matrix, multi-community pipelines, or home-builder AI at any price." },
+  { feature: "Cornerstone tiers (flat — up to 30 users · 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30+ named webhook events, 7-wave bidding." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
@@ -57,11 +57,11 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "How does Knowify pricing compare to Cornerstone?",
-    a: "Knowify Core starts at $99/mo (annual) for 1 base user; Advanced at $249/mo (annual). Additional users are per-seat. Cornerstone Starter is $149/mo with unlimited users. For the full platform: Builder ($299/mo) adds options engine and design center; Pro ($499/mo) adds Foreman AI and Blueprint AI. Knowify doesn't offer options engines, multi-community pipelines, or construction AI at any tier.",
+    a: "Knowify Core starts at $99/mo (annual) for 1 base user; Advanced at $249/mo (annual). Additional users are per-seat. Cornerstone Starter is $149/mo with up to 30 users (60 on Pro+). For the full platform: Builder ($299/mo) adds options engine and design center; Pro ($499/mo) adds Foreman AI and Blueprint AI. Knowify doesn't offer options engines, multi-community pipelines, or construction AI at any tier.",
   },
   {
     q: "What does $149/mo Cornerstone Starter include?",
-    a: "Starter ($149/mo) includes construction scheduling, subcontractor assignment, permits pipeline, homeowner progress portal, and the AI Support Agent -- unlimited users. Options engine and design center are on Builder ($299/mo). Foreman AI + Blueprint AI are on Pro ($499/mo). REST API + BYOA are on Pro+ ($599/mo).",
+    a: "Starter ($149/mo) includes construction scheduling, subcontractor assignment, permits pipeline, homeowner progress portal, and the AI Support Agent -- up to 30 users (60 on Pro+). Options engine and design center are on Builder ($299/mo). Foreman AI + Blueprint AI are on Pro ($499/mo). REST API + BYOA are on Pro+ ($599/mo).",
   },
   {
     q: "Does Cornerstone PM™ have a free trial?",
@@ -77,7 +77,7 @@ export default function KnowifyAlternativePage() {
       heroLine1="Knowify is for subcontractors."
       heroLine2="You're the builder."
       accentColor="violet"
-      heroParagraph="Knowify is built for specialty subcontractors billing to GCs. Cornerstone PM™ is the alternative for home builders in the GC role -- managing subs, running communities, pre-selling homes with a design center (Builder $299/mo), and closing with draws. From $149/mo with unlimited users."
+      heroParagraph="Knowify is built for specialty subcontractors billing to GCs. Cornerstone PM™ is the alternative for home builders in the GC role -- managing subs, running communities, pre-selling homes with a design center (Builder $299/mo), and closing with draws. From $149/mo with up to 30 users (60 on Pro+)."
       secondaryCTA={{ text: "See full comparison", href: "/compare" }}
       comparisonSubtitle="Knowify vs Cornerstone PM™ -- subcontractor tool vs. home-builder platform."
       comparisonRows={comparisonRows}

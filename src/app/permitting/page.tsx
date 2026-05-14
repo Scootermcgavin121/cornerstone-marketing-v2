@@ -37,7 +37,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Is permitting software included in the base plan?",
-    a: "Yes. Cornerstone PM™'s permitting module is included in the Starter plan at $149/mo with unlimited users. Foreman AI on the Pro plan ($499/mo) can also handle permit-related tasks like generating permit application packages from home data and tracking jurisdiction-specific requirements.",
+    a: "Yes. Cornerstone PM™'s permitting module is included in the Starter plan at $149/mo with up to 30 users (60 on Pro+). Foreman AI on the Pro plan ($499/mo) can also handle permit-related tasks like generating permit application packages from home data and tracking jurisdiction-specific requirements.",
   },
 ];
 
