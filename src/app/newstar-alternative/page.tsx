@@ -15,7 +15,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Built for small-to-mid home builders", cornerstone: true, competitor: false, note: "NEWSTAR is designed for top-100 enterprise home builders. Cornerstone is built for small-to-mid home builders - production, semi-custom, and custom - who need the same core capabilities without the $50k+ implementation and dedicated IT team." },
   { feature: "Native AI agents (Foreman AI + Blueprint AI)", cornerstone: true, competitor: false, note: "Cornerstone Pro ($499/mo): 100+ Foreman AI skills that read AND write data, plus Blueprint AI floor plan takeoffs in 60 sec. NEWSTAR has no native AI." },
   { feature: "AI image search, vision & anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, hosts them on CDN, reads Home Depot/Ferguson product pages with AI-powered web scraping. Plus: paste or drag-drop any screenshot from inside the app and Foreman reads it with AI vision and acts on it. Cornerstone Pro feature." },
-  { feature: "30+ named webhook events (catalog growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): 30+ named events and counting — typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. NEWSTAR offers no public webhook catalog." },
+  { feature: "37+ named webhook events (catalog growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): 37+ named events and counting — typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. NEWSTAR offers no public webhook catalog." },
   { feature: "AI Migration Wizard (one-click CRM import)", cornerstone: true, competitor: false, note: "AI auto-detects NEWSTAR export column mapping and runs 23 import endpoints. ~$0.01 per migration." },
   { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Packages curated by an actual interior designer - the same playbook K. Hovnanian Homes uses. Buyers pick a package; all category options auto-lock. Cornerstone Builder+." },
   { feature: "Triple QR ecosystem (vendor + PM + buyer, no app install)", cornerstone: true, competitor: false, note: "Three QR codes for three audiences, no app required: (1) vendor jobsite check-in captures GPS + timestamp + weather + photo upload automatically, (2) PM/internal-builder check-in feeds GPS-validated timesheets so you can prove who was actually on-site, (3) sales model home QR for walk-in buyer lead capture — replaces paper sign-in sheets, recognizes returning visitors, instantly creates a Lead record tied to the community with email + in-app notification to the sales agent. NEWSTAR ships none of these." },
@@ -35,19 +35,19 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Purchasing & POs", cornerstone: true, competitor: true, note: "Cornerstone Pro+ adds 7-wave automated bidding pipeline." },
   { feature: "Per-user fees", cornerstone: "Up to 30 users (60 on Pro+), every tier", competitor: "Per-seat", note: "Cornerstone: no per-seat pricing on any plan." },
   { feature: "Pricing model", cornerstone: "Flat — up to 30 users (60 on Pro+)", competitor: "Enterprise quote + implementation", note: "NEWSTAR requires enterprise contracts plus $25k–$100k+ implementation fees. Cornerstone starts at $149/mo, self-serve, zero implementation cost. More importantly: NEWSTAR is built for top-100 enterprise builders — small-to-mid home builders can't get this product at any accessible price point, regardless of what features they compare." },
-  { feature: "Cornerstone tiers (flat — up to 30 users · 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "—", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30 named webhook events, 7-wave bidding." },
+  { feature: "Cornerstone tiers (flat — up to 30 users · 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "—", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 37+ named webhook events, 7-wave bidding." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
   { title: "Built for the builder NEWSTAR ignores", desc: "NEWSTAR is built for top-100 enterprise builders. Cornerstone is built for small-to-mid home builders running 5-200 homes per year - without the $50k+ implementation and dedicated IT team." },
   { title: "Action-taking AI on Pro - 100+ skills", desc: "Foreman AI (Cornerstone Pro, $499/mo) reads AND writes data, remembers your preferences, analyzes images, and scrapes product pages with AI-powered web scraping. Blueprint AI converts floor plans to takeoffs in 60 seconds. NEWSTAR has no native AI." },
-  { title: "Public REST API + 30+ webhooks on Pro+", desc: "60+ REST endpoints (growing), 30+ named webhook events (catalog growing), HMAC signatures, and public docs on Pro+ ($599/mo). NEWSTAR integrations are enterprise-contract only. Wire Twilio or your own agents to our webhooks." },
+  { title: "Public REST API + 37+ webhooks on Pro+", desc: "60+ REST endpoints (growing), 37+ named webhook events (catalog growing), HMAC signatures, and public docs on Pro+ ($599/mo). NEWSTAR integrations are enterprise-contract only. Wire Twilio or your own agents to our webhooks." },
 ];
 
 const faqItems: FAQItem[] = [
   {
     q: "What is the best NEWSTAR alternative for home builders?",
-    a: "Cornerstone PM™ is the closest functional NEWSTAR alternative for small-to-mid home builders. It includes the same core capabilities - options engine, floorplan pricing matrix, multi-community management, sales pipeline, purchasing, and construction scheduling - without NEWSTAR's $25,000-$100,000+ implementation cost. Cornerstone PM™ also adds native AI agents (Foreman AI 100+ skills on Pro $499/mo, Blueprint AI), 30+ named webhook events (Pro+), and a public REST API (Pro+).",
+    a: "Cornerstone PM™ is the closest functional NEWSTAR alternative for small-to-mid home builders. It includes the same core capabilities - options engine, floorplan pricing matrix, multi-community management, sales pipeline, purchasing, and construction scheduling - without NEWSTAR's $25,000-$100,000+ implementation cost. Cornerstone PM™ also adds native AI agents (Foreman AI 100+ skills on Pro $499/mo, Blueprint AI), 37+ named webhook events (Pro+), and a public REST API (Pro+).",
   },
   {
     q: "Is Cornerstone PM™ a NEWSTAR replacement?",
@@ -55,7 +55,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "How much does Cornerstone PM™ cost compared to NEWSTAR?",
-    a: "Cornerstone PM™ starts at $149/mo (Starter, up to 30 users) with zero implementation cost. NEWSTAR pricing is enterprise-quoted and not publicly listed, but typical NEWSTAR implementations run $25,000-$100,000+ before monthly licensing. For the full platform: Cornerstone Builder ($299/mo, options engine + full pipeline) and Cornerstone Pro ($499/mo, Foreman AI + Blueprint AI) are flat within tier (up to 30 users / 60 on Pro+). Pro+ at $599/mo includes the REST API, 30+ named webhook events, and BYOA - capabilities NEWSTAR offers only at the enterprise tier.",
+    a: "Cornerstone PM™ starts at $149/mo (Starter, up to 30 users) with zero implementation cost. NEWSTAR pricing is enterprise-quoted and not publicly listed, but typical NEWSTAR implementations run $25,000-$100,000+ before monthly licensing. For the full platform: Cornerstone Builder ($299/mo, options engine + full pipeline) and Cornerstone Pro ($499/mo, Foreman AI + Blueprint AI) are flat within tier (up to 30 users / 60 on Pro+). Pro+ at $599/mo includes the REST API, 37+ named webhook events, and BYOA - capabilities NEWSTAR offers only at the enterprise tier.",
   },
   {
     q: "Can Cornerstone PM™ handle production builder workflows?",
@@ -87,7 +87,7 @@ export default function NewstarAlternativePage() {
       heroLine1="NEWSTAR power."
       heroLine2="Without 6-figure implementation."
       accentColor="violet"
-      heroParagraph="Cornerstone PM™ is the modern NEWSTAR and BuildPro alternative for small-to-mid home builders. Same core capabilities - options engine, floorplan pricing matrix, multi-community management - plus native AI agents (Foreman AI on Pro $499/mo), 30+ named webhook events (Pro+), and a public REST API (Pro+ $599/mo). Starts at $149/mo, up to 30 users (60 on Pro+), operational in hours not months."
+      heroParagraph="Cornerstone PM™ is the modern NEWSTAR and BuildPro alternative for small-to-mid home builders. Same core capabilities - options engine, floorplan pricing matrix, multi-community management - plus native AI agents (Foreman AI on Pro $499/mo), 37+ named webhook events (Pro+), and a public REST API (Pro+ $599/mo). Starts at $149/mo, up to 30 users (60 on Pro+), operational in hours not months."
       secondaryCTA={{ text: "See full comparison", href: "/compare" }}
       comparisonSubtitle="Side-by-side for small-to-mid home builders."
       comparisonRows={comparisonRows}

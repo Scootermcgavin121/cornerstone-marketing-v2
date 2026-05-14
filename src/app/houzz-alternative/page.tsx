@@ -17,7 +17,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Packages curated by an actual interior designer -- the same playbook K. Hovnanian Homes uses. Production builder design center with curated buyer selection packages. Cornerstone Builder+." },
   { feature: "Native AI agents (Foreman AI -- 100+ skills)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro ($499/mo): Foreman AI reads AND writes construction management data. Blueprint AI: PDF to takeoff in 60 seconds. Houzz Pro has AI tools for design and project management for interior designers -- different market, different purpose." },
   { feature: "AI image search, vision & anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, hosts them on CDN, reads supplier product pages with AI-powered web scraping. Plus: paste or drag-drop any screenshot and Foreman reads it with AI vision and acts on it. Cornerstone Pro feature." },
-  { feature: "30+ named webhook events (catalog growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): 30+ named events and counting -- typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. Houzz Pro has no public webhook catalog." },
+  { feature: "37+ named webhook events (catalog growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): 37+ named events and counting -- typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. Houzz Pro has no public webhook catalog." },
   { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): wire Claude or ChatGPT to your live construction data." },
   { feature: "Public REST API (60+ endpoints, growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+: 60+ endpoints and growing rapidly, public docs. New endpoints ship as the platform grows. Houzz Pro has no public API." },
   { feature: "Free database export (CSV / JSON)", cornerstone: true, competitor: false, note: "Download your full data anytime. Nightly auto-backups." },
@@ -32,7 +32,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Design inspiration / marketplace", cornerstone: false, competitor: true, note: "Houzz Pro's strength is its consumer marketplace and design inspiration platform. Not a home-builder production need." },
   { feature: "Construction scheduling", cornerstone: true, competitor: "limited", note: "Cornerstone: full Gantt with dependencies (Starter+). Houzz Pro: basic project milestones." },
   { feature: "Pricing model", cornerstone: "Flat — up to 30 users (60 on Pro+)", competitor: "Contact for pricing", note: "Houzz Pro does not publish current pricing publicly -- contact for rates. Cornerstone is flat at every tier — up to 30 users (60 on Pro+) from $149. More importantly: Houzz Pro is a design platform -- it doesn't ship an options engine, floorplan pricing matrix, multi-community pipelines, or construction-native AI at any price." },
-  { feature: "Cornerstone tiers (flat — up to 30 users · 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30+ named webhook events, 7-wave bidding." },
+  { feature: "Cornerstone tiers (flat — up to 30 users · 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 37+ named webhook events, 7-wave bidding." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
@@ -48,7 +48,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What's the best Houzz Pro alternative for home builders?",
-    a: "Cornerstone PM™ is purpose-built for home builders. Beyond the basics (scheduling, client communication, document management from Starter $149/mo), it adds a structural options engine, floorplan pricing matrix, multi-community lot management, 64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses), native AI agents (Foreman AI 100+ skills on Pro $499/mo, Blueprint AI), 30+ named webhook events (Pro+), and a public REST API.",
+    a: "Cornerstone PM™ is purpose-built for home builders. Beyond the basics (scheduling, client communication, document management from Starter $149/mo), it adds a structural options engine, floorplan pricing matrix, multi-community lot management, 64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses), native AI agents (Foreman AI 100+ skills on Pro $499/mo, Blueprint AI), 37+ named webhook events (Pro+), and a public REST API.",
   },
   {
     q: "Does Houzz Pro have AI features?",

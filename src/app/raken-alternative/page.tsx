@@ -5,7 +5,7 @@ import type { FAQItem } from "@/components/FAQSection";
 export const metadata = {
   title: "Raken Alternative for Home Builders | Cornerstone PM™",
   description:
-    "Raken focuses on daily logs and field reporting. Cornerstone PM™ is the full alternative for home builders -- AI agents (Pro $499/mo), options engine, scheduling, purchasing, and 30+ webhook events from $149/mo.",
+    "Raken focuses on daily logs and field reporting. Cornerstone PM™ is the full alternative for home builders -- AI agents (Pro $499/mo), options engine, scheduling, purchasing, and 37+ webhook events from $149/mo.",
   alternates: { canonical: "https://www.cornerstonepm.ai/raken-alternative" },
 };
 
@@ -18,7 +18,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Packages curated by an actual interior designer -- the same playbook K. Hovnanian Homes uses. Buyer design center. Cornerstone Builder+." },
   { feature: "Native AI agents (Foreman AI -- 100+ skills)", cornerstone: true, competitor: false, note: "Cornerstone Pro ($499/mo): Foreman AI reads AND writes construction data. Blueprint AI: PDF to takeoff in 60 seconds. Raken has no native AI agents." },
   { feature: "AI image search, vision & anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, hosts them on CDN, reads supplier product pages with AI-powered web scraping. Plus: paste or drag-drop any screenshot and Foreman reads it with AI vision and acts on it. Cornerstone Pro feature." },
-  { feature: "30+ named webhook events (catalog growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): 30+ named events and counting -- typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. Raken has no webhook catalog." },
+  { feature: "37+ named webhook events (catalog growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): 37+ named events and counting -- typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. Raken has no webhook catalog." },
   { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): wire Claude or ChatGPT to your live construction data." },
   { feature: "Public REST API (60+ endpoints, growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+: 60+ endpoints and growing rapidly, public docs. New endpoints ship as the platform grows. Raken has limited API access." },
   { feature: "Free database export (CSV / JSON)", cornerstone: true, competitor: false, note: "Download your full data anytime. Nightly auto-backups." },
@@ -32,13 +32,13 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Construction scheduling (Gantt)", cornerstone: true, competitor: false, note: "Full Gantt scheduling with dependencies and cascade scheduling (Starter+). Raken has basic scheduling." },
   { feature: "Daily logs / field reports", cornerstone: "limited", competitor: true, note: "Raken specializes in field reporting and daily log workflows. Cornerstone has basic daily log capabilities." },
   { feature: "Pricing model", cornerstone: "Flat — up to 30 users (60 on Pro+)", competitor: "Contact for pricing", note: "Raken does not publish pricing publicly -- contact for a quote. Cornerstone is flat at every tier — up to 30 users (60 on Pro+) from $149. More importantly: Raken doesn't ship an options engine, floorplan pricing matrix, multi-community pipelines, or home-builder AI at any price." },
-  { feature: "Cornerstone tiers (flat — up to 30 users · 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30+ named webhook events, 7-wave bidding." },
+  { feature: "Cornerstone tiers (flat — up to 30 users · 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 37+ named webhook events, 7-wave bidding." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
   { title: "Beyond field logs: full PM platform", desc: "Raken is excellent for daily logs and field reporting. Cornerstone PM™ includes all of that plus scheduling (Starter $149), homeowner portal, purchasing, bid management, options engine, and design center (Builder $299). One platform for the entire build." },
   { title: "AI built in -- Pro $499/mo", desc: "Foreman AI reads AND writes your data: POs, options, SOWs, bid comparisons, image search, web scraping. Blueprint AI converts floor plans to takeoffs in 60 seconds. No other home-builder platform comes close." },
-  { title: "30+ webhooks + public API (Pro+)", desc: "30+ named webhook events with typed payload schemas and HMAC signatures. Public REST API with 60+ endpoints -- both on Pro+ ($599/mo). Wire SMS, voice, or your own AI agent to schedule changes, vendor notifications, and bid events." },
+  { title: "37+ webhooks + public API (Pro+)", desc: "37+ named webhook events with typed payload schemas and HMAC signatures. Public REST API with 60+ endpoints -- both on Pro+ ($599/mo). Wire SMS, voice, or your own AI agent to schedule changes, vendor notifications, and bid events." },
 ];
 
 const faqItems: FAQItem[] = [
@@ -48,7 +48,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What's the best Raken alternative for home builders?",
-    a: "Cornerstone PM™ provides the project management backbone Raken doesn't offer. It includes scheduling (Gantt with dependencies, cascade scheduling from Starter $149/mo), purchasing and POs, bid management with vendor portal, homeowner portal, structural options engine (Builder $299/mo), native AI agents (Foreman AI 100+ skills on Pro $499/mo, Blueprint AI), 30+ named webhook events (Pro+), and a public REST API -- built specifically for home builders.",
+    a: "Cornerstone PM™ provides the project management backbone Raken doesn't offer. It includes scheduling (Gantt with dependencies, cascade scheduling from Starter $149/mo), purchasing and POs, bid management with vendor portal, homeowner portal, structural options engine (Builder $299/mo), native AI agents (Foreman AI 100+ skills on Pro $499/mo, Blueprint AI), 37+ named webhook events (Pro+), and a public REST API -- built specifically for home builders.",
   },
   {
     q: "Can I migrate from Raken to Cornerstone PM™?",

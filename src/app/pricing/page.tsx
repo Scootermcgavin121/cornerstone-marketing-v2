@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -50,7 +50,7 @@ const faqs: FAQItem[] = [
   },
   {
     q: "Can I add REST API access?",
-    a: "Yes. On the Pro plan, REST API + Webhooks is available as a $200/mo add-on. On Pro+, REST API + Webhooks is included at no extra cost. The API gives you 60+ endpoints, scoped API keys, and 30 HMAC-signed webhook events for building custom integrations.",
+    a: "Yes. On the Pro plan, REST API + Webhooks is available as a $200/mo add-on. On Pro+, REST API + Webhooks is included at no extra cost. The API gives you 60+ endpoints, scoped API keys, and 37+ HMAC-signed webhook events for building custom integrations.",
   },
   {
     q: "Can I export my data?",

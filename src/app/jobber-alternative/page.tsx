@@ -17,7 +17,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Packages curated by an actual interior designer -- the same playbook K. Hovnanian Homes uses. Buyer design center. Cornerstone Builder+." },
   { feature: "Native AI agents (Foreman AI -- 100+ skills)", cornerstone: true, competitor: false, note: "Cornerstone Pro ($499/mo): Foreman AI reads AND writes construction data. Blueprint AI: PDF to takeoff in 60 seconds. Jobber has no native AI agents." },
   { feature: "AI image search, vision & anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, hosts them on CDN, reads supplier product pages with AI-powered web scraping. Plus: paste or drag-drop any screenshot and Foreman reads it with AI vision and acts on it. Cornerstone Pro feature." },
-  { feature: "30+ named webhook events (catalog growing)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+ ($599/mo): 30+ named events and counting -- typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. Jobber: limited webhook support for home service workflows." },
+  { feature: "37+ named webhook events (catalog growing)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+ ($599/mo): 37+ named events and counting -- typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. Jobber: limited webhook support for home service workflows." },
   { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): wire Claude or ChatGPT to your live construction data." },
   { feature: "Public REST API", cornerstone: true, competitor: true, note: "Both offer public APIs. Jobber's API is oriented toward service industry workflows. Cornerstone Pro+: 60+ endpoints, purpose-built for construction management." },
   { feature: "Take your data with you anytime — no lock-in", cornerstone: true, competitor: false, note: "Your data is YOURS. Full database export to CSV or JSON anytime, one click, $0, no fees, no waiting on a support ticket. Nightly auto-backups retained 7 days for instant rollback. If you ever leave us, you leave with everything — vendors, homes, schedules, options, budgets, every line. No strings attached." },
@@ -31,7 +31,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Client portal", cornerstone: true, competitor: true, note: "Both offer client-facing portals." },
   { feature: "Quoting / invoicing", cornerstone: "limited", competitor: true, note: "Jobber is strong at quote-to-invoice for service businesses. Cornerstone handles builder pricing through floorplan matrices and options engines, not traditional service invoicing." },
   { feature: "Pricing model", cornerstone: "Flat — up to 30 users (60 on Pro+)", competitor: "Per-user tiers", note: "Jobber is priced per user with tiered plans. Cornerstone is flat at every tier — up to 30 users (60 on Pro+). More importantly: Jobber doesn't ship an options engine, floorplan pricing matrix, multi-community pipelines, or home-builder AI at any price." },
-  { feature: "Cornerstone tiers (flat — up to 30 users · 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30+ named webhook events, 7-wave bidding." },
+  { feature: "Cornerstone tiers (flat — up to 30 users · 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 37+ named webhook events, 7-wave bidding." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
@@ -47,7 +47,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What's the best Jobber alternative for home builders?",
-    a: "Cornerstone PM™ is purpose-built for home builders. It covers the same basics (scheduling, client portal, quotes, document management) plus a structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, native AI agents (Foreman AI 100+ skills on Pro $499/mo, Blueprint AI), 30+ named webhook events (Pro+), and a public REST API -- all the home-builder features Jobber doesn't have.",
+    a: "Cornerstone PM™ is purpose-built for home builders. It covers the same basics (scheduling, client portal, quotes, document management) plus a structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, native AI agents (Foreman AI 100+ skills on Pro $499/mo, Blueprint AI), 37+ named webhook events (Pro+), and a public REST API -- all the home-builder features Jobber doesn't have.",
   },
   {
     q: "Can I migrate from Jobber to Cornerstone PM™?",

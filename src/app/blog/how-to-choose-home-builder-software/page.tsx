@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { BlogHero } from "@/components/BlogHero";
@@ -246,7 +246,7 @@ export default function HowToChoomeHomeBuilderSoftwarePage() {
                 href="/api-access"
                 className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
               >
-                30+ named webhook events and growing, with typed payloads
+                37+ named webhook events and growing, with typed payloads
               </Link>
               , documented publicly. That&apos;s the bar to aim for.
             </p>

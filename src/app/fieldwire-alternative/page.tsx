@@ -5,7 +5,7 @@ import type { FAQItem } from "@/components/FAQSection";
 export const metadata = {
   title: "Fieldwire Alternative for Residential Home Builders | Cornerstone PM™",
   description:
-    "Fieldwire is a commercial construction field management tool. Cornerstone PM™ is the alternative for residential home builders -- AI agents (Pro $499/mo), options engine, scheduling, and 30+ webhook events from $149/mo.",
+    "Fieldwire is a commercial construction field management tool. Cornerstone PM™ is the alternative for residential home builders -- AI agents (Pro $499/mo), options engine, scheduling, and 37+ webhook events from $149/mo.",
   alternates: { canonical: "https://www.cornerstonepm.ai/fieldwire-alternative" },
 };
 
@@ -17,7 +17,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Packages curated by an actual interior designer -- the same playbook K. Hovnanian Homes uses. Residential buyer design center. Cornerstone Builder+." },
   { feature: "Native AI agents (Foreman AI -- 100+ skills)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro ($499/mo): Foreman AI reads AND writes construction data. Blueprint AI: PDF to takeoff in 60 seconds. Fieldwire has 'Field Intelligence AI' on Business plan ($64/user/mo) for commercial plan markup and analysis -- different scope." },
   { feature: "AI image search, vision & anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, hosts them on CDN, reads supplier product pages with AI-powered web scraping. Plus: paste or drag-drop any screenshot and Foreman reads it with AI vision and acts on it. Cornerstone Pro feature." },
-  { feature: "30+ named webhook events (catalog growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): 30+ named events and counting -- typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. Fieldwire has no named residential construction event catalog." },
+  { feature: "37+ named webhook events (catalog growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): 37+ named events and counting -- typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. Fieldwire has no named residential construction event catalog." },
   { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): wire Claude or ChatGPT to your live construction data." },
   { feature: "Public REST API (60+ endpoints, growing)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+: 60+ endpoints and growing rapidly, public docs. New endpoints ship as the platform grows. Fieldwire: API access on Business Plus or custom contract only." },
   { feature: "Free database export (CSV / JSON)", cornerstone: true, competitor: false, note: "Download your full data anytime. Nightly auto-backups." },
@@ -31,7 +31,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Plan management / markup", cornerstone: "limited", competitor: true, note: "Fieldwire specializes in plan room, markup, and punch list management for commercial projects. Cornerstone has basic plan storage." },
   { feature: "Punch lists (commercial-grade)", cornerstone: "limited", competitor: true, note: "Fieldwire's punch list tools are purpose-built for commercial GC closeout workflows." },
   { feature: "Pricing model", cornerstone: "Flat — up to 30 users (60 on Pro+)", competitor: "Per user / month", note: "Fieldwire: $0 (Basic, up to 5 users/3 projects), $39/user/mo (Pro annual), $64/user/mo (Business), $89/user/mo (Business Plus). Cornerstone: flat at every tier — up to 30 users (60 on Pro+) from $149. More importantly: Fieldwire doesn't ship a residential options engine, buyer design center, multi-community pipelines, or action-taking AI at any tier." },
-  { feature: "Cornerstone tiers (flat — up to 30 users · 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30+ named webhook events, 7-wave bidding." },
+  { feature: "Cornerstone tiers (flat — up to 30 users · 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 37+ named webhook events, 7-wave bidding." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
@@ -47,7 +47,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What's the best Fieldwire alternative for residential home builders?",
-    a: "Cornerstone PM™ is purpose-built for residential home builders. It includes scheduling (Starter $149/mo), purchasing, bid management, homeowner portal, structural options engine (Builder $299/mo), designer packages curated by an actual interior designer, native AI agents (Foreman AI 100+ skills on Pro $499/mo, Blueprint AI), 30+ named webhook events (Pro+), and a public REST API -- all built for residential workflows.",
+    a: "Cornerstone PM™ is purpose-built for residential home builders. It includes scheduling (Starter $149/mo), purchasing, bid management, homeowner portal, structural options engine (Builder $299/mo), designer packages curated by an actual interior designer, native AI agents (Foreman AI 100+ skills on Pro $499/mo, Blueprint AI), 37+ named webhook events (Pro+), and a public REST API -- all built for residential workflows.",
   },
   {
     q: "Does Fieldwire have AI features?",

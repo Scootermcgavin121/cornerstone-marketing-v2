@@ -1,7 +1,7 @@
-## Platform Overview (Current Stats)
+﻿## Platform Overview (Current Stats)
 - 130+ database tables and growing
 - **100+ Foreman AI skills** (in-app agent that reads AND writes data - including product image search, image hosting, and AI-powered web scraping)
-- **30+ named webhook event types and growing** — typed payloads, HMAC signatures, delivery logs, and auto-retry. New events ship as the platform grows. Industry-leading depth (most competitors just say "webhooks exist")
+- **37+ named webhook event types and growing** — typed payloads, HMAC signatures, delivery logs, and auto-retry. New events ship as the platform grows. Industry-leading depth (most competitors just say "webhooks exist")
 - 60+ external REST API endpoints
 - 7 built-in AI features: Foreman AI (100+ skills), Blueprint AI, MLS Listing Agent, AI Support Agent, Punchlist AI (voice-to-punch-list, industry first), Bid Import AI (AI-powered vendor bid parsing), AI Jobsite Camera Events (webhook-driven, source-agnostic camera/sensor integration)
 - **Triple QR Code Ecosystem** - vendor jobsite check-in, community/PM check-in (timesheet-validated), and sales model home lead capture. Three QR codes, three audiences, one platform.
@@ -112,8 +112,8 @@ A: Pricing is takeoff-driven - quantities come from the builder's actual takeoff
 
 ## New Features (May 3-7, 2026)
 
-### Webhook System - 30+ Named Events and Growing
-Cornerstone ships with **30+ named webhook event types and counting** — new events ship as the platform grows. This is the deepest webhook coverage of any homebuilder platform:
+### Webhook System - 37+ Named Events and Growing
+Cornerstone ships with **37+ named webhook event types and counting** — new events ship as the platform grows. This is the deepest webhook coverage of any homebuilder platform:
 
 - **Categories:** home lifecycle, task/schedule changes, vendor notifications, cascade scheduling, in-app messages, sales pipeline, bid requests
 - **Typed payloads** - every event has a documented JSON schema
@@ -623,7 +623,7 @@ Available on: Builder plan and above.
 - **Starter $149/mo**: Construction Scheduling, Gantt, 17 templates, vendor assignment, permitting, buyer portal, AI Support Agent. Up to 500 active homes, 1,000 users/vendors.
 - **Builder $299/mo**: Everything in Starter + Sales Pipeline + Purchasing & Budgets + Design Center (no AI agents)
 - **Pro $499/mo**: Everything in Builder + Foreman AI (100+ skills, Sonnet, 1,000 msg/mo) + Blueprint AI (25 takeoffs/mo) + MLS Listing Agent + advanced analytics. Up to 1,000 active homes.
-- **Pro+ $599/mo**: Everything in Pro + REST API (60+ endpoints, scoped keys), automated bidding pipeline (7-wave), **30-event webhook system** (typed payloads, HMAC, retry, delivery logs - incl. cascade vendor notifications routable to Twilio/Bland/Retell), CRM Migration Wizard, Opus model, 5,000 AI messages/mo, Blueprint AI (25/mo), SSO, dedicated SLA.
+- **Pro+ $599/mo**: Everything in Pro + REST API (60+ endpoints, scoped keys), automated bidding pipeline (7-wave), **37-event webhook system** (typed payloads, HMAC, retry, delivery logs - incl. cascade vendor notifications routable to Twilio/Bland/Retell), CRM Migration Wizard, Opus model, 5,000 AI messages/mo, Blueprint AI (25/mo), SSO, dedicated SLA.
 - **Enterprise**: Custom pricing - Opus model, 5,000 msg/mo, Blueprint AI (25/mo), dedicated onboarding, SLA
 - **BYOK Add-on +$199/mo**: Bring Your Own API Key, unlimited messages
 - **BYOA Add-on +$100/mo**: Bring Your Own Agent - full REST API access to Cornerstone data. Connect external agents, automate bid ingestion from emails, build custom workflows. Pro plan or above required., any model

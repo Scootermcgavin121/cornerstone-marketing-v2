@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React, { useState } from "react";
 import Link from "next/link";
 import { Check, X, Zap, ArrowRight } from "lucide-react";
@@ -118,7 +118,7 @@ const plans: Plan[] = [
     maxUsers: 60,
     features: [
       "Everything in Pro, plus:",
-      "REST API + 30 Webhooks INCLUDED",
+      "REST API + 37+ Webhooks INCLUDED",
       "Foreman AI\u2122 (900/mo, Opus model)",
       "Blueprint AI (300/mo)",
       "Bid Import AI (1,200/mo)",

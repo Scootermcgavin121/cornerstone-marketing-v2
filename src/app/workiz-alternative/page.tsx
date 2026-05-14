@@ -17,7 +17,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Packages curated by an actual interior designer -- the same playbook K. Hovnanian Homes uses. Buyer design center. Cornerstone Builder+." },
   { feature: "Native AI agents (Foreman AI -- 100+ skills)", cornerstone: true, competitor: false, note: "Cornerstone Pro ($499/mo): Foreman AI reads AND writes construction data. Blueprint AI: PDF to takeoff in 60 seconds. Workiz has no native construction AI agents." },
   { feature: "AI image search, vision & anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, hosts them on CDN, reads supplier product pages with AI-powered web scraping. Plus: paste or drag-drop any screenshot and Foreman reads it with AI vision and acts on it. Cornerstone Pro feature." },
-  { feature: "30+ named webhook events (catalog growing)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+ ($599/mo): 30+ named events and counting -- typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. Workiz: limited webhook support for field service workflows." },
+  { feature: "37+ named webhook events (catalog growing)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+ ($599/mo): 37+ named events and counting -- typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. Workiz: limited webhook support for field service workflows." },
   { feature: "Public REST API (60+ endpoints, growing)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+: 60+ endpoints and growing rapidly, public docs. New endpoints ship as the platform grows. purpose-built for construction. Workiz: limited API access for field service integrations." },
   { feature: "Take your data with you anytime — no lock-in", cornerstone: true, competitor: false, note: "Your data is YOURS. Full database export to CSV or JSON anytime, one click, $0, no fees, no waiting on a support ticket. Nightly auto-backups retained 7 days for instant rollback. If you ever leave us, you leave with everything — vendors, homes, schedules, options, budgets, every line. No strings attached." },
   { feature: "AI Migration Wizard", cornerstone: true, competitor: false, note: "AI auto-detects column mapping and runs 23 import endpoints." },
@@ -29,13 +29,13 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Flexible PO generation (4 patterns, mix on same job)", cornerstone: true, competitor: false, note: "Cornerstone gives you four PO patterns: (1) all POs at job start, (2) partial deposit POs from earlier pipeline tasks (permit pull, contract sign, foundation pour), (3) full PO auto-generated when a task is marked complete, or (4) configurable per task / scope / community. Mix all four on the same job. Workiz is service-dispatch-first — no builder PO engine." },
   { feature: "Call tracking / voice", cornerstone: false, competitor: true, note: "Workiz has strong call tracking and VoIP features for service dispatch. Not a home builder need." },
   { feature: "Pricing model", cornerstone: "Flat — up to 30 users (60 on Pro+)", competitor: "Contact for pricing", note: "Workiz does not publish pricing publicly -- contact for current rates. Cornerstone is flat at every tier — up to 30 users (60 on Pro+) from $149. More importantly: Workiz doesn't ship an options engine, floorplan pricing matrix, multi-community pipelines, or home-builder AI at any price." },
-  { feature: "Cornerstone tiers (flat — up to 30 users · 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30+ named webhook events, 7-wave bidding." },
+  { feature: "Cornerstone tiers (flat — up to 30 users · 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 37+ named webhook events, 7-wave bidding." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
   { title: "New construction needs, not field service", desc: "Workiz handles dispatch, call tracking, and service scheduling for locksmiths and appliance repair companies. Cornerstone handles lot management, floorplan pricing, structural options, design centers, and multi-community pipelines for home builders." },
   { title: "AI agents native -- Pro $499/mo", desc: "Foreman AI (100+ skills) creates POs, updates design options, generates SOWs, and remembers preferences. Blueprint AI converts floor plans to takeoffs in 60 seconds. No other home-builder platform comes close." },
-  { title: "30+ webhooks + public API (Pro+)", desc: "30+ named webhook events with typed payload schemas and HMAC signatures. Wire your own SMS, voice, or AI agents. Public REST API with 60+ endpoints -- both on Pro+ ($599/mo)." },
+  { title: "37+ webhooks + public API (Pro+)", desc: "37+ named webhook events with typed payload schemas and HMAC signatures. Wire your own SMS, voice, or AI agents. Public REST API with 60+ endpoints -- both on Pro+ ($599/mo)." },
 ];
 
 const faqItems: FAQItem[] = [
@@ -45,7 +45,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What's the best Workiz alternative for home builders?",
-    a: "Cornerstone PM™ is purpose-built for home builders. It covers scheduling, client portal, and document management -- plus a structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, native AI agents (Foreman AI 100+ skills on Pro $499/mo, Blueprint AI), 30+ named webhook events (Pro+), and a public REST API.",
+    a: "Cornerstone PM™ is purpose-built for home builders. It covers scheduling, client portal, and document management -- plus a structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, native AI agents (Foreman AI 100+ skills on Pro $499/mo, Blueprint AI), 37+ named webhook events (Pro+), and a public REST API.",
   },
   {
     q: "Can I migrate from Workiz to Cornerstone PM™?",

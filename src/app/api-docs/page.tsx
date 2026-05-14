@@ -359,7 +359,7 @@ export default function ApiDocsPage() {
           {[
             { num: "60+", label: "REST endpoints", sub: "vs ~40 Pave objects in JobTread" },
             { num: "67+", label: "HTTP methods", sub: "GET, POST, PATCH, DELETE" },
-            { num: "30", label: "Webhook events", sub: "Real-time, HMAC-signed" },
+            { num: "37+", label: "Webhook events", sub: "Real-time, HMAC-signed" },
             { num: "110+", label: "Database tables", sub: "Every endpoint is real data" },
           ].map((s) => (
             <div key={s.label} className="text-center p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
@@ -461,7 +461,7 @@ export default function ApiDocsPage() {
                 <Webhook className="w-5 h-5 text-pink-400" />
               </div>
               <div>
-                <h2 className="text-2xl font-black text-white">30+ Named Webhook Events (Growing)</h2>
+                <h2 className="text-2xl font-black text-white">37+ Named Webhook Events (Growing)</h2>
                 <p className="text-slate-400 text-sm">HMAC SHA-256 signature verification via <code className="text-pink-400">X-Webhook-Signature</code> header. 10s timeout, auto-disable after 50 consecutive failures.</p>
               </div>
             </div>
@@ -551,7 +551,7 @@ export default function ApiDocsPage() {
               {[
                 "60+ REST endpoints (vendors, bids, homes, tasks, POs, parts, options, timesheets, webhooks)",
                 "Scoped API keys per integration",
-                "30+ named webhook events (catalog growing) with HMAC signing",
+                "37+ named webhook events (catalog growing) with HMAC signing",
                 "100 req/min, 10,000 req/day rate limits",
                 "Foreman AI (100+ skills, Sonnet, 5,000 msg/mo)",
                 "Blueprint AI (25 takeoffs/mo)",

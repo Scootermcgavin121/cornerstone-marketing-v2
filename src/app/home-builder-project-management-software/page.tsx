@@ -19,7 +19,7 @@ const modules = [
   { name: "Permitting", href: "/permitting", desc: "Permit gates, phase blocking, inspection tracking, automated reminders across the build.", color: "orange" },
   { name: "Foreman AI", href: "/foreman", desc: "100+ AI skills across 11 categories. Plain-English commands against live builder data.", color: "blue" },
   { name: "Blueprint AI Takeoff", href: "/ai-takeoff", desc: "Upload PDF floor plans, get 130+ material scopes and quantities in under 60 seconds.", color: "fuchsia" },
-  { name: "REST API + BYOA", href: "/api-access", desc: "60+ endpoints (growing), 30+ named webhook events (growing catalog), scoped Bearer-token auth. Bring your own AI agent.", color: "rose" },
+  { name: "REST API + BYOA", href: "/api-access", desc: "60+ endpoints (growing), 37+ named webhook events (growing catalog), scoped Bearer-token auth. Bring your own AI agent.", color: "rose" },
 ];
 
 const stats = [

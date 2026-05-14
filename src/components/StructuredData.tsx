@@ -39,7 +39,7 @@
           "Homeowner portal with milestones and photo uploads",
           "Permit gate system and permitting pipeline tracker",
           "Vendor self-registration portal",
-          "REST API with 60+ endpoints (growing) and 30+ named webhook event types (catalog growing)",
+          "REST API with 60+ endpoints (growing) and 37+ named webhook event types (catalog growing)",
           "Multi-community and multi-floorplan management",
           "AI Support Agent - instant answers, every feature documented",
           "Warranty tracking and 2-year warranty management",

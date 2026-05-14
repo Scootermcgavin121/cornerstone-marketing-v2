@@ -5,7 +5,7 @@ import type { FAQItem } from "@/components/FAQSection";
 export const metadata = {
   title: "Projul Alternative for Home Builders | Cornerstone PM™",
   description:
-    "Projul is built for residential contractors and remodelers. Cornerstone PM™ is the alternative for home builders -- AI agents (Pro $499/mo), options engine, multi-community management, and 30+ webhook events from $149/mo.",
+    "Projul is built for residential contractors and remodelers. Cornerstone PM™ is the alternative for home builders -- AI agents (Pro $499/mo), options engine, multi-community management, and 37+ webhook events from $149/mo.",
   alternates: { canonical: "https://www.cornerstonepm.ai/projul-alternative" },
 };
 
@@ -17,7 +17,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Packages curated by an actual interior designer -- the same playbook K. Hovnanian Homes uses. Buyer design center. Cornerstone Builder+." },
   { feature: "Native AI agents (Foreman AI -- 100+ skills)", cornerstone: true, competitor: false, note: "Cornerstone Pro ($499/mo): Foreman AI reads AND writes construction data. Blueprint AI: PDF to takeoff in 60 seconds. Projul has no native AI agents." },
   { feature: "AI image search, vision & anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, hosts them on CDN, reads supplier product pages with AI-powered web scraping. Plus: paste or drag-drop any screenshot and Foreman reads it with AI vision and acts on it. Cornerstone Pro feature." },
-  { feature: "30+ named webhook events (catalog growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): 30+ named events and counting -- typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. Projul has no public REST API or webhook catalog." },
+  { feature: "37+ named webhook events (catalog growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): 37+ named events and counting -- typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. Projul has no public REST API or webhook catalog." },
   { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): wire Claude or ChatGPT to your live construction data." },
   { feature: "Public REST API (60+ endpoints, growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+: 60+ endpoints and growing rapidly, public docs. New endpoints ship as the platform grows. Projul has no public API (Zapier integration only)." },
   { feature: "Free database export (CSV / JSON)", cornerstone: true, competitor: false, note: "Download your full data anytime. Nightly auto-backups." },
@@ -31,13 +31,13 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Construction scheduling", cornerstone: true, competitor: true, note: "Both include project scheduling with Gantt views." },
   { feature: "CRM / lead tracking", cornerstone: true, competitor: true, note: "Both include CRM and lead management." },
   { feature: "Pricing model", cornerstone: "Flat — up to 30 users (60 on Pro+)", competitor: "Annual commitment, flat per company", note: "Projul requires annual commitments: Core ~$399/mo (annual), Core+ ~$599/mo, Pro ~$1,199/mo. Cornerstone is flat at every tier: Starter $149, Builder $299, Pro $499, Pro+ $599 -- no annual lock-in required. More importantly: Projul doesn't ship an options engine, floorplan pricing matrix, multi-community pipelines, or home-builder AI at any price." },
-  { feature: "Cornerstone tiers (flat — up to 30 users · 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 30+ named webhook events, 7-wave bidding." },
+  { feature: "Cornerstone tiers (flat — up to 30 users · 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 37+ named webhook events, 7-wave bidding." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
   { title: "Home builder workflows native", desc: "Lot management, floorplan pricing, structural options, design center, multi-community pipelines, pre-sale flow (Builder $299/mo) -- first-class features in Cornerstone. None of these exist in Projul." },
   { title: "AI agents built in -- Pro $499/mo", desc: "Foreman AI reads AND writes your data. Blueprint AI converts floor plans to takeoffs. Per-user memory, image search, vision, anti-bot web scraping. No other home-builder platform comes close." },
-  { title: "Public API + 30+ webhooks (Pro+)", desc: "60+ REST endpoints, 30+ named webhook events with HMAC signatures -- both on Pro+ ($599/mo). Projul has no public API. Wire SMS, voice, or your own AI agent to your construction data." },
+  { title: "Public API + 37+ webhooks (Pro+)", desc: "60+ REST endpoints, 37+ named webhook events with HMAC signatures -- both on Pro+ ($599/mo). Projul has no public API. Wire SMS, voice, or your own AI agent to your construction data." },
 ];
 
 const faqItems: FAQItem[] = [
@@ -47,7 +47,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What's the best Projul alternative for home builders?",
-    a: "Cornerstone PM™ is purpose-built for home builders. Beyond the basics (scheduling, CRM, client portal from Starter $149/mo), it adds a structural options engine, floorplan pricing matrix, multi-community lot management, native AI agents (Foreman AI 100+ skills on Pro $499/mo, Blueprint AI), 30+ named webhook events (Pro+), and a public REST API with 60+ endpoints (and growing).",
+    a: "Cornerstone PM™ is purpose-built for home builders. Beyond the basics (scheduling, CRM, client portal from Starter $149/mo), it adds a structural options engine, floorplan pricing matrix, multi-community lot management, native AI agents (Foreman AI 100+ skills on Pro $499/mo, Blueprint AI), 37+ named webhook events (Pro+), and a public REST API with 60+ endpoints (and growing).",
   },
   {
     q: "How does Projul pricing compare to Cornerstone?",
@@ -59,7 +59,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Does Cornerstone PM™ have scheduling like Projul?",
-    a: "Yes -- and more. Cornerstone ships full Gantt scheduling with dependencies, cascade scheduling (change one date, the whole schedule shifts), vendor notifications, and 30+ named webhook events (Pro+) that can trigger external SMS or voice notifications when tasks change.",
+    a: "Yes -- and more. Cornerstone ships full Gantt scheduling with dependencies, cascade scheduling (change one date, the whole schedule shifts), vendor notifications, and 37+ named webhook events (Pro+) that can trigger external SMS or voice notifications when tasks change.",
   },
   {
     q: "What does $149/mo Cornerstone Starter include?",
