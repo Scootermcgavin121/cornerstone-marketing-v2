@@ -316,10 +316,10 @@ export default function ApiDocsPage() {
             PRO+ PLAN &mdash; 59+ ENDPOINTS (GROWING) &mdash; 67+ HTTP METHODS
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
-            Cornerstone PMâ„¢ <span className="text-cyan-400">API</span>
+            Cornerstone PM™ <span className="text-cyan-400">API</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-            59+ REST endpoints and growing rapidly â€” covering every major entity. Vendors, bids, homes, tasks, POs, payments, options, parts, timesheets, webhooks, and more. New endpoints ship as the platform grows. Standard auth. JSON in, JSON out.
+            59+ REST endpoints and growing rapidly — covering every major entity. Vendors, bids, homes, tasks, POs, payments, options, parts, timesheets, webhooks, and more. New endpoints ship as the platform grows. Standard auth. JSON in, JSON out.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
             <Link href="/beta" className="px-8 py-4 rounded-full bg-cyan-400 text-slate-900 font-bold text-lg hover:bg-cyan-300 transition-all duration-200 shadow-lg shadow-cyan-500/30 hover:-translate-y-0.5">
@@ -523,7 +523,7 @@ export default function ApiDocsPage() {
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-black text-center mb-4">Built to integrate</h2>
-          <p className="text-slate-400 text-center mb-12 max-w-xl mx-auto">Cornerstone PMâ„¢ is the connective layer between your AI agents, your accounting, and your subcontractors.</p>
+          <p className="text-slate-400 text-center mb-12 max-w-xl mx-auto">Cornerstone PM™ is the connective layer between your AI agents, your accounting, and your subcontractors.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {integrations.map((item) => (
               <div key={item.title} className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-cyan-500/20 transition-all duration-300 flex items-start gap-4">
@@ -576,10 +576,10 @@ export default function ApiDocsPage() {
       <section className="py-20 px-4 text-center border-t border-slate-800/60">
         <h2 className="text-4xl font-black mb-4">
           JobTread has ~40 Pave objects.<br />
-          <span className="text-cyan-400">We have 59+ REST endpoints â€” and growing rapidly.</span>
+          <span className="text-cyan-400">We have 59+ REST endpoints — and growing rapidly.</span>
         </h2>
         <p className="text-slate-400 text-lg mb-10 max-w-xl mx-auto">
-          Standard REST. No custom query language. If your AI agent can make an HTTP request, it works with Cornerstone PMâ„¢.
+          Standard REST. No custom query language. If your AI agent can make an HTTP request, it works with Cornerstone PM™.
         </p>
         <Link href="/beta" className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-cyan-400 text-slate-900 font-bold text-xl hover:bg-cyan-300 transition-all duration-200 shadow-xl shadow-cyan-500/30">
           Request Early Access <ArrowRight className="w-5 h-5" />

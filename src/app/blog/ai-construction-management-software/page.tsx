@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "AI Construction Management Software: What Home Builders Need to Know (2026) &mdash; Cornerstone PMâ„¢ Blog",
+  title: "AI Construction Management Software: What Home Builders Need to Know (2026) &mdash; Cornerstone PM™ Blog",
   description:
     "AI is everywhere in construction marketing but most tools are generic. Here's what real AI construction management software looks like for home builders &mdash; and how to evaluate what you're actually buying.",
   openGraph: {
@@ -39,7 +39,7 @@ export default function AiConstructionManagementSoftwarePost() {
           </h1>
           <div className="flex items-center gap-3 text-sm text-slate-500">
             <span>March 10, 2026</span>
-            <span>&mdash;Â·</span>
+            <span>&mdash;·</span>
             <span>7 min read</span>
           </div>
         </div>
@@ -121,7 +121,7 @@ export default function AiConstructionManagementSoftwarePost() {
             How Foreman AI handles each category
           </h2>
           <p>
-            Foreman AI is the AI agent built into Cornerstone PMâ„¢ &mdash; purpose-built for home builders with 100+ skills across data management, AI-powered analysis, document generation, and system intelligence.
+            Foreman AI is the AI agent built into Cornerstone PM™ &mdash; purpose-built for home builders with 100+ skills across data management, AI-powered analysis, document generation, and system intelligence.
           </p>
           <p>
             On estimating: Foreman can scrape supplier sites (Home Depot, Ferguson, 84 Lumber) for real pricing, add items to your parts catalog, and generate bid comparison reports that normalize pricing across vendors.
@@ -163,7 +163,7 @@ export default function AiConstructionManagementSoftwarePost() {
             AI construction management software is a real category with real value &mdash; but most of what&apos;s being sold under that label is marketing, not substance. For home builders specifically, the gap between generic AI and purpose-built AI is especially wide, because residential homebuilding has workflows and vocabulary that commercial construction software simply doesn&apos;t address.
           </p>
           <p>
-            If you&apos;re evaluating AI construction tools for your building operation, start with the three questions above. And if you want to see what purpose-built looks like, Cornerstone PMâ„¢&apos;s beta is open now.
+            If you&apos;re evaluating AI construction tools for your building operation, start with the three questions above. And if you want to see what purpose-built looks like, Cornerstone PM™&apos;s beta is open now.
           </p>
         </div>
 

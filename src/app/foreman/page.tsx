@@ -54,7 +54,7 @@ const skillCategories = [
       { name: "Budget Variance Analysis", detail: "Flag cost overruns across all homes in one command" },
       { name: "Profitability Reports", detail: "Margin analysis by community with upgrade revenue breakdown" },
       { name: "Vendor Performance Analysis", detail: "Bid response rates, win rates, insurance tracking" },
-      { name: "Image Vision & Screenshot Acting", detail: "Paste or drag-drop any screenshot, product photo, floor plan, or supplier page from inside the app — Foreman reads it with AI vision and acts on it (vendor quote screenshot Ã¢â€ â€™ parts catalog entry, faucet photo Ã¢â€ â€™ model lookup, floor plan PDF Ã¢â€ â€™ takeoff trigger)." },
+      { name: "Image Vision & Screenshot Acting", detail: "Paste or drag-drop any screenshot, product photo, floor plan, or supplier page from inside the app — Foreman reads it with AI vision and acts on it (vendor quote screenshot → parts catalog entry, faucet photo → model lookup, floor plan PDF → takeoff trigger)." },
       { name: "File Content Reading", detail: "Analyze uploaded CSVs, text files, and other documents — extract and act on data." },
       { name: "Sales Pipeline Analysis", detail: "Identify stalled deals, avg days per stage, close rate by agent or community" },
       { name: "Design Center Revenue Analysis", detail: "Total upgrade revenue by category, top-selling options, margin by spec level" },

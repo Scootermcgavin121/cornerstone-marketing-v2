@@ -4,9 +4,9 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 export const metadata = {
-  title: "AI for Home Builders | Cornerstone PMâ„¢",
+  title: "AI for Home Builders | Cornerstone PM™",
   description:
-    "Purpose-built AI for home builders. Foreman AI manages your scheduling, purchasing, vendor bids, design center, and sales pipeline â€” in plain English.",
+    "Purpose-built AI for home builders. Foreman AI manages your scheduling, purchasing, vendor bids, design center, and sales pipeline — in plain English.",
 };
 
 const workflows = [
@@ -16,10 +16,10 @@ const workflows = [
     border: "border-violet-500/20",
     bg: "bg-violet-500/10",
     skills: [
-      "Sales pipeline overview â€” all homes by stage, close probability, days in pipeline",
-      "Buyer selections management â€” confirm, reject, or reset design center choices",
-      "Options gap analysis â€” flag incomplete buyer decisions before cutoff",
-      "Design center revenue analysis â€” top-selling options, margin by spec level",
+      "Sales pipeline overview — all homes by stage, close probability, days in pipeline",
+      "Buyer selections management — confirm, reject, or reset design center choices",
+      "Options gap analysis — flag incomplete buyer decisions before cutoff",
+      "Design center revenue analysis — top-selling options, margin by spec level",
       "AI-powered MLS descriptions from real floorplan data",
     ],
   },
@@ -29,11 +29,11 @@ const workflows = [
     border: "border-amber-500/20",
     bg: "bg-amber-500/10",
     skills: [
-      "Spec level profitability â€” compare margin across Good/Better/Best tiers",
-      "Bid request drafting â€” formatted invitations to all vendors in your system",
-      "Bid comparison reports â€” normalize pricing, rank vendors, recommend best value",
-      "SOW generator â€” professional Scope of Work documents with home counts and specs",
-      "Parts catalog management â€” search, create, bulk import from web scraping",
+      "Spec level profitability — compare margin across Good/Better/Best tiers",
+      "Bid request drafting — formatted invitations to all vendors in your system",
+      "Bid comparison reports — normalize pricing, rank vendors, recommend best value",
+      "SOW generator — professional Scope of Work documents with home counts and specs",
+      "Parts catalog management — search, create, bulk import from web scraping",
     ],
   },
   {
@@ -42,11 +42,11 @@ const workflows = [
     border: "border-blue-500/20",
     bg: "bg-blue-500/10",
     skills: [
-      "Budget variance analysis â€” flag cost overruns across all homes in one command",
-      "Home status tracking â€” all IN_PROGRESS homes with budget totals and timelines",
-      "Vendor performance scoring â€” bid response rates, win rates, insurance tracking",
-      "Punch list generator â€” room-by-room QC checklists by trade",
-      "Excel and PDF exports â€” formatted with your company branding",
+      "Budget variance analysis — flag cost overruns across all homes in one command",
+      "Home status tracking — all IN_PROGRESS homes with budget totals and timelines",
+      "Vendor performance scoring — bid response rates, win rates, insurance tracking",
+      "Punch list generator — room-by-room QC checklists by trade",
+      "Excel and PDF exports — formatted with your company branding",
     ],
   },
   {
@@ -55,11 +55,11 @@ const workflows = [
     border: "border-emerald-500/20",
     bg: "bg-emerald-500/10",
     skills: [
-      "Profitability reports â€” margin analysis by community with upgrade revenue breakdown",
-      "Design center summary PDF â€” full selections export with buyer signature line",
-      "Sales stage reports â€” pipeline snapshot by community with next actions",
-      "Room dimension sheets â€” detailed specs for sales team handouts",
-      "MLS listing sheets â€” auto-generated from floorplan data and upgrades",
+      "Profitability reports — margin analysis by community with upgrade revenue breakdown",
+      "Design center summary PDF — full selections export with buyer signature line",
+      "Sales stage reports — pipeline snapshot by community with next actions",
+      "Room dimension sheets — detailed specs for sales team handouts",
+      "MLS listing sheets — auto-generated from floorplan data and upgrades",
     ],
   },
 ];
@@ -91,7 +91,7 @@ const prompts = [
     color: "text-violet-400",
   },
   {
-    prompt: "Generate a design center summary PDF for 1847 Lakeview Drive â€” the buyer needs it for their lender",
+    prompt: "Generate a design center summary PDF for 1847 Lakeview Drive — the buyer needs it for their lender",
     result: "PDF generated with all confirmed selections, category totals, and buyer signature line. Download link provided.",
     color: "text-amber-400",
   },
@@ -108,17 +108,17 @@ export default function AiForHomeBuildersPage() {
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-violet-500/30 bg-violet-500/10 text-violet-400 text-xs font-semibold mb-6">
             <Brain className="w-3.5 h-3.5" />
-            FOREMAN AI Â· 100+ skills Â· PURPOSE-BUILT FOR HOME BUILDERS
+            FOREMAN AI · 100+ skills · PURPOSE-BUILT FOR HOME BUILDERS
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
             AI Built for How{" "}
             <span className="text-violet-400">Home Builders Actually Work</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-6 leading-relaxed">
-            Generic AI tools don&apos;t know what a floorplan is. They don&apos;t know what a spec level means. They don&apos;t understand the difference between a pre-sale workflow and a construction workflow. Foreman AIâ„¢ does.
+            Generic AI tools don&apos;t know what a floorplan is. They don&apos;t know what a spec level means. They don&apos;t understand the difference between a pre-sale workflow and a construction workflow. Foreman AI™ does.
           </p>
           <p className="text-lg text-slate-500 max-w-2xl mx-auto mb-10">
-            Purpose-built AI for home builders â€” managing scheduling, purchasing, vendor bids, design center, and sales pipeline in plain English.
+            Purpose-built AI for home builders — managing scheduling, purchasing, vendor bids, design center, and sales pipeline in plain English.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -195,7 +195,7 @@ export default function AiForHomeBuildersPage() {
               AI skills by builder workflow
             </h2>
             <p className="text-slate-400 max-w-xl mx-auto">
-              Foreman AI understands your entire pipeline â€” from the first buyer conversation to the day you hand over keys.
+              Foreman AI understands your entire pipeline — from the first buyer conversation to the day you hand over keys.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-5">
@@ -258,7 +258,7 @@ export default function AiForHomeBuildersPage() {
             <div className="text-5xl mb-6">ðŸ§ </div>
             <h2 className="text-3xl font-black text-white mb-4">Gets smarter over time.</h2>
             <p className="text-slate-400 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-              Foreman learns how YOU work. Tell it the name you want to be greeted by, your role, your go-to subcontractors for each scope, your margin targets by community, your reporting preferences â€” it remembers everything and gets more intuitive every session. <strong>Custom-coded into Cornerstone, not a generic chatbot bolt-on.</strong> The more you use it, the more it understands your specific business and habits.
+              Foreman learns how YOU work. Tell it the name you want to be greeted by, your role, your go-to subcontractors for each scope, your margin targets by community, your reporting preferences — it remembers everything and gets more intuitive every session. <strong>Custom-coded into Cornerstone, not a generic chatbot bolt-on.</strong> The more you use it, the more it understands your specific business and habits.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {[
@@ -291,7 +291,7 @@ export default function AiForHomeBuildersPage() {
         >
           Get Beta Access <ArrowRight className="w-5 h-5" />
         </Link>
-        <p className="text-slate-600 text-sm mt-4">No credit card required Â· 2 years free Â· Limited to 100 builders</p>
+        <p className="text-slate-600 text-sm mt-4">No credit card required · 2 years free · Limited to 100 builders</p>
       </section>
 
       <Footer />
