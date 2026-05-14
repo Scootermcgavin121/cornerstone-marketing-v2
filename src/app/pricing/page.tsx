@@ -62,7 +62,7 @@ const faqs: FAQItem[] = [
   },
   {
     q: "How does Cornerstone PM\u2122 compare to Buildertrend or JobTread on price?",
-    a: "Buildertrend pricing typically lands at $399 to $499+ per month with per-user fees on top. JobTread starts around $179/mo with similar per-user limits. Cornerstone PM\u2122 Starter is $149/mo, and Pro is $499/mo flat with native AI agents that Buildertrend and JobTread do not include at any tier.",
+    a: "Buildertrend pricing typically lands at $399 to $499+ per month with per-user fees on top. JobTread is $199/mo base + $20/mo per team member (tiered breaks above 10 users). Cornerstone PM\u2122 Starter is $149/mo, and Pro is $499/mo flat with native AI agents that Buildertrend and JobTread do not include at any tier.",
   },
 ];
 

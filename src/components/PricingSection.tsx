@@ -157,8 +157,8 @@ const competitors = [
   },
   {
     name: "JobTread",
-    price: "$179+/mo",
-    note: "No AI. No design center engine.",
+    price: "$199 + $20/user",
+    note: "No AI agents. No design center engine.",
     highlight: false,
   },
 ];

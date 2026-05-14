@@ -45,8 +45,8 @@ import { ChevronDown } from "lucide-react";
    - Implementation time: home-builder-pm page says "operational within
      a week"; newer pricing/migrate pages say "hours" / "an afternoon".
      Resolved as "hours to a day" per the recent positioning shift.
-   - JobTread starting price referenced as ~$179/mo on pricing page -
-     verify externally; kept as-is.
+   - JobTread pricing verified from jobtread.com/pricing on May 13, 2026:
+     $199/mo base + $20/mo per team member, tiered breaks above 10 users.
    - Pro plan home cap referenced as "1,000 active homes" on
      newstar-alternative; not referenced on pricing page. Kept.
 
@@ -791,7 +791,7 @@ const sales: Category = {
 const design: Category = {
   slug: "design-center",
   title: "Design Center & Options",
-  blurb: "Designer packages, structural options, floorplan pricing, ÃƒÂ  la carte, allowances.",
+  blurb: "Designer packages, structural options, floorplan pricing, à la carte, allowances.",
   accent: "text-violet-400",
   items: [
     {
@@ -821,12 +821,12 @@ const design: Category = {
     {
       q: "What are Designer Packages?",
       aText:
-        "64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses), spanning 7 categories. Buyer picks a package and all category options auto-lock to that package; ÃƒÂ  la carte unlocks if the package is removed. Strong differentiator vs spreadsheet-style design centers - and built so a buyer can complete selections in one sitting instead of three.",
+        "64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses), spanning 7 categories. Buyer picks a package and all category options auto-lock to that package; à la carte unlocks if the package is removed. Strong differentiator vs spreadsheet-style design centers - and built so a buyer can complete selections in one sitting instead of three.",
       a: (
         <>
           <strong>64 Designer Packages across 7 categories</strong>, each <em>curated by an actual interior
           designer</em> - the same playbook K. Hovnanian Homes uses to take the guesswork out of design selections.
-          Buyer picks a package and all category options auto-lock to that package; ÃƒÂ  la carte unlocks if the package
+          Buyer picks a package and all category options auto-lock to that package; à la carte unlocks if the package
           is removed. Strong differentiator vs spreadsheet-style design centers - and built so a buyer can complete
           selections in one sitting instead of three.
         </>
@@ -1254,13 +1254,12 @@ const comparisons: Category = {
     {
       q: "Cornerstone PMÃ¢â€žÂ¢ vs JobTread - which is better?",
       aText:
-        "JobTread is built for general contractors and custom builders. Cornerstone PMÃ¢â€žÂ¢ is purpose-built for home builders with native lot management, options engine, design center, and multi-community pipelines JobTread doesn't ship. JobTread starts around $179/mo with per-user limits; Cornerstone is $149/mo with unlimited users.",
+        "JobTread is built for general contractors and custom builders. Cornerstone PMÃ¢â€žÂ¢ is purpose-built for home builders with native lot management, options engine, design center, and multi-community pipelines JobTread doesn't ship. JobTread is $199/mo base + $20/mo per team member (tiered breaks above 10 users); Cornerstone Starter is $149/mo flat with unlimited users.",
       a: (
         <>
           JobTread is built for general contractors and custom builders. Cornerstone PMÃ¢â€žÂ¢ is purpose-built for{" "}
           <strong>home builders</strong> with native lot management, options engine, design center, and
-          multi-community pipelines JobTread doesn't ship. JobTread starts around $179/mo with per-user limits;
-          Cornerstone is $149/mo with unlimited users. See <A href="/blog/jobtread-alternative">/blog/jobtread-alternative</A>.
+          multi-community pipelines JobTread doesn't ship. JobTread is $199/mo base + $20/mo per team member (tiered breaks above 10 users); Cornerstone Starter is $149/mo flat with unlimited users. See <A href="/blog/jobtread-alternative">/blog/jobtread-alternative</A>.
         </>
       ),
     },
