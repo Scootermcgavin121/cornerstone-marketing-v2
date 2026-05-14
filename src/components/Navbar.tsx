@@ -75,13 +75,13 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-24">
-          {/* Logo */}
-          <Link href="/" className="flex items-center group -my-1">
-            <img
-              src="/logo-new.png"
-              alt="Cornerstone PM™"
-              className="h-20 sm:h-24 w-auto object-contain group-hover:opacity-90 transition-opacity duration-200"
-            />
+          {/* Brand link (text-only — icon lives in the footer) */}
+          <Link
+            href="/"
+            className="flex items-center group -my-1 text-2xl sm:text-3xl font-black tracking-tight text-white hover:text-slate-200 transition-colors duration-200"
+          >
+            Cornerstone <span className="text-cyan-400 ml-1.5">PM</span>
+            <span className="text-cyan-400/70 text-xs align-top ml-0.5">™</span>
           </Link>
 
           {/* Desktop links — render at xl+ (1280px) so 10 links don't cram into a 1024 viewport */}

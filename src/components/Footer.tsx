@@ -8,9 +8,13 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-6 gap-8">
           {/* Brand */}
           <div className="md:col-span-2 lg:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
-              <img src="/icon.png" alt="Cornerstone PM™" className="w-12 h-12 object-contain" />
-              <span className="font-bold text-white">
+            <div className="flex flex-col items-start gap-3 mb-4">
+              <img
+                src="/icon.png"
+                alt="Cornerstone PM™"
+                className="w-40 h-40 sm:w-48 sm:h-48 object-contain -ml-2"
+              />
+              <span className="text-2xl font-black text-white tracking-tight">
                 Cornerstone <span className="text-cyan-400">PM</span>
               </span>
             </div>
