@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { ArrowRight, Brain, Zap, Check, Building2, Cpu, FileText } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -137,26 +137,26 @@ export default function AiConstructionManagementPage() {
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="rounded-2xl bg-red-500/5 border border-red-500/20 p-6">
-              <h3 className="text-lg font-bold text-red-400 mb-4">âŒ AI bolted on</h3>
+              <h3 className="text-lg font-bold text-red-400 mb-4">❌ AI bolted on</h3>
               <ul className="space-y-3 text-slate-400 text-sm">
                 <li className="flex items-start gap-2">
-                  <span className="text-red-500 mt-0.5">Ã—</span>
+                  <span className="text-red-500 mt-0.5">×</span>
                   Generic AI assistant with no access to your data
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-red-500 mt-0.5">Ã—</span>
+                  <span className="text-red-500 mt-0.5">×</span>
                   Has to be re-trained every session on who you are
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-red-500 mt-0.5">Ã—</span>
+                  <span className="text-red-500 mt-0.5">×</span>
                   Can&apos;t create a PO, update a home status, or generate a real document
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-red-500 mt-0.5">Ã—</span>
+                  <span className="text-red-500 mt-0.5">×</span>
                   Doesn&apos;t know your vendors, floorplans, or communities
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-red-500 mt-0.5">Ã—</span>
+                  <span className="text-red-500 mt-0.5">×</span>
                   &ldquo;Smart Gantt chart&rdquo; that still requires manual updates
                 </li>
               </ul>

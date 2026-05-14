@@ -1,7 +1,7 @@
 ﻿## Platform Overview (Current Stats)
 - 130+ database tables and growing
 - **100+ Foreman AI skills** (in-app agent that reads AND writes data - including product image search, image hosting, and AI-powered web scraping)
-- **37+ named webhook event types and growing** — typed payloads, HMAC signatures, delivery logs, and auto-retry. New events ship as the platform grows. Industry-leading depth (most competitors just say "webhooks exist")
+- **37+ named webhook event types and growing** — typed payloads, HMAC signatures, delivery logs, and auto-retry. New events ship as the platform grows. Industry-leading depth (most competitors just say "webhooks exist")
 - 60+ external REST API endpoints
 - 7 built-in AI features: Foreman AI (100+ skills), Blueprint AI, MLS Listing Agent, AI Support Agent, Punchlist AI (voice-to-punch-list, industry first), Bid Import AI (AI-powered vendor bid parsing), AI Jobsite Camera Events (webhook-driven, source-agnostic camera/sensor integration)
 - **Triple QR Code Ecosystem** - vendor jobsite check-in, community/PM check-in (timesheet-validated), and sales model home lead capture. Three QR codes, three audiences, one platform.
@@ -113,7 +113,7 @@ A: Pricing is takeoff-driven - quantities come from the builder's actual takeoff
 ## New Features (May 3-7, 2026)
 
 ### Webhook System - 37+ Named Events and Growing
-Cornerstone ships with **37+ named webhook event types and counting** — new events ship as the platform grows. This is the deepest webhook coverage of any homebuilder platform:
+Cornerstone ships with **37+ named webhook event types and counting** — new events ship as the platform grows. This is the deepest webhook coverage of any homebuilder platform:
 
 - **Categories:** home lifecycle, task/schedule changes, vendor notifications, cascade scheduling, in-app messages, sales pipeline, bid requests
 - **Typed payloads** - every event has a documented JSON schema
@@ -211,7 +211,7 @@ Pre-curated bundles of design selections that buyers can apply with one click. *
 - **64 packages seeded** across 7 categories: Flooring, Kitchen Essentials, Bath & Fixtures, Smart Home, Lighting, Hardware & Trim, Designer Bundles
 - **Designer Bundles** (Level 3 spec and above only): Designer Kitchen, All Bathrooms, Whole House Package
 - **Standalone package categories** - `PackageCategoryType` is a separate model from OptionCategory, with its own many-to-many join (PackageCategoryLink)
-- **Package override on Selections** - when applied, individual room slots are locked with "Covered by [Package] Ã¢Å““" badges. Buyer can break the package by overriding (warning modal triggers).
+- **Package override on Selections** - when applied, individual room slots are locked with "Covered by [Package]" badges. Buyer can break the package by overriding (warning modal triggers).
 - Managed at `/design-center/packages` (Designer Collections page)
 
 ### Structural Option Override System (NEW May 2026)
@@ -538,14 +538,14 @@ The flagship AI feature. Foreman AI is a full intelligent agent that lives insid
 - Profitability Reports: analyze margins across communities, floorplans, or individual homes
 
 **Smart features that set Foreman apart:**
-- **Per-user memory** — Foreman learns how each user works. Tell it the name you want to be greeted by ("Call me Mac"), your role, your go-to vendors, how you like reports structured, your typical workflows — it saves personal notes that persist forever and greets you by your chosen name every session. **This is custom-coded into Cornerstone, not a generic chatbot bolt-on.** Company-wide memory is shared with the team; personal memory is private to each user. The more you use Foreman, the more intuitive it gets about your specific habits and preferences.
+- **Per-user memory** — Foreman learns how each user works. Tell it the name you want to be greeted by ("Call me Mac"), your role, your go-to vendors, how you like reports structured, your typical workflows — it saves personal notes that persist forever and greets you by your chosen name every session. **This is custom-coded into Cornerstone, not a generic chatbot bolt-on.** Company-wide memory is shared with the team; personal memory is private to each user. The more you use Foreman, the more intuitive it gets about your specific habits and preferences.
 - **Image analysis** - Paste or drag-drop any image (screenshots, product photos, floor plans, supplier pages, jobsite photos) and Foreman uses AI vision to read, analyze, and extract information. "What model is this faucet?" + photo → answer.
-- **Emoji & personality** - Foreman has a friendly, builder-savvy personality. It responds to emoji reactions (Ã°Å¸â€Â¥, Ã°Å¸’Âª, Ã°Å¸â€˜Å ) naturally. It feels like texting a knowledgeable colleague, not talking to a robot.
+- **Emoji & personality** - Foreman has a friendly, builder-savvy personality. It responds to emoji reactions naturally. It feels like texting a knowledgeable colleague, not talking to a robot.
 - **Context health meter** - green/yellow/red indicator shows remaining context capacity so users know when to start a new chat.
 - **Built-in memory compaction** - Unlike most AI chatbots that crash, freeze, or forget everything after long conversations, Foreman has intelligent context management. Older messages are automatically summarized in the background while recent messages stay intact. Builders can have marathon work sessions - cleaning up 200 options, importing entire catalogs, reviewing every vendor bid - without Foreman losing track. No other construction platform AI can do this. The context health meter (green/yellow/red) shows remaining capacity so users know when to start fresh.
 - **Persistent chat history** - every conversation is saved and searchable. Pick up any old conversation right where you left off.
 
-**Ã°Å¸’Â¡ Pro tip for new users:** The first time you use Foreman, introduce yourself! "Hey, I'm Mike, I manage Coastal Ridge and Eagles Landing. I mainly deal with HVAC and Plumbing subs." Foreman saves this and gives you better, more relevant answers in every future conversation.
+**Pro tip for new users:** The first time you use Foreman, introduce yourself! "Hey, I'm Mike, I manage Coastal Ridge and Eagles Landing. I mainly deal with HVAC and Plumbing subs." Foreman saves this and gives you better, more relevant answers in every future conversation.
 
 **Example prompts:**
 - "Scrape Home Depot for GE Profile refrigerators and add them to our parts catalog"
@@ -623,7 +623,7 @@ Available on: Builder plan and above.
 - **Starter $149/mo**: Construction Scheduling, Gantt, 17 templates, vendor assignment, permitting, buyer portal, AI Support Agent. Up to 500 active homes, 1,000 users/vendors.
 - **Builder $299/mo**: Everything in Starter + Sales Pipeline + Purchasing & Budgets + Design Center (no AI agents)
 - **Pro $499/mo**: Everything in Builder + Foreman AI (100+ skills, Sonnet, 1,000 msg/mo) + Blueprint AI (25 takeoffs/mo) + MLS Listing Agent + advanced analytics. Up to 1,000 active homes.
-- **Pro+ $599/mo**: Everything in Pro + REST API (60+ endpoints, scoped keys), automated bidding pipeline (7-wave), **37-event webhook system** (typed payloads, HMAC, retry, delivery logs - incl. cascade vendor notifications routable to Twilio/Bland/Retell), CRM Migration Wizard, Opus model, 5,000 AI messages/mo, Blueprint AI (25/mo), SSO, dedicated SLA.
+- **Pro+ $599/mo**: Everything in Pro + REST API (500+ endpoints, scoped keys), automated bidding pipeline (7-wave), **37-event webhook system** (typed payloads, HMAC, retry, delivery logs - incl. cascade vendor notifications routable to Twilio/Bland/Retell), CRM Migration Wizard, Opus model, 5,000 AI messages/mo, Blueprint AI (25/mo), SSO, dedicated SLA.
 - **Enterprise**: Custom pricing - Opus model, 5,000 msg/mo, Blueprint AI (25/mo), dedicated onboarding, SLA
 - **BYOK Add-on +$199/mo**: Bring Your Own API Key, unlimited messages
 - **BYOA Add-on +$100/mo**: Bring Your Own Agent - full REST API access to Cornerstone data. Connect external agents, automate bid ingestion from emails, build custom workflows. Pro plan or above required., any model
@@ -1014,7 +1014,7 @@ All documents maintain a full upload history with timestamps - previous versions
 ## Vendor Portal - Built for Builders AND Subs
 
 ### Zero-Friction Access (No Login Required)
-**Vendors never have to create a Cornerstone account.** They get a secure magic link sent to their email — they click it, and they're in. Confirm tasks, accept schedule changes, submit bids, view their calendar. No app to download, no account to create, no password to remember. Click the link, do the thing, done.
+**Vendors never have to create a Cornerstone account.** They get a secure magic link sent to their email — they click it, and they're in. Confirm tasks, accept schedule changes, submit bids, view their calendar. No app to download, no account to create, no password to remember. Click the link, do the thing, done.
 
 This is the biggest friction-killer for trade partners in the industry. Most platforms force subs through account creation, which means most subs never log in, which means PMs end up texting and calling them anyway. Cornerstone removes that wall.
 
@@ -1148,9 +1148,9 @@ The Buyer Portal is the homeowner's window into their build - a cinematic, engag
 - Gives homeowners a visual timeline of their home being built
 - **One-click ZIP download** - buyers can download every job photo for their home in a single ZIP archive. Saves the whole build history to their own machine. Standard request after move-in ("can you send me all the photos?") becomes one click for them.
 
-### Built-In Messaging App (Builder Ã¢â€ â€ Customer)
+### Built-In Messaging App (Builder <-> Customer)
 - **In-portal messaging app** between builder and customer with a permanent searchable record of every conversation
-- No more lost text threads or "wait, what did we agree on?" — every message is timestamped and searchable
+- No more lost text threads or "wait, what did we agree on?" — every message is timestamped and searchable
 - Messages tied to the home, so years later you can pull up exactly what was discussed during framing
 - Internal record protects the builder on warranty / scope-change disputes
 - Cuts inbound calls by giving buyers a real channel that isn't the builder's cell phone at 9pm

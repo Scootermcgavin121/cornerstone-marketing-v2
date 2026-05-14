@@ -11,7 +11,7 @@ const heroImageAlt =
 
 export const metadata: Metadata = {
   title:
-    "BuildPro vs Cornerstone PM™: Why Production Builders Are Modernizing — Cornerstone PM™ Blog",
+    "BuildPro vs Cornerstone PM™: Why Production Builders Are Modernizing — Cornerstone PM™ Blog",
   description:
     "BuildPro vs Cornerstone PM™: how the modern web-native stack compares to BuildPro for small-to-mid production home builders.",
   alternates: {
@@ -86,7 +86,7 @@ export default function BuildproVsCornerstonePage() {
           <p className="text-xl text-slate-300 font-light">
             BuildPro is a Windows-based home builder platform built for an era when Citrix was
             infrastructure and mobile access meant a laptop in a job trailer. Cornerstone PM™ is a
-            web-native platform built for the way production builders operate today — from a phone
+            web-native platform built for the way production builders operate today — from a phone
             at the lot, a tablet in the design center, or a browser at the kitchen table at 10 PM.
           </p>
 
@@ -120,8 +120,8 @@ export default function BuildproVsCornerstonePage() {
             remount a VPN to look up a buyer&apos;s option selections during a design appointment.
           </p>
           <p>
-            Cornerstone PM™ is a standard web app. It works in any modern browser on any device —
-            desktop, tablet, iPhone, Android — with no client software, no VPN, and no IT
+            Cornerstone PM™ is a standard web app. It works in any modern browser on any device —
+            desktop, tablet, iPhone, Android — with no client software, no VPN, and no IT
             configuration required. That&apos;s not a marketing bullet; it&apos;s a meaningful
             operational difference for small-to-mid production builders.
           </p>
@@ -141,7 +141,7 @@ export default function BuildproVsCornerstonePage() {
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
             <li>
-              <strong className="text-white">Blueprint AI</strong> — parses a floor plan PDF and
+              <strong className="text-white">Blueprint AI</strong> — parses a floor plan PDF and
               extracts 130+ material scopes in under 60 seconds.{" "}
               <Link
                 href="/ai-takeoff"
@@ -151,7 +151,7 @@ export default function BuildproVsCornerstonePage() {
               </Link>
             </li>
             <li>
-              <strong className="text-white">Foreman AI™</strong> — a 100-skill agent that reads
+              <strong className="text-white">Foreman AI™</strong> — a 100-skill agent that reads
               and writes data in your account. Pulls schedule summaries, generates SOWs, compares
               bids, creates punch lists, and more.{" "}
               <Link
@@ -162,15 +162,15 @@ export default function BuildproVsCornerstonePage() {
               </Link>
             </li>
             <li>
-              <strong className="text-white">Bid Import AI</strong> — parses vendor bid documents
+              <strong className="text-white">Bid Import AI</strong> — parses vendor bid documents
               (PDF, Excel, CSV) and maps line items to your scope structure.
             </li>
             <li>
-              <strong className="text-white">AI MLS Listing Generator</strong> — generates
+              <strong className="text-white">AI MLS Listing Generator</strong> — generates
               buyer-ready MLS copy from lot and option data.
             </li>
             <li>
-              <strong className="text-white">AI Support Agent</strong> — answers product questions
+              <strong className="text-white">AI Support Agent</strong> — answers product questions
               in-app without opening a support ticket.
             </li>
           </ul>
@@ -184,20 +184,20 @@ export default function BuildproVsCornerstonePage() {
             How does the API compare?
           </h2>
           <p>
-            BuildPro offers enterprise integrations — primarily with major ERP and accounting
-            systems — through its parent company&apos;s ecosystem. What it does not ship is a
+            BuildPro offers enterprise integrations — primarily with major ERP and accounting
+            systems — through its parent company&apos;s ecosystem. What it does not ship is a
             documented public REST API that your team or a developer can call independently.
           </p>
           <p>
-            Cornerstone PM™ ships a public REST API with full documentation. Every core entity —
-            schedules, vendors, lots, communities, options, bids — is accessible and modifiable
+            Cornerstone PM™ ships a public REST API with full documentation. Every core entity —
+            schedules, vendors, lots, communities, options, bids — is accessible and modifiable
             via API. The platform also supports 37+ named webhook events (catalog growing) with typed payloads and
             HMAC signatures, so you can wire in your own tools (SMS, voice, reporting dashboards)
             without waiting on a vendor integration roadmap.
           </p>
           <p>
-            For builders who want to automate or extend their workflow — even something as simple
-            as texting a sub when their task goes active — the open API makes that straightforward.
+            For builders who want to automate or extend their workflow — even something as simple
+            as texting a sub when their task goes active — the open API makes that straightforward.
             On a closed desktop platform, it&apos;s either not possible or requires a custom
             enterprise integration project.
           </p>
@@ -219,8 +219,8 @@ export default function BuildproVsCornerstonePage() {
             </li>
             <li>
               <strong className="text-white">Vendor bidding</strong>: Cornerstone&apos;s full bid
-              workflow — bid requests, auto-generated Excel templates, no-login vendor portal,
-              side-by-side comparison, lock-after-acceptance — is absent in BuildPro.
+              workflow — bid requests, auto-generated Excel templates, no-login vendor portal,
+              side-by-side comparison, lock-after-acceptance — is absent in BuildPro.
             </li>
             <li>
               <strong className="text-white">AI takeoff</strong>: No equivalent in BuildPro. On
@@ -244,7 +244,7 @@ export default function BuildproVsCornerstonePage() {
             and a dedicated IT team, BuildPro is a known quantity with enterprise support to match.
           </p>
           <p>
-            If you&apos;re a small-to-mid builder — 5 to 200 homes per year — the infrastructure
+            If you&apos;re a small-to-mid builder — 5 to 200 homes per year — the infrastructure
             overhead, the lack of native AI, and the closed API are increasingly hard to justify
             when the alternative is a web-native platform that works from any device and ships
             built-in AI agents that change the unit economics of estimating and purchasing.
@@ -276,7 +276,7 @@ export default function BuildproVsCornerstonePage() {
             See the modern stack in action.
           </h3>
           <p className="text-slate-400 text-sm mb-4">
-            Cornerstone PM™ is in free beta. Two years free for early adopters — web-native, mobile-ready,
+            Cornerstone PM™ is in free beta. Two years free for early adopters — web-native, mobile-ready,
             AI built in, no IT infrastructure required.
           </p>
           <Link

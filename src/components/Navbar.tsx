@@ -1,11 +1,11 @@
-"use client";
+﻿"use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 
-// Top-nav links — full set. whitespace-nowrap on each link prevents
+// Top-nav links — full set. whitespace-nowrap on each link prevents
 // mid-word breaks; xl breakpoint (1280px) avoids cramping at smaller widths.
 const navLinks = [
   { label: "Home", href: "/", hasDropdown: false },
@@ -34,23 +34,23 @@ const featureLinks = [
   { label: "Buyer Portal", href: "/features#portal", desc: "Milestone journey, photo gallery" },
 ];
 
-// AI features (right column of dropdown — all violet, grouped together)
+// AI features (right column of dropdown — all violet, grouped together)
 const aiLinks = [
-  { label: "Ã¢Å“Â¨ AI Agents Overview", href: "/ai-agents", desc: "Five AI agents built for builders" },
-  { label: "Ã°Å¸Â¤– Foreman AI™", href: "/foreman", desc: "100-skill AI agent, natural language commands" },
-  { label: "Ã¢Å¡Â¡ AI Blueprint Takeoff", href: "/ai-takeoff", desc: "Upload PDF — instant material takeoff" },
-  { label: "Ã°Å¸Â§Â  Bid Import AI", href: "/bid-import-ai", desc: "Upload any vendor bid — AI extracts every line item" },
-  { label: "Ã°Å¸“â€¹ Punchlist AI · New", href: "/punchlist-ai", desc: "Walk the house — AI builds the punch list from the video" },
-  { label: "Ã°Å¸“â€ž AI MLS Listing Generator", href: "/listing-sheet", desc: "AI-written MLS listings from live project data" },
-  { label: "Ã°Å¸’Â¬ AI Support Agent", href: "/support-ai", desc: "Always-on help desk, every feature & workflow" },
-  { label: "Ã°Å¸“Â¦ CRM Migration Wizard · Live in Beta", href: "/migrate", desc: "Drop your Buildertrend / JobTread export — AI maps every column" },
-  { label: "Ã°Å¸â€Å’ Bring Your Own AI Agent", href: "/api-access", desc: "REST API + webhooks — plug Claude, GPT, or your own agent into Cornerstone" },
+  { label: "AI Agents Overview", href: "/ai-agents", desc: "Five AI agents built for builders" },
+  { label: "Foreman AI™", href: "/foreman", desc: "100-skill AI agent, natural language commands" },
+  { label: "AI Blueprint Takeoff", href: "/ai-takeoff", desc: "Upload PDF — instant material takeoff" },
+  { label: "Bid Import AI", href: "/bid-import-ai", desc: "Upload any vendor bid — AI extracts every line item" },
+  { label: "Punchlist AI · New", href: "/punchlist-ai", desc: "Walk the house — AI builds the punch list from the video" },
+  { label: "AI MLS Listing Generator", href: "/listing-sheet", desc: "AI-written MLS listings from live project data" },
+  { label: "AI Support Agent", href: "/support-ai", desc: "Always-on help desk, every feature & workflow" },
+  { label: "CRM Migration Wizard · Live in Beta", href: "/migrate", desc: "Drop your Buildertrend / JobTread export — AI maps every column" },
+  { label: "Bring Your Own AI Agent", href: "/api-access", desc: "REST API + webhooks — plug Claude, GPT, or your own agent into Cornerstone" },
 ];
 
 // Developer tools (bottom section)
 const devLinks = [
-  { label: "Ã¢Å¡™Ã¯Â¸Â API Access (BYOA)", href: "/api-access", desc: "REST API for AI agents — automate bidding pipeline" },
-  { label: "Ã°Å¸“Å¡ API Docs", href: "/api-docs", desc: "Full endpoint reference, webhooks, code examples" },
+  { label: "API Access (BYOA)", href: "/api-access", desc: "REST API for AI agents — automate bidding pipeline" },
+  { label: "API Docs", href: "/api-docs", desc: "Full endpoint reference, webhooks, code examples" },
 ];
 
 export function Navbar() {
@@ -84,7 +84,7 @@ export function Navbar() {
             <span className="text-cyan-400/70 text-xs align-top ml-0.5">™</span>
           </Link>
 
-          {/* Desktop links — render at xl+ (1280px) so 10 links don't cram into a 1024 viewport */}
+          {/* Desktop links — render at xl+ (1280px) so 10 links don't cram into a 1024 viewport */}
           <div className="hidden xl:flex items-center space-x-1">
             {navLinks.map((link) => (
               <div key={link.href} className="relative group">
@@ -141,7 +141,7 @@ export function Navbar() {
             ))}
           </div>
 
-          {/* CTA — same xl breakpoint as desktop links */}
+          {/* CTA — same xl breakpoint as desktop links */}
           <div className="hidden xl:flex items-center space-x-3">
             <Link
               href="https://app.cornerstonepm.ai/login"
@@ -158,7 +158,7 @@ export function Navbar() {
             </Link>
           </div>
 
-          {/* Mobile/tablet hamburger — shows below xl breakpoint */}
+          {/* Mobile/tablet hamburger — shows below xl breakpoint */}
           <button
             className="xl:hidden p-2 text-slate-400 hover:text-white"
             onClick={() => setMobileOpen(!mobileOpen)}

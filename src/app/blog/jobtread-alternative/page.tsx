@@ -179,7 +179,7 @@ export default function JobtreadAlternativePost() {
               "Flat-rate pricing that doesn&apos;t charge per seat",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3">
-                <span className="text-amber-400 font-bold flex-shrink-0 mt-0.5">&mdash;Ã¢â‚¬Â Ã¢â‚¬™</span>
+                <span className="text-amber-400 font-bold flex-shrink-0 mt-0.5">✓</span>
                 <span>{item}</span>
               </li>
             ))}

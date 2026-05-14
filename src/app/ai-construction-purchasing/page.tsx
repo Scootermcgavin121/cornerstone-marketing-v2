@@ -336,7 +336,7 @@ export default function AiConstructionPurchasingPage() {
             {[
               { emoji: "ðŸ“ž", title: "Call a vendor to get their email", desc: "Your voice agent calls a roofing company, gets their contact info, and Cornerstone adds them as a vendor automatically. Zero manual entry." },
               { emoji: "ðŸ“§", title: "Scan your inbox for bid replies", desc: "An email agent reads incoming vendor emails, extracts bid data, and logs it in Cornerstone — no one touches the keyboard." },
-              { emoji: "ðŸ—ï¸", title: "Solicit bids by phone", desc: "Voice agent calls your vendor list, explains the scope, and directs them to your bid portal. 200+ vendors contacted in an afternoon." },
+              { emoji: "ðŸ—ï¸", title: "Solicit bids by phone", desc: "Voice agent calls your vendor list, explains the scope, and directs them to your bid portal. 200+ vendors contacted in an afternoon." },
               { emoji: "âœ…", title: "Auto-generate POs on task completion", desc: "Agent monitors task completions and triggers PO generation automatically — the schedule drives purchasing without you in the loop." },
               { emoji: "ðŸ“±", title: "Follow up on overdue tasks", desc: "Agent calls the framer who hasn&apos;t confirmed their schedule date. Records the outcome. Updates the task status." },
               { emoji: "ðŸ”Œ", title: "Connect any framework", desc: "Claude, GPT-4, LangChain, custom-built — if it can make an HTTP request, it can act on your Cornerstone data." },

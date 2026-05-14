@@ -54,8 +54,8 @@ const skillCategories = [
       { name: "Budget Variance Analysis", detail: "Flag cost overruns across all homes in one command" },
       { name: "Profitability Reports", detail: "Margin analysis by community with upgrade revenue breakdown" },
       { name: "Vendor Performance Analysis", detail: "Bid response rates, win rates, insurance tracking" },
-      { name: "Image Vision & Screenshot Acting", detail: "Paste or drag-drop any screenshot, product photo, floor plan, or supplier page from inside the app — Foreman reads it with AI vision and acts on it (vendor quote screenshot → parts catalog entry, faucet photo → model lookup, floor plan PDF → takeoff trigger)." },
-      { name: "File Content Reading", detail: "Analyze uploaded CSVs, text files, and other documents — extract and act on data." },
+      { name: "Image Vision & Screenshot Acting", detail: "Paste or drag-drop any screenshot, product photo, floor plan, or supplier page from inside the app — Foreman reads it with AI vision and acts on it (vendor quote screenshot → parts catalog entry, faucet photo → model lookup, floor plan PDF → takeoff trigger)." },
+      { name: "File Content Reading", detail: "Analyze uploaded CSVs, text files, and other documents — extract and act on data." },
       { name: "Sales Pipeline Analysis", detail: "Identify stalled deals, avg days per stage, close rate by agent or community" },
       { name: "Design Center Revenue Analysis", detail: "Total upgrade revenue by category, top-selling options, margin by spec level" },
       { name: "Buyer Selections Report", detail: "Full selections summary for any home - what was chosen, confirmed, and at what price" },
@@ -202,8 +202,8 @@ export default function ForemanPage() {
               One prompt. Foreman searches the web, downloads the official Samsung product photo, saves it to your server, and attaches it to the right Design Options entry. Zero clicks of yours.
             </p>
             <p className="text-slate-500 text-xs max-w-2xl mx-auto mt-3">
-              Works the other direction too: paste or drag-drop <em>any screenshot</em> from inside the app — a vendor
-              quote, a supplier product page, a faucet photo, a floor plan PDF — and Foreman reads it with AI vision
+              Works the other direction too: paste or drag-drop <em>any screenshot</em> from inside the app — a vendor
+              quote, a supplier product page, a faucet photo, a floor plan PDF — and Foreman reads it with AI vision
               and acts on it (creates the part, updates the option, answers the question).
             </p>
           </div>

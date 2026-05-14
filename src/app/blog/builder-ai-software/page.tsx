@@ -143,7 +143,7 @@ export default function BuilderAiSoftwarePost() {
                     <p className="text-white font-medium italic text-sm">&ldquo;{ex.prompt}&rdquo;</p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="font-black text-sm leading-none flex-shrink-0 mt-0.5">Ã°Å¸Âª–</span>
+                    <span className="font-black text-sm leading-none flex-shrink-0 mt-0.5">🤖</span>
                     <p className="text-slate-300 text-sm">{ex.result}</p>
                   </div>
                 </div>

@@ -99,32 +99,32 @@ export default function AiSchedulingPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
               {
-                icon: "Ã°Å¸“Â±",
+                icon: "📱",
                 title: "Scheduling by text",
                 desc: "You text the framer. He reads it Thursday. Foundation was ready Monday. Three days of idle time.",
               },
               {
-                icon: "Ã°Å¸“Å ",
+                icon: "📊",
                 title: "Spreadsheet blind spots",
                 desc: "Your Excel schedule doesn&apos;t know when your drywaller is already booked at another site. You find out when he doesn&apos;t show.",
               },
               {
-                icon: "Ã°Å¸â€Â",
+                icon: "🔍",
                 title: "No accountability layer",
                 desc: "When a sub falls behind, there&apos;s no record. No paper trail. Just he-said-she-said when the close date slips.",
               },
               {
-                icon: "Ã°Å¸ÂÅ¡Ã¯Â¸Â",
+                icon: "⚠️",
                 title: "Cascade delays",
                 desc: "One trade runs late and the next three have to reschedule. You don&apos;t know it happened until the inspector shows up.",
               },
               {
-                icon: "Ã°Å¸â€Â",
+                icon: "🏘️",
                 title: "No community-level view",
                 desc: "You can see one home at a time. You can&apos;t see that 4 homes in the same community are all stuck at the same stage.",
               },
               {
-                icon: "Ã°Å¸“Å¾",
+                icon: "⏰",
                 title: "Status updates take an hour",
                 desc: "A buyer calls for an update. You spend 20 minutes looking through texts and spreadsheets before you can answer.",
               },
@@ -242,7 +242,7 @@ export default function AiSchedulingPage() {
                     <p className="text-white font-medium italic">&ldquo;{ex.prompt}&rdquo;</p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="font-black text-sm leading-none flex-shrink-0 mt-0.5">Ã°Å¸Âª–</span>
+                    <span className="font-black text-sm leading-none flex-shrink-0 mt-0.5">🤖</span>
                     <p className="text-slate-300 text-sm">{ex.result}</p>
                   </div>
                 </div>

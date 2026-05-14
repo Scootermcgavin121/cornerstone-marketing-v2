@@ -21,7 +21,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Packages curated by an actual interior designer - the same playbook K. Hovnanian Homes uses. Residential buyer selections - not a Procore feature. Cornerstone Builder+." },
   { feature: "37+ named webhook events (catalog growing)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+ ($599/mo): 37+ named events and counting - HMAC signatures, delivery logs. New events ship as the platform grows. Procore has webhooks but limited residential-specific events." },
   { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): wire Claude or ChatGPT to live data via REST API + 37+ named webhook events. Procore has no BYOA support." },
-  { feature: "Public REST API (60+ endpoints, growing)", cornerstone: true, competitor: true, note: "Both offer REST APIs. Cornerstone Pro+: purpose-built for residential workflows (60+ endpoints and growing rapidly). Procore's is commercial-focused." },
+  { feature: "Public REST API (500+ endpoints, growing)", cornerstone: true, competitor: true, note: "Both offer REST APIs. Cornerstone Pro+: purpose-built for residential workflows (500+ endpoints and growing rapidly). Procore's is commercial-focused." },
   { feature: "AI Migration Wizard", cornerstone: true, competitor: false, note: "AI auto-detects column mapping and runs 23 import endpoints. ~$0.01 per migration." },
   { feature: "Take your data with you anytime — no lock-in", cornerstone: true, competitor: "limited", note: "Cornerstone: one-click CSV/JSON export anytime, $0, no support ticket, plus nightly 7-day rolling auto-backups for instant rollback. Leave with every vendor, home, schedule, option, and budget line. Procore: data portability limited without custom extraction." },
   { feature: "Vendor portal — no login required (email magic links)", cornerstone: true, competitor: false, note: "Vendors confirm tasks, accept schedule changes, and submit bids — all via secure magic links sent straight to their email. No app to download, no account to create, no password to remember. Click the link, do the thing, done. Biggest friction-killer for trade partners in the industry." },
@@ -34,7 +34,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Construction scheduling", cornerstone: true, competitor: true, note: "Both ship scheduling. Procore's scheduler is commercial-focused." },
   { feature: "RFIs / Submittals", cornerstone: false, competitor: true, note: "Procore excels at commercial RFI and submittal workflows - not a residential home builder need." },
   { feature: "Pricing model", cornerstone: "Flat — up to 30 users (60 on Pro+)", competitor: "Custom quote + implementation", note: "Procore doesn't publish pricing and requires implementation packages. Cornerstone starts at $149/mo, self-serve, zero implementation cost. More importantly: Procore is a commercial construction platform — it doesn't ship a residential options engine, buyer design center, designer packages, or pre-sale pipeline at any price." },
-  { feature: "Cornerstone tiers (flat — up to 30 users · 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "—", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 37+ named webhook events, 7-wave bidding." },
+  { feature: "Cornerstone tiers (flat — up to 30 users • 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "—", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 37+ named webhook events, 7-wave bidding." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
@@ -62,7 +62,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Does Cornerstone PM™ have a public API like Procore?",
-    a: "Yes. Cornerstone PM™'s REST API (Pro+ plan, $599/mo): 60+ endpoints and growing rapidly, 37+ named webhook events (catalog growing), HMAC signatures, scoped Bearer-token auth, and public documentation - oriented toward residential: floorplans, options, lot management, buyer selections, bid requests, vendor assignments. Procore also has an API, but it's oriented toward commercial construction workflows.",
+    a: "Yes. Cornerstone PM™'s REST API (Pro+ plan, $599/mo): 500+ endpoints and growing rapidly, 37+ named webhook events (catalog growing), HMAC signatures, scoped Bearer-token auth, and public documentation - oriented toward residential: floorplans, options, lot management, buyer selections, bid requests, vendor assignments. Procore also has an API, but it's oriented toward commercial construction workflows.",
   },
   {
     q: "What does Procore have that Cornerstone PM™ doesn't?",

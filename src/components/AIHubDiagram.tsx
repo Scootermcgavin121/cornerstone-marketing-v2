@@ -47,7 +47,7 @@ const AGENTS: Agent[] = [
     id: "foreman",
     name: "Foreman AI™",
     tagline: "Your AI Construction Agent",
-    description: "“Find microwave images online and upload them to the option photos.â€ — Foreman searches the web, downloads, and updates Design Center automatically.",
+    description: "“Find microwave images online and upload them to the option photos.” — Foreman searches the web, downloads, and updates Design Center automatically.",
     href: "/foreman",
     color: "text-cyan-300",
     bg: "bg-cyan-500/15",
