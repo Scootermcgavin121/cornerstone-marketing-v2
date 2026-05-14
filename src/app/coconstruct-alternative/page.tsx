@@ -1,4 +1,4 @@
-import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
+﻿import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
 import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageTemplate";
 import type { FAQItem } from "@/components/FAQSection";
 
@@ -17,7 +17,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "AI image search, vision & anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, hosts them on CDN, reads Home Depot/Ferguson product pages with AI-powered web scraping. Plus: paste or drag-drop any screenshot from inside the app and Foreman reads it with AI vision and acts on it. Cornerstone Pro feature." },
   { feature: "30+ named webhook events (catalog growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): 30+ named events and counting -- typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. Buildertrend webhooks are limited and have no public event catalog." },
   { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): wire Claude or ChatGPT to live builder data via public REST API + 30+ named webhook events (catalog growing). Buildertrend has no BYOA support." },
-  { feature: "Public REST API (59+ endpoints, growing)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+: 59+ endpoints and growing rapidly, public docs. New endpoints ship as the platform grows. Buildertrend: enterprise API only." },
+  { feature: "Public REST API (60+ endpoints, growing)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+: 60+ endpoints and growing rapidly, public docs. New endpoints ship as the platform grows. Buildertrend: enterprise API only." },
   { feature: "Structural options engine", cornerstone: true, competitor: false, note: "Pre-sale options pricing matrix per floorplan - Cornerstone Builder ($299/mo)." },
   { feature: "Designer Packages (64 curated, 7 categories)", cornerstone: true, competitor: false, note: "Buyers pick a package; all category options lock automatically. Cornerstone Builder+." },
   { feature: "AI Migration Wizard (one-click CRM import)", cornerstone: true, competitor: false, note: "AI auto-detects CoConstruct/Buildertrend export column mapping and runs 23 import endpoints. ~$0.01 per migration." },

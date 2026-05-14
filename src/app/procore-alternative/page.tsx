@@ -1,4 +1,4 @@
-import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
+﻿import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
 import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageTemplate";
 import type { FAQItem } from "@/components/FAQSection";
 
@@ -21,7 +21,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Packages curated by an actual interior designer - the same playbook K. Hovnanian Homes uses. Residential buyer selections - not a Procore feature. Cornerstone Builder+." },
   { feature: "30+ named webhook events (catalog growing)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+ ($599/mo): 30+ named events and counting - HMAC signatures, delivery logs. New events ship as the platform grows. Procore has webhooks but limited residential-specific events." },
   { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): wire Claude or ChatGPT to live data via REST API + 30+ named webhook events. Procore has no BYOA support." },
-  { feature: "Public REST API (59+ endpoints, growing)", cornerstone: true, competitor: true, note: "Both offer REST APIs. Cornerstone Pro+: purpose-built for residential workflows (59+ endpoints and growing rapidly). Procore's is commercial-focused." },
+  { feature: "Public REST API (60+ endpoints, growing)", cornerstone: true, competitor: true, note: "Both offer REST APIs. Cornerstone Pro+: purpose-built for residential workflows (60+ endpoints and growing rapidly). Procore's is commercial-focused." },
   { feature: "AI Migration Wizard", cornerstone: true, competitor: false, note: "AI auto-detects column mapping and runs 23 import endpoints. ~$0.01 per migration." },
   { feature: "Take your data with you anytime — no lock-in", cornerstone: true, competitor: "limited", note: "Cornerstone: one-click CSV/JSON export anytime, $0, no support ticket, plus nightly 7-day rolling auto-backups for instant rollback. Leave with every vendor, home, schedule, option, and budget line. Procore: data portability limited without custom extraction." },
   { feature: "Vendor portal — no login required (email magic links)", cornerstone: true, competitor: false, note: "Vendors confirm tasks, accept schedule changes, and submit bids — all via secure magic links sent straight to their email. No app to download, no account to create, no password to remember. Click the link, do the thing, done. Biggest friction-killer for trade partners in the industry." },
@@ -61,7 +61,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Does Cornerstone PM™ have a public API like Procore?",
-    a: "Yes. Cornerstone PM™'s REST API (Pro+ plan, $599/mo): 59+ endpoints and growing rapidly, 30+ named webhook events (catalog growing), HMAC signatures, scoped Bearer-token auth, and public documentation - oriented toward residential: floorplans, options, lot management, buyer selections, bid requests, vendor assignments. Procore also has an API, but it's oriented toward commercial construction workflows.",
+    a: "Yes. Cornerstone PM™'s REST API (Pro+ plan, $599/mo): 60+ endpoints and growing rapidly, 30+ named webhook events (catalog growing), HMAC signatures, scoped Bearer-token auth, and public documentation - oriented toward residential: floorplans, options, lot management, buyer selections, bid requests, vendor assignments. Procore also has an API, but it's oriented toward commercial construction workflows.",
   },
   {
     q: "What does Procore have that Cornerstone PM™ doesn't?",

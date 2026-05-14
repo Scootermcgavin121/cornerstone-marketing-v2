@@ -1,4 +1,4 @@
-import { Check, Sparkles } from "lucide-react";
+﻿import { Check, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { FAQSection, type FAQItem } from "@/components/FAQSection";
@@ -37,7 +37,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Can I use my own AI agent against Cornerstone purchasing data?",
-    a: "Yes. The Pro+ plan ($599/mo) includes Bring Your Own Agent (BYOA) and full REST API access. You can connect Claude, ChatGPT, or any custom agent to live purchasing, bid, vendor, and budget data through 59+ endpoints (and growing) with scoped Bearer-token auth.",
+    a: "Yes. The Pro+ plan ($599/mo) includes Bring Your Own Agent (BYOA) and full REST API access. You can connect Claude, ChatGPT, or any custom agent to live purchasing, bid, vendor, and budget data through 60+ endpoints (and growing) with scoped Bearer-token auth.",
   },
   {
     q: "How do I review competing vendor bids?",

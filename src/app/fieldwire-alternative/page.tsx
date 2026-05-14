@@ -1,4 +1,4 @@
-import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
+﻿import { AlternativePageTemplate } from "@/components/AlternativePageTemplate";
 import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageTemplate";
 import type { FAQItem } from "@/components/FAQSection";
 
@@ -19,7 +19,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "AI image search, vision & anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, hosts them on CDN, reads supplier product pages with AI-powered web scraping. Plus: paste or drag-drop any screenshot and Foreman reads it with AI vision and acts on it. Cornerstone Pro feature." },
   { feature: "30+ named webhook events (catalog growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): 30+ named events and counting -- typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. Fieldwire has no named residential construction event catalog." },
   { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): wire Claude or ChatGPT to your live construction data." },
-  { feature: "Public REST API (59+ endpoints, growing)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+: 59+ endpoints and growing rapidly, public docs. New endpoints ship as the platform grows.. Fieldwire: API access on Business Plus or custom contract only." },
+  { feature: "Public REST API (60+ endpoints, growing)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+: 60+ endpoints and growing rapidly, public docs. New endpoints ship as the platform grows. Fieldwire: API access on Business Plus or custom contract only." },
   { feature: "Free database export (CSV / JSON)", cornerstone: true, competitor: false, note: "Download your full data anytime. Nightly auto-backups." },
   { feature: "Triple QR ecosystem (vendor + PM + buyer, no app install)", cornerstone: true, competitor: false, note: "Three QR codes for three audiences, no app required: (1) vendor jobsite check-in captures GPS + timestamp + weather + photo upload automatically, (2) PM/internal-builder check-in feeds GPS-validated timesheets so you can prove who was actually on-site, (3) sales model home QR for walk-in buyer lead capture — replaces paper sign-in sheets, recognizes returning visitors, instantly creates a Lead record tied to the community with email + in-app notification to the sales agent. Fieldwire ships none of these." },
   { feature: "Vendor Activity Map (Google Maps, real-time)", cornerstone: true, competitor: false, note: "Live Google Maps view of every vendor check-in across every community, 30-second refresh. See exactly who's on which jobsite right now. Filter by date or vendor. Stat cards show how many vendors are currently on-site. Fieldwire has no equivalent." },
