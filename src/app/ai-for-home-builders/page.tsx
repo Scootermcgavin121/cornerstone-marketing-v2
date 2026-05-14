@@ -64,6 +64,25 @@ const workflows = [
   },
 ];
 
+const faqs = [
+  {
+    q: "What is homebuilder AI software?",
+    a: "Homebuilder AI software is purpose-built AI that understands home construction workflows — floorplans, spec levels, design center selections, vendor bids, and sales pipeline stages — and acts directly on a builder's data. Unlike generic chatbots, it can create POs, draft bid requests, generate MLS listings, run profitability reports, and update home statuses. Cornerstone PM™ ships Foreman AI™ with 100+ purpose-built skills across pre-sale, under contract, construction, and closing workflows.",
+  },
+  {
+    q: "What is the best AI software for home builders?",
+    a: "The best AI software for home builders is one with construction vocabulary, direct access to your live data, and the ability to take real actions — not just answer questions. Cornerstone PM™ is the only home builder platform with five built-in AI agents: Foreman AI™ (100+ skills), Blueprint AI™ (floorplan reader), Bid Import AI (parses vendor bids from PDFs, Excel, or photos), AI MLS Listing Generator, and an AI Support Agent. Beta is free for 2 years, limited to 100 builders.",
+  },
+  {
+    q: "How does Cornerstone PM compare to Buildertrend for AI?",
+    a: "Buildertrend has forms and buttons; Cornerstone PM™ has AI agents. Buildertrend does not ship native AI agents that can read and write your data. Cornerstone PM™ includes five built-in agents — Foreman AI™ creates POs, generates SOWs, drafts bid requests, runs profitability reports, and exports design center PDFs in plain English. Pricing also differs significantly: Cornerstone starts at $149/mo with the full AI suite available on Pro plans, vs. Buildertrend at $499+/mo with per-user fees and no native AI.",
+  },
+  {
+    q: "Can AI manage construction schedules, bids, and selections?",
+    a: "Yes. Foreman AI™ manages construction schedules (cascade scheduling, vendor notifications, status tracking), vendor bids (drafts bid requests, compares submissions side-by-side, recommends best value), and buyer selections (confirm/reject design center choices, flag incomplete selections before cutoff, generate signed PDFs for lenders). It works in plain English and takes real actions on your live data — no integrations or setup required.",
+  },
+];
+
 const prompts = [
   {
     prompt: "What's our margin on The Wellington floorplan across Coastal Ridge and Bayside Preserve?",
@@ -275,6 +294,55 @@ export default function AiForHomeBuildersPage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ */}
+      <section className="py-16 px-4">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-black mb-4">
+              Frequently asked questions
+            </h2>
+            <p className="text-slate-400">
+              Common questions about AI for home builders.
+            </p>
+          </div>
+          <div className="space-y-4">
+            {faqs.map((faq) => (
+              <details
+                key={faq.q}
+                className="group rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-violet-500/20 transition-all duration-200 overflow-hidden"
+              >
+                <summary className="cursor-pointer p-6 flex items-start justify-between gap-4 list-none">
+                  <h3 className="text-lg font-bold text-white">{faq.q}</h3>
+                  <span className="text-violet-400 text-2xl leading-none flex-shrink-0 group-open:rotate-45 transition-transform duration-200">+</span>
+                </summary>
+                <div className="px-6 pb-6 -mt-2">
+                  <p className="text-slate-400 leading-relaxed">{faq.a}</p>
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ structured data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map((faq) => ({
+              "@type": "Question",
+              name: faq.q,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: faq.a,
+              },
+            })),
+          }),
+        }}
+      />
 
       {/* CTA */}
       <section className="py-20 px-4 text-center border-t border-slate-800/60">
