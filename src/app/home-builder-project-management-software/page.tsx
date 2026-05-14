@@ -19,12 +19,12 @@ const modules = [
   { name: "Permitting", href: "/permitting", desc: "Permit gates, phase blocking, inspection tracking, automated reminders across the build.", color: "orange" },
   { name: "Foreman AI", href: "/foreman", desc: "100+ AI skills across 11 categories. Plain-English commands against live builder data.", color: "blue" },
   { name: "Blueprint AI Takeoff", href: "/ai-takeoff", desc: "Upload PDF floor plans, get 130+ material scopes and quantities in under 60 seconds.", color: "fuchsia" },
-  { name: "REST API + BYOA", href: "/api-access", desc: "500+ endpoints (growing), 37+ named webhook events (growing catalog), scoped Bearer-token auth. Bring your own AI agent.", color: "rose" },
+  { name: "REST API + BYOA", href: "/api-access", desc: "40+ endpoints (growing), 37+ named webhook events (growing catalog), scoped Bearer-token auth. Bring your own AI agent.", color: "rose" },
 ];
 
 const stats = [
   { num: "100+", label: "Foreman AI skills" },
-  { num: "500+", label: "REST API endpoints" },
+  { num: "40+", label: "REST API endpoints" },
   { num: "8", label: "integrated modules" },
   { num: "$149", label: "starting price / mo" },
 ];
@@ -161,7 +161,7 @@ export default function HomeBuilderPMPage() {
                 "MLS Listing Agent &mdash; auto-generated from home data",
                 "AI Support Agent &mdash; instant answers, every feature documented",
                 "BYOA support &mdash; bring your own Claude/ChatGPT (Pro+)",
-                "500+ endpoints REST API for custom AI integrations",
+                "40+ endpoints REST API for custom AI integrations",
               ].map((point) => (
                 <div key={point} className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-blue-400 mt-0.5 shrink-0" />

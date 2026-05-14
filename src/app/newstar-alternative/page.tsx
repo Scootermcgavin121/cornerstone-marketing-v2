@@ -26,7 +26,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "AI camera-event auto-task-start", cornerstone: true, competitor: false, note: "Webhook endpoint accepts events from any camera or sensor. Cornerstone Pro+ feature." },
   { feature: "Take your data with you anytime — no lock-in", cornerstone: true, competitor: false, note: "Your data is YOURS. Full database export to CSV or JSON anytime, one click, $0, no fees, no waiting on a support ticket. Nightly auto-backups retained 7 days for instant rollback. If you ever leave us, you leave with everything — vendors, homes, schedules, options, budgets, every line. No strings attached." },
   { feature: "Modern web-based UI", cornerstone: true, competitor: false, note: "NEWSTAR is built on a Windows desktop architecture; Cornerstone is web and mobile native." },
-  { feature: "Public REST API (500+ endpoints, growing)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+: 500+ endpoints and growing rapidly, public docs. New endpoints ship as the platform grows. NEWSTAR: enterprise integrations only." },
+  { feature: "Public REST API (40+ endpoints, growing)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+: 40+ endpoints and growing rapidly, public docs. New endpoints ship as the platform grows. NEWSTAR: enterprise integrations only." },
   { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): connect Claude or ChatGPT to your live data." },
   { feature: "Options engine", cornerstone: true, competitor: true, note: "Both ship a full structural and design options engine." },
   { feature: "Floorplan pricing matrix", cornerstone: true, competitor: true, note: "Per-community plan pricing." },
@@ -41,7 +41,7 @@ const comparisonRows: ComparisonRow[] = [
 const whySwitchCards: WhySwitchCard[] = [
   { title: "Built for the builder NEWSTAR ignores", desc: "NEWSTAR is built for top-100 enterprise builders. Cornerstone is built for small-to-mid home builders running 5-200 homes per year - without the $50k+ implementation and dedicated IT team." },
   { title: "Action-taking AI on Pro - 100+ skills", desc: "Foreman AI (Cornerstone Pro, $499/mo) reads AND writes data, remembers your preferences, analyzes images, and scrapes product pages with AI-powered web scraping. Blueprint AI converts floor plans to takeoffs in 60 seconds. NEWSTAR has no native AI." },
-  { title: "Public REST API + 37+ webhooks on Pro+", desc: "500+ REST endpoints (growing), 37+ named webhook events (catalog growing), HMAC signatures, and public docs on Pro+ ($599/mo). NEWSTAR integrations are enterprise-contract only. Wire Twilio or your own agents to our webhooks." },
+  { title: "Public REST API + 37+ webhooks on Pro+", desc: "40+ REST endpoints (growing), 37+ named webhook events (catalog growing), HMAC signatures, and public docs on Pro+ ($599/mo). NEWSTAR integrations are enterprise-contract only. Wire Twilio or your own agents to our webhooks." },
 ];
 
 const faqItems: FAQItem[] = [

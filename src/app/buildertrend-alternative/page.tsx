@@ -17,7 +17,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "AI floor plan takeoffs (Blueprint AI)", cornerstone: true, competitor: false, note: "PDF blueprint to material takeoff in under 60 seconds. Blueprint AI included on Cornerstone Pro ($499/mo, 25 takeoffs/mo)." },
   { feature: "37+ named webhook events (catalog growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): 37+ named events and counting -- typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. Buildertrend webhooks: limited scope, no named event catalog." },
   { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): wire Claude or ChatGPT to live builder data via the public REST API + 37+ named webhook events (catalog growing). Buildertrend has no BYOA support." },
-  { feature: "Public REST API (500+ endpoints, growing)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+: 500+ endpoints and growing rapidly, public docs. New endpoints ship as the platform grows. Buildertrend: enterprise API access, not self-serve." },
+  { feature: "Public REST API (40+ endpoints, growing)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+: 40+ endpoints and growing rapidly, public docs. New endpoints ship as the platform grows. Buildertrend: enterprise API access, not self-serve." },
   { feature: "AI Migration Wizard (one-click CRM import)", cornerstone: true, competitor: false, note: "Drop your Buildertrend export - AI auto-detects column mapping and runs 23 import endpoints automatically. ~$0.01 per migration." },
   { feature: "Structural options engine", cornerstone: true, competitor: false, note: "Pre-sale options pricing matrix per floorplan - Cornerstone Builder ($299/mo). Not a Buildertrend strength." },
   { feature: "Designer Packages (64 curated, 7 categories)", cornerstone: true, competitor: false, note: "Buyers pick a package; all category options lock automatically. Cornerstone Builder+." },
@@ -39,7 +39,7 @@ const comparisonRows: ComparisonRow[] = [
 const whySwitchCards: WhySwitchCard[] = [
   { title: "Home builder workflows native", desc: "Lots, models, options, plan repeats, design center, draws, multi-community pipelines - first-class concepts from Builder ($299/mo) up. Buildertrend treats every job as one-off." },
   { title: "Action-taking AI on Pro - 100+ skills", desc: "Foreman AI (Cornerstone Pro, $499/mo) reads AND writes data, remembers your preferences, analyzes jobsite photos, and scrapes product pages from Home Depot and Ferguson using AI-powered web scraping. No bolt-on plugins." },
-  { title: "REST API + 37+ webhook events on Pro+", desc: "500+ REST endpoints (growing), 37+ named webhook events (catalog growing), HMAC signatures, scoped auth, and public docs on Pro+ ($599/mo). Buildertrend's API is enterprise-only. Wire Twilio, Bland, or your own Claude agent to our webhooks." },
+  { title: "REST API + 37+ webhook events on Pro+", desc: "40+ REST endpoints (growing), 37+ named webhook events (catalog growing), HMAC signatures, scoped auth, and public docs on Pro+ ($599/mo). Buildertrend's API is enterprise-only. Wire Twilio, Bland, or your own Claude agent to our webhooks." },
 ];
 
 const faqItems: FAQItem[] = [

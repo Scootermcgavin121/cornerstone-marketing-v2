@@ -232,10 +232,10 @@ const pricing: Category = {
     {
       q: "What's included on Pro+ that Pro doesn't have?",
       aText:
-        "Pro+ ($599/mo) adds the full REST API (500+ endpoints and growing rapidly), 37+ named webhook event types (catalog growing weekly), Bring Your Own Agent (BYOA) so you can plug Claude or ChatGPT into live builder data, Bid Import AI (drag any vendor PDF/Excel/photo and AI extracts every line), the 7-wave automated bidding pipeline, and uncapped active home count.",
+        "Pro+ ($599/mo) adds the full REST API (40+ endpoints and growing rapidly), 37+ named webhook event types (catalog growing weekly), Bring Your Own Agent (BYOA) so you can plug Claude or ChatGPT into live builder data, Bid Import AI (drag any vendor PDF/Excel/photo and AI extracts every line), the 7-wave automated bidding pipeline, and uncapped active home count.",
       a: (
         <>
-          Pro+ ($599/mo) adds the full <A href="/api-access">REST API (500+ endpoints and growing)</A>, 37+ named webhook event types (catalog growing),
+          Pro+ ($599/mo) adds the full <A href="/api-access">REST API (40+ endpoints and growing)</A>, 37+ named webhook event types (catalog growing),
           Bring Your Own Agent (BYOA) so you can plug Claude or ChatGPT into live builder data,{" "}
           <A href="/bid-import-ai">Bid Import AI</A> (drag any vendor PDF/Excel/photo and AI extracts every line), the
           7-wave automated bidding pipeline, and uncapped active home count.
@@ -500,11 +500,11 @@ const ai: Category = {
     {
       q: "What is BYOA (Bring Your Own Agent)?",
       aText:
-        "BYOA lets you connect Claude, ChatGPT, or any custom AI agent to live Cornerstone data via the REST API (500+ endpoints and growing) and 37+ named webhook event types (catalog growing). Build your own scheduling automations, run your own bid analyses, or wire Cornerstone into an internal workflow. Included on Pro+ ($599/mo).",
+        "BYOA lets you connect Claude, ChatGPT, or any custom AI agent to live Cornerstone data via the REST API (40+ endpoints and growing) and 37+ named webhook event types (catalog growing). Build your own scheduling automations, run your own bid analyses, or wire Cornerstone into an internal workflow. Included on Pro+ ($599/mo).",
       a: (
         <>
           BYOA lets you connect Claude, ChatGPT, or any custom AI agent to live Cornerstone data via the{" "}
-          <A href="/api-access">REST API (500+ endpoints and growing)</A> and 37+ named webhook event types (catalog growing). Build your own scheduling
+          <A href="/api-access">REST API (40+ endpoints and growing)</A> and 37+ named webhook event types (catalog growing). Build your own scheduling
           automations, run your own bid analyses, or wire Cornerstone into an internal workflow. Included on Pro+
           ($599/mo).
         </>
@@ -1089,10 +1089,10 @@ const api: Category = {
     {
       q: "Does Cornerstone PM™ have a REST API?",
       aText:
-        "Yes - a public REST API with 500+ endpoints and growing rapidly, scoped Bearer-token authentication, and full documentation at app.cornerstonepm.ai/developers. New endpoints ship as the platform grows. All core data (schedules, vendors, lots, options, bids, budgets, takeoffs) is accessible. Included on Pro+ ($599/mo). See /api-access.",
+        "Yes - a public REST API with 40+ endpoints and growing rapidly, scoped Bearer-token authentication, and full documentation at app.cornerstonepm.ai/developers. New endpoints ship as the platform grows. All core data (schedules, vendors, lots, options, bids, budgets, takeoffs) is accessible. Included on Pro+ ($599/mo). See /api-access.",
       a: (
         <>
-          Yes - a public REST API with <strong>500+ endpoints and growing rapidly</strong>, scoped Bearer-token authentication, and full
+          Yes - a public REST API with <strong>40+ endpoints and growing rapidly</strong>, scoped Bearer-token authentication, and full
           documentation at <A href="/api-docs">app.cornerstonepm.ai/developers</A>. All core data (schedules, vendors,
           lots, options, bids, budgets, takeoffs) is accessible. Included on Pro+ ($599/mo). See{" "}
           <A href="/api-access">/api-access</A>.
@@ -1126,11 +1126,11 @@ const api: Category = {
     {
       q: "Can I use my own AI agent against Cornerstone purchasing data?",
       aText:
-        "Yes. Pro+ ($599/mo) includes BYOA + full REST API access. Connect Claude, ChatGPT, or any custom agent to live purchasing, bid, vendor, and budget data through 500+ endpoints (and growing) with scoped Bearer-token auth.",
+        "Yes. Pro+ ($599/mo) includes BYOA + full REST API access. Connect Claude, ChatGPT, or any custom agent to live purchasing, bid, vendor, and budget data through 40+ endpoints (and growing) with scoped Bearer-token auth.",
       a: (
         <>
           Yes. Pro+ ($599/mo) includes BYOA + full <A href="/api-access">REST API access</A>. Connect Claude, ChatGPT,
-          or any custom agent to live purchasing, bid, vendor, and budget data through 500+ endpoints (and growing) with scoped
+          or any custom agent to live purchasing, bid, vendor, and budget data through 40+ endpoints (and growing) with scoped
           Bearer-token auth.
         </>
       ),
@@ -1163,11 +1163,11 @@ const api: Category = {
     {
       q: "Does Buildertrend have a public API like Cornerstone PM™?",
       aText:
-        "Buildertrend has limited integration capabilities and historically required enterprise contracts for API access. Cornerstone PM™ ships a public, documented REST API with 500+ endpoints and growing rapidly on Pro+ ($599/mo) - no separate contract, no enterprise gating.",
+        "Buildertrend has limited integration capabilities and historically required enterprise contracts for API access. Cornerstone PM™ ships a public, documented REST API with 40+ endpoints and growing rapidly on Pro+ ($599/mo) - no separate contract, no enterprise gating.",
       a: (
         <>
           Buildertrend has limited integration capabilities and historically required enterprise contracts for API
-          access. Cornerstone PM™ ships a public, documented REST API with <strong>500+ endpoints (and growing) on Pro+ ($599/mo)</strong>
+          access. Cornerstone PM™ ships a public, documented REST API with <strong>40+ endpoints (and growing) on Pro+ ($599/mo)</strong>
           - no separate contract, no enterprise gating.
         </>
       ),

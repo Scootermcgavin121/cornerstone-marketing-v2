@@ -18,7 +18,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "AI image search, vision & anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, hosts them on CDN, reads supplier product pages with AI-powered web scraping. Plus: paste or drag-drop any screenshot from inside the app and Foreman reads it with AI vision and acts on it. Cornerstone Pro feature." },
   { feature: "37+ named webhook events (catalog growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): 37+ named events and counting — typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. Buildxact has no public webhook catalog." },
   { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): wire Claude or ChatGPT to your live construction data." },
-  { feature: "Public REST API (500+ endpoints, growing)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+: 500+ endpoints and growing rapidly, public docs. New endpoints ship as the platform grows. Buildxact: limited API access." },
+  { feature: "Public REST API (40+ endpoints, growing)", cornerstone: true, competitor: "limited", note: "Cornerstone Pro+: 40+ endpoints and growing rapidly, public docs. New endpoints ship as the platform grows. Buildxact: limited API access." },
   { feature: "Structural options engine", cornerstone: true, competitor: false, note: "Pre-sale options pricing matrix per floorplan - Cornerstone Builder ($299/mo). Not a Buildxact feature." },
   { feature: "Designer Packages (64 curated by an interior designer, 7 categories)", cornerstone: true, competitor: false, note: "Packages curated by an actual interior designer - the same playbook K. Hovnanian Homes uses. Buyers pick a package; all category options auto-lock. Cornerstone Builder+." },
   { feature: "AI Migration Wizard", cornerstone: true, competitor: false, note: "AI auto-detects column mapping and runs 23 import endpoints. ~$0.01 per migration." },
@@ -40,7 +40,7 @@ const comparisonRows: ComparisonRow[] = [
 const whySwitchCards: WhySwitchCard[] = [
   { title: "Beyond estimating: full PM platform", desc: "Buildxact is great at takeoffs and quotes (starting $199/mo). Cornerstone includes all of that - plus scheduling, homeowner portal, purchasing, bid management, multi-community pipeline, and a design center from $149/mo. One platform, not a patchwork." },
   { title: "Blueprint AI + Foreman AI = AI native on Pro", desc: "Blueprint AI converts PDF floor plans to material takeoffs in 60 seconds. Foreman AI (100+ skills on Pro $499/mo) reads and writes your data - SOWs, bid comparisons, design options, image search, web scraping. Buildxact's Blu AI stays within estimating scope." },
-  { title: "37+ webhooks + public API on Pro+", desc: "37+ named webhook events with typed payload schemas, HMAC signatures, and auto-retry on Pro+ ($599/mo) — catalog growing. Public REST API with 500+ endpoints and growing. Wire your own tools, SMS bots, or AI agents. Buildxact has no comparable automation layer." },
+  { title: "37+ webhooks + public API on Pro+", desc: "37+ named webhook events with typed payload schemas, HMAC signatures, and auto-retry on Pro+ ($599/mo) — catalog growing. Public REST API with 40+ endpoints and growing. Wire your own tools, SMS bots, or AI agents. Buildxact has no comparable automation layer." },
 ];
 
 const faqItems: FAQItem[] = [

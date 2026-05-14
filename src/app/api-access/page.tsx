@@ -1052,7 +1052,7 @@ export default function ApiAccessPage() {
             <div className="text-white font-bold text-xl mb-6">Pro+ Plan</div>
             <div className="space-y-3 text-left mb-8">
               {[
-                "Full REST API — 500+ endpoints (vendors, bids, homes, tasks, POs, parts, options, webhooks)",
+                "Full REST API — 40+ endpoints (vendors, bids, homes, tasks, POs, parts, options, webhooks)",
                 "Foreman Skill Pack — GET /api/ext/skills in Anthropic, OpenAI, or OpenAPI 3.1 format",
                 "100+ skills across 11 categories, auto-synced as new skills ship",
                 "Scoped API keys per agent/integration",

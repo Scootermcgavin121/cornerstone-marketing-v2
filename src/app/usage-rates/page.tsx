@@ -101,7 +101,7 @@ const aiFeatures: AIFeature[] = [
   {
     name: "REST API",
     description:
-      "External API access for integrations and automation. 500+ endpoints, scoped API keys, HMAC-signed webhooks.",
+      "External API access for integrations and automation. 40+ endpoints, scoped API keys, HMAC-signed webhooks.",
     starter: "\u2014",
     builder: "\u2014",
     pro: "300K/mo",

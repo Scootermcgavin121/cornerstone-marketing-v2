@@ -20,7 +20,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "AI image search, vision & anti-bot web scraping", cornerstone: true, competitor: false, note: "Foreman searches product images, hosts them on CDN, reads supplier product pages with AI-powered web scraping. Plus: paste or drag-drop any screenshot and Foreman reads it with AI vision and acts on it. Cornerstone Pro feature." },
   { feature: "37+ named webhook events (catalog growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): 37+ named events and counting -- typed payloads, HMAC signatures, delivery logs, auto-retry. New events ship as the platform grows. Raken has no webhook catalog." },
   { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): wire Claude or ChatGPT to your live construction data." },
-  { feature: "Public REST API (500+ endpoints, growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+: 500+ endpoints and growing rapidly, public docs. New endpoints ship as the platform grows. Raken has limited API access." },
+  { feature: "Public REST API (40+ endpoints, growing)", cornerstone: true, competitor: false, note: "Cornerstone Pro+: 40+ endpoints and growing rapidly, public docs. New endpoints ship as the platform grows. Raken has limited API access." },
   { feature: "Free database export (CSV / JSON)", cornerstone: true, competitor: false, note: "Download your full data anytime. Nightly auto-backups." },
   { feature: "AI Migration Wizard", cornerstone: true, competitor: false, note: "AI auto-detects column mapping and runs 23 import endpoints." },
   { feature: "Vendor portal — no login required (email magic links)", cornerstone: true, competitor: false, note: "Vendors confirm tasks, accept schedule changes, and submit bids — all via secure magic links sent straight to their email. No app to download, no account to create, no password to remember. Click the link, do the thing, done. Biggest friction-killer for trade partners in the industry." },
@@ -38,7 +38,7 @@ const comparisonRows: ComparisonRow[] = [
 const whySwitchCards: WhySwitchCard[] = [
   { title: "Beyond field logs: full PM platform", desc: "Raken is excellent for daily logs and field reporting. Cornerstone PM™ includes all of that plus scheduling (Starter $149), homeowner portal, purchasing, bid management, options engine, and design center (Builder $299). One platform for the entire build." },
   { title: "AI built in -- Pro $499/mo", desc: "Foreman AI reads AND writes your data: POs, options, SOWs, bid comparisons, image search, web scraping. Blueprint AI converts floor plans to takeoffs in 60 seconds. No other home-builder platform comes close." },
-  { title: "37+ webhooks + public API (Pro+)", desc: "37+ named webhook events with typed payload schemas and HMAC signatures. Public REST API with 500+ endpoints -- both on Pro+ ($599/mo). Wire SMS, voice, or your own AI agent to schedule changes, vendor notifications, and bid events." },
+  { title: "37+ webhooks + public API (Pro+)", desc: "37+ named webhook events with typed payload schemas and HMAC signatures. Public REST API with 40+ endpoints -- both on Pro+ ($599/mo). Wire SMS, voice, or your own AI agent to schedule changes, vendor notifications, and bid events." },
 ];
 
 const faqItems: FAQItem[] = [
