@@ -6,18 +6,18 @@ import { Footer } from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Agents for Home Builders | Cornerstone PMÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢",
+  title: "AI Agents for Home Builders | Cornerstone PM™",
   description:
-    "6 AI agents for home builders: Foreman AI (100+ skills), Blueprint AI (PDF takeoffs), Bid Import AI (parses any vendor bid), AI MLS Listing Generator, AI Support Agent, plus Jobsite AI (coming soon). Native AI built into the platform ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â not bolted on.",
+    "6 AI agents for home builders: Foreman AI (100+ skills), Blueprint AI (PDF takeoffs), Bid Import AI (parses any vendor bid), AI MLS Listing Generator, AI Support Agent, plus Jobsite AI (coming soon). Native AI built into the platform — not bolted on.",
   alternates: { canonical: "https://www.cornerstonepm.ai/ai-agents" },
 };
 
 const agents = [
   {
-    name: "Foreman AIÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢",
+    name: "Foreman AI™",
     tagline: "Your AI Construction Agent",
     description:
-      "Natural language commands to search, create, and manage your entire operation. Parts, vendors, homes, budgets ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â just type what you need.",
+      "Natural language commands to search, create, and manage your entire operation. Parts, vendors, homes, budgets — just type what you need.",
     icon: <Bot className="w-8 h-8" />,
     color: "amber",
     href: "/foreman",
@@ -49,7 +49,7 @@ const agents = [
     name: "AI MLS Listing Generator",
     tagline: "AI Real Estate Listing Writer",
     description:
-      "Claude Sonnet writes professional MLS descriptions from your live home data. Room dimensions, upgrades, community details, lot size ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â all pulled automatically. One click to PDF.",
+      "Claude Sonnet writes professional MLS descriptions from your live home data. Room dimensions, upgrades, community details, lot size — all pulled automatically. One click to PDF.",
     icon: <FileText className="w-8 h-8" />,
     color: "emerald",
     href: "/listing-sheet",
@@ -65,7 +65,7 @@ const agents = [
     name: "AI Support Agent",
     tagline: "Instant Answers, Zero Wait Time",
     description:
-      "Every feature, workflow, and permission documented and trained on Cornerstone PMÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢. Answers buyer and team questions 24/7 so you don't have to.",
+      "Every feature, workflow, and permission documented and trained on Cornerstone PM™. Answers buyer and team questions 24/7 so you don't have to.",
     icon: <MessageCircle className="w-8 h-8" />,
     color: "cyan",
     href: "/support-ai",
@@ -81,23 +81,23 @@ const agents = [
     name: "Bid Import AI",
     tagline: "AI-Powered Vendor Bid Parser",
     description:
-      "Upload vendor bids in any format ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Excel, PDFs, scanned documents, even photos of handwritten quotes. AI extracts every line item, fuzzy-matches your parts catalog and scopes, and imports as a Bid, Vendor Pricing, or Takeoff in one click. No more hours of manual data entry from vendor spreadsheets.",
+      "Upload vendor bids in any format — Excel, PDFs, scanned documents, even photos of handwritten quotes. AI extracts every line item, fuzzy-matches your parts catalog and scopes, and imports as a Bid, Vendor Pricing, or Takeoff in one click. No more hours of manual data entry from vendor spreadsheets.",
     icon: <Brain className="w-8 h-8" />,
     color: "orange",
     href: "/purchasing#bid-import",
     highlights: [
       "Reads Excel, PDF, scans, even handwritten quote photos",
       "Fuzzy-matches your parts catalog & scope items",
-      "Color-coded confidence table ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â review before commit",
+      "Color-coded confidence table — review before commit",
       "One-click import to Bid, Vendor Pricing, or Takeoff",
     ],
     badge: "Pro+",
   },
   {
-    name: "Jobsite AIÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢",
+    name: "Jobsite AI™",
     tagline: "AI Vendor Presence Detection",
     description:
-      "The vendor rolls onto the jobsite. Your schedule already knows. Jobsite AIÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ detects vendor arrivals from any camera, doorbell, gate, GPS, or check-in app ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â and auto-flips the matching scheduled task to In Progress. No phone calls. No manual check-ins. Camera-agnostic, sensor-agnostic.",
+      "The vendor rolls onto the jobsite. Your schedule already knows. Jobsite AI™ detects vendor arrivals from any camera, doorbell, gate, GPS, or check-in app — and auto-flips the matching scheduled task to In Progress. No phone calls. No manual check-ins. Camera-agnostic, sensor-agnostic.",
     icon: <Eye className="w-8 h-8" />,
     color: "slate",
     href: "/jobsite-ai",
@@ -211,14 +211,14 @@ export default function AiAgentsPage() {
             ChatGPT doesn&apos;t know what a takeoff scope is.
           </p>
           <p className="text-lg text-slate-400 max-w-xl mx-auto mb-10">
-            Ours do. Every agent is purpose-built for home builders ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â trained on your data,
+            Ours do. Every agent is purpose-built for home builders — trained on your data,
             integrated with your workflow.
           </p>
           <Link
             href="/beta"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-400 text-slate-900 font-bold text-lg hover:from-amber-400 hover:to-amber-300 shadow-lg shadow-amber-500/25 transition-all duration-200"
           >
-            Join Beta ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Free
+            Join Beta — Free
             <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
@@ -353,7 +353,7 @@ export default function AiAgentsPage() {
               href="/beta"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-400 text-slate-900 font-bold hover:from-amber-400 hover:to-amber-300 shadow-lg shadow-amber-500/20 transition-all duration-200"
             >
-              Get Beta Access ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Free
+              Get Beta Access — Free
               <ArrowRight className="w-5 h-5" />
             </Link>
           </div>

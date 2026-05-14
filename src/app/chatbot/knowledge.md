@@ -22,7 +22,7 @@ Cornerstone is the only home builder platform with a complete three-audience QR 
 - Captures GPS coordinates, timestamp, weather conditions automatically
 - Tracks check-in AND check-out times - full hours-on-site logged
 - Public page at `/checkin/[token]` - works on any phone browser
-- **Printable 11Ãƒâ€”8.5" signs** ready to staple to jobsite doors or trailers
+- **Printable 11×8.5" signs** ready to staple to jobsite doors or trailers
 
 **2. Community / PM Check-In QR**
 - Builder staff and inspectors scan at the construction trailer when they arrive
@@ -88,7 +88,7 @@ A consolidated `/admin/settings` page replaces the scattered admin links.
 ---
 
 **Q: Do you have QR code check-in for vendors?**
-A: Yes - Cornerstone ships a triple QR ecosystem: (1) jobsite QR for vendors/subs to check in (GPS, weather, timestamp captured), (2) community QR for builder PMs and inspectors that ties into timesheet validation, and (3) sales model home QR for buyer lead capture. No app install required for anyone scanning. Printable 11Ãƒâ€”8.5" signs are auto-generated for every community and home.
+A: Yes - Cornerstone ships a triple QR ecosystem: (1) jobsite QR for vendors/subs to check in (GPS, weather, timestamp captured), (2) community QR for builder PMs and inspectors that ties into timesheet validation, and (3) sales model home QR for buyer lead capture. No app install required for anyone scanning. Printable 11×8.5" signs are auto-generated for every community and home.
 
 **Q: Can I see where my vendors are right now?**
 A: Yes - the Vendor Activity Map shows live GPS pins for every check-in across all your communities, refreshing every 30 seconds. Filter by date or vendor. Stat cards show how many vendors are currently on-site.
@@ -293,7 +293,7 @@ Scope items represent things like labor, delivery charges, equipment rentals, in
 - Pricing is pulled automatically from the vendor assigned to that scope in the community - no manual entry
 - Default vendor rates apply across all floorplans, with optional per-floorplan overrides for complex or custom homes
 - Swap the assigned vendor for a community and pricing updates automatically across all affected items
-- Total home cost = materials (parts Ãƒâ€” qty) + scope items (vendor rate Ãƒâ€” qty) + design selections
+- Total home cost = materials (parts × qty) + scope items (vendor rate × qty) + design selections
 
 **Vendor pricing management:**
 - Vendors are assigned to scopes per community (e.g., one HVAC contractor handles all homes in a given subdivision)
@@ -723,7 +723,7 @@ Cornerstone's AI-powered takeoff system eliminates manual material estimation. *
 
 ## Purchasing & Budget Management (Builder plan & above)
 - **Parts Catalog** - centralized library of all materials, fixtures, and finishes with part numbers, descriptions, units of measure, and cost/retail pricing
-- **Base Takeoffs** - per-floorplan quantity takeoffs organized by scope with colored headers. Supports BASE (standard for every home) and OPTION (per-option-class) takeoff types. Includes lump sum scope items (HVAC, paint labor, trim, etc.) with rate Ãƒâ€” quantity pricing. Units: sqft, lf, lnft, each, LUMP, square
+- **Base Takeoffs** - per-floorplan quantity takeoffs organized by scope with colored headers. Supports BASE (standard for every home) and OPTION (per-option-class) takeoff types. Includes lump sum scope items (HVAC, paint labor, trim, etc.) with rate × quantity pricing. Units: sqft, lf, lnft, each, LUMP, square
 - **Scope Pricing Dashboard** - read-only dashboard showing vendor bid pricing by scope. Vendor pricing matrix lets you compare bids across vendors at a glance - see who's cheapest per scope without digging through individual bid responses
 - **Takeoffs** - per-floorplan quantity takeoffs organized by room/location. Supports BASE (standard for every home) and OPTION (per-option-class) takeoff types. Units: sqft, lf, lnft, each, LUMP, square
 - **Bid Management** - send a floorplan to bid to every vendor with one click. Track vendor responses, compare bids side-by-side, and award - all in one workflow
@@ -798,7 +798,7 @@ Cornerstone's Design Center is **takeoff-driven** - the system knows exactly how
 - **Promotions & Incentives** - create time-limited promotions with types: Closing Cost Credit, Discount, Credit, or Custom. Set date ranges, amounts, and optionally tie to specific communities. Show on the Active Promotions section of the Sales Pricing page. Automatically applied during new home creation.
 - **Net After Promotions** - pricing page automatically shows net prices after applying active promotions, so sales agents always quote the right number
 - **PDF Price Sheets** - export branded, customer-facing PDF price sheets per community. Shows floorplan details (beds/baths/sqft), base prices, active promotions with expiry dates, and net prices. Professional formatting with builder branding. No internal cost/margin data exposed
-- **MLS Listing Sheet** (`/sales/listing-sheet`) - generate professional, print-ready MLS listing sheets from any home's data. Includes company logo, address, community description/city/state/zip, room dimensions (L' Ãƒâ€” W'), structural features, design selections, key stats (sqft, beds, baths, garage, stories, lot), and contract price. Print / Save as PDF with one click.
+- **MLS Listing Sheet** (`/sales/listing-sheet`) - generate professional, print-ready MLS listing sheets from any home's data. Includes company logo, address, community description/city/state/zip, room dimensions (L' × W'), structural features, design selections, key stats (sqft, beds, baths, garage, stories, lot), and contract price. Print / Save as PDF with one click.
 - **CSV Export** - export pricing data as CSV for spreadsheets, lender packages, or MLS uploads
 - **Expiration Badges** - active promotions show urgency: "Expires Today", "Expires in 3 days", or the end date. Expired promotions are clearly marked
 
