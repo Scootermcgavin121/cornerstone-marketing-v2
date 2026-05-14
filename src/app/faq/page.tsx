@@ -529,7 +529,7 @@ const ai: Category = {
       a: (
         <>
           ChatGPT is a general LLM with no knowledge of your homes, vendors, or build pipeline. <A href="/foreman">Foreman AI</A>{" "}
-          is grounded in your live Cornerstone data and your role permissions, with <strong>47 purpose-built
+          is grounded in your live Cornerstone data and your role permissions, with <strong>100+ purpose-built
           skills</strong> that execute real actions - rescheduling tasks, notifying vendors, generating MLS listings,
           drafting bid requests. ChatGPT can describe what to do; Foreman AI does it.
         </>
