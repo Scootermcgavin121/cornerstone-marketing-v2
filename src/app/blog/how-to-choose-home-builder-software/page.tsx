@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "How to Choose Home Builder Software in 7 Steps â€” Cornerstone PMâ„¢ Blog",
+  title: "How to Choose Home Builder Software in 7 Steps — Cornerstone PM™ Blog",
   description:
     "How to choose home builder software: 7-step decision framework covering business model fit, AI capabilities, implementation cost, and platform integrations.",
   alternates: {
@@ -30,7 +30,7 @@ const howToSchema = {
   "@type": "HowTo",
   name: "How to Choose Home Builder Software in 7 Steps",
   description:
-    "A 7-step decision framework for residential home builders evaluating software platforms â€” covering builder type fit, must-have modules, AI capabilities, API support, total cost of ownership, vendor shortlisting, and live demos.",
+    "A 7-step decision framework for residential home builders evaluating software platforms — covering builder type fit, must-have modules, AI capabilities, API support, total cost of ownership, vendor shortlisting, and live demos.",
   step: [
     {
       "@type": "HowToStep",
@@ -47,8 +47,8 @@ const howToSchema = {
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Check AI capabilities â€” real ones, not marketing",
-      text: "Ask each vendor: does the AI read and write live data, or does it just summarize things you already know? Purpose-built AI for home builders should handle material takeoff from floor plan PDFs, bid comparison, scope-of-work drafting, and purchasing workflows â€” not just answer FAQ questions. Confirm which AI features are included vs. paid add-ons.",
+      name: "Check AI capabilities — real ones, not marketing",
+      text: "Ask each vendor: does the AI read and write live data, or does it just summarize things you already know? Purpose-built AI for home builders should handle material takeoff from floor plan PDFs, bid comparison, scope-of-work drafting, and purchasing workflows — not just answer FAQ questions. Confirm which AI features are included vs. paid add-ons.",
     },
     {
       "@type": "HowToStep",
@@ -60,13 +60,13 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 5,
       name: "Compare total cost of ownership, not list price",
-      text: "List price is the smallest number. Add implementation fees (NEWSTAR can run $25kâ€“$100k+), per-seat licensing at scale, integration plugins, training costs, and the cost of workarounds for missing features. Calculate annual TCO at your current team size and at 2x growth. A $200/month platform with a $50k implementation isn't cheaper than a $500/month platform with zero setup fee.",
+      text: "List price is the smallest number. Add implementation fees (NEWSTAR can run $25k–$100k+), per-seat licensing at scale, integration plugins, training costs, and the cost of workarounds for missing features. Calculate annual TCO at your current team size and at 2x growth. A $200/month platform with a $50k implementation isn't cheaper than a $500/month platform with zero setup fee.",
     },
     {
       "@type": "HowToStep",
       position: 6,
       name: "Shortlist three vendors",
-      text: "After steps 1â€“5, you should be able to cut your list to three credible options. Aim for one enterprise incumbent (NEWSTAR, BuildPro), one mid-market tool (Buildertrend, JobTread), and one modern purpose-built platform. Having three keeps the comparison honest and gives you negotiating leverage.",
+      text: "After steps 1–5, you should be able to cut your list to three credible options. Aim for one enterprise incumbent (NEWSTAR, BuildPro), one mid-market tool (Buildertrend, JobTread), and one modern purpose-built platform. Having three keeps the comparison honest and gives you negotiating leverage.",
     },
     {
       "@type": "HowToStep",
@@ -83,7 +83,7 @@ const imageObjectSchema = {
   contentUrl:
     "https://www.cornerstonepm.ai/blog/home-builder-software-buyer-guide.png",
   description: "Home builder team using a 7-step framework to choose home builder software",
-  creditText: "Cornerstone PMâ„¢",
+  creditText: "Cornerstone PM™",
 };
 
 export default function HowToChoomeHomeBuilderSoftwarePage() {
@@ -123,7 +123,7 @@ export default function HowToChoomeHomeBuilderSoftwarePage() {
           </h1>
           <div className="flex items-center gap-3 text-sm text-slate-500">
             <span>May 9, 2026</span>
-            <span>Â·</span>
+            <span>·</span>
             <span>7 min read</span>
           </div>
         </div>
@@ -155,7 +155,7 @@ export default function HowToChoomeHomeBuilderSoftwarePage() {
           <p>
             Most builders start by Googling &ldquo;best home builder software&rdquo; and ending up on a review site that
             ranks Buildertrend #1 for every category. They book demos, get impressed by feature lists, and
-            sign a contract â€” then spend the first three months fighting against a tool that was clearly built
+            sign a contract — then spend the first three months fighting against a tool that was clearly built
             for a different workflow.
           </p>
           <p>
@@ -175,15 +175,15 @@ export default function HowToChoomeHomeBuilderSoftwarePage() {
             <h3 className="text-xl font-bold text-white">Define your builder type: custom vs. production</h3>
             <p>
               Custom builders manage one-off projects with unique scopes, negotiated selections, and
-              per-job allowances. Production builders repeat floor plans â€” the Magnolia, the Ridgeline, the
-              Hartford â€” across multiple communities with standardized options pricing and community-assigned
+              per-job allowances. Production builders repeat floor plans — the Magnolia, the Ridgeline, the
+              Hartford — across multiple communities with standardized options pricing and community-assigned
               vendor bids.
             </p>
             <p>
               These two workflows require different data models. Custom builder tools (Buildertrend, JobTread,
               CoConstruct) are organized around individual projects. Production builder platforms organize
               around floor plans, communities, and option packages that get reused across every home of that
-              model. If you&apos;re doing plan repeats, you need the second model â€” full stop. Identifying your
+              model. If you&apos;re doing plan repeats, you need the second model — full stop. Identifying your
               type eliminates 80% of irrelevant vendors before you look at a single feature list.
             </p>
           </div>
@@ -199,7 +199,7 @@ export default function HowToChoomeHomeBuilderSoftwarePage() {
               purchasing and PO tracking, and a sales pipeline with a buyer portal.
             </p>
             <p>
-              Rank them. Any platform that can&apos;t handle your top three is off the list â€” regardless of price,
+              Rank them. Any platform that can&apos;t handle your top three is off the list — regardless of price,
               brand name, or how polished the demo looks. This filter alone cuts most shortlists in half.
             </p>
           </div>
@@ -207,7 +207,7 @@ export default function HowToChoomeHomeBuilderSoftwarePage() {
           {/* Step 3 */}
           <div className="border-l-2 border-emerald-500/40 pl-6 space-y-2">
             <p className="text-sm font-semibold text-emerald-400 uppercase tracking-wide">Step 3</p>
-            <h3 className="text-xl font-bold text-white">Check AI capabilities â€” real ones, not marketing</h3>
+            <h3 className="text-xl font-bold text-white">Check AI capabilities — real ones, not marketing</h3>
             <p>
               Every platform has &ldquo;AI&rdquo; in the marketing deck right now. The question is whether it actually
               does anything in your workflow. Ask each vendor: does the AI read and write live data, or does it
@@ -223,9 +223,9 @@ export default function HowToChoomeHomeBuilderSoftwarePage() {
               >
                 Foreman AI agent
               </Link>{" "}
-              has 100+ skills that take real actions inside the platform â€” pulling pricing, generating budget
-              reports, scoring vendor bids â€” not just answering FAQ questions. Also confirm which AI features
-              are included vs. billed as add-ons at $99â€“$149/month each.
+              has 100+ skills that take real actions inside the platform — pulling pricing, generating budget
+              reports, scoring vendor bids — not just answering FAQ questions. Also confirm which AI features
+              are included vs. billed as add-ons at $99–$149/month each.
             </p>
           </div>
 
@@ -239,7 +239,7 @@ export default function HowToChoomeHomeBuilderSoftwarePage() {
               integrations will be fragile, expensive, or both.
             </p>
             <p>
-              Also confirm webhook support. Webhooks let you automate downstream workflows â€” SMS alerts via
+              Also confirm webhook support. Webhooks let you automate downstream workflows — SMS alerts via
               Twilio when a task completes, CRM updates when a contract closes, Slack pings when a bid is
               submitted. Cornerstone ships{" "}
               <Link
@@ -258,12 +258,12 @@ export default function HowToChoomeHomeBuilderSoftwarePage() {
             <h3 className="text-xl font-bold text-white">Compare total cost of ownership, not list price</h3>
             <p>
               List price is the smallest number in the real equation. Add implementation fees (NEWSTAR runs
-              $25,000â€“$100,000+ in year one), per-seat licensing at scale, integration plugins, annual
+              $25,000–$100,000+ in year one), per-seat licensing at scale, integration plugins, annual
               training, and the hidden cost of workflow workarounds for features the platform doesn&apos;t have.
             </p>
             <p>
               Calculate annual TCO at your current team size and at 2x growth. A $200/month platform with a
-              $50k implementation isn&apos;t cheaper than a $500/month platform with zero setup fee â€” do the math
+              $50k implementation isn&apos;t cheaper than a $500/month platform with zero setup fee — do the math
               at a 3-year horizon before you sign anything.
             </p>
           </div>
@@ -273,9 +273,9 @@ export default function HowToChoomeHomeBuilderSoftwarePage() {
             <p className="text-sm font-semibold text-emerald-400 uppercase tracking-wide">Step 6</p>
             <h3 className="text-xl font-bold text-white">Shortlist three vendors</h3>
             <p>
-              After steps 1â€“5, you should be able to cut to three credible options. A balanced shortlist
+              After steps 1–5, you should be able to cut to three credible options. A balanced shortlist
               might include one enterprise incumbent (NEWSTAR, BuildPro), one mid-market tool (Buildertrend),
-              and one modern purpose-built platform (Cornerstone PMâ„¢). Three vendors keeps the comparison
+              and one modern purpose-built platform (Cornerstone PM™). Three vendors keeps the comparison
               honest and gives you leverage in pricing conversations.
             </p>
             <p>
@@ -301,8 +301,8 @@ export default function HowToChoomeHomeBuilderSoftwarePage() {
             </p>
             <p>
               How a platform handles <em>your</em> data in a 45-minute demo is exactly how it will handle
-              your data in production. If the sales rep deflects â€” &ldquo;let&apos;s circle back to that in
-              implementation&rdquo; â€” that&apos;s your answer.
+              your data in production. If the sales rep deflects — &ldquo;let&apos;s circle back to that in
+              implementation&rdquo; — that&apos;s your answer.
             </p>
           </div>
 
@@ -311,7 +311,7 @@ export default function HowToChoomeHomeBuilderSoftwarePage() {
           </h2>
           <p>
             A platform built for production home builders should have a native concept of floor plans,
-            communities, and option packages â€” not just projects and tasks. It should let you set up
+            communities, and option packages — not just projects and tasks. It should let you set up
             the Magnolia plan once and reuse that option pricing across every Magnolia in every community,
             with community-specific vendor assignments controlling who gets the bid for each scope.
           </p>
@@ -323,8 +323,8 @@ export default function HowToChoomeHomeBuilderSoftwarePage() {
             >
               home builder project management software guide
             </Link>{" "}
-            walks through each major platform category in detail â€” enterprise, mid-market, and modern
-            purpose-built â€” so you can calibrate your shortlist against real capability gaps before
+            walks through each major platform category in detail — enterprise, mid-market, and modern
+            purpose-built — so you can calibrate your shortlist against real capability gaps before
             you demo anything.
           </p>
 
@@ -344,8 +344,8 @@ export default function HowToChoomeHomeBuilderSoftwarePage() {
             </li>
             <li>
               <strong className="text-white">Ignoring implementation timeline.</strong> Enterprise platforms
-              often quote 3â€“12 month onboarding timelines. If you need to be live before your next subdivision
-              opens, that&apos;s a deal-breaker â€” confirm go-live dates before you sign.
+              often quote 3–12 month onboarding timelines. If you need to be live before your next subdivision
+              opens, that&apos;s a deal-breaker — confirm go-live dates before you sign.
             </li>
             <li>
               <strong className="text-white">Evaluating with perfect data.</strong> If you never bring your
@@ -358,11 +358,11 @@ export default function HowToChoomeHomeBuilderSoftwarePage() {
 
         <div className="mt-12 p-6 rounded-2xl border border-emerald-500/20 bg-emerald-500/5">
           <h3 className="text-lg font-bold text-white mb-2">
-            Ready to see Cornerstone PMâ„¢ with your data?
+            Ready to see Cornerstone PM™ with your data?
           </h3>
           <p className="text-slate-400 text-sm mb-4">
             Beta access is open now for production home builders. No implementation fee, no IT setup, no
-            onboarding queue. Bring a real floor plan PDF and a vendor list â€” the demo runs on your data,
+            onboarding queue. Bring a real floor plan PDF and a vendor list — the demo runs on your data,
             not ours.
           </p>
           <Link

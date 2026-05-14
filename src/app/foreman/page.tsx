@@ -4,7 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import { VideoPlayer } from "@/components/VideoPlayer";
 
 export const metadata = {
-  title: "Foreman AI - 100-skill construction agent with Memory Compaction | Cornerstone PMÃ¢â€žÂ¢",
+  title: "Foreman AI - 100-skill construction agent with Memory Compaction | Cornerstone PM™",
   description:
     "100+ purpose-built construction skills with built-in memory compaction - the only construction AI that doesn't forget mid-session. Reads and writes your real data: parts, vendors, homes, budgets, sales pipeline, design center selections. Pro plan.",
 };
@@ -54,8 +54,8 @@ const skillCategories = [
       { name: "Budget Variance Analysis", detail: "Flag cost overruns across all homes in one command" },
       { name: "Profitability Reports", detail: "Margin analysis by community with upgrade revenue breakdown" },
       { name: "Vendor Performance Analysis", detail: "Bid response rates, win rates, insurance tracking" },
-      { name: "Image Vision & Screenshot Acting", detail: "Paste or drag-drop any screenshot, product photo, floor plan, or supplier page from inside the app Ã¢â‚¬â€ Foreman reads it with AI vision and acts on it (vendor quote screenshot Ã¢â€ â€™ parts catalog entry, faucet photo Ã¢â€ â€™ model lookup, floor plan PDF Ã¢â€ â€™ takeoff trigger)." },
-      { name: "File Content Reading", detail: "Analyze uploaded CSVs, text files, and other documents Ã¢â‚¬â€ extract and act on data." },
+      { name: "Image Vision & Screenshot Acting", detail: "Paste or drag-drop any screenshot, product photo, floor plan, or supplier page from inside the app — Foreman reads it with AI vision and acts on it (vendor quote screenshot → parts catalog entry, faucet photo → model lookup, floor plan PDF → takeoff trigger)." },
+      { name: "File Content Reading", detail: "Analyze uploaded CSVs, text files, and other documents — extract and act on data." },
       { name: "Sales Pipeline Analysis", detail: "Identify stalled deals, avg days per stage, close rate by agent or community" },
       { name: "Design Center Revenue Analysis", detail: "Total upgrade revenue by category, top-selling options, margin by spec level" },
       { name: "Buyer Selections Report", detail: "Full selections summary for any home - what was chosen, confirmed, and at what price" },
@@ -85,7 +85,7 @@ const skillCategories = [
       { name: "URL Generation", detail: "Build direct links to specific homes, vendors, and reports" },
       { name: "Error Recovery", detail: "When web scraping fails, uses industry knowledge as backup" },
       { name: "Context Awareness", detail: "Understands builder terminology and workflows - not generic AI speak" },
-      { name: "Personality & Emoji", detail: "Foreman uses emojis for fun and reacts to yours - fire it a Ã°Å¸â€Â¥Ã°Å¸â€™ÂªÃ°Å¸â€˜Å  and it gets the vibe. Feels like texting a knowledgeable colleague, not chatting with a robot." },
+      { name: "Personality & Emoji", detail: "Foreman uses emojis for fun and reacts to yours - fire it a 🔥💪👊 and it gets the vibe. Feels like texting a knowledgeable colleague, not chatting with a robot." },
     ],
   },
   {
@@ -171,7 +171,7 @@ export default function ForemanPage() {
             100+ skills &middot; PRO PLAN &middot; READS AND WRITES YOUR REAL DATA
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
-            Ã°Å¸Âªâ€“ Foreman AI<sup className="text-2xl sm:text-3xl lg:text-4xl align-super text-amber-400 ml-1">TM</sup>
+            🪖 Foreman AI<sup className="text-2xl sm:text-3xl lg:text-4xl align-super text-amber-400 ml-1">TM</sup>
           </h1>
           <p className="text-2xl text-amber-400 font-bold mb-4">Not a chatbot. A construction agent.</p>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
@@ -202,8 +202,8 @@ export default function ForemanPage() {
               One prompt. Foreman searches the web, downloads the official Samsung product photo, saves it to your server, and attaches it to the right Design Options entry. Zero clicks of yours.
             </p>
             <p className="text-slate-500 text-xs max-w-2xl mx-auto mt-3">
-              Works the other direction too: paste or drag-drop <em>any screenshot</em> from inside the app Ã¢â‚¬â€ a vendor
-              quote, a supplier product page, a faucet photo, a floor plan PDF Ã¢â‚¬â€ and Foreman reads it with AI vision
+              Works the other direction too: paste or drag-drop <em>any screenshot</em> from inside the app — a vendor
+              quote, a supplier product page, a faucet photo, a floor plan PDF — and Foreman reads it with AI vision
               and acts on it (creates the part, updates the option, answers the question).
             </p>
           </div>
@@ -245,7 +245,7 @@ export default function ForemanPage() {
                     <p className="text-white font-medium italic">&ldquo;{ex.prompt}&rdquo;</p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-slate-400 font-black text-sm leading-none flex-shrink-0 mt-0.5">Ã°Å¸Âªâ€“</span>
+                    <span className="text-slate-400 font-black text-sm leading-none flex-shrink-0 mt-0.5">🪖</span>
                     <p className="text-slate-300 text-sm">{ex.result}</p>
                   </div>
                 </div>
@@ -308,7 +308,7 @@ export default function ForemanPage() {
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <div className="rounded-2xl bg-amber-500/5 border border-amber-500/20 p-8 sm:p-12 text-center">
-            <div className="text-5xl mb-6">Ã°Å¸Â§Â </div>
+            <div className="text-5xl mb-6">🧠</div>
             <h2 className="text-3xl font-black text-white mb-4">Gets smarter over time.</h2>
             <p className="text-slate-400 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
               Foreman learns how <em>you</em> work. Tell it the name you want to be greeted by, your role, your
@@ -373,7 +373,7 @@ export default function ForemanPage() {
                 <div className="rounded-2xl bg-slate-950/80 border border-slate-800 overflow-hidden">
                   <div className="px-5 py-3 border-b border-slate-800 flex items-center justify-between">
                     <div className="flex items-center gap-2">
-                      <span className="text-lg">Ã°Å¸Â¦â€“</span>
+                      <span className="text-lg">🦖</span>
                       <span className="text-white font-semibold text-sm">Foreman AI</span>
                     </div>
                     <div className="flex items-center gap-2">

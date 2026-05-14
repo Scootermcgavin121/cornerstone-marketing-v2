@@ -33,7 +33,7 @@ const AGENTS: Agent[] = [
     id: "blueprint",
     name: "Blueprint AI",
     tagline: "AI Floor Plan Reader",
-    description: "Plan analyzed in under 60 seconds â€” 3,284 parts, fixtures & rooms extracted.",
+    description: "Plan analyzed in under 60 seconds — 3,284 parts, fixtures & rooms extracted.",
     href: "/ai-takeoff",
     color: "text-emerald-300",
     bg: "bg-emerald-500/15",
@@ -45,9 +45,9 @@ const AGENTS: Agent[] = [
   },
   {
     id: "foreman",
-    name: "Foreman AIâ„¢",
+    name: "Foreman AI™",
     tagline: "Your AI Construction Agent",
-    description: "â€œFind microwave images online and upload them to the option photos.â€ â€” Foreman searches the web, downloads, and updates Design Center automatically.",
+    description: "“Find microwave images online and upload them to the option photos.” — Foreman searches the web, downloads, and updates Design Center automatically.",
     href: "/foreman",
     color: "text-cyan-300",
     bg: "bg-cyan-500/15",
@@ -61,7 +61,7 @@ const AGENTS: Agent[] = [
     id: "bid-import",
     name: "Bid Import AI",
     tagline: "AI Vendor Bid Parser",
-    description: "Spreadsheet, PDF, email â€” even a back-of-napkin photo. Parts created in the system automatically.",
+    description: "Spreadsheet, PDF, email — even a back-of-napkin photo. Parts created in the system automatically.",
     href: "/bid-import-ai",
     color: "text-violet-300",
     bg: "bg-violet-500/15",
@@ -75,7 +75,7 @@ const AGENTS: Agent[] = [
     id: "mls",
     name: "AI MLS Listing Generator",
     tagline: "AI Real Estate Listing Writer",
-    description: "MLS listing drafted in 12 seconds â€” Magnolia plan, 4BR, 2,400 sqft â†’ ready to publish.",
+    description: "MLS listing drafted in 12 seconds — Magnolia plan, 4BR, 2,400 sqft → ready to publish.",
     href: "/ai-new-home-sales",
     color: "text-amber-300",
     bg: "bg-amber-500/15",
@@ -89,7 +89,7 @@ const AGENTS: Agent[] = [
     id: "support",
     name: "AI Support Agent",
     tagline: "Instant Answers, Zero Wait Time",
-    description: "Buyer asked about Camden floorplan â€” answered with current pricing + availability.",
+    description: "Buyer asked about Camden floorplan — answered with current pricing + availability.",
     href: "/support-ai",
     color: "text-rose-300",
     bg: "bg-rose-500/15",
@@ -103,7 +103,7 @@ const AGENTS: Agent[] = [
     id: "api",
     name: "Full REST API",
     tagline: "Build Your Own AI Agents",
-    description: "Phone agent texts vendors when bids are due â€” 100+ skills exposed via Bearer token. Connect Claude, GPT, Twilio, anything.",
+    description: "Phone agent texts vendors when bids are due — 100+ skills exposed via Bearer token. Connect Claude, GPT, Twilio, anything.",
     href: "/api-access",
     color: "text-sky-300",
     bg: "bg-sky-500/15",
@@ -175,7 +175,7 @@ export default function AIHubDiagram({ inline = false }: { inline?: boolean } = 
 
   return (
     <Wrapper className={wrapperClass}>
-      {/* soft radial glow â€” matches AgentsSection for cohesion (suppressed inline; hero already has bg) */}
+      {/* soft radial glow — matches AgentsSection for cohesion (suppressed inline; hero already has bg) */}
       {!inline && (
         <>
           <div
@@ -202,7 +202,7 @@ export default function AIHubDiagram({ inline = false }: { inline?: boolean } = 
         <div className="text-center mb-14 sm:mb-20">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-400/30 bg-cyan-400/10 text-xs uppercase tracking-widest text-cyan-200 mb-6">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Powered by Foreman AIâ„¢</span>
+            <span>Powered by Foreman AI™</span>
           </div>
           <h2 className="text-5xl sm:text-7xl font-black tracking-tight leading-none">
             <span className="bg-gradient-to-r from-cyan-400 via-teal-300 to-cyan-500 bg-clip-text text-transparent">
@@ -211,7 +211,7 @@ export default function AIHubDiagram({ inline = false }: { inline?: boolean } = 
             </span>
           </h2>
           <p className="mt-6 text-base sm:text-lg text-white/60 max-w-2xl mx-auto">
-            <span className="text-cyan-300 font-semibold">Foreman AIâ„¢</span> is the brain behind Cornerstone â€” 100+ skills, 5 specialized agents, and a full REST API. Build your own phone agent, vendor SMS bot, or workflow automation on top of the same engine that runs your jobs.
+            <span className="text-cyan-300 font-semibold">Foreman AI™</span> is the brain behind Cornerstone — 100+ skills, 5 specialized agents, and a full REST API. Build your own phone agent, vendor SMS bot, or workflow automation on top of the same engine that runs your jobs.
           </p>
         </div>
 
@@ -276,7 +276,7 @@ export default function AIHubDiagram({ inline = false }: { inline?: boolean } = 
           {/* Hub */}
           <div className="order-1 lg:order-2 flex justify-center">
             <div ref={hubRef} className="relative w-32 h-32">
-              {/* Mid ring â€” ambient counter-rotation */}
+              {/* Mid ring — ambient counter-rotation */}
               <motion.div
                 aria-hidden
                 className="absolute rounded-full border border-dashed border-white/15 pointer-events-none"
@@ -285,7 +285,7 @@ export default function AIHubDiagram({ inline = false }: { inline?: boolean } = 
                 style={{ width: 210, height: 210, left: -41, top: -41 }}
               />
 
-              {/* Outer ring â€” ambient drift */}
+              {/* Outer ring — ambient drift */}
               <motion.div
                 aria-hidden
                 className="absolute rounded-full border border-dashed border-emerald-400/20 pointer-events-none"
@@ -294,7 +294,7 @@ export default function AIHubDiagram({ inline = false }: { inline?: boolean } = 
                 style={{ width: 290, height: 290, left: -81, top: -81 }}
               />
 
-              {/* Thick rotating gradient ring â€” sits right on the hub edge.
+              {/* Thick rotating gradient ring — sits right on the hub edge.
                   Asymmetric conic gradient (bright arc + dim tail) so rotation is obvious. */}
               <motion.div
                 aria-hidden
@@ -316,7 +316,7 @@ export default function AIHubDiagram({ inline = false }: { inline?: boolean } = 
                 }}
               />
 
-              {/* Bright leading dot â€” unmistakable rotation cue */}
+              {/* Bright leading dot — unmistakable rotation cue */}
               <motion.div
                 aria-hidden
                 className="absolute pointer-events-none"
@@ -363,7 +363,7 @@ export default function AIHubDiagram({ inline = false }: { inline?: boolean } = 
           </div>
         </div>
 
-        {/* CTA pill â€” API is now its own spoke; this points to the live docs */}
+        {/* CTA pill — API is now its own spoke; this points to the live docs */}
         <div className="mt-16 flex justify-center">
           <Link
             href="/api-docs"
@@ -371,7 +371,7 @@ export default function AIHubDiagram({ inline = false }: { inline?: boolean } = 
           >
             <span className="text-white/50">See every skill the API exposes</span>
             <span className="font-semibold text-white">Open the API docs</span>
-            <span className="text-emerald-300 group-hover:translate-x-1 transition">â†’</span>
+            <span className="text-emerald-300 group-hover:translate-x-1 transition">→</span>
           </Link>
         </div>
       </div>

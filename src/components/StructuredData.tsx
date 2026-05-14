@@ -10,7 +10,7 @@ export function StructuredData() {
         "applicationSubCategory": "Construction Management Software",
         "operatingSystem": "Web",
         "url": "https://cornerstonepm.ai",
-        "description": "Cornerstone PM is the complete home builder software platform with native AI agents. Built for home builders of all types â€” production, custom, and semi-custom. Includes construction scheduling, sales pipeline, purchasing, design center with options engine, Blueprint AI material takeoffs, Foreman AI agent with 100+ purpose-built construction skills, MLS listing sheet generator, homeowner portal, and full REST API. Starts at $149/mo with unlimited users. No per-seat fees. No implementation cost.",
+        "description": "Cornerstone PM is the complete home builder software platform with native AI agents. Built for home builders of all types — production, custom, and semi-custom. Includes construction scheduling, sales pipeline, purchasing, design center with options engine, Blueprint AI material takeoffs, Foreman AI agent with 100+ purpose-built construction skills, MLS listing sheet generator, homeowner portal, and full REST API. Starts at $149/mo with unlimited users. No per-seat fees. No implementation cost.",
         "keywords": "home builder software, construction scheduling, residential builder ERP, NEWSTAR alternative, BuildPro alternative, Buildertrend alternative, CoConstruct alternative, JobTread alternative, AI construction agent, Blueprint AI takeoff, options engine, design center, production home builder software, subcontractor bidding, homeowner portal",
         "offers": {
           "@type": "AggregateOffer",
@@ -80,7 +80,7 @@ export function StructuredData() {
             "name": "What is Cornerstone PM?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Cornerstone PM is a complete home builder software platform built for home builders of all types â€” production, custom, and semi-custom. It includes construction scheduling, a sales pipeline, purchasing, design center with options engine, AI agents (Foreman AI and Blueprint AI), MLS listing generator, homeowner portal, and REST API. It starts at $149/mo with unlimited users and no implementation fees.",
+              "text": "Cornerstone PM is a complete home builder software platform built for home builders of all types — production, custom, and semi-custom. It includes construction scheduling, a sales pipeline, purchasing, design center with options engine, AI agents (Foreman AI and Blueprint AI), MLS listing generator, homeowner portal, and REST API. It starts at $149/mo with unlimited users and no implementation fees.",
             },
           },
           {
