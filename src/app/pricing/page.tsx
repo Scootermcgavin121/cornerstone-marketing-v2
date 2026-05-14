@@ -46,7 +46,7 @@ const faqs: FAQItem[] = [
   },
   {
     q: "What is included in the free beta?",
-    a: "Beta access is free for two years for the first 100 home builders who sign up. Beta includes every feature on the Pro plan: scheduling, sales pipeline, purchasing, design center, Foreman AI\u2122 (83+ skills), Blueprint AI, and the homeowner portal. After the two-year beta, plans start at $149/mo.",
+    a: "Beta access is free for two years for the first 100 home builders who sign up. Beta includes every feature on the Pro plan: scheduling, sales pipeline, purchasing, design center, Foreman AI\u2122 (99+ skills), Blueprint AI, and the homeowner portal. After the two-year beta, plans start at $149/mo.",
   },
   {
     q: "Can I add REST API access?",

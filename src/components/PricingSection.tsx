@@ -94,7 +94,7 @@ const plans: Plan[] = [
     maxUsers: 30,
     features: [
       "Everything in Builder, plus:",
-      "Foreman AI\u2122 \u2014 83+ skills, takes real actions (20/day)",
+      "Foreman AI\u2122 \u2014 99+ skills, takes real actions (20/day)",
       "Blueprint AI \u2014 upload plans, get 130+ scopes in 60s (5/day)",
       "Bid Import AI \u2014 parse vendor bids from PDF (20/day)",
       "AI Support Agent (250 queries/day org-wide)",

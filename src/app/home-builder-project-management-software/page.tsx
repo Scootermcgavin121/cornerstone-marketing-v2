@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 import { FAQSection, type FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
-  title: "Home Builder Project Management Software | Cornerstone PM™",
+  title: "Home Builder Project Management Software | Cornerstone PMÃ¢â€žÂ¢",
   description:
     "Home builder project management software with AI agents. Scheduling, sales pipeline, purchasing, design center, permitting, and Blueprint AI takeoffs &mdash; one platform from $149/mo.",
   alternates: { canonical: "https://www.cornerstonepm.ai/home-builder-project-management-software" },
@@ -17,13 +17,13 @@ const modules = [
   { name: "Purchasing & Bids", href: "/purchasing", desc: "Parts catalog, scope-item bid drill-down, community-assigned vendor wins, lock-after-acceptance, no-login vendor portal (magic-link access, vendors confirm tasks + edit scope items without an account), 7-wave bidding pipeline.", color: "emerald" },
   { name: "Design Center", href: "/design", desc: "Room-by-room selections, allowance tracking, options engine with real-time price rollup.", color: "violet" },
   { name: "Permitting", href: "/permitting", desc: "Permit gates, phase blocking, inspection tracking, automated reminders across the build.", color: "orange" },
-  { name: "Foreman AI", href: "/foreman", desc: "83 AI skills across 11 categories. Plain-English commands against live builder data.", color: "blue" },
+  { name: "Foreman AI", href: "/foreman", desc: "99+ AI skills across 11 categories. Plain-English commands against live builder data.", color: "blue" },
   { name: "Blueprint AI Takeoff", href: "/ai-takeoff", desc: "Upload PDF floor plans, get 130+ material scopes and quantities in under 60 seconds.", color: "fuchsia" },
   { name: "REST API + BYOA", href: "/api-access", desc: "59+ endpoints (growing), 30+ named webhook events (growing catalog), scoped Bearer-token auth. Bring your own AI agent.", color: "rose" },
 ];
 
 const stats = [
-  { num: "83", label: "Foreman AI skills" },
+  { num: "99+", label: "Foreman AI skills" },
   { num: "59", label: "REST API endpoints" },
   { num: "8", label: "integrated modules" },
   { num: "$149", label: "starting price / mo" },
@@ -32,27 +32,27 @@ const stats = [
 const faqItems: FAQItem[] = [
   {
     q: "What is home builder project management software?",
-    a: "Home builder project management software is an integrated platform that manages every stage of a residential home build &mdash; from lead capture through closing &mdash; including sales, purchasing, design center, scheduling, permitting, and warranty. Cornerstone PM™ is built specifically for home builders running multiple communities, with native AI agents (Foreman AI and Blueprint AI) and a full REST API.",
+    a: "Home builder project management software is an integrated platform that manages every stage of a residential home build &mdash; from lead capture through closing &mdash; including sales, purchasing, design center, scheduling, permitting, and warranty. Cornerstone PMÃ¢â€žÂ¢ is built specifically for home builders running multiple communities, with native AI agents (Foreman AI and Blueprint AI) and a full REST API.",
   },
   {
     q: "What's the difference between home builder PM software and general construction PM software?",
-    a: "General construction PM software (Procore, Buildertrend, JobTread) is built for general contractors and remodelers. Home builder PM software is built around production homebuilding: lots, models, options, draws, design center, floorplan pricing matrices, and pre-sale workflows. Cornerstone PM™ is purpose-built for home builders, not adapted from commercial construction tools.",
+    a: "General construction PM software (Procore, Buildertrend, JobTread) is built for general contractors and remodelers. Home builder PM software is built around production homebuilding: lots, models, options, draws, design center, floorplan pricing matrices, and pre-sale workflows. Cornerstone PMÃ¢â€žÂ¢ is purpose-built for home builders, not adapted from commercial construction tools.",
   },
   {
     q: "What does home builder project management software cost?",
-    a: "Cornerstone PM™ starts at $149/mo (Starter) with unlimited users and no implementation fees. Builder is $299/mo (adds purchasing, sales, design center). Pro is $499/mo (adds Foreman AI + Blueprint AI). Pro+ is $599/mo (adds REST API + BYOA). Compare to NEWSTAR or BuildPro at $25,000+ implementation and Buildertrend at $499+/mo.",
+    a: "Cornerstone PMÃ¢â€žÂ¢ starts at $149/mo (Starter) with unlimited users and no implementation fees. Builder is $299/mo (adds purchasing, sales, design center). Pro is $499/mo (adds Foreman AI + Blueprint AI). Pro+ is $599/mo (adds REST API + BYOA). Compare to NEWSTAR or BuildPro at $25,000+ implementation and Buildertrend at $499+/mo.",
   },
   {
-    q: "How does Cornerstone PM™ handle vendor bidding differently?",
-    a: "Cornerstone PM™ uses scope-item drill-down bid review, community-assigned vendor awards (not lowest-bid auctions), and lock-after-acceptance to protect long-term vendor relationships. Vendors edit their own scope items in their portal; you review side-by-side, award based on relationship + scope coverage, and the winning bid locks down so there's no scope drift. Built around the way production builders actually run vendor pipelines.",
+    q: "How does Cornerstone PMÃ¢â€žÂ¢ handle vendor bidding differently?",
+    a: "Cornerstone PMÃ¢â€žÂ¢ uses scope-item drill-down bid review, community-assigned vendor awards (not lowest-bid auctions), and lock-after-acceptance to protect long-term vendor relationships. Vendors edit their own scope items in their portal; you review side-by-side, award based on relationship + scope coverage, and the winning bid locks down so there's no scope drift. Built around the way production builders actually run vendor pipelines.",
   },
   {
-    q: "Does Cornerstone PM™ include AI agents?",
-    a: "Yes. Cornerstone PM™ includes two native AI agents: Foreman AI (83+ skills across scheduling, sales, purchasing, design center, bids, vendor management, and reporting) and Blueprint AI (PDF floor plan reader that extracts 130+ material scopes per plan). Both are built into the platform and connected to live builder data &mdash; not bolt-on plugins.",
+    q: "Does Cornerstone PMÃ¢â€žÂ¢ include AI agents?",
+    a: "Yes. Cornerstone PMÃ¢â€žÂ¢ includes two native AI agents: Foreman AI (99+ skills across scheduling, sales, purchasing, design center, bids, vendor management, and reporting) and Blueprint AI (PDF floor plan reader that extracts 130+ material scopes per plan). Both are built into the platform and connected to live builder data &mdash; not bolt-on plugins.",
   },
   {
-    q: "Can I replace Buildertrend, JobTread, or BuildPro with Cornerstone PM™?",
-    a: "Yes &mdash; if you're a home builder. Cornerstone PM™ is a modern alternative to Buildertrend, JobTread, CoConstruct, NEWSTAR, BuildPro, and MarkSystems for builders managing 5-200+ homes per year across multiple communities. It includes the same core capabilities plus native AI agents and REST API access at a fraction of the implementation cost.",
+    q: "Can I replace Buildertrend, JobTread, or BuildPro with Cornerstone PMÃ¢â€žÂ¢?",
+    a: "Yes &mdash; if you're a home builder. Cornerstone PMÃ¢â€žÂ¢ is a modern alternative to Buildertrend, JobTread, CoConstruct, NEWSTAR, BuildPro, and MarkSystems for builders managing 5-200+ homes per year across multiple communities. It includes the same core capabilities plus native AI agents and REST API access at a fraction of the implementation cost.",
   },
   {
     q: "How long does implementation take?",
@@ -84,7 +84,7 @@ export default function HomeBuilderPMPage() {
             <span className="text-cyan-400">management software.</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-8">
-            Cornerstone PM™ is the all-in-one platform for home builders. Sales pipeline, purchasing, design center,
+            Cornerstone PMÃ¢â€žÂ¢ is the all-in-one platform for home builders. Sales pipeline, purchasing, design center,
             construction scheduling, permitting, and AI agents &mdash; integrated, with a public REST API.
             Starts at $149/mo. No implementation fees.
           </p>
@@ -145,8 +145,8 @@ export default function HomeBuilderPMPage() {
               </div>
               <h2 className="text-3xl font-black mb-4">AI built into the platform &mdash; not bolted on.</h2>
               <p className="text-slate-400 leading-relaxed mb-4">
-                Most home builder software treats AI as a chatbot bolt-on. Cornerstone PM™ ships two native AI agents wired
-                directly to your live data: Foreman AI (83+ skills) and Blueprint AI (floor plan reader).
+                Most home builder software treats AI as a chatbot bolt-on. Cornerstone PMÃ¢â€žÂ¢ ships two native AI agents wired
+                directly to your live data: Foreman AI (99+ skills) and Blueprint AI (floor plan reader).
               </p>
               <p className="text-slate-400 leading-relaxed">
                 Every action Foreman takes &mdash; updating a vendor bid, generating a PO, drafting an MLS listing,
@@ -156,7 +156,7 @@ export default function HomeBuilderPMPage() {
             </div>
             <div className="space-y-3">
               {[
-                "83 Foreman AI skills across 11 categories",
+                "99+ Foreman AI skills across 11 categories",
                 "Blueprint AI &mdash; PDF floor plan to material takeoff",
                 "MLS Listing Agent &mdash; auto-generated from home data",
                 "AI Support Agent &mdash; instant answers, every feature documented",
@@ -183,7 +183,7 @@ export default function HomeBuilderPMPage() {
               <h2 className="text-3xl font-black mb-4">Not adapted from commercial construction.</h2>
               <p className="text-slate-400 leading-relaxed mb-4">
                 Most construction PM tools were built for general contractors and remodelers, then marketed to home builders.
-                Cornerstone PM™ was built from inside the residential building world &mdash; lots, models, options, design
+                Cornerstone PMÃ¢â€žÂ¢ was built from inside the residential building world &mdash; lots, models, options, design
                 center, draws, plan repeats, and multi-community pipelines are first-class concepts, not workarounds.
               </p>
               <Link href="/compare" className="inline-flex items-center gap-2 text-cyan-400 font-semibold hover:text-cyan-300">
@@ -204,7 +204,7 @@ export default function HomeBuilderPMPage() {
                 <span className="text-slate-500 line-through">$25k+ implementation</span>
               </div>
               <div className="flex justify-between items-center p-3 rounded-lg bg-cyan-500/10 border border-cyan-500/30">
-                <span className="text-white font-semibold">Cornerstone PM™</span>
+                <span className="text-white font-semibold">Cornerstone PMÃ¢â€žÂ¢</span>
                 <span className="text-cyan-400 font-bold">From $149/mo</span>
               </div>
             </div>

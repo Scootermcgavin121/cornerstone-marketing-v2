@@ -4,9 +4,9 @@ import { Navbar } from "@/components/Navbar";
 import { VideoPlayer } from "@/components/VideoPlayer";
 
 export const metadata = {
-  title: "Foreman AI - 83-Skill Construction Agent with Memory Compaction | Cornerstone PM™",
+  title: "Foreman AI - 99-skill construction agent with Memory Compaction | Cornerstone PMÃ¢â€žÂ¢",
   description:
-    "83 purpose-built construction skills with built-in memory compaction - the only construction AI that doesn't forget mid-session. Reads and writes your real data: parts, vendors, homes, budgets, sales pipeline, design center selections. Pro plan.",
+    "99+ purpose-built construction skills with built-in memory compaction - the only construction AI that doesn't forget mid-session. Reads and writes your real data: parts, vendors, homes, budgets, sales pipeline, design center selections. Pro plan.",
 };
 
 const skillCategories = [
@@ -49,8 +49,8 @@ const skillCategories = [
       { name: "Budget Variance Analysis", detail: "Flag cost overruns across all homes in one command" },
       { name: "Profitability Reports", detail: "Margin analysis by community with upgrade revenue breakdown" },
       { name: "Vendor Performance Analysis", detail: "Bid response rates, win rates, insurance tracking" },
-      { name: "Image Vision & Screenshot Acting", detail: "Paste or drag-drop any screenshot, product photo, floor plan, or supplier page from inside the app — Foreman reads it with AI vision and acts on it (vendor quote screenshot → parts catalog entry, faucet photo → model lookup, floor plan PDF → takeoff trigger)." },
-      { name: "File Content Reading", detail: "Analyze uploaded CSVs, text files, and other documents — extract and act on data." },
+      { name: "Image Vision & Screenshot Acting", detail: "Paste or drag-drop any screenshot, product photo, floor plan, or supplier page from inside the app Ã¢â‚¬â€ Foreman reads it with AI vision and acts on it (vendor quote screenshot Ã¢â€ â€™ parts catalog entry, faucet photo Ã¢â€ â€™ model lookup, floor plan PDF Ã¢â€ â€™ takeoff trigger)." },
+      { name: "File Content Reading", detail: "Analyze uploaded CSVs, text files, and other documents Ã¢â‚¬â€ extract and act on data." },
       { name: "Sales Pipeline Analysis", detail: "Identify stalled deals, avg days per stage, close rate by agent or community" },
       { name: "Design Center Revenue Analysis", detail: "Total upgrade revenue by category, top-selling options, margin by spec level" },
       { name: "Buyer Selections Report", detail: "Full selections summary for any home - what was chosen, confirmed, and at what price" },
@@ -78,7 +78,7 @@ const skillCategories = [
       { name: "URL Generation", detail: "Build direct links to specific homes, vendors, and reports" },
       { name: "Error Recovery", detail: "When web scraping fails, uses industry knowledge as backup" },
       { name: "Context Awareness", detail: "Understands builder terminology and workflows - not generic AI speak" },
-      { name: "Personality & Emoji", detail: "Foreman uses emojis for fun and reacts to yours - fire it a 🔥💪👊 and it gets the vibe. Feels like texting a knowledgeable colleague, not chatting with a robot." },
+      { name: "Personality & Emoji", detail: "Foreman uses emojis for fun and reacts to yours - fire it a Ã°Å¸â€Â¥Ã°Å¸â€™ÂªÃ°Å¸â€˜Å  and it gets the vibe. Feels like texting a knowledgeable colleague, not chatting with a robot." },
     ],
   },
   {
@@ -87,8 +87,8 @@ const skillCategories = [
     bg: "bg-emerald-500/10",
     border: "border-emerald-500/20",
     label: "Document Generation",
-    count: 11,
-    desc: "Professional documents in seconds. SOWs, bid invitations, comparison reports, punch lists, MLS sheets, Excel exports.",
+    count: 12,
+    desc: "Professional documents in seconds. SOWs, bid invitations, comparison reports, punch lists, MLS sheets, Excel exports, full lighting packages.",
     skills: [
       { name: "SOW Generator", detail: "Professional Scope of Work docs with home counts and specs" },
       { name: "Bid Request Drafter", detail: "Formatted bid invitations with project details, plans, and deadline" },
@@ -101,6 +101,7 @@ const skillCategories = [
       { name: "Room Dimension Sheets", detail: "Detailed room specs for sales team handouts" },
       { name: "Design Center Summary PDF", detail: "Full selections export for a home - categories, options chosen, prices, and buyer signature line" },
       { name: "Sales Stage Report", detail: "Pipeline snapshot by community - homes per stage, days elapsed, next action due" },
+      { name: "Setup Lighting Package", detail: "Builds a complete fixture-by-fixture lighting plan for a home in one command. Foreman knows which fixtures belong in which rooms - recessed cans in living areas, vanity bars over bathroom sinks, pendants over kitchen islands, sconces in hallways, exterior fixtures at entries - and assembles a room-by-room package against your real catalog. Stop manually picking 40+ fixtures per home." },
     ],
   },
 ];
@@ -141,6 +142,11 @@ const examplePrompts = [
     result: "Room-by-room QC checklist for Paint, Flooring, Trim, and Fixtures - exported as PDF.",
     category: "Punch List Generator",
   },
+  {
+    prompt: "Set up a full lighting package for The Addison floorplan - standard spec level",
+    result: "Built a 42-fixture package: 18 recessed LED cans, 4 pendants over the island, vanity bars in 3 bathrooms, sconces in 2 hallways, plus exterior coach lights and a chandelier in the foyer. All pulled from your catalog with pricing.",
+    category: "Lighting Package Setup",
+  },
 ];
 
 export default function ForemanPage() {
@@ -154,21 +160,21 @@ export default function ForemanPage() {
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-400 text-xs font-semibold mb-6">
             <Zap className="w-3.5 h-3.5" />
-            83+ skills &middot; PRO PLAN &middot; READS AND WRITES YOUR REAL DATA
+            99+ skills &middot; PRO PLAN &middot; READS AND WRITES YOUR REAL DATA
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
-            🪖 Foreman AI<sup className="text-2xl sm:text-3xl lg:text-4xl align-super text-amber-400 ml-1">TM</sup>
+            Ã°Å¸Âªâ€“ Foreman AI<sup className="text-2xl sm:text-3xl lg:text-4xl align-super text-amber-400 ml-1">TM</sup>
           </h1>
           <p className="text-2xl text-amber-400 font-bold mb-4">Not a chatbot. A construction agent.</p>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
-            83 purpose-built skills across 11 categories &mdash; data, analysis, document generation, takeoffs, bidding, sales, reports, system intelligence and more. Type what you need in plain English. Foreman executes it against your real data.
+            99+ purpose-built skills across 11 categories &mdash; data, analysis, document generation, takeoffs, bidding, sales, reports, system intelligence and more. Type what you need in plain English. Foreman executes it against your real data.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/beta" className="px-8 py-4 rounded-full bg-amber-400 text-slate-900 font-bold text-lg hover:bg-amber-300 transition-all duration-200 shadow-lg shadow-amber-500/30 hover:-translate-y-0.5">
               Get Beta Access &rarr;
             </Link>
             <a href="#skills" className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200">
-              See all 83+ skills
+              See all 99+ skills
             </a>
           </div>
         </div>
@@ -188,8 +194,8 @@ export default function ForemanPage() {
               One prompt. Foreman searches the web, downloads the official Samsung product photo, saves it to your server, and attaches it to the right Design Options entry. Zero clicks of yours.
             </p>
             <p className="text-slate-500 text-xs max-w-2xl mx-auto mt-3">
-              Works the other direction too: paste or drag-drop <em>any screenshot</em> from inside the app — a vendor
-              quote, a supplier product page, a faucet photo, a floor plan PDF — and Foreman reads it with AI vision
+              Works the other direction too: paste or drag-drop <em>any screenshot</em> from inside the app Ã¢â‚¬â€ a vendor
+              quote, a supplier product page, a faucet photo, a floor plan PDF Ã¢â‚¬â€ and Foreman reads it with AI vision
               and acts on it (creates the part, updates the option, answers the question).
             </p>
           </div>
@@ -201,7 +207,7 @@ export default function ForemanPage() {
       <section className="py-12 px-4">
         <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-5">
           {[
-            { num: "83", label: "Purpose-built skills", sub: "Not generic AI features" },
+            { num: "99+", label: "Purpose-built skills", sub: "Not generic AI features" },
             { num: "11", label: "Skill categories", sub: "And always growing" },
             { num: "110+", label: "Database tables", sub: "Full access to your real data" },
             { num: "0", label: "Manual data entry", sub: "Plain English to execution" },
@@ -231,7 +237,7 @@ export default function ForemanPage() {
                     <p className="text-white font-medium italic">&ldquo;{ex.prompt}&rdquo;</p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-slate-400 font-black text-sm leading-none flex-shrink-0 mt-0.5">🪖</span>
+                    <span className="text-slate-400 font-black text-sm leading-none flex-shrink-0 mt-0.5">Ã°Å¸Âªâ€“</span>
                     <p className="text-slate-300 text-sm">{ex.result}</p>
                   </div>
                 </div>
@@ -248,7 +254,7 @@ export default function ForemanPage() {
       <section id="skills" className="py-16 px-4 bg-slate-900/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-3xl sm:text-5xl font-black mb-4">83+ skills. 11 categories.</h2>
+            <h2 className="text-3xl sm:text-5xl font-black mb-4">99+ skills. 11 categories.</h2>
             <p className="text-slate-400 max-w-xl mx-auto">Every skill is purpose-built for construction. Not adapted from a generic AI assistant.</p>
           </div>
           <div className="space-y-8">
@@ -294,7 +300,7 @@ export default function ForemanPage() {
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <div className="rounded-2xl bg-amber-500/5 border border-amber-500/20 p-8 sm:p-12 text-center">
-            <div className="text-5xl mb-6">🧠</div>
+            <div className="text-5xl mb-6">Ã°Å¸Â§Â </div>
             <h2 className="text-3xl font-black text-white mb-4">Gets smarter over time.</h2>
             <p className="text-slate-400 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
               Foreman learns how <em>you</em> work. Tell it the name you want to be greeted by, your role, your
@@ -359,7 +365,7 @@ export default function ForemanPage() {
                 <div className="rounded-2xl bg-slate-950/80 border border-slate-800 overflow-hidden">
                   <div className="px-5 py-3 border-b border-slate-800 flex items-center justify-between">
                     <div className="flex items-center gap-2">
-                      <span className="text-lg">🦖</span>
+                      <span className="text-lg">Ã°Å¸Â¦â€“</span>
                       <span className="text-white font-semibold text-sm">Foreman AI</span>
                     </div>
                     <div className="flex items-center gap-2">
@@ -453,7 +459,7 @@ export default function ForemanPage() {
             <div className="text-white font-bold text-xl mb-6">Pro Plan</div>
             <div className="space-y-3 text-left mb-8">
               {[
-                "Foreman AI - 83+ skills, Sonnet model, 1,000 AI messages/mo",
+                "Foreman AI - 99+ skills, Sonnet model, 1,000 AI messages/mo",
                 "Blueprint AI - 25 blueprint takeoffs/mo",
                 "MLS Listing Agent",
                 "Everything in Builder (Sales, Purchasing, Design Center)",
@@ -482,7 +488,7 @@ export default function ForemanPage() {
           <span className="text-amber-400">for custom reports.</span>
         </h2>
         <p className="text-slate-400 text-lg mb-10 max-w-xl mx-auto">
-          We built the consultant into the software. 83+ skills. Plain English. Real construction data. Pro plan.
+          We built the consultant into the software. 99+ skills. Plain English. Real construction data. Pro plan.
         </p>
         <Link href="/beta" className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-amber-400 text-slate-900 font-bold text-xl hover:bg-amber-300 transition-all duration-200 shadow-xl shadow-amber-500/30">
           Get Beta Access <ArrowRight className="w-5 h-5" />

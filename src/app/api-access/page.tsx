@@ -3,9 +3,9 @@ import { Check, Zap, ArrowRight, Code, Globe, Shield, GitBranch, Brain, RefreshC
 import { Navbar } from "@/components/Navbar";
 
 export const metadata = {
-  title: "API Access & Bring Your Own Agent — Cornerstone PM™",
+  title: "API Access & Bring Your Own Agent ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Cornerstone PMÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢",
   description:
-    "REST API + webhooks that let AI agents automate the full home-building loop — send bid requests, track responses, schedule subs by text, and notify homebuyers the moment a milestone completes. No other homebuilder platform does this.",
+    "REST API + webhooks that let AI agents automate the full home-building loop ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â send bid requests, track responses, schedule subs by text, and notify homebuyers the moment a milestone completes. No other homebuilder platform does this.",
 };
 
 const endpoints = [
@@ -16,13 +16,13 @@ const endpoints = [
     bg: "bg-pink-500/10",
     border: "border-pink-500/30",
     label: "Schedule Construction Tasks by Text",
-    desc: "Framers, drywallers, masons, painters — they don't check their inbox. They live in texts. Update a task, the webhook fires with the sub's phone + dates + notes; wire it to Twilio, Bland, or Retell so the sub gets a text (or AI voice call) and can reply to confirm, decline, or reschedule. Your agent parses the reply and PATCHes the task right back — two-way scheduling, no portal login, no missed inbox.",
+    desc: "Framers, drywallers, masons, painters ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â they don't check their inbox. They live in texts. Update a task, the webhook fires with the sub's phone + dates + notes; wire it to Twilio, Bland, or Retell so the sub gets a text (or AI voice call) and can reply to confirm, decline, or reschedule. Your agent parses the reply and PATCHes the task right back ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â two-way scheduling, no portal login, no missed inbox.",
     example: `// 1. Agent updates the task
 PATCH /api/ext/tasks/t_abc123
 { "status": "ready", "startDate": "2026-05-12",
   "note": "Lot 14 framing ready Mon 7am, confirm?" }
 
-// 2. Webhook → your Twilio handler → SMS to sub
+// 2. Webhook ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ your Twilio handler ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ SMS to sub
 // "Lot 14 framing ready Mon 5/12 7am, confirm?"
 
 // 3. Sub texts back: "can't, start Tuesday"
@@ -78,13 +78,13 @@ PATCH /api/ext/tasks/t_abc123
     bg: "bg-blue-500/10",
     border: "border-blue-500/30",
     label: "In-App Message Text Message",
-    desc: "Fires every time someone sends a message inside Cornerstone — PM to vendor, vendor to PM, admin to anyone. Wire to Twilio to text the recipient a preview and a deep link. Emails get buried; texts get read.",
-    example: `// Webhook fires → your Twilio handler
+    desc: "Fires every time someone sends a message inside Cornerstone ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â PM to vendor, vendor to PM, admin to anyone. Wire to Twilio to text the recipient a preview and a deep link. Emails get buried; texts get read.",
+    example: `// Webhook fires ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ your Twilio handler
 {
   "event": "message.sent",
   "data": {
     "message": {
-      "subject": "[Riverside] 123 Oak St, Lot 14 — Framing",
+      "subject": "[Riverside] 123 Oak St, Lot 14 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Framing",
       "bodyPreview": "Hey Mike, need you on site Monday 7am
                        for the framing inspection...",
       "hasAttachments": true
@@ -102,7 +102,7 @@ PATCH /api/ext/tasks/t_abc123
 }
 
 // SMS to vendor:
-// "📩 New message from John (PM):
+// "ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã‚Â© New message from John (PM):
 //  'Need you on site Monday 7am for the framing
 //  inspection. Bring the updated plans.'
 //  View & reply: cornerstonepm.ai/messages?..."`,
@@ -115,8 +115,8 @@ PATCH /api/ext/tasks/t_abc123
     bg: "bg-violet-500/10",
     border: "border-violet-500/30",
     label: "Homeowner Milestone Alerts Text Message",
-    desc: "Fires the instant a milestone task is marked complete. Wire to Twilio, Bland, or Retell to text the homebuyer with progress + a live schedule link — your agent composes, your provider delivers.",
-    example: `// Webhook → your Twilio / SMS handler
+    desc: "Fires the instant a milestone task is marked complete. Wire to Twilio, Bland, or Retell to text the homebuyer with progress + a live schedule link ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â your agent composes, your provider delivers.",
+    example: `// Webhook ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ your Twilio / SMS handler
 {
   "event": "milestone.completed",
   "data": {
@@ -131,7 +131,7 @@ PATCH /api/ext/tasks/t_abc123
 }
 
 // SMS to buyer:
-// "🏠 Framing complete at 123 Oak St!
+// "ÃƒÂ°Ã…Â¸Ã‚ÂÃ‚Â  Framing complete at 123 Oak St!
 //  Your home is 42% done. Track: cornerstonepm.ai/..."`,
   },
   {
@@ -142,8 +142,8 @@ PATCH /api/ext/tasks/t_abc123
     bg: "bg-cyan-500/10",
     border: "border-cyan-500/30",
     label: "Vendor Advance Notice Text Message",
-    desc: "Heads-up that a vendor's task is coming up within their advance-notice window. Same smart threshold logic as Cornerstone's email cascade — if the email fires, this fires. Text the sub before they even check their inbox.",
-    example: `// Webhook → your Twilio handler
+    desc: "Heads-up that a vendor's task is coming up within their advance-notice window. Same smart threshold logic as Cornerstone's email cascade ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â if the email fires, this fires. Text the sub before they even check their inbox.",
+    example: `// Webhook ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ your Twilio handler
 {
   "event": "vendor.notification.advance",
   "data": {
@@ -165,7 +165,7 @@ PATCH /api/ext/tasks/t_abc123
 }
 
 // SMS:
-// "📅 Heads up — Rough Framing at 123 Oak St
+// "ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã¢â‚¬Â¦ Heads up ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Rough Framing at 123 Oak St
 //  starts May 20 (14 days). Tap to confirm:
 //  cornerstonepm.ai/api/tasks/..."`,
   },
@@ -177,8 +177,8 @@ PATCH /api/ext/tasks/t_abc123
     bg: "bg-red-500/10",
     border: "border-red-500/30",
     label: "Vendor Urgent Reminder Text Message",
-    desc: "Final confirmation — the task is within the vendor's lead-time window. This is the \"show up Monday\" text. Includes one-tap confirm link that works over SMS.",
-    example: `// Webhook → your Twilio handler
+    desc: "Final confirmation ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â the task is within the vendor's lead-time window. This is the \"show up Monday\" text. Includes one-tap confirm link that works over SMS.",
+    example: `// Webhook ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ your Twilio handler
 {
   "event": "vendor.notification.reminder",
   "data": {
@@ -199,7 +199,7 @@ PATCH /api/ext/tasks/t_abc123
 }
 
 // SMS:
-// "🔔 Reminder: Rough Framing at 123 Oak St
+// "ÃƒÂ°Ã…Â¸Ã¢â‚¬ÂÃ¢â‚¬Â Reminder: Rough Framing at 123 Oak St
 //  starts Monday (3 days). Confirm now:
 //  cornerstonepm.ai/api/tasks/..."`,
   },
@@ -211,8 +211,8 @@ PATCH /api/ext/tasks/t_abc123
     bg: "bg-amber-500/10",
     border: "border-amber-500/30",
     label: "Schedule Moved Earlier Text Message",
-    desc: "A task date just moved UP — more urgent than a regular change. Thresholds are halved so vendors get notified faster. The sub needs to know NOW that their start date changed.",
-    example: `// Webhook → your Twilio handler
+    desc: "A task date just moved UP ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â more urgent than a regular change. Thresholds are halved so vendors get notified faster. The sub needs to know NOW that their start date changed.",
+    example: `// Webhook ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ your Twilio handler
 {
   "event": "vendor.notification.moved_earlier",
   "data": {
@@ -232,8 +232,8 @@ PATCH /api/ext/tasks/t_abc123
 }
 
 // SMS:
-// "⚠️ Date moved UP: Rough Framing at 123 Oak
-//  moved May 20 → May 15 (5 days earlier).
+// "ÃƒÂ¢Ã…Â¡Ã‚Â ÃƒÂ¯Ã‚Â¸Ã‚Â Date moved UP: Rough Framing at 123 Oak
+//  moved May 20 ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ May 15 (5 days earlier).
 //  Confirm: cornerstonepm.ai/api/tasks/..."`,
   },
   {
@@ -244,8 +244,8 @@ PATCH /api/ext/tasks/t_abc123
     bg: "bg-purple-500/10",
     border: "border-purple-500/30",
     label: "Schedule Postponed Text Message",
-    desc: "A task got pushed back. Vendor needs to know so they can reallocate their crew. Less urgent than moved-earlier, but still important — especially if they've already mobilized.",
-    example: `// Webhook → your Twilio handler
+    desc: "A task got pushed back. Vendor needs to know so they can reallocate their crew. Less urgent than moved-earlier, but still important ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â especially if they've already mobilized.",
+    example: `// Webhook ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ your Twilio handler
 {
   "event": "vendor.notification.postponed",
   "data": {
@@ -265,8 +265,8 @@ PATCH /api/ext/tasks/t_abc123
 }
 
 // SMS:
-// "📆 Date pushed back: Rough Framing at
-//  123 Oak moved May 12 → May 19.
+// "ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã¢â‚¬Â  Date pushed back: Rough Framing at
+//  123 Oak moved May 12 ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ May 19.
 //  cornerstonepm.ai/homes/..."`,
   },
   {
@@ -277,8 +277,8 @@ PATCH /api/ext/tasks/t_abc123
     bg: "bg-green-500/10",
     border: "border-green-500/30",
     label: "Vendor Onboard via Text",
-    desc: "Fires when a vendor is invited to onboard with a magic link. Includes their phone number and the one-tap setup URL — text them directly instead of hoping they check email. Link expires in 24 hours.",
-    example: `// Webhook fires → your Twilio handler
+    desc: "Fires when a vendor is invited to onboard with a magic link. Includes their phone number and the one-tap setup URL ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â text them directly instead of hoping they check email. Link expires in 24 hours.",
+    example: `// Webhook fires ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ your Twilio handler
 {
   "event": "vendor.invited",
   "data": {
@@ -299,7 +299,7 @@ PATCH /api/ext/tasks/t_abc123
 }
 
 // Your SMS:
-// "👋 Scott Alan Homes invited you to their
+// "ÃƒÂ°Ã…Â¸Ã¢â‚¬ËœÃ¢â‚¬Â¹ Scott Alan Homes invited you to their
 //  vendor portal. Tap to set up your account:
 //  cornerstonepm.ai/reset-password?token=abc..."`,
   },
@@ -311,8 +311,8 @@ PATCH /api/ext/tasks/t_abc123
     bg: "bg-orange-500/10",
     border: "border-orange-500/30",
     label: "Bid Request via Text",
-    desc: "Fires per-vendor when a bid request goes out. Includes the unique bid portal link and Excel template URL. Text the sub their bid link — they tap once and they're looking at the plans.",
-    example: `// Webhook fires → your Twilio handler
+    desc: "Fires per-vendor when a bid request goes out. Includes the unique bid portal link and Excel template URL. Text the sub their bid link ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â they tap once and they're looking at the plans.",
+    example: `// Webhook fires ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ your Twilio handler
 {
   "event": "bid_request.sent",
   "data": {
@@ -333,8 +333,8 @@ PATCH /api/ext/tasks/t_abc123
 }
 
 // Your SMS:
-// "📋 New bid request from Scott Alan Homes
-//  Framing — Riverside 2400, Oakmont 1800
+// "ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã¢â‚¬Â¹ New bid request from Scott Alan Homes
+//  Framing ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Riverside 2400, Oakmont 1800
 //  Due: May 15. Submit your bid:
 //  cornerstonepm.ai/vendor-portal/bid/abc123..."`,
   },
@@ -346,8 +346,8 @@ PATCH /api/ext/tasks/t_abc123
     bg: "bg-lime-500/10",
     border: "border-lime-500/30",
     label: "New Lead Captured",
-    desc: "Fires when a new lead enters the pipeline — from your website, a realtor, or manual entry. Push to your CRM, text your sales team, or trigger an automated follow-up call.",
-    example: `// Webhook fires → your CRM / sales team Slack
+    desc: "Fires when a new lead enters the pipeline ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â from your website, a realtor, or manual entry. Push to your CRM, text your sales team, or trigger an automated follow-up call.",
+    example: `// Webhook fires ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ your CRM / sales team Slack
 {
   "event": "lead.created",
   "data": {
@@ -366,9 +366,9 @@ PATCH /api/ext/tasks/t_abc123
 }
 
 // Your SMS to sales team:
-// "🔥 New lead: John Smith (score: 4/5)
+// "ÃƒÂ°Ã…Â¸Ã¢â‚¬ÂÃ‚Â¥ New lead: John Smith (score: 4/5)
 //  Looking for 2400 sqft in Riverside Estates
-//  Phone: 555-1234 — follow up NOW"`,
+//  Phone: 555-1234 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â follow up NOW"`,
   },
   {
     method: "WEBHOOK",
@@ -377,9 +377,9 @@ PATCH /api/ext/tasks/t_abc123
     color: "text-teal-400",
     bg: "bg-teal-500/10",
     border: "border-teal-500/30",
-    label: "Lead → Buyer Conversion",
-    desc: "Fires when a lead converts to a buyer — the moment a prospect becomes a customer. Trigger a welcome text, update your CRM, or alert the sales manager.",
-    example: `// Webhook fires → your CRM + Twilio
+    label: "Lead ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Buyer Conversion",
+    desc: "Fires when a lead converts to a buyer ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â the moment a prospect becomes a customer. Trigger a welcome text, update your CRM, or alert the sales manager.",
+    example: `// Webhook fires ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ your CRM + Twilio
 {
   "event": "lead.converted",
   "data": {
@@ -401,7 +401,7 @@ PATCH /api/ext/tasks/t_abc123
 }
 
 // Your SMS to buyer:
-// "🎉 Welcome to the Scott Alan Homes family,
+// "ÃƒÂ°Ã…Â¸Ã…Â½Ã¢â‚¬Â° Welcome to the Scott Alan Homes family,
 //  John! Your sales agent will be in touch
 //  shortly to start your home journey."`,
   },
@@ -413,8 +413,8 @@ PATCH /api/ext/tasks/t_abc123
     bg: "bg-emerald-500/10",
     border: "border-emerald-500/30",
     label: "New Home Sale",
-    desc: "Fires when a new home sale is entered — buyer attached, lot assigned, contract signed. Alert your team, update accounting, or text the buyer a welcome message with their portal link.",
-    example: `// Webhook fires → your team Slack + CRM
+    desc: "Fires when a new home sale is entered ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â buyer attached, lot assigned, contract signed. Alert your team, update accounting, or text the buyer a welcome message with their portal link.",
+    example: `// Webhook fires ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ your team Slack + CRM
 {
   "event": "sale.created",
   "data": {
@@ -437,7 +437,7 @@ PATCH /api/ext/tasks/t_abc123
 }
 
 // Your SMS to buyer:
-// "🏠 Congratulations John! Your new home at
+// "ÃƒÂ°Ã…Â¸Ã‚ÂÃ‚Â  Congratulations John! Your new home at
 //  123 Oak St is officially under contract.
 //  We'll keep you updated every step of the way."`,
   },
@@ -449,8 +449,8 @@ PATCH /api/ext/tasks/t_abc123
     bg: "bg-yellow-500/10",
     border: "border-yellow-500/30",
     label: "Sale Approved",
-    desc: "Fires when the Sales Manager approves a deal — the key gate in the pipeline. Text the buyer, notify accounting, or trigger the next phase of onboarding automatically.",
-    example: `// Webhook fires → your Twilio + accounting
+    desc: "Fires when the Sales Manager approves a deal ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â the key gate in the pipeline. Text the buyer, notify accounting, or trigger the next phase of onboarding automatically.",
+    example: `// Webhook fires ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ your Twilio + accounting
 {
   "event": "sale.approved",
   "data": {
@@ -469,7 +469,7 @@ PATCH /api/ext/tasks/t_abc123
 }
 
 // Your SMS to buyer:
-// "✅ Great news, John! Your home at 123 Oak St
+// "ÃƒÂ¢Ã…â€œÃ¢â‚¬Â¦ Great news, John! Your home at 123 Oak St
 //  has been approved. Next up: design selections!"`,
   },
   {
@@ -480,8 +480,8 @@ PATCH /api/ext/tasks/t_abc123
     bg: "bg-sky-500/10",
     border: "border-sky-500/30",
     label: "Ready for Construction",
-    desc: "Fires when every sales task is complete — contract, deposit, financing, options, approvals, all done. The home is officially moving to construction. Alert the PM, PA, and purchasing team.",
-    example: `// Webhook fires → your team notifications
+    desc: "Fires when every sales task is complete ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â contract, deposit, financing, options, approvals, all done. The home is officially moving to construction. Alert the PM, PA, and purchasing team.",
+    example: `// Webhook fires ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ your team notifications
 {
   "event": "sale.pipeline_complete",
   "data": {
@@ -501,7 +501,7 @@ PATCH /api/ext/tasks/t_abc123
 }
 
 // Your SMS to PM:
-// "🚀 123 Oak St (Lot 14) — ALL sales tasks
+// "ÃƒÂ°Ã…Â¸Ã…Â¡Ã¢â€šÂ¬ 123 Oak St (Lot 14) ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â ALL sales tasks
 //  complete. Home is now IN_PROGRESS.
 //  Ready for permitting and construction."`,
   },
@@ -514,7 +514,7 @@ PATCH /api/ext/tasks/t_abc123
     border: "border-rose-500/30",
     label: "Sale Cancelled",
     desc: "Fires when a sale falls through. Update your CRM, alert management, or trigger the lot-release workflow. Includes the cancel reason so downstream systems know why.",
-    example: `// Webhook fires → management alerts
+    example: `// Webhook fires ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ management alerts
 {
   "event": "sale.cancelled",
   "data": {
@@ -532,7 +532,7 @@ PATCH /api/ext/tasks/t_abc123
 }
 
 // Your alert to management:
-// "❌ SALE CANCELLED: 123 Oak St (Lot 14)
+// "ÃƒÂ¢Ã‚ÂÃ…â€™ SALE CANCELLED: 123 Oak St (Lot 14)
 //  Buyer: John Smith
 //  Reason: Financing fell through
 //  Lot is now available for reassignment."`,
@@ -567,7 +567,7 @@ const pipeline = [
   {
     wave: "05",
     title: "Automatic 7-day follow-ups",
-    desc: "No response after 7 days? The system follows up automatically — by email, text, or another call — without anyone lifting a finger.",
+    desc: "No response after 7 days? The system follows up automatically ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â by email, text, or another call ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â without anyone lifting a finger.",
     stat: "Configurable reminder cadence",
   },
   {
@@ -579,7 +579,7 @@ const pipeline = [
   {
     wave: "07",
     title: "Winners onboard instantly",
-    desc: "Winning vendors get a magic link to self-register into Cornerstone — scheduling, POs, invoices, and document requirements handled automatically.",
+    desc: "Winning vendors get a magic link to self-register into Cornerstone ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â scheduling, POs, invoices, and document requirements handled automatically.",
     stat: "Magic link onboarding",
   },
 ];
@@ -690,7 +690,7 @@ export default function ApiAccessPage() {
                         REAL-TIME WEBHOOKS
                       </div>
                       <h3 className="text-2xl sm:text-3xl font-black text-white mb-2">30 HMAC-signed events. Fire to Twilio, Bland, or Retell the moment something happens.</h3>
-                      <p className="text-slate-400 max-w-2xl mx-auto">Other platforms say &ldquo;webhooks exist.&rdquo; We give you 30+ named events and counting — typed payloads, HMAC signatures, delivery logs, and auto-retry. New events ship as the platform grows.</p>
+                      <p className="text-slate-400 max-w-2xl mx-auto">Other platforms say &ldquo;webhooks exist.&rdquo; We give you 30+ named events and counting ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â typed payloads, HMAC signatures, delivery logs, and auto-retry. New events ship as the platform grows.</p>
                     </div>
                   )}
                   {showGroupLabel && !showDivider && (
@@ -775,13 +775,13 @@ export default function ApiAccessPage() {
               <span className="text-violet-400">The intelligence layer.</span>
             </h2>
             <p className="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
-              Pro+ users get access to Foreman AI&apos;s complete skill definitions &mdash; the actual tool schemas that make any AI agent instantly fluent in construction workflows. One endpoint. 83+ skills. Ready to drop into any agent framework.
+              Pro+ users get access to Foreman AI&apos;s complete skill definitions &mdash; the actual tool schemas that make any AI agent instantly fluent in construction workflows. One endpoint. 99+ skills, including domain-aware tools like <em className="text-violet-300 not-italic font-semibold">Setup Lighting Package</em> (room-by-room fixture intelligence), bid comparison, profitability analysis, and image vision. Ready to drop into any agent framework.
             </p>
           </div>
 
           {/* Knowledge file callout */}
           <div className="mb-10 rounded-2xl bg-gradient-to-r from-violet-500/10 to-cyan-500/10 border border-violet-500/30 p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6">
-            <div className="text-5xl flex-shrink-0">🧠</div>
+            <div className="text-5xl flex-shrink-0">ÃƒÂ°Ã…Â¸Ã‚Â§Ã‚Â </div>
             <div className="flex-1">
               <h3 className="text-white font-black text-xl mb-2">One URL. Your agent becomes a Cornerstone expert.</h3>
               <p className="text-slate-400 leading-relaxed mb-4">
@@ -809,7 +809,7 @@ export default function ApiAccessPage() {
                 </div>
                 <h3 className="text-2xl font-black text-violet-400 mb-3">Foreman Skill Pack</h3>
                 <p className="text-slate-400 leading-relaxed mb-6">
-                  Returns all 83 Foreman AI skill definitions in your choice of format. Drop them directly into any Claude, GPT-4, or LangChain agent to give it full construction intelligence in seconds.
+                  Returns all 99+ Foreman AI skill definitions in your choice of format. Drop them directly into any Claude, GPT-4, or LangChain agent to give it full construction intelligence in seconds.
                 </p>
                 <div className="flex items-center gap-2 text-sm text-slate-400">
                   <RefreshCw className="w-4 h-4 text-violet-400 flex-shrink-0" />
@@ -837,9 +837,9 @@ export default function ApiAccessPage() {
             </div>
           </div>
 
-          {/* 83+ skills breakdown */}
+          {/* 99+ skills breakdown */}
           <div className="mb-10">
-            <p className="text-center text-slate-400 text-sm font-semibold uppercase tracking-widest mb-6">83+ skills across 11 categories</p>
+            <p className="text-center text-slate-400 text-sm font-semibold uppercase tracking-widest mb-6">99+ skills across 11 categories</p>
             <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3">
               {[
                 { domain: "Design Center", desc: "Options, categories, classes, spec levels, images", color: "text-violet-400", bg: "bg-violet-500/10", border: "border-violet-500/20" },
@@ -860,15 +860,15 @@ export default function ApiAccessPage() {
                 </div>
               ))}
             </div>
-            <p className="text-center text-slate-600 text-xs mt-3">11 categories. 83+ skills. Always shipping more.</p>
+            <p className="text-center text-slate-600 text-xs mt-3">11 categories. 99+ skills. Always shipping more.</p>
           </div>
 
           {/* Why this matters */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {[
-                { emoji: "⚡", title: "Instant construction fluency", desc: "Any AI agent — Claude, GPT-4, a custom LangChain bot — becomes a construction expert the moment you load the skill pack." },
-                { emoji: "🔄", title: "Always up to date", desc: "The endpoint reflects Foreman&apos;s live skill set. When we ship new skills, your agent gets them automatically. No version management." },
-                { emoji: "🔌", title: "Works with any framework", desc: "Anthropic tools, OpenAI functions, or raw OpenAPI 3.1. Use whatever your stack already speaks." },
+                { emoji: "ÃƒÂ¢Ã…Â¡Ã‚Â¡", title: "Instant construction fluency", desc: "Any AI agent ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Claude, GPT-4, a custom LangChain bot ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â becomes a construction expert the moment you load the skill pack." },
+                { emoji: "ÃƒÂ°Ã…Â¸Ã¢â‚¬ÂÃ¢â‚¬Å¾", title: "Always up to date", desc: "The endpoint reflects Foreman&apos;s live skill set. When we ship new skills, your agent gets them automatically. No version management." },
+                { emoji: "ÃƒÂ°Ã…Â¸Ã¢â‚¬ÂÃ…â€™", title: "Works with any framework", desc: "Anthropic tools, OpenAI functions, or raw OpenAPI 3.1. Use whatever your stack already speaks." },
             ].map((item) => (
               <div key={item.title} className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-violet-500/20 transition-all duration-300 flex items-start gap-4">
                 <span className="text-3xl flex-shrink-0">{item.emoji}</span>
@@ -939,7 +939,7 @@ export default function ApiAccessPage() {
                 title: "Foreman AI",
                 badge: "Built-in",
                 badgeColor: "bg-amber-500/20 text-amber-400 border-amber-500/30",
-                desc: "Cornerstone&apos;s own 83-skill construction agent. Already wired to the API. No setup required.",
+                desc: "Cornerstone&apos;s own 99-skill construction agent. Already wired to the API. No setup required.",
                 link: "/foreman",
               },
               {
@@ -986,42 +986,42 @@ export default function ApiAccessPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {[
               {
-                emoji: "🚚",
+                emoji: "ÃƒÂ°Ã…Â¸Ã…Â¡Ã…Â¡",
                 title: "Migrate from your old software",
                 desc: "An AI agent reads your existing Buildertrend, JobTread, or Excel data and migrates it into Cornerstone automatically. No manual re-entry, no implementation consultant, no $25k fee. You own the process.",
                 tag: "Data Migration",
                 tagColor: "text-amber-400 bg-amber-500/10 border-amber-500/20",
               },
               {
-                emoji: "📊",
+                emoji: "ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã…Â ",
                 title: "Sync with your accounting software",
-                desc: "Bridge Cornerstone and QuickBooks, Sage, or your accounting system of choice. POs, invoices, and job costs flow both ways automatically — no double entry, no CSV exports.",
+                desc: "Bridge Cornerstone and QuickBooks, Sage, or your accounting system of choice. POs, invoices, and job costs flow both ways automatically ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â no double entry, no CSV exports.",
                 tag: "Accounting Integration",
                 tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
               },
               {
-                emoji: "📞",
+                emoji: "ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã…Â¾",
                 title: "Cold call vendors to build your database",
-                desc: "Your voice agent calls roofing companies, electricians, framers — gets their email and contact info, adds them as vendors in Cornerstone automatically. 200 vendors contacted in an afternoon.",
+                desc: "Your voice agent calls roofing companies, electricians, framers ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â gets their email and contact info, adds them as vendors in Cornerstone automatically. 200 vendors contacted in an afternoon.",
                 tag: "Vendor Acquisition",
                 tagColor: "text-cyan-400 bg-cyan-500/10 border-cyan-500/20",
               },
               {
-                emoji: "📧",
+                emoji: "ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã‚Â§",
                 title: "Scan your inbox for bid replies",
-                desc: "An email-scanning agent reads incoming vendor emails, extracts bid data, and logs everything in Cornerstone — no manual entry, no missed bids. Your inbox becomes an automated data pipeline.",
+                desc: "An email-scanning agent reads incoming vendor emails, extracts bid data, and logs everything in Cornerstone ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â no manual entry, no missed bids. Your inbox becomes an automated data pipeline.",
                 tag: "Email Automation",
                 tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
               },
               {
-                emoji: "✅",
+                emoji: "ÃƒÂ¢Ã…â€œÃ¢â‚¬Â¦",
                 title: "Task completion triggers purchase orders",
-                desc: "Agent monitors your Cornerstone task completions and generates POs automatically when a scope is finished. Schedule drives purchasing — you never have to manually create a PO again.",
+                desc: "Agent monitors your Cornerstone task completions and generates POs automatically when a scope is finished. Schedule drives purchasing ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â you never have to manually create a PO again.",
                 tag: "PO Automation",
                 tagColor: "text-blue-400 bg-blue-500/10 border-blue-500/20",
               },
               {
-                emoji: "📱",
+                emoji: "ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã‚Â±",
                 title: "Follow up on overdue tasks by phone",
                 desc: "A voice agent calls the framer who hasn&apos;t confirmed their schedule date. Records the outcome. Updates the task status. Your schedule enforces itself.",
                 tag: "Schedule Enforcement",
@@ -1052,9 +1052,9 @@ export default function ApiAccessPage() {
             <div className="text-white font-bold text-xl mb-6">Pro+ Plan</div>
             <div className="space-y-3 text-left mb-8">
               {[
-                "Full REST API — 58 endpoints (vendors, bids, homes, tasks, POs, parts, options, webhooks)",
-                "Foreman Skill Pack — GET /api/ext/skills in Anthropic, OpenAI, or OpenAPI 3.1 format",
-                "83+ skills across 11 categories, auto-synced as new skills ship",
+                "Full REST API ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â 58 endpoints (vendors, bids, homes, tasks, POs, parts, options, webhooks)",
+                "Foreman Skill Pack ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â GET /api/ext/skills in Anthropic, OpenAI, or OpenAPI 3.1 format",
+                "99+ skills across 11 categories, auto-synced as new skills ship",
                 "Scoped API keys per agent/integration",
                 "Real-time webhooks (30+ named event types and growing, HMAC-signed)",
                 "Automated 7-wave bidding pipeline",

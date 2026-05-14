@@ -6,11 +6,11 @@ import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Homebuilding AI: How AI is Changing Residential Construction in 2026 &mdash; Cornerstone PM™ Blog",
+  title: "Homebuilding AI: How AI is Changing Residential Construction in 2026 &mdash; Cornerstone PMÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ Blog",
   description:
     "Homebuilding is one of the last industries to get purpose-built AI &mdash; that's changing fast. Here's where AI is making the biggest impact in residential construction and what's coming next.",
   openGraph: {
-    images: [{ url: "https://www.cornerstonepm.ai/blog/foreman-ai-skills.png", width: 1024, height: 1024, alt: "Homebuilding AI agent managing live builder data across 83 construction skills" }],
+    images: [{ url: "https://www.cornerstonepm.ai/blog/foreman-ai-skills.png", width: 1024, height: 1024, alt: "Homebuilding AI agent managing live builder data across 99+ construction skills" }],
   }
 };
 
@@ -28,7 +28,7 @@ export default function HomebuildingAiPost() {
           Back to Blog
         </Link>
 
-        <BlogHero src="/blog/foreman-ai-skills.png" alt="Homebuilding AI agent managing live builder data across 83 construction skills" />
+        <BlogHero src="/blog/foreman-ai-skills.png" alt="Homebuilding AI agent managing live builder data across 99+ construction skills" />
 
         <div className="mb-8">
           <span className="text-xs font-medium px-2.5 py-0.5 rounded-full border text-blue-400 bg-blue-500/10 border-blue-500/20 mb-4 inline-block">
@@ -39,7 +39,7 @@ export default function HomebuildingAiPost() {
           </h1>
           <div className="flex items-center gap-3 text-sm text-slate-500">
             <span>March 3, 2026</span>
-            <span>&mdash;·</span>
+            <span>&mdash;Ãƒâ€šÃ‚Â·</span>
             <span>6 min read</span>
           </div>
         </div>
@@ -136,7 +136,7 @@ export default function HomebuildingAiPost() {
                     <p className="text-white font-medium italic text-sm">&ldquo;{ex.prompt}&rdquo;</p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="font-black text-sm leading-none flex-shrink-0 mt-0.5">ðŸª–</span>
+                    <span className="font-black text-sm leading-none flex-shrink-0 mt-0.5">ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸Ãƒâ€šÃ‚ÂªÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“</span>
                     <p className="text-slate-300 text-sm">{ex.result}</p>
                   </div>
                 </div>
@@ -145,7 +145,7 @@ export default function HomebuildingAiPost() {
           </div>
 
           <p>
-            These examples are from Cornerstone PM™&apos;s Foreman AI &mdash; a 83-skill AI agent purpose-built for home builders that reads and writes real construction data in plain English.
+            These examples are from Cornerstone PMÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢&apos;s Foreman AI &mdash; a 99-skill AI agent purpose-built for home builders that reads and writes real construction data in plain English.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
@@ -172,14 +172,14 @@ export default function HomebuildingAiPost() {
             Homebuilding AI is no longer a future concept. It&apos;s here, it&apos;s working, and the builders who adopt it first are going to have a meaningful operational advantage. The difference between AI adapted to homebuilding and AI built for homebuilding is the difference between a tool that helps you write about your operation and a tool that actually runs it.
           </p>
           <p>
-            Cornerstone PM™ is building that second kind of tool. Foreman AI &mdash; 83 purpose-built skills, real data access, persistent memory. Beta is open now.
+            Cornerstone PMÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ is building that second kind of tool. Foreman AI &mdash; 99+ purpose-built skills, real data access, persistent memory. Beta is open now.
           </p>
         </div>
 
         <div className="mt-12 p-6 rounded-2xl border border-amber-500/20 bg-amber-500/5">
           <h3 className="text-lg font-bold text-white mb-2">See homebuilding AI in action</h3>
           <p className="text-slate-400 text-sm mb-4">
-            Cornerstone PM™&apos;s beta is open. Foreman AI is included in the Pro plan. 2 years free for early adopters.
+            Cornerstone PMÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢&apos;s beta is open. Foreman AI is included in the Pro plan. 2 years free for early adopters.
           </p>
           <Link
             href="/beta"

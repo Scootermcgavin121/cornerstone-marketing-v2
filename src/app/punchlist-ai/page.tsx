@@ -6,13 +6,13 @@ import { Footer } from "@/components/Footer";
 import { CTASection } from "@/components/CTASection";
 
 export const metadata = {
-  title: "Punchlist AI — Walk the House, Get the Punchlist | Cornerstone PM™",
+  title: "Punchlist AI â€” Walk the House, Get the Punchlist | Cornerstone PMâ„¢",
   description:
-    "Record a walkthrough on your phone. Punchlist AI watches the video, identifies every issue, tags severity and location, and creates a punch list in your build in seconds. Built into Cornerstone PM™.",
+    "Record a walkthrough on your phone. Punchlist AI watches the video, identifies every issue, tags severity and location, and creates a punch list in your build in seconds. Built into Cornerstone PMâ„¢.",
   openGraph: {
-    title: "Punchlist AI — Walk the House, Get the Punchlist",
+    title: "Punchlist AI â€” Walk the House, Get the Punchlist",
     description:
-      "Record a walkthrough. Punchlist AI watches the video and builds your punch list — severity tagged, location pinned, ready to assign.",
+      "Record a walkthrough. Punchlist AI watches the video and builds your punch list â€” severity tagged, location pinned, ready to assign.",
     images: ["/mockups/ss-punchlist-ai.jpg"],
   },
 };
@@ -22,7 +22,7 @@ const howItWorks = [
     step: "01",
     icon: Video,
     title: "Walk the house",
-    desc: "Open the home in Cornerstone PM™. Tap Record. Walk the rooms and talk through what you see — \"replace this baseboard, repaint the trim above the window, the bottom shelf in the office needs to come out.\" Or upload a video you already recorded.",
+    desc: "Open the home in Cornerstone PMâ„¢. Tap Record. Walk the rooms and talk through what you see â€” \"replace this baseboard, repaint the trim above the window, the bottom shelf in the office needs to come out.\" Or upload a video you already recorded.",
   },
   {
     step: "02",
@@ -55,28 +55,28 @@ const whatItCatches = [
 const features = [
   {
     icon: Camera,
-    title: "Video → Punch List in under 60 seconds",
+    title: "Video â†’ Punch List in under 60 seconds",
     desc: "Most 10-minute walkthroughs are processed in under a minute. No clipboard. No retyping. No 'I'll add it when I get back to the office.'",
   },
   {
     icon: MapPin,
     title: "Auto-tagged location, scope, and severity",
-    desc: "Punchlist AI doesn't just transcribe — it understands. It tags every item with the right room, the right trade scope, and the right severity so it lands in the right hands.",
+    desc: "Punchlist AI doesn't just transcribe â€” it understands. It tags every item with the right room, the right trade scope, and the right severity so it lands in the right hands.",
   },
   {
     icon: ShieldCheck,
     title: "Voice + visual together",
-    desc: "What you say AND what the camera sees both feed the AI. Point the lens, say the problem out loud — both signals are merged into one clean punch list entry.",
+    desc: "What you say AND what the camera sees both feed the AI. Point the lens, say the problem out loud â€” both signals are merged into one clean punch list entry.",
   },
   {
     icon: Clock,
     title: "Works on partial walkthroughs",
-    desc: "Final walk? Pre-drywall walk? Vendor closeout walk? Punchlist AI handles all of them. Run it as many times as you want on a home — it adds to the existing list, doesn't overwrite.",
+    desc: "Final walk? Pre-drywall walk? Vendor closeout walk? Punchlist AI handles all of them. Run it as many times as you want on a home â€” it adds to the existing list, doesn't overwrite.",
   },
   {
     icon: Zap,
     title: "Built into the app, not a bolt-on",
-    desc: "This isn't a separate tool you have to learn. The punch list lives where your home lives — alongside your schedule, budget, and design selections. One source of truth.",
+    desc: "This isn't a separate tool you have to learn. The punch list lives where your home lives â€” alongside your schedule, budget, and design selections. One source of truth.",
   },
   {
     icon: ListChecks,
@@ -90,13 +90,13 @@ const useCases = [
     when: "Pre-drywall walkthrough",
     who: "Superintendent",
     benefit:
-      "Walk the framing, point out blocking issues, missing pipe penetrations, electrical placement problems — Punchlist AI captures every callout for the trades.",
+      "Walk the framing, point out blocking issues, missing pipe penetrations, electrical placement problems â€” Punchlist AI captures every callout for the trades.",
   },
   {
     when: "Final walkthrough with the buyer",
     who: "Builder + Buyer",
     benefit:
-      "Walk with the homeowner. They point out concerns. You record. Punchlist AI builds the closeout list automatically — no more 'we'll add that later' getting forgotten.",
+      "Walk with the homeowner. They point out concerns. You record. Punchlist AI builds the closeout list automatically â€” no more 'we'll add that later' getting forgotten.",
   },
   {
     when: "Vendor closeout walk",
@@ -131,7 +131,7 @@ export default function PunchlistAIPage() {
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-amber-500/10 border border-amber-500/30 rounded-full text-amber-300 text-xs font-medium uppercase tracking-wider mb-6">
                 <Sparkles className="w-3.5 h-3.5" />
-                <span>New · Punchlist AI</span>
+                <span>New Â· Punchlist AI</span>
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
@@ -144,7 +144,7 @@ export default function PunchlistAIPage() {
 
               <p className="text-lg text-slate-300 mb-8 leading-relaxed">
                 Record a walkthrough on your phone. Punchlist AI watches the video, identifies every
-                issue, tags severity and location, and creates a punch list inside the home — automatically.
+                issue, tags severity and location, and creates a punch list inside the home â€” automatically.
                 No clipboard. No retyping. No items forgotten on the drive back.
               </p>
 
@@ -165,7 +165,7 @@ export default function PunchlistAIPage() {
               </div>
 
               <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-slate-400">
-                <span className="flex items-center gap-2"><Check className="w-4 h-4 text-emerald-400" /> Built into Cornerstone PM™</span>
+                <span className="flex items-center gap-2"><Check className="w-4 h-4 text-emerald-400" /> Built into Cornerstone PMâ„¢</span>
                 <span className="flex items-center gap-2"><Check className="w-4 h-4 text-emerald-400" /> Video + voice in one pass</span>
                 <span className="flex items-center gap-2"><Check className="w-4 h-4 text-emerald-400" /> Severity + location auto-tagged</span>
               </div>
@@ -178,7 +178,7 @@ export default function PunchlistAIPage() {
                 <div className="relative bg-slate-900 rounded-3xl border border-slate-700 p-2 shadow-2xl">
                   <Image
                     src="/mockups/ss-punchlist-ai.jpg"
-                    alt="Punchlist AI screen in the Cornerstone PM™ mobile app — shows Record, Upload Video, and Add Item buttons with a generated punch list item"
+                    alt="Punchlist AI screen in the Cornerstone PMâ„¢ mobile app â€” shows Record, Upload Video, and Add Item buttons with a generated punch list item"
                     width={400}
                     height={800}
                     className="rounded-2xl"
@@ -231,7 +231,7 @@ export default function PunchlistAIPage() {
                 and the language your supers and vendors actually use on a jobsite.
               </p>
               <p className="text-slate-400 text-sm">
-                The list below is a sample — not a hard limit. If you call it out on the video,
+                The list below is a sample â€” not a hard limit. If you call it out on the video,
                 Punchlist AI captures it.
               </p>
             </div>
@@ -288,7 +288,7 @@ export default function PunchlistAIPage() {
           <div className="text-center mb-14">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">Every walk on the build</h2>
             <p className="text-slate-400 text-lg">
-              Pre-drywall, final, vendor closeout, warranty — same workflow, every time.
+              Pre-drywall, final, vendor closeout, warranty â€” same workflow, every time.
             </p>
           </div>
 
@@ -326,18 +326,18 @@ export default function PunchlistAIPage() {
                   Powered by Foreman AI
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-bold mb-3">
-                  Punchlist AI is a Foreman skill — and Foreman has 83+ more.
+                  Punchlist AI is a Foreman skill â€” and Foreman has 99+ more.
                 </h2>
                 <p className="text-slate-300 leading-relaxed mb-6">
                   The same AI that builds your punch list also reads your blueprints, generates MLS
                   listings, compares vendor bids, scrapes Home Depot pricing, and runs profitability
-                  reports — all from natural-language commands inside the app.
+                  reports â€” all from natural-language commands inside the app.
                 </p>
                 <Link
                   href="/foreman"
                   className="inline-flex items-center gap-2 text-violet-300 hover:text-violet-200 font-medium"
                 >
-                  See all 83+ Foreman AI skills
+                  See all 99+ Foreman AI skills
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>

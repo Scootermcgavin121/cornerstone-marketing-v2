@@ -16,19 +16,19 @@ import { ChevronDown } from "lucide-react";
 
  Source pages whose content was lifted (consider redirecting their JSON-LD
  references here in a future pass - not done yet, just flagged):
-   - /pricing                               (8 → merged into Pricing)
-   - /migrate                               (8 → merged into Migration)
-   - /buildertrend-alternative              (8 → merged into Comparisons + Migration)
-   - /buildpro-alternative                  (8 → merged into Comparisons + Migration)
-   - /newstar-alternative                   (8 → merged into Comparisons + Migration)
-   - /home-builder-project-management-software (9 → spread across categories)
-   - /construction                          (8 → merged into Scheduling)
-   - /design                                (8 → merged into Design Center)
-   - /sales                                 (8 → merged into Sales)
-   - /purchasing                            (16 → merged into Purchasing)
-   - /permitting                            (7 → merged into Scheduling/Permitting)
-   - /bid-import-ai                         (8 → merged into AI Agents)
-   - /support-ai                            (12 → merged into AI Agents)
+   - /pricing                               (8 Ã¢â€ â€™ merged into Pricing)
+   - /migrate                               (8 Ã¢â€ â€™ merged into Migration)
+   - /buildertrend-alternative              (8 Ã¢â€ â€™ merged into Comparisons + Migration)
+   - /buildpro-alternative                  (8 Ã¢â€ â€™ merged into Comparisons + Migration)
+   - /newstar-alternative                   (8 Ã¢â€ â€™ merged into Comparisons + Migration)
+   - /home-builder-project-management-software (9 Ã¢â€ â€™ spread across categories)
+   - /construction                          (8 Ã¢â€ â€™ merged into Scheduling)
+   - /design                                (8 Ã¢â€ â€™ merged into Design Center)
+   - /sales                                 (8 Ã¢â€ â€™ merged into Sales)
+   - /purchasing                            (16 Ã¢â€ â€™ merged into Purchasing)
+   - /permitting                            (7 Ã¢â€ â€™ merged into Scheduling/Permitting)
+   - /bid-import-ai                         (8 Ã¢â€ â€™ merged into AI Agents)
+   - /support-ai                            (12 Ã¢â€ â€™ merged into AI Agents)
    - /blog/buildertrend-vs-cornerstone-feature-comparison (7)
    - /blog/home-builder-software-buyer-guide-2026 (7)
    - /blog/newstar-implementation-cost-breakdown (7)
@@ -52,9 +52,9 @@ import { ChevronDown } from "lucide-react";
 
  Gaps (questions worth answering but no source material yet - flag for
  future content work):
-   - "Is Cornerstone PM™ SOC 2 compliant?" (security)
+   - "Is Cornerstone PMÃ¢â€žÂ¢ SOC 2 compliant?" (security)
    - "Where is data hosted? (AWS region/provider)" (security)
-   - "Does Cornerstone PM™ integrate with QuickBooks/Sage/Xero today?"
+   - "Does Cornerstone PMÃ¢â€žÂ¢ integrate with QuickBooks/Sage/Xero today?"
      (integrations - only mentioned aspirationally)
    - "Is there a mobile app, or just responsive web?" (we say
      "mobile-friendly" but no native app claimed/disclaimed)
@@ -70,12 +70,12 @@ import { ChevronDown } from "lucide-react";
 */
 
 export const metadata: Metadata = {
-  title: "Cornerstone PM™ FAQ - Pricing, Migration, AI Agents, Setup | Cornerstone PM™",
+  title: "Cornerstone PMÃ¢â€žÂ¢ FAQ - Pricing, Migration, AI Agents, Setup | Cornerstone PMÃ¢â€žÂ¢",
   description:
-    "Everything you need to know about Cornerstone PM™ home builder software - pricing, migration from Buildertrend/NEWSTAR/BuildPro, AI agents, REST API, integrations, security, and how we compare. ~95 questions answered.",
+    "Everything you need to know about Cornerstone PMÃ¢â€žÂ¢ home builder software - pricing, migration from Buildertrend/NEWSTAR/BuildPro, AI agents, REST API, integrations, security, and how we compare. ~95 questions answered.",
   alternates: { canonical: "https://www.cornerstonepm.ai/faq" },
   keywords: [
-    "Cornerstone PM™ FAQ",
+    "Cornerstone PMÃ¢â€žÂ¢ FAQ",
     "home builder software FAQ",
     "Buildertrend alternative FAQ",
     "NEWSTAR alternative FAQ",
@@ -86,9 +86,9 @@ export const metadata: Metadata = {
     "home builder pricing",
   ],
   openGraph: {
-    title: "Cornerstone PM™ FAQ - Every Question Answered",
+    title: "Cornerstone PMÃ¢â€žÂ¢ FAQ - Every Question Answered",
     description:
-      "Pricing, migration, AI agents, integrations, security, and competitor comparisons. The canonical FAQ for Cornerstone PM™.",
+      "Pricing, migration, AI agents, integrations, security, and competitor comparisons. The canonical FAQ for Cornerstone PMÃ¢â€žÂ¢.",
     url: "https://www.cornerstonepm.ai/faq",
     type: "website",
   },
@@ -120,12 +120,12 @@ const pricing: Category = {
   accent: "text-emerald-400",
   items: [
     {
-      q: "How much does Cornerstone PM™ cost?",
+      q: "How much does Cornerstone PMÃ¢â€žÂ¢ cost?",
       aText:
-        "Cornerstone PM™ starts at $149/mo (Starter), $299/mo (Builder, adds purchasing/sales/design center), $499/mo (Pro, adds Foreman AI + Blueprint AI), and $599/mo (Pro+, adds REST API, BYOA, and Bid Import AI). Every plan includes unlimited users with no per-seat fees. See full plan details on /pricing.",
+        "Cornerstone PMÃ¢â€žÂ¢ starts at $149/mo (Starter), $299/mo (Builder, adds purchasing/sales/design center), $499/mo (Pro, adds Foreman AI + Blueprint AI), and $599/mo (Pro+, adds REST API, BYOA, and Bid Import AI). Every plan includes unlimited users with no per-seat fees. See full plan details on /pricing.",
       a: (
         <>
-          Cornerstone PM™ starts at <strong>$149/mo</strong> (Starter), <strong>$299/mo</strong> (Builder, adds
+          Cornerstone PMÃ¢â€žÂ¢ starts at <strong>$149/mo</strong> (Starter), <strong>$299/mo</strong> (Builder, adds
           purchasing/sales/design center), <strong>$499/mo</strong> (Pro, adds Foreman AI + Blueprint AI), and{" "}
           <strong>$599/mo</strong> (Pro+, adds REST API, BYOA, and Bid Import AI). Every plan includes unlimited users
           with no per-seat fees. See full plan details on <A href="/pricing">/pricing</A>.
@@ -135,11 +135,11 @@ const pricing: Category = {
     {
       q: "Is there a free trial or free beta?",
       aText:
-        "Yes - the 2-year free beta is open to the first 100 home builders, no credit card and no contract. Beta includes every feature on the Pro plan including Foreman AI (83+ skills) and Blueprint AI takeoffs. Request access at /beta.",
+        "Yes - the 2-year free beta is open to the first 100 home builders, no credit card and no contract. Beta includes every feature on the Pro plan including Foreman AI (99+ skills) and Blueprint AI takeoffs. Request access at /beta.",
       a: (
         <>
           Yes - the <strong>2-year free beta</strong> is open to the first 100 home builders, no credit card and
-          no contract. Beta includes every feature on the Pro plan including Foreman AI (83+ skills) and Blueprint AI
+          no contract. Beta includes every feature on the Pro plan including Foreman AI (99+ skills) and Blueprint AI
           takeoffs. Request access at <A href="/beta">/beta</A>.
         </>
       ),
@@ -147,10 +147,10 @@ const pricing: Category = {
     {
       q: "Are there per-seat fees?",
       aText:
-        "No. Every Cornerstone PM™ plan includes unlimited users, unlimited subcontractors, and unlimited buyers at no additional charge - add your whole team, every vendor, and every homeowner without per-seat math.",
+        "No. Every Cornerstone PMÃ¢â€žÂ¢ plan includes unlimited users, unlimited subcontractors, and unlimited buyers at no additional charge - add your whole team, every vendor, and every homeowner without per-seat math.",
       a: (
         <>
-          <strong>No.</strong> Every Cornerstone PM™ plan includes unlimited users, unlimited subcontractors, and
+          <strong>No.</strong> Every Cornerstone PMÃ¢â€žÂ¢ plan includes unlimited users, unlimited subcontractors, and
           unlimited buyers at no additional charge - add your whole team, every vendor, and every homeowner without
           per-seat math.
         </>
@@ -159,10 +159,10 @@ const pricing: Category = {
     {
       q: "What's the implementation cost?",
       aText:
-        "Zero. Cornerstone PM™ has no setup fees, no required consultants, and no separate onboarding contract - most builders are operational in hours. Compare to NEWSTAR or BuildPro which typically require $25,000 to $100,000+ implementation budgets.",
+        "Zero. Cornerstone PMÃ¢â€žÂ¢ has no setup fees, no required consultants, and no separate onboarding contract - most builders are operational in hours. Compare to NEWSTAR or BuildPro which typically require $25,000 to $100,000+ implementation budgets.",
       a: (
         <>
-          <strong>Zero.</strong> Cornerstone PM™ has no setup fees, no required consultants, and no separate onboarding
+          <strong>Zero.</strong> Cornerstone PMÃ¢â€žÂ¢ has no setup fees, no required consultants, and no separate onboarding
           contract - most builders are operational in hours. Compare to NEWSTAR or BuildPro which typically require{" "}
           <strong>$25,000 to $100,000+</strong> implementation budgets.
         </>
@@ -171,12 +171,12 @@ const pricing: Category = {
     {
       q: "Which plan includes the AI agents?",
       aText:
-        "Cornerstone PM™ ships 5 native AI agents. AI Support Agent is on every plan from Starter ($149/mo). AI MLS Listing Generator is on Builder ($299/mo) and above. Foreman AI (83+ skills) and Blueprint AI are on Pro ($499/mo). Bid Import AI and BYOA are on Pro+ ($599/mo).",
+        "Cornerstone PMÃ¢â€žÂ¢ ships 5 native AI agents. AI Support Agent is on every plan from Starter ($149/mo). AI MLS Listing Generator is on Builder ($299/mo) and above. Foreman AI (99+ skills) and Blueprint AI are on Pro ($499/mo). Bid Import AI and BYOA are on Pro+ ($599/mo).",
       a: (
         <>
-          Cornerstone PM™ ships <strong>5 native AI agents</strong>. <A href="/support-ai">AI Support Agent</A> is on
+          Cornerstone PMÃ¢â€žÂ¢ ships <strong>5 native AI agents</strong>. <A href="/support-ai">AI Support Agent</A> is on
           every plan from Starter ($149/mo). <A href="/listing-sheet">AI MLS Listing Generator</A> is on Builder
-          ($299/mo) and above. <A href="/foreman">Foreman AI</A> (83+ skills) and <A href="/ai-takeoff">Blueprint AI</A>{" "}
+          ($299/mo) and above. <A href="/foreman">Foreman AI</A> (99+ skills) and <A href="/ai-takeoff">Blueprint AI</A>{" "}
           are on Pro ($499/mo). <A href="/bid-import-ai">Bid Import AI</A> and BYOA are on Pro+ ($599/mo).
         </>
       ),
@@ -184,11 +184,11 @@ const pricing: Category = {
     {
       q: "What's included in the free beta?",
       aText:
-        "Beta access for two years is free for the first 100 home builders. It includes every Pro plan feature: scheduling, sales pipeline, purchasing, design center, options engine, Foreman AI (83+ skills), Blueprint AI takeoffs, and the homeowner portal. After beta, plans start at $149/mo.",
+        "Beta access for two years is free for the first 100 home builders. It includes every Pro plan feature: scheduling, sales pipeline, purchasing, design center, options engine, Foreman AI (99+ skills), Blueprint AI takeoffs, and the homeowner portal. After beta, plans start at $149/mo.",
       a: (
         <>
           Beta access for two years is free for the first 100 home builders. It includes every Pro plan feature:
-          scheduling, sales pipeline, purchasing, design center, options engine, Foreman AI (83+ skills), Blueprint AI
+          scheduling, sales pipeline, purchasing, design center, options engine, Foreman AI (99+ skills), Blueprint AI
           takeoffs, and the homeowner portal. After beta, plans start at $149/mo. Apply at <A href="/beta">/beta</A>.
         </>
       ),
@@ -205,12 +205,12 @@ const pricing: Category = {
       ),
     },
     {
-      q: "Is Cornerstone PM™ cheaper than Buildertrend?",
+      q: "Is Cornerstone PMÃ¢â€žÂ¢ cheaper than Buildertrend?",
       aText:
-        "Yes. Cornerstone PM™ Starter is $149/mo with unlimited users; Buildertrend starts at $499/mo. The full Cornerstone Pro plan is $499/mo - same as Buildertrend's entry tier - and includes Foreman AI and Blueprint AI that Buildertrend doesn't offer at any price.",
+        "Yes. Cornerstone PMÃ¢â€žÂ¢ Starter is $149/mo with unlimited users; Buildertrend starts at $499/mo. The full Cornerstone Pro plan is $499/mo - same as Buildertrend's entry tier - and includes Foreman AI and Blueprint AI that Buildertrend doesn't offer at any price.",
       a: (
         <>
-          Yes. Cornerstone PM™ Starter is <strong>$149/mo</strong> with unlimited users; Buildertrend starts at{" "}
+          Yes. Cornerstone PMÃ¢â€žÂ¢ Starter is <strong>$149/mo</strong> with unlimited users; Buildertrend starts at{" "}
           <strong>$499/mo</strong>. The full <A href="/pricing">Cornerstone Pro plan</A> is $499/mo - same as
           Buildertrend's entry tier - and includes Foreman AI and Blueprint AI that Buildertrend doesn't offer at any
           price.
@@ -218,13 +218,13 @@ const pricing: Category = {
       ),
     },
     {
-      q: "How much does NEWSTAR cost compared to Cornerstone PM™?",
+      q: "How much does NEWSTAR cost compared to Cornerstone PMÃ¢â€žÂ¢?",
       aText:
-        "NEWSTAR pricing is enterprise-quoted, but typical implementations run $25,000 to $100,000+ in setup plus $15,000-$40,000/year in per-seat licensing. Cornerstone PM™ Pro+ is $599/mo flat with REST API and BYOA included - no implementation fee, no per-seat charges.",
+        "NEWSTAR pricing is enterprise-quoted, but typical implementations run $25,000 to $100,000+ in setup plus $15,000-$40,000/year in per-seat licensing. Cornerstone PMÃ¢â€žÂ¢ Pro+ is $599/mo flat with REST API and BYOA included - no implementation fee, no per-seat charges.",
       a: (
         <>
           NEWSTAR pricing is enterprise-quoted, but typical implementations run <strong>$25,000 to $100,000+</strong>{" "}
-          in setup plus $15,000-$40,000/year in per-seat licensing. Cornerstone PM™ Pro+ is $599/mo flat with REST API
+          in setup plus $15,000-$40,000/year in per-seat licensing. Cornerstone PMÃ¢â€žÂ¢ Pro+ is $599/mo flat with REST API
           and BYOA included - no implementation fee, no per-seat charges. See <A href="/newstar-alternative">/newstar-alternative</A>.
         </>
       ),
@@ -255,7 +255,7 @@ const migration: Category = {
   accent: "text-cyan-400",
   items: [
     {
-      q: "How long does it take to migrate to Cornerstone PM™?",
+      q: "How long does it take to migrate to Cornerstone PMÃ¢â€žÂ¢?",
       aText:
         "Most builders self-serve migrate in hours to a day using the AI Migration Wizard (Live in Beta). White-glove migrations on Pro and Pro+ plans typically wrap in under a week. Compare to NEWSTAR (3-12 months with consultants) or Buildertrend onboarding (4-8 weeks).",
       a: (
@@ -270,11 +270,11 @@ const migration: Category = {
     {
       q: "What is the AI Migration Wizard?",
       aText:
-        "The AI Migration Wizard (Live in Beta) is the AI-powered front door to Cornerstone PM™ data import. Drop your Buildertrend/JobTread/CoConstruct/NEWSTAR/BuildPro export files in, the wizard reads them with GPT-4o-mini, maps the columns, runs the imports, and tells you what it skipped. Find it at /admin/migrate inside the app.",
+        "The AI Migration Wizard (Live in Beta) is the AI-powered front door to Cornerstone PMÃ¢â€žÂ¢ data import. Drop your Buildertrend/JobTread/CoConstruct/NEWSTAR/BuildPro export files in, the wizard reads them with GPT-4o-mini, maps the columns, runs the imports, and tells you what it skipped. Find it at /admin/migrate inside the app.",
       a: (
         <>
           The <A href="/migrate">AI Migration Wizard</A> (<strong>Live in Beta</strong>) is the AI-powered front door
-          to Cornerstone PM™ data import. Drop your Buildertrend/JobTread/CoConstruct/NEWSTAR/BuildPro export files in,
+          to Cornerstone PMÃ¢â€žÂ¢ data import. Drop your Buildertrend/JobTread/CoConstruct/NEWSTAR/BuildPro export files in,
           the wizard reads them with GPT-4o-mini, maps the columns, runs the imports, and tells you what it skipped.
           Find it at /admin/migrate inside the app.
         </>
@@ -371,22 +371,22 @@ const migration: Category = {
     {
       q: "How long does NEWSTAR implementation take vs Cornerstone?",
       aText:
-        "NEWSTAR implementations run 3-12 months from contract to go-live, typically 4-8 months for builders doing 5-200 homes/year. Cornerstone PM™ is operational in hours via the AI Migration Wizard, no consultants required.",
+        "NEWSTAR implementations run 3-12 months from contract to go-live, typically 4-8 months for builders doing 5-200 homes/year. Cornerstone PMÃ¢â€žÂ¢ is operational in hours via the AI Migration Wizard, no consultants required.",
       a: (
         <>
           NEWSTAR implementations run <strong>3-12 months</strong> from contract to go-live, typically 4-8 months for
-          builders doing 5-200 homes/year. Cornerstone PM™ is operational in <strong>hours</strong> via the AI
+          builders doing 5-200 homes/year. Cornerstone PMÃ¢â€žÂ¢ is operational in <strong>hours</strong> via the AI
           Migration Wizard, no consultants required.
         </>
       ),
     },
     {
-      q: "Do I need IT staff or consultants to set up Cornerstone PM™?",
+      q: "Do I need IT staff or consultants to set up Cornerstone PMÃ¢â€žÂ¢?",
       aText:
-        "No. Cornerstone PM™ is fully cloud-hosted with no on-premise software to install - no Citrix, no Windows server, no IT infrastructure. Most builders go live without a single consultant call. White-glove migration assistance is bundled into Pro and Pro+ plans if you want hands-on help.",
+        "No. Cornerstone PMÃ¢â€žÂ¢ is fully cloud-hosted with no on-premise software to install - no Citrix, no Windows server, no IT infrastructure. Most builders go live without a single consultant call. White-glove migration assistance is bundled into Pro and Pro+ plans if you want hands-on help.",
       a: (
         <>
-          No. Cornerstone PM™ is fully cloud-hosted with no on-premise software to install - no Citrix, no Windows
+          No. Cornerstone PMÃ¢â€žÂ¢ is fully cloud-hosted with no on-premise software to install - no Citrix, no Windows
           server, no IT infrastructure. Most builders go live without a single consultant call. White-glove migration
           assistance is bundled into Pro and Pro+ plans if you want hands-on help.
         </>
@@ -405,12 +405,12 @@ const ai: Category = {
   accent: "text-violet-400",
   items: [
     {
-      q: "What AI agents does Cornerstone PM™ include?",
+      q: "What AI agents does Cornerstone PMÃ¢â€žÂ¢ include?",
       aText:
-        "Five native AI agents: Foreman AI (83+ skills across scheduling, sales, purchasing, design center, bids, vendors, reporting), Blueprint AI (PDF floor plan reader extracting 130+ material scopes per plan), Bid Import AI (extracts line items from any vendor PDF/Excel/photo), AI MLS Listing Generator, and AI Support Agent.",
+        "Five native AI agents: Foreman AI (99+ skills across scheduling, sales, purchasing, design center, bids, vendors, reporting), Blueprint AI (PDF floor plan reader extracting 130+ material scopes per plan), Bid Import AI (extracts line items from any vendor PDF/Excel/photo), AI MLS Listing Generator, and AI Support Agent.",
       a: (
         <>
-          Five native AI agents: <A href="/foreman">Foreman AI</A> (83+ skills across scheduling, sales, purchasing,
+          Five native AI agents: <A href="/foreman">Foreman AI</A> (99+ skills across scheduling, sales, purchasing,
           design center, bids, vendors, reporting), <A href="/ai-takeoff">Blueprint AI</A> (PDF floor plan reader
           extracting <strong>130+ material scopes</strong> per plan), <A href="/bid-import-ai">Bid Import AI</A>{" "}
           (extracts line items from any vendor PDF/Excel/photo),{" "}
@@ -422,11 +422,11 @@ const ai: Category = {
     {
       q: "What is Foreman AI?",
       aText:
-        "Foreman AI is Cornerstone PM™'s natural-language AI agent with 83+ skills across 11 categories: Schedule, Sales, Purchasing/Bid Pipeline, Design Center, Parts Catalog, Vendor Management, and Reporting. Tell it 'reschedule framing across all active homes by 2 days and notify vendors' in plain English and it executes against live data.",
+        "Foreman AI is Cornerstone PMÃ¢â€žÂ¢'s natural-language AI agent with 99+ skills across 11 categories: Schedule, Sales, Purchasing/Bid Pipeline, Design Center, Parts Catalog, Vendor Management, and Reporting. Tell it 'reschedule framing across all active homes by 2 days and notify vendors' in plain English and it executes against live data.",
       a: (
         <>
-          <A href="/foreman">Foreman AI</A> is Cornerstone PM™'s natural-language AI agent with{" "}
-          <strong>83+ skills across 11 categories</strong>: Schedule, Sales, Purchasing/Bid Pipeline, Design Center,
+          <A href="/foreman">Foreman AI</A> is Cornerstone PMÃ¢â€žÂ¢'s natural-language AI agent with{" "}
+          <strong>99+ skills across 11 categories</strong>: Schedule, Sales, Purchasing/Bid Pipeline, Design Center,
           Parts Catalog, Vendor Management, and Reporting. Tell it &quot;reschedule framing across all active
           homes by 2 days and notify vendors&quot; in plain English and it executes against live data.
         </>
@@ -525,7 +525,7 @@ const ai: Category = {
     {
       q: "How does Foreman AI compare to ChatGPT?",
       aText:
-        "ChatGPT is a general LLM with no knowledge of your homes, vendors, or build pipeline. Foreman AI is grounded in your live Cornerstone data and your role permissions, with 83 purpose-built skills that execute real actions - rescheduling tasks, notifying vendors, generating MLS listings, drafting bid requests. ChatGPT can describe what to do; Foreman AI does it.",
+        "ChatGPT is a general LLM with no knowledge of your homes, vendors, or build pipeline. Foreman AI is grounded in your live Cornerstone data and your role permissions, with 99+ purpose-built skills that execute real actions - rescheduling tasks, notifying vendors, generating MLS listings, drafting bid requests. ChatGPT can describe what to do; Foreman AI does it.",
       a: (
         <>
           ChatGPT is a general LLM with no knowledge of your homes, vendors, or build pipeline. <A href="/foreman">Foreman AI</A>{" "}
@@ -536,14 +536,14 @@ const ai: Category = {
       ),
     },
     {
-      q: "Does Buildertrend have AI features like Cornerstone PM™?",
+      q: "Does Buildertrend have AI features like Cornerstone PMÃ¢â€žÂ¢?",
       aText:
-        "Buildertrend has added some AI-assisted helpers over time, but does not ship purpose-built AI agents for material takeoff (Blueprint AI), bid extraction (Bid Import AI), schedule automation (Foreman AI), or natural-language workflow control. Cornerstone PM™ is built around AI as a first-class feature, not a layered add-on.",
+        "Buildertrend has added some AI-assisted helpers over time, but does not ship purpose-built AI agents for material takeoff (Blueprint AI), bid extraction (Bid Import AI), schedule automation (Foreman AI), or natural-language workflow control. Cornerstone PMÃ¢â€žÂ¢ is built around AI as a first-class feature, not a layered add-on.",
       a: (
         <>
           Buildertrend has added some AI-assisted helpers over time, but does not ship purpose-built AI agents for
           material takeoff (Blueprint AI), bid extraction (Bid Import AI), schedule automation (Foreman AI), or
-          natural-language workflow control. Cornerstone PM™ is built around AI as a first-class feature, not a
+          natural-language workflow control. Cornerstone PMÃ¢â€žÂ¢ is built around AI as a first-class feature, not a
           layered add-on. Compare on <A href="/compare">/compare</A>.
         </>
       ),
@@ -561,12 +561,12 @@ const scheduling: Category = {
   accent: "text-amber-400",
   items: [
     {
-      q: "How does Cornerstone PM™'s construction scheduling work?",
+      q: "How does Cornerstone PMÃ¢â€žÂ¢'s construction scheduling work?",
       aText:
-        "Cornerstone PM™ ships Gantt-style schedules with 3-tier auto-cascading dependencies (hard, soft, vendor-driven), 17 pre-built schedule templates, 7 foundation templates, weekday-only logic, and one-click vendor email confirmations. Designed specifically for home builders managing 10-200+ homes per year - not general contractors.",
+        "Cornerstone PMÃ¢â€žÂ¢ ships Gantt-style schedules with 3-tier auto-cascading dependencies (hard, soft, vendor-driven), 17 pre-built schedule templates, 7 foundation templates, weekday-only logic, and one-click vendor email confirmations. Designed specifically for home builders managing 10-200+ homes per year - not general contractors.",
       a: (
         <>
-          Cornerstone PM™ ships Gantt-style schedules with <strong>3-tier auto-cascading dependencies</strong> (hard,
+          Cornerstone PMÃ¢â€žÂ¢ ships Gantt-style schedules with <strong>3-tier auto-cascading dependencies</strong> (hard,
           soft, vendor-driven), <strong>17 pre-built schedule templates</strong>, 7 foundation templates,
           weekday-only logic, and one-click vendor email confirmations. Designed specifically for home builders
           managing 10-200+ homes per year - not general contractors. See <A href="/construction">/construction</A>.
@@ -624,7 +624,7 @@ const scheduling: Category = {
       ),
     },
     {
-      q: "Does Cornerstone PM™ track multiple permit types per home?",
+      q: "Does Cornerstone PMÃ¢â€žÂ¢ track multiple permit types per home?",
       aText:
         "Yes - every permit type a home needs: building, electrical, plumbing, mechanical, septic, well, driveway, and any jurisdiction-specific permits. Each permit has its own status, expiry tracking, gate logic, and document attachments.",
       a: (
@@ -638,10 +638,10 @@ const scheduling: Category = {
     {
       q: "What happens when a permit expires?",
       aText:
-        "Cornerstone PM™ alerts the PM in advance of permit expiration, automatically blocks dependent tasks if a permit lapses, and tracks the renewal workflow. Expired permits show as a hard block in the dashboard until renewal is filed and approved.",
+        "Cornerstone PMÃ¢â€žÂ¢ alerts the PM in advance of permit expiration, automatically blocks dependent tasks if a permit lapses, and tracks the renewal workflow. Expired permits show as a hard block in the dashboard until renewal is filed and approved.",
       a: (
         <>
-          Cornerstone PM™ alerts the PM in advance of permit expiration, automatically blocks dependent tasks if a
+          Cornerstone PMÃ¢â€žÂ¢ alerts the PM in advance of permit expiration, automatically blocks dependent tasks if a
           permit lapses, and tracks the renewal workflow. Expired permits show as a hard block in the dashboard until
           renewal is filed and approved.
         </>
@@ -650,22 +650,22 @@ const scheduling: Category = {
     {
       q: "How does inspection scheduling work?",
       aText:
-        "Cornerstone PM™ tracks the full inspection pipeline per home: scheduled, in-progress, passed, failed-with-rework. Inspectors are notified, PMs see status across every active home, and failed inspections automatically generate correction tasks and reschedule downstream work.",
+        "Cornerstone PMÃ¢â€žÂ¢ tracks the full inspection pipeline per home: scheduled, in-progress, passed, failed-with-rework. Inspectors are notified, PMs see status across every active home, and failed inspections automatically generate correction tasks and reschedule downstream work.",
       a: (
         <>
-          Cornerstone PM™ tracks the full inspection pipeline per home: scheduled, in-progress, passed,
+          Cornerstone PMÃ¢â€žÂ¢ tracks the full inspection pipeline per home: scheduled, in-progress, passed,
           failed-with-rework. Inspectors are notified, PMs see status across every active home, and{" "}
           <strong>failed inspections automatically generate correction tasks</strong> and reschedule downstream work.
         </>
       ),
     },
     {
-      q: "Does Cornerstone PM™ include a homeowner portal?",
+      q: "Does Cornerstone PMÃ¢â€žÂ¢ include a homeowner portal?",
       aText:
         "Yes, on every plan starting at Starter ($149/mo). The homeowner portal is synced in real time with construction scheduling - when framing moves three days, buyers see it instantly, no follow-up call needed. Plus: (1) builder and PM upload job-site photos to every milestone (up to 5 photos per milestone via a camera button on the task row, captured straight from the field), (2) built-in messaging app between builder and customer with a permanent searchable record of every conversation, and (3) one-click ZIP download of all job photos so buyers can save their whole build history. Design selections and warranty information are also visible. No per-buyer fees.",
       a: (
         <>
-          Yes, on every plan starting at Starter ($149/mo). The homeowner portal is synced in real time with construction scheduling — when framing moves three days, buyers see it instantly. Plus: (1) builder and PM upload job-site photos to every milestone (up to 5 photos per milestone via a camera button on the task row), (2) built-in messaging app between builder and customer with a permanent searchable record, and (3) one-click ZIP download of all job photos so buyers can save their whole build history. Design selections, milestones, schedule progress, and warranty information all included — with{" "}
+          Yes, on every plan starting at Starter ($149/mo). The homeowner portal is synced in real time with construction scheduling Ã¢â‚¬â€ when framing moves three days, buyers see it instantly. Plus: (1) builder and PM upload job-site photos to every milestone (up to 5 photos per milestone via a camera button on the task row), (2) built-in messaging app between builder and customer with a permanent searchable record, and (3) one-click ZIP download of all job photos so buyers can save their whole build history. Design selections, milestones, schedule progress, and warranty information all included Ã¢â‚¬â€ with{" "}
           <strong>no per-buyer fees</strong>.
         </>
       ),
@@ -696,7 +696,7 @@ const sales: Category = {
   accent: "text-emerald-400",
   items: [
     {
-      q: "What is Cornerstone PM™'s sales pipeline?",
+      q: "What is Cornerstone PMÃ¢â€žÂ¢'s sales pipeline?",
       aText:
         "A home-builder-native CRM and sale workflow. Track buyers from first contact through contract with built-in floorplan selection, structural options, lot inventory, and incentives. A counselor can build a contract-ready new home sale in under 60 seconds - including auto-generated 9-step sales checklist and auto-budget creation.",
       a: (
@@ -711,12 +711,12 @@ const sales: Category = {
     {
       q: "How is Cornerstone different from a generic CRM like Salesforce or HubSpot?",
       aText:
-        "Generic CRMs track leads but don't understand homebuilding workflows: floorplan pricing matrix, options engine, lot status, design center allowances, or auto-budget generation when buyers lock structurals. Cornerstone PM™'s sales module is wired to live build data so buyers, lots, plans, and budgets stay in sync automatically.",
+        "Generic CRMs track leads but don't understand homebuilding workflows: floorplan pricing matrix, options engine, lot status, design center allowances, or auto-budget generation when buyers lock structurals. Cornerstone PMÃ¢â€žÂ¢'s sales module is wired to live build data so buyers, lots, plans, and budgets stay in sync automatically.",
       a: (
         <>
           Generic CRMs track leads but don't understand homebuilding workflows: floorplan pricing matrix, options
           engine, lot status, design center allowances, or auto-budget generation when buyers lock structurals.
-          Cornerstone PM™'s sales module is wired to live build data so buyers, lots, plans, and budgets stay in sync
+          Cornerstone PMÃ¢â€žÂ¢'s sales module is wired to live build data so buyers, lots, plans, and budgets stay in sync
           automatically.
         </>
       ),
@@ -737,17 +737,17 @@ const sales: Category = {
     {
       q: "How does the sales pipeline connect to construction?",
       aText:
-        "When a sale locks, Cornerstone PM™ auto-generates the construction budget, attaches the correct schedule template, sets up the design center allowance, and notifies the PM. No double entry, no handoff meeting - sales, purchasing, design, and construction share one source of truth.",
+        "When a sale locks, Cornerstone PMÃ¢â€žÂ¢ auto-generates the construction budget, attaches the correct schedule template, sets up the design center allowance, and notifies the PM. No double entry, no handoff meeting - sales, purchasing, design, and construction share one source of truth.",
       a: (
         <>
-          When a sale locks, Cornerstone PM™ auto-generates the construction budget, attaches the correct schedule
+          When a sale locks, Cornerstone PMÃ¢â€žÂ¢ auto-generates the construction budget, attaches the correct schedule
           template, sets up the design center allowance, and notifies the PM. <strong>No double entry, no handoff
           meeting</strong> - sales, purchasing, design, and construction share one source of truth.
         </>
       ),
     },
     {
-      q: "Does Cornerstone PM™ have a sales counselor portal with role permissions?",
+      q: "Does Cornerstone PMÃ¢â€žÂ¢ have a sales counselor portal with role permissions?",
       aText:
         "Yes. Sales counselors get role-scoped access to manage prospects, build sales packages, and present floorplans without seeing construction or financial detail outside their scope. Permissions are tenant-configurable.",
       a: (
@@ -761,10 +761,10 @@ const sales: Category = {
     {
       q: "What does new home sales software cost?",
       aText:
-        "Cornerstone PM™'s sales pipeline is included in the Builder plan at $299/mo with unlimited sales counselors and no per-seat fees. Pro at $499/mo adds Foreman AI sales analytics and AI MLS Listing Generator drafting from live home data.",
+        "Cornerstone PMÃ¢â€žÂ¢'s sales pipeline is included in the Builder plan at $299/mo with unlimited sales counselors and no per-seat fees. Pro at $499/mo adds Foreman AI sales analytics and AI MLS Listing Generator drafting from live home data.",
       a: (
         <>
-          Cornerstone PM™'s sales pipeline is included in the <strong>Builder plan at $299/mo</strong> with unlimited
+          Cornerstone PMÃ¢â€žÂ¢'s sales pipeline is included in the <strong>Builder plan at $299/mo</strong> with unlimited
           sales counselors and no per-seat fees. Pro at $499/mo adds <A href="/foreman">Foreman AI</A> sales
           analytics and <A href="/listing-sheet">AI MLS Listing Generator</A> drafting from live home data.
         </>
@@ -791,11 +791,11 @@ const sales: Category = {
 const design: Category = {
   slug: "design-center",
   title: "Design Center & Options",
-  blurb: "Designer packages, structural options, floorplan pricing, à la carte, allowances.",
+  blurb: "Designer packages, structural options, floorplan pricing, ÃƒÂ  la carte, allowances.",
   accent: "text-violet-400",
   items: [
     {
-      q: "What is Cornerstone PM™'s Design Center?",
+      q: "What is Cornerstone PMÃ¢â€žÂ¢'s Design Center?",
       aText:
         "A first-class module that lets buyers select finishes, fixtures, and upgrades while builders track allowances, upgrade pricing, and per-home margin. Every selection updates pricing, PO line items, and the construction budget automatically - no separate spec sheet to reconcile.",
       a: (
@@ -809,7 +809,7 @@ const design: Category = {
     {
       q: "What is an options engine?",
       aText:
-        "The rules system that prices structural and design options per floorplan and per community. Cornerstone PM™'s options engine handles dependencies (e.g. you can't pick the gourmet kitchen without the larger pantry), incompatibilities, allowance overages, per-community pricing, and real-time price rollup as buyers select.",
+        "The rules system that prices structural and design options per floorplan and per community. Cornerstone PMÃ¢â€žÂ¢'s options engine handles dependencies (e.g. you can't pick the gourmet kitchen without the larger pantry), incompatibilities, allowance overages, per-community pricing, and real-time price rollup as buyers select.",
       a: (
         <>
           The rules system that prices structural and design options per floorplan and per community. Cornerstone
@@ -821,12 +821,12 @@ const design: Category = {
     {
       q: "What are Designer Packages?",
       aText:
-        "64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses), spanning 7 categories. Buyer picks a package and all category options auto-lock to that package; à la carte unlocks if the package is removed. Strong differentiator vs spreadsheet-style design centers - and built so a buyer can complete selections in one sitting instead of three.",
+        "64 Designer Packages curated by an actual interior designer (the same playbook K. Hovnanian Homes uses), spanning 7 categories. Buyer picks a package and all category options auto-lock to that package; ÃƒÂ  la carte unlocks if the package is removed. Strong differentiator vs spreadsheet-style design centers - and built so a buyer can complete selections in one sitting instead of three.",
       a: (
         <>
           <strong>64 Designer Packages across 7 categories</strong>, each <em>curated by an actual interior
           designer</em> - the same playbook K. Hovnanian Homes uses to take the guesswork out of design selections.
-          Buyer picks a package and all category options auto-lock to that package; à la carte unlocks if the package
+          Buyer picks a package and all category options auto-lock to that package; ÃƒÂ  la carte unlocks if the package
           is removed. Strong differentiator vs spreadsheet-style design centers - and built so a buyer can complete
           selections in one sitting instead of three.
         </>
@@ -870,10 +870,10 @@ const design: Category = {
     {
       q: "How does Cornerstone's design center compare to NEWSTAR or BuildPro?",
       aText:
-        "Cornerstone PM™ matches NEWSTAR and BuildPro on the core options engine - structural and design options, dependencies, allowances, spec levels, change orders - without their 6-figure implementation cost. Foreman AI's 8-skill Design Center domain adds plain-English option configuration NEWSTAR and BuildPro don't offer.",
+        "Cornerstone PMÃ¢â€žÂ¢ matches NEWSTAR and BuildPro on the core options engine - structural and design options, dependencies, allowances, spec levels, change orders - without their 6-figure implementation cost. Foreman AI's 8-skill Design Center domain adds plain-English option configuration NEWSTAR and BuildPro don't offer.",
       a: (
         <>
-          Cornerstone PM™ matches NEWSTAR and BuildPro on the core options engine - structural and design options,
+          Cornerstone PMÃ¢â€žÂ¢ matches NEWSTAR and BuildPro on the core options engine - structural and design options,
           dependencies, allowances, spec levels, change orders - without their 6-figure implementation cost.{" "}
           <A href="/foreman">Foreman AI</A>'s 8-skill Design Center domain adds plain-English option configuration
           NEWSTAR and BuildPro don't offer.
@@ -917,14 +917,14 @@ const purchasing: Category = {
   accent: "text-cyan-400",
   items: [
     {
-      q: "How does Cornerstone PM™ handle vendor bidding?",
+      q: "How does Cornerstone PMÃ¢â€žÂ¢ handle vendor bidding?",
       aText:
-        "Send bid requests to multiple vendors at once. Auto-generated, scope-filtered Excel templates (3 tabs: Base/Structural/Designer) attach to the vendor invite email. Bids flow Invited → Viewed → Submitted → Declined with timestamps. Side-by-side comparison kicks in once 2+ vendors submit. See /purchasing.",
+        "Send bid requests to multiple vendors at once. Auto-generated, scope-filtered Excel templates (3 tabs: Base/Structural/Designer) attach to the vendor invite email. Bids flow Invited Ã¢â€ â€™ Viewed Ã¢â€ â€™ Submitted Ã¢â€ â€™ Declined with timestamps. Side-by-side comparison kicks in once 2+ vendors submit. See /purchasing.",
       a: (
         <>
           Send bid requests to multiple vendors at once. Auto-generated, scope-filtered Excel templates{" "}
           <strong>(3 tabs: Base/Structural/Designer)</strong> attach to the vendor invite email. Bids flow{" "}
-          <strong>Invited → Viewed → Submitted → Declined</strong> with timestamps. Side-by-side comparison kicks in
+          <strong>Invited Ã¢â€ â€™ Viewed Ã¢â€ â€™ Submitted Ã¢â€ â€™ Declined</strong> with timestamps. Side-by-side comparison kicks in
           once 2+ vendors submit. See <A href="/purchasing">/purchasing</A>.
         </>
       ),
@@ -967,7 +967,7 @@ const purchasing: Category = {
       ),
     },
     {
-      q: "Does Cornerstone PM™ use lowest-bid auctions to pick vendors?",
+      q: "Does Cornerstone PMÃ¢â€žÂ¢ use lowest-bid auctions to pick vendors?",
       aText:
         "No - and that's intentional. Home builders rely on long-term community vendor relationships, not lowest-bid auctions. Cornerstone supports community-assigned vendor awards: pick who you want to win based on scope coverage, relationship, and quality, with bid comparison data backing the decision.",
       a: (
@@ -994,10 +994,10 @@ const purchasing: Category = {
     {
       q: "Can I award different vendors in different communities?",
       aText:
-        "Yes. Cornerstone PM™ supports multiple ACCEPTED bids per scope - one vendor in Community A, a different vendor in Community B. Each award is community-scoped so you can respect existing builder-vendor relationships without flattening them into a single SKU.",
+        "Yes. Cornerstone PMÃ¢â€žÂ¢ supports multiple ACCEPTED bids per scope - one vendor in Community A, a different vendor in Community B. Each award is community-scoped so you can respect existing builder-vendor relationships without flattening them into a single SKU.",
       a: (
         <>
-          Yes. Cornerstone PM™ supports <strong>multiple ACCEPTED bids per scope</strong> - one vendor in Community A,
+          Yes. Cornerstone PMÃ¢â€žÂ¢ supports <strong>multiple ACCEPTED bids per scope</strong> - one vendor in Community A,
           a different vendor in Community B. Each award is community-scoped so you can respect existing
           builder-vendor relationships without flattening them into a single SKU.
         </>
@@ -1040,7 +1040,7 @@ const purchasing: Category = {
       ),
     },
     {
-      q: "Does Cornerstone PM™ track retainage?",
+      q: "Does Cornerstone PMÃ¢â€žÂ¢ track retainage?",
       aText:
         "Yes. Retainage on payments, cost-type classification, payment schedules, and variance reports vs the budget are all tracked. Vendor 1099 totals are exportable.",
       a: (
@@ -1087,7 +1087,7 @@ const api: Category = {
   accent: "text-cyan-400",
   items: [
     {
-      q: "Does Cornerstone PM™ have a REST API?",
+      q: "Does Cornerstone PMÃ¢â€žÂ¢ have a REST API?",
       aText:
         "Yes - a public REST API with 59+ endpoints and growing rapidly, scoped Bearer-token authentication, and full documentation at app.cornerstonepm.ai/developers. New endpoints ship as the platform grows. All core data (schedules, vendors, lots, options, bids, budgets, takeoffs) is accessible. Included on Pro+ ($599/mo). See /api-access.",
       a: (
@@ -1114,11 +1114,11 @@ const api: Category = {
     {
       q: "What is BYOA (Bring Your Own Agent)?",
       aText:
-        "BYOA lets you connect Claude, ChatGPT, or any custom AI agent to live Cornerstone data via the REST API. The Foreman skill pack endpoint exposes Foreman's 83 native skills so your own agent can call them directly. Included on Pro+ ($599/mo).",
+        "BYOA lets you connect Claude, ChatGPT, or any custom AI agent to live Cornerstone data via the REST API. The Foreman skill pack endpoint exposes Foreman's 99+ native skills so your own agent can call them directly. Included on Pro+ ($599/mo).",
       a: (
         <>
           BYOA lets you connect Claude, ChatGPT, or any custom AI agent to live Cornerstone data via the REST API.
-          The <strong>Foreman skill pack endpoint</strong> exposes Foreman's 83 native skills so your own agent can
+          The <strong>Foreman skill pack endpoint</strong> exposes Foreman's 99+ native skills so your own agent can
           call them directly. Included on Pro+ ($599/mo).
         </>
       ),
@@ -1136,7 +1136,7 @@ const api: Category = {
       ),
     },
     {
-      q: "What integrations does Cornerstone PM™ offer?",
+      q: "What integrations does Cornerstone PMÃ¢â€žÂ¢ offer?",
       aText:
         "REST API + 30+ named webhook event types (growing catalog) make Cornerstone integrate with anything - Slack, QuickBooks, Sage 300, custom CRMs, and AI workflows via Twilio/Bland/Retell for voice and SMS. We focus on a clean public API rather than a long list of brittle direct integrations. Connect what you need at /api-access.",
       a: (
@@ -1161,13 +1161,13 @@ const api: Category = {
       ),
     },
     {
-      q: "Does Buildertrend have a public API like Cornerstone PM™?",
+      q: "Does Buildertrend have a public API like Cornerstone PMÃ¢â€žÂ¢?",
       aText:
-        "Buildertrend has limited integration capabilities and historically required enterprise contracts for API access. Cornerstone PM™ ships a public, documented REST API with 59+ endpoints and growing rapidly on Pro+ ($599/mo) - no separate contract, no enterprise gating.",
+        "Buildertrend has limited integration capabilities and historically required enterprise contracts for API access. Cornerstone PMÃ¢â€žÂ¢ ships a public, documented REST API with 59+ endpoints and growing rapidly on Pro+ ($599/mo) - no separate contract, no enterprise gating.",
       a: (
         <>
           Buildertrend has limited integration capabilities and historically required enterprise contracts for API
-          access. Cornerstone PM™ ships a public, documented REST API with <strong>59+ endpoints (and growing) on Pro+ ($599/mo)</strong>
+          access. Cornerstone PMÃ¢â€žÂ¢ ships a public, documented REST API with <strong>59+ endpoints (and growing) on Pro+ ($599/mo)</strong>
           - no separate contract, no enterprise gating.
         </>
       ),
@@ -1185,12 +1185,12 @@ const comparisons: Category = {
   accent: "text-amber-400",
   items: [
     {
-      q: "Cornerstone PM™ vs Buildertrend - which is better?",
+      q: "Cornerstone PMÃ¢â€žÂ¢ vs Buildertrend - which is better?",
       aText:
-        "Cornerstone PM™ is purpose-built for production home builders (5-200+ homes/year, plan repeats, multi-community, lot inventory). Buildertrend was built for custom builders and remodelers. If you're running production tract or spec, Cornerstone fits better; if you're a one-off custom builder, Buildertrend may still be the right fit.",
+        "Cornerstone PMÃ¢â€žÂ¢ is purpose-built for production home builders (5-200+ homes/year, plan repeats, multi-community, lot inventory). Buildertrend was built for custom builders and remodelers. If you're running production tract or spec, Cornerstone fits better; if you're a one-off custom builder, Buildertrend may still be the right fit.",
       a: (
         <>
-          Cornerstone PM™ is purpose-built for <strong>production home builders</strong> (5-200+ homes/year, plan
+          Cornerstone PMÃ¢â€žÂ¢ is purpose-built for <strong>production home builders</strong> (5-200+ homes/year, plan
           repeats, multi-community, lot inventory). Buildertrend was built for custom builders and remodelers. If
           you're running production tract or spec, Cornerstone fits better; if you're a one-off custom builder,
           Buildertrend may still be the right fit. Full breakdown at{" "}
@@ -1199,12 +1199,12 @@ const comparisons: Category = {
       ),
     },
     {
-      q: "What does Cornerstone PM™ have that Buildertrend doesn't?",
+      q: "What does Cornerstone PMÃ¢â€žÂ¢ have that Buildertrend doesn't?",
       aText:
-        "Native AI agents (Foreman AI's 83+ skills, Blueprint AI takeoffs, Bid Import AI), a structural options engine, floorplan pricing matrix, multi-community pipelines, and a public REST API on Pro+ ($599/mo). Buildertrend's price floor is $499/mo - the same as Cornerstone Pro - and includes none of these.",
+        "Native AI agents (Foreman AI's 99+ skills, Blueprint AI takeoffs, Bid Import AI), a structural options engine, floorplan pricing matrix, multi-community pipelines, and a public REST API on Pro+ ($599/mo). Buildertrend's price floor is $499/mo - the same as Cornerstone Pro - and includes none of these.",
       a: (
         <>
-          Native AI agents (<A href="/foreman">Foreman AI</A>'s 83+ skills, <A href="/ai-takeoff">Blueprint AI</A>{" "}
+          Native AI agents (<A href="/foreman">Foreman AI</A>'s 99+ skills, <A href="/ai-takeoff">Blueprint AI</A>{" "}
           takeoffs, <A href="/bid-import-ai">Bid Import AI</A>), a structural options engine, floorplan pricing
           matrix, multi-community pipelines, and a public <A href="/api-access">REST API on Pro+ ($599/mo)</A>.
           Buildertrend's price floor is $499/mo - the same as Cornerstone Pro - and includes none of these.
@@ -1212,7 +1212,7 @@ const comparisons: Category = {
       ),
     },
     {
-      q: "Does Cornerstone PM™ have everything Buildertrend has?",
+      q: "Does Cornerstone PMÃ¢â€žÂ¢ have everything Buildertrend has?",
       aText:
         "Cornerstone covers the same core functions: scheduling, homeowner portal, purchasing, bid management, document storage, change orders, time tracking. The one Buildertrend feature Cornerstone doesn't ship is custom-builder client invoicing - because Cornerstone is built for production builders who use draw schedules, not progress invoicing.",
       a: (
@@ -1225,12 +1225,12 @@ const comparisons: Category = {
       ),
     },
     {
-      q: "Cornerstone PM™ vs NEWSTAR - which is better?",
+      q: "Cornerstone PMÃ¢â€žÂ¢ vs NEWSTAR - which is better?",
       aText:
-        "For small-to-mid production builders (5-200 homes/year), Cornerstone PM™ matches NEWSTAR's core capabilities (options engine, floorplan pricing, multi-community, design center, draws) without the $25,000-$100,000+ implementation cost or 3-12 month rollout. For top-100 enterprise builders with deep custom ERP integrations, NEWSTAR may still be the right fit.",
+        "For small-to-mid production builders (5-200 homes/year), Cornerstone PMÃ¢â€žÂ¢ matches NEWSTAR's core capabilities (options engine, floorplan pricing, multi-community, design center, draws) without the $25,000-$100,000+ implementation cost or 3-12 month rollout. For top-100 enterprise builders with deep custom ERP integrations, NEWSTAR may still be the right fit.",
       a: (
         <>
-          For small-to-mid production builders (5-200 homes/year), Cornerstone PM™ matches NEWSTAR's core capabilities
+          For small-to-mid production builders (5-200 homes/year), Cornerstone PMÃ¢â€žÂ¢ matches NEWSTAR's core capabilities
           (options engine, floorplan pricing, multi-community, design center, draws) without the{" "}
           <strong>$25,000-$100,000+ implementation cost</strong> or 3-12 month rollout. For top-100 enterprise
           builders with deep custom ERP integrations, NEWSTAR may still be the right fit. See{" "}
@@ -1239,12 +1239,12 @@ const comparisons: Category = {
       ),
     },
     {
-      q: "Cornerstone PM™ vs BuildPro - which is better?",
+      q: "Cornerstone PMÃ¢â€žÂ¢ vs BuildPro - which is better?",
       aText:
-        "Cornerstone PM™ is a modern, web-based, mobile-friendly platform; BuildPro's UI is dated and Windows/Citrix-centric. Cornerstone ships native AI agents BuildPro doesn't offer at any tier, and is operational in hours at $149/mo with unlimited users vs BuildPro's $25k-$75k+ implementation budgets.",
+        "Cornerstone PMÃ¢â€žÂ¢ is a modern, web-based, mobile-friendly platform; BuildPro's UI is dated and Windows/Citrix-centric. Cornerstone ships native AI agents BuildPro doesn't offer at any tier, and is operational in hours at $149/mo with unlimited users vs BuildPro's $25k-$75k+ implementation budgets.",
       a: (
         <>
-          Cornerstone PM™ is a modern, web-based, mobile-friendly platform; BuildPro's UI is dated and Windows/Citrix-centric.
+          Cornerstone PMÃ¢â€žÂ¢ is a modern, web-based, mobile-friendly platform; BuildPro's UI is dated and Windows/Citrix-centric.
           Cornerstone ships native AI agents BuildPro doesn't offer at any tier, and is operational in{" "}
           <strong>hours at $149/mo</strong> with unlimited users vs BuildPro's $25k-$75k+ implementation budgets. See{" "}
           <A href="/buildpro-alternative">/buildpro-alternative</A>.
@@ -1252,12 +1252,12 @@ const comparisons: Category = {
       ),
     },
     {
-      q: "Cornerstone PM™ vs JobTread - which is better?",
+      q: "Cornerstone PMÃ¢â€žÂ¢ vs JobTread - which is better?",
       aText:
-        "JobTread is built for general contractors and custom builders. Cornerstone PM™ is purpose-built for home builders with native lot management, options engine, design center, and multi-community pipelines JobTread doesn't ship. JobTread starts around $179/mo with per-user limits; Cornerstone is $149/mo with unlimited users.",
+        "JobTread is built for general contractors and custom builders. Cornerstone PMÃ¢â€žÂ¢ is purpose-built for home builders with native lot management, options engine, design center, and multi-community pipelines JobTread doesn't ship. JobTread starts around $179/mo with per-user limits; Cornerstone is $149/mo with unlimited users.",
       a: (
         <>
-          JobTread is built for general contractors and custom builders. Cornerstone PM™ is purpose-built for{" "}
+          JobTread is built for general contractors and custom builders. Cornerstone PMÃ¢â€žÂ¢ is purpose-built for{" "}
           <strong>home builders</strong> with native lot management, options engine, design center, and
           multi-community pipelines JobTread doesn't ship. JobTread starts around $179/mo with per-user limits;
           Cornerstone is $149/mo with unlimited users. See <A href="/blog/jobtread-alternative">/blog/jobtread-alternative</A>.
@@ -1265,25 +1265,25 @@ const comparisons: Category = {
       ),
     },
     {
-      q: "Cornerstone PM™ vs CoConstruct - which is better?",
+      q: "Cornerstone PMÃ¢â€žÂ¢ vs CoConstruct - which is better?",
       aText:
-        "CoConstruct (now part of Buildertrend) is optimized for custom builders and remodelers. Cornerstone PM™ is for production builders running plan repeats, lot inventory, and design centers. Migration from CoConstruct is auto-detected by the AI Migration Wizard.",
+        "CoConstruct (now part of Buildertrend) is optimized for custom builders and remodelers. Cornerstone PMÃ¢â€žÂ¢ is for production builders running plan repeats, lot inventory, and design centers. Migration from CoConstruct is auto-detected by the AI Migration Wizard.",
       a: (
         <>
-          CoConstruct (now part of Buildertrend) is optimized for custom builders and remodelers. Cornerstone PM™ is
+          CoConstruct (now part of Buildertrend) is optimized for custom builders and remodelers. Cornerstone PMÃ¢â€žÂ¢ is
           for <strong>production builders</strong> running plan repeats, lot inventory, and design centers. Migration
           from CoConstruct is auto-detected by the <A href="/migrate">AI Migration Wizard</A>.
         </>
       ),
     },
     {
-      q: "Cornerstone PM™ vs MarkSystems - which is better?",
+      q: "Cornerstone PMÃ¢â€žÂ¢ vs MarkSystems - which is better?",
       aText:
-        "MarkSystems is a long-running enterprise platform for production builders, similar in scope to NEWSTAR. Cornerstone PM™ offers comparable core capabilities (options engine, draws, communities, design center) on a modern web stack with native AI agents and a public REST API - at $149-$599/mo flat instead of MarkSystems' enterprise quote-and-implement model.",
+        "MarkSystems is a long-running enterprise platform for production builders, similar in scope to NEWSTAR. Cornerstone PMÃ¢â€žÂ¢ offers comparable core capabilities (options engine, draws, communities, design center) on a modern web stack with native AI agents and a public REST API - at $149-$599/mo flat instead of MarkSystems' enterprise quote-and-implement model.",
       a: (
         <>
           MarkSystems is a long-running enterprise platform for production builders, similar in scope to NEWSTAR.
-          Cornerstone PM™ offers comparable core capabilities (options engine, draws, communities, design center) on
+          Cornerstone PMÃ¢â€žÂ¢ offers comparable core capabilities (options engine, draws, communities, design center) on
           a modern web stack with native AI agents and a public REST API - at <strong>$149-$599/mo flat</strong>{" "}
           instead of MarkSystems' enterprise quote-and-implement model.
         </>
@@ -1292,10 +1292,10 @@ const comparisons: Category = {
     {
       q: "Which is best for a builder doing 20-80 homes per year?",
       aText:
-        "Cornerstone PM™ is purpose-built for this segment. Home-builder workflows (communities, floor plan libraries, schedule templates, AI takeoff, vendor bidding, design center options) are first-class. Buildertrend works but adds complexity overhead; NEWSTAR/BuildPro are over-built and over-priced for this volume.",
+        "Cornerstone PMÃ¢â€žÂ¢ is purpose-built for this segment. Home-builder workflows (communities, floor plan libraries, schedule templates, AI takeoff, vendor bidding, design center options) are first-class. Buildertrend works but adds complexity overhead; NEWSTAR/BuildPro are over-built and over-priced for this volume.",
       a: (
         <>
-          <A href="/home-builder-project-management-software">Cornerstone PM™ is purpose-built</A> for this segment.
+          <A href="/home-builder-project-management-software">Cornerstone PMÃ¢â€žÂ¢ is purpose-built</A> for this segment.
           Home-builder workflows (communities, floor plan libraries, schedule templates, AI takeoff, vendor
           bidding, design center options) are first-class. Buildertrend works but adds complexity overhead;
           NEWSTAR/BuildPro are over-built and over-priced for this volume.
@@ -1315,7 +1315,7 @@ const comparisons: Category = {
       ),
     },
     {
-      q: "Will Cornerstone PM™ scale as we grow?",
+      q: "Will Cornerstone PMÃ¢â€žÂ¢ scale as we grow?",
       aText:
         "Yes. Pro supports up to 1,000 active homes; Pro+ has no home cap. The REST API and webhook system on Pro+ enable custom integrations to accounting (Sage 300, QuickBooks Enterprise), warranty platforms, and CRM tools as you grow past 200+ homes/year.",
       a: (
@@ -1339,13 +1339,13 @@ const security: Category = {
   accent: "text-emerald-400",
   items: [
     {
-      q: "Can I export my data from Cornerstone PM™?",
+      q: "Can I export my data from Cornerstone PMÃ¢â€žÂ¢?",
       aText:
-        "Yes - every plan. Take all your data with you anytime, no strings attached. Settings → Backups lets you download a full org export (91 tables) as CSV or JSON in one click, with sensitive fields automatically excluded. Every vendor, every home, every schedule, every option, every budget line. Nightly auto-backups run with 7-day retention for instant rollback. Your data is always yours, no exit fees, no support ticket, no waiting period.",
+        "Yes - every plan. Take all your data with you anytime, no strings attached. Settings Ã¢â€ â€™ Backups lets you download a full org export (91 tables) as CSV or JSON in one click, with sensitive fields automatically excluded. Every vendor, every home, every schedule, every option, every budget line. Nightly auto-backups run with 7-day retention for instant rollback. Your data is always yours, no exit fees, no support ticket, no waiting period.",
       a: (
         <>
           Yes - every plan. <strong>Take all your data with you anytime, no strings attached.</strong>{" "}
-          Settings → Backups lets you download a full org export (91 tables) as CSV or JSON in one click,
+          Settings Ã¢â€ â€™ Backups lets you download a full org export (91 tables) as CSV or JSON in one click,
           with sensitive fields automatically excluded. Every vendor, every home, every schedule, every
           option, every budget line. Nightly auto-backups run with{" "}
           <strong>7-day retention</strong> for instant rollback. No exit fees, no support ticket, no waiting period.
@@ -1355,22 +1355,22 @@ const security: Category = {
     {
       q: "How often are backups run?",
       aText:
-        "Nightly automatic backups, 7-day retention. You can also trigger manual backups on demand at any time from Settings → Backups (Admin only). Both CSV and JSON formats are available for full-database exports.",
+        "Nightly automatic backups, 7-day retention. You can also trigger manual backups on demand at any time from Settings Ã¢â€ â€™ Backups (Admin only). Both CSV and JSON formats are available for full-database exports.",
       a: (
         <>
           <strong>Nightly automatic backups, 7-day retention.</strong> You can also trigger manual backups on demand
-          at any time from Settings → Backups (Admin only). Both CSV and JSON formats are available for full-database
+          at any time from Settings Ã¢â€ â€™ Backups (Admin only). Both CSV and JSON formats are available for full-database
           exports.
         </>
       ),
     },
     {
-      q: "Who owns the data in Cornerstone PM™?",
+      q: "Who owns the data in Cornerstone PMÃ¢â€žÂ¢?",
       aText:
-        "You do. Cornerstone PM™ operates on a 'your data is always yours' principle: one-click full database export in CSV or JSON anytime, no exit fees, no support ticket, no waiting period. If you ever leave, you leave with everything - vendors, homes, schedules, options, budgets, every line. No strings attached. The REST API on Pro+ also gives you full programmatic access to every record.",
+        "You do. Cornerstone PMÃ¢â€žÂ¢ operates on a 'your data is always yours' principle: one-click full database export in CSV or JSON anytime, no exit fees, no support ticket, no waiting period. If you ever leave, you leave with everything - vendors, homes, schedules, options, budgets, every line. No strings attached. The REST API on Pro+ also gives you full programmatic access to every record.",
       a: (
         <>
-          <strong>You do.</strong> Cornerstone PM™ operates on a &quot;your data is always yours&quot; principle:
+          <strong>You do.</strong> Cornerstone PMÃ¢â€žÂ¢ operates on a &quot;your data is always yours&quot; principle:
           one-click full database export in CSV or JSON anytime, no exit fees, no support ticket, no waiting
           period. If you ever leave, you leave with everything &mdash; vendors, homes, schedules, options,
           budgets, every line. No strings attached. The{" "}
@@ -1379,7 +1379,7 @@ const security: Category = {
       ),
     },
     {
-      q: "Is Cornerstone PM™ multi-tenant isolated?",
+      q: "Is Cornerstone PMÃ¢â€žÂ¢ multi-tenant isolated?",
       aText:
         "Yes. Each builder runs in an isolated tenant - your homes, vendors, pricing, AI conversations, and permission matrix never cross tenant boundaries. AI agents (Foreman, Blueprint, Bid Import, Support) operate strictly within your tenant scope.",
       a: (
@@ -1427,12 +1427,12 @@ const security: Category = {
       ),
     },
     {
-      q: "Is there vendor lock-in if I leave Cornerstone PM™?",
+      q: "Is there vendor lock-in if I leave Cornerstone PMÃ¢â€žÂ¢?",
       aText:
         "No - never. Take all your data with you anytime, no strings attached. One-click full database export in CSV or JSON, $0, no exit fees, no waiting period. The REST API gives you full programmatic access. Re-import to whatever platform you choose. We win by being the best fit, not by holding data hostage.",
       a: (
         <>
-          <strong>No — never.</strong> Take all your data with you anytime, no strings attached. One-click full database export in CSV or JSON, $0, no exit fees, no waiting period. The{" "}
+          <strong>No Ã¢â‚¬â€ never.</strong> Take all your data with you anytime, no strings attached. One-click full database export in CSV or JSON, $0, no exit fees, no waiting period. The{" "}
           <A href="/api-access">REST API</A> gives you full programmatic access. You can re-import to whatever
           platform you choose. We win by being the best fit, not by holding data hostage.
         </>
@@ -1494,7 +1494,7 @@ export default function FAQPage() {
             Frequently Asked Questions
           </h1>
           <p className="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
-            Everything you need to know about Cornerstone PM™ - pricing, migration, AI agents,
+            Everything you need to know about Cornerstone PMÃ¢â€žÂ¢ - pricing, migration, AI agents,
             integrations, and how we compare to Buildertrend, NEWSTAR, BuildPro, and others.
           </p>
         </div>
@@ -1565,7 +1565,7 @@ export default function FAQPage() {
               href="https://app.cornerstonepm.ai/login"
               className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-violet-500 hover:bg-violet-400 text-white font-semibold transition-colors shadow-lg shadow-violet-500/20"
             >
-              ✨ Talk to Foreman AI
+              Ã¢Å“Â¨ Talk to Foreman AI
             </Link>
             <Link
               href="/contact"
@@ -1587,8 +1587,8 @@ export default function FAQPage() {
       <section className="py-6 px-4 border-t border-slate-900 bg-slate-950">
         <div className="max-w-4xl mx-auto">
           <p className="text-xs text-slate-600 text-center leading-relaxed">
-            Buildertrend®, NEWSTAR®, BuildPro®, CoConstruct®, JobTread®, and MarkSystems® are
-            trademarks of their respective owners. Cornerstone PM™ is not affiliated with or
+            BuildertrendÃ‚Â®, NEWSTARÃ‚Â®, BuildProÃ‚Â®, CoConstructÃ‚Â®, JobTreadÃ‚Â®, and MarkSystemsÃ‚Â® are
+            trademarks of their respective owners. Cornerstone PMÃ¢â€žÂ¢ is not affiliated with or
             endorsed by these companies.
           </p>
         </div>

@@ -10,7 +10,7 @@ export function StructuredData() {
         "applicationSubCategory": "Construction Management Software",
         "operatingSystem": "Web",
         "url": "https://cornerstonepm.ai",
-        "description": "Cornerstone PM is the complete home builder software platform with native AI agents. Built for home builders of all types — production, custom, and semi-custom. Includes construction scheduling, sales pipeline, purchasing, design center with options engine, Blueprint AI material takeoffs, Foreman AI agent with 83 purpose-built construction skills, MLS listing sheet generator, homeowner portal, and full REST API. Starts at $149/mo with unlimited users. No per-seat fees. No implementation cost.",
+        "description": "Cornerstone PM is the complete home builder software platform with native AI agents. Built for home builders of all types â€” production, custom, and semi-custom. Includes construction scheduling, sales pipeline, purchasing, design center with options engine, Blueprint AI material takeoffs, Foreman AI agent with 99+ purpose-built construction skills, MLS listing sheet generator, homeowner portal, and full REST API. Starts at $149/mo with unlimited users. No per-seat fees. No implementation cost.",
         "keywords": "home builder software, construction scheduling, residential builder ERP, NEWSTAR alternative, BuildPro alternative, Buildertrend alternative, CoConstruct alternative, JobTread alternative, AI construction agent, Blueprint AI takeoff, options engine, design center, production home builder software, subcontractor bidding, homeowner portal",
         "offers": {
           "@type": "AggregateOffer",
@@ -20,7 +20,7 @@ export function StructuredData() {
           "priceSpecification": [
             { "@type": "UnitPriceSpecification", "price": "149", "priceCurrency": "USD", "name": "Starter - Scheduling + Buyer Portal", "description": "Construction scheduling, Gantt charts, subcontractor confirmations, homeowner portal, permit tracker, multi-community support, up to 500 active homes, unlimited users.", "billingDuration": "P1M" },
             { "@type": "UnitPriceSpecification", "price": "299", "priceCurrency": "USD", "name": "Builder - Full Platform (No AI)", "description": "Adds purchasing, sales pipeline, design center, MLS listing agent. Unlimited users.", "billingDuration": "P1M" },
-            { "@type": "UnitPriceSpecification", "price": "499", "priceCurrency": "USD", "name": "Pro - With AI Agents", "description": "Adds Foreman AI (83+ skills), Blueprint AI (25 takeoffs/mo). Up to 1,000 active homes, unlimited users.", "billingDuration": "P1M" },
+            { "@type": "UnitPriceSpecification", "price": "499", "priceCurrency": "USD", "name": "Pro - With AI Agents", "description": "Adds Foreman AI (99+ skills), Blueprint AI (25 takeoffs/mo). Up to 1,000 active homes, unlimited users.", "billingDuration": "P1M" },
             { "@type": "UnitPriceSpecification", "price": "599", "priceCurrency": "USD", "name": "Pro+ - API + Enterprise AI", "description": "Full REST API, BYOA automated bidding pipeline, Opus AI, 5,000 AI messages/mo, scoped API keys, webhooks, SSO, SLA. Unlimited users.", "billingDuration": "P1M" },
           ],
         },
@@ -34,7 +34,7 @@ export function StructuredData() {
           "Purchasing and budget management with cost type classifications",
           "Purchase orders, payments, and retainage tracking",
           "Blueprint AI - upload floor plan PDF, extract 130+ material scopes automatically",
-          "Foreman AI agent with 83 purpose-built construction skills",
+          "Foreman AI agent with 99+ purpose-built construction skills",
           "MLS listing sheet auto-generated from live project data",
           "Homeowner portal with milestones and photo uploads",
           "Permit gate system and permitting pipeline tracker",
@@ -80,7 +80,7 @@ export function StructuredData() {
             "name": "What is Cornerstone PM?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Cornerstone PM is a complete home builder software platform built for home builders of all types — production, custom, and semi-custom. It includes construction scheduling, a sales pipeline, purchasing, design center with options engine, AI agents (Foreman AI and Blueprint AI), MLS listing generator, homeowner portal, and REST API. It starts at $149/mo with unlimited users and no implementation fees.",
+              "text": "Cornerstone PM is a complete home builder software platform built for home builders of all types â€” production, custom, and semi-custom. It includes construction scheduling, a sales pipeline, purchasing, design center with options engine, AI agents (Foreman AI and Blueprint AI), MLS listing generator, homeowner portal, and REST API. It starts at $149/mo with unlimited users and no implementation fees.",
             },
           },
           {
@@ -88,7 +88,7 @@ export function StructuredData() {
             "name": "How much does Cornerstone PM cost?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Cornerstone PM starts at $149/mo for the Starter plan (scheduling + buyer portal, unlimited users). Builder is $299/mo (adds purchasing, sales, design center). Pro is $499/mo (adds Foreman AI with 83+ skills and Blueprint AI). Pro+ is $599/mo (adds full REST API, automated bidding pipeline, and enterprise AI). All plans include unlimited users with no per-seat fees. Beta access is free for 2 years, limited to the first 100 builders.",
+              "text": "Cornerstone PM starts at $149/mo for the Starter plan (scheduling + buyer portal, unlimited users). Builder is $299/mo (adds purchasing, sales, design center). Pro is $499/mo (adds Foreman AI with 99+ skills and Blueprint AI). Pro+ is $599/mo (adds full REST API, automated bidding pipeline, and enterprise AI). All plans include unlimited users with no per-seat fees. Beta access is free for 2 years, limited to the first 100 builders.",
             },
           },
           {
@@ -96,7 +96,7 @@ export function StructuredData() {
             "name": "What is Foreman AI?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Foreman AI is a purpose-built AI construction agent with 83+ skills across scheduling, sales, purchasing, design center, and document generation. Unlike generic AI tools, Foreman reads and writes your real data - creating purchase orders, updating vendor bids, generating MLS listings, analyzing your sales pipeline - using plain English commands. Available on the Pro plan ($499/mo).",
+              "text": "Foreman AI is a purpose-built AI construction agent with 99+ skills across scheduling, sales, purchasing, design center, and document generation. Unlike generic AI tools, Foreman reads and writes your real data - creating purchase orders, updating vendor bids, generating MLS listings, analyzing your sales pipeline - using plain English commands. Available on the Pro plan ($499/mo).",
             },
           },
           {
@@ -136,7 +136,7 @@ export function StructuredData() {
             "name": "Is Cornerstone PM a JobTread alternative?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Cornerstone PM and JobTread serve different markets. JobTread is built for general contractors and remodelers. Cornerstone PM is built for home builders with lot management, floorplan pricing engines, pre-sale buyer workflows, and design center options - features JobTread does not offer. Cornerstone PM also includes 83 native AI skills; JobTread's AI is a bring-your-own-ChatGPT connector.",
+              "text": "Cornerstone PM and JobTread serve different markets. JobTread is built for general contractors and remodelers. Cornerstone PM is built for home builders with lot management, floorplan pricing engines, pre-sale buyer workflows, and design center options - features JobTread does not offer. Cornerstone PM also includes 99+ native AI skills; JobTread's AI is a bring-your-own-ChatGPT connector.",
             },
           },
           {
