@@ -155,7 +155,7 @@ export default function AiNewHomeSalesPage() {
             { num: "100%", label: "Pipeline visibility", sub: "Every buyer, every community" },
             { num: "0", label: "Missed follow-ups", sub: "AI flags stalled deals" },
             { num: "30s", label: "MLS description", sub: "Generated from real data" },
-            { num: "âˆž", label: "Communities tracked", sub: "No per community limits" },
+            { num: "∞", label: "Communities tracked", sub: "No per-community limits" },
           ].map((s) => (
             <div key={s.label} className="text-center p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
               <div className="text-3xl font-black text-violet-400 mb-1">{s.num}</div>
@@ -207,7 +207,7 @@ export default function AiNewHomeSalesPage() {
                     <p className="text-white font-medium italic">&ldquo;{ex.prompt}&rdquo;</p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-slate-400 font-black text-sm leading-none flex-shrink-0 mt-0.5">ðŸª–</span>
+                    <span className="text-slate-400 font-black text-sm leading-none flex-shrink-0 mt-0.5">🪖</span>
                     <p className="text-slate-300 text-sm">{ex.result}</p>
                   </div>
                 </div>

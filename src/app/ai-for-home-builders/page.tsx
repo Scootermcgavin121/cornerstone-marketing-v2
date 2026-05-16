@@ -180,7 +180,7 @@ export default function AiForHomeBuildersPage() {
               },
             ].map((item) => (
               <div key={item.problem} className="p-6 rounded-2xl bg-slate-900 border border-slate-800">
-                <div className="text-red-400 font-bold text-sm mb-3">âœ— {item.problem}</div>
+                <div className="text-red-400 font-bold text-sm mb-3">✗ {item.problem}</div>
                 <p className="text-slate-400 text-sm leading-relaxed" dangerouslySetInnerHTML={{ __html: item.detail }} />
               </div>
             ))}
@@ -260,7 +260,7 @@ export default function AiForHomeBuildersPage() {
                     <p className="text-white font-medium italic">&ldquo;{ex.prompt}&rdquo;</p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="font-black text-sm leading-none flex-shrink-0 mt-0.5">ðŸª–</span>
+                    <span className="font-black text-sm leading-none flex-shrink-0 mt-0.5">🪖</span>
                     <p className="text-slate-300 text-sm">{ex.result}</p>
                   </div>
                 </div>
@@ -274,7 +274,7 @@ export default function AiForHomeBuildersPage() {
       <section className="py-16 px-4 bg-slate-900/30">
         <div className="max-w-4xl mx-auto">
           <div className="rounded-2xl bg-violet-500/5 border border-violet-500/20 p-8 sm:p-12 text-center">
-            <div className="text-5xl mb-6">ðŸ§ </div>
+            <div className="text-5xl mb-6">🧠</div>
             <h2 className="text-3xl font-black text-white mb-4">Gets smarter over time.</h2>
             <p className="text-slate-400 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
               Foreman learns how YOU work. Tell it the name you want to be greeted by, your role, your go-to subcontractors for each scope, your margin targets by community, your reporting preferences — it remembers everything and gets more intuitive every session. <strong>Custom-coded into Cornerstone, not a generic chatbot bolt-on.</strong> The more you use it, the more it understands your specific business and habits.

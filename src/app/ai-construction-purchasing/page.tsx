@@ -213,7 +213,7 @@ export default function AiConstructionPurchasingPage() {
                     <p className="text-white font-medium italic">&ldquo;{ex.prompt}&rdquo;</p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-slate-400 font-black text-sm leading-none flex-shrink-0 mt-0.5">ðŸª–</span>
+                    <span className="text-slate-400 font-black text-sm leading-none flex-shrink-0 mt-0.5">🪖</span>
                     <p className="text-slate-300 text-sm">{ex.result}</p>
                   </div>
                 </div>
@@ -230,7 +230,7 @@ export default function AiConstructionPurchasingPage() {
                   <p className="text-white font-medium italic">&ldquo;{prompts[4]?.prompt}&rdquo;</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-slate-400 font-black text-sm leading-none flex-shrink-0 mt-0.5">ðŸª–</span>
+                  <span className="text-slate-400 font-black text-sm leading-none flex-shrink-0 mt-0.5">🪖</span>
                   <p className="text-slate-300 text-sm">{prompts[4]?.result}</p>
                 </div>
               </div>
@@ -334,12 +334,12 @@ export default function AiConstructionPurchasingPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
             {[
-              { emoji: "ðŸ“ž", title: "Call a vendor to get their email", desc: "Your voice agent calls a roofing company, gets their contact info, and Cornerstone adds them as a vendor automatically. Zero manual entry." },
-              { emoji: "ðŸ“§", title: "Scan your inbox for bid replies", desc: "An email agent reads incoming vendor emails, extracts bid data, and logs it in Cornerstone — no one touches the keyboard." },
-              { emoji: "ðŸ—ï¸", title: "Solicit bids by phone", desc: "Voice agent calls your vendor list, explains the scope, and directs them to your bid portal. 200+ vendors contacted in an afternoon." },
-              { emoji: "âœ…", title: "Auto-generate POs on task completion", desc: "Agent monitors task completions and triggers PO generation automatically — the schedule drives purchasing without you in the loop." },
-              { emoji: "ðŸ“±", title: "Follow up on overdue tasks", desc: "Agent calls the framer who hasn&apos;t confirmed their schedule date. Records the outcome. Updates the task status." },
-              { emoji: "ðŸ”Œ", title: "Connect any framework", desc: "Claude, GPT-4, LangChain, custom-built — if it can make an HTTP request, it can act on your Cornerstone data." },
+              { emoji: "📞", title: "Call a vendor to get their email", desc: "Your voice agent calls a roofing company, gets their contact info, and Cornerstone adds them as a vendor automatically. Zero manual entry." },
+              { emoji: "📧", title: "Scan your inbox for bid replies", desc: "An email agent reads incoming vendor emails, extracts bid data, and logs it in Cornerstone — no one touches the keyboard." },
+              { emoji: "🏗️", title: "Solicit bids by phone", desc: "Voice agent calls your vendor list, explains the scope, and directs them to your bid portal. 200+ vendors contacted in an afternoon." },
+              { emoji: "✅", title: "Auto-generate POs on task completion", desc: "Agent monitors task completions and triggers PO generation automatically — the schedule drives purchasing without you in the loop." },
+              { emoji: "📱", title: "Follow up on overdue tasks", desc: "Agent calls the framer who hasn&apos;t confirmed their schedule date. Records the outcome. Updates the task status." },
+              { emoji: "🔌", title: "Connect any framework", desc: "Claude, GPT-4, LangChain, custom-built — if it can make an HTTP request, it can act on your Cornerstone data." },
             ].map((item) => (
               <div key={item.title} className="p-5 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-cyan-500/20 transition-all duration-300">
                 <div className="text-2xl mb-3">{item.emoji}</div>

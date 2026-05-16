@@ -22,7 +22,7 @@ const agents = [
     color: "amber",
     href: "/foreman",
     highlights: [
-      "100-skill covering parts, vendors, homes & budgets",
+      "100+ skills covering parts, vendors, homes & budgets",
       "Chat with your data, execute real actions",
       "Persistent history with auto-titles",
       "Complete org data isolation",
@@ -38,7 +38,7 @@ const agents = [
     color: "violet",
     href: "/ai-takeoff",
     highlights: [
-      "Upload PDF ? instant material takeoff",
+      "Upload PDF → instant material takeoff",
       "134+ scope categories auto-populated",
       "Results in under 60 seconds",
       "Review and adjust before committing",

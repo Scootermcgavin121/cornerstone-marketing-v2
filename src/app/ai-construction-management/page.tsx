@@ -162,7 +162,7 @@ export default function AiConstructionManagementPage() {
               </ul>
             </div>
             <div className="rounded-2xl bg-emerald-500/5 border border-emerald-500/20 p-6">
-              <h3 className="text-lg font-bold text-emerald-400 mb-4">âœ“ AI built in</h3>
+              <h3 className="text-lg font-bold text-emerald-400 mb-4">✓ AI built in</h3>
               <ul className="space-y-3 text-slate-400 text-sm">
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-400 mt-0.5 flex-shrink-0" />
@@ -297,7 +297,7 @@ export default function AiConstructionManagementPage() {
                     <p className="text-white font-medium italic">&ldquo;{ex.prompt}&rdquo;</p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-slate-400 font-black text-sm leading-none flex-shrink-0 mt-0.5">ðŸª–</span>
+                    <span className="text-slate-400 font-black text-sm leading-none flex-shrink-0 mt-0.5">🪖</span>
                     <p className="text-slate-300 text-sm">{ex.result}</p>
                   </div>
                 </div>
