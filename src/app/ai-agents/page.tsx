@@ -23,9 +23,9 @@ const agents = [
     href: "/foreman",
     highlights: [
       "100+ skills covering parts, vendors, homes & budgets",
-      "Chat with your data, execute real actions",
-      "Persistent history with auto-titles",
-      "Complete org data isolation",
+      "Drag-drop PDFs, Excel, and images right into chat",
+      "Full undo + dry-run on every destructive write",
+      "Built-in estimating formulas (drywall, roofing, concrete, lumber, paint)",
     ],
     badge: "Pro Plan",
   },

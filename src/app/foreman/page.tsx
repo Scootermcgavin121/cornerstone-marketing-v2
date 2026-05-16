@@ -44,7 +44,7 @@ const skillCategories = [
     bg: "bg-blue-500/10",
     border: "border-blue-500/20",
     label: "AI-Powered Analysis",
-    count: 13,
+    count: "14+",
     desc: "Foreman doesn't just retrieve data - it analyzes it. Budget variances, profitability, vendor performance, competitive intel.",
     skills: [
       { name: "Web Scraping", detail: "Fetch any URL for product info, pricing, specs - Home Depot, Ferguson, 84 Lumber" },
@@ -55,7 +55,8 @@ const skillCategories = [
       { name: "Profitability Reports", detail: "Margin analysis by community with upgrade revenue breakdown" },
       { name: "Vendor Performance Analysis", detail: "Bid response rates, win rates, insurance tracking" },
       { name: "Image Vision & Screenshot Acting", detail: "Paste or drag-drop any screenshot, product photo, floor plan, or supplier page from inside the app — Foreman reads it with AI vision and acts on it (vendor quote screenshot → parts catalog entry, faucet photo → model lookup, floor plan PDF → takeoff trigger)." },
-      { name: "File Content Reading", detail: "Analyze uploaded CSVs, text files, and other documents — extract and act on data." },
+      { name: "File Upload & Content Reading", detail: "Drag-drop PDFs, Excel spreadsheets, CSVs, and images directly into chat. Foreman reads them, extracts the data, and acts on it — vendor quote PDF → parts created, takeoff Excel → budget lines added, scanned doc → searchable text." },
+      { name: "Construction Estimating Formulas", detail: "Built-in math for drywall sheets, roofing squares, concrete yards, lumber board-feet, and paint gallons. Give Foreman the dimensions, get back accurate quantities and rough cost — no calculator, no spreadsheet." },
       { name: "Sales Pipeline Analysis", detail: "Identify stalled deals, avg days per stage, close rate by agent or community" },
       { name: "Design Center Revenue Analysis", detail: "Total upgrade revenue by category, top-selling options, margin by spec level" },
       { name: "Buyer Selections Report", detail: "Full selections summary for any home - what was chosen, confirmed, and at what price" },
@@ -69,7 +70,7 @@ const skillCategories = [
     bg: "bg-violet-500/10",
     border: "border-violet-500/20",
     label: "System Intelligence",
-    count: "14+",
+    count: "16+",
     desc: "The behaviors that make Foreman actually useful - learns your org's build patterns from your own data, greets you by your chosen name, memory compaction, persistent memory, bulk data cleanup, deduplication, smart linking, error recovery.",
     skills: [
       { name: "Learn Builder Preferences", detail: "Foreman analyzes your org's existing floorplan takeoffs and learns YOUR build patterns. Always use recessed cans in bedrooms? Foreman sees it across your Addison and Chesapeake takeoffs and makes that the default for the next plan. No configuration screens, no setup wizards - your own historical data IS the training set. The more floorplans you set up, the smarter Foreman gets for YOUR org." },
@@ -78,6 +79,8 @@ const skillCategories = [
       { name: "Memory Compaction", detail: "Auto-summarizes older messages mid-session so marathon work doesn't crash or forget. Recent context stays word-for-word intact." },
       { name: "Context Health Meter", detail: "Green/yellow/red indicator in the chat UI shows remaining capacity at a glance" },
       { name: "Persistent Memory", detail: "Saves preferences and decisions across sessions - gets smarter over time" },
+      { name: "Full Undo on Writes", detail: "Every write Foreman makes — create, update, delete, bulk operation — is reversible. Said the wrong thing? One click to undo the last action and Foreman walks the changes back exactly." },
+      { name: "Safety Guardrails", detail: "Destructive operations (deletes, bulk overwrites, mass renames) ship with a dry-run preview and confirmation gate. You see what will change before anything is touched — no surprise wipeouts." },
       { name: "Bulk Operations & Data Cleanup", detail: "Foreman is a beast at cleanup work - rename hundreds of options, fix bad pricing, normalize categories, archive stale parts, or rebuild a messy catalog in one prompt instead of 200 manual edits." },
       { name: "Smart Data Linking", detail: "Auto-connect parts to option classes for the design center - great for stitching legacy data back together after a migration." },
       { name: "Duplicate Prevention & Dedup", detail: "Always searches before creating to avoid duplicates, and can sweep your catalog to merge or flag existing dupes." },
@@ -94,7 +97,7 @@ const skillCategories = [
     bg: "bg-emerald-500/10",
     border: "border-emerald-500/20",
     label: "Document Generation",
-    count: 13,
+    count: "14+",
     desc: "Professional documents in seconds. SOWs, bid invitations, comparison reports, punch lists, MLS sheets, Excel exports, full lighting packages.",
     skills: [
       { name: "SOW Generator", detail: "Professional Scope of Work docs with home counts and specs" },
@@ -110,6 +113,7 @@ const skillCategories = [
       { name: "Sales Stage Report", detail: "Pipeline snapshot by community - homes per stage, days elapsed, next action due" },
       { name: "Setup Lighting Package", detail: "Builds a complete fixture-by-fixture lighting plan for a home in one command. Foreman first checks your org's LEARNED preferences from past takeoffs, then falls back to construction-savvy defaults. Pulls from your real catalog and assembles a room-by-room package. The more lighting packages you set up, the smarter it gets for YOUR org." },
       { name: "Setup Plumbing Package", detail: "One-click plumbing fixture setup for an entire home. Toilets, faucets, showers, tub/shower combos - assigned per room from your catalog. Same learn-from-your-data approach as lighting packages." },
+      { name: "Bid Request Drafting (Option-Linked)", detail: "Build a bid request that's wired to specific design and structural options - not just a scope. Vendors see exactly which options they're pricing against, so the awarded bid flows back to the right line items in your budget." },
     ],
   },
 ];
@@ -467,7 +471,7 @@ export default function ForemanPage() {
             <div className="text-white font-bold text-xl mb-6">Pro Plan</div>
             <div className="space-y-3 text-left mb-8">
               {[
-                "Foreman AI - 100+ skills, Sonnet model, 1,000 AI messages/mo",
+                "Foreman AI - 100+ skills on the latest Claude Sonnet model, 1,000 AI messages/mo",
                 "Blueprint AI - 25 blueprint takeoffs/mo",
                 "MLS Listing Agent",
                 "Everything in Builder (Sales, Purchasing, Design Center)",

@@ -44,6 +44,7 @@ const featureDetails = [
       "Vendor magic links — no passwords for subs",
       "Daily & weekly digest emails to subcontractors",
       "6-step closing workflow (CO → Orientation → Punch List → Close)",
+      "Punch list items with photo attachments — snap a picture in the field, the photo lands on the item and routes to the right vendor",
       "2-year warranty tracking post-close",
       "QR check-in signs auto-generated for every home — vendors scan to log GPS, weather, and hours on-site",
     ],
@@ -65,6 +66,7 @@ const featureDetails = [
       "Auto-budget generation from floorplan takeoffs (~97 lines)",
       "Structural options pricing (Bonus Room, Finished Basement, and 12+ more)",
       "Full bid management: send to bid → compare → award",
+      "Bid requests linkable to specific design or structural options — vendors price exactly what you’re selling, awards flow straight to the right budget lines",
       "Side-by-side vendor bid comparison with lowest-price highlighting",
       "Purchase orders: Draft → Sent → Acknowledged → Invoiced → Paid",
       "Change order approval workflow with full audit trail",
@@ -118,6 +120,7 @@ const featureDetails = [
       "Cross-class upgrades, per-room pricing from real takeoff quantities, and 64+ designer packages. Unlimited spec levels — Standard, Upgrade, Premium, or custom tiers. Buyers pick their finishes and see real-time upgrade pricing.",
     bullets: [
       "Cross-class upgrades — switch carpet to hardwood, recessed to pendants, within the same category",
+      "Allowances — budget placeholders for non-bid items, rename and reassign at the floorplan or community level any time",
       "Unlimited custom spec levels per community",
       "Per-room selections with sqft — 'Kitchen flooring (180 sqft)' with pricing from takeoffs",
       "Real-time upgrade pricing — exact delta shown: '+$684 upgrade'",
