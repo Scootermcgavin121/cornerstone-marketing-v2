@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { FeaturesSection } from "@/components/FeaturesSection";
@@ -197,7 +198,7 @@ const featureDetails = [
       "Sales Model Home QR — captures buyer leads, recognizes returning visitors, replaces paper sign-in sheets",
       'Printable 11\u00d78.5" QR signs auto-generated for every community and home',
       "Vendor Activity Map — Google Maps view of live check-ins across all communities, 30-second refresh",
-      "AI Jobsite Camera Events — webhook-driven, works with any camera (Verkada, Ring, IP cams)",
+      "Jobsite AI™ vendor presence detection — webhook-driven, works with any camera, doorbell, gate, or GPS (Verkada, Ring, Sensera, Samsara, custom IP cams)",
       "Auto-task start when vendor arrives, auto-departure logging on exit",
       "Photo upload at check-in (up to 10 per visit), stored in cloud",
       "Check-out flow with completion %, notes, and next-visit scheduling",
@@ -205,6 +206,8 @@ const featureDetails = [
       "Public check-in page — no app install or login required for vendors",
       "Webhook events: vendor.arrived, vendor.departed (HMAC-signed, retry, delivery logs)",
     ],
+    learnMoreHref: "/jobsite-ai",
+    learnMoreLabel: "Learn more about Jobsite AI™",
   },
 ];
 
@@ -262,6 +265,14 @@ export default function FeaturesPage() {
                       </li>
                     ))}
                   </ul>
+                  {(feature as { learnMoreHref?: string; learnMoreLabel?: string }).learnMoreHref && (
+                    <Link
+                      href={(feature as { learnMoreHref: string }).learnMoreHref}
+                      className={`inline-flex items-center gap-1.5 text-sm font-semibold ${feature.textColor} hover:underline underline-offset-4`}
+                    >
+                      {(feature as { learnMoreLabel?: string }).learnMoreLabel || "Learn more"} →
+                    </Link>
+                  )}
                 </div>
                 <div className="w-full lg:w-[520px] flex-shrink-0 space-y-4">
                   <div className="relative w-full rounded-xl border border-slate-700/50 shadow-xl overflow-hidden bg-slate-900">

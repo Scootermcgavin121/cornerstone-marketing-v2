@@ -286,6 +286,26 @@ export default function AiSchedulingPage() {
         </div>
       </section>
 
+      {/* Related: Jobsite AI */}
+      <section className="py-12 px-4">
+        <div className="max-w-3xl mx-auto">
+          <Link
+            href="/jobsite-ai"
+            className="block rounded-2xl bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 border border-emerald-500/30 hover:border-emerald-400/60 p-7 transition-all duration-200 group"
+          >
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5">
+              <div className="text-4xl flex-shrink-0">📷</div>
+              <div className="flex-1">
+                <div className="text-[10px] font-bold uppercase tracking-widest text-emerald-400 mb-1">Pair it with Jobsite AI™</div>
+                <h3 className="text-white font-black text-xl mb-1 group-hover:text-emerald-300 transition-colors">When the vendor rolls in, the task auto-starts.</h3>
+                <p className="text-slate-400 leading-relaxed text-sm">Any camera, doorbell, gate, GPS tracker, or check-in app pings Cornerstone — the matching scheduled task flips to In Progress automatically. No phone calls, no manual updates.</p>
+              </div>
+              <ArrowRight className="w-5 h-5 text-emerald-400 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
+            </div>
+          </Link>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 px-4 text-center border-t border-slate-800/60">
         <h2 className="text-4xl font-black mb-4">

@@ -494,6 +494,38 @@ export default function ForemanPage() {
         </div>
       </section>
 
+      {/* Sister AI agents */}
+      <section className="py-16 px-4 border-t border-slate-800/60">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-10">
+            <div className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-3">Other AI Agents in Cornerstone</div>
+            <h3 className="text-2xl sm:text-3xl font-black text-white">Foreman doesn’t work alone.</h3>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { name: "Jobsite AI™", href: "/jobsite-ai", desc: "Vendor arrival detection — any camera, doorbell, gate, or GPS auto-starts the task.", accent: "text-emerald-400 group-hover:text-emerald-300" },
+              { name: "Blueprint AI", href: "/ai-takeoff", desc: "Upload a PDF blueprint, get a full material takeoff in seconds.", accent: "text-violet-400 group-hover:text-violet-300" },
+              { name: "Bid Import AI", href: "/bid-import-ai", desc: "Drop in any vendor bid — Excel, PDF, scanned, handwritten — AI extracts every line.", accent: "text-cyan-400 group-hover:text-cyan-300" },
+              { name: "Punchlist AI", href: "/punchlist-ai", desc: "Walk the house with your phone — AI builds the punch list from the video.", accent: "text-amber-400 group-hover:text-amber-300" },
+            ].map((agent) => (
+              <Link
+                key={agent.href}
+                href={agent.href}
+                className="block p-5 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-600 transition-all duration-200 group"
+              >
+                <div className={`text-sm font-black mb-1 ${agent.accent}`}>{agent.name}</div>
+                <p className="text-slate-400 text-xs leading-relaxed">{agent.desc}</p>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link href="/ai-agents" className="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-white">
+              See all AI agents <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 px-4 text-center border-t border-slate-800/60">
         <h2 className="text-4xl font-black mb-4">

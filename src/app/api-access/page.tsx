@@ -760,6 +760,26 @@ export default function ApiAccessPage() {
               );
             })}
           </div>
+
+          {/* Inbound webhooks callout — Jobsite AI cross-link */}
+          <Link
+            href="/jobsite-ai"
+            className="mt-10 block rounded-2xl bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 border border-emerald-500/30 hover:border-emerald-400/60 p-7 transition-all duration-200 group"
+          >
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5">
+              <div className="text-4xl flex-shrink-0">📷</div>
+              <div className="flex-1">
+                <div className="inline-flex items-center gap-2 px-2 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-[10px] font-bold uppercase tracking-widest mb-2">
+                  Inbound webhook · Jobsite AI™
+                </div>
+                <h3 className="text-white font-black text-xl mb-1 group-hover:text-emerald-300 transition-colors">Webhooks go both ways. Cameras post in, tasks auto-start.</h3>
+                <p className="text-slate-400 leading-relaxed">
+                  Point any camera, doorbell, gate, GPS tracker, or check-in app at <code className="text-emerald-300 bg-emerald-500/10 px-1.5 py-0.5 rounded text-xs">POST /api/ext/jobsite-events</code>. The matching scheduled task auto-flips to In Progress. Camera-agnostic, sensor-agnostic.
+                </p>
+              </div>
+              <ArrowRight className="w-5 h-5 text-emerald-400 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
+            </div>
+          </Link>
         </div>
       </section>
 
