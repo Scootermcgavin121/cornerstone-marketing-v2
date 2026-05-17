@@ -208,8 +208,8 @@
       "wordCount": 1000,
       "heroImage": "/blog/vs-coconstruct.png",
       "heroImageAlt": "Production home builder design center software comparing CoConstruct job-level selections to Cornerstone PM Designer Packages",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "0e66475"
     },
     {
       "slug": "contractor-foreman-vs-cornerstone-production-builder",
