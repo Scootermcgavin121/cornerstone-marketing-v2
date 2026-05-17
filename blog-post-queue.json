@@ -180,8 +180,8 @@
       "wordCount": 1000,
       "heroImage": "/blog/vs-acculynx.png",
       "heroImageAlt": "AccuLynx alternative home builder software comparison with Cornerstone PM design center and floorplans",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "0508db3"
     },
     {
       "slug": "cornerstone-pm-vs-procore-residential-home-builder",
