@@ -6,6 +6,7 @@ import { ArrowRight } from "lucide-react";
 const agents = [
   {
     emoji: "🪖",
+    image: "/foreman-mascot.png",
     name: "Foreman AI™",
     tagline: "AI Construction Agent",
     desc: "100+ purpose-built construction skills. Reads AND writes your data — parts, vendors, homes, exports.",
@@ -107,7 +108,11 @@ export function AgentsSection() {
               className={`group relative p-6 rounded-2xl bg-slate-900/60 border ${agent.border} transition-colors duration-300 sm:hover:-translate-y-0.5 sm:transition-all flex flex-col`}
             >
               <div className="flex items-start justify-between mb-4">
-                <span className="text-4xl">{agent.emoji}</span>
+                {agent.image ? (
+                  <img src={agent.image} alt={agent.name} className="h-14 w-14 object-contain -ml-1 -mt-1" />
+                ) : (
+                  <span className="text-4xl">{agent.emoji}</span>
+                )}
                 <span className={`px-2.5 py-1 rounded-full border text-xs font-bold ${agent.badgeColor}`}>
                   {agent.badge}
                 </span>

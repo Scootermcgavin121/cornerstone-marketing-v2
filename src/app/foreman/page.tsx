@@ -180,8 +180,11 @@ export default function ForemanPage() {
             <Zap className="w-3.5 h-3.5" />
             100+ skills &middot; PRO PLAN &middot; READS AND WRITES YOUR REAL DATA
           </div>
+          <div className="flex justify-center mb-4">
+            <img src="/foreman-mascot.png" alt="Foreman AI mascot" className="h-40 sm:h-48 lg:h-56 w-auto object-contain" />
+          </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
-            🪖 Foreman AI<sup className="text-2xl sm:text-3xl lg:text-4xl align-super text-amber-400 ml-1">TM</sup>
+            Foreman AI<sup className="text-2xl sm:text-3xl lg:text-4xl align-super text-amber-400 ml-1">TM</sup>
           </h1>
           <p className="text-2xl text-amber-400 font-bold mb-4">Not a chatbot. A construction agent.</p>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
@@ -255,7 +258,7 @@ export default function ForemanPage() {
                     <p className="text-white font-medium italic">&ldquo;{ex.prompt}&rdquo;</p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-slate-400 font-black text-sm leading-none flex-shrink-0 mt-0.5">🪖</span>
+                    <img src="/foreman-mascot.png" alt="Foreman" className="h-5 w-5 object-contain flex-shrink-0 mt-0.5" />
                     <p className="text-slate-300 text-sm">{ex.result}</p>
                   </div>
                 </div>
@@ -356,7 +359,7 @@ export default function ForemanPage() {
                 <div className="rounded-2xl bg-slate-950/80 border border-slate-800 overflow-hidden">
                   <div className="px-5 py-3 border-b border-slate-800 flex items-center justify-between">
                     <div className="flex items-center gap-2">
-                      <span className="text-lg">🪖</span>
+                      <img src="/foreman-mascot.png" alt="Foreman" className="h-6 w-6 object-contain" />
                       <span className="text-white font-semibold text-sm">Foreman AI</span>
                     </div>
                     <div className="flex items-center gap-2">

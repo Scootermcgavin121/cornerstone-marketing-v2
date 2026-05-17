@@ -266,7 +266,7 @@ export default function ListingSheetPage() {
               </div>
             </div>
             <div className="p-8 rounded-2xl bg-amber-500/5 border border-amber-500/20">
-              <div className="text-4xl mb-4">🪖</div>
+              <img src="/foreman-mascot.png" alt="Foreman AI" className="h-14 w-14 object-contain mb-3" />
               <h3 className="text-xl font-black text-white mb-3">Via Foreman AI</h3>
               <p className="text-slate-400 leading-relaxed mb-4">
                 Ask Foreman in plain English. It pulls everything and generates the description conversationally.
