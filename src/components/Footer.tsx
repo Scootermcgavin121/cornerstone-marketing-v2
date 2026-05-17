@@ -78,6 +78,7 @@ export function Footer() {
                 { label: "Features", href: "/features" },
                 { label: "Jobsite Command Center", href: "/qr" },
                 { label: "Foreman AI™", href: "/foreman" },
+                { label: "Jobsite AI™", href: "/jobsite-ai" },
                 { label: "API Access", href: "/api-access" },
                 { label: "Pricing", href: "/pricing" },
                 { label: "Usage Rates", href: "/usage-rates" },

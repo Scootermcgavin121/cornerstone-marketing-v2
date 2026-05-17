@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "cornerstone-pm-vs-acculynx-home-builder-software",
+    title: "Cornerstone PM vs AccuLynx: Home Builder Software Compared",
+    excerpt:
+      "AccuLynx is the #1 roofing CRM \u2014 and it\u2019s excellent for what it does. But if you\u2019re a production home builder who landed here from a \u2018construction CRM\u2019 search, you need a different category of tool entirely. Here\u2019s the honest comparison.",
+    date: "May 16, 2026",
+    readTime: "7 min read",
+    tag: "Comparison",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+  },
+  {
     slug: "foreman-ai-100-skills",
     title: "Foreman AI Hits 100 Skills — And Skill #100 Learns Your Build Patterns",
     excerpt:

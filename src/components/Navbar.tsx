@@ -40,6 +40,7 @@ const aiLinks = [
   { label: "Foreman AI™", href: "/foreman", desc: "100-skill AI agent, natural language commands" },
   { label: "AI Blueprint Takeoff", href: "/ai-takeoff", desc: "Upload PDF — instant material takeoff" },
   { label: "Bid Import AI", href: "/bid-import-ai", desc: "Upload any vendor bid — AI extracts every line item" },
+  { label: "Jobsite AI™", href: "/jobsite-ai", desc: "Vendor arrival detection — any camera, doorbell, gate, or GPS" },
   { label: "Punchlist AI · New", href: "/punchlist-ai", desc: "Walk the house — AI builds the punch list from the video" },
   { label: "AI MLS Listing Generator", href: "/listing-sheet", desc: "AI-written MLS listings from live project data" },
   { label: "AI Support Agent", href: "/support-ai", desc: "Always-on help desk, every feature & workflow" },
