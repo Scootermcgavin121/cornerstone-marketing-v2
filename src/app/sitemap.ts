@@ -70,6 +70,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/how-blueprint-ai-extracts-material-scopes", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/cornerstone-pm-vs-procore-residential-home-builder", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/cornerstone-pm-vs-acculynx-home-builder-software", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/coconstruct-vs-cornerstone-production-design-center", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({

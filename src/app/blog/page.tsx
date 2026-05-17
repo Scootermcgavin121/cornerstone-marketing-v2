@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "coconstruct-vs-cornerstone-production-design-center",
+    title: "CoConstruct vs Cornerstone PM: Production Builder Design Center",
+    excerpt:
+      "CoConstruct was built for custom builders with job-level allowances. It was acquired by Buildertrend and customers are being migrated. If you\u2019re a production builder being pushed to move your data, this is the moment to ask whether you want a platform actually built for plan repeats, Designer Packages, and multi-community vendor management.",
+    date: "May 17, 2026",
+    readTime: "7 min read",
+    tag: "Comparison",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+  },
+  {
     slug: "cornerstone-pm-vs-procore-residential-home-builder",
     title: "Procore vs Cornerstone PM: Wrong Tool for Residential Builders?",
     excerpt:
