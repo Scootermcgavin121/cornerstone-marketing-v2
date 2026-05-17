@@ -1,6 +1,7 @@
 import { Check, TrendingUp, QrCode, BellRing } from "lucide-react";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 import { VideoPlayer } from "@/components/VideoPlayer";
 import { FAQSection, type FAQItem } from "@/components/FAQSection";
 
@@ -307,6 +308,7 @@ export default function SalesPage() {
           Request Early Access &rarr; 
         </Link>
       </section>
+      <Footer />
     </div>
   );
 }

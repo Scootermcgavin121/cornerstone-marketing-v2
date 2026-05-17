@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Check, Shield, Zap, Globe, Code, Webhook, CreditCard, Building2, ArrowRight, ClipboardList, Users, Layers, Package, Clock, FileText, Bell, BarChart3, ChevronDown } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
 
 
@@ -585,6 +586,7 @@ export default function ApiDocsPage() {
           Request Early Access <ArrowRight className="w-5 h-5" />
         </Link>
       </section>
+      <Footer />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import { Check, Zap, Upload, FileText, LayoutGrid } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 import { VideoPlayer } from "@/components/VideoPlayer";
 
 export const metadata = {
@@ -239,6 +240,7 @@ export default function AiTakeoffPage() {
           Request Early Access &rarr;
         </Link>
       </section>
+      <Footer />
     </div>
   );
 }

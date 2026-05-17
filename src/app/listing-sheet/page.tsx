@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Check, FileText, Zap, Building2, Ruler, MapPin, Star, Download, Sparkles, Settings } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
 export const metadata = {
   title: "MLS Listing Sheet Generator — AI-Powered | Cornerstone PM™",
@@ -327,6 +328,7 @@ export default function ListingSheetPage() {
           Request Early Access &rarr;
         </Link>
       </section>
+      <Footer />
     </div>
   );
 }

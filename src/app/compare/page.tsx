@@ -1,6 +1,7 @@
 ﻿import Link from "next/link";
 import { Check, X, Minus } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
 export const metadata = {
   title: "Cornerstone PM™ vs NEWSTAR, Buildertrend, Buildxact — Compare Home Builder Software",
@@ -458,6 +459,7 @@ export default function ComparePage() {
           Request Early Access &rarr;
         </Link>
       </section>
+      <Footer />
     </div>
   );
 }

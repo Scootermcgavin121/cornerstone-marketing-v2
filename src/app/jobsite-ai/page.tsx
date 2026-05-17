@@ -1,6 +1,7 @@
 import { Check, ArrowRight, Webhook, Camera, Bell, Truck, Cpu, Sparkles, Radio, Zap, Shield, Clock, Eye, MapPin, QrCode, Smartphone, ScanLine, Activity } from "lucide-react";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
 export const metadata = {
   title: "Jobsite AI™ — Vendor Presence Detection for Home Builders | Cornerstone PM™",
@@ -562,6 +563,7 @@ Content-Type: application/json
           <p className="text-slate-500 text-xs mt-4">No credit card required &middot; Beta limited to 100 builders</p>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

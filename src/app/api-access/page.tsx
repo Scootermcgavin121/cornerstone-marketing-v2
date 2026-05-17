@@ -1,6 +1,7 @@
 ﻿import Link from "next/link";
 import { Check, Zap, ArrowRight, Code, Globe, Shield, GitBranch, Brain, RefreshCw } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
 export const metadata = {
   title: "API Access & Bring Your Own Agent — Cornerstone PM™",
@@ -1093,6 +1094,7 @@ export default function ApiAccessPage() {
           Request Early Access &rarr;
         </Link>
       </section>
+      <Footer />
     </div>
   );
 }

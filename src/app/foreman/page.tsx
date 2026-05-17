@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Check, ArrowRight, Zap, Brain, FileText, Cpu, Activity, X } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 import { VideoPlayer } from "@/components/VideoPlayer";
 
 export const metadata = {
@@ -506,6 +507,7 @@ export default function ForemanPage() {
           Get Beta Access <ArrowRight className="w-5 h-5" />
         </Link>
       </section>
+      <Footer />
     </div>
   );
 }
