@@ -194,8 +194,8 @@
       "wordCount": 1000,
       "heroImage": "/blog/vs-procore.png",
       "heroImageAlt": "Procore alternative for residential home builders compared to Cornerstone PM production builder platform",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "dcd4661"
     },
     {
       "slug": "coconstruct-vs-cornerstone-production-design-center",
