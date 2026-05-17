@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Check, ArrowRight, Zap, Brain, FileText, Cpu, Activity, X } from "lucide-react";
+import { Check, ArrowRight, Zap, Brain, FileText, Cpu, Activity, X, ShoppingBag } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { VideoPlayer } from "@/components/VideoPlayer";
@@ -124,6 +124,11 @@ const examplePrompts = [
     prompt: "Scrape Home Depot for GE Profile refrigerators and add them to our parts catalog",
     result: "Found 6 models, added to catalog with SKUs, prices, and specs. Ready to link to design options.",
     category: "Web Scraping + Parts",
+  },
+  {
+    prompt: "Search supplier catalogs for brushed nickel kitchen faucets under $300 and show me the top 5 with live pricing",
+    result: "Pulled 5 faucets from supplier catalogs with live MSRPs, model numbers, and product images. Best value: Delta Leland at $247. Ready to add to your design center.",
+    category: "Supplier Integration",
   },
   {
     prompt: "Clean up the parts catalog - archive anything not used in the last 12 months, fix capitalization, and flag duplicate SKUs",
@@ -305,6 +310,125 @@ export default function ForemanPage() {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Supplier Integration */}
+      <section className="py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="rounded-3xl bg-gradient-to-br from-cyan-500/10 via-slate-900/60 to-amber-500/5 border border-cyan-500/20 p-8 sm:p-12">
+            <div className="flex flex-col lg:flex-row gap-10 items-start">
+              {/* Left: Pitch */}
+              <div className="flex-1">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-bold uppercase tracking-widest mb-5">
+                  <ShoppingBag className="w-3.5 h-3.5" />
+                  Supplier API Integration &middot; Coming Soon
+                </div>
+                <h2 className="text-3xl sm:text-4xl font-black mb-5 leading-tight">
+                  Your suppliers&apos; catalogs,<br />
+                  <span className="text-cyan-400">inside your AI assistant.</span>
+                </h2>
+                <p className="text-slate-300 text-lg leading-relaxed mb-5">
+                  No more switching between your PM tool and supplier websites. Foreman is connecting directly to supplier APIs to pull <strong className="text-white">real-time product data, live pricing, and official product images</strong> — straight into your parts catalog and design center.
+                </p>
+                <p className="text-slate-300 text-lg leading-relaxed mb-6">
+                  Ask Foreman &ldquo;find me a brushed nickel kitchen faucet under $300&rdquo; and get real results from actual supplier catalogs with current MSRPs. No stale spreadsheet pricing. No manual data entry.
+                </p>
+                <div className="space-y-3">
+                  {[
+                    "Search supplier product catalogs in real-time with plain English",
+                    "Pull live pricing, product images, descriptions, and model numbers",
+                    "Auto-populate your design center with accurate MSRPs across all floorplans",
+                    "Compare products and pricing across multiple suppliers instantly",
+                    "Set up entire fixture packages in minutes — real data, not guesswork",
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
+                      <span className="text-slate-300">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Right: Visual */}
+              <div className="w-full lg:w-96 flex-shrink-0">
+                <div className="rounded-2xl bg-slate-950/80 border border-slate-800 overflow-hidden">
+                  <div className="px-5 py-3 border-b border-slate-800 flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <span className="text-lg">🪖</span>
+                      <span className="text-white font-semibold text-sm">Foreman AI</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
+                      <span className="text-cyan-400 text-xs font-bold">Searching suppliers...</span>
+                    </div>
+                  </div>
+                  <div className="p-5 space-y-4">
+                    <div className="p-3 rounded-xl bg-amber-500/5 border border-amber-500/10">
+                      <div className="text-amber-400 text-xs font-bold mb-1">You:</div>
+                      <div className="text-white text-sm italic">&ldquo;Find me a brushed nickel kitchen faucet under $300&rdquo;</div>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="p-3 rounded-xl bg-slate-900/80 border border-slate-800">
+                        <div className="flex items-center justify-between mb-2">
+                          <span className="text-white text-xs font-bold">Delta Leland 9178-SP-DST</span>
+                          <span className="text-emerald-400 text-xs font-bold">$247.00</span>
+                        </div>
+                        <div className="text-slate-500 text-xs">Single-handle, pull-down &middot; SpotShield&reg; &middot; In stock</div>
+                      </div>
+                      <div className="p-3 rounded-xl bg-slate-900/80 border border-slate-800">
+                        <div className="flex items-center justify-between mb-2">
+                          <span className="text-white text-xs font-bold">Moen Arbor 7594SRS</span>
+                          <span className="text-emerald-400 text-xs font-bold">$284.00</span>
+                        </div>
+                        <div className="text-slate-500 text-xs">MotionSense, pull-down &middot; Spot Resist &middot; In stock</div>
+                      </div>
+                      <div className="p-3 rounded-xl bg-slate-900/80 border border-slate-800">
+                        <div className="flex items-center justify-between mb-2">
+                          <span className="text-white text-xs font-bold">Kohler Bellera K-560-VS</span>
+                          <span className="text-emerald-400 text-xs font-bold">$262.00</span>
+                        </div>
+                        <div className="text-slate-500 text-xs">Pull-down spray head &middot; DockNetik&reg; &middot; In stock</div>
+                      </div>
+                    </div>
+                    <div className="pt-3 border-t border-slate-800/60">
+                      <p className="text-slate-500 text-xs leading-relaxed">
+                        Live pricing from supplier APIs. One click to add any product to your design center with images, specs, and MSRP.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Bottom pitch */}
+            <div className="mt-10 pt-8 border-t border-slate-800/60">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+                {[
+                  {
+                    title: "No more stale pricing",
+                    desc: "Live MSRPs from supplier APIs replace the 18-month-old spreadsheet prices you're estimating with today.",
+                    color: "text-cyan-400",
+                  },
+                  {
+                    title: "Minutes, not hours",
+                    desc: "Set up an entire fixture package across all your floorplans in minutes — real product images, model numbers, and pricing pulled automatically.",
+                    color: "text-emerald-400",
+                  },
+                  {
+                    title: "One place for everything",
+                    desc: "Stop tab-switching between your PM tool and supplier websites. Search, compare, and select products without leaving Cornerstone.",
+                    color: "text-amber-400",
+                  },
+                ].map((item) => (
+                  <div key={item.title} className="p-5 rounded-xl bg-slate-900/60 border border-slate-800">
+                    <div className={`text-sm font-bold ${item.color} mb-2`}>{item.title}</div>
+                    <p className="text-slate-400 text-sm leading-relaxed">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>

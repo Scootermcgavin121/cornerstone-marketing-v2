@@ -33,7 +33,7 @@ const workflows = [
       "Bid request drafting — formatted invitations to all vendors in your system",
       "Bid comparison reports — normalize pricing, rank vendors, recommend best value",
       "SOW generator — professional Scope of Work documents with home counts and specs",
-      "Parts catalog management — search, create, bulk import from web scraping",
+      "Parts catalog management — search, create, bulk import from web scraping and supplier APIs",
     ],
   },
   {

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Check, Package, ShoppingCart, DollarSign, FileText, BarChart3, Sparkles } from "lucide-react";
+import { ArrowRight, Check, Package, ShoppingCart, DollarSign, FileText, BarChart3, Sparkles, ShoppingBag } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
@@ -55,8 +55,8 @@ const purchasingAreas = [
     color: "text-amber-400",
     bg: "bg-amber-500/10",
     border: "border-amber-500/20",
-    title: "Parts Catalog",
-    desc: "Search, create, bulk import, and update parts. Web scraping to pull current pricing from Home Depot, Ferguson, 84 Lumber, and more. Auto-linked to your design center.",
+    title: "Parts Catalog & Supplier Integration",
+    desc: "Search, create, bulk import, and update parts. Web scraping plus direct supplier API connections pull live pricing, product images, and model numbers from major distributors. No stale spreadsheets \u2014 real MSRPs, auto-linked to your design center.",
   },
   {
     icon: ShoppingCart,
@@ -305,6 +305,55 @@ export default function AiConstructionPurchasingPage() {
                   title: "Configurable per task or globally",
                   desc: "Turn PO generation on or off for specific tasks, scopes, or communities. Mix all three patterns above on the same job. You control the rules.",
                   color: "text-emerald-400",
+                },
+              ].map((item) => (
+                <div key={item.title} className="p-5 rounded-xl bg-slate-900/60 border border-slate-800">
+                  <div className={`text-sm font-bold ${item.color} mb-2`}>{item.title}</div>
+                  <p className="text-slate-400 text-sm leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Supplier Integration */}
+      <section className="py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="rounded-2xl bg-cyan-500/5 border border-cyan-500/20 p-8 sm:p-12">
+            <div className="flex items-start gap-4 mb-8">
+              <div className="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center flex-shrink-0">
+                <ShoppingBag className="w-6 h-6 text-cyan-400" />
+              </div>
+              <div>
+                <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold mb-2">Coming Soon</div>
+                <h2 className="text-3xl font-black text-white">Supplier catalogs, inside your AI.</h2>
+              </div>
+            </div>
+            <p className="text-slate-400 text-lg leading-relaxed mb-6">
+              Cornerstone PM is building the first construction management platform where your AI assistant has <strong className="text-white">direct access to supplier catalogs</strong>. Foreman connects to supplier APIs to pull real-time product data, live pricing, and official product images &mdash; straight into your parts catalog and design center.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+              {[
+                {
+                  title: "Real-time product search",
+                  desc: "Ask Foreman for products by name, budget, finish, or brand. Get actual results from supplier catalogs with current MSRPs.",
+                  color: "text-cyan-400",
+                },
+                {
+                  title: "Live pricing, not guesses",
+                  desc: "No more estimating from 18-month-old spreadsheets. Supplier API pricing flows directly into your budgets and design center.",
+                  color: "text-emerald-400",
+                },
+                {
+                  title: "Auto-populate design center",
+                  desc: "Set up entire fixture packages across all floorplans in minutes \u2014 real images, MSRPs, and model numbers from suppliers.",
+                  color: "text-amber-400",
+                },
+                {
+                  title: "Cross-supplier comparison",
+                  desc: "Compare the same product across multiple suppliers. Track pricing changes over time. Make data-driven purchasing decisions.",
+                  color: "text-violet-400",
                 },
               ].map((item) => (
                 <div key={item.title} className="p-5 rounded-xl bg-slate-900/60 border border-slate-800">
