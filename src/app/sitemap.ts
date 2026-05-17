@@ -68,6 +68,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/foreman-ai-83-skills", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/foreman-ai-100-skills", priority: 0.8, changeFrequency: "monthly" as const },
     { url: "/blog/how-blueprint-ai-extracts-material-scopes", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/cornerstone-pm-vs-procore-residential-home-builder", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/cornerstone-pm-vs-acculynx-home-builder-software", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 

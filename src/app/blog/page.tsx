@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "cornerstone-pm-vs-procore-residential-home-builder",
+    title: "Procore vs Cornerstone PM: Wrong Tool for Residential Builders?",
+    excerpt:
+      "Procore is the leading platform for commercial GCs managing $50M+ projects. But if you\u2019re a production home builder doing 20\u2013100 homes a year, you\u2019re paying enterprise pricing for commercial infrastructure that maps to zero workflows in your operation. Here\u2019s the honest comparison.",
+    date: "May 17, 2026",
+    readTime: "7 min read",
+    tag: "Comparison",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+  },
+  {
     slug: "cornerstone-pm-vs-acculynx-home-builder-software",
     title: "Cornerstone PM vs AccuLynx: Home Builder Software Compared",
     excerpt:
