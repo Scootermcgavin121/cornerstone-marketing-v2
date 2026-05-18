@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import React, { useState } from "react";
 import Link from "next/link";
 import { Check, X, Zap, ArrowRight } from "lucide-react";
@@ -94,7 +94,7 @@ const plans: Plan[] = [
     maxUsers: 30,
     features: [
       "Everything in Builder, plus:",
-      "Foreman AI\u2122 \u2014 100+ skills, takes real actions (600/mo)",
+      "Foreman AI\u2122 \u2014 110+ skills, takes real actions (600/mo)",
       "Blueprint AI \u2014 upload plans, get 130+ scopes in 60s (150/mo)",
       "Bid Import AI \u2014 parse vendor bids from PDF (600/mo)",
       "AI Support Agent (7,500/mo org-wide)",

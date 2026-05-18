@@ -337,7 +337,7 @@ export default function PunchlistAIPage() {
                   href="/foreman"
                   className="inline-flex items-center gap-2 text-violet-300 hover:text-violet-200 font-medium"
                 >
-                  See all 100+ Foreman AI skills
+                  See all 110+ Foreman AI skills
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>

@@ -90,7 +90,7 @@ const features = [
   { title: "Structural Options Pricing", desc: "Every structural option tied to a line-item budget impact &mdash; no manual entry." },
   { title: "Active Homes Dashboard", desc: "All homes, budget status, and variance at a glance." },
   { title: "Apply Budget Flow", desc: "One-click flow to apply base budget + options to any home." },
-  { title: "Design Center Integration", desc: "Room-by-room selections tied directly to purchasing budget." },
+  { title: "Design Center Integration", desc: "Room-by-room selections tied directly to purchasing budget. Includes Product Configurator for complex multi-attribute selections like cabinets and countertops." },
   { title: "Designer Collections", desc: "Group selections into curated collections for buyer presentations." },
   { title: "Unlimited Spec Levels", desc: "Community Standard, Premium, Luxury &mdash; unlimited spec levels with separate pricing." },
   { title: "Base Pricing Matrix", desc: "Floorplan &rarr; -  Community pricing matrix with per community overrides." },

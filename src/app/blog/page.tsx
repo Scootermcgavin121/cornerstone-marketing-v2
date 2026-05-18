@@ -41,7 +41,7 @@ const posts = [
     tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
   },
   {
-    slug: "foreman-ai-100-skills",
+    slug: "foreman-ai-110-skills",
     title: "Foreman AI Hits 100 Skills — And Skill #100 Learns Your Build Patterns",
     excerpt:
       "Six weeks ago Foreman shipped with 45 skills. Today it crosses 100 — and skill #100 (learnBuilderPreferences) reads your existing floorplan takeoffs and learns YOUR org's build defaults automatically. No configuration wizards. Your own data is the training set. Different builder, different defaults. The more you build, the smarter Foreman gets.",
@@ -62,9 +62,9 @@ const posts = [
   },
   {
     slug: "foreman-ai-83-skills",
-    title: "Foreman AI Now Has 83 Skills Across 11 Categories",
+    title: "Foreman AI Now Has 83 Skills Across 16 categories",
     excerpt:
-      "Six weeks ago Foreman AI shipped with 45 skills across 7 categories. Today it ships with 83 skills across 11 categories — a +84% jump in 42 days. Full CRUD on takeoffs, vendor scorecards, profitability analysis, options gap detection, undo + action history. Here's what got added and why 'more skills' isn't just a vanity number.",
+      "Six weeks ago Foreman AI shipped with 45 skills across 7 categories. Today it ships with 83 skills across 16 categories — a +84% jump in 42 days. Full CRUD on takeoffs, vendor scorecards, profitability analysis, options gap detection, undo + action history. Here's what got added and why 'more skills' isn't just a vanity number.",
     date: "May 12, 2026",
     readTime: "5 min read",
     tag: "Product Update",

@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import { Check, X, Minus } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 export const metadata = {
   title: "Cornerstone PM™ vs NEWSTAR, Buildertrend, Buildxact — Compare Home Builder Software",
   description:
-    "See how Cornerstone PM™ stacks up against NEWSTAR, BuildPro, Buildertrend, and Buildxact. Less cost, faster setup, built specifically for home builders — with AI, real-time command center, and a 100+ skills in-app agent none of them have.",
+    "See how Cornerstone PM™ stacks up against NEWSTAR, BuildPro, Buildertrend, and Buildxact. Less cost, faster setup, built specifically for home builders — with AI, real-time command center, and a 110+ skills in-app agent none of them have.",
 };
 
 const competitors = ["Cornerstone PM™", "NEWSTAR / BuildPro", "Buildertrend", "Buildxact"];
@@ -100,6 +100,7 @@ const rows: { category: string; features: { label: string; values: CellValue[] }
       { label: "Options engine with margin tracking", values: [YES, YES, NO, NO] },
       { label: "Selections PDF export", values: [YES, YES, PARTIAL, NO] },
       { label: "MLS listing sheet from live project data", values: [YES, NO, NO, NO] },
+      { label: "Product Configurator (step-by-step multi-attribute selections)", values: [YES, NO, NO, NO] },
       { label: "Buyer online selections portal", values: [YES, PARTIAL, PARTIAL, NO] },
     ],
   },
@@ -108,7 +109,7 @@ const rows: { category: string; features: { label: string; values: CellValue[] }
     features: [
       { label: "AI bid import (upload any vendor format — Excel, PDF, scanned, handwritten)", values: [YES, NO, NO, NO] },
       { label: "AI Blueprint Takeoff (PDF to material list)", values: [YES, NO, NO, PARTIAL] },
-      { label: "AI agent with 100+ purpose-built construction skills", values: [YES, NO, NO, NO] },
+      { label: "AI agent with 110+ purpose-built construction skills", values: [YES, NO, NO, NO] },
       { label: "AI memory compaction (marathon sessions without context loss)", values: [YES, NO, NO, NO] },
       { label: "In-app AI context health meter", values: [YES, NO, NO, NO] },
       { label: "Standard REST API (no custom query language)", values: [YES, YES, NO, NO] },
@@ -238,7 +239,7 @@ export default function ComparePage() {
                   "Floorplan base price + options engine = contract price",
                   "Pre-sale workflow: lead &rarr; options &rarr; contract &rarr; close",
                   "Design Center selections built into the sale &mdash; not change orders",
-                  "5 native AI agents — Foreman AI (100+ skills), Blueprint AI, Bid Import AI, MLS Generator, Support (Pro plan, $499/mo flat)",
+                  "5 native AI agents — Foreman AI (110+ skills), Blueprint AI, Bid Import AI, MLS Generator, Support (Pro plan, $499/mo flat)",
                   "Built for home builders",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-2 text-slate-300 text-sm">

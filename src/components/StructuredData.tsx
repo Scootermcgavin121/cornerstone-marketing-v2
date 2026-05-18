@@ -1,4 +1,4 @@
-﻿export function StructuredData() {
+export function StructuredData() {
   const schema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -10,7 +10,7 @@
         "applicationSubCategory": "Construction Management Software",
         "operatingSystem": "Web",
         "url": "https://cornerstonepm.ai",
-        "description": "Cornerstone PM is the complete home builder software platform with native AI agents. Built for home builders of all types — production, custom, and semi-custom. Includes construction scheduling, sales pipeline, purchasing, design center with options engine, Blueprint AI material takeoffs, Foreman AI agent with 100+ purpose-built construction skills, MLS listing sheet generator, homeowner portal, and full REST API. Starts at $149/mo with up to 30 users (60 on Pro+). No per-seat fees. No implementation cost.",
+        "description": "Cornerstone PM is the complete home builder software platform with native AI agents. Built for home builders of all types — production, custom, and semi-custom. Includes construction scheduling, sales pipeline, purchasing, design center with options engine, Blueprint AI material takeoffs, Foreman AI agent with 110+ purpose-built construction skills, MLS listing sheet generator, homeowner portal, and full REST API. Starts at $149/mo with up to 30 users (60 on Pro+). No per-seat fees. No implementation cost.",
         "keywords": "home builder software, construction scheduling, residential builder ERP, NEWSTAR alternative, BuildPro alternative, Buildertrend alternative, CoConstruct alternative, JobTread alternative, AI construction agent, Blueprint AI takeoff, options engine, design center, production home builder software, subcontractor bidding, homeowner portal",
         "offers": {
           "@type": "AggregateOffer",
@@ -20,7 +20,7 @@
           "priceSpecification": [
             { "@type": "UnitPriceSpecification", "price": "149", "priceCurrency": "USD", "name": "Starter - Scheduling + Buyer Portal", "description": "Construction scheduling, Gantt charts, subcontractor confirmations, homeowner portal, permit tracker, multi-community support, up to 500 active homes, up to 30 users.", "billingDuration": "P1M" },
             { "@type": "UnitPriceSpecification", "price": "299", "priceCurrency": "USD", "name": "Builder - Full Platform (No AI)", "description": "Adds purchasing, sales pipeline, design center, MLS listing agent. Up to 30 users.", "billingDuration": "P1M" },
-            { "@type": "UnitPriceSpecification", "price": "499", "priceCurrency": "USD", "name": "Pro - With AI Agents", "description": "Adds Foreman AI (100+ skills), Blueprint AI (25 takeoffs/mo). Up to 1,000 active homes, up to 30 users.", "billingDuration": "P1M" },
+            { "@type": "UnitPriceSpecification", "price": "499", "priceCurrency": "USD", "name": "Pro - With AI Agents", "description": "Adds Foreman AI (110+ skills), Blueprint AI (25 takeoffs/mo). Up to 1,000 active homes, up to 30 users.", "billingDuration": "P1M" },
             { "@type": "UnitPriceSpecification", "price": "599", "priceCurrency": "USD", "name": "Pro+ - API + Enterprise AI", "description": "Full REST API, BYOA automated bidding pipeline, Opus AI, 5,000 AI messages/mo, scoped API keys, webhooks, SSO, SLA. Up to 60 users.", "billingDuration": "P1M" },
           ],
         },
@@ -30,11 +30,11 @@
           "New home sales pipeline - lead to contract in under 60 seconds",
           "Floorplan and elevation pricing matrix",
           "Structural options engine with real-time price rollup",
-          "Design center with room-by-room selections and spec level management",
+          "Design center with room-by-room selections, Product Configurator for complex multi-attribute options, and spec level management",
           "Purchasing and budget management with cost type classifications",
           "Purchase orders, payments, and retainage tracking",
           "Blueprint AI - upload floor plan PDF, extract 130+ material scopes automatically",
-          "Foreman AI agent with 100+ purpose-built construction skills",
+          "Foreman AI agent with 110+ purpose-built construction skills",
           "MLS listing sheet auto-generated from live project data",
           "Homeowner portal with milestones and photo uploads",
           "Permit gate system and permitting pipeline tracker",
@@ -88,7 +88,7 @@
             "name": "How much does Cornerstone PM cost?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Cornerstone PM starts at $149/mo for the Starter plan (scheduling + buyer portal, up to 30 users (60 on Pro+)). Builder is $299/mo (adds purchasing, sales, design center). Pro is $499/mo (adds Foreman AI with 100+ skills and Blueprint AI). Pro+ is $599/mo (adds full REST API, automated bidding pipeline, and enterprise AI). All plans include up to 30 users (60 on Pro+) with no per-seat fees within your tier. Beta access is free for 2 years, limited to the first 100 builders.",
+              "text": "Cornerstone PM starts at $149/mo for the Starter plan (scheduling + buyer portal, up to 30 users (60 on Pro+)). Builder is $299/mo (adds purchasing, sales, design center). Pro is $499/mo (adds Foreman AI with 110+ skills and Blueprint AI). Pro+ is $599/mo (adds full REST API, automated bidding pipeline, and enterprise AI). All plans include up to 30 users (60 on Pro+) with no per-seat fees within your tier. Beta access is free for 2 years, limited to the first 100 builders.",
             },
           },
           {
@@ -96,7 +96,7 @@
             "name": "What is Foreman AI?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Foreman AI is a purpose-built AI construction agent with 100+ skills across scheduling, sales, purchasing, design center, and document generation. Unlike generic AI tools, Foreman reads and writes your real data - creating purchase orders, updating vendor bids, generating MLS listings, analyzing your sales pipeline - using plain English commands. Available on the Pro plan ($499/mo).",
+              "text": "Foreman AI is a purpose-built AI construction agent with 110+ skills across scheduling, sales, purchasing, design center, and document generation. Unlike generic AI tools, Foreman reads and writes your real data - creating purchase orders, updating vendor bids, generating MLS listings, analyzing your sales pipeline - using plain English commands. Available on the Pro plan ($499/mo).",
             },
           },
           {

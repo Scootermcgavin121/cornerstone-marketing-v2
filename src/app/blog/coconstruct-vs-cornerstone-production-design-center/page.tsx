@@ -55,7 +55,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What does Cornerstone PM offer that CoConstruct doesn\u2019t?",
-    a: "Cornerstone PM offers: 64 Designer Packages with auto-locking category options, per-floorplan options priced once and reused across plan repeats, multi-community vendor assignment, AI material takeoff from PDFs (130+ scopes in <60 seconds), Foreman AI with 100+ skills, Structural vs Designer scope separation for bid templates, Area Cost Pricing for community extras, and zero filler/default pricing. None of these production-residential workflows exist in CoConstruct.",
+    a: "Cornerstone PM offers: 64 Designer Packages with auto-locking category options, per-floorplan options priced once and reused across plan repeats, multi-community vendor assignment, AI material takeoff from PDFs (130+ scopes in <60 seconds), Foreman AI with 110+ skills, Structural vs Designer scope separation for bid templates, Area Cost Pricing for community extras, and zero filler/default pricing. None of these production-residential workflows exist in CoConstruct.",
   },
   {
     q: "What does \u2018zero filler pricing\u2019 mean in Cornerstone PM?",
@@ -78,7 +78,7 @@ const compareRows: CompareRow[] = [
   { feature: "Area Cost Pricing for community extras", coconstruct: false, cornerstone: true },
   { feature: "Zero filler/default pricing (all costs from real data)", coconstruct: false, cornerstone: true },
   { feature: "AI material takeoff from floor plan PDF", coconstruct: false, cornerstone: true },
-  { feature: "Foreman AI (100+ skills)", coconstruct: false, cornerstone: true },
+  { feature: "Foreman AI (110+ skills)", coconstruct: false, cornerstone: true },
   { feature: "Job-level custom selections (allowance model)", coconstruct: true, cornerstone: "partial" },
   { feature: "Custom builder project management", coconstruct: true, cornerstone: false },
   { feature: "Client portal for change orders", coconstruct: true, cornerstone: false },
@@ -369,7 +369,7 @@ export default function CoConstructVsCornerstonePage() {
             </li>
             <li>
               <strong className="text-white">Foreman AI</strong> &mdash; an in-app agent with
-              100+ skills that reads AND writes data. In the design center context, Foreman can
+              110+ skills that reads AND writes data. In the design center context, Foreman can
               generate scope-of-work documents, run profitability analysis on option pricing,
               detect gaps between options and scope coverage, and produce vendor scorecards for
               design-center-related trades.{" "}

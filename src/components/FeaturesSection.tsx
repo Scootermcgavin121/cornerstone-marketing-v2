@@ -149,7 +149,7 @@ const features = [
   {
     title: "Design Center",
     description:
-      "Room-by-room selection walkthrough driven by takeoff quantities. Unlimited spec levels — Standard, Upgrade, Premium, or custom tiers. Buyers pick flooring, cabinets, countertops, and fixtures with real-time upgrade pricing.",
+      "Room-by-room selection walkthrough driven by takeoff quantities. Product Configurator for complex selections like cabinets and countertops — step-by-step guided flows with smart compatibility rules. Unlimited spec levels, 64+ designer packages, and real-time upgrade pricing.",
     icon: <Palette className="w-5 h-5" />,
     header: (
       <ScreenshotHeader

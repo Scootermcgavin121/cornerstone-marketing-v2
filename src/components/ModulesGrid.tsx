@@ -45,7 +45,7 @@ const modules = [
   {
     icon: Palette,
     name: "Design Center",
-    desc: "Room-by-room selections, spec levels, designer collections, selections PDF export.",
+    desc: "Room-by-room selections, Product Configurator for cabinets & countertops, spec levels, designer collections, selections PDF export.",
     href: "/design",
     color: "text-violet-400",
     bg: "bg-violet-500/10",

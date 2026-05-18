@@ -145,7 +145,7 @@ export default function HomebuildingAiPost() {
           </div>
 
           <p>
-            These examples are from Cornerstone PM™&apos;s Foreman AI &mdash; a 100-skill AI agent purpose-built for home builders that reads and writes real construction data in plain English.
+            These examples are from Cornerstone PM™&apos;s Foreman AI &mdash; a 110-skill AI agent purpose-built for home builders that reads and writes real construction data in plain English.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
@@ -172,7 +172,7 @@ export default function HomebuildingAiPost() {
             Homebuilding AI is no longer a future concept. It&apos;s here, it&apos;s working, and the builders who adopt it first are going to have a meaningful operational advantage. The difference between AI adapted to homebuilding and AI built for homebuilding is the difference between a tool that helps you write about your operation and a tool that actually runs it.
           </p>
           <p>
-            Cornerstone PM™ is building that second kind of tool. Foreman AI &mdash; 100+ purpose-built skills, real data access, persistent memory. Beta is open now.
+            Cornerstone PM™ is building that second kind of tool. Foreman AI &mdash; 110+ purpose-built skills, real data access, persistent memory. Beta is open now.
           </p>
         </div>
 

@@ -6,13 +6,13 @@ import { FAQSection, type FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
   title: "Design Center Software for Home Builders | Cornerstone PM™",
-  description: "Design center software for home builders with structured options engine, room-by-room selections, allowance tracking, and budget integration. Built for home builders.",
+  description: "Design center software for home builders with structured options engine, product configurator, room-by-room selections, allowance tracking, and budget integration. Built for home builders.",
 };
 
 const faqItems: FAQItem[] = [
   {
     q: "What is design center software for home builders?",
-    a: "Design center software lets homebuyers select finishes, fixtures, and upgrades for their new home while builders track allowances, upgrade pricing, and margin per home. Cornerstone PM™'s Design Center is built as a first-class module integrated with sales, purchasing, and the construction budget &mdash; every selection updates pricing and PO line items automatically.",
+    a: "Design center software lets homebuyers select finishes, fixtures, and upgrades for their new home while builders track allowances, upgrade pricing, and margin per home. Cornerstone PM™'s Design Center is built as a first-class module integrated with sales, purchasing, and the construction budget &mdash; every selection updates pricing and PO line items automatically. The built-in Product Configurator handles complex multi-attribute selections like cabinets and countertops with step-by-step guided flows.",
   },
   {
     q: "What is an options engine?",
@@ -28,7 +28,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "How is this different from a generic configurator?",
-    a: "Generic configurators (Hubspot CRM add-ons, standalone selection apps) collect buyer preferences but don't update your budget or purchasing system. Cornerstone PM™'s Design Center is wired to live builder data &mdash; selections immediately become PO line items, change orders, and budget updates with no double entry.",
+    a: "Generic configurators (Hubspot CRM add-ons, standalone selection apps) collect buyer preferences but don't update your budget or purchasing system. Cornerstone PM™'s Design Center is wired to live builder data &mdash; selections immediately become PO line items, change orders, and budget updates with no double entry. Plus, the built-in Product Configurator lets buyers walk through complex selections (cabinets, countertops) step by step with smart compatibility rules, so only valid combinations are shown.",
   },
   {
     q: "Can buyers see their selections in their portal?",
@@ -50,6 +50,8 @@ const features = [
   { title: "Options Grouped by Type", desc: "Carpet, Hardwood, LVP, and Tile shown as collapsible groups &mdash; not a flat dropdown. Buyers see the full picture before choosing." },
   { title: "Real-Time Upgrade Pricing", desc: "Shows exact cost delta from base: '+$684 upgrade' or '-$200 credit'. Price flows from takeoff quantities automatically." },
   { title: "Designer Collections", desc: "64+ curated packages across 7 categories. Pick a package and all category options auto-lock to that collection. Remove the package to unlock individual picks." },
+  { title: "Product Configurator", desc: "Step-by-step guided configuration for complex selections like cabinets and countertops. Buyers pick door style → wood species → finish with smart compatibility rules ensuring only valid combinations. Pricing uses base price + attribute modifiers from vendor bids — no manual spreadsheet matrix needed." },
+  { title: "Spec-Level Tier Gating", desc: "Control which product options are available at each upgrade level. Standard buyers see the curated list, Premium buyers unlock more — production builders and custom builders both covered." },
   { title: "Driven by Takeoffs", desc: "Quantities flow directly from takeoff data &mdash; zero double-entry. Change a room size in the takeoff and the design center pricing updates automatically." },
   { title: "Room-by-Room Selections", desc: "Organize all buyer selections by room &mdash; kitchen, baths, flooring, fixtures, paint." },
   { title: "Spec Level Management", desc: "Community Standard, Premium, Luxury &mdash; unlimited levels with included/upgrade pricing." },
@@ -80,7 +82,7 @@ export default function DesignPage() {
             Turn upgrades into<br /><span className="text-violet-400">wider margin.</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10">
-            Cross-class upgrades, per-room pricing from real takeoff quantities, and 64+ designer packages. Every selection tracked, priced, and connected to your budget.
+            Cross-class upgrades, per-room pricing from real takeoff quantities, 64+ designer packages, and a step-by-step Product Configurator for complex selections like cabinets and countertops. Every selection tracked, priced, and connected to your budget.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/beta" className="px-8 py-4 rounded-full bg-violet-400 text-slate-900 font-bold text-lg hover:bg-violet-300 transition-all duration-200 shadow-lg shadow-violet-500/30 hover:-translate-y-0.5">Request Early Access &rarr;</Link>

@@ -118,8 +118,9 @@ const featureDetails = [
     borderColor: "border-rose-500/20",
     textColor: "text-rose-400",
     description:
-      "Cross-class upgrades, per-room pricing from real takeoff quantities, and 64+ designer packages. Unlimited spec levels — Standard, Upgrade, Premium, or custom tiers. Buyers pick their finishes and see real-time upgrade pricing.",
+      "Cross-class upgrades, per-room pricing from real takeoff quantities, 64+ designer packages, and a Product Configurator for complex selections like cabinets and countertops. Unlimited spec levels — Standard, Upgrade, Premium, or custom tiers. Buyers pick their finishes and see real-time upgrade pricing.",
     bullets: [
+      "Product Configurator — step-by-step guided flows for cabinets, countertops, and other multi-attribute selections. Smart compatibility rules, spec-level tier gating, and pricing from base + attribute modifiers",
       "Cross-class upgrades — switch carpet to hardwood, recessed to pendants, within the same category",
       "Allowances — budget placeholders for non-bid items, rename and reassign at the floorplan or community level any time",
       "Unlimited custom spec levels per community",
