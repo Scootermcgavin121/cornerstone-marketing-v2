@@ -111,7 +111,7 @@ const featureDetails = [
   {
     id: "design",
     icon: Palette,
-    screenshot: "/mockups/feature-design-center.png",
+    screenshot: "/mockups/ss-design-center-appliances.png",
     name: "Design Center",
     color: "from-rose-500 to-pink-600",
     bgColor: "bg-rose-500/10",
