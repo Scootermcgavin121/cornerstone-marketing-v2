@@ -17,7 +17,7 @@ const skillCategories = [
     bg: "bg-amber-500/10",
     border: "border-amber-500/20",
     label: "Core Data Management",
-    count: "22+",
+    count: "25+",
     desc: "Read and write your real construction data - parts, vendors, homes, budgets, sales pipeline, design center, structural options, and more.",
     skills: [
       { name: "Parts Catalog", detail: "Search, create, bulk import, update, and delete parts" },
@@ -37,6 +37,9 @@ const skillCategories = [
       { name: "Option Class Management", detail: "Tag takeoffs for design center linking, bulk assign option classes across floorplans. Controls which options appear in bid templates when filtering by trade." },
       { name: "Blueprint AI Integration", detail: "After Blueprint AI extracts rooms and quantities from your floor plans, Foreman uses that data as a shopping list to populate actual products from your catalog." },
       { name: "Room Stats & Dimensions", detail: "See sqft, linear feet, fixture counts, and door counts for every room. Click to update dimensions right on the takeoffs page." },
+      { name: "Scheduling Templates", detail: "List, create, update, delete, and clone scheduling templates. Apply templates to homes to instantly populate construction schedules." },
+      { name: "Template Task Management", detail: "Add, edit, reorder, and delete tasks within scheduling templates. Set durations, milestones, and task sequencing for repeatable workflows." },
+      { name: "Task Dependencies", detail: "Build dependency chains between tasks. Manage cross-template task links for complex schedules so delays cascade correctly." },
     ],
   },
   {
