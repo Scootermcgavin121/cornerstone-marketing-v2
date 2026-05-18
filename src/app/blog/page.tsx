@@ -62,7 +62,7 @@ const posts = [
   },
   {
     slug: "foreman-ai-83-skills",
-    title: "Foreman AI Now Has 83 Skills Across 16 categories",
+    title: "Foreman AI Now Has 83 Skills Across 17 categories",
     excerpt:
       "Six weeks ago Foreman AI shipped with 45 skills across 7 categories. Today it ships with 83 skills across 16 categories — a +84% jump in 42 days. Full CRUD on takeoffs, vendor scorecards, profitability analysis, options gap detection, undo + action history. Here's what got added and why 'more skills' isn't just a vanity number.",
     date: "May 12, 2026",

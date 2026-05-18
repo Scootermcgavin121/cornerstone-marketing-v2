@@ -39,7 +39,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What is the difference between Procore and Cornerstone PM?",
-    a: "Procore is a commercial construction platform managing RFIs, submittals, drawing sets, and project lifecycle for large GCs. Cornerstone PM\u2122 is a production home builder platform with a floorplan-level options engine, 64 Designer Packages, AI agents (Blueprint AI takeoff, Foreman AI with 110+ skills), multi-community vendor management, and a buyer-facing design center. They are built for entirely different business models.",
+    a: "Procore is a commercial construction platform managing RFIs, submittals, drawing sets, and project lifecycle for large GCs. Cornerstone PM\u2122 is a production home builder platform with a floorplan-level options engine, 64 Designer Packages, AI agents (Blueprint AI takeoff, Foreman AI with 117+ skills), multi-community vendor management, and a buyer-facing design center. They are built for entirely different business models.",
   },
   {
     q: "How much does Procore cost for a small home builder?",
@@ -51,7 +51,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What does Cornerstone PM\u2122 offer that Procore doesn\u2019t?",
-    a: "Cornerstone PM\u2122 offers a production home builder design center with 64 curated Designer Packages, per-floorplan options reused across plan repeats, multi-community vendor assignment, AI material takeoff from PDFs (130+ scopes in <60 seconds), Foreman AI with 110+ skills, side-by-side vendor bid comparison, and a buyer-facing design portal. Procore has no equivalent for any of these production residential workflows.",
+    a: "Cornerstone PM\u2122 offers a production home builder design center with 64 curated Designer Packages, per-floorplan options reused across plan repeats, multi-community vendor assignment, AI material takeoff from PDFs (130+ scopes in <60 seconds), Foreman AI with 117+ skills, side-by-side vendor bid comparison, and a buyer-facing design portal. Procore has no equivalent for any of these production residential workflows.",
   },
   {
     q: "Who should use Procore vs Cornerstone PM?",
@@ -77,7 +77,7 @@ const compareRows: CompareRow[] = [
   { feature: "Community-assigned vendor wins", procore: false, cornerstone: true },
   { feature: "Buyer-facing design center portal", procore: false, cornerstone: true },
   { feature: "AI material takeoff from PDF", procore: false, cornerstone: true },
-  { feature: "Foreman AI (110+ skills)", procore: false, cornerstone: true },
+  { feature: "Foreman AI (117+ skills)", procore: false, cornerstone: true },
   { feature: "Side-by-side vendor bid comparison", procore: "partial", cornerstone: true },
   { feature: "RFI & submittal management", procore: true, cornerstone: false },
   { feature: "Drawing set management", procore: true, cornerstone: false },
@@ -339,7 +339,7 @@ export default function ProcoreVsCornerstonePage() {
             </li>
             <li>
               <strong className="text-white">Foreman AI</strong> &mdash; an in-app agent with
-              110+ skills covering purchasing workflows, vendor management, schedule
+              117+ skills covering purchasing workflows, vendor management, schedule
               optimization, budget reports, profitability analysis, vendor scorecards, and
               SOW generation. Foreman reads AND writes data &mdash; it takes real actions, not
               just chat.{" "}

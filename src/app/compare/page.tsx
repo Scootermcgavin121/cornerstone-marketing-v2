@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 export const metadata = {
   title: "Cornerstone PM™ vs NEWSTAR, Buildertrend, Buildxact — Compare Home Builder Software",
   description:
-    "See how Cornerstone PM™ stacks up against NEWSTAR, BuildPro, Buildertrend, and Buildxact. Less cost, faster setup, built specifically for home builders — with AI, real-time command center, and a 110+ skills in-app agent none of them have.",
+    "See how Cornerstone PM™ stacks up against NEWSTAR, BuildPro, Buildertrend, and Buildxact. Less cost, faster setup, built specifically for home builders — with AI, real-time command center, and a 117+ skills in-app agent none of them have.",
 };
 
 const competitors = ["Cornerstone PM™", "NEWSTAR / BuildPro", "Buildertrend", "Buildxact"];
@@ -109,7 +109,7 @@ const rows: { category: string; features: { label: string; values: CellValue[] }
     features: [
       { label: "AI bid import (upload any vendor format — Excel, PDF, scanned, handwritten)", values: [YES, NO, NO, NO] },
       { label: "AI Blueprint Takeoff (PDF to material list)", values: [YES, NO, NO, PARTIAL] },
-      { label: "AI agent with 110+ purpose-built construction skills", values: [YES, NO, NO, NO] },
+      { label: "AI agent with 117+ purpose-built construction skills", values: [YES, NO, NO, NO] },
       { label: "AI memory compaction (marathon sessions without context loss)", values: [YES, NO, NO, NO] },
       { label: "In-app AI context health meter", values: [YES, NO, NO, NO] },
       { label: "Standard REST API (no custom query language)", values: [YES, YES, NO, NO] },
@@ -239,7 +239,7 @@ export default function ComparePage() {
                   "Floorplan base price + options engine = contract price",
                   "Pre-sale workflow: lead &rarr; options &rarr; contract &rarr; close",
                   "Design Center selections built into the sale &mdash; not change orders",
-                  "5 native AI agents — Foreman AI (110+ skills), Blueprint AI, Bid Import AI, MLS Generator, Support (Pro plan, $499/mo flat)",
+                  "5 native AI agents — Foreman AI (117+ skills), Blueprint AI, Bid Import AI, MLS Generator, Support (Pro plan, $499/mo flat)",
                   "Built for home builders",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-2 text-slate-300 text-sm">

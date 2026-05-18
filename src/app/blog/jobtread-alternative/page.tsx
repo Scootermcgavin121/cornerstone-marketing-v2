@@ -154,10 +154,10 @@ export default function JobtreadAlternativePost() {
         <div className="prose prose-invert prose-lg max-w-none space-y-6 text-slate-300 leading-relaxed">
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">The AI difference: 100+ chained skills vs. ~35 basic CRUD calls</h2>
           <p>
-            Cornerstone PM™ includes Foreman AI &mdash; a 100+ skill construction agent that reads and writes your real data and chains skills together intelligently. Not a general-purpose chatbot. An agent that knows your parts catalog, your vendor bids, your homes, your sales pipeline, and your budget data.
+            Cornerstone PM™ includes Foreman AI &mdash; a 117+ skill construction agent that reads and writes your real data and chains skills together intelligently. Not a general-purpose chatbot. An agent that knows your parts catalog, your vendor bids, your homes, your sales pipeline, and your budget data.
           </p>
           <p>
-            JobTread&apos;s AI Connector exposes around 35 mostly basic CRUD skills (list homes, create vendor, search parts) and routes the actual thinking back to a third-party LLM (ChatGPT, Claude). Cornerstone&apos;s 110+ Foreman skills are different: they chain into real workflows. One prompt can read a blueprint, learn your fixture preferences from past takeoffs, build a complete fixture-by-fixture lighting package, and tag everything with option classes for the design center &mdash; all in a single call.
+            JobTread&apos;s AI Connector exposes around 35 mostly basic CRUD skills (list homes, create vendor, search parts) and routes the actual thinking back to a third-party LLM (ChatGPT, Claude). Cornerstone&apos;s 117+ Foreman skills are different: they chain into real workflows. One prompt can read a blueprint, learn your fixture preferences from past takeoffs, build a complete fixture-by-fixture lighting package, and tag everything with option classes for the design center &mdash; all in a single call.
           </p>
           <p>
             You can ask it things like: <em>&ldquo;Flag homes where actual costs are over 10% of budget&rdquo;</em>, <em>&ldquo;Set up a complete lighting package for The Addison&rdquo;</em> (Foreman knows recessed cans go in living areas, vanity bars over bathroom sinks, pendants over kitchen islands &mdash; and which fixtures YOU prefer based on your past floorplans), or <em>&ldquo;Write an MLS description for The Addison at Bayside Preserve.&rdquo;</em>
