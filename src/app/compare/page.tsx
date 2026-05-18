@@ -101,6 +101,7 @@ const rows: { category: string; features: { label: string; values: CellValue[] }
       { label: "Selections PDF export", values: [YES, YES, PARTIAL, NO] },
       { label: "MLS listing sheet from live project data", values: [YES, NO, NO, NO] },
       { label: "Product Configurator (step-by-step multi-attribute selections)", values: [YES, NO, NO, NO] },
+      { label: "Options Attributes (7,000+ variations from 5 attribute groups)", values: [YES, NO, NO, NO] },
       { label: "Buyer online selections portal", values: [YES, PARTIAL, PARTIAL, NO] },
     ],
   },

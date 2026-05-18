@@ -772,6 +772,17 @@ Cornerstone's Design Center is **takeoff-driven** - the system knows exactly how
 - Each class has a unit of measure that controls pricing math
 - Option Classes now support **category + scope linking** with full filterability - controls which option classes appear in bid templates when filtering by trade
 
+### Options Attributes (Combinatorial Product Management)
+- **Define attribute groups** (Door Style, Wood Species, Finish, Overlay, Door Treatment) for any product category
+- **Combinatorial math**: 5 cabinet series × 23 door styles × 8 wood species × 38 finishes × 2 overlays × 3 door treatments = **7,000+ possible variations** managed through just 5 options and 5 attribute groups
+- **Compatibility rules**: per-value restrictions prevent invalid combinations (e.g., certain door styles only available with specific wood species or finishes). Checkbox grid per value — unchecked = blocked at selection time
+- **Visual image catalog**: thumbnail images for every attribute value (door styles, finishes, species). Buyers see what they’re choosing, not just text
+- **Per-value pricing modifiers**: retail and cost deltas per attribute choice — no separate price matrix
+- **Excel export/import**: multi-sheet workbook with one tab per attribute. Bulk manage names, descriptions, sort order, active status in Excel and sync back in one click
+- **Required/optional flags** per attribute group — buyers can’t skip required attributes
+- **Active/inactive toggles** per value — deactivate without deleting
+- Works for **production builders** (curate vetted options per attribute) AND **custom builders** (expose the full catalog)
+
 ### Product Configurator
 - **Step-by-step guided configuration** for complex multi-attribute selections like Cabinets and Countertops
 - Buyers configure products attribute by attribute: pick door style → wood species → finish

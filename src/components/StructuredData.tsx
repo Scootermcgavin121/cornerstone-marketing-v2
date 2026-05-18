@@ -30,7 +30,7 @@ export function StructuredData() {
           "New home sales pipeline - lead to contract in under 60 seconds",
           "Floorplan and elevation pricing matrix",
           "Structural options engine with real-time price rollup",
-          "Design center with room-by-room selections, Product Configurator for complex multi-attribute options, and spec level management",
+          "Design center with Options Attributes (7,000+ variations from 5 attribute groups), Product Configurator, room-by-room selections, and spec level management",
           "Purchasing and budget management with cost type classifications",
           "Purchase orders, payments, and retainage tracking",
           "Blueprint AI - upload floor plan PDF, extract 130+ material scopes automatically",

@@ -1,4 +1,5 @@
-import { Check } from "lucide-react";
+import { Check, Grid3X3, ShieldCheck, FileSpreadsheet, Image as ImageIcon, DollarSign, Layers } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -25,6 +26,10 @@ const faqItems: FAQItem[] = [
   {
     q: "Does the design center connect to purchasing?",
     a: "Yes. The moment a design selection is locked, Cornerstone PM™ updates the purchasing line items and the construction budget. There's no separate spec sheet to reconcile and no risk of ordering the wrong fixture &mdash; design, purchasing, and the budget share one data source.",
+  },
+  {
+    q: "What are Options Attributes?",
+    a: "Options Attributes let you define attribute groups (like Door Style, Wood Species, Finish) for a product category and then manage them independently instead of creating individual options for every combination. Five cabinet series with 23 door styles × 8 wood species × 38 finishes × 2 overlays × 3 door treatments = over 7,000 possible variations &mdash; all managed through just 5 options and 5 attribute groups. Compatibility rules prevent invalid combinations, and pricing modifiers are set per attribute value.",
   },
   {
     q: "How is this different from a generic configurator?",
@@ -103,6 +108,222 @@ export default function DesignPage() {
                     <div className="font-bold text-white mb-1">{f.title}</div>
                     <div className="text-slate-400 text-sm leading-relaxed">{f.desc}</div>
                   </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ OPTIONS ATTRIBUTES SHOWCASE ═══════════ */}
+      <section className="py-20 px-4 border-t border-slate-800/60">
+        <div className="max-w-6xl mx-auto">
+          {/* Section header */}
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-400 text-sm font-semibold uppercase tracking-widest mb-6">
+              <Grid3X3 className="w-4 h-4" /> Options Attributes
+            </div>
+            <h2 className="text-4xl sm:text-5xl font-black tracking-tight mb-6">
+              5 options.{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-cyan-400">
+                7,000+ variations.
+              </span>
+            </h2>
+            <p className="text-xl text-slate-400 max-w-3xl mx-auto">
+              Stop creating thousands of individual SKUs. Options Attributes let you define attribute groups once and manage every possible combination through simple multiplication &mdash; not manual data entry.
+            </p>
+          </div>
+
+          {/* Math breakdown */}
+          <div className="mb-16 p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-violet-500/5 to-cyan-500/5 border border-violet-500/20">
+            <div className="text-center mb-6">
+              <div className="text-sm text-slate-400 uppercase tracking-widest font-semibold mb-3">Real-world example: Cardell Cabinets</div>
+            </div>
+            <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-4 text-center mb-6">
+              {[
+                { label: "Cabinet Series", count: "5" },
+                { label: "Door Styles", count: "23" },
+                { label: "Wood Species", count: "8" },
+                { label: "Finishes", count: "38" },
+                { label: "Overlays", count: "2" },
+                { label: "Door Treatments", count: "3" },
+              ].map((item, i, arr) => (
+                <div key={item.label} className="flex items-center gap-3 sm:gap-4">
+                  <div>
+                    <div className="text-2xl sm:text-3xl font-black text-white">{item.count}</div>
+                    <div className="text-xs sm:text-sm text-slate-500">{item.label}</div>
+                  </div>
+                  {i < arr.length - 1 && (
+                    <span className="text-violet-400/60 text-xl font-bold">×</span>
+                  )}
+                </div>
+              ))}
+              <div className="flex items-center gap-3 sm:gap-4">
+                <span className="text-violet-400/60 text-xl font-bold">=</span>
+                <div>
+                  <div className="text-2xl sm:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-cyan-400">7,000+</div>
+                  <div className="text-xs sm:text-sm text-slate-500">Variations</div>
+                </div>
+              </div>
+            </div>
+            <p className="text-center text-slate-500 text-sm">
+              All managed through just <span className="text-violet-400 font-semibold">5 options</span> and <span className="text-violet-400 font-semibold">5 attribute groups</span> &mdash; not 7,000 individual line items.
+            </p>
+          </div>
+
+          {/* Screenshot gallery with alternating layout */}
+          <div className="space-y-20">
+            {/* Row 1: Options view */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div className="order-2 lg:order-1">
+                <div className="rounded-2xl overflow-hidden border border-slate-800 shadow-2xl shadow-violet-500/5">
+                  <Image
+                    src="/mockups/ss-options-attributes-options.png"
+                    alt="Cornerstone PM Design Options showing 5 cabinet series organized by spec level from Standard to Premium"
+                    width={1200}
+                    height={800}
+                    className="w-full h-auto"
+                  />
+                </div>
+              </div>
+              <div className="order-1 lg:order-2">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-400 text-xs font-semibold uppercase tracking-widest mb-4">
+                  <Layers className="w-3.5 h-3.5" /> Spec-Level Tiers
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-black mb-4">Organize by spec level, not spreadsheet rows</h3>
+                <p className="text-slate-400 leading-relaxed mb-4">
+                  Five cabinet series &mdash; Standard through Premium &mdash; each with color-coded tier badges. Buyers see their included option and every upgrade path at a glance. Builders control which series each tier unlocks.
+                </p>
+                <p className="text-slate-500 text-sm leading-relaxed">
+                  Create options from scope items or your parts catalog in one click. Import/export for bulk management.
+                </p>
+              </div>
+            </div>
+
+            {/* Row 2: Attribute groups */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-widest mb-4">
+                  <Grid3X3 className="w-3.5 h-3.5" /> Attribute Groups
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-black mb-4">Define once, multiply everywhere</h3>
+                <p className="text-slate-400 leading-relaxed mb-4">
+                  Five attribute groups &mdash; Door Style (23), Wood Species (8), Finish (38), Overlay (2), Door Treatment (3) &mdash; each marked Required so buyers can&apos;t skip a step. Every group expands to show values, images, and status.
+                </p>
+                <p className="text-slate-500 text-sm leading-relaxed">
+                  Add, reorder, or deactivate values without touching the options themselves. The math updates automatically.
+                </p>
+              </div>
+              <div>
+                <div className="rounded-2xl overflow-hidden border border-slate-800 shadow-2xl shadow-cyan-500/5">
+                  <Image
+                    src="/mockups/ss-options-attributes-groups.png"
+                    alt="Options Attributes tab showing 5 attribute groups: Door Style, Wood Species, Finish, Overlay, Door Treatment"
+                    width={1200}
+                    height={800}
+                    className="w-full h-auto"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Row 3: Visual catalog */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div className="order-2 lg:order-1">
+                <div className="rounded-2xl overflow-hidden border border-slate-800 shadow-2xl shadow-violet-500/5">
+                  <Image
+                    src="/mockups/ss-options-attributes-detail.png"
+                    alt="Door Style attribute expanded showing 23 values with thumbnail images, descriptions, and active toggles"
+                    width={1200}
+                    height={800}
+                    className="w-full h-auto"
+                  />
+                </div>
+              </div>
+              <div className="order-1 lg:order-2">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-400 text-xs font-semibold uppercase tracking-widest mb-4">
+                  <ImageIcon className="w-3.5 h-3.5" /> Visual Catalog
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-black mb-4">Every attribute value gets a photo</h3>
+                <p className="text-slate-400 leading-relaxed mb-4">
+                  Thumbnail images for each door style, finish, or wood species. Buyers see what they&apos;re choosing &mdash; not just a name in a dropdown. Toggle values active or inactive without deleting them.
+                </p>
+                <p className="text-slate-500 text-sm leading-relaxed">
+                  Descriptions, sort order, and status per value. Your design team manages the catalog; the buyer sees a polished experience.
+                </p>
+              </div>
+            </div>
+
+            {/* Row 4: Compatibility rules */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-widest mb-4">
+                  <ShieldCheck className="w-3.5 h-3.5" /> Compatibility Rules
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-black mb-4">Invalid combos never reach production</h3>
+                <p className="text-slate-400 leading-relaxed mb-4">
+                  Set per-value restrictions: &ldquo;Bressler door style is compatible with these wood species and these finishes.&rdquo; Unchecked values are blocked at selection time. No restrictions? Leave the group open.
+                </p>
+                <p className="text-slate-500 text-sm leading-relaxed">
+                  No more field orders because someone picked Thermofoil with a stain finish. Compatibility rules catch it before the PO is cut.
+                </p>
+              </div>
+              <div>
+                <div className="rounded-2xl overflow-hidden border border-slate-800 shadow-2xl shadow-emerald-500/5">
+                  <Image
+                    src="/mockups/ss-options-attributes-rules.png"
+                    alt="Compatibility rules editor showing per-value restrictions for Wood Species, Finish, Overlay, and Door Treatment"
+                    width={1200}
+                    height={800}
+                    className="w-full h-auto"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Row 5: Excel export */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div className="order-2 lg:order-1">
+                <div className="rounded-2xl overflow-hidden border border-slate-800 shadow-2xl shadow-violet-500/5">
+                  <Image
+                    src="/mockups/ss-options-attributes-export.png"
+                    alt="Excel export with separate sheets for Door Style, Wood Species, Finish, Overlay, and Door Treatment"
+                    width={1200}
+                    height={800}
+                    className="w-full h-auto"
+                  />
+                </div>
+              </div>
+              <div className="order-1 lg:order-2">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-semibold uppercase tracking-widest mb-4">
+                  <FileSpreadsheet className="w-3.5 h-3.5" /> Excel Export &amp; Import
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-black mb-4">Bulk manage in Excel, sync back in one click</h3>
+                <p className="text-slate-400 leading-relaxed mb-4">
+                  Export to a multi-sheet Excel workbook &mdash; one tab per attribute (Door Style, Wood Species, Finish, Overlay, Door Treatment). Edit names, descriptions, sort order, and active status in the tool your purchasing team already knows.
+                </p>
+                <p className="text-slate-500 text-sm leading-relaxed">
+                  Import the updated workbook and every change syncs back instantly. Add 20 new finishes? Update in the spreadsheet, upload, done.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Supporting feature pills */}
+          <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { icon: DollarSign, label: "Per-Value Pricing Modifiers", desc: "Retail and cost deltas per attribute choice — no separate price matrix" },
+              { icon: ShieldCheck, label: "Cross-Attribute Validation", desc: "Compatibility rules prevent impossible combinations at selection time" },
+              { icon: Layers, label: "Spec-Level Tier Gating", desc: "Control which options unlock at Standard, Upgrade, Premium, etc." },
+              { icon: ImageIcon, label: "Visual Image Catalog", desc: "Thumbnails for every door style, finish, and species — not just text" },
+              { icon: FileSpreadsheet, label: "Excel Bulk Management", desc: "Multi-sheet export/import — one tab per attribute group" },
+              { icon: Grid3X3, label: "Combinatorial Math", desc: "Multiply, don't duplicate — 5 groups create 7,000+ valid variations" },
+            ].map((f) => (
+              <div key={f.label} className="p-4 rounded-xl bg-slate-900/40 border border-slate-800/60 flex items-start gap-3">
+                <f.icon className="w-5 h-5 text-violet-400 flex-shrink-0 mt-0.5" />
+                <div>
+                  <div className="text-sm font-bold text-white">{f.label}</div>
+                  <div className="text-xs text-slate-500 mt-0.5">{f.desc}</div>
                 </div>
               </div>
             ))}
