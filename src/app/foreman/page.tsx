@@ -168,6 +168,11 @@ const examplePrompts = [
     result: "Built a 42-fixture package: 18 recessed LED cans, 4 pendants over the island, vanity bars in 3 bathrooms, sconces in 2 hallways, plus exterior coach lights and a chandelier in the foyer. All pulled from your catalog with pricing.",
     category: "Lighting Package Setup",
   },
+  {
+    prompt: "Build a renovation template for 1847 Maple Ave - kitchen remodel, primary bath gut, and refinish the hardwoods upstairs",
+    result: "Spun up a full remodel template for the existing home: 32 scope items across Demo, Plumbing, Electrical, Cabinets, Countertops, Flooring, Paint, and Punch - sequenced for renovation work (demo first, finishes last). Skipped new-construction-only scopes like foundation and framing. Ready to assign vendors and bid.",
+    category: "Construction Template Create",
+  },
 ];
 
 export default function ForemanPage() {
