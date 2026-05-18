@@ -281,13 +281,13 @@ export default function DesignPage() {
               </div>
             </div>
 
-            {/* Row 5: Excel export */}
+            {/* Row 5: Vendor bid template - attribute pricing modifiers */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="order-2 lg:order-1">
-                <div className="rounded-2xl overflow-hidden border border-slate-800 shadow-2xl shadow-violet-500/5">
+                <div className="rounded-2xl overflow-hidden border border-slate-800 shadow-2xl shadow-amber-500/5">
                   <Image
-                    src="/mockups/ss-options-attributes-export.png"
-                    alt="Excel export with separate sheets for Door Style, Wood Species, Finish, Overlay, and Door Treatment"
+                    src="/mockups/ss-vendor-bid-template-attributes.png"
+                    alt="Auto-generated vendor bid template in Excel titled 'Attribute Pricing Modifiers - Cabinets - Kitchen' with Door Style, Wood Species, and Finish sections, plus a yellow Price (+/-) column for the vendor to fill in per attribute value"
                     width={1200}
                     height={800}
                     className="w-full h-auto"
@@ -296,14 +296,17 @@ export default function DesignPage() {
               </div>
               <div className="order-1 lg:order-2">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-semibold uppercase tracking-widest mb-4">
-                  <FileSpreadsheet className="w-3.5 h-3.5" /> Excel Export &amp; Import
+                  <FileSpreadsheet className="w-3.5 h-3.5" /> Vendor Bid Templates
                 </div>
-                <h3 className="text-2xl sm:text-3xl font-black mb-4">Bulk manage in Excel, sync back in one click</h3>
+                <h3 className="text-2xl sm:text-3xl font-black mb-4">Send vendors an Excel template. Get real cost data back.</h3>
                 <p className="text-slate-400 leading-relaxed mb-4">
-                  Export to a multi-sheet Excel workbook &mdash; one tab per attribute (Door Style, Wood Species, Finish, Overlay, Door Treatment). Edit names, descriptions, sort order, and active status in the tool your purchasing team already knows.
+                  Cornerstone auto-generates an Excel bid template for every attribute group &mdash; one tab per scope (Cabinets - Kitchen, Cabinets - Pantry, Cabinets - Laundry, etc.) with every door style, wood species, and finish pre-populated. Your vendor just fills the yellow <em className="text-amber-300 not-italic font-semibold">Price (+/-)</em> column.
+                </p>
+                <p className="text-slate-400 leading-relaxed mb-4">
+                  Upload their completed sheet and every modifier imports back as a real cost &mdash; per attribute value, per scope item. The buyer-facing configurator on the previous screen pulls from <span className="text-violet-400 font-semibold">this exact data</span>. No price matrix in your head. No double-entry.
                 </p>
                 <p className="text-slate-500 text-sm leading-relaxed">
-                  Import the updated workbook and every change syncs back instantly. Add 20 new finishes? Update in the spreadsheet, upload, done.
+                  Multiple vendors bidding the same scope? Compare side-by-side and award the winning quote per community &mdash; pricing flows straight into your design center and budget.
                 </p>
               </div>
             </div>
@@ -344,7 +347,7 @@ export default function DesignPage() {
               { icon: Layers, label: "Spec-Level Tier Gating", desc: "Control which options unlock at Standard, Upgrade, Premium, etc." },
               { icon: Refrigerator, label: "Tiered Appliance Packages", desc: "Microwave, dishwasher, range, refrigerator — four-tier card grid per category" },
               { icon: ImageIcon, label: "Visual Image Catalog", desc: "Thumbnails for every door style, finish, species, and appliance — not just text" },
-              { icon: FileSpreadsheet, label: "Excel Bulk Management", desc: "Multi-sheet export/import — one tab per attribute group" },
+              { icon: FileSpreadsheet, label: "Vendor Bid Templates", desc: "Auto-generated Excel sheets with attribute rows pre-populated — vendors just enter pricing" },
               { icon: Grid3X3, label: "Combinatorial Math", desc: "Multiply, don't duplicate — 5 groups create 7,000+ valid variations" },
               { icon: Sparkles, label: "Live Price Roll-Up", desc: "Buyer sees the running total update on every selection — no quote-back delay" },
             ].map((f) => (

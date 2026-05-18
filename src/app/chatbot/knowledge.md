@@ -778,7 +778,7 @@ Cornerstone's Design Center is **takeoff-driven** - the system knows exactly how
 - **Compatibility rules**: per-value restrictions prevent invalid combinations (e.g., certain door styles only available with specific wood species or finishes). Checkbox grid per value — unchecked = blocked at selection time
 - **Visual image catalog**: thumbnail images for every attribute value (door styles, finishes, species). Buyers see what they’re choosing, not just text
 - **Per-value pricing modifiers**: retail and cost deltas per attribute choice — no separate price matrix
-- **Excel export/import**: multi-sheet workbook with one tab per attribute. Bulk manage names, descriptions, sort order, active status in Excel and sync back in one click
+- **Vendor bid templates**: auto-generated Excel workbook with one tab per scope (Cabinets - Kitchen, Cabinets - Pantry, etc.) and every attribute value pre-populated. Vendor fills a yellow Price (+/-) column for each door style, wood species, and finish; upload imports every modifier back as real cost data that feeds the buyer-facing configurator and the budget. Excel export/import also works for bulk attribute management (names, descriptions, sort order, active status)
 - **Required/optional flags** per attribute group — buyers can’t skip required attributes
 - **Active/inactive toggles** per value — deactivate without deleting
 - Works for **production builders** (curate vetted options per attribute) AND **custom builders** (expose the full catalog)

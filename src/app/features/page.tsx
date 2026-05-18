@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Features — Cornerstone PM™",
+  title: "Features - Cornerstone PMTM",
   description:
     "Seven integrated modules for home builders: scheduling, purchasing, sales pipeline, design center, permitting, buyer portal, and jobsite operations with the industry-first triple QR code ecosystem.",
 };
@@ -34,20 +34,20 @@ const featureDetails = [
     borderColor: "border-cyan-500/20",
     textColor: "text-cyan-400",
     description:
-      "Interactive Gantt charts with drag-and-drop task management. 3-tier dependency system with auto-cascade — move one task and every downstream task adjusts automatically. No manual re-dating, no broken timelines.",
+      "Interactive Gantt charts with drag-and-drop task management. 3-tier dependency system with auto-cascade - move one task and every downstream task adjusts automatically. No manual re-dating, no broken timelines.",
     bullets: [
       "Gantt charts with critical path highlighting",
       "3-tier task dependency system with auto-cascade",
       "17 pre-built templates (7 foundation types)",
-      "4-tier cascade email notifications to subs — delivered in under a second via Cloudflare",
+      "4-tier cascade email notifications to subs - delivered in under a second via Cloudflare",
       "Phase-based milestone tracking (5 phases)",
-      "Weekday-only scheduling — auto-skips weekends",
-      "Vendor magic links — no passwords for subs",
+      "Weekday-only scheduling - auto-skips weekends",
+      "Vendor magic links - no passwords for subs",
       "Daily & weekly digest emails to subcontractors",
       "6-step closing workflow (CO → Orientation → Punch List → Close)",
-      "Punch list items with photo attachments — snap a picture in the field, the photo lands on the item and routes to the right vendor",
+      "Punch list items with photo attachments - snap a picture in the field, the photo lands on the item and routes to the right vendor",
       "2-year warranty tracking post-close",
-      "QR check-in signs auto-generated for every home — vendors scan to log GPS, weather, and hours on-site",
+      "QR check-in signs auto-generated for every home - vendors scan to log GPS, weather, and hours on-site",
     ],
   },
   {
@@ -67,16 +67,16 @@ const featureDetails = [
       "Auto-budget generation from floorplan takeoffs (~97 lines)",
       "Structural options pricing (Bonus Room, Finished Basement, and 12+ more)",
       "Full bid management: send to bid → compare → award",
-      "Bid requests linkable to specific design or structural options — vendors price exactly what you’re selling, awards flow straight to the right budget lines",
+      "Bid requests linkable to specific design or structural options - vendors price exactly what you're selling, awards flow straight to the right budget lines",
       "Side-by-side vendor bid comparison with lowest-price highlighting",
       "Purchase orders: Draft → Sent → Acknowledged → Invoiced → Paid",
       "Change order approval workflow with full audit trail",
       "Active homes dashboard with financial rollup",
-      "BuilderTrend migration support — AI Migration Wizard ingests your data in an afternoon",
-      "Bid Import AI — upload any vendor format (Excel, PDF, scanned docs, handwritten quotes), AI extracts and maps line items",
-      "Fuzzy catalog matching with confidence scores — review, approve, or reject before importing",
+      "BuilderTrend migration support - AI Migration Wizard ingests your data in an afternoon",
+      "Bid Import AI - upload any vendor format (Excel, PDF, scanned docs, handwritten quotes), AI extracts and maps line items",
+      "Fuzzy catalog matching with confidence scores - review, approve, or reject before importing",
       "3 import modes: as a Bid, Vendor Pricing, or Takeoffs",
-      "Vendor Activity Map — Google Maps view of every vendor check-in across all communities in real time",
+      "Vendor Activity Map - Google Maps view of every vendor check-in across all communities in real time",
     ],
   },
   {
@@ -99,13 +99,13 @@ const featureDetails = [
       "Real-time pricing matrix per floorplan × community",
       "Active promotions & incentives with expiration countdowns",
       "Branded PDF price sheets (per community or all)",
-      "AI-powered MLS listing sheet — Claude Sonnet writes the description from your real data (room dimensions, upgrades, community info, lot size)",
+      "AI-powered MLS listing sheet - Claude Sonnet writes the description from your real data (room dimensions, upgrades, community info, lot size)",
       "Custom AI prompt input, word count slider (50-1,000), one-click PDF download",
-      "Description saves to floorplan — auto-populates every home on that plan",
+      "Description saves to floorplan - auto-populates every home on that plan",
       "Net price calculator with stacked promotions",
       "Auto-handoff to permitting when sales tasks complete",
       "Excel/CSV export of pricing matrix",
-      "Model home QR code for buyer lead capture — replaces paper sign-in sheets, recognizes returning visitors, creates Lead records auto-tied to community",
+      "Model home QR code for buyer lead capture - replaces paper sign-in sheets, recognizes returning visitors, creates Lead records auto-tied to community",
     ],
   },
   {
@@ -118,17 +118,17 @@ const featureDetails = [
     borderColor: "border-rose-500/20",
     textColor: "text-rose-400",
     description:
-      "Cross-class upgrades, per-room pricing from real takeoff quantities, 64+ designer packages, and a Product Configurator for complex selections like cabinets and countertops. Unlimited spec levels — Standard, Upgrade, Premium, or custom tiers. Buyers pick their finishes and see real-time upgrade pricing.",
+      "Cross-class upgrades, per-room pricing from real takeoff quantities, 64+ designer packages, and a Product Configurator for complex selections like cabinets and countertops. Unlimited spec levels - Standard, Upgrade, Premium, or custom tiers. Buyers pick their finishes and see real-time upgrade pricing.",
     bullets: [
-      "Options Attributes — define attribute groups (Door Style, Wood Species, Finish, etc.) and manage 7,000+ variations from just 5 options. Compatibility rules block invalid combos, per-value pricing modifiers, visual image catalog, Excel export/import",
-      "Product Configurator — step-by-step guided flows for cabinets, countertops, and other multi-attribute selections. Smart compatibility rules, spec-level tier gating, and pricing from base + attribute modifiers",
-      "Cross-class upgrades — switch carpet to hardwood, recessed to pendants, within the same category",
-      "Allowances — budget placeholders for non-bid items, rename and reassign at the floorplan or community level any time",
+      "Options Attributes - define attribute groups (Door Style, Wood Species, Finish, etc.) and manage 7,000+ variations from just 5 options. Compatibility rules block invalid combos, per-value pricing modifiers, visual image catalog, auto-generated vendor bid templates (Excel) that import pricing back as real cost data",
+      "Product Configurator - step-by-step guided flows for cabinets, countertops, and other multi-attribute selections. Smart compatibility rules, spec-level tier gating, and pricing from base + attribute modifiers",
+      "Cross-class upgrades - switch carpet to hardwood, recessed to pendants, within the same category",
+      "Allowances - budget placeholders for non-bid items, rename and reassign at the floorplan or community level any time",
       "Unlimited custom spec levels per community",
-      "Per-room selections with sqft — 'Kitchen flooring (180 sqft)' with pricing from takeoffs",
-      "Real-time upgrade pricing — exact delta shown: '+$684 upgrade'",
-      "64+ designer packages across 7 categories — one-click curated collections",
-      "Driven by takeoffs — zero double-entry, quantities flow from your plans",
+      "Per-room selections with sqft - 'Kitchen flooring (180 sqft)' with pricing from takeoffs",
+      "Real-time upgrade pricing - exact delta shown: '+$684 upgrade'",
+      "64+ designer packages across 7 categories - one-click curated collections",
+      "Driven by takeoffs - zero double-entry, quantities flow from your plans",
       "Structural option gated rooms with material scopes",
       "Selection tracking with buyer approval workflow",
       "Polished customer-facing selection sheet PDF export",
@@ -148,7 +148,7 @@ const featureDetails = [
       "Pre-built permit sequences with correct order, dependencies, and lead times already baked in. Phase-based permit gates prevent downstream construction from starting until permits clear.",
     bullets: [
       "Pre-built permit sequences (Foundation, Framing, Final)",
-      "Phase-based permit gate — construction can't start until permits clear",
+      "Phase-based permit gate - construction can't start until permits clear",
       "Permitting agent dashboard with buyer info & floorplan details",
       "PA workflow with one-click template setup",
       "Permit status tracking: Applied → Approved → Expired",
@@ -168,17 +168,17 @@ const featureDetails = [
     borderColor: "border-sky-500/20",
     textColor: "text-sky-400",
     description:
-      "Real-time portal synced with the construction schedule — when framing moves three days, buyers see it instantly. Builder-uploaded milestone photos (up to 5 per milestone), built-in messaging app with permanent record, and one-click ZIP download of all job photos. Magic link access — no passwords needed. Reduces inbound calls, builds trust, turns into referrals.",
+      "Real-time portal synced with the construction schedule - when framing moves three days, buyers see it instantly. Builder-uploaded milestone photos (up to 5 per milestone), built-in messaging app with permanent record, and one-click ZIP download of all job photos. Magic link access - no passwords needed. Reduces inbound calls, builds trust, turns into referrals.",
     bullets: [
-      "Real-time sync with construction schedule — framing moves, buyers see it instantly",
-      "Magic link access — no app download, no password",
+      "Real-time sync with construction schedule - framing moves, buyers see it instantly",
+      "Magic link access - no app download, no password",
       "20-phase construction milestone carousel with photos",
       "PM/builder uploads real job site photos at each milestone (up to 5 per milestone via task-row camera button)",
       "Built-in messaging app between builder and customer with permanent searchable record",
-      "One-click ZIP download of all build photos — buyers save their whole build history",
-      "Schedule visibility — buyers see upcoming phases in real time",
+      "One-click ZIP download of all build photos - buyers save their whole build history",
+      "Schedule visibility - buyers see upcoming phases in real time",
       "Document access (warranty docs, plans, permits)",
-      "Selection review — approve finishes from the portal",
+      "Selection review - approve finishes from the portal",
       "Construction progress percentage tracking",
       "Invite triggered automatically from permitting stage",
     ],
@@ -195,21 +195,21 @@ const featureDetails = [
     description:
       "The only home builder platform with a triple QR code system: vendor jobsite check-in, community/PM check-in, and sales model home lead capture. Plus a live Vendor Activity Map and AI camera-event integration that auto-starts tasks when vendors arrive.",
     bullets: [
-      "Vendor Jobsite QR — scan to check in, GPS + weather + timestamp captured automatically",
-      "Community QR — builder staff & inspectors log presence; feeds timesheet validation",
-      "Sales Model Home QR — captures buyer leads, recognizes returning visitors, replaces paper sign-in sheets",
+      "Vendor Jobsite QR - scan to check in, GPS + weather + timestamp captured automatically",
+      "Community QR - builder staff & inspectors log presence; feeds timesheet validation",
+      "Sales Model Home QR - captures buyer leads, recognizes returning visitors, replaces paper sign-in sheets",
       'Printable 11\u00d78.5" QR signs auto-generated for every community and home',
-      "Vendor Activity Map — Google Maps view of live check-ins across all communities, 30-second refresh",
-      "Jobsite AI™ vendor presence detection — webhook-driven, works with any camera, doorbell, gate, or GPS (Verkada, Ring, Sensera, Samsara, custom IP cams)",
+      "Vendor Activity Map - Google Maps view of live check-ins across all communities, 30-second refresh",
+      "Jobsite AITM vendor presence detection - webhook-driven, works with any camera, doorbell, gate, or GPS (Verkada, Ring, Sensera, Samsara, custom IP cams)",
       "Auto-task start when vendor arrives, auto-departure logging on exit",
       "Photo upload at check-in (up to 10 per visit), stored in cloud",
       "Check-out flow with completion %, notes, and next-visit scheduling",
       "Configurable safety acknowledgment per community",
-      "Public check-in page — no app install or login required for vendors",
+      "Public check-in page - no app install or login required for vendors",
       "Webhook events: vendor.arrived, vendor.departed (HMAC-signed, retry, delivery logs)",
     ],
     learnMoreHref: "/jobsite-ai",
-    learnMoreLabel: "Learn more about Jobsite AI™",
+    learnMoreLabel: "Learn more about Jobsite AITM",
   },
 ];
 
@@ -233,7 +233,7 @@ export default function FeaturesPage() {
             One price.
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto">
-            Every tool a home builder needs — from the first lead to the final walkthrough.
+            Every tool a home builder needs - from the first lead to the final walkthrough.
             Built specifically for residential construction. Starting at $149/mo.
           </p>
         </div>

@@ -870,7 +870,7 @@ const design: Category = {
     {
       q: "What are Options Attributes?",
       aText:
-        "Options Attributes let you define attribute groups (Door Style, Wood Species, Finish, Overlay, Door Treatment) for a product category and manage every possible combination through multiplication instead of manual data entry. 5 cabinet series × 23 door styles × 8 wood species × 38 finishes × 2 overlays × 3 door treatments = over 7,000 variations managed through just 5 options and 5 attribute groups. Compatibility rules prevent invalid combinations. Per-value pricing modifiers, visual image catalogs, and Excel export/import for bulk management.",
+        "Options Attributes let you define attribute groups (Door Style, Wood Species, Finish, Overlay, Door Treatment) for a product category and manage every possible combination through multiplication instead of manual data entry. 5 cabinet series × 23 door styles × 8 wood species × 38 finishes × 2 overlays × 3 door treatments = over 7,000 variations managed through just 5 options and 5 attribute groups. Compatibility rules prevent invalid combinations. Per-value pricing modifiers, visual image catalogs, and auto-generated vendor bid templates (Excel) that vendors fill in and upload — pricing imports back as real cost data tied to every attribute value.",
       a: (
         <>
           <strong>Options Attributes</strong> let you define attribute groups (Door Style, Wood Species, Finish, Overlay,
@@ -878,7 +878,8 @@ const design: Category = {
           manual data entry. 5 cabinet series &times; 23 door styles &times; 8 wood species &times; 38 finishes &times; 2
           overlays &times; 3 door treatments = <strong>over 7,000 variations</strong> managed through just 5 options and
           5 attribute groups. <strong>Compatibility rules</strong> prevent invalid combinations. Per-value pricing
-          modifiers, visual image catalogs, and Excel export/import for bulk management.
+          modifiers, visual image catalogs, and auto-generated vendor bid templates (Excel) &mdash; vendors fill in
+          pricing per attribute value and upload, and every modifier imports back as real cost data.
         </>
       ),
     },
