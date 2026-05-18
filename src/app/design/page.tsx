@@ -1,4 +1,4 @@
-import { Check, Grid3X3, ShieldCheck, FileSpreadsheet, Image as ImageIcon, DollarSign, Layers } from "lucide-react";
+import { Check, Grid3X3, ShieldCheck, FileSpreadsheet, Image as ImageIcon, DollarSign, Layers, Refrigerator, Sparkles } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
@@ -227,13 +227,13 @@ export default function DesignPage() {
               </div>
             </div>
 
-            {/* Row 3: Visual catalog */}
+            {/* Row 3: Buyer-facing configurator */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="order-2 lg:order-1">
                 <div className="rounded-2xl overflow-hidden border border-slate-800 shadow-2xl shadow-violet-500/5">
                   <Image
-                    src="/mockups/ss-options-attributes-detail.png"
-                    alt="Door Style attribute expanded showing 23 values with thumbnail images, descriptions, and active toggles"
+                    src="/mockups/ss-design-center-attributes.png"
+                    alt="Buyer-facing Cardell Cabinets configurator showing Door Style, Wood Species, Finish, Overlay, and Door Treatment selections with thumbnails and live per-attribute pricing totaling +$2,058"
                     width={1200}
                     height={800}
                     className="w-full h-auto"
@@ -242,14 +242,14 @@ export default function DesignPage() {
               </div>
               <div className="order-1 lg:order-2">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-400 text-xs font-semibold uppercase tracking-widest mb-4">
-                  <ImageIcon className="w-3.5 h-3.5" /> Visual Catalog
+                  <ImageIcon className="w-3.5 h-3.5" /> Buyer Experience
                 </div>
-                <h3 className="text-2xl sm:text-3xl font-black mb-4">Every attribute value gets a photo</h3>
+                <h3 className="text-2xl sm:text-3xl font-black mb-4">What your buyer actually sees</h3>
                 <p className="text-slate-400 leading-relaxed mb-4">
-                  Thumbnail images for each door style, finish, or wood species. Buyers see what they&apos;re choosing &mdash; not just a name in a dropdown. Toggle values active or inactive without deleting them.
+                  Every attribute group rendered as a visual swatch grid with photos, descriptions, and a live price delta per choice. The buyer picks Door Style, Wood Species, Finish, Overlay, and Door Treatment &mdash; the running total updates instantly at the bottom.
                 </p>
                 <p className="text-slate-500 text-sm leading-relaxed">
-                  Descriptions, sort order, and status per value. Your design team manages the catalog; the buyer sees a polished experience.
+                  No spreadsheets emailed back and forth. No &ldquo;let me get back to you on pricing.&rdquo; The buyer configures the upgrade, sees the exact dollar impact, and saves the selection &mdash; all in one flow.
                 </p>
               </div>
             </div>
@@ -307,6 +307,33 @@ export default function DesignPage() {
                 </p>
               </div>
             </div>
+
+            {/* Row 6: Appliances - tiered buyer selection */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-widest mb-4">
+                  <Refrigerator className="w-3.5 h-3.5" /> Tiered Appliance Packages
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-black mb-4">Standard, Upgrade I, II, Premium &mdash; in one screen</h3>
+                <p className="text-slate-400 leading-relaxed mb-4">
+                  Microwave, dishwasher, range, refrigerator &mdash; every appliance category rendered as a four-tier card grid. Buyers see the included model, every upgrade path, and the exact incremental cost without clicking through screens.
+                </p>
+                <p className="text-slate-500 text-sm leading-relaxed">
+                  Model numbers, photos, and pricing flow from your parts catalog and vendor bids &mdash; not a static brochure. Swap an entire appliance line across a community in minutes, not days.
+                </p>
+              </div>
+              <div>
+                <div className="rounded-2xl overflow-hidden border border-slate-800 shadow-2xl shadow-cyan-500/5">
+                  <Image
+                    src="/mockups/ss-design-center-appliances.png"
+                    alt="Buyer-facing Appliance selection screen with four categories (Microwave, Dishwasher, Range, Refrigerator) and four tiers per category (Upgrade I Standard, Upgrade II, Upgrade III, Premium) showing Samsung model numbers, photos, and incremental pricing"
+                    width={1200}
+                    height={800}
+                    className="w-full h-auto"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Supporting feature pills */}
@@ -315,9 +342,11 @@ export default function DesignPage() {
               { icon: DollarSign, label: "Per-Value Pricing Modifiers", desc: "Retail and cost deltas per attribute choice — no separate price matrix" },
               { icon: ShieldCheck, label: "Cross-Attribute Validation", desc: "Compatibility rules prevent impossible combinations at selection time" },
               { icon: Layers, label: "Spec-Level Tier Gating", desc: "Control which options unlock at Standard, Upgrade, Premium, etc." },
-              { icon: ImageIcon, label: "Visual Image Catalog", desc: "Thumbnails for every door style, finish, and species — not just text" },
+              { icon: Refrigerator, label: "Tiered Appliance Packages", desc: "Microwave, dishwasher, range, refrigerator — four-tier card grid per category" },
+              { icon: ImageIcon, label: "Visual Image Catalog", desc: "Thumbnails for every door style, finish, species, and appliance — not just text" },
               { icon: FileSpreadsheet, label: "Excel Bulk Management", desc: "Multi-sheet export/import — one tab per attribute group" },
               { icon: Grid3X3, label: "Combinatorial Math", desc: "Multiply, don't duplicate — 5 groups create 7,000+ valid variations" },
+              { icon: Sparkles, label: "Live Price Roll-Up", desc: "Buyer sees the running total update on every selection — no quote-back delay" },
             ].map((f) => (
               <div key={f.label} className="p-4 rounded-xl bg-slate-900/40 border border-slate-800/60 flex items-start gap-3">
                 <f.icon className="w-5 h-5 text-violet-400 flex-shrink-0 mt-0.5" />
