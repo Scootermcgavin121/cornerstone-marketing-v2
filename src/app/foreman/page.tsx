@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Check, ArrowRight, Zap, Brain, FileText, Cpu, Activity, X, ShoppingBag, Sparkles, Shield, BarChart3, MessageSquare } from "lucide-react";
+import { Check, ArrowRight, Zap, Brain, FileText, Cpu, Activity, X, ShoppingBag, Sparkles, Shield, BarChart3, MessageSquare, ClipboardList } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { VideoPlayer } from "@/components/VideoPlayer";
@@ -593,6 +593,78 @@ export default function ForemanPage() {
               Creating option classes, adding attributes, setting tier access, seeding values — all in a single conversation turn.
               What takes hours of manual data entry happens in <span className="text-amber-400 font-semibold">under a minute</span>.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════
+          WORKFLOW RECIPES — Built-in SOPs
+      ═══════════════════════════════════════════════════════════ */}
+      <section className="py-24 px-4 bg-gradient-to-b from-slate-950 via-emerald-950/10 to-slate-950">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-14">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-widest mb-6">
+              <ClipboardList className="w-3.5 h-3.5" /> Built-in Procedures
+            </div>
+            <h2 className="text-4xl sm:text-5xl font-black mb-4">23+ workflow recipes. Zero guesswork.</h2>
+            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+              Standard operating procedures baked into Foreman&apos;s brain. From bid comparison to takeoff population, every recipe is a proven step-by-step procedure so nothing gets missed.
+            </p>
+          </div>
+
+          {/* Recipe grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { name: "Bid Comparison & Award", desc: "Pull bids, compare side-by-side, award winner, notify vendors" },
+              { name: "Takeoff Population", desc: "Import parts, assign to rooms, set quantities from blueprint data" },
+              { name: "Blueprint AI Integration", desc: "Upload plan, extract rooms & fixtures, import into floorplan" },
+              { name: "Lighting Package Setup", desc: "Create option classes, add fixtures, set tier pricing & access" },
+              { name: "Plumbing Package Setup", desc: "Build plumbing options with brand attributes and cost tiers" },
+              { name: "Design Center Options", desc: "Create categories, options, attributes, and retail pricing" },
+              { name: "Structural Options", desc: "Set up structural upgrades with scope items and cost impacts" },
+              { name: "Budget Analysis", desc: "Pull costs, compare to estimates, flag overruns by scope" },
+              { name: "SOW Generation", desc: "Auto-generate scope-of-work docs for vendor contracts" },
+              { name: "Scheduling Templates", desc: "Build task templates with durations, dependencies, and trades" },
+              { name: "Parts Catalog Import", desc: "Scrape suppliers, create parts, attach images & pricing" },
+              { name: "Vendor Scorecard", desc: "Analyze on-time delivery, bid history, and community coverage" },
+            ].map((recipe) => (
+              <div key={recipe.name} className="rounded-xl bg-slate-900/50 border border-slate-800 hover:border-emerald-500/30 p-5 transition-all duration-300">
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Check className="w-4 h-4 text-emerald-400" />
+                  </div>
+                  <div>
+                    <div className="text-white font-semibold text-sm mb-1">{recipe.name}</div>
+                    <div className="text-slate-500 text-xs leading-relaxed">{recipe.desc}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Bottom callout */}
+          <div className="mt-10 text-center">
+            <p className="text-slate-500 text-sm">
+              + 11 more recipes covering punch lists, profitability reports, competitive analysis, and more. Each recipe tells Foreman exactly which skills to call, in what order, with built-in verification steps.
+            </p>
+          </div>
+
+          {/* Why recipes matter */}
+          <div className="mt-14 rounded-2xl border border-emerald-500/20 bg-gradient-to-r from-emerald-500/[0.04] via-slate-900/60 to-emerald-500/[0.04] p-8 sm:p-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+              <div>
+                <div className="text-3xl font-black text-emerald-400 mb-2">Consistent</div>
+                <p className="text-slate-400 text-sm">Same proven steps every time. No missed verifications, no skipped lookups, no hallucinated shortcuts.</p>
+              </div>
+              <div>
+                <div className="text-3xl font-black text-emerald-400 mb-2">Teachable</div>
+                <p className="text-slate-400 text-sm">New team member? They get the same workflow quality as your best PM on day one.</p>
+              </div>
+              <div>
+                <div className="text-3xl font-black text-emerald-400 mb-2">Auditable</div>
+                <p className="text-slate-400 text-sm">Every recipe logs what it did. Review the steps, verify the results, trust the output.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

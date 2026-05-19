@@ -1,6 +1,6 @@
 ## Platform Overview (Current Stats)
 - 130+ database tables and growing
-- **396+ Foreman AI skills** (in-app agent that reads AND writes data - including product image search, image hosting, and AI-powered web scraping)
+- **396+ Foreman AI skills** with **23+ built-in workflow recipes** (in-app agent that reads AND writes data - including product image search, image hosting, and AI-powered web scraping)
 - **37+ named webhook event types and growing** — typed payloads, HMAC signatures, delivery logs, and auto-retry. New events ship as the platform grows. Industry-leading depth (most competitors just say "webhooks exist")
 - 60+ external REST API endpoints
 - 7 built-in AI features: Foreman AI (396+ skills), Blueprint AI, MLS Listing Agent, AI Support Agent, Punchlist AI (voice-to-punch-list, industry first), Bid Import AI (AI-powered vendor bid parsing), AI Jobsite Camera Events (webhook-driven, source-agnostic camera/sensor integration)
@@ -544,6 +544,9 @@ The flagship AI feature. Foreman AI is a full intelligent agent that lives insid
 - SOW Generation: auto-generate scope-of-work documents for vendor contracts
 - Bid Comparison: side-by-side vendor bid analysis with recommendations
 - Profitability Reports: analyze margins across communities, floorplans, or individual homes
+
+**23+ Built-in Workflow Recipes (NEW):**
+Foreman ships with 23+ standard operating procedures for common multi-step construction tasks. Each recipe is a proven step-by-step procedure that tells Foreman exactly which skills to call, in what order, with built-in verification steps so nothing gets missed. Workflows cover: parts management, takeoff population, Blueprint AI integration, lighting/plumbing package setup, design center options, structural options, bid comparison & award, budget analysis, SOW generation, scheduling templates, vendor scorecards, punch lists, profitability reports, competitive analysis, and more. This means Foreman handles complex multi-tool tasks consistently — same proven steps every time, no skipped verifications, no hallucinated shortcuts.
 
 **Smart features that set Foreman apart:**
 - **Per-user memory** — Foreman learns how each user works. Tell it the name you want to be greeted by ("Call me Mac"), your role, your go-to vendors, how you like reports structured, your typical workflows — it saves personal notes that persist forever and greets you by your chosen name every session. **This is custom-coded into Cornerstone, not a generic chatbot bolt-on.** Company-wide memory is shared with the team; personal memory is private to each user. The more you use Foreman, the more intuitive it gets about your specific habits and preferences.
