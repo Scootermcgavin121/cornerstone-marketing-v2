@@ -215,7 +215,7 @@ const endpointGroups = [
     bg: "bg-violet-500/10",
     border: "border-violet-500/20",
     endpoints: [
-      { method: "GET", path: "/api/ext/skills", desc: "Get all Foreman AI skill definitions", detail: "?format=anthropic (default) | ?format=openai | ?format=openapi &mdash; Returns 117+ skills across 17 categories, including domain-aware tools like Setup Lighting Package (room-by-room fixture intelligence), Bid Comparison, Profitability Reports, and Image Vision. Auto-syncs as new skills ship. Pro+ only." },
+      { method: "GET", path: "/api/ext/skills", desc: "Get all Foreman AI skill definitions", detail: "?format=anthropic (default) | ?format=openai | ?format=openapi &mdash; Returns 396+ skills across 20 categories, including domain-aware tools like Setup Lighting Package (room-by-room fixture intelligence), Bid Comparison, Profitability Reports, and Image Vision. Auto-syncs as new skills ship. Pro+ only." },
     ],
   },
 ];
@@ -295,7 +295,7 @@ const codeExamples = [
 ];
 
 const integrations = [
-  { emoji: "ðŸª–", title: "Built for AI Agents", desc: "Foreman AI uses this API internally with 117+ skills. Any AI agent - LangChain, AutoGen, Claude, GPT-4o - can connect via Bearer token." },
+  { emoji: "ðŸª–", title: "Built for AI Agents", desc: "Foreman AI uses this API internally with 396+ skills. Any AI agent - LangChain, AutoGen, Claude, GPT-4o - can connect via Bearer token." },
   { emoji: "ðŸ“Š", title: "QuickBooks Ready", desc: "qboId fields on vendors, homes, POs, and communities for seamless QuickBooks sync. Keep your books without double entry." },
   { emoji: "âš¡", title: "Zapier Compatible", desc: "Standard REST endpoints work with any Zapier webhook trigger or action. Connect to 5,000+ apps without writing code." },
   { emoji: "ðŸ“ž", title: "Automated Bidding Pipeline", desc: "AI voice agent calls vendors, API creates records, vendor portal collects bids, you compare and award. Zero manual steps." },
@@ -347,7 +347,7 @@ export default function ApiDocsPage() {
               </div>
               <div>
                 <div className="text-white font-bold text-sm group-hover:text-violet-400 transition-colors">/skills &rarr;</div>
-                <div className="text-slate-500 text-xs">Foreman AI skill catalog (117+ skills)</div>
+                <div className="text-slate-500 text-xs">Foreman AI skill catalog (396+ skills)</div>
               </div>
             </a>
           </div>
@@ -554,7 +554,7 @@ export default function ApiDocsPage() {
                 "Scoped API keys per integration",
                 "37+ named webhook events (catalog growing) with HMAC signing",
                 "100 req/min, 10,000 req/day rate limits",
-                "Foreman AI (117+ skills, Sonnet, 5,000 msg/mo)",
+                "Foreman AI (396+ skills, Sonnet, 5,000 msg/mo)",
                 "Blueprint AI (25 takeoffs/mo)",
                 "Automated 7-wave bidding pipeline",
                 "Dedicated onboarding & SLA",

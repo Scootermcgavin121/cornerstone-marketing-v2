@@ -5,9 +5,9 @@ import { Footer } from "@/components/Footer";
 import { VideoPlayer } from "@/components/VideoPlayer";
 
 export const metadata = {
-  title: "Foreman AI - 110-skill construction agent with Memory Compaction | Cornerstone PM™",
+  title: "Foreman AI - 396+ skill construction agent with Memory Compaction | Cornerstone PM™",
   description:
-    "117+ purpose-built construction skills with built-in memory compaction - the only construction AI that doesn't forget mid-session. Reads and writes your real data: parts, vendors, homes, budgets, sales pipeline, design center selections. Pro plan.",
+    "396+ purpose-built construction skills with built-in memory compaction - the only construction AI that doesn't forget mid-session. Reads and writes your real data: parts, vendors, homes, budgets, sales pipeline, design center selections. Pro plan.",
 };
 
 const skillCategories = [
@@ -186,7 +186,7 @@ export default function ForemanPage() {
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-400 text-xs font-semibold mb-6">
             <Zap className="w-3.5 h-3.5" />
-            117+ skills &middot; PRO PLAN &middot; READS AND WRITES YOUR REAL DATA
+            396+ skills &middot; PRO PLAN &middot; READS AND WRITES YOUR REAL DATA
           </div>
           <div className="flex justify-center mb-4">
             <img src="/foreman-mascot.png" alt="Foreman AI mascot" className="h-40 sm:h-48 lg:h-56 w-auto object-contain" />
@@ -196,14 +196,14 @@ export default function ForemanPage() {
           </h1>
           <p className="text-2xl text-amber-400 font-bold mb-4">Not a chatbot. A construction agent.</p>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
-            117+ purpose-built skills across 17 categories &mdash; data, analysis, document generation, takeoffs, bidding, sales, reports, system intelligence and more. Type what you need in plain English. Foreman executes it against your real data.
+            396+ purpose-built skills across 20 categories &mdash; data, analysis, document generation, takeoffs, bidding, sales, reports, system intelligence and more. Type what you need in plain English. Foreman executes it against your real data.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/beta" className="px-8 py-4 rounded-full bg-amber-400 text-slate-900 font-bold text-lg hover:bg-amber-300 transition-all duration-200 shadow-lg shadow-amber-500/30 hover:-translate-y-0.5">
               Get Beta Access &rarr;
             </Link>
             <a href="#skills" className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200">
-              See all 117+ skills
+              See all 396+ skills
             </a>
           </div>
         </div>
@@ -232,12 +232,117 @@ export default function ForemanPage() {
         </div>
       </section>
 
+      {/* Foreman's Brain - knowledge base & memory files */}
+      <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/30 text-violet-400 text-xs font-bold uppercase tracking-widest mb-4">
+              <Brain className="w-3.5 h-3.5" /> Foreman&apos;s Brain
+            </div>
+            <h2 className="text-3xl sm:text-5xl font-black mb-4">
+              Powered by a <span className="text-violet-400">183KB</span> construction knowledge base
+            </h2>
+            <p className="text-slate-400 max-w-3xl mx-auto text-lg leading-relaxed">
+              24,500+ words across 30 chapters &mdash; from getting started guides to advanced purchasing workflows,
+              estimating formulas, and design center architecture. Foreman doesn&apos;t guess. <span className="text-white font-semibold">It knows.</span>
+            </p>
+          </div>
+
+          {/* 3 memory file cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
+            <div className="rounded-2xl bg-slate-900/60 border border-slate-800 p-6 hover:border-emerald-500/30 transition-all duration-300">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="text-3xl">📖</div>
+                <div>
+                  <div className="text-emerald-400 font-bold text-sm uppercase tracking-wider">App Knowledge</div>
+                  <div className="text-slate-500 text-xs">158 KB &middot; 2,300+ lines</div>
+                </div>
+              </div>
+              <p className="text-slate-300 text-sm leading-relaxed">
+                Every feature, workflow, role guide, and data model in Cornerstone PM. Foreman doesn&apos;t guess what a
+                spec level is or how design center selections cascade &mdash; it <span className="text-white font-semibold">knows exactly
+                how your system works.</span>
+              </p>
+            </div>
+            <div className="rounded-2xl bg-slate-900/60 border border-slate-800 p-6 hover:border-cyan-500/30 transition-all duration-300">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="text-3xl">📐</div>
+                <div>
+                  <div className="text-cyan-400 font-bold text-sm uppercase tracking-wider">Estimating Formulas</div>
+                  <div className="text-slate-500 text-xs">8 KB &middot; 39 formulas</div>
+                </div>
+              </div>
+              <p className="text-slate-300 text-sm leading-relaxed">
+                Construction-specific calculations baked in: lumber takeoffs, drywall coverage, paint sqft, concrete
+                volume, roofing squares, and more. <span className="text-white font-semibold">Foreman does the math</span> &mdash;
+                no calculator, no spreadsheet, no guessing.
+              </p>
+            </div>
+            <div className="rounded-2xl bg-slate-900/60 border border-slate-800 p-6 hover:border-amber-500/30 transition-all duration-300">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="text-3xl">🎯</div>
+                <div>
+                  <div className="text-amber-400 font-bold text-sm uppercase tracking-wider">Prompt Library</div>
+                  <div className="text-slate-500 text-xs">16 KB &middot; 10 categories</div>
+                </div>
+              </div>
+              <p className="text-slate-300 text-sm leading-relaxed">
+                Pre-built setup prompts for 10 design center categories. Copy-paste a prompt, swap in your vendors,
+                and <span className="text-white font-semibold">Foreman builds your entire product catalog in minutes</span>
+                &mdash; not weeks.
+              </p>
+            </div>
+          </div>
+
+          {/* The ChatGPT smackdown */}
+          <div className="rounded-2xl border border-violet-500/30 bg-gradient-to-br from-violet-500/10 via-slate-900/60 to-slate-900/60 p-8 sm:p-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div>
+                <div className="text-xs uppercase tracking-widest font-bold text-slate-500 mb-3">For perspective</div>
+                <h3 className="text-3xl sm:text-4xl font-black mb-4 leading-tight">
+                  ChatGPT has <span className="text-rose-400">5 tools</span>.<br />
+                  Foreman has <span className="text-violet-400">396</span>.
+                </h3>
+                <p className="text-slate-300 leading-relaxed mb-2">
+                  And every single one reads or writes your actual construction data &mdash; parts, vendors, homes, budgets,
+                  schedules, selections, bids, structural options, design center configurator, and more.
+                </p>
+                <p className="text-slate-400 text-sm leading-relaxed">
+                  It doesn&apos;t just answer questions. <span className="text-white font-semibold">It builds.</span>
+                </p>
+              </div>
+              <div className="grid grid-cols-2 gap-3 text-sm">
+                {[
+                  { name: "Design Center", count: 49 },
+                  { name: "Scheduling", count: 32 },
+                  { name: "Structural Options", count: 27 },
+                  { name: "Scope Items", count: 26 },
+                  { name: "Option Attributes", count: 23 },
+                  { name: "Locations &amp; Takeoffs", count: 22 },
+                  { name: "Parts Catalog", count: 21 },
+                  { name: "+13 more categories", count: null },
+                ].map((c) => (
+                  <div key={c.name} className="flex items-center justify-between rounded-lg bg-slate-950/60 border border-slate-800 px-3 py-2">
+                    <span className="text-slate-300" dangerouslySetInnerHTML={{ __html: c.name }} />
+                    {c.count !== null ? (
+                      <span className="text-violet-400 font-bold">{c.count}</span>
+                    ) : (
+                      <span className="text-slate-500 text-xs">&hellip;</span>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Stats */}
       <section className="py-12 px-4">
         <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-5">
           {[
-            { num: "117+", label: "Purpose-built skills", sub: "Not generic AI features" },
-            { num: "16", label: "Skill categories", sub: "And always growing" },
+            { num: "396+", label: "Purpose-built skills", sub: "Not generic AI features" },
+            { num: "20", label: "Skill categories", sub: "And always growing" },
             { num: "110+", label: "Database tables", sub: "Full access to your real data" },
             { num: "0", label: "Manual data entry", sub: "Plain English to execution" },
           ].map((s) => (
@@ -283,7 +388,7 @@ export default function ForemanPage() {
       <section id="skills" className="py-16 px-4 bg-slate-900/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-3xl sm:text-5xl font-black mb-4">117+ skills. 17 categories.</h2>
+            <h2 className="text-3xl sm:text-5xl font-black mb-4">396+ skills. 20 categories.</h2>
             <p className="text-slate-400 max-w-xl mx-auto">Every skill is purpose-built for construction. Not adapted from a generic AI assistant.</p>
           </div>
           <div className="space-y-8">
@@ -609,7 +714,7 @@ export default function ForemanPage() {
             <div className="text-white font-bold text-xl mb-6">Pro Plan</div>
             <div className="space-y-3 text-left mb-8">
               {[
-                "Foreman AI - 117+ skills on the latest Claude Sonnet model, 1,000 AI messages/mo",
+                "Foreman AI - 396+ skills on the latest Claude Sonnet model, 1,000 AI messages/mo",
                 "Blueprint AI - 25 blueprint takeoffs/mo",
                 "MLS Listing Agent",
                 "Everything in Builder (Sales, Purchasing, Design Center)",
@@ -670,7 +775,7 @@ export default function ForemanPage() {
           <span className="text-amber-400">for custom reports.</span>
         </h2>
         <p className="text-slate-400 text-lg mb-10 max-w-xl mx-auto">
-          We built the consultant into the software. 117+ skills. Plain English. Real construction data. Pro plan.
+          We built the consultant into the software. 396+ skills. Plain English. Real construction data. Pro plan.
         </p>
         <Link href="/beta" className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-amber-400 text-slate-900 font-bold text-xl hover:bg-amber-300 transition-all duration-200 shadow-xl shadow-amber-500/30">
           Get Beta Access <ArrowRight className="w-5 h-5" />

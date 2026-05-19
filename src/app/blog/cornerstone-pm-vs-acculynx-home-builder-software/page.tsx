@@ -39,7 +39,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What is the difference between AccuLynx and Cornerstone PM?",
-    a: "AccuLynx is a roofing CRM that manages leads, proposals, and job-level project tracking for roofers and exterior contractors. Cornerstone PM\u2122 is a production home builder platform with a floorplan-level options engine, 64 Designer Packages, AI agents (Blueprint AI takeoff, Foreman AI with 117+ skills, Bid Import AI), multi-community vendor management, and a buyer-facing design center.",
+    a: "AccuLynx is a roofing CRM that manages leads, proposals, and job-level project tracking for roofers and exterior contractors. Cornerstone PM\u2122 is a production home builder platform with a floorplan-level options engine, 64 Designer Packages, AI agents (Blueprint AI takeoff, Foreman AI with 396+ skills, Bid Import AI), multi-community vendor management, and a buyer-facing design center.",
   },
   {
     q: "Does AccuLynx have a design center for home builders?",
@@ -47,7 +47,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What does Cornerstone PM\u2122 offer that AccuLynx doesn\u2019t?",
-    a: "Cornerstone PM\u2122 offers a production home builder design center with 64 curated Designer Packages, per-floorplan options reused across plan repeats, multi-community vendor assignment, AI material takeoff (130+ scopes from a PDF in <60 seconds), Foreman AI with 117+ skills, side-by-side vendor bid comparison, and a buyer-facing design portal \u2014 none of which exist in AccuLynx.",
+    a: "Cornerstone PM\u2122 offers a production home builder design center with 64 curated Designer Packages, per-floorplan options reused across plan repeats, multi-community vendor assignment, AI material takeoff (130+ scopes from a PDF in <60 seconds), Foreman AI with 396+ skills, side-by-side vendor bid comparison, and a buyer-facing design portal \u2014 none of which exist in AccuLynx.",
   },
   {
     q: "Who should use AccuLynx?",
@@ -59,7 +59,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What AI capabilities does Cornerstone PM\u2122 have?",
-    a: "Cornerstone PM\u2122 ships five native AI agents: Blueprint AI (material takeoff from floor plan PDFs), Foreman AI (117+ skills for purchasing, scheduling, vendor management, and reporting), Bid Import AI (auto-maps vendor bid spreadsheets to scope items), AI MLS Listing Generator, and an AI Support Agent. All are bundled at no extra cost on the Pro+ plan.",
+    a: "Cornerstone PM\u2122 ships five native AI agents: Blueprint AI (material takeoff from floor plan PDFs), Foreman AI (396+ skills for purchasing, scheduling, vendor management, and reporting), Bid Import AI (auto-maps vendor bid spreadsheets to scope items), AI MLS Listing Generator, and an AI Support Agent. All are bundled at no extra cost on the Pro+ plan.",
   },
 ];
 
@@ -73,7 +73,7 @@ const compareRows: CompareRow[] = [
   { feature: "Community-assigned vendor wins", acculynx: false, cornerstone: true },
   { feature: "Buyer-facing design center portal", acculynx: false, cornerstone: true },
   { feature: "AI material takeoff from PDF", acculynx: false, cornerstone: true },
-  { feature: "Foreman AI (117+ skills)", acculynx: false, cornerstone: true },
+  { feature: "Foreman AI (396+ skills)", acculynx: false, cornerstone: true },
   { feature: "Side-by-side vendor bid comparison", acculynx: false, cornerstone: true },
   { feature: "Roofing job management", acculynx: true, cornerstone: false },
   { feature: "ABC Supply / QXO / SRS ordering integrations", acculynx: true, cornerstone: false },
@@ -313,7 +313,7 @@ export default function AccuLynxVsCornerstonePage() {
             </li>
             <li>
               <strong className="text-white">Foreman AI</strong> &mdash; an in-app agent with
-              117+ skills covering purchasing workflows, vendor management, schedule optimization,
+              396+ skills covering purchasing workflows, vendor management, schedule optimization,
               budget reports, and profitability analysis. Foreman reads AND writes data &mdash;
               it takes real actions, not just chat.{" "}
               <Link

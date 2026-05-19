@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Blog &mdash; Cornerstone PM™",
+  title: "Blog &mdash; Cornerstone PMTM",
   description: "Insights for home builders on scheduling, technology, and running a smarter building operation.",
 };
 
@@ -42,9 +42,9 @@ const posts = [
   },
   {
     slug: "foreman-ai-110-skills",
-    title: "Foreman AI Hits 100 Skills — And Skill #100 Learns Your Build Patterns",
+    title: "Foreman AI Hits 100 Skills - And Skill #100 Learns Your Build Patterns",
     excerpt:
-      "Six weeks ago Foreman shipped with 45 skills. Today it crosses 100 — and skill #100 (learnBuilderPreferences) reads your existing floorplan takeoffs and learns YOUR org's build defaults automatically. No configuration wizards. Your own data is the training set. Different builder, different defaults. The more you build, the smarter Foreman gets.",
+      "Six weeks ago Foreman shipped with 45 skills. Today it crosses 100 - and skill #100 (learnBuilderPreferences) reads your existing floorplan takeoffs and learns YOUR org's build defaults automatically. No configuration wizards. Your own data is the training set. Different builder, different defaults. The more you build, the smarter Foreman gets.",
     date: "May 13, 2026",
     readTime: "6 min read",
     tag: "Milestone",
@@ -54,7 +54,7 @@ const posts = [
     slug: "how-blueprint-ai-extracts-material-scopes",
     title: "How Blueprint AI Extracts 130+ Material Scopes from a Floor Plan PDF",
     excerpt:
-      "AI material takeoff works by running a floor plan PDF through a four-stage pipeline: geometry parsing, fixture detection, scope mapping, and vendor pricing lookup — producing 130+ named material scopes in under 60 seconds. Here's the full technical breakdown.",
+      "AI material takeoff works by running a floor plan PDF through a four-stage pipeline: geometry parsing, fixture detection, scope mapping, and vendor pricing lookup - producing 130+ named material scopes in under 60 seconds. Here's the full technical breakdown.",
     date: "May 12, 2026",
     readTime: "6 min read",
     tag: "Technical Deep-Dive",
@@ -62,9 +62,9 @@ const posts = [
   },
   {
     slug: "foreman-ai-83-skills",
-    title: "Foreman AI Now Has 83 Skills Across 17 categories",
+    title: "Foreman AI Now Has 83 Skills Across 20 categories",
     excerpt:
-      "Six weeks ago Foreman AI shipped with 45 skills across 7 categories. Today it ships with 83 skills across 16 categories — a +84% jump in 42 days. Full CRUD on takeoffs, vendor scorecards, profitability analysis, options gap detection, undo + action history. Here's what got added and why 'more skills' isn't just a vanity number.",
+      "Six weeks ago Foreman AI shipped with 45 skills across 7 categories. Today it ships with 83 skills across 16 categories - a +84% jump in 42 days. Full CRUD on takeoffs, vendor scorecards, profitability analysis, options gap detection, undo + action history. Here's what got added and why 'more skills' isn't just a vanity number.",
     date: "May 12, 2026",
     readTime: "5 min read",
     tag: "Product Update",
@@ -74,7 +74,7 @@ const posts = [
     slug: "buildertrend-pricing-true-cost",
     title: "The True Cost of Buildertrend for Production Home Builders",
     excerpt:
-      "Buildertrend's advertised price is $499/month. For a production home builder doing 50 homes a year, the actual annual cost — once you add per-user fees, integrations, and the hidden labor of working around what the platform doesn't do — is typically $18,000 to $36,000 or more.",
+      "Buildertrend's advertised price is $499/month. For a production home builder doing 50 homes a year, the actual annual cost - once you add per-user fees, integrations, and the hidden labor of working around what the platform doesn't do - is typically $18,000 to $36,000 or more.",
     date: "May 11, 2026",
     readTime: "7 min read",
     tag: "Cost Analysis",
@@ -84,7 +84,7 @@ const posts = [
     slug: "why-small-builders-cant-afford-newstar",
     title: "Why Small-to-Mid Home Builders Can't Afford NEWSTAR (And What They're Switching To)",
     excerpt:
-      "NEWSTAR was built for the nation's largest builders — 500+ homes a year, IT departments, implementation budgets. For the 5–200 homes/year market, the platform is the wrong tool at the wrong price point. Here's why the math never works, and what mid-size builders are switching to.",
+      "NEWSTAR was built for the nation's largest builders - 500+ homes a year, IT departments, implementation budgets. For the 5-200 homes/year market, the platform is the wrong tool at the wrong price point. Here's why the math never works, and what mid-size builders are switching to.",
     date: "May 10, 2026",
     readTime: "6 min read",
     tag: "Cost Analysis",
@@ -102,9 +102,9 @@ const posts = [
   },
   {
     slug: "buildpro-vs-cornerstone-modern-stack",
-    title: "BuildPro vs Cornerstone PM™: Why Production Builders Are Modernizing",
+    title: "BuildPro vs Cornerstone PMTM: Why Production Builders Are Modernizing",
     excerpt:
-      "BuildPro is Windows-Citrix. Cornerstone PM™ is web-native, mobile-ready, and ships with five built-in AI agents. Here's what that stack difference actually means for a production builder doing 5–200 homes per year.",
+      "BuildPro is Windows-Citrix. Cornerstone PMTM is web-native, mobile-ready, and ships with five built-in AI agents. Here's what that stack difference actually means for a production builder doing 5-200 homes per year.",
     date: "May 8, 2026",
     readTime: "6 min read",
     tag: "Comparison",
@@ -122,9 +122,9 @@ const posts = [
   },
   {
     slug: "buildertrend-vs-cornerstone-feature-comparison",
-    title: "Buildertrend vs Cornerstone PM™: Feature-by-Feature Comparison",
+    title: "Buildertrend vs Cornerstone PMTM: Feature-by-Feature Comparison",
     excerpt:
-      "Buildertrend and Cornerstone PM™ both serve home builders — but their feature sets reflect fundamentally different priorities. Here's a category-by-category breakdown: Scheduling, Sales, Purchasing, Design Center, AI Agents, and API & Data.",
+      "Buildertrend and Cornerstone PMTM both serve home builders - but their feature sets reflect fundamentally different priorities. Here's a category-by-category breakdown: Scheduling, Sales, Purchasing, Design Center, AI Agents, and API & Data.",
     date: "May 6, 2026",
     readTime: "7 min read",
     tag: "Comparison",
@@ -134,7 +134,7 @@ const posts = [
     slug: "production-builder-vs-custom-builder-software",
     title: "Production Builder vs Custom Builder Software: Which Do You Need?",
     excerpt:
-      "Production builder software and custom builder software are built for opposite workflows. If you're a production builder on a custom builder tool, the mismatch is the problem — not your process. Here's how to tell which category fits your business and what to look for when evaluating platforms.",
+      "Production builder software and custom builder software are built for opposite workflows. If you're a production builder on a custom builder tool, the mismatch is the problem - not your process. Here's how to tell which category fits your business and what to look for when evaluating platforms.",
     date: "May 5, 2026",
     readTime: "6 min read",
     tag: "Platform Fit",
@@ -144,7 +144,7 @@ const posts = [
     slug: "newstar-implementation-cost-breakdown",
     title: "NEWSTAR Implementation Cost Breakdown for Small-to-Mid Builders",
     excerpt:
-      "Total NEWSTAR implementation cost runs $25,000–$100,000+ in year one. Here's where the money goes: licensing, consultants, data migration, training, and ongoing support — and why mid-size builders are rethinking the math.",
+      "Total NEWSTAR implementation cost runs $25,000-$100,000+ in year one. Here's where the money goes: licensing, consultants, data migration, training, and ongoing support - and why mid-size builders are rethinking the math.",
     date: "May 3, 2026",
     readTime: "6 min read",
     tag: "Cost Analysis",
@@ -152,9 +152,9 @@ const posts = [
   },
   {
     slug: "migrating-from-buildertrend-to-cornerstone",
-    title: "Migrating from Buildertrend to Cornerstone PM™: Step-by-Step Guide",
+    title: "Migrating from Buildertrend to Cornerstone PMTM: Step-by-Step Guide",
     excerpt:
-      "Most production home builders can migrate from Buildertrend to Cornerstone PM™ in 3–5 business days. Here's the full step-by-step: data export, community setup, schedule templates, vendor migration, and team onboarding.",
+      "Most production home builders can migrate from Buildertrend to Cornerstone PMTM in 3-5 business days. Here's the full step-by-step: data export, community setup, schedule templates, vendor migration, and team onboarding.",
     date: "May 3, 2026",
     readTime: "7 min read",
     tag: "Migration Guide",
@@ -164,7 +164,7 @@ const posts = [
     slug: "home-builder-software-buyer-guide-2026",
     title: "Home Builder Software Buyer's Guide (2026)",
     excerpt:
-      "Complete 2026 decision framework for home builder software. Compare NEWSTAR, BuildPro, Buildertrend, and Cornerstone PM™ across features, AI capabilities, implementation cost, and fit for your builder size.",
+      "Complete 2026 decision framework for home builder software. Compare NEWSTAR, BuildPro, Buildertrend, and Cornerstone PMTM across features, AI capabilities, implementation cost, and fit for your builder size.",
     date: "May 1, 2026",
     readTime: "9 min read",
     tag: "Buyer's Guide",
@@ -184,7 +184,7 @@ const posts = [
     slug: "new-home-sales-pipeline",
     title: "Your Home Builder Sales Pipeline Is Losing You Buyers",
     excerpt:
-      "Most home builders don't have a real sales pipeline — they have a spreadsheet and a gut feeling. Here's how tracking prospects the right way closes more contracts and wastes less time.",
+      "Most home builders don't have a real sales pipeline - they have a spreadsheet and a gut feeling. Here's how tracking prospects the right way closes more contracts and wastes less time.",
     date: "April 27, 2026",
     readTime: "6 min read",
     tag: "Sales Pipeline",
@@ -194,7 +194,7 @@ const posts = [
     slug: "jobtread-alternative",
     title: "Looking for a JobTread Alternative? Here's What Home Builders Should Know",
     excerpt:
-      "JobTread is built for general contractors. Cornerstone PM™ is built for home builders. Here's the honest difference &mdash; lot management, design center, sales pipeline, and AI that actually works with your data.",
+      "JobTread is built for general contractors. Cornerstone PMTM is built for home builders. Here's the honest difference &mdash; lot management, design center, sales pipeline, and AI that actually works with your data.",
     date: "April 1, 2026",
     readTime: "6 min read",
     tag: "Comparison",
@@ -282,7 +282,7 @@ const posts = [
   },
   {
     slug: "buildertrend-vs-cornerstone",
-    title: "BuilderTrend vs Cornerstone PM™: The Honest Comparison",
+    title: "BuilderTrend vs Cornerstone PMTM: The Honest Comparison",
     excerpt:
       "BuilderTrend is the big name in builder software. But is it worth $499/mo for a builder closing 10&ndash;30 homes a year? We break it down.",
     date: "April 14, 2026",

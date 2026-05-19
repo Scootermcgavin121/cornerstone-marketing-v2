@@ -67,11 +67,11 @@ const workflows = [
 const faqs = [
   {
     q: "What is homebuilder AI software?",
-    a: "Homebuilder AI software is purpose-built AI that understands home construction workflows — floorplans, spec levels, design center selections, vendor bids, and sales pipeline stages — and acts directly on a builder's data. Unlike generic chatbots, it can create POs, draft bid requests, generate MLS listings, run profitability reports, and update home statuses. Cornerstone PM™ ships Foreman AI™ with 117+ purpose-built skills across pre-sale, under contract, construction, and closing workflows.",
+    a: "Homebuilder AI software is purpose-built AI that understands home construction workflows — floorplans, spec levels, design center selections, vendor bids, and sales pipeline stages — and acts directly on a builder's data. Unlike generic chatbots, it can create POs, draft bid requests, generate MLS listings, run profitability reports, and update home statuses. Cornerstone PM™ ships Foreman AI™ with 396+ purpose-built skills across pre-sale, under contract, construction, and closing workflows.",
   },
   {
     q: "What is the best AI software for home builders?",
-    a: "The best AI software for home builders is one with construction vocabulary, direct access to your live data, and the ability to take real actions — not just answer questions. Cornerstone PM™ is the only home builder platform with five built-in AI agents: Foreman AI™ (117+ skills), Blueprint AI™ (floorplan reader), Bid Import AI (parses vendor bids from PDFs, Excel, or photos), AI MLS Listing Generator, and an AI Support Agent. Beta is free for 2 years, limited to 100 builders.",
+    a: "The best AI software for home builders is one with construction vocabulary, direct access to your live data, and the ability to take real actions — not just answer questions. Cornerstone PM™ is the only home builder platform with five built-in AI agents: Foreman AI™ (396+ skills), Blueprint AI™ (floorplan reader), Bid Import AI (parses vendor bids from PDFs, Excel, or photos), AI MLS Listing Generator, and an AI Support Agent. Beta is free for 2 years, limited to 100 builders.",
   },
   {
     q: "How does Cornerstone PM compare to Buildertrend for AI?",
@@ -127,7 +127,7 @@ export default function AiForHomeBuildersPage() {
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-violet-500/30 bg-violet-500/10 text-violet-400 text-xs font-semibold mb-6">
             <Brain className="w-3.5 h-3.5" />
-            FOREMAN AI · 117+ skills · PURPOSE-BUILT FOR HOME BUILDERS
+            FOREMAN AI · 396+ skills · PURPOSE-BUILT FOR HOME BUILDERS
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
             AI Built for How{" "}
@@ -150,7 +150,7 @@ export default function AiForHomeBuildersPage() {
               href="/foreman"
               className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200"
             >
-              See all 117+ skills
+              See all 396+ skills
             </Link>
           </div>
         </div>
@@ -192,7 +192,7 @@ export default function AiForHomeBuildersPage() {
       <section className="py-12 px-4">
         <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-5">
           {[
-            { num: "117+", label: "Purpose-built skills", sub: "Across 17 categories" },
+            { num: "396+", label: "Purpose-built skills", sub: "Across 20 categories" },
             { num: "4", label: "Workflow stages", sub: "Pre-Sale to Closing" },
             { num: "Plain English", label: "How you talk to it", sub: "No training required" },
             { num: "Real data", label: "What it accesses", sub: "Your actual records" },
