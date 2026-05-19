@@ -1160,11 +1160,11 @@ const api: Category = {
     {
       q: "What is BYOA (Bring Your Own Agent)?",
       aText:
-        "BYOA lets you connect Claude, ChatGPT, or any custom AI agent to live Cornerstone data via the REST API. The Foreman skill pack endpoint exposes Foreman's 110+ native skills so your own agent can call them directly. Included on Pro+ ($599/mo).",
+        "BYOA lets you connect Claude, ChatGPT, or any custom AI agent to live Cornerstone data via the REST API. The Foreman skill pack endpoint exposes Foreman's 396+ native skills so your own agent can call them directly. Included on Pro+ ($599/mo).",
       a: (
         <>
           BYOA lets you connect Claude, ChatGPT, or any custom AI agent to live Cornerstone data via the REST API.
-          The <strong>Foreman skill pack endpoint</strong> exposes Foreman's 110+ native skills so your own agent can
+          The <strong>Foreman skill pack endpoint</strong> exposes Foreman's 396+ native skills so your own agent can
           call them directly. Included on Pro+ ($599/mo).
         </>
       ),

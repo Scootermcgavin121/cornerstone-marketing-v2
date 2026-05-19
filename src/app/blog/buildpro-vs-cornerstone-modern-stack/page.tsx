@@ -151,7 +151,7 @@ export default function BuildproVsCornerstonePage() {
               </Link>
             </li>
             <li>
-              <strong className="text-white">Foreman AI™</strong> — a 110-skill agent that reads
+              <strong className="text-white">Foreman AI™</strong> — a 396+ skill agent that reads
               and writes data in your account. Pulls schedule summaries, generates SOWs, compares
               bids, creates punch lists, and more.{" "}
               <Link

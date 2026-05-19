@@ -49,7 +49,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "How is Cornerstone PM™ different from Buildertrend?",
-    a: "Three key differences: (1) Cornerstone is built for plan-repeat home builders (production, semi-custom, custom), Buildertrend for custom and remodel; (2) Cornerstone includes 100+ native AI skills via Foreman AI (Pro $499/mo) plus Blueprint AI floor plan takeoffs, AI image search, and anti-bot web scraping - Buildertrend has no native AI; (3) Cornerstone offers a structural options engine, floorplan pricing matrix, multi-community pipelines, 37+ named webhook events (Pro+), and free database export that Buildertrend doesn't ship.",
+    a: "Three key differences: (1) Cornerstone is built for plan-repeat home builders (production, semi-custom, custom), Buildertrend for custom and remodel; (2) Cornerstone includes 396+ native AI skills via Foreman AI (Pro $499/mo) plus Blueprint AI floor plan takeoffs, AI image search, and anti-bot web scraping - Buildertrend has no native AI; (3) Cornerstone offers a structural options engine, floorplan pricing matrix, multi-community pipelines, 37+ named webhook events (Pro+), and free database export that Buildertrend doesn't ship.",
   },
   {
     q: "Is Cornerstone PM™ cheaper than Buildertrend?",

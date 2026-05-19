@@ -145,7 +145,7 @@ export default function HomebuildingAiPost() {
           </div>
 
           <p>
-            These examples are from Cornerstone PM™&apos;s Foreman AI &mdash; a 110-skill AI agent purpose-built for home builders that reads and writes real construction data in plain English.
+            These examples are from Cornerstone PM™&apos;s Foreman AI &mdash; a 396+ skill AI agent purpose-built for home builders that reads and writes real construction data in plain English.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">

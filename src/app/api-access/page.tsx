@@ -960,7 +960,7 @@ export default function ApiAccessPage() {
                 title: "Foreman AI",
                 badge: "Built-in",
                 badgeColor: "bg-amber-500/20 text-amber-400 border-amber-500/30",
-                desc: "Cornerstone&apos;s own 110-skill construction agent. Already wired to the API. No setup required.",
+                desc: "Cornerstone&apos;s own 396+ skill construction agent. Already wired to the API. No setup required.",
                 link: "/foreman",
               },
               {

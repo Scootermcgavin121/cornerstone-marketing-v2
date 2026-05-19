@@ -1,14 +1,14 @@
 {
   "_comment": "Source of truth for Foreman AI skill + category counts on the marketing site. Updated by scripts/bump-foreman-skills.ps1.",
   "current": {
+    "skills": 396,
+    "categories": 20,
+    "updatedAt": "2026-05-19"
+  },
+  "previous": {
     "skills": 117,
     "categories": 17,
     "updatedAt": "2026-05-16"
-  },
-  "previous": {
-    "skills": 110,
-    "categories": 16,
-    "updatedAt": "2026-05-15"
   },
   "skipFiles": [
     "src/app/blog/foreman-ai-100-skills/page.tsx",

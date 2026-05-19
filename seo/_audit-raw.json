@@ -35,7 +35,7 @@
     "route": "/ai-agents",
     "file": "src/app/ai-agents/page.tsx",
     "title": "AI Agents for Home Builders | Cornerstone PM",
-    "description": "5 AI agents for home builders: Foreman AI (47 skills), Blueprint AI (PDF takeoffs), Bid Import AI (parses any vendor bid), AI MLS Listing Generator, AI Support Agent. Native AI built into the platform",
+    "description": "5 AI agents for home builders: Foreman AI (396+ skills), Blueprint AI (PDF takeoffs), Bid Import AI (parses any vendor bid), AI MLS Listing Generator, AI Support Agent. Native AI built into the platform",
     "hasJsonLd": false,
     "hasFAQSchema": false,
     "hasArticleSchema": false,

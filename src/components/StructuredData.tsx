@@ -136,7 +136,7 @@ export function StructuredData() {
             "name": "Is Cornerstone PM a JobTread alternative?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Cornerstone PM and JobTread serve different markets. JobTread is built for general contractors and remodelers. Cornerstone PM is built for home builders with lot management, floorplan pricing engines, pre-sale buyer workflows, and design center options - features JobTread does not offer. Cornerstone PM also includes 100+ native AI skills; JobTread's AI is a bring-your-own-ChatGPT connector.",
+              "text": "Cornerstone PM and JobTread serve different markets. JobTread is built for general contractors and remodelers. Cornerstone PM is built for home builders with lot management, floorplan pricing engines, pre-sale buyer workflows, and design center options - features JobTread does not offer. Cornerstone PM also includes 396+ native AI skills; JobTread's AI is a bring-your-own-ChatGPT connector.",
             },
           },
           {
