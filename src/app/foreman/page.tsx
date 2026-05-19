@@ -149,11 +149,6 @@ const examplePrompts = [
     category: "Document Generation",
   },
   {
-    prompt: "Flag any homes where actual costs are more than 10% over budget",
-    result: "3 homes flagged. Breakdown by scope category with variance amounts and recommended actions.",
-    category: "Budget Variance Analysis",
-  },
-  {
     prompt: "Create a bid request for all Plumbing vendors in our system for the Bayshore Commons community",
     result: "Bid request drafted with specs, deadline, and vendor list. Sent portal invites to 12 vendors.",
     category: "Bid Request Drafter",
