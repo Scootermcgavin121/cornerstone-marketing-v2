@@ -337,6 +337,102 @@ export default function ForemanPage() {
         </div>
       </section>
 
+      {/* Why 75 actions per turn - the technical defense */}
+      <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-500/10 border border-rose-500/30 text-rose-400 text-xs font-bold uppercase tracking-widest mb-4">
+              <Activity className="w-3.5 h-3.5" /> Under the hood
+            </div>
+            <h2 className="text-3xl sm:text-5xl font-black mb-4 leading-tight">
+              Why <span className="text-amber-400">75 actions</span> per turn?
+            </h2>
+            <p className="text-slate-400 max-w-3xl mx-auto text-lg leading-relaxed">
+              Most AI chatbots cap at <span className="text-rose-400 font-semibold">3&ndash;5 tool calls</span> per
+              turn &mdash; because generic AI without domain knowledge goes off the rails after a few steps. Foreman
+              is different.
+            </p>
+          </div>
+
+          {/* 4-reason grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10">
+            <div className="rounded-2xl bg-slate-900/60 border border-slate-800 p-6 hover:border-amber-500/30 transition-all duration-300">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-9 h-9 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 font-black">1</div>
+                <h3 className="text-lg font-bold text-white">Custom agentic tool loop</h3>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                We built a custom tool execution loop (<code className="text-amber-300 bg-slate-950/60 px-1.5 py-0.5 rounded text-xs">app/api/agent/route.ts</code>) that calls
+                Claude&apos;s API, executes tool results, feeds them back, and loops &mdash; up to 75 rounds.
+                ChatGPT and Claude.ai run a generic loop controlled by OpenAI/Anthropic with conservative limits.
+                <span className="text-white font-semibold"> We control our own loop, so we set our own limits.</span>
+              </p>
+            </div>
+            <div className="rounded-2xl bg-slate-900/60 border border-slate-800 p-6 hover:border-violet-500/30 transition-all duration-300">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-9 h-9 rounded-lg bg-violet-500/10 border border-violet-500/30 flex items-center justify-center text-violet-400 font-black">2</div>
+                <h3 className="text-lg font-bold text-white">Knowledge base keeps it on track</h3>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                Generic AI hallucinates, calls the wrong tools, and loops infinitely after a few steps. Foreman&apos;s
+                <span className="text-white font-semibold"> 24,500-word construction knowledge base</span> means it
+                knows exactly which skill to call next, what parameters to pass, and what the expected result looks
+                like. More context = more reliable = safe to allow more iterations.
+              </p>
+            </div>
+            <div className="rounded-2xl bg-slate-900/60 border border-slate-800 p-6 hover:border-emerald-500/30 transition-all duration-300">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-9 h-9 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 font-black">3</div>
+                <h3 className="text-lg font-bold text-white">Purpose-built skills with guardrails</h3>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                Each of the 396 skills is a hardcoded function with input validation, error handling, and typed
+                returns. It&apos;s not <em>&ldquo;generate code and hope it works&rdquo;</em> &mdash; it&apos;s
+                <code className="text-emerald-300 bg-slate-950/60 px-1.5 py-0.5 rounded text-xs ml-1">createMultipleAttributeValues(…)</code>
+                with exact parameters. <span className="text-white font-semibold">Deterministic, safe, repeatable.</span>
+                That&apos;s why we can let it run 75 times without fear.
+              </p>
+            </div>
+            <div className="rounded-2xl bg-slate-900/60 border border-slate-800 p-6 hover:border-cyan-500/30 transition-all duration-300">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-9 h-9 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 font-black">4</div>
+                <h3 className="text-lg font-bold text-white">Direct database access</h3>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                Foreman&apos;s skills hit Prisma + Postgres directly &mdash; no HTTP round-trips, no rate limits, no
+                API keys to juggle. Each skill call takes milliseconds.
+                <span className="text-white font-semibold"> 75 calls at ~50ms = under 4 seconds of actual execution.</span>
+                Web-based AI tools go through external APIs with latency and rate limits at every step.
+              </p>
+            </div>
+          </div>
+
+          {/* Result banner */}
+          <div className="rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-500/10 via-slate-900/60 to-slate-900/60 p-8 sm:p-10">
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
+              <div className="md:col-span-2 text-center md:text-left">
+                <div className="text-xs uppercase tracking-widest font-bold text-slate-500 mb-2">The result</div>
+                <div className="text-6xl sm:text-7xl font-black text-amber-400 leading-none mb-2">75</div>
+                <div className="text-white font-bold text-lg">step chain. One prompt.</div>
+                <div className="text-slate-400 text-sm">One conversation turn.</div>
+              </div>
+              <div className="md:col-span-3">
+                <p className="text-slate-300 leading-relaxed mb-3">
+                  One prompt can trigger a 75-step chain &mdash; creating option classes, adding attributes, setting
+                  tier access, seeding values &mdash; all in a single conversation turn.
+                </p>
+                <p className="text-slate-300 leading-relaxed">
+                  What takes hours of manual data entry happens in <span className="text-amber-400 font-semibold">under a minute</span>.
+                </p>
+                <p className="mt-4 text-2xl font-black text-white">
+                  That&apos;s not a chatbot. <span className="text-amber-400">That&apos;s a construction agent.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Stats */}
       <section className="py-12 px-4">
         <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-5">

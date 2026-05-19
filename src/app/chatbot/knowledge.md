@@ -153,6 +153,14 @@ Foreman is the in-app AI agent that doesn't just answer questions - it **reads a
 
 **Why this matters vs. competitors:** JobTread's AI Connector exposes ~35 mostly basic CRUD skills (list, create, search) and routes the thinking back to ChatGPT/Claude. Foreman ships 396+ skills that chain together into real workflows - one prompt can read a blueprint, learn fixture preferences, build a lighting package, and tag everything with option classes for the design center. JobTread's AI stays static; Foreman gets smarter every floorplan.
 
+**Why Foreman can chain 75 actions per turn (vs 3-5 for ChatGPT/generic AI):**
+1. **Custom agentic tool loop** - we built our own tool execution loop (`app/api/agent/route.ts`) that calls Claude, executes tool results, feeds them back, and loops up to 75 rounds. ChatGPT/Claude.ai use a generic loop with conservative limits set by OpenAI/Anthropic. We control our loop, so we set our limits.
+2. **Knowledge base keeps it on track** - generic AI hallucinates and calls wrong tools after a few steps. Foreman's 24,500-word construction knowledge base means it knows exactly which skill to call next, what parameters to pass, and what to expect back. More context = more reliable = safe to allow more iterations.
+3. **Purpose-built skills with guardrails** - each of the 396 skills is a hardcoded function with input validation, error handling, and typed returns. It's not "generate code and hope it works" - it's `createMultipleAttributeValues(…)` with exact parameters. Deterministic, safe, repeatable.
+4. **Direct database access** - Foreman's skills hit Prisma + Postgres directly. No HTTP round-trips, no rate limits, no API keys to juggle. Each skill takes milliseconds; 75 calls at ~50ms = under 4 seconds of execution.
+
+**Result:** one prompt can trigger a 75-step chain (creating option classes, adding attributes, setting tier access, seeding values) in a single conversation turn. What takes hours of manual data entry happens in under a minute.
+
 **Newest skills (May 7, 2026):**
 - **`searchProductImage`** - Bing Image Search by product name or model number. Returns direct CDN URLs. Free, no API key required.
 - **`downloadImage`** - downloads any image URL and stores it permanently in Vercel Blob. Returns a hosted URL that won't break when the source site disappears.
