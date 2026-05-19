@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "foreman-ai-75-action-loop",
+    title: "How We Let Foreman AI Chain 75 Actions in One Prompt (And Why Your AI Can't)",
+    excerpt:
+      "Most AI chatbots cap at 3-5 tool calls per turn because generic AI goes off the rails after a few steps. Foreman AI chains 75 actions in a single prompt. Here's the four-part technical architecture: custom agentic loop, 24,500-word knowledge base, typed-function skills, and direct database access. One prompt rebuilds your entire design center category in under 90 seconds.",
+    date: "May 18, 2026",
+    readTime: "9 min read",
+    tag: "Technical Deep-Dive",
+    tagColor: "text-cyan-400 bg-cyan-500/10 border-cyan-500/20",
+  },
+  {
     slug: "coconstruct-vs-cornerstone-production-design-center",
     title: "CoConstruct vs Cornerstone PM: Production Builder Design Center",
     excerpt:
@@ -41,7 +51,7 @@ const posts = [
     tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
   },
   {
-    slug: "foreman-ai-110-skills",
+    slug: "foreman-ai-100-skills",
     title: "Foreman AI Hits 100 Skills - And Skill #100 Learns Your Build Patterns",
     excerpt:
       "Six weeks ago Foreman shipped with 45 skills. Today it crosses 100 - and skill #100 (learnBuilderPreferences) reads your existing floorplan takeoffs and learns YOUR org's build defaults automatically. No configuration wizards. Your own data is the training set. Different builder, different defaults. The more you build, the smarter Foreman gets.",
@@ -62,7 +72,7 @@ const posts = [
   },
   {
     slug: "foreman-ai-83-skills",
-    title: "Foreman AI Now Has 83 Skills Across 20 categories",
+    title: "Foreman AI Now Has 83 Skills Across 16 Categories",
     excerpt:
       "Six weeks ago Foreman AI shipped with 45 skills across 7 categories. Today it ships with 83 skills across 16 categories - a +84% jump in 42 days. Full CRUD on takeoffs, vendor scorecards, profitability analysis, options gap detection, undo + action history. Here's what got added and why 'more skills' isn't just a vanity number.",
     date: "May 12, 2026",

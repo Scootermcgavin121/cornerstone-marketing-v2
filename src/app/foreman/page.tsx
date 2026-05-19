@@ -363,6 +363,27 @@ export default function ForemanPage() {
                 </p>
               </div>
             </div>
+
+            {/* CTA strip - deep dive on the brain */}
+            <div className="mt-12 rounded-2xl border border-violet-500/20 bg-gradient-to-br from-violet-500/[0.06] via-slate-900/40 to-slate-900/40 p-6 sm:p-8">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
+                <div>
+                  <div className="text-violet-400 text-xs font-bold uppercase tracking-widest mb-1.5">Want to go deeper?</div>
+                  <h3 className="text-xl sm:text-2xl font-black text-white mb-1">Explore Foreman&apos;s full brain</h3>
+                  <p className="text-slate-400 text-sm leading-relaxed max-w-2xl">
+                    All 30 chapters, 39 estimating formulas, and 10 prompt-library categories &mdash; broken down on one page.
+                  </p>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-3 shrink-0">
+                  <Link href="/brain" className="px-5 py-2.5 rounded-full bg-violet-500 text-white font-bold text-sm hover:bg-violet-400 transition-all duration-200 shadow-lg shadow-violet-500/30 hover:-translate-y-0.5 whitespace-nowrap">
+                    See Foreman&apos;s Brain &rarr;
+                  </Link>
+                  <Link href="/blog/foreman-ai-75-action-loop" className="px-5 py-2.5 rounded-full border border-slate-700 text-slate-300 font-semibold text-sm hover:border-slate-500 hover:text-white transition-all duration-200 whitespace-nowrap">
+                    The 75-action loop
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
