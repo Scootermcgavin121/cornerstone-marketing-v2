@@ -173,6 +173,11 @@ const examplePrompts = [
     result: "Spun up a full remodel template for the existing home: 32 scope items across Demo, Plumbing, Electrical, Cabinets, Countertops, Flooring, Paint, and Punch - sequenced for renovation work (demo first, finishes last). Skipped new-construction-only scopes like foundation and framing. Ready to assign vendors and bid.",
     category: "Construction Template Create",
   },
+  {
+    prompt: "Hey Foreman, set up Countertops with three material types: Granite, Quartz, and Laminate. Create separate OptionClasses for each. Add 5 options per class (Standard through Premium). Create attributes with real brand names (Cambria, Caesarstone for Quartz; Formica for Laminate). Set tier access so budget is Standard, premium is Upgrade III+.",
+    result: "Built Countertops end-to-end: 3 OptionClasses (Granite, Quartz, Laminate), 15 options total with Standard/Better/Best/Premium/Luxury tiers, real-brand attribute values (Cambria + Caesarstone for Quartz, Formica for Laminate), and tier access locked so Standard ships with budget homes while Premium unlocks at Upgrade III+. One prompt, full design center setup. Built-in example in the docs.",
+    category: "Design Center Setup",
+  },
 ];
 
 export default function ForemanPage() {
