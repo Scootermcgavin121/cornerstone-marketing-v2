@@ -3,7 +3,6 @@ import { Check, ArrowRight, Zap, Brain, FileText, Cpu, Activity, X, ShoppingBag,
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { VideoPlayer } from "@/components/VideoPlayer";
-import { PoweredByClaude } from "@/components/PoweredByClaude";
 
 export const metadata = {
   title: "Foreman AI - 396+ skill construction agent with Memory Compaction | Cornerstone PM™",
@@ -261,9 +260,8 @@ export default function ForemanPage() {
             </a>
           </div>
 
-          {/* Powered by Claude — trust badge */}
-          <div className="mt-10 flex flex-col items-center gap-3">
-            <PoweredByClaude size="md" />
+          {/* Powered by Claude — caption only */}
+          <div className="mt-10 flex justify-center">
             <p className="text-slate-500 text-xs max-w-sm text-center leading-relaxed">
               Foreman runs on Anthropic&apos;s Claude &mdash; the most capable AI for complex, multi-step construction workflows.
             </p>
