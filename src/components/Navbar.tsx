@@ -10,7 +10,7 @@ import { Menu, X } from "lucide-react";
 const navLinks = [
   { label: "Home", href: "/", hasDropdown: false },
   { label: "Features", href: "/features", hasDropdown: true },
-  { label: "Sales Pipeline", href: "/sales", hasDropdown: false },
+  { label: "Foreman AI", href: "/foreman", hasDropdown: false, accent: true },
   { label: "AI Agents", href: "/ai-agents", hasDropdown: false },
   { label: "API Access", href: "/api-access", hasDropdown: false },
   { label: "Developers", href: "/api-docs", hasDropdown: false },
@@ -91,7 +91,12 @@ export function Navbar() {
               <div key={link.href} className="relative group">
                 <Link
                   href={link.href}
-                  className="px-3 py-2 text-sm text-slate-400 hover:text-white rounded-lg hover:bg-white/5 transition-all duration-200 inline-flex items-center gap-1 whitespace-nowrap"
+                  className={cn(
+                    "px-3 py-2 text-sm rounded-lg transition-all duration-200 inline-flex items-center gap-1 whitespace-nowrap",
+                    link.accent
+                      ? "text-violet-300 hover:text-violet-200 bg-violet-500/10 hover:bg-violet-500/20 border border-violet-500/30 shadow-sm shadow-violet-500/20 hover:shadow-violet-500/40 font-medium"
+                      : "text-slate-400 hover:text-white hover:bg-white/5"
+                  )}
                 >
                   {link.label}
                   {link.hasDropdown && (
@@ -236,7 +241,12 @@ export function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="block px-4 py-3 text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-all duration-200"
+                  className={cn(
+                    "block px-4 py-3 rounded-lg transition-all duration-200",
+                    link.accent
+                      ? "text-violet-300 hover:text-violet-200 bg-violet-500/10 hover:bg-violet-500/20 border border-violet-500/30 font-medium"
+                      : "text-slate-300 hover:text-white hover:bg-white/5"
+                  )}
                   onClick={() => setMobileOpen(false)}
                 >
                   {link.label}
