@@ -576,6 +576,7 @@ export default function ForemanPage() {
                     <li>&bull; Forgets earlier instructions and decisions</li>
                     <li>&bull; Starts hallucinating when context gets full</li>
                     <li>&bull; Forces you to start over and lose your place</li>
+                    <li>&bull; Forgets you completely the moment a new chat starts</li>
                   </ul>
                 </div>
                 <div className="rounded-xl bg-emerald-500/5 border border-emerald-500/20 p-5">
@@ -588,6 +589,7 @@ export default function ForemanPage() {
                     <li>&bull; Recent messages stay word-for-word intact</li>
                     <li>&bull; Health meter shows you exactly where you stand</li>
                     <li>&bull; Marathon sessions just keep working</li>
+                    <li>&bull; Full user &amp; company memory files saved server-side &mdash; remembers everything across sessions</li>
                   </ul>
                 </div>
               </div>
