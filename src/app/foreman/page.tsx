@@ -279,10 +279,10 @@ export default function ForemanPage() {
               Live demo &middot; Real-time. Not sped up.
             </div>
             <h2 className="text-2xl sm:text-3xl font-black mb-2">
-              Watch Foreman find a product image, host it, and update Design Center &mdash; in <span className="text-emerald-400">20 seconds</span>.
+              Watch Foreman image <span className="text-emerald-400">5 countertop options</span> &mdash; in one prompt.
             </h2>
             <p className="text-slate-400 text-sm max-w-2xl mx-auto">
-              One prompt. Foreman searches the web, downloads the official Samsung product photo, saves it to your server, and attaches it to the right Design Options entry. Zero clicks of yours.
+              Granite Level 1 through Level 5 Exotic. Foreman runs 5 image searches in parallel, downloads each photo, saves them to your server (no broken hot-links), and attaches the right image to each Design Options spec level. Zero clicks of yours.
             </p>
             <p className="text-slate-500 text-xs max-w-2xl mx-auto mt-3">
               Works the other direction too: paste or drag-drop <em>any screenshot</em> from inside the app — a vendor
@@ -290,7 +290,7 @@ export default function ForemanPage() {
               and acts on it (creates the part, updates the option, answers the question).
             </p>
           </div>
-          <VideoPlayer src="/video/foreman-image-search.mp4" label="Foreman AI: Image Search Workflow" />
+          <VideoPlayer src="/video/countertops-image-add.mp4" label="Foreman AI: Batch Image Workflow (5 countertop options, one prompt)" />
         </div>
       </section>
 
