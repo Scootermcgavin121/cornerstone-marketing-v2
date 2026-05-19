@@ -1063,7 +1063,6 @@ export default function ForemanPage() {
                     "REST API + 37+ Webhook events — INCLUDED",
                     "Power User Seat add-on available (+$149/seat/mo)",
                     "60-day onboarding boost — 3× AI limits",
-                    "Dedicated success manager",
                   ].map((f) => (
                     <div key={f} className="flex items-start gap-3">
                       <Check className="w-4 h-4 text-violet-300 flex-shrink-0 mt-0.5" />
