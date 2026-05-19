@@ -529,9 +529,24 @@ const ai: Category = {
       a: (
         <>
           ChatGPT is a general LLM with no knowledge of your homes, vendors, or build pipeline. <A href="/foreman">Foreman AI</A>{" "}
-          is grounded in your live Cornerstone data and your role permissions, with <strong>100+ purpose-built
+          is grounded in your live Cornerstone data and your role permissions, with <strong>396+ purpose-built
           skills</strong> that execute real actions - rescheduling tasks, notifying vendors, generating MLS listings,
           drafting bid requests. ChatGPT can describe what to do; Foreman AI does it.
+        </>
+      ),
+    },
+    {
+      q: "Is there a limit to what I can ask Foreman?",
+      aText:
+        "Foreman works within Cornerstone PM™'s data and features — it can read, create, and modify your scheduling, purchasing, design center, and sales data with your approval. Foreman can also access external websites for tasks like scraping supplier catalogs, downloading product images, and researching vendor information. It cannot access inappropriate or restricted content, send emails on your behalf, or modify system-level settings. Every action Foreman takes requires builder approval before it executes.",
+      a: (
+        <>
+          Foreman works within Cornerstone PM™&apos;s data and features — it can read, create, and modify your
+          scheduling, purchasing, design center, and sales data with your approval. Foreman can also{" "}
+          <strong>access external websites</strong> for tasks like scraping supplier catalogs, downloading product
+          images, and researching vendor information. It cannot access inappropriate or restricted content, send
+          emails on your behalf, or modify system-level settings. Every action Foreman takes requires builder
+          approval before it executes.
         </>
       ),
     },
