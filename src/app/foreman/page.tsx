@@ -997,41 +997,90 @@ export default function ForemanPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════
-          PRICING
+          PRICING — Pro + Pro+ side-by-side
       ═══════════════════════════════════════════════════════════ */}
       <section className="py-24 px-4">
-        <div className="max-w-2xl mx-auto">
-          <div className="relative rounded-3xl bg-gradient-to-b from-slate-900/80 to-slate-950 border border-amber-500/20 p-10 sm:p-14 text-center overflow-hidden">
-            {/* Glow accent */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-32 bg-amber-500/10 rounded-full blur-3xl" />
-            <div className="relative z-10">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold uppercase tracking-widest mb-8">
-                Pro Plan Feature
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold uppercase tracking-widest mb-4">
+              Plans with Foreman AI
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-black text-white mb-3">Pick the plan that fits your stack.</h2>
+            <p className="text-slate-400 text-sm max-w-xl mx-auto">Both unlock Foreman AI&apos;s full 396+ skill catalog. Pro+ adds REST API, more user seats, and double the AI usage limits.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Pro Plan */}
+            <div className="relative rounded-3xl bg-gradient-to-b from-slate-900/80 to-slate-950 border border-amber-500/20 p-8 sm:p-10 overflow-hidden">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-32 bg-amber-500/10 rounded-full blur-3xl" />
+              <div className="relative z-10">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-[10px] font-bold uppercase tracking-widest mb-6">
+                  Pro Plan
+                </div>
+                <div className="text-5xl sm:text-6xl font-black text-amber-400 mb-1">$499<span className="text-xl text-slate-400 font-normal">/mo</span></div>
+                <div className="text-slate-500 text-xs mb-6">Up to 30 users &middot; 1,000 active homes</div>
+                <div className="space-y-2.5 text-left mb-8">
+                  {[
+                    "Foreman AI — 396+ skills, 600 conversations/mo",
+                    "Blueprint AI — 25 takeoffs/mo",
+                    "Bid Import AI — Excel/PDF/handwritten extraction",
+                    "MLS Listing Agent + Punchlist AI",
+                    "Everything in Builder (Sales, Purchasing, Design Center)",
+                    "Advanced analytics & reporting",
+                    "REST API available as $200/mo add-on",
+                    "Priority onboarding support",
+                  ].map((f) => (
+                    <div key={f} className="flex items-start gap-3">
+                      <Check className="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" />
+                      <span className="text-slate-300 text-sm">{f}</span>
+                    </div>
+                  ))}
+                </div>
+                <Link href="/beta" className="block w-full text-center px-6 py-3.5 rounded-xl bg-amber-400 text-slate-900 font-bold hover:bg-amber-300 transition-all duration-200">
+                  Get Beta Access &rarr;
+                </Link>
               </div>
-              <div className="text-6xl sm:text-7xl font-black text-amber-400 mb-2">$499<span className="text-2xl text-slate-400 font-normal">/mo</span></div>
-              <div className="text-white font-bold text-xl mb-8">Pro Plan</div>
-              <div className="space-y-3 text-left mb-10 max-w-md mx-auto">
-                {[
-                  "Foreman AI - 396+ skills on the latest Claude Sonnet model, 1,000 AI messages/mo",
-                  "Blueprint AI - 25 blueprint takeoffs/mo",
-                  "MLS Listing Agent",
-                  "Everything in Builder (Sales, Purchasing, Design Center)",
-                  "Up to 1,000 active homes",
-                  "Advanced analytics & reporting",
-                  "Priority onboarding support",
-                ].map((f) => (
-                  <div key={f} className="flex items-center gap-3">
-                    <Check className="w-4 h-4 text-amber-400 flex-shrink-0" />
-                    <span className="text-slate-300 text-sm">{f}</span>
-                  </div>
-                ))}
+            </div>
+
+            {/* Pro+ Plan — featured */}
+            <div className="relative rounded-3xl bg-gradient-to-b from-violet-950/40 via-slate-900/80 to-slate-950 border-2 border-violet-500/40 p-8 sm:p-10 overflow-hidden shadow-2xl shadow-violet-500/10">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-32 bg-violet-500/15 rounded-full blur-3xl" />
+              <div className="absolute -top-px left-1/2 -translate-x-1/2 px-4 py-1 rounded-b-lg bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white text-[10px] font-black uppercase tracking-widest">
+                Most Powerful
               </div>
-              <Link href="/beta" className="block w-full max-w-md mx-auto text-center px-6 py-4 rounded-xl bg-amber-400 text-slate-900 font-bold text-lg hover:bg-amber-300 transition-all duration-200">
-                Get Beta Access &rarr;
-              </Link>
-              <p className="text-slate-500 text-xs mt-3">Beta is free for 2 years &middot; Limited to 100 builders</p>
+              <div className="relative z-10">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/30 text-violet-300 text-[10px] font-bold uppercase tracking-widest mb-6 mt-4">
+                  Pro+ Plan
+                </div>
+                <div className="text-5xl sm:text-6xl font-black text-violet-300 mb-1">$599<span className="text-xl text-slate-400 font-normal">/mo</span></div>
+                <div className="text-slate-500 text-xs mb-6">Up to 60 users &middot; Unlimited active homes</div>
+                <div className="space-y-2.5 text-left mb-8">
+                  {[
+                    "Foreman AI — 396+ skills, 900 conversations/mo",
+                    "Blueprint AI — 50 takeoffs/mo",
+                    "Bid Import AI — unlimited extractions",
+                    "All Pro features (MLS, Punchlist, Sales, Purchasing, Design Center)",
+                    "REST API + 37+ Webhook events — INCLUDED",
+                    "Power User Seat add-on available (+$149/seat/mo)",
+                    "60-day onboarding boost — 3× AI limits",
+                    "Dedicated success manager",
+                  ].map((f) => (
+                    <div key={f} className="flex items-start gap-3">
+                      <Check className="w-4 h-4 text-violet-300 flex-shrink-0 mt-0.5" />
+                      <span className="text-slate-200 text-sm">{f}</span>
+                    </div>
+                  ))}
+                </div>
+                <Link href="/beta" className="block w-full text-center px-6 py-3.5 rounded-xl bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white font-bold hover:from-violet-400 hover:to-fuchsia-400 transition-all duration-200 shadow-lg shadow-violet-500/30">
+                  Get Beta Access &rarr;
+                </Link>
+              </div>
             </div>
           </div>
+
+          <p className="text-center text-slate-500 text-xs mt-8">
+            Beta is free for 2 years &middot; Limited to 100 builders &middot; <Link href="/pricing" className="text-amber-400 hover:text-amber-300 underline-offset-2 hover:underline">See full pricing &amp; all plans &rarr;</Link>
+          </p>
         </div>
       </section>
 
