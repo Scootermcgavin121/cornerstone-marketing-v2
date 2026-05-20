@@ -77,8 +77,11 @@ export function ForemanStructuredData() {
         "image": "https://cornerstonepm.ai/mockups/feature-sales-pipeline.jpg",
         "softwareRequirements":
           "Modern web browser (Chrome, Edge, Safari, Firefox). Active Cornerstone PM Pro or Pro+ subscription. No installation required.",
+        // CreativeWork (parent of SoftwareApplication) avoids strict validation
+        // when Google parses isPartOf as a nested SoftwareApplication record
+        // missing required fields like applicationCategory and offers.
         "isPartOf": {
-          "@type": "SoftwareApplication",
+          "@type": "CreativeWork",
           "name": "Cornerstone PM",
           "url": "https://cornerstonepm.ai",
         },

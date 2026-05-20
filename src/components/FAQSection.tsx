@@ -32,6 +32,11 @@ export function FAQSection({
   const schema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    // name on the FAQPage itself — without it, Google Rich Results reports
+    // each FAQPage as an "Unnamed item" with a critical issue. Bing AI
+    // grounding cares about the question/answer pairs more than the parent
+    // FAQPage name, but adding it costs nothing and silences the warning.
+    name: title,
     mainEntity: items.map((item) => ({
       "@type": "Question",
       name: item.q,

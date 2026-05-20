@@ -91,6 +91,7 @@ export function StructuredData() {
       },
       {
         "@type": "FAQPage",
+        "name": "Cornerstone PM — General FAQ",
         "mainEntity": [
           {
             "@type": "Question",

@@ -90,14 +90,19 @@ export function buildFeatureSchema(args: {
           url: `${SITE_URL}/pricing`,
           description: offerNote,
         },
+        // isPartOf uses @type CreativeWork instead of SoftwareApplication so
+        // Google's structured-data validator doesn't expect a full nested
+        // SoftwareApplication record (which would need applicationCategory,
+        // offers, etc). CreativeWork is the schema.org parent type and
+        // expresses the relationship without the strict validation.
         isPartOf: args.isPartOf
           ? {
-              "@type": "SoftwareApplication",
+              "@type": "CreativeWork",
               name: args.isPartOf.name,
               url: args.isPartOf.url,
             }
           : {
-              "@type": "SoftwareApplication",
+              "@type": "CreativeWork",
               name: SITE_NAME,
               url: SITE_URL,
             },
