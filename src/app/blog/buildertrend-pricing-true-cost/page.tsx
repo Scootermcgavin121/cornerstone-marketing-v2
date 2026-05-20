@@ -4,10 +4,20 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
 
 const heroImage = "/blog/migrating-from-buildertrend.png";
 const heroImageAlt =
   "Production home builder calculating the true cost of Buildertrend home builder software";
+
+const blogSchema = buildBlogPostSchema({
+  title: "The True Cost of Buildertrend for Production Home Builders",
+  slug: "buildertrend-pricing-true-cost",
+  description:
+    "Buildertrend's true total cost for production home builders: per-user fees, integration costs, and the workflow gaps that drive switching to purpose-built alternatives.",
+  datePublished: "2026-04-20",
+});
 
 export const metadata: Metadata = {
   title:
@@ -33,6 +43,7 @@ export const metadata: Metadata = {
 export default function BuildertrendPricingTrueCostPage() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">

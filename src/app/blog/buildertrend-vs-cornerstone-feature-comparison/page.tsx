@@ -6,10 +6,20 @@ import { Footer } from "@/components/Footer";
 import { FAQSection } from "@/components/FAQSection";
 import type { FAQItem } from "@/components/FAQSection";
 import { ArrowLeft, Check, X, Minus } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
 
 const heroImage = "/blog/migrating-from-buildertrend.png";
 const heroImageAlt =
   "Buildertrend vs Cornerstone PM™ home builder software feature comparison";
+
+const blogSchema = buildBlogPostSchema({
+  title: "Buildertrend vs Cornerstone PM™: Feature-by-Feature Comparison",
+  slug: "buildertrend-vs-cornerstone-feature-comparison",
+  description:
+    "Feature-by-feature comparison of Buildertrend and Cornerstone PM™. Scheduling, AI agents, options engine, REST API, and pricing for production home builders.",
+  datePublished: "2026-04-25",
+});
 
 export const metadata: Metadata = {
   title:
@@ -152,6 +162,7 @@ const faqs: FAQItem[] = [
 export default function BuildertrendVsCornerstoneFeatureComparisonPage() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">

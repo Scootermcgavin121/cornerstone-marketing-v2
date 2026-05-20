@@ -4,6 +4,17 @@ import { Navbar } from "@/components/Navbar";
 import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
+
+const blogSchema = buildBlogPostSchema({
+  title: "Where Your Margin Goes: How Home Builders Lose Money Without Knowing It",
+  slug: "job-cost-tracking-home-builders",
+  description:
+    "Most home builders don't find out they lost margin until the home closes. Here's how job cost tracking works, why it matters, and how to catch budget overruns before they happen.",
+  datePublished: "2026-03-15",
+  mentionsProduct: { name: "Purchasing", url: "https://cornerstonepm.ai/purchasing" },
+});
 
 export const metadata: Metadata = {
   title: "Where Your Margin Goes: How Home Builders Lose Money Without Knowing It — Cornerstone PM™ Blog",
@@ -17,6 +28,7 @@ export const metadata: Metadata = {
 export default function JobCostTrackingPost() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">

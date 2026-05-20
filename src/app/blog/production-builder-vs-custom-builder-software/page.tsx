@@ -4,10 +4,20 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
 
 const heroImage = "/blog/production-builder-software.png";
 const heroImageAlt =
   "Production home builder software showing a multi-community options pricing engine";
+
+const blogSchema = buildBlogPostSchema({
+  title: "Production Builder vs Custom Builder Software: Which Do You Need?",
+  slug: "production-builder-vs-custom-builder-software",
+  description:
+    "Production builder software vs custom builder software: how the workflows differ and which platform category fits your business model.",
+  datePublished: "2026-04-01",
+});
 
 export const metadata: Metadata = {
   title:
@@ -33,6 +43,7 @@ export const metadata: Metadata = {
 export default function ProductionBuilderVsCustomBuilderSoftwarePage() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">

@@ -4,6 +4,17 @@ import { Navbar } from "@/components/Navbar";
 import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
+
+const blogSchema = buildBlogPostSchema({
+  title: "The 60-Second Home Status Update Your Buyers Actually Want",
+  slug: "60-second-home-sale",
+  description:
+    "Your buyers call twice a week asking for updates. There's a better way — and your buyers will love you for it.",
+  datePublished: "2026-03-15",
+  mentionsProduct: { name: "Sales Pipeline", url: "https://cornerstonepm.ai/sales" },
+});
 
 export const metadata: Metadata = {
   title: "The 60-Second Home Status Update Your Buyers Actually Want — Cornerstone PM™ Blog",
@@ -17,6 +28,7 @@ export const metadata: Metadata = {
 export default function HomeSalePost() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">

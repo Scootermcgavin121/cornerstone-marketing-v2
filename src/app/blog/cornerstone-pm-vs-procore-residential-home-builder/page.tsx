@@ -6,10 +6,20 @@ import { Footer } from "@/components/Footer";
 import { FAQSection } from "@/components/FAQSection";
 import type { FAQItem } from "@/components/FAQSection";
 import { ArrowLeft, Check, X } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
 
 const heroImage = "/blog/vs-procore.png";
 const heroImageAlt =
   "Procore alternative for residential home builders compared to Cornerstone PM production builder platform";
+
+const blogSchema = buildBlogPostSchema({
+  title: "Procore vs Cornerstone PM: Wrong Tool for Residential Builders?",
+  slug: "cornerstone-pm-vs-procore-residential-home-builder",
+  description:
+    "Procore is built for commercial GCs, not residential production builders. Compare Procore vs Cornerstone PM on design center, floorplans, and per-home options.",
+  datePublished: "2026-04-20",
+});
 
 export const metadata: Metadata = {
   title:
@@ -100,6 +110,7 @@ function CellIcon({ value }: { value: boolean | "partial" }) {
 export default function ProcoreVsCornerstonePage() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">

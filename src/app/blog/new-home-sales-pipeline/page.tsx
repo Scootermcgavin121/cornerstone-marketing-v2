@@ -4,6 +4,17 @@ import { Navbar } from "@/components/Navbar";
 import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
+
+const blogSchema = buildBlogPostSchema({
+  title: "Your Home Builder Sales Pipeline Is Losing You Buyers",
+  slug: "new-home-sales-pipeline",
+  description:
+    "Most home builders don't have a real sales pipeline — they have a spreadsheet and a gut feeling. Here's how tracking prospects the right way closes more contracts and wastes less time.",
+  datePublished: "2026-03-15",
+  mentionsProduct: { name: "Sales Pipeline", url: "https://cornerstonepm.ai/sales" },
+});
 
 export const metadata: Metadata = {
   title: "Your Home Builder Sales Pipeline Is Losing You Buyers — Cornerstone PM™ Blog",
@@ -17,6 +28,7 @@ export const metadata: Metadata = {
 export default function NewHomeSalesPipelinePost() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">

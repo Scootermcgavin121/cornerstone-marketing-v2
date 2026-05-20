@@ -4,6 +4,17 @@ import { Navbar } from "@/components/Navbar";
 import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
+
+const blogSchema = buildBlogPostSchema({
+  title: "Migrating from Buildertrend to Cornerstone PM™: Step-by-Step Guide",
+  slug: "migrating-from-buildertrend-to-cornerstone",
+  description:
+    "Step-by-step guide to migrating from Buildertrend to Cornerstone PM™. Schedule import, vendor migration, template conversion, and team onboarding in under a week.",
+  datePublished: "2026-04-25",
+  mentionsProduct: { name: "CRM Migration Wizard", url: "https://cornerstonepm.ai/migrate" },
+});
 
 export const metadata: Metadata = {
   title: "Migrating from Buildertrend to Cornerstone PM™: Step-by-Step Guide — Cornerstone PM™ Blog",
@@ -81,6 +92,7 @@ const howToSchema = {
 export default function MigratingFromBuildertrendPage() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">

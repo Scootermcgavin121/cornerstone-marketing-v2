@@ -4,6 +4,17 @@ import { Navbar } from "@/components/Navbar";
 import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
+
+const blogSchema = buildBlogPostSchema({
+  title: "Homebuilding AI: How AI is Changing Residential Construction in 2026",
+  slug: "homebuilding-ai",
+  description:
+    "Homebuilding is one of the last industries to get purpose-built AI — that's changing fast. Here's where AI is making the biggest impact in residential construction and what's coming next.",
+  datePublished: "2026-04-20",
+  mentionsProduct: { name: "Foreman AI", url: "https://cornerstonepm.ai/foreman" },
+});
 
 export const metadata: Metadata = {
   title: "Homebuilding AI: How AI is Changing Residential Construction in 2026 &mdash; Cornerstone PM™ Blog",
@@ -17,6 +28,7 @@ export const metadata: Metadata = {
 export default function HomebuildingAiPost() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">

@@ -4,10 +4,20 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
 
 const heroImage = "/blog/small-builder-newstar-cost.png";
 const heroImageAlt =
   "Small-to-mid home builder reviewing the implementation cost of NEWSTAR home builder software";
+
+const blogSchema = buildBlogPostSchema({
+  title: "Why Small-to-Mid Home Builders Can't Afford NEWSTAR",
+  slug: "why-small-builders-cant-afford-newstar",
+  description:
+    "Why small-to-mid home builders can't afford NEWSTAR's implementation cost - and the modern alternatives production builders are switching to.",
+  datePublished: "2026-04-10",
+});
 
 export const metadata: Metadata = {
   title:
@@ -33,6 +43,7 @@ export const metadata: Metadata = {
 export default function WhySmallBuildersCannotAffordNewstarPage() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">

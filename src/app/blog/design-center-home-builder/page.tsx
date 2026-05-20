@@ -4,6 +4,17 @@ import { Navbar } from "@/components/Navbar";
 import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
+
+const blogSchema = buildBlogPostSchema({
+  title: "Why Your Design Center Process Is Leaking Options Revenue",
+  slug: "design-center-home-builder",
+  description:
+    "The design center appointment is one of the highest-margin moments in a home sale. Most builders are leaving money on the table. Here's why — and how to fix it.",
+  datePublished: "2026-03-15",
+  mentionsProduct: { name: "Design Center", url: "https://cornerstonepm.ai/design" },
+});
 
 export const metadata: Metadata = {
   title: "Why Your Design Center Process Is Leaking Options Revenue — Cornerstone PM™ Blog",
@@ -17,6 +28,7 @@ export const metadata: Metadata = {
 export default function DesignCenterPost() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">

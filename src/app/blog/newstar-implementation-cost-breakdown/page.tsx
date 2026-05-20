@@ -5,10 +5,20 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { FAQSection, FAQItem } from "@/components/FAQSection";
 import { ArrowLeft } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
 
 const heroImage = "/blog/newstar-implementation-cost.png";
 const heroImageAlt =
   "Home builder reviewing the NEWSTAR implementation cost breakdown for residential construction software";
+
+const blogSchema = buildBlogPostSchema({
+  title: "NEWSTAR Implementation Cost Breakdown for Small-to-Mid Builders",
+  slug: "newstar-implementation-cost-breakdown",
+  description:
+    "Real numbers on NEWSTAR implementation cost: licensing, consultants, training, customization, and ongoing fees. Why mid-size builders are looking for alternatives.",
+  datePublished: "2026-04-10",
+});
 
 export const metadata: Metadata = {
   title:
@@ -65,6 +75,7 @@ const faqItems: FAQItem[] = [
 export default function NewstarImplementationCostPage() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">

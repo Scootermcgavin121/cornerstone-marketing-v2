@@ -4,6 +4,16 @@ import { ArrowLeft, Check, X } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
+
+const blogSchema = buildBlogPostSchema({
+  title: "JobTread Alternative for Home Builders",
+  slug: "jobtread-alternative",
+  description:
+    "JobTread is built for general contractors. Cornerstone PM™ is built for home builders. Here's the honest difference — lot management, design center, sales pipeline, and AI that actually works with your data.",
+  datePublished: "2026-03-01",
+});
 
 export const metadata: Metadata = {
   title: "JobTread Alternative for Home Builders &mdash; Cornerstone PM™ Blog",
@@ -31,6 +41,7 @@ const comparison = [
 export default function JobtreadAlternativePost() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">

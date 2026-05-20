@@ -4,6 +4,17 @@ import { Navbar } from "@/components/Navbar";
 import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
+
+const blogSchema = buildBlogPostSchema({
+  title: "Why Your Best Subs Are Choosing Other Builders",
+  slug: "subcontractor-management-home-builders",
+  description:
+    "Good subcontractors have options. If your scheduling is a mess and communication is inconsistent, they'll quietly prioritize builders who make their lives easier. Here's how to be that builder.",
+  datePublished: "2026-03-01",
+  mentionsProduct: { name: "Construction Scheduling", url: "https://cornerstonepm.ai/construction" },
+});
 
 export const metadata: Metadata = {
   title: "Why Your Best Subs Are Choosing Other Builders — Cornerstone PM™ Blog",
@@ -17,6 +28,7 @@ export const metadata: Metadata = {
 export default function SubcontractorManagementPost() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">

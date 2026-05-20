@@ -4,6 +4,17 @@ import { Navbar } from "@/components/Navbar";
 import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
+
+const blogSchema = buildBlogPostSchema({
+  title: "AI Material Takeoff vs Manual Takeoff: True Cost Analysis",
+  slug: "ai-takeoff-vs-manual-takeoff-cost",
+  description:
+    "AI material takeoff vs manual estimating: time savings, error rates, cost-per-takeoff comparison for residential home builders running plan repeats.",
+  datePublished: "2026-04-15",
+  mentionsProduct: { name: "Blueprint AI", url: "https://cornerstonepm.ai/ai-takeoff" },
+});
 
 export const metadata: Metadata = {
   title: "AI Material Takeoff vs Manual Takeoff: True Cost Analysis — Cornerstone PM™ Blog",
@@ -28,6 +39,7 @@ export const metadata: Metadata = {
 export default function AiTakeoffVsManualPage() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">

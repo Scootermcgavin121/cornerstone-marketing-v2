@@ -4,6 +4,17 @@ import { ArrowLeft } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
+
+const blogSchema = buildBlogPostSchema({
+  title: "Subcontractor Scheduling Software for Home Builders",
+  slug: "subcontractor-scheduling-software",
+  description:
+    "The best subcontractors have options. If your scheduling is chaotic and your communication is reactive, they'll prioritize builders who make their lives easier. Here's how to be that builder.",
+  datePublished: "2026-03-15",
+  mentionsProduct: { name: "Construction Scheduling", url: "https://cornerstonepm.ai/construction" },
+});
 
 export const metadata: Metadata = {
   title: "Subcontractor Scheduling Software for Home Builders &mdash; Cornerstone PM™ Blog",
@@ -17,6 +28,7 @@ export const metadata: Metadata = {
 export default function SubcontractorSchedulingSoftwarePost() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">

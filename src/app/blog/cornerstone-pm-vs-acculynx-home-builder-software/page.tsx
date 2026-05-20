@@ -6,10 +6,20 @@ import { Footer } from "@/components/Footer";
 import { FAQSection } from "@/components/FAQSection";
 import type { FAQItem } from "@/components/FAQSection";
 import { ArrowLeft, Check, X } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
 
 const heroImage = "/blog/vs-acculynx.png";
 const heroImageAlt =
   "AccuLynx alternative home builder software comparison with Cornerstone PM design center and floorplans";
+
+const blogSchema = buildBlogPostSchema({
+  title: "Cornerstone PM vs AccuLynx: Home Builder Software Compared",
+  slug: "cornerstone-pm-vs-acculynx-home-builder-software",
+  description:
+    "AccuLynx is the #1 roofing CRM, but home builders need more. Compare AccuLynx vs Cornerstone PM on floorplans, design center, and multi-community workflows.",
+  datePublished: "2026-04-20",
+});
 
 export const metadata: Metadata = {
   title:
@@ -92,6 +102,7 @@ function CellIcon({ value }: { value: boolean | "partial" }) {
 export default function AccuLynxVsCornerstonePage() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">

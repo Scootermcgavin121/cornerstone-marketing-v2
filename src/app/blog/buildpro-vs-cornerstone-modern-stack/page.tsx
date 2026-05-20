@@ -4,10 +4,20 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
 
 const heroImage = "/blog/buildpro-vs-modern-stack.png";
 const heroImageAlt =
   "BuildPro legacy desktop home builder software next to Cornerstone PM™ modern web-native stack";
+
+const blogSchema = buildBlogPostSchema({
+  title: "BuildPro vs Cornerstone PM™: Why Production Builders Are Modernizing",
+  slug: "buildpro-vs-cornerstone-modern-stack",
+  description:
+    "BuildPro vs Cornerstone PM™: how the modern web-native stack compares to BuildPro for small-to-mid production home builders.",
+  datePublished: "2026-04-10",
+});
 
 export const metadata: Metadata = {
   title:
@@ -33,6 +43,7 @@ export const metadata: Metadata = {
 export default function BuildproVsCornerstonePage() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">

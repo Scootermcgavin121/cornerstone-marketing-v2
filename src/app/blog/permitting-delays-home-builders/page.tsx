@@ -4,6 +4,17 @@ import { Navbar } from "@/components/Navbar";
 import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
+
+const blogSchema = buildBlogPostSchema({
+  title: "Why Permits Are Stalling Your Build Schedule",
+  slug: "permitting-delays-home-builders",
+  description:
+    "Permit delays are the silent schedule killer for home builders. Here's how top builders track permits, avoid costly gaps, and keep construction moving.",
+  datePublished: "2026-03-15",
+  mentionsProduct: { name: "Permitting", url: "https://cornerstonepm.ai/permitting" },
+});
 
 export const metadata: Metadata = {
   title: "Why Permits Are Stalling Your Build Schedule — Cornerstone PM™ Blog",
@@ -17,6 +28,7 @@ export const metadata: Metadata = {
 export default function PermittingPost() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">

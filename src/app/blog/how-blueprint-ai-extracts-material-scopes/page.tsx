@@ -4,10 +4,21 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
 
 const heroImage = "/blog/ai-material-takeoff-home-builders.png";
 const heroImageAlt =
   "Blueprint AI extracting material scopes from a residential home builder floor plan PDF";
+
+const blogSchema = buildBlogPostSchema({
+  title: "How Blueprint AI Extracts 130+ Material Scopes from a Floor Plan PDF",
+  slug: "how-blueprint-ai-extracts-material-scopes",
+  description:
+    "Technical deep-dive on how Blueprint AI extracts 130+ material scopes from a floor plan PDF in under 60 seconds for residential home builders.",
+  datePublished: "2026-04-15",
+  mentionsProduct: { name: "Blueprint AI", url: "https://cornerstonepm.ai/ai-takeoff" },
+});
 
 export const metadata: Metadata = {
   title:
@@ -33,6 +44,7 @@ export const metadata: Metadata = {
 export default function HowBlueprintAIExtractsMaterialScopesPage() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">

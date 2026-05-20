@@ -4,6 +4,17 @@ import { ArrowLeft } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
+
+const blogSchema = buildBlogPostSchema({
+  title: "Construction Purchase Order Software for Home Builders (2026 Guide)",
+  slug: "construction-purchase-order-software",
+  description:
+    "Managing construction POs in Excel is costing home builders time and margin. Here's what modern purchase order software should actually do — and how AI is changing the equation.",
+  datePublished: "2026-04-01",
+  mentionsProduct: { name: "Purchasing", url: "https://cornerstonepm.ai/purchasing" },
+});
 
 export const metadata: Metadata = {
   title: "Construction Purchase Order Software for Home Builders (2026 Guide) &mdash; Cornerstone PM™ Blog",
@@ -17,6 +28,7 @@ export const metadata: Metadata = {
 export default function ConstructionPurchaseOrderSoftwarePost() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">

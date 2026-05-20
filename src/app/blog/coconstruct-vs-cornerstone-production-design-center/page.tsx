@@ -6,10 +6,21 @@ import { Footer } from "@/components/Footer";
 import { FAQSection } from "@/components/FAQSection";
 import type { FAQItem } from "@/components/FAQSection";
 import { ArrowLeft, Check, X } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
 
 const heroImage = "/blog/vs-coconstruct.png";
 const heroImageAlt =
   "Production home builder design center software comparing CoConstruct job-level selections to Cornerstone PM Designer Packages";
+
+const blogSchema = buildBlogPostSchema({
+  title: "CoConstruct vs Cornerstone PM: Production Builder Design Center",
+  slug: "coconstruct-vs-cornerstone-production-design-center",
+  description:
+    "CoConstruct (now Buildertrend) builds for custom builders. Compare its job-level selections to Cornerstone PM\u2019s per-floorplan production design center model.",
+  datePublished: "2026-04-15",
+  mentionsProduct: { name: "Design Center", url: "https://cornerstonepm.ai/design" },
+});
 
 export const metadata: Metadata = {
   title:
@@ -100,6 +111,7 @@ function CellIcon({ value }: { value: boolean | "partial" }) {
 export default function CoConstructVsCornerstonePage() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">

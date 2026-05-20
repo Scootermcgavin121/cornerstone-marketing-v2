@@ -4,6 +4,16 @@ import { Navbar } from "@/components/Navbar";
 import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 import { Check, X, ArrowLeft } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
+
+const blogSchema = buildBlogPostSchema({
+  title: "BuilderTrend vs Cornerstone PM™",
+  slug: "buildertrend-vs-cornerstone",
+  description:
+    "BuilderTrend starts at $499/mo. Cornerstone PM™ starts at $149/mo. Here's what you actually get for the difference.",
+  datePublished: "2026-03-01",
+});
 
 export const metadata: Metadata = {
   title: "BuilderTrend vs Cornerstone PM™ — Cornerstone PM™ Blog",
@@ -30,6 +40,7 @@ const comparison = [
 export default function BuildertrendPost() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">
