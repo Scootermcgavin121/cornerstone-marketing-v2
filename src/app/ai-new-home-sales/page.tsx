@@ -3,6 +3,28 @@ import Link from "next/link";
 import { ArrowRight, Check, TrendingUp, Users, FileText, BarChart3 } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { JsonLd } from "@/components/JsonLd";
+import { buildFeatureSchema } from "@/lib/schema-helpers";
+
+const aiNewHomeSalesSchema = buildFeatureSchema({
+  pageName: "AI for New Home Sales",
+  pagePath: "/ai-new-home-sales",
+  description:
+    "Cornerstone PM's AI manages the entire new home sales pipeline — from first inquiry to contract. Foreman AI tracks every buyer, flags stalled deals, generates MLS listings, manages structural options pricing, and updates sales tasks across all homes.",
+  applicationSubCategory: "AI New Home Sales",
+  keywords:
+    "AI new home sales, AI home builder CRM, residential AI CRM, AI sales pipeline construction, AI MLS listing, AI sales tasks, builder AI sales, new home sales automation, AI lead management home builder",
+  featureList: [
+    "Pipeline overview — homes by stage, buyer info, contract dates",
+    "Foreman AI sales skills — task management, status updates, agent assignment",
+    "Stalled deal flagging via AI analysis",
+    "AI MLS listing generation from live home data",
+    "Sales task automation across all homes",
+    "Structural options pricing engine",
+    "Buyer selection status updates (confirm/reject/reset)",
+    "60-second lead-to-contract workflow",
+  ],
+});
 
 export const metadata: Metadata = {
   title: "AI for New Home Sales | Cornerstone PM™",
@@ -114,6 +136,7 @@ const features = [
 export default function AiNewHomeSalesPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
+      <JsonLd json={aiNewHomeSalesSchema} />
       <Navbar />
 
       {/* Hero */}

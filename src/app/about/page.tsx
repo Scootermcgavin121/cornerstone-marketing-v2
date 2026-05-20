@@ -3,6 +3,13 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { CTASection } from "@/components/CTASection";
 import { X, Check } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
+import { buildAboutPageSchema } from "@/lib/schema-helpers";
+
+const aboutSchema = buildAboutPageSchema({
+  description:
+    "Cornerstone PM was built by a production home builder who got tired of paying $499/mo for software that didn't fit. AI-native platform with Foreman AI (396+ skills), Blueprint AI takeoffs, options engine, multi-community management. Modern alternative to NEWSTAR, BuildPro, Buildertrend, JobTread.",
+});
 
 export const metadata: Metadata = {
   title: "About — Cornerstone PM™",
@@ -23,6 +30,7 @@ const competitors = [
 export default function AboutPage() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={aboutSchema} />
       <Navbar />
 
       {/* Hero */}

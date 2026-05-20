@@ -5,6 +5,31 @@ import { Footer } from "@/components/Footer";
 import { FAQSection, type FAQItem } from "@/components/FAQSection";
 import { VideoPlayer } from "@/components/VideoPlayer";
 import { DataOwnership } from "@/components/DataOwnership";
+import { JsonLd } from "@/components/JsonLd";
+import { buildFeatureSchema } from "@/lib/schema-helpers";
+
+const purchasingSchema = buildFeatureSchema({
+  pageName: "Home Builder Purchasing & Bid Management",
+  pagePath: "/purchasing",
+  description:
+    "Cornerstone PM's purchasing module includes auto-generated scope-filtered Excel bid templates, no-login vendor file-upload portal, side-by-side bid comparison, lock-after-acceptance, parts catalog, auto-budget, purchase orders, payments, retainage tracking, and full CSV/JSON data export.",
+  applicationSubCategory: "Construction Purchasing Software",
+  keywords:
+    "home builder purchasing software, construction bid management, vendor bid software, builder purchase orders, scope-filtered bid templates, vendor portal no login, bid comparison software, construction PO software, builder budget software, residential purchasing",
+  featureList: [
+    "Auto-generated Excel bid templates with 3 tabs (Base, Structural, Designer)",
+    "Scope-filtered templates — vendors only see their trade",
+    "Vendor portal — no Cornerstone account required",
+    "Side-by-side bid comparison across vendors",
+    "Community-assigned vendor wins (not lowest-bid auction)",
+    "Lock-after-acceptance — protects awarded pricing from drift",
+    "Multiple ACCEPTED bids per scope across communities",
+    "Parts catalog with vendor pricing and retail pricing modes",
+    "Purchase orders, payments, and retainage tracking",
+    "Cost type classifications (labor, material, lump sum, mixed)",
+    "Full database export (CSV or JSON) — no vendor lock-in",
+  ],
+});
 
 export const metadata = {
   title: "Home Builder Purchasing & Bid Management Software | Cornerstone PM™",
@@ -115,6 +140,7 @@ const features = [
 export default function PurchasingPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
+      <JsonLd json={purchasingSchema} />
       <Navbar />
       <section className="relative pt-32 pb-16 px-4 text-center overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(52,211,153,0.07)_0%,transparent_65%)]" />

@@ -2,6 +2,31 @@ import Link from "next/link";
 import { Check, Zap, ArrowRight, Code, Globe, Shield, GitBranch, Brain, RefreshCw } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { JsonLd } from "@/components/JsonLd";
+import { buildFeatureSchema } from "@/lib/schema-helpers";
+
+const apiAccessSchema = buildFeatureSchema({
+  pageName: "Cornerstone PM API Access & BYOA",
+  pagePath: "/api-access",
+  description:
+    "Cornerstone PM provides a full REST API with 40+ endpoints and 30 named webhook events. BYOA (Bring Your Own Agent) lets AI agents automate the full home-building loop — send bid requests, track responses, schedule subs by text via Twilio/Bland/Retell, notify homebuyers on milestone completion.",
+  applicationSubCategory: "Construction REST API and Webhooks",
+  keywords:
+    "home builder API, construction REST API, builder API access, BYOA construction, webhook construction, automated bidding pipeline, Twilio construction integration, Bland construction integration, Retell construction integration, builder software webhooks, construction event webhooks, AI agent construction API",
+  offerNote:
+    "REST API and webhooks included on Cornerstone PM Pro+ ($599/mo). Full developer documentation at app.cornerstonepm.ai/developers.",
+  featureList: [
+    "40+ REST API endpoints covering vendors, bids, homes, tasks, POs, payments, options, parts",
+    "30 named webhook events with typed payloads",
+    "HMAC signatures and delivery logs",
+    "Auto-retry with exponential backoff",
+    "Webhook categories: home lifecycle, task/schedule, vendor notifications, cascade scheduling, messages, sales pipeline, bid requests",
+    "BYOA pattern: wire Twilio/Bland/Retell to webhooks for SMS/voice automation",
+    "Scoped API keys with per-endpoint permissions",
+    "SSO integration",
+    "SLA backed by Pro+ plan",
+  ],
+});
 
 export const metadata = {
   title: "API Access & Bring Your Own Agent — Cornerstone PM™",
@@ -588,6 +613,7 @@ const pipeline = [
 export default function ApiAccessPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
+      <JsonLd json={apiAccessSchema} />
       <Navbar />
 
       {/* Hero */}

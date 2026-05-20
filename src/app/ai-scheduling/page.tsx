@@ -2,6 +2,29 @@ import Link from "next/link";
 import { ArrowRight, Check, X, Calendar, Zap, Bell } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { JsonLd } from "@/components/JsonLd";
+import { buildFeatureSchema } from "@/lib/schema-helpers";
+
+const aiSchedulingSchema = buildFeatureSchema({
+  pageName: "AI Construction Scheduling for Home Builders",
+  pagePath: "/ai-scheduling",
+  description:
+    "AI construction scheduling with auto-cascading dependencies, vendor email and text confirmations, and Foreman AI's 32-skill scheduling agent — purpose-built for home builders managing multiple communities.",
+  applicationSubCategory: "AI Construction Scheduling",
+  keywords:
+    "AI construction scheduling, AI scheduling home builders, cascade scheduling AI, vendor confirmation AI, automated construction schedule, AI Gantt chart, AI builder scheduling, residential AI scheduling, construction schedule automation",
+  featureList: [
+    "Auto-cascading task dependencies on date changes",
+    "Foreman AI scheduling skills (32 skills)",
+    "Vendor confirmation via email and text",
+    "Scheduling templates per floorplan",
+    "One-click template-to-home application",
+    "Working-day awareness (skip weekends and holidays)",
+    "Permit gates that block downstream phases",
+    "Cascade webhooks for downstream automation",
+    "Multi-community scheduling",
+  ],
+});
 
 export const metadata = {
   title: "AI Construction Scheduling for Home Builders | Cornerstone PM™",
@@ -51,6 +74,7 @@ const prompts = [
 export default function AiSchedulingPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
+      <JsonLd json={aiSchedulingSchema} />
       <Navbar />
 
       {/* Hero */}

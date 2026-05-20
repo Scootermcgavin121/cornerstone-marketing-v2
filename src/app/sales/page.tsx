@@ -4,6 +4,30 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { VideoPlayer } from "@/components/VideoPlayer";
 import { FAQSection, type FAQItem } from "@/components/FAQSection";
+import { JsonLd } from "@/components/JsonLd";
+import { buildFeatureSchema } from "@/lib/schema-helpers";
+
+const salesSchema = buildFeatureSchema({
+  pageName: "Home Builder Sales Pipeline Software",
+  pagePath: "/sales",
+  description:
+    "Cornerstone PM's new home sales pipeline software includes model home QR lead capture, floorplan and elevation pricing matrix, structural options engine, and 60-second new home sale workflow — purpose-built for home builders.",
+  applicationSubCategory: "Home Builder Sales Software",
+  keywords:
+    "home builder sales pipeline, new home sales software, model home lead capture, QR code lead capture, floorplan pricing matrix, structural options sales, new home contract software, sales agent assignment, residential sales CRM, home builder CRM, builder sales tracker",
+  featureList: [
+    "Model home QR code lead capture",
+    "Lead-to-contract in under 60 seconds",
+    "Floorplan and elevation pricing matrix",
+    "Structural options pricing engine",
+    "Sales agent assignment per home",
+    "Sales task management with status workflow",
+    "Pipeline overview by stage and community",
+    "Buyer info management",
+    "Contract date tracking",
+    "Bell notifications for lead activity",
+  ],
+});
 
 export const metadata = {
   title: "Home Builder Sales Pipeline Software | Cornerstone PM™",
@@ -92,6 +116,7 @@ const steps = [
 export default function SalesPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
+      <JsonLd json={salesSchema} />
       <Navbar />
 
       {/* Hero */}

@@ -2,6 +2,28 @@ import Link from "next/link";
 import { Check, FileText, Zap, Building2, Ruler, MapPin, Star, Download, Sparkles, Settings } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { JsonLd } from "@/components/JsonLd";
+import { buildFeatureSchema } from "@/lib/schema-helpers";
+
+const listingSheetSchema = buildFeatureSchema({
+  pageName: "MLS Listing Sheet Generator",
+  pagePath: "/listing-sheet",
+  description:
+    "AI-powered MLS listing sheet generator. AI writes the property description. Your live home data fills the rest — square footage, bedrooms, bathrooms, features, finishes, community info. One click to print-ready PDF.",
+  applicationSubCategory: "AI MLS Listing Generator",
+  keywords:
+    "MLS listing sheet, AI MLS description, MLS listing generator, home builder MLS, AI listing description, real estate listing AI, MLS PDF generator, builder MLS automation, residential listing software, new home MLS sheet",
+  featureList: [
+    "AI-generated property description tuned to the home's features",
+    "Live home data auto-fill (sqft, beds, baths, features)",
+    "Pulls finishes from design center selections",
+    "Pulls community and lot details from project record",
+    "One-click print-ready PDF export",
+    "No copy-paste, no manual data entry",
+    "Updates automatically as home data changes",
+    "Customizable branding and template",
+  ],
+});
 
 export const metadata = {
   title: "MLS Listing Sheet Generator — AI-Powered | Cornerstone PM™",
@@ -30,6 +52,7 @@ const aiFeatures = [
 export default function ListingSheetPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
+      <JsonLd json={listingSheetSchema} />
       <Navbar />
 
       {/* Hero */}

@@ -4,6 +4,10 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { Mail, MessageSquare, ArrowRight, Zap } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
+import { buildContactPageSchema } from "@/lib/schema-helpers";
+
+const contactSchema = buildContactPageSchema();
 
 export default function ContactPage() {
   const [form, setForm] = useState({ name: "", email: "", company: "", message: "", website: "" });
@@ -27,6 +31,7 @@ export default function ContactPage() {
 
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={contactSchema} />
       <Navbar />
 
       <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">

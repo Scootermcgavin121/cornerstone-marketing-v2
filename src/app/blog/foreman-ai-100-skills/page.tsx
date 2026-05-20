@@ -4,6 +4,20 @@ import { Navbar } from "@/components/Navbar";
 import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft, Zap } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
+
+const blogSchema = buildBlogPostSchema({
+  title: "Foreman AI Hits 100 Skills — The First Construction AI to Cross Triple Digits",
+  slug: "foreman-ai-100-skills",
+  description:
+    "Foreman AI just crossed 100 purpose-built construction skills. Skill #100 is learnBuilderPreferences — Foreman now learns YOUR build patterns from your own takeoff history. The more plans you set up, the smarter it gets for your org.",
+  datePublished: "2026-05-13",
+  mentionsProduct: {
+    name: "Foreman AI",
+    url: "https://cornerstonepm.ai/foreman",
+  },
+});
 
 export const metadata: Metadata = {
   title: "Foreman AI Hits 100 Skills &mdash; The First Construction AI to Cross Triple Digits | Cornerstone PM&trade; Blog",
@@ -27,6 +41,7 @@ export const metadata: Metadata = {
 export default function ForemanAi100SkillsPost() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">

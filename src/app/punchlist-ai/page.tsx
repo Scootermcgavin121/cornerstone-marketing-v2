@@ -4,6 +4,29 @@ import { Check, ArrowRight, Video, Sparkles, ListChecks, Zap, ShieldCheck, Clock
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { CTASection } from "@/components/CTASection";
+import { JsonLd } from "@/components/JsonLd";
+import { buildFeatureSchema } from "@/lib/schema-helpers";
+
+const punchlistAiSchema = buildFeatureSchema({
+  pageName: "Punchlist AI",
+  pagePath: "/punchlist-ai",
+  description:
+    "Record a walkthrough video on your phone. Punchlist AI watches the video, identifies every defect and quality issue, tags severity and location (room, fixture, surface), and auto-creates a punch list in the home's build record — in seconds.",
+  applicationSubCategory: "AI Construction Quality Inspection",
+  keywords:
+    "punch list software, AI punch list, construction punch list AI, walkthrough video analysis, home builder QC software, defect detection AI, construction quality control, automated punch list, home walkthrough AI, construction inspection software",
+  featureList: [
+    "Phone video walkthrough — no special hardware required",
+    "AI defect detection from video frames",
+    "Severity tagging (cosmetic, functional, critical)",
+    "Location tagging by room and fixture",
+    "Auto-attach punch items to the home's build record",
+    "Assignable punch items to trades",
+    "Photo capture from key video frames as evidence",
+    "Status tracking from open to verified-complete",
+    "Multi-walkthrough comparison (pre-drywall, pre-closing, warranty)",
+  ],
+});
 
 export const metadata = {
   title: "Punchlist AI — Walk the House, Get the Punchlist | Cornerstone PM™",
@@ -115,6 +138,7 @@ const useCases = [
 export default function PunchlistAIPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
+      <JsonLd json={punchlistAiSchema} />
       <Navbar />
 
       {/* Hero */}

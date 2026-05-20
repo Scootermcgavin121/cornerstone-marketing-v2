@@ -4,6 +4,20 @@ import { Navbar } from "@/components/Navbar";
 import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
+
+const blogSchema = buildBlogPostSchema({
+  title: "AI Construction Management Software: What Home Builders Need to Know (2026)",
+  slug: "ai-construction-management-software",
+  description:
+    "AI is everywhere in construction marketing but most tools are generic. Here's what real AI construction management software looks like for home builders and how to evaluate what you're actually buying.",
+  datePublished: "2026-04-20",
+  mentionsProduct: {
+    name: "Cornerstone PM",
+    url: "https://cornerstonepm.ai",
+  },
+});
 
 export const metadata: Metadata = {
   title: "AI Construction Management Software: What Home Builders Need to Know (2026) &mdash; Cornerstone PM™ Blog",
@@ -17,6 +31,7 @@ export const metadata: Metadata = {
 export default function AiConstructionManagementSoftwarePost() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">

@@ -3,6 +3,29 @@ import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { FAQSection, type FAQItem } from "@/components/FAQSection";
+import { JsonLd } from "@/components/JsonLd";
+import { buildFeatureSchema } from "@/lib/schema-helpers";
+
+const bidImportAiSchema = buildFeatureSchema({
+  pageName: "Bid Import AI",
+  pagePath: "/bid-import-ai",
+  description:
+    "Bid Import AI parses any vendor bid — Excel, PDFs, scanned documents, even photos of handwritten quotes — and extracts every line item, fuzzy-matches your parts catalog, and imports as a Bid, Vendor Pricing, or Takeoff in one click.",
+  applicationSubCategory: "AI Vendor Bid Processing",
+  keywords:
+    "vendor bid import AI, AI bid parsing, construction bid software, automated bid import, AI vendor pricing, bid management AI, construction quote processing, fuzzy match parts catalog, AI takeoff import, vendor quote OCR, builder bid automation",
+  featureList: [
+    "Multi-format bid ingestion (Excel, PDF, scanned docs, photos)",
+    "Line-item extraction via AI OCR",
+    "Fuzzy-match to parts catalog (no exact-name required)",
+    "Cross-scope penalty (no Drywall lines landing in Electrical)",
+    "Import modes: takeoff-only, pricing-only, takeoff+pricing",
+    "Pricing replaces instead of duplicates on re-import",
+    "Handwritten quote support via image analysis",
+    "Side-by-side vendor comparison after import",
+    "One-click import to bid record, vendor pricing, or takeoff",
+  ],
+});
 
 export const metadata = {
   title: "Bid Import AI — Parse Any Vendor Bid in Seconds | Cornerstone PM™",
@@ -94,6 +117,7 @@ const faq: FAQItem[] = [
 export default function BidImportAiPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
+      <JsonLd json={bidImportAiSchema} />
       <Navbar />
 
       {/* Hero */}

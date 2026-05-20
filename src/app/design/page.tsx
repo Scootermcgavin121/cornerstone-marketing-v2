@@ -4,6 +4,32 @@ import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { FAQSection, type FAQItem } from "@/components/FAQSection";
+import { JsonLd } from "@/components/JsonLd";
+import { buildFeatureSchema } from "@/lib/schema-helpers";
+
+const designSchema = buildFeatureSchema({
+  pageName: "Design Center Software for Home Builders",
+  pagePath: "/design",
+  description:
+    "Cornerstone PM's design center software for home builders includes a structured options engine, product configurator, room-by-room selections, allowance tracking, designer packages, option classes, scope-item integration, and full budget integration.",
+  applicationSubCategory: "Home Builder Design Center Software",
+  keywords:
+    "design center software, home builder design center, options engine, structural options software, product configurator, room-by-room selections, design center home builder, allowance tracking, builder design software, residential design center, design packages, structured options",
+  featureList: [
+    "Structured options engine with real-time price rollup",
+    "Product Configurator with attribute groups (5 groups, 7,000+ variations)",
+    "Room-by-room selections",
+    "Spec level management (Standard, Upgrade I/II/III, Premium)",
+    "Allowance tracking (per-floorplan and global)",
+    "64 curated Designer Packages across 7 categories",
+    "Option Classes — category + scope linking",
+    "Scope item integration for budget tracking",
+    "Global retail pricing mode",
+    "Bulk option creation from scope items or parts catalog",
+    "Buyer-facing design center with confirm/reject workflows",
+    "PDF design center summary with buyer signature line",
+  ],
+});
 
 export const metadata = {
   title: "Design Center Software for Home Builders | Cornerstone PM™",
@@ -76,6 +102,7 @@ const features = [
 export default function DesignPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
+      <JsonLd json={designSchema} />
       <Navbar />
       <section className="relative pt-32 pb-16 px-4 text-center overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(167,139,250,0.07)_0%,transparent_65%)]" />

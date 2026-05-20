@@ -2,6 +2,29 @@ import Link from "next/link";
 import { ArrowRight, Brain, Check, Zap } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { JsonLd } from "@/components/JsonLd";
+import { buildFeatureSchema } from "@/lib/schema-helpers";
+
+const aiForHomeBuildersSchema = buildFeatureSchema({
+  pageName: "AI for Home Builders",
+  pagePath: "/ai-for-home-builders",
+  description:
+    "Cornerstone PM is the AI-native home builder software platform. Foreman AI manages scheduling, purchasing, vendor bids, design center, and sales pipeline in plain English — reading and writing your real construction data.",
+  applicationSubCategory: "AI Home Builder Software",
+  keywords:
+    "AI for home builders, AI home builder software, residential AI software, builder AI platform, AI construction management, AI new home sales, AI vendor management, AI design center, AI scheduling builders, AI purchasing builders",
+  featureList: [
+    "Foreman AI — 396+ skills covering scheduling, sales, purchasing, design center",
+    "Plain English commands — no syntax or training required",
+    "Real data read and write — creates POs, updates bids, modifies designs",
+    "AI scheduling with auto-cascading dependencies",
+    "AI vendor bid analysis with scope matching",
+    "AI design center option creation and pricing",
+    "AI new home sales pipeline management",
+    "AI material takeoffs from PDF floor plans",
+    "Built-in memory compaction — no mid-session forgetting",
+  ],
+});
 
 export const metadata = {
   title: "AI for Home Builders | Cornerstone PM™",
@@ -119,6 +142,7 @@ const prompts = [
 export default function AiForHomeBuildersPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
+      <JsonLd json={aiForHomeBuildersSchema} />
       <Navbar />
 
       {/* Hero */}

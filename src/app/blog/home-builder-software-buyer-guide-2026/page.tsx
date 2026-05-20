@@ -5,6 +5,17 @@ import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 import { FAQSection, FAQItem } from "@/components/FAQSection";
 import { ArrowLeft } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
+
+const blogSchema = buildBlogPostSchema({
+  title: "Home Builder Software Buyer's Guide (2026)",
+  slug: "home-builder-software-buyer-guide-2026",
+  description:
+    "Complete 2026 buyer's guide to home builder software. Compare features, pricing, AI capabilities, and implementation costs across NEWSTAR, BuildPro, Buildertrend, JobTread, and Cornerstone PM.",
+  datePublished: "2026-01-15",
+  dateModified: "2026-05-19",
+});
 
 export const metadata: Metadata = {
   title: "Home Builder Software Buyer's Guide (2026) — Cornerstone PM™ Blog",
@@ -59,6 +70,7 @@ const faqItems: FAQItem[] = [
 export default function BuyerGuidePage() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">

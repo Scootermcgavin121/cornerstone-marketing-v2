@@ -4,6 +4,28 @@ import { Bot, FileText, MessageCircle, Check, Zap, ArrowRight, Brain, Eye } from
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/JsonLd";
+import { buildFeatureSchema } from "@/lib/schema-helpers";
+
+const aiAgentsSchema = buildFeatureSchema({
+  pageName: "AI Agents for Home Builders — Cornerstone PM",
+  pagePath: "/ai-agents",
+  description:
+    "Cornerstone PM ships six purpose-built AI agents for home builders: Foreman AI (396+ skills), Blueprint AI (PDF floor plan takeoffs), Bid Import AI (parses any vendor bid format), AI MLS Listing Generator, AI Support Agent, and Jobsite AI (vendor arrival detection). Native AI built into the platform, not bolted on.",
+  applicationSubCategory: "AI Agents for Home Builders",
+  keywords:
+    "AI agents home builders, construction AI agents, AI for builders, native construction AI, Foreman AI, Blueprint AI, Bid Import AI, AI MLS generator, AI support agent, Jobsite AI, builder AI suite, construction AI platform",
+  featureList: [
+    "Foreman AI — 396+ skill construction agent with memory compaction",
+    "Blueprint AI — 130+ material scopes extracted from PDF floor plans in under 60 seconds",
+    "Bid Import AI — parses Excel, PDF, scans, photos, and handwritten quotes",
+    "AI MLS Listing Generator — print-ready PDF in one click",
+    "AI Support Agent — 24/7 in-app knowledge agent",
+    "Jobsite AI — vendor arrival detection from cameras/doorbells/GPS",
+    "Punchlist AI — walkthrough video to punch list in seconds",
+    "All agents native to the platform with real data read/write",
+  ],
+});
 
 export const metadata: Metadata = {
   title: "AI Agents for Home Builders | Cornerstone PM™",
@@ -189,6 +211,7 @@ const pricingTiers = [
 export default function AiAgentsPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
+      <JsonLd json={aiAgentsSchema} />
       <Navbar />
 
       {/* Hero */}

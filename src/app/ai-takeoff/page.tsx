@@ -4,6 +4,33 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { VideoPlayer } from "@/components/VideoPlayer";
+import { JsonLd } from "@/components/JsonLd";
+import { buildFeatureSchema } from "@/lib/schema-helpers";
+
+const blueprintAiSchema = buildFeatureSchema({
+  pageName: "Blueprint AI — AI Material Takeoff",
+  pagePath: "/ai-takeoff",
+  description:
+    "Blueprint AI is Cornerstone PM's AI-powered floor plan reader. Upload a PDF floor plan and get 130+ material scopes and quantities extracted automatically in under 60 seconds — rooms, fixtures, flooring, drywall, roofing, structural elements. Results import directly to the project budget with one click.",
+  applicationSubCategory: "AI Construction Takeoff",
+  keywords:
+    "AI material takeoff, AI takeoff software, blueprint AI, automated takeoff, construction takeoff AI, PDF floor plan reader, AI quantity takeoff, residential takeoff AI, builder takeoff software, AI estimating, automated estimating, home builder takeoff",
+  offerNote:
+    "Available on Cornerstone PM Pro ($499/mo, 25 takeoffs/month) and Pro+ ($599/mo, 50 takeoffs/month).",
+  featureList: [
+    "Upload PDF floor plan — standard residential plans",
+    "AI extracts 130+ material scopes automatically",
+    "Identifies rooms with sqft and linear feet",
+    "Identifies fixtures (toilets, sinks, lights, doors, windows)",
+    "Identifies structural elements (walls, beams, posts)",
+    "Identifies finish materials (flooring, drywall, roofing)",
+    "Under-60-second processing time per plan",
+    "One-click import to project budget",
+    "Direct integration with parts catalog",
+    "Replaces manual quantity surveys that take days",
+  ],
+  isPartOf: { name: "Cornerstone PM", url: "https://cornerstonepm.ai" },
+});
 
 export const metadata = {
   title: "AI Material Takeoff for Home Builders | Cornerstone PM™",
@@ -61,6 +88,7 @@ const features = [
 export default function AiTakeoffPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
+      <JsonLd json={blueprintAiSchema} />
       <Navbar />
 
       {/* Hero */}

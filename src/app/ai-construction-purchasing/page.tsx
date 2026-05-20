@@ -3,6 +3,29 @@ import Link from "next/link";
 import { ArrowRight, Check, Package, ShoppingCart, DollarSign, FileText, BarChart3, Sparkles, ShoppingBag } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { JsonLd } from "@/components/JsonLd";
+import { buildFeatureSchema } from "@/lib/schema-helpers";
+
+const aiPurchasingSchema = buildFeatureSchema({
+  pageName: "AI Construction Purchasing Software",
+  pagePath: "/ai-construction-purchasing",
+  description:
+    "Cornerstone PM's AI handles vendor bids, purchase orders, budget tracking, and subcontractor management for home builders — all in plain English. Foreman AI's 21+ Parts Catalog skills plus full Purchasing module skills automate the entire procurement loop.",
+  applicationSubCategory: "AI Construction Purchasing",
+  keywords:
+    "AI construction purchasing, AI purchase order, builder AI purchasing, AI vendor management, AI procurement construction, builder PO automation, AI budget tracking construction, residential AI purchasing, automated vendor bid AI",
+  featureList: [
+    "AI-generated purchase orders from tasks and selections",
+    "21+ Parts Catalog skills (search, create, bulk import, pricing)",
+    "AI vendor bid analysis and scope matching",
+    "Budget tracking with cost type classifications",
+    "Subcontractor scheduling automation",
+    "Vendor performance scorecards via AI",
+    "Plain English commands for the full procurement loop",
+    "Webhook integration for BYOA automation",
+  ],
+  isPartOf: { name: "Cornerstone PM", url: "https://cornerstonepm.ai" },
+});
 
 export const metadata: Metadata = {
   title: "AI Construction Purchasing Software for Home Builders | Cornerstone PM™",
@@ -103,6 +126,7 @@ const purchasingAreas = [
 export default function AiConstructionPurchasingPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
+      <JsonLd json={aiPurchasingSchema} />
       <Navbar />
 
       {/* Hero */}

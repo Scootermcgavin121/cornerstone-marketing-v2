@@ -3,6 +3,28 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { FileCheck, Lock, GitBranch, Bell, Users, FolderOpen } from "lucide-react";
 import { FAQSection, type FAQItem } from "@/components/FAQSection";
+import { JsonLd } from "@/components/JsonLd";
+import { buildFeatureSchema } from "@/lib/schema-helpers";
+
+const permittingSchema = buildFeatureSchema({
+  pageName: "Permitting Software for Home Builders",
+  pagePath: "/permitting",
+  description:
+    "Cornerstone PM's permitting module includes permit gates, phase blocking, automated reminders, inspection tracking, and a permitting pipeline tracker from sale to final — purpose-built for home builders.",
+  applicationSubCategory: "Construction Permitting Software",
+  keywords:
+    "permitting software home builders, construction permit tracking, permit gate system, builder permit software, residential permit tracker, permit phase blocking, inspection scheduling, permit reminder automation, home builder permitting, building permit management",
+  featureList: [
+    "Permit gate system blocks downstream phases until permits clear",
+    "Phase-based blocking (foundation, framing, mechanical, final)",
+    "Automated reminder notifications for permit expirations",
+    "Inspection tracking with pass/fail records",
+    "Multi-jurisdiction support per community",
+    "Document attachment per permit type",
+    "Permitting pipeline tracker from sale to final inspection",
+    "Role-based permissions for permit coordinators",
+  ],
+});
 
 export const metadata = {
   title: "Permitting Software for Home Builders | Cornerstone PM™",
@@ -143,6 +165,7 @@ const pipelineSteps = [
 export default function PermittingPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white" id="permitting">
+      <JsonLd json={permittingSchema} />
       <Navbar />
 
       {/* Hero */}

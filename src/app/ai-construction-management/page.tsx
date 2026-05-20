@@ -2,6 +2,28 @@ import Link from "next/link";
 import { ArrowRight, Brain, Zap, Check, Building2, Cpu, FileText } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { JsonLd } from "@/components/JsonLd";
+import { buildFeatureSchema } from "@/lib/schema-helpers";
+
+const aiConstructionMgmtSchema = buildFeatureSchema({
+  pageName: "AI Construction Management for Home Builders",
+  pagePath: "/ai-construction-management",
+  description:
+    "AI construction management software powered by Foreman AI — 396+ purpose-built skills covering scheduling, purchasing, sales pipeline, design center, parts catalog, vendor bids, and reporting. Native to Cornerstone PM, not a chatbot bolted on.",
+  applicationSubCategory: "AI Construction Management",
+  keywords:
+    "AI construction management, AI for construction, construction management AI, AI builder software, Foreman AI, AI construction software, AI construction platform, AI residential construction, native construction AI",
+  featureList: [
+    "396+ Foreman AI skills across 20 construction categories",
+    "Native data read AND write — not just chat",
+    "Scheduling, purchasing, sales, design center, takeoffs all AI-enabled",
+    "Memory compaction for marathon work sessions",
+    "Per-user memory — learns each user's role and preferences",
+    "Image analysis for product photos and floor plans",
+    "Built-in to Cornerstone PM — no separate tool to manage",
+  ],
+  isPartOf: { name: "Cornerstone PM", url: "https://cornerstonepm.ai" },
+});
 
 export const metadata = {
   title: "Foreman AI — AI Construction Management for Home Builders | Cornerstone PM™",
@@ -84,6 +106,7 @@ const capabilities = [
 export default function AiConstructionManagementPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
+      <JsonLd json={aiConstructionMgmtSchema} />
       <Navbar />
 
       {/* Hero */}

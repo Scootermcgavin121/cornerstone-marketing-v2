@@ -2,6 +2,30 @@ import { Check, ArrowRight, Webhook, Camera, Bell, Truck, Cpu, Sparkles, Radio, 
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { JsonLd } from "@/components/JsonLd";
+import { buildFeatureSchema } from "@/lib/schema-helpers";
+
+const jobsiteAiSchema = buildFeatureSchema({
+  pageName: "Jobsite AI",
+  pagePath: "/jobsite-ai",
+  description:
+    "Jobsite AI detects when a vendor arrives on site — from any camera, doorbell, gate access system, GPS fleet tracker, or manual check-in — and auto-flips the matching scheduled task to In Progress. Camera-agnostic, sensor-agnostic, BYOA (bring-your-own-automation) friendly.",
+  applicationSubCategory: "AI Construction Presence Detection",
+  keywords:
+    "vendor presence detection, jobsite AI, construction camera AI, vendor arrival detection, automated task progress, BYOA construction, jobsite IoT, construction site monitoring AI, schedule automation, vendor check-in software",
+  featureList: [
+    "Camera-agnostic vendor arrival detection (Sensera, OxBlue, EarthCam, Reolink, Verkada)",
+    "Smart doorbell integration (Ring, Nest)",
+    "Gate access and badge system integration (Brivo, Openpath, ButterflyMX)",
+    "GPS fleet tracking geofence triggers (Samsara, Verizon Connect, Geotab)",
+    "Manual vendor check-in via mobile portal",
+    "QR code scan events from yard signs and lockboxes",
+    "License plate reader (LPR) integration",
+    "Auto-flips matching scheduled task to In Progress on arrival",
+    "Vendor-to-task matching via assignment, community, and time window",
+    "Webhook-based event ingestion from any sensor or app",
+  ],
+});
 
 export const metadata = {
   title: "Jobsite AI™ — Vendor Presence Detection for Home Builders | Cornerstone PM™",
@@ -33,6 +57,7 @@ const features = [
 export default function JobsiteAIPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
+      <JsonLd json={jobsiteAiSchema} />
       <Navbar />
 
       {/* Hero */}

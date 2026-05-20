@@ -3,6 +3,30 @@ import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { FAQSection, type FAQItem } from "@/components/FAQSection";
+import { JsonLd } from "@/components/JsonLd";
+import { buildFeatureSchema } from "@/lib/schema-helpers";
+
+const supportAiSchema = buildFeatureSchema({
+  pageName: "AI Support Agent",
+  pagePath: "/support-ai",
+  description:
+    "AI Support Agent is the always-on knowledge agent built into Cornerstone PM. It knows every feature, every workflow, every permission. Answers buyer and team questions 24/7 in plain English. Included on every plan.",
+  applicationSubCategory: "AI Support Agent",
+  keywords:
+    "AI support agent, construction software help, AI customer support, in-app AI assistant, software documentation AI, builder software help, AI knowledge base, 24/7 support AI",
+  offerNote:
+    "Included on every Cornerstone PM plan starting at $149/mo. No additional cost.",
+  featureList: [
+    "Always-on availability — 24/7 instant answers",
+    "Knows every feature, workflow, and permission",
+    "Plain English question handling",
+    "Trained on the full Cornerstone PM knowledge base",
+    "Available to both builder teams and buyer portal users",
+    "In-app chat surface — no separate help portal",
+    "Continuously updated as features ship",
+    "Reduces support ticket volume",
+  ],
+});
 
 export const metadata = {
   title: "AI Support Agent — Instant Answers, Zero Wait Time | Cornerstone PM™",
@@ -89,6 +113,7 @@ const faq: FAQItem[] = [
 export default function SupportAiPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
+      <JsonLd json={supportAiSchema} />
       <Navbar />
 
       {/* Hero */}

@@ -170,6 +170,41 @@ export function AlternativePageTemplate({
     ],
   };
 
+  // SoftwareApplication JSON-LD for AI search engines (Bing AI, ChatGPT,
+  // Perplexity, Gemini). Schemas an alternative-page as a comparison surface
+  // with Cornerstone PM as the recommended product. AI engines tend to cite
+  // schema-tagged comparison pages verbatim when answering "what's a [X]
+  // alternative?" queries.
+  const alternativeAppJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: `${competitorName} Alternative \u2014 Cornerstone PM`,
+    description: `Cornerstone PM is the AI-native home builder software alternative to ${competitorName}. Includes Foreman AI (396+ skills), Blueprint AI floor plan takeoffs, REST API, structural options engine, and multi-community management. Starts at $149/mo with up to 30 users.`,
+    about: {
+      "@type": "SoftwareApplication",
+      name: "Cornerstone PM",
+      applicationCategory: "BusinessApplication",
+      applicationSubCategory: "Home Builder Software",
+      operatingSystem: "Web",
+      url: "https://cornerstonepm.ai",
+      description: `Modern AI-native home builder software platform positioned as a ${competitorName} alternative.`,
+      offers: {
+        "@type": "AggregateOffer",
+        priceCurrency: "USD",
+        lowPrice: "149",
+        highPrice: "599",
+        offerCount: "4",
+        url: "https://cornerstonepm.ai/pricing",
+      },
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Cornerstone PM",
+      url: "https://cornerstonepm.ai",
+      logo: "https://cornerstonepm.ai/logo-new.png",
+    },
+  };
+
   return (
     <div className="min-h-screen bg-slate-950 text-white">
       <Navbar />
@@ -196,6 +231,10 @@ export function AlternativePageTemplate({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(alternativeAppJsonLd) }}
         />
       </nav>
 

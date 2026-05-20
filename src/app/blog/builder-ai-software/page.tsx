@@ -4,6 +4,20 @@ import { Navbar } from "@/components/Navbar";
 import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
+
+const blogSchema = buildBlogPostSchema({
+  title: "Builder AI Software: Why Home Builders Need Purpose-Built AI (Not Generic Tools)",
+  slug: "builder-ai-software",
+  description:
+    "Builder AI software is a new search query — people are looking for AI built specifically for builders. Here's why generic AI fails home builders and what purpose-built looks like.",
+  datePublished: "2026-04-25",
+  mentionsProduct: {
+    name: "Foreman AI",
+    url: "https://cornerstonepm.ai/foreman",
+  },
+});
 
 export const metadata: Metadata = {
   title: "Builder AI Software: Why Home Builders Need Purpose-Built AI (Not Generic Tools) &mdash; Cornerstone PM™ Blog",
@@ -17,6 +31,7 @@ export const metadata: Metadata = {
 export default function BuilderAiSoftwarePost() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">

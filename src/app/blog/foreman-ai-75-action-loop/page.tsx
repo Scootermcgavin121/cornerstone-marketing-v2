@@ -4,6 +4,20 @@ import { Navbar } from "@/components/Navbar";
 import { BlogHero } from "@/components/BlogHero";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft, Zap, Cpu, Database, Brain, Shield } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogPostSchema } from "@/lib/schema-helpers";
+
+const blogSchema = buildBlogPostSchema({
+  title: "How We Let Foreman AI Chain 75 Actions in One Prompt (And Why Your AI Can't)",
+  slug: "foreman-ai-75-action-loop",
+  description:
+    "Most AI chatbots cap at 3-5 tool calls per turn because generic AI goes off the rails after a few steps. Foreman AI chains 75 actions in a single prompt. The four-part technical architecture: custom agentic loop, 24,500-word knowledge base, typed-function skills, and direct database access.",
+  datePublished: "2026-05-05",
+  mentionsProduct: {
+    name: "Foreman AI",
+    url: "https://cornerstonepm.ai/foreman",
+  },
+});
 
 export const metadata: Metadata = {
   title: "How We Let Foreman AI Chain 75 Actions in One Prompt (And Why Your AI Can't) | Cornerstone PM&trade; Blog",
@@ -27,6 +41,7 @@ export const metadata: Metadata = {
 export default function Foreman75ActionLoopPost() {
   return (
     <main className="bg-slate-950 text-white min-h-screen">
+      <JsonLd json={blogSchema} />
       <Navbar />
 
       <article className="max-w-3xl mx-auto px-4 pt-28 pb-24">

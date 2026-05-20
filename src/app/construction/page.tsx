@@ -3,6 +3,30 @@ import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { FAQSection, type FAQItem } from "@/components/FAQSection";
+import { JsonLd } from "@/components/JsonLd";
+import { buildFeatureSchema } from "@/lib/schema-helpers";
+
+const constructionSchema = buildFeatureSchema({
+  pageName: "Construction Scheduling Software for Home Builders",
+  pagePath: "/construction",
+  description:
+    "AI construction scheduling for home builders with auto-cascading dependencies, vendor notifications, Gantt charts, scheduling templates, and multi-community support — purpose-built for home builders running multiple communities.",
+  applicationSubCategory: "Construction Scheduling Software",
+  keywords:
+    "construction scheduling software, home builder scheduling, Gantt chart software builder, vendor scheduling automation, AI construction scheduling, cascade scheduling, scheduling templates construction, subcontractor scheduling, residential builder scheduler, multi-community scheduling, construction Gantt chart",
+  featureList: [
+    "Auto-cascading task dependencies",
+    "Gantt charts with drag-to-reschedule",
+    "Vendor confirmation requests (text/email)",
+    "Scheduling templates per floorplan",
+    "Apply template to home — instant schedule",
+    "Multi-community schedule management",
+    "Cascade webhooks for downstream automation",
+    "Permit gates blocking phase transitions",
+    "Working-day awareness (skip weekends/holidays)",
+    "Vendor performance tracking",
+  ],
+});
 
 export const metadata = {
   title: "Construction Scheduling Software for Home Builders | Cornerstone PM™",
@@ -76,6 +100,7 @@ const features = [
 export default function ConstructionPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
+      <JsonLd json={constructionSchema} />
       <Navbar />
       <section className="relative pt-32 pb-16 px-4 text-center overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(245,158,11,0.07)_0%,transparent_65%)]" />
