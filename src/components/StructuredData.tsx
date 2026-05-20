@@ -47,10 +47,27 @@ export function StructuredData() {
           "Free 2-year beta for first 100 builders",
         ],
         "screenshot": "https://cornerstonepm.ai/mockups/feature-sales-pipeline.jpg",
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5",
-          "reviewCount": "1",
+        "image": "https://cornerstonepm.ai/mockups/feature-sales-pipeline.jpg",
+        "datePublished": "2026-01-15",
+        "creator": {
+          "@type": "Organization",
+          "name": "Cornerstone PM",
+          "url": "https://cornerstonepm.ai",
+        },
+        "audience": {
+          "@type": "BusinessAudience",
+          "audienceType": "Home builders, production home builders, custom home builders, semi-custom home builders, residential construction companies",
+        },
+      },
+      {
+        "@type": "WebSite",
+        "name": "Cornerstone PM",
+        "url": "https://cornerstonepm.ai",
+        "description": "AI-native home builder software platform — construction scheduling, sales pipeline, purchasing, design center, Foreman AI agent, Blueprint AI takeoffs.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Cornerstone PM",
+          "url": "https://cornerstonepm.ai",
         },
       },
       {

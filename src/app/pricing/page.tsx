@@ -4,6 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { PricingSection } from "@/components/PricingSection";
 import { FAQSection, type FAQItem } from "@/components/FAQSection";
+import { PricingStructuredData } from "@/components/PricingStructuredData";
 
 export const metadata: Metadata = {
   title: "Pricing | Cornerstone PM\u2122 \u2014 Home Builder Software from $149/mo",
@@ -69,6 +70,7 @@ const faqs: FAQItem[] = [
 export default function PricingPage() {
   return (
     <main className="min-h-screen bg-black text-white">
+      <PricingStructuredData />
       <Navbar />
 
       {/* Hero */}

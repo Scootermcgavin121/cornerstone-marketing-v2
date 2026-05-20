@@ -3,6 +3,7 @@ import { Check, ArrowRight, Zap, Brain, FileText, Cpu, Activity, X, ShoppingBag,
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { VideoPlayer } from "@/components/VideoPlayer";
+import { ForemanStructuredData } from "@/components/ForemanStructuredData";
 
 export const metadata = {
   title: "Foreman AI - 396+ skill construction agent with Memory Compaction | Cornerstone PM™",
@@ -198,6 +199,7 @@ const categoryBreakdown = [
 export default function ForemanPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
+      <ForemanStructuredData />
       <Navbar />
 
       {/* ═══════════════════════════════════════════════════════════
