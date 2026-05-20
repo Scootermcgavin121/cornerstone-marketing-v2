@@ -161,9 +161,9 @@ export function VideoPlayer({
       onTouchStart={revealControls}
     >
       {label && (
-        <div className="absolute top-3 left-3 z-10 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/70 border border-white/10 text-xs text-slate-300 font-semibold pointer-events-none">
-          <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
-          {label}
+        <div className="absolute top-3 left-1/2 -translate-x-1/2 sm:left-3 sm:translate-x-0 z-10 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/70 border border-white/10 text-[11px] sm:text-xs text-slate-300 font-semibold pointer-events-none max-w-[calc(100%-1.5rem)] whitespace-nowrap overflow-hidden text-ellipsis">
+          <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse flex-shrink-0" />
+          <span className="truncate">{label}</span>
         </div>
       )}
 
