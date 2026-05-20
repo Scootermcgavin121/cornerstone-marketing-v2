@@ -157,12 +157,39 @@ export async function GET(request: Request) {
 }
 
 export async function POST(request: Request) {
+  const url = new URL(request.url);
+  const seed = url.searchParams.get("seed");
+
+  // Seed mode: ?seed=1 ignores the body and pings every sitemap URL.
+  // This is how Vercel deploy webhooks reach us — they POST with a deployment
+  // payload, but we just want "fire the seed" semantics for any POST whose
+  // querystring asks for it.
+  if (seed === "1" || seed === "true") {
+    try {
+      const urls = await fetchSitemapUrls();
+      const result = await pingIndexNow(urls);
+      return Response.json({
+        action: "seed-all-sitemap-urls",
+        sitemapUrlCount: urls.length,
+        result,
+      });
+    } catch (err) {
+      return Response.json(
+        {
+          action: "seed-all-sitemap-urls",
+          error: err instanceof Error ? err.message : String(err),
+        },
+        { status: 500 }
+      );
+    }
+  }
+
   let body: unknown;
   try {
     body = await request.json();
   } catch {
     return Response.json(
-      { ok: false, error: "request body must be JSON with { urls: string[] }" },
+      { ok: false, error: "request body must be JSON with { urls: string[] }, or use ?seed=1" },
       { status: 400 }
     );
   }
@@ -175,7 +202,7 @@ export async function POST(request: Request) {
     !(body as { urls: unknown[] }).urls.every((u) => typeof u === "string")
   ) {
     return Response.json(
-      { ok: false, error: "body must be { urls: string[] }" },
+      { ok: false, error: "body must be { urls: string[] }, or use ?seed=1" },
       { status: 400 }
     );
   }
