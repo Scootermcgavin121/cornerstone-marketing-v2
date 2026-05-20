@@ -768,9 +768,13 @@ Cornerstone's Design Center is **takeoff-driven** - the system knows exactly how
 - **Real-time upgrade total** - a running total shows the buyer's cumulative upgrade cost as they make selections, updated instantly with every change
 - Per-unit pricing that makes sense: LUMP items (cabinets, countertops priced as whole-house totals) don't multiply by quantity. Per-area items (sqft flooring, lf trim) correctly multiply by takeoff quantity
 
-### Spec Levels
+### Spec Levels & Community-Based Upgrade Pricing
 - **5-Tier Spec Level System** - define up to 5 finish tiers (e.g., Standard, Upgrade I, Upgrade II, Premium, Luxury) with sort ordering to control upgrade pricing logic
-- Spec levels control which options are available based on the community's base level - builders decide what's included vs. what's an upgrade per community
+- **Each community has its own included spec level** baked into the home price (Standard in Community A, Upgrade I in Community B, etc.). Set it once on the community
+- **No-downgrade enforcement** - buyers only see options AT or ABOVE their community's included level. A buyer in an Upgrade I community will never see Standard options - the design center filters them out automatically. No accidental downgrades, no margin leak
+- **Automatic upgrade math** - upgrade cost = selected option price − community included option price. Options at the community's included level show an **INCLUDED** badge; everything above shows a real-time **+$X** delta. Calculated per community, per buyer, in real time
+- **Different communities can start at different spec levels with ZERO extra configuration** - one option library, every community priced correctly. Most competitor design centers force builders to clone the entire option library per community to do this; Cornerstone keeps a single source of truth and each community just points at its included tier
+- **Attribute tier-gating** - product attributes (Collection, Size, Pattern, Grout Color, Door Style, Wood Species, Finish) are cosmetic spec selectors, not pricing drivers - but their *availability* can be tier-gated. Herringbone pattern only at Upgrade I+? 12x24 tile only at Premium+? Configure once; buyers in lower-tier communities never see the gated choices
 - Buyers pick a material level per room, then choose specific products within that level at their design appointment
 
 ### Designer Collections / Packages

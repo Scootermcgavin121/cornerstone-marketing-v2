@@ -122,9 +122,13 @@ const featureDetails = [
     bullets: [
       "Options Attributes - define attribute groups (Door Style, Wood Species, Finish, etc.) and manage 7,000+ variations from just 5 options. Compatibility rules block invalid combos, per-value pricing modifiers, visual image catalog, auto-generated vendor bid templates (Excel) that import pricing back as real cost data",
       "Product Configurator - step-by-step guided flows for cabinets, countertops, and other multi-attribute selections. Smart compatibility rules, spec-level tier gating, and pricing from base + attribute modifiers",
+      "Community-based upgrade pricing - each community has its own included spec level baked into the home price. Buyers see INCLUDED on options at that level and +$X deltas above (selected price minus community-included price). One option library, every community priced correctly, zero manual configuration",
+      "No-downgrade enforcement - buyers in an Upgrade I community never see Standard options. Design center filters them out automatically. No accidental downgrades, no margin leak",
+      "Attribute tier-gating - product attributes (Collection, Size, Pattern, Grout Color) are cosmetic spec selectors with availability gated per tier. Herringbone only at Upgrade I+? 12x24 only at Premium? Done",
       "Cross-class upgrades - switch carpet to hardwood, recessed to pendants, within the same category",
       "Allowances - budget placeholders for non-bid items, rename and reassign at the floorplan or community level any time",
       "Unlimited custom spec levels per community",
+      "Different communities can start at different spec levels (Standard in one, Upgrade I in another) sharing one option library - no cloning required",
       "Per-room selections with sqft - 'Kitchen flooring (180 sqft)' with pricing from takeoffs",
       "Real-time upgrade pricing - exact delta shown: '+$684 upgrade'",
       "64+ designer packages across 7 categories - one-click curated collections",

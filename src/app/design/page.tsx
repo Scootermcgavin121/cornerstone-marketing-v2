@@ -1,4 +1,4 @@
-import { Check, Grid3X3, ShieldCheck, FileSpreadsheet, Image as ImageIcon, DollarSign, Layers, Refrigerator, Sparkles } from "lucide-react";
+import { Check, Grid3X3, ShieldCheck, FileSpreadsheet, Image as ImageIcon, DollarSign, Layers, Refrigerator, Sparkles, Building2, Calculator, Lock } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
@@ -19,7 +19,11 @@ const designSchema = buildFeatureSchema({
     "Structured options engine with real-time price rollup",
     "Product Configurator with attribute groups (5 groups, 7,000+ variations)",
     "Room-by-room selections",
+    "Community-based upgrade pricing — buyers see deltas from each community's included spec level automatically",
     "Spec level management (Standard, Upgrade I/II/III, Premium)",
+    "No-downgrade enforcement — buyers can only select options at or above their community's included tier",
+    "Attribute tier-gating (e.g., Herringbone pattern only at Upgrade I+)",
+    "Automatic per-community upgrade math — selected price minus community-included price, no manual calculations",
     "Allowance tracking (per-floorplan and global)",
     "64 curated Designer Packages across 7 categories",
     "Option Classes — category + scope linking",
@@ -48,6 +52,18 @@ const faqItems: FAQItem[] = [
   {
     q: "How do design center allowances work?",
     a: "When a buyer locks structural options on a sale, Cornerstone PM™ auto-generates a per-room allowance schedule based on community spec levels (Standard, Premium, Luxury, etc.). The buyer's selections debit the allowance, overages flow to a change order, and savings can be applied as buyer credits &mdash; all tracked in real time.",
+  },
+  {
+    q: "How does upgrade pricing work across different communities?",
+    a: "Each community has a base spec level (Standard, Upgrade I, Upgrade II, Premium, etc.) baked into the home price. Buyers only see options at or above their community&apos;s included level &mdash; they can&apos;t downgrade. Upgrade cost is calculated automatically as selected option price minus community-included option price. Options at the community&apos;s included level show an INCLUDED badge; everything above shows a real-time +$X delta. Builder sets the included level per community once, and the math flows automatically &mdash; no per-community pricing tables to maintain, no cloned option libraries.",
+  },
+  {
+    q: "Can different communities start at different spec levels?",
+    a: "Yes. Community A can include Standard, Community B can include Upgrade I, Community C can include Premium &mdash; all sharing the same option library and the same floorplans. Cornerstone PM™ keeps one source of truth for options and pricing; each community simply points at its included spec level and the design center automatically filters available options and recalculates upgrade deltas per buyer. Most competitor design centers force builders to clone the entire option library per community to do this &mdash; that&apos;s where pricing drifts and margin leaks.",
+  },
+  {
+    q: "What about product attributes like Pattern, Size, or Grout Color?",
+    a: "Product attributes (Collection, Size, Pattern, Grout Color, Door Style, Wood Species, Finish, etc.) are cosmetic spec selectors, not pricing drivers &mdash; but their availability can be tier-gated. Want Herringbone pattern only at Upgrade I and above? 12x24 tile only at Premium? Configure it once and buyers in lower-tier communities won&apos;t see those choices at all. No “why can&apos;t I pick that?” sales calls.",
   },
   {
     q: "Does the design center connect to purchasing?",
@@ -82,7 +98,9 @@ const features = [
   { title: "Real-Time Upgrade Pricing", desc: "Shows exact cost delta from base: '+$684 upgrade' or '-$200 credit'. Price flows from takeoff quantities automatically." },
   { title: "Designer Collections", desc: "64+ curated packages across 7 categories. Pick a package and all category options auto-lock to that collection. Remove the package to unlock individual picks." },
   { title: "Product Configurator", desc: "Step-by-step guided configuration for complex selections like cabinets and countertops. Buyers pick door style → wood species → finish with smart compatibility rules ensuring only valid combinations. Pricing uses base price + attribute modifiers from vendor bids — no manual spreadsheet matrix needed." },
-  { title: "Spec-Level Tier Gating", desc: "Control which product options are available at each upgrade level. Standard buyers see the curated list, Premium buyers unlock more — production builders and custom builders both covered." },
+  { title: "Spec-Level Tier Gating", desc: "Control which product options — and which product attributes (Collection, Size, Pattern, Grout Color) — are available at each upgrade level. Herringbone pattern only at Upgrade I+? Done. Standard buyers see the curated list, Premium buyers unlock more." },
+  { title: "Community-Based Upgrade Pricing", desc: "Every community has its own included spec level baked into the home price. Buyers only see options at or above that level — no accidental downgrades — and every upgrade shows the exact delta from what's already included. Builder sets the level per community once. The math handles itself." },
+  { title: "INCLUDED Badges + Live Deltas", desc: "Options at the community's included level show an INCLUDED badge. Everything above shows '+$X' calculated as selected option price minus community included option price — automatically, per community, no manual pricing tables." },
   { title: "Driven by Takeoffs", desc: "Quantities flow directly from takeoff data &mdash; zero double-entry. Change a room size in the takeoff and the design center pricing updates automatically." },
   { title: "Room-by-Room Selections", desc: "Organize all buyer selections by room &mdash; kitchen, baths, flooring, fixtures, paint." },
   { title: "Spec Level Management", desc: "Community Standard, Premium, Luxury &mdash; unlimited levels with included/upgrade pricing." },
@@ -91,7 +109,7 @@ const features = [
   { title: "Selections PDF Export", desc: "Generate a clean, branded selections PDF for every home." },
   { title: "Upgrade Tracking", desc: "Track every upgrade from selection to install with status updates." },
   { title: "Change Order Integration", desc: "Design changes flow directly into purchasing and budget." },
-  { title: "Community-Level Pricing", desc: "Set base included items per community, overrides per floorplan." },
+  { title: "Community-Level Pricing", desc: "Set base included items per community, overrides per floorplan. Different communities can start at different spec levels — Standard in one, Upgrade I in another — with zero extra configuration." },
   { title: "Approval Workflow", desc: "Builder approves all selections before they're locked." },
   { title: "Revision History", desc: "Full audit trail of every selection change with timestamps." },
   { title: "Integration with Purchasing", desc: "Every selection ties to a line item &mdash; no manual entry." },
@@ -386,6 +404,118 @@ export default function DesignPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ COMMUNITY-BASED UPGRADE PRICING ═══════════ */}
+      <section className="py-20 px-4 border-t border-slate-800/60">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm font-semibold uppercase tracking-widest mb-6">
+              <Building2 className="w-4 h-4" /> Community-Based Pricing
+            </div>
+            <h2 className="text-4xl sm:text-5xl font-black tracking-tight mb-6">
+              One spec engine.{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">
+                Every community priced correctly.
+              </span>
+            </h2>
+            <p className="text-xl text-slate-400 max-w-3xl mx-auto">
+              Standard included in Community A. Upgrade I included in Community B. Same options, same floorplans, same design center &mdash; and every buyer sees the right upgrade math for their community. Automatically.
+            </p>
+          </div>
+
+          {/* The 3-step explainer */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+            <div className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 font-black">1</div>
+                <Building2 className="w-5 h-5 text-emerald-400" />
+              </div>
+              <h3 className="text-lg font-black mb-2">Set the included spec level per community</h3>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                Community A includes Standard. Community B includes Upgrade I. Community C includes Premium. Set it once on the community &mdash; that&apos;s the option tier baked into the home price for every buyer there.
+              </p>
+            </div>
+            <div className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-full bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 font-black">2</div>
+                <Lock className="w-5 h-5 text-cyan-400" />
+              </div>
+              <h3 className="text-lg font-black mb-2">Buyers can&apos;t downgrade below their tier</h3>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                A buyer in an Upgrade I community will never see Standard options. The design center filters them out automatically. No accidental downgrades, no awkward sales conversations, no margin leak.
+              </p>
+            </div>
+            <div className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-full bg-violet-500/10 border border-violet-500/20 flex items-center justify-center text-violet-400 font-black">3</div>
+                <Calculator className="w-5 h-5 text-violet-400" />
+              </div>
+              <h3 className="text-lg font-black mb-2">Upgrade math runs itself</h3>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                Upgrade cost = <span className="text-violet-300 font-semibold">selected option price &minus; community included option price</span>. Options at the community&apos;s included level show an <span className="text-emerald-300 font-semibold">INCLUDED</span> badge. Everything above shows <span className="text-violet-300 font-semibold">+$X</span>. Calculated per community, per buyer, in real time.
+              </p>
+            </div>
+          </div>
+
+          {/* Concrete example */}
+          <div className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-emerald-500/5 to-cyan-500/5 border border-emerald-500/20 mb-12">
+            <div className="text-center mb-6">
+              <div className="text-sm text-slate-400 uppercase tracking-widest font-semibold mb-3">Worked example: Kitchen Backsplash Tile</div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="p-5 rounded-xl bg-slate-900/70 border border-slate-800">
+                <div className="text-xs uppercase tracking-widest text-emerald-400 font-bold mb-2">Community A &middot; Standard included</div>
+                <div className="text-sm text-slate-400 mb-4">Buyer picks Upgrade I tile ($1,400):</div>
+                <div className="text-2xl font-black text-violet-400">+$600</div>
+                <div className="text-xs text-slate-500 mt-2">$1,400 selected &minus; $800 Standard included</div>
+              </div>
+              <div className="p-5 rounded-xl bg-slate-900/70 border border-slate-800">
+                <div className="text-xs uppercase tracking-widest text-cyan-400 font-bold mb-2">Community B &middot; Upgrade I included</div>
+                <div className="text-sm text-slate-400 mb-4">Buyer picks the same Upgrade I tile ($1,400):</div>
+                <div className="text-2xl font-black text-emerald-400">INCLUDED</div>
+                <div className="text-xs text-slate-500 mt-2">Tier matches community base &mdash; no upgrade charge</div>
+              </div>
+              <div className="p-5 rounded-xl bg-slate-900/70 border border-slate-800">
+                <div className="text-xs uppercase tracking-widest text-violet-400 font-bold mb-2">Community B &middot; Upgrade I included</div>
+                <div className="text-sm text-slate-400 mb-4">Buyer picks Premium tile ($2,200):</div>
+                <div className="text-2xl font-black text-violet-400">+$800</div>
+                <div className="text-xs text-slate-500 mt-2">$2,200 selected &minus; $1,400 Upgrade I included</div>
+              </div>
+            </div>
+            <p className="text-center text-slate-500 text-sm mt-6">
+              Same option library. Three different upgrade prices. <span className="text-emerald-400 font-semibold">Zero manual configuration per community.</span>
+            </p>
+          </div>
+
+          {/* Attribute tier-gating callout */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-semibold uppercase tracking-widest mb-4">
+                <Layers className="w-3.5 h-3.5" /> Attribute Tier-Gating
+              </div>
+              <h3 className="text-xl font-black mb-3">Pattern, Size, and Grout Color are tier-gated too</h3>
+              <p className="text-slate-400 text-sm leading-relaxed mb-2">
+                Product attributes &mdash; Collection, Size, Pattern, Grout Color &mdash; are cosmetic spec selectors, not pricing drivers. But their <em>availability</em> can be tier-gated. Herringbone pattern only at Upgrade I+? 12x24 size only at Premium+? Done.
+              </p>
+              <p className="text-slate-500 text-xs leading-relaxed">
+                Buyers in lower-tier communities don&apos;t see the gated choices at all. No “why can&apos;t I pick that?” phone calls.
+              </p>
+            </div>
+            <div className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-widest mb-4">
+                <Sparkles className="w-3.5 h-3.5" /> Why this matters
+              </div>
+              <h3 className="text-xl font-black mb-3">Most design centers can&apos;t do this without a clone</h3>
+              <p className="text-slate-400 text-sm leading-relaxed mb-2">
+                Competitor tools force builders to clone the entire option library per community to get different included levels. That&apos;s where pricing drifts, options go stale, and margin disappears.
+              </p>
+              <p className="text-slate-500 text-xs leading-relaxed">
+                Cornerstone keeps <span className="text-emerald-400 font-semibold">one</span> option library. Each community points at its included spec level, the math handles the rest.
+              </p>
+            </div>
           </div>
         </div>
       </section>
