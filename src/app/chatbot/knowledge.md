@@ -448,7 +448,7 @@ Reference Data:
 Webhooks:
 - GET /api/ext/webhooks - List webhooks
 - POST /api/ext/webhooks - Create webhook (url, eventTypes[], secret)
-- **30+ event types and growing** across home lifecycle, task/schedule, vendor notifications, cascade scheduling, messages, sales pipeline, and bid requests - includes vendor.created, vendor.updated, bid_request.created, bid.submitted, bid.accepted, bid.rejected, payment.created, payment.voided, home.created, home.status_changed, task.completed, task.status_changed, po.created, po.status_changed, vendor.notification.advance, vendor.notification.reminder, vendor.notification.moved_earlier, vendor.notification.postponed, message.sent, sale.* events, and more. New events ship as the platform grows. (Full live catalog at /api-docs)
+- **37+ event types and growing** across home lifecycle, task/schedule, vendor notifications, cascade scheduling, messages, sales pipeline, and bid requests - includes vendor.created, vendor.updated, bid_request.created, bid.submitted, bid.accepted, bid.rejected, payment.created, payment.voided, home.created, home.status_changed, task.completed, task.status_changed, po.created, po.status_changed, vendor.notification.advance, vendor.notification.reminder, vendor.notification.moved_earlier, vendor.notification.postponed, message.sent, sale.* events, and more. New events ship as the platform grows. (Full live catalog at /api-docs)
 - HMAC SHA-256 signature via X-Webhook-Signature header
 - 10 second timeout, auto-disable after 50 consecutive failures
 

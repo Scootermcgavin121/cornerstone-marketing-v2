@@ -39,7 +39,7 @@ const chapters = [
   { num: "21", title: "Budget &amp; Cost Tracking", desc: "Master cost budget, variance analysis, profitability by home" },
   { num: "22", title: "Scheduling &amp; Templates", desc: "Template-driven schedules, dependencies, cascade triggers" },
   { num: "23", title: "Sales Pipeline", desc: "Stages, tasks, agent assignment, MLS listing generation" },
-  { num: "24", title: "Webhook Catalog", desc: "30 named events, payload schemas, HMAC signatures" },
+  { num: "24", title: "Webhook Catalog", desc: "37+ named events, payload schemas, HMAC signatures" },
   { num: "25", title: "REST API Surface", desc: "Endpoints, auth, response shapes, rate limits" },
   { num: "26", title: "Notifications &amp; Subscriptions", desc: "Per-user toggles, role subscriptions, email + in-app" },
   { num: "27", title: "Backup &amp; Export", desc: "CSV / JSON full-database export, nightly snapshots" },
