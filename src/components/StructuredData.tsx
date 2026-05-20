@@ -89,6 +89,9 @@ export function StructuredData() {
           "url": "https://cornerstonepm.ai/contact",
         },
       },
+      // Global FAQPage removed 2026-05-20 - Google Rich Results Test flagged 'Duplicate field "FAQPage"' on every page that also has a FAQSection (most marketing pages). Per-page FAQSection JSON-LD is more topically relevant and is the canonical FAQ surface. Pages without a FAQSection (about, contact, api-access, brain, etc.) now lack FAQ schema, which is acceptable: Google deprecated FAQ rich results May 7 2026, and AI grounding pipelines extract Q&A from page copy directly.
+      // Reinstate only if you also delete every per-page FAQSection or scope FAQPage to a single URL pattern via @id targeting.
+      /* FAQPage block disabled - kept commented for history
       {
         "@type": "FAQPage",
         "name": "Cornerstone PM — General FAQ",
@@ -191,6 +194,7 @@ export function StructuredData() {
           },
         ],
       },
+      end of disabled FAQPage block */
     ],
   };
 
