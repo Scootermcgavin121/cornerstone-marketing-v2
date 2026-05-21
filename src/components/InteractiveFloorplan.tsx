@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useMemo, useState } from "react";
 type OptionCode = "screened_porch" | "morning_room" | "fireplace" | "third_car_garage" | "bonus_suite";
@@ -16,33 +16,33 @@ const options: FloorplanOption[] = [
     code: "screened_porch",
     label: "Screened Porch",
     price: "+$18,900",
-    description: "Adds an outdoor living room off the family room.",
+    description: "Converts the rear covered porch into a screened outdoor room.",
     conflicts: ["morning_room"],
   },
   {
     code: "morning_room",
     label: "Morning Room",
     price: "+$27,500",
-    description: "Extends the rear of the home with a bright dining nook.",
+    description: "Shows the rear morning-room style extension in the same demo format.",
     conflicts: ["screened_porch"],
   },
   {
     code: "fireplace",
     label: "Fireplace",
     price: "+$7,800",
-    description: "Centers the family room around a built-in fireplace wall.",
+    description: "Adds a fireplace focal point to the Ava great room.",
   },
   {
     code: "third_car_garage",
-    label: "3-Car Garage",
+    label: "Garage Expansion",
     price: "+$24,000",
-    description: "Adds a third bay for storage, tools, or weekend toys.",
+    description: "Shows the Ava garage expansion concept in the same visual language.",
   },
   {
     code: "bonus_suite",
-    label: "Bonus Suite",
+    label: "Alt. Bedroom Layout",
     price: "+$36,500",
-    description: "Shows how a second-floor bonus suite could be layered in.",
+    description: "Represents the Ava alternate bedroom/bonus layout as a clean overlay.",
   },
 ];
 
@@ -106,7 +106,7 @@ export function InteractiveFloorplan() {
             <div className="rounded-3xl border border-slate-800/70 bg-slate-950/80 p-5 shadow-2xl shadow-cyan-950/20 backdrop-blur">
               <div className="flex items-center justify-between mb-5">
                 <div>
-                  <p className="text-sm uppercase tracking-wider text-slate-500">The Cypress</p>
+                  <p className="text-sm uppercase tracking-wider text-slate-500">Ava Redesign</p>
                   <h3 className="text-2xl font-bold text-white">Structural Options</h3>
                 </div>
                 <button
@@ -203,11 +203,11 @@ export function InteractiveFloorplan() {
               <div className="mt-5 grid sm:grid-cols-3 gap-3 text-sm">
                 <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
                   <p className="text-slate-500">Plan</p>
-                  <p className="mt-1 font-bold text-white">The Cypress</p>
+                  <p className="mt-1 font-bold text-white">Ava Redesign</p>
                 </div>
                 <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
                   <p className="text-slate-500">Base size</p>
-                  <p className="mt-1 font-bold text-white">2,415 sq ft</p>
+                  <p className="mt-1 font-bold text-white">2,252 sq ft</p>
                 </div>
                 <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
                   <p className="text-slate-500">Configurator mode</p>
@@ -220,7 +220,7 @@ export function InteractiveFloorplan() {
                   <div className="flex items-start justify-between gap-4">
                     <div>
                       <p className="text-sm uppercase tracking-wider text-emerald-300">Brochure preview</p>
-                      <h4 className="mt-1 text-xl font-bold text-white">The Cypress â€” Personalized Plan</h4>
+                      <h4 className="mt-1 text-xl font-bold text-white">Ava Redesign - Personalized Plan</h4>
                     </div>
                     <span className="rounded-full bg-emerald-400/20 px-3 py-1 text-xs font-semibold text-emerald-200">Print-ready concept</span>
                   </div>
@@ -259,10 +259,10 @@ export function InteractiveFloorplan() {
 
 function FloorplanSvg({ selected, compact = false }: { selected: OptionCode[]; compact?: boolean }) {
   const active = (code: OptionCode) => selected.includes(code);
-  const rearRoomLabel = active("morning_room") ? "Morning Room" : active("screened_porch") ? "Screened Porch" : "Covered Patio";
+  const rearRoomLabel = active("morning_room") ? "Morning Room" : active("screened_porch") ? "Screened Porch" : "Covered Porch";
 
   return (
-    <svg viewBox="0 0 900 560" role="img" aria-label="Interactive sample floorplan" className={`w-full ${compact ? "h-auto" : "min-h-[340px]"}`}>
+    <svg viewBox="0 0 900 560" role="img" aria-label="Interactive Ava Redesign floorplan" className={`w-full ${compact ? "h-auto" : "min-h-[340px]"}`}>
       <defs>
         <pattern id="screenPattern" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
           <line x1="0" y1="0" x2="0" y2="8" stroke="#38bdf8" strokeWidth="2" opacity="0.65" />
@@ -275,108 +275,108 @@ function FloorplanSvg({ selected, compact = false }: { selected: OptionCode[]; c
       <rect x="0" y="0" width="900" height="560" fill="#f8fafc" />
       <rect x="20" y="20" width="860" height="520" rx="24" fill="#fff" stroke="#cbd5e1" strokeWidth="2" />
 
-      {/* Base home shell */}
-      <g id="base-plan" filter="url(#softShadow)">
-        <rect x="170" y="110" width="520" height="360" fill="#ffffff" stroke="#0f172a" strokeWidth="6" />
-        <rect x="170" y="330" width="190" height="140" fill="#f1f5f9" stroke="#0f172a" strokeWidth="4" />
-        <rect x="360" y="330" width="160" height="140" fill="#f8fafc" stroke="#0f172a" strokeWidth="4" />
-        <rect x="520" y="330" width="170" height="140" fill="#f8fafc" stroke="#0f172a" strokeWidth="4" />
-        <rect x="170" y="110" width="210" height="160" fill="#f8fafc" stroke="#0f172a" strokeWidth="4" />
-        <rect x="380" y="110" width="170" height="160" fill="#f8fafc" stroke="#0f172a" strokeWidth="4" />
-        <rect x="550" y="110" width="140" height="160" fill="#f8fafc" stroke="#0f172a" strokeWidth="4" />
-        <rect x="360" y="270" width="330" height="60" fill="#fff7ed" stroke="#0f172a" strokeWidth="4" />
-        <rect x="170" y="270" width="190" height="60" fill="#ecfeff" stroke="#0f172a" strokeWidth="4" />
+      {/* Stylized Ava footprint: simplified from the real PDF so it stays readable on web/mobile. */}
+      <g id="ava-base-plan" filter="url(#softShadow)">
+        <rect x="110" y="285" width="210" height="160" fill="#e2e8f0" stroke="#0f172a" strokeWidth="6" />
+        <rect x="255" y="185" width="155" height="260" fill="#ecfeff" stroke="#0f172a" strokeWidth="5" />
+        <rect x="410" y="245" width="150" height="200" fill="#fff7ed" stroke="#0f172a" strokeWidth="5" />
+        <rect x="560" y="185" width="185" height="260" fill="#f8fafc" stroke="#0f172a" strokeWidth="5" />
+        <rect x="255" y="85" width="190" height="100" fill="#f8fafc" stroke="#0f172a" strokeWidth="5" />
+        <rect x="445" y="85" width="150" height="100" fill="#f8fafc" stroke="#0f172a" strokeWidth="5" />
+        <rect x="595" y="85" width="150" height="100" fill="#f8fafc" stroke="#0f172a" strokeWidth="5" />
+        <rect x="320" y="445" width="240" height="45" fill="#f1f5f9" stroke="#0f172a" strokeWidth="5" />
+        <rect x="560" y="445" width="185" height="45" fill="#f8fafc" stroke="#0f172a" strokeWidth="5" />
       </g>
 
-      {/* Base garage */}
-      <g id="garage-base">
-        <rect x="55" y="300" width="115" height="170" fill="#e2e8f0" stroke="#0f172a" strokeWidth="6" />
-        <line x1="72" y1="445" x2="153" y2="445" stroke="#64748b" strokeWidth="5" strokeLinecap="round" />
-        <text x="112" y="385" textAnchor="middle" className="fill-slate-700" fontSize="18" fontWeight="700">2-Car</text>
-        <text x="112" y="410" textAnchor="middle" className="fill-slate-500" fontSize="14">Garage</text>
-      </g>
-
-      {/* Option: third car garage */}
+      {/* Garage option */}
       {active("third_car_garage") ? (
-        <g id="option-third_car_garage" className="on">
-          <rect x="55" y="185" width="115" height="115" fill="#d1fae5" stroke="#10b981" strokeWidth="5" />
-          <line x1="72" y1="205" x2="153" y2="205" stroke="#10b981" strokeWidth="4" strokeLinecap="round" />
-          <text x="112" y="250" textAnchor="middle" fill="#065f46" fontSize="15" fontWeight="800">3rd Bay</text>
+        <g id="option-garage_expansion" className="on">
+          <rect x="110" y="205" width="210" height="80" fill="#d1fae5" stroke="#10b981" strokeWidth="5" />
+          <line x1="132" y1="222" x2="298" y2="222" stroke="#10b981" strokeWidth="4" strokeLinecap="round" />
+          <text x="215" y="253" textAnchor="middle" fill="#065f46" fontSize="15" fontWeight="800">Garage Expansion</text>
         </g>
       ) : null}
 
-      {/* Rear conditional footprint */}
+      {/* Rear porch / morning-room zone */}
       <g id="rear-option-zone">
         <rect
-          x="360"
-          y="35"
-          width={active("morning_room") ? 250 : 190}
-          height="75"
+          x="445"
+          y={active("morning_room") ? 34 : 40}
+          width={active("morning_room") ? 240 : 185}
+          height={active("morning_room") ? 51 : 45}
           fill={active("screened_porch") ? "url(#screenPattern)" : active("morning_room") ? "#dcfce7" : "#f1f5f9"}
           stroke={active("screened_porch") ? "#0284c7" : active("morning_room") ? "#16a34a" : "#94a3b8"}
           strokeWidth={active("screened_porch") || active("morning_room") ? 5 : 3}
           strokeDasharray={active("screened_porch") ? "8 6" : undefined}
         />
-        <line x1="420" y1="110" x2="500" y2="110" stroke="#ffffff" strokeWidth="8" />
-        <text x={active("morning_room") ? 485 : 455} y="80" textAnchor="middle" fill="#0f172a" fontSize="17" fontWeight="800">{rearRoomLabel}</text>
+        <line x1="488" y1="85" x2="552" y2="85" stroke="#ffffff" strokeWidth="8" />
+        <text x={active("morning_room") ? 565 : 538} y="69" textAnchor="middle" fill="#0f172a" fontSize="15" fontWeight="800">{rearRoomLabel}</text>
       </g>
 
-      {/* Option: fireplace */}
+      {/* Fireplace option */}
       {active("fireplace") ? (
         <g id="option-fireplace" className="on">
-          <rect x="675" y="205" width="22" height="80" rx="6" fill="#fed7aa" stroke="#f97316" strokeWidth="4" />
-          <path d="M686 258c14-20-12-27 1-45 21 18 30 39 2 58-11-5-16-11-3-13z" fill="#fb923c" />
-          <text x="632" y="252" textAnchor="middle" fill="#9a3412" fontSize="14" fontWeight="800">Fireplace</text>
+          <rect x="738" y="285" width="22" height="78" rx="6" fill="#fed7aa" stroke="#f97316" strokeWidth="4" />
+          <path d="M749 337c14-20-12-27 1-45 21 18 30 39 2 58-11-5-16-11-3-13z" fill="#fb923c" />
+          <text x="691" y="329" textAnchor="middle" fill="#9a3412" fontSize="14" fontWeight="800">Fireplace</text>
         </g>
       ) : null}
 
-      {/* Option: bonus suite indicator */}
+      {/* Alternate bedroom / bonus layout option */}
       {active("bonus_suite") ? (
-        <g id="option-bonus_suite" className="on">
-          <rect x="705" y="112" width="120" height="112" rx="14" fill="#ede9fe" stroke="#8b5cf6" strokeWidth="4" strokeDasharray="10 7" />
-          <text x="765" y="160" textAnchor="middle" fill="#5b21b6" fontSize="16" fontWeight="800">Bonus</text>
-          <text x="765" y="183" textAnchor="middle" fill="#5b21b6" fontSize="16" fontWeight="800">Suite</text>
-          <path d="M690 160h35" stroke="#8b5cf6" strokeWidth="4" strokeLinecap="round" />
+        <g id="option-alt_bedroom_layout" className="on">
+          <rect x="595" y="85" width="150" height="360" rx="12" fill="#ede9fe" stroke="#8b5cf6" strokeWidth="4" strokeDasharray="10 7" opacity="0.92" />
+          <line x1="595" y1="215" x2="745" y2="215" stroke="#8b5cf6" strokeWidth="4" />
+          <line x1="595" y1="335" x2="745" y2="335" stroke="#8b5cf6" strokeWidth="4" />
+          <text x="670" y="258" textAnchor="middle" fill="#5b21b6" fontSize="15" fontWeight="800">Alt.</text>
+          <text x="670" y="280" textAnchor="middle" fill="#5b21b6" fontSize="15" fontWeight="800">Bedroom</text>
+          <text x="670" y="302" textAnchor="middle" fill="#5b21b6" fontSize="15" fontWeight="800">Layout</text>
         </g>
       ) : null}
 
       {/* Room labels */}
-      <g id="room-labels" fontFamily="Inter, ui-sans-serif" fontSize="16" fill="#334155">
-        <text x="275" y="190" textAnchor="middle" fontWeight="800">Primary Suite</text>
-        <text x="465" y="190" textAnchor="middle" fontWeight="800">Kitchen</text>
-        <text x="620" y="190" textAnchor="middle" fontWeight="800">Dining</text>
-        <text x="525" y="307" textAnchor="middle" fontWeight="800">Family Room</text>
-        <text x="265" y="307" textAnchor="middle" fontWeight="800">Foyer</text>
-        <text x="265" y="405" textAnchor="middle" fontWeight="800">Bedroom 2</text>
-        <text x="440" y="405" textAnchor="middle" fontWeight="800">Bath</text>
-        <text x="605" y="405" textAnchor="middle" fontWeight="800">Bedroom 3</text>
+      <g id="room-labels" fontFamily="Inter, ui-sans-serif" fontSize="15" fill="#334155">
+        <text x="350" y="135" textAnchor="middle" fontWeight="800">Owner&apos;s Suite</text>
+        <text x="520" y="136" textAnchor="middle" fontWeight="800">Owner Bath</text>
+        <text x="670" y="136" textAnchor="middle" fontWeight="800">Bedroom 2</text>
+        <text x="333" y="318" textAnchor="middle" fontWeight="800">Foyer</text>
+        <text x="333" y="342" textAnchor="middle" fontSize="12" fontWeight="700">Entry / Hall</text>
+        <text x="485" y="338" textAnchor="middle" fontWeight="800">Kitchen</text>
+        <text x="485" y="363" textAnchor="middle" fontSize="12" fontWeight="700">Island</text>
+        <text x="652" y="318" textAnchor="middle" fontWeight="800">Great Room</text>
+        <text x="652" y="342" textAnchor="middle" fontSize="12" fontWeight="700">Open Living</text>
+        <text x="215" y="360" textAnchor="middle" fontWeight="800">Garage</text>
+        <text x="440" y="474" textAnchor="middle" fontWeight="800">Laundry / Mud</text>
+        <text x="652" y="474" textAnchor="middle" fontWeight="800">Bedroom 3</text>
       </g>
 
-      {/* Simple doors/openings */}
+      {/* Doors, porch/garage symbols, and simplified plan detail */}
       <g id="doors-and-symbols" stroke="#0f172a" strokeWidth="3" fill="none" opacity="0.75">
-        <path d="M355 390 q-35 0 -35 -35" />
-        <path d="M520 382 q30 0 30 -30" />
-        <path d="M380 185 q35 0 35 35" />
-        <path d="M550 190 q-30 0 -30 30" />
-        <path d="M585 330 q0 -30 30 -30" />
-        <line x1="210" y1="270" x2="320" y2="270" strokeDasharray="7 7" />
-        <line x1="390" y1="330" x2="650" y2="330" strokeDasharray="7 7" />
+        <path d="M320 415 q35 0 35 -35" />
+        <path d="M410 300 q-32 0 -32 32" />
+        <path d="M560 305 q35 0 35 35" />
+        <path d="M595 178 q-28 0 -28 -28" />
+        <path d="M445 150 q34 0 34 34" />
+        <line x1="133" y1="420" x2="298" y2="420" stroke="#64748b" strokeWidth="5" strokeLinecap="round" />
+        <line x1="270" y1="365" x2="390" y2="365" strokeDasharray="7 7" />
+        <line x1="430" y1="385" x2="540" y2="385" strokeDasharray="7 7" />
+        <rect x="455" y="275" width="60" height="28" rx="6" stroke="#64748b" strokeWidth="2" />
       </g>
 
       {/* Option relationship annotation */}
       {active("screened_porch") ? (
         <g id="a-on-screened_porch-off-morning_room" className="on">
-          <text x="455" y="30" textAnchor="middle" fill="#0369a1" fontSize="13" fontWeight="800">Screened Porch selected â€” Morning Room hidden</text>
+          <text x="538" y="28" textAnchor="middle" fill="#0369a1" fontSize="13" fontWeight="800">Screened Porch selected â€” Morning Room hidden</text>
         </g>
       ) : null}
       {active("morning_room") ? (
-        <g id="a-on-morning_room-off-screened_porch" className="on">
-          <text x="485" y="30" textAnchor="middle" fill="#15803d" fontSize="13" fontWeight="800">Morning Room selected â€” Screened Porch hidden</text>
+        <g id="a-on_morning_room-off-screened_porch" className="on">
+          <text x="565" y="28" textAnchor="middle" fill="#15803d" fontSize="13" fontWeight="800">Morning Room selected â€” Screened Porch hidden</text>
         </g>
       ) : null}
 
       <text x="450" y="522" textAnchor="middle" fill="#64748b" fontSize="13">
-        Demo SVG: option groups use IDs that can map to Cornerstone option codes.
+        Stylized Ava SVG: readable demo format, with option groups mapped to Cornerstone option codes.
       </text>
     </svg>
   );
