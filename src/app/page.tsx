@@ -16,6 +16,7 @@ import { Hero } from "@/components/Hero";
 import { ScreenshotsSection } from "@/components/ScreenshotsSection";
 import { VideoSection } from "@/components/VideoSection";
 import { AiTakeoffSection } from "@/components/AiTakeoffSection";
+import { InteractiveFloorplan } from "@/components/InteractiveFloorplan";
 import { AgentsSection } from "@/components/AgentsSection";
 import { ModulesGrid } from "@/components/ModulesGrid";
 import { DataOwnership } from "@/components/DataOwnership";
@@ -34,6 +35,7 @@ export default function Home() {
       <ScreenshotsSection />
       <AgentsSection />
       <AiTakeoffSection />
+      <InteractiveFloorplan />
       <ModulesGrid />
       <DataOwnership />
       <InfrastructureSection />
