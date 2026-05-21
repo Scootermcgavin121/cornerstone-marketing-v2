@@ -75,6 +75,8 @@ export function InteractiveFloorplan() {
   }
 
   const isSelected = (code: OptionCode) => selected.includes(code);
+  const focusOption = selected[0] ?? "screened_porch";
+  const focusLabel = optionLookup.get(focusOption)?.label ?? "Selected Option";
 
   return (
     <section id="interactive-floorplan" className="relative py-24 sm:py-32 overflow-hidden">
@@ -193,13 +195,28 @@ export function InteractiveFloorplan() {
               </div>
 
               <div className="rounded-2xl border border-slate-800 bg-white p-2 sm:p-6">
-                <div className="mb-2 flex items-center justify-between gap-3 px-1 text-[11px] font-semibold uppercase tracking-wider text-slate-500 sm:hidden">
-                  <span>Scroll / pinch to inspect</span>
-                  <span>{selectedOptions.length} overlays</span>
+                <div className="sm:hidden">
+                  <div className="mb-2 flex items-center justify-between gap-3 px-1 text-[11px] font-semibold uppercase tracking-wider text-slate-500">
+                    <span>Focused mobile detail</span>
+                    <span>{focusLabel}</span>
+                  </div>
+                  <div className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-inner">
+                    <FloorplanDetail option={focusOption} />
+                  </div>
+                  <p className="mt-2 px-1 text-xs leading-relaxed text-slate-500">
+                    Mobile shows the selected option as a close-up first. Full plan context is below.
+                  </p>
                 </div>
-                <div className="max-h-[72vh] overflow-auto rounded-xl bg-white overscroll-contain">
-                  <div className="min-w-[720px] sm:min-w-0">
-                    <FloorplanSvg selected={selected} />
+
+                <div className="mt-4 sm:mt-0">
+                  <div className="mb-2 flex items-center justify-between gap-3 px-1 text-[11px] font-semibold uppercase tracking-wider text-slate-500 sm:hidden">
+                    <span>Full plan context</span>
+                    <span>Scroll to inspect</span>
+                  </div>
+                  <div className="max-h-[48vh] overflow-auto rounded-xl bg-white overscroll-contain sm:max-h-none">
+                    <div className="min-w-[640px] sm:min-w-0">
+                      <FloorplanSvg selected={selected} />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -273,11 +290,32 @@ export function InteractiveFloorplan() {
   );
 }
 
-function FloorplanSvg({ selected, compact = false }: { selected: OptionCode[]; compact?: boolean }) {
+
+function FloorplanDetail({ option }: { option: OptionCode }) {
+  const views: Record<OptionCode, { viewBox: string; label: string }> = {
+    screened_porch: { viewBox: "940 120 700 560", label: "Screened Porch" },
+    raised_ceiling: { viewBox: "980 720 700 820", label: "Great Room Raised Ceiling" },
+    owners_tray_ceiling: { viewBox: "0 160 700 700", label: "Owner's Tray Ceiling" },
+    garage_extension: { viewBox: "0 2300 980 520", label: "2' Garage Extension" },
+    alternate_bedroom_layout: { viewBox: "1450 120 760 1900", label: "Alternate Bedroom Layout" },
+  };
+  const view = views[option];
+
+  return (
+    <div className="relative">
+      <FloorplanSvg selected={[option]} compact viewBox={view.viewBox} />
+      <div className="pointer-events-none absolute left-3 top-3 rounded-full border border-slate-300 bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-wider text-slate-700 shadow-sm">
+        {view.label}
+      </div>
+    </div>
+  );
+}
+
+function FloorplanSvg({ selected, compact = false, viewBox = "0 0 2290 2965" }: { selected: OptionCode[]; compact?: boolean; viewBox?: string }) {
   const active = (code: OptionCode) => selected.includes(code);
 
   return (
-    <svg viewBox="0 0 2290 2965" role="img" aria-label="Ava Redesign first floor interactive plan" className={"w-full " + (compact ? "h-auto" : "min-h-[620px]")}>
+    <svg viewBox={viewBox} role="img" aria-label="Ava Redesign first floor interactive plan" className={"w-full " + (compact ? "h-auto" : "min-h-[620px]")}>
       <defs>
         <style>{`
           .ava-mask { fill: #fff; stroke: none; }
