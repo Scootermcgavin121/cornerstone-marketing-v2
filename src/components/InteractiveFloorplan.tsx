@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useMemo, useState } from "react";
 type OptionCode = "screened_porch" | "morning_room" | "fireplace" | "third_car_garage" | "bonus_suite";
@@ -220,7 +220,7 @@ export function InteractiveFloorplan() {
                   <div className="flex items-start justify-between gap-4">
                     <div>
                       <p className="text-sm uppercase tracking-wider text-emerald-300">Brochure preview</p>
-                      <h4 className="mt-1 text-xl font-bold text-white">The Cypress â€” Personalized Plan</h4>
+                      <h4 className="mt-1 text-xl font-bold text-white">The Cypress Ã¢â‚¬â€ Personalized Plan</h4>
                     </div>
                     <span className="rounded-full bg-emerald-400/20 px-3 py-1 text-xs font-semibold text-emerald-200">Print-ready concept</span>
                   </div>
@@ -259,126 +259,226 @@ export function InteractiveFloorplan() {
 
 function FloorplanSvg({ selected, compact = false }: { selected: OptionCode[]; compact?: boolean }) {
   const active = (code: OptionCode) => selected.includes(code);
-  const rearRoomLabel = active("morning_room") ? "Morning Room" : active("screened_porch") ? "Screened Porch" : "Covered Patio";
+  const rearLabel = active("morning_room") ? "MORNING ROOM" : active("screened_porch") ? "SCREENED PORCH" : "COVERED LANAI";
+  const rearDims = active("morning_room") ? "13'-8\" X 15'-0\"" : active("screened_porch") ? "13'-8\" X 12'-0\"" : "13'-8\" X 10'-0\"";
 
   return (
-    <svg viewBox="0 0 900 560" role="img" aria-label="Interactive sample floorplan" className={`w-full ${compact ? "h-auto" : "min-h-[340px]"}`}>
+    <svg viewBox="0 0 980 690" role="img" aria-label="Interactive sample floorplan" className={"w-full " + (compact ? "h-auto" : "min-h-[420px]")}>
       <defs>
-        <pattern id="screenPattern" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-          <line x1="0" y1="0" x2="0" y2="8" stroke="#38bdf8" strokeWidth="2" opacity="0.65" />
+        <style>{`
+          .fp-bg { fill: #ffffff; }
+          .fp-fill { fill: #f4e7cf; }
+          .fp-fill-light { fill: #fbf3e6; }
+          .fp-line { stroke: #18385d; stroke-linecap: square; stroke-linejoin: miter; vector-effect: non-scaling-stroke; }
+          .fp-wall-ext { stroke-width: 7; fill: none; }
+          .fp-wall-int { stroke-width: 3.5; fill: none; }
+          .fp-thin { stroke-width: 1.6; fill: none; }
+          .fp-dash { stroke-dasharray: 9 7; }
+          .fp-label { fill: #18385d; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-weight: 800; letter-spacing: .06em; }
+          .fp-dim { fill: #315071; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-weight: 600; letter-spacing: .03em; }
+          .fp-note { fill: #315071; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-weight: 700; letter-spacing: .04em; }
+          .fp-option { stroke: #0e7490; fill: rgba(224, 242, 254, .45); }
+        `}</style>
+        <pattern id="screenHatch" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+          <line x1="0" y1="0" x2="0" y2="9" stroke="#0e7490" strokeWidth="1.4" opacity="0.8" />
         </pattern>
-        <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
-          <feDropShadow dx="0" dy="5" stdDeviation="5" floodColor="#0f172a" floodOpacity="0.18" />
-        </filter>
+        <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L0,6 L7,3 z" fill="#18385d" />
+        </marker>
       </defs>
 
-      <rect x="0" y="0" width="900" height="560" fill="#f8fafc" />
-      <rect x="20" y="20" width="860" height="520" rx="24" fill="#fff" stroke="#cbd5e1" strokeWidth="2" />
+      <rect className="fp-bg" x="0" y="0" width="980" height="690" />
+      <rect x="22" y="22" width="936" height="646" rx="10" fill="#fff" stroke="#d8c7ad" strokeWidth="1.5" />
 
-      {/* Base home shell */}
-      <g id="base-plan" filter="url(#softShadow)">
-        <rect x="170" y="110" width="520" height="360" fill="#ffffff" stroke="#0f172a" strokeWidth="6" />
-        <rect x="170" y="330" width="190" height="140" fill="#f1f5f9" stroke="#0f172a" strokeWidth="4" />
-        <rect x="360" y="330" width="160" height="140" fill="#f8fafc" stroke="#0f172a" strokeWidth="4" />
-        <rect x="520" y="330" width="170" height="140" fill="#f8fafc" stroke="#0f172a" strokeWidth="4" />
-        <rect x="170" y="110" width="210" height="160" fill="#f8fafc" stroke="#0f172a" strokeWidth="4" />
-        <rect x="380" y="110" width="170" height="160" fill="#f8fafc" stroke="#0f172a" strokeWidth="4" />
-        <rect x="550" y="110" width="140" height="160" fill="#f8fafc" stroke="#0f172a" strokeWidth="4" />
-        <rect x="360" y="270" width="330" height="60" fill="#fff7ed" stroke="#0f172a" strokeWidth="4" />
-        <rect x="170" y="270" width="190" height="60" fill="#ecfeff" stroke="#0f172a" strokeWidth="4" />
+      <g id="plan-title" className="fp-note" fontSize="13">
+        <text x="64" y="58">THE CYPRESS - INTERACTIVE STRUCTURAL OPTIONS</text>
+        <text x="64" y="78" fontSize="11">CONCEPT SALES PLAN - NOT FOR CONSTRUCTION</text>
       </g>
 
-      {/* Base garage */}
-      <g id="garage-base">
-        <rect x="55" y="300" width="115" height="170" fill="#e2e8f0" stroke="#0f172a" strokeWidth="6" />
-        <line x1="72" y1="445" x2="153" y2="445" stroke="#64748b" strokeWidth="5" strokeLinecap="round" />
-        <text x="112" y="385" textAnchor="middle" className="fill-slate-700" fontSize="18" fontWeight="700">2-Car</text>
-        <text x="112" y="410" textAnchor="middle" className="fill-slate-500" fontSize="14">Garage</text>
-      </g>
-
-      {/* Option: third car garage */}
-      {active("third_car_garage") ? (
-        <g id="option-third_car_garage" className="on">
-          <rect x="55" y="185" width="115" height="115" fill="#d1fae5" stroke="#10b981" strokeWidth="5" />
-          <line x1="72" y1="205" x2="153" y2="205" stroke="#10b981" strokeWidth="4" strokeLinecap="round" />
-          <text x="112" y="250" textAnchor="middle" fill="#065f46" fontSize="15" fontWeight="800">3rd Bay</text>
-        </g>
-      ) : null}
-
-      {/* Rear conditional footprint */}
       <g id="rear-option-zone">
         <rect
-          x="360"
-          y="35"
-          width={active("morning_room") ? 250 : 190}
-          height="75"
-          fill={active("screened_porch") ? "url(#screenPattern)" : active("morning_room") ? "#dcfce7" : "#f1f5f9"}
-          stroke={active("screened_porch") ? "#0284c7" : active("morning_room") ? "#16a34a" : "#94a3b8"}
-          strokeWidth={active("screened_porch") || active("morning_room") ? 5 : 3}
-          strokeDasharray={active("screened_porch") ? "8 6" : undefined}
+          x="410"
+          y={active("morning_room") ? 42 : 62}
+          width={active("morning_room") ? 252 : 214}
+          height={active("morning_room") ? 112 : 92}
+          fill={active("screened_porch") ? "url(#screenHatch)" : active("morning_room") ? "#e8f5e9" : "#fff"}
+          className={"fp-line " + (active("screened_porch") || active("morning_room") ? "fp-wall-ext fp-option" : "fp-thin fp-dash")}
         />
-        <line x1="420" y1="110" x2="500" y2="110" stroke="#ffffff" strokeWidth="8" />
-        <text x={active("morning_room") ? 485 : 455} y="80" textAnchor="middle" fill="#0f172a" fontSize="17" fontWeight="800">{rearRoomLabel}</text>
+        <text x={active("morning_room") ? 536 : 517} y={active("morning_room") ? 92 : 105} textAnchor="middle" className="fp-label" fontSize="14">{rearLabel}</text>
+        <text x={active("morning_room") ? 536 : 517} y={active("morning_room") ? 112 : 124} textAnchor="middle" className="fp-dim" fontSize="11">{rearDims}</text>
       </g>
 
-      {/* Option: fireplace */}
+      <g id="room-fills">
+        <path className="fp-fill" d="M250 155 H730 V555 H165 V330 H250 Z" />
+        <rect className="fp-fill-light" x="165" y="330" width="165" height="225" />
+        <rect className="fp-fill-light" x="250" y="155" width="198" height="178" />
+        <rect className="fp-fill-light" x="448" y="155" width="150" height="178" />
+        <rect className="fp-fill-light" x="598" y="155" width="132" height="178" />
+      </g>
+
+      {active("third_car_garage") ? (
+        <g id="option-third_car_garage" className="on">
+          <rect x="44" y="214" width="121" height="116" fill="#e8f5e9" className="fp-line fp-wall-ext fp-option" />
+          <line x1="61" y1="316" x2="148" y2="316" className="fp-line fp-thin" />
+          <text x="104" y="265" textAnchor="middle" className="fp-label" fontSize="13">3RD BAY</text>
+          <text x="104" y="283" textAnchor="middle" className="fp-dim" fontSize="10">11&apos;-0&quot; X 20&apos;-0&quot;</text>
+        </g>
+      ) : null}
+
+      <g id="base-walls" className="fp-line">
+        <path className="fp-wall-ext" d="M165 330 H250 V155 H730 V555 H165 Z" />
+        <path className="fp-wall-ext" d="M44 330 H165 V555 H44 Z" />
+        <path className="fp-wall-int" d="M250 330 H730" />
+        <path className="fp-wall-int" d="M330 330 V555" />
+        <path className="fp-wall-int" d="M448 155 V330" />
+        <path className="fp-wall-int" d="M598 155 V330" />
+        <path className="fp-wall-int" d="M448 250 H598" />
+        <path className="fp-wall-int" d="M250 250 H448" />
+        <path className="fp-wall-int" d="M500 330 V555" />
+        <path className="fp-wall-int" d="M615 330 V555" />
+        <path className="fp-wall-int" d="M330 440 H500" />
+        <path className="fp-wall-int" d="M615 445 H730" />
+        <path className="fp-wall-int" d="M165 440 H330" />
+      </g>
+
+      <g id="wall-openings" stroke="#ffffff" strokeWidth="9" strokeLinecap="square">
+        <line x1="455" y1="155" x2="520" y2="155" />
+        <line x1="530" y1="330" x2="590" y2="330" />
+        <line x1="250" y1="360" x2="250" y2="420" />
+        <line x1="330" y1="380" x2="330" y2="430" />
+        <line x1="500" y1="390" x2="500" y2="438" />
+        <line x1="615" y1="365" x2="615" y2="420" />
+        <line x1="650" y1="555" x2="710" y2="555" />
+        <line x1="92" y1="330" x2="142" y2="330" />
+      </g>
+
+      <g id="windows" className="fp-line fp-thin">
+        <line x1="280" y1="155" x2="390" y2="155" strokeWidth="5" />
+        <line x1="462" y1="155" x2="566" y2="155" strokeWidth="5" />
+        <line x1="630" y1="155" x2="704" y2="155" strokeWidth="5" />
+        <line x1="730" y1="205" x2="730" y2="285" strokeWidth="5" />
+        <line x1="690" y1="555" x2="724" y2="555" strokeWidth="5" />
+        <line x1="182" y1="555" x2="300" y2="555" strokeWidth="5" />
+      </g>
+
+      <g id="doors-and-swings" className="fp-line fp-thin">
+        <path d="M250 420 Q205 420 205 375" />
+        <line x1="250" y1="420" x2="205" y2="420" />
+        <path d="M330 430 Q375 430 375 385" />
+        <line x1="330" y1="430" x2="375" y2="430" />
+        <path d="M500 438 Q545 438 545 393" />
+        <line x1="500" y1="438" x2="545" y2="438" />
+        <path d="M615 420 Q660 420 660 375" />
+        <line x1="615" y1="420" x2="660" y2="420" />
+        <path d="M142 330 Q142 375 97 375" />
+        <line x1="142" y1="330" x2="142" y2="375" />
+        <path d="M650 555 Q650 510 695 510" />
+        <line x1="650" y1="555" x2="695" y2="555" />
+      </g>
+
+      <g id="fixtures" className="fp-line fp-thin">
+        <rect x="462" y="174" width="118" height="30" />
+        <circle cx="490" cy="189" r="9" />
+        <circle cx="520" cy="189" r="9" />
+        <rect x="462" y="215" width="118" height="24" />
+        <line x1="480" y1="215" x2="480" y2="239" />
+        <line x1="520" y1="215" x2="520" y2="239" />
+        <rect x="456" y="260" width="118" height="36" />
+        <text x="515" y="284" textAnchor="middle" className="fp-dim" fontSize="9">ISLAND</text>
+        <rect x="358" y="458" width="58" height="46" rx="8" />
+        <line x1="358" y1="481" x2="416" y2="481" />
+        <circle cx="388" cy="492" r="5" />
+        <rect x="420" y="458" width="50" height="28" />
+        <ellipse cx="445" cy="472" rx="12" ry="7" />
+        <rect x="350" y="352" width="56" height="28" />
+        <ellipse cx="378" cy="366" rx="12" ry="7" />
+        <rect x="410" y="350" width="48" height="48" />
+        <path d="M410 350 L458 398 M458 350 L410 398" />
+      </g>
+
+      <g id="stairs" className="fp-line fp-thin">
+        <rect x="180" y="350" width="52" height="78" />
+        {Array.from({ length: 7 }).map((_, index) => (
+          <line key={index} x1="180" x2="232" y1={360 + index * 10} y2={360 + index * 10} />
+        ))}
+        <line x1="206" y1="418" x2="206" y2="360" markerEnd="url(#arrow)" />
+      </g>
+
+      <g id="closets-notes" className="fp-line fp-thin">
+        <rect x="263" y="260" width="84" height="58" />
+        <line x1="274" y1="285" x2="336" y2="285" />
+        <rect x="635" y="455" width="72" height="78" />
+        <line x1="646" y1="492" x2="696" y2="492" />
+        <rect x="612" y="92" width="118" height="45" className="fp-dash" />
+        <text x="671" y="120" textAnchor="middle" className="fp-dim" fontSize="9">OPT. CLG. SLOPE</text>
+      </g>
+
       {active("fireplace") ? (
         <g id="option-fireplace" className="on">
-          <rect x="675" y="205" width="22" height="80" rx="6" fill="#fed7aa" stroke="#f97316" strokeWidth="4" />
-          <path d="M686 258c14-20-12-27 1-45 21 18 30 39 2 58-11-5-16-11-3-13z" fill="#fb923c" />
-          <text x="632" y="252" textAnchor="middle" fill="#9a3412" fontSize="14" fontWeight="800">Fireplace</text>
+          <rect x="716" y="245" width="24" height="70" fill="#fff" className="fp-line fp-wall-int fp-option" />
+          <path d="M728 300c12-18-10-24 2-40 18 15 24 34 2 50-10-4-14-9-4-10z" fill="#d97706" opacity="0.8" />
+          <text x="680" y="292" textAnchor="middle" className="fp-note" fontSize="10">OPT. F/P</text>
         </g>
       ) : null}
 
-      {/* Option: bonus suite indicator */}
       {active("bonus_suite") ? (
         <g id="option-bonus_suite" className="on">
-          <rect x="705" y="112" width="120" height="112" rx="14" fill="#ede9fe" stroke="#8b5cf6" strokeWidth="4" strokeDasharray="10 7" />
-          <text x="765" y="160" textAnchor="middle" fill="#5b21b6" fontSize="16" fontWeight="800">Bonus</text>
-          <text x="765" y="183" textAnchor="middle" fill="#5b21b6" fontSize="16" fontWeight="800">Suite</text>
-          <path d="M690 160h35" stroke="#8b5cf6" strokeWidth="4" strokeLinecap="round" />
+          <rect x="760" y="155" width="142" height="144" fill="#faf5ff" className="fp-line fp-wall-ext fp-dash" />
+          <text x="831" y="214" textAnchor="middle" className="fp-label" fontSize="13">BONUS SUITE</text>
+          <text x="831" y="233" textAnchor="middle" className="fp-dim" fontSize="10">13&apos;-4&quot; X 16&apos;-0&quot;</text>
+          <path d="M730 230 H760" className="fp-line fp-wall-int" />
         </g>
       ) : null}
 
-      {/* Room labels */}
-      <g id="room-labels" fontFamily="Inter, ui-sans-serif" fontSize="16" fill="#334155">
-        <text x="275" y="190" textAnchor="middle" fontWeight="800">Primary Suite</text>
-        <text x="465" y="190" textAnchor="middle" fontWeight="800">Kitchen</text>
-        <text x="620" y="190" textAnchor="middle" fontWeight="800">Dining</text>
-        <text x="525" y="307" textAnchor="middle" fontWeight="800">Family Room</text>
-        <text x="265" y="307" textAnchor="middle" fontWeight="800">Foyer</text>
-        <text x="265" y="405" textAnchor="middle" fontWeight="800">Bedroom 2</text>
-        <text x="440" y="405" textAnchor="middle" fontWeight="800">Bath</text>
-        <text x="605" y="405" textAnchor="middle" fontWeight="800">Bedroom 3</text>
+      <g id="room-labels">
+        <RoomLabel x={350} y={204} name="OWNER'S SUITE" dim={`15&apos;-0&quot; X 15&apos;-6&quot;`} />
+        <RoomLabel x={523} y={206} name="KITCHEN" dim={`12&apos;-4&quot; X 14&apos;-0&quot;`} />
+        <RoomLabel x={664} y={222} name="DINING" dim={`11&apos;-0&quot; X 12&apos;-6&quot;`} />
+        <RoomLabel x={559} y={395} name="GREAT ROOM" dim={`18&apos;-8&quot; X 17&apos;-0&quot;`} />
+        <RoomLabel x={246} y={397} name="FOYER" dim="OPEN" />
+        <RoomLabel x={248} y={500} name="BEDROOM 2" dim={`11&apos;-4&quot; X 12&apos;-2&quot;`} />
+        <RoomLabel x={415} y={525} name="BATH 2" dim="" />
+        <RoomLabel x={672} y={502} name="BEDROOM 3" dim={`12&apos;-0&quot; X 12&apos;-8&quot;`} />
+        <RoomLabel x={305} y={300} name="W.I.C." dim="" small />
+        <RoomLabel x={105} y={454} name="GARAGE" dim={`20&apos;-0&quot; X 21&apos;-0&quot;`} />
       </g>
 
-      {/* Simple doors/openings */}
-      <g id="doors-and-symbols" stroke="#0f172a" strokeWidth="3" fill="none" opacity="0.75">
-        <path d="M355 390 q-35 0 -35 -35" />
-        <path d="M520 382 q30 0 30 -30" />
-        <path d="M380 185 q35 0 35 35" />
-        <path d="M550 190 q-30 0 -30 30" />
-        <path d="M585 330 q0 -30 30 -30" />
-        <line x1="210" y1="270" x2="320" y2="270" strokeDasharray="7 7" />
-        <line x1="390" y1="330" x2="650" y2="330" strokeDasharray="7 7" />
-      </g>
-
-      {/* Option relationship annotation */}
       {active("screened_porch") ? (
         <g id="a-on-screened_porch-off-morning_room" className="on">
-          <text x="455" y="30" textAnchor="middle" fill="#0369a1" fontSize="13" fontWeight="800">Screened Porch selected â€” Morning Room hidden</text>
+          <text x="517" y="44" textAnchor="middle" className="fp-note" fontSize="10">SCREENED PORCH SELECTED - MORNING ROOM HIDDEN</text>
         </g>
       ) : null}
       {active("morning_room") ? (
         <g id="a-on-morning_room-off-screened_porch" className="on">
-          <text x="485" y="30" textAnchor="middle" fill="#15803d" fontSize="13" fontWeight="800">Morning Room selected â€” Screened Porch hidden</text>
+          <text x="536" y="30" textAnchor="middle" className="fp-note" fontSize="10">MORNING ROOM SELECTED - SCREENED PORCH HIDDEN</text>
         </g>
       ) : null}
 
-      <text x="450" y="522" textAnchor="middle" fill="#64748b" fontSize="13">
-        Demo SVG: option groups use IDs that can map to Cornerstone option codes.
+      <g id="dimensions" className="fp-dim" fontSize="10">
+        <line x1="250" y1="610" x2="730" y2="610" className="fp-line fp-thin" />
+        <line x1="250" y1="600" x2="250" y2="620" className="fp-line fp-thin" />
+        <line x1="730" y1="600" x2="730" y2="620" className="fp-line fp-thin" />
+        <text x="490" y="635" textAnchor="middle">52&apos;-0&quot;</text>
+        <line x1="775" y1="155" x2="775" y2="555" className="fp-line fp-thin" />
+        <line x1="765" y1="155" x2="785" y2="155" className="fp-line fp-thin" />
+        <line x1="765" y1="555" x2="785" y2="555" className="fp-line fp-thin" />
+        <text x="807" y="360" transform="rotate(90 807 360)" textAnchor="middle">42&apos;-0&quot;</text>
+      </g>
+
+      <text x="490" y="666" textAnchor="middle" className="fp-dim" fontSize="10">
+        Demo SVG: walls, labels, fixtures, and option groups are generated as layered SVG for buyer-facing configurators.
       </text>
     </svg>
   );
 }
+
+function RoomLabel({ x, y, name, dim, small = false }: { x: number; y: number; name: string; dim: string; small?: boolean }) {
+  return (
+    <g>
+      <text x={x} y={y} textAnchor="middle" className="fp-label" fontSize={small ? 10 : 12}>{name}</text>
+      {dim ? <text x={x} y={y + 17} textAnchor="middle" className="fp-dim" fontSize={small ? 8 : 10}>{dim}</text> : null}
+    </g>
+  );
+}
+
 
