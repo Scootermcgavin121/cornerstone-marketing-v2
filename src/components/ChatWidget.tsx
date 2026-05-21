@@ -222,9 +222,74 @@ export default function ChatWidget() {
         aria-label={isOpen ? "Close chat" : "Open chat"}
       >
         {isOpen ? <div className="w-14 h-14 rounded-full bg-cyan-600 flex items-center justify-center"><CloseIcon /></div> : (
-          <div className="flex flex-col items-center cursor-pointer">
-            <Image src="/chatbot-icon.png" unoptimized alt="Chat" width={300} height={300} className="object-contain drop-shadow-lg w-[150px] h-[150px] sm:w-[225px] sm:h-[225px] md:w-[300px] md:h-[300px] chatbot-landscape" />
-            <span className="text-emerald-400 text-[11px] font-medium md:hidden -mt-14 chatbot-label-mobile">Chat with us</span>
+          <div className="relative flex flex-col items-center cursor-pointer">
+            {/* Breathing glow */}
+            <motion.div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-0 rounded-full blur-2xl"
+              style={{
+                background:
+                  "radial-gradient(circle, rgba(52,211,153,0.45) 0%, rgba(52,211,153,0) 65%)",
+              }}
+              animate={{
+                opacity: [0.35, 0.7, 0.35],
+                scale: [0.9, 1.05, 0.9],
+              }}
+              transition={{
+                duration: 3.5,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+            />
+
+            {/* Idle floating icon */}
+            <motion.div
+              className="relative"
+              animate={{ y: [0, -6, 0] }}
+              transition={{
+                duration: 4,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+            >
+              <Image src="/chatbot-icon.png" unoptimized alt="Chat" width={300} height={300} className="object-contain drop-shadow-lg w-[150px] h-[150px] sm:w-[225px] sm:h-[225px] md:w-[300px] md:h-[300px] chatbot-landscape relative z-10" />
+
+              {/* Sparkle twinkles */}
+              {[
+                { top: "18%", left: "12%", delay: 0, size: 10 },
+                { top: "28%", right: "14%", delay: 1.2, size: 8 },
+                { bottom: "32%", left: "22%", delay: 2.4, size: 7 },
+              ].map((s, i) => (
+                <motion.span
+                  key={i}
+                  aria-hidden="true"
+                  className="pointer-events-none absolute text-emerald-300 z-20"
+                  style={{
+                    top: s.top,
+                    left: s.left,
+                    right: s.right,
+                    bottom: s.bottom,
+                    fontSize: s.size,
+                    textShadow: "0 0 6px rgba(110,231,183,0.8)",
+                  }}
+                  animate={{
+                    opacity: [0, 1, 0],
+                    scale: [0.6, 1.1, 0.6],
+                    rotate: [0, 15, 0],
+                  }}
+                  transition={{
+                    duration: 2.4,
+                    repeat: Infinity,
+                    delay: s.delay,
+                    ease: "easeInOut",
+                  }}
+                >
+                  ✦
+                </motion.span>
+              ))}
+            </motion.div>
+
+            <span className="text-emerald-400 text-[11px] font-medium md:hidden -mt-14 chatbot-label-mobile relative z-10">Chat with us</span>
           </div>
         )}
       </motion.button>
