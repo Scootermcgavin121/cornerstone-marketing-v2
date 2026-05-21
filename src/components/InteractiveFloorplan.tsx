@@ -280,14 +280,15 @@ function FloorplanSvg({ selected, compact = false }: { selected: OptionCode[]; c
     <svg viewBox="0 0 2290 2965" role="img" aria-label="Ava Redesign first floor interactive plan" className={"w-full " + (compact ? "h-auto" : "min-h-[620px]")}>
       <defs>
         <style>{`
-          .ava-hotspot { fill: rgba(8, 145, 178, .16); stroke: #0891b2; stroke-width: 8; vector-effect: non-scaling-stroke; }
-          .ava-hotspot-emerald { fill: rgba(16, 185, 129, .14); stroke: #10b981; stroke-width: 8; vector-effect: non-scaling-stroke; }
-          .ava-hotspot-amber { fill: rgba(245, 158, 11, .16); stroke: #f59e0b; stroke-width: 8; vector-effect: non-scaling-stroke; }
-          .ava-hotspot-purple { fill: rgba(139, 92, 246, .14); stroke: #8b5cf6; stroke-width: 8; vector-effect: non-scaling-stroke; }
-          .ava-hotspot-dash { stroke-dasharray: 24 16; }
-          .ava-label-bg { fill: rgba(15, 23, 42, .88); stroke: rgba(255,255,255,.75); stroke-width: 2; vector-effect: non-scaling-stroke; }
-          .ava-label { fill: #fff; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-weight: 800; letter-spacing: .05em; }
-          .ava-note { fill: #cffafe; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-weight: 700; }
+          .ava-mask { fill: #fff; stroke: none; }
+          .ava-wall { fill: none; stroke: #111827; stroke-width: 12; stroke-linecap: square; stroke-linejoin: miter; vector-effect: non-scaling-stroke; }
+          .ava-wall-thin { fill: none; stroke: #111827; stroke-width: 6; stroke-linecap: square; stroke-linejoin: miter; vector-effect: non-scaling-stroke; }
+          .ava-wall-note { fill: none; stroke: #4b5563; stroke-width: 5; stroke-linecap: square; stroke-linejoin: miter; vector-effect: non-scaling-stroke; }
+          .ava-plan-text { fill: #111827; font-family: Arial, Helvetica, sans-serif; font-weight: 700; letter-spacing: .03em; }
+          .ava-plan-dim { fill: #374151; font-family: Arial, Helvetica, sans-serif; font-weight: 600; }
+          .ava-label-bg { fill: rgba(255,255,255,.92); stroke: #111827; stroke-width: 3; vector-effect: non-scaling-stroke; }
+          .ava-label { fill: #111827; font-family: Arial, Helvetica, sans-serif; font-weight: 800; letter-spacing: .04em; }
+          .ava-note { fill: #374151; font-family: Arial, Helvetica, sans-serif; font-weight: 700; }
         `}</style>
         <filter id="avaShadow" x="-10%" y="-10%" width="120%" height="120%">
           <feDropShadow dx="0" dy="18" stdDeviation="18" floodColor="#020617" floodOpacity="0.22" />
@@ -299,36 +300,53 @@ function FloorplanSvg({ selected, compact = false }: { selected: OptionCode[]; c
 
       {active("screened_porch") ? (
         <g id="option-screened_porch" className="on">
-          <rect x="1048" y="198" width="492" height="396" rx="10" className="ava-hotspot ava-hotspot-dash" />
-          <Callout x={1294} y={164} title="SCREENED PORCH" note="Rear covered porch option" />
+          <rect x="1078" y="218" width="420" height="338" className="ava-mask" />
+          <path d="M1078 556 V218 H1498 V556" className="ava-wall" />
+          <path d="M1122 270 H1454 M1122 335 H1454 M1122 400 H1454 M1122 465 H1454" className="ava-wall-note" opacity="0.45" />
+          <text x="1288" y="372" textAnchor="middle" className="ava-plan-text" fontSize="46">SCREENED</text>
+          <text x="1288" y="426" textAnchor="middle" className="ava-plan-text" fontSize="46">PORCH</text>
+          <text x="1288" y="480" textAnchor="middle" className="ava-plan-dim" fontSize="34">17&apos;-0&quot; X 10&apos;-0&quot;</text>
         </g>
       ) : null}
 
       {active("raised_ceiling") ? (
         <g id="option-raised_ceiling" className="on">
-          <rect x="1088" y="804" width="452" height="606" rx="14" className="ava-hotspot-emerald ava-hotspot-dash" />
-          <Callout x={1288} y={1500} title="RAISED CEILING" note="Great room option" />
+          <rect x="1108" y="846" width="410" height="518" className="ava-mask" opacity="0.78" />
+          <path d="M1138 894 H1488 V1328 H1138 Z" className="ava-wall-thin" />
+          <path d="M1196 965 H1430 M1196 1257 H1430" className="ava-wall-note" />
+          <text x="1313" y="1104" textAnchor="middle" className="ava-plan-text" fontSize="42">GREAT ROOM</text>
+          <text x="1313" y="1154" textAnchor="middle" className="ava-plan-dim" fontSize="32">RAISED CEILING</text>
         </g>
       ) : null}
 
       {active("owners_tray_ceiling") ? (
         <g id="option-owners_tray_ceiling" className="on">
-          <rect x="86" y="238" width="492" height="526" rx="14" className="ava-hotspot-amber ava-hotspot-dash" />
-          <Callout x={338} y={202} title="TRAY CEILING" note="Owner's suite" />
+          <rect x="132" y="286" width="402" height="414" className="ava-mask" opacity="0.8" />
+          <path d="M176 330 H490 V654 H176 Z" className="ava-wall-thin" />
+          <path d="M234 392 H432 V592 H234 Z" className="ava-wall-note" />
+          <text x="333" y="485" textAnchor="middle" className="ava-plan-text" fontSize="40">OWNER&apos;S</text>
+          <text x="333" y="535" textAnchor="middle" className="ava-plan-text" fontSize="40">SUITE</text>
+          <text x="333" y="585" textAnchor="middle" className="ava-plan-dim" fontSize="30">TRAY CEILING</text>
         </g>
       ) : null}
 
       {active("garage_extension") ? (
         <g id="option-garage_extension" className="on">
-          <path d="M84 2546 H836 V2670 H84 Z" className="ava-hotspot ava-hotspot-dash" />
-          <Callout x={458} y={2728} title="2' GARAGE EXT." note="Front garage extension" />
+          <rect x="92" y="2528" width="728" height="132" className="ava-mask" />
+          <path d="M92 2528 H820 V2660 H92 Z" className="ava-wall" />
+          <text x="456" y="2608" textAnchor="middle" className="ava-plan-text" fontSize="38">2&apos; GARAGE EXTENSION</text>
         </g>
       ) : null}
 
       {active("alternate_bedroom_layout") ? (
-        <g id="option-alternate_bedroom_layout" className="on">
-          <rect x="1546" y="188" width="590" height="1770" rx="16" className="ava-hotspot-purple ava-hotspot-dash" />
-          <Callout x={1844} y={92} title="ALT. BEDROOM WING" note="Alternate first-floor layout" />
+        <g id="option_alternate_bedroom_layout" className="on">
+          <rect x="1586" y="260" width="500" height="1510" className="ava-mask" opacity="0.82" />
+          <path d="M1586 260 H2086 V1770 H1586 Z" className="ava-wall" />
+          <path d="M1586 770 H2086 M1586 1262 H2086 M1838 260 V1770" className="ava-wall-thin" />
+          <text x="1712" y="536" textAnchor="middle" className="ava-plan-text" fontSize="38">BEDROOM 2</text>
+          <text x="1964" y="536" textAnchor="middle" className="ava-plan-text" fontSize="38">BATH</text>
+          <text x="1712" y="1046" textAnchor="middle" className="ava-plan-text" fontSize="38">BEDROOM 3</text>
+          <text x="1964" y="1510" textAnchor="middle" className="ava-plan-text" fontSize="34">ALT. LAYOUT</text>
         </g>
       ) : null}
 
