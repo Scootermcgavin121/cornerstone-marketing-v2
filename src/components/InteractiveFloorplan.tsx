@@ -197,15 +197,10 @@ export function InteractiveFloorplan() {
               <div className="rounded-2xl border border-slate-800 bg-white p-2 sm:p-6">
                 <div className="sm:hidden">
                   <div className="mb-2 flex items-center justify-between gap-3 px-1 text-[11px] font-semibold uppercase tracking-wider text-slate-500">
-                    <span>Focused mobile detail</span>
+                    <span>Selected option</span>
                     <span>{focusLabel}</span>
                   </div>
-                  <div className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-inner">
-                    <FloorplanDetail option={focusOption} />
-                  </div>
-                  <p className="mt-2 px-1 text-xs leading-relaxed text-slate-500">
-                    Mobile shows the selected option as a close-up first. Full plan context is below.
-                  </p>
+                  <MobileOptionCard option={focusOption} />
                 </div>
 
                 <div className="mt-4 sm:mt-0">
@@ -291,25 +286,89 @@ export function InteractiveFloorplan() {
 }
 
 
-function FloorplanDetail({ option }: { option: OptionCode }) {
-  const views: Record<OptionCode, { viewBox: string; label: string }> = {
-    screened_porch: { viewBox: "940 120 700 560", label: "Screened Porch" },
-    raised_ceiling: { viewBox: "980 720 700 820", label: "Great Room Raised Ceiling" },
-    owners_tray_ceiling: { viewBox: "0 160 700 700", label: "Owner's Tray Ceiling" },
-    garage_extension: { viewBox: "0 2300 980 520", label: "2' Garage Extension" },
-    alternate_bedroom_layout: { viewBox: "1450 120 760 1900", label: "Alternate Bedroom Layout" },
+
+function MobileOptionCard({ option }: { option: OptionCode }) {
+  const data: Record<OptionCode, { title: string; eyebrow: string; before: string; after: string; bullets: string[] }> = {
+    screened_porch: {
+      title: "Screened Porch",
+      eyebrow: "Outdoor living upgrade",
+      before: "Covered porch",
+      after: "Screened porch",
+      bullets: ["Encloses the rear porch with screen walls", "Keeps the same rear-yard orientation", "Turns the porch into a more usable outdoor room"],
+    },
+    raised_ceiling: {
+      title: "Great Room Raised Ceiling",
+      eyebrow: "Interior volume upgrade",
+      before: "Standard ceiling",
+      after: "Raised ceiling",
+      bullets: ["Makes the main living area feel taller", "Keeps the same room footprint", "Best shown as a room section/render in production"],
+    },
+    owners_tray_ceiling: {
+      title: "Owner's Tray Ceiling",
+      eyebrow: "Owner suite detail",
+      before: "Flat ceiling",
+      after: "Tray ceiling",
+      bullets: ["Adds a stepped ceiling detail over the owner's suite", "No floor area change", "Buyer-friendly version should pair with an interior rendering"],
+    },
+    garage_extension: {
+      title: "2' Garage Extension",
+      eyebrow: "Storage / vehicle clearance",
+      before: "Standard depth",
+      after: "+2' deeper garage",
+      bullets: ["Extends the garage depth at the front", "Adds practical storage and clearance", "Easy to compare with a before/after dimension callout"],
+    },
+    alternate_bedroom_layout: {
+      title: "Alternate Bedroom Layout",
+      eyebrow: "Room layout option",
+      before: "Standard bedroom wing",
+      after: "Alternate bedroom wing",
+      bullets: ["Changes the bedroom/bath arrangement", "Should be presented as a true alternate plan sheet", "Mobile needs side-by-side simplified diagrams, not the full blueprint"],
+    },
   };
-  const view = views[option];
+  const item = data[option];
 
   return (
-    <div className="relative">
-      <FloorplanSvg selected={[option]} compact viewBox={view.viewBox} />
-      <div className="pointer-events-none absolute left-3 top-3 rounded-full border border-slate-300 bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-wider text-slate-700 shadow-sm">
-        {view.label}
+    <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl shadow-slate-950/10">
+      <div className="border-b border-slate-200 bg-slate-50 px-4 py-3">
+        <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-cyan-700">{item.eyebrow}</p>
+        <h4 className="mt-1 text-xl font-black text-slate-950">{item.title}</h4>
+      </div>
+      <div className="grid grid-cols-2 gap-0 border-b border-slate-200">
+        <PlanMini label="Before" title={item.before} muted />
+        <PlanMini label="After" title={item.after} active />
+      </div>
+      <div className="space-y-2 px-4 py-4">
+        {item.bullets.map((bullet) => (
+          <div key={bullet} className="flex gap-2 text-sm leading-relaxed text-slate-700">
+            <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-500" />
+            <span>{bullet}</span>
+          </div>
+        ))}
       </div>
     </div>
   );
 }
+
+function PlanMini({ label, title, active = false, muted = false }: { label: string; title: string; active?: boolean; muted?: boolean }) {
+  return (
+    <div className={`p-3 ${active ? "bg-cyan-50" : "bg-white"}`}>
+      <p className={`mb-2 text-[10px] font-black uppercase tracking-wider ${active ? "text-cyan-700" : "text-slate-400"}`}>{label}</p>
+      <svg viewBox="0 0 220 160" className="h-36 w-full rounded-xl bg-white">
+        <rect x="28" y="26" width="164" height="108" fill={muted ? "#f8fafc" : "#ecfeff"} stroke="#0f172a" strokeWidth="5" />
+        <path d="M28 78 H192 M108 26 V134" stroke="#0f172a" strokeWidth="3" />
+        <path d="M44 78 Q44 100 66 100" fill="none" stroke="#0f172a" strokeWidth="2" />
+        {active ? (
+          <>
+            <rect x="112" y="30" width="76" height="44" fill="#a5f3fc" stroke="#0891b2" strokeWidth="4" />
+            <path d="M124 42 H176 M124 54 H176 M124 66 H176" stroke="#0e7490" strokeWidth="2" />
+          </>
+        ) : null}
+        <text x="110" y="150" textAnchor="middle" fill="#0f172a" fontSize="15" fontWeight="800">{title}</text>
+      </svg>
+    </div>
+  );
+}
+
 
 function FloorplanSvg({ selected, compact = false, viewBox = "0 0 2290 2965" }: { selected: OptionCode[]; compact?: boolean; viewBox?: string }) {
   const active = (code: OptionCode) => selected.includes(code);
