@@ -46,7 +46,7 @@ const options: FloorplanOption[] = [
 const optionLookup = new Map(options.map((option) => [option.code, option]));
 
 export function InteractiveFloorplan() {
-  const [selected, setSelected] = useState<OptionCode[]>(["screened_porch", "raised_ceiling"]);
+  const [selected, setSelected] = useState<OptionCode[]>(["screened_porch"]);
   const [showBrochure, setShowBrochure] = useState(false);
 
   const selectedOptions = useMemo(
@@ -114,7 +114,7 @@ export function InteractiveFloorplan() {
                 </button>
               </div>
 
-              <div className="space-y-3">
+              <div className="flex gap-3 overflow-x-auto pb-2 lg:block lg:space-y-3 lg:overflow-visible lg:pb-0">
                 {options.map((option) => {
                   const active = isSelected(option.code);
                   return (
@@ -122,7 +122,7 @@ export function InteractiveFloorplan() {
                       key={option.code}
                       type="button"
                       onClick={() => toggleOption(option.code)}
-                      className={`w-full text-left rounded-2xl border p-4 transition-all duration-200 ${
+                      className={`min-w-[250px] lg:min-w-0 lg:w-full text-left rounded-2xl border p-4 transition-all duration-200 ${
                         active
                           ? "border-cyan-400/60 bg-cyan-500/10 shadow-lg shadow-cyan-500/5"
                           : "border-slate-800 bg-slate-900/50 hover:border-slate-700 hover:bg-slate-900"
@@ -192,9 +192,27 @@ export function InteractiveFloorplan() {
                 </div>
               </div>
 
-              <div className="overflow-hidden rounded-2xl border border-slate-800 bg-white p-3 sm:p-6">
-                <FloorplanSvg selected={selected} />
+              <div className="rounded-2xl border border-slate-800 bg-white p-2 sm:p-6">
+                <div className="mb-2 flex items-center justify-between gap-3 px-1 text-[11px] font-semibold uppercase tracking-wider text-slate-500 sm:hidden">
+                  <span>Scroll / pinch to inspect</span>
+                  <span>{selectedOptions.length} overlays</span>
+                </div>
+                <div className="max-h-[72vh] overflow-auto rounded-xl bg-white overscroll-contain">
+                  <div className="min-w-[720px] sm:min-w-0">
+                    <FloorplanSvg selected={selected} />
+                  </div>
+                </div>
               </div>
+
+              {selectedOptions.length ? (
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {selectedOptions.map((option) => (
+                    <span key={`legend-${option.code}`} className="rounded-full border border-cyan-500/25 bg-slate-900/70 px-3 py-1 text-xs font-semibold text-slate-300">
+                      Overlay: {option.label}
+                    </span>
+                  ))}
+                </div>
+              ) : null}
 
               <div className="mt-5 grid sm:grid-cols-3 gap-3 text-sm">
                 <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
@@ -221,8 +239,10 @@ export function InteractiveFloorplan() {
                     <span className="rounded-full bg-emerald-400/20 px-3 py-1 text-xs font-semibold text-emerald-200">Print-ready concept</span>
                   </div>
                   <div className="mt-4 grid md:grid-cols-[1fr_220px] gap-4 items-start">
-                    <div className="rounded-xl bg-white p-3">
-                      <FloorplanSvg selected={selected} compact />
+                    <div className="max-h-[520px] overflow-auto rounded-xl bg-white p-3">
+                      <div className="min-w-[560px] md:min-w-0">
+                        <FloorplanSvg selected={selected} compact />
+                      </div>
                     </div>
                     <div>
                       <p className="font-semibold text-white">Selected Options</p>
