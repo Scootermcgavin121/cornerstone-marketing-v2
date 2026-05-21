@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Check, ArrowRight, Video, Sparkles, ListChecks, Zap, ShieldCheck, Clock, MapPin, Camera } from "lucide-react";
+import { Check, ArrowRight, Video, Sparkles, ListChecks, Zap, ShieldCheck, Clock, MapPin, Camera, Mail, Users } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { CTASection } from "@/components/CTASection";
@@ -21,6 +21,8 @@ const punchlistAiSchema = buildFeatureSchema({
     "Severity tagging (cosmetic, functional, critical)",
     "Location tagging by room and fixture",
     "Auto-attach punch items to the home's build record",
+    "Auto-assign vendors to punch list tasks based on scope",
+    "Group tasks for the same vendor into a single notification email",
     "Assignable punch items to trades",
     "Photo capture from key video frames as evidence",
     "Status tracking from open to verified-complete",
@@ -56,8 +58,8 @@ const howItWorks = [
   {
     step: "03",
     icon: ListChecks,
-    title: "Punch list appears in the app",
-    desc: "Every item lands in the home's Punch List screen with a thumbnail, severity tag, location pin, scope, and the original task description. Review it on your phone, assign to vendors, mark items resolved as they're fixed.",
+    title: "Vendors auto-assigned, one email each",
+    desc: "Every item lands in the home's Punch List with a thumbnail, severity tag, location pin, and scope. Punchlist AI auto-assigns the right vendor based on the scope, then groups every task for the same vendor into a single email. One vendor, one message, one clean checklist — instead of ten separate pings.",
   },
 ];
 
@@ -105,6 +107,16 @@ const features = [
     icon: ListChecks,
     title: "Resolved tracking + photos",
     desc: "When a vendor fixes an item, mark it resolved and attach a photo of the fix. Your final walk closeout package is documentation-ready out of the box.",
+  },
+  {
+    icon: Users,
+    title: "Auto-assigns vendors by scope",
+    desc: "Every punch item gets the right vendor automatically. Trim issues route to your trim carpenter. Paint touch-ups go to the painter. Plumbing fixtures hit the plumber. No manual triage — Punchlist AI already knows who owns each scope on this home.",
+  },
+  {
+    icon: Mail,
+    title: "One vendor, one email",
+    desc: "Walk a house and find twelve issues for the painter? Punchlist AI groups every painter task into a single email — clean checklist, photos attached, severity and location for each. Your vendors get one message instead of twelve. Builders save the admin time. Vendors actually read it.",
   },
 ];
 
