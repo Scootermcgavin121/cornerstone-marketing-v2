@@ -223,16 +223,16 @@ export default function ChatWidget() {
       >
         {isOpen ? <div className="w-14 h-14 rounded-full bg-cyan-600 flex items-center justify-center"><CloseIcon /></div> : (
           <div className="relative flex flex-col items-center cursor-pointer">
-            {/* Breathing glow */}
+            {/* Breathing glow (tight, centered on icon) */}
             <motion.div
               aria-hidden="true"
-              className="pointer-events-none absolute inset-0 rounded-full blur-2xl"
+              className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full blur-xl w-[60%] h-[60%]"
               style={{
                 background:
-                  "radial-gradient(circle, rgba(52,211,153,0.45) 0%, rgba(52,211,153,0) 65%)",
+                  "radial-gradient(circle, rgba(52,211,153,0.55) 0%, rgba(52,211,153,0) 70%)",
               }}
               animate={{
-                opacity: [0.35, 0.7, 0.35],
+                opacity: [0.35, 0.75, 0.35],
                 scale: [0.9, 1.05, 0.9],
               }}
               transition={{
@@ -254,11 +254,11 @@ export default function ChatWidget() {
             >
               <Image src="/chatbot-icon.png" unoptimized alt="Chat" width={300} height={300} className="object-contain drop-shadow-lg w-[150px] h-[150px] sm:w-[225px] sm:h-[225px] md:w-[300px] md:h-[300px] chatbot-landscape relative z-10" />
 
-              {/* Sparkle twinkles */}
+              {/* Sparkle twinkles (closer to icon body) */}
               {[
-                { top: "18%", left: "12%", delay: 0, size: 10 },
-                { top: "28%", right: "14%", delay: 1.2, size: 8 },
-                { bottom: "32%", left: "22%", delay: 2.4, size: 7 },
+                { top: "32%", left: "28%", delay: 0, size: 10 },
+                { top: "38%", right: "30%", delay: 1.2, size: 8 },
+                { bottom: "40%", left: "38%", delay: 2.4, size: 7 },
               ].map((s, i) => (
                 <motion.span
                   key={i}
