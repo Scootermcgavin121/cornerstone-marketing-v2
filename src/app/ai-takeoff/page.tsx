@@ -98,7 +98,7 @@ export default function AiTakeoffPage() {
         <div className="relative max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-violet-500/10 border border-violet-500/30 text-violet-400 text-sm font-semibold uppercase tracking-widest mb-6">
             <Zap className="w-4 h-4" />
-            AI-Powered &middot; Full Bundle Feature
+            AI-Powered &middot; Included on Pro
           </div>
           <h1 className="text-5xl sm:text-7xl font-black tracking-tight mb-6 leading-tight">
             AI material takeoff for home builders.<br />
@@ -219,17 +219,17 @@ export default function AiTakeoffPage() {
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-8 space-y-6">
             <div>
-              <div className="text-slate-400 text-sm font-semibold uppercase tracking-widest mb-1">Included in</div>
-              <div className="text-2xl font-black text-white">Full Bundle</div>
-              <div className="text-4xl font-black text-violet-400 mt-1">$399<span className="text-lg text-slate-400 font-normal">/mo</span></div>
+              <div className="text-slate-400 text-sm font-semibold uppercase tracking-widest mb-1">Included on</div>
+              <div className="text-2xl font-black text-white">Pro plan</div>
+              <div className="text-4xl font-black text-violet-400 mt-1">$499<span className="text-lg text-slate-400 font-normal">/mo</span></div>
               <div className="mt-2 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-400 text-xs font-semibold">
-                $150 value FREE with bundle
+                Full AI suite included &mdash; no add-on fees
               </div>
             </div>
             <div className="border-t border-slate-800 pt-6 space-y-3 text-sm text-slate-400">
               <div className="flex justify-between"><span>Traditional takeoff software</span><span className="line-through text-slate-600">$200&ndash;500/mo</span></div>
               <div className="flex justify-between"><span>Manual takeoff (labor)</span><span className="line-through text-slate-600">4&ndash;8 hrs/plan</span></div>
-              <div className="flex justify-between"><span>Cornerstone AI Takeoff</span><span className="text-violet-400 font-bold">Included in Full Bundle</span></div>
+              <div className="flex justify-between"><span>Cornerstone Blueprint AI</span><span className="text-violet-400 font-bold">Included on Pro &amp; Pro+</span></div>
             </div>
             <Link href="/beta" className="block w-full text-center px-6 py-3.5 rounded-xl bg-violet-500 text-white font-bold hover:bg-violet-400 transition-all duration-200">Get Early Access &rarr;</Link>
             <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders &middot; No credit card required</p>

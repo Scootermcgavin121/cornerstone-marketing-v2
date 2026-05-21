@@ -41,7 +41,7 @@ export function ForemanStructuredData() {
             "priceCurrency": "USD",
             "billingDuration": "P1M",
             "description":
-              "Foreman AI is included in the Cornerstone PM Pro plan at $499/mo. Pro+ at $599/mo adds Opus AI and 5,000 monthly AI messages.",
+              "Foreman AI is included in the Cornerstone PM Pro plan at $499/mo (Sonnet, 600 Foreman AI conversations per month). Pro+ at $599/mo upgrades Foreman AI to the Opus model with 900 conversations per month and bundles the REST API + 37+ webhooks at no extra cost.",
           },
           "url": "https://cornerstonepm.ai/pricing",
           "availability": "https://schema.org/InStock",

@@ -14,7 +14,7 @@ export function AiTakeoffSection() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-violet-500/10 border border-violet-500/30 text-violet-400 text-sm font-semibold uppercase tracking-widest mb-6">
             <Zap className="w-4 h-4" />
-            AI-Powered &middot; Full Bundle
+            AI-Powered &middot; Included on Pro
           </div>
           <h2 className="text-4xl sm:text-6xl font-black mb-4">
             Material takeoff.{" "}

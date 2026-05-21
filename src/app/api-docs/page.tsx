@@ -554,8 +554,8 @@ export default function ApiDocsPage() {
                 "Scoped API keys per integration",
                 "37+ named webhook events (catalog growing) with HMAC signing",
                 "100 req/min, 10,000 req/day rate limits",
-                "Foreman AI (396+ skills, Sonnet, 5,000 msg/mo)",
-                "Blueprint AI (25 takeoffs/mo)",
+                "Foreman AI (396+ skills, Opus, 900 conversations/mo)",
+                "Blueprint AI (50 takeoffs/mo)",
                 "Automated 7-wave bidding pipeline",
                 "Dedicated onboarding & SLA",
               ].map((f) => (

@@ -363,11 +363,15 @@ export default function AiAgentsPage() {
             ))}
           </div>
 
-          {/* Add-on pill */}
-          <div className="mt-5 flex items-center justify-center">
+          {/* Add-on pills */}
+          <div className="mt-5 flex flex-col sm:flex-row items-center justify-center gap-3">
             <div className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-700 bg-slate-800/60 text-slate-300 text-sm font-semibold">
               <Zap className="w-4 h-4 text-amber-400" />
-              <span>BYOK Add-On: +$199/mo &mdash; Bring Your Own Key, unlimited AI messages (Pro &amp; above)</span>
+              <span>Power User Seat: +$149/seat/mo &mdash; elevated AI limits (Pro &amp; Pro+ only)</span>
+            </div>
+            <div className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-700 bg-slate-800/60 text-slate-300 text-sm font-semibold">
+              <Zap className="w-4 h-4 text-cyan-400" />
+              <span>REST API + Webhooks: +$200/mo add-on (Pro only, included in Pro+)</span>
             </div>
           </div>
 

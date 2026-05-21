@@ -456,7 +456,7 @@ Webhooks:
 
 **Integrations:** Foreman AI (396+ skills, uses this API internally), QuickBooks (qboId fields), Zapier (REST webhooks), Automated Bidding Pipeline, CRM Migration Wizard (one-click import from Buildertrend, JobTread, CoConstruct)
 
-**Pricing:** Pro+ plan only - /mo
+**Pricing:** Included on Pro+ ($599/mo). Also available as a $200/mo add-on on the Pro plan ($499/mo).
 
 ---
 ## API Access / BYOA (Bring Your Own Agent)
@@ -488,7 +488,7 @@ Cornerstone PM™ is the first homebuilder platform with a REST API designed for
 - Custom agents built with any framework (LangChain, AutoGen, Claude, GPT-4o)
 - Third-party tools (any system that can make HTTP requests)
 
-**Pricing:** BYOA Add-On +/mo on top of Pro plan (/mo) or above.
+**Pricing:** BYOA is included on Pro+ ($599/mo) via the REST API + 37+ webhook events. On the Pro plan ($499/mo), wire up BYOA by adding the REST API + Webhooks add-on (+$200/mo).
 
 **Page:** /api-access
 
@@ -567,7 +567,7 @@ Foreman ships with 23+ standard operating procedures for common multi-step const
 - "Create 5 GE Profile refrigerators in the design center with SKUs and pricing"
 
 Available to: Admin, Purchasing Manager, Sales Manager roles
-Pricing: Pro Plan (/mo) - Sonnet model, 1,000 messages/month. BYOK add-on +/mo for unlimited messages.
+Pricing: Pro plan ($499/mo) - Sonnet model, 600 Foreman AI conversations/month. Pro+ ($599/mo) - Opus model, 900 conversations/month. Power User Seat add-on (+$149/seat/mo) on Pro and Pro+ raises a user's limit to 3,000 Foreman AI conversations/month.
 
 ### 2. Punchlist AI - "Walk. Talk. Done."
 An industry-first AI-powered punch list feature. No other construction PM software has this.
@@ -599,7 +599,7 @@ Upload a floor plan PDF (up to 25MB, digital CAD only) and Blueprint AI extracts
 - Whole-house scopes (drywall, paint, insulation, roofing, concrete)
 - Plan at a Glance stats (living sqft, footprint, perimeter, garage)
 One-click import directly into floorplan budgets and design center.
-Pricing: Pro Plan - 5 analyses/month. Enterprise - 25/month.
+Pricing: Pro - 25 takeoffs/month. Pro+ - 50 takeoffs/month.
 
 ### 4. AI Support Agent - "Always-On Help Desk"
 GPT-4o-mini chatbot on every page. Knows every feature, workflow, and role. Available on all plans including Starter.
@@ -631,13 +631,23 @@ Available on: Builder plan and above.
 
 ## Pricing Tiers
 
-- **Starter $149/mo**: Construction Scheduling, Gantt, 17 templates, vendor assignment, permitting, buyer portal, AI Support Agent. Up to 500 active homes, 1,000 users/vendors.
-- **Builder $299/mo**: Everything in Starter + Sales Pipeline + Purchasing & Budgets + Design Center (no AI agents)
-- **Pro $499/mo**: Everything in Builder + Foreman AI (396+ skills, Sonnet, 1,000 msg/mo) + Blueprint AI (25 takeoffs/mo) + MLS Listing Agent + advanced analytics. Up to 1,000 active homes.
-- **Pro+ $599/mo**: Everything in Pro + REST API (40+ endpoints, scoped keys), automated bidding pipeline (7-wave), **37-event webhook system** (typed payloads, HMAC, retry, delivery logs - incl. cascade vendor notifications routable to Twilio/Bland/Retell), CRM Migration Wizard, Opus model, 5,000 AI messages/mo, Blueprint AI (25/mo), SSO, dedicated SLA.
-- **Enterprise**: Custom pricing - Opus model, 5,000 msg/mo, Blueprint AI (25/mo), dedicated onboarding, SLA
-- **BYOK Add-on +$199/mo**: Bring Your Own API Key, unlimited messages
-- **BYOA Add-on +$100/mo**: Bring Your Own Agent - full REST API access to Cornerstone data. Connect external agents, automate bid ingestion from emails, build custom workflows. Pro plan or above required., any model
+Four plans. No phantom tiers, no "Enterprise" upsell, no hidden bundles.
+
+- **Starter $149/mo**: Construction Scheduling, Gantt, 17 templates, vendor assignment, permitting, buyer portal, AI Support Agent, Punchlist AI (150/mo), MLS Listing AI (150/mo). Up to 30 users.
+- **Builder $299/mo**: Everything in Starter + Sales Pipeline + Purchasing & Budgets + Design Center with options engine. Punchlist AI (300/mo), MLS Listing AI (300/mo). Up to 30 users.
+- **Pro $499/mo**: Everything in Builder + Foreman AI (396+ skills, Sonnet, 600 conversations/mo) + Blueprint AI (25 takeoffs/mo) + Bid Import AI (600/mo) + AI Support Agent (7,500/mo org-wide) + 3x AI limits for first 30 days. Up to 30 users.
+- **Pro+ $599/mo**: Everything in Pro + REST API + 37+ Webhooks INCLUDED (HMAC-signed, typed payloads, delivery logs, auto-retry - routable to Twilio/Bland/Retell for SMS/voice), automated bidding pipeline (7-wave), CRM Migration Wizard, Foreman AI on Opus (900 conversations/mo), Blueprint AI (50 takeoffs/mo), Bid Import AI (1,200/mo), AI Support Agent (15,000/mo org-wide), 3x AI limits for first 60 days, SSO & advanced permissions, priority support & dedicated onboarding. Up to 60 users.
+
+### Add-ons
+
+- **Power User Seat: +$149/seat/mo** (Pro and Pro+ only) - elevated monthly AI limits for the one or two people who live in the app all day: 3,000 Foreman AI conversations/mo, unlimited Blueprint AI and Bid Import AI, unlimited Punchlist and MLS Listing AI.
+- **REST API + Webhooks: +$200/mo** (Pro only) - 40+ endpoints, scoped API keys, 37+ HMAC-signed webhook events. **Included free on Pro+.**
+
+### Billing
+
+- Annual billing: pay for 10 months, get 12 (2 months free) on every plan.
+- Zero implementation cost on every plan. No setup fees, no required consultants.
+- Free beta access for the first 100 home builders (2 years on the Pro plan).
 
 ---
 # Cornerstone Builder Software - Product Knowledge
@@ -721,15 +731,14 @@ Cornerstone helps residential builders schedule, track, budget, and manage their
 - **Project Manager (PM)**: Manage assigned projects, schedules, vendors
 - **Vendor**: Limited access - see and respond to their assigned tasks only
 
-## AI Blueprint Takeoff (Full Bundle)
+## AI Blueprint Takeoff (Pro plan)
 Cornerstone's AI-powered takeoff system eliminates manual material estimation. **Yes, we offer AI-generated takeoffs.**
 
 - **How it works:** Upload a floor plan PDF and Cornerstone's AI automatically extracts rooms, fixtures, flooring, baseboard, cabinets, countertops, and whole-house scopes (drywall, painting, insulation, cleaning, gutters, siding, roofing squares, concrete)
 - **3-Tab Review Editor** - review and refine AI-extracted data across three tabs: Room-by-Room details, Fixture & Finish counts, and Whole-House Scopes
 - **Powered by Anthropic AI Vision** - industry-leading AI analyzes your blueprints with high accuracy
-- **Cost:** ~$0.50-$2.00 per analysis depending on plan complexity
 - **Navigate:** Purchasing → AI Blueprint Takeoff
-- **Included free** with the Full Bundle plan ($399/month) - a $150/month standalone value
+- **Included on Pro ($499/mo)** - 25 takeoffs/month - and **Pro+ ($599/mo)** - 50 takeoffs/month. No separate AI fee; the full AI suite (Foreman AI, Blueprint AI, Bid Import AI) is bundled into Pro and Pro+.
 - **Why this matters:** What used to take hours of manual counting and measuring now takes minutes. Upload the PDF, review the AI's work, and move straight to budgeting.
 
 ## Purchasing & Budget Management (Builder plan & above)
@@ -882,15 +891,18 @@ Every new home sale follows a structured task workflow: **Contract Signed → Bu
 - **Construction Kickoff** - once templates are applied, the Gantt chart is generated, vendor notifications go out, and the build begins
 
 ## Pricing
-All plans are monthly subscriptions, no long-term contracts required. Starting at **$149/month**.
+All plans are monthly subscriptions, no long-term contracts required. Starting at **$149/month**. Annual billing saves 2 months on every plan.
 
 | Plan | Price | What's Included |
 |------|-------|------------------|
-| **Starter** | $149/month | Construction Scheduling + Homeowner Portal. Everything you need to manage builds and keep buyers informed. |
-| **Builder** | $299/month | Everything in Starter + Purchasing, Sales Pipeline, and Design Center modules. Full build lifecycle management. |
-| **Full Bundle** | $399/month | Everything in Builder + AI Blueprint Takeoff (a $150/month value) included free. The complete Cornerstone experience. |
+| **Starter** | $149/month | Construction Scheduling, Gantt, 17 templates, subcontractor notifications, permitting pipeline, homeowner portal, document management, Punchlist AI, MLS Listing AI. Up to 30 users. |
+| **Builder** | $299/month | Everything in Starter + Purchasing & Budgets + Sales Pipeline + Design Center with options engine + bid management. Up to 30 users. |
+| **Pro** | $499/month | Everything in Builder + the full AI suite: Foreman AI (396+ skills), Blueprint AI (25 takeoffs/mo), Bid Import AI. Up to 30 users. |
+| **Pro+** | $599/month | Everything in Pro + REST API + 37+ webhook events INCLUDED, Foreman AI on Opus, automated bidding pipeline, CRM Migration Wizard, SSO, dedicated onboarding. Up to 60 users. |
 
-Visit https://cornerstonepm.ai for full pricing details and feature comparison.
+**Add-ons:** Power User Seat +$149/seat/mo (Pro and Pro+, elevated AI limits). REST API + Webhooks +$200/mo (Pro only - included free on Pro+).
+
+Visit https://cornerstonepm.ai/pricing for the full pricing page and feature comparison.
 
 ## Target Audience
 - **Residential home builders** (custom and production)
@@ -910,7 +922,7 @@ Visit https://cornerstonepm.ai for full pricing details and feature comparison.
 - Most construction software companies make you **schedule a demo** before you can even see the product
 - You sit through a 30-60 minute sales pitch, then they hit you with **$500-$1,000+/month** pricing
 - You're locked into annual contracts before you even know if the software works for your workflow
-- Cornerstone is different: **transparent pricing starting at $60/month**, no long-term contracts, and you can explore a live demo yourself - no sales call required. We believe the product should sell itself.
+- Cornerstone is different: **transparent pricing starting at $149/month**, no long-term contracts, and you can explore a live demo yourself - no sales call required. We believe the product should sell itself.
 
 ### vs. Buildertrend
 - Buildertrend charges $499+/month and requires a demo/sales presentation before you can even try it
