@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         destination: "/jobsite-ai",
         permanent: true, // 308 / equivalent of 301 for SEO
       },
+      {
+        source: "/mitek-kova-alternative",
+        destination: "/kova-alternative",
+        permanent: true, // 308 / equivalent of 301 for SEO
+      },
     ];
   },
 };
