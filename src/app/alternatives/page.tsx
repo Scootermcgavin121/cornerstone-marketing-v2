@@ -8,7 +8,7 @@ import { Check } from "lucide-react";
 export const metadata: Metadata = {
   title: "Construction Software Alternatives — Compare to Cornerstone PM™",
   description:
-    "See how Cornerstone PM™ compares to 18 construction software platforms — from MiTek KOVA, NEWSTAR, and Buildertrend to Procore, JobTread, Fieldwire, and more. Built specifically for production home builders.",
+    "See how Cornerstone PM™ compares to 20 construction software platforms — from MiTek KOVA, MarkSystems, Hyphen Solutions, NEWSTAR, and Buildertrend to Procore, JobTread, Fieldwire, and more. Built specifically for production home builders.",
   alternates: { canonical: "https://www.cornerstonepm.ai/alternatives" },
 };
 
@@ -19,7 +19,9 @@ const groups = [
     competitors: [
       { name: "MiTek KOVA", slug: "kova", note: "Enterprise homebuilder ERP from MiTek with built-in GL accounting and land dev. Hidden pricing, consultant-led implementation. We deliver the same core scope for the 5–200 homes/yr builder." },
       { name: "NEWSTAR", slug: "newstar", note: "Enterprise production builder software. $25–100k implementation. We're built for the same workflows at a fraction of the cost." },
-      { name: "BuildPro", slug: "buildpro", note: "Windows-based builder platform with high implementation fees. We're cloud-native and self-serve." },
+      { name: "MarkSystems / NX", slug: "marksystems", note: "Constellation HomeBuilder Systems' flagship ERP (MarkSystems rolled into NX). Full-stack accounting, land mgmt, property mgmt. We deliver the core homebuilder scope for the 5–200 homes/yr builder, AI-native." },
+      { name: "Hyphen Solutions", slug: "hyphen", note: "The whole Hyphen suite (HomeFront, BRIX, BuilderGM, Hyphen CRM, HomeSight). Five+ products in one platform with native AI instead." },
+      { name: "BuildPro", slug: "buildpro", note: "Hyphen's construction-management product. We're cloud-native, self-serve, AI-native, and tokenized magic-link vendor portal." },
       { name: "Buildertrend", slug: "buildertrend", note: "Most-used builder software — but not built for production home builders. We are." },
       { name: "CoConstruct", slug: "coconstruct", note: "Now owned by Buildertrend. Frustrated users are switching to purpose-built alternatives." },
     ],
@@ -78,9 +80,9 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Cornerstone PM™ Alternative Pages",
-  "description": "Comparison pages showing how Cornerstone PM™ compares to 18 construction software platforms",
+  "description": "Comparison pages showing how Cornerstone PM™ compares to 20 construction software platforms",
   "url": "https://www.cornerstonepm.ai/alternatives",
-  "numberOfItems": 18,
+  "numberOfItems": 20,
   "itemListElement": groups.flatMap((g) =>
     g.competitors.map((c, i) => ({
       "@type": "ListItem",
@@ -106,14 +108,14 @@ export default function AlternativesPage() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_50%_0%,rgba(6,182,212,0.1),transparent)]" />
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-xs font-semibold mb-6 uppercase tracking-widest">
-            18 Comparisons
+            20 Comparisons
           </div>
           <h1 className="text-5xl sm:text-6xl font-black text-white mb-6 leading-tight">
             Construction software alternatives<br />
             <span className="text-cyan-400">compared honestly.</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto">
-            Cornerstone PM™ is the home builder platform. See how we stack up against every major construction software — from MiTek KOVA and NEWSTAR to Procore and Buildertrend — and where we&apos;re genuinely different from service-business tools.
+            Cornerstone PM™ is the home builder platform. See how we stack up against every major construction software — from MiTek KOVA, MarkSystems, Hyphen Solutions, and NEWSTAR to Procore and Buildertrend — and where we&apos;re genuinely different from service-business tools.
           </p>
         </div>
       </section>
