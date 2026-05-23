@@ -275,7 +275,7 @@ export default function ForemanPage() {
           LIVE DEMO VIDEO
       ═══════════════════════════════════════════════════════════ */}
       <section className="py-8 px-4">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-widest mb-3">
               Live demo &middot; Real-time. Not sped up.
