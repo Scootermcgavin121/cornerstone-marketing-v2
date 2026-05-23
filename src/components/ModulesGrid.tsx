@@ -12,6 +12,7 @@ import {
   MessageSquare,
   HardHat,
   ArrowRight,
+  Code,
 } from "lucide-react";
 
 const modules = [
@@ -95,6 +96,15 @@ const modules = [
     color: "text-yellow-400",
     bg: "bg-yellow-500/10",
     border: "border-yellow-500/20 hover:border-yellow-500/40",
+  },
+  {
+    icon: Code,
+    name: "Developer API",
+    desc: "150+ REST API endpoints, 3 schema formats (Anthropic, OpenAI, OpenAPI 3.1), generic execute endpoint for all 396+ Foreman skills. Pro+ exclusive.",
+    href: "/api-docs",
+    color: "text-rose-400",
+    bg: "bg-rose-500/10",
+    border: "border-rose-500/20 hover:border-rose-500/40",
   },
 ];
 

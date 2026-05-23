@@ -15,6 +15,7 @@ import {
   Users,
   Check,
   MapPin,
+  Code,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -214,6 +215,31 @@ const featureDetails = [
     ],
     learnMoreHref: "/jobsite-ai",
     learnMoreLabel: "Learn more about Jobsite AITM",
+  },
+  {
+    id: "api",
+    icon: Code,
+    screenshot: "/mockups/feature-scheduling.png",
+    name: "Developer API & Integrations",
+    color: "from-rose-500 to-violet-600",
+    bgColor: "bg-rose-500/10",
+    borderColor: "border-rose-500/20",
+    textColor: "text-rose-400",
+    description:
+      "150+ REST API endpoints that expose every Foreman AI skill as a callable REST endpoint. 84 dedicated RESTful routes with clean URLs, plus a generic execute endpoint that runs any of the 396+ skills by name. 3 schema formats: Anthropic, OpenAI function calling, and OpenAPI 3.1.",
+    bullets: [
+      "150+ REST API endpoints \u2014 the largest API surface in residential construction software",
+      "84 dedicated RESTful routes for vendors, bids, homes, tasks, POs, parts, options, budgets, and more",
+      "Generic execute endpoint: POST /api/ext/execute runs any Foreman skill by name",
+      "Skill catalog endpoint: GET /api/ext/skills serves all 396+ tool schemas",
+      "3 schema formats: Anthropic tool format, OpenAI function calling, OpenAPI 3.1",
+      "Pro+ API key authentication with role-based permissions",
+      "37+ real-time webhook events with HMAC signatures, delivery logs, and auto-retry",
+      "Connect Claude, ChatGPT, LangChain, n8n, Twilio, Bland, Retell \u2014 any agent that speaks HTTP",
+      "BYOA (Bring Your Own Agent) \u2014 your external AI agents get the same intelligence as Foreman",
+    ],
+    learnMoreHref: "/api-docs",
+    learnMoreLabel: "Browse the API",
   },
 ];
 

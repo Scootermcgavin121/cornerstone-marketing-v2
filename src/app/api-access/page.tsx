@@ -9,14 +9,16 @@ const apiAccessSchema = buildFeatureSchema({
   pageName: "Cornerstone PM API Access & BYOA",
   pagePath: "/api-access",
   description:
-    "Cornerstone PM provides a full REST API with 40+ endpoints and 37+ named webhook events. BYOA (Bring Your Own Agent) lets AI agents automate the full home-building loop — send bid requests, track responses, schedule subs by text via Twilio/Bland/Retell, notify homebuyers on milestone completion.",
+    "Cornerstone PM provides 150+ REST API endpoints (84 dedicated routes + generic execute for all 396+ Foreman skills) and 37+ named webhook events. 3 schema formats: Anthropic, OpenAI function calling, OpenAPI 3.1. BYOA (Bring Your Own Agent) lets AI agents automate the full home-building loop.",
   applicationSubCategory: "Construction REST API and Webhooks",
   keywords:
     "home builder API, construction REST API, builder API access, BYOA construction, webhook construction, automated bidding pipeline, Twilio construction integration, Bland construction integration, Retell construction integration, builder software webhooks, construction event webhooks, AI agent construction API",
   offerNote:
     "REST API and webhooks included on Cornerstone PM Pro+ ($599/mo). Full developer documentation at app.cornerstonepm.ai/developers.",
   featureList: [
-    "40+ REST API endpoints covering vendors, bids, homes, tasks, POs, payments, options, parts",
+    "150+ REST API endpoints (84 dedicated RESTful routes + generic execute for 396+ Foreman skills)",
+    "3 schema formats: Anthropic tool format, OpenAI function calling, OpenAPI 3.1",
+    "Generic execute endpoint: POST /api/ext/execute runs any Foreman skill by name",
     "37+ named webhook events with typed payloads",
     "HMAC signatures and delivery logs",
     "Auto-retry with exponential backoff",
@@ -1099,7 +1101,7 @@ export default function ApiAccessPage() {
             <div className="text-white font-bold text-xl mb-6">Pro+ Plan</div>
             <div className="space-y-3 text-left mb-8">
               {[
-                "Full REST API — 40+ endpoints (vendors, bids, homes, tasks, POs, parts, options, webhooks)",
+                "Full REST API — 150+ endpoints (84 dedicated routes + generic execute for all 396+ Foreman skills)",
                 "Foreman Skill Pack — GET /api/ext/skills in Anthropic, OpenAI, or OpenAPI 3.1 format",
                 "396+ skills across 20 categories, auto-synced as new skills ship",
                 "Scoped API keys per agent/integration",

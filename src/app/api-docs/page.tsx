@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { Check, Shield, Zap, Globe, Code, Webhook, CreditCard, Building2, ArrowRight, ClipboardList, Users, Layers, Package, Clock, FileText, Bell, BarChart3, ChevronDown } from "lucide-react";
+import { Check, Shield, Zap, Globe, Code, Webhook, CreditCard, Building2, ArrowRight, ClipboardList, Users, Layers, Package, Clock, FileText, Bell, BarChart3, ChevronDown, Terminal } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
@@ -15,6 +15,17 @@ const methodColor: Record<string, string> = {
 };
 
 const endpointGroups = [
+  {
+    label: "Generic Execute",
+    icon: Terminal,
+    color: "text-violet-400",
+    bg: "bg-violet-500/10",
+    border: "border-violet-500/20",
+    endpoints: [
+      { method: "POST", path: "/api/ext/execute", desc: "Run any Foreman skill by name", detail: "Pass { tool: 'skillName', input: { ... } } to execute any of Foreman's 396+ skills. Returns structured JSON. Supports all skill categories: Parts, Options, Vendors, Takeoffs, Locations, Templates, Structural Options, Budgets, Bids, Reports, Design Center, Sales, Undo, Ferguson catalog, and more." },
+      { method: "GET", path: "/api/ext/skills", desc: "Get all Foreman AI skill definitions", detail: "?format=anthropic (default) | ?format=openai | ?format=openapi \u2014 Returns 396+ skills across 20 categories in your choice of schema format. Drop directly into any Claude, GPT-4, or LangChain agent." },
+    ],
+  },
   {
     label: "Vendors",
     icon: Building2,
@@ -314,13 +325,13 @@ export default function ApiDocsPage() {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-xs font-semibold mb-6">
             <Code className="w-3.5 h-3.5" />
-            PRO+ PLAN &mdash; 40+ ENDPOINTS (GROWING)
+            PRO+ PLAN &mdash; 150+ API ENDPOINTS &mdash; 3 SCHEMA FORMATS
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
             Cornerstone PM™ <span className="text-cyan-400">API</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-            40+ REST endpoints and growing rapidly — covering every major entity. Vendors, bids, homes, tasks, POs, payments, options, parts, timesheets, webhooks, and more. New endpoints ship as the platform grows. Standard auth. JSON in, JSON out.
+            150+ REST API endpoints — 84 dedicated RESTful routes with clean URLs plus a generic execute endpoint that exposes all 396+ Foreman AI skills via REST. 3 schema formats: Anthropic, OpenAI function calling, and OpenAPI 3.1. Pro+ API key auth with role-based permissions. JSON in, JSON out.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
             <Link href="/beta" className="px-8 py-4 rounded-full bg-cyan-400 text-slate-900 font-bold text-lg hover:bg-cyan-300 transition-all duration-200 shadow-lg shadow-cyan-500/30 hover:-translate-y-0.5">
@@ -358,10 +369,10 @@ export default function ApiDocsPage() {
       <section className="py-12 px-4">
         <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-5">
           {[
-            { num: "40+", label: "REST endpoints", sub: "vs ~40 Pave objects in JobTread" },
-            { num: "67+", label: "HTTP methods", sub: "GET, POST, PATCH, DELETE" },
+            { num: "150+", label: "API endpoints", sub: "84 dedicated + execute for 396+ skills" },
+            { num: "3", label: "Schema formats", sub: "Anthropic \u00b7 OpenAI \u00b7 OpenAPI 3.1" },
             { num: "37+", label: "Webhook events", sub: "Real-time, HMAC-signed" },
-            { num: "110+", label: "Database tables", sub: "Every endpoint is real data" },
+            { num: "396+", label: "Foreman skills", sub: "All callable via REST" },
           ].map((s) => (
             <div key={s.label} className="text-center p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
               <div className="text-4xl font-black text-cyan-400 mb-1">{s.num}</div>
@@ -407,9 +418,9 @@ export default function ApiDocsPage() {
       {/* Endpoints */}
       <section id="endpoints" className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-black text-center mb-4">40+ Endpoints (and growing)</h2>
+          <h2 className="text-3xl font-black text-center mb-4">84 Dedicated RESTful Routes + Generic Execute</h2>
           <p className="text-slate-400 text-center mb-3 max-w-xl mx-auto">All endpoints prefixed with <code className="text-cyan-400 bg-slate-800 px-1.5 py-0.5 rounded text-sm">https://app.cornerstonepm.ai</code></p>
-          <p className="text-slate-500 text-center text-sm mb-12">Built on 110+ database tables &mdash; every endpoint reflects real construction data, not generic project management abstractions.</p>
+          <p className="text-slate-500 text-center text-sm mb-12">Plus <code className="text-violet-400">POST /api/ext/execute</code> &mdash; a generic endpoint that runs any of Foreman&apos;s 396+ skills by name. Built on 110+ database tables &mdash; every endpoint reflects real construction data.</p>
 
           <div className="space-y-3">
             {endpointGroups.map((group) => {
@@ -550,7 +561,7 @@ export default function ApiDocsPage() {
             <div className="text-white font-bold text-xl mb-6">Pro+ Plan</div>
             <div className="space-y-3 text-left mb-8">
               {[
-                "40+ REST endpoints (vendors, bids, homes, tasks, POs, parts, options, timesheets, webhooks)",
+                "150+ API endpoints (84 dedicated routes + generic execute for all 396+ Foreman skills)",
                 "Scoped API keys per integration",
                 "37+ named webhook events (catalog growing) with HMAC signing",
                 "100 req/min, 10,000 req/day rate limits",
@@ -577,7 +588,7 @@ export default function ApiDocsPage() {
       <section className="py-20 px-4 text-center border-t border-slate-800/60">
         <h2 className="text-4xl font-black mb-4">
           JobTread has ~40 Pave objects.<br />
-          <span className="text-cyan-400">We have 40+ REST endpoints — and growing rapidly.</span>
+          <span className="text-cyan-400">We have 150+ API endpoints. Every Foreman skill callable via REST.</span>
         </h2>
         <p className="text-slate-400 text-lg mb-10 max-w-xl mx-auto">
           Standard REST. No custom query language. If your AI agent can make an HTTP request, it works with Cornerstone PM™.

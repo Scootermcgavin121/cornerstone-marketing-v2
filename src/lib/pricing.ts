@@ -21,7 +21,9 @@
 export const FOREMAN_SKILL_COUNT = 396;
 export const FOREMAN_SKILL_CATEGORIES = 20;
 export const WEBHOOK_EVENT_COUNT = 37;
-export const API_ENDPOINT_COUNT = 40;
+export const API_ENDPOINT_COUNT = 150;
+export const API_DEDICATED_ROUTES = 84;
+export const API_SCHEMA_FORMATS = 3; // Anthropic, OpenAI function calling, OpenAPI 3.1
 
 // ----------------------------------------------------------------
 // Plan tier shape
@@ -170,7 +172,7 @@ export const PLANS: Plan[] = [
     maxUsers: 60,
     features: [
       "Everything in Pro, plus:",
-      "REST API + 37+ webhooks + BYOA INCLUDED \u2014 every endpoint maps to one of Foreman\u2019s 396+ skills, so Claude, ChatGPT, n8n, Twilio, Bland & Retell get the same toolbox Foreman uses",
+      "REST API (150+ endpoints) + 37+ webhooks + BYOA INCLUDED \u2014 84 dedicated RESTful routes + generic execute endpoint for all 396+ Foreman skills. 3 schema formats (Anthropic, OpenAI, OpenAPI 3.1). Claude, ChatGPT, n8n, Twilio, Bland & Retell get the same toolbox Foreman uses",
       "Foreman AI\u2122 (930/mo, Claude Sonnet 4)",
       "Blueprint AI (310/mo)",
       "Bid Import AI (1,240/mo)",
@@ -275,7 +277,7 @@ export function annualTotal(monthly: number): string {
 
 export const BYOA_COPY = {
   oneLiner:
-    `REST API + ${WEBHOOK_EVENT_COUNT}+ named webhook events. Every endpoint maps to one of Foreman\u2019s ${FOREMAN_SKILL_COUNT}+ skills \u2014 Claude, ChatGPT, n8n, Twilio, Bland, Retell get the same toolbox Foreman uses.`,
+    `${API_ENDPOINT_COUNT}+ REST API endpoints (${API_DEDICATED_ROUTES} dedicated routes + generic execute for all ${FOREMAN_SKILL_COUNT}+ skills) + ${WEBHOOK_EVENT_COUNT}+ named webhook events. ${API_SCHEMA_FORMATS} schema formats (Anthropic, OpenAI, OpenAPI 3.1). Claude, ChatGPT, n8n, Twilio, Bland, Retell get the same toolbox Foreman uses.`,
   inclusionLine:
     `Included with Pro+ ($599/mo). Not available on lower tiers.`,
   whyDifferentiated:

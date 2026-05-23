@@ -9,6 +9,7 @@ import {
   ADDONS,
   FOREMAN_SKILL_COUNT,
   WEBHOOK_EVENT_COUNT,
+  API_ENDPOINT_COUNT,
 } from "@/lib/pricing";
 
 export const metadata = {
@@ -1068,7 +1069,7 @@ export default function ForemanPage() {
                     "Blueprint AI — 310 takeoffs/mo",
                     "Bid Import AI — 1,240/mo",
                     "All Pro features (MLS + Punchlist 1,240/mo each, Sales, Purchasing, Design Center)",
-                    `REST API + ${WEBHOOK_EVENT_COUNT}+ webhooks + BYOA INCLUDED \u2014 every endpoint maps to one of Foreman\u2019s ${FOREMAN_SKILL_COUNT}+ skills, so Claude, ChatGPT, n8n, Twilio, Bland & Retell get the same toolbox`,
+                    `REST API (${API_ENDPOINT_COUNT}+ endpoints) + ${WEBHOOK_EVENT_COUNT}+ webhooks + BYOA INCLUDED \u2014 84 dedicated routes + generic execute for all ${FOREMAN_SKILL_COUNT}+ skills. 3 schema formats (Anthropic, OpenAI, OpenAPI 3.1)`,
                     `Power User Seat add-on available (+$${ADDONS.powerUserSeat.monthly}/seat/mo)`,
                     "60-day onboarding boost — 3× AI limits",
                   ].map((f) => (
