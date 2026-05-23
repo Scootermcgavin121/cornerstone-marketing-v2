@@ -99,7 +99,7 @@ const plans: Plan[] = [
       "Bid Import AI \u2014 parse vendor bids from PDF (600/mo)",
       "AI Support Agent (7,500/mo org-wide)",
       "3\u00d7 AI limits for first 30 days",
-      "REST API available as $200/mo add-on",
+      "REST API + 37+ webhooks + BYOA \u2014 $200/mo add-on (bring your own agent: Claude, ChatGPT, Twilio, Bland, Retell, n8n, Make, Zapier)",
       "Up to 30 users",
       "Priority onboarding support",
     ],
@@ -118,7 +118,7 @@ const plans: Plan[] = [
     maxUsers: 60,
     features: [
       "Everything in Pro, plus:",
-      "REST API + 37+ Webhooks INCLUDED",
+      "REST API + 37+ webhooks + BYOA INCLUDED \u2014 wire Claude, ChatGPT, Twilio, Bland, Retell, n8n, Make, or Zapier directly to your live builder data (no $200 add-on needed)",
       "Foreman AI\u2122 (900/mo, Opus model)",
       "Blueprint AI (300/mo)",
       "Bid Import AI (1,200/mo)",
@@ -337,7 +337,92 @@ export function PricingSection() {
           </div>
           <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-700 bg-slate-800/60 text-slate-300 text-sm font-semibold">
             <Zap className="w-4 h-4 text-cyan-400" />
-            <span>REST API + Webhooks: +$200/mo add-on (Pro only, included in Pro+)</span>
+            <span>REST API + Webhooks + BYOA: +$200/mo add-on (Pro only, included in Pro+)</span>
+          </div>
+        </div>
+
+        {/* BYOA Callout — explains what the $200/mo add-on actually unlocks */}
+        <div className="max-w-5xl mx-auto mb-12">
+          <div className="relative rounded-3xl bg-gradient-to-br from-cyan-950/40 via-slate-900/80 to-violet-950/40 border border-cyan-500/30 p-7 sm:p-9 overflow-hidden">
+            <div className="absolute top-0 right-0 w-72 h-72 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute bottom-0 left-0 w-72 h-72 bg-violet-500/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="relative z-10">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-5">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/15 border border-cyan-500/30 text-cyan-300 text-[11px] font-black uppercase tracking-widest w-fit">
+                  <Zap className="w-3.5 h-3.5" />
+                  BYOA &mdash; Bring Your Own Agent
+                </div>
+                <span className="text-slate-500 text-xs">Pro: +$200/mo add-on &middot; Pro+: included</span>
+              </div>
+
+              <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 leading-tight">
+                Wire <span className="text-cyan-300">your own AI agent</span> to your live builder data.
+              </h3>
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6 max-w-3xl">
+                Already running Claude, ChatGPT, n8n, Make, or Zapier? Use a voice provider like Twilio,
+                Bland, or Retell to text and call subs? <span className="text-white font-semibold">Point them at Cornerstone.</span>{" "}
+                The $200/mo add-on (or Pro+, where it&apos;s included) unlocks our full REST API and 37+ named
+                webhook events &mdash; the same surface Foreman AI uses internally. Your agents can read homes,
+                schedule tasks, send bid requests, update POs, fire SMS to subs, and notify homebuyers the
+                moment a milestone hits.
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                <div className="rounded-xl border border-slate-700/60 bg-slate-900/60 p-4">
+                  <div className="text-cyan-300 text-xs font-black uppercase tracking-wider mb-2">What you get</div>
+                  <ul className="space-y-1.5 text-sm text-slate-300">
+                    <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-cyan-400 mt-1 flex-shrink-0" />40+ REST API endpoints</li>
+                    <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-cyan-400 mt-1 flex-shrink-0" />37+ named webhook events</li>
+                    <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-cyan-400 mt-1 flex-shrink-0" />HMAC signatures + delivery logs</li>
+                    <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-cyan-400 mt-1 flex-shrink-0" />Auto-retry with backoff</li>
+                    <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-cyan-400 mt-1 flex-shrink-0" />Scoped API keys</li>
+                  </ul>
+                </div>
+                <div className="rounded-xl border border-slate-700/60 bg-slate-900/60 p-4">
+                  <div className="text-violet-300 text-xs font-black uppercase tracking-wider mb-2">Bring your agent</div>
+                  <ul className="space-y-1.5 text-sm text-slate-300">
+                    <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-violet-400 mt-1 flex-shrink-0" />Claude / Anthropic</li>
+                    <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-violet-400 mt-1 flex-shrink-0" />ChatGPT / OpenAI</li>
+                    <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-violet-400 mt-1 flex-shrink-0" />n8n / Make / Zapier</li>
+                    <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-violet-400 mt-1 flex-shrink-0" />Custom Python / Node scripts</li>
+                    <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-violet-400 mt-1 flex-shrink-0" />In-house enterprise agents</li>
+                  </ul>
+                </div>
+                <div className="rounded-xl border border-slate-700/60 bg-slate-900/60 p-4">
+                  <div className="text-amber-300 text-xs font-black uppercase tracking-wider mb-2">Bring your voice/SMS</div>
+                  <ul className="space-y-1.5 text-sm text-slate-300">
+                    <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-amber-400 mt-1 flex-shrink-0" />Twilio (SMS + voice)</li>
+                    <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-amber-400 mt-1 flex-shrink-0" />Bland AI (voice agent)</li>
+                    <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-amber-400 mt-1 flex-shrink-0" />Retell AI (voice agent)</li>
+                    <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-amber-400 mt-1 flex-shrink-0" />Vapi / ElevenLabs</li>
+                    <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-amber-400 mt-1 flex-shrink-0" />Any HTTP webhook receiver</li>
+                  </ul>
+                </div>
+              </div>
+
+              <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-5 max-w-3xl">
+                <span className="text-white font-semibold">Why this matters:</span> JobTread, Buildertrend, and CoConstruct
+                will tell you &ldquo;webhooks exist.&rdquo; We ship the full event catalog with typed payloads &mdash;
+                home lifecycle, task/schedule changes, vendor notifications, cascade scheduling, messages, sales
+                pipeline, bid requests. Builders running their own AI ops actually have something to wire up.
+              </p>
+
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
+                <Link
+                  href="/api-access"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-violet-500 text-white text-sm font-bold hover:from-cyan-400 hover:to-violet-400 transition-all shadow-lg shadow-cyan-500/20"
+                >
+                  See the full API &amp; webhook catalog
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+                <Link
+                  href="/api-docs"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-slate-700 text-slate-300 text-sm font-semibold hover:border-cyan-500/40 hover:text-white transition-all"
+                >
+                  Browse developer docs
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
 

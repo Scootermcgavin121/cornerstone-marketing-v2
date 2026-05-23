@@ -1029,7 +1029,7 @@ export default function ForemanPage() {
                     "MLS Listing Agent + Punchlist AI",
                     "Everything in Builder (Sales, Purchasing, Design Center)",
                     "Advanced analytics & reporting",
-                    "REST API available as $200/mo add-on",
+                    "REST API + 37+ webhooks + BYOA — $200/mo add-on (bring your own agent: Claude, ChatGPT, Twilio, Bland, Retell, n8n)",
                     "Priority onboarding support",
                   ].map((f) => (
                     <div key={f} className="flex items-start gap-3">
@@ -1062,7 +1062,7 @@ export default function ForemanPage() {
                     "Blueprint AI — 50 takeoffs/mo",
                     "Bid Import AI — unlimited extractions",
                     "All Pro features (MLS, Punchlist, Sales, Purchasing, Design Center)",
-                    "REST API + 37+ Webhook events — INCLUDED",
+                    "REST API + 37+ webhooks + BYOA INCLUDED — wire Claude, ChatGPT, Twilio, Bland, Retell, n8n, Make, or Zapier to your live builder data",
                     "Power User Seat add-on available (+$149/seat/mo)",
                     "60-day onboarding boost — 3× AI limits",
                   ].map((f) => (
