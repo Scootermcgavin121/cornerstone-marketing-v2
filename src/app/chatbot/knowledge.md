@@ -633,10 +633,10 @@ Available on: Builder plan and above.
 
 Four plans. No phantom tiers, no "Enterprise" upsell, no hidden bundles.
 
-- **Starter $149/mo**: Construction Scheduling, Gantt, 17 templates, vendor assignment, permitting, buyer portal, AI Support Agent, Punchlist AI (150/mo), MLS Listing AI (150/mo). Up to 30 users.
-- **Builder $299/mo**: Everything in Starter + Sales Pipeline + Purchasing & Budgets + Design Center with options engine. Punchlist AI (300/mo), MLS Listing AI (300/mo). Up to 30 users.
-- **Pro $499/mo**: Everything in Builder + Foreman AI (396+ skills, Sonnet, 600 conversations/mo) + Blueprint AI (25 takeoffs/mo) + Bid Import AI (600/mo) + AI Support Agent (7,500/mo org-wide) + 3x AI limits for first 30 days. Up to 30 users.
-- **Pro+ $599/mo**: Everything in Pro + REST API + 37+ Webhooks INCLUDED (HMAC-signed, typed payloads, delivery logs, auto-retry - routable to Twilio/Bland/Retell for SMS/voice), automated bidding pipeline (7-wave), CRM Migration Wizard, Foreman AI on Opus (900 conversations/mo), Blueprint AI (50 takeoffs/mo), Bid Import AI (1,200/mo), AI Support Agent (15,000/mo org-wide), 3x AI limits for first 60 days, SSO & advanced permissions, priority support & dedicated onboarding. Up to 60 users.
+- **Starter $149/mo**: Construction Scheduling, Gantt, 17 templates, vendor assignment, permitting, buyer portal, AI Support Agent (7,750/mo org-wide), Punchlist AI (150/mo), MLS Listing AI (150/mo). Up to 30 users.
+- **Builder $299/mo**: Everything in Starter + Sales Pipeline + Purchasing & Budgets + Design Center with options engine. AI Support Agent (7,750/mo org-wide), Punchlist AI (300/mo), MLS Listing AI (300/mo). Up to 30 users.
+- **Pro $499/mo**: Everything in Builder + Foreman AI (396+ skills, Sonnet, 600 conversations/mo) + Blueprint AI (25 takeoffs/mo) + Bid Import AI (600/mo) + AI Support Agent (7,750/mo org-wide) + 3x AI limits for first 30 days. Up to 30 users.
+- **Pro+ $599/mo**: Everything in Pro + REST API + 37+ Webhooks INCLUDED (HMAC-signed, typed payloads, delivery logs, auto-retry - routable to Twilio/Bland/Retell for SMS/voice), automated bidding pipeline (7-wave), CRM Migration Wizard, Foreman AI on Opus (900 conversations/mo), Blueprint AI (50 takeoffs/mo), Bid Import AI (1,200/mo), AI Support Agent (15,500/mo org-wide), 3x AI limits for first 60 days, SSO & advanced permissions, priority support & dedicated onboarding. Up to 60 users.
 
 ### Add-ons
 

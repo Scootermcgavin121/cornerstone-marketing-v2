@@ -90,11 +90,11 @@ const aiFeatures: AIFeature[] = [
   {
     name: "AI Support Agent",
     description:
-      "24/7 customer-facing FAQ and help chatbot. Answers instantly from your project data.",
-    starter: "\u2014",
-    builder: "\u2014",
-    pro: "7,500/mo",
-    proPlus: "15,000/mo",
+      "24/7 customer-facing FAQ and help chatbot. Answers instantly from your project data. Included on every plan.",
+    starter: "7,750/mo",
+    builder: "7,750/mo",
+    pro: "7,750/mo",
+    proPlus: "15,500/mo",
     powerUser: "Same",
     scope: "org",
   },

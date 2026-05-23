@@ -17,21 +17,21 @@ const supportAiSchema = buildFeatureSchema({
   offerNote:
     "Included on every Cornerstone PM plan starting at $149/mo. No additional cost.",
   featureList: [
-    "Always-on availability — 24/7 instant answers",
+    "Always-on availability - 24/7 instant answers",
     "Knows every feature, workflow, and permission",
     "Plain English question handling",
     "Trained on the full Cornerstone PM knowledge base",
     "Available to both builder teams and buyer portal users",
-    "In-app chat surface — no separate help portal",
+    "In-app chat surface - no separate help portal",
     "Continuously updated as features ship",
     "Reduces support ticket volume",
   ],
 });
 
 export const metadata = {
-  title: "AI Support Agent — Instant Answers, Zero Wait Time | Cornerstone PM™",
+  title: "AI Support Agent - Instant Answers, Zero Wait Time | Cornerstone PMTM",
   description:
-    "AI Support Agent is the always-on AI knowledge agent built into Cornerstone PM™. Knows every feature, workflow, and permission. Answers buyer and team questions 24/7 in plain English — included on every plan.",
+    "AI Support Agent is the always-on AI knowledge agent built into Cornerstone PMTM. Knows every feature, workflow, and permission. Answers buyer and team questions 24/7 in plain English - included on every plan.",
   alternates: { canonical: "https://www.cornerstonepm.ai/support-ai" },
 };
 
@@ -44,7 +44,7 @@ const audiences = [
   {
     icon: BookOpen,
     title: "Your buyers",
-    desc: "Buyers in the buyer portal get 24/7 answers about their home, milestones, design selections, and the build process — before they pick up the phone.",
+    desc: "Buyers in the buyer portal get 24/7 answers about their home, milestones, design selections, and the build process - before they pick up the phone.",
   },
   {
     icon: MessageCircle,
@@ -54,31 +54,31 @@ const audiences = [
 ];
 
 const examples = [
-  { q: "How do I set up a vendor in Cornerstone?", a: "Walks you through the vendor creation flow, scope assignments, community linkage, and first bid invite — with direct links to the relevant app screens." },
+  { q: "How do I set up a vendor in Cornerstone?", a: "Walks you through the vendor creation flow, scope assignments, community linkage, and first bid invite - with direct links to the relevant app screens." },
   { q: "What roles have access to the options engine?", a: "Returns the actual role-permission matrix for the options engine, by tenant, so you know who can edit what." },
-  { q: "Why didn't my budget auto-generate?", a: "Diagnoses the most common causes: missing structural options, locked floorplan, plan not yet in production status — and tells you exactly what to fix." },
+  { q: "Why didn't my budget auto-generate?", a: "Diagnoses the most common causes: missing structural options, locked floorplan, plan not yet in production status - and tells you exactly what to fix." },
   { q: "How do I reschedule a milestone task across all active homes?", a: "Explains the bulk-reschedule flow plus the notification preferences that control who gets pinged when dates shift." },
 ];
 
 const features = [
-  { title: "Trained on Cornerstone PM™", desc: "Not a generic LLM. AI Support Agent is grounded in Cornerstone's actual feature documentation, workflows, and permission matrix — so the answers you get match the app you're actually using." },
-  { title: "Every Feature Documented", desc: "Construction scheduling, sales pipeline, design center, purchasing, bidding, options engine, permitting, takeoffs, MLS listings, AI agents — all covered." },
-  { title: "Workflow-Aware", desc: "Doesn't just describe a button — explains the multi-step workflows. \"Lock structural options → auto-budget → send to bid → award → PO\" is one conversation, not a wiki crawl." },
-  { title: "Permission-Aware", desc: "Knows the role-permission matrix. \"Can a sales counselor edit base pricing?\" returns the actual answer for your tenant — not a generic doc page." },
+  { title: "Trained on Cornerstone PMTM", desc: "Not a generic LLM. AI Support Agent is grounded in Cornerstone's actual feature documentation, workflows, and permission matrix - so the answers you get match the app you're actually using." },
+  { title: "Every Feature Documented", desc: "Construction scheduling, sales pipeline, design center, purchasing, bidding, options engine, permitting, takeoffs, MLS listings, AI agents - all covered." },
+  { title: "Workflow-Aware", desc: "Doesn't just describe a button - explains the multi-step workflows. \"Lock structural options → auto-budget → send to bid → award → PO\" is one conversation, not a wiki crawl." },
+  { title: "Permission-Aware", desc: "Knows the role-permission matrix. \"Can a sales counselor edit base pricing?\" returns the actual answer for your tenant - not a generic doc page." },
   { title: "Always On", desc: "24/7 on every page of the app and the buyer portal. No SLA windows, no business hours, no \"someone will get back to you Monday.\"" },
-  { title: "Plain English", desc: "Answers in the language you asked the question in. Buyer asks about \"countertops,\" team member asks about \"design center selections\" — both get the right answer." },
-  { title: "Reduces Support Load", desc: "The hundreds of \"how do I…\" questions that used to ping you, your office manager, or your support inbox now resolve in chat. You get back to building." },
-  { title: "On Every Page", desc: "Help bubble lives in the app shell. Click it from anywhere — it picks up the page context, so \"how does this work?\" actually understands what \"this\" is." },
+  { title: "Plain English", desc: "Answers in the language you asked the question in. Buyer asks about \"countertops,\" team member asks about \"design center selections\" - both get the right answer." },
+  { title: "Reduces Support Load", desc: "The hundreds of \"how do I...\" questions that used to ping you, your office manager, or your support inbox now resolve in chat. You get back to building." },
+  { title: "On Every Page", desc: "Help bubble lives in the app shell. Click it from anywhere - it picks up the page context, so \"how does this work?\" actually understands what \"this\" is." },
   { title: "Per-Org Isolation", desc: "Your conversations stay in your tenant. The AI never sees other builders' data and your conversations never train models." },
   { title: "Faster Onboarding", desc: "New hires don't need a 2-week training week. They learn by asking. The AI walks them through every feature on demand." },
   { title: "Buyer Portal Coverage", desc: "Buyers ask \"when is my drywall walk?\" or \"what's a phase gate inspection?\" and get clear answers with their actual home's milestone data." },
-  { title: "Included Everywhere", desc: "Starter, Builder, Pro, Pro+ — AI Support Agent is on every plan. No add-on, no usage caps, no surprise bill." },
+  { title: "Included Everywhere", desc: "Starter, Builder, Pro, Pro+ \u2014 AI Support Agent is on every plan with generous org-wide caps (7,750/mo Starter\u2013Pro, 15,500/mo Pro+). No add-on, no surprise bill." },
 ];
 
 const faq: FAQItem[] = [
   {
     q: "What is the AI Support Agent?",
-    a: "AI Support Agent is the always-on AI knowledge agent built into Cornerstone PM™. It's trained on the platform's complete feature documentation, workflow guides, and permission matrix, so it can answer any \"how do I do X?\" question about Cornerstone in plain English — from a team member, a buyer, or a vendor — 24/7.",
+    a: "AI Support Agent is the always-on AI knowledge agent built into Cornerstone PMTM. It's trained on the platform's complete feature documentation, workflow guides, and permission matrix, so it can answer any \"how do I do X?\" question about Cornerstone in plain English - from a team member, a buyer, or a vendor - 24/7.",
   },
   {
     q: "How is this different from a chatbot like ChatGPT?",
@@ -86,11 +86,11 @@ const faq: FAQItem[] = [
   },
   {
     q: "Where does the AI Support Agent live?",
-    a: "Everywhere in the app. There's a help bubble in the app shell that opens chat from any page — and it picks up the page context, so asking \"how does this work?\" actually knows what \"this\" is. It's also in the buyer portal so buyers can self-serve answers about their home and the build process.",
+    a: "Everywhere in the app. There's a help bubble in the app shell that opens chat from any page - and it picks up the page context, so asking \"how does this work?\" actually knows what \"this\" is. It's also in the buyer portal so buyers can self-serve answers about their home and the build process.",
   },
   {
     q: "What kinds of questions can it answer?",
-    a: "Anything documented in Cornerstone PM™: setting up vendors, creating bid requests, locking structural options, generating MLS listings, configuring permitting sequences, managing the options engine, running design center, the auto-budget flow, role permissions, notification settings, and the full purchasing → bid → PO pipeline. If a feature exists, AI Support Agent can explain it.",
+    a: "Anything documented in Cornerstone PMTM: setting up vendors, creating bid requests, locking structural options, generating MLS listings, configuring permitting sequences, managing the options engine, running design center, the auto-budget flow, role permissions, notification settings, and the full purchasing → bid → PO pipeline. If a feature exists, AI Support Agent can explain it.",
   },
   {
     q: "Does it answer buyer questions too?",
@@ -98,15 +98,15 @@ const faq: FAQItem[] = [
   },
   {
     q: "Is my data used to train the AI?",
-    a: "No. AI Support Agent runs on a model with training disabled. Your conversations, your permission matrix, your tenant data — none of it leaves your tenant for training purposes. Each conversation is isolated.",
+    a: "No. AI Support Agent runs on a model with training disabled. Your conversations, your permission matrix, your tenant data - none of it leaves your tenant for training purposes. Each conversation is isolated.",
   },
   {
     q: "What plan is the AI Support Agent on?",
-    a: "Every plan. Starter ($149/mo), Builder ($299/mo), Pro ($499/mo), and Pro+ ($599/mo) all include AI Support Agent with no usage caps. It's the baseline AI that comes free with Cornerstone — the rest of the AI lineup (MLS Listing, Foreman AI, Blueprint AI, Bid Import AI) layers in at higher tiers.",
+    a: "Every plan. Starter ($149/mo), Builder ($299/mo), and Pro ($499/mo) include AI Support Agent with a 7,750/mo org-wide cap. Pro+ ($599/mo) doubles it to 15,500/mo org-wide. It's the baseline AI that comes free with Cornerstone - the rest of the AI lineup (MLS Listing, Foreman AI, Blueprint AI, Bid Import AI) layers in at higher tiers.",
   },
   {
     q: "How does this reduce my support load?",
-    a: "Most builder support tickets are \"how do I…\" questions — the kind a documented platform should answer instantly. AI Support Agent handles those automatically, so your team only escalates when something's actually broken or genuinely outside the docs. Builders running AI Support Agent in beta saw 60-80% deflection on routine \"how to\" tickets.",
+    a: "Most builder support tickets are \"how do I...\" questions - the kind a documented platform should answer instantly. AI Support Agent handles those automatically, so your team only escalates when something's actually broken or genuinely outside the docs. Builders running AI Support Agent in beta saw 60-80% deflection on routine \"how to\" tickets.",
   },
 ];
 
@@ -133,7 +133,7 @@ export default function SupportAiPage() {
             Every feature, every workflow, every permission &mdash; answered in seconds.
           </p>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-10">
-            Trained on Cornerstone PM™. Lives on every page. Helps your team, your buyers, and your trades 24/7. Included on every plan.
+            Trained on Cornerstone PMTM. Lives on every page. Helps your team, your buyers, and your trades 24/7. Included on every plan.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/beta" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-cyan-400 text-slate-900 font-bold text-lg hover:from-cyan-400 hover:to-cyan-300 shadow-lg shadow-cyan-500/25 transition-all duration-200">
@@ -228,7 +228,7 @@ export default function SupportAiPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-black mb-3">What the AI Support Agent knows</h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">Trained on the full Cornerstone PM™ platform. Twelve capabilities, no add-ons.</p>
+            <p className="text-slate-400 max-w-2xl mx-auto">Trained on the full Cornerstone PMTM platform. Twelve capabilities, no add-ons.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {features.map((f) => (
