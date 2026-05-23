@@ -21,7 +21,7 @@ export function StructuredData() {
             { "@type": "UnitPriceSpecification", "price": "149", "priceCurrency": "USD", "name": "Starter - Scheduling + Buyer Portal", "description": "Construction scheduling, Gantt charts, subcontractor confirmations, homeowner portal, permit tracker, multi-community support, up to 500 active homes, up to 30 users.", "billingDuration": "P1M" },
             { "@type": "UnitPriceSpecification", "price": "299", "priceCurrency": "USD", "name": "Builder - Full Platform (No AI)", "description": "Adds purchasing, sales pipeline, design center, MLS listing agent. Up to 30 users.", "billingDuration": "P1M" },
             { "@type": "UnitPriceSpecification", "price": "499", "priceCurrency": "USD", "name": "Pro - With AI Agents", "description": "Adds Foreman AI (396+ skills), Blueprint AI (25 takeoffs/mo). Up to 1,000 active homes, up to 30 users.", "billingDuration": "P1M" },
-            { "@type": "UnitPriceSpecification", "price": "599", "priceCurrency": "USD", "name": "Pro+ - Full Platform + REST API", "description": "Full REST API + 37+ webhook events INCLUDED, BYOA automated bidding pipeline, Foreman AI on Opus (900 conversations/mo), Blueprint AI (50 takeoffs/mo), Bid Import AI, scoped API keys, SSO, SLA. Up to 60 users.", "billingDuration": "P1M" },
+            { "@type": "UnitPriceSpecification", "price": "599", "priceCurrency": "USD", "name": "Pro+ - Full Platform + REST API", "description": "Full REST API + 37+ webhook events INCLUDED, BYOA automated bidding pipeline, Foreman AI (Claude Sonnet 4, 930 conversations/mo), Blueprint AI (310/mo), Bid Import AI (1,240/mo), scoped API keys, SSO, SLA. Up to 60 users.", "billingDuration": "P1M" },
           ],
         },
         "featureList": [

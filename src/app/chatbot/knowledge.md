@@ -186,7 +186,7 @@ Available on **Pro+ plan**.
 ### Platform Intelligence - Gets Smarter Over Time
 Cornerstone PM learns YOUR building style. The more floorplans you set up, the smarter your AI assistant becomes - automatically applying your fixture preferences, material choices, and specifications to new projects. This isn't generic AI that treats every builder the same. It's a platform that adapts to how YOU build.
 
-**Monthly AI limits (not daily):** All AI features now use monthly limits for maximum flexibility. Pro gets 600 Foreman AI conversations/mo, Pro+ gets 900/mo. Use them when you need them - no more losing unused daily allowance.
+**Monthly AI limits (not daily):** All AI features now use monthly limits for maximum flexibility. Pro gets 620 Foreman AI conversations/mo, Pro+ gets 930/mo. Use them when you need them - no more losing unused daily allowance.
 
 ### Design Center Enhancements
 - **Bulk create options** from scope items or the parts catalog - no more one-at-a-time entry
@@ -567,7 +567,7 @@ Foreman ships with 23+ standard operating procedures for common multi-step const
 - "Create 5 GE Profile refrigerators in the design center with SKUs and pricing"
 
 Available to: Admin, Purchasing Manager, Sales Manager roles
-Pricing: Pro plan ($499/mo) - Sonnet model, 600 Foreman AI conversations/month. Pro+ ($599/mo) - Opus model, 900 conversations/month. Power User Seat add-on (+$149/seat/mo) on Pro and Pro+ raises a user's limit to 3,000 Foreman AI conversations/month.
+Pricing: Pro plan ($499/mo) - Claude Sonnet 4, 620 Foreman AI conversations/month. Pro+ ($599/mo) - Claude Sonnet 4, 930 conversations/month. Power User Seat add-on (+$149/seat/mo) on Pro and Pro+ raises a user's limit to 3,100 Foreman AI conversations/month.
 
 ### 2. Punchlist AI - "Walk. Talk. Done."
 An industry-first AI-powered punch list feature. No other construction PM software has this.
@@ -633,10 +633,10 @@ Available on: Builder plan and above.
 
 Four plans. No phantom tiers, no "Enterprise" upsell, no hidden bundles.
 
-- **Starter $149/mo**: Construction Scheduling, Gantt, 17 templates, vendor assignment, permitting, buyer portal, AI Support Agent (7,750/mo org-wide), Punchlist AI (150/mo), MLS Listing AI (150/mo). Up to 30 users.
-- **Builder $299/mo**: Everything in Starter + Sales Pipeline + Purchasing & Budgets + Design Center with options engine. AI Support Agent (7,750/mo org-wide), Punchlist AI (300/mo), MLS Listing AI (300/mo). Up to 30 users.
-- **Pro $499/mo**: Everything in Builder + Foreman AI (396+ skills, Sonnet, 600 conversations/mo) + Blueprint AI (25 takeoffs/mo) + Bid Import AI (600/mo) + AI Support Agent (7,750/mo org-wide) + 3x AI limits for first 30 days. Up to 30 users.
-- **Pro+ $599/mo**: Everything in Pro + REST API + 37+ Webhooks INCLUDED (HMAC-signed, typed payloads, delivery logs, auto-retry - routable to Twilio/Bland/Retell for SMS/voice), automated bidding pipeline (7-wave), CRM Migration Wizard, Foreman AI on Opus (900 conversations/mo), Blueprint AI (50 takeoffs/mo), Bid Import AI (1,200/mo), AI Support Agent (15,500/mo org-wide), 3x AI limits for first 60 days, SSO & advanced permissions, priority support & dedicated onboarding. Up to 60 users.
+- **Starter $149/mo**: Construction Scheduling, Gantt, 17 templates, vendor assignment, permitting, buyer portal, AI Support Agent (7,750/mo org-wide), Punchlist AI (155/mo), MLS Listing AI (155/mo). Up to 30 users.
+- **Builder $299/mo**: Everything in Starter + Sales Pipeline + Purchasing & Budgets + Design Center with options engine. AI Support Agent (7,750/mo org-wide), Punchlist AI (310/mo), MLS Listing AI (310/mo). Up to 30 users.
+- **Pro $499/mo**: Everything in Builder + Foreman AI (396+ skills, Claude Sonnet 4, 620 conversations/mo) + Blueprint AI (155/mo) + Bid Import AI (620/mo) + Punchlist AI (620/mo) + MLS Listing AI (620/mo) + AI Support Agent (7,750/mo org-wide) + 3x AI limits for first 60 days. Up to 30 users.
+- **Pro+ $599/mo**: Everything in Pro + REST API + 37+ Webhooks INCLUDED (HMAC-signed, typed payloads, delivery logs, auto-retry - routable to Twilio/Bland/Retell for SMS/voice), automated bidding pipeline (7-wave), CRM Migration Wizard, Foreman AI (Claude Sonnet 4, 930 conversations/mo), Blueprint AI (310/mo), Bid Import AI (1,240/mo), Punchlist AI (1,240/mo), MLS Listing AI (1,240/mo), AI Support Agent (15,500/mo org-wide), 3x AI limits for first 60 days, SSO & advanced permissions, priority support & dedicated onboarding. Up to 60 users.
 
 ### Add-ons
 
@@ -898,7 +898,7 @@ All plans are monthly subscriptions, no long-term contracts required. Starting a
 | **Starter** | $149/month | Construction Scheduling, Gantt, 17 templates, subcontractor notifications, permitting pipeline, homeowner portal, document management, Punchlist AI, MLS Listing AI. Up to 30 users. |
 | **Builder** | $299/month | Everything in Starter + Purchasing & Budgets + Sales Pipeline + Design Center with options engine + bid management. Up to 30 users. |
 | **Pro** | $499/month | Everything in Builder + the full AI suite: Foreman AI (396+ skills), Blueprint AI (25 takeoffs/mo), Bid Import AI. Up to 30 users. |
-| **Pro+** | $599/month | Everything in Pro + REST API + 37+ webhook events INCLUDED, Foreman AI on Opus, automated bidding pipeline, CRM Migration Wizard, SSO, dedicated onboarding. Up to 60 users. |
+| **Pro+** | $599/month | Everything in Pro + REST API + 37+ webhook events INCLUDED, Foreman AI (Claude Sonnet 4, 930/mo), automated bidding pipeline, CRM Migration Wizard, SSO, dedicated onboarding. Up to 60 users. |
 
 **Add-ons:** Power User Seat +$149/seat/mo (Pro and Pro+, elevated AI limits). REST API + BYOA is a Pro+ exclusive — not available as an add-on; upgrade to Pro+ ($100/mo more than Pro) to unlock the API and bring your own agent (Claude, ChatGPT, n8n, Twilio, Bland, Retell).
 

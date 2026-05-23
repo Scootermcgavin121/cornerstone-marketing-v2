@@ -35,12 +35,12 @@ const aiFeatures: AIFeature[] = [
   {
     name: "Foreman AI\u2122",
     description:
-      "In-app AI agent with 100+ construction management skills. Reads and writes real data \u2014 takes actions, not just chat.",
+      "In-app AI agent with 396+ construction management skills. Reads and writes real data \u2014 takes actions, not just chat.",
     starter: "\u2014",
     builder: "\u2014",
-    pro: "600/mo",
-    proPlus: "900/mo",
-    powerUser: "3,000/mo",
+    pro: "620/mo",
+    proPlus: "930/mo",
+    powerUser: "3,100/mo",
     scope: "user",
   },
   {
@@ -49,9 +49,9 @@ const aiFeatures: AIFeature[] = [
       "Automated blueprint/plan analysis. Upload a floor plan PDF and get 130+ material scopes in 60 seconds.",
     starter: "\u2014",
     builder: "\u2014",
-    pro: "150/mo",
-    proPlus: "300/mo",
-    powerUser: "Unlimited",
+    pro: "155/mo",
+    proPlus: "310/mo",
+    powerUser: "2,000/mo",
     scope: "user",
   },
   {
@@ -60,31 +60,31 @@ const aiFeatures: AIFeature[] = [
       "Parse vendor bids from PDF attachments automatically. Takeoff-only, pricing-only, or combined modes.",
     starter: "\u2014",
     builder: "\u2014",
-    pro: "600/mo",
-    proPlus: "1,200/mo",
-    powerUser: "Unlimited",
+    pro: "620/mo",
+    proPlus: "1,240/mo",
+    powerUser: "2,000/mo",
     scope: "user",
   },
   {
     name: "Punchlist AI",
     description:
       "Voice-to-punchlist: speak your items, AI creates the structured list. Works on mobile in the field.",
-    starter: "150/mo",
-    builder: "300/mo",
-    pro: "600/mo",
-    proPlus: "1,200/mo",
-    powerUser: "Unlimited",
+    starter: "155/mo",
+    builder: "310/mo",
+    pro: "620/mo",
+    proPlus: "1,240/mo",
+    powerUser: "2,000/mo",
     scope: "user",
   },
   {
     name: "MLS Listing AI",
     description:
       "Generate MLS listing descriptions from live home specs. One-click PDF download for agents.",
-    starter: "150/mo",
-    builder: "300/mo",
-    pro: "600/mo",
-    proPlus: "1,200/mo",
-    powerUser: "Unlimited",
+    starter: "155/mo",
+    builder: "310/mo",
+    pro: "620/mo",
+    proPlus: "1,240/mo",
+    powerUser: "2,000/mo",
     scope: "user",
   },
   {
@@ -104,8 +104,8 @@ const aiFeatures: AIFeature[] = [
       "External API access for integrations and automation. 40+ endpoints, scoped API keys, HMAC-signed webhooks.",
     starter: "\u2014",
     builder: "\u2014",
-    pro: "300K/mo",
-    proPlus: "300K/mo",
+    pro: "310K/mo",
+    proPlus: "310K/mo",
     powerUser: "Same",
     scope: "org",
   },
@@ -370,7 +370,7 @@ export default function UsageRatesPage() {
               </h3>
               <p className="text-sm text-slate-400">
                 Every AI feature runs at triple its normal monthly limit for your
-                first 30 days. Import your data, train your team, set up your
+                first 60 days. Import your data, train your team, set up your
                 workflows &mdash; without hitting caps during the most
                 critical window.
               </p>
@@ -410,8 +410,8 @@ export default function UsageRatesPage() {
                 <p className="text-sm text-slate-300 mb-4">
                   For the person who lives in the app all day. The Power User
                   add-on gives one seat dramatically elevated AI limits &mdash;
-                  3,000 Foreman AI conversations/month, unlimited Blueprint AI and
-                  Bid Import AI, and unlimited Punchlist &amp; MLS Listing AI.
+                  3,100 Foreman AI conversations/month, 2,000/mo Blueprint AI,
+                  2,000/mo Bid Import AI, and 2,000/mo each for Punchlist &amp; MLS Listing AI.
                 </p>
                 <ul className="space-y-2 text-sm text-slate-400">
                   <li className="flex items-start gap-2">

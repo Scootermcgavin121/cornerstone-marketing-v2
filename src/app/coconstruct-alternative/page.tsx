@@ -34,7 +34,7 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "User caps (30 Starter/Builder/Pro · 60 Pro+)", cornerstone: true, competitor: true, note: "Both include generous user caps. Cornerstone: every tier from $149. Buildertrend: custom pricing - contact for quote." },
   { feature: "Pricing model", cornerstone: "Flat — up to 30 users (60 on Pro+)", competitor: "Custom quote (Buildertrend)", note: "Buildertrend no longer publishes pricing -- custom quotes only. Cornerstone is flat at every tier — up to 30 users (60 on Pro+). More importantly: Buildertrend doesn't ship a structural options engine, floorplan pricing matrix, native AI agents, or 37+ named webhook events at any price point." },
   { feature: "Cornerstone tiers (flat — up to 30 users • 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 37+ named webhook events, 7-wave bidding." },
-  { feature: "Price at full API + AI tier (Pro+)", cornerstone: "$599/mo", competitor: "Custom quote", note: "Cornerstone Pro+ ($599/mo) adds the full public REST API, BYOA, automated bidding pipeline, and Opus AI - flat, no per-user fees." },
+  { feature: "Price at full API + AI tier (Pro+)", cornerstone: "$599/mo", competitor: "Custom quote", note: "Cornerstone Pro+ ($599/mo) adds the full public REST API, BYOA, automated bidding pipeline, and Claude Sonnet 4 - flat, no per-user fees." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [

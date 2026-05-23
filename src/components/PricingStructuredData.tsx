@@ -94,7 +94,7 @@ export function PricingStructuredData() {
               "availability": "https://schema.org/InStock",
               "url": "https://cornerstonepm.ai/pricing",
               "description":
-                "Everything in Pro plus full REST API access, BYOA automated bidding pipeline, Opus AI, 5,000 AI messages per month, 50 Blueprint takeoffs per month, scoped API keys, 37+ named webhook events, SSO, SLA. Up to 60 users.",
+                "Everything in Pro plus full REST API access, BYOA automated bidding pipeline, Foreman AI (Claude Sonnet 4, 930 conversations/mo), Blueprint AI (310/mo), scoped API keys, 37+ named webhook events, SSO, SLA. Up to 60 users.",
             },
           ],
         },

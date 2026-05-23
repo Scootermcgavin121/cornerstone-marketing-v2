@@ -202,7 +202,7 @@ const pricingTiers = [
   {
     name: "Pro+",
     price: "$599",
-    agents: ["All agents", "Bid Import AI", "BYOA API Access", "7-wave bidding pipeline", "Opus model", "5,000 msg/mo"],
+    agents: ["All agents", "Bid Import AI", "BYOA API Access", "7-wave bidding pipeline", "Claude Sonnet 4", "930 Foreman conversations/mo"],
     color: "text-cyan-400",
     note: "Full API + automation",
   },

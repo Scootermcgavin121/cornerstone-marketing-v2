@@ -1029,10 +1029,10 @@ export default function ForemanPage() {
                 <div className="text-slate-500 text-xs mb-6">Up to {PLAN_BY_ID.pro.maxUsers} users &middot; 1,000 active homes</div>
                 <div className="space-y-2.5 text-left mb-8">
                   {[
-                    `Foreman AI \u2014 ${FOREMAN_SKILL_COUNT}+ skills, 600 conversations/mo`,
-                    "Blueprint AI — 25 takeoffs/mo",
-                    "Bid Import AI — Excel/PDF/handwritten extraction",
-                    "MLS Listing Agent + Punchlist AI",
+                    `Foreman AI \u2014 ${FOREMAN_SKILL_COUNT}+ skills, 620 conversations/mo`,
+                    "Blueprint AI — 155 takeoffs/mo",
+                    "Bid Import AI — 620/mo (Excel/PDF/handwritten)",
+                    "MLS Listing Agent + Punchlist AI (620/mo each)",
                     "Everything in Builder (Sales, Purchasing, Design Center)",
                     "Advanced analytics & reporting",
                     "Priority onboarding support",
@@ -1064,10 +1064,10 @@ export default function ForemanPage() {
                 <div className="text-slate-500 text-xs mb-6">Up to {PLAN_BY_ID.proPlus.maxUsers} users &middot; Unlimited active homes</div>
                 <div className="space-y-2.5 text-left mb-8">
                   {[
-                    `Foreman AI \u2014 ${FOREMAN_SKILL_COUNT}+ skills, 900 conversations/mo`,
-                    "Blueprint AI — 50 takeoffs/mo",
-                    "Bid Import AI — unlimited extractions",
-                    "All Pro features (MLS, Punchlist, Sales, Purchasing, Design Center)",
+                    `Foreman AI \u2014 ${FOREMAN_SKILL_COUNT}+ skills, 930 conversations/mo`,
+                    "Blueprint AI — 310 takeoffs/mo",
+                    "Bid Import AI — 1,240/mo",
+                    "All Pro features (MLS + Punchlist 1,240/mo each, Sales, Purchasing, Design Center)",
                     `REST API + ${WEBHOOK_EVENT_COUNT}+ webhooks + BYOA INCLUDED \u2014 every endpoint maps to one of Foreman\u2019s ${FOREMAN_SKILL_COUNT}+ skills, so Claude, ChatGPT, n8n, Twilio, Bland & Retell get the same toolbox`,
                     `Power User Seat add-on available (+$${ADDONS.powerUserSeat.monthly}/seat/mo)`,
                     "60-day onboarding boost — 3× AI limits",

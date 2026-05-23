@@ -31,15 +31,15 @@ const faqs: FAQItem[] = [
   },
   {
     q: "What are Power User Seats?",
-    a: "Power User Seats are an add-on for Pro and Pro+ plans at $149/seat/month. A Power User gets dramatically elevated monthly AI limits: 3,000 Foreman AI conversations/mo, unlimited Blueprint AI and Bid Import AI, and unlimited Punchlist and MLS Listing AI. Perfect for the person who lives in the app all day.",
+    a: "Power User Seats are an add-on for Pro and Pro+ plans at $149/seat/month. A Power User gets dramatically elevated monthly AI limits: 3,100 Foreman AI conversations/mo, 2,000/mo Blueprint AI, 2,000/mo Bid Import AI, and 2,000/mo each for Punchlist and MLS Listing AI. Perfect for the person who lives in the app all day.",
   },
   {
     q: "What are the AI monthly limits?",
-    a: "Every AI feature has transparent monthly limits that vary by plan. For example, Pro gets 600 Foreman AI conversations/mo while Pro+ gets 900. Starter and Builder include Punchlist AI and MLS Listing AI at lower limits. See our full Usage Rates page for the complete breakdown, including role-based access tiers and onboarding boost details.",
+    a: "Every AI feature has transparent monthly limits that vary by plan. For example, Pro gets 620 Foreman AI conversations/mo while Pro+ gets 930. Starter and Builder include Punchlist AI and MLS Listing AI at lower limits. See our full Usage Rates page for the complete breakdown, including role-based access tiers and onboarding boost details.",
   },
   {
     q: "What is the onboarding boost?",
-    a: "New Pro accounts get 3\u00d7 AI limits for 30 days. New Pro+ accounts get 3\u00d7 AI limits for 60 days. This gives your team room to import data, train users, and build workflows without hitting caps during the critical onboarding window.",
+    a: "New accounts on every paid plan get 3\u00d7 AI limits for the first 60 days. This gives your team room to import data, train users, and build workflows without hitting caps during the critical onboarding window.",
   },
   {
     q: "What is the implementation cost?",
