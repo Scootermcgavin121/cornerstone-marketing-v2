@@ -2,179 +2,16 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { Check, X, Zap, ArrowRight } from "lucide-react";
-
-interface Plan {
-  name: string;
-  price: number;
-  description: string;
-  target: string;
-  badge: string | null;
-  bonusBadge: string | null;
-  maxUsers: number;
-  features: string[];
-  notIncluded: string[];
-  cta: string;
-  ctaHref: string;
-  highlight: boolean;
-}
-
-const plans: Plan[] = [
-  {
-    name: "Starter",
-    price: 149,
-    description: "Core scheduling for small builders.",
-    target: "1\u201310 homes/yr",
-    badge: null,
-    bonusBadge: null,
-    maxUsers: 30,
-    features: [
-      "Construction Scheduling (Gantt + Task View)",
-      "3-tier dependency auto-cascade",
-      "17 pre-built schedule templates",
-      "Subcontractor assignment & smart notifications",
-      "Permitting pipeline tracker",
-      "Homeowner progress portal (magic link)",
-      "Customer portal with progress photos",
-      "Document management",
-      "Punchlist AI (150/mo)",
-      "MLS Listing AI (150/mo)",
-      "Up to 30 users",
-    ],
-    notIncluded: [
-      "Purchasing & Budgets",
-      "Sales Pipeline",
-      "Design Center",
-      "Foreman AI\u2122",
-      "Blueprint AI",
-      "REST API",
-    ],
-    cta: "Get Beta Access",
-    ctaHref: "/beta",
-    highlight: false,
-  },
-  {
-    name: "Builder",
-    price: 299,
-    description: "Full sales-to-construction workflow.",
-    target: "5\u201320 homes/yr",
-    badge: null,
-    bonusBadge: null,
-    maxUsers: 30,
-    features: [
-      "Everything in Starter, plus:",
-      "Purchasing module (POs, budgets, floorplans)",
-      "Sales Pipeline (60-second home sale)",
-      "Design Center selections & change orders",
-      "Structural options with real-time pricing",
-      "Budget auto-generated on home sale",
-      "Full PO lifecycle (Draft \u2192 Paid)",
-      "Bid management & vendor comparison",
-      "Punchlist AI (300/mo)",
-      "MLS Listing AI (300/mo)",
-      "Up to 30 users",
-      "Priority support",
-    ],
-    notIncluded: [
-      "Foreman AI\u2122",
-      "Blueprint AI",
-      "Bid Import AI",
-      "REST API",
-    ],
-    cta: "Get Beta Access",
-    ctaHref: "/beta",
-    highlight: false,
-  },
-  {
-    name: "Pro",
-    price: 499,
-    description: "Everything plus the full AI suite.",
-    target: "20\u201350 homes/yr",
-    badge: "MOST POPULAR",
-    bonusBadge: "Full AI suite included",
-    maxUsers: 30,
-    features: [
-      "Everything in Builder, plus:",
-      "Foreman AI\u2122 \u2014 396+ skills, takes real actions (600/mo)",
-      "Blueprint AI \u2014 upload plans, get 130+ scopes in 60s (150/mo)",
-      "Bid Import AI \u2014 parse vendor bids from PDF (600/mo)",
-      "AI Support Agent (7,500/mo org-wide)",
-      "3\u00d7 AI limits for first 30 days",
-      "REST API + 37+ webhooks + BYOA \u2014 $200/mo add-on (bring your own agent: Claude, ChatGPT, Twilio, Bland, Retell, n8n, Make, Zapier)",
-      "Up to 30 users",
-      "Priority onboarding support",
-    ],
-    notIncluded: [],
-    cta: "Start Free Beta",
-    ctaHref: "/beta",
-    highlight: true,
-  },
-  {
-    name: "Pro+",
-    price: 599,
-    description: "Volume builders. Full API. Priority everything.",
-    target: "50+ homes/yr",
-    badge: "FULL PLATFORM",
-    bonusBadge: "REST API + Webhooks included",
-    maxUsers: 60,
-    features: [
-      "Everything in Pro, plus:",
-      "REST API + 37+ webhooks + BYOA INCLUDED \u2014 wire Claude, ChatGPT, Twilio, Bland, Retell, n8n, Make, or Zapier directly to your live builder data (no $200 add-on needed)",
-      "Foreman AI\u2122 (900/mo, Opus model)",
-      "Blueprint AI (300/mo)",
-      "Bid Import AI (1,200/mo)",
-      "AI Support Agent (15,000/mo org-wide)",
-      "60 user seats (2\u00d7 Pro)",
-      "3\u00d7 AI limits for first 60 days",
-      "Automated bidding pipeline",
-      "Priority support & dedicated onboarding",
-      "SSO & advanced permissions",
-    ],
-    notIncluded: [],
-    cta: "Contact Us",
-    ctaHref: "/contact",
-    highlight: false,
-  },
-];
-
-const competitors = [
-  {
-    name: "Cornerstone PM\u2122",
-    price: "from $149/mo",
-    note: "Full platform + AI agents. No implementation.",
-    highlight: true,
-  },
-  {
-    name: "BuilderTrend",
-    price: "$499+/mo",
-    note: "No native AI agents. Per-user fees.",
-    highlight: false,
-  },
-  {
-    name: "NEWSTAR / BuildPro / MarkSystems",
-    price: "$2K\u20135K/mo",
-    note: "+ $50K\u2013150K implementation",
-    highlight: false,
-  },
-  {
-    name: "JobTread",
-    price: "$199 + $20/user",
-    note: "No AI agents. No design center engine.",
-    highlight: false,
-  },
-];
-
-function formatPrice(monthly: number, annual: boolean): string {
-  if (annual) {
-    const yearlyTotal = monthly * 10; // 2 months free
-    const perMonth = Math.round(yearlyTotal / 12);
-    return `$${perMonth}`;
-  }
-  return `$${monthly}`;
-}
-
-function annualTotal(monthly: number): string {
-  return `$${(monthly * 10).toLocaleString()}`;
-}
+import {
+  PLANS,
+  COMPETITORS,
+  ADDONS,
+  FOREMAN_SKILL_COUNT,
+  WEBHOOK_EVENT_COUNT,
+  API_ENDPOINT_COUNT,
+  formatPrice,
+  annualTotal,
+} from "@/lib/pricing";
 
 export function PricingSection() {
   const [annual, setAnnual] = useState(false);
@@ -226,7 +63,7 @@ export function PricingSection() {
 
         {/* Plans */}
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mb-8 max-w-6xl mx-auto">
-          {plans.map((plan) => (
+          {PLANS.map((plan) => (
             <div
               key={plan.name}
               className={`relative rounded-2xl p-8 transition-all duration-300 ${
@@ -333,15 +170,11 @@ export function PricingSection() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
           <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-700 bg-slate-800/60 text-slate-300 text-sm font-semibold">
             <Zap className="w-4 h-4 text-amber-400" />
-            <span>Power User Seat: +$149/seat/mo &mdash; elevated AI limits (Pro &amp; Pro+ only)</span>
-          </div>
-          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-700 bg-slate-800/60 text-slate-300 text-sm font-semibold">
-            <Zap className="w-4 h-4 text-cyan-400" />
-            <span>REST API + Webhooks + BYOA: +$200/mo add-on (Pro only, included in Pro+)</span>
+            <span>{ADDONS.powerUserSeat.label}: +${ADDONS.powerUserSeat.monthly}/seat/mo &mdash; elevated AI limits (Pro &amp; Pro+ only)</span>
           </div>
         </div>
 
-        {/* BYOA Callout — explains what the $200/mo add-on actually unlocks */}
+        {/* BYOA Callout — Pro+ exclusive (Option C, no add-on) */}
         <div className="max-w-5xl mx-auto mb-12">
           <div className="relative rounded-3xl bg-gradient-to-br from-cyan-950/40 via-slate-900/80 to-violet-950/40 border border-cyan-500/30 p-7 sm:p-9 overflow-hidden">
             <div className="absolute top-0 right-0 w-72 h-72 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
@@ -352,7 +185,7 @@ export function PricingSection() {
                   <Zap className="w-3.5 h-3.5" />
                   BYOA &mdash; Bring Your Own Agent
                 </div>
-                <span className="text-slate-500 text-xs">Pro: +$200/mo add-on &middot; Pro+: included</span>
+                <span className="text-slate-500 text-xs">Included with Pro+ ($599/mo) &middot; Not available on lower tiers</span>
               </div>
 
               <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 leading-tight">
@@ -361,18 +194,20 @@ export function PricingSection() {
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6 max-w-3xl">
                 Already running Claude, ChatGPT, n8n, Make, or Zapier? Use a voice provider like Twilio,
                 Bland, or Retell to text and call subs? <span className="text-white font-semibold">Point them at Cornerstone.</span>{" "}
-                The $200/mo add-on (or Pro+, where it&apos;s included) unlocks our full REST API and 37+ named
-                webhook events &mdash; the same surface Foreman AI uses internally. Your agents can read homes,
-                schedule tasks, send bid requests, update POs, fire SMS to subs, and notify homebuyers the
-                moment a milestone hits.
+                Pro+ unlocks <span className="text-cyan-300 font-semibold">the same toolbox Foreman AI uses internally</span> &mdash;
+                every one of <span className="text-white font-semibold">Foreman&apos;s {FOREMAN_SKILL_COUNT}+ skills</span> is exposed as a REST endpoint, plus {WEBHOOK_EVENT_COUNT}+ named webhook events.
+                We built the API on top of Foreman: every time we ship a new skill, your BYOA agent gets it automatically.
+                Read homes, schedule tasks, send bid requests, update POs, fire SMS to subs, notify homebuyers the moment a milestone hits.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
                 <div className="rounded-xl border border-slate-700/60 bg-slate-900/60 p-4">
                   <div className="text-cyan-300 text-xs font-black uppercase tracking-wider mb-2">What you get</div>
                   <ul className="space-y-1.5 text-sm text-slate-300">
-                    <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-cyan-400 mt-1 flex-shrink-0" />40+ REST API endpoints</li>
-                    <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-cyan-400 mt-1 flex-shrink-0" />37+ named webhook events</li>
+                    <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-cyan-400 mt-1 flex-shrink-0" /><span><span className="text-white font-semibold">{FOREMAN_SKILL_COUNT}+ Foreman skills</span> exposed as API</span></li>
+                    <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-cyan-400 mt-1 flex-shrink-0" />{API_ENDPOINT_COUNT}+ REST endpoints</li>
+                    <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-cyan-400 mt-1 flex-shrink-0" />{WEBHOOK_EVENT_COUNT}+ named webhook events</li>
+                    <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-cyan-400 mt-1 flex-shrink-0" />New skills auto-added to your API</li>
                     <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-cyan-400 mt-1 flex-shrink-0" />HMAC signatures + delivery logs</li>
                     <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-cyan-400 mt-1 flex-shrink-0" />Auto-retry with backoff</li>
                     <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-cyan-400 mt-1 flex-shrink-0" />Scoped API keys</li>
@@ -402,9 +237,9 @@ export function PricingSection() {
 
               <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-5 max-w-3xl">
                 <span className="text-white font-semibold">Why this matters:</span> JobTread, Buildertrend, and CoConstruct
-                will tell you &ldquo;webhooks exist.&rdquo; We ship the full event catalog with typed payloads &mdash;
-                home lifecycle, task/schedule changes, vendor notifications, cascade scheduling, messages, sales
-                pipeline, bid requests. Builders running their own AI ops actually have something to wire up.
+                will tell you &ldquo;webhooks exist.&rdquo; We ship the full event catalog with typed payloads <em>and</em> the
+                full skill catalog as endpoints &mdash; <span className="text-white">your agent inherits everything Foreman can do, and grows automatically as we ship new skills.</span>
+                Nobody else in homebuilder software does this.
               </p>
 
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
@@ -451,13 +286,13 @@ export function PricingSection() {
             alternative &mdash; at 1/20th the price.
           </p>
           <div className="rounded-2xl overflow-hidden border border-slate-800">
-            {competitors.map((c, i) => (
+            {COMPETITORS.map((c, i) => (
               <div
                 key={c.name}
                 className={`flex items-center justify-between px-6 py-4 ${
                   c.highlight
                     ? "bg-cyan-500/10 border-b border-cyan-500/20"
-                    : i < competitors.length - 1
+                    : i < COMPETITORS.length - 1
                     ? "border-b border-slate-800 bg-slate-900/50"
                     : "bg-slate-900/50"
                 }`}

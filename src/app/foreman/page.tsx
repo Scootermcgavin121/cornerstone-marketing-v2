@@ -4,6 +4,12 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { VideoPlayer } from "@/components/VideoPlayer";
 import { ForemanStructuredData } from "@/components/ForemanStructuredData";
+import {
+  PLAN_BY_ID,
+  ADDONS,
+  FOREMAN_SKILL_COUNT,
+  WEBHOOK_EVENT_COUNT,
+} from "@/lib/pricing";
 
 export const metadata = {
   title: "Foreman AI - 396+ skill construction agent with Memory Compaction | Cornerstone PM™",
@@ -1019,18 +1025,18 @@ export default function ForemanPage() {
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-[10px] font-bold uppercase tracking-widest mb-6">
                   Pro Plan
                 </div>
-                <div className="text-5xl sm:text-6xl font-black text-amber-400 mb-1">$499<span className="text-xl text-slate-400 font-normal">/mo</span></div>
-                <div className="text-slate-500 text-xs mb-6">Up to 30 users &middot; 1,000 active homes</div>
+                <div className="text-5xl sm:text-6xl font-black text-amber-400 mb-1">${PLAN_BY_ID.pro.price}<span className="text-xl text-slate-400 font-normal">/mo</span></div>
+                <div className="text-slate-500 text-xs mb-6">Up to {PLAN_BY_ID.pro.maxUsers} users &middot; 1,000 active homes</div>
                 <div className="space-y-2.5 text-left mb-8">
                   {[
-                    "Foreman AI — 396+ skills, 600 conversations/mo",
+                    `Foreman AI \u2014 ${FOREMAN_SKILL_COUNT}+ skills, 600 conversations/mo`,
                     "Blueprint AI — 25 takeoffs/mo",
                     "Bid Import AI — Excel/PDF/handwritten extraction",
                     "MLS Listing Agent + Punchlist AI",
                     "Everything in Builder (Sales, Purchasing, Design Center)",
                     "Advanced analytics & reporting",
-                    "REST API + 37+ webhooks + BYOA — $200/mo add-on (bring your own agent: Claude, ChatGPT, Twilio, Bland, Retell, n8n)",
                     "Priority onboarding support",
+                    "REST API + BYOA: Pro+ only — upgrade for $100/mo more",
                   ].map((f) => (
                     <div key={f} className="flex items-start gap-3">
                       <Check className="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" />
@@ -1054,16 +1060,16 @@ export default function ForemanPage() {
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/30 text-violet-300 text-[10px] font-bold uppercase tracking-widest mb-6 mt-4">
                   Pro+ Plan
                 </div>
-                <div className="text-5xl sm:text-6xl font-black text-violet-300 mb-1">$599<span className="text-xl text-slate-400 font-normal">/mo</span></div>
-                <div className="text-slate-500 text-xs mb-6">Up to 60 users &middot; Unlimited active homes</div>
+                <div className="text-5xl sm:text-6xl font-black text-violet-300 mb-1">${PLAN_BY_ID.proPlus.price}<span className="text-xl text-slate-400 font-normal">/mo</span></div>
+                <div className="text-slate-500 text-xs mb-6">Up to {PLAN_BY_ID.proPlus.maxUsers} users &middot; Unlimited active homes</div>
                 <div className="space-y-2.5 text-left mb-8">
                   {[
-                    "Foreman AI — 396+ skills, 900 conversations/mo",
+                    `Foreman AI \u2014 ${FOREMAN_SKILL_COUNT}+ skills, 900 conversations/mo`,
                     "Blueprint AI — 50 takeoffs/mo",
                     "Bid Import AI — unlimited extractions",
                     "All Pro features (MLS, Punchlist, Sales, Purchasing, Design Center)",
-                    "REST API + 37+ webhooks + BYOA INCLUDED — wire Claude, ChatGPT, Twilio, Bland, Retell, n8n, Make, or Zapier to your live builder data",
-                    "Power User Seat add-on available (+$149/seat/mo)",
+                    `REST API + ${WEBHOOK_EVENT_COUNT}+ webhooks + BYOA INCLUDED \u2014 every endpoint maps to one of Foreman\u2019s ${FOREMAN_SKILL_COUNT}+ skills, so Claude, ChatGPT, n8n, Twilio, Bland & Retell get the same toolbox`,
+                    `Power User Seat add-on available (+$${ADDONS.powerUserSeat.monthly}/seat/mo)`,
                     "60-day onboarding boost — 3× AI limits",
                   ].map((f) => (
                     <div key={f} className="flex items-start gap-3">

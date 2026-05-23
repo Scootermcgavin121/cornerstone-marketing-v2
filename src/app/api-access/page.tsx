@@ -1093,7 +1093,7 @@ export default function ApiAccessPage() {
         <div className="max-w-2xl mx-auto">
           <div className="rounded-2xl bg-slate-900/60 border border-cyan-500/20 p-8 text-center">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-bold uppercase tracking-widest mb-6">
-              Add-On Pricing
+              Pro+ Exclusive
             </div>
             <div className="text-5xl font-black text-cyan-400 mb-2">$599<span className="text-xl text-slate-400 font-normal">/mo</span></div>
             <div className="text-white font-bold text-xl mb-6">Pro+ Plan</div>

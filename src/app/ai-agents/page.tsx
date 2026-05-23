@@ -371,7 +371,7 @@ export default function AiAgentsPage() {
             </div>
             <div className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-700 bg-slate-800/60 text-slate-300 text-sm font-semibold">
               <Zap className="w-4 h-4 text-cyan-400" />
-              <span>REST API + Webhooks: +$200/mo add-on (Pro only, included in Pro+)</span>
+              <span>REST API + BYOA: included with Pro+ ($599/mo)</span>
             </div>
           </div>
 

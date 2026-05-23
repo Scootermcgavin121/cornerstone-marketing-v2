@@ -456,7 +456,7 @@ Webhooks:
 
 **Integrations:** Foreman AI (396+ skills, uses this API internally), QuickBooks (qboId fields), Zapier (REST webhooks), Automated Bidding Pipeline, CRM Migration Wizard (one-click import from Buildertrend, JobTread, CoConstruct)
 
-**Pricing:** Included on Pro+ ($599/mo). Also available as a $200/mo add-on on the Pro plan ($499/mo).
+**Pricing:** Included exclusively on Pro+ ($599/mo). Not available as an add-on on lower tiers — builders who need REST API + BYOA should upgrade to Pro+ (just $100/mo more than Pro).
 
 ---
 ## API Access / BYOA (Bring Your Own Agent)
@@ -488,7 +488,7 @@ Cornerstone PM™ is the first homebuilder platform with a REST API designed for
 - Custom agents built with any framework (LangChain, AutoGen, Claude, GPT-4o)
 - Third-party tools (any system that can make HTTP requests)
 
-**Pricing:** BYOA is included on Pro+ ($599/mo) via the REST API + 37+ webhook events. On the Pro plan ($499/mo), wire up BYOA by adding the REST API + Webhooks add-on (+$200/mo).
+**Pricing:** BYOA is a Pro+ exclusive ($599/mo). It includes the full REST API and 37+ named webhook events. Every endpoint maps to one of Foreman’s 396+ skills, so your BYOA agent (Claude, ChatGPT, n8n, Twilio, Bland, Retell) gets the same toolbox Foreman uses internally — and grows automatically every time we ship a new skill. Not available as an add-on on Pro, Builder, or Starter; the path to BYOA is upgrading to Pro+ (just $100/mo more than Pro).
 
 **Page:** /api-access
 
@@ -641,7 +641,7 @@ Four plans. No phantom tiers, no "Enterprise" upsell, no hidden bundles.
 ### Add-ons
 
 - **Power User Seat: +$149/seat/mo** (Pro and Pro+ only) - elevated monthly AI limits for the one or two people who live in the app all day: 3,000 Foreman AI conversations/mo, unlimited Blueprint AI and Bid Import AI, unlimited Punchlist and MLS Listing AI.
-- **REST API + Webhooks: +$200/mo** (Pro only) - 40+ endpoints, scoped API keys, 37+ HMAC-signed webhook events. **Included free on Pro+.**
+- **REST API + BYOA: Pro+ exclusive (no add-on, no upcharge).** Pro+ includes 40+ endpoints, scoped API keys, and 37+ HMAC-signed webhook events. Every endpoint maps to one of Foreman’s 396+ skills, so a BYOA agent (Claude, ChatGPT, n8n, Twilio, Bland, Retell) gets the same toolbox Foreman uses internally. Not available as an add-on on lower tiers — the path to BYOA is upgrading to Pro+ ($100/mo more than Pro).
 
 ### Billing
 
@@ -900,7 +900,7 @@ All plans are monthly subscriptions, no long-term contracts required. Starting a
 | **Pro** | $499/month | Everything in Builder + the full AI suite: Foreman AI (396+ skills), Blueprint AI (25 takeoffs/mo), Bid Import AI. Up to 30 users. |
 | **Pro+** | $599/month | Everything in Pro + REST API + 37+ webhook events INCLUDED, Foreman AI on Opus, automated bidding pipeline, CRM Migration Wizard, SSO, dedicated onboarding. Up to 60 users. |
 
-**Add-ons:** Power User Seat +$149/seat/mo (Pro and Pro+, elevated AI limits). REST API + Webhooks +$200/mo (Pro only - included free on Pro+).
+**Add-ons:** Power User Seat +$149/seat/mo (Pro and Pro+, elevated AI limits). REST API + BYOA is a Pro+ exclusive — not available as an add-on; upgrade to Pro+ ($100/mo more than Pro) to unlock the API and bring your own agent (Claude, ChatGPT, n8n, Twilio, Bland, Retell).
 
 Visit https://cornerstonepm.ai/pricing for the full pricing page and feature comparison.
 

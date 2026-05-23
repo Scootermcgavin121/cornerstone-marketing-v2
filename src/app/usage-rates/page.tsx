@@ -484,7 +484,7 @@ export default function UsageRatesPage() {
           </div>
 
           <p className="text-xs text-slate-500 mt-6">
-            * REST API access requires the $200/mo add-on on Pro, or is included with Pro+.
+            * REST API + BYOA is a Pro+ exclusive ($599/mo). Not available on Starter, Builder, or Pro.
           </p>
         </div>
       </section>

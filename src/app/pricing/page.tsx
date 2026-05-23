@@ -51,7 +51,7 @@ const faqs: FAQItem[] = [
   },
   {
     q: "Can I add REST API access?",
-    a: "Yes. On the Pro plan, REST API + Webhooks is available as a $200/mo add-on. On Pro+, REST API + Webhooks is included at no extra cost. The API gives you 40+ endpoints, scoped API keys, and 37+ HMAC-signed webhook events for building custom integrations.",
+    a: "REST API + BYOA is a Pro+ exclusive ($599/mo) — not available as an add-on on lower tiers. Pro+ includes 40+ endpoints, scoped API keys, and 37+ HMAC-signed webhook events. Every endpoint maps to one of Foreman\u2019s 396+ skills, so your BYOA agent (Claude, ChatGPT, n8n, Twilio, Bland, Retell) gets the same toolbox Foreman uses internally — and grows automatically every time we ship a new skill. The cleanest path to BYOA is just upgrading to Pro+ ($100/mo more than Pro).",
   },
   {
     q: "Can I export my data?",
