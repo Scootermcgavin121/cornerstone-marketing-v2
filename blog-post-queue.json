@@ -222,8 +222,8 @@
       "wordCount": 1000,
       "heroImage": "/blog/vs-contractor-foreman.png",
       "heroImageAlt": "Contractor Foreman alternative for production home builders compared to Cornerstone PM design center",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "703a676"
     },
     {
       "slug": "buildxact-vs-cornerstone-selections-vs-design-center",
