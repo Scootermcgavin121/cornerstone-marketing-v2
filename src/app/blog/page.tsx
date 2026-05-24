@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "contractor-foreman-vs-cornerstone-production-builder",
+    title: "Contractor Foreman vs Cornerstone PM for Production Home Builders",
+    excerpt:
+      "Contractor Foreman starts at $49/month and is a solid tool for small GCs. But if you\u2019re a production home builder running plan repeats across multiple communities, you need a different product category entirely \u2014 one with a design center, per-floorplan options, and AI agents built for whole-home building.",
+    date: "May 24, 2026",
+    readTime: "7 min read",
+    tag: "Comparison",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+  },
+  {
     slug: "foreman-ai-75-action-loop",
     title: "How We Let Foreman AI Chain 75 Actions in One Prompt (And Why Your AI Can't)",
     excerpt:
