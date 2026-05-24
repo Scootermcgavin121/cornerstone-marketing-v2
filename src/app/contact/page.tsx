@@ -6,6 +6,7 @@ import { BackgroundBeams } from "@/components/ui/background-beams";
 import { Mail, MessageSquare, ArrowRight, Zap } from "lucide-react";
 import { JsonLd } from "@/components/JsonLd";
 import { buildContactPageSchema } from "@/lib/schema-helpers";
+import { trackEvent } from "@/components/GoogleAnalytics";
 
 const contactSchema = buildContactPageSchema();
 
@@ -23,7 +24,15 @@ export default function ContactPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
       });
-      setStatus(res.ok ? "success" : "error");
+      if (res.ok) {
+        trackEvent("contact_form_submit", {
+          form_name: "main_contact",
+          has_company: form.company ? "yes" : "no",
+        });
+        setStatus("success");
+      } else {
+        setStatus("error");
+      }
     } catch {
       setStatus("error");
     }

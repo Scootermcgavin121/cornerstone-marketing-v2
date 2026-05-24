@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import ChatWidget from "@/components/ChatWidget";
 import { StructuredData } from "@/components/StructuredData";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
+import { Analytics as VercelAnalytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -91,8 +93,10 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className={inter.className}>
         <StructuredData />
+        <GoogleAnalytics />
         {children}
         <ChatWidget />
+        <VercelAnalytics />
       </body>
     </html>
   );
