@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "buildxact-vs-cornerstone-selections-vs-design-center",
+    title: "Buildxact vs Cornerstone PM: Selections Software vs Design Center",
+    excerpt:
+      "Buildxact is estimating-first and well-suited for custom builders quoting unique jobs. But if you\u2019re a production home builder repeating the same floorplans across multiple communities, you need plan-level Designer Packages, bundled AI agents, and community-aware vendor bidding \u2014 not per-job allowance selections.",
+    date: "May 25, 2026",
+    readTime: "7 min read",
+    tag: "Comparison",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+  },
+  {
     slug: "contractor-foreman-vs-cornerstone-production-builder",
     title: "Contractor Foreman vs Cornerstone PM for Production Home Builders",
     excerpt:

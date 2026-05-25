@@ -11,6 +11,58 @@
 
 ---
 
+## New Features (May 23-24, 2026) - Design Center & Selections Overhaul
+
+### Selections Page: By Category View (NEW)
+Buyers can now view and make design selections **by category** instead of room-by-room. A new tab at the top of the Selections page groups all selections by category (Flooring, Plumbing Fixtures, Doors, Lighting, etc.) with filter dropdowns for category and option class. Option classes that span multiple rooms display as collapsible accordion rows. **Why it matters:** Buyers who want to pick all their flooring at once across the whole house can now do it in one view — no more jumping room to room.
+
+### Category Groups in Room View
+Within each room on the Selections page, option classes are now **grouped by their OptionCategory** with collapsible accordion headers showing an "X/Y selected" count and subtotal per category. At a glance, buyers and design center staff can see how far along each category is within every room.
+
+### Designer Collections: Collapsed View
+All designer packages now roll up into a single collapsible row **"Designer Collections (X packages)"** with sub-categories inside that are also collapsible. The page stays clean and focused on individual selections while keeping packages one click away.
+
+### Option Linking (Style Consistency Across Rooms)
+Builders can now **link related options across different option classes** — for example, "Shaker Interior Door 2868" linked to "Shaker Interior Door 3068." When a buyer selects one, they're offered to apply the matching style to all similar slots throughout the home with one click. No more manually selecting the same door style in 14 rooms. This uses a `linkedOptionGroupId` on the Option model — set it once, and style consistency is automatic.
+
+### 28 Window Size Option Classes
+Cornerstone now supports **28 window size option classes** covering all standard residential window types: Double Hung (8 sizes), Casement (5), Picture/Fixed (6), and Sliders (9). All under the Windows category with per-size quantity tracking and pricing. **Blueprint AI now outputs per-size window counts** in the Whole House tab (e.g., "Window DH 3040 × 8, Slider 6060 × 2") — window takeoffs are automatically extracted at the individual size level from floor plans. No manual counting.
+
+### Gated Locations (Structural Options Create Rooms)
+Structural options can now **define rooms they add to a home**. When a buyer selects "Morning Room Addition," a "Morning Room" location automatically appears on the Selections page with auto-seeded design slots (flooring, paint, lighting, etc.). When the option is deselected, the room disappears. No manual setup by the builder — conditional rooms are fully integrated with the design center. This solves the long-standing problem of managing selections for rooms that only exist when certain structural options are active.
+
+### Scope Item Form Improvements
+Override mode dropdown, auto-filled descriptions, default UoM from scope item, field labels, and close buttons on the Structural Options Manager scope item forms.
+
+### Foreman AI Upgrades
+- **updateScope tool** — Foreman can now toggle `acceptsParts`, change `baseBidType`, set cost codes, and rename scopes via natural language
+- **Standard = $0 rule strengthened** — Standard spec level options always default to $0 retail price
+- **Right-click context menu** — Reply to messages, add emoji reactions, copy text via right-click on any chat message
+- **Company Memory** — Per-org `foremanMemory` field injected into Foreman's system prompt for company-specific notes. Navigate to Sidebar → AI → Foreman AI Memory.
+
+### Restructured Sidebar Navigation
+The sidebar has been reorganized for clarity:
+- **CATALOG** section now includes Scopes, Scope Items, Master Parts List
+- New **AI** section groups all AI tools: Foreman AI, Bid Import AI, Blueprint AI, MLS Listing Generator, In-App AI Support, Foreman AI Memory, API Setup
+- Cleaner separation between Construction, Catalog, Purchasing, AI, Communication, and Admin sections
+
+### categoryId Now Required for Option Classes
+When creating option classes, `categoryId` is now required — this prevents orphan "Other" items that lack proper category grouping and ensures every option class is properly organized.
+
+**Q: Can buyers pick all their flooring selections at once instead of going room by room?**
+A: Yes! The new "By Category" tab on the Selections page groups all selections by category. Pick all your flooring, then all plumbing fixtures, then all lighting — however you prefer. Filter by category or option class to focus on exactly what you need.
+
+**Q: What if I want the same door style in every room?**
+A: Cornerstone's new Option Linking feature handles this automatically. When you select a door style, you're offered to apply the matching style to all similar rooms with one click. No more selecting the same thing 14 times.
+
+**Q: Do structural options automatically add rooms to the design center?**
+A: Yes! Gated Locations mean that when a buyer selects a structural option like "Morning Room Addition" or "Finished Basement," the new rooms automatically appear on the Selections page with all the right design slots (flooring, paint, lighting, etc.) ready to configure. Remove the option, and the rooms disappear. Zero manual setup.
+
+**Q: Can Blueprint AI count windows by size?**
+A: Yes! Blueprint AI now extracts per-size window counts from floor plans. It identifies Double Hung, Casement, Picture/Fixed, and Slider windows at 28 different size classes. Window takeoffs are automatic — no manual counting from blueprints.
+
+---
+
 ## New Features (May 8-11, 2026) - Jobsite Operations Stack
 
 ### Triple QR Code Ecosystem (industry-first)
