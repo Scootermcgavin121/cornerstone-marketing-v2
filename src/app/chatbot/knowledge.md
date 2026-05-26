@@ -11,6 +11,28 @@
 
 ---
 
+## New Features (May 26, 2026) - Auto-Quantity & Purchasing Updates
+
+### Auto-Quantity Scope Items (NEW)
+Scope items (labor/service line items like Electrical Rough, Paint Labor, Insulation, etc.) can now have their quantities automatically calculated from floorplan data. Each scope item gets a **Quantity Source** setting: Manual, Under Air Sqft, Total Sqft (Under Roof), Exterior Perimeter, or Roof Squares. Set it ONCE on the scope item and it auto-adjusts across ALL floorplans. Example: set "Electrical Rough → Under Air Sqft" once — The Addison gets 2,400 sqft, The Magnolia gets 1,800 sqft automatically. POs aggregate base house + structural options (e.g., base 2,400 + basement finish 800 = 3,200 sqft on one PO). No manual qty entry per floorplan, no stale numbers. ANSI Z765 compliant measurement calculations. Visual indicators show which quantities are auto-linked.
+
+### Multi-Tab Excel Import/Export (NEW)
+Export an entire floorplan as a single multi-tab Excel workbook — base house, locations, structural options, elevations. Import works the same way. One file, complete data.
+
+### Exclusion Groups (NEW - Design Center)
+"Pick One" rules for flooring, countertops, and other either/or categories in the design center. Buyer picks hardwood? Carpet auto-locks. No conflicting selections, no manual cleanup.
+
+### Design Center Settings (NEW)
+Full admin control over selection rules, deadlines, and the buyer experience. Configure which categories require selections, set cutoff dates, and control the buyer portal flow.
+
+### 100% Selection Confetti (NEW)
+Celebration animation when a buyer completes all design selections. Small touch, big buyer moment.
+
+### Neon Database Branching (NEW - Infrastructure)
+Instant full-copy demo environments for testing and staging. Deploy a complete copy of your production database in seconds.
+
+---
+
 ## New Features (May 23-24, 2026) - Design Center & Selections Overhaul
 
 ### Selections Page: By Category View (NEW)

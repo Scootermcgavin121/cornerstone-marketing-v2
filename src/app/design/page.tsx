@@ -26,6 +26,9 @@ const designSchema = buildFeatureSchema({
     "Automatic per-community upgrade math — selected price minus community-included price, no manual calculations",
     "Allowance tracking (per-floorplan and global)",
     "64 curated Designer Packages across 7 categories",
+    "Exclusion Groups — Pick One rules for flooring/countertop categories",
+    "100% Selection Confetti — celebration when all selections are complete",
+    "Design Center Settings — admin control over selection rules and deadlines",
     "Option Classes — category + scope linking",
     "Scope item integration for budget tracking",
     "Global retail pricing mode",
@@ -115,6 +118,9 @@ const features = [
   { title: "Integration with Purchasing", desc: "Every selection ties to a line item &mdash; no manual entry." },
   { title: "Mobile-Friendly", desc: "Buyers can make selections from any device." },
   { title: "Margin Lock-In", desc: "Lock options pricing before presenting to buyer &mdash; protect your margin." },
+  { title: "Exclusion Groups", desc: "&ldquo;Pick One&rdquo; rules for flooring, countertops, and other either/or categories. Buyer picks hardwood? Carpet auto-locks. No conflicting selections, no manual cleanup." },
+  { title: "100% Selection Confetti", desc: "Celebration animation when all design selections are complete. Small touch, big buyer moment &mdash; turns a mundane checklist into a milestone." },
+  { title: "Design Center Settings", desc: "Full admin control over selection rules, deadlines, and the buyer experience. Configure which categories require selections, set cutoff dates, and control the buyer portal flow." },
 ];
 
 export default function DesignPage() {

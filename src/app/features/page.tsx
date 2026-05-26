@@ -77,6 +77,8 @@ const featureDetails = [
       "Bid Import AI - upload any vendor format (Excel, PDF, scanned docs, handwritten quotes), AI extracts and maps line items",
       "Fuzzy catalog matching with confidence scores - review, approve, or reject before importing",
       "3 import modes: as a Bid, Vendor Pricing, or Takeoffs",
+      "Auto-Quantity Scope Items - set a quantity source (Under Air Sqft, Total Sqft, Exterior Perimeter, Roof Squares) once, quantities auto-calculate across every floorplan. POs combine base + structural option quantities. ANSI Z765 compliant",
+      "Multi-tab Excel import/export - entire floorplan (base house, locations, structural options, elevations) in one workbook",
       "Vendor Activity Map - Google Maps view of every vendor check-in across all communities in real time",
     ],
   },
@@ -138,6 +140,8 @@ const featureDetails = [
       "Selection tracking with buyer approval workflow",
       "Polished customer-facing selection sheet PDF export",
       "Selections flow directly into purchasing budget",
+      "Exclusion Groups - \"Pick One\" rules for flooring, countertops, and other either/or categories. Buyer picks hardwood? Carpet auto-locks. No conflicting selections, no manual cleanup",
+      "100% Selection Confetti - celebration animation when all design selections are complete. Small touch, big buyer moment",
     ],
   },
   {

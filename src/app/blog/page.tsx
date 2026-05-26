@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "auto-quantity-scope-items-home-builder",
+    title: "Auto-Quantity Scope Items: Set It Once, Every Floorplan Gets the Right Number",
+    excerpt:
+      "Purchasing agents spend hours entering square footage across dozens of scope items for every new floorplan. Auto-Quantity eliminates that entirely. Set the quantity source once \u2014 Under Air Sqft, Total Sqft, Exterior Perimeter, or Roof Squares \u2014 and every floorplan auto-calculates. Plus: Excel Import/Export, Exclusion Groups, Design Center Settings, and 100% Selection Confetti.",
+    date: "May 26, 2026",
+    readTime: "6 min read",
+    tag: "Product Update",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+  },
+  {
     slug: "buildxact-vs-cornerstone-selections-vs-design-center",
     title: "Buildxact vs Cornerstone PM: Selections Software vs Design Center",
     excerpt:

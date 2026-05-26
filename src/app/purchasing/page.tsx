@@ -1,4 +1,4 @@
-import { Check, Sparkles } from "lucide-react";
+import { Check, Sparkles, Ruler } from "lucide-react";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -27,6 +27,8 @@ const purchasingSchema = buildFeatureSchema({
     "Parts catalog with vendor pricing and retail pricing modes",
     "Purchase orders, payments, and retainage tracking",
     "Cost type classifications (labor, material, lump sum, mixed)",
+    "Auto-Quantity Scope Items — quantities auto-calculate from floorplan dimensions (Under Air Sqft, Total Sqft, Exterior Perimeter, Roof Squares)",
+    "Multi-tab Excel import/export — entire floorplan in one workbook",
     "Full database export (CSV or JSON) — no vendor lock-in",
   ],
 });
@@ -44,6 +46,10 @@ const faqItems: FAQItem[] = [
   {
     q: "What is AI construction purchasing for home builders?",
     a: "AI construction purchasing uses agents to handle bid generation, vendor outreach, bid comparison, and PO creation. Cornerstone PM™'s Foreman AI includes a 4-skill Bid Pipeline domain plus a 7-wave automated bidding pipeline that contacts vendors, collects bids, normalizes pricing, and recommends an award &mdash; all inside one platform.",
+  },
+  {
+    q: "What is Auto-Quantity and how does it work?",
+    a: "Auto-Quantity lets you set a quantity source on any scope item &mdash; Under Air Sqft, Total Sqft (Under Roof), Exterior Perimeter, or Roof Squares. Set it once on the scope item and the quantity auto-calculates from floorplan dimensions for every floorplan in your portfolio. POs intelligently combine base house + structural option quantities (e.g., 2,400 sqft base + 800 sqft finished basement = 3,200 sqft on one PO). No manual entry per floorplan, no stale numbers, ANSI Z765 compliant.",
   },
   {
     q: "How does the auto-budget feature work?",
@@ -135,6 +141,8 @@ const features = [
   { title: "Take Your Data With You, Anytime", desc: "Your data is always yours. Download everything as CSV or JSON in one click &mdash; 91 tables, every vendor, every home, every schedule, every option, every budget line. Sensitive fields excluded automatically. Plus nightly auto-backups with 7-day retention for instant rollback. No vendor lock-in, no exit fees, no strings attached." },
   { title: "Buildertrend Migration", desc: "Import existing budgets from Buildertrend with smart column mapping." },
   { title: "Bid Import AI", desc: "Upload vendor bids in ANY format — Excel, PDF, scanned docs, even photos of handwritten quotes. AI extracts line items, maps to your parts catalog with confidence scores, and lets you review, edit, approve, or reject before importing." },
+  { title: "Auto-Quantity Scope Items", desc: "Set a quantity source (Under Air Sqft, Total Sqft, Exterior Perimeter, Roof Squares) once on a scope item and it auto-calculates across every floorplan. POs combine base house + structural option quantities. ANSI Z765 compliant." },
+  { title: "Multi-Tab Excel Import/Export", desc: "Export an entire floorplan as a single multi-tab Excel workbook — base house, locations, structural options, elevations. Import works the same way. One file, complete data." },
 ];
 
 export default function PurchasingPage() {
@@ -157,6 +165,59 @@ export default function PurchasingPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/beta" className="px-8 py-4 rounded-full bg-emerald-400 text-slate-900 font-bold text-lg hover:bg-emerald-300 transition-all duration-200 shadow-lg shadow-emerald-500/30 hover:-translate-y-0.5">Request Early Access &rarr;</Link>
             <Link href="/features" className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200">See All Features</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Auto-Quantity Scope Items Hero Callout */}
+      <section id="auto-quantity" className="py-16 px-4 scroll-mt-24">
+        <div className="max-w-5xl mx-auto">
+          <div className="rounded-2xl bg-cyan-500/5 border border-cyan-500/30 p-8 sm:p-12 relative overflow-hidden">
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(6,182,212,0.08),transparent_60%)]" />
+            <div className="relative">
+              <div className="flex items-start gap-4 mb-8">
+                <div className="w-12 h-12 rounded-xl bg-cyan-500/15 border border-cyan-500/30 flex items-center justify-center flex-shrink-0">
+                  <Ruler className="w-6 h-6 text-cyan-400" />
+                </div>
+                <div>
+                  <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-bold mb-2">
+                    NEW &mdash; AUTO-QUANTITY
+                  </div>
+                  <h2 className="text-3xl font-black text-white">Auto-Quantity Scope Items</h2>
+                  <p className="text-cyan-400 font-semibold text-sm mt-1">Set it once. Every floorplan gets the right number.</p>
+                </div>
+              </div>
+              <p className="text-slate-300 text-lg leading-relaxed mb-8">
+                Scope items like Electrical Rough, Paint Labor, and Insulation can now have their quantities automatically
+                calculated from your floorplan dimensions. Set &ldquo;Electrical Rough &rarr; Under Air Sqft&rdquo; once on the scope
+                item, and The Addison gets 2,400 sqft while The Magnolia gets 1,800 sqft &mdash; automatically. No manual
+                entry per floorplan, no stale numbers, no forgotten updates.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
+                {[
+                  { label: "Manual", detail: "Enter quantity by hand when auto-calc doesn't apply" },
+                  { label: "Under Air Sqft", detail: "Conditioned living space — excludes garage & porch" },
+                  { label: "Total Sqft", detail: "Everything under roof — includes garage & porch" },
+                  { label: "Ext. Perimeter", detail: "Exterior perimeter in linear feet" },
+                  { label: "Roof Squares", detail: "Roof area in roofing squares" },
+                ].map((item) => (
+                  <div key={item.label} className="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                    <div className="text-cyan-400 font-bold text-sm mb-1">{item.label}</div>
+                    <div className="text-slate-400 text-xs leading-relaxed">{item.detail}</div>
+                  </div>
+                ))}
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4 items-start">
+                <div className="flex-1 p-4 rounded-xl bg-red-500/5 border border-red-500/20">
+                  <p className="text-red-400 font-semibold text-xs uppercase tracking-widest mb-2">Without Auto-Quantity</p>
+                  <p className="text-slate-400 text-sm">Add a new floorplan. Open every scope item. Type the sqft for Electrical, Insulation, Drywall, Paint, HVAC, Framing&hellip; 40+ scope items &times; every floorplan in your portfolio. One typo and your budget is wrong for months.</p>
+                </div>
+                <div className="flex-1 p-4 rounded-xl bg-cyan-500/5 border border-cyan-500/20">
+                  <p className="text-cyan-400 font-semibold text-xs uppercase tracking-widest mb-2">With Auto-Quantity</p>
+                  <p className="text-slate-400 text-sm">Set &ldquo;Electrical Rough &rarr; Under Air Sqft&rdquo; once. Add a floorplan with its dimensions. Every scope item auto-calculates. POs combine base house + structural option quantities automatically. ANSI Z765 compliant.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
