@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "cornerstone-pm-vs-jobnimbus-home-builder-software",
+    title: "JobNimbus vs Cornerstone PM: Home Builder Software Compared",
+    excerpt:
+      "JobNimbus is the #1 roofing CRM, trusted by 6,000+ contractors \u2014 and it\u2019s excellent at what it does. But if you\u2019re a production home builder who landed here from a \u2018construction software\u2019 search, you\u2019re in the wrong product category. Here\u2019s the honest comparison.",
+    date: "May 26, 2026",
+    readTime: "7 min read",
+    tag: "Comparison",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+  },
+  {
     slug: "auto-quantity-scope-items-home-builder",
     title: "Auto-Quantity Scope Items: Set It Once, Every Floorplan Gets the Right Number",
     excerpt:
