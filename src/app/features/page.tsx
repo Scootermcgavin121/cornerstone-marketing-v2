@@ -16,12 +16,13 @@ import {
   Check,
   MapPin,
   Code,
+  ListChecks,
 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Features - Cornerstone PMTM",
   description:
-    "Seven integrated modules for home builders: scheduling, purchasing, sales pipeline, design center, permitting, buyer portal, and jobsite operations with the industry-first triple QR code ecosystem.",
+    "Eight integrated modules for home builders: scheduling, purchasing, sales pipeline, design center, permitting, buyer portal, Punchlist AI, and jobsite operations with the industry-first triple QR code ecosystem.",
 };
 
 const featureDetails = [
@@ -193,6 +194,32 @@ const featureDetails = [
     ],
   },
   {
+    id: "punchlist",
+    icon: ListChecks,
+    screenshot: "/mockups/ss-punchlist-ai.jpg",
+    name: "Punchlist AI",
+    color: "from-amber-500 to-orange-600",
+    bgColor: "bg-amber-500/10",
+    borderColor: "border-amber-500/20",
+    textColor: "text-amber-400",
+    description:
+      "Walk the house with your phone and talk through what you see. Punchlist AI watches the video, transcribes your callouts, identifies every defect, tags severity and location, and auto-creates the punch list in the home\u2019s build record \u2014 in seconds. No clipboards, no retyping, no missed items.",
+    bullets: [
+      "Phone video walkthrough \u2014 no special hardware required",
+      "AI watches video + transcribes audio callouts in one pass",
+      "Auto-detects defects from frames; auto-tags severity (critical / high / normal)",
+      "Location pinning \u2014 room, fixture, surface (Kitchen, Office, Master Bath)",
+      "Scope linking \u2014 routes each item to Trim, Paint, Drywall, etc.",
+      "Auto-assigns vendors based on scope \u2014 groups same-vendor items into one email",
+      "Photo evidence captured from key video frames",
+      "Status tracking from open \u2192 in progress \u2192 verified-complete",
+      "Multi-walkthrough comparison (pre-drywall, pre-closing, warranty)",
+      "Auto-attached to the home in the build record \u2014 no copy/paste",
+    ],
+    learnMoreHref: "/punchlist-ai",
+    learnMoreLabel: "See Punchlist AI in action",
+  },
+  {
     id: "jobsite",
     icon: MapPin,
     screenshot: "/mockups/ss-vendor-activity-map.jpg",
@@ -260,7 +287,7 @@ export default function FeaturesPage() {
             PLATFORM FEATURES
           </div>
           <h1 className="text-5xl sm:text-6xl font-black text-white mb-6 leading-tight">
-            Seven modules.
+            Eight modules.
             <br />
             <span className="text-cyan-400">One platform.</span>
             <br />
