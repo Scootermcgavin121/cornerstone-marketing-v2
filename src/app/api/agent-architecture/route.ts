@@ -120,7 +120,7 @@ export async function POST(req: NextRequest) {
       await transport.sendMail({
         from: `"Cornerstone PM" <${process.env.SMTP_USER || "noreply@cornerstonepm.ai"}>`,
         to: email.trim(),
-        replyTo: "scottbuescher@gmail.com",
+        replyTo: "admin@cornerstonepm.ai",
         subject: "Your Homebuilder AI Agent Architecture (4-page deck)",
         html: userHtml,
         text: `Hey ${name.trim().split(" ")[0]} —\n\nThanks for asking. Here's the 4-page reference architecture for an AI-native home builder operating system:\n\nDownload: ${downloadUrl}\n\nPage 1 — Architecture layers mapped to a real implementation\nPage 2 — The 12-agent stack (Anthropic, OpenAI, LangGraph, CrewAI, Postgres)\nPage 3 — AI voice + SMS agents (Retell, Bland.ai, Twilio) with end-to-end vendor bid scenario\nPage 4 — Memory architecture on Postgres + pgvector\n\nBuilt any of this on a real platform? Curious which workflow you'd want to digital-twin first. Hit reply — happy to compare notes.\n\n— Scott\nCornerstone PM\nhttps://www.cornerstonepm.ai`,

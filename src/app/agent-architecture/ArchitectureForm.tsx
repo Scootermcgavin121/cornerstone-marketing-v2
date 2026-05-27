@@ -55,8 +55,8 @@ export function ArchitectureForm() {
         <h3 className="text-xl font-bold text-white mb-2">Check your inbox</h3>
         <p className="text-slate-400 text-sm leading-relaxed">
           The PDF is on its way. If you don't see it in 60 seconds, check spam — and if it's still missing, email{" "}
-          <a href="mailto:scott@cornerstonepm.ai" className="text-emerald-400 hover:underline">
-            scott@cornerstonepm.ai
+          <a href="mailto:admin@cornerstonepm.ai" className="text-emerald-400 hover:underline">
+            admin@cornerstonepm.ai
           </a>{" "}
           directly.
         </p>
