@@ -299,7 +299,7 @@ export default function ForemanPage() {
               and acts on it (creates the part, updates the option, answers the question).
             </p>
           </div>
-          <VideoPlayer src="/video/countertops-image-add.mp4" label="Foreman AI: Batch Image Workflow (5 countertop options, one prompt)" />
+          <VideoPlayer src="/video/countertops-image-add.mp4?v=2" label="Foreman AI: Batch Image Workflow (5 countertop options, one prompt)" />
         </div>
       </section>
 
