@@ -195,7 +195,7 @@ const featureDetails = [
   {
     id: "jobsite",
     icon: MapPin,
-    screenshot: "/mockups/feature-jobsite-qr.png",
+    screenshot: "/mockups/ss-vendor-activity-map.jpg",
     name: "Jobsite Operations & QR Ecosystem",
     color: "from-emerald-500 to-cyan-600",
     bgColor: "bg-emerald-500/10",
