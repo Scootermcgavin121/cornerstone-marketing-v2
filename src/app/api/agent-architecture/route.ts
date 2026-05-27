@@ -82,6 +82,14 @@ export async function POST(req: NextRequest) {
           <div style="text-align: center; margin: 28px 0;">
             <a href="${downloadUrl}" style="display: inline-block; background: linear-gradient(135deg, #10b981 0%, #0e7490 100%); color: #ffffff; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 15px;">📄 Download the PDF</a>
           </div>
+          <div style="margin: 24px 0; padding: 16px 18px; background: #f0fdfa; border-left: 3px solid #10b981; border-radius: 0 6px 6px 0;">
+            <p style="color: #064e3b; font-size: 14px; line-height: 1.55; margin: 0 0 6px 0; font-weight: 700;">
+              ✨ You're now on <em>Cornerstone Field Notes</em>
+            </p>
+            <p style="color: #134e4a; font-size: 13px; line-height: 1.55; margin: 0;">
+              Roughly 1–2 emails a month covering what's actually working for builders going AI-native — agent workflows, vendor bidding, voice-AI experiments, real numbers. No drip nonsense. <a href="mailto:admin@cornerstonepm.ai?subject=Unsubscribe" style="color: #0e7490;">Unsubscribe anytime</a> — just reply "unsubscribe."
+            </p>
+          </div>
           <p style="color: #475569; font-size: 14px; line-height: 1.55; margin: 20px 0 12px 0;">
             Built any of this on a real platform? Curious which workflow you'd want to digital-twin first. Hit reply — happy to compare notes.
           </p>
@@ -91,8 +99,11 @@ export async function POST(req: NextRequest) {
             <a href="https://www.cornerstonepm.ai" style="color: #0e7490; text-decoration: none;">cornerstonepm.ai</a>
           </p>
         </div>
-        <p style="color: #94a3b8; font-size: 11px; text-align: center; margin: 16px 0 0 0;">
-          You're receiving this because you requested the Homebuilder AI Agent Architecture deck at cornerstonepm.ai.
+        <p style="color: #94a3b8; font-size: 11px; text-align: center; margin: 16px 0 4px 0;">
+          You're receiving this because you requested the Homebuilder AI Agent Architecture deck at cornerstonepm.ai and joined Cornerstone Field Notes.
+        </p>
+        <p style="color: #94a3b8; font-size: 11px; text-align: center; margin: 0;">
+          Cornerstone PM · To unsubscribe, reply "unsubscribe" to this email or email <a href="mailto:admin@cornerstonepm.ai?subject=Unsubscribe" style="color: #0e7490;">admin@cornerstonepm.ai</a>.
         </p>
       </div>
     `;

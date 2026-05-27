@@ -136,12 +136,12 @@ export default function AgentArchitecturePage() {
               The <span className="bg-gradient-to-r from-emerald-400 via-cyan-400 to-violet-400 bg-clip-text text-transparent">Homebuilder AI Agent Architecture</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-300 leading-relaxed mb-8 max-w-3xl">
-              A reference architecture for an AI-native home builder operating system. <strong className="text-white">12 agents across 5 tiers</strong>, real platforms named — Anthropic, OpenAI, LangGraph, CrewAI, Retell AI, Bland.ai, Twilio, Neon Postgres + pgvector. The voice-agent vendor-bid scenario. The memory architecture pattern. <strong className="text-white">Drop your email and I'll send it over.</strong>
+              A reference architecture for an AI-native home builder operating system. <strong className="text-white">12 agents across 5 tiers</strong>, real platforms named — Anthropic, OpenAI, LangGraph, CrewAI, Retell AI, Bland.ai, Twilio, Neon Postgres + pgvector. The voice-agent vendor-bid scenario. The memory architecture pattern. <strong className="text-white">Get the PDF + join</strong> Cornerstone Field Notes — a short, no-fluff newsletter for builders going AI-native.
             </p>
             <div className="flex flex-wrap gap-3 text-sm text-slate-400 mb-2">
-              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-emerald-400" /> No sales call required</span>
-              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-emerald-400" /> No mailing list spam</span>
-              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-emerald-400" /> One reply, one PDF</span>
+              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-emerald-400" /> Free 4-page PDF, instantly</span>
+              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-emerald-400" /> Cornerstone Field Notes newsletter</span>
+              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-emerald-400" /> Unsubscribe anytime</span>
             </div>
           </div>
         </section>
@@ -151,9 +151,9 @@ export default function AgentArchitecturePage() {
           <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
             {/* Form */}
             <div className="bg-slate-900/60 backdrop-blur border border-slate-800 rounded-2xl p-6 md:p-8">
-              <h2 className="text-2xl font-bold mb-2 text-white">Get the PDF</h2>
+              <h2 className="text-2xl font-bold mb-2 text-white">Get the PDF + the newsletter</h2>
               <p className="text-slate-400 text-sm mb-6">
-                Sends instantly to your inbox. We'll never share your email, never enroll you in a drip campaign.
+                The PDF hits your inbox instantly. You'll also join <strong className="text-emerald-400">Cornerstone Field Notes</strong> — a short, no-fluff newsletter on what's actually working for builders going AI-native. Unsubscribe in one click, anytime.
               </p>
               <ArchitectureForm />
             </div>

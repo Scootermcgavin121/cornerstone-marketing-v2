@@ -146,7 +146,7 @@ export function ArchitectureForm() {
           </>
         ) : (
           <>
-            Email me the PDF <ArrowRight className="w-5 h-5" />
+            Send me the PDF + subscribe <ArrowRight className="w-5 h-5" />
           </>
         )}
       </button>
@@ -156,7 +156,7 @@ export function ArchitectureForm() {
       )}
 
       <p className="text-xs text-slate-500 pt-2 leading-relaxed">
-        We'll only email you the deck plus one short follow-up. No drip campaign. Unsubscribe by replying "unsubscribe."
+        By submitting, you'll receive the PDF and subscribe to <strong className="text-slate-400">Cornerstone Field Notes</strong> — typically 1–2 emails per month on AI-native homebuilding. Unsubscribe anytime with one click; we'll never sell or share your email.
       </p>
     </form>
   );
