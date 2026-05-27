@@ -298,7 +298,7 @@ export default function PunchlistAIPage() {
                 <div className="relative bg-slate-900 rounded-3xl border border-slate-700 p-2 shadow-2xl">
                   <Image
                     src="/mockups/ss-punchlist-ai-detail.jpg"
-                    alt="Punch list item detail view in the Cornerstone PM\u2122 mobile app \u2014 shows a cabinet defect with auto-assigned vendor Premier Cabinetry matched to the Cabinets scope"
+                    alt="Punch list item detail view in the Cornerstone PM™ mobile app — shows a cabinet defect with auto-assigned vendor Premier Cabinetry matched to the Cabinets scope"
                     width={400}
                     height={780}
                     className="rounded-2xl"
@@ -317,31 +317,31 @@ export default function PunchlistAIPage() {
                 Auto-assigns the right vendor to every item.
               </h2>
               <p className="text-lg text-slate-300 mb-6 leading-relaxed">
-                Every punch item gets a vendor automatically. Cabinet issue \u2192 your cabinet vendor.
-                Paint touch-up \u2192 your painter. Plumbing fixture \u2192 the plumber. Punchlist AI
-                already knows who owns each scope on this home \u2014 so the moment the item is
-                created, it\u2019s routed to the right hands.
+                Every punch item gets a vendor automatically. Cabinet issue → your cabinet vendor.
+                Paint touch-up → your painter. Plumbing fixture → the plumber. Punchlist AI
+                already knows who owns each scope on this home — so the moment the item is
+                created, it's routed to the right hands.
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start gap-3 text-slate-300">
                   <Check className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
-                  <span>Scope-to-vendor mapping is per home \u2014 the cabinet vendor in Bayside isn\u2019t the same as the one in Eagles Landing, and Punchlist AI knows the difference.</span>
+                  <span>Scope-to-vendor mapping is per home — the cabinet vendor in Bayside isn't the same as the one in Eagles Landing, and Punchlist AI knows the difference.</span>
                 </li>
                 <li className="flex items-start gap-3 text-slate-300">
                   <Check className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
-                  <span>One walkthrough, twelve issues for the painter? Punchlist AI groups every painter task into a single email \u2014 photos, severity, location, all in one place.</span>
+                  <span>One walkthrough, twelve issues for the painter? Punchlist AI groups every painter task into a single email — photos, severity, location, all in one place.</span>
                 </li>
                 <li className="flex items-start gap-3 text-slate-300">
                   <Check className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
-                  <span>Override anytime. The auto-assigned vendor is a smart default, not a lock \u2014 swap in any vendor with one tap.</span>
+                  <span>Override anytime. The auto-assigned vendor is a smart default, not a lock — swap in any vendor with one tap.</span>
                 </li>
                 <li className="flex items-start gap-3 text-slate-300">
                   <Check className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
-                  <span>Hit <span className="font-semibold text-amber-300">Send to Vendors</span> when the list is ready \u2014 every vendor gets their grouped task list in one shot.</span>
+                  <span>Hit <span className="font-semibold text-amber-300">Send to Vendors</span> when the list is ready — every vendor gets their grouped task list in one shot.</span>
                 </li>
               </ul>
               <p className="text-sm text-slate-400">
-                No manual triage. No \u201cwho does this one go to?\u201d No spreadsheets. The list is
+                No manual triage. No "who does this one go to?" No spreadsheets. The list is
                 already routed before you put the phone down.
               </p>
             </div>
