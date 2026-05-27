@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "foreman-ai-memory-construction-software",
+    title: "Foreman AI Memory: The First Construction AI That Doesn\u2019t Forget",
+    excerpt:
+      "Every other construction AI starts each session from a blank slate. Foreman AI runs two persistent memory layers \u2014 per-user (your role, vendors, communication style) and company-wide (vendor scorecards, recurring scope patterns) \u2014 so it knows your business before you type the first word. Plus: a context health meter and automatic compaction that handles marathon sessions no other construction AI survives.",
+    date: "May 27, 2026",
+    readTime: "7 min read",
+    tag: "AI & Automation",
+    tagColor: "text-cyan-400 bg-cyan-500/10 border-cyan-500/20",
+    heroImage: "/blog/foreman-memory.png",
+  },
+  {
     slug: "cornerstone-pm-vs-jobnimbus-home-builder-software",
     title: "JobNimbus vs Cornerstone PM: Home Builder Software Compared",
     excerpt:

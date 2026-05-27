@@ -79,6 +79,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/contractor-foreman-vs-cornerstone-production-builder", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/buildxact-vs-cornerstone-selections-vs-design-center", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/auto-quantity-scope-items-home-builder", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/foreman-ai-memory-construction-software", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/cornerstone-pm-vs-jobnimbus-home-builder-software", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
