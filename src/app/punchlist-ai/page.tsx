@@ -287,6 +287,68 @@ export default function PunchlistAIPage() {
         </div>
       </section>
 
+      {/* Auto-vendor-assign showcase */}
+      <section className="py-20 px-4 border-t border-slate-800/60">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: phone detail screenshot */}
+            <div className="relative flex justify-center order-2 lg:order-1">
+              <div className="relative">
+                <div className="absolute -inset-4 bg-gradient-to-r from-amber-500/20 to-orange-500/20 blur-2xl rounded-3xl" />
+                <div className="relative bg-slate-900 rounded-3xl border border-slate-700 p-2 shadow-2xl">
+                  <Image
+                    src="/mockups/ss-punchlist-ai-detail.jpg"
+                    alt="Punch list item detail view in the Cornerstone PM\u2122 mobile app \u2014 shows a cabinet defect with auto-assigned vendor Premier Cabinetry matched to the Cabinets scope"
+                    width={400}
+                    height={780}
+                    className="rounded-2xl"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Right: copy */}
+            <div className="order-1 lg:order-2">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-amber-500/10 border border-amber-500/30 rounded-full text-amber-300 text-xs font-medium uppercase tracking-wider mb-6">
+                <Users className="w-3.5 h-3.5" />
+                <span>Vendor routing, automated</span>
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+                Auto-assigns the right vendor to every item.
+              </h2>
+              <p className="text-lg text-slate-300 mb-6 leading-relaxed">
+                Every punch item gets a vendor automatically. Cabinet issue \u2192 your cabinet vendor.
+                Paint touch-up \u2192 your painter. Plumbing fixture \u2192 the plumber. Punchlist AI
+                already knows who owns each scope on this home \u2014 so the moment the item is
+                created, it\u2019s routed to the right hands.
+              </p>
+              <ul className="space-y-3 mb-6">
+                <li className="flex items-start gap-3 text-slate-300">
+                  <Check className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                  <span>Scope-to-vendor mapping is per home \u2014 the cabinet vendor in Bayside isn\u2019t the same as the one in Eagles Landing, and Punchlist AI knows the difference.</span>
+                </li>
+                <li className="flex items-start gap-3 text-slate-300">
+                  <Check className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                  <span>One walkthrough, twelve issues for the painter? Punchlist AI groups every painter task into a single email \u2014 photos, severity, location, all in one place.</span>
+                </li>
+                <li className="flex items-start gap-3 text-slate-300">
+                  <Check className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                  <span>Override anytime. The auto-assigned vendor is a smart default, not a lock \u2014 swap in any vendor with one tap.</span>
+                </li>
+                <li className="flex items-start gap-3 text-slate-300">
+                  <Check className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                  <span>Hit <span className="font-semibold text-amber-300">Send to Vendors</span> when the list is ready \u2014 every vendor gets their grouped task list in one shot.</span>
+                </li>
+              </ul>
+              <p className="text-sm text-slate-400">
+                No manual triage. No \u201cwho does this one go to?\u201d No spreadsheets. The list is
+                already routed before you put the phone down.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features grid */}
       <section className="py-20 px-4 border-t border-slate-800/60">
         <div className="max-w-7xl mx-auto">
