@@ -265,8 +265,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/foreman-memory.png",
       "heroImageAlt": "Foreman AI construction assistant remembering builder preferences and vendor history across conversations",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "2025562",
+      "publishedAt": "2026-05-27T18:21:39.657Z"
     },
     {
       "slug": "auto-quantity-scope-items-square-footage",
