@@ -223,7 +223,7 @@ const featureDetails = [
   {
     id: "api",
     icon: Code,
-    screenshot: "/mockups/feature-scheduling.png",
+    screenshot: "/mockups/feature-api-keys.png",
     name: "Developer API & Integrations",
     color: "from-rose-500 to-violet-600",
     bgColor: "bg-rose-500/10",
