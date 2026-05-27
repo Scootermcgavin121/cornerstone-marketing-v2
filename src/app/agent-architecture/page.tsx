@@ -36,6 +36,20 @@ export const metadata: Metadata = {
     url: "https://www.cornerstonepm.ai/agent-architecture",
     siteName: "Cornerstone PM",
     type: "article",
+    images: [
+      {
+        url: "https://www.cornerstonepm.ai/og-agent-architecture.png",
+        width: 1536,
+        height: 1024,
+        alt: "Homebuilder AI Agent Architecture — free 4-page reference deck from Cornerstone PM",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Homebuilder AI Agent Architecture — Free 4-Page PDF",
+    description: "12 agents, 5 tiers, real platforms named. The reference architecture for an AI-native home builder OS.",
+    images: ["https://www.cornerstonepm.ai/og-agent-architecture.png"],
   },
 };
 
