@@ -44,3 +44,6 @@ next-env.d.ts
 
 # Archived/replaced assets (kept locally, not deployed)
 .archive/
+
+# Local secrets (rotated Neon creds)
+.neon-secrets.json

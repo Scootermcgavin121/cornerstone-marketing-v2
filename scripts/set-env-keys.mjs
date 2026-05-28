@@ -1,13 +1,8 @@
-// Set Vercel env vars without PowerShell stdin newline issues.
-// Spawns `vercel env add` and writes the value via stdin (no trailing newline).
-//
-// Reads secrets from .env.local (gitignored) so nothing sensitive is in the
-// repo. Run from the repo root after populating .env.local:
-//   node scripts/set-env.mjs
+// Variant of set-env.mjs that only sets a specific subset of keys.
+// Usage: node scripts/set-env-keys.mjs MARKETING_DATABASE_URL MARKETING_DIRECT_URL
 import fs from "node:fs";
 import { spawn } from "node:child_process";
 
-// ── Load .env.local ──
 if (!fs.existsSync(".env.local")) {
   console.error("Missing .env.local — populate it first (gitignored).");
   process.exit(1);
@@ -18,14 +13,11 @@ for (const line of fs.readFileSync(".env.local", "utf8").split(/\r?\n/)) {
   if (m) ENV[m[1]] = m[2];
 }
 
-const KEYS = [
-  "MARKETING_DATABASE_URL",
-  "MARKETING_DIRECT_URL",
-  "NEXT_PUBLIC_POSTHOG_KEY",
-  "NEXT_PUBLIC_POSTHOG_HOST",
-  "ADMIN_USERNAME",
-  "ADMIN_PASSWORD",
-];
+const KEYS = process.argv.slice(2);
+if (!KEYS.length) {
+  console.error("Usage: node scripts/set-env-keys.mjs KEY1 KEY2 ...");
+  process.exit(1);
+}
 const MISSING = KEYS.filter((k) => !ENV[k]);
 if (MISSING.length) {
   console.error("Missing in .env.local:", MISSING.join(", "));
@@ -33,7 +25,6 @@ if (MISSING.length) {
 }
 
 const ENVS = ["production", "preview", "development"];
-
 function setOne(key, val, env) {
   return new Promise((resolve) => {
     const child = spawn("vercel", ["env", "add", key, env], {
@@ -43,7 +34,7 @@ function setOne(key, val, env) {
     let out = "", err = "";
     child.stdout.on("data", (d) => (out += d.toString()));
     child.stderr.on("data", (d) => (err += d.toString()));
-    child.stdin.write(val); // no trailing newline
+    child.stdin.write(val);
     child.stdin.end();
     child.on("close", (code) => {
       const ok = code === 0;
