@@ -35,6 +35,19 @@ type Stats = {
   leads_today: number;
   total_downloads: number;
   total_events: number;
+  total_contact_msgs: number;
+};
+
+type ContactMessage = {
+  id: string;
+  lead_id: string | null;
+  name: string | null;
+  email: string | null;
+  company: string | null;
+  message: string;
+  utm_source: string | null;
+  utm_campaign: string | null;
+  created_at: string;
 };
 
 async function loadStats(): Promise<Stats> {
@@ -44,9 +57,30 @@ async function loadStats(): Promise<Stats> {
       (SELECT COUNT(*) FROM marketing_leads WHERE created_at > now() - interval '7 days')::int AS leads_last_7d,
       (SELECT COUNT(*) FROM marketing_leads WHERE created_at::date = CURRENT_DATE)::int        AS leads_today,
       (SELECT COUNT(*) FROM lead_events WHERE event_type = 'pdf_download')::int AS total_downloads,
-      (SELECT COUNT(*) FROM lead_events)::int      AS total_events
+      (SELECT COUNT(*) FROM lead_events)::int      AS total_events,
+      (SELECT COUNT(*) FROM lead_events WHERE event_type = 'contact_form_submit')::int AS total_contact_msgs
   `) as Stats[];
   return rows[0];
+}
+
+async function loadContactMessages(limit = 10): Promise<ContactMessage[]> {
+  return (await sql`
+    SELECT
+      e.id,
+      e.lead_id,
+      l.name,
+      l.email,
+      l.company,
+      COALESCE((e.metadata->>'message'), '') AS message,
+      e.utm_source,
+      e.utm_campaign,
+      e.created_at
+    FROM lead_events e
+    LEFT JOIN marketing_leads l ON l.id = e.lead_id
+    WHERE e.event_type = 'contact_form_submit'
+    ORDER BY e.created_at DESC
+    LIMIT ${limit}
+  `) as ContactMessage[];
 }
 
 async function loadLeads(limit: number, offset: number): Promise<Lead[]> {
@@ -115,13 +149,15 @@ export default async function AdminLeadsPage({
   let leads: Lead[] = [];
   let bySource: { source_page: string; count: number }[] = [];
   let byCampaign: { utm_campaign: string | null; utm_source: string | null; count: number }[] = [];
+  let contactMsgs: ContactMessage[] = [];
   let loadError: string | null = null;
   try {
-    [stats, leads, bySource, byCampaign] = await Promise.all([
+    [stats, leads, bySource, byCampaign, contactMsgs] = await Promise.all([
       loadStats(),
       loadLeads(limit, offset),
       loadBySource(),
       loadByCampaign(),
+      loadContactMessages(10),
     ]);
   } catch (err) {
     loadError = err instanceof Error ? err.message : String(err);
@@ -153,11 +189,12 @@ export default async function AdminLeadsPage({
         )}
 
         {stats && (
-          <section className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
+          <section className="grid grid-cols-2 md:grid-cols-6 gap-4 mb-8">
             <StatCard label="Total leads" value={stats.total_leads} accent="emerald" />
             <StatCard label="Last 7 days" value={stats.leads_last_7d} accent="cyan" />
             <StatCard label="Today" value={stats.leads_today} accent="violet" />
             <StatCard label="PDF downloads" value={stats.total_downloads} accent="amber" />
+            <StatCard label="Contact msgs" value={stats.total_contact_msgs} accent="rose" />
             <StatCard label="Total events" value={stats.total_events} accent="slate" />
           </section>
         )}
@@ -195,6 +232,45 @@ export default async function AdminLeadsPage({
             )}
           </Card>
         </section>
+
+        {contactMsgs.length > 0 && (
+          <section className="mb-8">
+            <Card title={`Recent contact-form messages (${contactMsgs.length})`}>
+              <ul className="divide-y divide-slate-800/60 -my-2">
+                {contactMsgs.map((m) => (
+                  <li key={m.id} className="py-4 first:pt-2 last:pb-2">
+                    <div className="flex items-start justify-between gap-4 mb-2">
+                      <div className="min-w-0">
+                        <div className="flex items-center gap-2 flex-wrap">
+                          <span className="text-slate-100 font-semibold">{m.name || "—"}</span>
+                          {m.email && (
+                            <a href={`mailto:${m.email}?subject=Re: your message at cornerstonepm.ai`} className="text-cyan-400 hover:text-cyan-300 text-sm">
+                              {m.email}
+                            </a>
+                          )}
+                          {m.company && (
+                            <span className="text-slate-400 text-sm">· {m.company}</span>
+                          )}
+                        </div>
+                        {(m.utm_source || m.utm_campaign) && (
+                          <div className="text-xs text-slate-500 mt-0.5 font-mono">
+                            via {m.utm_source || "—"} / {m.utm_campaign || "—"}
+                          </div>
+                        )}
+                      </div>
+                      <span className="text-xs text-slate-500 whitespace-nowrap">{fmtDate(m.created_at)}</span>
+                    </div>
+                    {m.message && (
+                      <blockquote className="text-sm text-slate-300 leading-relaxed border-l-2 border-rose-500/40 pl-3 whitespace-pre-wrap break-words">
+                        {m.message.length > 600 ? m.message.slice(0, 600) + "…" : m.message}
+                      </blockquote>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </Card>
+          </section>
+        )}
 
         <Card title={`Recent leads · page ${page} of ${totalPages}`}>
           {leads.length === 0 ? (
@@ -264,12 +340,13 @@ function Card({ title, children }: { title: string; children: React.ReactNode })
   );
 }
 
-function StatCard({ label, value, accent }: { label: string; value: number; accent: "emerald" | "cyan" | "violet" | "amber" | "slate" }) {
+function StatCard({ label, value, accent }: { label: string; value: number; accent: "emerald" | "cyan" | "violet" | "amber" | "rose" | "slate" }) {
   const colorMap: Record<string, string> = {
     emerald: "text-emerald-400",
     cyan: "text-cyan-400",
     violet: "text-violet-400",
     amber: "text-amber-400",
+    rose: "text-rose-400",
     slate: "text-slate-400",
   };
   return (

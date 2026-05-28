@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { BackgroundBeams } from "@/components/ui/background-beams";
@@ -7,34 +7,84 @@ import { Mail, MessageSquare, ArrowRight, Zap } from "lucide-react";
 import { JsonLd } from "@/components/JsonLd";
 import { buildContactPageSchema } from "@/lib/schema-helpers";
 import { trackEvent } from "@/components/GoogleAnalytics";
+import posthog from "posthog-js";
+
+type UtmContext = {
+  utm_source: string | null;
+  utm_medium: string | null;
+  utm_campaign: string | null;
+  utm_content: string | null;
+  utm_term: string | null;
+  referrer: string | null;
+};
+
+function captureUtm(): UtmContext {
+  if (typeof window === "undefined") {
+    return { utm_source: null, utm_medium: null, utm_campaign: null, utm_content: null, utm_term: null, referrer: null };
+  }
+  const sp = new URLSearchParams(window.location.search);
+  return {
+    utm_source:   sp.get("utm_source"),
+    utm_medium:   sp.get("utm_medium"),
+    utm_campaign: sp.get("utm_campaign"),
+    utm_content:  sp.get("utm_content"),
+    utm_term:     sp.get("utm_term"),
+    referrer:     document.referrer || null,
+  };
+}
 
 const contactSchema = buildContactPageSchema();
 
 export default function ContactPage() {
   const [form, setForm] = useState({ name: "", email: "", company: "", message: "", website: "" });
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const formStartTime = useRef(Date.now());
+  const utmRef = useRef<UtmContext | null>(null);
+
+  // Capture UTM on mount so they're frozen at first-view time, not
+  // submission time (handles people who land then navigate around).
+  useEffect(() => {
+    utmRef.current = captureUtm();
+    posthog.capture("contact_view", utmRef.current ?? {});
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (form.website) return;
     setStatus("loading");
     try {
+      const utm = utmRef.current ?? captureUtm();
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify({
+          ...form,
+          _t: formStartTime.current,
+          ...utm,
+        }),
       });
       if (res.ok) {
         trackEvent("contact_form_submit", {
           form_name: "main_contact",
           has_company: form.company ? "yes" : "no",
         });
+        // Identify in PostHog by email + capture conversion
+        if (form.email.trim()) {
+          posthog.identify(form.email.trim(), {
+            email: form.email.trim(),
+            name: form.name,
+            company: form.company,
+          });
+        }
+        posthog.capture("contact_submit", { ...utm, source_page: "/contact", has_company: !!form.company });
         setStatus("success");
       } else {
         setStatus("error");
+        posthog.capture("contact_submit_failed");
       }
     } catch {
       setStatus("error");
+      posthog.capture("contact_submit_error");
     }
   };
 

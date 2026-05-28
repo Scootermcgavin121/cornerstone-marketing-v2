@@ -1,5 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import { upsertLead, recordEvent, recordEmail } from "@/lib/db/client";
+
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
 
 const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
 const RATE_LIMIT = 5;
@@ -40,7 +44,21 @@ export async function POST(req: NextRequest) {
     }
 
     const body = await req.json();
-    const { name, email, company, message, website, _t } = body;
+    const {
+      name,
+      email,
+      company,
+      message,
+      website,
+      _t,
+      utm_source,
+      utm_medium,
+      utm_campaign,
+      utm_content,
+      utm_term,
+      referrer,
+    } = body;
+    const userAgent = req.headers.get("user-agent") || null;
 
     // Honeypot
     if (website) return NextResponse.json({ ok: true });
@@ -57,6 +75,36 @@ export async function POST(req: NextRequest) {
     }
 
     const subject = `📬 Contact Form — ${name.trim()}${company ? ` (${company.trim()})` : ""}`;
+
+    // ── Write to marketing DB (best-effort; never break email delivery on a db hiccup)
+    let leadId: string | null = null;
+    try {
+      const lead = await upsertLead({
+        email: email.trim(),
+        name: name.trim(),
+        company: company?.trim() || null,
+        role: null,
+        source_page: "/contact",
+        utm_source, utm_medium, utm_campaign, utm_content, utm_term,
+        referrer,
+        ip: ip === "unknown" ? null : ip,
+        user_agent: userAgent,
+      });
+      leadId = lead?.id || null;
+      await recordEvent({
+        lead_id: leadId,
+        event_type: "contact_form_submit",
+        source_page: "/contact",
+        utm_source, utm_medium, utm_campaign, utm_content, utm_term,
+        referrer,
+        ip: ip === "unknown" ? null : ip,
+        user_agent: userAgent,
+        metadata: { message: message.trim().slice(0, 4000) },
+      });
+    } catch (dbErr) {
+      console.error("[CONTACT DB]", dbErr);
+      // continue — email still goes out
+    }
 
     const html = `
       <div style="font-family: -apple-system, system-ui, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -97,6 +145,18 @@ export async function POST(req: NextRequest) {
         text: `Name: ${name.trim()}\nEmail: ${email.trim()}\nCompany: ${company?.trim() || "N/A"}\n\nMessage:\n${message.trim()}`,
       });
       console.log(`[CONTACT] ✅ Email sent — ${name.trim()} <${email.trim()}>`);
+      try {
+        await recordEmail({
+          lead_id: leadId,
+          email: "admin@cornerstonepm.ai",
+          subject,
+          template: "contact-admin-notif",
+          status: "sent",
+          provider: "gmail-smtp",
+        });
+      } catch (dbErr) {
+        console.error("[CONTACT DB email log]", dbErr);
+      }
     } else {
       console.log(`[CONTACT] ⚠️ No SMTP configured — Name: ${name.trim()}, Email: ${email.trim()}`);
     }
