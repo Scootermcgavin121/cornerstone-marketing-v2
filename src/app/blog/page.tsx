@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "auto-quantity-scope-items-square-footage",
+    title: "Auto-Quantity Scope Items: Stop Re-Entering Sqft on Every Floorplan",
+    excerpt:
+      "Auto-quantity scope items link directly to floorplan measurements — Under Air Sqft, Total Sqft, or Roof Squares — so every plan and structural option prices itself automatically. Define paint cost per sqft once. Cornerstone reprices every floorplan, every elevation, every structural option instantly.",
+    date: "May 28, 2026",
+    readTime: "6 min read",
+    tag: "Product Update",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/auto-quantity-scope-items.png",
+  },
+  {
     slug: "foreman-ai-memory-construction-software",
     title: "Foreman AI Memory: The First Construction AI That Doesn\u2019t Forget",
     excerpt:
