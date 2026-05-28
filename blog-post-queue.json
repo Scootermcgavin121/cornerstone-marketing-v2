@@ -280,8 +280,9 @@
       "wordCount": 900,
       "heroImage": "/blog/auto-quantity-scope-items.png",
       "heroImageAlt": "Auto-quantity scope items in Cornerstone PM showing Under Air Sqft, Total Sqft, and Roof Squares automatically calculating costs across home builder floorplans",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "c58f274",
+      "publishedAt": "2026-05-28T14:05:30.156Z"
     },
     {
       "slug": "design-center-exclusion-groups-pick-one",
