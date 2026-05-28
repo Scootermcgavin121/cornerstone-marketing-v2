@@ -1,5 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import { upsertLead, recordEvent, recordEmail } from "@/lib/db/client";
+
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
 
 const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
 const RATE_LIMIT = 5;
@@ -40,7 +44,21 @@ export async function POST(req: NextRequest) {
     }
 
     const body = await req.json();
-    const { name, email, company, role, website, _t } = body;
+    const {
+      name,
+      email,
+      company,
+      role,
+      website,
+      _t,
+      utm_source,
+      utm_medium,
+      utm_campaign,
+      utm_content,
+      utm_term,
+      referrer,
+    } = body;
+    const userAgent = req.headers.get("user-agent") || null;
 
     // Honeypot
     if (website) return NextResponse.json({ ok: true });
@@ -56,7 +74,8 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Please enter a valid email address." }, { status: 400 });
     }
 
-    const downloadUrl = "https://www.cornerstonepm.ai/downloads/homebuilder-ai-agent-architecture.pdf";
+    const trackedUrl = `https://www.cornerstonepm.ai/api/track/download?slug=agent-architecture&email=${encodeURIComponent(email.trim().toLowerCase())}&utm_source=email&utm_medium=welcome&utm_campaign=agent-architecture`;
+    const downloadUrl = trackedUrl;
     const transport = getTransport();
 
     // === User-facing email (delivers the PDF) ===
@@ -126,6 +145,36 @@ export async function POST(req: NextRequest) {
       </div>
     `;
 
+    // ── Write to marketing DB (best-effort; never break delivery on a db hiccup)
+    let leadId: string | null = null;
+    try {
+      const lead = await upsertLead({
+        email: email.trim(),
+        name: name.trim(),
+        company: company?.trim() || null,
+        role: role?.trim() || null,
+        source_page: "/agent-architecture",
+        utm_source, utm_medium, utm_campaign, utm_content, utm_term,
+        referrer,
+        ip: ip === "unknown" ? null : ip,
+        user_agent: userAgent,
+      });
+      leadId = lead?.id || null;
+      await recordEvent({
+        lead_id: leadId,
+        event_type: "form_submit",
+        source_page: "/agent-architecture",
+        utm_source, utm_medium, utm_campaign, utm_content, utm_term,
+        referrer,
+        ip: ip === "unknown" ? null : ip,
+        user_agent: userAgent,
+        metadata: { template: "agent-architecture" },
+      });
+    } catch (dbErr) {
+      console.error("[AGENT-ARCH DB]", dbErr);
+      // continue — email still goes out
+    }
+
     if (transport) {
       // User email with PDF link
       await transport.sendMail({
@@ -148,6 +197,26 @@ export async function POST(req: NextRequest) {
       });
 
       console.log(`[AGENT-ARCH] ✅ Sent — ${name.trim()} <${email.trim()}>`);
+      try {
+        await recordEmail({
+          lead_id: leadId,
+          email: email.trim(),
+          subject: "Your Homebuilder AI Agent Architecture (4-page deck)",
+          template: "agent-architecture-welcome",
+          status: "sent",
+          provider: "gmail-smtp",
+        });
+        await recordEmail({
+          lead_id: leadId,
+          email: "admin@cornerstonepm.ai",
+          subject: `📥 Architecture deck — ${name.trim()}${company ? ` (${company.trim()})` : ""}`,
+          template: "agent-architecture-admin-notif",
+          status: "sent",
+          provider: "gmail-smtp",
+        });
+      } catch (dbErr) {
+        console.error("[AGENT-ARCH DB email log]", dbErr);
+      }
     } else {
       console.log(`[AGENT-ARCH] ⚠️ No SMTP — Name: ${name.trim()}, Email: ${email.trim()}`);
     }

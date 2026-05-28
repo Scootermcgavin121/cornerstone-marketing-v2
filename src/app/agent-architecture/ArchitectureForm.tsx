@@ -1,12 +1,45 @@
 "use client";
 
-import { useState, useRef, FormEvent } from "react";
+import { useState, useRef, useEffect, FormEvent } from "react";
 import { ArrowRight, CheckCircle2, Loader2 } from "lucide-react";
+import posthog from "posthog-js";
+
+type UtmContext = {
+  utm_source: string | null;
+  utm_medium: string | null;
+  utm_campaign: string | null;
+  utm_content: string | null;
+  utm_term: string | null;
+  referrer: string | null;
+};
+
+function captureUtm(): UtmContext {
+  if (typeof window === "undefined") {
+    return { utm_source: null, utm_medium: null, utm_campaign: null, utm_content: null, utm_term: null, referrer: null };
+  }
+  const sp = new URLSearchParams(window.location.search);
+  return {
+    utm_source:   sp.get("utm_source"),
+    utm_medium:   sp.get("utm_medium"),
+    utm_campaign: sp.get("utm_campaign"),
+    utm_content:  sp.get("utm_content"),
+    utm_term:     sp.get("utm_term"),
+    referrer:     document.referrer || null,
+  };
+}
 
 export function ArchitectureForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
   const formStartTime = useRef(Date.now());
+  const utmRef = useRef<UtmContext | null>(null);
+
+  // Capture UTM on mount so they're frozen at first-view time, not
+  // submission time (handles people who land then navigate around).
+  useEffect(() => {
+    utmRef.current = captureUtm();
+    posthog.capture("agent_architecture_view", utmRef.current ?? {});
+  }, []);
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -19,6 +52,7 @@ export function ArchitectureForm() {
     setErrorMsg("");
 
     try {
+      const utm = utmRef.current ?? captureUtm();
       const res = await fetch("/api/agent-architecture", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -29,6 +63,7 @@ export function ArchitectureForm() {
           role: data.get("role"),
           website: data.get("website"), // honeypot
           _t: formStartTime.current,
+          ...utm,
         }),
       });
 
@@ -36,13 +71,19 @@ export function ArchitectureForm() {
       if (!res.ok) {
         setStatus("error");
         setErrorMsg(json.error || "Something went wrong. Try again?");
+        posthog.capture("agent_architecture_submit_failed", { error: json.error });
         return;
       }
+      // Identify in PostHog by email + capture conversion
+      const emailVal = String(data.get("email") || "").trim();
+      if (emailVal) posthog.identify(emailVal, { email: emailVal, name: data.get("name"), company: data.get("company"), role: data.get("role") });
+      posthog.capture("agent_architecture_submit", { ...utm, source_page: "/agent-architecture" });
       setStatus("success");
       form.reset();
     } catch {
       setStatus("error");
       setErrorMsg("Network error. Try again?");
+      posthog.capture("agent_architecture_submit_error");
     }
   }
 

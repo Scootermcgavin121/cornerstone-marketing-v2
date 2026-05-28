@@ -5,6 +5,7 @@ import ChatWidget from "@/components/ChatWidget";
 import { StructuredData } from "@/components/StructuredData";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { Analytics as VercelAnalytics } from "@vercel/analytics/next";
+import { PostHogProvider } from "@/components/PostHogProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -94,8 +95,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <StructuredData />
         <GoogleAnalytics />
-        {children}
-        <ChatWidget />
+        <PostHogProvider>
+          {children}
+          <ChatWidget />
+        </PostHogProvider>
         <VercelAnalytics />
       </body>
     </html>
