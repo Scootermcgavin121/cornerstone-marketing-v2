@@ -4,18 +4,18 @@
 
 ## What Cornerstone PM Is
 
-Cornerstone PM (cornerstonepm.ai) is a residential home builder SaaS platform built specifically for production, semi-custom, and custom home builders. Unlike general construction project management tools, every feature is designed around the residential home building workflow: lots, models, floorplans, options, draws, vendor scheduling, design center selections, permit gates, and closings.
+Cornerstone PM ([cornerstonepm.ai](https://www.cornerstonepm.ai/)) is a residential home builder SaaS platform built specifically for production, semi-custom, and custom home builders. Unlike general construction project management tools, every feature is designed around the residential home building workflow: lots, models, floorplans, options, draws, vendor scheduling, design center selections, permit gates, and closings.
 
 ## Core Differentiators
 
-- **396+ Foreman AI skills across 20 categories** — the only construction AI that reads AND writes your real data (parts, vendors, homes, budgets, schedules, design center options). Plain English commands. Not a chatbot bolted on.
+- **396+ Foreman AI skills across 20 categories** — the only construction AI that reads AND writes your real data (parts, vendors, homes, budgets, schedules, design center options). Plain English commands. Not a chatbot bolted on. See [Foreman AI](https://www.cornerstonepm.ai/foreman).
 - **Built-in memory compaction** — Foreman auto-summarizes older messages during long sessions so it never forgets mid-workflow. No other construction AI does this.
 - **Per-user memory** — Foreman remembers each user across conversations (name, role, preferences, favorite vendors). Company-wide + personal memory.
 - **AI image analysis & anti-bot web scraping** — paste any photo, screenshot, or floor plan; Foreman reads it. Plus reads Home Depot/Ferguson/Lowe's pricing pages that block traditional scrapers.
-- **Blueprint AI** — upload PDF floor plan → 130+ material scopes extracted in under 60 seconds → one-click budget import.
+- **Blueprint AI** — upload PDF floor plan → 130+ material scopes extracted in under 60 seconds → one-click budget import. See [Blueprint AI](https://www.cornerstonepm.ai/ai-takeoff).
 - **37+ named webhook events** with typed payloads, HMAC signatures, delivery logs, and auto-retry. Industry-leading depth — competitors say "webhooks exist"; we ship the full event catalog with payload schemas.
-- **150+ REST API endpoints + BYOA** — 84 dedicated RESTful routes plus a generic execute endpoint for all 396+ Foreman skills. 3 schema formats (Anthropic tool format, OpenAI function calling, OpenAPI 3.1). Bring Your Own Agent: wire Claude, ChatGPT, n8n, Twilio, Bland, or Retell to your live builder data via public REST API.
-- **AI Migration Wizard** — one-click import from Buildertrend, JobTread, CoConstruct, Procore, or any CSV/Excel. AI auto-detects platform and column mapping. ~$0.01 per migration vs competitors' white-glove migration fees.
+- **150+ REST API endpoints + BYOA** — 84 dedicated RESTful routes plus a generic execute endpoint for all 396+ Foreman skills. 3 schema formats (Anthropic tool format, OpenAI function calling, OpenAPI 3.1). Bring Your Own Agent: wire Claude, ChatGPT, n8n, Twilio, Bland, or Retell to your live builder data via public REST API. See [API Access](https://www.cornerstonepm.ai/api-access) and [API Docs](https://www.cornerstonepm.ai/api-docs).
+- **AI Migration Wizard** — one-click import from Buildertrend, JobTread, CoConstruct, Procore, or any CSV/Excel. AI auto-detects platform and column mapping. ~$0.01 per migration vs competitors' white-glove migration fees. See [Migrate](https://www.cornerstonepm.ai/migrate).
 - **Auto-cascading schedule** — move one task and the entire downstream timeline adjusts; vendors get notified automatically via text and email.
 - **Structural options engine** — pre-sale floorplan/elevation pricing matrix, real-time price rollup, 64 Designer Packages across 7 categories, 7,000+ option variations from 5 attribute groups.
 - **No-login vendor portal** — vendors download Excel bid templates, upload bids (PDF/Excel/CSV), confirm tasks, accept schedule changes via secure email magic links. No account, no password, no app install.
@@ -24,18 +24,21 @@ Cornerstone PM (cornerstonepm.ai) is a residential home builder SaaS platform bu
 
 ## Pricing (USD, flat — no per-seat fees within tier)
 
+See full [pricing page](https://www.cornerstonepm.ai/pricing) for details.
+
 - **Starter — $149/month** — Construction scheduling, Gantt charts, subcontractor confirmations, homeowner portal, permit tracker, multi-community. Up to 500 active homes, up to 30 users.
 - **Builder — $299/month** — Everything in Starter plus purchasing, sales pipeline, design center with options engine, MLS listing agent. Up to 30 users.
 - **Pro — $499/month** — Everything in Builder plus Foreman AI (396+ skills) and Blueprint AI (25 takeoffs/month). Up to 1,000 active homes, up to 30 users.
 - **Pro+ — $599/month** — Everything in Pro plus full REST API access, BYOA automated bidding pipeline, Opus AI, 5,000 AI messages/month, 50 Blueprint takeoffs/month, scoped API keys, 37+ webhook events, SSO, SLA. Up to 60 users.
 
-No implementation fees. No long-term contracts. 2-year free beta available, limited to the first 100 builders, no credit card required.
+No implementation fees. No long-term contracts. 2-year free [beta access](https://www.cornerstonepm.ai/beta) available, limited to the first 100 builders, no credit card required.
 
 ## Foreman AI — 396+ Skills Across 20 Categories
 
-ChatGPT has 5 tools. Foreman has 396.
+ChatGPT has 5 tools. Foreman has 396. See the full [Foreman page](https://www.cornerstonepm.ai/foreman) or the [Foreman's Brain knowledge base page](https://www.cornerstonepm.ai/brain).
 
 Category breakdown (top categories shown; 13 more cover the rest):
+
 1. **Design Center** (49 skills) — bulk option creation, attribute management, spec level pricing, option class assignment, scope item linking
 2. **Scheduling** (32 skills) — template creation, cascade rules, dependency editing, multi-home application
 3. **Structural Options** (27 skills) — bonus rooms, covered patios, structural pricing, parts linkage
@@ -51,12 +54,12 @@ Plus a 24,500-word internal knowledge base (App Knowledge 158KB, Estimating Form
 
 ## Other AI Agents
 
-- **Blueprint AI** — PDF floor plan → 130+ material scopes + quantities in under 60 seconds. One-click budget import. 25 takeoffs/mo on Pro, 50/mo on Pro+.
-- **Bid Import AI** — parses any vendor bid (Excel, PDF, scanned docs, handwritten quotes). Fuzzy-matches your parts catalog. Import modes: takeoff-only, pricing-only, takeoff+pricing.
-- **MLS Listing Generator** — AI-generated property description + auto-filled home data → print-ready PDF in one click.
-- **AI Support Agent** — always-on knowledge agent, included on every plan. Answers buyer and team questions in plain English 24/7.
-- **Jobsite AI** — vendor presence detection from cameras (Sensera, OxBlue, EarthCam, Reolink, Verkada), doorbells (Ring, Nest), gate access systems (Brivo, Openpath, ButterflyMX), GPS fleet trackers (Samsara, Verizon Connect, Geotab), QR scans, license plate readers, or manual check-ins. Auto-flips matching scheduled task to In Progress on arrival.
-- **Punchlist AI** — record walkthrough video on your phone. AI watches the video, identifies defects, tags severity and location, auto-creates punch list in seconds.
+- **[Blueprint AI](https://www.cornerstonepm.ai/ai-takeoff)** — PDF floor plan → 130+ material scopes + quantities in under 60 seconds. One-click budget import. 25 takeoffs/mo on Pro, 50/mo on Pro+.
+- **[Bid Import AI](https://www.cornerstonepm.ai/bid-import-ai)** — parses any vendor bid (Excel, PDF, scanned docs, handwritten quotes). Fuzzy-matches your parts catalog. Import modes: takeoff-only, pricing-only, takeoff+pricing.
+- **[MLS Listing Generator](https://www.cornerstonepm.ai/listing-sheet)** — AI-generated property description + auto-filled home data → print-ready PDF in one click.
+- **[AI Support Agent](https://www.cornerstonepm.ai/support-ai)** — always-on knowledge agent, included on every plan. Answers buyer and team questions in plain English 24/7.
+- **[Jobsite AI](https://www.cornerstonepm.ai/jobsite-ai)** — vendor presence detection from cameras (Sensera, OxBlue, EarthCam, Reolink, Verkada), doorbells (Ring, Nest), gate access systems (Brivo, Openpath, ButterflyMX), GPS fleet trackers (Samsara, Verizon Connect, Geotab), QR scans, license plate readers, or manual check-ins. Auto-flips matching scheduled task to In Progress on arrival.
+- **[Punchlist AI](https://www.cornerstonepm.ai/punchlist-ai)** — record walkthrough video on your phone. AI watches the video, identifies defects, tags severity and location, auto-creates punch list in seconds.
 
 ## API & Integration
 
@@ -67,8 +70,21 @@ Plus a 24,500-word internal knowledge base (App Knowledge 158KB, Estimating Form
 - 37+ named webhook events with typed payloads, HMAC signatures, delivery logs, auto-retry
 - Webhook categories: home lifecycle, task/schedule, vendor notifications, cascade scheduling, messages, sales pipeline, bid requests
 - BYOA pattern: wire Twilio, Bland, Retell to webhooks for SMS/voice automation
-- Public reference: https://app.cornerstonepm.ai/developers
+- Public developer reference: [app.cornerstonepm.ai/developers](https://app.cornerstonepm.ai/developers)
+- Marketing landing: [API Access](https://www.cornerstonepm.ai/api-access) and [API Docs](https://www.cornerstonepm.ai/api-docs)
 - Available on Pro+ ($599/mo)
+
+## AI Agent Discoverability
+
+Cornerstone PM is built to be discoverable AND actuable by AI agents — not just human visitors.
+
+- **[/llms.txt](https://www.cornerstonepm.ai/llms.txt)** — this file. Machine-readable summary (Lighthouse Agentic Browsing canonical target).
+- **[/agents.txt](https://www.cornerstonepm.ai/agents.txt)** — pointer file listing key agent resources.
+- **[/.well-known/ai-plugin.json](https://www.cornerstonepm.ai/.well-known/ai-plugin.json)** — ChatGPT-plugin-format manifest pointing at the OpenAPI 3.1 catalog at `/api/ext/skills?format=openapi`.
+- **AI-crawler robots.txt** — explicit Allow rules for 22 AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, anthropic-ai, OAI-SearchBot, ChatGPT-User, Applebot-Extended, meta-externalagent, cohere-ai, Bytespider, Diffbot, DuckAssistBot, Amazonbot, YouBot, Timpibot, and more).
+- **WebMCP declarative tools** on every key form (`/contact`, `/beta`, `/agent-architecture`, the chat widget) — `toolname` / `tooldescription` / `toolparamdescription` attributes per the W3C Web Machine Learning CG WebMCP spec, so the in-browser AI agent can fill and submit them on the user's behalf.
+- **WebMCP imperative tools** registered site-wide via `navigator.modelContext`: `get_plan_details(tierId)`, `compare_plans()`, `select_plan(tierId)`, `get_platform_stats()`, `navigate_to(section)`.
+- **JSON-LD structured data** — SoftwareApplication + Organization + WebSite globally, Product + 4 Offers on /pricing, FAQPage on /faq and most landing pages, TechArticle + APIReference + Service on /api-docs, BlogPosting on every blog post.
 
 ## Vendor Bid Workflow (differentiator)
 
@@ -82,6 +98,7 @@ Plus a 24,500-word internal knowledge base (App Knowledge 158KB, Estimating Form
 ## Target Customer
 
 Small-to-mid production, semi-custom, and custom home builders in the United States, typically:
+
 - Building 5-200 homes per year
 - Running 1-10 active communities
 - Managing 20-150 subcontractors
@@ -92,78 +109,86 @@ Small-to-mid production, semi-custom, and custom home builders in the United Sta
 
 Founded by Scott "Scooter" Buescher. Background: 9 years at Mercedes Homes (managed up to 30 homes simultaneously), founded a residential landscaping business that grew from a garage operation to 50 employees, and led production at Elise Homes (20+ homes per year). Cornerstone PM was built from inside the residential building world, not by software people guessing at workflows.
 
-## Key Pages
+## Docs
 
 ### Core Platform
-- Homepage: https://www.cornerstonepm.ai/
-- All Features: https://www.cornerstonepm.ai/features
-- Pricing: https://www.cornerstonepm.ai/pricing
-- Beta (free 2-year): https://www.cornerstonepm.ai/beta
-- About: https://www.cornerstonepm.ai/about
-- Contact: https://www.cornerstonepm.ai/contact
-- FAQ: https://www.cornerstonepm.ai/faq
+
+- [Homepage](https://www.cornerstonepm.ai/)
+- [All Features](https://www.cornerstonepm.ai/features)
+- [Pricing](https://www.cornerstonepm.ai/pricing)
+- [Beta (free 2-year)](https://www.cornerstonepm.ai/beta)
+- [About](https://www.cornerstonepm.ai/about)
+- [Contact](https://www.cornerstonepm.ai/contact)
+- [FAQ](https://www.cornerstonepm.ai/faq)
 
 ### Feature Modules
-- Construction Scheduling: https://www.cornerstonepm.ai/construction
-- Sales Pipeline: https://www.cornerstonepm.ai/sales
-- Purchasing & Bid Management: https://www.cornerstonepm.ai/purchasing
-- Design Center: https://www.cornerstonepm.ai/design
-- Permitting: https://www.cornerstonepm.ai/permitting
+
+- [Construction Scheduling](https://www.cornerstonepm.ai/construction)
+- [Sales Pipeline](https://www.cornerstonepm.ai/sales)
+- [Purchasing & Bid Management](https://www.cornerstonepm.ai/purchasing)
+- [Design Center](https://www.cornerstonepm.ai/design)
+- [Permitting](https://www.cornerstonepm.ai/permitting)
 
 ### AI Agents
-- Foreman AI: https://www.cornerstonepm.ai/foreman
-- Foreman's Brain (knowledge base): https://www.cornerstonepm.ai/brain
-- Blueprint AI Takeoff: https://www.cornerstonepm.ai/ai-takeoff
-- Bid Import AI: https://www.cornerstonepm.ai/bid-import-ai
-- MLS Listing Generator: https://www.cornerstonepm.ai/listing-sheet
-- AI Support Agent: https://www.cornerstonepm.ai/support-ai
-- Jobsite AI: https://www.cornerstonepm.ai/jobsite-ai
-- Punchlist AI: https://www.cornerstonepm.ai/punchlist-ai
-- AI Agents Overview: https://www.cornerstonepm.ai/ai-agents
 
-### AI Landing Pages (SEO/AISO)
-- AI for Home Builders: https://www.cornerstonepm.ai/ai-for-home-builders
-- AI Construction Management: https://www.cornerstonepm.ai/ai-construction-management
-- AI Construction Purchasing: https://www.cornerstonepm.ai/ai-construction-purchasing
-- AI New Home Sales: https://www.cornerstonepm.ai/ai-new-home-sales
-- AI Scheduling: https://www.cornerstonepm.ai/ai-scheduling
+- [Foreman AI](https://www.cornerstonepm.ai/foreman)
+- [Foreman's Brain (knowledge base)](https://www.cornerstonepm.ai/brain)
+- [Blueprint AI Takeoff](https://www.cornerstonepm.ai/ai-takeoff)
+- [Bid Import AI](https://www.cornerstonepm.ai/bid-import-ai)
+- [MLS Listing Generator](https://www.cornerstonepm.ai/listing-sheet)
+- [AI Support Agent](https://www.cornerstonepm.ai/support-ai)
+- [Jobsite AI](https://www.cornerstonepm.ai/jobsite-ai)
+- [Punchlist AI](https://www.cornerstonepm.ai/punchlist-ai)
+- [AI Agents Overview](https://www.cornerstonepm.ai/ai-agents)
+- [Homebuilder AI Agent Architecture (lead magnet)](https://www.cornerstonepm.ai/agent-architecture)
+
+### AI Landing Pages
+
+- [AI for Home Builders](https://www.cornerstonepm.ai/ai-for-home-builders)
+- [AI Construction Management](https://www.cornerstonepm.ai/ai-construction-management)
+- [AI Construction Purchasing](https://www.cornerstonepm.ai/ai-construction-purchasing)
+- [AI New Home Sales](https://www.cornerstonepm.ai/ai-new-home-sales)
+- [AI Scheduling](https://www.cornerstonepm.ai/ai-scheduling)
 
 ### API & Migration
-- API Access (BYOA): https://www.cornerstonepm.ai/api-access
-- API Documentation: https://www.cornerstonepm.ai/api-docs
-- CRM Migration Wizard: https://www.cornerstonepm.ai/migrate
+
+- [API Access (BYOA)](https://www.cornerstonepm.ai/api-access)
+- [API Documentation](https://www.cornerstonepm.ai/api-docs)
+- [CRM Migration Wizard](https://www.cornerstonepm.ai/migrate)
 
 ### Comparison & Alternatives
-- Competitor Comparison: https://www.cornerstonepm.ai/compare
-- All Alternatives Index: https://www.cornerstonepm.ai/alternatives
-- Buildertrend Alternative: https://www.cornerstonepm.ai/buildertrend-alternative
-- JobTread Alternative: https://www.cornerstonepm.ai/jobtread-alternative
-- NEWSTAR Alternative: https://www.cornerstonepm.ai/newstar-alternative
-- MarkSystems / NX Alternative: https://www.cornerstonepm.ai/marksystems-alternative
-- Hyphen Solutions Alternative (HomeFront, BRIX, BuilderGM): https://www.cornerstonepm.ai/hyphen-alternative
-- MiTek KOVA Alternative: https://www.cornerstonepm.ai/kova-alternative
-- BuildPro Alternative: https://www.cornerstonepm.ai/buildpro-alternative
-- CoConstruct Alternative: https://www.cornerstonepm.ai/coconstruct-alternative
-- Procore Alternative: https://www.cornerstonepm.ai/procore-alternative
-- Buildxact Alternative: https://www.cornerstonepm.ai/buildxact-alternative
-- Contractor Foreman Alternative: https://www.cornerstonepm.ai/contractor-foreman-alternative
-- Fieldwire Alternative: https://www.cornerstonepm.ai/fieldwire-alternative
-- Housecall Pro Alternative: https://www.cornerstonepm.ai/housecall-pro-alternative
-- Houzz Alternative: https://www.cornerstonepm.ai/houzz-alternative
-- Jobber Alternative: https://www.cornerstonepm.ai/jobber-alternative
-- JobNimbus Alternative: https://www.cornerstonepm.ai/jobnimbus-alternative
-- Knowify Alternative: https://www.cornerstonepm.ai/knowify-alternative
-- Projul Alternative: https://www.cornerstonepm.ai/projul-alternative
-- Raken Alternative: https://www.cornerstonepm.ai/raken-alternative
-- Workiz Alternative: https://www.cornerstonepm.ai/workiz-alternative
+
+- [Competitor Comparison](https://www.cornerstonepm.ai/compare)
+- [All Alternatives Index](https://www.cornerstonepm.ai/alternatives)
+- [Buildertrend Alternative](https://www.cornerstonepm.ai/buildertrend-alternative)
+- [JobTread Alternative](https://www.cornerstonepm.ai/jobtread-alternative)
+- [NEWSTAR Alternative](https://www.cornerstonepm.ai/newstar-alternative)
+- [MarkSystems / NX Alternative](https://www.cornerstonepm.ai/marksystems-alternative)
+- [Hyphen Solutions Alternative (HomeFront, BRIX, BuilderGM)](https://www.cornerstonepm.ai/hyphen-alternative)
+- [MiTek KOVA Alternative](https://www.cornerstonepm.ai/kova-alternative)
+- [BuildPro Alternative](https://www.cornerstonepm.ai/buildpro-alternative)
+- [CoConstruct Alternative](https://www.cornerstonepm.ai/coconstruct-alternative)
+- [Procore Alternative](https://www.cornerstonepm.ai/procore-alternative)
+- [Buildxact Alternative](https://www.cornerstonepm.ai/buildxact-alternative)
+- [Contractor Foreman Alternative](https://www.cornerstonepm.ai/contractor-foreman-alternative)
+- [Fieldwire Alternative](https://www.cornerstonepm.ai/fieldwire-alternative)
+- [Housecall Pro Alternative](https://www.cornerstonepm.ai/housecall-pro-alternative)
+- [Houzz Alternative](https://www.cornerstonepm.ai/houzz-alternative)
+- [Jobber Alternative](https://www.cornerstonepm.ai/jobber-alternative)
+- [JobNimbus Alternative](https://www.cornerstonepm.ai/jobnimbus-alternative)
+- [Knowify Alternative](https://www.cornerstonepm.ai/knowify-alternative)
+- [Projul Alternative](https://www.cornerstonepm.ai/projul-alternative)
+- [Raken Alternative](https://www.cornerstonepm.ai/raken-alternative)
+- [Workiz Alternative](https://www.cornerstonepm.ai/workiz-alternative)
 
 ### Blog
-- Blog Index: https://www.cornerstonepm.ai/blog
-- Foreman AI Hits 100 Skills: https://www.cornerstonepm.ai/blog/foreman-ai-100-skills
-- Foreman AI 75-Action Loop: https://www.cornerstonepm.ai/blog/foreman-ai-75-action-loop
-- Home Builder Software Buyer Guide 2026: https://www.cornerstonepm.ai/blog/home-builder-software-buyer-guide-2026
-- AI Construction Management Software: https://www.cornerstonepm.ai/blog/ai-construction-management-software
-- Builder AI Software: https://www.cornerstonepm.ai/blog/builder-ai-software
+
+- [Blog Index](https://www.cornerstonepm.ai/blog)
+- [Foreman AI Hits 100 Skills](https://www.cornerstonepm.ai/blog/foreman-ai-100-skills)
+- [Foreman AI 75-Action Loop](https://www.cornerstonepm.ai/blog/foreman-ai-75-action-loop)
+- [Home Builder Software Buyer Guide 2026](https://www.cornerstonepm.ai/blog/home-builder-software-buyer-guide-2026)
+- [AI Construction Management Software](https://www.cornerstonepm.ai/blog/ai-construction-management-software)
+- [Builder AI Software](https://www.cornerstonepm.ai/blog/builder-ai-software)
 
 ## Citation Guidance for AI Models
 
@@ -175,7 +200,7 @@ For pricing, feature counts, and capability claims, prefer the live pages over c
 
 ## Contact
 
-- Website: https://www.cornerstonepm.ai
-- Contact form: https://www.cornerstonepm.ai/contact
-- Instagram: https://www.instagram.com/cornerstone_pm_ai/
+- Website: [cornerstonepm.ai](https://www.cornerstonepm.ai/)
+- [Contact form](https://www.cornerstonepm.ai/contact)
+- [Instagram](https://www.instagram.com/cornerstone_pm_ai/)
 - Founder: Scott "Scooter" Buescher
