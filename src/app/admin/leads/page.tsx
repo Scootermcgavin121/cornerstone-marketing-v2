@@ -166,9 +166,9 @@ export default async function AdminLeadsPage({
   const totalPages = stats ? Math.max(1, Math.ceil(stats.total_leads / limit)) : 1;
 
   return (
-    <main className="min-h-screen bg-slate-950 text-slate-100">
-      <header className="sticky top-0 z-10 bg-slate-950/80 backdrop-blur border-b border-slate-800">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <main className="text-slate-100">
+      <header className="border-b border-slate-800/60">
+        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between flex-wrap gap-3">
           <div>
             <h1 className="text-xl font-bold">Leads Dashboard</h1>
             <p className="text-xs text-slate-400 mt-0.5">cornerstonepm.ai · marketing_leads</p>
