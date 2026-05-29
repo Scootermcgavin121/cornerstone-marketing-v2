@@ -40,6 +40,15 @@ type RecentEvent = {
   created_at: string;
 };
 
+type SourceRow = { name: string; count: number };
+
+type TrafficSources = {
+  referrers: SourceRow[];
+  utmSources: SourceRow[];
+  utmCampaigns: SourceRow[];
+  landingPages: SourceRow[];
+};
+
 // ─────────────────────────────────────────────────────────────────────────────
 // Data
 // ─────────────────────────────────────────────────────────────────────────────
@@ -55,6 +64,79 @@ async function loadStats(): Promise<Stats> {
       (SELECT COUNT(*) FROM lead_events WHERE event_type = 'contact_form_submit')::int             AS total_contact_msgs
   `) as Stats[];
   return rows[0];
+}
+
+async function loadTrafficSources(): Promise<TrafficSources> {
+  // Last 30 days, grouped per dimension. Run in parallel.
+  // For referrers, extract host portion server-side after query (more reliable than regex in SQL across edge cases).
+  const [referrerRowsRaw, utmSourceRowsRaw, utmCampaignRowsRaw, landingPageRowsRaw] = await Promise.all([
+    sql`
+      SELECT referrer AS name, COUNT(*)::int AS count
+      FROM marketing_leads
+      WHERE created_at > now() - interval '30 days'
+      GROUP BY referrer
+      ORDER BY count DESC
+      LIMIT 30
+    `,
+    sql`
+      SELECT COALESCE(NULLIF(TRIM(utm_source), ''), '(none)') AS name, COUNT(*)::int AS count
+      FROM marketing_leads
+      WHERE created_at > now() - interval '30 days'
+      GROUP BY name
+      ORDER BY count DESC
+      LIMIT 10
+    `,
+    sql`
+      SELECT COALESCE(NULLIF(TRIM(utm_campaign), ''), '(none)') AS name, COUNT(*)::int AS count
+      FROM marketing_leads
+      WHERE created_at > now() - interval '30 days'
+      GROUP BY name
+      ORDER BY count DESC
+      LIMIT 5
+    `,
+    sql`
+      SELECT COALESCE(NULLIF(TRIM(source_page), ''), '(unknown)') AS name, COUNT(*)::int AS count
+      FROM marketing_leads
+      WHERE created_at > now() - interval '30 days'
+      GROUP BY name
+      ORDER BY count DESC
+      LIMIT 10
+    `,
+  ]);
+
+  const referrerRows = referrerRowsRaw as { name: string | null; count: number }[];
+  const utmSourceRows = utmSourceRowsRaw as { name: string; count: number }[];
+  const utmCampaignRows = utmCampaignRowsRaw as { name: string; count: number }[];
+  const landingPageRows = landingPageRowsRaw as { name: string; count: number }[];
+
+  // Normalize referrers: strip protocol + path, leave just the host. NULL/empty → "(direct)".
+  const referrerAgg = new Map<string, number>();
+  for (const row of referrerRows) {
+    const raw = (row.name || '').trim();
+    let host: string;
+    if (!raw) {
+      host = '(direct)';
+    } else {
+      try {
+        host = new URL(raw).hostname.replace(/^www\./, '');
+      } catch {
+        // Not a parseable URL — fall back to a best-effort strip.
+        host = raw.replace(/^https?:\/\//i, '').replace(/^www\./, '').split('/')[0] || '(direct)';
+      }
+    }
+    referrerAgg.set(host, (referrerAgg.get(host) || 0) + row.count);
+  }
+  const referrers: SourceRow[] = [...referrerAgg.entries()]
+    .map(([name, count]) => ({ name, count }))
+    .sort((a, b) => b.count - a.count)
+    .slice(0, 10);
+
+  return {
+    referrers,
+    utmSources: utmSourceRows,
+    utmCampaigns: utmCampaignRows,
+    landingPages: landingPageRows,
+  };
 }
 
 async function loadRecentEvents(limit = 20): Promise<RecentEvent[]> {
@@ -81,10 +163,15 @@ async function loadRecentEvents(limit = 20): Promise<RecentEvent[]> {
 export default async function AdminAnalyticsPage() {
   let stats: Stats | null = null;
   let recentEvents: RecentEvent[] = [];
+  let traffic: TrafficSources | null = null;
   let loadError: string | null = null;
 
   try {
-    [stats, recentEvents] = await Promise.all([loadStats(), loadRecentEvents(20)]);
+    [stats, recentEvents, traffic] = await Promise.all([
+      loadStats(),
+      loadRecentEvents(20),
+      loadTrafficSources(),
+    ]);
   } catch (err) {
     loadError = err instanceof Error ? err.message : String(err);
   }
@@ -125,6 +212,22 @@ export default async function AdminAnalyticsPage() {
             <StatCard label="PDF downloads" value={stats.total_downloads} accent="amber" />
             <StatCard label="Contact msgs" value={stats.total_contact_msgs} accent="rose" />
             <StatCard label="Total events" value={stats.total_events} accent="slate" />
+          </div>
+        </section>
+      )}
+
+      {/* ─── Top Traffic Sources (last 30 days) ────────────────────────── */}
+      {traffic && (
+        <section className="mb-10">
+          <h2 className="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-3">Top traffic sources · last 30 days</h2>
+          <p className="text-sm text-slate-400 mb-4 leading-relaxed">
+            This shows where your <strong className="text-slate-200">leads</strong> came from (people who filled out forms). For total <strong className="text-slate-200">traffic</strong> including non-converters, use GA4 → Acquisition → Traffic acquisition (linked in the cards below).
+          </p>
+          <div className="grid md:grid-cols-2 gap-4">
+            <SourceMiniTable title="Top Referrers" rows={traffic.referrers} emptyLabel="No referrer data in the last 30 days." />
+            <SourceMiniTable title="Top UTM Sources" rows={traffic.utmSources} emptyLabel="No UTM source data in the last 30 days." />
+            <SourceMiniTable title="Top UTM Campaigns" rows={traffic.utmCampaigns} emptyLabel="No UTM campaign data in the last 30 days." />
+            <SourceMiniTable title="Top Landing Pages" rows={traffic.landingPages} emptyLabel="No landing page data in the last 30 days." />
           </div>
         </section>
       )}
@@ -384,6 +487,46 @@ function StatCard({
     <div className="rounded-xl border border-slate-800 bg-slate-900/40 p-4">
       <div className="text-xs uppercase tracking-wider text-slate-500 mb-1.5">{label}</div>
       <div className={`text-3xl font-bold ${colorMap[accent]}`}>{value.toLocaleString()}</div>
+    </div>
+  );
+}
+
+function SourceMiniTable({
+  title,
+  rows,
+  emptyLabel,
+}: {
+  title: string;
+  rows: SourceRow[];
+  emptyLabel: string;
+}) {
+  const max = rows.length > 0 ? Math.max(...rows.map((r) => r.count)) : 0;
+  return (
+    <div className="rounded-xl border border-slate-800 bg-slate-900/40 p-5">
+      <h3 className="text-sm font-semibold text-slate-200 mb-3 uppercase tracking-wide">{title}</h3>
+      {rows.length === 0 ? (
+        <p className="text-sm text-slate-500 py-2">{emptyLabel}</p>
+      ) : (
+        <ul className="space-y-2">
+          {rows.map((r, i) => {
+            const pct = max > 0 ? Math.max(4, Math.round((r.count / max) * 100)) : 0;
+            return (
+              <li key={`${r.name}-${i}`} className="text-sm">
+                <div className="flex items-center justify-between gap-3 mb-1">
+                  <span className="text-slate-300 truncate font-mono text-xs" title={r.name}>{r.name}</span>
+                  <span className="text-slate-400 tabular-nums shrink-0">{r.count.toLocaleString()}</span>
+                </div>
+                <div className="h-1.5 rounded-full bg-slate-800 overflow-hidden">
+                  <div
+                    className="h-full bg-emerald-500/70"
+                    style={{ width: `${pct}%` }}
+                  />
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      )}
     </div>
   );
 }
