@@ -171,11 +171,14 @@ export function ScreenshotsSection() {
                   </div>
                 </div>
                 {/* Dot indicators */}
-                <div className="flex justify-center gap-2">
-                  {screens.map((_, i) => (
+                <div className="flex justify-center gap-2" role="tablist" aria-label="Screenshot slides">
+                  {screens.map((s, i) => (
                     <button
                       key={i}
                       onClick={() => setActive(i)}
+                      role="tab"
+                      aria-selected={active === i}
+                      aria-label={`Show slide ${i + 1}: ${s.headline}`}
                       className={`h-1.5 rounded-full transition-all duration-300 ${
                         active === i ? "w-8 bg-cyan-400" : "w-3 bg-slate-700 hover:bg-slate-600"
                       }`}
@@ -198,11 +201,14 @@ export function ScreenshotsSection() {
                     {current.description}
                   </p>
                   {/* Dot indicators */}
-                  <div className="flex gap-2 pt-2">
-                    {screens.map((_, i) => (
+                  <div className="flex gap-2 pt-2" role="tablist" aria-label="Screenshot slides">
+                    {screens.map((s, i) => (
                       <button
                         key={i}
                         onClick={() => setActive(i)}
+                        role="tab"
+                        aria-selected={active === i}
+                        aria-label={`Show slide ${i + 1}: ${s.headline}`}
                         className={`h-1.5 rounded-full transition-all duration-300 ${
                           active === i ? "w-8 bg-cyan-400" : "w-3 bg-slate-700 hover:bg-slate-600"
                         }`}
