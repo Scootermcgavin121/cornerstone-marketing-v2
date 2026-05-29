@@ -4,6 +4,81 @@ import Link from "next/link";
 import { Check, Shield, Zap, Globe, Code, Webhook, CreditCard, Building2, ArrowRight, ClipboardList, Users, Layers, Package, Clock, FileText, Bell, BarChart3, ChevronDown, Terminal } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { JsonLd } from "@/components/JsonLd";
+
+// API docs JSON-LD — a TechArticle + APIReference + WebAPI graph so AI agents
+// and Google understand this page is the canonical reference for the
+// Cornerstone PM REST API. Numbers track src/lib/pricing.ts; bump there if
+// the API surface grows.
+const apiDocsSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["TechArticle", "APIReference"],
+      "name": "Cornerstone PM REST API — Developer Documentation",
+      "headline": "Cornerstone PM REST API: 150+ endpoints, 37+ webhooks, 3 schema formats",
+      "url": "https://cornerstonepm.ai/api-docs",
+      "description": "Developer reference for the Cornerstone PM REST API. 150+ endpoints covering vendors, homes, tasks, sales tasks, purchase orders, payments, design center options, parts catalog, structural options, schedules, budgets, and webhooks. 84 dedicated RESTful routes plus a generic execute endpoint that runs any of Foreman AI's 396+ skills. Three machine-readable schema formats available at /api/ext/skills: Anthropic tool format, OpenAI function calling, and OpenAPI 3.1.",
+      "keywords": "home builder API, construction REST API, BYOA, builder API documentation, Foreman AI API, construction webhooks, Anthropic tool format, OpenAI function calling, OpenAPI 3.1, builder integration API, residential construction API, AI agent construction",
+      "author": {
+        "@type": "Organization",
+        "name": "Cornerstone PM",
+        "url": "https://cornerstonepm.ai",
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Cornerstone PM",
+        "url": "https://cornerstonepm.ai",
+        "logo": "https://cornerstonepm.ai/logo-new.png",
+      },
+      "datePublished": "2026-02-01",
+      "dateModified": "2026-05-28",
+      "inLanguage": "en-US",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Software developers, AI engineers, integration engineers, home builder IT, automation engineers",
+      },
+      "proficiencyLevel": "Expert",
+      "about": {
+        "@type": "Service",
+        "name": "Cornerstone PM REST API + BYOA",
+        "serviceType": "REST API and Webhooks for Home Builder Software",
+        "provider": {
+          "@type": "Organization",
+          "name": "Cornerstone PM",
+        },
+        "areaServed": "United States",
+        "offers": {
+          "@type": "Offer",
+          "price": "599",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "599",
+            "priceCurrency": "USD",
+            "billingDuration": "P1M",
+            "unitText": "per month",
+          },
+          "description": "REST API + 37+ webhooks + BYOA included on Cornerstone PM Pro+ ($599/mo). No separate API fees.",
+          "availability": "https://schema.org/InStock",
+        },
+      },
+      "isPartOf": {
+        "@type": "CreativeWork",
+        "name": "Cornerstone PM",
+        "url": "https://cornerstonepm.ai",
+      },
+      "mainEntityOfPage": "https://cornerstonepm.ai/api-docs",
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cornerstonepm.ai" },
+        { "@type": "ListItem", "position": 2, "name": "API Documentation", "item": "https://cornerstonepm.ai/api-docs" },
+      ],
+    },
+  ],
+});
 
 
 
@@ -317,6 +392,7 @@ export default function ApiDocsPage() {
   const toggleGroup = (label: string) => setOpenGroups(prev => ({ ...prev, [label]: !prev[label] }));
   return (
     <div className="min-h-screen bg-slate-950 text-white">
+      <JsonLd json={apiDocsSchema} />
       <Navbar />
 
       {/* Hero */}

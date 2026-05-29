@@ -1,0 +1,76 @@
+# Cornerstone PM — AI Agent Manifest
+
+# This file is a quick pointer for AI agents arriving at cornerstonepm.ai.
+# The canonical machine-readable summary lives at /llms.txt (Lighthouse
+# agentic-browsing audit standard). Read that file first.
+
+Canonical-Summary: https://www.cornerstonepm.ai/llms.txt
+Sitemap: https://www.cornerstonepm.ai/sitemap.xml
+Robots: https://www.cornerstonepm.ai/robots.txt
+Plugin-Manifest: https://www.cornerstonepm.ai/.well-known/ai-plugin.json
+
+# ---------------------------------------------------------------------------
+# What Cornerstone PM is
+# ---------------------------------------------------------------------------
+# All-in-one home builder software platform for production, semi-custom, and
+# custom home builders (5–200+ homes/yr). Replaces Buildertrend, JobTread,
+# CoConstruct, NEWSTAR, BuildPro, MarkSystems with a unified system that
+# covers scheduling, sales, purchasing, design center with options engine,
+# permitting, AI material takeoffs, and a full REST API.
+
+# ---------------------------------------------------------------------------
+# AI / Agent Surface Area
+# ---------------------------------------------------------------------------
+
+Foreman-AI-Skills: 396+
+Foreman-AI-Categories: 20
+Webhook-Events: 37+
+REST-Endpoints: 150+ (84 dedicated routes + generic execute for all 396+ Foreman skills)
+Schema-Formats: Anthropic tool format, OpenAI function calling, OpenAPI 3.1
+BYOA: Yes — Bring Your Own Agent (Claude, ChatGPT, n8n, Twilio, Bland, Retell)
+BYOA-Plan: Pro+ ($599/mo)
+
+# ---------------------------------------------------------------------------
+# Developer / Integration Endpoints
+# ---------------------------------------------------------------------------
+
+API-Base: https://app.cornerstonepm.ai/api/ext
+API-Auth: Bearer token (scoped API keys)
+API-Docs: https://www.cornerstonepm.ai/api-docs
+API-Reference-Markdown: https://app.cornerstonepm.ai/docs/api-reference.md
+Developer-Portal: https://app.cornerstonepm.ai/developers
+Skill-Catalog-Anthropic: https://app.cornerstonepm.ai/api/ext/skills?format=anthropic
+Skill-Catalog-OpenAI: https://app.cornerstonepm.ai/api/ext/skills?format=openai
+Skill-Catalog-OpenAPI: https://app.cornerstonepm.ai/api/ext/skills?format=openapi
+Generic-Execute: POST https://app.cornerstonepm.ai/api/ext/execute
+
+# ---------------------------------------------------------------------------
+# Pricing (USD, monthly, flat — no per-seat fees within tier)
+# ---------------------------------------------------------------------------
+# Starter: $149/mo
+# Builder: $299/mo
+# Pro:     $499/mo (Foreman AI + Blueprint AI)
+# Pro+:    $599/mo (REST API + BYOA + Foreman + Blueprint + webhooks)
+# Free 2-year beta available for the first 100 builders.
+
+# ---------------------------------------------------------------------------
+# Key URLs for citation
+# ---------------------------------------------------------------------------
+# Homepage:   https://www.cornerstonepm.ai/
+# Pricing:    https://www.cornerstonepm.ai/pricing
+# Foreman AI: https://www.cornerstonepm.ai/foreman
+# API Access: https://www.cornerstonepm.ai/api-access
+# FAQ:        https://www.cornerstonepm.ai/faq
+# Contact:    https://www.cornerstonepm.ai/contact
+
+# ---------------------------------------------------------------------------
+# Crawl policy
+# ---------------------------------------------------------------------------
+# All major AI crawlers are explicitly allowed in /robots.txt
+# (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, Applebot-Extended,
+# meta-externalagent, OAI-SearchBot, ChatGPT-User, Claude-User, etc.)
+
+# Contact for AI agent integration questions: https://www.cornerstonepm.ai/contact
+# Founder: Scott "Scooter" Buescher (scottbuescher@gmail.com)
+
+# Last updated: 2026-05-28

@@ -53,6 +53,17 @@ export const metadata: Metadata = {
     shortcut: "/favicon.png",
     apple: "/favicon.png",
   },
+  // AI agent discoverability hints (Lighthouse agentic-browsing audit + emerging
+  // conventions). Browsers ignore unknown rel values, so this is safe.
+  alternates: {
+    types: {
+      "text/markdown": "/llms.txt",
+    },
+  },
+  other: {
+    "ai-content": "/llms.txt",
+    "ai-plugin": "/.well-known/ai-plugin.json",
+  },
   robots: {
     index: true,
     follow: true,
@@ -92,6 +103,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
+      <head>
+        {/* AI agent discoverability — Lighthouse agentic-browsing audit looks
+            for /llms.txt at the root, and these rel hints help agentic browsers
+            and AI crawlers find our machine-readable summary + plugin manifest. */}
+        <link rel="alternate" type="text/markdown" href="/llms.txt" title="LLM-friendly summary" />
+        <link rel="alternate" type="text/plain" href="/agents.txt" title="AI agent manifest" />
+        <link rel="alternate" type="application/json" href="/.well-known/ai-plugin.json" title="ChatGPT plugin manifest" />
+      </head>
       <body className={inter.className}>
         <StructuredData />
         <GoogleAnalytics />

@@ -1,0 +1,27 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Cornerstone PM",
+  "name_for_model": "cornerstone_pm",
+  "description_for_human": "Home builder software with native AI agents. Schedule subs, manage purchasing, run design center selections, generate MLS listings, and execute 396+ Foreman AI construction skills from any AI agent — via REST API + 37+ webhooks. BYOA (Bring Your Own Agent) included on Pro+ ($599/mo).",
+  "description_for_model": "Cornerstone PM is an all-in-one residential home builder platform. It exposes a public REST API at https://app.cornerstonepm.ai/api/ext with 150+ endpoints (84 dedicated RESTful routes plus a generic execute endpoint that can run any of Foreman AI's 396+ construction skills across 20 categories: Design Center, Scheduling, Structural Options, Scope Items, Option Attributes, Locations & Takeoffs, Parts Catalog, Sales Pipeline, Purchasing, and 11 more). Authentication: Bearer token using a scoped API key from the Cornerstone PM Pro+ plan. Skills are also available as machine-readable schemas in three formats (Anthropic tool format, OpenAI function calling, OpenAPI 3.1) at https://app.cornerstonepm.ai/api/ext/skills?format=anthropic|openai|openapi. The platform also emits 37+ named webhook events with typed payloads and HMAC signatures for event-driven automation (vendor notifications, cascade scheduling, sales pipeline updates, bid requests, home lifecycle, messages, etc.). Use this API to query and modify vendors, homes, tasks, sales tasks, purchase orders, payments, design center options, parts catalog entries, structural options, schedules, and budgets. For exact endpoint details, fetch https://app.cornerstonepm.ai/docs/api-reference.md. Pricing, plan structure, and feature differentiators are summarized at https://www.cornerstonepm.ai/llms.txt.",
+  "auth": {
+    "type": "user_http",
+    "authorization_type": "bearer"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://app.cornerstonepm.ai/api/ext/skills?format=openapi",
+    "has_user_authentication": true
+  },
+  "logo_url": "https://www.cornerstonepm.ai/logo-new.png",
+  "contact_email": "scottbuescher@gmail.com",
+  "legal_info_url": "https://www.cornerstonepm.ai/contact",
+  "marketing": {
+    "website": "https://www.cornerstonepm.ai",
+    "developer_portal": "https://app.cornerstonepm.ai/developers",
+    "api_marketing_page": "https://www.cornerstonepm.ai/api-access",
+    "byoa_plan": "Cornerstone PM Pro+ ($599/mo)",
+    "llms_txt": "https://www.cornerstonepm.ai/llms.txt",
+    "agents_txt": "https://www.cornerstonepm.ai/agents.txt"
+  }
+}
