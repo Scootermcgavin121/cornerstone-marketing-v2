@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "design-center-exclusion-groups-pick-one",
+    title: "Design Center Exclusion Groups: Let Buyers Pick One From Many",
+    excerpt:
+      "Production builders know the problem: if flooring is \u2018required\u2019, does the buyer need to pick Carpet AND Tile AND LVP AND Hardwood? Exclusion groups solve this \u2014 pick one flooring type and the entire category marks complete. No more phantom incompletes, no more broken progress dashboards.",
+    date: "May 29, 2026",
+    readTime: "6 min read",
+    tag: "Product Update",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/exclusion-groups.png",
+  },
+  {
     slug: "auto-quantity-scope-items-square-footage",
     title: "Auto-Quantity Scope Items: Stop Re-Entering Sqft on Every Floorplan",
     excerpt:
