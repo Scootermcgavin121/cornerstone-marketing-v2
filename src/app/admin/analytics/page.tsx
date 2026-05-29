@@ -184,9 +184,9 @@ export default async function AdminAnalyticsPage() {
   // Build GA4 dashboard URL. We only know the measurement ID (G-72275PNKR6),
   // not the numeric property ID. Link to GA home and let it route — the
   // property picker handles the rest.
-  // Deep-link straight to the Traffic Acquisition report on the cornerstonepm.ai property (538783545).
+  // Deep-link straight to the Traffic Acquisition report on the cornerstonepm.ai property (538785549).
   const ga4Url =
-    "https://analytics.google.com/analytics/web/#/p538783545/reports/explorer?params=_u..nav%3Dmaui&r=all-pages&ruid=all-pages,life-cycle,acquisition,acquisition-traffic";
+    "https://analytics.google.com/analytics/web/#/p538785549/reports/explorer?params=_u..nav%3Dmaui&r=all-pages&ruid=all-pages,life-cycle,acquisition,acquisition-traffic";
 
   return (
     <main className="max-w-7xl mx-auto px-6 py-8">
