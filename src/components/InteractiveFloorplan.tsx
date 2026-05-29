@@ -366,12 +366,12 @@ function FloorplanSvg({ selected, compact = false }: { selected: OptionCode[]; c
       {/* Option relationship annotation */}
       {active("screened_porch") ? (
         <g id="a-on-screened_porch-off-morning_room" className="on">
-          <text x="538" y="28" textAnchor="middle" fill="#0369a1" fontSize="13" fontWeight="800">Screened Porch selected â€” Morning Room hidden</text>
+          <text x="538" y="28" textAnchor="middle" fill="#0369a1" fontSize="13" fontWeight="800">Screened Porch selected — Morning Room hidden</text>
         </g>
       ) : null}
       {active("morning_room") ? (
         <g id="a-on_morning_room-off-screened_porch" className="on">
-          <text x="565" y="28" textAnchor="middle" fill="#15803d" fontSize="13" fontWeight="800">Morning Room selected â€” Screened Porch hidden</text>
+          <text x="565" y="28" textAnchor="middle" fill="#15803d" fontSize="13" fontWeight="800">Morning Room selected — Screened Porch hidden</text>
         </g>
       ) : null}
 

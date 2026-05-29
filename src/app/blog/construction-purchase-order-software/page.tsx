@@ -115,7 +115,7 @@ export default function ConstructionPurchaseOrderSoftwarePost() {
           <div className="rounded-xl bg-slate-900 border border-slate-700 p-6 my-6 not-prose">
             <p className="text-amber-400 font-bold text-sm mb-2">You say:</p>
             <p className="text-white italic mb-4">&ldquo;Create a bid request for all Plumbing vendors for Bayshore Commons and send portal invites&rdquo;</p>
-            <p className="text-slate-400 font-bold text-sm mb-2">ðŸª– Foreman does:</p>
+            <p className="text-slate-400 font-bold text-sm mb-2">🪖 Foreman does:</p>
             <p className="text-slate-300 text-sm">Bid request drafted with community specs, scope details, plan references, and submission deadline. Portal invites sent to 8 active plumbing vendors in your system. Responses trackable in your dashboard.</p>
           </div>
 

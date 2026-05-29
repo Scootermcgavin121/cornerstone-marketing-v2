@@ -3,14 +3,14 @@ import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageT
 import type { FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
-  title: "Projul Alternative for Home Builders | Cornerstone PMÃ¢â€žÂ¢",
+  title: "Projul Alternative for Home Builders | Cornerstone PM™",
   description:
-    "Projul is built for residential contractors and remodelers. Cornerstone PMÃ¢â€žÂ¢ is the alternative for home builders -- AI agents (Pro $499/mo), options engine, multi-community management, and 37+ webhook events from $149/mo.",
+    "Projul is built for residential contractors and remodelers. Cornerstone PM™ is the alternative for home builders -- AI agents (Pro $499/mo), options engine, multi-community management, and 37+ webhook events from $149/mo.",
   alternates: { canonical: "https://www.cornerstonepm.ai/projul-alternative" },
 };
 
 const comparisonRows: ComparisonRow[] = [
-  { feature: "Built for home builders", cornerstone: true, competitor: false, note: "Projul targets residential remodelers and small contractors. Cornerstone PMÃ¢â€žÂ¢ is purpose-built for home builders -- production, semi-custom, and custom -- with lot management, options engine, and multi-community pipelines that remodeling tools don't offer." },
+  { feature: "Built for home builders", cornerstone: true, competitor: false, note: "Projul targets residential remodelers and small contractors. Cornerstone PM™ is purpose-built for home builders -- production, semi-custom, and custom -- with lot management, options engine, and multi-community pipelines that remodeling tools don't offer." },
   { feature: "Structural options engine", cornerstone: true, competitor: false, note: "Pre-sale floorplan options pricing matrix -- Cornerstone Builder ($299/mo). Not a Projul feature." },
   { feature: "Floorplan pricing matrix", cornerstone: true, competitor: false, note: "Per-community floorplan pricing. Cornerstone Builder+." },
   { feature: "Multi-community lot management", cornerstone: true, competitor: false, note: "Native multi-community pipeline. Projul is single-job focused." },
@@ -22,16 +22,16 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "Public REST API (150+ API endpoints)", cornerstone: true, competitor: false, note: "Cornerstone Pro+: 150+ API endpoints, public docs. New endpoints ship as the platform grows. Projul has no public API (Zapier integration only)." },
   { feature: "Free database export (CSV / JSON)", cornerstone: true, competitor: false, note: "Download your full data anytime. Nightly auto-backups." },
   { feature: "AI Migration Wizard", cornerstone: true, competitor: false, note: "AI auto-detects column mapping and runs 23 import endpoints." },
-  { feature: "Homeowner portal (realtime sync + photos + messaging + ZIP export)", cornerstone: true, competitor: false, note: "Real-time portal synced with construction scheduling Ã¢â‚¬â€ when framing moves three days, buyers see it instantly. Plus: (1) builder/PM uploads job-site photos to every milestone (up to 5 photos per milestone via a camera button on the task row), (2) built-in messaging app between builder and customer with a permanent searchable record, and (3) one-click ZIP download of all job photos. Projul targets remodelers and residential contractors Ã¢â‚¬â€ no production-builder-grade buyer portal." },
-  { feature: "Vendor portal Ã¢â‚¬â€ no login required (email magic links)", cornerstone: true, competitor: false, note: "Vendors confirm tasks, accept schedule changes, and submit bids Ã¢â‚¬â€ all via secure magic links sent straight to their email. No app to download, no account to create, no password to remember. Click the link, do the thing, done. Biggest friction-killer for trade partners in the industry." },
-  { feature: "Triple QR ecosystem (vendor + PM + buyer, no app install)", cornerstone: true, competitor: false, note: "Three QR codes for three audiences, no app required: (1) vendor jobsite check-in captures GPS + timestamp + weather + photo upload automatically, (2) PM/internal-builder check-in feeds GPS-validated timesheets so you can prove who was actually on-site, (3) sales model home QR for walk-in buyer lead capture Ã¢â‚¬â€ replaces paper sign-in sheets, recognizes returning visitors, instantly creates a Lead record tied to the community with email + in-app notification to the sales agent. Projul ships none of these." },
+  { feature: "Homeowner portal (realtime sync + photos + messaging + ZIP export)", cornerstone: true, competitor: false, note: "Real-time portal synced with construction scheduling — when framing moves three days, buyers see it instantly. Plus: (1) builder/PM uploads job-site photos to every milestone (up to 5 photos per milestone via a camera button on the task row), (2) built-in messaging app between builder and customer with a permanent searchable record, and (3) one-click ZIP download of all job photos. Projul targets remodelers and residential contractors — no production-builder-grade buyer portal." },
+  { feature: "Vendor portal — no login required (email magic links)", cornerstone: true, competitor: false, note: "Vendors confirm tasks, accept schedule changes, and submit bids — all via secure magic links sent straight to their email. No app to download, no account to create, no password to remember. Click the link, do the thing, done. Biggest friction-killer for trade partners in the industry." },
+  { feature: "Triple QR ecosystem (vendor + PM + buyer, no app install)", cornerstone: true, competitor: false, note: "Three QR codes for three audiences, no app required: (1) vendor jobsite check-in captures GPS + timestamp + weather + photo upload automatically, (2) PM/internal-builder check-in feeds GPS-validated timesheets so you can prove who was actually on-site, (3) sales model home QR for walk-in buyer lead capture — replaces paper sign-in sheets, recognizes returning visitors, instantly creates a Lead record tied to the community with email + in-app notification to the sales agent. Projul ships none of these." },
   { feature: "Sales model home QR \u2014 walk-in buyer check-in + auto Lead DB save", cornerstone: true, competitor: false, note: "One QR at every model home entrance: walk-in buyers self-register on their own phone, returning visitors are recognized, every scan auto-creates a Lead record (name, email, phone, \"how did you hear about us?\") tied to the community, and the assigned sales agent gets an instant in-app + email notification. Replaces paper sign-in sheets with a searchable, attributable lead pipeline. Projul has no model-home lead-capture flow." },
   { feature: "Vendor Activity Map (Google Maps, real-time)", cornerstone: true, competitor: false, note: "Live Google Maps view of every vendor check-in across every community, 30-second refresh. See exactly who's on which jobsite right now. Filter by date or vendor. Stat cards show how many vendors are currently on-site. Projul has no equivalent." },
   { feature: "Flexible PO generation (4 patterns, mix on same job)", cornerstone: true, competitor: false, note: "Cornerstone gives you four PO patterns: (1) all POs at job start, (2) partial deposit POs from earlier pipeline tasks (permit pull, contract sign, foundation pour), (3) full PO auto-generated when a task is marked complete, or (4) configurable per task / scope / community. Mix all four on the same job. Not a Projul feature." },
   { feature: "Construction scheduling", cornerstone: true, competitor: true, note: "Both include project scheduling with Gantt views." },
   { feature: "CRM / lead tracking", cornerstone: true, competitor: true, note: "Both include CRM and lead management." },
-  { feature: "Pricing model", cornerstone: "Flat Ã¢â‚¬â€ up to 30 users (60 on Pro+)", competitor: "Annual commitment, flat per company", note: "Projul requires annual commitments: Core ~$399/mo (annual), Core+ ~$599/mo, Pro ~$1,199/mo. Cornerstone is flat at every tier: Starter $149, Builder $299, Pro $499, Pro+ $599 -- no annual lock-in required. More importantly: Projul doesn't ship an options engine, floorplan pricing matrix, multi-community pipelines, or home-builder AI at any price." },
-  { feature: "Cornerstone tiers (flat Ã¢â‚¬â€ up to 30 users Ã¢â‚¬Â¢ 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 37+ named webhook events, 7-wave bidding." },
+  { feature: "Pricing model", cornerstone: "Flat — up to 30 users (60 on Pro+)", competitor: "Annual commitment, flat per company", note: "Projul requires annual commitments: Core ~$399/mo (annual), Core+ ~$599/mo, Pro ~$1,199/mo. Cornerstone is flat at every tier: Starter $149, Builder $299, Pro $499, Pro+ $599 -- no annual lock-in required. More importantly: Projul doesn't ship an options engine, floorplan pricing matrix, multi-community pipelines, or home-builder AI at any price." },
+  { feature: "Cornerstone tiers (flat — up to 30 users • 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "--", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 37+ named webhook events, 7-wave bidding." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
@@ -47,18 +47,18 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "What's the best Projul alternative for home builders?",
-    a: "Cornerstone PMÃ¢â€žÂ¢ is purpose-built for home builders. Beyond the basics (scheduling, CRM, client portal from Starter $149/mo), it adds a structural options engine, floorplan pricing matrix, multi-community lot management, native AI agents (Foreman AI 396+ skills on Pro $499/mo, Blueprint AI), 37+ named webhook events (Pro+), and a public REST API with 150+ API endpoints.",
+    a: "Cornerstone PM™ is purpose-built for home builders. Beyond the basics (scheduling, CRM, client portal from Starter $149/mo), it adds a structural options engine, floorplan pricing matrix, multi-community lot management, native AI agents (Foreman AI 396+ skills on Pro $499/mo, Blueprint AI), 37+ named webhook events (Pro+), and a public REST API with 150+ API endpoints.",
   },
   {
     q: "How does Projul pricing compare to Cornerstone?",
     a: "Projul requires annual commitments: Core is approximately $399/mo (annual), Core+ approximately $599/mo, Pro approximately $1,199/mo. Cornerstone starts at $149/mo (Starter) with no annual lock-in required. Builder is $299/mo (adds options engine + design center). Pro is $499/mo (adds Foreman AI + Blueprint AI). Pro+ is $599/mo (adds REST API + BYOA). Projul doesn't ship options engines, multi-community pipelines, or home-builder AI at any price tier.",
   },
   {
-    q: "Can I migrate from Projul to Cornerstone PMÃ¢â€žÂ¢?",
+    q: "Can I migrate from Projul to Cornerstone PM™?",
     a: "Yes. The AI Migration Wizard reads your Projul export, auto-detects column mapping, and runs 23 import endpoints for vendors, contacts, communities, and more. Most migrations complete in under a day. ~$0.01 per migration in AI -- we absorb it.",
   },
   {
-    q: "Does Cornerstone PMÃ¢â€žÂ¢ have scheduling like Projul?",
+    q: "Does Cornerstone PM™ have scheduling like Projul?",
     a: "Yes -- and more. Cornerstone ships full Gantt scheduling with dependencies, cascade scheduling (change one date, the whole schedule shifts), vendor notifications, and 37+ named webhook events (Pro+) that can trigger external SMS or voice notifications when tasks change.",
   },
   {
@@ -66,7 +66,7 @@ const faqItems: FAQItem[] = [
     a: "Starter ($149/mo) includes construction scheduling, subcontractor assignment, permits pipeline, homeowner progress portal, and the AI Support Agent -- up to 30 users (60 on Pro+). Options engine and design center are on Builder ($299/mo). Foreman AI + Blueprint AI are on Pro ($499/mo). REST API + BYOA are on Pro+ ($599/mo).",
   },
   {
-    q: "Does Cornerstone PMÃ¢â€žÂ¢ have a free trial?",
+    q: "Does Cornerstone PM™ have a free trial?",
     a: "Yes. The 2-year free beta is open to the first 100 home builders -- no credit card, no contract, no implementation fee.",
   },
 ];
@@ -79,18 +79,18 @@ export default function ProjulAlternativePage() {
       heroLine1="Remodeling software won't cut it."
       heroLine2="You're building communities."
       accentColor="cyan"
-      heroParagraph="Projul is built for residential remodelers and small contractors (from ~$399/mo annual). Cornerstone PMÃ¢â€žÂ¢ is the Projul alternative for home builders -- structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, 396+ AI skills (Pro $499/mo), and a public REST API (Pro+) from $149/mo."
+      heroParagraph="Projul is built for residential remodelers and small contractors (from ~$399/mo annual). Cornerstone PM™ is the Projul alternative for home builders -- structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, 396+ AI skills (Pro $499/mo), and a public REST API (Pro+) from $149/mo."
       secondaryCTA={{ text: "See full comparison", href: "/compare" }}
-      comparisonSubtitle="Projul vs Cornerstone PMÃ¢â€žÂ¢ -- remodeling contractor tool vs. home-builder platform."
+      comparisonSubtitle="Projul vs Cornerstone PM™ -- remodeling contractor tool vs. home-builder platform."
       comparisonRows={comparisonRows}
       trademarkName="Projul"
-      whySwitchHeadline="What home builders get with Cornerstone PMÃ¢â€žÂ¢"
+      whySwitchHeadline="What home builders get with Cornerstone PM™"
       whySwitchCards={whySwitchCards}
       showMigrationCTA={true}
       migrationHeadline="Moving from Projul? Bring your data with you."
       migrationDesc="Export your Projul data, drop it in our wizard, and AI auto-maps contacts, vendors, and project history. Dry-run before you commit."
       faqTitle="Projul Alternative FAQ"
-      faqSubtitle="For home builders evaluating Projul vs Cornerstone PMÃ¢â€žÂ¢."
+      faqSubtitle="For home builders evaluating Projul vs Cornerstone PM™."
       faqItems={faqItems}
       footerHeadline="Ready for a home-builder platform?"
       footerSubtext="Join the beta and get 2 years free. Multi-community pipelines native."

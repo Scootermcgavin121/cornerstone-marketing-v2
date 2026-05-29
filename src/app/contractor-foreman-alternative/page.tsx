@@ -3,14 +3,14 @@ import type { ComparisonRow, WhySwitchCard } from "@/components/AlternativePageT
 import type { FAQItem } from "@/components/FAQSection";
 
 export const metadata = {
-  title: "Contractor Foreman Alternative for Home Builders | Cornerstone PMÃ¢â€žÂ¢",
+  title: "Contractor Foreman Alternative for Home Builders | Cornerstone PM™",
   description:
-    "Contractor Foreman is general construction PM software. Cornerstone PMÃ¢â€žÂ¢ is the alternative for home builders - AI agents (Pro $499/mo), options engine, 37+ named webhook events, and multi-community management from $149/mo.",
+    "Contractor Foreman is general construction PM software. Cornerstone PM™ is the alternative for home builders - AI agents (Pro $499/mo), options engine, 37+ named webhook events, and multi-community management from $149/mo.",
   alternates: { canonical: "https://www.cornerstonepm.ai/contractor-foreman-alternative" },
 };
 
 const comparisonRows: ComparisonRow[] = [
-  { feature: "Built for home builders", cornerstone: true, competitor: false, note: "Contractor Foreman is general construction PM software for various contractor types. Cornerstone PMÃ¢â€žÂ¢ is purpose-built for home builders - production, semi-custom, and custom - with lot management, options engine, and multi-community pipelines that GC tools don't offer." },
+  { feature: "Built for home builders", cornerstone: true, competitor: false, note: "Contractor Foreman is general construction PM software for various contractor types. Cornerstone PM™ is purpose-built for home builders - production, semi-custom, and custom - with lot management, options engine, and multi-community pipelines that GC tools don't offer." },
   { feature: "Structural options engine", cornerstone: true, competitor: false, note: "Pre-sale floorplan options pricing matrix - Cornerstone Builder ($299/mo). Not a general contractor concept." },
   { feature: "Floorplan pricing matrix", cornerstone: true, competitor: false, note: "Per-community floorplan pricing for home builders. Cornerstone Builder+." },
   { feature: "Multi-community lot management", cornerstone: true, competitor: false, note: "Native multi-community pipeline. Contractor Foreman is project-centric." },
@@ -23,58 +23,58 @@ const comparisonRows: ComparisonRow[] = [
   { feature: "BYOA (Bring Your Own Agent)", cornerstone: true, competitor: false, note: "Cornerstone Pro+ ($599/mo): wire Claude or ChatGPT to your live construction data." },
   { feature: "Public REST API (150+ API endpoints)", cornerstone: true, competitor: false, note: "Cornerstone Pro+: 150+ API endpoints, public docs. New endpoints ship as the platform grows. Contractor Foreman has no public REST API (Zapier integrations only)." },
   { feature: "AI Migration Wizard", cornerstone: true, competitor: false, note: "AI auto-detects column mapping and runs 23 import endpoints. ~$0.01 per migration." },
-  { feature: "Take your data with you anytime Ã¢â‚¬â€ no lock-in", cornerstone: true, competitor: false, note: "Your data is YOURS. Full database export to CSV or JSON anytime, one click, $0, no fees, no waiting on a support ticket. Nightly auto-backups retained 7 days for instant rollback. If you ever leave us, you leave with everything Ã¢â‚¬â€ vendors, homes, schedules, options, budgets, every line. No strings attached." },
-  { feature: "Vendor portal Ã¢â‚¬â€ no login required (email magic links)", cornerstone: true, competitor: false, note: "Vendors confirm tasks, accept schedule changes, and submit bids Ã¢â‚¬â€ all via secure magic links sent straight to their email. No app to download, no account to create, no password to remember. Click the link, do the thing, done. Biggest friction-killer for trade partners in the industry." },
-  { feature: "Triple QR ecosystem (vendor + PM + buyer, no app install)", cornerstone: true, competitor: false, note: "Three QR codes for three audiences, no app required: (1) vendor jobsite check-in captures GPS + timestamp + weather + photo upload automatically, (2) PM/internal-builder check-in feeds GPS-validated timesheets so you can prove who was actually on-site, (3) sales model home QR for walk-in buyer lead capture Ã¢â‚¬â€ replaces paper sign-in sheets, recognizes returning visitors, instantly creates a Lead record tied to the community with email + in-app notification to the sales agent. Contractor Foreman ships none of these." },
+  { feature: "Take your data with you anytime — no lock-in", cornerstone: true, competitor: false, note: "Your data is YOURS. Full database export to CSV or JSON anytime, one click, $0, no fees, no waiting on a support ticket. Nightly auto-backups retained 7 days for instant rollback. If you ever leave us, you leave with everything — vendors, homes, schedules, options, budgets, every line. No strings attached." },
+  { feature: "Vendor portal — no login required (email magic links)", cornerstone: true, competitor: false, note: "Vendors confirm tasks, accept schedule changes, and submit bids — all via secure magic links sent straight to their email. No app to download, no account to create, no password to remember. Click the link, do the thing, done. Biggest friction-killer for trade partners in the industry." },
+  { feature: "Triple QR ecosystem (vendor + PM + buyer, no app install)", cornerstone: true, competitor: false, note: "Three QR codes for three audiences, no app required: (1) vendor jobsite check-in captures GPS + timestamp + weather + photo upload automatically, (2) PM/internal-builder check-in feeds GPS-validated timesheets so you can prove who was actually on-site, (3) sales model home QR for walk-in buyer lead capture — replaces paper sign-in sheets, recognizes returning visitors, instantly creates a Lead record tied to the community with email + in-app notification to the sales agent. Contractor Foreman ships none of these." },
   { feature: "Sales model home QR \u2014 walk-in buyer check-in + auto Lead DB save", cornerstone: true, competitor: false, note: "One QR at every model home entrance: walk-in buyers self-register on their own phone, returning visitors are recognized, every scan auto-creates a Lead record (name, email, phone, \"how did you hear about us?\") tied to the community, and the assigned sales agent gets an instant in-app + email notification. Replaces paper sign-in sheets with a searchable, attributable lead pipeline. Contractor Foreman has no model-home lead-capture flow." },
   { feature: "Vendor Activity Map (Google Maps, real-time)", cornerstone: true, competitor: false, note: "Live Google Maps view of every vendor check-in across every community, 30-second refresh. See exactly who's on which jobsite right now. Filter by date or vendor. Stat cards show how many vendors are currently on-site. Contractor Foreman has no equivalent." },
   { feature: "Flexible PO generation (4 patterns, mix on same job)", cornerstone: true, competitor: "limited", note: "Cornerstone gives you four PO patterns: (1) all POs at job start, (2) partial deposit POs from earlier pipeline tasks (permit pull, contract sign, foundation pour), (3) full PO auto-generated when a task is marked complete, or (4) configurable per task / scope / community. Mix all four on the same job. Your cash flow rules drive the system, not the other way around. Contractor Foreman has POs but the generation flow isn't task-driven." },
   { feature: "Construction scheduling (Gantt)", cornerstone: true, competitor: true, note: "Both ship Gantt scheduling with dependencies." },
   { feature: "Job costing / budgets", cornerstone: true, competitor: true, note: "Both include job costing and budget tracking." },
   { feature: "Purchasing / POs", cornerstone: true, competitor: true, note: "Both include purchasing and PO management." },
-  { feature: "Homeowner portal (realtime sync + photos + messaging + ZIP export)", cornerstone: true, competitor: "limited", note: "Cornerstone gives buyers a real-time portal synced with construction scheduling Ã¢â‚¬â€ when framing moves three days, they see it instantly, no follow-up call needed. Plus: (1) builder/PM uploads job-site photos to every milestone (up to 5 photos per milestone via a camera button on the task row), (2) built-in messaging app between builder and customer with a permanent searchable record of every conversation, and (3) one-click ZIP download of all job photos so buyers can save their whole build history. Keeps buyers excited, reduces inbound calls, turns into referrals. Contractor Foreman has a basic client portal Ã¢â‚¬â€ no milestone-photo upload, no integrated messaging app with permanent record, no bulk photo export." },
-  { feature: "User caps (30 Starter/Builder/Pro Ã‚Â· 60 Pro+)", cornerstone: true, competitor: "limited", note: "Cornerstone: up to 30 users on Starter, Builder, Pro Ã‚Â· 60 users on Pro+ from $149. Contractor Foreman: up to 30 users (60 on Pro+) only on Unlimited plan ($332/mo); entry plans cap at 1-15 users depending on tier." },
-  { feature: "Pricing model", cornerstone: "Flat Ã¢â‚¬â€ up to 30 users (60 on Pro+)", competitor: "Per-plan user limits", note: "Contractor Foreman: $49/mo for 1 user; $105/mo (3 users); $166/mo (8 users); $221/mo (15 users); $332/mo (unlimited). Cornerstone: flat at every tier Ã¢â‚¬â€ up to 30 users (60 on Pro+) from $149. More importantly: Contractor Foreman doesn't ship an options engine, floorplan pricing matrix, multi-community pipelines, designer packages, or any AI agents at any price." },
-  { feature: "Cornerstone tiers (flat Ã¢â‚¬â€ up to 30 users Ã¢â‚¬Â¢ 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "Ã¢â‚¬â€", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 37+ named webhook events, 7-wave bidding." },
+  { feature: "Homeowner portal (realtime sync + photos + messaging + ZIP export)", cornerstone: true, competitor: "limited", note: "Cornerstone gives buyers a real-time portal synced with construction scheduling — when framing moves three days, they see it instantly, no follow-up call needed. Plus: (1) builder/PM uploads job-site photos to every milestone (up to 5 photos per milestone via a camera button on the task row), (2) built-in messaging app between builder and customer with a permanent searchable record of every conversation, and (3) one-click ZIP download of all job photos so buyers can save their whole build history. Keeps buyers excited, reduces inbound calls, turns into referrals. Contractor Foreman has a basic client portal — no milestone-photo upload, no integrated messaging app with permanent record, no bulk photo export." },
+  { feature: "User caps (30 Starter/Builder/Pro · 60 Pro+)", cornerstone: true, competitor: "limited", note: "Cornerstone: up to 30 users on Starter, Builder, Pro · 60 users on Pro+ from $149. Contractor Foreman: up to 30 users (60 on Pro+) only on Unlimited plan ($332/mo); entry plans cap at 1-15 users depending on tier." },
+  { feature: "Pricing model", cornerstone: "Flat — up to 30 users (60 on Pro+)", competitor: "Per-plan user limits", note: "Contractor Foreman: $49/mo for 1 user; $105/mo (3 users); $166/mo (8 users); $221/mo (15 users); $332/mo (unlimited). Cornerstone: flat at every tier — up to 30 users (60 on Pro+) from $149. More importantly: Contractor Foreman doesn't ship an options engine, floorplan pricing matrix, multi-community pipelines, designer packages, or any AI agents at any price." },
+  { feature: "Cornerstone tiers (flat — up to 30 users • 60 on Pro+)", cornerstone: "$149 / $299 / $499 / $599", competitor: "—", note: "Starter ($149): scheduling, permits, homeowner portal. Builder ($299): adds sales pipeline, purchasing, design center with options engine and designer packages. Pro ($499): adds Foreman AI + Blueprint AI. Pro+ ($599): adds REST API, BYOA, 37+ named webhook events, 7-wave bidding." },
 ];
 
 const whySwitchCards: WhySwitchCard[] = [
   { title: "Home builder workflows native", desc: "Lot management, floorplan pricing, structural options, design center, multi-community pipelines, pre-sale flow - on Cornerstone Builder ($299/mo). None of these exist in Contractor Foreman." },
   { title: "Foreman AI: 396+ skills, real actions (Pro $499)", desc: "Foreman AI creates POs, updates design options, generates SOWs, compares bids, remembers your preferences, searches product images, and reads supplier websites with AI-powered web scraping. Per-user memory. Built-in session compaction. No other construction platform comes close." },
-  { title: "37+ webhooks + public REST API (Pro+)", desc: "37+ named webhook events with typed payload schemas, HMAC signatures, and auto-retry (catalog growing). Public REST API with 150+ API endpoints Ã¢â‚¬â€ both on Pro+ ($599/mo). Wire SMS, voice (Twilio, Bland, Retell), or your own Claude agent to construction events. Contractor Foreman has no public API or webhook catalog." },
+  { title: "37+ webhooks + public REST API (Pro+)", desc: "37+ named webhook events with typed payload schemas, HMAC signatures, and auto-retry (catalog growing). Public REST API with 150+ API endpoints — both on Pro+ ($599/mo). Wire SMS, voice (Twilio, Bland, Retell), or your own Claude agent to construction events. Contractor Foreman has no public API or webhook catalog." },
 ];
 
 const faqItems: FAQItem[] = [
   {
-    q: "How is Cornerstone PMÃ¢â€žÂ¢ different from Contractor Foreman?",
-    a: "Both are construction management platforms, but they serve different builders. Contractor Foreman is built for general contractors doing varied work (commercial, residential, renovation) and competes on breadth of features at low price. Cornerstone PMÃ¢â€žÂ¢ is purpose-built for home builders - it adds a structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, native AI agents (Foreman AI 396+ skills on Pro $499/mo), 37+ named webhook events (Pro+), and a public REST API (Pro+) that Contractor Foreman doesn't offer at any price.",
+    q: "How is Cornerstone PM™ different from Contractor Foreman?",
+    a: "Both are construction management platforms, but they serve different builders. Contractor Foreman is built for general contractors doing varied work (commercial, residential, renovation) and competes on breadth of features at low price. Cornerstone PM™ is purpose-built for home builders - it adds a structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community lot management, native AI agents (Foreman AI 396+ skills on Pro $499/mo), 37+ named webhook events (Pro+), and a public REST API (Pro+) that Contractor Foreman doesn't offer at any price.",
   },
   {
     q: "What's the best Contractor Foreman alternative for home builders?",
-    a: "Cornerstone PMÃ¢â€žÂ¢ is purpose-built for home builders. Where Contractor Foreman handles general contractor workflows (scheduling, POs, job costing, basic client portal), Cornerstone adds a structural options engine, pre-sale design center with 64 Designer Packages curated by an actual interior designer, multi-community pipelines, native AI agents (Foreman AI 396+ skills on Pro $499/mo, Blueprint AI), 37+ named webhook events (Pro+), and a public REST API (Pro+).",
+    a: "Cornerstone PM™ is purpose-built for home builders. Where Contractor Foreman handles general contractor workflows (scheduling, POs, job costing, basic client portal), Cornerstone adds a structural options engine, pre-sale design center with 64 Designer Packages curated by an actual interior designer, multi-community pipelines, native AI agents (Foreman AI 396+ skills on Pro $499/mo, Blueprint AI), 37+ named webhook events (Pro+), and a public REST API (Pro+).",
   },
   {
-    q: "Does Cornerstone PMÃ¢â€žÂ¢ have Contractor Foreman's core features?",
-    a: "Yes - Cornerstone PMÃ¢â€žÂ¢ covers Gantt scheduling with dependencies, job costing and budgets, purchasing and POs, document management, and up to 30 users (60 on Pro+). It adds home-builder-specific features on top: floorplan pricing matrix, structural options engine, design center, multi-community lot management, native AI agents, and a 37-event webhook system.",
+    q: "Does Cornerstone PM™ have Contractor Foreman's core features?",
+    a: "Yes - Cornerstone PM™ covers Gantt scheduling with dependencies, job costing and budgets, purchasing and POs, document management, and up to 30 users (60 on Pro+). It adds home-builder-specific features on top: floorplan pricing matrix, structural options engine, design center, multi-community lot management, native AI agents, and a 37-event webhook system.",
   },
   {
     q: "Is Contractor Foreman cheaper than Cornerstone?",
     a: "Contractor Foreman's Basic plan starts at $49/mo for 1 user. Cornerstone Starter is $149/mo with up to 30 users (60 on Pro+). But Contractor Foreman lacks the options engine, design center, multi-community pipelines, AI agents, and REST API that home builders need. When you factor in needing the Contractor Foreman Unlimited plan ($332/mo) for team-wide access, the gap narrows - and Cornerstone still includes capabilities CF doesn't offer at any price.",
   },
   {
-    q: "Can I migrate from Contractor Foreman to Cornerstone PMÃ¢â€žÂ¢?",
+    q: "Can I migrate from Contractor Foreman to Cornerstone PM™?",
     a: "Yes. The AI Migration Wizard reads your Contractor Foreman export, auto-detects column mapping, and runs 23 import endpoints covering vendors, contacts, homes, communities, schedules, scopes, budgets, and more. Most migrations complete in under a day. ~$0.01 per migration in AI cost - we absorb it.",
   },
   {
     q: "Is the 'Foreman' in Cornerstone's Foreman AI related to Contractor Foreman the company?",
-    a: "No - Foreman AI is Cornerstone PMÃ¢â€žÂ¢'s native AI agent, and the name comes from the construction industry term 'foreman' (the supervisor who knows every trade). Contractor Foreman is a completely separate company. Our Foreman AI is unaffiliated with Contractor Foreman Inc.",
+    a: "No - Foreman AI is Cornerstone PM™'s native AI agent, and the name comes from the construction industry term 'foreman' (the supervisor who knows every trade). Contractor Foreman is a completely separate company. Our Foreman AI is unaffiliated with Contractor Foreman Inc.",
   },
   {
     q: "What does $149/mo Cornerstone Starter include?",
     a: "Starter ($149/mo) includes construction scheduling, subcontractor assignment, permits pipeline, homeowner progress portal, and the AI Support Agent - up to 30 users (60 on Pro+). Options engine and design center are on Builder ($299/mo). Foreman AI + Blueprint AI are on Pro ($499/mo). REST API + BYOA are on Pro+ ($599/mo).",
   },
   {
-    q: "Does Cornerstone PMÃ¢â€žÂ¢ have a free trial?",
+    q: "Does Cornerstone PM™ have a free trial?",
     a: "Yes. The 2-year free beta is open to the first 100 home builders - no credit card, no contract, no implementation fee.",
   },
 ];
@@ -87,18 +87,18 @@ export default function ContractorForemanAlternativePage() {
       heroLine1="General contractor software."
       heroLine2="Or purpose-built for home builders?"
       accentColor="emerald"
-      heroParagraph="Contractor Foreman is built for general contractors doing varied work across markets. Cornerstone PMÃ¢â€žÂ¢ is purpose-built for home builders - structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community pipelines, Foreman AI with 396+ skills (Pro $499/mo), and 37+ named webhook events (Pro+). From $149/mo with up to 30 users (60 on Pro+)."
+      heroParagraph="Contractor Foreman is built for general contractors doing varied work across markets. Cornerstone PM™ is purpose-built for home builders - structural options engine (Builder $299/mo), floorplan pricing matrix, multi-community pipelines, Foreman AI with 396+ skills (Pro $499/mo), and 37+ named webhook events (Pro+). From $149/mo with up to 30 users (60 on Pro+)."
       secondaryCTA={{ text: "See full comparison", href: "/compare" }}
-      comparisonSubtitle="Contractor Foreman vs Cornerstone PMÃ¢â€žÂ¢ - general contractor tool vs. home-builder platform."
+      comparisonSubtitle="Contractor Foreman vs Cornerstone PM™ - general contractor tool vs. home-builder platform."
       comparisonRows={comparisonRows}
       trademarkName="Contractor Foreman"
-      whySwitchHeadline="Why home builders choose Cornerstone PMÃ¢â€žÂ¢"
+      whySwitchHeadline="Why home builders choose Cornerstone PM™"
       whySwitchCards={whySwitchCards}
       showMigrationCTA={true}
       migrationHeadline="Already using Contractor Foreman? Drop your export. We'll do the rest."
       migrationDesc="Export your Contractor Foreman data, drop it in our wizard, and AI auto-maps every column - vendors, homes, communities, schedules, budgets. Dry-run before you commit. ~$0.01 per migration in AI - we absorb it."
       faqTitle="Contractor Foreman Alternative FAQ"
-      faqSubtitle="Common questions from home builders evaluating Contractor Foreman vs Cornerstone PMÃ¢â€žÂ¢."
+      faqSubtitle="Common questions from home builders evaluating Contractor Foreman vs Cornerstone PM™."
       faqItems={faqItems}
       footerHeadline="Ready for a home-builder platform?"
       footerSubtext="Join the beta and get 2 years free. Built specifically for home builders."

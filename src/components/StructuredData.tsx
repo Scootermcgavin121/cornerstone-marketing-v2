@@ -10,7 +10,7 @@ export function StructuredData() {
         "applicationSubCategory": "Construction Management Software",
         "operatingSystem": "Web",
         "url": "https://cornerstonepm.ai",
-        "description": "Cornerstone PM is the complete home builder software platform with native AI agents. Built for home builders of all types â€” production, custom, and semi-custom. Includes construction scheduling, sales pipeline, purchasing, design center with options engine, Blueprint AI material takeoffs, Foreman AI agent with 396+ purpose-built construction skills, MLS listing sheet generator, homeowner portal, and full REST API. Starts at $149/mo with up to 30 users (60 on Pro+). No per-seat fees. No implementation cost.",
+        "description": "Cornerstone PM is the complete home builder software platform with native AI agents. Built for home builders of all types — production, custom, and semi-custom. Includes construction scheduling, sales pipeline, purchasing, design center with options engine, Blueprint AI material takeoffs, Foreman AI agent with 396+ purpose-built construction skills, MLS listing sheet generator, homeowner portal, and full REST API. Starts at $149/mo with up to 30 users (60 on Pro+). No per-seat fees. No implementation cost.",
         "keywords": "home builder software, construction scheduling, residential builder ERP, NEWSTAR alternative, BuildPro alternative, Buildertrend alternative, CoConstruct alternative, JobTread alternative, AI construction agent, Blueprint AI takeoff, options engine, design center, production home builder software, subcontractor bidding, homeowner portal",
         "offers": {
           "@type": "AggregateOffer",
@@ -43,7 +43,7 @@ export function StructuredData() {
           "Multi-community and multi-floorplan management",
           "AI Support Agent - instant answers, every feature documented",
           "Warranty tracking and 2-year warranty management",
-          "User caps (30 Starter/Builder/Pro Â· 60 Pro+) - no per-seat pricing",
+          "User caps (30 Starter/Builder/Pro · 60 Pro+) - no per-seat pricing",
           "Free 2-year beta for first 100 builders",
         ],
         "screenshot": "https://cornerstonepm.ai/mockups/feature-sales-pipeline.jpg",
@@ -63,7 +63,7 @@ export function StructuredData() {
         "@type": "WebSite",
         "name": "Cornerstone PM",
         "url": "https://cornerstonepm.ai",
-        "description": "AI-native home builder software platform â€” construction scheduling, sales pipeline, purchasing, design center, Foreman AI agent, Blueprint AI takeoffs.",
+        "description": "AI-native home builder software platform — construction scheduling, sales pipeline, purchasing, design center, Foreman AI agent, Blueprint AI takeoffs.",
         "publisher": {
           "@type": "Organization",
           "name": "Cornerstone PM",
@@ -94,14 +94,14 @@ export function StructuredData() {
       /* FAQPage block disabled - kept commented for history
       {
         "@type": "FAQPage",
-        "name": "Cornerstone PM â€” General FAQ",
+        "name": "Cornerstone PM — General FAQ",
         "mainEntity": [
           {
             "@type": "Question",
             "name": "What is Cornerstone PM?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Cornerstone PM is a complete home builder software platform built for home builders of all types â€” production, custom, and semi-custom. It includes construction scheduling, a sales pipeline, purchasing, design center with options engine, AI agents (Foreman AI and Blueprint AI), MLS listing generator, homeowner portal, and REST API. It starts at $149/mo with up to 30 users (60 on Pro+) and no implementation fees.",
+              "text": "Cornerstone PM is a complete home builder software platform built for home builders of all types — production, custom, and semi-custom. It includes construction scheduling, a sales pipeline, purchasing, design center with options engine, AI agents (Foreman AI and Blueprint AI), MLS listing generator, homeowner portal, and REST API. It starts at $149/mo with up to 30 users (60 on Pro+) and no implementation fees.",
             },
           },
           {

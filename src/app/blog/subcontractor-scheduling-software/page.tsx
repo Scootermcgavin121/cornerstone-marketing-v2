@@ -140,7 +140,7 @@ export default function SubcontractorSchedulingSoftwarePost() {
               <p className="text-white italic text-sm">&ldquo;Which homes have construction that started more than 90 days ago and are still in progress?&rdquo;</p>
             </div>
             <div>
-              <p className="text-slate-400 font-bold text-sm mb-1">ðŸª– Foreman:</p>
+              <p className="text-slate-400 font-bold text-sm mb-1">🪖 Foreman:</p>
               <p className="text-slate-300 text-sm">4 homes flagged: 1421 Maple (97 days, framing complete, HVAC delayed), 33 Cedar Pt (103 days, drywall pending permit), 880 Lakeside (91 days, on track), 220 Summit (94 days, sub conflict next week). Summary table with days elapsed and current stage.</p>
             </div>
           </div>
