@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Bot, FileText, MessageCircle, Check, Zap, ArrowRight, Brain, Eye } from "lucide-react";
+import { Bot, FileText, MessageCircle, Check, Zap, ArrowRight, Brain, Eye, Plug } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import type { Metadata } from "next";
@@ -14,8 +14,9 @@ const aiAgentsSchema = buildFeatureSchema({
     "Cornerstone PM ships six purpose-built AI agents for home builders: Foreman AI (396+ skills), Blueprint AI (PDF floor plan takeoffs), Bid Import AI (parses any vendor bid format), AI MLS Listing Generator, AI Support Agent, and Jobsite AI (vendor arrival detection). Native AI built into the platform, not bolted on.",
   applicationSubCategory: "AI Agents for Home Builders",
   keywords:
-    "AI agents home builders, construction AI agents, AI for builders, native construction AI, Foreman AI, Blueprint AI, Bid Import AI, AI MLS generator, AI support agent, Jobsite AI, builder AI suite, construction AI platform",
+    "AI agents home builders, construction AI agents, AI for builders, native construction AI, AI-native construction management, MCP server, MCP server construction, Claude Desktop integration, Cursor construction integration, Foreman AI, Blueprint AI, Bid Import AI, AI MLS generator, AI support agent, Jobsite AI, builder AI suite, construction AI platform",
   featureList: [
+    "Built-in MCP server — connect Claude Desktop, Cursor, or Windsurf to all 396+ Foreman skills",
     "Foreman AI — 396+ skill construction agent with memory compaction",
     "Blueprint AI — 130+ material scopes extracted from PDF floor plans in under 60 seconds",
     "Bid Import AI — parses Excel, PDF, scans, photos, and handwritten quotes",
@@ -286,6 +287,32 @@ export default function AiAgentsPage() {
         </div>
       </section>
 
+      {/* MCP / Bring your own AI tool */}
+      <section className="py-12 px-4">
+        <div className="max-w-5xl mx-auto">
+          <Link
+            href="/api-access#mcp"
+            className="block rounded-2xl bg-gradient-to-r from-violet-500/10 to-cyan-500/10 border border-violet-500/30 hover:border-violet-400/60 p-8 transition-all duration-200 group"
+          >
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+              <div className="w-14 h-14 rounded-xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center flex-shrink-0">
+                <Plug className="w-7 h-7 text-violet-400" />
+              </div>
+              <div className="flex-1">
+                <div className="inline-flex items-center gap-2 px-2 py-1 rounded-full border border-violet-500/30 bg-violet-500/10 text-violet-400 text-[10px] font-bold uppercase tracking-widest mb-2">
+                  Built-in MCP Server
+                </div>
+                <h3 className="text-white font-black text-xl sm:text-2xl mb-2 group-hover:text-violet-300 transition-colors">Bring your own AI tool, too.</h3>
+                <p className="text-slate-400 leading-relaxed">
+                  Cornerstone ships a built-in <strong className="text-slate-200">MCP (Model Context Protocol) server</strong>. Point <strong className="text-slate-200">Claude Desktop, Cursor, or Windsurf</strong> at your construction data in about 30 seconds &mdash; generate a key, paste a config block, and your favorite AI tool can run all 396+ Foreman skills. The no-code on-ramp; the REST API + BYOA is the full-control path. Most construction software has no AI integration at all.
+                </p>
+              </div>
+              <ArrowRight className="w-5 h-5 text-violet-400 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
+            </div>
+          </Link>
+        </div>
+      </section>
+
       {/* The Moat */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
@@ -371,7 +398,7 @@ export default function AiAgentsPage() {
             </div>
             <div className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-700 bg-slate-800/60 text-slate-300 text-sm font-semibold">
               <Zap className="w-4 h-4 text-cyan-400" />
-              <span>REST API + BYOA: included with Pro+ ($599/mo)</span>
+              <span>MCP server + REST API + BYOA: included with Pro+ ($599/mo)</span>
             </div>
           </div>
 

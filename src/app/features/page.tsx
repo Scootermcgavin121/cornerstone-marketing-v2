@@ -17,12 +17,13 @@ import {
   MapPin,
   Code,
   ListChecks,
+  Plug,
 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Features - Cornerstone PMTM",
   description:
-    "Eight integrated modules for home builders: scheduling, purchasing, sales pipeline, design center, permitting, buyer portal, Punchlist AI, and jobsite operations with the industry-first triple QR code ecosystem.",
+    "Eight integrated modules for home builders: scheduling, purchasing, sales pipeline, design center, permitting, buyer portal, Punchlist AI, and jobsite operations with the industry-first triple QR code ecosystem. Plus a built-in MCP server and 150+ REST API endpoints for AI-native construction management.",
 };
 
 const featureDetails = [
@@ -271,6 +272,29 @@ const featureDetails = [
     ],
     learnMoreHref: "/api-docs",
     learnMoreLabel: "Browse the API",
+  },
+  {
+    id: "mcp",
+    icon: Plug,
+    screenshot: "/mockups/feature-api-keys.png",
+    name: "MCP Server",
+    color: "from-violet-500 to-cyan-600",
+    bgColor: "bg-violet-500/10",
+    borderColor: "border-violet-500/20",
+    textColor: "text-violet-400",
+    description:
+      "The no-code on-ramp to AI-native construction management. Cornerstone PM ships a built-in Model Context Protocol (MCP) server, so you can point Claude Desktop, Cursor, or Windsurf straight at your construction data in about 30 seconds. Generate an API key in settings, paste the ready-made config block, and your AI tool can run any of the 396+ Foreman skills directly. Most construction software has no AI integration at all \u2014 we ship a full MCP server.",
+    bullets: [
+      "Built-in MCP server in app settings \u2014 no plugins, no middleware, no extra service to host",
+      "Ready-to-paste config blocks for Claude Desktop, Cursor, and Windsurf",
+      "Generate a scoped API key (cst_ Bearer token) and connect in ~30 seconds",
+      "Exposes all 396+ Foreman skills as MCP tools through a single JSON-RPC endpoint",
+      "Role-based tool filtering \u2014 Admins/Owners get every tool, PM/Member get most, Vendors a limited set",
+      "Denylist permissions model \u2014 ship a new Foreman skill and it's instantly available to your AI tools, zero config changes",
+      "The no-code on-ramp; the REST API + BYOA is the full-control path \u2014 both hit the same skill catalog",
+    ],
+    learnMoreHref: "/api-access#mcp",
+    learnMoreLabel: "See the MCP server",
   },
 ];
 

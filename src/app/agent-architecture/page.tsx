@@ -91,6 +91,7 @@ const platforms = [
   { label: "Next.js 15", group: "Infra" },
   { label: "Prisma", group: "Infra" },
   { label: "Make / n8n / Zapier", group: "BYOA" },
+  { label: "MCP (Claude Desktop / Cursor / Windsurf)", group: "BYOA" },
 ];
 
 const pages = [

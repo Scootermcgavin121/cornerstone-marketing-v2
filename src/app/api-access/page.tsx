@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Check, Zap, ArrowRight, Code, Globe, Shield, GitBranch, Brain, RefreshCw } from "lucide-react";
+import { Check, Zap, ArrowRight, Code, Globe, Shield, GitBranch, Brain, RefreshCw, Plug } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
@@ -9,13 +9,17 @@ const apiAccessSchema = buildFeatureSchema({
   pageName: "Cornerstone PM API Access & BYOA",
   pagePath: "/api-access",
   description:
-    "Cornerstone PM provides 150+ REST API endpoints (84 dedicated routes + generic execute for all 396+ Foreman skills) and 37+ named webhook events. 3 schema formats: Anthropic, OpenAI function calling, OpenAPI 3.1. BYOA (Bring Your Own Agent) lets AI agents automate the full home-building loop.",
-  applicationSubCategory: "Construction REST API and Webhooks",
+    "Cornerstone PM provides a built-in MCP server (Claude Desktop, Cursor, Windsurf), 150+ REST API endpoints (84 dedicated routes + generic execute for all 396+ Foreman skills) and 37+ named webhook events. 3 schema formats: Anthropic, OpenAI function calling, OpenAPI 3.1. BYOA (Bring Your Own Agent) lets AI agents automate the full home-building loop.",
+  applicationSubCategory: "Construction MCP Server, REST API and Webhooks",
   keywords:
-    "home builder API, construction REST API, builder API access, BYOA construction, webhook construction, automated bidding pipeline, Twilio construction integration, Bland construction integration, Retell construction integration, builder software webhooks, construction event webhooks, AI agent construction API",
+    "MCP server, MCP server construction, AI construction management, AI-native construction management, Claude Desktop integration, Cursor construction integration, Windsurf integration, home builder API, construction REST API, builder API access, BYOA construction, webhook construction, automated bidding pipeline, Twilio construction integration, Bland construction integration, Retell construction integration, builder software webhooks, construction event webhooks, AI agent construction API",
   offerNote:
     "REST API and webhooks included on Cornerstone PM Pro+ ($599/mo). Full developer documentation at app.cornerstonepm.ai/developers.",
   featureList: [
+    "Built-in MCP (Model Context Protocol) server for Claude Desktop, Cursor, and Windsurf",
+    "No-code AI on-ramp: generate an API key, paste a config block, connect in ~30 seconds",
+    "MCP server exposes all 396+ Foreman skills as tools via a JSON-RPC endpoint",
+    "Role-based MCP tool filtering and denylist permissions model",
     "150+ REST API endpoints (84 dedicated RESTful routes + generic execute for 396+ Foreman skills)",
     "3 schema formats: Anthropic tool format, OpenAI function calling, OpenAPI 3.1",
     "Generic execute endpoint: POST /api/ext/execute runs any Foreman skill by name",
@@ -31,9 +35,9 @@ const apiAccessSchema = buildFeatureSchema({
 });
 
 export const metadata = {
-  title: "API Access & Bring Your Own Agent — Cornerstone PM™",
+  title: "MCP Server, API Access & Bring Your Own Agent — Cornerstone PM™",
   description:
-    "REST API + webhooks that let AI agents automate the full home-building loop — send bid requests, track responses, schedule subs by text, and notify homebuyers the moment a milestone completes. No other homebuilder platform does this.",
+    "AI-native construction management: a built-in MCP server (connect Claude Desktop, Cursor, or Windsurf in ~30 seconds) plus a REST API + webhooks that let AI agents automate the full home-building loop. No other homebuilder platform ships an MCP server.",
 };
 
 const endpoints = [
@@ -643,6 +647,12 @@ export default function ApiAccessPage() {
               Request API Access &rarr;
             </Link>
             <a
+              href="#mcp"
+              className="px-8 py-4 rounded-full border border-violet-500/40 text-violet-300 font-semibold text-lg hover:border-violet-400 hover:text-white transition-all duration-200"
+            >
+              Connect via MCP
+            </a>
+            <a
               href="#pipeline"
               className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200"
             >
@@ -931,6 +941,124 @@ export default function ApiAccessPage() {
         </div>
       </section>
 
+      {/* MCP Server — no-code on-ramp */}
+      <section id="mcp" className="py-20 px-4 scroll-mt-24">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-14">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-violet-500/30 bg-violet-500/10 text-violet-400 text-xs font-semibold mb-6">
+              <Plug className="w-3.5 h-3.5" />
+              MCP SERVER &mdash; THE NO-CODE ON-RAMP
+            </div>
+            <h2 className="text-3xl sm:text-5xl font-black mb-4">
+              Point Claude Desktop at your<br />
+              <span className="text-violet-400">construction data in 30 seconds.</span>
+            </h2>
+            <p className="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
+              Cornerstone PM ships a built-in <strong className="text-slate-200">Model Context Protocol (MCP) server</strong>. Generate an API key in settings, paste the ready-made config block into Claude Desktop, Cursor, or Windsurf, and your AI tool can run any of the 396+ Foreman skills directly. No code, no middleware, no server to host. Most construction software has no AI integration at all &mdash; we ship a full MCP server.
+            </p>
+          </div>
+
+          {/* Two paths */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
+            <div className="rounded-2xl bg-violet-500/5 border border-violet-500/30 p-8">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-11 h-11 rounded-xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center">
+                  <Plug className="w-5 h-5 text-violet-400" />
+                </div>
+                <div>
+                  <h3 className="text-white font-black text-xl">MCP Server</h3>
+                  <p className="text-violet-400 text-xs font-bold uppercase tracking-widest">No-code on-ramp</p>
+                </div>
+              </div>
+              <p className="text-slate-400 leading-relaxed mb-5">
+                The fastest way to connect an AI tool to Cornerstone. Paste a config block and your desktop AI app speaks construction instantly.
+              </p>
+              <ul className="space-y-2.5">
+                {[
+                  "Ready-to-paste config for Claude Desktop, Cursor & Windsurf",
+                  "Generate a scoped cst_ Bearer token in app settings",
+                  "JSON-RPC endpoint exposes all 396+ Foreman skills as MCP tools",
+                  "Role-based tool filtering (Admin/Owner all, PM/Member most, Vendor limited)",
+                  "Denylist model \u2014 new skills auto-exposed, zero config",
+                ].map((f) => (
+                  <li key={f} className="flex items-start gap-2.5 text-sm text-slate-300">
+                    <Check className="w-4 h-4 text-violet-400 mt-0.5 flex-shrink-0" />
+                    {f}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="rounded-2xl bg-cyan-500/5 border border-cyan-500/30 p-8">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-11 h-11 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center">
+                  <Code className="w-5 h-5 text-cyan-400" />
+                </div>
+                <div>
+                  <h3 className="text-white font-black text-xl">REST API + BYOA</h3>
+                  <p className="text-cyan-400 text-xs font-bold uppercase tracking-widest">Full-control path</p>
+                </div>
+              </div>
+              <p className="text-slate-400 leading-relaxed mb-5">
+                When you want to build your own agent or wire automation end-to-end, drop down to the raw REST API and webhooks.
+              </p>
+              <ul className="space-y-2.5">
+                {[
+                  "150+ REST endpoints \u2014 84 dedicated routes + generic execute",
+                  "Bring Your Own Agent: LangChain, AutoGen, custom bots",
+                  "37+ HMAC-signed webhook events for real-time automation",
+                  "3 schema formats: Anthropic, OpenAI, OpenAPI 3.1",
+                  "Same 396+ skill catalog as the MCP server",
+                ].map((f) => (
+                  <li key={f} className="flex items-start gap-2.5 text-sm text-slate-300">
+                    <Check className="w-4 h-4 text-cyan-400 mt-0.5 flex-shrink-0" />
+                    {f}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Config sample */}
+          <div className="rounded-2xl bg-slate-900/60 border border-violet-500/30 overflow-hidden">
+            <div className="grid grid-cols-1 lg:grid-cols-2">
+              <div className="p-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="px-3 py-1 rounded-lg text-xs font-black bg-violet-500/10 text-violet-400 border border-violet-500/30 inline-flex items-center gap-1">
+                    <Plug className="w-3 h-3" />
+                    MCP
+                  </span>
+                  <code className="text-slate-300 text-sm font-mono">/api/mcp</code>
+                </div>
+                <h3 className="text-2xl font-black text-violet-400 mb-3">Paste, save, done.</h3>
+                <p className="text-slate-400 leading-relaxed mb-6">
+                  In <code className="text-violet-300 bg-violet-500/10 px-1.5 py-0.5 rounded text-xs">Settings &rarr; MCP</code>, generate an API key. Cornerstone hands you a config block formatted for Claude Desktop, Cursor, or Windsurf. Paste it into your tool&apos;s MCP settings, restart, and the agent can search, create, and manage your construction data through natural language.
+                </p>
+                <div className="flex items-center gap-2 text-sm text-slate-400">
+                  <RefreshCw className="w-4 h-4 text-violet-400 flex-shrink-0" />
+                  <span>New Foreman skills appear in your MCP tools automatically &mdash; no config changes.</span>
+                </div>
+              </div>
+              <div className="bg-slate-950/80 border-t lg:border-t-0 lg:border-l border-violet-500/20 p-6">
+                <p className="text-slate-500 text-xs font-semibold uppercase tracking-widest mb-3">claude_desktop_config.json</p>
+                <pre className="text-xs text-slate-300 font-mono leading-relaxed overflow-x-auto whitespace-pre-wrap">{`{
+  "mcpServers": {
+    "cornerstone": {
+      "url": "https://app.cornerstonepm.ai/api/mcp",
+      "headers": {
+        "Authorization": "Bearer cst_your_key_here"
+      }
+    }
+  }
+}
+
+// Same one-paste setup for Cursor & Windsurf.
+// Your AI tool now speaks all 396+ Foreman skills.`}</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 7-wave pipeline */}
       <section id="pipeline" className="py-20 px-4 bg-slate-900/40">
         <div className="max-w-5xl mx-auto">
@@ -982,7 +1110,7 @@ export default function ApiAccessPage() {
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-black text-center mb-12">Plug in any agent</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 title: "Foreman AI",
@@ -990,6 +1118,13 @@ export default function ApiAccessPage() {
                 badgeColor: "bg-amber-500/20 text-amber-400 border-amber-500/30",
                 desc: "Cornerstone&apos;s own 396+ skill construction agent. Already wired to the API. No setup required.",
                 link: "/foreman",
+              },
+              {
+                title: "Claude Desktop, Cursor & Windsurf",
+                badge: "MCP",
+                badgeColor: "bg-violet-500/20 text-violet-400 border-violet-500/30",
+                desc: "Point any MCP-capable AI tool at Cornerstone&apos;s built-in MCP server. Paste a config block, connect in ~30 seconds, run all 396+ skills.",
+                link: "#mcp",
               },
               {
                 title: "Custom agents",
@@ -1101,7 +1236,8 @@ export default function ApiAccessPage() {
             <div className="text-white font-bold text-xl mb-6">Pro+ Plan</div>
             <div className="space-y-3 text-left mb-8">
               {[
-                "Full REST API — 150+ endpoints (84 dedicated routes + generic execute for all 396+ Foreman skills)",
+                "Built-in MCP server \u2014 connect Claude Desktop, Cursor, or Windsurf in ~30 seconds",
+                "Full REST API \u2014 150+ endpoints (84 dedicated routes + generic execute for all 396+ Foreman skills)",
                 "Foreman Skill Pack — GET /api/ext/skills in Anthropic, OpenAI, or OpenAPI 3.1 format",
                 "396+ skills across 20 categories, auto-synced as new skills ship",
                 "Scoped API keys per agent/integration",
