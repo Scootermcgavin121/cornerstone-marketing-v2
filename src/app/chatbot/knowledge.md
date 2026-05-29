@@ -318,6 +318,18 @@ Structural options can now be marked **Global**. A global option keeps identical
 
 **Why this matters:** Builders used to re-enter the same option data on every floorplan. Global options eliminate that duplicate data entry, save hours of admin work, and remove the errors that creep in when the same option is maintained in a dozen places.
 
+### Dedicated Elevations Manager (NEW May 2026)
+Elevations now have their own dedicated page at Purchasing &rarr; Elevations Manager, replacing the old elevations tab on the takeoffs page. It uses the same card-based layout as the Structural Options Manager for a consistent admin experience.
+
+- **Per-floorplan exterior styles** - manage every elevation option for a floorplan (Elevation A &mdash; Colonial, B &mdash; Craftsman, C &mdash; Modern Farmhouse, etc.) with a code, description, and optional sqft override
+- **Inline-editable retail price** - each elevation has a retail price adder that gets added to the base home price; edit it inline, no separate forms
+- **Expandable takeoffs** - expand any elevation card to view and edit its material takeoffs: add parts, add scope items, and edit quantities
+- **Cost computed from vendor pricing** - the elevation's cost is calculated automatically from real vendor pricing, never typed in by hand
+- **Create / delete elevations** - spin up or remove elevations directly from the manager
+- **AI-managed** - Foreman can manage elevations conversationally with 9 new skills: create elevations, add parts and scope items, edit quantities, and set retail pricing entirely through natural conversation
+
+**Why this matters:** Elevations were buried in a tab on the takeoffs page. A dedicated manager makes exterior-style setup, pricing, and material takeoffs first-class &mdash; and Foreman can do the whole setup for you by chat.
+
 ### Selections Page - Now Driven by FloorplanLocationScope (May 2026)
 The Selections page no longer reads only from Takeoffs - it reads from `FloorplanLocationScope` entries to build slots. This means:
 

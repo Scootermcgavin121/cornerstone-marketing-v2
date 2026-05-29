@@ -56,6 +56,10 @@ const faqItems: FAQItem[] = [
     a: "Yes &mdash; mark a structural option as global. A global option keeps identical takeoffs (parts and scope items) and a single retail price across every floorplan, so options like Finished Basement or Garage Extension that don't vary by plan only need to be set up once. Edit the takeoffs in one place and the change automatically syncs to every floorplan. When takeoffs differ between floorplans, a source picker lets you choose which floorplan's takeoffs to standardize on, and the retail price is editable inline. It eliminates hours of duplicate data entry and the errors that come with it.",
   },
   {
+    q: "How do I manage floorplan elevations and their pricing?",
+    a: "Cornerstone PM&trade; has a dedicated Elevations Manager &mdash; a card-based page for managing every exterior style (Elevation A &mdash; Colonial, B &mdash; Craftsman, C &mdash; Modern Farmhouse, etc.) per floorplan. Each elevation has an inline-editable retail price adder that flows into the base home price, plus a code, description, and optional sqft override. Expand any card to manage its material takeoffs &mdash; add parts and scope items and edit quantities &mdash; while the cost is computed automatically from vendor pricing instead of being typed in. Foreman, the built-in AI assistant, can also create elevations, add parts, and set pricing entirely through natural conversation.",
+  },
+  {
     q: "How does the auto-budget feature work?",
     a: "When a sales counselor locks structural options on a new home sale, Cornerstone PM™ automatically generates the home's construction budget using the floorplan's base costs plus the option-specific deltas. Design center selections, change orders, and bid awards continue to flow into the same budget number throughout the build.",
   },
@@ -124,6 +128,7 @@ const features = [
   { title: "Auto-Budget Generation", desc: "When a home sale is created with structural options, the budget auto-generates instantly." },
   { title: "Structural Options Pricing", desc: "Every structural option tied to a line-item budget impact &mdash; no manual entry." },
   { title: "Global Structural Options", desc: "Mark an option as global and its takeoffs and retail price stay identical across every floorplan. Edit takeoffs once and the change syncs everywhere &mdash; no more duplicating the same option data on floorplan after floorplan. One source of truth, fewer errors, hours saved." },
+  { title: "Dedicated Elevations Manager", desc: "A dedicated page for managing exterior styles per floorplan &mdash; Colonial, Craftsman, Modern Farmhouse, and more. Card-based layout with inline-editable retail price adders, expandable takeoffs (add parts, scope items, edit quantities), and per-elevation sqft overrides. Cost is computed from real vendor pricing, never set by hand." },
   { title: "Active Homes Dashboard", desc: "All homes, budget status, and variance at a glance." },
   { title: "Apply Budget Flow", desc: "One-click flow to apply base budget + options to any home." },
   { title: "Design Center Integration", desc: "Room-by-room selections tied directly to purchasing budget. Includes Product Configurator for complex multi-attribute selections like cabinets and countertops." },
