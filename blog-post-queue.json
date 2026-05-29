@@ -295,8 +295,9 @@
       "wordCount": 950,
       "heroImage": "/blog/exclusion-groups.png",
       "heroImageAlt": "Design center exclusion groups in Cornerstone PM letting home buyers pick one flooring option from carpet, tile, LVP, or hardwood",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "181fce9",
+      "publishedAt": "2026-05-29T14:03:29.677Z"
     },
     {
       "slug": "structural-options-pricing-floorplan-sqft",
