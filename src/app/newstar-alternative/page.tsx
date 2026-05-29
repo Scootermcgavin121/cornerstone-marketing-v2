@@ -41,7 +41,7 @@ const comparisonRows: ComparisonRow[] = [
 const whySwitchCards: WhySwitchCard[] = [
   { title: "Built for the builder NEWSTAR ignores", desc: "NEWSTAR is built for top-100 enterprise builders. Cornerstone is built for small-to-mid home builders running 5-200 homes per year - without the $50k+ implementation and dedicated IT team." },
   { title: "Action-taking AI on Pro - 396+ skills", desc: "Foreman AI (Cornerstone Pro, $499/mo) reads AND writes data, remembers your preferences, analyzes images, and scrapes product pages with AI-powered web scraping. Blueprint AI converts floor plans to takeoffs in 60 seconds. NEWSTAR has no native AI." },
-  { title: "Public REST API + 37+ webhooks on Pro+", desc: "150+ REST API endpoints, 37+ named webhook events (catalog growing), HMAC signatures, and public docs on Pro+ ($599/mo). NEWSTAR integrations are enterprise-contract only. Wire Twilio or your own agents to our webhooks." },
+  { title: "MCP server, public REST API + 37+ webhooks on Pro+", desc: "Built-in MCP server (connect Claude Desktop, Cursor, or Windsurf in ~30 seconds), 150+ REST API endpoints, 37+ named webhook events (catalog growing), HMAC signatures, and public docs on Pro+ ($599/mo). NEWSTAR integrations are enterprise-contract only with no MCP server. Wire Twilio or your own agents to our webhooks." },
 ];
 
 const faqItems: FAQItem[] = [

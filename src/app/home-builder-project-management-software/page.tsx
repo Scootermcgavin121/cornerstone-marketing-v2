@@ -19,7 +19,7 @@ const modules = [
   { name: "Permitting", href: "/permitting", desc: "Permit gates, phase blocking, inspection tracking, automated reminders across the build.", color: "orange" },
   { name: "Foreman AI", href: "/foreman", desc: "396+ AI skills across 20 categories. Plain-English commands against live builder data.", color: "blue" },
   { name: "Blueprint AI Takeoff", href: "/ai-takeoff", desc: "Upload PDF floor plans, get 130+ material scopes and quantities in under 60 seconds.", color: "fuchsia" },
-  { name: "REST API + BYOA", href: "/api-access", desc: "150+ API endpoints, 37+ named webhook events (growing catalog), scoped Bearer-token auth. Bring your own AI agent.", color: "rose" },
+  { name: "MCP server, REST API + BYOA", href: "/api-access", desc: "Built-in MCP server (point Claude Desktop, Cursor, or Windsurf at your data in ~30 seconds), 150+ API endpoints, 37+ named webhook events (growing catalog), scoped Bearer-token auth. Bring your own AI agent.", color: "rose" },
 ];
 
 const stats = [
@@ -151,7 +151,7 @@ export default function HomeBuilderPMPage() {
               <p className="text-slate-400 leading-relaxed">
                 Every action Foreman takes &mdash; updating a vendor bid, generating a PO, drafting an MLS listing,
                 analyzing your sales pipeline &mdash; happens against your real homes, real budgets, and real vendors. Pro+
-                adds BYOA so your own Claude or ChatGPT agent can read and write the same data via API.
+                adds a built-in MCP server (point Claude Desktop, Cursor, or Windsurf at your data in ~30 seconds) plus BYOA so your own Claude or ChatGPT agent can read and write the same data via the REST API.
               </p>
             </div>
             <div className="space-y-3">
@@ -160,6 +160,7 @@ export default function HomeBuilderPMPage() {
                 "Blueprint AI &mdash; PDF floor plan to material takeoff",
                 "MLS Listing Agent &mdash; auto-generated from home data",
                 "AI Support Agent &mdash; instant answers, every feature documented",
+                "Built-in MCP server &mdash; connect Claude Desktop, Cursor, or Windsurf in ~30 seconds (Pro+)",
                 "BYOA support &mdash; bring your own Claude/ChatGPT (Pro+)",
                 "150+ API endpoints REST API for custom AI integrations",
               ].map((point) => (

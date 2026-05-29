@@ -41,7 +41,7 @@ const comparisonRows: ComparisonRow[] = [
 const whySwitchCards: WhySwitchCard[] = [
   { title: "Modern web platform", desc: "Cloud-native, mobile-friendly, no Citrix or VPN required. PMs update from the jobsite, vendors confirm from their phone, sales counselors present on a tablet." },
   { title: "Action-taking AI on Pro - 396+ skills", desc: "Foreman AI (Cornerstone Pro, $499/mo) reads AND writes data. Blueprint AI converts PDF floor plans to material takeoffs in under 60 seconds. No third-party AI plugins, no separate subscriptions." },
-  { title: "Public REST API + 37+ webhooks on Pro+", desc: "150+ REST API endpoints, 37+ named webhook events (catalog growing), HMAC signatures, and public documentation on Pro+ ($599/mo). BuildPro integrations are enterprise-contract only." },
+  { title: "MCP server, public REST API + 37+ webhooks on Pro+", desc: "Built-in MCP server (connect Claude Desktop, Cursor, or Windsurf in ~30 seconds), 150+ REST API endpoints, 37+ named webhook events (catalog growing), HMAC signatures, and public documentation on Pro+ ($599/mo). BuildPro integrations are enterprise-contract only and it ships no MCP server." },
 ];
 
 const faqItems: FAQItem[] = [

@@ -42,7 +42,7 @@ const comparisonRows: ComparisonRow[] = [
 const whySwitchCards: WhySwitchCard[] = [
   { title: "KOVA scope. Builder pricing.", desc: "KOVA is built for top-100 production builders with implementation budgets and a MiTek Services consultant on retainer. Cornerstone delivers the same core capabilities — options engine, sales pipeline, purchasing, vendor portal, scheduling — for the 5–200 homes/yr builder. Flat pricing, self-serve, no consultant required." },
   { title: "AI agents, not rules engines", desc: "KOVA's headline is a rules engine that prevents unbuildable sales. Cornerstone's headline is Foreman AI on Pro ($499/mo) — 396+ skills that actually take action: write POs, update schedules, scrape product pages, generate MLS listings, configure design options in plain English. Different category of product." },
-  { title: "Public API + 37+ webhooks on Pro+", desc: "150+ REST API endpoints, 37+ named webhook events (catalog growing), HMAC signatures, public docs. Wire Twilio, Bland, Retell, or your own agents to our webhooks. KOVA APIs go through MiTek Services as integrations engagements." },
+  { title: "MCP server, public API + 37+ webhooks on Pro+", desc: "Built-in MCP server (connect Claude Desktop, Cursor, or Windsurf in ~30 seconds), 150+ REST API endpoints, 37+ named webhook events (catalog growing), HMAC signatures, public docs. Wire Twilio, Bland, Retell, or your own agents to our webhooks. KOVA APIs go through MiTek Services as integrations engagements and there's no MCP server." },
 ];
 
 const faqItems: FAQItem[] = [

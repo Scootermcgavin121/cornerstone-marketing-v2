@@ -2,6 +2,7 @@
 - 130+ database tables and growing
 - **396+ Foreman AI skills** with **23+ built-in workflow recipes** (in-app agent that reads AND writes data - including product image search, image hosting, and AI-powered web scraping)
 - **37+ named webhook event types and growing** — typed payloads, HMAC signatures, delivery logs, and auto-retry. New events ship as the platform grows. Industry-leading depth (most competitors just say "webhooks exist")
+- **Built-in MCP server** (Settings → MCP) — connect Claude Desktop, Cursor, or Windsurf to all 396+ Foreman skills in ~30 seconds. The no-code on-ramp to AI-native construction management; most construction software has no AI integration at all. Pro+ ($599/mo).
 - 150+ external REST API endpoints (84 dedicated routes + generic execute for 396+ Foreman skills)
 - 7 built-in AI features: Foreman AI (396+ skills), Blueprint AI, MLS Listing Agent, AI Support Agent, Punchlist AI (voice-to-punch-list, industry first), Bid Import AI (AI-powered vendor bid parsing), AI Jobsite Camera Events (webhook-driven, source-agnostic camera/sensor integration)
 - **Triple QR Code Ecosystem** - vendor jobsite check-in, community/PM check-in (timesheet-validated), and sales model home lead capture. Three QR codes, three audiences, one platform.
@@ -533,6 +534,27 @@ Webhooks:
 **Pricing:** Included exclusively on Pro+ ($599/mo). Not available as an add-on on lower tiers — builders who need REST API + BYOA should upgrade to Pro+ (just $100/mo more than Pro).
 
 ---
+## MCP Server (Model Context Protocol — the no-code on-ramp)
+
+Cornerstone PM™ ships a built-in **MCP (Model Context Protocol) server** in app settings (Settings → MCP). It is the no-code on-ramp to connecting AI tools to your construction data; the REST API + BYOA is the full-control path. Both hit the same 396+ Foreman skill catalog.
+
+**What it is:** Builders generate an API key in Settings → MCP and get a ready-to-paste config block formatted for **Claude Desktop, Cursor, and Windsurf**. Paste it into the tool's MCP settings, restart, and the AI tool can search, create, and manage construction data through natural language — no code, no middleware, no server to host.
+
+**How it works:**
+- Backend `/api/mcp` JSON-RPC endpoint exposes all 396+ Foreman skills as MCP tools dynamically
+- Auth: cst_-prefixed Bearer tokens (scoped API keys)
+- Role-based tool filtering: ADMIN/OWNER get all tools, PM/MEMBER get most, VENDOR gets a limited set
+- Denylist permissions model — new Foreman skills are auto-exposed without config changes (ship a skill, it's instantly available)
+- New skills appear in your MCP tools automatically — no config changes
+
+**Setup is ~30 seconds:** generate key → paste config → restart your AI tool → done.
+
+**Competitive angle:** Most construction software has no AI integration at all, let alone MCP support. We ship a full MCP server.
+
+**Pricing:** Included on Pro+ ($599/mo), alongside the REST API + BYOA.
+
+**Page:** /api-access (see the MCP section)
+
 ## API Access / BYOA (Bring Your Own Agent)
 
 Cornerstone PM™ is the first homebuilder platform with a REST API designed for AI agent automation.
@@ -562,7 +584,7 @@ Cornerstone PM™ is the first homebuilder platform with a REST API designed for
 - Custom agents built with any framework (LangChain, AutoGen, Claude, GPT-4o)
 - Third-party tools (any system that can make HTTP requests)
 
-**Pricing:** BYOA is a Pro+ exclusive ($599/mo). It includes the full REST API and 37+ named webhook events. Every endpoint maps to one of Foreman’s 396+ skills, so your BYOA agent (Claude, ChatGPT, n8n, Twilio, Bland, Retell) gets the same toolbox Foreman uses internally — and grows automatically every time we ship a new skill. Not available as an add-on on Pro, Builder, or Starter; the path to BYOA is upgrading to Pro+ (just $100/mo more than Pro).
+**Pricing:** BYOA is a Pro+ exclusive ($599/mo). It includes the built-in MCP server (no-code on-ramp for Claude Desktop, Cursor, Windsurf), the full REST API, and 37+ named webhook events. Every endpoint maps to one of Foreman’s 396+ skills, so your BYOA agent (Claude, ChatGPT, n8n, Twilio, Bland, Retell) gets the same toolbox Foreman uses internally — and grows automatically every time we ship a new skill. Not available as an add-on on Pro, Builder, or Starter; the path to BYOA is upgrading to Pro+ (just $100/mo more than Pro).
 
 **Page:** /api-access
 
@@ -715,7 +737,7 @@ Four plans. No phantom tiers, no "Enterprise" upsell, no hidden bundles.
 ### Add-ons
 
 - **Power User Seat: +$149/seat/mo** (Pro and Pro+ only) - elevated monthly AI limits for the one or two people who live in the app all day: 3,000 Foreman AI conversations/mo, unlimited Blueprint AI and Bid Import AI, unlimited Punchlist and MLS Listing AI.
-- **REST API + BYOA: Pro+ exclusive (no add-on, no upcharge).** Pro+ includes 150+ REST API endpoints (84 dedicated RESTful routes + generic execute endpoint for all 396+ Foreman skills), scoped API keys with role-based permissions, and 37+ HMAC-signed webhook events. 3 schema formats: Anthropic tool format, OpenAI function calling, and OpenAPI 3.1. Skill catalog endpoint (GET /api/ext/skills) serves all tool schemas. Generic execute endpoint (POST /api/ext/execute) runs any Foreman skill by name. Every endpoint maps to one of Foreman’s 396+ skills, so a BYOA agent (Claude, ChatGPT, n8n, Twilio, Bland, Retell) gets the same toolbox Foreman uses internally. Not available as an add-on on lower tiers — the path to BYOA is upgrading to Pro+ ($100/mo more than Pro).
+- **MCP server, REST API + BYOA: Pro+ exclusive (no add-on, no upcharge).** Pro+ ships a built-in MCP server (Settings → MCP) so you can connect Claude Desktop, Cursor, or Windsurf in ~30 seconds — the no-code on-ramp. For full control, Pro+ includes 150+ REST API endpoints (84 dedicated RESTful routes + generic execute endpoint for all 396+ Foreman skills), scoped API keys with role-based permissions, and 37+ HMAC-signed webhook events. 3 schema formats: Anthropic tool format, OpenAI function calling, and OpenAPI 3.1. Skill catalog endpoint (GET /api/ext/skills) serves all tool schemas. Generic execute endpoint (POST /api/ext/execute) runs any Foreman skill by name. Every endpoint maps to one of Foreman’s 396+ skills, so a BYOA agent (Claude, ChatGPT, n8n, Twilio, Bland, Retell) gets the same toolbox Foreman uses internally. Not available as an add-on on lower tiers — the path to BYOA is upgrading to Pro+ ($100/mo more than Pro).
 
 ### Billing
 

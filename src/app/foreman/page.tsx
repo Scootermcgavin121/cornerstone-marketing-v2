@@ -1015,7 +1015,7 @@ export default function ForemanPage() {
               Plans with Foreman AI
             </div>
             <h2 className="text-3xl sm:text-4xl font-black text-white mb-3">Pick the plan that fits your stack.</h2>
-            <p className="text-slate-400 text-sm max-w-xl mx-auto">Both unlock Foreman AI&apos;s full 396+ skill catalog. Pro+ adds REST API, more user seats, and double the AI usage limits.</p>
+            <p className="text-slate-400 text-sm max-w-xl mx-auto">Both unlock Foreman AI&apos;s full 396+ skill catalog. Pro+ adds the built-in MCP server (point Claude Desktop, Cursor, or Windsurf at your data), the REST API, more user seats, and double the AI usage limits.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -1037,7 +1037,7 @@ export default function ForemanPage() {
                     "Everything in Builder (Sales, Purchasing, Design Center)",
                     "Advanced analytics & reporting",
                     "Priority onboarding support",
-                    "REST API + BYOA: Pro+ only — upgrade for $100/mo more",
+                    "MCP server, REST API + BYOA: Pro+ only — upgrade for $100/mo more",
                   ].map((f) => (
                     <div key={f} className="flex items-start gap-3">
                       <Check className="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" />
@@ -1069,6 +1069,7 @@ export default function ForemanPage() {
                     "Blueprint AI — 310 takeoffs/mo",
                     "Bid Import AI — 1,240/mo",
                     "All Pro features (MLS + Punchlist 1,240/mo each, Sales, Purchasing, Design Center)",
+                    "Built-in MCP server \u2014 connect Claude Desktop, Cursor, or Windsurf in ~30 seconds (the no-code on-ramp)",
                     `REST API (${API_ENDPOINT_COUNT}+ endpoints) + ${WEBHOOK_EVENT_COUNT}+ webhooks + BYOA INCLUDED \u2014 84 dedicated routes + generic execute for all ${FOREMAN_SKILL_COUNT}+ skills. 3 schema formats (Anthropic, OpenAI, OpenAPI 3.1)`,
                     `Power User Seat add-on available (+$${ADDONS.powerUserSeat.monthly}/seat/mo)`,
                     "60-day onboarding boost — 3× AI limits",

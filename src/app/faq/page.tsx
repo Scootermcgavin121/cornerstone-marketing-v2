@@ -232,10 +232,11 @@ const pricing: Category = {
     {
       q: "What's included on Pro+ that Pro doesn't have?",
       aText:
-        "Pro+ ($599/mo) adds the full REST API (150+ API endpoints), 37+ named webhook event types (catalog growing weekly), Bring Your Own Agent (BYOA) so you can plug Claude or ChatGPT into live builder data, Bid Import AI (drag any vendor PDF/Excel/photo and AI extracts every line), the 7-wave automated bidding pipeline, and uncapped active home count.",
+        "Pro+ ($599/mo) adds a built-in MCP server (connect Claude Desktop, Cursor, or Windsurf), the full REST API (150+ API endpoints), 37+ named webhook event types (catalog growing weekly), Bring Your Own Agent (BYOA) so you can plug Claude or ChatGPT into live builder data, Bid Import AI (drag any vendor PDF/Excel/photo and AI extracts every line), the 7-wave automated bidding pipeline, and uncapped active home count.",
       a: (
         <>
-          Pro+ ($599/mo) adds the full <A href="/api-access">REST API (150+ API endpoints)</A>, 37+ named webhook event types (catalog growing),
+          Pro+ ($599/mo) adds a built-in <A href="/api-access">MCP server</A> (connect Claude Desktop, Cursor, or Windsurf),
+          the full <A href="/api-access">REST API (150+ API endpoints)</A>, 37+ named webhook event types (catalog growing),
           Bring Your Own Agent (BYOA) so you can plug Claude or ChatGPT into live builder data,{" "}
           <A href="/bid-import-ai">Bid Import AI</A> (drag any vendor PDF/Excel/photo and AI extracts every line), the
           7-wave automated bidding pipeline, and uncapped active home count.
@@ -1129,7 +1130,7 @@ const purchasing: Category = {
 const api: Category = {
   slug: "api-developers",
   title: "API, Integrations & Developers",
-  blurb: "REST API, webhooks, BYOA, integrations.",
+  blurb: "MCP server, REST API, webhooks, BYOA, integrations.",
   accent: "text-cyan-400",
   items: [
     {
@@ -1142,6 +1143,20 @@ const api: Category = {
           documentation at <A href="/api-docs">app.cornerstonepm.ai/developers</A>. All core data (schedules, vendors,
           lots, options, bids, budgets, takeoffs) is accessible. Included on Pro+ ($599/mo). See{" "}
           <A href="/api-access">/api-access</A>.
+        </>
+      ),
+    },
+    {
+      q: "Does Cornerstone PM™ support MCP (Model Context Protocol)?",
+      aText:
+        "Yes. Cornerstone PM ships a built-in MCP server in app settings (Settings → MCP). Generate an API key, paste the ready-made config block into Claude Desktop, Cursor, or Windsurf, and your AI tool can run any of Foreman's 396+ skills directly - no code, no middleware. It's the no-code on-ramp to AI-native construction management; the REST API + BYOA is the full-control path. Both hit the same skill catalog. Included on Pro+ ($599/mo). Most construction software has no AI integration at all.",
+      a: (
+        <>
+          Yes. Cornerstone ships a <strong>built-in MCP server</strong> in app settings (Settings &rarr; MCP).
+          Generate an API key, paste the ready-made config block into <strong>Claude Desktop, Cursor, or Windsurf</strong>,
+          and your AI tool can run any of Foreman&apos;s 396+ skills directly &mdash; no code, no middleware. It&apos;s the
+          no-code on-ramp; the <A href="/api-access">REST API + BYOA</A> is the full-control path, and both hit the same
+          skill catalog. Included on Pro+ ($599/mo). Most construction software has no AI integration at all.
         </>
       ),
     },
@@ -1184,10 +1199,10 @@ const api: Category = {
     {
       q: "What integrations does Cornerstone PM™ offer?",
       aText:
-        "REST API + 37+ named webhook event types (growing catalog) make Cornerstone integrate with anything - Slack, QuickBooks, Sage 300, custom CRMs, and AI workflows via Twilio/Bland/Retell for voice and SMS. We focus on a clean public API rather than a long list of brittle direct integrations. Connect what you need at /api-access.",
+        "A built-in MCP server (Claude Desktop, Cursor, Windsurf), REST API + 37+ named webhook event types (growing catalog) make Cornerstone integrate with anything - Slack, QuickBooks, Sage 300, custom CRMs, and AI workflows via Twilio/Bland/Retell for voice and SMS. We focus on a clean public API rather than a long list of brittle direct integrations. Connect what you need at /api-access.",
       a: (
         <>
-          REST API + 37+ named webhook event types (catalog growing) make Cornerstone integrate with anything - Slack, QuickBooks, Sage 300,
+          A built-in MCP server (Claude Desktop, Cursor, Windsurf), REST API + 37+ named webhook event types (catalog growing) make Cornerstone integrate with anything - Slack, QuickBooks, Sage 300,
           custom CRMs, and AI workflows via Twilio/Bland/Retell for voice and SMS. We focus on a clean public API
           rather than a long list of brittle direct integrations. Connect what you need at{" "}
           <A href="/api-access">/api-access</A>.

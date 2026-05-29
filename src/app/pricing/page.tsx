@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const faqs: FAQItem[] = [
   {
     q: "How much does Cornerstone PM\u2122 cost?",
-    a: "Cornerstone PM\u2122 starts at $149/mo for the Starter plan (scheduling, permitting, homeowner portal). Builder is $299/mo and adds the full purchasing module with sales pipeline and design center. Pro is $499/mo and unlocks the entire AI suite \u2014 Foreman AI\u2122, Blueprint AI, and Bid Import AI. Pro+ is $599/mo with REST API + Webhooks included and 60 user seats. Annual billing saves 2 months.",
+    a: "Cornerstone PM\u2122 starts at $149/mo for the Starter plan (scheduling, permitting, homeowner portal). Builder is $299/mo and adds the full purchasing module with sales pipeline and design center. Pro is $499/mo and unlocks the entire AI suite \u2014 Foreman AI\u2122, Blueprint AI, and Bid Import AI. Pro+ is $599/mo with the MCP server, REST API + Webhooks included and 60 user seats. Annual billing saves 2 months.",
   },
   {
     q: "How many users can I have?",
@@ -50,8 +50,8 @@ const faqs: FAQItem[] = [
     a: "Beta access is free for two years for the first 100 home builders who sign up. Beta includes every feature on the Pro plan: scheduling, sales pipeline, purchasing, design center, Foreman AI\u2122 (396+ skills), Blueprint AI, and the homeowner portal. After the two-year beta, plans start at $149/mo.",
   },
   {
-    q: "Can I add REST API access?",
-    a: "REST API + BYOA is a Pro+ exclusive ($599/mo) — not available as an add-on on lower tiers. Pro+ includes 150+ API endpoints, scoped API keys, and 37+ HMAC-signed webhook events. Every endpoint maps to one of Foreman\u2019s 396+ skills, so your BYOA agent (Claude, ChatGPT, n8n, Twilio, Bland, Retell) gets the same toolbox Foreman uses internally — and grows automatically every time we ship a new skill. The cleanest path to BYOA is just upgrading to Pro+ ($100/mo more than Pro).",
+    q: "Can I connect my own AI tools or add REST API access?",
+    a: "The MCP server, REST API + BYOA are Pro+ exclusives ($599/mo) — not available as add-ons on lower tiers. The built-in MCP server is the no-code on-ramp: generate a key and point Claude Desktop, Cursor, or Windsurf at Cornerstone in ~30 seconds. The REST API + BYOA is the full-control path: 150+ API endpoints, scoped API keys, and 37+ HMAC-signed webhook events. Both hit the same catalog — every endpoint maps to one of Foreman\u2019s 396+ skills, so your AI tool gets the same toolbox Foreman uses internally and grows automatically every time we ship a new skill. The cleanest path to all of it is just upgrading to Pro+ ($100/mo more than Pro).",
   },
   {
     q: "Can I export my data?",

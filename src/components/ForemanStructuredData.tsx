@@ -20,7 +20,7 @@ export function ForemanStructuredData() {
         "description":
           "Foreman AI is a purpose-built AI construction agent with 396+ skills across 20 categories. Unlike generic chatbots, Foreman reads AND writes your real construction data — parts catalog, vendor bids, design center options, scope items, schedules, sales pipeline, purchase orders. Includes built-in memory compaction so it doesn't forget mid-session, per-user memory that learns your role and preferences, image analysis for product photos and floor plans, anti-bot web scraping for Home Depot/Ferguson/Lowe's pricing, and a 4-step product image workflow. Available on the Cornerstone PM Pro plan.",
         "keywords":
-          "AI construction agent, construction AI assistant, AI for home builders, Foreman AI, construction chatbot, AI building software, AI takeoff, AI vendor bid analysis, AI scope generator, AI SOW writer, construction copilot, building AI agent, residential construction AI, AI design center, AI parts catalog, AI memory compaction, persistent AI sessions, AI image search construction, anti-bot web scraping AI",
+          "AI construction agent, construction AI assistant, AI for home builders, Foreman AI, construction chatbot, AI building software, AI takeoff, AI vendor bid analysis, AI scope generator, AI SOW writer, construction copilot, building AI agent, residential construction AI, AI design center, AI parts catalog, AI memory compaction, persistent AI sessions, AI image search construction, anti-bot web scraping AI, MCP server, Claude Desktop integration, Cursor integration, Windsurf integration, AI-native construction management",
         "creator": {
           "@type": "Organization",
           "name": "Cornerstone PM",
@@ -41,7 +41,7 @@ export function ForemanStructuredData() {
             "priceCurrency": "USD",
             "billingDuration": "P1M",
             "description":
-              "Foreman AI is included in the Cornerstone PM Pro plan at $499/mo (Claude Sonnet 4, 620 Foreman AI conversations per month). Pro+ at $599/mo increases Foreman AI to 930 conversations per month and bundles the REST API + 37+ webhooks at no extra cost.",
+              "Foreman AI is included in the Cornerstone PM Pro plan at $499/mo (Claude Sonnet 4, 620 Foreman AI conversations per month). Pro+ at $599/mo increases Foreman AI to 930 conversations per month and bundles the built-in MCP server (connect Claude Desktop, Cursor, or Windsurf), the REST API, and 37+ webhooks at no extra cost.",
           },
           "url": "https://cornerstonepm.ai/pricing",
           "availability": "https://schema.org/InStock",
@@ -62,6 +62,8 @@ export function ForemanStructuredData() {
           "Image analysis — paste or drag-drop product photos, screenshots, floor plans, jobsite photos",
           "Anti-bot web scraping — reads Home Depot, Ferguson, Lowe's, and other sites that block traditional scrapers",
           "4-step product image workflow — searchProductImage, downloadImage, updateOption, done",
+          "Built-in MCP server — connect Claude Desktop, Cursor, or Windsurf to all 396+ Foreman skills via Model Context Protocol",
+          "REST API + BYOA — drive all 396+ Foreman skills programmatically from any AI agent",
           "Bid comparison and award workflows",
           "SOW (statement of work) generation",
           "Competitive analysis and vendor scorecards",

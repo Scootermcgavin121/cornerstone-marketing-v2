@@ -43,7 +43,7 @@ const comparisonRows: ComparisonRow[] = [
 const whySwitchCards: WhySwitchCard[] = [
   { title: "NX scope. Builder pricing.", desc: "Constellation NX (the modern successor to MarkSystems) is built for top-100 production builders with implementation budgets, services contracts, and a Constellation consultant on retainer. Cornerstone delivers the same core homebuilder capabilities — options engine, sales pipeline, purchasing, vendor portal, scheduling — for the 5–200 homes/yr builder. Flat published pricing, self-serve onboarding, no implementation engagement." },
   { title: "AI native, not AI bolted on", desc: "Constellation sells Stella AI as a separate product on top of NX. Cornerstone bakes Foreman AI (396+ skills) and Blueprint AI directly into Pro ($499/mo) — same monthly fee, no add-on contract, no separate implementation. AI is the platform, not an upsell." },
-  { title: "Public API + 37+ webhooks on Pro+", desc: "150+ REST API endpoints, 37+ named webhook events (catalog growing), HMAC signatures, public docs. Wire Twilio, Bland, Retell, or your own agents to our webhooks. NX integrations are enterprise services engagements." },
+  { title: "MCP server, public API + 37+ webhooks on Pro+", desc: "Built-in MCP server (connect Claude Desktop, Cursor, or Windsurf in ~30 seconds), 150+ REST API endpoints, 37+ named webhook events (catalog growing), HMAC signatures, public docs. Wire Twilio, Bland, Retell, or your own agents to our webhooks. NX integrations are enterprise services engagements with no MCP server." },
 ];
 
 const faqItems: FAQItem[] = [

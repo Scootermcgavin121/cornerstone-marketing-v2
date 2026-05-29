@@ -194,6 +194,7 @@ export function PricingSection() {
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6 max-w-3xl">
                 Already running Claude, ChatGPT, n8n, Make, or Zapier? Use a voice provider like Twilio,
                 Bland, or Retell to text and call subs? <span className="text-white font-semibold">Point them at Cornerstone.</span>{" "}
+                Connect <span className="text-cyan-300 font-semibold">Claude Desktop, Cursor, or Windsurf</span> to the built-in MCP server in ~30 seconds (the no-code on-ramp), or drive the full REST API for total control.{" "}
                 Pro+ unlocks <span className="text-cyan-300 font-semibold">the same toolbox Foreman AI uses internally</span> &mdash;
                 every one of <span className="text-white font-semibold">Foreman&apos;s {FOREMAN_SKILL_COUNT}+ skills</span> is exposed as a REST endpoint, plus {WEBHOOK_EVENT_COUNT}+ named webhook events.
                 We built the API on top of Foreman: every time we ship a new skill, your BYOA agent gets it automatically.
@@ -204,6 +205,7 @@ export function PricingSection() {
                 <div className="rounded-xl border border-slate-700/60 bg-slate-900/60 p-4">
                   <div className="text-cyan-300 text-xs font-black uppercase tracking-wider mb-2">What you get</div>
                   <ul className="space-y-1.5 text-sm text-slate-300">
+                    <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-cyan-400 mt-1 flex-shrink-0" /><span>Built-in <span className="text-white font-semibold">MCP server</span> (Claude Desktop, Cursor, Windsurf)</span></li>
                     <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-cyan-400 mt-1 flex-shrink-0" /><span><span className="text-white font-semibold">{FOREMAN_SKILL_COUNT}+ Foreman skills</span> exposed as API</span></li>
                     <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-cyan-400 mt-1 flex-shrink-0" />{API_ENDPOINT_COUNT}+ REST API endpoints (84 dedicated routes + generic execute)</li>
                     <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-cyan-400 mt-1 flex-shrink-0" />3 schema formats: Anthropic, OpenAI, OpenAPI 3.1</li>

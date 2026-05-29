@@ -39,7 +39,7 @@ const comparisonRows: ComparisonRow[] = [
 const whySwitchCards: WhySwitchCard[] = [
   { title: "Home builder workflows native", desc: "Lots, models, options, plan repeats, design center, draws, multi-community pipelines - first-class concepts from Builder ($299/mo) up. Buildertrend treats every job as one-off." },
   { title: "Action-taking AI on Pro - 396+ skills", desc: "Foreman AI (Cornerstone Pro, $499/mo) reads AND writes data, remembers your preferences, analyzes jobsite photos, and scrapes product pages from Home Depot and Ferguson using AI-powered web scraping. No bolt-on plugins." },
-  { title: "REST API + 37+ webhook events on Pro+", desc: "150+ REST API endpoints, 37+ named webhook events (catalog growing), HMAC signatures, scoped auth, and public docs on Pro+ ($599/mo). Buildertrend's API is enterprise-only. Wire Twilio, Bland, or your own Claude agent to our webhooks." },
+  { title: "MCP server, REST API + 37+ webhook events on Pro+", desc: "Built-in MCP server (connect Claude Desktop, Cursor, or Windsurf in ~30 seconds), 150+ REST API endpoints, 37+ named webhook events (catalog growing), HMAC signatures, scoped auth, and public docs on Pro+ ($599/mo). Buildertrend's API is enterprise-only and it ships no MCP server. Wire Twilio, Bland, or your own Claude agent to our webhooks." },
 ];
 
 const faqItems: FAQItem[] = [
