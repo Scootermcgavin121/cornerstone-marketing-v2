@@ -155,10 +155,20 @@ export default function ContactPage() {
                   <p className="text-slate-400">We&apos;ll get back to you within one business day.</p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-5">
+                <form
+                  onSubmit={handleSubmit}
+                  className="space-y-5"
+                  // WebMCP declarative tool attributes (spec: webmachinelearning/webmcp,
+                  // Lighthouse agentic-browsing audit). Unknown lowercase attrs
+                  // pass through to the DOM in React.
+                  // @ts-expect-error — WebMCP attrs aren't in React's HTML typings yet.
+                  toolname="submit_contact_inquiry"
+                  tooldescription="Send a sales / support / partnership inquiry to the Cornerstone PM team. Submissions reach the founder team within one business day. Use for general questions, custom-pricing discussions (Pro+), partnership outreach, or anything not covered by the public docs."
+                  toolautosubmit=""
+                >
                   <h2 className="text-xl font-bold text-white mb-6">Send us a message</h2>
 
-                  {/* Honeypot */}
+                  {/* Honeypot — intentionally no toolparamdescription so agents skip it. */}
                   <input type="text" name="website" value={form.website} onChange={e => setForm({ ...form, website: e.target.value })} className="hidden" tabIndex={-1} autoComplete="off" />
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -166,9 +176,13 @@ export default function ContactPage() {
                       <label className="block text-xs font-medium text-slate-400 mb-1.5">Name *</label>
                       <input
                         type="text"
+                        name="name"
+                        autoComplete="name"
                         required
                         value={form.name}
                         onChange={e => setForm({ ...form, name: e.target.value })}
+                        // @ts-expect-error — WebMCP attr.
+                        toolparamdescription="The sender's full name. Used to address the reply."
                         className="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-500/50 transition-colors"
                         placeholder="Rick Harmon"
                       />
@@ -177,9 +191,13 @@ export default function ContactPage() {
                       <label className="block text-xs font-medium text-slate-400 mb-1.5">Email *</label>
                       <input
                         type="email"
+                        name="email"
+                        autoComplete="email"
                         required
                         value={form.email}
                         onChange={e => setForm({ ...form, email: e.target.value })}
+                        // @ts-expect-error — WebMCP attr.
+                        toolparamdescription="The sender's email address. Required — the response from Cornerstone goes here."
                         className="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-500/50 transition-colors"
                         placeholder="rick@harmonbuilds.com"
                       />
@@ -190,8 +208,12 @@ export default function ContactPage() {
                     <label className="block text-xs font-medium text-slate-400 mb-1.5">Company</label>
                     <input
                       type="text"
+                      name="company"
+                      autoComplete="organization"
                       value={form.company}
                       onChange={e => setForm({ ...form, company: e.target.value })}
+                      // @ts-expect-error — WebMCP attr.
+                      toolparamdescription="Optional: the sender's homebuilding company name."
                       className="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-500/50 transition-colors"
                       placeholder="Harmon Custom Homes"
                     />
@@ -200,10 +222,13 @@ export default function ContactPage() {
                   <div>
                     <label className="block text-xs font-medium text-slate-400 mb-1.5">Message *</label>
                     <textarea
+                      name="message"
                       required
                       rows={5}
                       value={form.message}
                       onChange={e => setForm({ ...form, message: e.target.value })}
+                      // @ts-expect-error — WebMCP attr.
+                      toolparamdescription="The body of the inquiry. Describe what the sender wants — a question, a partnership idea, custom-pricing request, etc. Plain text, no HTML."
                       className="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-500/50 transition-colors resize-none"
                       placeholder="What's on your mind?"
                     />

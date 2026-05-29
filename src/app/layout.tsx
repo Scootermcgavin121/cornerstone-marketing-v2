@@ -6,6 +6,7 @@ import { StructuredData } from "@/components/StructuredData";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { Analytics as VercelAnalytics } from "@vercel/analytics/next";
 import { PostHogProvider } from "@/components/PostHogProvider";
+import { WebMcpRegistry } from "@/components/WebMcpRegistry";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -118,6 +119,10 @@ export default function RootLayout({
           {children}
           <ChatWidget />
         </PostHogProvider>
+        {/* WebMCP imperative tool registry — registers site-wide AI agent
+            tools (pricing intel, plan selection, navigation) with the
+            browser's WebMCP runtime. No-op in browsers without WebMCP. */}
+        <WebMcpRegistry />
         <VercelAnalytics />
       </body>
     </html>

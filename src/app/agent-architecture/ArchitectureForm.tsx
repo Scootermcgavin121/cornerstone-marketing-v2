@@ -106,8 +106,19 @@ export function ArchitectureForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
-      {/* Honeypot */}
+    <form
+      onSubmit={handleSubmit}
+      className="space-y-4"
+      // WebMCP declarative tool attributes (spec: webmachinelearning/webmcp,
+      // Lighthouse agentic-browsing audit). React passes unknown lowercase
+      // attrs through to the DOM unchanged.
+      // @ts-expect-error — WebMCP attrs aren't in React's HTML typings yet.
+      toolname="request_agent_architecture_pdf"
+      tooldescription="Subscribe to Cornerstone Field Notes and receive the 4-page Homebuilder AI Agent Architecture PDF. Submitting also adds the user to the marketing CRM with their name, work email, company, and role."
+      toolautosubmit=""
+    >
+      {/* Honeypot — leave OUT of declarative schema (no toolparamdescription).
+          The required attribute is intentionally absent so agents don't fill it. */}
       <input
         type="text"
         name="website"
@@ -127,6 +138,8 @@ export function ArchitectureForm() {
           type="text"
           required
           autoComplete="name"
+          // @ts-expect-error — WebMCP attr.
+          toolparamdescription="The user's full name. Used to personalize the welcome email and CRM record."
           className="w-full px-4 py-2.5 bg-slate-950/60 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500 transition"
           placeholder="Your name"
         />
@@ -142,6 +155,8 @@ export function ArchitectureForm() {
           type="email"
           required
           autoComplete="email"
+          // @ts-expect-error — WebMCP attr.
+          toolparamdescription="The user's work email address. Required — the PDF link and Cornerstone Field Notes newsletter are sent here."
           className="w-full px-4 py-2.5 bg-slate-950/60 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500 transition"
           placeholder="you@company.com"
         />
@@ -157,6 +172,8 @@ export function ArchitectureForm() {
             name="company"
             type="text"
             autoComplete="organization"
+            // @ts-expect-error — WebMCP attr.
+            toolparamdescription="Optional: the user's homebuilding company or organization name."
             className="w-full px-4 py-2.5 bg-slate-950/60 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500 transition"
             placeholder="Your builder"
           />
@@ -170,6 +187,8 @@ export function ArchitectureForm() {
             name="role"
             type="text"
             autoComplete="organization-title"
+            // @ts-expect-error — WebMCP attr.
+            toolparamdescription="Optional: the user's job title at their homebuilding company (e.g. CEO, VP Operations, IT Director)."
             className="w-full px-4 py-2.5 bg-slate-950/60 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500 transition"
             placeholder="CEO, VP Ops, IT..."
           />

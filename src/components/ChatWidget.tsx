@@ -189,13 +189,21 @@ export default function ChatWidget() {
             <form
               onSubmit={handleSubmit}
               className="flex items-center gap-2 px-4 py-3 border-t border-slate-700 bg-slate-900"
+              // WebMCP declarative tool attributes.
+              // @ts-expect-error — WebMCP attrs aren't in React's HTML typings yet.
+              toolname="ask_cornerstone_chatbot"
+              tooldescription="Ask the Cornerstone PM marketing-site chatbot a question about pricing, features, integrations, Foreman AI, REST API, BYOA, or anything covered in the marketing knowledge base. Returns a streamed answer in the chat panel."
+              toolautosubmit=""
             >
               <input
                 ref={inputRef}
                 type="text"
+                name="question"
                 value={input}
                 onChange={handleInputChange}
                 placeholder="Ask about Cornerstone..."
+                // @ts-expect-error — WebMCP attr.
+                toolparamdescription="The user's question about Cornerstone PM. Plain text, conversational."
                 className="flex-1 bg-slate-800 text-slate-100 placeholder-slate-400 text-sm rounded-xl px-4 py-2.5 border border-slate-600 focus:outline-none focus:border-cyan-500 transition-colors"
               />
               <button

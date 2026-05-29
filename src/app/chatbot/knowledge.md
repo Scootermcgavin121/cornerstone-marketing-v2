@@ -1462,3 +1462,17 @@ A companion dashboard for sales operations ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â�
 
 ## Task Library
 Reusable task templates (formerly called Master Tasks) that define your construction schedule. Create tasks once in the Task Library, organize them by template, set dependencies and default vendors, then apply them to any home with one click.
+
+## AI Agent Support (Lighthouse Agentic Browsing, WebMCP, ChatGPT plugin)
+
+The Cornerstone PM marketing site is built to be discoverable AND actuable by AI agents — not just human visitors. If a builder is using Claude, ChatGPT, Perplexity, the in-browser Chrome agent, or any other AI browsing tool to evaluate construction software, our site exposes structured, agent-readable surfaces:
+
+- **/llms.txt** — machine-readable summary of the platform (Lighthouse Agentic Browsing canonical discoverability target).
+- **/agents.txt** — pointer file that lists key agent resources: /llms.txt, /api/ext/skills (Anthropic / OpenAI / OpenAPI 3.1 catalogs), /docs/api-reference.md, /developers, and the plugin manifest.
+- **/.well-known/ai-plugin.json** — ChatGPT-plugin-format manifest. `description_for_model` summarizes the BYOA surface (150+ endpoints, 84 dedicated routes + generic execute for 396+ Foreman skills, 37+ webhooks). Points at /api/ext/skills?format=openapi.
+- **AI-crawler-friendly robots.txt** — explicit Allow rules for GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, Claude-Web, Claude-User, anthropic-ai, PerplexityBot, Perplexity-User, Google-Extended, GoogleOther, Applebot-Extended, meta-externalagent, cohere-ai, Bytespider, Diffbot, DuckAssistBot, Amazonbot, YouBot, Timpibot, and more (22 bots total).
+- **WebMCP declarative tools** on key forms (/contact, /beta, /agent-architecture, chat widget) — the contact form, beta signup, lead-magnet form, and chatbot input all carry WebMCP `toolname` / `tooldescription` / `toolparamdescription` attributes per the W3C Web Machine Learning CG spec. An AI agent (e.g. Chrome's built-in agent) can submit them on the user's behalf without DOM scraping.
+- **WebMCP imperative tools** registered site-wide via `navigator.modelContext` — agents can call `get_plan_details(tierId)`, `compare_plans()`, `select_plan(tierId)`, `get_platform_stats()`, and `navigate_to(section)` to answer pricing questions and route users without parsing the page.
+- **JSON-LD structured data** across the site — SoftwareApplication + Organization + WebSite globally, Product + 4 Offers on /pricing, FAQPage on /faq and most landing pages, TechArticle + APIReference + Service on /api-docs, BlogPosting on every blog post.
+
+If a customer asks "can ChatGPT or Claude understand your site?" or "do you support Lighthouse Agentic Browsing?" — yes, on both counts. We were one of the first construction-software sites to ship full WebMCP integration.

@@ -116,10 +116,20 @@ export default function BetaPage() {
                     <div className="w-full h-px bg-gradient-to-r from-transparent via-amber-500/40 to-transparent" />
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="space-y-5">
+                  <form
+                    onSubmit={handleSubmit}
+                    className="space-y-5"
+                    // WebMCP declarative tool attributes (spec:
+                    // webmachinelearning/webmcp). React forwards unknown
+                    // lowercase attrs to the DOM.
+                    // @ts-expect-error — WebMCP attrs aren't in React's HTML typings yet.
+                    toolname="request_beta_access"
+                    tooldescription="Apply for Cornerstone PM beta access. Beta builders get 2 years free, all 6 modules, and direct input on the roadmap. Limited to 100 builders. Use this when the user wants to sign up for the beta program."
+                    toolautosubmit=""
+                  >
                     <h2 className="text-xl font-bold text-white mb-6">Request Beta Access</h2>
 
-                    {/* Honeypot */}
+                    {/* Honeypot — no toolparamdescription so agents skip it. */}
                     <input
                       type="text"
                       name="website"
@@ -137,9 +147,13 @@ export default function BetaPage() {
                         </label>
                         <input
                           type="text"
+                          name="name"
+                          autoComplete="name"
                           required
                           value={form.name}
                           onChange={(e) => setForm({ ...form, name: e.target.value })}
+                          // @ts-expect-error — WebMCP attr.
+                          toolparamdescription="The applicant's full name."
                           className="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-amber-500/50 focus:bg-slate-800 transition-colors"
                           placeholder="Rick Harmon"
                         />
@@ -150,9 +164,13 @@ export default function BetaPage() {
                         </label>
                         <input
                           type="email"
+                          name="email"
+                          autoComplete="email"
                           required
                           value={form.email}
                           onChange={(e) => setForm({ ...form, email: e.target.value })}
+                          // @ts-expect-error — WebMCP attr.
+                          toolparamdescription="The applicant's work email address. Beta access confirmation is sent here."
                           className="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-amber-500/50 transition-colors"
                           placeholder="rick@harmonbuilds.com"
                         />
@@ -165,8 +183,12 @@ export default function BetaPage() {
                       </label>
                       <input
                         type="text"
+                        name="company"
+                        autoComplete="organization"
                         value={form.company}
                         onChange={(e) => setForm({ ...form, company: e.target.value })}
+                        // @ts-expect-error — WebMCP attr.
+                        toolparamdescription="Optional: the applicant's homebuilding company name."
                         className="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-amber-500/50 transition-colors"
                         placeholder="Harmon Custom Homes"
                       />
@@ -177,9 +199,12 @@ export default function BetaPage() {
                         Homes Built Per Year *
                       </label>
                       <select
+                        name="homes"
                         required
                         value={form.homes}
                         onChange={(e) => setForm({ ...form, homes: e.target.value })}
+                        // @ts-expect-error — WebMCP attr.
+                        toolparamdescription="Annual home production volume bucket. Pick the range that best matches the builder's yearly home count. Allowed values: '1-5', '6-15', '16-30', '31-50', '50+'."
                         className="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-white text-sm focus:outline-none focus:border-amber-500/50 transition-colors"
                       >
                         <option value="">Select range...</option>
@@ -196,9 +221,12 @@ export default function BetaPage() {
                         Anything else you&apos;d like us to know?
                       </label>
                       <textarea
+                        name="message"
                         rows={3}
                         value={form.message}
                         onChange={(e) => setForm({ ...form, message: e.target.value })}
+                        // @ts-expect-error — WebMCP attr.
+                        toolparamdescription="Optional notes from the applicant — e.g. current software stack, biggest pain points, or specific feature interests."
                         className="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-amber-500/50 transition-colors resize-none"
                         placeholder="What software are you currently using? What's your biggest pain point?"
                       />
