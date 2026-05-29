@@ -69,6 +69,7 @@ const featureDetails = [
       "3-level budget hierarchy: Scope → Task → Parts",
       "Auto-budget generation from floorplan takeoffs (~97 lines)",
       "Structural options pricing (Bonus Room, Finished Basement, and 12+ more)",
+      "Global structural options - mark an option global to share identical takeoffs and one retail price across every floorplan; edit takeoffs once and the change syncs everywhere, no duplicate data entry",
       "Full bid management: send to bid → compare → award",
       "Bid requests linkable to specific design or structural options - vendors price exactly what you're selling, awards flow straight to the right budget lines",
       "Side-by-side vendor bid comparison with lowest-price highlighting",

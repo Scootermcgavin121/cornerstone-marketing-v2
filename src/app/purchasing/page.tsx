@@ -52,6 +52,10 @@ const faqItems: FAQItem[] = [
     a: "Auto-Quantity lets you set a quantity source on any scope item &mdash; Under Air Sqft, Total Sqft (Under Roof), Exterior Perimeter, or Roof Squares. Set it once on the scope item and the quantity auto-calculates from floorplan dimensions for every floorplan in your portfolio. POs intelligently combine base house + structural option quantities (e.g., 2,400 sqft base + 800 sqft finished basement = 3,200 sqft on one PO). No manual entry per floorplan, no stale numbers, ANSI Z765 compliant.",
   },
   {
+    q: "Can I share the same structural option across all my floorplans?",
+    a: "Yes &mdash; mark a structural option as global. A global option keeps identical takeoffs (parts and scope items) and a single retail price across every floorplan, so options like Finished Basement or Garage Extension that don't vary by plan only need to be set up once. Edit the takeoffs in one place and the change automatically syncs to every floorplan. When takeoffs differ between floorplans, a source picker lets you choose which floorplan's takeoffs to standardize on, and the retail price is editable inline. It eliminates hours of duplicate data entry and the errors that come with it.",
+  },
+  {
     q: "How does the auto-budget feature work?",
     a: "When a sales counselor locks structural options on a new home sale, Cornerstone PM™ automatically generates the home's construction budget using the floorplan's base costs plus the option-specific deltas. Design center selections, change orders, and bid awards continue to flow into the same budget number throughout the build.",
   },
@@ -119,6 +123,7 @@ const features = [
   { title: "Base Budgets", desc: "Pre-built budget templates per floorplan, ready to apply at sale." },
   { title: "Auto-Budget Generation", desc: "When a home sale is created with structural options, the budget auto-generates instantly." },
   { title: "Structural Options Pricing", desc: "Every structural option tied to a line-item budget impact &mdash; no manual entry." },
+  { title: "Global Structural Options", desc: "Mark an option as global and its takeoffs and retail price stay identical across every floorplan. Edit takeoffs once and the change syncs everywhere &mdash; no more duplicating the same option data on floorplan after floorplan. One source of truth, fewer errors, hours saved." },
   { title: "Active Homes Dashboard", desc: "All homes, budget status, and variance at a glance." },
   { title: "Apply Budget Flow", desc: "One-click flow to apply base budget + options to any home." },
   { title: "Design Center Integration", desc: "Room-by-room selections tied directly to purchasing budget. Includes Product Configurator for complex multi-attribute selections like cabinets and countertops." },

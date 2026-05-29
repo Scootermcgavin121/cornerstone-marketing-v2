@@ -308,6 +308,16 @@ Structural options can now REPLACE base floorplan quantities, not just add to th
 
 **Why this matters:** When a buyer adds "Bonus Room Over Garage," the bonus room flooring should REPLACE the attic insulation (not stack on top of it). The override system handles this cleanly.
 
+### Global Structural Options (NEW May 2026)
+Structural options can now be marked **Global**. A global option keeps identical takeoffs (parts + scope items) and a single retail price across ALL floorplans, instead of being set up separately on each one.
+
+- **One source of truth** - edit the takeoffs once and the change automatically syncs to every floorplan that uses the option
+- **Single retail price** - one inline-editable retail price applies everywhere; no per-floorplan price drift
+- **Source picker** - when takeoffs differ between floorplans, a source picker modal lets you choose which floorplan's takeoffs to standardize on
+- Ideal for options that don't vary by plan (Finished Basement, Garage Extension, 8' Interior Doors, etc.)
+
+**Why this matters:** Builders used to re-enter the same option data on every floorplan. Global options eliminate that duplicate data entry, save hours of admin work, and remove the errors that creep in when the same option is maintained in a dozen places.
+
 ### Selections Page - Now Driven by FloorplanLocationScope (May 2026)
 The Selections page no longer reads only from Takeoffs - it reads from `FloorplanLocationScope` entries to build slots. This means:
 
