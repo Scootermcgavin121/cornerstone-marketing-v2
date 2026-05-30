@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "structural-options-pricing-floorplan-sqft",
+    title: "Pricing Structural Options Across 12 Floorplans Without 12 Spreadsheets",
+    excerpt:
+      "If you have 12 floorplans and 5 structural options each, that\u2019s 60 footprint variants to price \u2014 and 240+ line items to update every time a trade rate changes. Sqft-linked auto-quantity scope items change the math: define frame labor cost per sqft once, and every floorplan, every structural option, every community updates in seconds.",
+    date: "May 30, 2026",
+    readTime: "6 min read",
+    tag: "Product Update",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/structural-options-sqft.png",
+  },
+  {
     slug: "design-center-exclusion-groups-pick-one",
     title: "Design Center Exclusion Groups: Let Buyers Pick One From Many",
     excerpt:
