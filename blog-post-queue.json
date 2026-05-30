@@ -310,8 +310,9 @@
       "wordCount": 900,
       "heroImage": "/blog/structural-options-sqft.png",
       "heroImageAlt": "Structural options pricing across 12 home builder floorplans using sqft-linked auto-quantity scope items in Cornerstone PM",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "500e796",
+      "publishedAt": "2026-05-30T16:34:11.476Z"
     },
     {
       "slug": "fieldwire-vs-cornerstone-pm-home-builder",
