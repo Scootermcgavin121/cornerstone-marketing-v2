@@ -325,8 +325,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/vs-fieldwire.png",
       "heroImageAlt": "Fieldwire alternative for home builders compared to Cornerstone PM production builder software platform",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "875f50b",
+      "publishedAt": "2026-05-31T16:16:01.569Z"
     },
     {
       "slug": "clickup-monday-construction-vs-home-builder-software",
