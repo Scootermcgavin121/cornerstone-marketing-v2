@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "fieldwire-vs-cornerstone-pm-home-builder",
+    title: "Fieldwire vs Cornerstone PM: Field App vs Production Builder Platform",
+    excerpt:
+      "Fieldwire is a field-operations app built for commercial punch lists, plan markups, and RFI workflows. Production home builders need something different: floorplans, per-plan options pricing, 64 Designer Packages, exclusion groups, AI takeoff, and Foreman AI with 396+ skills. Here\u2019s the honest comparison.",
+    date: "May 31, 2026",
+    readTime: "7 min read",
+    tag: "Comparison",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/vs-fieldwire.png",
+  },
+  {
     slug: "structural-options-pricing-floorplan-sqft",
     title: "Pricing Structural Options Across 12 Floorplans Without 12 Spreadsheets",
     excerpt:

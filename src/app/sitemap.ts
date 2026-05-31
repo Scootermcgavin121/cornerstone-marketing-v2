@@ -84,6 +84,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/cornerstone-pm-vs-jobnimbus-home-builder-software", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/design-center-exclusion-groups-pick-one", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/structural-options-pricing-floorplan-sqft", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/fieldwire-vs-cornerstone-pm-home-builder", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({
