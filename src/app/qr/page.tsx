@@ -37,7 +37,23 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.cornerstonepm.ai/qr" },
 };
 
-const qrCodes = [
+type QrCard = {
+  id: string;
+  name: string;
+  audience: string;
+  color: string;
+  bgColor: string;
+  borderColor: string;
+  textColor: string;
+  icon: typeof HardHat;
+  screenshot: string | null;
+  screenshotAlt: string | null;
+  tagline: string;
+  description: string;
+  bullets: string[];
+};
+
+const qrCodes: QrCard[] = [
   {
     id: "vendor",
     name: "Vendor Jobsite QR",
@@ -47,6 +63,9 @@ const qrCodes = [
     borderColor: "border-emerald-500/30",
     textColor: "text-emerald-400",
     icon: HardHat,
+    screenshot: "/mockups/ss-qr-vendor-checkin.jpg",
+    screenshotAlt:
+      "Vendor jobsite QR check-in screen on a phone, showing the scheduled task auto-flipping to In Progress",
     tagline: "Scan on arrival. The schedule updates itself.",
     description:
       "Every community and home gets its own unique QR code. Vendors scan with any phone — no app install, no Cornerstone login. The moment a vendor scans, the task on the construction schedule auto-flips to In Progress (if it hasn't started yet), downstream dependencies cascade, the PM gets a push, and the next vendor up the chain sees it the instant it happens. GPS coordinates, timestamp, weather, and an audit trail capture themselves. Nobody has to remember to log anything.",
@@ -73,6 +92,8 @@ const qrCodes = [
     borderColor: "border-cyan-500/30",
     textColor: "text-cyan-400",
     icon: Clipboard,
+    screenshot: null,
+    screenshotAlt: null,
     tagline: "Timesheets that prove who was on-site.",
     description:
       "PMs, permitting agents, and inspectors scan at the construction trailer when they arrive. GPS-validated presence logging feeds the timesheet system — actual on-site presence is aligned below the timecard grid so managers can validate reported hours.",
@@ -94,6 +115,9 @@ const qrCodes = [
     borderColor: "border-violet-500/30",
     textColor: "text-violet-400",
     icon: Users,
+    screenshot: "/mockups/ss-qr-buyer-registration.jpg",
+    screenshotAlt:
+      "Sales model home QR buyer self-registration screen on a phone, capturing name, email, and phone",
     tagline: "Goodbye, paper sign-in sheet. Hello, model-home accountability.",
     description:
       "One QR code at every model home entrance, two jobs. Walk-in buyers self-register on their own phone \u2014 returning visitors are recognized (\"Welcome back!\") and every scan auto-creates a Lead with instant agent notification. Sales reps scan the same code when they arrive and leave, so you finally know who actually opened the model this Saturday and who left two hours early. Both check-ins pin to the model on the live map \u2014 no GPS needed, we already know the model\u2019s address.",
@@ -586,14 +610,21 @@ export default function QRPage() {
                     ))}
                   </ul>
                 </div>
-                <div className="w-full lg:w-[420px] flex-shrink-0">
-                  <div
-                    className={`rounded-2xl border-2 ${qr.borderColor} ${qr.bgColor} p-12 flex items-center justify-center aspect-square`}
-                  >
-                    {/* Placeholder — replace with real screenshot when available */}
-                    <QrCode className={`w-48 h-48 ${qr.textColor}`} strokeWidth={1.5} />
+                {qr.screenshot && (
+                  <div className="w-full lg:w-[420px] flex-shrink-0">
+                    <div
+                      className={`rounded-2xl border-2 ${qr.borderColor} ${qr.bgColor} p-4 sm:p-6 flex items-center justify-center`}
+                    >
+                      <Image
+                        src={qr.screenshot}
+                        alt={qr.screenshotAlt ?? qr.name}
+                        width={360}
+                        height={760}
+                        className="w-auto max-h-[560px] rounded-xl shadow-2xl shadow-black/40"
+                      />
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
             );
           })}
