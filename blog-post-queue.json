@@ -342,6 +342,76 @@
       "heroImageAlt": "Generic project management tools ClickUp and monday.com compared to Cornerstone PM purpose-built home builder software",
       "status": "pending",
       "publishedCommit": null
+    },
+    {
+      "slug": "webhook-events-construction-software-automation",
+      "title": "37 Webhook Events: The Automation Layer Most Construction Software Forgets",
+      "metaDescription": "Cornerstone PM ships 37 typed webhook events with HMAC signatures and delivery logs. See how builders wire Twilio, Bland, and Retell for SMS and voice automation.",
+      "primaryKeyword": "construction software webhooks",
+      "hub": "/home-builder-project-management-software",
+      "angle": "Feature deep-dive on the webhook system. Competitors say 'webhooks exist' as a checkbox; Cornerstone ships a full catalog of 37 named events with typed payloads, HMAC signatures, delivery logs, and auto-retry. Walk through the event categories: home lifecycle, task/schedule, vendor notifications, cascade scheduling, messages, sales pipeline, bid requests. Show the real-world play: wire Twilio/Bland/Retell to webhook events for SMS and voice without writing glue code. Frame it as the strongest automation-friendly platform pitch for builders who want their stack to talk to itself. Link to /foreman and the hub.",
+      "schema": "FAQPage",
+      "wordCount": 1000,
+      "heroImage": "/blog/webhook-events-automation.png",
+      "heroImageAlt": "Construction software webhooks diagram showing 37 typed events powering builder automation in Cornerstone PM",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "crm-migration-wizard-switch-construction-software",
+      "title": "Switching Construction Software Without the Migration Tax",
+      "metaDescription": "Migration is the #1 reason builders stay locked in. Cornerstone's AI migration wizard imports from Buildertrend, JobTread, CoConstruct, or any CSV for about a penny.",
+      "primaryKeyword": "construction software migration",
+      "hub": "/home-builder-project-management-software",
+      "angle": "Pain-point / TCO post built on the CRM Migration Wizard. The biggest hidden switching cost in construction software is migration: competitors charge white-glove migration fees and that lock-in keeps builders stuck on tools they hate. Cornerstone's AI-powered wizard auto-detects the source platform (Buildertrend, JobTread, CoConstruct, Procore) and column mapping, then runs a one-click import for roughly $0.01 per migration. Pair it with the database backup/export angle ('your data is always yours, CSV or JSON, no hostage-taking'). Strong how-to framing: what to export, how the wizard maps it, what to verify after. Link to the hub and /purchasing.",
+      "schema": "HowTo",
+      "wordCount": 1100,
+      "heroImage": "/blog/crm-migration-wizard.png",
+      "heroImageAlt": "AI construction software migration wizard importing data from Buildertrend and JobTread into Cornerstone PM",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "vendor-bid-requests-portal-no-login",
+      "title": "Send a Bid Request to 10 Vendors in One Click (No Vendor Login Required)",
+      "metaDescription": "Cornerstone PM auto-generates scope-filtered Excel bid templates, emails them to vendors, and lets them submit through a no-login portal. Compare bids side-by-side.",
+      "primaryKeyword": "construction bid request software",
+      "hub": "/purchasing",
+      "angle": "Feature deep-dive on the vendor bidding workflow. Walk the flow: Purchasing to Bid Requests to New Request — select floorplans, vendors, scopes, deadline, message, send. Auto-generated Excel bid templates with 3 tabs (Base/Structural/Designer), scope-filtered so each vendor only sees their trade. Vendor portal needs no login: vendors click the email link, download the template, upload bid docs, submit or decline — then the bid locks. Side-by-side comparison when 2+ vendors submit. Differentiator: community-assigned vendor wins (not lowest-bid auctions) and lock-after-acceptance protects awarded pricing. Link to /purchasing and the hub.",
+      "schema": "HowTo",
+      "wordCount": 1100,
+      "heroImage": "/blog/vendor-bid-requests-portal.png",
+      "heroImageAlt": "Construction bid request software showing scope-filtered Excel templates and a no-login vendor portal in Cornerstone PM",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "foreman-ai-product-image-web-scraping",
+      "title": "Foreman AI Finds the Product, Hosts the Image, and Attaches It in One Breath",
+      "metaDescription": "Foreman AI searches product images, saves them to permanent hosted storage, and reads anti-bot supplier sites like Home Depot and Ferguson. No broken image links.",
+      "primaryKeyword": "AI construction product image search",
+      "hub": "/foreman",
+      "angle": "Feature deep-dive on Foreman's product-image and web-reading skills. Most teams paste a product link that 404s in three months. Foreman runs a 4-step workflow: search the product image by name or model number, save it to permanent hosted storage so the URL never breaks, then attach it to the design option. The AI-powered web reader bypasses anti-bot blocks so it reliably reads supplier pages (Home Depot, Ferguson, Lowe's) that defeat traditional scrapers. Keep messaging at 'AI-powered web scraping' — never name the provider. Tie to the 396+ skill catalog and Foreman memory. Link to /foreman and /design.",
+      "schema": null,
+      "wordCount": 900,
+      "heroImage": "/blog/foreman-product-image-search.png",
+      "heroImageAlt": "AI construction product image search in Foreman AI pulling supplier images into a Cornerstone PM design option",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "knowify-vs-cornerstone-production-home-builder",
+      "title": "Knowify vs Cornerstone PM: Trade Contractor Tool vs Production Home Builder Platform",
+      "metaDescription": "Knowify is built for trade contractors and job costing. Cornerstone PM is built for production home builders with floorplans, options, and a buyer design center.",
+      "primaryKeyword": "Knowify alternative home builder",
+      "hub": "/home-builder-project-management-software",
+      "angle": "Competitor / segment-mismatch post. Knowify is a solid tool — for trade contractors doing job costing, AIA billing, and contract management. But production and semi-custom home builders need a different model entirely: a floorplan-and-options engine, community/lot/model hierarchy, a buyer-facing design center with Designer Packages and exclusion groups, auto-quantity scope items tied to square footage, and vendor bid templates. Foreman AI's 396+ construction skills and per-user memory have no Knowify equivalent. Frame it as 'right tool, wrong segment' rather than a teardown. Link to /home-builder-project-management-software and /design.",
+      "schema": "FAQPage",
+      "wordCount": 1100,
+      "heroImage": "/blog/knowify-vs-cornerstone.png",
+      "heroImageAlt": "Knowify alternative for home builders compared to Cornerstone PM production builder platform with design center",
+      "status": "pending",
+      "publishedCommit": null
     }
   ]
 }
