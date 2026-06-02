@@ -68,7 +68,7 @@ export default function JobsiteAIPage() {
         <div className="relative max-w-5xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/40 text-emerald-400 text-xs font-black uppercase tracking-widest mb-6">
             <Sparkles className="w-3.5 h-3.5" />
-            Coming Soon &middot; Private Beta
+            Vendor Presence Detection
           </div>
           <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tight mb-6 leading-[1.05]">
             Jobsite AI<sup className="text-2xl sm:text-4xl lg:text-5xl align-super text-emerald-400 ml-1">™</sup>
