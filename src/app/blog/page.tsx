@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "clickup-monday-construction-vs-home-builder-software",
+    title: "ClickUp and monday.com for Home Builders: Where Generic PM Tools Break",
+    excerpt:
+      "ClickUp and monday.com promise \u2018works for any team\u2019 \u2014 but production home builders hit six hard walls no template can fix: no floorplan model, no options engine, no design center, no vendor bid templates, no community hierarchy, and no construction-domain AI. Here\u2019s exactly where generic PM breaks and what purpose-built looks like.",
+    date: "June 2, 2026",
+    readTime: "7 min read",
+    tag: "Comparison",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/vs-generic-pm.png",
+  },
+  {
     slug: "fieldwire-vs-cornerstone-pm-home-builder",
     title: "Fieldwire vs Cornerstone PM: Field App vs Production Builder Platform",
     excerpt:
