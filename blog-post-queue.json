@@ -340,8 +340,9 @@
       "wordCount": 1100,
       "heroImage": "/blog/vs-generic-pm.png",
       "heroImageAlt": "Generic project management tools ClickUp and monday.com compared to Cornerstone PM purpose-built home builder software",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "76c7087",
+      "publishedAt": "2026-06-02T14:04:07.136Z"
     },
     {
       "slug": "webhook-events-construction-software-automation",
