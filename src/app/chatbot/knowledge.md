@@ -12,6 +12,22 @@
 
 ---
 
+## New Features (June 2, 2026) - Per-Floorplan Scope Item Pricing
+
+### Per-Floorplan Vendor Pricing for Scope Items (NEW)
+Vendors can now bid **different prices for the same scope item across different floorplans** — not just one flat rate per scope. A bigger home legitimately costs more to rough in, so Cornerstone tracks it that way.
+
+**How it works:**
+- Example: "HVAC Rough In" might be bid at **$4,000 on an 1,800 sqft plan** but **$5,400 on a 2,800 sqft plan** — same scope item, two real prices, side by side.
+- Builders get **accurate per-home cost tracking** instead of a flat average that's wrong on every plan.
+- The **bid comparison view shows per-floorplan breakdowns** so you can see exactly what each vendor charges per plan, plan by plan.
+- When a bid is accepted, **vendor pricing automatically scopes to the correct floorplan** — no manual re-keying, no spreadsheet juggling.
+- **Parts (catalog items like lumber, fixtures, appliances) stay global** — a 2x4 or a faucet costs the same regardless of which floorplan it's in. Only scope items (labor/service work) carry per-floorplan pricing, which is exactly where the variation actually lives.
+
+**Why it matters:** Competitors force a single rate per line item, so builders either pad small plans or under-budget big ones. Cornerstone prices each scope item per floorplan from the vendor's actual bid, so every home's budget reflects what that home truly costs to build.
+
+---
+
 ## New Features (May 26, 2026) - Auto-Quantity & Purchasing Updates
 
 ### Auto-Quantity Scope Items (NEW)
@@ -182,6 +198,9 @@ A: Both! Cornerstone has 64 Designer Collections curated by an actual interior d
 
 **Q: How does design center pricing work?**
 A: Pricing is takeoff-driven - quantities come from the builder's actual takeoff data, not estimates. Upgrade costs are calculated as the delta from the base/standard product. If standard carpet is $3.25/sqft and the buyer picks hardwood at $8.00/sqft, the upgrade is the difference ($4.75) times the room's exact square footage from takeoffs. Every dollar traces back to real quantities and vendor pricing. Zero double-entry.
+
+**Q: Can a vendor charge a different price for the same work on different floorplans?**
+A: Yes. Cornerstone supports **per-floorplan pricing for scope items** - vendors can bid different prices for the same scope item across different floorplans. HVAC Rough In might be $4,000 on an 1,800 sqft plan and $5,400 on a 2,800 sqft plan, and the bid comparison view shows those per-floorplan breakdowns side by side. When the bid is accepted, pricing automatically scopes to the correct floorplan, so each home's budget reflects its real cost instead of a flat average. Parts (catalog items like lumber and fixtures) stay global - they cost the same regardless of floorplan - so only the labor/service scope items vary, which is exactly where the cost difference actually lives.
 
 ---
 
@@ -420,6 +439,7 @@ Full end-to-end bidding from request → vendor submission → review → award 
 
 **Pricing engine:**
 - Per-takeoff cost resolves via fallback chain: per-takeoff override → ACCEPTED VendorPricing for the home's community → catalog default → $0.
+- **Per-floorplan scope item pricing:** vendors can bid different prices for the same scope item across different floorplans (e.g., HVAC Rough In at $4,000 on an 1,800 sqft plan, $5,400 on a 2,800 sqft plan). On bid acceptance, pricing automatically scopes to the correct floorplan, so each home's budget reflects its real cost instead of a flat average. **Parts (catalog items) remain global pricing** — only scope items (labor/service work) vary per floorplan.
 - Vendor selection always uses the **community-assigned vendor**, not lowest bid - builders maintain trade relationships per community.
 - Multiple bids can be ACCEPTED simultaneously across different communities (one vendor in Community A, a different vendor in Community B for the same scope).
 
@@ -865,6 +885,7 @@ Cornerstone's AI-powered takeoff system eliminates manual material estimation. *
 - **Scope Pricing Dashboard** - read-only dashboard showing vendor bid pricing by scope. Vendor pricing matrix lets you compare bids across vendors at a glance - see who's cheapest per scope without digging through individual bid responses
 - **Takeoffs** - per-floorplan quantity takeoffs organized by room/location. Supports BASE (standard for every home) and OPTION (per-option-class) takeoff types. Units: sqft, lf, lnft, each, LUMP, square
 - **Bid Management** - send a floorplan to bid to every vendor with one click. Track vendor responses, compare bids side-by-side, and award - all in one workflow
+- **Per-Floorplan Vendor Pricing** - vendors can bid different prices for the same scope item across different floorplans (e.g., HVAC Rough In at $4,000 on an 1,800 sqft plan vs. $5,400 on a 2,800 sqft plan). The bid comparison view breaks pricing out per floorplan, and accepted pricing scopes automatically to the right plan - so each home's budget reflects its true cost, not a flat average. Parts (catalog items) stay global; only labor/service scope items vary per floorplan.
 - **Budgets** - 3-level budget hierarchy: Scope → Task → Parts. Real-time financial rollups per home showing estimated vs actual costs. Organized by trade (Lumber, Electrical, Plumbing, HVAC, etc.) with collapsible sections. Scopes with takeoff parts show detailed parts lists with quantities.
 - **Auto-Budget Generation** - when structural options are locked in the sales pipeline, the system automatically generates a full home budget from the floorplan's base budget (~97 budget lines per home). Includes structural option selections with cost + retail pricing and elevation cost adders. No manual budget creation needed. Budget can be reset and regenerated if a deal changes.
 - **Active Homes Table** - sortable columns showing budget status, created date, variance tracking across all homes
