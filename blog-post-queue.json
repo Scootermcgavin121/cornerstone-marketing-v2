@@ -355,8 +355,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/webhook-events-automation.png",
       "heroImageAlt": "Construction software webhooks diagram showing 37 typed events powering builder automation in Cornerstone PM",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "5135e2d",
+      "publishedAt": "2026-06-04T14:03:37.507Z"
     },
     {
       "slug": "crm-migration-wizard-switch-construction-software",
