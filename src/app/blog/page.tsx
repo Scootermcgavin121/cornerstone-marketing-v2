@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "webhook-events-construction-software-automation",
+    title: "37 Webhook Events: The Automation Layer Most Construction Software Forgets",
+    excerpt:
+      "Most construction software lists \u2018webhooks\u2019 as a checkbox. Cornerstone PM ships 37 named events with typed payloads, HMAC-SHA256 signatures, delivery logs, and automatic retry \u2014 the infrastructure builders need to wire Twilio SMS, Bland voice calls, and CRM sync on top of their construction platform.",
+    date: "June 4, 2026",
+    readTime: "7 min read",
+    tag: "AI & Automation",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/webhook-events-automation.png",
+  },
+  {
     slug: "clickup-monday-construction-vs-home-builder-software",
     title: "ClickUp and monday.com for Home Builders: Where Generic PM Tools Break",
     excerpt:
