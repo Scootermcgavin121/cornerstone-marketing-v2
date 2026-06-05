@@ -196,6 +196,9 @@ A: Yes! Cornerstone's Design Center is takeoff-driven - it knows exactly how muc
 **Q: Do buyers have to pick every finish individually or can they use packages?**
 A: Both! Cornerstone has 64 Designer Collections curated by an actual interior designer across 7 categories. Buyers can apply a package with one click to auto-fill coordinated selections across all rooms, or pick every finish individually room by room. They can also start with a package and override individual items.
 
+**Q: How do I mark a Level 1 option as "not included" so it becomes an upgrade?**
+A: Go to Purchasing → Options, find the Level 1 option, click to open its details, and change the Spec Level to a higher tier (e.g., Upgrade I or Premium). Save, and it will no longer be included in the base pricing — it shows as a paid upgrade at the new tier instead. To exclude an entire option class from the base budget, use the Standard/Upgrade toggle on the Spec Levels page.
+
 **Q: How does design center pricing work?**
 A: Pricing is takeoff-driven - quantities come from the builder's actual takeoff data, not estimates. Upgrade costs are calculated as the delta from the base/standard product. If standard carpet is $3.25/sqft and the buyer picks hardwood at $8.00/sqft, the upgrade is the difference ($4.75) times the room's exact square footage from takeoffs. Every dollar traces back to real quantities and vendor pricing. Zero double-entry.
 
