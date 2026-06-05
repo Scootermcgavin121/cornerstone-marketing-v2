@@ -385,8 +385,9 @@
       "wordCount": 1100,
       "heroImage": "/blog/crm-migration-wizard.png",
       "heroImageAlt": "AI construction software migration wizard importing data from Buildertrend and JobTread into Cornerstone PM",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "f83908c",
+      "publishedAt": "2026-06-05T14:04:05.125Z"
     },
     {
       "slug": "vendor-bid-requests-portal-no-login",
