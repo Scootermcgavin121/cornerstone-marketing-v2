@@ -55,7 +55,7 @@ const faqs: FAQItem[] = [
   },
   {
     q: "Can I export my data?",
-    a: "Yes. Every plan includes one-click full database export in CSV or JSON format. Every vendor, every home, every schedule, every option, every budget line. Nightly automatic backups are retained for 7 days. No vendor lock-in, no exit fees, no support ticket required.",
+    a: "Yes. Every plan includes one-click full database export in CSV or JSON format — the CSV export generates 96+ files (one per table) in seconds. Every vendor, every home, every schedule, every option, every budget line. Nightly automatic backups are retained for 7 days. No vendor lock-in, no exit fees, no support ticket required.",
   },
   {
     q: "Do you offer annual billing?",
@@ -158,7 +158,7 @@ export default function PricingPage() {
               },
               {
                 title: "Take your data with you",
-                desc: "One-click full CSV or JSON export. Every record. Plus 7-day rolling nightly auto-backups. No vendor lock-in.",
+                desc: "One-click full export — 96+ CSV files generated in seconds (one per table) or a single JSON file. Every record. Plus 7-day rolling nightly auto-backups. No vendor lock-in.",
               },
             ].map((f) => (
               <div
