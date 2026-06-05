@@ -24,6 +24,14 @@ export const WEBHOOK_EVENT_COUNT = 37;
 export const API_ENDPOINT_COUNT = 150;
 export const API_DEDICATED_ROUTES = 84;
 export const API_SCHEMA_FORMATS = 3; // Anthropic, OpenAI function calling, OpenAPI 3.1
+/**
+ * Total API operations exposed to external agents — the most complete count of
+ * what an external agent (Claude, ChatGPT, n8n, etc.) can actually invoke.
+ * Counts dedicated RESTful routes + the generic execute surface mapped across
+ * Foreman skills. This is the headline "how much can my agent do" number;
+ * API_ENDPOINT_COUNT (150+) remains the route-level figure.
+ */
+export const API_OPERATION_COUNT = 238;
 
 // ----------------------------------------------------------------
 // Plan tier shape
@@ -172,7 +180,7 @@ export const PLANS: Plan[] = [
     maxUsers: 60,
     features: [
       "Everything in Pro, plus:",
-      "REST API (150+ endpoints) + 37+ webhooks + BYOA INCLUDED \u2014 84 dedicated RESTful routes + generic execute endpoint for all 396+ Foreman skills. 3 schema formats (Anthropic, OpenAI, OpenAPI 3.1). Claude, ChatGPT, n8n, Twilio, Bland & Retell get the same toolbox Foreman uses",
+      "REST API (238 total operations \u2014 150+ endpoints) + 37+ webhooks + BYOA INCLUDED \u2014 84 dedicated RESTful routes + generic execute endpoint for all 396+ Foreman skills. 3 schema formats (Anthropic, OpenAI, OpenAPI 3.1). Claude, ChatGPT, n8n, Twilio, Bland & Retell get the same toolbox Foreman uses",
       "Foreman AI\u2122 (930/mo, Claude Sonnet 4)",
       "Blueprint AI (310/mo)",
       "Bid Import AI (1,240/mo)",
@@ -277,7 +285,7 @@ export function annualTotal(monthly: number): string {
 
 export const BYOA_COPY = {
   oneLiner:
-    `${API_ENDPOINT_COUNT}+ REST API endpoints (${API_DEDICATED_ROUTES} dedicated routes + generic execute for all ${FOREMAN_SKILL_COUNT}+ skills) + ${WEBHOOK_EVENT_COUNT}+ named webhook events. ${API_SCHEMA_FORMATS} schema formats (Anthropic, OpenAI, OpenAPI 3.1). Claude, ChatGPT, n8n, Twilio, Bland, Retell get the same toolbox Foreman uses.`,
+    `${API_OPERATION_COUNT} total API operations for external agents — ${API_ENDPOINT_COUNT}+ REST API endpoints (${API_DEDICATED_ROUTES} dedicated routes + generic execute for all ${FOREMAN_SKILL_COUNT}+ skills) + ${WEBHOOK_EVENT_COUNT}+ named webhook events. ${API_SCHEMA_FORMATS} schema formats (Anthropic, OpenAI, OpenAPI 3.1). Claude, ChatGPT, n8n, Twilio, Bland, Retell get the same toolbox Foreman uses.`,
   inclusionLine:
     `Included with Pro+ ($599/mo). Not available on lower tiers.`,
   whyDifferentiated:

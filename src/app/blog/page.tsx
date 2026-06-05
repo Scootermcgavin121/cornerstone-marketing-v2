@@ -11,6 +11,18 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "api-operations-construction-software-ai-agents",
+    title:
+      "238 API Operations: The Most Agent-Ready Construction Platform",
+    excerpt:
+      "Cornerstone PM exposes 238 total API operations to external AI agents \u2014 150+ REST endpoints, 84 dedicated routes, a generic execute surface for 396+ Foreman skills, and 37+ webhooks. Here is what that number actually means and why it is the most honest measure of an agent-ready platform.",
+    date: "June 5, 2026",
+    readTime: "6 min read",
+    tag: "AI & Automation",
+    tagColor: "text-cyan-400 bg-cyan-500/10 border-cyan-500/20",
+    heroImage: "/blog/api-operations-238.png",
+  },
+  {
     slug: "webhook-events-construction-software-automation",
     title: "37 Webhook Events: The Automation Layer Most Construction Software Forgets",
     excerpt:

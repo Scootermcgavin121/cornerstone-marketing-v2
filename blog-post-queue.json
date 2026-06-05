@@ -360,6 +360,21 @@
       "publishedAt": "2026-06-04T14:03:37.507Z"
     },
     {
+      "slug": "api-operations-construction-software-ai-agents",
+      "title": "238 API Operations: The Most Agent-Ready Construction Platform",
+      "metaDescription": "Cornerstone PM exposes 238 total API operations to external AI agents - 150+ REST endpoints, 84 dedicated routes, generic execute for 396+ Foreman skills, and 37+ webhooks.",
+      "primaryKeyword": "construction software API AI agents",
+      "hub": "/home-builder-project-management-software",
+      "angle": "Feature deep-dive on the API surface. Lead with 238 total API operations as the honest measure of agent-readiness vs raw endpoint counts. Break down: 84 dedicated routes + generic execute over 396+ Foreman skills + 37+ webhooks + 3 schema formats. Explain operations vs endpoints, the generic execute trick, BYOA auto-growth, MCP server. Comparison table vs JobTread/Buildertrend/CoConstruct. Pro+ exclusive. Written directly by website-builder, not the cron.",
+      "schema": "FAQPage",
+      "wordCount": 1100,
+      "heroImage": "/blog/api-operations-238.png",
+      "heroImageAlt": "Cornerstone PM API hub diagram showing 238 total API operations radiating out to external AI agents for construction automation",
+      "status": "published",
+      "publishedCommit": "PENDING",
+      "publishedAt": "2026-06-05T04:29:17.431Z"
+    },
+    {
       "slug": "crm-migration-wizard-switch-construction-software",
       "title": "Switching Construction Software Without the Migration Tax",
       "metaDescription": "Migration is the #1 reason builders stay locked in. Cornerstone's AI migration wizard imports from Buildertrend, JobTread, CoConstruct, or any CSV for about a penny.",

@@ -9,6 +9,7 @@ import {
   FOREMAN_SKILL_COUNT,
   WEBHOOK_EVENT_COUNT,
   API_ENDPOINT_COUNT,
+  API_OPERATION_COUNT,
   formatPrice,
   annualTotal,
 } from "@/lib/pricing";
@@ -207,6 +208,7 @@ export function PricingSection() {
                   <ul className="space-y-1.5 text-sm text-slate-300">
                     <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-cyan-400 mt-1 flex-shrink-0" /><span>Built-in <span className="text-white font-semibold">MCP server</span> (Claude Desktop, Cursor, Windsurf)</span></li>
                     <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-cyan-400 mt-1 flex-shrink-0" /><span><span className="text-white font-semibold">{FOREMAN_SKILL_COUNT}+ Foreman skills</span> exposed as API</span></li>
+                    <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-cyan-400 mt-1 flex-shrink-0" /><span><span className="text-white font-semibold">{API_OPERATION_COUNT} total API operations</span> for your agent</span></li>
                     <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-cyan-400 mt-1 flex-shrink-0" />{API_ENDPOINT_COUNT}+ REST API endpoints (84 dedicated routes + generic execute)</li>
                     <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-cyan-400 mt-1 flex-shrink-0" />3 schema formats: Anthropic, OpenAI, OpenAPI 3.1</li>
                     <li className="flex items-start gap-2"><Check className="w-3.5 h-3.5 text-cyan-400 mt-1 flex-shrink-0" />{WEBHOOK_EVENT_COUNT}+ named webhook events</li>

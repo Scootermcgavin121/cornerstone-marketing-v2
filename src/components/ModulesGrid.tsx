@@ -100,7 +100,7 @@ const modules = [
   {
     icon: Code,
     name: "Developer API",
-    desc: "150+ REST API endpoints, 3 schema formats (Anthropic, OpenAI, OpenAPI 3.1), generic execute endpoint for all 396+ Foreman skills. Pro+ exclusive.",
+    desc: "238 total API operations for external agents — 150+ REST API endpoints, 3 schema formats (Anthropic, OpenAI, OpenAPI 3.1), generic execute endpoint for all 396+ Foreman skills. Pro+ exclusive.",
     href: "/api-docs",
     color: "text-rose-400",
     bg: "bg-rose-500/10",

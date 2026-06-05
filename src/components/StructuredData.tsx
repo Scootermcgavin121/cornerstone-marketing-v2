@@ -40,7 +40,7 @@ export function StructuredData() {
           "Permit gate system and permitting pipeline tracker",
           "Vendor self-registration portal",
           "Built-in MCP (Model Context Protocol) server - connect Claude Desktop, Cursor, or Windsurf to all 396+ Foreman skills",
-          "REST API with 150+ API endpoints and 37+ named webhook event types (catalog growing)",
+          "REST API with 238 total API operations (150+ endpoints) and 37+ named webhook event types (catalog growing)",
           "Multi-community and multi-floorplan management",
           "AI Support Agent - instant answers, every feature documented",
           "Warranty tracking and 2-year warranty management",
@@ -134,7 +134,7 @@ export function StructuredData() {
             "name": "Does Cornerstone PM have an API?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Cornerstone PM ships a built-in MCP (Model Context Protocol) server - connect Claude Desktop, Cursor, or Windsurf in about 30 seconds (the no-code on-ramp) - plus 150+ REST API endpoints (84 dedicated RESTful routes plus a generic execute endpoint for all 396+ Foreman AI skills) for full control. 3 schema formats: Anthropic, OpenAI function calling, and OpenAPI 3.1. Covers vendors, bids, homes, tasks, purchase orders, payments, options, parts catalog, design center, webhooks, and more. Available on the Pro+ plan ($599/mo). Full documentation at app.cornerstonepm.ai/developers.",
+              "text": "Yes. Cornerstone PM ships a built-in MCP (Model Context Protocol) server - connect Claude Desktop, Cursor, or Windsurf in about 30 seconds (the no-code on-ramp) - plus 238 total API operations for external agents (150+ REST API endpoints: 84 dedicated RESTful routes plus a generic execute endpoint for all 396+ Foreman AI skills) for full control. 3 schema formats: Anthropic, OpenAI function calling, and OpenAPI 3.1. Covers vendors, bids, homes, tasks, purchase orders, payments, options, parts catalog, design center, webhooks, and more. Available on the Pro+ plan ($599/mo). Full documentation at app.cornerstonepm.ai/developers.",
             },
           },
           {

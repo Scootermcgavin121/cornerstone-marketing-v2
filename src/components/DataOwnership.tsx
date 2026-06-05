@@ -54,7 +54,7 @@ export function DataOwnership() {
             <BenefitRow
               icon={<Download className="w-5 h-5" />}
               title="One-click full export"
-              desc="Download every record across 89+ tables in JSON or CSV. No support ticket. No 30-day waiting period."
+              desc="Download every record across 96+ tables in JSON or CSV — 96+ CSV files generated in seconds. No support ticket. No 30-day waiting period."
               accent="amber"
             />
             <BenefitRow
@@ -66,7 +66,7 @@ export function DataOwnership() {
             <BenefitRow
               icon={<FileJson className="w-5 h-5" />}
               title="JSON or CSV — your choice"
-              desc="JSON for full machine-readable data. CSV with one file per table — opens straight in Excel."
+              desc="JSON for full machine-readable data. CSV gives you 96+ files — one per table — generated in seconds and opening straight in Excel."
               accent="cyan"
             />
             <BenefitRow

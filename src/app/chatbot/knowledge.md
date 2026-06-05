@@ -3,7 +3,7 @@
 - **396+ Foreman AI skills** with **23+ built-in workflow recipes** (in-app agent that reads AND writes data - including product image search, image hosting, and AI-powered web scraping)
 - **37+ named webhook event types and growing** — typed payloads, HMAC signatures, delivery logs, and auto-retry. New events ship as the platform grows. Industry-leading depth (most competitors just say "webhooks exist")
 - **Built-in MCP server** (Settings → MCP) — connect Claude Desktop, Cursor, or Windsurf to all 396+ Foreman skills in ~30 seconds. The no-code on-ramp to AI-native construction management; most construction software has no AI integration at all. Pro+ ($599/mo).
-- 150+ external REST API endpoints (84 dedicated routes + generic execute for 396+ Foreman skills)
+- **238 total API operations** available to external agents — 150+ external REST API endpoints (84 dedicated routes + generic execute for 396+ Foreman skills). This is the most complete "how much can my agent do" figure; the endpoint count is the route-level number.
 - 7 built-in AI features: Foreman AI (396+ skills), Blueprint AI, MLS Listing Agent, AI Support Agent, Punchlist AI (voice-to-punch-list, industry first), Bid Import AI (AI-powered vendor bid parsing), AI Jobsite Camera Events (webhook-driven, source-agnostic camera/sensor integration)
 - **Triple QR Code Ecosystem** - vendor jobsite check-in, community/PM check-in (timesheet-validated), and sales model home lead capture. Three QR codes, three audiences, one platform.
 - **Vendor Activity Map** - Google Maps view of every vendor check-in across every community, real-time (30-second refresh)

@@ -35,6 +35,7 @@ import {
   FOREMAN_SKILL_CATEGORIES,
   WEBHOOK_EVENT_COUNT,
   API_ENDPOINT_COUNT,
+  API_OPERATION_COUNT,
   API_DEDICATED_ROUTES,
   API_SCHEMA_FORMATS,
   BYOA_COPY,
@@ -219,7 +220,7 @@ export function WebMcpRegistry() {
       {
         name: "get_platform_stats",
         description:
-          "Get current Cornerstone PM platform stats: Foreman AI skill count, skill categories, webhook event count, REST API endpoint count, dedicated routes, and supported schema formats. Use this when asked 'how many skills/endpoints/webhooks does Cornerstone have?'",
+          "Get current Cornerstone PM platform stats: Foreman AI skill count, skill categories, webhook event count, total API operations, REST API endpoint count, dedicated routes, and supported schema formats. Use this when asked 'how many skills/endpoints/operations/webhooks does Cornerstone have?'",
         inputSchema: { type: "object", properties: {} },
         annotations: { readOnlyHint: true, openWorldHint: false },
         execute: async () => {
@@ -231,6 +232,7 @@ export function WebMcpRegistry() {
                 "Foreman AI is an in-app agent that reads AND writes data — it doesn't just chat, it takes real actions on purchasing, scheduling, design center, and more.",
             },
             api: {
+              totalOperations: API_OPERATION_COUNT,
               endpoints: API_ENDPOINT_COUNT,
               dedicatedRoutes: API_DEDICATED_ROUTES,
               genericExecuteCoverage: FOREMAN_SKILL_COUNT,
