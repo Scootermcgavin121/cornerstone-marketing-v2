@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "crm-migration-wizard-switch-construction-software",
+    title: "Switching Construction Software Without the Migration Tax",
+    excerpt:
+      "Migration is the #1 reason builders stay on software they hate. Cornerstone PM\u2019s AI migration wizard imports contacts, vendors, and project history from Buildertrend, JobTread, CoConstruct, or any CSV for roughly $0.01 \u2014 no consultant, no fee, no hostage-taking. Here\u2019s how it works and what to expect after you land.",
+    date: "June 5, 2026",
+    readTime: "7 min read",
+    tag: "Platform",
+    tagColor: "text-cyan-400 bg-cyan-500/10 border-cyan-500/20",
+    heroImage: "/blog/crm-migration-wizard.png",
+  },
+  {
     slug: "api-operations-construction-software-ai-agents",
     title:
       "238 API Operations: The Most Agent-Ready Construction Platform",

@@ -87,6 +87,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/fieldwire-vs-cornerstone-pm-home-builder", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/clickup-monday-construction-vs-home-builder-software", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/webhook-events-construction-software-automation", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/crm-migration-wizard-switch-construction-software", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/api-operations-construction-software-ai-agents", priority: 0.8, changeFrequency: "monthly" as const },
   ];
 
