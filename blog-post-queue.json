@@ -371,7 +371,7 @@
       "heroImage": "/blog/api-operations-238.png",
       "heroImageAlt": "Cornerstone PM API hub diagram showing 238 total API operations radiating out to external AI agents for construction automation",
       "status": "published",
-      "publishedCommit": "PENDING",
+      "publishedCommit": "edbce5b",
       "publishedAt": "2026-06-05T04:29:17.431Z"
     },
     {
