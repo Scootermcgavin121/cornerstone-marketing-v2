@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import { Check, X, Zap, ArrowRight } from "lucide-react";
+import { Check, X, Zap, ArrowRight, Building2 } from "lucide-react";
 import {
   PLANS,
   COMPETITORS,
@@ -63,12 +63,14 @@ export function PricingSection() {
         </div>
 
         {/* Plans */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mb-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-6 mb-8 max-w-7xl mx-auto">
           {PLANS.map((plan) => (
             <div
               key={plan.name}
               className={`relative rounded-2xl p-8 transition-all duration-300 ${
-                plan.highlight
+                plan.enterprise
+                  ? "bg-gradient-to-b from-violet-950/50 via-slate-900 to-slate-900 border-2 border-transparent [background-clip:padding-box] shadow-xl shadow-violet-500/10 ring-1 ring-inset ring-violet-500/40"
+                  : plan.highlight
                   ? "bg-gradient-to-b from-slate-800 to-slate-900 border-2 border-amber-500/50 shadow-xl shadow-amber-500/10"
                   : "bg-slate-800/60 border border-slate-700/60 hover:border-slate-600"
               }`}
@@ -77,7 +79,9 @@ export function PricingSection() {
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap">
                   <span
                     className={`px-4 py-1 text-xs font-bold rounded-full ${
-                      plan.highlight
+                      plan.enterprise
+                        ? "bg-gradient-to-r from-violet-500 to-cyan-400 text-slate-900"
+                        : plan.highlight
                         ? "bg-gradient-to-r from-amber-500 to-amber-400 text-slate-900"
                         : "bg-gradient-to-r from-slate-600 to-slate-500 text-white"
                     }`}
@@ -89,9 +93,23 @@ export function PricingSection() {
 
               {plan.bonusBadge && (
                 <div className="mb-4 -mx-2">
-                  <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-amber-500/15 border border-amber-500/30">
-                    <Zap className="w-3.5 h-3.5 text-amber-400 flex-shrink-0" />
-                    <span className="text-xs font-bold text-amber-400">
+                  <div
+                    className={`flex items-center gap-2 px-3 py-2 rounded-xl border ${
+                      plan.enterprise
+                        ? "bg-violet-500/15 border-violet-500/30"
+                        : "bg-amber-500/15 border-amber-500/30"
+                    }`}
+                  >
+                    {plan.enterprise ? (
+                      <Building2 className="w-3.5 h-3.5 text-violet-300 flex-shrink-0" />
+                    ) : (
+                      <Zap className="w-3.5 h-3.5 text-amber-400 flex-shrink-0" />
+                    )}
+                    <span
+                      className={`text-xs font-bold ${
+                        plan.enterprise ? "text-violet-300" : "text-amber-400"
+                      }`}
+                    >
                       {plan.bonusBadge}
                     </span>
                   </div>
@@ -101,29 +119,49 @@ export function PricingSection() {
               {plan.highlight && (
                 <div className="absolute inset-0 rounded-2xl bg-[radial-gradient(ellipse_at_top,rgba(251,191,36,0.06),transparent_60%)]" />
               )}
+              {plan.enterprise && (
+                <div className="absolute inset-0 rounded-2xl bg-[radial-gradient(ellipse_at_top,rgba(139,92,246,0.10),transparent_60%)]" />
+              )}
 
               <div className="relative z-10">
                 <h3 className="text-lg font-bold text-white mb-0.5">{plan.name}</h3>
                 <p className="text-xs text-slate-500 mb-1">{plan.target}</p>
                 <p className="text-sm text-slate-400 mb-4">{plan.description}</p>
 
-                <div className="flex items-baseline gap-1 mb-1">
-                  <span className="text-5xl font-black text-white">
-                    {formatPrice(plan.price, annual)}
-                  </span>
-                  <span className="text-slate-400 text-sm">/mo</span>
-                </div>
-                {annual && (
-                  <p className="text-xs text-emerald-400 mb-4">
-                    {annualTotal(plan.price)}/yr &mdash; save {`$${plan.price * 2}`}
-                  </p>
+                {plan.enterprise ? (
+                  <>
+                    <div className="flex items-baseline gap-1 mb-1">
+                      <span className="text-5xl font-black bg-gradient-to-r from-violet-300 to-cyan-300 bg-clip-text text-transparent">
+                        {plan.customPriceLabel ?? "Custom"}
+                      </span>
+                    </div>
+                    <p className="text-xs text-violet-300/80 mb-4">
+                      Tailored to your divisions
+                    </p>
+                  </>
+                ) : (
+                  <>
+                    <div className="flex items-baseline gap-1 mb-1">
+                      <span className="text-5xl font-black text-white">
+                        {formatPrice(plan.price, annual)}
+                      </span>
+                      <span className="text-slate-400 text-sm">/mo</span>
+                    </div>
+                    {annual && (
+                      <p className="text-xs text-emerald-400 mb-4">
+                        {annualTotal(plan.price)}/yr &mdash; save {`$${plan.price * 2}`}
+                      </p>
+                    )}
+                    {!annual && <div className="mb-4" />}
+                  </>
                 )}
-                {!annual && <div className="mb-4" />}
 
                 <Link
                   href={plan.ctaHref}
                   className={`block w-full text-center py-3 rounded-xl font-bold text-sm transition-all duration-200 mb-6 ${
-                    plan.highlight
+                    plan.enterprise
+                      ? "bg-gradient-to-r from-violet-500 to-cyan-500 text-white hover:from-violet-400 hover:to-cyan-400 shadow-lg shadow-violet-500/20"
+                      : plan.highlight
                       ? "bg-gradient-to-r from-amber-500 to-amber-400 text-slate-900 hover:from-amber-400 hover:to-amber-300 shadow-lg shadow-amber-500/20"
                       : "bg-slate-700 text-white hover:bg-slate-600"
                   }`}

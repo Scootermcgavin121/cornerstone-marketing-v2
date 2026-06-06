@@ -39,11 +39,18 @@ export const API_OPERATION_COUNT = 238;
 
 export interface Plan {
   /** Internal id used by code; never shown to users. */
-  id: "starter" | "builder" | "pro" | "proPlus";
+  id: "starter" | "builder" | "pro" | "proPlus" | "enterprise";
   /** Display name. */
   name: string;
-  /** Monthly price (USD). */
+  /** Monthly price (USD). 0 = custom/contact-us pricing (see customPriceLabel). */
   price: number;
+  /**
+   * When true, this is a custom/negotiated tier. The card shows
+   * customPriceLabel instead of a dollar figure and skips annual math.
+   */
+  enterprise?: boolean;
+  /** Text shown where the price normally renders (e.g. "Custom"). */
+  customPriceLabel?: string;
   /** One-liner under the plan name. */
   description: string;
   /** Target audience ("1-10 homes/yr", etc). */
@@ -196,6 +203,34 @@ export const PLANS: Plan[] = [
     notIncluded: [],
     cta: "Contact Us",
     ctaHref: "/contact",
+    highlight: false,
+  },
+  {
+    id: "enterprise",
+    name: "Enterprise",
+    price: 0,
+    enterprise: true,
+    customPriceLabel: "Custom",
+    description:
+      "Corporate & multi-division builders. One account, every brand.",
+    target: "Multi-division / multi-brand",
+    badge: "CORPORATE",
+    bonusBadge: "Multi-division platform",
+    maxUsers: 60,
+    features: [
+      "Everything in Pro+, plus:",
+      "Multi-division management (up to 5 divisions included)",
+      "Corporate admin with cross-division access",
+      "Division switcher — one login, all brands",
+      "Corporate user roles (CORPORATE_ADMIN, PURCHASING, SALES & more)",
+      "Centralized purchasing across divisions",
+      "Cross-division analytics & reporting",
+      "Corporate REST API with division-scoped (X-Division-Id) access",
+      "Dedicated onboarding & priority support",
+    ],
+    notIncluded: [],
+    cta: "Contact Us",
+    ctaHref: "/beta",
     highlight: false,
   },
 ];

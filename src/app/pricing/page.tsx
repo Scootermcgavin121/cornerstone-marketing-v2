@@ -9,7 +9,7 @@ import { PricingStructuredData } from "@/components/PricingStructuredData";
 export const metadata: Metadata = {
   title: "Pricing | Cornerstone PM\u2122 \u2014 Home Builder Software from $149/mo",
   description:
-    "4-tier pricing for home builder software. Starter $149/mo, Builder $299/mo, Pro $499/mo, Pro+ $599/mo. Up to 60 users. No per-seat fees on base plans. No implementation cost. Annual billing saves 2 months.",
+    "Pricing for home builder software. Starter $149/mo, Builder $299/mo, Pro $499/mo, Pro+ $599/mo, plus a custom Enterprise tier for multi-division builders. Up to 60 users. No per-seat fees on base plans. No implementation cost. Annual billing saves 2 months.",
   alternates: { canonical: "https://www.cornerstonepm.ai/pricing" },
   openGraph: {
     title: "Pricing | Cornerstone PM\u2122",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const faqs: FAQItem[] = [
   {
     q: "How much does Cornerstone PM\u2122 cost?",
-    a: "Cornerstone PM\u2122 starts at $149/mo for the Starter plan (scheduling, permitting, homeowner portal). Builder is $299/mo and adds the full purchasing module with sales pipeline and design center. Pro is $499/mo and unlocks the entire AI suite \u2014 Foreman AI\u2122, Blueprint AI, and Bid Import AI. Pro+ is $599/mo with the MCP server, REST API + Webhooks included and 60 user seats. Annual billing saves 2 months.",
+    a: "Cornerstone PM\u2122 starts at $149/mo for the Starter plan (scheduling, permitting, homeowner portal). Builder is $299/mo and adds the full purchasing module with sales pipeline and design center. Pro is $499/mo and unlocks the entire AI suite \u2014 Foreman AI\u2122, Blueprint AI, and Bid Import AI. Pro+ is $599/mo with the MCP server, REST API + Webhooks included and 60 user seats. For builders running multiple divisions, regions, or brands, the Enterprise tier adds multi-division management and corporate-level access at custom pricing \u2014 contact us. Annual billing saves 2 months.",
   },
   {
     q: "How many users can I have?",
@@ -52,6 +52,10 @@ const faqs: FAQItem[] = [
   {
     q: "Can I connect my own AI tools or add REST API access?",
     a: "The MCP server, REST API + BYOA are Pro+ exclusives ($599/mo) — not available as add-ons on lower tiers. The built-in MCP server is the no-code on-ramp: generate a key and point Claude Desktop, Cursor, or Windsurf at Cornerstone in ~30 seconds. The REST API + BYOA is the full-control path: 150+ API endpoints, scoped API keys, and 37+ HMAC-signed webhook events. Both hit the same catalog — every endpoint maps to one of Foreman\u2019s 396+ skills, so your AI tool gets the same toolbox Foreman uses internally and grows automatically every time we ship a new skill. The cleanest path to all of it is just upgrading to Pro+ ($100/mo more than Pro).",
+  },
+  {
+    q: "Do you support builders with multiple divisions or brands?",
+    a: "Yes \u2014 that's exactly what the Enterprise tier is for. If you operate multiple builder divisions, regions, or brands, Enterprise gives you one corporate account that spans all of them: multi-division management (up to 5 divisions included, more available), a corporate admin with cross-division access, a division switcher so you can move between brands with one login, corporate-level user roles (CORPORATE_ADMIN, CORPORATE_PURCHASING, CORPORATE_SALES, and more), centralized purchasing across divisions, cross-division analytics & reporting, and a corporate REST API with division-scoped (X-Division-Id) access for cross-division automation. It includes dedicated onboarding and priority support. Enterprise is custom-priced \u2014 contact us for a quote and a demo.",
   },
   {
     q: "Can I export my data?",
@@ -99,9 +103,10 @@ export default function PricingPage() {
             </span>
           </h1>
           <p className="text-lg sm:text-xl text-white/70 max-w-2xl mx-auto mb-8">
-            Home builder software from $149/mo. Four plans that scale with your
+            Home builder software from $149/mo. Plans that scale with your
             business &mdash; from scheduling-focused Starter to the full AI
-            platform on Pro+. Zero implementation cost. Annual billing saves 2
+            platform on Pro+, plus a custom Enterprise tier for multi-division
+            builders. Zero implementation cost. Annual billing saves 2
             months.
           </p>
           <div className="flex flex-wrap justify-center gap-3 text-sm">

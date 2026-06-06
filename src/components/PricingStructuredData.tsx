@@ -26,7 +26,7 @@ export function PricingStructuredData() {
           "priceCurrency": "USD",
           "lowPrice": "149",
           "highPrice": "599",
-          "offerCount": "4",
+          "offerCount": "5",
           "offers": [
             {
               "@type": "Offer",
@@ -95,6 +95,21 @@ export function PricingStructuredData() {
               "url": "https://cornerstonepm.ai/pricing",
               "description":
                 "Everything in Pro plus full REST API access, BYOA automated bidding pipeline, Foreman AI (Claude Sonnet 4, 930 conversations/mo), Blueprint AI (310/mo), scoped API keys, 37+ named webhook events, SSO, SLA. Up to 60 users.",
+            },
+            {
+              "@type": "Offer",
+              "name": "Enterprise — Corporate / Multi-Division",
+              "priceCurrency": "USD",
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "priceCurrency": "USD",
+                "billingDuration": "P1M",
+                "unitText": "custom pricing — contact sales",
+              },
+              "availability": "https://schema.org/InStock",
+              "url": "https://cornerstonepm.ai/pricing",
+              "description":
+                "For builders operating multiple divisions, regions, or brands. Everything in Pro+ plus multi-division management (up to 5 divisions included), a corporate admin with cross-division access, a division switcher (one login, all brands), corporate user roles, centralized cross-division purchasing, cross-division analytics & reporting, a corporate REST API with division-scoped (X-Division-Id) access, and dedicated onboarding with priority support. Custom pricing — contact sales.",
             },
           ],
         },
