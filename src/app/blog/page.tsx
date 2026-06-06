@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "vendor-bid-requests-portal-no-login",
+    title: "Send a Bid Request to 10 Vendors in One Click (No Vendor Login Required)",
+    excerpt:
+      "Most construction bid workflows involve a chain of manual steps: email a spreadsheet, wait for a reply, re-format the numbers, compare manually. Cornerstone PM replaces that entire chain — scope-filtered Excel templates auto-generated per vendor, a no-login portal for submission, and side-by-side comparison when two or more bids land.",
+    date: "June 6, 2026",
+    readTime: "7 min read",
+    tag: "Purchasing",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/vendor-bid-requests-portal.png",
+  },
+  {
     slug: "crm-migration-wizard-switch-construction-software",
     title: "Switching Construction Software Without the Migration Tax",
     excerpt:
