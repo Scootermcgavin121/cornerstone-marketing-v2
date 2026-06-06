@@ -400,8 +400,9 @@
       "wordCount": 1100,
       "heroImage": "/blog/vendor-bid-requests-portal.png",
       "heroImageAlt": "Construction bid request software showing scope-filtered Excel templates and a no-login vendor portal in Cornerstone PM",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "b363490",
+      "publishedAt": "2026-06-06T14:03:47.839Z"
     },
     {
       "slug": "foreman-ai-product-image-web-scraping",
