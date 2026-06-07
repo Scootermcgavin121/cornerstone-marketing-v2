@@ -415,8 +415,9 @@
       "wordCount": 900,
       "heroImage": "/blog/foreman-product-image-search.png",
       "heroImageAlt": "AI construction product image search in Foreman AI pulling supplier images into a Cornerstone PM design option",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "e47383f",
+      "publishedAt": "2026-06-07T16:30:15.721Z"
     },
     {
       "slug": "knowify-vs-cornerstone-production-home-builder",
