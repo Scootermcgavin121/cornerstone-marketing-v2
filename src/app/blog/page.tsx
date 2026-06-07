@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "foreman-ai-product-image-web-scraping",
+    title: "Foreman AI Finds the Product, Hosts the Image, and Attaches It in One Breath",
+    excerpt:
+      "Every design team has the same problem: you paste an image link from a supplier site and six months later it's dead. Foreman AI searches for the product image, saves it to permanent hosted storage, and attaches it to your design option — all in one instruction. Anti-bot web scraping included.",
+    date: "June 7, 2026",
+    readTime: "6 min read",
+    tag: "AI & Automation",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/foreman-product-image-search.png",
+  },
+  {
     slug: "vendor-bid-requests-portal-no-login",
     title: "Send a Bid Request to 10 Vendors in One Click (No Vendor Login Required)",
     excerpt:
