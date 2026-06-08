@@ -91,6 +91,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/api-operations-construction-software-ai-agents", priority: 0.8, changeFrequency: "monthly" as const },
     { url: "/blog/vendor-bid-requests-portal-no-login", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/foreman-ai-product-image-web-scraping", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/knowify-vs-cornerstone-production-home-builder", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({

@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "knowify-vs-cornerstone-production-home-builder",
+    title: "Knowify vs Cornerstone PM: Trade Contractor Tool vs Production Home Builder Platform",
+    excerpt:
+      "Knowify is a solid platform for trade contractors doing job costing, AIA billing, and subcontract management. But production home builders need a fundamentally different category of tool: floorplan-level options pricing, 64 Designer Packages, exclusion groups, auto-quantity scope items, and Foreman AI with 396+ skills. Here\u2019s the honest comparison.",
+    date: "June 8, 2026",
+    readTime: "7 min read",
+    tag: "Comparison",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/knowify-vs-cornerstone.png",
+  },
+  {
     slug: "foreman-ai-product-image-web-scraping",
     title: "Foreman AI Finds the Product, Hosts the Image, and Attaches It in One Breath",
     excerpt:
