@@ -432,6 +432,76 @@
       "heroImageAlt": "Knowify alternative for home builders compared to Cornerstone PM production builder platform with design center",
       "status": "pending",
       "publishedCommit": null
+    },
+    {
+      "slug": "enterprise-multi-division-home-builder-software",
+      "title": "Multi-Division Home Builder Software: How Cornerstone PM Enterprise Works",
+      "metaDescription": "Cornerstone PM Enterprise gives every division full Pro+ — REST API, BYOA, 396+ Foreman skills — plus corporate admin and cross-division analytics from $500/division.",
+      "primaryKeyword": "multi-division home builder software",
+      "hub": "/home-builder-project-management-software",
+      "angle": "Feature deep-dive on the new Enterprise tier (decided 2026-06-07). Most platforms make 'enterprise' a stripped-down, call-for-quote black box. Cornerstone's Enterprise is the opposite: every division gets the FULL Pro+ platform (REST API, BYOA, all 396+ Foreman skills, 60 seats) plus a corporate layer — division switcher, corporate admin, cross-division analytics, and an X-Division-Id scoped API. Pricing is public and volume-tiered: $500/division/mo for the first 5 divisions, $450/division/mo after that — a real discount off standalone Pro+ ($599) from division #1. Frame for regional and multi-brand builders running several operating companies who are tired of duplicate logins and siloed reporting. Link to /pricing and /foreman.",
+      "schema": "FAQPage",
+      "wordCount": 1100,
+      "heroImage": "/blog/enterprise-multi-division.png",
+      "heroImageAlt": "Multi-division home builder software dashboard showing cross-division analytics and corporate admin in Cornerstone PM Enterprise",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "construction-ai-context-memory-long-sessions",
+      "title": "Why Most Construction AI Forgets — and How Foreman Doesn't",
+      "metaDescription": "Most construction AI tools crash or forget mid-task. Foreman's memory compaction keeps working through 200+ option cleanups and full catalog imports without losing context.",
+      "primaryKeyword": "construction AI that doesn't forget",
+      "hub": "/foreman",
+      "angle": "Feature deep-dive on Foreman's built-in memory compaction and context health meter. Competing AI tools hit a context wall — they crash, hallucinate, or forget what you said five minutes ago — right when you're deep in a marathon task. Foreman auto-summarizes older messages intelligently so it keeps working through 200+ option cleanups, full catalog imports, and multi-step purchasing workflows. Pair that with the green/yellow/red context health meter (so users know when to start fresh) and per-user memory that carries name, role, and vendor preferences across sessions. No other construction AI does compaction. Angle: 'It's not a chatbot — it's an agent that survives the long haul.' Link to /foreman and the foreman-ai-memory post.",
+      "schema": null,
+      "wordCount": 1000,
+      "heroImage": "/blog/foreman-context-memory.png",
+      "heroImageAlt": "Construction AI that doesn't forget — Foreman context health meter and memory compaction during a long purchasing session",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "promote-standard-finish-to-upgrade-design-center",
+      "title": "How to Turn Any Standard Finish Into a Paid Upgrade in Your Design Center",
+      "metaDescription": "Cornerstone's Design Center lets builders control included-vs-upgrade down to a single option. Promote any standard finish to a paid upgrade with one spec-level change.",
+      "primaryKeyword": "design center upgrade pricing home builder",
+      "hub": "/design",
+      "angle": "How-to / feature deep-dive on granular included-vs-upgrade control (2026-06-05). Most design-center tools only let you toggle whole categories as included or not. Cornerstone goes down to the individual option: open the option under Purchasing -> Options, change its Spec Level to Upgrade I/II or Premium, save — and it drops out of the base price and becomes a paid +$X upgrade. For excluding an entire option class, the Standard/Upgrade toggle on the Spec Levels page handles it. Walk through both flows with a concrete example (e.g. promoting a standard cabinet pull to an upgrade). Tie to margin protection and community-based upgrade pricing. Link to /design and /purchasing.",
+      "schema": "HowTo",
+      "wordCount": 1000,
+      "heroImage": "/blog/standard-to-upgrade.png",
+      "heroImageAlt": "Design center upgrade pricing — promoting a standard finish to a paid upgrade via spec level change in Cornerstone PM",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "bid-import-ai-takeoff-pricing-modes",
+      "title": "Bid Import AI: Takeoff-Only, Pricing-Only, or Both — Without Duplicates",
+      "metaDescription": "Cornerstone's Bid Import AI matches scopes accurately and replaces instead of duplicating on re-import. Choose takeoff-only, pricing-only, or takeoff+pricing modes.",
+      "primaryKeyword": "bid import software home builder",
+      "hub": "/purchasing",
+      "angle": "Feature deep-dive on the Bid Import AI improvements. Builders re-import vendor bids constantly as numbers change, and legacy tools either duplicate line items or land 'Drywall' inside 'Electrical.' Cornerstone fixes both: three import modes (takeoff-only, pricing-only, takeoff+pricing) so you pull exactly what you need, AI scope matching with cross-scope penalties so trades stay in their lane, and pricing that REPLACES instead of duplicating on re-import. Show how this keeps the Master Cost Budget clean across bid rounds. Mention how it pairs with the vendor bid portal (no-login) and allowances for non-bid placeholders. Link to /purchasing and the vendor-bid-requests post.",
+      "schema": null,
+      "wordCount": 1000,
+      "heroImage": "/blog/bid-import-ai.png",
+      "heroImageAlt": "Bid import software for home builders — Cornerstone Bid Import AI scope matching with takeoff and pricing modes",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "hidden-cost-switching-construction-software-migration",
+      "title": "The Hidden Cost of Switching Construction Software (and How to Kill It)",
+      "metaDescription": "Migration is the #1 reason builders stay locked into the wrong software. Cornerstone's AI CRM Migration Wizard imports from Buildertrend, JobTread, and more for ~$0.01.",
+      "primaryKeyword": "switching construction software cost",
+      "hub": "/home-builder-project-management-software",
+      "angle": "Pain-point / TCO post that leverages the CRM Migration Wizard. The real cost of staying on the wrong platform isn't the subscription — it's the switching cost: weeks of re-keying data, white-glove migration fees, and the fear of losing history. Cornerstone removes that wall: the AI Migration Wizard auto-detects the source platform (Buildertrend, JobTread, CoConstruct, Procore, or any CSV/Excel) and maps columns automatically, for roughly a penny per migration versus competitors' paid migration packages. Frame the TCO honestly: list the line items builders forget (data re-entry labor, downtime, training, lock-in) and show how one-click import collapses them. Link to /home-builder-project-management-software and the crm-migration-wizard post.",
+      "schema": "FAQPage",
+      "wordCount": 1100,
+      "heroImage": "/blog/switching-cost-migration.png",
+      "heroImageAlt": "Hidden cost of switching construction software — Cornerstone PM AI CRM migration wizard importing from Buildertrend and JobTread",
+      "status": "pending",
+      "publishedCommit": null
     }
   ]
 }
