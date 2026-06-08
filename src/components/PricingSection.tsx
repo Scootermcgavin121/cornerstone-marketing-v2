@@ -134,9 +134,14 @@ export function PricingSection() {
                       <span className="text-5xl font-black bg-gradient-to-r from-violet-300 to-cyan-300 bg-clip-text text-transparent">
                         {plan.customPriceLabel ?? "Custom"}
                       </span>
+                      {plan.customPriceSuffix && (
+                        <span className="text-violet-300/90 text-sm">
+                          {plan.customPriceSuffix}
+                        </span>
+                      )}
                     </div>
                     <p className="text-xs text-violet-300/80 mb-4">
-                      Tailored to your divisions
+                      {plan.customPriceSubline ?? "Tailored to your divisions"}
                     </p>
                   </>
                 ) : (

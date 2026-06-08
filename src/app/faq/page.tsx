@@ -196,11 +196,11 @@ const pricing: Category = {
     {
       q: "Do you offer annual billing or discounts?",
       aText:
-        "Yes. Annual billing is available for Builder, Pro, and Pro+ plans at a discount vs monthly. Contact us for annual quotes and custom pricing for production builders running more than 1,000 active homes.",
+        "Yes. Annual billing is available for Builder, Pro, and Pro+ plans at a discount vs monthly. For corporate / multi-division builders, the Enterprise tier is $500/division/mo for your first 5 divisions, then $450/division/mo - every division gets the full Pro+ platform plus a corporate admin layer. Contact us for annual quotes and Enterprise / multi-division pricing.",
       a: (
         <>
-          Yes. Annual billing is available for Builder, Pro, and Pro+ plans at a discount vs monthly. <A href="/contact">Contact us</A>{" "}
-          for annual quotes and custom pricing for production builders running more than 1,000 active homes.
+          Yes. Annual billing is available for Builder, Pro, and Pro+ plans at a discount vs monthly. For corporate / multi-division builders, the <strong>Enterprise</strong> tier is <strong>$500/division/mo</strong> for your first 5 divisions, then <strong>$450/division/mo</strong> &mdash; every division gets the full Pro+ platform plus a corporate admin layer. <A href="/contact">Contact us</A>{" "}
+          for annual quotes and Enterprise / multi-division pricing.
         </>
       ),
     },

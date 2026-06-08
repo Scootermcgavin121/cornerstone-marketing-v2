@@ -49,8 +49,12 @@ export interface Plan {
    * customPriceLabel instead of a dollar figure and skips annual math.
    */
   enterprise?: boolean;
-  /** Text shown where the price normally renders (e.g. "Custom"). */
+  /** Text shown where the price normally renders (e.g. "$500"). */
   customPriceLabel?: string;
+  /** Small suffix rendered after customPriceLabel (e.g. "/division/mo"). */
+  customPriceSuffix?: string;
+  /** Sub-line under the enterprise price (e.g. the volume-break explainer). */
+  customPriceSubline?: string;
   /** One-liner under the plan name. */
   description: string;
   /** Target audience ("1-10 homes/yr", etc). */
@@ -208,9 +212,12 @@ export const PLANS: Plan[] = [
   {
     id: "enterprise",
     name: "Enterprise",
-    price: 0,
+    price: 500,
     enterprise: true,
-    customPriceLabel: "Custom",
+    customPriceLabel: "$500",
+    customPriceSuffix: "/division/mo",
+    customPriceSubline:
+      "First 5 divisions $500 each, then $450/division. Every division is full Pro+.",
     description:
       "Corporate & multi-division builders. One account, every brand.",
     target: "Multi-division / multi-brand",
@@ -218,8 +225,9 @@ export const PLANS: Plan[] = [
     bonusBadge: "Multi-division platform",
     maxUsers: 60,
     features: [
-      "Everything in Pro+, plus:",
-      "Multi-division management (up to 5 divisions included)",
+      "Full Pro+ platform for every division — REST API, BYOA, all 396+ Foreman skills, 60 seats per division",
+      "$500/division/mo for your first 5 divisions",
+      "$450/division/mo for every division after that",
       "Corporate admin with cross-division access",
       "Division switcher — one login, all brands",
       "Corporate user roles (CORPORATE_ADMIN, PURCHASING, SALES & more)",

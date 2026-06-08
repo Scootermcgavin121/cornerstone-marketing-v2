@@ -110,7 +110,7 @@ export function StructuredData() {
             "name": "How much does Cornerstone PM cost?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Cornerstone PM starts at $149/mo for the Starter plan (scheduling + buyer portal, up to 30 users (60 on Pro+)). Builder is $299/mo (adds purchasing, sales, design center). Pro is $499/mo (adds Foreman AI with 396+ skills and Blueprint AI). Pro+ is $599/mo (adds full REST API, automated bidding pipeline, and enterprise AI). All plans include up to 30 users (60 on Pro+) with no per-seat fees within your tier. Beta access is free for 2 years, limited to the first 100 builders.",
+              "text": "Cornerstone PM starts at $149/mo for the Starter plan (scheduling + buyer portal, up to 30 users (60 on Pro+)). Builder is $299/mo (adds purchasing, sales, design center). Pro is $499/mo (adds Foreman AI with 396+ skills and Blueprint AI). Pro+ is $599/mo (adds full REST API, automated bidding pipeline, and enterprise AI). Enterprise is for corporate / multi-division builders at $500/division/mo for the first 5 divisions, then $450/division/mo - every division gets the full Pro+ platform plus a corporate admin layer. All plans include up to 30 users (60 on Pro+) with no per-seat fees within your tier. Beta access is free for 2 years, limited to the first 100 builders.",
             },
           },
           {

@@ -99,17 +99,24 @@ export function PricingStructuredData() {
             {
               "@type": "Offer",
               "name": "Enterprise — Corporate / Multi-Division",
+              "price": "500",
               "priceCurrency": "USD",
               "priceSpecification": {
                 "@type": "UnitPriceSpecification",
+                "price": "500",
                 "priceCurrency": "USD",
                 "billingDuration": "P1M",
-                "unitText": "custom pricing — contact sales",
+                "unitText": "per division / month (first 5 divisions; $450/division thereafter)",
+                "referenceQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": "1",
+                  "unitText": "division",
+                },
               },
               "availability": "https://schema.org/InStock",
               "url": "https://cornerstonepm.ai/pricing",
               "description":
-                "For builders operating multiple divisions, regions, or brands. Everything in Pro+ plus multi-division management (up to 5 divisions included), a corporate admin with cross-division access, a division switcher (one login, all brands), corporate user roles, centralized cross-division purchasing, cross-division analytics & reporting, a corporate REST API with division-scoped (X-Division-Id) access, and dedicated onboarding with priority support. Custom pricing — contact sales.",
+                "For builders operating multiple divisions, regions, or brands. Every division gets the full Pro+ platform (REST API, BYOA, all 396+ Foreman skills, 60 seats). $500/division/mo for your first 5 divisions, then $450/division/mo. Adds corporate admin with cross-division access, a division switcher (one login, all brands), corporate user roles, centralized cross-division purchasing, cross-division analytics & reporting, a corporate REST API with division-scoped (X-Division-Id) access, and dedicated onboarding with priority support.",
             },
           ],
         },
