@@ -430,8 +430,9 @@
       "wordCount": 1100,
       "heroImage": "/blog/knowify-vs-cornerstone.png",
       "heroImageAlt": "Knowify alternative for home builders compared to Cornerstone PM production builder platform with design center",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "60bd96c",
+      "publishedAt": "2026-06-08T14:03:50.781Z"
     },
     {
       "slug": "enterprise-multi-division-home-builder-software",
