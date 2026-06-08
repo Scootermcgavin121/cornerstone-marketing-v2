@@ -130,12 +130,12 @@ export function PricingSection() {
 
                 {plan.enterprise ? (
                   <>
-                    <div className="flex items-baseline gap-1 mb-1">
-                      <span className="text-5xl font-black bg-gradient-to-r from-violet-300 to-cyan-300 bg-clip-text text-transparent">
+                    <div className="flex items-baseline flex-wrap gap-x-1 gap-y-0.5 mb-1">
+                      <span className="text-4xl font-black bg-gradient-to-r from-violet-300 to-cyan-300 bg-clip-text text-transparent">
                         {plan.customPriceLabel ?? "Custom"}
                       </span>
                       {plan.customPriceSuffix && (
-                        <span className="text-violet-300/90 text-sm">
+                        <span className="text-violet-300/90 text-sm whitespace-nowrap">
                           {plan.customPriceSuffix}
                         </span>
                       )}
@@ -178,19 +178,19 @@ export function PricingSection() {
                   {plan.features.map((feat) => (
                     <li
                       key={feat}
-                      className="flex items-start gap-2.5 text-sm text-slate-300"
+                      className="flex items-start gap-2.5 text-sm text-slate-300 break-words [overflow-wrap:anywhere] min-w-0"
                     >
                       <Check className="w-4 h-4 text-emerald-400 mt-0.5 flex-shrink-0" />
-                      {feat}
+                      <span className="min-w-0">{feat}</span>
                     </li>
                   ))}
                   {plan.notIncluded.map((feat) => (
                     <li
                       key={feat}
-                      className="flex items-start gap-2.5 text-sm text-slate-600"
+                      className="flex items-start gap-2.5 text-sm text-slate-600 break-words [overflow-wrap:anywhere] min-w-0"
                     >
                       <X className="w-4 h-4 text-slate-700 mt-0.5 flex-shrink-0" />
-                      {feat}
+                      <span className="min-w-0">{feat}</span>
                     </li>
                   ))}
                 </ul>
