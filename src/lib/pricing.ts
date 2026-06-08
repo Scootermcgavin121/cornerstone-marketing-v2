@@ -231,6 +231,8 @@ export const PLANS: Plan[] = [
       "Corporate admin with cross-division access",
       "Division switcher — one login, all brands",
       "Corporate user roles (CORPORATE_ADMIN, PURCHASING, SALES & more)",
+      "Custom permission toggles for every role at the division level — flip any permission on or off per division",
+      "Custom sync toggles — pick exactly what data flows down from corporate to each division",
       "Centralized purchasing across divisions",
       "Cross-division analytics & reporting",
       "Corporate REST API with division-scoped (X-Division-Id) access",
