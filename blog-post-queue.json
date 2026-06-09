@@ -445,8 +445,9 @@
       "wordCount": 1100,
       "heroImage": "/blog/enterprise-multi-division.png",
       "heroImageAlt": "Multi-division home builder software dashboard showing cross-division analytics and corporate admin in Cornerstone PM Enterprise",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "3386791",
+      "publishedAt": "2026-06-09T14:03:41.073Z"
     },
     {
       "slug": "construction-ai-context-memory-long-sessions",
