@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "enterprise-multi-division-home-builder-software",
+    title: "Multi-Division Home Builder Software: How Cornerstone PM Enterprise Works",
+    excerpt:
+      "Enterprise doesn\u2019t mean stripped-down features and a call-for-pricing black box. Cornerstone PM Enterprise gives every division the full Pro+ platform\u2014REST API, BYOA, 396+ Foreman skills, 60 seats\u2014plus a corporate layer with a division switcher, cross-division analytics, and an X-Division-Id scoped API. $500/division/mo for the first five.",
+    date: "June 9, 2026",
+    readTime: "7 min read",
+    tag: "Enterprise",
+    tagColor: "text-cyan-400 bg-cyan-500/10 border-cyan-500/20",
+    heroImage: "/blog/enterprise-multi-division.png",
+  },
+  {
     slug: "knowify-vs-cornerstone-production-home-builder",
     title: "Knowify vs Cornerstone PM: Trade Contractor Tool vs Production Home Builder Platform",
     excerpt:
