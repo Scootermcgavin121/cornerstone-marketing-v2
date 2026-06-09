@@ -347,6 +347,7 @@ Elevations now have their own dedicated page at Purchasing &rarr; Elevations Man
 - **Inline-editable retail price** - each elevation has a retail price adder that gets added to the base home price; edit it inline, no separate forms
 - **Expandable takeoffs** - expand any elevation card to view and edit its material takeoffs: add parts, add scope items, and edit quantities
 - **Cost computed from vendor pricing** - the elevation's cost is calculated automatically from real vendor pricing, never typed in by hand
+- **Standard elevation shows real costs** - the standard elevation's takeoffs always live on the elevation itself (not hidden in the base house). The budget engine computes actual material costs for ALL elevations. "Standard" just means included in the base price with $0 retail adder &mdash; upgrade elevations show their additional cost + retail price adder
 - **Create / delete elevations** - spin up or remove elevations directly from the manager
 - **AI-managed** - Foreman can manage elevations conversationally with 9 new skills: create elevations, add parts and scope items, edit quantities, and set retail pricing entirely through natural conversation
 
