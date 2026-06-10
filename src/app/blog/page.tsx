@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "construction-ai-context-memory-long-sessions",
+    title: "Why Most Construction AI Forgets \u2014 and How Foreman Doesn\u2019t",
+    excerpt:
+      "Most construction AI tools hit a context wall mid-task and silently degrade\u2014or crash. Foreman AI uses built-in memory compaction to survive 200+ option cleanups, full catalog imports, and marathon purchasing sessions. It\u2019s paired with a real-time context health meter and per-user memory that carries your preferences across every session.",
+    date: "June 10, 2026",
+    readTime: "6 min read",
+    tag: "AI & Automation",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/foreman-context-memory.png",
+  },
+  {
     slug: "enterprise-multi-division-home-builder-software",
     title: "Multi-Division Home Builder Software: How Cornerstone PM Enterprise Works",
     excerpt:
