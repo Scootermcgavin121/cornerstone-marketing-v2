@@ -460,8 +460,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/foreman-context-memory.png",
       "heroImageAlt": "Construction AI that doesn't forget — Foreman context health meter and memory compaction during a long purchasing session",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "9cacf66",
+      "publishedAt": "2026-06-10T14:32:36.255Z"
     },
     {
       "slug": "promote-standard-finish-to-upgrade-design-center",
