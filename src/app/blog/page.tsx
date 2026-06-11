@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "promote-standard-finish-to-upgrade-design-center",
+    title: "How to Turn Any Standard Finish Into a Paid Upgrade in Your Design Center",
+    excerpt:
+      "Most design-center tools only let you toggle whole categories as included or not. Cornerstone PM goes down to the individual option: open the option, change its Spec Level to Upgrade I, II, or Premium, save\u2014and it drops out of the base price instantly. One change, propagated to every plan and every community at once.",
+    date: "June 11, 2026",
+    readTime: "6 min read",
+    tag: "Design Center",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/standard-to-upgrade.png",
+  },
+  {
     slug: "construction-ai-context-memory-long-sessions",
     title: "Why Most Construction AI Forgets \u2014 and How Foreman Doesn\u2019t",
     excerpt:

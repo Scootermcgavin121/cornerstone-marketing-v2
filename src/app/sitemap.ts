@@ -94,6 +94,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/enterprise-multi-division-home-builder-software", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/knowify-vs-cornerstone-production-home-builder", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/construction-ai-context-memory-long-sessions", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/promote-standard-finish-to-upgrade-design-center", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({
