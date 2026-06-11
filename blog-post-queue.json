@@ -475,8 +475,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/standard-to-upgrade.png",
       "heroImageAlt": "Design center upgrade pricing — promoting a standard finish to a paid upgrade via spec level change in Cornerstone PM",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "ceff01f",
+      "publishedAt": "2026-06-11T14:03:17.205Z"
     },
     {
       "slug": "bid-import-ai-takeoff-pricing-modes",
