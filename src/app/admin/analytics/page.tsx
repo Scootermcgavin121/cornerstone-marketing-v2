@@ -247,6 +247,12 @@ export default async function AdminAnalyticsPage() {
             href={ga4Url}
             cta="Open GA4"
             note="Measurement ID is set in src/components/GoogleAnalytics.tsx (override with NEXT_PUBLIC_GA_MEASUREMENT_ID). If GA opens the property picker, pick the cornerstonepm.ai property."
+            highlight={{
+              label: "✨ New: GA4 AI Assistant",
+              body: "GA4 now has a built-in conversational AI — ask plain-English questions (\u201chow many leads came from organic last month?\u201d) and get answers + automated insights from your existing data. No setup needed; it lives inside this same property. Rolling out per-account, so it may not be visible in the console yet.",
+              href: "https://support.google.com/analytics/answer/12923437",
+              linkText: "Read Google\u2019s overview \u2197",
+            }}
           />
 
           <ServiceCard
@@ -399,6 +405,7 @@ function ServiceCard({
   cta,
   note,
   internal,
+  highlight,
 }: {
   name: string;
   icon: React.ReactNode;
@@ -409,6 +416,7 @@ function ServiceCard({
   cta: string;
   note?: string;
   internal?: boolean;
+  highlight?: { label: string; body: string; href: string; linkText: string };
 }) {
   return (
     <div className="rounded-xl border border-slate-800 bg-slate-900/40 p-5 flex flex-col">
@@ -429,6 +437,21 @@ function ServiceCard({
 
       {note && (
         <p className="text-xs text-slate-600 italic mb-4 leading-relaxed">{note}</p>
+      )}
+
+      {highlight && (
+        <div className="mb-4 rounded-lg border border-amber-500/30 bg-amber-500/[0.06] p-3">
+          <p className="text-xs font-semibold uppercase tracking-wider text-amber-300 mb-1.5">{highlight.label}</p>
+          <p className="text-xs text-slate-300 leading-relaxed mb-2">{highlight.body}</p>
+          <a
+            href={highlight.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs font-semibold text-amber-300 hover:text-amber-200"
+          >
+            {highlight.linkText}
+          </a>
+        </div>
       )}
 
       <div className="mt-auto">
