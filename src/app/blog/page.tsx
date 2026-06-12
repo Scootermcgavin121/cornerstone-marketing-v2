@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "bid-import-ai-takeoff-pricing-modes",
+    title: "Bid Import AI: Takeoff-Only, Pricing-Only, or Both \u2014 Without Duplicates",
+    excerpt:
+      "Builders re-import vendor bids constantly as numbers change, and legacy tools either duplicate line items or misplace \u2018Drywall\u2019 inside \u2018Electrical.\u2019 Cornerstone\u2019s Bid Import AI fixes both: three targeted import modes, cross-scope penalty matching so trades stay in their lane, and pricing that replaces instead of duplicating on re-import. Your Master Cost Budget stays clean through every re-bid cycle.",
+    date: "June 12, 2026",
+    readTime: "6 min read",
+    tag: "Purchasing",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/bid-import-ai.png",
+  },
+  {
     slug: "promote-standard-finish-to-upgrade-design-center",
     title: "How to Turn Any Standard Finish Into a Paid Upgrade in Your Design Center",
     excerpt:
