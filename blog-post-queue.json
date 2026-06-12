@@ -490,8 +490,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/bid-import-ai.png",
       "heroImageAlt": "Bid import software for home builders — Cornerstone Bid Import AI scope matching with takeoff and pricing modes",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "cb40fc5",
+      "publishedAt": "2026-06-12T14:03:17.548Z"
     },
     {
       "slug": "hidden-cost-switching-construction-software-migration",
