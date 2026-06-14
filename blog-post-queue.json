@@ -505,8 +505,9 @@
       "wordCount": 1100,
       "heroImage": "/blog/switching-cost-migration.png",
       "heroImageAlt": "Hidden cost of switching construction software — Cornerstone PM AI CRM migration wizard importing from Buildertrend and JobTread",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "44a4cb2",
+      "publishedAt": "2026-06-14T14:03:44.295Z"
     }
   ]
 }
