@@ -897,10 +897,23 @@ Cornerstone's AI-powered takeoff system eliminates manual material estimation. *
 - **Purchase Orders - Four Generation Patterns** - Most construction platforms hard-code one PO model. Cornerstone gives you four, mixable on the same job:
   1. **All POs at job start** - generate every PO across the entire build the moment the home is approved. Locks in budget exposure on day one. Best for established builder-vendor relationships where vendors need full upfront visibility.
   2. **Deposit / partial POs from earlier pipeline tasks** - need to pay a deposit at permit pull, contract signing, or foundation pour? Generate a partial deposit PO from any earlier pipeline task before the work is done, then top it up later.
-  3. **Auto-generate full PO on task completion** - when a construction task is marked complete, the system auto-generates the full PO for that scope and vendor. Cash goes out only when work is verifiably done.
+  3. **Auto-generate PO on task completion (draft-first)** - when a construction task is marked complete, the system generates the associated PO **as a draft** for the PM to review before sending. The draft is auto-populated with the correct parts + scope items (via cost codes) at the right quantities for that specific home's floorplan, plus vendor info and pricing - zero manual data entry. Cash goes out only when work is verifiably done, and only after a human approves. See the dedicated section below.
   4. **Configurable per task, scope, or community** - turn PO generation on/off for specific tasks, scopes, or communities. Mix all three patterns above on the same home (e.g., framing PO at job start, drywall deposit at permit, electrical full PO on task completion).
   - All four patterns are configurable in Settings. Your cash flow rules drive the system, not the other way around.
   - POs track vendor deliveries and invoicing. Webhooks fire on po.created and po.status_changed.
+
+### Task-Completion PO Generation (Draft-First)
+Cornerstone can **generate a Purchase Order automatically the moment a construction task is marked complete** - so you never forget to order materials for the next phase.
+
+- **Draft-first workflow** - the PO is created as a **draft**, not sent. The PM reviews it before it ever reaches the vendor. You always review before you spend.
+- **Auto-populated from the system** - each draft PO is filled in with the correct **parts + scope items (via cost codes)** at the right quantities for that specific home's floorplan, plus the right vendor and pricing. Zero manual data entry.
+- **Explicit mapping, no fuzzy matching** - the chain is deterministic: **Construction Task → Cost Code → Takeoff Items → Draft PO**. The system knows exactly which materials belong on the PO because the cost code links them.
+- **Per-phase precision** - because cost codes break a trade into phases, your plumber gets exactly the right materials list for each visit (the Underground PO for the underground visit, the Trim PO for the trim visit) - not one giant trade PO.
+- **Downloadable as PDF** - every PO can be downloaded as a PDF, so builders can manually email vendors if they prefer to keep their existing communication flow.
+- **Why it's a differentiator:** No residential construction platform auto-generates POs from task completion at this level of detail. BuilderTrend and CoConstruct require fully manual PO creation. Cornerstone pre-fills quantities, pricing, and vendor info automatically and still keeps a human in the loop with draft-first review.
+
+**Q: Do I have to create purchase orders manually?**
+A: No. Cornerstone can auto-generate a PO the moment a construction task is marked complete. It's created as a **draft** first - auto-populated with the right parts, scope items, quantities, vendor, and pricing for that home's floorplan (via cost codes) - and the PM reviews it before sending. You can also download any PO as a PDF to email the vendor yourself. The mapping is explicit (Task → Cost Code → Takeoff Items → Draft PO), so there's zero manual data entry and nothing gets forgotten when a phase wraps. BuilderTrend and CoConstruct require fully manual PO creation; Cornerstone does the work and keeps you in control with draft-first review.
 
 ### Cost Codes - Hierarchical Phase-Level Cost Tracking
 Cornerstone supports **cost codes** - a hierarchy that lives *underneath* trade scopes for granular, phase-level cost tracking. Think of scopes (Plumbing, Electrical, HVAC) as the **vendor relationship** level, and cost codes as the **phase-level detail** beneath them.
