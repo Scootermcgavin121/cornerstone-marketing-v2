@@ -1081,6 +1081,13 @@ All plans are monthly subscriptions, no long-term contracts required. Starting a
 
 **Add-ons:** Power User Seat +$149/seat/mo (Pro and Pro+, elevated AI limits). REST API + BYOA is a Pro+ exclusive — not available as an add-on; upgrade to Pro+ ($100/mo more than Pro) to unlock the API and bring your own agent (Claude, ChatGPT, n8n, Twilio, Bland, Retell).
 
+### Plan Limits & Policies
+- **Customer (buyer) record limit:** Each organization can have up to **1,000 active customer records**. Organizations approaching the limit (900+) receive in-app warnings. Once the limit is reached, new customers can't be added until existing records are deleted. Need more capacity? Contact us about an Enterprise plan with higher custom limits.
+- **Active home count:** Pro supports up to 1,000 active homes; Pro+ has no home cap.
+
+**Q: Is there a limit on how many customers I can have?**
+A: Yes - each organization can have up to 1,000 active customer (buyer) records. You'll get an in-app warning as you approach the limit (around 900+), and once you hit 1,000 you'll need to delete existing records before adding new ones. If you need more capacity, contact us about our Enterprise plan for higher custom limits.
+
 Visit https://cornerstonepm.ai/pricing for the full pricing page and feature comparison.
 
 ## Target Audience
