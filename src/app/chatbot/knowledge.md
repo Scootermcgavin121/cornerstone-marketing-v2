@@ -902,6 +902,28 @@ Cornerstone's AI-powered takeoff system eliminates manual material estimation. *
   - All four patterns are configurable in Settings. Your cash flow rules drive the system, not the other way around.
   - POs track vendor deliveries and invoicing. Webhooks fire on po.created and po.status_changed.
 
+### Cost Codes - Hierarchical Phase-Level Cost Tracking
+Cornerstone supports **cost codes** - a hierarchy that lives *underneath* trade scopes for granular, phase-level cost tracking. Think of scopes (Plumbing, Electrical, HVAC) as the **vendor relationship** level, and cost codes as the **phase-level detail** beneath them.
+
+- **Example hierarchy:** the Plumbing scope breaks down into PLM-001 Plumbing Underground, PLM-002 Plumbing Rough, PLM-003 Plumbing Trim - three phases, three separate vendor visits, three separate purchase orders.
+- **Where it lives:** Purchasing → Cost Codes management page (`/purchasing/cost-codes`).
+- **Per-phase Purchase Order generation** - instead of one giant PO for an entire trade, generate a separate PO for each vendor visit with exactly the right materials list for that phase. Send the underground materials for the underground visit, the trim materials for the trim visit.
+- **Zero fuzzy matching** - cost codes explicitly connect construction tasks → takeoff items → POs. No guessing, no AI matching - the link is direct and deterministic.
+- **Same part on multiple POs** - a part like a PVC Coupling can appear on both the Underground PO and the Trim PO with different quantities. The system handles the same part across multiple phases cleanly.
+- **Backward compatible** - builders who don't need this granularity can ignore cost codes entirely. Scopes work exactly as before without them.
+- **Master budget is unaffected** - cost codes only matter for home-level PO generation. They add phase detail without changing budget rollups.
+
+**How it works:**
+1. Builder creates cost codes under each scope (with auto-suggested naming like PLM-001, PLM-002).
+2. Assigns cost codes to construction tasks.
+3. Tags takeoff items (parts + scope items) with cost codes.
+4. When generating a PO for a task, the system pulls all takeoff items matching that cost code.
+
+**Why it's a differentiator:** No other residential construction platform supports hierarchical cost codes natively - only enterprise tools like Procore and Sage 300. BuilderTrend and CoConstruct use **flat** cost codes; Cornerstone supports a **full hierarchy** (scope → cost code → phase). Enterprise-grade cost tracking without enterprise complexity.
+
+**Q: Does Cornerstone support cost codes?**
+A: Yes - and not just flat cost codes like BuilderTrend or CoConstruct. Cornerstone supports a full hierarchy: trade scopes (the vendor relationship) with cost codes beneath them for phase-level detail (e.g., Plumbing → PLM-001 Underground, PLM-002 Rough, PLM-003 Trim). This enables per-phase PO generation - a separate purchase order with the right materials for each vendor visit. It's enterprise-grade cost tracking (the kind you'd find in Procore or Sage 300) without the enterprise complexity, and it's fully optional - builders who don't need it can ignore it.
+
 ## Design Center & Selections
 Cornerstone's Design Center is **takeoff-driven** - the system knows exactly how much flooring, how many fixtures, and what quantities each room needs because it pulls directly from the builder's takeoff data. Zero double-entry, zero estimating. Buyers see real costs based on real quantities.
 

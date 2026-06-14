@@ -75,6 +75,7 @@ const featureDetails = [
       "Bid requests linkable to specific design or structural options - vendors price exactly what you're selling, awards flow straight to the right budget lines",
       "Side-by-side vendor bid comparison with lowest-price highlighting",
       "Purchase orders: Draft → Sent → Acknowledged → Invoiced → Paid",
+      "Hierarchical cost codes - phase-level tracking under each trade scope (Plumbing → PLM-001 Underground, PLM-002 Rough, PLM-003 Trim) for per-phase PO generation; the only residential platform with full cost-code hierarchy, not flat codes like BuilderTrend/CoConstruct",
       "Change order approval workflow with full audit trail",
       "Active homes dashboard with financial rollup",
       "BuilderTrend migration support - AI Migration Wizard ingests your data in an afternoon",

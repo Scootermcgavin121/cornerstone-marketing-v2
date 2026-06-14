@@ -15,7 +15,7 @@ const purchasingSchema = buildFeatureSchema({
     "Cornerstone PM's purchasing module includes auto-generated scope-filtered Excel bid templates, no-login vendor file-upload portal, side-by-side bid comparison, lock-after-acceptance, parts catalog, auto-budget, purchase orders, payments, retainage tracking, and full CSV/JSON data export.",
   applicationSubCategory: "Construction Purchasing Software",
   keywords:
-    "home builder purchasing software, construction bid management, vendor bid software, builder purchase orders, scope-filtered bid templates, vendor portal no login, bid comparison software, construction PO software, builder budget software, residential purchasing",
+    "home builder purchasing software, construction bid management, vendor bid software, builder purchase orders, scope-filtered bid templates, vendor portal no login, bid comparison software, construction PO software, builder budget software, residential purchasing, construction cost codes, hierarchical cost codes, per-phase purchase orders",
   featureList: [
     "Auto-generated Excel bid templates with 3 tabs (Base, Structural, Designer)",
     "Scope-filtered templates — vendors only see their trade",
@@ -26,6 +26,8 @@ const purchasingSchema = buildFeatureSchema({
     "Multiple ACCEPTED bids per scope across communities",
     "Parts catalog with vendor pricing and retail pricing modes",
     "Purchase orders, payments, and retainage tracking",
+    "Hierarchical cost codes — phase-level tracking under each trade scope (e.g. Plumbing → PLM-001 Underground, PLM-002 Rough, PLM-003 Trim)",
+    "Per-phase PO generation — right materials list for each vendor visit",
     "Cost type classifications (labor, material, lump sum, mixed)",
     "Auto-Quantity Scope Items — quantities auto-calculate from floorplan dimensions (Under Air Sqft, Total Sqft, Exterior Perimeter, Roof Squares)",
     "Multi-tab Excel import/export — entire floorplan in one workbook",
@@ -108,6 +110,10 @@ const faqItems: FAQItem[] = [
     a: "All three, plus a fourth. Cornerstone gives you four PO patterns and lets you mix them on the same job: (1) generate every PO across the entire build the moment the home is approved (locks in budget exposure on day one), (2) generate a partial deposit PO from any earlier pipeline task — permit pull, contract sign, foundation pour — then top it up later, (3) auto-generate a full PO when a construction task is marked complete (cash goes out only when work is verifiably done), or (4) configurable per task / scope / community so different trades follow different rules on the same home. Most platforms hard-code one PO model. Cornerstone lets your cash flow rules drive the system, not the other way around.",
   },
   {
+    q: "Does Cornerstone PM™ support cost codes?",
+    a: "Yes &mdash; and not just flat cost codes like BuilderTrend or CoConstruct. Cornerstone supports a full hierarchy: trade scopes (your vendor relationship level) with cost codes beneath them for phase-level detail. The Plumbing scope, for example, breaks into PLM-001 Underground, PLM-002 Rough, and PLM-003 Trim. This unlocks per-phase PO generation &mdash; a separate purchase order with exactly the right materials for each vendor visit, instead of one giant PO per trade. Cost codes explicitly connect tasks &rarr; takeoff items &rarr; POs with zero fuzzy matching, and the same part can land on multiple POs at different quantities. It's enterprise-grade cost tracking (the kind you'd find in Procore or Sage 300) without the enterprise complexity &mdash; and it's fully optional, so builders who don't need the granularity can ignore it. Your master budget is unaffected; cost codes only drive home-level PO generation.",
+  },
+  {
     q: "How do I subscribe to bid notifications as an admin?",
     a: "Cornerstone PM™ ships per-user notification preferences plus role-level subscriptions for admins. Admins can subscribe to bid events &mdash; new bids submitted, vendor scope edits, awards, lock events &mdash; and choose email, in-app, or both. Each user controls their own notification toggles independently.",
   },
@@ -148,6 +154,7 @@ const features = [
   { title: "Bid Notification Subscriptions", desc: "Admins subscribe to bid events &mdash; new bids, edits, awards &mdash; with per-user notification preferences." },
   { title: "Award & Budget Flow", desc: "Award a bid and it flows directly into the budget &mdash; no double entry." },
   { title: "Flexible PO Generation — Four Patterns", desc: "Most platforms hard-code one PO model. Cornerstone gives you four: (1) all POs at job start (lock in budget exposure day one), (2) partial deposit POs from any earlier task (permit pull, contract sign, foundation pour), (3) full PO auto-generated when a construction task is marked complete (cash goes out only when work is done), or (4) configurable per task / scope / community — mix and match on the same job. Your cash flow rules drive the system, not the other way around." },
+  { title: "Cost Codes - Hierarchical Phase Tracking", desc: "Trade scopes are your vendor relationship; cost codes sit beneath them for phase-level detail. Plumbing breaks into PLM-001 Underground, PLM-002 Rough, PLM-003 Trim &mdash; each its own vendor visit and its own PO. Generate a separate purchase order with exactly the right materials list per phase instead of one giant PO. Cost codes explicitly link tasks &rarr; takeoff items &rarr; POs (zero fuzzy matching), and the same part can appear on multiple POs at different quantities. Enterprise-grade cost tracking like Procore or Sage 300 &mdash; without the enterprise complexity. Fully optional and backward compatible: ignore it if you don't need the granularity. BuilderTrend and CoConstruct use flat cost codes; Cornerstone supports the full hierarchy." },
   { title: "Take Your Data With You, Anytime", desc: "Your data is always yours. Download everything as CSV or JSON in one click &mdash; 91 tables, every vendor, every home, every schedule, every option, every budget line. Sensitive fields excluded automatically. Plus nightly auto-backups with 7-day retention for instant rollback. No vendor lock-in, no exit fees, no strings attached." },
   { title: "Buildertrend Migration", desc: "Import existing budgets from Buildertrend with smart column mapping." },
   { title: "Bid Import AI", desc: "Upload vendor bids in ANY format — Excel, PDF, scanned docs, even photos of handwritten quotes. AI extracts line items, maps to your parts catalog with confidence scores, and lets you review, edit, approve, or reject before importing." },
