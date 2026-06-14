@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "hidden-cost-switching-construction-software-migration",
+    title: "The Hidden Cost of Switching Construction Software (and How to Kill It)",
+    excerpt:
+      "The real cost of switching isn\u2019t the new subscription \u2014 it\u2019s the migration: weeks of parallel systems, a consultant to map your data, and the fear that your history arrives broken. Cornerstone PM\u2019s AI migration wizard collapses that entire process into ten minutes and about a penny. Here\u2019s what the hidden costs actually look like, why migration friction is manufactured, and how to eliminate it.",
+    date: "June 14, 2026",
+    readTime: "7 min read",
+    tag: "Platform",
+    tagColor: "text-amber-400 bg-amber-500/10 border-amber-500/20",
+    heroImage: "/blog/switching-cost-migration.png",
+  },
+  {
     slug: "bid-import-ai-takeoff-pricing-modes",
     title: "Bid Import AI: Takeoff-Only, Pricing-Only, or Both \u2014 Without Duplicates",
     excerpt:

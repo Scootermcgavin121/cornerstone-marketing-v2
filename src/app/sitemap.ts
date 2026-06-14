@@ -96,6 +96,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/construction-ai-context-memory-long-sessions", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/promote-standard-finish-to-upgrade-design-center", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/bid-import-ai-takeoff-pricing-modes", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/hidden-cost-switching-construction-software-migration", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({
