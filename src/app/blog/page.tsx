@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "mcp-server-construction-software-claude-cursor",
+    title: "MCP Server for Construction Software: Connect Claude, Cursor, and Windsurf to Your Builder Data",
+    excerpt:
+      "Cornerstone PM ships a built-in MCP server so Claude Desktop, Cursor, and Windsurf can connect directly to your construction data and 396+ Foreman skills — all with a ready-to-paste config block and a cst_-prefixed API key. No other construction platform has this.",
+    date: "June 15, 2026",
+    readTime: "7 min read",
+    tag: "AI & Automation",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/mcp-server-construction.png",
+  },
+  {
     slug: "hidden-cost-switching-construction-software-migration",
     title: "The Hidden Cost of Switching Construction Software (and How to Kill It)",
     excerpt:
