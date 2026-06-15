@@ -508,6 +508,76 @@
       "status": "published",
       "publishedCommit": "44a4cb2",
       "publishedAt": "2026-06-14T14:03:44.295Z"
+    },
+    {
+      "slug": "mcp-server-construction-software-claude-cursor",
+      "title": "MCP Server for Construction Software: Connect Claude, Cursor, and Windsurf to Your Builder Data",
+      "metaDescription": "Cornerstone PM ships a built-in MCP server so AI tools like Claude Desktop, Cursor, and Windsurf connect directly to your construction data and 396+ Foreman skills.",
+      "primaryKeyword": "MCP server construction software",
+      "hub": "/foreman",
+      "angle": "Feature deep-dive on Cornerstone's built-in Model Context Protocol (MCP) server — a capability essentially no other construction platform has. Builders generate an API key in app settings and paste a ready-made config block into Claude Desktop, Cursor, or Windsurf, which then talk directly to all of Foreman's 396+ skills over a JSON-RPC endpoint. Explain MCP in plain language for builders (it's the standard that lets external AI assistants safely use your app's tools), the cst_-token auth, and the role-based tool filtering so a vendor account can't touch what an owner can. The standout differentiator: a denylist permissions model means every new Foreman skill we ship is instantly available to your AI tools with zero config changes. Position MCP as the no-code on-ramp and the REST API/BYOA as the full-control path. Link to /foreman and the api-operations-construction-software-ai-agents post.",
+      "schema": "FAQPage",
+      "wordCount": 1100,
+      "heroImage": "/blog/mcp-server-construction.png",
+      "heroImageAlt": "MCP server for construction software connecting Claude Desktop, Cursor, and Windsurf to Cornerstone PM Foreman AI skills",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "construction-software-data-export-backup-no-lock-in",
+      "title": "Own Your Data: CSV/JSON Export and Nightly Backups in Construction Software",
+      "metaDescription": "Most construction software holds your data hostage. Cornerstone PM offers one-click CSV/JSON exports and nightly auto-backups so your records are always yours.",
+      "primaryKeyword": "construction software data export",
+      "hub": "/home-builder-project-management-software",
+      "angle": "Pain-point / lock-in post built around Cornerstone's Database Backup & Export feature. Data portability is the quietest but most important question in a software buy: can you actually leave? Many platforms make export painful on purpose to raise switching costs. Cornerstone flips it — Admins get one-click full-database export in CSV or JSON, plus nightly auto-backups retained for 7 days and on-demand manual backups. Frame this as both a disaster-recovery story and an anti-lock-in story, and connect it to the AI CRM Migration Wizard so the message is complete: easy to come in, easy to get your data out, no hostage-taking. Link to /home-builder-project-management-software and the hidden-cost-switching-construction-software-migration post.",
+      "schema": "FAQPage",
+      "wordCount": 1000,
+      "heroImage": "/blog/data-export-backup.png",
+      "heroImageAlt": "Construction software data export and nightly backups in Cornerstone PM — CSV and JSON full database download, no vendor lock-in",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "designer-packages-curated-selections-home-builders",
+      "title": "Designer Packages: Curated Selections That Sell Homes Faster",
+      "metaDescription": "Cornerstone PM's Designer Packages give buyers curated, pre-priced design bundles instead of a spreadsheet of options — 64 packages across 7 categories, à la carte ready.",
+      "primaryKeyword": "designer packages home builder selections",
+      "hub": "/design",
+      "angle": "Feature deep-dive on Designer Packages, a differentiator vs spreadsheet-style design centers. Builders ship 64 curated packages across 7 categories; a buyer picks a package and every category option auto-locks to that curated look, with à la carte unlocking the moment a package is removed. Explain why this matters: buyers freeze when handed hundreds of raw options, but a 'Modern Farmhouse' or 'Coastal' package gives them a confident starting point and shortens the selections cycle. Tie in real-pricing integrity — Cornerstone removed filler/default pricing app-wide, so every dollar in a package traces back to actual vendor pricing and real takeoff parts, not estimator fudging. Contrast with à la carte-only design centers that overwhelm buyers. Link to /design and the design-center hub posts.",
+      "schema": null,
+      "wordCount": 1000,
+      "heroImage": "/blog/designer-packages.png",
+      "heroImageAlt": "Designer Packages in Cornerstone PM design center — curated, pre-priced selection bundles for home builders across multiple style categories",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "asana-vs-home-builder-construction-software",
+      "title": "Asana for Construction? Why Home Builders Need Purpose-Built Software",
+      "metaDescription": "Asana is great for task lists, but it doesn't know what a takeoff, scope item, or vendor bid is. See why home builders need construction-specific software like Cornerstone PM.",
+      "primaryKeyword": "Asana for construction",
+      "hub": "/home-builder-project-management-software",
+      "angle": "Competitor / segment-mismatch post (Asana not yet covered; Fieldwire, ClickUp, and monday.com already are). Asana is a strong generic work-management tool, but home building isn't generic project management — it's takeoffs, scope items, structural options, design selections, vendor bids, draws, and per-community pricing. Asana has no concept of any of those, so builders end up bolting on spreadsheets and losing the single source of truth. Show what falls through the cracks: no auto-quantity scope items by square footage, no design center, no bid comparison, no construction-aware AI. Cornerstone gives builders an AI agent (Foreman, 396+ skills) that reads and writes real construction data plus a webhook/API layer for the automations Asana users actually want. Honest framing: keep Asana for marketing tasks if you like it, but the build itself needs purpose-built software. Link to /home-builder-project-management-software and the clickup-monday comparison post.",
+      "schema": "FAQPage",
+      "wordCount": 1100,
+      "heroImage": "/blog/asana-vs-home-builder.png",
+      "heroImageAlt": "Asana for construction vs purpose-built home builder software — Cornerstone PM with takeoffs, scope items, and construction AI",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "construction-ai-knowledge-base-estimating-formulas",
+      "title": "Inside Foreman's Brain: The Knowledge Base Behind Construction AI That Actually Helps",
+      "metaDescription": "Foreman AI isn't a thin chatbot wrapper. A 24,500-word knowledge base, 39 estimating formulas, and 396+ skills power construction answers that are actually correct.",
+      "primaryKeyword": "construction AI knowledge base",
+      "hub": "/foreman",
+      "angle": "Hub-cluster reinforcement post for /foreman that explains why Foreman gives trustworthy construction answers where generic chatbots hallucinate. Go inside 'Foreman's Brain': a ~24,500-word knowledge base (158KB app knowledge, an 8KB estimating-formulas library with 39 formulas, and a 16KB prompt library across 10 categories) layered under 396+ skills across 20 categories. Contrast the depth with generic AI: 'ChatGPT has a handful of tools; Foreman has 396 and a construction knowledge base behind every one.' Use the estimating formulas as the concrete proof — Foreman computes quantities and pricing from real square-footage and takeoff data, not guesses. Explain that because Foreman reads and writes your actual data, the knowledge base turns into action, not just chat. Link to /foreman, /ai-takeoff, and the foreman-ai-memory-construction-software post.",
+      "schema": null,
+      "wordCount": 1100,
+      "heroImage": "/blog/foreman-knowledge-base.png",
+      "heroImageAlt": "Foreman construction AI knowledge base — 24,500-word knowledge base, 39 estimating formulas, and 396+ skills powering accurate builder answers",
+      "status": "pending",
+      "publishedCommit": null
     }
   ]
 }
