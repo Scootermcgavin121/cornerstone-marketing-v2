@@ -7,7 +7,7 @@ import { ArrowLeft } from "lucide-react";
 export const metadata: Metadata = {
   title: "Terms of Service | Cornerstone PM\u2122",
   description:
-    "Terms of Service for Cornerstone PM\u2122 \u2014 subscription terms, acceptable use, plan limits (including the 1,000 active customer record limit per organization), data ownership, and account policies.",
+    "Terms of Service for Cornerstone PM\u2122 \u2014 subscription terms, acceptable use, plan limits (including plan-based active customer record limits per organization), data ownership, and account policies.",
   alternates: { canonical: "https://www.cornerstonepm.ai/terms" },
   robots: { index: true, follow: true },
   openGraph: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-const LAST_UPDATED = "June 13, 2026";
+const LAST_UPDATED = "June 14, 2026";
 
 function Section({ id, title, children }: { id: string; title: string; children: React.ReactNode }) {
   return (
@@ -92,16 +92,24 @@ export default function TermsPage() {
               </Link>{" "}
               pages. In addition, the following account-level limits apply:
             </p>
+            <p>
+              Each organization is limited to a maximum number of active customer (buyer) records based on its plan:
+            </p>
             <ul className="list-disc pl-5 space-y-2 marker:text-slate-600">
-              <li>Each organization is limited to 1,000 active customer records.</li>
+              <li>Starter and Builder: up to 500 active customer records.</li>
+              <li>Pro: up to 1,000 active customer records.</li>
+              <li>Pro+: up to 3,000 active customer records.</li>
+              <li>Enterprise: up to 5,000 active customer records.</li>
               <li>
-                Organizations approaching the limit (900 or more active customer records) will receive in-app warnings.
+                Organizations approaching their plan limit (90% or more of their active customer record limit) will
+                receive in-app warnings.
               </li>
               <li>
-                Once the limit is reached, new customers cannot be added until existing customer records are deleted.
+                Once the limit is reached (100%), new customers cannot be added until existing customer records are
+                deleted.
               </li>
               <li>
-                Contact support for Enterprise plans with higher custom limits.
+                Contact support for Enterprise plans or higher custom limits.
               </li>
             </ul>
             <p>

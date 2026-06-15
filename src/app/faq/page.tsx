@@ -246,13 +246,15 @@ const pricing: Category = {
     {
       q: "Is there a limit on how many customers I can have?",
       aText:
-        "Yes, each organization can have up to 1,000 active customer (buyer) records. You'll receive an in-app warning as you approach the limit (900+), and once you hit 1,000 you'll need to delete existing records before adding new ones. If you need more capacity, contact us about our Enterprise plan for higher custom limits.",
+        "Yes, each organization's active customer (buyer) record limit is based on its plan: Starter and Builder include up to 500, Pro up to 1,000, Pro+ up to 3,000, and Enterprise up to 5,000. You'll receive an in-app warning as you approach your limit (at 90%), and once you reach 100% you'll need to delete existing records before adding new ones. If you need more capacity, contact us about our Enterprise plan or higher custom limits.",
       a: (
         <>
-          Yes, each organization can have up to <strong>1,000 active customer (buyer) records</strong>. You'll receive an
-          in-app warning as you approach the limit (900+), and once you reach 1,000 you'll need to delete existing
-          records before adding new ones. If you need more capacity, <A href="/contact">contact us</A> about our
-          Enterprise plan for higher custom limits. See full details in our <A href="/terms">Terms of Service</A>.
+          Yes, each organization&rsquo;s active customer (buyer) record limit is based on its plan:{" "}
+          <strong>Starter and Builder up to 500</strong>, <strong>Pro up to 1,000</strong>,{" "}
+          <strong>Pro+ up to 3,000</strong>, and <strong>Enterprise up to 5,000</strong>. You'll receive an in-app
+          warning as you approach your limit (at 90%), and once you reach 100% you'll need to delete existing records
+          before adding new ones. If you need more capacity, <A href="/contact">contact us</A> about our Enterprise
+          plan or higher custom limits. See full details in our <A href="/terms">Terms of Service</A>.
         </>
       ),
     },
