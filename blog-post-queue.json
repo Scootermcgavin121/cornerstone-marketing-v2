@@ -520,8 +520,9 @@
       "wordCount": 1100,
       "heroImage": "/blog/mcp-server-construction.png",
       "heroImageAlt": "MCP server for construction software connecting Claude Desktop, Cursor, and Windsurf to Cornerstone PM Foreman AI skills",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "426c523",
+      "publishedAt": "2026-06-15T14:03:30.956Z"
     },
     {
       "slug": "construction-software-data-export-backup-no-lock-in",
