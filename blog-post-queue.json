@@ -535,8 +535,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/data-export-backup.png",
       "heroImageAlt": "Construction software data export and nightly backups in Cornerstone PM — CSV and JSON full database download, no vendor lock-in",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "2ea9fd9",
+      "publishedAt": "2026-06-16T14:03:16.346Z"
     },
     {
       "slug": "designer-packages-curated-selections-home-builders",
