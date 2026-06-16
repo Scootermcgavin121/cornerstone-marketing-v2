@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "construction-software-data-export-backup-no-lock-in",
+    title: "Own Your Data: CSV/JSON Export and Nightly Backups in Construction Software",
+    excerpt:
+      "Your construction data belongs to you — and Cornerstone PM makes that more than a legal promise. Every Admin gets one-click full database export in CSV or JSON, nightly auto-backups retained for 7 days, and on-demand manual snapshots. No export fee, no support ticket, no hostage-taking.",
+    date: "June 16, 2026",
+    readTime: "6 min read",
+    tag: "Platform",
+    tagColor: "text-cyan-400 bg-cyan-500/10 border-cyan-500/20",
+    heroImage: "/blog/data-export-backup.png",
+  },
+  {
     slug: "mcp-server-construction-software-claude-cursor",
     title: "MCP Server for Construction Software: Connect Claude, Cursor, and Windsurf to Your Builder Data",
     excerpt:
