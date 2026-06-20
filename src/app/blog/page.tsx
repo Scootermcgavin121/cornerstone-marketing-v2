@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "designer-packages-curated-selections-home-builders",
+    title: "Designer Packages: Curated Selections That Sell Homes Faster",
+    excerpt:
+      "Hand a buyer 300 raw options and you hand them a decision paralysis problem. Cornerstone PM's Designer Packages flip the script: 64 curated, pre-priced design bundles across 7 categories — pick Modern Farmhouse, and every category auto-locks to that coordinated look. One decision. Real vendor pricing behind every item.",
+    date: "June 20, 2026",
+    readTime: "6 min read",
+    tag: "Design Center",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/designer-packages.png",
+  },
+  {
     slug: "construction-software-data-export-backup-no-lock-in",
     title: "Own Your Data: CSV/JSON Export and Nightly Backups in Construction Software",
     excerpt:
