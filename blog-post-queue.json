@@ -550,8 +550,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/designer-packages.png",
       "heroImageAlt": "Designer Packages in Cornerstone PM design center — curated, pre-priced selection bundles for home builders across multiple style categories",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "5cee189",
+      "publishedAt": "2026-06-20T14:03:23.388Z"
     },
     {
       "slug": "asana-vs-home-builder-construction-software",
