@@ -901,6 +901,7 @@ Cornerstone's AI-powered takeoff system eliminates manual material estimation. *
   4. **Configurable per task, scope, or community** - turn PO generation on/off for specific tasks, scopes, or communities. Mix all three patterns above on the same home (e.g., framing PO at job start, drywall deposit at permit, electrical full PO on task completion).
   - All four patterns are configurable in Settings. Your cash flow rules drive the system, not the other way around.
   - POs track vendor deliveries and invoicing. Webhooks fire on po.created and po.status_changed.
+- **Cost Codes** - phase-level buckets under scopes for per-phase PO generation. Split a single trade (e.g., Plumbing) into Underground, Rough, and Trim phases. Each phase gets its own cost code (PLM-001, PLM-002, PLM-003) and its own PO. Manage cost codes from 4 places: dedicated Cost Codes page, Task Library, Scope Items page, and Parts Catalog. Smart dropdowns show scope-matched codes first with all others below a divider. Auto-assign button for scopes with only one code. Completely optional — builders who don't use them get the same behavior as before.
 
 ### Task-Completion PO Generation (Draft-First)
 Cornerstone can **generate a Purchase Order automatically the moment a construction task is marked complete** - so you never forget to order materials for the next phase.
