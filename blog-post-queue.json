@@ -565,8 +565,9 @@
       "wordCount": 1100,
       "heroImage": "/blog/asana-vs-home-builder.png",
       "heroImageAlt": "Asana for construction vs purpose-built home builder software — Cornerstone PM with takeoffs, scope items, and construction AI",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "e156b5f",
+      "publishedAt": "2026-06-21T14:04:15.599Z"
     },
     {
       "slug": "construction-ai-knowledge-base-estimating-formulas",
