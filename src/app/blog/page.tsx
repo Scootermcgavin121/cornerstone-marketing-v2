@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "asana-vs-home-builder-construction-software",
+    title: "Asana for Construction? Why Home Builders Need Purpose-Built Software",
+    excerpt:
+      "Asana is a strong generic task tool — but it has no concept of a takeoff, scope item, vendor bid, or design center. Home builders who try to run their build on Asana end up maintaining a stack of spreadsheets alongside it. Here's exactly where generic PM breaks for production builders, and what a platform built for your workflow looks like instead.",
+    date: "June 21, 2026",
+    readTime: "7 min read",
+    tag: "Comparison",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/asana-vs-home-builder.png",
+  },
+  {
     slug: "designer-packages-curated-selections-home-builders",
     title: "Designer Packages: Curated Selections That Sell Homes Faster",
     excerpt:
