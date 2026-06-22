@@ -79,6 +79,7 @@ const categories: FeatureCategory[] = [
     label: "Purchasing",
     rows: [
       { feature: "Purchase orders", bt: "yes", cp: "yes" },
+      { feature: "Auto displaced-standard credit PO on upgrades (no manual variance PO)", bt: "no", cp: "yes" },
       { feature: "Vendor bid requests", bt: "partial", cp: "yes" },
       { feature: "Auto-generated Excel bid templates", bt: "no", cp: "yes" },
       { feature: "Vendor portal — magic links, no login required (confirm tasks + bids)", bt: "no", cp: "yes" },
@@ -357,6 +358,19 @@ export default function BuildertrendVsCornerstoneFeatureComparisonPage() {
             lacks. The framing crew for Oak Ridge isn&apos;t the same as the crew for Maple Creek.
             Cornerstone tracks vendor relationships at the community level, so scope-based assignments
             cascade correctly when you open a new lot — not just when you write a PO.
+          </p>
+          <p>
+            The sharpest difference shows up the moment a buyer upgrades a design-center selection.
+            Buildertrend <strong className="text-white">automates PO generation</strong> just fine — bulk
+            wizard, generated from estimates, bids, or selections. What it does <em>not</em> automate is the
+            credit for the standard the buyer walked away from. That displaced-standard credit is a separate
+            manual variance PO someone has to remember to create — on every swap, on every lot. Cornerstone
+            models the substitution in the option itself, so a single selection event fires the upgrade PO
+            <em> and</em> the base credit together, routed to the right vendors, with the audit trail built in.
+            The work is done once at catalog setup and reused across every lot. At production volume — 40 lots
+            times a dozen design-center upgrades each — that&apos;s the difference between purchasing that
+            scales and hundreds of hand-created credit POs, each one a chance to over-charge the buyer or
+            under-credit the trade.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
