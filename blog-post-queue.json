@@ -582,6 +582,76 @@
       "heroImageAlt": "Foreman construction AI knowledge base — 24,500-word knowledge base, 39 estimating formulas, and 396+ skills powering accurate builder answers",
       "status": "pending",
       "publishedCommit": null
+    },
+    {
+      "slug": "construction-allowances-master-cost-budget-home-builders",
+      "title": "Construction Allowances Done Right: Placeholder Budgets That Flow Into Your Real Cost Plan",
+      "metaDescription": "Stop guessing on un-bid line items. Cornerstone's allowance system sets budget placeholders that flow straight into your Master Cost Budget per floorplan or globally.",
+      "primaryKeyword": "construction allowances software",
+      "hub": "/purchasing",
+      "angle": "Feature deep-dive on Cornerstone's Allowances system for home builders. Explain the real pain: builders have to budget for items that aren't bid yet (appliances, fixtures, landscaping) and most software forces a fake bid or a sticky note. Cornerstone lets you set a budget placeholder allowance for any non-bid item, apply it per-floorplan or globally, and have it flow automatically into the Master Cost Budget. When the real bid lands, the allowance is replaced — no double-counting. Contrast with spreadsheet-driven builders who lose track of allowance variance. Tie it into the broader purchasing/budget story and link back to /purchasing and /design.",
+      "schema": "FAQPage",
+      "wordCount": 1000,
+      "heroImage": "/blog/construction-allowances.png",
+      "heroImageAlt": "Construction allowances software — budget placeholders flowing into the Master Cost Budget for home builders",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "foreman-ai-vision-jobsite-photo-analysis-construction",
+      "title": "Point Your Phone at a Problem: How Foreman AI Reads Jobsite Photos, Floor Plans, and Product Images",
+      "metaDescription": "Foreman AI vision reads the photos you already take — floor plans, product shots, jobsite issues — and turns them into structured construction data and actions.",
+      "primaryKeyword": "construction AI image analysis",
+      "hub": "/foreman",
+      "angle": "Feature deep-dive on Foreman's AI vision / image-analysis capability (distinct from the web-scraping product-search post). Builders live in photos: jobsite conditions, product spec sheets, screenshots, floor plans. Foreman reads them with AI vision — paste or drag-drop an image and it analyzes the content, not just stores it. Show concrete use cases: read a product image to pull specs, analyze a floor plan, interpret a jobsite photo. Stress that because Foreman reads AND writes your data, vision turns into action: identify a product, then create the option or PO. Differentiate from competitors who treat photos as dumb attachments. Link to /foreman and the foreman-ai-product-image-web-scraping post.",
+      "schema": null,
+      "wordCount": 1000,
+      "heroImage": "/blog/foreman-vision.png",
+      "heroImageAlt": "Construction AI image analysis — Foreman AI reading jobsite photos, floor plans, and product images for home builders",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "houzz-pro-vs-cornerstone-production-home-builder",
+      "title": "Houzz Pro vs. Cornerstone PM: Why Production Builders Outgrow a Designer-First Tool",
+      "metaDescription": "Houzz Pro is built for designers and remodelers. Cornerstone PM is built for production home builders — floorplan-driven budgets, AI takeoff, and 396+ Foreman skills.",
+      "primaryKeyword": "Houzz Pro vs Cornerstone",
+      "hub": "/home-builder-project-management-software",
+      "angle": "Competitor / segment-mismatch post comparing Houzz Pro against Cornerstone PM. Houzz Pro is a strong lead-gen + design tool for interior designers and small remodelers, but it isn't built for production home builders running floorplans across communities. Highlight where it falls short for builders: no floorplan-driven Master Cost Budgets, no auto-quantity by square footage, no AI blueprint takeoff, no 396+ skill Foreman AI agent that reads and writes data, no 37-event webhook automation. Be fair — Houzz wins on consumer marketing reach. Frame it as 'right tool, wrong segment' for builders who've outgrown a designer-first stack. Link back to the hub /home-builder-project-management-software and /design.",
+      "schema": null,
+      "wordCount": 1100,
+      "heroImage": "/blog/houzz-pro-vs-cornerstone.png",
+      "heroImageAlt": "Houzz Pro vs Cornerstone PM comparison for production home builders",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "true-cost-of-spreadsheet-budgets-home-builders",
+      "title": "The True Cost of Running Your Build on Spreadsheets",
+      "metaDescription": "Spreadsheet budgets cost more than you think: version chaos, allowance drift, broken formulas, and no audit trail. Here's the real TCO — and the fix for builders.",
+      "primaryKeyword": "construction budget spreadsheet alternative",
+      "hub": "/purchasing",
+      "angle": "Pain-point / TCO post for builders still running budgets in Excel or Google Sheets. Walk through the hidden costs: version conflicts across the team, allowance drift, broken formulas that silently misprice a home, no per-floorplan auto-quantities, no audit trail when a number changes, and hours lost re-keying bid data. Quantify the time and margin leakage. Then show how Cornerstone replaces it: floorplan-driven Master Cost Budgets, auto-quantity by square footage, allowances that flow into the budget, AI takeoff and bid import that replace instead of duplicate. Keep it benefit-focused, not salesy. Link to /purchasing and /ai-takeoff.",
+      "schema": null,
+      "wordCount": 1100,
+      "heroImage": "/blog/spreadsheet-budget-true-cost.png",
+      "heroImageAlt": "True cost of spreadsheet budgets for home builders — construction budget spreadsheet alternative",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "option-classes-scope-linked-design-options-home-builders",
+      "title": "Option Classes: Linking Design Selections to Scopes and Budgets Automatically",
+      "metaDescription": "Cornerstone's Option Classes link design selections to categories, scope items, and budget tracking — so every buyer choice updates the right scope and cost line.",
+      "primaryKeyword": "design option scope linking construction",
+      "hub": "/design",
+      "angle": "Feature deep-dive on Cornerstone's Option Classes and scope-item integration in the Design Center. The pain: in most tools, design selections live in one silo and the budget lives in another, so a buyer upgrade doesn't automatically update the right scope or cost line. Cornerstone's Option Classes tie a category + scope together, and design options link to scope items for live budget tracking — so a Premium cabinet selection flows to the cabinetry scope and the Master Cost Budget. Mention bulk-create options from scope items or the parts catalog, and global retail pricing mode. Reinforce the design + purchasing connection. Link to /design and /purchasing.",
+      "schema": null,
+      "wordCount": 1000,
+      "heroImage": "/blog/option-classes-scope-linking.png",
+      "heroImageAlt": "Design option scope linking in construction software — Cornerstone Option Classes for home builders",
+      "status": "pending",
+      "publishedCommit": null
     }
   ]
 }
