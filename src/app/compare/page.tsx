@@ -81,6 +81,9 @@ const rows: { category: string; features: { label: string; values: CellValue[] }
     features: [
       { label: "Bid management", values: [YES, YES, YES, YES] },
       { label: "Purchase orders", values: [YES, YES, YES, YES] },
+      { label: "Auto-generated PO for design-center upgrades", values: [YES, YES, YES, PARTIAL] },
+      { label: "Automatic displaced-standard credit PO (no manual variance PO)", values: [YES, NO, NO, NO] },
+      { label: "Substitution modeled in the option (credit fires from same selection event)", values: [YES, NO, NO, NO] },
       { label: "Budget hierarchy (builder to home)", values: [YES, YES, PARTIAL, YES] },
       { label: "Auto-budget from structural options", values: [YES, YES, NO, NO] },
       { label: "Side-by-side bid comparison", values: [YES, YES, PARTIAL, PARTIAL] },
@@ -338,6 +341,72 @@ export default function ComparePage() {
           <p className="max-w-5xl mx-auto mt-6 text-[11px] text-slate-600 leading-relaxed text-center">
             Pricing and feature availability reflect publicly available information as of November 2026. Verify current pricing and capabilities directly with each vendor. NEWSTAR®, BuildPro®, Buildertrend®, and Buildxact® are trademarks of their respective owners; Cornerstone PM™ is not affiliated with or endorsed by these companies.
           </p>
+        </div>
+      </section>
+
+      {/* PO Substitution differentiator */}
+      <section className="py-10 px-4 border-t border-slate-800/60">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-widest mb-4">
+              The Purchasing Difference
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-black text-white mb-3">When a buyer upgrades, who remembers the credit?</h2>
+            <p className="text-slate-400 max-w-2xl mx-auto">
+              Every platform can generate the purchase order for an upgrade. The real test is the <span className="text-white font-semibold">credit for the standard the buyer walked away from</span> &mdash; and that&apos;s where most software quietly leaves money on the table.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+            <div className="rounded-2xl bg-slate-900/60 border border-amber-500/20 p-7">
+              <div className="text-amber-400 font-bold text-sm uppercase tracking-widest mb-4">Buildertrend &amp; most others</div>
+              <ul className="space-y-3">
+                {[
+                  "Upgrade PO generates automatically (bulk wizard, no problem)",
+                  "But the displaced-standard credit is a separate manual variance PO",
+                  "A human has to remember to create it &mdash; on every swap, on every lot",
+                  "Miss one and you over-charge the buyer or under-credit the trade",
+                  "At 40 lots \u00d7 a dozen design-center upgrades each = hundreds of manual credit POs",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2 text-slate-400 text-sm">
+                    <X className="w-4 h-4 text-slate-600 flex-shrink-0 mt-0.5" />
+                    <span dangerouslySetInnerHTML={{ __html: item }} />
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="rounded-2xl bg-cyan-500/[0.04] border border-cyan-500/25 p-7">
+              <div className="text-cyan-400 font-bold text-sm uppercase tracking-widest mb-4">Cornerstone PM&trade;</div>
+              <ul className="space-y-3">
+                {[
+                  "Substitution is modeled in the option itself &mdash; not transacted after the fact",
+                  "One selection event fires the upgrade PO <em>and</em> the base credit together",
+                  "Both lines route to the right vendors automatically",
+                  "Audit trail is built in &mdash; credits zero out every displaced standard",
+                  "Defined once at catalog setup, reused across every lot &mdash; zero per-swap labor",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2 text-slate-300 text-sm">
+                    <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
+                    <span dangerouslySetInnerHTML={{ __html: item }} />
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <div className="rounded-2xl bg-slate-900/60 border border-slate-800 p-7">
+            <div className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-4">What one upgrade selection produces in Cornerstone</div>
+            <pre className="text-[13px] leading-relaxed text-slate-300 font-mono overflow-x-auto">
+{`PO \u2192 Cabinet Vendor (national account)
+  + Upgrade cabinet pkg (Cardell collection)   $18,950.00
+  \u2212 Credit: displaced standard pkg           \u2212$12,400.00
+  \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
+Net to vendor PO                              $6,550.00`}
+            </pre>
+            <p className="text-slate-500 text-sm mt-4">
+              The credit isn&apos;t a decision someone makes &mdash; it&apos;s a property of the option. That&apos;s the difference between purchasing that scales to production volume and purchasing that breaks one missed variance PO at a time.
+            </p>
+          </div>
         </div>
       </section>
 
