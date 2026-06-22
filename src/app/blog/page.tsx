@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "construction-ai-knowledge-base-estimating-formulas",
+    title: "Inside Foreman's Brain: The Knowledge Base Behind Construction AI That Actually Helps",
+    excerpt:
+      "Foreman AI isn't a thin chatbot wrapper. A 24,500-word knowledge base, 39 estimating formulas, and 396+ skills power construction answers that are actually correct — then turn those answers into real actions in your data. Here's what's inside Foreman's brain, how the estimating formulas work, and why domain grounding beats confident-sounding hallucination every time.",
+    date: "June 22, 2026",
+    readTime: "7 min read",
+    tag: "AI & Automation",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/foreman-knowledge-base.png",
+  },
+  {
     slug: "asana-vs-home-builder-construction-software",
     title: "Asana for Construction? Why Home Builders Need Purpose-Built Software",
     excerpt:

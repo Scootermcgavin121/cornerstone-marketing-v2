@@ -101,6 +101,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/construction-software-data-export-backup-no-lock-in", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/asana-vs-home-builder-construction-software", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/designer-packages-curated-selections-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/construction-ai-knowledge-base-estimating-formulas", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({
