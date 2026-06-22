@@ -580,8 +580,9 @@
       "wordCount": 1100,
       "heroImage": "/blog/foreman-knowledge-base.png",
       "heroImageAlt": "Foreman construction AI knowledge base — 24,500-word knowledge base, 39 estimating formulas, and 396+ skills powering accurate builder answers",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "bb856ea",
+      "publishedAt": "2026-06-22T14:03:37.203Z"
     },
     {
       "slug": "construction-allowances-master-cost-budget-home-builders",
