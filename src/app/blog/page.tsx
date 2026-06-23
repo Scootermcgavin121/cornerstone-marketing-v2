@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "construction-allowances-master-cost-budget-home-builders",
+    title: "Construction Allowances Done Right: Placeholder Budgets That Flow Into Your Real Cost Plan",
+    excerpt:
+      "Every production builder has line items in the budget that don't have real vendor pricing yet — appliances, landscaping, specialty fixtures. Most software forces a workaround: sticky notes, fake bids, or manual spreadsheet entries that drift out of sync. Cornerstone PM's Allowances system gives placeholders a real budget slot, applies them per floorplan or globally, and automatically replaces them when the real bid arrives.",
+    date: "June 23, 2026",
+    readTime: "6 min read",
+    tag: "Purchasing",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/construction-allowances.png",
+  },
+  {
     slug: "construction-ai-knowledge-base-estimating-formulas",
     title: "Inside Foreman's Brain: The Knowledge Base Behind Construction AI That Actually Helps",
     excerpt:
