@@ -239,7 +239,7 @@ export default function BuildertrendVsCornerstoneFeatureComparisonPage() {
           </h2>
           <p>
             Buildertrend has 18 years of development behind it. It has depth in areas Cornerstone PM™
-            doesn&apos;t prioritize: warranty management, commercial construction modules, and a large
+            doesn&apos;t prioritize: commercial construction modules and a large
             ecosystem of third-party integrations with enterprise accounting platforms. If you&apos;re a
             semi-custom or custom builder, or if you depend on QuickBooks Enterprise with a custom
             integration, Buildertrend is still the bigger toolbox.

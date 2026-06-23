@@ -31,6 +31,7 @@ const comparison = [
   { feature: "Buyer Portal", buildertrend: true, cornerstone: true },
   { feature: "Design Center", buildertrend: true, cornerstone: true },
   { feature: "Permitting Tracker", buildertrend: true, cornerstone: true },
+  { feature: "Warranty tracking (2-year post-close)", buildertrend: true, cornerstone: true },
   { feature: "Auto displaced-standard credit PO on upgrades", buildertrend: false, cornerstone: true },
   { feature: "AI Blueprint Takeoffs", buildertrend: false, cornerstone: true },
   { feature: "Foreman AI agent (reads + writes your data)", buildertrend: false, cornerstone: true },
@@ -134,9 +135,14 @@ export default function BuildertrendPost() {
             software is quietly leaking margin.
           </p>
           <p>
-            What we deliberately <em>don&apos;t</em> chase is enterprise bloat: warranty-management modules
-            for national builders, commercial construction features, and a dozen integrations with
-            enterprise accounting systems. That&apos;s a choice, not a gap. We&apos;d rather be the best tool
+            And yes — warranty is built in too: 2-year post-close warranty tracking, warranty walkthroughs,
+            and warranty docs delivered straight to the buyer portal. So the one thing the old version of
+            this post conceded, we actually ship.
+          </p>
+          <p>
+            What we deliberately <em>don&apos;t</em> chase is enterprise bloat: commercial construction
+            modules and a dozen integrations with enterprise accounting systems built for national
+            builders. That&apos;s a choice, not a gap. We&apos;d rather be the best tool
             for the builder doing 5–50 homes a year than a watered-down everything-tool for everybody.
           </p>
 
