@@ -595,8 +595,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/construction-allowances.png",
       "heroImageAlt": "Construction allowances software — budget placeholders flowing into the Master Cost Budget for home builders",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "72aca60",
+      "publishedAt": "2026-06-23T14:03:14.878Z"
     },
     {
       "slug": "foreman-ai-vision-jobsite-photo-analysis-construction",
