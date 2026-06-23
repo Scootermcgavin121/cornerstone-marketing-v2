@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const comparison = [
   { feature: "Construction Scheduling", buildertrend: true, cornerstone: true },
   { feature: "Purchasing & Budgets", buildertrend: true, cornerstone: true },
-  { feature: "Sales Pipeline (CRM)", buildertrend: true, cornerstone: true },
+  { feature: "Sales CRM + new-home sale workflow", buildertrend: true, cornerstone: true },
   { feature: "Buyer Portal", buildertrend: true, cornerstone: true },
   { feature: "Design Center", buildertrend: true, cornerstone: true },
   { feature: "Permitting Tracker", buildertrend: true, cornerstone: true },
@@ -110,6 +110,12 @@ export default function BuildertrendPost() {
             builder can actually use without a 3-day training session. Then it layers on the things
             modern builders actually want: AI takeoffs, an AI agent that runs your purchasing workflow,
             and PO automation that closes the credit loop competitors leave open.
+          </p>
+          <p>
+            It even handles the front of the funnel: a built-in sales CRM with a new-home sale workflow
+            that walks a lead from first contact through contract, lot/plan selection, and into the build
+            — the same platform your scheduling and purchasing already live in. No bolting a separate CRM
+            onto your construction software.
           </p>
           <p>
             And here&apos;s the part the old &ldquo;cheaper but lighter&rdquo; story gets wrong: on the features
