@@ -31,8 +31,16 @@ const comparison = [
   { feature: "Buyer Portal", buildertrend: true, cornerstone: true },
   { feature: "Design Center", buildertrend: true, cornerstone: true },
   { feature: "Permitting Tracker", buildertrend: true, cornerstone: true },
-  { feature: "Commercial Construction Features", buildertrend: true, cornerstone: false },
-  { feature: "Price for small builders", buildertrend: false, cornerstone: true },
+  { feature: "Auto displaced-standard credit PO on upgrades", buildertrend: false, cornerstone: true },
+  { feature: "AI Blueprint Takeoffs", buildertrend: false, cornerstone: true },
+  { feature: "Foreman AI agent (reads + writes your data)", buildertrend: false, cornerstone: true },
+  { feature: "Punch-list generator", buildertrend: false, cornerstone: true },
+  { feature: "AI MLS listing generator", buildertrend: false, cornerstone: true },
+  { feature: "QR codes on jobsites & docs", buildertrend: false, cornerstone: true },
+  { feature: "Community / lot map view", buildertrend: false, cornerstone: true },
+  { feature: "REST API + Bring-Your-Own-Agent", buildertrend: false, cornerstone: true },
+  { feature: "Commercial construction features", buildertrend: true, cornerstone: false },
+  { feature: "Price built for small builders", buildertrend: false, cornerstone: true },
   { feature: "Simple, builder-first UX", buildertrend: false, cornerstone: true },
   { feature: "2-year Free Beta", buildertrend: false, cornerstone: true },
 ];
@@ -99,13 +107,31 @@ export default function BuildertrendPost() {
           <p>
             Cornerstone PM™ was built for the builder who needs the core tools — scheduling, purchasing,
             sales pipeline, design center, permitting, and buyer portal — in a package that a real
-            builder can actually use without a 3-day training session.
+            builder can actually use without a 3-day training session. Then it layers on the things
+            modern builders actually want: AI takeoffs, an AI agent that runs your purchasing workflow,
+            and PO automation that closes the credit loop competitors leave open.
           </p>
           <p>
-            We don&apos;t have every feature BuilderTrend has. We don&apos;t have warranty management modules
-            or commercial construction features or a dozen integrations with enterprise accounting
-            systems. We have the six things that matter most to residential home builders who are
-            building 5–50 homes a year.
+            And here&apos;s the part the old &ldquo;cheaper but lighter&rdquo; story gets wrong: on the features
+            residential builders actually use, Cornerstone PM™ doesn&apos;t just match BuilderTrend — it
+            goes further. AI blueprint takeoffs, the Foreman AI agent that reads <em>and writes</em> your
+            data, a punch-list generator, an AI MLS listing generator, jobsite QR codes, a community/lot
+            map view, and a full REST API with bring-your-own-agent support are all built in. None of
+            those ship with BuilderTrend.
+          </p>
+          <p>
+            One example that pays for itself: when a buyer upgrades in the Design Center, Cornerstone
+            models the displacement <em>in the option itself</em> — so the upgrade PO and the credit for
+            the displaced standard fire from the same selection event. BuilderTrend automates the upgrade
+            PO, but the offsetting credit is a separate manual variance PO a human has to remember to
+            create, on every swap, on every lot. Multiply that across a community and the &ldquo;cheaper&rdquo;
+            software is quietly leaking margin.
+          </p>
+          <p>
+            What we deliberately <em>don&apos;t</em> chase is enterprise bloat: warranty-management modules
+            for national builders, commercial construction features, and a dozen integrations with
+            enterprise accounting systems. That&apos;s a choice, not a gap. We&apos;d rather be the best tool
+            for the builder doing 5–50 homes a year than a watered-down everything-tool for everybody.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-6">Feature comparison</h2>
