@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Check, ArrowRight, Video, Sparkles, ListChecks, Zap, ShieldCheck, Clock, MapPin, Camera, Mail, Users } from "lucide-react";
+import { Check, ArrowRight, Video, Sparkles, ListChecks, Zap, ShieldCheck, Clock, MapPin, Camera, Mail, Users, FileUp, FileText } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { CTASection } from "@/components/CTASection";
@@ -11,11 +11,14 @@ const punchlistAiSchema = buildFeatureSchema({
   pageName: "Punchlist AI",
   pagePath: "/punchlist-ai",
   description:
-    "Record a walkthrough video on your phone. Punchlist AI watches the video, identifies every defect and quality issue, tags severity and location (room, fixture, surface), and auto-creates a punch list in the home's build record — in seconds.",
+    "Record a walkthrough video on your phone — or upload a home inspector's PDF report. Punchlist AI extracts every defect and finding, tags severity and location (room, fixture, trade), sorts by category, and auto-assigns the right vendor to each item in the home's build record — in seconds.",
   applicationSubCategory: "AI Construction Quality Inspection",
   keywords:
-    "punch list software, AI punch list, construction punch list AI, walkthrough video analysis, home builder QC software, defect detection AI, construction quality control, automated punch list, home walkthrough AI, construction inspection software",
+    "punch list software, AI punch list, construction punch list AI, home inspection PDF to punch list, inspection report punch list, walkthrough video analysis, home builder QC software, defect detection AI, construction quality control, automated punch list, home walkthrough AI, construction inspection software",
   featureList: [
+    "Upload a home inspection PDF — AI auto-extracts every finding into punch list items",
+    "Extracts location/room, trade, description, and severity from inspection reports",
+    "Sort findings by trade/category and review before committing",
     "Phone video walkthrough — no special hardware required",
     "AI defect detection from video frames",
     "Severity tagging (cosmetic, functional, critical)",
@@ -31,13 +34,13 @@ const punchlistAiSchema = buildFeatureSchema({
 });
 
 export const metadata = {
-  title: "Punchlist AI — Walk the House, Get the Punchlist | Cornerstone PM™",
+  title: "Punchlist AI — Walk the House or Upload the Inspection PDF, Get the Punchlist | Cornerstone PM™",
   description:
-    "Record a walkthrough on your phone. Punchlist AI watches the video, identifies every issue, tags severity and location, and creates a punch list in your build in seconds. Built into Cornerstone PM™.",
+    "Record a walkthrough on your phone — or upload a home inspector's PDF report. Punchlist AI extracts every finding, tags severity and location, sorts by trade, and auto-assigns vendors in seconds. Built into Cornerstone PM™.",
   openGraph: {
-    title: "Punchlist AI — Walk the House, Get the Punchlist",
+    title: "Punchlist AI — Walk the House or Upload the Inspection PDF",
     description:
-      "Record a walkthrough. Punchlist AI watches the video and builds your punch list — severity tagged, location pinned, ready to assign.",
+      "Record a walkthrough or upload an inspection PDF. Punchlist AI builds your punch list — severity tagged, location pinned, sorted by trade, vendors auto-assigned.",
     images: ["/mockups/ss-punchlist-ai.jpg"],
   },
 };
@@ -46,14 +49,14 @@ const howItWorks = [
   {
     step: "01",
     icon: Video,
-    title: "Walk the house",
-    desc: "Open the home in Cornerstone PM™. Tap Record. Walk the rooms and talk through what you see — \"replace this baseboard, repaint the trim above the window, the bottom shelf in the office needs to come out.\" Or upload a video you already recorded.",
+    title: "Walk the house — or upload the inspection PDF",
+    desc: "Open the home in Cornerstone PM™. Tap Record and walk the rooms talking through what you see — \"replace this baseboard, repaint the trim above the window, the bottom shelf in the office needs to come out.\" Already have a home inspector's report? Skip the walk and upload the PDF instead.",
   },
   {
     step: "02",
     icon: Sparkles,
-    title: "Punchlist AI watches",
-    desc: "The AI ingests the video and audio. It identifies every issue, transcribes your callouts, infers severity (critical / high / normal), pins the location (Kitchen, Office, Master Bath), and links it to the right scope (Trim, Paint, Drywall, etc.).",
+    title: "Punchlist AI extracts",
+    desc: "From video, the AI ingests the footage and audio and transcribes your callouts. From a PDF inspection report, it reads every finding line by line. Either way it identifies each issue, infers severity (critical / high / normal), pins the location (Kitchen, Office, Master Bath), and links it to the right trade (Electrical, Plumbing, Roofing, HVAC, Structural, Cosmetic).",
   },
   {
     step: "03",
@@ -179,9 +182,10 @@ export default function PunchlistAIPage() {
               </h1>
 
               <p className="text-lg text-slate-300 mb-8 leading-relaxed">
-                Record a walkthrough on your phone. Punchlist AI watches the video, identifies every
-                issue, tags severity and location, and creates a punch list inside the home — automatically.
-                No clipboard. No retyping. No items forgotten on the drive back.
+                Record a walkthrough on your phone — or upload a home inspector&apos;s PDF report.
+                Punchlist AI extracts every finding, tags severity and location, sorts by trade,
+                and auto-assigns the right vendor to each item — automatically. No clipboard.
+                No retyping a 30-page report. No items forgotten on the drive back.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -202,8 +206,8 @@ export default function PunchlistAIPage() {
 
               <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-slate-400">
                 <span className="flex items-center gap-2"><Check className="w-4 h-4 text-emerald-400" /> Built into Cornerstone PM™</span>
-                <span className="flex items-center gap-2"><Check className="w-4 h-4 text-emerald-400" /> Video + voice in one pass</span>
-                <span className="flex items-center gap-2"><Check className="w-4 h-4 text-emerald-400" /> Severity + location auto-tagged</span>
+                <span className="flex items-center gap-2"><Check className="w-4 h-4 text-emerald-400" /> Walkthrough video or inspection PDF</span>
+                <span className="flex items-center gap-2"><Check className="w-4 h-4 text-emerald-400" /> Severity + trade auto-tagged, vendors assigned</span>
               </div>
             </div>
 
@@ -283,6 +287,62 @@ export default function PunchlistAIPage() {
                 );
               })}
             </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Two ways in: PDF or video */}
+      <section className="py-20 px-4 border-t border-slate-800/60">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-14">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-amber-500/10 border border-amber-500/30 rounded-full text-amber-300 text-xs font-medium uppercase tracking-wider mb-6">
+              <FileUp className="w-3.5 h-3.5" />
+              <span>New · Upload Inspection PDF</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+              Two ways to build a punch list fast.
+            </h2>
+            <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+              Record a walkthrough video, or upload a home inspector&apos;s PDF report. Same AI flow,
+              same sorted, vendor-assigned punch list — pick whichever input you already have.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Video walkthrough card */}
+            <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-8">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 mb-5">
+                <Video className="w-6 h-6 text-amber-400" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Record a walkthrough video</h3>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">
+                Walk the house with your phone and talk through what you see. Punchlist AI watches
+                the footage and transcribes your callouts into punch list items.
+              </p>
+              <ul className="space-y-2.5">
+                <li className="flex items-start gap-2.5 text-slate-300 text-sm"><Check className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" /> Video + voice merged in one pass</li>
+                <li className="flex items-start gap-2.5 text-slate-300 text-sm"><Check className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" /> Photo evidence captured from key frames</li>
+                <li className="flex items-start gap-2.5 text-slate-300 text-sm"><Check className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" /> Perfect for pre-drywall, final, and warranty walks</li>
+              </ul>
+            </div>
+
+            {/* Inspection PDF card */}
+            <div className="bg-gradient-to-br from-amber-500/10 via-slate-900/60 to-orange-500/10 border border-amber-500/30 rounded-2xl p-8">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-amber-500/20 border border-amber-500/40 mb-5">
+                <FileText className="w-6 h-6 text-amber-300" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Upload a home inspection PDF</h3>
+              <p className="text-slate-300 text-sm leading-relaxed mb-4">
+                Got a home inspector&apos;s report? Stop manually re-typing a 30-page PDF into your
+                punch list. Upload it and Punchlist AI extracts every defect/finding into items —
+                sorted by trade, vendor-assigned — in seconds.
+              </p>
+              <ul className="space-y-2.5">
+                <li className="flex items-start gap-2.5 text-slate-200 text-sm"><Check className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" /> AI extracts location/room, trade, description, and severity from each finding</li>
+                <li className="flex items-start gap-2.5 text-slate-200 text-sm"><Check className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" /> Sorted by trade — Electrical, Plumbing, Roofing, HVAC, Structural, Cosmetic</li>
+                <li className="flex items-start gap-2.5 text-slate-200 text-sm"><Check className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" /> Sort and review before committing; auto-assign vendors by trade, manual override anytime</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
