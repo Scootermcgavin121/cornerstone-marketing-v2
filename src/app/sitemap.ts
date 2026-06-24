@@ -103,6 +103,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/designer-packages-curated-selections-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/construction-ai-knowledge-base-estimating-formulas", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/construction-allowances-master-cost-budget-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/foreman-ai-vision-jobsite-photo-analysis-construction", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({

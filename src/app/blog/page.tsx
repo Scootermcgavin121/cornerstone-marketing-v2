@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "foreman-ai-vision-jobsite-photo-analysis-construction",
+    title: "Point Your Phone at a Problem: How Foreman AI Reads Jobsite Photos, Floor Plans, and Product Images",
+    excerpt:
+      "Foreman AI vision reads the photos you already take — floor plans, product shots, jobsite issues — and turns them into structured construction data and real actions inside Cornerstone PM. Drop an image into the chat and Foreman analyzes the content, not just stores it.",
+    date: "June 24, 2026",
+    readTime: "6 min read",
+    tag: "AI & Automation",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/foreman-vision.png",
+  },
+  {
     slug: "construction-allowances-master-cost-budget-home-builders",
     title: "Construction Allowances Done Right: Placeholder Budgets That Flow Into Your Real Cost Plan",
     excerpt:
