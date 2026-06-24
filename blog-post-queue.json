@@ -610,8 +610,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/foreman-vision.png",
       "heroImageAlt": "Construction AI image analysis — Foreman AI reading jobsite photos, floor plans, and product images for home builders",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "e3b040a",
+      "publishedAt": "2026-06-24T14:03:18.928Z"
     },
     {
       "slug": "houzz-pro-vs-cornerstone-production-home-builder",
