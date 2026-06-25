@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "houzz-pro-vs-cornerstone-production-home-builder",
+    title: "Houzz Pro vs. Cornerstone PM: Why Production Builders Outgrow a Designer-First Tool",
+    excerpt:
+      "Houzz Pro is a strong tool for interior designers and remodelers — but it was never built for a production home builder selling the same plan 40 times a year. When you map Houzz Pro's feature set against floorplans, options, vendor bids, and a buyer-facing design center, the gaps are impossible to ignore. Here's an honest look at where each tool fits — and where Houzz Pro ends.",
+    date: "June 25, 2026",
+    readTime: "7 min read",
+    tag: "Comparison",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/houzz-pro-vs-cornerstone.png",
+  },
+  {
     slug: "foreman-ai-vision-jobsite-photo-analysis-construction",
     title: "Point Your Phone at a Problem: How Foreman AI Reads Jobsite Photos, Floor Plans, and Product Images",
     excerpt:
