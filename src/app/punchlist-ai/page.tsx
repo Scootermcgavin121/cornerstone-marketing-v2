@@ -14,10 +14,12 @@ const punchlistAiSchema = buildFeatureSchema({
     "Record a walkthrough video on your phone — or upload a home inspector's PDF report. Punchlist AI extracts every defect and finding, tags severity and location (room, fixture, trade), sorts by category, and auto-assigns the right vendor to each item in the home's build record — in seconds.",
   applicationSubCategory: "AI Construction Quality Inspection",
   keywords:
-    "punch list software, AI punch list, construction punch list AI, home inspection PDF to punch list, inspection report punch list, walkthrough video analysis, home builder QC software, defect detection AI, construction quality control, automated punch list, home walkthrough AI, construction inspection software",
+    "punch list software, AI punch list, construction punch list AI, home inspection PDF to punch list, inspection report punch list, AI home inspection import, home inspection report to punch list, walkthrough video analysis, home builder QC software, defect detection AI, construction quality control, automated punch list, home walkthrough AI, construction inspection software",
   featureList: [
     "Upload a home inspection PDF — AI auto-extracts every finding into punch list items",
     "Extracts location/room, trade, description, and severity from inspection reports",
+    "Pulls the inspector's actual embedded photos out of the PDF and attaches them to the matching punch item",
+    "Inspector photos flow through to the vendor's notification email",
     "Sort findings by trade/category and review before committing",
     "Phone video walkthrough — no special hardware required",
     "AI defect detection from video frames",
@@ -56,7 +58,7 @@ const howItWorks = [
     step: "02",
     icon: Sparkles,
     title: "Punchlist AI extracts",
-    desc: "From video, the AI ingests the footage and audio and transcribes your callouts. From a PDF inspection report, it reads every finding line by line. Either way it identifies each issue, infers severity (critical / high / normal), pins the location (Kitchen, Office, Master Bath), and links it to the right trade (Electrical, Plumbing, Roofing, HVAC, Structural, Cosmetic).",
+    desc: "From video, the AI ingests the footage and audio and transcribes your callouts. From a PDF inspection report, it reads every finding line by line — and pulls the inspector's own embedded photos straight out of the PDF, attaching each one to the matching item. Either way it identifies each issue, infers severity (critical / high / normal), pins the location (Kitchen, Office, Master Bath), and links it to the right trade (Electrical, Plumbing, Roofing, HVAC, Structural, Cosmetic).",
   },
   {
     step: "03",
@@ -335,12 +337,13 @@ export default function PunchlistAIPage() {
               <p className="text-slate-300 text-sm leading-relaxed mb-4">
                 Got a home inspector&apos;s report? Stop manually re-typing a 30-page PDF into your
                 punch list. Upload it and Punchlist AI extracts every defect/finding into items —
-                sorted by trade, vendor-assigned — in seconds.
+                sorted by trade, vendor-assigned, <span className="font-semibold text-amber-300">with the inspector&apos;s own photos attached</span> — in seconds.
               </p>
               <ul className="space-y-2.5">
                 <li className="flex items-start gap-2.5 text-slate-200 text-sm"><Check className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" /> AI extracts location/room, trade, description, and severity from each finding</li>
+                <li className="flex items-start gap-2.5 text-slate-200 text-sm"><Check className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" /> Pulls the inspector&apos;s actual embedded photos out of the PDF and attaches them to the matching item — so the defect photo flows through to the vendor email</li>
                 <li className="flex items-start gap-2.5 text-slate-200 text-sm"><Check className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" /> Sorted by trade — Electrical, Plumbing, Roofing, HVAC, Structural, Cosmetic</li>
-                <li className="flex items-start gap-2.5 text-slate-200 text-sm"><Check className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" /> Sort and review before committing; auto-assign vendors by trade, manual override anytime</li>
+                <li className="flex items-start gap-2.5 text-slate-200 text-sm"><Check className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" /> Review and edit room/scope/vendor/description (and remove any photo) before committing; auto-assign vendors by trade, manual override anytime</li>
               </ul>
             </div>
           </div>

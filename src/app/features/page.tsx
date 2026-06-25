@@ -212,6 +212,8 @@ const featureDetails = [
     bullets: [
       "Upload a home inspection PDF \u2014 AI extracts every defect/finding automatically",
       "AI pulls location/room, trade (Electrical, Plumbing, Roofing, HVAC, Structural, Cosmetic), description, and severity from the report",
+      "Pulls the inspector\u2019s actual embedded photos out of the PDF and attaches them to the matching item \u2014 so the defect photo flows through to the vendor email",
+      "Review and edit room/scope/vendor/description (and remove any photo) before committing",
       "Or record a phone video walkthrough \u2014 no special hardware required",
       "Video mode: AI watches the footage + transcribes audio callouts in one pass",
       "Sorts findings by trade/category; sort and review before committing",
