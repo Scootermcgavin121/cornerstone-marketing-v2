@@ -625,8 +625,9 @@
       "wordCount": 1100,
       "heroImage": "/blog/houzz-pro-vs-cornerstone.png",
       "heroImageAlt": "Houzz Pro vs Cornerstone PM comparison for production home builders",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "3c37266",
+      "publishedAt": "2026-06-25T14:03:30.079Z"
     },
     {
       "slug": "true-cost-of-spreadsheet-budgets-home-builders",
