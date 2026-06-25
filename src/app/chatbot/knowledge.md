@@ -199,6 +199,12 @@ A: Both! Cornerstone has 64 Designer Collections curated by an actual interior d
 **Q: How do I mark a Level 1 option as "not included" so it becomes an upgrade?**
 A: Go to Purchasing → Options, find the Level 1 option, click to open its details, and change the Spec Level to a higher tier (e.g., Upgrade I or Premium). Save, and it will no longer be included in the base pricing — it shows as a paid upgrade at the new tier instead. To exclude an entire option class from the base budget, use the Standard/Upgrade toggle on the Spec Levels page.
 
+**Q: Can I give subcontractors a selection sheet without showing them the pricing?**
+A: Yes. Cornerstone generates a **Trade Copy** of the selection sheet with **zero pricing** - every price column, subtotal, and total is stripped out, and it's stamped "TRADE COPY - NO PRICING" in the header. Hand it to your trades to tape up in the home so they can see exactly what finishes go where (with photos), while your pricing and margins stay private. The buyer/office Selection Sheet (with pricing) is still available separately. Both can be grouped By Category or By Room.
+
+**Q: Do I have to manually export a trade copy every time selections change?**
+A: No. The Trade Copy auto-saves into the home's Documents every time selections are locked or approved, and it replaces the previous one so duplicates never pile up - it's just always there in the home's documents, current. There's also a manual "Save Trade Copy to Home Docs" button if you want to push an updated copy on demand.
+
 **Q: How does design center pricing work?**
 A: Pricing is takeoff-driven - quantities come from the builder's actual takeoff data, not estimates. Upgrade costs are calculated as the delta from the base/standard product. If standard carpet is $3.25/sqft and the buyer picks hardwood at $8.00/sqft, the upgrade is the difference ($4.75) times the room's exact square footage from takeoffs. Every dollar traces back to real quantities and vendor pricing. Zero double-entry.
 
@@ -1000,6 +1006,14 @@ Cornerstone's Design Center is **takeoff-driven** - the system knows exactly how
 - One-click export of a buyer's complete selection sheet as a **branded PDF**
 - Shows every room, every selection, upgrade costs, and totals
 - Customer-facing - no internal cost/margin data exposed
+- Group the sheet **By Category** or **By Room**
+
+### Trade Copy - Pricing-Free Selection Sheet (NEW)
+- Alongside the buyer/office Selection Sheet (which shows pricing), Cornerstone generates a separate **Trade Copy** version with **zero pricing** - every dollar figure stripped out (no price columns, no subtotals, no summary totals). It's stamped **"TRADE COPY - NO PRICING"** in the header.
+- **Why it matters:** builders can hand trades and subcontractors a clean spec sheet to tape up in the home - showing exactly what finishes go where, with photos - without ever exposing pricing or margins to the trades. Protect your margins: trades see the finishes, never the prices.
+- **Auto-saves to the home's Documents** every time selections are locked/approved - and it replaces the previous trade copy so duplicates never pile up. No manual exporting; it's just always there in the home's documents.
+- There's also a manual **"Save Trade Copy to Home Docs"** button for on-demand saves.
+- Like the buyer sheet, the trade copy can be grouped **By Category** or **By Room**.
 
 ### How It Works for Builders (Setup Flow)
 1. **Set up the parts catalog** with products (materials, fixtures, finishes with pricing and images)

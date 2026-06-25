@@ -144,6 +144,7 @@ const features = [
   { title: "Apply Budget Flow", desc: "One-click flow to apply base budget + options to any home." },
   { title: "Design Center Integration", desc: "Room-by-room selections tied directly to purchasing budget. Includes Product Configurator for complex multi-attribute selections like cabinets and countertops." },
   { title: "Designer Collections", desc: "Group selections into curated collections for buyer presentations." },
+  { title: "Pricing-Free Trade Copy", desc: "Hand trades a spec sheet that shows every finish and photo with zero pricing &mdash; no price columns, subtotals, or totals. Auto-saved to the home&rsquo;s Documents on every selection lock. Protect your margins: trades see the finishes, never the prices." },
   { title: "Unlimited Spec Levels", desc: "Community Standard, Premium, Luxury &mdash; unlimited spec levels with separate pricing." },
   { title: "Base Pricing Matrix", desc: "Floorplan &rarr; -  Community pricing matrix with per community overrides." },
   { title: "Change Orders", desc: "Buyer-requested changes with approval workflow and budget impact." },

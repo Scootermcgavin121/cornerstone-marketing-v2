@@ -35,6 +35,8 @@ const designSchema = buildFeatureSchema({
     "Bulk option creation from scope items or parts catalog",
     "Buyer-facing design center with confirm/reject workflows",
     "PDF design center summary with buyer signature line",
+    "Selection Sheet PDF (grouped By Category or By Room) for buyers and office",
+    "Trade Copy selection sheet with zero pricing — auto-saved to the home's Documents",
   ],
 });
 
@@ -85,6 +87,14 @@ const faqItems: FAQItem[] = [
     a: "Yes. The homeowner portal shows every selection, allowance status, and upgrade pricing in real time. Buyers can review, approve, and digitally sign-off on their selections before construction begins.",
   },
   {
+    q: "Can I give subcontractors a selection sheet without showing pricing?",
+    a: "Yes &mdash; that&apos;s exactly what the Trade Copy is for. Alongside the buyer/office Selection Sheet (which includes pricing), Cornerstone PM&trade; generates a separate Trade Copy with every dollar figure stripped out &mdash; no price columns, no subtotals, no totals &mdash; stamped &lsquo;TRADE COPY &mdash; NO PRICING&rsquo; in the header. Hand it to your trades to tape up in the home so they see exactly what finishes go where, with photos, while your pricing and margins stay private. Both versions can be grouped By Category or By Room.",
+  },
+  {
+    q: "Do I have to export a trade copy every time selections change?",
+    a: "No. The Trade Copy auto-saves into the home&apos;s Documents every time selections are locked or approved, and it replaces the previous one so duplicates never pile up &mdash; it&apos;s just always there in the home&apos;s documents, current. There&apos;s also a manual &lsquo;Save Trade Copy to Home Docs&rsquo; button to push an updated copy on demand.",
+  },
+  {
     q: "What does design center software cost?",
     a: "Cornerstone PM™'s Design Center is included in the Builder plan at $299/mo with up to 30 users (60 on Pro+). Foreman AI's 8-skill Design Center domain is included on the Pro plan at $499/mo. There are no per-seat fees and no implementation cost.",
   },
@@ -109,7 +119,9 @@ const features = [
   { title: "Spec Level Management", desc: "Community Standard, Premium, Luxury &mdash; unlimited levels with included/upgrade pricing." },
   { title: "Options Engine", desc: "Structural and design options with real-time pricing, tied to budget automatically." },
   { title: "Buyer Selection Portal", desc: "Buyers make selections online, builder approves &mdash; no email chains." },
-  { title: "Selections PDF Export", desc: "Generate a clean, branded selections PDF for every home." },
+  { title: "Selections PDF Export", desc: "Generate a clean, branded selection sheet PDF for every home &mdash; grouped By Category or By Room." },
+  { title: "Pricing-Free Trade Copy", desc: "Hand trades a clean spec sheet to tape up in the home &mdash; every finish and photo, zero pricing. The Trade Copy strips every dollar (no price columns, subtotals, or totals) and stamps &lsquo;TRADE COPY &mdash; NO PRICING&rsquo; in the header. Protect your margins: trades see the finishes, never the prices." },
+  { title: "Auto-Saved to Home Docs", desc: "The Trade Copy auto-saves into the home&rsquo;s Documents every time selections are locked or approved &mdash; replacing the old one so duplicates never pile up. No manual exporting; it&rsquo;s always there, always current. A manual &lsquo;Save Trade Copy to Home Docs&rsquo; button is there too." },
   { title: "Upgrade Tracking", desc: "Track every upgrade from selection to install with status updates." },
   { title: "Change Order Integration", desc: "Design changes flow directly into purchasing and budget." },
   { title: "Community-Level Pricing", desc: "Set base included items per community, overrides per floorplan. Different communities can start at different spec levels — Standard in one, Upgrade I in another — with zero extra configuration." },
