@@ -640,8 +640,9 @@
       "wordCount": 1100,
       "heroImage": "/blog/spreadsheet-budget-true-cost.png",
       "heroImageAlt": "True cost of spreadsheet budgets for home builders — construction budget spreadsheet alternative",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "e2d3d2f",
+      "publishedAt": "2026-06-26T14:16:53.368Z"
     },
     {
       "slug": "option-classes-scope-linked-design-options-home-builders",
