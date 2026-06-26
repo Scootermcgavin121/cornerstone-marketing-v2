@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "true-cost-of-spreadsheet-budgets-home-builders",
+    title: "The True Cost of Running Your Build on Spreadsheets",
+    excerpt:
+      "Spreadsheet budgets don't just waste time — they leak margin. Version conflicts, broken formulas, allowance drift, and the absence of any audit trail quietly erode the financial integrity of every home you build. Here's what that actually costs, and how purpose-built purchasing software replaces it.",
+    date: "June 26, 2026",
+    readTime: "7 min read",
+    tag: "Purchasing",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/spreadsheet-budget-true-cost.png",
+  },
+  {
     slug: "houzz-pro-vs-cornerstone-production-home-builder",
     title: "Houzz Pro vs. Cornerstone PM: Why Production Builders Outgrow a Designer-First Tool",
     excerpt:
