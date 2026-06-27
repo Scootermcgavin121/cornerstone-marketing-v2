@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "option-classes-scope-linked-design-options-home-builders",
+    title: "Option Classes: Linking Design Selections to Scopes and Budgets Automatically",
+    excerpt:
+      "In most construction software, design selections and cost tracking are completely disconnected. A buyer upgrades to Premium Cabinets — and someone manually updates the budget, the scope, and the bid request. Cornerstone PM's Option Classes wire those three things together automatically: one buyer choice, one update, no reconciliation.",
+    date: "June 27, 2026",
+    readTime: "6 min read",
+    tag: "Product Update",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/option-classes-scope-linking.png",
+  },
+  {
     slug: "true-cost-of-spreadsheet-budgets-home-builders",
     title: "The True Cost of Running Your Build on Spreadsheets",
     excerpt:
