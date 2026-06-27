@@ -1,0 +1,69 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><style>
+:root{
+  --bg:#F4F5F7;--card:#fff;--navy:#0f172a;--slate:#475569;--muted:#94a3b8;
+  --line:#e5e7eb;--emerald:#059669;--emerald-bg:#ecfdf5;--emerald-line:#a7f3d0;
+  --red:#dc2626;--red-bg:#fef2f2;--red-line:#fecaca;--amber:#b45309;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1024px;height:1024px;font-family:-apple-system,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--navy);-webkit-font-smoothing:antialiased}
+.stage{width:1024px;height:1024px;display:flex;align-items:center;justify-content:center;padding:72px}
+.card{width:100%;background:var(--card);border:1px solid var(--line);border-radius:28px;
+  box-shadow:0 30px 60px -20px rgba(15,23,42,.18),0 8px 20px -8px rgba(15,23,42,.10);overflow:hidden}
+.head{padding:40px 48px 32px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:20px}
+.head-ico{width:64px;height:64px;border-radius:16px;background:var(--emerald-bg);border:1px solid var(--emerald-line);
+  display:flex;align-items:center;justify-content:center;color:var(--emerald);flex-shrink:0}
+.head-ico svg{width:34px;height:34px}
+.eyebrow{font-size:18px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--emerald);margin-bottom:6px}
+.head h1{font-size:34px;font-weight:800;line-height:1.12}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.col{padding:36px 44px}
+.col.left{border-right:1px solid var(--line)}
+.col h3{font-size:16px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
+.col .brand{font-size:27px;font-weight:800;margin-bottom:22px;line-height:1.1}
+.col.left h3{color:var(--muted)} .col.left .brand{color:var(--slate)}
+.col.right h3{color:var(--emerald)} .col.right .brand{color:var(--navy)}
+.feat{display:flex;align-items:flex-start;gap:12px;padding:11px 0;font-size:20px;line-height:1.3}
+.feat .ic{width:26px;height:26px;flex-shrink:0;margin-top:1px}
+.feat.no{color:var(--muted)} .feat.yes{color:var(--navy);font-weight:600}
+.feat.no .ic{color:var(--red)} .feat.yes .ic{color:var(--emerald)}
+.rows{padding:24px 48px 12px;display:flex;flex-direction:column}
+.row{display:flex;align-items:center;justify-content:space-between;padding:22px 4px;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:none}
+.row .k{font-size:21px;color:var(--slate);font-weight:600}
+.row .v{font-size:23px;font-weight:800;color:var(--navy)}
+.row .v.em{color:var(--emerald)}
+.result{background:var(--emerald-bg);border-top:1px solid var(--emerald-line);padding:34px 48px;display:flex;align-items:center;justify-content:space-between}
+.result .left{display:flex;align-items:center;gap:18px}
+.check{width:52px;height:52px;border-radius:14px;background:var(--emerald);display:flex;align-items:center;justify-content:center}
+.check svg{width:30px;height:30px;color:#fff}
+.result .lbl-k{font-size:17px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--emerald)}
+.result .lbl-v{font-size:26px;font-weight:800;color:var(--navy);margin-top:2px}
+.bigstat{padding:52px 48px;display:flex;align-items:center;gap:40px}
+.bigstat .num{font-size:140px;font-weight:900;color:var(--emerald);line-height:.9;letter-spacing:-.03em}
+.bigstat .meta .t{font-size:30px;font-weight:800;margin-bottom:8px}
+.bigstat .meta .d{font-size:21px;color:var(--slate);line-height:1.4}
+.chips{padding:0 48px 44px;display:flex;flex-wrap:wrap;gap:14px}
+.chip{background:var(--emerald-bg);border:1px solid var(--emerald-line);color:var(--emerald);
+  font-size:19px;font-weight:700;padding:12px 20px;border-radius:999px}
+.flowrow{display:grid;grid-template-columns:1fr auto 1fr;align-items:stretch;padding:40px 48px 8px}
+.pill{border-radius:18px;padding:26px;display:flex;flex-direction:column;gap:12px;min-height:178px;justify-content:flex-start}
+.pill.before{background:#f8fafc;border:1px solid var(--line)}
+.pill.after{background:var(--emerald-bg);border:1px solid var(--emerald-line)}
+.pill .tag{font-size:15px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.pill.after .tag{color:var(--emerald)}
+.pill .name{font-size:26px;font-weight:800;line-height:1.15}
+.pill .sub{font-size:19px;color:var(--slate)}
+.arrow{display:flex;align-items:center;justify-content:center;padding:0 22px;color:var(--emerald)}
+.arrow svg{width:50px;height:50px}
+.divider-tabs{display:flex;gap:10px;padding:28px 48px 6px}
+.tab{flex:1;border-radius:14px;padding:18px 16px;text-align:center;font-size:19px;font-weight:700;border:1px solid var(--line);color:var(--slate);background:#f8fafc}
+.tab.active{background:var(--emerald);color:#fff;border-color:var(--emerald)}
+</style></head><body><div class="stage"><div class="card"><div class="head"><div class="head-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="1"/><line x1="9" y1="6" x2="9" y2="6.01"/><line x1="15" y1="6" x2="15" y2="6.01"/><line x1="9" y1="10" x2="9" y2="10.01"/><line x1="15" y1="10" x2="15" y2="10.01"/><line x1="9" y1="14" x2="15" y2="14"/></svg></div><div><div class="eyebrow">Production Home Builder</div><h1>Options Pricing Engine</h1></div></div>
+<div class="cols">
+  <div class="col left"><h3>Generic / Custom Tools</h3><div class="brand">Manual Spreadsheets</div>
+    <div class="feat no"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg><span>Re-price every option by hand</span></div><div class="feat no"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg><span>No standard option library</span></div><div class="feat no"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg><span>Margins drift per job</span></div>
+  </div>
+  <div class="col right"><h3>Cornerstone PM</h3><div class="brand">Built for Production</div>
+    <div class="feat yes"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Reusable option catalog</span></div><div class="feat yes"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Auto-priced from scope items</span></div><div class="feat yes"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Consistent margin every home</span></div>
+  </div>
+</div><div class="result"><div class="left"><div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><div class="lbl-k">Production Workflow</div><div class="lbl-v">Price a full home in minutes, not days</div></div></div></div></div></div></body></html>
