@@ -47,3 +47,4 @@ next-env.d.ts
 
 # Local secrets (rotated Neon creds)
 .neon-secrets.json
+scripts/hero-option-classes.png

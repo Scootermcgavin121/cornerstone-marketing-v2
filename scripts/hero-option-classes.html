@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  :root {
+    --bg: #F4F5F7;
+    --card: #ffffff;
+    --navy: #0f172a;
+    --slate: #475569;
+    --muted: #94a3b8;
+    --line: #e5e7eb;
+    --emerald: #059669;
+    --emerald-bg: #ecfdf5;
+    --emerald-line: #a7f3d0;
+    --amber: #b45309;
+    --amber-bg: #fffbeb;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 1024px; height: 1024px;
+    font-family: -apple-system, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--navy);
+    -webkit-font-smoothing: antialiased;
+  }
+  .stage {
+    width: 1024px; height: 1024px;
+    display: flex; align-items: center; justify-content: center;
+    padding: 72px;
+  }
+  .card {
+    width: 100%;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 28px;
+    box-shadow: 0 30px 60px -20px rgba(15,23,42,0.18), 0 8px 20px -8px rgba(15,23,42,0.10);
+    overflow: hidden;
+  }
+  /* header */
+  .head {
+    padding: 40px 48px 32px;
+    border-bottom: 1px solid var(--line);
+    display: flex; align-items: center; gap: 20px;
+  }
+
+  .head-ico {
+    width: 64px; height: 64px; border-radius: 16px;
+    background: var(--emerald-bg);
+    border: 1px solid var(--emerald-line);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--emerald); flex-shrink: 0;
+  }
+  .head-ico svg { width: 34px; height: 34px; }
+  .head-txt .eyebrow {
+    font-size: 18px; font-weight: 700; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--emerald); margin-bottom: 6px;
+  }
+  .head-txt h1 { font-size: 34px; font-weight: 800; line-height: 1.1; }
+
+  /* flow row */
+  .flow {
+    display: grid; grid-template-columns: 1fr auto 1fr; align-items: stretch;
+    gap: 0; padding: 40px 48px 8px;
+  }
+  .pill {
+    border-radius: 18px; padding: 26px 26px;
+    display: flex; flex-direction: column; gap: 14px;
+    justify-content: flex-start; min-height: 188px;
+  }
+  .pill.before { background: #f8fafc; border: 1px solid var(--line); }
+  .pill.after  { background: var(--emerald-bg); border: 1px solid var(--emerald-line); }
+  .pill .tag {
+    font-size: 15px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+    color: var(--muted);
+  }
+  .pill.after .tag { color: var(--emerald); }
+  .pill .name { font-size: 27px; font-weight: 800; line-height: 1.15; }
+  .pill .sub { font-size: 19px; color: var(--slate); }
+  .arrow {
+    display: flex; align-items: center; justify-content: center;
+    padding: 0 22px; color: var(--emerald);
+  }
+  .arrow svg { width: 52px; height: 52px; }
+
+  /* meta rows */
+  .rows { padding: 20px 48px 12px; display: flex; flex-direction: column; gap: 0; }
+  .row {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 22px 4px; border-bottom: 1px solid var(--line);
+  }
+  .row:last-child { border-bottom: none; }
+  .row .k { font-size: 21px; color: var(--slate); font-weight: 600; }
+  .row .v { font-size: 23px; font-weight: 800; color: var(--navy); }
+
+  /* result strip */
+  .result {
+    margin: 16px 0 0;
+    background: var(--emerald-bg);
+    border-top: 1px solid var(--emerald-line);
+    padding: 34px 48px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .result .left { display: flex; align-items: center; gap: 18px; }
+  .check {
+    width: 52px; height: 52px; border-radius: 14px; background: var(--emerald);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .check svg { width: 30px; height: 30px; color: #fff; }
+  .result .lbl-k { font-size: 17px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--emerald); }
+  .result .lbl-v { font-size: 26px; font-weight: 800; color: var(--navy); margin-top: 2px; }
+  .result .amount { text-align: right; padding-right: 6px; }
+  .result .amount .old { font-size: 22px; color: var(--muted); text-decoration: line-through; font-weight: 600; }
+  .result .amount .new { font-size: 46px; font-weight: 900; color: var(--emerald); line-height: 1; }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="card">
+      <div class="head">
+        <div class="head-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="12" y1="3" x2="12" y2="21"/><line x1="8" y1="7.5" x2="8" y2="8.5"/><line x1="16" y1="7.5" x2="16" y2="8.5"/><line x1="8" y1="15.5" x2="8" y2="16.5"/><line x1="16" y1="15.5" x2="16" y2="16.5"/></svg>
+        </div>
+        <div class="head-txt">
+          <div class="eyebrow">Design Center · Option Class</div>
+          <h1>Premium Cabinets</h1>
+        </div>
+      </div>
+
+      <div class="flow">
+        <div class="pill before">
+          <div class="tag">Standard</div>
+          <div class="name">Builder-Grade</div>
+          <div class="sub">Included in base price</div>
+        </div>
+        <div class="arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+        <div class="pill after">
+          <div class="tag">Upgrade Selection</div>
+          <div class="name">Premium</div>
+          <div class="sub">Linked to Custom Cabinets scope</div>
+        </div>
+      </div>
+
+      <div class="rows">
+        <div class="row"><span class="k">Option Class</span><span class="v">Upgrade Selection</span></div>
+        <div class="row"><span class="k">Scope Item</span><span class="v">Custom Cabinets</span></div>
+        <div class="row"><span class="k">Master Cost Budget</span><span class="v">Auto-updated</span></div>
+      </div>
+
+      <div class="result">
+        <div class="left">
+          <div class="check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div>
+            <div class="lbl-k">Cabinetry Scope · Budget Updated</div>
+            <div class="lbl-v">No change order needed</div>
+          </div>
+        </div>
+        <div class="amount">
+          <div class="old">$6,800</div>
+          <div class="new">$10,200</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
