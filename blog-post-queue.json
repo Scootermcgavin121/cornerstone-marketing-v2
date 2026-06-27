@@ -655,8 +655,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/option-classes-scope-linking.png",
       "heroImageAlt": "Design option scope linking in construction software — Cornerstone Option Classes for home builders",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "b9226b9",
+      "publishedAt": "2026-06-27T14:03:04.226Z"
     }
   ]
 }
