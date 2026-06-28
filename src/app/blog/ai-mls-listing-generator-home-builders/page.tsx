@@ -9,7 +9,7 @@ import { buildBlogPostSchema } from "@/lib/schema-helpers";
 
 const heroImage = "/blog/ai-mls-listing-generator.png";
 const heroImageAlt =
-  "AI MLS listing generator for home builders — Foreman AI creating home listings from floorplan data in Cornerstone PM";
+  "New construction home exterior at twilight — the kind of home Foreman AI writes an MLS listing for from floorplan data in Cornerstone PM";
 
 const blogSchema = buildBlogPostSchema({
   title:
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: `https://www.cornerstonepm.ai${heroImage}`,
-        width: 1024,
+        width: 1536,
         height: 1024,
         alt: heroImageAlt,
       },
@@ -108,7 +108,7 @@ export default function AiMlsListingGeneratorPage() {
         <Image
           src={heroImage}
           alt={heroImageAlt}
-          width={1024}
+          width={1536}
           height={1024}
           priority
           className="rounded-2xl w-full h-auto mb-10"
