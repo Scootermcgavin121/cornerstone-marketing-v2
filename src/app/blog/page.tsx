@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "ai-mls-listing-generator-home-builders",
+    title: "MLS Listing Generator: How Foreman AI Writes Your Home Listings From Floorplan Data",
+    excerpt:
+      "Every production builder writes the same plan 40 times — and drafts the listing from scratch 40 times. Cornerstone PM's AI MLS Listing Generator pulls bedroom count, square footage, designer packages, and community data directly from your account and turns it into ready-to-paste listing copy in under 60 seconds.",
+    date: "June 28, 2026",
+    readTime: "6 min read",
+    tag: "AI & Automation",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/ai-mls-listing-generator.png",
+  },
+  {
     slug: "option-classes-scope-linked-design-options-home-builders",
     title: "Option Classes: Linking Design Selections to Scopes and Budgets Automatically",
     excerpt:
