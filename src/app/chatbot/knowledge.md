@@ -12,6 +12,28 @@
 
 ---
 
+## New Features (June 29, 2026) - Auto-Send PO on Task Completion (End-to-End Loop)
+
+### Automatic Purchase Order + Vendor Email on Task Completion (NEW)
+Cornerstone can now **fire a vendor's purchase order automatically the moment a construction task is marked complete** — generate it *and* email it to the vendor, with zero manual steps. This is the final link that closes the entire build-and-buy loop end to end: **schedule → cost codes → live budget → vendor pricing → PO → vendor notification**, all triggered just by marking a task done.
+
+**How it works:**
+- **Per-task opt-in flag** — builders flag which construction tasks should auto-send their PO. Only flagged tasks fire automatically; everything else stays on the draft-first review flow. You decide which phases are trusted to go straight to the vendor.
+- **When a flagged task is marked COMPLETE, the system automatically:**
+  1. **Generates the matched purchase order**, with line items **grouped by cost code** (the right parts + scope items at the right quantities for that specific home's floorplan, plus the right vendor and pricing — zero manual data entry).
+  2. **Emails the PO to the assigned vendor's scheduling email** with the **PO PDF attached** — the vendor gets the order the instant the prior phase wraps.
+- **Deterministic mapping, no guessing** — the chain is explicit: **Construction Task → Cost Code → Takeoff Items → PO → Vendor Email**. Cost codes link exactly which materials belong on the PO, so the plumber gets the trim materials for the trim visit, not a giant trade PO.
+- **Draft-first is still the default** for un-flagged tasks — the PM reviews before anything reaches the vendor. Auto-send is an explicit per-task choice, so cash and vendor emails only fire where you've authorized them.
+
+**Why it's a differentiator:** Most construction software — BuilderTrend, CoConstruct, and certainly spreadsheets — can't auto-fire a vendor PO straight off the schedule. PO creation and vendor emails are manual steps you have to remember. Cornerstone turns "mark the task done" into a fully ordered, emailed, attached PO — the schedule literally drives purchasing.
+
+*(Coming next: an optional PM confirmation prompt before the email fires, for builders who want one last human checkpoint on auto-send tasks.)*
+
+**Q: Can Cornerstone automatically send a purchase order to my vendor when a task is done?**
+A: Yes. Flag a construction task for auto-send, and the moment it's marked complete, Cornerstone automatically generates the matched PO (line items grouped by cost code, with the right parts, quantities, vendor, and pricing for that home's floorplan) and emails it — PO PDF attached — to that vendor's scheduling email. No manual PO creation, no separate email step. Tasks you don't flag stay on the draft-first flow where the PM reviews before sending. It closes the whole loop end to end: schedule → cost codes → budget → vendor pricing → PO → vendor notification, all off a single "task complete." BuilderTrend, CoConstruct, and spreadsheets can't auto-fire vendor POs from the schedule like this.
+
+---
+
 ## New Features (June 2, 2026) - Per-Floorplan Scope Item Pricing
 
 ### Per-Floorplan Vendor Pricing for Scope Items (NEW)
@@ -903,24 +925,29 @@ Cornerstone's AI-powered takeoff system eliminates manual material estimation. *
 - **Purchase Orders - Four Generation Patterns** - Most construction platforms hard-code one PO model. Cornerstone gives you four, mixable on the same job:
   1. **All POs at job start** - generate every PO across the entire build the moment the home is approved. Locks in budget exposure on day one. Best for established builder-vendor relationships where vendors need full upfront visibility.
   2. **Deposit / partial POs from earlier pipeline tasks** - need to pay a deposit at permit pull, contract signing, or foundation pour? Generate a partial deposit PO from any earlier pipeline task before the work is done, then top it up later.
-  3. **Auto-generate PO on task completion (draft-first)** - when a construction task is marked complete, the system generates the associated PO **as a draft** for the PM to review before sending. The draft is auto-populated with the correct parts + scope items (via cost codes) at the right quantities for that specific home's floorplan, plus vendor info and pricing - zero manual data entry. Cash goes out only when work is verifiably done, and only after a human approves. See the dedicated section below.
+  3. **Auto-generate PO on task completion** - when a construction task is marked complete, the system generates the associated PO, auto-populated with the correct parts + scope items (via cost codes) at the right quantities for that specific home's floorplan, plus vendor info and pricing - zero manual data entry. Two modes: **draft-first** (the default - the PM reviews the draft before it reaches the vendor) or **auto-send** (flag the task and the PO is generated *and* emailed to the vendor's scheduling email with the PDF attached, the instant the task is done). Cash and vendor emails fire only on tasks you've explicitly authorized. See the dedicated section below.
   4. **Configurable per task, scope, or community** - turn PO generation on/off for specific tasks, scopes, or communities. Mix all three patterns above on the same home (e.g., framing PO at job start, drywall deposit at permit, electrical full PO on task completion).
   - All four patterns are configurable in Settings. Your cash flow rules drive the system, not the other way around.
   - POs track vendor deliveries and invoicing. Webhooks fire on po.created and po.status_changed.
 - **Cost Codes** - phase-level buckets under scopes for per-phase PO generation. Split a single trade (e.g., Plumbing) into Underground, Rough, and Trim phases. Each phase gets its own cost code (PLM-001, PLM-002, PLM-003) and its own PO. Manage cost codes from 4 places: dedicated Cost Codes page, Task Library, Scope Items page, and Parts Catalog. Smart dropdowns show scope-matched codes first with all others below a divider. Auto-assign button for scopes with only one code. Completely optional — builders who don't use them get the same behavior as before.
 
-### Task-Completion PO Generation (Draft-First)
-Cornerstone can **generate a Purchase Order automatically the moment a construction task is marked complete** - so you never forget to order materials for the next phase.
+### Task-Completion PO Generation (Draft-First or Auto-Send)
+Cornerstone can **generate a Purchase Order automatically the moment a construction task is marked complete** - so you never forget to order materials for the next phase. You choose, per task, whether it stays a draft for review or fires straight to the vendor.
 
-- **Draft-first workflow** - the PO is created as a **draft**, not sent. The PM reviews it before it ever reaches the vendor. You always review before you spend.
-- **Auto-populated from the system** - each draft PO is filled in with the correct **parts + scope items (via cost codes)** at the right quantities for that specific home's floorplan, plus the right vendor and pricing. Zero manual data entry.
-- **Explicit mapping, no fuzzy matching** - the chain is deterministic: **Construction Task → Cost Code → Takeoff Items → Draft PO**. The system knows exactly which materials belong on the PO because the cost code links them.
+- **Two modes, per task:**
+  - **Draft-first (default)** - the PO is created as a **draft**, not sent. The PM reviews it before it ever reaches the vendor. You always review before you spend.
+  - **Auto-send (opt-in flag)** - flag a task, and on completion the PO is generated **and emailed to the assigned vendor's scheduling email with the PO PDF attached**, automatically. Zero manual steps - marking the task done orders the materials and notifies the vendor in one action.
+- **Auto-populated from the system** - every PO is filled in with the correct **parts + scope items (via cost codes), grouped by cost code,** at the right quantities for that specific home's floorplan, plus the right vendor and pricing. Zero manual data entry.
+- **Explicit mapping, no fuzzy matching** - the chain is deterministic: **Construction Task → Cost Code → Takeoff Items → PO → Vendor Email**. The system knows exactly which materials belong on the PO because the cost code links them.
 - **Per-phase precision** - because cost codes break a trade into phases, your plumber gets exactly the right materials list for each visit (the Underground PO for the underground visit, the Trim PO for the trim visit) - not one giant trade PO.
-- **Downloadable as PDF** - every PO can be downloaded as a PDF, so builders can manually email vendors if they prefer to keep their existing communication flow.
-- **Why it's a differentiator:** No residential construction platform auto-generates POs from task completion at this level of detail. BuilderTrend and CoConstruct require fully manual PO creation. Cornerstone pre-fills quantities, pricing, and vendor info automatically and still keeps a human in the loop with draft-first review.
+- **Downloadable as PDF** - every PO can also be downloaded as a PDF, so builders can manually email vendors if they prefer to keep their existing communication flow.
+- **Closes the loop end to end** - schedule → cost codes → live budget → vendor pricing → PO → vendor notification, all triggered by a single "task complete."
+- **Why it's a differentiator:** No residential construction platform auto-generates POs from task completion at this level of detail - let alone auto-emails them to the vendor off the schedule. BuilderTrend, CoConstruct, and spreadsheets require fully manual PO creation and vendor email. Cornerstone pre-fills quantities, pricing, and vendor info automatically, and either keeps a human in the loop (draft-first) or fires the whole thing hands-free (auto-send) - your choice, per task.
+
+*(Coming next: an optional PM confirmation prompt before the auto-send email fires, for builders who want a final human checkpoint.)*
 
 **Q: Do I have to create purchase orders manually?**
-A: No. Cornerstone can auto-generate a PO the moment a construction task is marked complete. It's created as a **draft** first - auto-populated with the right parts, scope items, quantities, vendor, and pricing for that home's floorplan (via cost codes) - and the PM reviews it before sending. You can also download any PO as a PDF to email the vendor yourself. The mapping is explicit (Task → Cost Code → Takeoff Items → Draft PO), so there's zero manual data entry and nothing gets forgotten when a phase wraps. BuilderTrend and CoConstruct require fully manual PO creation; Cornerstone does the work and keeps you in control with draft-first review.
+A: No. Cornerstone can auto-generate a PO the moment a construction task is marked complete - auto-populated with the right parts, scope items, quantities, vendor, and pricing for that home's floorplan (grouped by cost code). You pick the behavior per task: **draft-first** (the PO is created as a draft and the PM reviews it before sending) or **auto-send** (flag the task and the PO is generated *and* emailed to the vendor's scheduling email with the PDF attached, automatically). You can also download any PO as a PDF to email the vendor yourself. The mapping is explicit (Task → Cost Code → Takeoff Items → PO), so there's zero manual data entry and nothing gets forgotten when a phase wraps. BuilderTrend, CoConstruct, and spreadsheets require fully manual PO creation; Cornerstone does the work and lets you choose between human-in-the-loop review and fully hands-free vendor ordering.
 
 ### Cost Codes - Hierarchical Phase-Level Cost Tracking
 Cornerstone supports **cost codes** - a hierarchy that lives *underneath* trade scopes for granular, phase-level cost tracking. Think of scopes (Plumbing, Electrical, HVAC) as the **vendor relationship** level, and cost codes as the **phase-level detail** beneath them.
