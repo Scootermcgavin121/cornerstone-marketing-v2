@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "foreman-ai-agent-takes-actions-not-chatbot",
+    title: "It's Not a Chatbot, It's an Agent: AI That Actually Runs Your Build",
+    excerpt:
+      "Most construction AI just answers questions. Foreman reads and writes your live Cornerstone PM data — editing design options, updating vendor pricing, and running multi-step purchasing workflows on your behalf. That's the difference between a chatbot and an AI agent.",
+    date: "June 29, 2026",
+    readTime: "7 min read",
+    tag: "AI & Automation",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/foreman-ai-agent-takes-actions.png",
+  },
+  {
     slug: "ai-mls-listing-generator-home-builders",
     title: "MLS Listing Generator: How Foreman AI Writes Your Home Listings From Floorplan Data",
     excerpt:

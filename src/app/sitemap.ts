@@ -108,6 +108,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/option-classes-scope-linked-design-options-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/true-cost-of-spreadsheet-budgets-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/ai-mls-listing-generator-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/foreman-ai-agent-takes-actions-not-chatbot", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({
