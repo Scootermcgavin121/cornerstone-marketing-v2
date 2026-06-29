@@ -670,8 +670,9 @@
       "wordCount": 1100,
       "heroImage": "/blog/foreman-ai-agent-takes-actions.png",
       "heroImageAlt": "AI agent construction software — Foreman reads and writes data for home builders, not just a chatbot",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "a2fd947",
+      "publishedAt": "2026-06-29T14:03:54.607Z"
     },
     {
       "slug": "community-vendor-bid-awards-not-lowest-bid",
