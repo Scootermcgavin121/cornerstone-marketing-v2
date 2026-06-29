@@ -1,4 +1,20 @@
-import { Check, Sparkles, Ruler } from "lucide-react";
+import {
+  Check,
+  Sparkles,
+  Ruler,
+  CalendarCheck,
+  Hash,
+  Wallet,
+  Tags,
+  FileText,
+  Send,
+  ArrowRight,
+  ClipboardCheck,
+  RefreshCw,
+  Lock,
+  Receipt,
+  Layers,
+} from "lucide-react";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -17,6 +33,14 @@ const purchasingSchema = buildFeatureSchema({
   keywords:
     "home builder purchasing software, construction bid management, vendor bid software, builder purchase orders, scope-filtered bid templates, vendor portal no login, bid comparison software, construction PO software, builder budget software, residential purchasing, construction cost codes, hierarchical cost codes, per-phase purchase orders",
   featureList: [
+    "Closed-loop purchasing — complete a construction task and the matched purchase order auto-generates and auto-emails the vendor (schedule → cost codes → live budget → vendor pricing → PO → vendor notification)",
+    "Cost-code-driven live budgets — every line resolves to a cost code; the budget computes live from floorplan takeoffs × accepted vendor pricing",
+    "Vendor bids drive real costs — accepted bid pricing flows straight into the budget and POs, no re-keying",
+    "Auto-generated POs grouped by cost code with branded PO PDFs and automatic vendor emails",
+    "Approve-to-pay payables workflow — PO lifecycle Draft → Sent → Acknowledged → Invoiced → Approved → Paid, with invoices held until approved",
+    "Change orders with approval workflow, dedicated change-order POs, and full audit trail",
+    "Retainage withholding on purchase orders and payment tracking by method (check, ACH, wire, card, cash)",
+    "QuickBooks-ready — qboId fields on vendors, POs, and homes plus PO/payment webhook events to sync via the REST API or Zapier",
     "Auto-generated Excel bid templates with 3 tabs (Base, Structural, Designer)",
     "Scope-filtered templates — vendors only see their trade",
     "Vendor portal — no Cornerstone account required",
@@ -37,8 +61,8 @@ const purchasingSchema = buildFeatureSchema({
 });
 
 export const metadata = {
-  title: "Home Builder Purchasing & Bid Management Software | Cornerstone PM™",
-  description: "Auto-generated, scope-filtered bid templates. No-login vendor file-upload portal. Side-by-side bid comparison, lock-after-acceptance, parts catalog, auto-budget, POs, and full data export.",
+  title: "Home Builder Purchasing & Cost Control Software | Cornerstone PM™",
+  description: "Cost-code-driven live budgets, vendor bids that drive real pricing, and auto-generated purchase orders. Mark a construction task complete and the matched PO generates and emails the vendor automatically — the closed loop from schedule to vendor payment. Plus change orders, approve-to-pay payables, and QuickBooks-ready sync.",
 };
 
 const faqItems: FAQItem[] = [
@@ -115,6 +139,14 @@ const faqItems: FAQItem[] = [
     a: "No. Cornerstone can auto-generate a PO the moment a construction task is marked complete &mdash; auto-populated with the right parts, scope items, quantities, vendor, and pricing for that home's floorplan (line items grouped by cost code). You choose the behavior per task: draft-first (the PO is created as a draft and the PM reviews it before sending) or auto-send (flag the task and the PO is generated and emailed to the vendor's scheduling email with the PDF attached, the instant the task is done &mdash; zero manual steps). The mapping is explicit (Construction Task &rarr; Cost Code &rarr; Takeoff Items &rarr; PO &rarr; Vendor Email), so there's zero manual data entry and nothing gets forgotten when a phase wraps. You can also download any PO as a PDF to email the vendor yourself. BuilderTrend, CoConstruct, and spreadsheets require fully manual PO creation and vendor email; Cornerstone fires the whole loop off a single 'task complete.'",
   },
   {
+    q: "How does the approve-to-pay (payables) workflow work?",
+    a: "Every purchase order moves through a status lifecycle: Draft &rarr; Sent &rarr; Acknowledged &rarr; Invoiced &rarr; Approved &rarr; Paid (or Void). When a vendor invoice comes in, the PO lands at Invoiced and effectively sits on hold &mdash; it doesn't get paid until someone with authority reviews it against the PO, the budget, and the work, then moves it to Approved. That Approved gate is your approve-to-pay checkpoint. Once approved, you record the payment (check, ACH, wire, card, or cash) with a reference number and date, and the PO flips to Paid. Retainage is withheld automatically at your configured percentage until project completion. Nothing pays a vendor without passing the approval gate.",
+  },
+  {
+    q: "Does Cornerstone PM™ integrate with QuickBooks?",
+    a: "Cornerstone PM&trade; is QuickBooks-ready. Every vendor, purchase order, and home carries a QuickBooks ID (qboId) field, and PO and payment lifecycle events (po.created, po.status_changed, payment.created) fire as real-time webhooks. Today you sync to QuickBooks through the REST API or a Zapier connection &mdash; map Cornerstone vendors, bills, and payments to QuickBooks entities using those IDs and events. A deeper native two-way QuickBooks integration is on the roadmap; the data model and webhook plumbing are already in place for it.",
+  },
+  {
     q: "Does Cornerstone PM™ support cost codes?",
     a: "Yes &mdash; and not just flat cost codes like BuilderTrend or CoConstruct. Cornerstone supports a full hierarchy: trade scopes (your vendor relationship level) with cost codes beneath them for phase-level detail. The Plumbing scope, for example, breaks into PLM-001 Underground, PLM-002 Rough, and PLM-003 Trim. This unlocks per-phase PO generation &mdash; a separate purchase order with exactly the right materials for each vendor visit, instead of one giant PO per trade. Cost codes explicitly connect tasks &rarr; takeoff items &rarr; POs with zero fuzzy matching, and the same part can land on multiple POs at different quantities. It's enterprise-grade cost tracking (the kind you'd find in Procore or Sage 300) without the enterprise complexity &mdash; and it's fully optional, so builders who don't need the granularity can ignore it. Your master budget is unaffected; cost codes only drive home-level PO generation.",
   },
@@ -175,20 +207,311 @@ export default function PurchasingPage() {
       <JsonLd json={purchasingSchema} />
       <Navbar />
       <section className="relative pt-32 pb-16 px-4 text-center overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(52,211,153,0.07)_0%,transparent_65%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(52,211,153,0.09)_0%,transparent_65%)]" />
         <div className="relative max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm font-semibold uppercase tracking-widest mb-6">
-            Purchasing &amp; Budgets
+            Purchasing &amp; Cost Control
           </div>
           <h1 className="text-5xl sm:text-7xl font-black tracking-tight mb-6 leading-tight">
-            Budget smarter.<br /><span className="text-emerald-400">Zero double entry.</span>
+            Mark it done.<br /><span className="text-emerald-400">The PO sends itself.</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10">
-            From bid to PO to budget &mdash; every dollar tracked automatically. Structural options, design selections, and change orders all feed the same number.
+            Cost-code-driven live budgets, vendor bids that become real costs, and purchase orders that generate and email the vendor the instant a task is complete. The whole loop &mdash; schedule to vendor payment &mdash; runs itself.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/beta" className="px-8 py-4 rounded-full bg-emerald-400 text-slate-900 font-bold text-lg hover:bg-emerald-300 transition-all duration-200 shadow-lg shadow-emerald-500/30 hover:-translate-y-0.5">Request Early Access &rarr;</Link>
-            <Link href="/features" className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200">See All Features</Link>
+            <Link href="#closed-loop" className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200">See the closed loop &darr;</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ⭐ THE CLOSED LOOP — hero differentiator */}
+      <section id="closed-loop" className="py-16 px-4 scroll-mt-24">
+        <div className="max-w-6xl mx-auto">
+          <div className="rounded-3xl bg-emerald-500/[0.06] border border-emerald-500/30 p-8 sm:p-12 relative overflow-hidden">
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(52,211,153,0.12),transparent_60%)]" />
+            <div className="relative">
+              <div className="text-center max-w-3xl mx-auto mb-12">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold mb-4">
+                  ⭐ THE CLOSED LOOP
+                </div>
+                <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">
+                  One &ldquo;task complete&rdquo; fires the entire purchasing chain
+                </h2>
+                <p className="text-slate-300 text-lg leading-relaxed">
+                  Other platforms make you build the PO, look up the pricing, attach the PDF, and email the vendor &mdash; by hand, every time. Cornerstone wires the schedule directly to the vendor&rsquo;s inbox. Mark a construction task complete and the matched purchase order generates and sends itself.
+                </p>
+              </div>
+
+              {/* 6-step flow */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-3 mb-10">
+                {[
+                  { icon: CalendarCheck, step: "1", title: "Task complete", desc: "A construction task is checked off on the schedule." },
+                  { icon: Hash, step: "2", title: "Cost code", desc: "The task resolves to its cost code — the exact phase and trade." },
+                  { icon: Wallet, step: "3", title: "Live budget", desc: "Cost code pulls the right takeoff items and quantities for that home." },
+                  { icon: Tags, step: "4", title: "Vendor pricing", desc: "Accepted vendor bid pricing prices every line, automatically." },
+                  { icon: FileText, step: "5", title: "PO generated", desc: "A branded PO PDF is built, line items grouped by cost code." },
+                  { icon: Send, step: "6", title: "Vendor emailed", desc: "It's sent to the vendor's scheduling email — hands-free." },
+                ].map((s) => {
+                  const Icon = s.icon;
+                  return (
+                    <div key={s.step} className="relative p-4 rounded-2xl bg-slate-900/70 border border-slate-800 flex flex-col items-center text-center">
+                      <div className="w-11 h-11 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center mb-3">
+                        <Icon className="w-5 h-5 text-emerald-400" />
+                      </div>
+                      <div className="text-emerald-400/70 text-[10px] font-bold uppercase tracking-widest mb-1">Step {s.step}</div>
+                      <div className="font-bold text-white text-sm mb-1">{s.title}</div>
+                      <div className="text-slate-400 text-xs leading-relaxed">{s.desc}</div>
+                    </div>
+                  );
+                })}
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex-1 p-5 rounded-xl bg-red-500/5 border border-red-500/20">
+                  <p className="text-red-400 font-semibold text-xs uppercase tracking-widest mb-2">BuilderTrend, CoConstruct &amp; spreadsheets</p>
+                  <p className="text-slate-400 text-sm leading-relaxed">The task gets marked done in one tool. Then someone opens the budget, finds the right line items, types the quantities, builds the PO, exports a PDF, opens email, finds the vendor, attaches the file, and hits send. Every phase. Every home. Things get forgotten.</p>
+                </div>
+                <div className="flex-1 p-5 rounded-xl bg-emerald-500/5 border border-emerald-500/30">
+                  <p className="text-emerald-400 font-semibold text-xs uppercase tracking-widest mb-2">Cornerstone PM&trade;</p>
+                  <p className="text-slate-300 text-sm leading-relaxed">Mark the task complete. The PO is already built &mdash; right parts, right quantities, right vendor, right price &mdash; and it&rsquo;s already in the vendor&rsquo;s inbox. Prefer a checkpoint? Leave the task on <span className="text-white font-semibold">draft-first</span> and the PM reviews before anything sends. Auto-send is a per-task opt-in, so POs only fire where you&rsquo;ve authorized it.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Cost-code-driven live budgets */}
+      <section id="live-budgets" className="py-16 px-4 scroll-mt-24">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-5">
+            <div className="w-12 h-12 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center">
+              <Wallet className="w-6 h-6 text-emerald-400" />
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-black text-white">Cost-code-driven live budgets</h2>
+            <p className="text-slate-400 text-lg leading-relaxed">
+              Every budget line resolves to a cost code, and every cost code knows its takeoff items. The budget isn&rsquo;t a number you type and maintain &mdash; it computes live from your floorplan takeoffs multiplied by accepted vendor pricing. Lock a structural option, award a bid, approve a change order, and the budget moves on its own.
+            </p>
+            <ul className="space-y-3">
+              {[
+                "Quantities flow from floorplan takeoffs — no manual line entry",
+                "Accepted vendor pricing drives the dollars, not guesses or stale catalogs",
+                "Hierarchical cost codes track each phase under its trade scope",
+                "Structural options, design selections, and change orders all feed the same number",
+              ].map((b) => (
+                <li key={b} className="flex items-start gap-2.5 text-slate-300">
+                  <Check className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm leading-relaxed">{b}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="rounded-2xl bg-slate-900/60 border border-slate-800 p-8">
+            <div className="text-slate-500 text-xs font-bold uppercase tracking-widest mb-5">How a line computes</div>
+            <div className="space-y-4">
+              <div className="p-4 rounded-xl bg-slate-950/60 border border-slate-800">
+                <div className="text-slate-400 text-xs mb-1">Takeoff quantity</div>
+                <div className="text-white font-bold">PLM-002 Plumbing Rough &middot; 2,400 sqft</div>
+              </div>
+              <div className="text-center text-emerald-400 font-black text-xl">&times;</div>
+              <div className="p-4 rounded-xl bg-slate-950/60 border border-slate-800">
+                <div className="text-slate-400 text-xs mb-1">Accepted vendor pricing</div>
+                <div className="text-white font-bold">Awarded bid &middot; locked unit cost</div>
+              </div>
+              <div className="text-center text-emerald-400 font-black text-xl">=</div>
+              <div className="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30">
+                <div className="text-emerald-400 text-xs mb-1 font-semibold uppercase tracking-widest">Live budget line</div>
+                <div className="text-white font-bold">Recomputes automatically &mdash; no double entry</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Vendor bids become real costs */}
+      <section id="bids-to-pricing" className="py-16 px-4 scroll-mt-24">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="rounded-2xl bg-slate-900/60 border border-slate-800 p-8 order-2 lg:order-1">
+            <div className="flex flex-wrap items-center gap-2 text-sm">
+              <span className="px-3 py-1.5 rounded-lg bg-slate-950/60 border border-slate-800 text-slate-300 font-semibold">Send to bid</span>
+              <ArrowRight className="w-4 h-4 text-slate-600" />
+              <span className="px-3 py-1.5 rounded-lg bg-slate-950/60 border border-slate-800 text-slate-300 font-semibold">Compare</span>
+              <ArrowRight className="w-4 h-4 text-slate-600" />
+              <span className="px-3 py-1.5 rounded-lg bg-slate-950/60 border border-slate-800 text-slate-300 font-semibold">Award</span>
+              <ArrowRight className="w-4 h-4 text-slate-600" />
+              <span className="px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-semibold inline-flex items-center gap-1.5"><Lock className="w-3.5 h-3.5" /> Lock</span>
+            </div>
+            <div className="mt-6 p-4 rounded-xl bg-emerald-500/[0.06] border border-emerald-500/20 text-slate-300 text-sm leading-relaxed">
+              The moment you award a vendor, their scope items, quantities, and pricing <span className="text-white font-semibold">lock</span> &mdash; no scope drift, no surprise edits. That locked pricing becomes the real cost on the budget and every PO it touches.
+            </div>
+          </div>
+          <div className="space-y-5 order-1 lg:order-2">
+            <div className="w-12 h-12 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center">
+              <Tags className="w-6 h-6 text-emerald-400" />
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-black text-white">Vendor bids become real costs</h2>
+            <p className="text-slate-400 text-lg leading-relaxed">
+              Send a floorplan to bid with one click, collect responses through a no-login vendor portal, and compare them side by side with full scope-item drill-down. Award the vendor you want &mdash; based on relationship and scope coverage, not a lowest-bid auction &mdash; and the accepted pricing flows straight into your budget and POs.
+            </p>
+            <ul className="space-y-3">
+              {[
+                "No-login vendor portal — subs upload bids in their own format",
+                "Side-by-side comparison with scope-item drill-down, not just totals",
+                "Community-assigned awards protect long-term vendor relationships",
+                "Lock-after-acceptance freezes awarded pricing against drift",
+              ].map((b) => (
+                <li key={b} className="flex items-start gap-2.5 text-slate-300">
+                  <Check className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm leading-relaxed">{b}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Auto-generated POs grouped by cost code */}
+      <section id="purchase-orders" className="py-16 px-4 scroll-mt-24">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-5">
+            <div className="w-12 h-12 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center">
+              <FileText className="w-6 h-6 text-emerald-400" />
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-black text-white">Purchase orders, grouped by cost code</h2>
+            <p className="text-slate-400 text-lg leading-relaxed">
+              POs build themselves from the home&rsquo;s takeoffs &mdash; line items grouped by cost code, deduped to correct totals, at the right quantities for that floorplan. Each one renders as a branded PDF with your logo, payment terms, and date, ready to view, save, or email the vendor. And you choose <span className="text-white font-semibold">when</span> they fire.
+            </p>
+            <ul className="space-y-3">
+              {[
+                "Branded PO PDFs — your logo, your payment terms, correct dates",
+                "Line items grouped by cost code, deduped to correct totals",
+                "Per-phase POs — the exact materials for each vendor visit",
+                "Four PO patterns: all at job start, partial deposits, on task completion, or configurable per task / scope / community",
+              ].map((b) => (
+                <li key={b} className="flex items-start gap-2.5 text-slate-300">
+                  <Check className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm leading-relaxed">{b}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="rounded-2xl bg-slate-900/60 border border-slate-800 p-6">
+            <div className="flex items-center justify-between mb-5 pb-4 border-b border-slate-800">
+              <div>
+                <div className="text-white font-black text-lg">Purchase Order</div>
+                <div className="text-slate-500 text-xs">The Addison &middot; Lot 14 &middot; Auto-generated</div>
+              </div>
+              <Layers className="w-6 h-6 text-emerald-400" />
+            </div>
+            <div className="space-y-2.5">
+              {[
+                { code: "PLM-002", label: "Plumbing Rough", },
+                { code: "PLM-003", label: "Plumbing Trim", },
+                { code: "ELE-001", label: "Electrical Rough", },
+              ].map((row) => (
+                <div key={row.code} className="flex items-center justify-between p-3 rounded-lg bg-slate-950/60 border border-slate-800">
+                  <div className="flex items-center gap-3">
+                    <span className="text-emerald-400 font-mono text-xs font-bold">{row.code}</span>
+                    <span className="text-slate-300 text-sm">{row.label}</span>
+                  </div>
+                  <span className="text-slate-600 text-xs">grouped</span>
+                </div>
+              ))}
+            </div>
+            <div className="mt-5 flex items-center gap-2 text-emerald-400 text-sm font-semibold">
+              <Send className="w-4 h-4" /> Emailed to vendor&rsquo;s scheduling inbox
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Payables & approve-to-pay */}
+      <section id="payables" className="py-16 px-4 scroll-mt-24">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <div className="w-12 h-12 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center mx-auto mb-4">
+              <ClipboardCheck className="w-6 h-6 text-emerald-400" />
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">Payables, with an approve-to-pay gate</h2>
+            <p className="text-slate-400 text-lg leading-relaxed">
+              Nothing pays a vendor until it passes a checkpoint. Every PO runs a status lifecycle, and the <span className="text-emerald-400 font-semibold">Approved</span> step is your approve-to-pay gate &mdash; an invoice sits on hold until someone reviews it against the PO, the budget, and the work.
+            </p>
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
+            {["Draft", "Sent", "Acknowledged", "Invoiced", "Approved", "Paid"].map((stage, i, arr) => (
+              <div key={stage} className="flex items-center gap-2">
+                <span className={`px-3.5 py-2 rounded-lg text-sm font-semibold border ${stage === "Approved" ? "bg-emerald-500/15 border-emerald-500/40 text-emerald-300" : stage === "Paid" ? "bg-emerald-500/10 border-emerald-500/30 text-emerald-400" : "bg-slate-900/60 border-slate-800 text-slate-300"}`}>
+                  {stage === "Approved" && <Lock className="inline w-3.5 h-3.5 mr-1.5 -mt-0.5" />}
+                  {stage}
+                </span>
+                {i < arr.length - 1 && <ArrowRight className="w-4 h-4 text-slate-600" />}
+              </div>
+            ))}
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+            {[
+              { icon: ClipboardCheck, title: "Approve-to-pay", desc: "Invoices land at Invoiced and hold until a reviewer moves them to Approved against PO, budget, and work done." },
+              { icon: Receipt, title: "Payment tracking", desc: "Record payments by check, ACH, wire, card, or cash with reference numbers and dates, tied to vendor, PO, and home." },
+              { icon: RefreshCw, title: "Retainage", desc: "Withhold a configured percentage on POs until project completion — standard construction billing, handled automatically." },
+            ].map((c) => {
+              const Icon = c.icon;
+              return (
+                <div key={c.title} className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+                  <Icon className="w-6 h-6 text-emerald-400 mb-3" />
+                  <div className="font-bold text-white mb-2">{c.title}</div>
+                  <div className="text-slate-400 text-sm leading-relaxed">{c.desc}</div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Change orders + QuickBooks-ready */}
+      <section id="change-orders" className="py-16 px-4 scroll-mt-24">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="p-8 rounded-2xl bg-slate-900/60 border border-slate-800">
+            <div className="w-12 h-12 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center mb-5">
+              <RefreshCw className="w-6 h-6 text-emerald-400" />
+            </div>
+            <h2 className="text-2xl font-black text-white mb-3">Change orders, controlled</h2>
+            <p className="text-slate-400 leading-relaxed mb-5">
+              Buyer-requested and field changes run through an approval workflow with a full audit trail. Approved changes spin up dedicated change-order POs and flow into the same budget number &mdash; so the cost of a change is never lost between the field and the books.
+            </p>
+            <ul className="space-y-2.5">
+              {[
+                "Approval workflow with full audit trail",
+                "Dedicated change-order POs, flagged and tracked separately",
+                "Budget impact flows into the live home budget automatically",
+              ].map((b) => (
+                <li key={b} className="flex items-start gap-2.5 text-slate-300">
+                  <Check className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm leading-relaxed">{b}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="p-8 rounded-2xl bg-slate-900/60 border border-slate-800">
+            <div className="w-12 h-12 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center mb-5">
+              <Receipt className="w-6 h-6 text-emerald-400" />
+            </div>
+            <h2 className="text-2xl font-black text-white mb-3">QuickBooks-ready</h2>
+            <p className="text-slate-400 leading-relaxed mb-5">
+              Vendors, purchase orders, and homes each carry a QuickBooks ID, and PO and payment lifecycle events fire as real-time webhooks. Sync to QuickBooks today through the REST API or a Zapier connection &mdash; map your bills and payments with those IDs and events.
+            </p>
+            <ul className="space-y-2.5">
+              {[
+                "qboId fields on vendors, POs, and homes",
+                "po.created, po.status_changed & payment.created webhook events",
+                "Sync via REST API or Zapier — deeper native QuickBooks sync on the roadmap",
+              ].map((b) => (
+                <li key={b} className="flex items-start gap-2.5 text-slate-300">
+                  <Check className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm leading-relaxed">{b}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>

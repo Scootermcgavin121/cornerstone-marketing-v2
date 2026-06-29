@@ -74,7 +74,7 @@ const featureDetails = [
       "Full bid management: send to bid → compare → award",
       "Bid requests linkable to specific design or structural options - vendors price exactly what you're selling, awards flow straight to the right budget lines",
       "Side-by-side vendor bid comparison with lowest-price highlighting",
-      "Purchase orders: Draft → Sent → Acknowledged → Invoiced → Paid",
+      "Purchase orders: Draft → Sent → Acknowledged → Invoiced → Approved → Paid, with an approve-to-pay gate (invoices hold until approved), retainage withholding, and payment tracking by check/ACH/wire/card/cash",
       "Hierarchical cost codes - phase-level tracking under each trade scope (Plumbing → PLM-001 Underground, PLM-002 Rough, PLM-003 Trim) for per-phase PO generation; the only residential platform with full cost-code hierarchy, not flat codes like BuilderTrend/CoConstruct",
       "Task-completion PO generation - mark a construction task complete and Cornerstone auto-generates the PO pre-filled with the right parts, quantities, vendor, and pricing for that home's floorplan via cost codes (Task → Cost Code → Takeoff Items → PO); choose draft-first (review before sending) or auto-send (PO emailed to the vendor's scheduling email with PDF attached, hands-free), or download as PDF to email the vendor yourself",
       "Change order approval workflow with full audit trail",
@@ -87,6 +87,8 @@ const featureDetails = [
       "Multi-tab Excel import/export - entire floorplan (base house, locations, structural options, elevations) in one workbook",
       "Vendor Activity Map - Google Maps view of every vendor check-in across all communities in real time",
     ],
+    learnMoreHref: "/purchasing",
+    learnMoreLabel: "Explore Purchasing & cost control",
   },
   {
     id: "sales",
