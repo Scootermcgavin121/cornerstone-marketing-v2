@@ -685,8 +685,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/community-vendor-bid-awards.png",
       "heroImageAlt": "Vendor bid management construction software — community-assigned bid awards for home builders",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "c9011cd",
+      "publishedAt": "2026-06-30T14:04:15.676Z"
     },
     {
       "slug": "real-vendor-pricing-no-estimator-fudging",
