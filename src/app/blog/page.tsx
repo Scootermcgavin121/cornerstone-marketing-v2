@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "community-vendor-bid-awards-not-lowest-bid",
+    title: "Why Lowest-Bid Auctions Hurt Home Builders (and What We Do Instead)",
+    excerpt:
+      "Lowest-bid logic ignores the vendor relationships that keep production schedules running. Cornerstone PM lets you award by community — one vendor for Community A, another for Community B — and locks pricing the moment you accept. No auction race, no silent revisions, no margin erosion after the fact.",
+    date: "June 30, 2026",
+    readTime: "6 min read",
+    tag: "Purchasing",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/community-vendor-bid-awards.png",
+  },
+  {
     slug: "foreman-ai-agent-takes-actions-not-chatbot",
     title: "It's Not a Chatbot, It's an Agent: AI That Actually Runs Your Build",
     excerpt:
