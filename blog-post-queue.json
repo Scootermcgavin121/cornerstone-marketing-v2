@@ -700,8 +700,9 @@
       "wordCount": 950,
       "heroImage": "/blog/real-vendor-pricing-no-fudging.png",
       "heroImageAlt": "Construction estimate accuracy software — real vendor pricing with no filler for home builders",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "f429a9c",
+      "publishedAt": "2026-07-01T14:03:43.302Z"
     },
     {
       "slug": "foreman-ai-profitability-budget-reports-vendor-scorecards",
