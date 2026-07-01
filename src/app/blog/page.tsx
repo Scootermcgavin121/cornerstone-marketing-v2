@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "real-vendor-pricing-no-estimator-fudging",
+    title: "Every Line Item Is Real: Construction Budgets Without Estimator Fudging",
+    excerpt:
+      "Filler pricing — round numbers, synthetic labor splits, estimates copied from last year — quietly erodes margin across every home you build. Cornerstone PM removed filler pricing app-wide: every material line traces to a Blueprint AI takeoff part, every labor line traces to a real awarded vendor bid. No more guessing.",
+    date: "July 1, 2026",
+    readTime: "6 min read",
+    tag: "Purchasing",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/real-vendor-pricing-no-fudging.png",
+  },
+  {
     slug: "community-vendor-bid-awards-not-lowest-bid",
     title: "Why Lowest-Bid Auctions Hurt Home Builders (and What We Do Instead)",
     excerpt:
