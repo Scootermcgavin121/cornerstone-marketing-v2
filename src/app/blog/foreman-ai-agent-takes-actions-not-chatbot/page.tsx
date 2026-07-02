@@ -397,7 +397,7 @@ export default function ForemanAgentActionsPage() {
         </div>
 
         <FAQSection
-          heading="Frequently Asked Questions: AI Agent vs. Chatbot for Construction"
+          title="Frequently Asked Questions: AI Agent vs. Chatbot for Construction"
           items={faqItems}
         />
       </article>
