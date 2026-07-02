@@ -715,8 +715,9 @@
       "wordCount": 1050,
       "heroImage": "/blog/foreman-ai-profitability-reports.png",
       "heroImageAlt": "AI job costing construction software — Foreman profitability reports and vendor scorecards for builders",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "1f4b211",
+      "publishedAt": "2026-07-02T14:03:55.931Z"
     },
     {
       "slug": "marksystems-vs-cornerstone-production-builder",
