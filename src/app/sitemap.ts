@@ -110,6 +110,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/ai-mls-listing-generator-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/foreman-ai-agent-takes-actions-not-chatbot", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/community-vendor-bid-awards-not-lowest-bid", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/foreman-ai-profitability-budget-reports-vendor-scorecards", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/real-vendor-pricing-no-estimator-fudging", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 

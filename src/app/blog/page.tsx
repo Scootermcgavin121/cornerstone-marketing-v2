@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "foreman-ai-profitability-budget-reports-vendor-scorecards",
+    title: "AI Job Costing: Profitability Reports and Vendor Scorecards on Demand",
+    excerpt:
+      "Most builders pull margin numbers by hand — export the budget, paste it into Excel, build pivot tables, email a PDF. By the time it lands, the data has already moved. Foreman AI reads your live Master Cost Budget and generates profitability reports, vendor scorecards, and bid comparisons in seconds. No export, no spreadsheet, no waiting.",
+    date: "July 2, 2026",
+    readTime: "7 min read",
+    tag: "AI & Automation",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/foreman-ai-profitability-reports.png",
+  },
+  {
     slug: "real-vendor-pricing-no-estimator-fudging",
     title: "Every Line Item Is Real: Construction Budgets Without Estimator Fudging",
     excerpt:
