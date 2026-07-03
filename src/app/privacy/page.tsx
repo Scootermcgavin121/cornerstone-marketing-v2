@@ -156,12 +156,11 @@ export default function PrivacyPage() {
             </p>
             <ul className="list-disc pl-5 space-y-2 marker:text-slate-600">
               <li>
-                <strong className="text-white">Push-based sync with limited read-back.</strong> The integration
-                primarily pushes accounting records <em>from Cornerstone PM to QuickBooks Online</em> (for example,
-                vendors, customers, and purchase/expense records). Cornerstone PM remains the system of record for your
-                project data. It reads a limited set of data back from QuickBooks — namely bill/payment status (to mark
-                the matching purchase order paid) and vendor field changes — to keep the two systems consistent. It does
-                not perform full two-way accounting mutation.
+                <strong className="text-white">One-way sync.</strong> The integration pushes accounting records
+                <em> from Cornerstone PM to QuickBooks Online</em> (for example, vendors, customers, and
+                purchase/expense records). Cornerstone PM is the system of record for your project data; QuickBooks
+                receives the accounting entries, and changes you make in QuickBooks do not overwrite your Cornerstone
+                records.
               </li>
               <li>
                 <strong className="text-white">Accounting scope only.</strong> We request only the accounting scope

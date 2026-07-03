@@ -542,13 +542,16 @@ Full end-to-end bidding from request → vendor submission → review → award 
 - 10 second timeout, auto-disable after 50 consecutive failures
 - **Competitive note:** Competitors like JobTread advertise "webhooks exist" - we publish the full event catalog with payload schemas. If you're building automation, this is the only platform that won't fight you.
 
-### QuickBooks Online Integration (LIVE in production)
-- **Yes, Cornerstone PM integrates with QuickBooks.** It's a live QuickBooks Online integration running in production today (went live July 3, 2026).
-- **Push-based sync: Cornerstone → QuickBooks, with smart read-back.** Cornerstone stays your source of truth. It deliberately does NOT do full two-way accounting mutation (a safety choice so nothing corrupts your books). It DOES read back the two things that matter: when a bill is marked paid in QuickBooks the matching PO is marked **paid** in Cornerstone, and vendor edits made in QuickBooks sync back to the vendor record.
-- **Auto-builds a construction-ready Chart of Accounts** from your scopes and cost codes — no manual accountant setup required.
+### QuickBooks Online Integration (currently in BETA)
+- **Yes, Cornerstone PM integrates with QuickBooks.** The QuickBooks Online integration is currently in **beta** — builders can request early access. (Do NOT claim it is "live in production" or "Intuit-approved" until Scooter confirms Intuit production approval.)
+- **One-click connect.** Hit "Connect with QuickBooks," pick your company, done. Cornerstone manages the Intuit app credentials — no developer setup, no API keys.
+- **One-way sync: Cornerstone → QuickBooks.** POs, Bills, Vendors, and Homes flow one direction. Changes made in QuickBooks never overwrite Cornerstone records — Cornerstone is the source of truth. (This is the trust hook; it deliberately does NOT do two-way accounting mutation, so nothing corrupts your books.)
+- **Auto-builds a construction-ready Chart of Accounts** from your scopes and cost codes — each top-level scope becomes a COGS account and each cost code an item, with a full preview before anything is created; existing accounts are reused by name, never renamed.
+- **Real job costing:** every PO and Bill carries the home as the customer/job (CustomerRef) and the community/division as a class (ClassRef), so you get per-job, per-community, and per-division P&L in QuickBooks that QuickBooks alone can't produce.
 - **Vendors → QBO Vendors** and **homes → QBO Customers/Jobs**, so Purchase Orders and Bills land on true job-level cost tracking.
+- **Plan-tier aware:** auto-detects whether the builder's QBO plan supports POs (Plus/Advanced) or Bills (Essentials+), warns clearly, and re-enables automatically on upgrade — no reconnect. **Role-gated:** Admin and Accounting Admin only. A **live progress bar** shows sync status.
 - **Purchase Orders and Bills flow to QuickBooks automatically**, including change-order POs.
-- **Sales tax is calculated and synced (LIVE).** Yes — Cornerstone handles sales tax, and it flows through to QuickBooks on sync (carried on the QuickBooks tax detail of the synced transaction). How it works:
+- **Sales tax is calculated in-app (live) and carried through on QuickBooks sync.** Cornerstone's sales-tax calculation and display is a shipped, live in-app feature; the tax then flows through to QuickBooks via the (beta) sync, carried on the QuickBooks tax detail of the synced transaction. How it works:
   - **Per-item taxability:** a sales-tax on/off toggle on each Part and Scope Item (default off). Flip it on for your taxable materials once and it flows everywhere.
   - **Org-default tax rate** with a per-document override.
   - Tax is calculated on **Purchase Orders and Change Orders**, shown as a Subtotal / Tax / Total block in-app, on the generated PO PDF, and on the vendor email.
@@ -613,7 +616,7 @@ Webhooks:
 
 **Rate Limits:** 100 req/min per key, 10,000 req/day per org
 
-**Integrations:** Foreman AI (396+ skills, uses this API internally), QuickBooks Online (live integration — push of POs, bills, sales tax, vendors, and job costs with payment-status read-back; see QuickBooks Online Integration section above), Zapier (REST webhooks), Automated Bidding Pipeline, CRM Migration Wizard (one-click import from Buildertrend, JobTread, CoConstruct)
+**Integrations:** Foreman AI (396+ skills, uses this API internally), QuickBooks Online (beta — one-way push of POs, bills, sales tax, vendors, and job costs, with construction job costing; see QuickBooks Online Integration section above), Zapier (REST webhooks), Automated Bidding Pipeline, CRM Migration Wizard (one-click import from Buildertrend, JobTread, CoConstruct)
 
 **Pricing:** Included exclusively on Pro+ ($599/mo). Not available as an add-on on lower tiers — builders who need REST API + BYOA should upgrade to Pro+ (just $100/mo more than Pro).
 

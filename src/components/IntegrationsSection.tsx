@@ -1,46 +1,48 @@
 import {
-  BadgeCheck,
+  FlaskConical,
+  ShieldCheck,
+  Plug,
   Landmark,
-  Users,
+  BarChart3,
   ReceiptText,
-  Percent,
-  RefreshCw,
-  Download,
+  Gauge,
+  ArrowRight,
 } from "lucide-react";
+import Link from "next/link";
 
 // QuickBooks brand green
 const QB_GREEN = "#2CA01C";
 
 const syncPoints = [
   {
-    icon: Landmark,
-    title: "Construction-ready Chart of Accounts",
-    desc: "Auto-builds your Chart of Accounts from your scopes and cost codes — no manual accountant setup.",
+    icon: ShieldCheck,
+    title: "One-way sync — your books stay safe",
+    desc: "POs, Bills, Vendors, and Homes flow one direction: Cornerstone → QuickBooks. Changes you make in QuickBooks never overwrite your Cornerstone records. Your accountant can't accidentally break your project data.",
   },
   {
-    icon: Users,
-    title: "Vendors & jobs, mapped",
-    desc: "Vendors sync to QBO Vendors and homes sync to QBO Customers/Jobs, so every dollar lands on true job-level cost tracking.",
+    icon: Plug,
+    title: "One-click connect — no developer setup",
+    desc: "Hit “Connect with QuickBooks,” pick your company, and you're done. Cornerstone manages the Intuit app credentials for you — no API keys, no OAuth wiring, nothing to configure.",
+  },
+  {
+    icon: Landmark,
+    title: "Construction-ready Chart of Accounts",
+    desc: "Starting from a blank QuickBooks, Cornerstone builds a construction CoA straight from your scopes and cost codes — each top-level scope becomes a COGS account, each cost code an item. Full preview before anything is created; existing accounts are reused by name, never renamed.",
+  },
+  {
+    icon: BarChart3,
+    title: "Job costing QuickBooks can't do alone",
+    desc: "Every PO and Bill carries the home as the customer/job and the community or division as a class — so you get true per-job, per-community, and per-division P&L in QuickBooks, not just a lump sum.",
   },
   {
     icon: ReceiptText,
-    title: "POs & Bills flow automatically",
-    desc: "Purchase Orders and Bills — including change-order POs — post to QuickBooks the moment they're created.",
+    title: "POs, Bills, Vendors & sales tax",
+    desc: "Vendors upsert, Purchase Orders create/approve/update (voids close them out), and vendor invoices post as Bills — the moment they happen in Cornerstone. Sales tax carries through on sync, with a live progress bar as it runs.",
   },
   {
-    icon: Percent,
-    title: "Sales tax, calculated and synced",
-    desc: "Flip tax on for your taxable materials once and Cornerstone applies it to Purchase Orders and Change Orders — on-screen, on the PO PDF, and on the vendor email — then syncs the tax straight to QuickBooks. Materials taxable, labor exempt, fully under your control.",
-  },
-  {
-    icon: Download,
-    title: "Already on QuickBooks? Match it",
-    desc: "Pull your existing accounts, items, vendors, customers, and classes so Cornerstone lines up with the lists you already use.",
-  },
-  {
-    icon: RefreshCw,
-    title: "Payment status flows back",
-    desc: "Record a bill payment in QuickBooks and Cornerstone automatically marks the matching PO paid — plus vendor edits read back too. The read-back that actually helps, without QuickBooks ever overwriting your Cornerstone data.",
+    icon: Gauge,
+    title: "Works with your QuickBooks plan",
+    desc: "Auto-detects whether your plan supports POs (Plus/Advanced) or Bills (Essentials and up), warns you clearly, and re-enables automatically when you upgrade — no reconnect. Already on QuickBooks? Pull your existing accounts, items, vendors, customers, and classes so Cornerstone matches them.",
   },
 ];
 
@@ -68,8 +70,8 @@ export function IntegrationsSection() {
               border: "1px solid rgba(44,160,28,0.3)",
             }}
           >
-            <BadgeCheck className="w-3.5 h-3.5" />
-            Now Live — QuickBooks Online Sync
+            <FlaskConical className="w-3.5 h-3.5" />
+            Now in Beta — QuickBooks Online
           </div>
 
           {/* QuickBooks badge */}
@@ -101,15 +103,15 @@ export function IntegrationsSection() {
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-black tracking-tight mb-4">
-            Your purchasing syncs straight to{" "}
-            <span style={{ color: QB_GREEN }}>QuickBooks.</span>
+            Your accountant keeps QuickBooks. Your team keeps{" "}
+            <span style={{ color: QB_GREEN }}>Cornerstone.</span>
           </h2>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
-            Cornerstone PM connects directly to QuickBooks Online — live in
-            production today. POs, bills, sales tax, vendors, and job costs flow
-            from Cornerstone into QuickBooks automatically, and when a bill is
-            marked paid in QuickBooks the matching PO closes out in Cornerstone.
-            No double entry, no CSV exports, no end-of-month scramble.
+            They stay in sync — one direction, no double entry. Purchase orders,
+            bills, vendors, and job costs flow from Cornerstone into QuickBooks
+            automatically, while your Cornerstone data stays the source of truth.
+            The schedule → cost code → budget → PO loop already lives in
+            Cornerstone; now your books keep up with it on their own.
           </p>
         </div>
 
@@ -141,15 +143,28 @@ export function IntegrationsSection() {
           })}
         </div>
 
+        {/* CTA — beta / early access */}
+        <div className="mt-10 flex justify-center">
+          <Link
+            href="/beta"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-white transition-transform hover:scale-[1.02]"
+            style={{ backgroundColor: QB_GREEN }}
+          >
+            Request early access
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+
         {/* Fine print */}
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-2 text-sm text-slate-500">
           <span className="inline-flex items-center gap-2">
-            <RefreshCw className="w-4 h-4" style={{ color: QB_GREEN }} />
-            Push-based sync — Cornerstone stays your source of truth; only
-            payment status and vendor edits read back
+            <ShieldCheck className="w-4 h-4" style={{ color: QB_GREEN }} />
+            One-way sync — QuickBooks never overwrites Cornerstone
           </span>
           <span className="hidden sm:inline text-slate-700">•</span>
-          <span>Requires QuickBooks Online Plus or Advanced</span>
+          <span>Admin &amp; Accounting Admin only</span>
+          <span className="hidden sm:inline text-slate-700">•</span>
+          <span>POs require QuickBooks Online Plus or Advanced</span>
         </div>
       </div>
     </section>

@@ -40,7 +40,7 @@ const purchasingSchema = buildFeatureSchema({
     "Approve-to-pay payables workflow — PO lifecycle Draft → Sent → Acknowledged → Invoiced → Approved → Paid, with invoices held until approved",
     "Change orders with approval workflow, dedicated change-order POs, and full audit trail",
     "Retainage withholding on purchase orders and payment tracking by method (check, ACH, wire, card, cash)",
-    "Live QuickBooks Online sync — POs, Bills, sales tax, vendors, and job costs push automatically, with payment status flowing back (REST API and Zapier also available)",
+    "QuickBooks Online sync (beta) — one-way push of POs, Bills, sales tax, vendors, and job costs into QuickBooks, with construction-grade job costing per home and division (REST API and Zapier also available)",
     "Auto-generated Excel bid templates with 3 tabs (Base, Structural, Designer)",
     "Scope-filtered templates — vendors only see their trade",
     "Vendor portal — no Cornerstone account required",
@@ -62,7 +62,7 @@ const purchasingSchema = buildFeatureSchema({
 
 export const metadata = {
   title: "Home Builder Purchasing & Cost Control Software | Cornerstone PM™",
-  description: "Cost-code-driven live budgets, vendor bids that drive real pricing, and auto-generated purchase orders. Mark a construction task complete and the matched PO generates and emails the vendor automatically — the closed loop from schedule to vendor payment. Plus change orders, approve-to-pay payables, and live QuickBooks Online sync.",
+  description: "Cost-code-driven live budgets, vendor bids that drive real pricing, and auto-generated purchase orders. Mark a construction task complete and the matched PO generates and emails the vendor automatically — the closed loop from schedule to vendor payment. Plus change orders, approve-to-pay payables, and one-way QuickBooks Online sync (beta).",
 };
 
 const faqItems: FAQItem[] = [
@@ -144,7 +144,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Does Cornerstone PM™ integrate with QuickBooks?",
-    a: "Yes — Cornerstone PM™ has a live QuickBooks Online integration running in production today. Purchase Orders, Bills, sales tax, vendors, and homes push from Cornerstone into QuickBooks automatically, and it auto-builds a construction-ready Chart of Accounts from your scopes and cost codes. It's a push-based sync — Cornerstone stays your source of truth — with smart read-back on the two things that matter: when a bill is marked paid in QuickBooks the matching PO closes out in Cornerstone, and vendor edits sync back. Requires QuickBooks Online Plus or Advanced (Purchase Orders live in those editions). Prefer to build your own sync? The REST API and Zapier webhooks (qboId fields, po.created, payment.created events) are available too.",
+    a: "Yes — Cornerstone PM™ has a QuickBooks Online integration, currently in beta. Connect in one click (no developer setup), then Purchase Orders, Bills, sales tax, vendors, and homes push one direction from Cornerstone into QuickBooks — Cornerstone stays your source of truth, and changes made in QuickBooks never overwrite it. It auto-builds a construction-ready Chart of Accounts from your scopes and cost codes, and tags every PO and Bill by home and community/division so you get true per-job and per-division P&L in QuickBooks. It adapts to your QuickBooks plan (POs need Plus or Advanced) and can pull your existing accounts, items, and vendors so it matches your books. Prefer to build your own sync instead? The REST API and Zapier webhooks (qboId fields, po.created, payment.created events) are available too.",
   },
   {
     q: "Does Cornerstone PM™ support cost codes?",
@@ -496,15 +496,15 @@ export default function PurchasingPage() {
             <div className="w-12 h-12 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center mb-5">
               <Receipt className="w-6 h-6 text-emerald-400" />
             </div>
-            <h2 className="text-2xl font-black text-white mb-3">Live QuickBooks Online sync</h2>
+            <h2 className="text-2xl font-black text-white mb-3">QuickBooks Online sync <span className="text-emerald-400 text-base align-middle">(beta)</span></h2>
             <p className="text-slate-400 leading-relaxed mb-5">
-              Cornerstone connects directly to QuickBooks Online — live in production today. Purchase Orders, Bills, sales tax, vendors, and homes push to QuickBooks automatically, and when a bill is marked paid in QuickBooks the matching PO closes out in Cornerstone. No double entry, no CSV exports.
+              Connect to QuickBooks Online in one click — no developer setup. Purchase Orders, Bills, sales tax, vendors, and homes push one direction, Cornerstone → QuickBooks, so your books keep up automatically. Changes made in QuickBooks never overwrite your Cornerstone data.
             </p>
             <ul className="space-y-2.5">
               {[
-                "POs, Bills, vendors & job costs push straight to QuickBooks",
-                "Auto-builds a construction-ready Chart of Accounts from your scopes",
-                "Payment status flows back — mark a bill paid in QuickBooks, the PO closes in Cornerstone",
+                "One-way sync: POs, Bills, vendors & job costs push to QuickBooks — never the reverse",
+                "Auto-builds a construction-ready Chart of Accounts from your scopes and cost codes",
+                "True job costing — every PO and Bill tagged by home and community/division for per-job P&L",
                 "Prefer to script it yourself? REST API and Zapier webhooks are available too",
               ].map((b) => (
                 <li key={b} className="flex items-start gap-2.5 text-slate-300">

@@ -1179,7 +1179,7 @@ export default function ApiAccessPage() {
               {
                 emoji: "📊",
                 title: "Sync with your accounting software",
-                desc: "Bridge Cornerstone and QuickBooks, Sage, or your accounting system of choice. POs, invoices, and job costs flow both ways automatically — no double entry, no CSV exports.",
+                desc: "Bridge Cornerstone and QuickBooks, Sage, or your accounting system of choice. POs, invoices, and job costs flow automatically — no double entry, no CSV exports.",
                 tag: "Accounting Integration",
                 tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
               },
