@@ -5,13 +5,16 @@ type BlogHeroProps = {
   alt: string;
   /** Optional caption shown beneath the image */
   caption?: string;
+  /** Intrinsic image dimensions — must match the file's aspect ratio to avoid distortion */
+  width?: number;
+  height?: number;
 };
 
 /**
  * BlogHero — renders the hero image at the top of a blog post and emits
  * ImageObject JSON-LD scoped to the post for AISO + Google Image Search.
  */
-export function BlogHero({ src, alt, caption }: BlogHeroProps) {
+export function BlogHero({ src, alt, caption, width = 1024, height = 1024 }: BlogHeroProps) {
   const absoluteUrl = `https://www.cornerstonepm.ai${src}`;
   const schema = {
     "@context": "https://schema.org",
@@ -31,8 +34,8 @@ export function BlogHero({ src, alt, caption }: BlogHeroProps) {
         <Image
           src={src}
           alt={alt}
-          width={1024}
-          height={1024}
+          width={width}
+          height={height}
           priority
           sizes="(min-width: 768px) 768px, 100vw"
           className="w-full h-auto"

@@ -32,8 +32,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: `https://www.cornerstonepm.ai${heroImage}`,
-        width: 1024,
-        height: 1024,
+        width: 691,
+          height: 385,
         alt: heroImageAlt,
       },
     ],
@@ -123,8 +123,8 @@ export default function RealVendorPricingPage() {
         <Image
           src={heroImage}
           alt={heroImageAlt}
-          width={1024}
-          height={1024}
+          width={691}
+          height={385}
           priority
           className="rounded-2xl w-full h-auto mb-10"
         />

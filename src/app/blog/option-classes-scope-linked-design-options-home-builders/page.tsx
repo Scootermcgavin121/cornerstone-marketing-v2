@@ -45,8 +45,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: `https://www.cornerstonepm.ai${heroImage}`,
-        width: 1024,
-        height: 1024,
+        width: 1960,
+          height: 1834,
         alt: heroImageAlt,
       },
     ],
@@ -110,8 +110,8 @@ export default function OptionClassesScopeLinkingPage() {
             <Image
               src={heroImage}
               alt={heroImageAlt}
-              width={1024}
-              height={1024}
+              width={1960}
+          height={1834}
               priority
               className="rounded-2xl w-full h-auto"
             />

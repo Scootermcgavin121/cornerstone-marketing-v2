@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://www.cornerstonepm.ai/blog/foreman-ai-75-action-loop.png",
-        width: 1024,
-        height: 1024,
+        width: 988,
+          height: 1021,
         alt: "How Foreman AI chains 75 actions in one prompt - technical deep dive",
       },
     ],
@@ -56,7 +56,9 @@ export default function Foreman75ActionLoopPost() {
         <BlogHero
           src="/blog/foreman-ai-75-action-loop.png"
           alt="How Foreman AI chains 75 actions in one prompt - technical architecture"
-        />
+        width={988}
+        height={1021}
+      />
 
         <div className="mb-8">
           <span className="text-xs font-medium px-2.5 py-0.5 rounded-full border text-cyan-400 bg-cyan-500/10 border-cyan-500/20 mb-4 inline-block">

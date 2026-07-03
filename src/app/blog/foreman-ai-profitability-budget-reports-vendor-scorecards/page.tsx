@@ -35,8 +35,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: `https://www.cornerstonepm.ai${heroImage}`,
-        width: 1024,
-        height: 1024,
+        width: 766,
+          height: 444,
         alt: heroImageAlt,
       },
     ],
@@ -129,8 +129,8 @@ export default function ForemanProfitabilityReportsPage() {
         <Image
           src={heroImage}
           alt={heroImageAlt}
-          width={1024}
-          height={1024}
+          width={766}
+          height={444}
           priority
           className="rounded-2xl w-full h-auto mb-10"
         />

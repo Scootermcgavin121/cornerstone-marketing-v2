@@ -35,7 +35,7 @@ export const metadata: Metadata = {
       {
         url: `https://www.cornerstonepm.ai${heroImage}`,
         width: 1024,
-        height: 1024,
+          height: 1014,
         alt: heroImageAlt,
       },
     ],
@@ -144,7 +144,7 @@ export default function KnowifyVsCornerstonePage() {
           src={heroImage}
           alt={heroImageAlt}
           width={1024}
-          height={1024}
+          height={1014}
           priority
           className="rounded-2xl w-full h-auto mb-10"
         />

@@ -21,7 +21,8 @@ export const metadata: Metadata = {
   description:
     "The best subcontractors have options. If your scheduling is chaotic and your communication is reactive, they'll prioritize builders who make their lives easier. Here's how to be that builder.",
   openGraph: {
-    images: [{ url: "https://www.cornerstonepm.ai/blog/subcontractor-scheduling.png", width: 1024, height: 1024, alt: "Subcontractor scheduling software with Gantt visual timeline for production home builders" }],
+    images: [{ url: "https://www.cornerstonepm.ai/blog/subcontractor-scheduling.png", width: 1024,
+          height: 1000, alt: "Subcontractor scheduling software with Gantt visual timeline for production home builders" }],
   }
 };
 
@@ -40,7 +41,10 @@ export default function SubcontractorSchedulingSoftwarePost() {
           Back to Blog
         </Link>
 
-        <BlogHero src="/blog/subcontractor-scheduling.png" alt="Subcontractor scheduling software with Gantt visual timeline for production home builders" />
+        <BlogHero src="/blog/subcontractor-scheduling.png" alt="Subcontractor scheduling software with Gantt visual timeline for production home builders"
+        width={1024}
+        height={1000}
+      />
 
         <div className="mb-8">
           <span className="text-xs font-medium px-2.5 py-0.5 rounded-full border text-cyan-400 bg-cyan-500/10 border-cyan-500/20 mb-4 inline-block">
