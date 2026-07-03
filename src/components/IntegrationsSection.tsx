@@ -3,6 +3,7 @@ import {
   Landmark,
   Users,
   ReceiptText,
+  Percent,
   RefreshCw,
   Download,
 } from "lucide-react";
@@ -25,6 +26,11 @@ const syncPoints = [
     icon: ReceiptText,
     title: "POs & Bills flow automatically",
     desc: "Purchase Orders and Bills — including change-order POs — post to QuickBooks the moment they're created.",
+  },
+  {
+    icon: Percent,
+    title: "Sales tax, calculated and synced",
+    desc: "Flip tax on for your taxable materials once and Cornerstone applies it to Purchase Orders and Change Orders — on-screen, on the PO PDF, and on the vendor email — then syncs the tax straight to QuickBooks. Materials taxable, labor exempt, fully under your control.",
   },
   {
     icon: Download,
@@ -63,13 +69,27 @@ export function IntegrationsSection() {
 
           {/* QuickBooks badge */}
           <div className="flex items-center justify-center gap-3 mb-6">
-            <span
-              className="inline-flex items-center justify-center w-12 h-12 rounded-2xl text-white font-black text-xl shadow-lg"
-              style={{ backgroundColor: QB_GREEN }}
-              aria-hidden="true"
+            <svg
+              viewBox="0 0 64 64"
+              className="w-12 h-12 shadow-lg rounded-full"
+              role="img"
+              aria-label="QuickBooks logo"
             >
-              qb
-            </span>
+              <circle cx="32" cy="32" r="32" fill={QB_GREEN} />
+              <text
+                x="32"
+                y="32"
+                fill="#ffffff"
+                fontFamily="Arial, Helvetica, sans-serif"
+                fontSize="30"
+                fontWeight="700"
+                textAnchor="middle"
+                dominantBaseline="central"
+                letterSpacing="-1"
+              >
+                qb
+              </text>
+            </svg>
             <span className="text-2xl font-black text-white tracking-tight">
               QuickBooks Online
             </span>
@@ -81,8 +101,8 @@ export function IntegrationsSection() {
           </h2>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
             Cornerstone PM is an official, Intuit-approved QuickBooks Online app.
-            POs, bills, vendors, and job costs flow from Cornerstone into
-            QuickBooks automatically — no double entry, no CSV exports, no
+            POs, bills, sales tax, vendors, and job costs flow from Cornerstone
+            into QuickBooks automatically — no double entry, no CSV exports, no
             end-of-month scramble.
           </p>
         </div>
