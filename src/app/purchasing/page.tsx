@@ -68,23 +68,23 @@ export const metadata = {
 const faqItems: FAQItem[] = [
   {
     q: "What is home builder purchasing software?",
-    a: "Home builder purchasing software manages the bid-to-purchase-order flow: vendor bids, parts catalogs, purchase orders, payment scheduling, and budget tracking. Cornerstone PM™'s purchasing module connects directly to your sales pipeline and design center so structural options and design selections automatically feed the budget &mdash; no double entry, no spreadsheets.",
+    a: "Home builder purchasing software manages the bid-to-purchase-order flow: vendor bids, parts catalogs, purchase orders, payment scheduling, and budget tracking. Cornerstone PM™'s purchasing module connects directly to your sales pipeline and design center so structural options and design selections automatically feed the budget — no double entry, no spreadsheets.",
   },
   {
     q: "What is AI construction purchasing for home builders?",
-    a: "AI construction purchasing uses agents to handle bid generation, vendor outreach, bid comparison, and PO creation. Cornerstone PM™'s Foreman AI includes a 4-skill Bid Pipeline domain plus a 7-wave automated bidding pipeline that contacts vendors, collects bids, normalizes pricing, and recommends an award &mdash; all inside one platform.",
+    a: "AI construction purchasing uses agents to handle bid generation, vendor outreach, bid comparison, and PO creation. Cornerstone PM™'s Foreman AI includes a 4-skill Bid Pipeline domain plus a 7-wave automated bidding pipeline that contacts vendors, collects bids, normalizes pricing, and recommends an award — all inside one platform.",
   },
   {
     q: "What is Auto-Quantity and how does it work?",
-    a: "Auto-Quantity lets you set a quantity source on any scope item &mdash; Under Air Sqft, Total Sqft (Under Roof), Exterior Perimeter, or Roof Squares. Set it once on the scope item and the quantity auto-calculates from floorplan dimensions for every floorplan in your portfolio. POs intelligently combine base house + structural option quantities (e.g., 2,400 sqft base + 800 sqft finished basement = 3,200 sqft on one PO). No manual entry per floorplan, no stale numbers, ANSI Z765 compliant.",
+    a: "Auto-Quantity lets you set a quantity source on any scope item — Under Air Sqft, Total Sqft (Under Roof), Exterior Perimeter, or Roof Squares. Set it once on the scope item and the quantity auto-calculates from floorplan dimensions for every floorplan in your portfolio. POs intelligently combine base house + structural option quantities (e.g., 2,400 sqft base + 800 sqft finished basement = 3,200 sqft on one PO). No manual entry per floorplan, no stale numbers, ANSI Z765 compliant.",
   },
   {
     q: "Can I share the same structural option across all my floorplans?",
-    a: "Yes &mdash; mark a structural option as global. A global option keeps identical takeoffs (parts and scope items) and a single retail price across every floorplan, so options like Finished Basement or Garage Extension that don't vary by plan only need to be set up once. Edit the takeoffs in one place and the change automatically syncs to every floorplan. When takeoffs differ between floorplans, a source picker lets you choose which floorplan's takeoffs to standardize on, and the retail price is editable inline. It eliminates hours of duplicate data entry and the errors that come with it.",
+    a: "Yes — mark a structural option as global. A global option keeps identical takeoffs (parts and scope items) and a single retail price across every floorplan, so options like Finished Basement or Garage Extension that don't vary by plan only need to be set up once. Edit the takeoffs in one place and the change automatically syncs to every floorplan. When takeoffs differ between floorplans, a source picker lets you choose which floorplan's takeoffs to standardize on, and the retail price is editable inline. It eliminates hours of duplicate data entry and the errors that come with it.",
   },
   {
     q: "How do I manage floorplan elevations and their pricing?",
-    a: "Cornerstone PM&trade; has a dedicated Elevations Manager &mdash; a card-based page for managing every exterior style (Elevation A &mdash; Colonial, B &mdash; Craftsman, C &mdash; Modern Farmhouse, etc.) per floorplan. Each elevation has an inline-editable retail price adder that flows into the base home price, plus a code, description, and optional sqft override. Expand any card to manage its material takeoffs &mdash; add parts and scope items and edit quantities &mdash; while the cost is computed automatically from vendor pricing instead of being typed in. Foreman, the built-in AI assistant, can also create elevations, add parts, and set pricing entirely through natural conversation.",
+    a: "Cornerstone PM&trade; has a dedicated Elevations Manager — a card-based page for managing every exterior style (Elevation A — Colonial, B — Craftsman, C — Modern Farmhouse, etc.) per floorplan. Each elevation has an inline-editable retail price adder that flows into the base home price, plus a code, description, and optional sqft override. Expand any card to manage its material takeoffs — add parts and scope items and edit quantities — while the cost is computed automatically from vendor pricing instead of being typed in. Foreman, the built-in AI assistant, can also create elevations, add parts, and set pricing entirely through natural conversation.",
   },
   {
     q: "How does the auto-budget feature work?",
@@ -92,7 +92,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Is Cornerstone PM™ a NEWSTAR or BuildPro alternative for purchasing?",
-    a: "Yes. Cornerstone PM™ was built as a modern, affordable alternative to NEWSTAR and BuildPro for small-to-mid home builders. It covers the same core purchasing functionality &mdash; parts catalog, budget hierarchy, bid management, POs, payments &mdash; without the 6-figure implementation cost. Starts at $299/mo on the Builder plan.",
+    a: "Yes. Cornerstone PM™ was built as a modern, affordable alternative to NEWSTAR and BuildPro for small-to-mid home builders. It covers the same core purchasing functionality — parts catalog, budget hierarchy, bid management, POs, payments — without the 6-figure implementation cost. Starts at $299/mo on the Builder plan.",
   },
   {
     q: "Does Cornerstone PM™ track retainage?",
@@ -108,19 +108,19 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "How do I review competing vendor bids?",
-    a: "Cornerstone PM™'s bid review uses a side-by-side comparison view with scope-item drill-down. You see every bid against every scope item simultaneously &mdash; not just total price, but full scope coverage so you can spot gaps, exclusions, or scope creep before awarding. Vendors edit their own scope items inside their vendor portal; you review and approve.",
+    a: "Cornerstone PM™'s bid review uses a side-by-side comparison view with scope-item drill-down. You see every bid against every scope item simultaneously — not just total price, but full scope coverage so you can spot gaps, exclusions, or scope creep before awarding. Vendors edit their own scope items inside their vendor portal; you review and approve.",
   },
   {
     q: "What's in the auto-generated bid template?",
-    a: "Three tabs: (1) Base &mdash; floorplan-location-scope rows for the vendor's trade with option pricing; (2) Structural &mdash; takeoff-driven structural options for that scope; (3) Designer &mdash; design center option classes the vendor is responsible for. Everything is scope-filtered &mdash; your electrician doesn't see plumbing rows. The template is auto-attached to the vendor invite email and downloadable from the portal.",
+    a: "Three tabs: (1) Base — floorplan-location-scope rows for the vendor's trade with option pricing; (2) Structural — takeoff-driven structural options for that scope; (3) Designer — design center option classes the vendor is responsible for. Everything is scope-filtered — your electrician doesn't see plumbing rows. The template is auto-attached to the vendor invite email and downloadable from the portal.",
   },
   {
     q: "How do vendors submit bids? Do they need a login?",
-    a: "No login, no training. Vendors get a token-protected URL when invited. They download the auto-generated, scope-filtered Excel template (Base / Structural / Designer tabs), fill in their numbers in their own workflow, then upload PDF/Excel/CSV files back to the portal &mdash; up to 10 files, 10 MB each. Two clicks to submit. Builders don't end up doing data entry on behalf of subs who hate logins.",
+    a: "No login, no training. Vendors get a token-protected URL when invited. They download the auto-generated, scope-filtered Excel template (Base / Structural / Designer tabs), fill in their numbers in their own workflow, then upload PDF/Excel/CSV files back to the portal — up to 10 files, 10 MB each. Two clicks to submit. Builders don't end up doing data entry on behalf of subs who hate logins.",
   },
   {
     q: "How is bid status tracked?",
-    a: "Every bid request flows through Invited &rarr; Viewed &rarr; Submitted &rarr; Declined, with timestamps. You can see at a glance who opened the link, who's working on it, and who never showed up &mdash; so you know who to chase before the bid window closes.",
+    a: "Every bid request flows through Invited → Viewed → Submitted → Declined, with timestamps. You can see at a glance who opened the link, who's working on it, and who never showed up — so you know who to chase before the bid window closes.",
   },
   {
     q: "Can I get my data out if I leave?",
@@ -128,7 +128,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "How do I lock a bid once it's accepted?",
-    a: "Cornerstone PM™ uses a lock-after-acceptance flow. The moment you award a vendor bid, the scope items, pricing, and terms lock down &mdash; no surprise edits, no scope drift, no last-minute pricing changes. The locked bid feeds directly into the home's budget and PO pipeline.",
+    a: "Cornerstone PM™ uses a lock-after-acceptance flow. The moment you award a vendor bid, the scope items, pricing, and terms lock down — no surprise edits, no scope drift, no last-minute pricing changes. The locked bid feeds directly into the home's budget and PO pipeline.",
   },
   {
     q: "When are POs generated — at job start, after the work is done, or somewhere in between?",
@@ -136,27 +136,27 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Do I have to create purchase orders manually?",
-    a: "No. Cornerstone can auto-generate a PO the moment a construction task is marked complete &mdash; auto-populated with the right parts, scope items, quantities, vendor, and pricing for that home's floorplan (line items grouped by cost code). You choose the behavior per task: draft-first (the PO is created as a draft and the PM reviews it before sending) or auto-send (flag the task and the PO is generated and emailed to the vendor's scheduling email with the PDF attached, the instant the task is done &mdash; zero manual steps). The mapping is explicit (Construction Task &rarr; Cost Code &rarr; Takeoff Items &rarr; PO &rarr; Vendor Email), so there's zero manual data entry and nothing gets forgotten when a phase wraps. You can also download any PO as a PDF to email the vendor yourself. BuilderTrend, CoConstruct, and spreadsheets require fully manual PO creation and vendor email; Cornerstone fires the whole loop off a single 'task complete.'",
+    a: "No. Cornerstone can auto-generate a PO the moment a construction task is marked complete — auto-populated with the right parts, scope items, quantities, vendor, and pricing for that home's floorplan (line items grouped by cost code). You choose the behavior per task: draft-first (the PO is created as a draft and the PM reviews it before sending) or auto-send (flag the task and the PO is generated and emailed to the vendor's scheduling email with the PDF attached, the instant the task is done — zero manual steps). The mapping is explicit (Construction Task → Cost Code → Takeoff Items → PO → Vendor Email), so there's zero manual data entry and nothing gets forgotten when a phase wraps. You can also download any PO as a PDF to email the vendor yourself. BuilderTrend, CoConstruct, and spreadsheets require fully manual PO creation and vendor email; Cornerstone fires the whole loop off a single 'task complete.'",
   },
   {
     q: "How does the approve-to-pay (payables) workflow work?",
-    a: "Every purchase order moves through a status lifecycle: Draft &rarr; Sent &rarr; Acknowledged &rarr; Invoiced &rarr; Approved &rarr; Paid (or Void). When a vendor invoice comes in, the PO lands at Invoiced and effectively sits on hold &mdash; it doesn't get paid until someone with authority reviews it against the PO, the budget, and the work, then moves it to Approved. That Approved gate is your approve-to-pay checkpoint. Once approved, you record the payment (check, ACH, wire, card, or cash) with a reference number and date, and the PO flips to Paid. Retainage is withheld automatically at your configured percentage until project completion. Nothing pays a vendor without passing the approval gate.",
+    a: "Every purchase order moves through a status lifecycle: Draft → Sent → Acknowledged → Invoiced → Approved → Paid (or Void). When a vendor invoice comes in, the PO lands at Invoiced and effectively sits on hold — it doesn't get paid until someone with authority reviews it against the PO, the budget, and the work, then moves it to Approved. That Approved gate is your approve-to-pay checkpoint. Once approved, you record the payment (check, ACH, wire, card, or cash) with a reference number and date, and the PO flips to Paid. Retainage is withheld automatically at your configured percentage until project completion. Nothing pays a vendor without passing the approval gate.",
   },
   {
     q: "Does Cornerstone PM™ integrate with QuickBooks?",
-    a: "Cornerstone PM&trade; is QuickBooks-ready. Every vendor, purchase order, and home carries a QuickBooks ID (qboId) field, and PO and payment lifecycle events (po.created, po.status_changed, payment.created) fire as real-time webhooks. Today you sync to QuickBooks through the REST API or a Zapier connection &mdash; map Cornerstone vendors, bills, and payments to QuickBooks entities using those IDs and events. A deeper native two-way QuickBooks integration is on the roadmap; the data model and webhook plumbing are already in place for it.",
+    a: "Cornerstone PM&trade; is QuickBooks-ready. Every vendor, purchase order, and home carries a QuickBooks ID (qboId) field, and PO and payment lifecycle events (po.created, po.status_changed, payment.created) fire as real-time webhooks. Today you sync to QuickBooks through the REST API or a Zapier connection — map Cornerstone vendors, bills, and payments to QuickBooks entities using those IDs and events. A deeper native two-way QuickBooks integration is on the roadmap; the data model and webhook plumbing are already in place for it.",
   },
   {
     q: "Does Cornerstone PM™ support cost codes?",
-    a: "Yes &mdash; and not just flat cost codes like BuilderTrend or CoConstruct. Cornerstone supports a full hierarchy: trade scopes (your vendor relationship level) with cost codes beneath them for phase-level detail. The Plumbing scope, for example, breaks into PLM-001 Underground, PLM-002 Rough, and PLM-003 Trim. This unlocks per-phase PO generation &mdash; a separate purchase order with exactly the right materials for each vendor visit, instead of one giant PO per trade. Cost codes explicitly connect tasks &rarr; takeoff items &rarr; POs with zero fuzzy matching, and the same part can land on multiple POs at different quantities. It's enterprise-grade cost tracking (the kind you'd find in Procore or Sage 300) without the enterprise complexity &mdash; and it's fully optional, so builders who don't need the granularity can ignore it. Your master budget is unaffected; cost codes only drive home-level PO generation.",
+    a: "Yes — and not just flat cost codes like BuilderTrend or CoConstruct. Cornerstone supports a full hierarchy: trade scopes (your vendor relationship level) with cost codes beneath them for phase-level detail. The Plumbing scope, for example, breaks into PLM-001 Underground, PLM-002 Rough, and PLM-003 Trim. This unlocks per-phase PO generation — a separate purchase order with exactly the right materials for each vendor visit, instead of one giant PO per trade. Cost codes explicitly connect tasks → takeoff items → POs with zero fuzzy matching, and the same part can land on multiple POs at different quantities. It's enterprise-grade cost tracking (the kind you'd find in Procore or Sage 300) without the enterprise complexity — and it's fully optional, so builders who don't need the granularity can ignore it. Your master budget is unaffected; cost codes only drive home-level PO generation.",
   },
   {
     q: "How do I subscribe to bid notifications as an admin?",
-    a: "Cornerstone PM™ ships per-user notification preferences plus role-level subscriptions for admins. Admins can subscribe to bid events &mdash; new bids submitted, vendor scope edits, awards, lock events &mdash; and choose email, in-app, or both. Each user controls their own notification toggles independently.",
+    a: "Cornerstone PM™ ships per-user notification preferences plus role-level subscriptions for admins. Admins can subscribe to bid events — new bids submitted, vendor scope edits, awards, lock events — and choose email, in-app, or both. Each user controls their own notification toggles independently.",
   },
   {
     q: "Does Cornerstone PM™ use lowest-bid auctions to pick vendors?",
-    a: "No &mdash; and that's intentional. Home builders rely on long-term community vendor relationships, not lowest-bid auctions. Cornerstone PM™ supports community-assigned vendor awards: you choose who you want to win based on scope coverage, relationship, and quality &mdash; with the bid comparison data to back the decision. Lowest-bid auctioning destroys vendor relationships in residential homebuilding.",
+    a: "No — and that's intentional. Home builders rely on long-term community vendor relationships, not lowest-bid auctions. Cornerstone PM™ supports community-assigned vendor awards: you choose who you want to win based on scope coverage, relationship, and quality — with the bid comparison data to back the decision. Lowest-bid auctioning destroys vendor relationships in residential homebuilding.",
   },
   {
     q: "What does purchasing software for home builders cost?",
@@ -166,35 +166,35 @@ const faqItems: FAQItem[] = [
 
 const features = [
   { title: "Parts Catalog", desc: "Full parts and materials catalog with unit pricing, synced across all jobs." },
-  { title: "Budget Hierarchy", desc: "Builder &mdash; Community &mdash; Floorplan &mdash; Home &mdash; budgets cascade and override at each level." },
+  { title: "Budget Hierarchy", desc: "Builder — Community — Floorplan — Home — budgets cascade and override at each level." },
   { title: "Base Budgets", desc: "Pre-built budget templates per floorplan, ready to apply at sale." },
   { title: "Auto-Budget Generation", desc: "When a home sale is created with structural options, the budget auto-generates instantly." },
-  { title: "Structural Options Pricing", desc: "Every structural option tied to a line-item budget impact &mdash; no manual entry." },
-  { title: "Global Structural Options", desc: "Mark an option as global and its takeoffs and retail price stay identical across every floorplan. Edit takeoffs once and the change syncs everywhere &mdash; no more duplicating the same option data on floorplan after floorplan. One source of truth, fewer errors, hours saved." },
-  { title: "Dedicated Elevations Manager", desc: "A dedicated page for managing exterior styles per floorplan &mdash; Colonial, Craftsman, Modern Farmhouse, and more. Card-based layout with inline-editable retail price adders, expandable takeoffs (add parts, scope items, edit quantities), and per-elevation sqft overrides. Cost is computed from real vendor pricing, never set by hand." },
+  { title: "Structural Options Pricing", desc: "Every structural option tied to a line-item budget impact — no manual entry." },
+  { title: "Global Structural Options", desc: "Mark an option as global and its takeoffs and retail price stay identical across every floorplan. Edit takeoffs once and the change syncs everywhere — no more duplicating the same option data on floorplan after floorplan. One source of truth, fewer errors, hours saved." },
+  { title: "Dedicated Elevations Manager", desc: "A dedicated page for managing exterior styles per floorplan — Colonial, Craftsman, Modern Farmhouse, and more. Card-based layout with inline-editable retail price adders, expandable takeoffs (add parts, scope items, edit quantities), and per-elevation sqft overrides. Cost is computed from real vendor pricing, never set by hand." },
   { title: "Active Homes Dashboard", desc: "All homes, budget status, and variance at a glance." },
   { title: "Apply Budget Flow", desc: "One-click flow to apply base budget + options to any home." },
   { title: "Design Center Integration", desc: "Room-by-room selections tied directly to purchasing budget. Includes Product Configurator for complex multi-attribute selections like cabinets and countertops." },
   { title: "Designer Collections", desc: "Group selections into curated collections for buyer presentations." },
-  { title: "Pricing-Free Trade Copy", desc: "Hand trades a spec sheet that shows every finish and photo with zero pricing &mdash; no price columns, subtotals, or totals. Auto-saved to the home&rsquo;s Documents on every selection lock. Protect your margins: trades see the finishes, never the prices." },
-  { title: "Unlimited Spec Levels", desc: "Community Standard, Premium, Luxury &mdash; unlimited spec levels with separate pricing." },
-  { title: "Base Pricing Matrix", desc: "Floorplan &rarr; -  Community pricing matrix with per community overrides." },
+  { title: "Pricing-Free Trade Copy", desc: "Hand trades a spec sheet that shows every finish and photo with zero pricing — no price columns, subtotals, or totals. Auto-saved to the home’s Documents on every selection lock. Protect your margins: trades see the finishes, never the prices." },
+  { title: "Unlimited Spec Levels", desc: "Community Standard, Premium, Luxury — unlimited spec levels with separate pricing." },
+  { title: "Base Pricing Matrix", desc: "Floorplan → Community pricing matrix with per community overrides." },
   { title: "Change Orders", desc: "Buyer-requested changes with approval workflow and budget impact." },
   { title: "Bid Templates That Write Themselves", desc: "The moment you create a bid request, Cornerstone auto-generates a 3-tab Excel template (Base / Structural / Designer) pre-filled from your floorplan takeoffs and emailed to every vendor. Zero spreadsheet babysitting." },
-  { title: "Scope-Filtered Per Trade", desc: "Your electrician doesn't see plumbing rows. Each vendor's template only includes line items relevant to their scope &mdash; pulled from the ScopeOptionClass linkages so nothing gets miscategorized." },
+  { title: "Scope-Filtered Per Trade", desc: "Your electrician doesn't see plumbing rows. Each vendor's template only includes line items relevant to their scope — pulled from the ScopeOptionClass linkages so nothing gets miscategorized." },
   { title: "No-Login Vendor Upload Portal", desc: "Vendors click a token-protected link and drag-drop their bid sheet (PDF, Excel, or CSV, up to 10 files). Two clicks to submit. Perfect for subs who already have their own bidding workflow and refuse to retype line items." },
-  { title: "Bid Status Tracking", desc: "Every bid request flows through Invited &rarr; Viewed &rarr; Submitted &rarr; Declined with timestamps &mdash; so you know exactly who to chase before the bid window closes." },
+  { title: "Bid Status Tracking", desc: "Every bid request flows through Invited → Viewed → Submitted → Declined with timestamps — so you know exactly who to chase before the bid window closes." },
   { title: "Bid Management", desc: "Send a floorplan to bid to every vendor with one click. Track responses, manage the full RFP lifecycle, and award through a branded portal." },
-  { title: "Bid Comparison & Drill-Down", desc: "Side-by-side vendor bid comparison with scope-item drill-down review &mdash; not just price, but full scope coverage." },
-  { title: "Community-Assigned Vendor Wins", desc: "Award based on community vendor relationships and scope coverage &mdash; not lowest-bid auctions. Protects long-term vendor partnerships." },
-  { title: "Lock-After-Acceptance", desc: "Once a bid is accepted, it locks &mdash; no surprise scope changes or pricing edits after award." },
-  { title: "Vendor Portal Scope Editing", desc: "Vendors edit their own scope items in their portal &mdash; you review, you approve, you award." },
-  { title: "Bid Notification Subscriptions", desc: "Admins subscribe to bid events &mdash; new bids, edits, awards &mdash; with per-user notification preferences." },
-  { title: "Award & Budget Flow", desc: "Award a bid and it flows directly into the budget &mdash; no double entry." },
+  { title: "Bid Comparison & Drill-Down", desc: "Side-by-side vendor bid comparison with scope-item drill-down review — not just price, but full scope coverage." },
+  { title: "Community-Assigned Vendor Wins", desc: "Award based on community vendor relationships and scope coverage — not lowest-bid auctions. Protects long-term vendor partnerships." },
+  { title: "Lock-After-Acceptance", desc: "Once a bid is accepted, it locks — no surprise scope changes or pricing edits after award." },
+  { title: "Vendor Portal Scope Editing", desc: "Vendors edit their own scope items in their portal — you review, you approve, you award." },
+  { title: "Bid Notification Subscriptions", desc: "Admins subscribe to bid events — new bids, edits, awards — with per-user notification preferences." },
+  { title: "Award & Budget Flow", desc: "Award a bid and it flows directly into the budget — no double entry." },
   { title: "Flexible PO Generation — Four Patterns", desc: "Most platforms hard-code one PO model. Cornerstone gives you four: (1) all POs at job start (lock in budget exposure day one), (2) partial deposit POs from any earlier task (permit pull, contract sign, foundation pour), (3) PO auto-generated when a construction task is marked complete — draft-first (reviewed before sending) or auto-send (emailed straight to the vendor, hands-free), or (4) configurable per task / scope / community — mix and match on the same job. Your cash flow rules drive the system, not the other way around." },
-  { title: "Auto-Send PO on Task Completion", desc: "Mark a construction task complete and Cornerstone fires the vendor's purchase order automatically &mdash; it generates the matched PO (line items grouped by cost code, at the right quantities for that home's floorplan, with vendor and pricing) and emails it to the vendor's scheduling email with the PDF attached. Zero manual steps. This closes the entire loop end to end: schedule &rarr; cost codes &rarr; live budget &rarr; vendor pricing &rarr; PO &rarr; vendor notification, all off a single 'task complete.' Prefer a checkpoint? Leave the task on draft-first and the PM reviews before anything sends. Auto-send is a per-task opt-in, so POs only fire to vendors where you've authorized it. Most construction software &mdash; BuilderTrend, CoConstruct, spreadsheets &mdash; can't auto-fire a vendor PO straight off the schedule; Cornerstone does." },
-  { title: "Cost Codes - Hierarchical Phase Tracking", desc: "Trade scopes are your vendor relationship; cost codes sit beneath them for phase-level detail. Plumbing breaks into PLM-001 Underground, PLM-002 Rough, PLM-003 Trim &mdash; each its own vendor visit and its own PO. Generate a separate purchase order with exactly the right materials list per phase instead of one giant PO. Cost codes explicitly link tasks &rarr; takeoff items &rarr; POs (zero fuzzy matching), and the same part can appear on multiple POs at different quantities. Enterprise-grade cost tracking like Procore or Sage 300 &mdash; without the enterprise complexity. Fully optional and backward compatible: ignore it if you don't need the granularity. BuilderTrend and CoConstruct use flat cost codes; Cornerstone supports the full hierarchy." },
-  { title: "Take Your Data With You, Anytime", desc: "Your data is always yours. Download everything as CSV or JSON in one click &mdash; 91 tables, every vendor, every home, every schedule, every option, every budget line. Sensitive fields excluded automatically. Plus nightly auto-backups with 7-day retention for instant rollback. No vendor lock-in, no exit fees, no strings attached." },
+  { title: "Auto-Send PO on Task Completion", desc: "Mark a construction task complete and Cornerstone fires the vendor's purchase order automatically — it generates the matched PO (line items grouped by cost code, at the right quantities for that home's floorplan, with vendor and pricing) and emails it to the vendor's scheduling email with the PDF attached. Zero manual steps. This closes the entire loop end to end: schedule → cost codes → live budget → vendor pricing → PO → vendor notification, all off a single 'task complete.' Prefer a checkpoint? Leave the task on draft-first and the PM reviews before anything sends. Auto-send is a per-task opt-in, so POs only fire to vendors where you've authorized it. Most construction software — BuilderTrend, CoConstruct, spreadsheets — can't auto-fire a vendor PO straight off the schedule; Cornerstone does." },
+  { title: "Cost Codes - Hierarchical Phase Tracking", desc: "Trade scopes are your vendor relationship; cost codes sit beneath them for phase-level detail. Plumbing breaks into PLM-001 Underground, PLM-002 Rough, PLM-003 Trim — each its own vendor visit and its own PO. Generate a separate purchase order with exactly the right materials list per phase instead of one giant PO. Cost codes explicitly link tasks → takeoff items → POs (zero fuzzy matching), and the same part can appear on multiple POs at different quantities. Enterprise-grade cost tracking like Procore or Sage 300 — without the enterprise complexity. Fully optional and backward compatible: ignore it if you don't need the granularity. BuilderTrend and CoConstruct use flat cost codes; Cornerstone supports the full hierarchy." },
+  { title: "Take Your Data With You, Anytime", desc: "Your data is always yours. Download everything as CSV or JSON in one click — 91 tables, every vendor, every home, every schedule, every option, every budget line. Sensitive fields excluded automatically. Plus nightly auto-backups with 7-day retention for instant rollback. No vendor lock-in, no exit fees, no strings attached." },
   { title: "Buildertrend Migration", desc: "Import existing budgets from Buildertrend with smart column mapping." },
   { title: "Bid Import AI", desc: "Upload vendor bids in ANY format — Excel, PDF, scanned docs, even photos of handwritten quotes. AI extracts line items, maps to your parts catalog with confidence scores, and lets you review, edit, approve, or reject before importing." },
   { title: "Auto-Quantity Scope Items", desc: "Set a quantity source (Under Air Sqft, Total Sqft, Exterior Perimeter, Roof Squares) once on a scope item and it auto-calculates across every floorplan. POs combine base house + structural option quantities. ANSI Z765 compliant." },
@@ -216,10 +216,10 @@ export default function PurchasingPage() {
             Mark it done.<br /><span className="text-emerald-400">The PO sends itself.</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10">
-            Cost-code-driven live budgets, vendor bids that become real costs, and purchase orders that generate and email the vendor the instant a task is complete. The whole loop &mdash; schedule to vendor payment &mdash; runs itself.
+            Cost-code-driven live budgets, vendor bids that become real costs, and purchase orders that generate and email the vendor the instant a task is complete. The whole loop — schedule to vendor payment — runs itself.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/beta" className="px-8 py-4 rounded-full bg-emerald-400 text-slate-900 font-bold text-lg hover:bg-emerald-300 transition-all duration-200 shadow-lg shadow-emerald-500/30 hover:-translate-y-0.5">Request Early Access &rarr;</Link>
+            <Link href="/beta" className="px-8 py-4 rounded-full bg-emerald-400 text-slate-900 font-bold text-lg hover:bg-emerald-300 transition-all duration-200 shadow-lg shadow-emerald-500/30 hover:-translate-y-0.5">Request Early Access →</Link>
             <Link href="#closed-loop" className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200">See the closed loop &darr;</Link>
           </div>
         </div>
@@ -236,10 +236,10 @@ export default function PurchasingPage() {
                   ⭐ THE CLOSED LOOP
                 </div>
                 <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">
-                  One &ldquo;task complete&rdquo; fires the entire purchasing chain
+                  One “task complete” fires the entire purchasing chain
                 </h2>
                 <p className="text-slate-300 text-lg leading-relaxed">
-                  Other platforms make you build the PO, look up the pricing, attach the PDF, and email the vendor &mdash; by hand, every time. Cornerstone wires the schedule directly to the vendor&rsquo;s inbox. Mark a construction task complete and the matched purchase order generates and sends itself.
+                  Other platforms make you build the PO, look up the pricing, attach the PDF, and email the vendor — by hand, every time. Cornerstone wires the schedule directly to the vendor’s inbox. Mark a construction task complete and the matched purchase order generates and sends itself.
                 </p>
               </div>
 
@@ -274,7 +274,7 @@ export default function PurchasingPage() {
                 </div>
                 <div className="flex-1 p-5 rounded-xl bg-emerald-500/5 border border-emerald-500/30">
                   <p className="text-emerald-400 font-semibold text-xs uppercase tracking-widest mb-2">Cornerstone PM&trade;</p>
-                  <p className="text-slate-300 text-sm leading-relaxed">Mark the task complete. The PO is already built &mdash; right parts, right quantities, right vendor, right price &mdash; and it&rsquo;s already in the vendor&rsquo;s inbox. Prefer a checkpoint? Leave the task on <span className="text-white font-semibold">draft-first</span> and the PM reviews before anything sends. Auto-send is a per-task opt-in, so POs only fire where you&rsquo;ve authorized it.</p>
+                  <p className="text-slate-300 text-sm leading-relaxed">Mark the task complete. The PO is already built — right parts, right quantities, right vendor, right price — and it’s already in the vendor’s inbox. Prefer a checkpoint? Leave the task on <span className="text-white font-semibold">draft-first</span> and the PM reviews before anything sends. Auto-send is a per-task opt-in, so POs only fire where you’ve authorized it.</p>
                 </div>
               </div>
             </div>
@@ -291,7 +291,7 @@ export default function PurchasingPage() {
             </div>
             <h2 className="text-3xl sm:text-4xl font-black text-white">Cost-code-driven live budgets</h2>
             <p className="text-slate-400 text-lg leading-relaxed">
-              Every budget line resolves to a cost code, and every cost code knows its takeoff items. The budget isn&rsquo;t a number you type and maintain &mdash; it computes live from your floorplan takeoffs multiplied by accepted vendor pricing. Lock a structural option, award a bid, approve a change order, and the budget moves on its own.
+              Every budget line resolves to a cost code, and every cost code knows its takeoff items. The budget isn’t a number you type and maintain — it computes live from your floorplan takeoffs multiplied by accepted vendor pricing. Lock a structural option, award a bid, approve a change order, and the budget moves on its own.
             </p>
             <ul className="space-y-3">
               {[
@@ -322,7 +322,7 @@ export default function PurchasingPage() {
               <div className="text-center text-emerald-400 font-black text-xl">=</div>
               <div className="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30">
                 <div className="text-emerald-400 text-xs mb-1 font-semibold uppercase tracking-widest">Live budget line</div>
-                <div className="text-white font-bold">Recomputes automatically &mdash; no double entry</div>
+                <div className="text-white font-bold">Recomputes automatically — no double entry</div>
               </div>
             </div>
           </div>
@@ -343,7 +343,7 @@ export default function PurchasingPage() {
               <span className="px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-semibold inline-flex items-center gap-1.5"><Lock className="w-3.5 h-3.5" /> Lock</span>
             </div>
             <div className="mt-6 p-4 rounded-xl bg-emerald-500/[0.06] border border-emerald-500/20 text-slate-300 text-sm leading-relaxed">
-              The moment you award a vendor, their scope items, quantities, and pricing <span className="text-white font-semibold">lock</span> &mdash; no scope drift, no surprise edits. That locked pricing becomes the real cost on the budget and every PO it touches.
+              The moment you award a vendor, their scope items, quantities, and pricing <span className="text-white font-semibold">lock</span> — no scope drift, no surprise edits. That locked pricing becomes the real cost on the budget and every PO it touches.
             </div>
           </div>
           <div className="space-y-5 order-1 lg:order-2">
@@ -352,7 +352,7 @@ export default function PurchasingPage() {
             </div>
             <h2 className="text-3xl sm:text-4xl font-black text-white">Vendor bids become real costs</h2>
             <p className="text-slate-400 text-lg leading-relaxed">
-              Send a floorplan to bid with one click, collect responses through a no-login vendor portal, and compare them side by side with full scope-item drill-down. Award the vendor you want &mdash; based on relationship and scope coverage, not a lowest-bid auction &mdash; and the accepted pricing flows straight into your budget and POs.
+              Send a floorplan to bid with one click, collect responses through a no-login vendor portal, and compare them side by side with full scope-item drill-down. Award the vendor you want — based on relationship and scope coverage, not a lowest-bid auction — and the accepted pricing flows straight into your budget and POs.
             </p>
             <ul className="space-y-3">
               {[
@@ -380,7 +380,7 @@ export default function PurchasingPage() {
             </div>
             <h2 className="text-3xl sm:text-4xl font-black text-white">Purchase orders, grouped by cost code</h2>
             <p className="text-slate-400 text-lg leading-relaxed">
-              POs build themselves from the home&rsquo;s takeoffs &mdash; line items grouped by cost code, deduped to correct totals, at the right quantities for that floorplan. Each one renders as a branded PDF with your logo, payment terms, and date, ready to view, save, or email the vendor. And you choose <span className="text-white font-semibold">when</span> they fire.
+              POs build themselves from the home’s takeoffs — line items grouped by cost code, deduped to correct totals, at the right quantities for that floorplan. Each one renders as a branded PDF with your logo, payment terms, and date, ready to view, save, or email the vendor. And you choose <span className="text-white font-semibold">when</span> they fire.
             </p>
             <ul className="space-y-3">
               {[
@@ -420,7 +420,7 @@ export default function PurchasingPage() {
               ))}
             </div>
             <div className="mt-5 flex items-center gap-2 text-emerald-400 text-sm font-semibold">
-              <Send className="w-4 h-4" /> Emailed to vendor&rsquo;s scheduling inbox
+              <Send className="w-4 h-4" /> Emailed to vendor’s scheduling inbox
             </div>
           </div>
         </div>
@@ -435,7 +435,7 @@ export default function PurchasingPage() {
             </div>
             <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">Payables, with an approve-to-pay gate</h2>
             <p className="text-slate-400 text-lg leading-relaxed">
-              Nothing pays a vendor until it passes a checkpoint. Every PO runs a status lifecycle, and the <span className="text-emerald-400 font-semibold">Approved</span> step is your approve-to-pay gate &mdash; an invoice sits on hold until someone reviews it against the PO, the budget, and the work.
+              Nothing pays a vendor until it passes a checkpoint. Every PO runs a status lifecycle, and the <span className="text-emerald-400 font-semibold">Approved</span> step is your approve-to-pay gate — an invoice sits on hold until someone reviews it against the PO, the budget, and the work.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
@@ -477,7 +477,7 @@ export default function PurchasingPage() {
             </div>
             <h2 className="text-2xl font-black text-white mb-3">Change orders, controlled</h2>
             <p className="text-slate-400 leading-relaxed mb-5">
-              Buyer-requested and field changes run through an approval workflow with a full audit trail. Approved changes spin up dedicated change-order POs and flow into the same budget number &mdash; so the cost of a change is never lost between the field and the books.
+              Buyer-requested and field changes run through an approval workflow with a full audit trail. Approved changes spin up dedicated change-order POs and flow into the same budget number — so the cost of a change is never lost between the field and the books.
             </p>
             <ul className="space-y-2.5">
               {[
@@ -498,7 +498,7 @@ export default function PurchasingPage() {
             </div>
             <h2 className="text-2xl font-black text-white mb-3">QuickBooks-ready</h2>
             <p className="text-slate-400 leading-relaxed mb-5">
-              Vendors, purchase orders, and homes each carry a QuickBooks ID, and PO and payment lifecycle events fire as real-time webhooks. Sync to QuickBooks today through the REST API or a Zapier connection &mdash; map your bills and payments with those IDs and events.
+              Vendors, purchase orders, and homes each carry a QuickBooks ID, and PO and payment lifecycle events fire as real-time webhooks. Sync to QuickBooks today through the REST API or a Zapier connection — map your bills and payments with those IDs and events.
             </p>
             <ul className="space-y-2.5">
               {[
@@ -528,7 +528,7 @@ export default function PurchasingPage() {
                 </div>
                 <div>
                   <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-bold mb-2">
-                    NEW &mdash; AUTO-QUANTITY
+                    NEW — AUTO-QUANTITY
                   </div>
                   <h2 className="text-3xl font-black text-white">Auto-Quantity Scope Items</h2>
                   <p className="text-cyan-400 font-semibold text-sm mt-1">Set it once. Every floorplan gets the right number.</p>
@@ -536,8 +536,8 @@ export default function PurchasingPage() {
               </div>
               <p className="text-slate-300 text-lg leading-relaxed mb-8">
                 Scope items like Electrical Rough, Paint Labor, and Insulation can now have their quantities automatically
-                calculated from your floorplan dimensions. Set &ldquo;Electrical Rough &rarr; Under Air Sqft&rdquo; once on the scope
-                item, and The Addison gets 2,400 sqft while The Magnolia gets 1,800 sqft &mdash; automatically. No manual
+                calculated from your floorplan dimensions. Set “Electrical Rough → Under Air Sqft” once on the scope
+                item, and The Addison gets 2,400 sqft while The Magnolia gets 1,800 sqft — automatically. No manual
                 entry per floorplan, no stale numbers, no forgotten updates.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
@@ -557,11 +557,11 @@ export default function PurchasingPage() {
               <div className="flex flex-col sm:flex-row gap-4 items-start">
                 <div className="flex-1 p-4 rounded-xl bg-red-500/5 border border-red-500/20">
                   <p className="text-red-400 font-semibold text-xs uppercase tracking-widest mb-2">Without Auto-Quantity</p>
-                  <p className="text-slate-400 text-sm">Add a new floorplan. Open every scope item. Type the sqft for Electrical, Insulation, Drywall, Paint, HVAC, Framing&hellip; 40+ scope items &times; every floorplan in your portfolio. One typo and your budget is wrong for months.</p>
+                  <p className="text-slate-400 text-sm">Add a new floorplan. Open every scope item. Type the sqft for Electrical, Insulation, Drywall, Paint, HVAC, Framing… 40+ scope items &times; every floorplan in your portfolio. One typo and your budget is wrong for months.</p>
                 </div>
                 <div className="flex-1 p-4 rounded-xl bg-cyan-500/5 border border-cyan-500/20">
                   <p className="text-cyan-400 font-semibold text-xs uppercase tracking-widest mb-2">With Auto-Quantity</p>
-                  <p className="text-slate-400 text-sm">Set &ldquo;Electrical Rough &rarr; Under Air Sqft&rdquo; once. Add a floorplan with its dimensions. Every scope item auto-calculates. POs combine base house + structural option quantities automatically. ANSI Z765 compliant.</p>
+                  <p className="text-slate-400 text-sm">Set “Electrical Rough → Under Air Sqft” once. Add a floorplan with its dimensions. Every scope item auto-calculates. POs combine base house + structural option quantities automatically. ANSI Z765 compliant.</p>
                 </div>
               </div>
             </div>
@@ -581,7 +581,7 @@ export default function PurchasingPage() {
                 </div>
                 <div>
                   <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold mb-2">
-                    NEW &mdash; AI FEATURE
+                    NEW — AI FEATURE
                   </div>
                   <h2 className="text-3xl font-black text-white">Bid Import AI</h2>
                   <p className="text-emerald-400 font-semibold text-sm mt-1">Upload any vendor format. AI does the rest.</p>
@@ -589,7 +589,7 @@ export default function PurchasingPage() {
               </div>
               <p className="text-slate-300 text-lg leading-relaxed mb-8">
                 Your vendors don&apos;t use your bid template. They send Excel files, PDFs, scanned quotes, even photos of handwritten estimates.
-                Bid Import AI reads them all &mdash; extracts every line item with quantities, unit prices, part numbers, and scope assignments,
+                Bid Import AI reads them all — extracts every line item with quantities, unit prices, part numbers, and scope assignments,
                 fuzzy-matches them to your parts catalog, and gives you a clean review table. No squinting, no manual re-entry.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
@@ -630,9 +630,9 @@ export default function PurchasingPage() {
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-black text-center mb-12">Everything included</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="columns-1 sm:columns-2 lg:columns-3 gap-6">
             {features.map((f) => (
-              <div key={f.title} className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-emerald-500/30 transition-all duration-300">
+              <div key={f.title} className="mb-6 break-inside-avoid p-6 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-emerald-500/30 transition-all duration-300">
                 <div className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
                   <div>
@@ -658,8 +658,8 @@ export default function PurchasingPage() {
               <div className="flex justify-between"><span>NEWSTAR / BuildPro</span><span className="line-through text-slate-600">$800+/mo</span></div>
               <div className="flex justify-between"><span>Cornerstone PM™</span><span className="text-emerald-400 font-bold">Free during beta</span></div>
             </div>
-            <Link href="/beta" className="block w-full text-center px-6 py-3.5 rounded-xl bg-emerald-400 text-slate-900 font-bold hover:bg-emerald-300 transition-all duration-200">Get Early Access &rarr;</Link>
-            <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders &mdash;· No credit card required</p>
+            <Link href="/beta" className="block w-full text-center px-6 py-3.5 rounded-xl bg-emerald-400 text-slate-900 font-bold hover:bg-emerald-300 transition-all duration-200">Get Early Access →</Link>
+            <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders —· No credit card required</p>
           </div>
           <div className="space-y-4">
             <h2 className="text-3xl font-black">Why builders choose Cornerstone for purchasing</h2>
@@ -680,7 +680,7 @@ export default function PurchasingPage() {
       <section className="py-20 px-4 text-center border-t border-slate-800/60">
         <h2 className="text-4xl font-black mb-4">Ready to buy smarter?</h2>
         <p className="text-slate-400 text-lg mb-8 max-w-xl mx-auto">Join the beta and get 2 years free. Limited to 100 builders.</p>
-        <Link href="/beta" className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-emerald-400 text-slate-900 font-bold text-lg hover:bg-emerald-300 transition-all duration-200 shadow-lg shadow-emerald-500/30">Request Early Access &rarr;</Link>
+        <Link href="/beta" className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-emerald-400 text-slate-900 font-bold text-lg hover:bg-emerald-300 transition-all duration-200 shadow-lg shadow-emerald-500/30">Request Early Access →</Link>
       </section>
       <Footer />
     </div>
