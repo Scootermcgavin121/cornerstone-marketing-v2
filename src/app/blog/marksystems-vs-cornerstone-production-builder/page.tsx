@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: `https://www.cornerstonepm.ai${heroImage}`,
-        width: 1024,
+        width: 1536,
         height: 1024,
         alt: heroImageAlt,
       },
@@ -109,7 +109,7 @@ export default function MarkSystemsVsCornerstonePage() {
         <Image
           src={heroImage}
           alt={heroImageAlt}
-          width={1024}
+          width={1536}
           height={1024}
           priority
           className="rounded-2xl w-full h-auto mb-10"
