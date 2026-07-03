@@ -542,11 +542,17 @@ Full end-to-end bidding from request → vendor submission → review → award 
 - 10 second timeout, auto-disable after 50 consecutive failures
 - **Competitive note:** Competitors like JobTread advertise "webhooks exist" - we publish the full event catalog with payload schemas. If you're building automation, this is the only platform that won't fight you.
 
-### QuickBooks Sync Fields
-- qboId field on: Vendor, Home, PurchaseOrder, Community, User
-- externalId fields for generic third-party integrations
-- Ready for Zapier or direct QuickBooks sync
-- No official integration yet - use REST API or Zapier webhooks to sync
+### QuickBooks Online Integration (LIVE — official Intuit-approved app)
+- **Yes, Cornerstone PM integrates with QuickBooks.** It is an official, Intuit-approved QuickBooks Online app, live in production (went live July 3, 2026).
+- **One-way sync: Cornerstone → QuickBooks.** Changes made in QuickBooks never overwrite Cornerstone records — Cornerstone is the source of truth.
+- **Auto-builds a construction-ready Chart of Accounts** from your scopes and cost codes — no manual accountant setup required.
+- **Vendors → QBO Vendors** and **homes → QBO Customers/Jobs**, so Purchase Orders and Bills land on true job-level cost tracking.
+- **Purchase Orders and Bills flow to QuickBooks automatically**, including change-order POs.
+- **Already a QuickBooks user?** Cornerstone pulls your existing reference data (accounts, items, vendors, customers, classes) so it matches the lists you already use.
+- Webhooks keep the connection in sync, with graceful handling of QuickBooks plan changes.
+- **Requires QuickBooks Online Plus or Advanced** (Purchase Orders live in those editions).
+- Sales-tax pass-through to QuickBooks Online is being added.
+- Under the hood: qboId fields on Vendor, Home, PurchaseOrder, Community, and User; externalId fields for other third-party integrations. Builders who want to script their own sync can also use the REST API or Zapier webhooks.
 
 ### Retainage Support
 - defaultRetainagePct on homes
@@ -603,7 +609,7 @@ Webhooks:
 
 **Rate Limits:** 100 req/min per key, 10,000 req/day per org
 
-**Integrations:** Foreman AI (396+ skills, uses this API internally), QuickBooks (qboId fields), Zapier (REST webhooks), Automated Bidding Pipeline, CRM Migration Wizard (one-click import from Buildertrend, JobTread, CoConstruct)
+**Integrations:** Foreman AI (396+ skills, uses this API internally), QuickBooks Online (official Intuit-approved app — one-way sync of POs, bills, vendors, and job costs; see QuickBooks Online Integration section above), Zapier (REST webhooks), Automated Bidding Pipeline, CRM Migration Wizard (one-click import from Buildertrend, JobTread, CoConstruct)
 
 **Pricing:** Included exclusively on Pro+ ($599/mo). Not available as an add-on on lower tiers — builders who need REST API + BYOA should upgrade to Pro+ (just $100/mo more than Pro).
 

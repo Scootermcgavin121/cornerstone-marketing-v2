@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { FeaturesSection } from "@/components/FeaturesSection";
+import { IntegrationsSection } from "@/components/IntegrationsSection";
 import { CTASection } from "@/components/CTASection";
 import { VideoPlayer } from "@/components/VideoPlayer";
 import {
@@ -394,6 +395,8 @@ export default function FeaturesPage() {
           })}
         </div>
       </section>
+
+      <IntegrationsSection />
 
       <CTASection />
       <Footer />

@@ -20,6 +20,7 @@ import { AgentsSection } from "@/components/AgentsSection";
 import { ModulesGrid } from "@/components/ModulesGrid";
 import { DataOwnership } from "@/components/DataOwnership";
 import { InfrastructureSection } from "@/components/InfrastructureSection";
+import { IntegrationsSection } from "@/components/IntegrationsSection";
 import { CompetitorCompareStrip } from "@/components/CompetitorCompareStrip";
 import { PricingSection } from "@/components/PricingSection";
 import { CTASection } from "@/components/CTASection";
@@ -37,6 +38,7 @@ export default function Home() {
       <ModulesGrid />
       <DataOwnership />
       <InfrastructureSection />
+      <IntegrationsSection />
       <CompetitorCompareStrip />
       <PricingSection />
       <CTASection />
