@@ -80,7 +80,7 @@ export default function OptionClassesScopeLinkingPage() {
               Product Update
             </span>
             <span className="text-xs text-slate-500">June 27, 2026</span>
-            <span className="text-xs text-slate-600">&mdash;·</span>
+            <span className="text-xs text-slate-600">—·</span>
             <span className="text-xs text-slate-500">6 min read</span>
           </div>
 
@@ -92,7 +92,7 @@ export default function OptionClassesScopeLinkingPage() {
 
           {/* Lead paragraph */}
           <p className="text-xl text-slate-300 leading-relaxed mb-8">
-            Cornerstone PM&rsquo;s Option Classes tie a design selection category
+            Cornerstone PM’s Option Classes tie a design selection category
             directly to a scope item and your Master Cost Budget — so when a buyer
             upgrades to Premium Cabinets, the Cabinetry scope and the overall budget
             update automatically. No manual reconciliation, no silo between{" "}
@@ -131,12 +131,12 @@ export default function OptionClassesScopeLinkingPage() {
           </p>
           <p className="text-slate-300 leading-relaxed mb-4">
             The result is predictable: the design center says one thing, the budget says
-            another, and the scope says a third. You&rsquo;re reconciling three systems
+            another, and the scope says a third. You’re reconciling three systems
             instead of running one.
           </p>
           <p className="text-slate-300 leading-relaxed mb-6">
-            This disconnect isn&rsquo;t a minor inconvenience on a 5-home community. On
-            a 40-home subdivision with 25 buyer selections per plan, you&rsquo;re
+            This disconnect isn’t a minor inconvenience on a 5-home community. On
+            a 40-home subdivision with 25 buyer selections per plan, you’re
             managing 1,000+ data points that were manually entered into two or three
             places. The error rate is high, the catch rate is low, and the margin leak
             is real.
@@ -234,7 +234,7 @@ export default function OptionClassesScopeLinkingPage() {
             +$3,200 delta hits the Cabinetry line in the Master Cost Budget. The
             cabinetry scope item is already linked, so your vendor bid template for the
             cabinet trade automatically reflects the correct spec. The project manager
-            doesn&rsquo;t touch the budget. The purchasing coordinator doesn&rsquo;t
+            doesn’t touch the budget. The purchasing coordinator doesn’t
             need to manually re-enter the upgrade on the bid request.
           </p>
 
@@ -259,7 +259,7 @@ export default function OptionClassesScopeLinkingPage() {
                 </h3>
                 <p className="text-slate-300 text-sm leading-relaxed">
                   Pull directly from your existing Scope Library. If you already have
-                  &ldquo;Kitchen Cabinetry Labor + Material&rdquo; as a scope item,
+                  “Kitchen Cabinetry Labor + Material” as a scope item,
                   Cornerstone can generate an Option Class from it automatically — the
                   scope link is pre-populated, and you add your option tiers on top of
                   the structure that already exists.
@@ -298,12 +298,12 @@ export default function OptionClassesScopeLinkingPage() {
             For builders who price upgrade options at retail (buyer-facing price, not
             cost), Option Classes support a Global Retail Pricing Mode. When enabled,
             option prices displayed to the buyer are the retail price, while the
-            builder&rsquo;s internal cost records the cost basis separately.
+            builder’s internal cost records the cost basis separately.
           </p>
           <p className="text-slate-300 leading-relaxed mb-6">
             This matters for builders who want to present upgrade costs to buyers without
-            exposing their vendor pricing or margin. The buyer sees &ldquo;Premium
-            Soft-Close Cabinets: +$3,200.&rdquo; The project file tracks the underlying
+            exposing their vendor pricing or margin. The buyer sees “Premium
+            Soft-Close Cabinets: +$3,200.” The project file tracks the underlying
             vendor cost and the margin on that upgrade — all through the same scope-linked
             Option Class.
           </p>
@@ -321,12 +321,12 @@ export default function OptionClassesScopeLinkingPage() {
             Without scope-linked options, the Master Cost Budget is always behind. A
             buyer finalizes selections on Friday. A PM updates the budget Monday after
             manually reviewing the selection report. The budget is stale all weekend,
-            and that&rsquo;s if the PM catches every line.
+            and that’s if the PM catches every line.
           </p>
           <p className="text-slate-300 leading-relaxed mb-6">
             With Option Classes tied to scope items, the Master Cost Budget updates at
-            the moment of buyer selection. There&rsquo;s no manual reconciliation step
-            because there&rsquo;s no silo to bridge. The design center IS the
+            the moment of buyer selection. There’s no manual reconciliation step
+            because there’s no silo to bridge. The design center IS the
             purchasing workflow.
           </p>
 
@@ -336,8 +336,8 @@ export default function OptionClassesScopeLinkingPage() {
               The Design + Purchasing Connection
             </h3>
             <p className="text-slate-300 text-sm leading-relaxed mb-4">
-              Option Classes are one part of Cornerstone PM&rsquo;s design-to-purchasing
-              pipeline. Here&rsquo;s how the full connection works:
+              Option Classes are one part of Cornerstone PM’s design-to-purchasing
+              pipeline. Here’s how the full connection works:
             </p>
             <ul className="space-y-2">
               {[
@@ -363,20 +363,20 @@ export default function OptionClassesScopeLinkingPage() {
             Buildertrend has a selections module and a budget module. They do not share a
             live data connection. A buyer selection in Buildertrend triggers a change order
             process — which a PM has to approve and enter into the budget manually.
-            That&rsquo;s by design in a custom-builder workflow, where every selection is
+            That’s by design in a custom-builder workflow, where every selection is
             negotiated. But in a production-builder context where selections come from a
             fixed menu, requiring manual change orders for every upgrade defeats the
             purpose of having a design center at all.
           </p>
           <p className="text-slate-300 leading-relaxed mb-4">
-            JobTread doesn&rsquo;t have a buyer-facing design center in the same sense.
+            JobTread doesn’t have a buyer-facing design center in the same sense.
             It has a client portal and line-item approvals, but no concept of Option
             Classes, scope-item linking, or a structured upgrade pricing model built for
             production volumes.
           </p>
           <p className="text-slate-300 leading-relaxed mb-6">
             NEWSTAR has budget-to-selections integration, but the UX dates from an era
-            when configuration meant calling a support rep. Cornerstone PM&rsquo;s Option
+            when configuration meant calling a support rep. Cornerstone PM’s Option
             Class setup takes a few minutes in a modern web UI — no implementation
             consultant required.
           </p>
@@ -404,7 +404,7 @@ export default function OptionClassesScopeLinkingPage() {
             step.
           </p>
           <p className="text-slate-300 leading-relaxed mb-8">
-            If you&rsquo;re evaluating platforms, see the full feature comparison on our{" "}
+            If you’re evaluating platforms, see the full feature comparison on our{" "}
             <Link
               href="/home-builder-project-management-software"
               className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
@@ -422,7 +422,7 @@ export default function OptionClassesScopeLinkingPage() {
             </h3>
             <p className="text-slate-400 mb-6 max-w-lg mx-auto">
               Option Classes, scope-item linking, and a live Master Cost Budget — built
-              for production builders who can&rsquo;t afford a silo between selections
+              for production builders who can’t afford a silo between selections
               and purchasing.
             </p>
             <Link

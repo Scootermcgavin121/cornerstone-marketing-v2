@@ -29,17 +29,17 @@ const permittingSchema = buildFeatureSchema({
 export const metadata = {
   title: "Permitting Software for Home Builders | Cornerstone PM™",
   description:
-    "Permitting software for home builders. Permit gates, phase blocking, automated reminders, and inspection tracking from sale to final &mdash; built for home builders.",
+    "Permitting software for home builders. Permit gates, phase blocking, automated reminders, and inspection tracking from sale to final — built for home builders.",
 };
 
 const faqItems: FAQItem[] = [
   {
     q: "What is permitting software for home builders?",
-    a: "Permitting software tracks every permit and inspection a home requires &mdash; from foundation to final &mdash; and blocks dependent construction work until permits clear. Cornerstone PM™'s permitting module includes permit gates, phase blocking, automated reminders, and a full audit trail across the entire build pipeline.",
+    a: "Permitting software tracks every permit and inspection a home requires — from foundation to final — and blocks dependent construction work until permits clear. Cornerstone PM™'s permitting module includes permit gates, phase blocking, automated reminders, and a full audit trail across the entire build pipeline.",
   },
   {
     q: "What is a permit gate?",
-    a: "A permit gate is an automated rule that blocks downstream construction tasks until a specific permit is approved. In Cornerstone PM™, framing tasks won't be scheduled until the building permit clears, slab pours wait for foundation permits, and final inspections wait for required preceding work &mdash; preventing the costly rework that comes from building ahead of permits.",
+    a: "A permit gate is an automated rule that blocks downstream construction tasks until a specific permit is approved. In Cornerstone PM™, framing tasks won't be scheduled until the building permit clears, slab pours wait for foundation permits, and final inspections wait for required preceding work — preventing the costly rework that comes from building ahead of permits.",
   },
   {
     q: "How does Cornerstone PM™ handle inspection scheduling?",
@@ -47,7 +47,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Does the permitting module connect to the schedule?",
-    a: "Yes. Permitting is wired directly to the construction schedule. When a permit is approved, the gate opens and dependent tasks become schedulable. When a permit is delayed, the schedule cascades automatically and the homeowner portal updates &mdash; no manual re-dating required.",
+    a: "Yes. Permitting is wired directly to the construction schedule. When a permit is approved, the gate opens and dependent tasks become schedulable. When a permit is delayed, the schedule cascades automatically and the homeowner portal updates — no manual re-dating required.",
   },
   {
     q: "Can I track multiple permit types per home?",
@@ -143,7 +143,7 @@ const foremanExamples = [
   {
     prompt: "Apply the framing permit sequence to 1234 Oak Street",
     response:
-      "Framing permit sequence applied. 3 tasks created: Submit Application (due in 2 days), Follow Up (due in 7 days), Confirm Approval (due in 14 days). Phase gate active &mdash; framing tasks locked until approval.",
+      "Framing permit sequence applied. 3 tasks created: Submit Application (due in 2 days), Follow Up (due in 7 days), Confirm Approval (due in 14 days). Phase gate active — framing tasks locked until approval.",
   },
   {
     prompt: "Send a permit status update to the buyer at 445 Gulf Road",
@@ -180,14 +180,14 @@ export default function PermittingPage() {
             <span className="text-orange-400">kill your schedule.</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10">
-            Most builders lose 2&ndash;4 weeks per home to permitting chaos &mdash; applications filed late, inspections missed, construction starting before approvals clear. Cornerstone PM™ brings permit tracking into your schedule so nothing falls through.
+            Most builders lose 2–4 weeks per home to permitting chaos — applications filed late, inspections missed, construction starting before approvals clear. Cornerstone PM™ brings permit tracking into your schedule so nothing falls through.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/beta"
               className="px-8 py-4 rounded-full bg-orange-400 text-slate-900 font-bold text-lg hover:bg-orange-300 transition-all duration-200 shadow-lg shadow-orange-500/30 hover:-translate-y-0.5"
             >
-              Get Beta Access &rarr;
+              Get Beta Access →
             </Link>
             <a
               href="#permitting-features"
@@ -244,7 +244,7 @@ export default function PermittingPage() {
             Every permit. Every stage. Tracked.
           </h2>
           <p className="text-slate-400 text-center max-w-xl mx-auto mb-12">
-            Six tools that bring permit tracking inside your schedule &mdash; so the whole team knows exactly where every home stands.
+            Six tools that bring permit tracking inside your schedule — so the whole team knows exactly where every home stands.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((f) => {
@@ -304,7 +304,7 @@ export default function PermittingPage() {
             Permitting fits inside your full pipeline.
           </h2>
           <p className="text-slate-400 text-center max-w-xl mx-auto mb-12">
-            One continuous flow from sale to close &mdash; with the permit gate holding the line.
+            One continuous flow from sale to close — with the permit gate holding the line.
           </p>
           <div className="flex flex-wrap justify-center items-center gap-2">
             {pipelineSteps.map((step, i) => (
@@ -322,7 +322,7 @@ export default function PermittingPage() {
                   )}
                 </div>
                 {i < pipelineSteps.length - 1 && (
-                  <span className="text-slate-600 text-lg">&rarr;</span>
+                  <span className="text-slate-600 text-lg">→</span>
                 )}
               </div>
             ))}
@@ -346,7 +346,7 @@ export default function PermittingPage() {
                 href="/beta"
                 className="px-8 py-4 rounded-full bg-orange-400 text-slate-900 font-bold text-lg hover:bg-orange-300 transition-all duration-200 shadow-lg shadow-orange-500/30"
               >
-                Get Beta Access &rarr;
+                Get Beta Access →
               </Link>
               <Link
                 href="/features"

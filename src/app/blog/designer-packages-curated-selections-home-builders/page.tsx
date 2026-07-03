@@ -172,7 +172,7 @@ export default function DesignerPackagesPage() {
 
           <p className="text-xl text-slate-300 font-light">
             Cornerstone PM&apos;s Designer Packages let buyers choose a curated design bundle —
-            &ldquo;Modern Farmhouse,&rdquo; &ldquo;Coastal,&rdquo; &ldquo;Urban Contemporary&rdquo; — and every
+            “Modern Farmhouse,” “Coastal,” “Urban Contemporary” — and every
             option in every category auto-locks to that coordinated look. One decision. Zero
             spreadsheet. Real vendor pricing behind every item.
           </p>
@@ -242,7 +242,7 @@ export default function DesignerPackagesPage() {
             actually go together.
           </p>
           <p>
-            Packages solve both problems at once. A &ldquo;Coastal&rdquo; package is a promise: these
+            Packages solve both problems at once. A “Coastal” package is a promise: these
             finishes are curated to work together. The buyer is making one style decision, not 200
             isolated material decisions. The coordination work was done once, by your design team,
             when you configured the package — not repeated by every buyer who walks into your
@@ -275,7 +275,7 @@ export default function DesignerPackagesPage() {
           </h2>
           <p>
             This is where Cornerstone PM diverges sharply from most design center implementations.
-            Many platforms let you enter an allowance — &ldquo;$8,500 flooring allowance&rdquo; — and call
+            Many platforms let you enter an allowance — “$8,500 flooring allowance” — and call
             it a selection. The allowance is a placeholder, not a price. It tells the buyer almost
             nothing about what they&apos;re actually getting, and it creates a reconciliation headache
             at closing when actuals don&apos;t match the estimate.
@@ -309,8 +309,8 @@ export default function DesignerPackagesPage() {
           <p>
             In Buildertrend, CoConstruct, or a generic PM tool, every home is a fresh selections
             job. You set up the Magnolia plan&apos;s design options, then do it again for the next
-            Magnolia, and again for the community after that. There is no concept of &ldquo;this plan&apos;s
-            options are the same across every home of this plan in every community.&rdquo;
+            Magnolia, and again for the community after that. There is no concept of “this plan&apos;s
+            options are the same across every home of this plan in every community.”
           </p>
           <p>
             Cornerstone is built around plan repeats. Configure the Magnolia plan&apos;s Designer
@@ -385,8 +385,8 @@ export default function DesignerPackagesPage() {
               exclusion groups
             </Link>{" "}
             handle this cleanly: configure a group, drag in the relevant option classes, set
-            &ldquo;Pick One,&rdquo; and the category marks complete the moment the buyer makes a single
-            selection. Previously, marking a category &ldquo;required&rdquo; forced buyers to pick every
+            “Pick One,” and the category marks complete the moment the buyer makes a single
+            selection. Previously, marking a category “required” forced buyers to pick every
             option in it — which doesn&apos;t work for mutually exclusive choices. Exclusion groups
             fix the logic so selection-progress dashboards actually reflect reality instead of
             showing every carpet-vs-tile category as permanently incomplete.

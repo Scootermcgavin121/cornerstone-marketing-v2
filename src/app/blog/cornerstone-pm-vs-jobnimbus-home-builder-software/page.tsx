@@ -158,14 +158,14 @@ export default function JobNimbusVsCornerstonePage() {
 
           <p className="text-xl text-slate-300 font-light">
             JobNimbus is a leading CRM for roofing and exterior contractors, trusted by 6,000+
-            businesses. Cornerstone PM&trade; is a production home builder platform with a full
+            businesses. Cornerstone PM™ is a production home builder platform with a full
             design center, AI agents, and multi-community workflows. They serve completely
             different business models.
           </p>
 
           <p>
-            If you landed here from a &ldquo;construction software&rdquo; or &ldquo;contractor
-            CRM&rdquo; search and you&apos;re a whole-home builder, the short answer is:
+            If you landed here from a “construction software” or “contractor
+            CRM” search and you&apos;re a whole-home builder, the short answer is:
             JobNimbus was not built for your workflows. This post explains exactly why, and what
             purpose-built production builder software actually looks like. For the full platform
             overview, start at{" "}
@@ -182,8 +182,8 @@ export default function JobNimbusVsCornerstonePage() {
             What is JobNimbus built for?
           </h2>
           <p>
-            JobNimbus markets itself as the &ldquo;#1 Roofing CRM &amp; Project Management
-            Software,&rdquo; and it earns that title. Its product stack is built around:
+            JobNimbus markets itself as the “#1 Roofing CRM &amp; Project Management
+            Software,” and it earns that title. Its product stack is built around:
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
             <li>Lead capture and follow-up automation for roofing sales teams</li>
@@ -196,16 +196,16 @@ export default function JobNimbusVsCornerstonePage() {
             </li>
           </ul>
           <p>
-            These are real, well-solved problems for a roofing contractor closing 100&ndash;500
+            These are real, well-solved problems for a roofing contractor closing 100–500
             insurance claims a year. JobNimbus has invested heavily in that vertical and it shows.
           </p>
           <p>
-            The problem is that &ldquo;production&rdquo; in the JobNimbus world means roofing
-            crew production &mdash; job stages, crew assignments, and workflow boards for a
+            The problem is that “production” in the JobNimbus world means roofing
+            crew production — job stages, crew assignments, and workflow boards for a
             roofing team. That is an entirely different concept from production home building,
             which means selling the same floorplan 80 times across five communities. JobNimbus
             has no concept of a floorplan, a model home, a lot, a community, a design center,
-            or a multi-trade scope item. These aren&apos;t missing features &mdash; they are
+            or a multi-trade scope item. These aren&apos;t missing features — they are
             concepts that simply do not exist in the product&apos;s data model.
           </p>
 
@@ -213,14 +213,14 @@ export default function JobNimbusVsCornerstonePage() {
             What does a production home builder actually need?
           </h2>
           <p>
-            A production builder doing 20&ndash;150 homes per year faces a completely different
+            A production builder doing 20–150 homes per year faces a completely different
             set of operational challenges than a roofing contractor:
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
             <li>
               <strong className="text-white">Plan repeats:</strong> The same Magnolia floorplan
               sells across dozens of homes per year. Options need to be priced once at the plan
-              level and reused &mdash; not re-entered per job or per homeowner.
+              level and reused — not re-entered per job or per homeowner.
             </li>
             <li>
               <strong className="text-white">Design center:</strong> Buyers choose finishes,
@@ -234,7 +234,7 @@ export default function JobNimbusVsCornerstonePage() {
             </li>
             <li>
               <strong className="text-white">Multi-trade scope items:</strong> A production
-              builder manages 20+ trades per home &mdash; framing, HVAC, plumbing, electrical,
+              builder manages 20+ trades per home — framing, HVAC, plumbing, electrical,
               tile, paint, cabinets, and more. Each scope needs its own bid request workflow,
               vendor comparison, and award logic.
             </li>
@@ -245,12 +245,12 @@ export default function JobNimbusVsCornerstonePage() {
             </li>
           </ul>
           <p>
-            JobNimbus addresses none of these. Cornerstone PM&trade; was built around every one
+            JobNimbus addresses none of these. Cornerstone PM™ was built around every one
             of them.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            Feature comparison: JobNimbus vs Cornerstone PM&trade;
+            Feature comparison: JobNimbus vs Cornerstone PM™
           </h2>
 
           <div className="overflow-x-auto rounded-xl border border-slate-800 not-prose">
@@ -260,7 +260,7 @@ export default function JobNimbusVsCornerstonePage() {
                   <th className="text-left px-5 py-4 text-slate-400 font-medium">Feature</th>
                   <th className="px-5 py-4 text-slate-400 font-medium text-center">JobNimbus</th>
                   <th className="px-5 py-4 text-cyan-400 font-medium text-center">
-                    Cornerstone PM&trade;
+                    Cornerstone PM™
                   </th>
                 </tr>
               </thead>
@@ -286,12 +286,12 @@ export default function JobNimbusVsCornerstonePage() {
           <p>
             The design center appointment is where production builders earn their highest-margin
             revenue. A buyer choosing between a standard kitchen and a Designer Package upgrade
-            is a moment worth capturing cleanly &mdash; and the software infrastructure behind
+            is a moment worth capturing cleanly — and the software infrastructure behind
             that moment determines whether you capture it or lose it to manual spreadsheet
             follow-up.
           </p>
           <p>
-            Cornerstone PM&trade; ships 64 curated Designer Packages across 7 categories. When a
+            Cornerstone PM™ ships 64 curated Designer Packages across 7 categories. When a
             buyer selects a package, every option in that category automatically locks to the
             package&apos;s selections. If they want to customize, they can unlock individual
             options for &agrave; la carte changes. Options are priced at the floorplan level:
@@ -300,7 +300,7 @@ export default function JobNimbusVsCornerstonePage() {
           </p>
           <p>
             JobNimbus has no design center, no Designer Packages, and no options pricing model of
-            any kind. It is not a gap that can be bridged with a Zapier integration &mdash; it
+            any kind. It is not a gap that can be bridged with a Zapier integration — it
             is a structural absence.
           </p>
 
@@ -310,11 +310,11 @@ export default function JobNimbusVsCornerstonePage() {
           <p>
             JobNimbus&apos;s vendor workflow is built around single-trade roofing material
             ordering. This is appropriate for its audience. A roofer doesn&apos;t need
-            multi-scope bid request templates &mdash; they need to send a project to their
+            multi-scope bid request templates — they need to send a project to their
             preferred supplier and get materials delivered.
           </p>
           <p>
-            Cornerstone PM&trade;&apos;s{" "}
+            Cornerstone PM™&apos;s{" "}
             <Link
               href="/purchasing"
               className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
@@ -329,12 +329,12 @@ export default function JobNimbusVsCornerstonePage() {
               filtered to each vendor&apos;s relevant trade
             </li>
             <li>
-              Vendors respond through a token-protected portal &mdash; no Cornerstone account
+              Vendors respond through a token-protected portal — no Cornerstone account
               required
             </li>
             <li>Side-by-side bid comparison when 2+ vendors submit on the same scope</li>
             <li>
-              Bids lock on acceptance &mdash; awarded pricing can&apos;t drift from either side
+              Bids lock on acceptance — awarded pricing can&apos;t drift from either side
             </li>
             <li>
               Community-assigned vendor wins: one framing crew for Community A, a different one
@@ -355,53 +355,53 @@ export default function JobNimbusVsCornerstonePage() {
             builder&apos;s workflows.
           </p>
           <p>
-            Cornerstone PM&trade; ships five purpose-built AI agents, all bundled at no extra cost:
+            Cornerstone PM™ ships five purpose-built AI agents, all bundled at no extra cost:
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
             <li>
-              <strong className="text-white">Blueprint AI</strong> &mdash; parses a floor plan PDF
+              <strong className="text-white">Blueprint AI</strong> — parses a floor plan PDF
               and extracts 130+ material scopes in under 60 seconds.{" "}
               <Link
                 href="/ai-takeoff"
                 className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
               >
-                See Blueprint AI &rarr;
+                See Blueprint AI →
               </Link>
             </li>
             <li>
-              <strong className="text-white">Foreman AI</strong> &mdash; an in-app agent with
+              <strong className="text-white">Foreman AI</strong> — an in-app agent with
               396+ skills covering purchasing, vendor management, schedule optimization, budget
-              analysis, and profitability reporting. Foreman reads AND writes data &mdash; it
+              analysis, and profitability reporting. Foreman reads AND writes data — it
               takes real actions, not just answers questions.{" "}
               <Link
                 href="/foreman"
                 className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
               >
-                Meet Foreman &rarr;
+                Meet Foreman →
               </Link>
             </li>
             <li>
-              <strong className="text-white">Bid Import AI</strong> &mdash; auto-maps vendor bid
+              <strong className="text-white">Bid Import AI</strong> — auto-maps vendor bid
               spreadsheets to your scope items with no manual column matching.
             </li>
             <li>
-              <strong className="text-white">AI MLS Listing Generator</strong> &mdash; generates
+              <strong className="text-white">AI MLS Listing Generator</strong> — generates
               listing copy directly from your floorplan and options data.
             </li>
             <li>
-              <strong className="text-white">AI Support Agent</strong> &mdash; answers platform
+              <strong className="text-white">AI Support Agent</strong> — answers platform
               questions in context without leaving your workflow.
             </li>
           </ul>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            Who should use JobNimbus, and who should use Cornerstone PM&trade;?
+            Who should use JobNimbus, and who should use Cornerstone PM™?
           </h2>
 
           <div className="grid sm:grid-cols-2 gap-4 not-prose my-6">
             <div className="rounded-xl border border-slate-700 bg-slate-900/40 p-6">
               <h3 className="text-lg font-bold text-white mb-3">
-                Use JobNimbus if you are&hellip;
+                Use JobNimbus if you are…
               </h3>
               <ul className="space-y-2 text-slate-300 text-sm">
                 <li className="flex items-start gap-2">
@@ -424,12 +424,12 @@ export default function JobNimbusVsCornerstonePage() {
             </div>
             <div className="rounded-xl border border-cyan-800/40 bg-cyan-950/20 p-6">
               <h3 className="text-lg font-bold text-white mb-3">
-                Use Cornerstone PM&trade; if you are&hellip;
+                Use Cornerstone PM™ if you are…
               </h3>
               <ul className="space-y-2 text-slate-300 text-sm">
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-cyan-400 mt-0.5 shrink-0" />A production home
-                  builder (5&ndash;200 homes/year)
+                  builder (5–200 homes/year)
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-cyan-400 mt-0.5 shrink-0" />
@@ -453,8 +453,8 @@ export default function JobNimbusVsCornerstonePage() {
 
           <p>
             JobNimbus is excellent for what it was designed to do. If you&apos;re a production
-            home builder who found it in a &ldquo;construction software&rdquo; list, you&apos;ve
-            simply hit a segment mismatch &mdash; JobNimbus&apos;s strengths have no overlap with
+            home builder who found it in a “construction software” list, you&apos;ve
+            simply hit a segment mismatch — JobNimbus&apos;s strengths have no overlap with
             the workflows that define production home building. Start with the{" "}
             <Link
               href="/home-builder-project-management-software"
@@ -470,15 +470,15 @@ export default function JobNimbusVsCornerstonePage() {
               Built for whole-home builders, not roofers
             </h2>
             <p className="text-slate-300 mb-6 max-w-xl mx-auto">
-              See how Cornerstone PM&trade; handles floorplans, Designer Packages, AI takeoff,
-              and multi-community vendor management &mdash; the workflows JobNimbus was never
+              See how Cornerstone PM™ handles floorplans, Designer Packages, AI takeoff,
+              and multi-community vendor management — the workflows JobNimbus was never
               designed for.
             </p>
             <Link
               href="/beta"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-base transition-colors"
             >
-              Request Early Access &rarr;
+              Request Early Access →
             </Link>
           </div>
         </div>

@@ -120,7 +120,7 @@ export default function AutoQuantityScopeItemsPage() {
               Product Update
             </span>
             <span className="text-xs text-slate-500">May 28, 2026</span>
-            <span className="text-xs text-slate-600">&mdash;·</span>
+            <span className="text-xs text-slate-600">—·</span>
             <span className="text-xs text-slate-500">6 min read</span>
           </div>
 
@@ -135,7 +135,7 @@ export default function AutoQuantityScopeItemsPage() {
             <Link href="/purchasing" className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2">
               Cornerstone PM
             </Link>{" "}
-            link a scope item&rsquo;s quantity directly to a floorplan measurement — Under Air
+            link a scope item’s quantity directly to a floorplan measurement — Under Air
             Sqft, Total Sqft, or Roof Squares — so every plan and every structural option
             prices itself automatically. You define paint cost per sqft once. Cornerstone
             reprices every floorplan, every elevation, every structural option instantly. No
@@ -165,9 +165,9 @@ export default function AutoQuantityScopeItemsPage() {
             scope, recalculate the quantity manually, and type it in again.
           </p>
           <p className="text-slate-300 leading-relaxed mb-4">
-            For a builder running 12 floorplans with 4 structural options each, that&rsquo;s
+            For a builder running 12 floorplans with 4 structural options each, that’s
             60+ line items to touch every time framing labor rates change. Multiply that by
-            every scope that&rsquo;s driven by square footage — Frame Labor, Slab Mason, Interior
+            every scope that’s driven by square footage — Frame Labor, Slab Mason, Interior
             Paint, Final Clean, Trim Carpenter, Roof Labor — and you have a data entry
             problem that eats hours per month and produces stale pricing between updates.
           </p>
@@ -183,7 +183,7 @@ export default function AutoQuantityScopeItemsPage() {
           </h2>
           <p className="text-slate-300 leading-relaxed mb-6">
             Cornerstone PM supports three measurement sources pulled directly from each
-            floorplan&rsquo;s recorded dimensions:
+            floorplan’s recorded dimensions:
           </p>
 
           <div className="grid gap-4 mb-8">
@@ -301,7 +301,7 @@ export default function AutoQuantityScopeItemsPage() {
           </h2>
           <p className="text-slate-300 leading-relaxed mb-4">
             This is where auto-quantity earns its keep. Most builders know their Magnolia
-            plan is 2,100 sqft Under Air. What they don&rsquo;t track cleanly is how the Bonus
+            plan is 2,100 sqft Under Air. What they don’t track cleanly is how the Bonus
             Room option (adds 280 sqft Under Air) changes Frame Labor, Interior Paint, Final
             Clean, and Trim Carpenter costs simultaneously.
           </p>
@@ -324,9 +324,9 @@ export default function AutoQuantityScopeItemsPage() {
             How This Compares to Buildertrend and JobTread
           </h2>
           <p className="text-slate-300 leading-relaxed mb-4">
-            Buildertrend&rsquo;s estimating module stores line items per job. You can build
+            Buildertrend’s estimating module stores line items per job. You can build
             estimate templates, but quantity is still a field you fill in per plan —
-            there&rsquo;s no native &ldquo;pull from floorplan sqft&rdquo; link. When your framing
+            there’s no native “pull from floorplan sqft” link. When your framing
             subcontractor raises rates in March, you update the template and apply it to
             new jobs going forward. Existing jobs and existing plan templates need manual
             updates.
@@ -337,7 +337,7 @@ export default function AutoQuantityScopeItemsPage() {
             floorplan-level scope that propagates to every home of that plan.
           </p>
           <p className="text-slate-300 leading-relaxed mb-6">
-            The difference isn&rsquo;t just convenience — it&rsquo;s a structural model. Buildertrend
+            The difference isn’t just convenience — it’s a structural model. Buildertrend
             and JobTread were built for custom builders pricing unique jobs. Auto-quantity
             scope items are designed for production builders running the same plans
             repeatedly across multiple communities, where repricing 60 line items manually
@@ -363,7 +363,7 @@ export default function AutoQuantityScopeItemsPage() {
           <p className="text-slate-300 leading-relaxed mb-4">
             Auto-quantity scope items connect directly to the rest of{" "}
             <Link href="/purchasing" className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2">
-              Cornerstone PM&rsquo;s purchasing workflow
+              Cornerstone PM’s purchasing workflow
             </Link>
             . When you send a bid request to vendors, the auto-calculated quantities
             populate the bid template automatically — subs see the right sqft-based numbers
@@ -381,8 +381,8 @@ export default function AutoQuantityScopeItemsPage() {
           </p>
           <p className="text-slate-300 leading-relaxed mb-6">
             And when you need to ask questions about your purchasing data —
-            &ldquo;What&rsquo;s frame labor for the Magnolia with bonus room across all
-            5 communities?&rdquo; —{" "}
+            “What’s frame labor for the Magnolia with bonus room across all
+            5 communities?” —{" "}
             <Link href="/foreman" className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2">
               Foreman AI
             </Link>{" "}

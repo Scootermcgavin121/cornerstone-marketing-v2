@@ -21,7 +21,7 @@ export function AiTakeoffSection() {
             <span className="text-violet-400">Under 60 seconds.</span>
           </h2>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto">
-            Upload a floor plan PDF. AI extracts every room, fixture, and material scope automatically &mdash; replacing hours of manual counting.
+            Upload a floor plan PDF. AI extracts every room, fixture, and material scope automatically — replacing hours of manual counting.
           </p>
         </div>
 
@@ -74,7 +74,7 @@ export function AiTakeoffSection() {
               className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-violet-500 text-white font-bold text-lg hover:bg-violet-400 transition-all duration-200 shadow-lg shadow-violet-500/30 hover:-translate-y-0.5"
             >
               <Zap className="w-5 h-5" />
-              See AI Takeoff in Action &rarr;
+              See AI Takeoff in Action →
             </Link>
           </div>
         </div>

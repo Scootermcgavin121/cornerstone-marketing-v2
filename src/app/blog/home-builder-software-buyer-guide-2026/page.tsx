@@ -201,7 +201,7 @@ export default function BuyerGuidePage() {
             <li>Sub notifications that go out automatically when predecessor tasks complete</li>
             <li>Purchase orders tied to budgets so you see variance in real time</li>
             <li>A design center that captures selections and sends them to purchasing automatically</li>
-            <li>A buyer portal that kills the &ldquo;where&apos;s my house?&rdquo; phone calls</li>
+            <li>A buyer portal that kills the “where&apos;s my house?” phone calls</li>
           </ul>
           <p>
             What you probably don&apos;t need at this stage: enterprise accounting integrations,
@@ -235,7 +235,7 @@ export default function BuyerGuidePage() {
             </li>
             <li>
               <strong className="text-white">Schedule intelligence:</strong> Does the AI flag anomalies, predict
-              delays, and notify the right people — or is &ldquo;AI&rdquo; just a chatbot wrapper over your data?
+              delays, and notify the right people — or is “AI” just a chatbot wrapper over your data?
             </li>
             <li>
               <strong className="text-white">Data grounding:</strong> Is the AI trained on your actual project data,

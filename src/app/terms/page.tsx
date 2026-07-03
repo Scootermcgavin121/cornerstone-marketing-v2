@@ -49,8 +49,8 @@ export default function TermsPage() {
         <div className="space-y-10">
           <Section id="acceptance" title="1. Acceptance of Terms">
             <p>
-              These Terms of Service (&ldquo;Terms&rdquo;) govern your access to and use of Cornerstone PM&trade; (the
-              &ldquo;Service&rdquo;), operated by Cornerstone PM. By creating an account, subscribing to a plan, or
+              These Terms of Service (“Terms”) govern your access to and use of Cornerstone PM™ (the
+              “Service”), operated by Cornerstone PM. By creating an account, subscribing to a plan, or
               otherwise using the Service, you agree to be bound by these Terms. If you do not agree, do not use the
               Service.
             </p>
@@ -58,7 +58,7 @@ export default function TermsPage() {
 
           <Section id="accounts" title="2. Accounts &amp; Organizations">
             <p>
-              The Service is organized around organizations (&ldquo;orgs&rdquo;). Each org may invite users up to the
+              The Service is organized around organizations (“orgs”). Each org may invite users up to the
               seat count included in its plan. You are responsible for maintaining the confidentiality of your
               credentials and for all activity that occurs under your account and org.
             </p>
@@ -113,7 +113,7 @@ export default function TermsPage() {
               </li>
             </ul>
             <p>
-              You agree not to use the Service to violate any law, infringe any third party&rsquo;s rights, transmit
+              You agree not to use the Service to violate any law, infringe any third party’s rights, transmit
               malicious code, or attempt to circumvent usage limits, access controls, or security measures.
             </p>
           </Section>
@@ -132,7 +132,7 @@ export default function TermsPage() {
 
           <Section id="ai" title="6. AI Features">
             <p>
-              The Service includes AI-assisted features (including Foreman AI&trade;, Blueprint AI, and Bid Import AI).
+              The Service includes AI-assisted features (including Foreman AI™, Blueprint AI, and Bid Import AI).
               AI output may contain errors and is provided as an aid, not a substitute for professional judgment. You
               are responsible for reviewing AI-generated output before relying on it. AI usage is subject to the
               monthly limits described on the{" "}
@@ -156,7 +156,7 @@ export default function TermsPage() {
 
           <Section id="warranty" title="8. Disclaimers &amp; Limitation of Liability">
             <p>
-              The Service is provided &ldquo;as is&rdquo; without warranties of any kind, to the maximum extent
+              The Service is provided “as is” without warranties of any kind, to the maximum extent
               permitted by law. To the extent permitted by law, Cornerstone PM will not be liable for indirect,
               incidental, or consequential damages arising from your use of the Service.
             </p>
@@ -164,8 +164,8 @@ export default function TermsPage() {
 
           <Section id="changes" title="9. Changes to These Terms">
             <p>
-              We may update these Terms from time to time. Material changes will be reflected by updating the &ldquo;Last
-              updated&rdquo; date above and, where appropriate, via in-app or email notice. Continued use of the Service
+              We may update these Terms from time to time. Material changes will be reflected by updating the “Last
+              updated” date above and, where appropriate, via in-app or email notice. Continued use of the Service
               after changes take effect constitutes acceptance.
             </p>
           </Section>

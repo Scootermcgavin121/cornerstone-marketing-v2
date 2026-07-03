@@ -304,7 +304,7 @@ export default function AiAgentsPage() {
                 </div>
                 <h3 className="text-white font-black text-xl sm:text-2xl mb-2 group-hover:text-violet-300 transition-colors">Bring your own AI tool, too.</h3>
                 <p className="text-slate-400 leading-relaxed">
-                  Cornerstone ships a built-in <strong className="text-slate-200">MCP (Model Context Protocol) server</strong>. Point <strong className="text-slate-200">Claude Desktop, Cursor, or Windsurf</strong> at your construction data in about 30 seconds &mdash; generate a key, paste a config block, and your favorite AI tool can run all 396+ Foreman skills. The no-code on-ramp; the REST API + BYOA is the full-control path. Most construction software has no AI integration at all.
+                  Cornerstone ships a built-in <strong className="text-slate-200">MCP (Model Context Protocol) server</strong>. Point <strong className="text-slate-200">Claude Desktop, Cursor, or Windsurf</strong> at your construction data in about 30 seconds — generate a key, paste a config block, and your favorite AI tool can run all 396+ Foreman skills. The no-code on-ramp; the REST API + BYOA is the full-control path. Most construction software has no AI integration at all.
                 </p>
               </div>
               <ArrowRight className="w-5 h-5 text-violet-400 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
@@ -394,7 +394,7 @@ export default function AiAgentsPage() {
           <div className="mt-5 flex flex-col sm:flex-row items-center justify-center gap-3">
             <div className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-700 bg-slate-800/60 text-slate-300 text-sm font-semibold">
               <Zap className="w-4 h-4 text-amber-400" />
-              <span>Power User Seat: +$149/seat/mo &mdash; elevated AI limits (Pro &amp; Pro+ only)</span>
+              <span>Power User Seat: +$149/seat/mo — elevated AI limits (Pro &amp; Pro+ only)</span>
             </div>
             <div className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-700 bg-slate-800/60 text-slate-300 text-sm font-semibold">
               <Zap className="w-4 h-4 text-cyan-400" />

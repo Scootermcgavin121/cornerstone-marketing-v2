@@ -20,13 +20,13 @@ const blogSchema = buildBlogPostSchema({
 });
 
 export const metadata: Metadata = {
-  title: "Foreman AI Hits 100 Skills &mdash; The First Construction AI to Cross Triple Digits | Cornerstone PM&trade; Blog",
+  title: "Foreman AI Hits 100 Skills — The First Construction AI to Cross Triple Digits | Cornerstone PM™ Blog",
   description:
-    "Foreman AI just crossed 100 purpose-built construction skills across 11 categories. Skill #100 is learnBuilderPreferences &mdash; Foreman now learns YOUR build patterns from your own takeoff history. The more plans you set up, the smarter it gets for your org specifically.",
+    "Foreman AI just crossed 100 purpose-built construction skills across 11 categories. Skill #100 is learnBuilderPreferences — Foreman now learns YOUR build patterns from your own takeoff history. The more plans you set up, the smarter it gets for your org specifically.",
   openGraph: {
-    title: "Foreman AI Hits 100 Skills &mdash; And Skill #100 Learns Your Build Patterns",
+    title: "Foreman AI Hits 100 Skills — And Skill #100 Learns Your Build Patterns",
     description:
-      "100 purpose-built construction skills. 11 categories. Skill #100 (learnBuilderPreferences) reads your existing floorplan takeoffs and learns YOUR org's defaults &mdash; no configuration required. The more you build, the smarter Foreman gets.",
+      "100 purpose-built construction skills. 11 categories. Skill #100 (learnBuilderPreferences) reads your existing floorplan takeoffs and learns YOUR org's defaults — no configuration required. The more you build, the smarter Foreman gets.",
     images: [
       {
         url: "https://www.cornerstonepm.ai/blog/foreman-ai-100-skills.png",
@@ -63,11 +63,11 @@ export default function ForemanAi100SkillsPost() {
             Milestone &middot; Product Update
           </span>
           <h1 className="text-4xl sm:text-5xl font-black text-white leading-tight mb-4">
-            Foreman AI Hits 100 Skills &mdash; And Skill #100 Learns Your Build Patterns
+            Foreman AI Hits 100 Skills — And Skill #100 Learns Your Build Patterns
           </h1>
           <div className="flex items-center gap-3 text-sm text-slate-500">
             <span>May 12, 2026</span>
-            <span>&mdash;</span>
+            <span>—</span>
             <span>6 min read</span>
           </div>
         </div>
@@ -76,7 +76,7 @@ export default function ForemanAi100SkillsPost() {
           <p className="text-xl text-slate-300 font-light">
             Six weeks ago Foreman AI shipped with 45 skills. Last week we crossed 83.
             Today Foreman crossed <strong className="text-white">100 purpose-built construction skills</strong>
-            {" "}across 11 categories &mdash; and as far as we can tell, no other construction AI agent is in
+            {" "}across 11 categories — and as far as we can tell, no other construction AI agent is in
             the same neighborhood.
           </p>
 
@@ -124,7 +124,7 @@ export default function ForemanAi100SkillsPost() {
 
           <p>
             Skill #100 flips that. <strong className="text-white">Foreman learns your build patterns
-            from your own data &mdash; automatically.</strong>
+            from your own data — automatically.</strong>
           </p>
 
           <p>
@@ -135,7 +135,7 @@ export default function ForemanAi100SkillsPost() {
             <div className="flex gap-3">
               <div className="flex-shrink-0 w-7 h-7 rounded-full bg-amber-500/20 border border-amber-500/40 text-amber-300 text-xs font-bold flex items-center justify-center">1</div>
               <div className="text-slate-300 text-base leading-relaxed">
-                You tell Foreman: <em className="text-slate-200">&ldquo;I always use recessed cans in bedrooms.&rdquo;</em>
+                You tell Foreman: <em className="text-slate-200">“I always use recessed cans in bedrooms.”</em>
               </div>
             </div>
             <div className="flex gap-3">
@@ -148,7 +148,7 @@ export default function ForemanAi100SkillsPost() {
               <div className="flex-shrink-0 w-7 h-7 rounded-full bg-amber-500/20 border border-amber-500/40 text-amber-300 text-xs font-bold flex items-center justify-center">3</div>
               <div className="text-slate-300 text-base leading-relaxed">
                 Next time you set up a new plan, Foreman volunteers:{" "}
-                <em className="text-slate-200">&ldquo;Bedrooms &rarr; Recessed Light (avg qty 4, typical part: Halo 6&Prime; LED).&rdquo;</em>
+                <em className="text-slate-200">“Bedrooms → Recessed Light (avg qty 4, typical part: Halo 6&Prime; LED).”</em>
               </div>
             </div>
           </div>
@@ -156,7 +156,7 @@ export default function ForemanAi100SkillsPost() {
           <p>
             <strong className="text-white">Your own data is the training set.</strong> Nobody has to
             sit through a configuration wizard. Nobody has to maintain a preferences document. Two
-            builders running on Cornerstone PM&trade; have completely different defaults &mdash;
+            builders running on Cornerstone PM™ have completely different defaults —
             because they have completely different historical data.
           </p>
 
@@ -171,7 +171,7 @@ export default function ForemanAi100SkillsPost() {
           </p>
 
           <p>
-            Skill #99 was <code className="text-amber-300">setupLightingPackage</code> &mdash; Foreman
+            Skill #99 was <code className="text-amber-300">setupLightingPackage</code> — Foreman
             building a complete fixture-by-fixture lighting plan for a home in one command (recessed
             cans in living areas, vanity bars over bathroom sinks, pendants over kitchen islands,
             exterior coach lights at entries). The hardcoded defaults are construction-savvy out of
@@ -185,9 +185,9 @@ export default function ForemanAi100SkillsPost() {
 
           <p>
             That&apos;s the whole point. Every new skill we ship that hits Foreman&apos;s domain layer
-            &mdash; design center setup, scope assembly, vendor selection, option packaging &mdash;
+            — design center setup, scope assembly, vendor selection, option packaging —
             gets to ride on top of <code className="text-amber-300">learnBuilderPreferences</code>.
-            The more you build inside Cornerstone PM&trade;, the more your defaults reflect{" "}
+            The more you build inside Cornerstone PM™, the more your defaults reflect{" "}
             <em>your</em> business.
           </p>
 
@@ -196,7 +196,7 @@ export default function ForemanAi100SkillsPost() {
           </h2>
 
           <p>
-            For builders running on Cornerstone PM&trade;, every Foreman skill is a job that
+            For builders running on Cornerstone PM™, every Foreman skill is a job that
             doesn&apos;t need a spreadsheet, a separate tool, or a phone call. The catalog now
             covers:
           </p>
@@ -204,7 +204,7 @@ export default function ForemanAi100SkillsPost() {
           <ul className="list-disc list-outside pl-6 space-y-3 marker:text-amber-400">
             <li>
               <strong className="text-white">Full CRUD on the core domain.</strong> Takeoffs, parts,
-              vendors, homes, options, scope items, bids, POs, tasks, selections &mdash; Foreman
+              vendors, homes, options, scope items, bids, POs, tasks, selections — Foreman
               reads and writes all of it in plain English.
             </li>
             <li>
@@ -235,9 +235,9 @@ export default function ForemanAi100SkillsPost() {
           </h2>
 
           <p>
-            Most &ldquo;AI&rdquo; in construction software is a chat box wired to ChatGPT. The
-            vendor ships a generic LLM with a system prompt that says <em>&ldquo;you are a
-            construction assistant&rdquo;</em> and calls it a day. The AI describes what should
+            Most “AI” in construction software is a chat box wired to ChatGPT. The
+            vendor ships a generic LLM with a system prompt that says <em>“you are a
+            construction assistant”</em> and calls it a day. The AI describes what should
             happen but can&apos;t do anything.
           </p>
 
@@ -247,7 +247,7 @@ export default function ForemanAi100SkillsPost() {
           </p>
 
           <p>
-            The jump from 45 to 100 in roughly 60 days isn&apos;t a hiring spree &mdash; it&apos;s
+            The jump from 45 to 100 in roughly 60 days isn&apos;t a hiring spree — it&apos;s
             because Foreman is built <em>into</em> the platform. Every new endpoint we ship can
             become a new Foreman skill. No bolt-ons. No plugins. No third-party agent layer.
           </p>
@@ -257,7 +257,7 @@ export default function ForemanAi100SkillsPost() {
           </h2>
 
           <p>
-            The skill catalog grows every week. The number on this page will be wrong soon &mdash;
+            The skill catalog grows every week. The number on this page will be wrong soon —
             in the right direction. And every skill that ships from here forward gets to lean on
             the learned-preferences layer, which means the gap between a fresh Foreman install and
             a Foreman install that&apos;s been running your business for six months keeps widening.
@@ -271,8 +271,8 @@ export default function ForemanAi100SkillsPost() {
           <div className="not-prose mt-10 p-6 rounded-2xl bg-slate-900/80 border border-slate-800">
             <h3 className="text-xl font-bold text-white mb-3">Try Foreman AI</h3>
             <p className="text-slate-400 mb-5 text-sm leading-relaxed">
-              See Foreman manage real builder data &mdash; parts, vendors, homes, design center,
-              sales pipeline &mdash; from plain English commands. Beta access is free for 2 years
+              See Foreman manage real builder data — parts, vendors, homes, design center,
+              sales pipeline — from plain English commands. Beta access is free for 2 years
               for the first 100 home builders.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
@@ -280,7 +280,7 @@ export default function ForemanAi100SkillsPost() {
                 href="/beta"
                 className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-amber-400 text-slate-900 font-bold text-sm hover:bg-amber-300 transition-all duration-200 shadow-lg shadow-amber-500/30"
               >
-                Get Beta Access &rarr;
+                Get Beta Access →
               </Link>
               <Link
                 href="/foreman"
@@ -292,8 +292,8 @@ export default function ForemanAi100SkillsPost() {
           </div>
 
           <p className="text-sm text-slate-500 italic mt-10">
-            Foreman AI is part of Cornerstone PM&trade; &mdash; home builder software built for
-            production, semi-custom, and custom builders running 5&ndash;200 homes a year. Flat
+            Foreman AI is part of Cornerstone PM™ — home builder software built for
+            production, semi-custom, and custom builders running 5–200 homes a year. Flat
             pricing from $149/mo with up to 30 users (60 on Pro+).
           </p>
 

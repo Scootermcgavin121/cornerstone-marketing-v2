@@ -130,7 +130,7 @@ export default function SupportAiPage() {
             <span className="text-cyan-400">AI knowledge agent.</span>
           </h1>
           <p className="text-xl sm:text-2xl text-slate-300 font-semibold max-w-3xl mx-auto mb-3">
-            Every feature, every workflow, every permission &mdash; answered in seconds.
+            Every feature, every workflow, every permission — answered in seconds.
           </p>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-10">
             Trained on Cornerstone PMTM. Lives on every page. Helps your team, your buyers, and your trades 24/7. Included on every plan.
@@ -184,7 +184,7 @@ export default function SupportAiPage() {
                   <div className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center flex-shrink-0">
                     <span className="text-xs font-bold text-slate-400">You</span>
                   </div>
-                  <p className="text-white font-medium pt-1">&ldquo;{ex.q}&rdquo;</p>
+                  <p className="text-white font-medium pt-1">“{ex.q}”</p>
                 </div>
                 <div className="flex items-start gap-3 ml-6 pl-5 border-l-2 border-cyan-500/30">
                   <div className="w-8 h-8 rounded-full bg-cyan-500/15 border border-cyan-500/30 flex items-center justify-center flex-shrink-0">
@@ -216,7 +216,7 @@ export default function SupportAiPage() {
                 <span className="text-cyan-400">Cornerstone has a knowledge agent that talks back.</span>
               </h2>
               <p className="text-slate-300 text-lg max-w-2xl mx-auto">
-                Not a search bar. Not a wiki. A real AI agent that knows your workflows, your permissions, and your build process &mdash; available 24/7 on every page, in every tenant.
+                Not a search bar. Not a wiki. A real AI agent that knows your workflows, your permissions, and your build process — available 24/7 on every page, in every tenant.
               </p>
             </div>
           </div>
@@ -251,7 +251,7 @@ export default function SupportAiPage() {
       <section className="py-24 px-4 text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl sm:text-5xl font-black mb-6">Stop being the help desk.</h2>
-          <p className="text-xl text-slate-400 mb-10">AI Support Agent ships on every plan. Free your team from &ldquo;how do I&hellip;&rdquo; questions for good.</p>
+          <p className="text-xl text-slate-400 mb-10">AI Support Agent ships on every plan. Free your team from “how do I…” questions for good.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/beta" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-cyan-400 text-slate-900 font-bold text-lg hover:from-cyan-400 hover:to-cyan-300 shadow-lg shadow-cyan-500/25 transition-all duration-200">
               Request Early Access <ArrowRight className="w-5 h-5" />

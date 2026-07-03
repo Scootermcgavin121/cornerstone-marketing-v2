@@ -37,6 +37,11 @@ const syncPoints = [
     title: "Already on QuickBooks? Match it",
     desc: "Pull your existing accounts, items, vendors, customers, and classes so Cornerstone lines up with the lists you already use.",
   },
+  {
+    icon: RefreshCw,
+    title: "Payment status flows back",
+    desc: "Record a bill payment in QuickBooks and Cornerstone automatically marks the matching PO paid — plus vendor edits read back too. The read-back that actually helps, without QuickBooks ever overwriting your Cornerstone data.",
+  },
 ];
 
 export function IntegrationsSection() {
@@ -64,7 +69,7 @@ export function IntegrationsSection() {
             }}
           >
             <BadgeCheck className="w-3.5 h-3.5" />
-            Now Live — Official Integration
+            Now Live — QuickBooks Online Sync
           </div>
 
           {/* QuickBooks badge */}
@@ -100,10 +105,11 @@ export function IntegrationsSection() {
             <span style={{ color: QB_GREEN }}>QuickBooks.</span>
           </h2>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
-            Cornerstone PM is an official, Intuit-approved QuickBooks Online app.
-            POs, bills, sales tax, vendors, and job costs flow from Cornerstone
-            into QuickBooks automatically — no double entry, no CSV exports, no
-            end-of-month scramble.
+            Cornerstone PM connects directly to QuickBooks Online — live in
+            production today. POs, bills, sales tax, vendors, and job costs flow
+            from Cornerstone into QuickBooks automatically, and when a bill is
+            marked paid in QuickBooks the matching PO closes out in Cornerstone.
+            No double entry, no CSV exports, no end-of-month scramble.
           </p>
         </div>
 
@@ -139,7 +145,8 @@ export function IntegrationsSection() {
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-2 text-sm text-slate-500">
           <span className="inline-flex items-center gap-2">
             <RefreshCw className="w-4 h-4" style={{ color: QB_GREEN }} />
-            One-way sync — changes in QuickBooks never overwrite Cornerstone
+            Push-based sync — Cornerstone stays your source of truth; only
+            payment status and vendor edits read back
           </span>
           <span className="hidden sm:inline text-slate-700">•</span>
           <span>Requires QuickBooks Online Plus or Advanced</span>

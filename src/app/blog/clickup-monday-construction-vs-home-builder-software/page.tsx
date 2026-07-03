@@ -170,7 +170,7 @@ export default function ClickupMondayHomeBuildersPage() {
             ClickUp and monday.com are excellent tools for marketing teams, dev sprints, and
             agency workflows. For production home builders, they hit six hard walls that no
             amount of templates, automations, or custom fields can fix. The issue isn&apos;t
-            price or features &mdash; it&apos;s data model. Generic PM tools were never designed
+            price or features — it&apos;s data model. Generic PM tools were never designed
             to think in floorplans, options, communities, and vendor scopes.
           </p>
 
@@ -200,7 +200,7 @@ export default function ClickupMondayHomeBuildersPage() {
             Most builders who end up on these platforms got there through one of three paths:
             they came from a corporate or tech background and already used these tools; they
             couldn&apos;t justify the cost of vertical software before they hit scale; or a
-            consultant recommended a &ldquo;flexible platform&rdquo; as a way to avoid committing
+            consultant recommended a “flexible platform” as a way to avoid committing
             to a more expensive solution.
           </p>
           <p>
@@ -239,7 +239,7 @@ export default function ClickupMondayHomeBuildersPage() {
           </h2>
           <p>
             Production home building runs on plan repeats. The Magnolia sells 50 times this
-            year. The options &mdash; flooring, countertops, cabinets, structural upgrades &mdash;
+            year. The options — flooring, countertops, cabinets, structural upgrades —
             are priced at the plan level and reused for every home of that plan in every
             community you build it.
           </p>
@@ -251,7 +251,7 @@ export default function ClickupMondayHomeBuildersPage() {
             out which boards got updated and which didn&apos;t after a contract is already signed.
           </p>
           <p>
-            Cornerstone PM&trade; prices options at the floorplan level with{" "}
+            Cornerstone PM™ prices options at the floorplan level with{" "}
             <Link
               href="/purchasing"
               className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
@@ -280,7 +280,7 @@ export default function ClickupMondayHomeBuildersPage() {
             order.
           </p>
           <p>
-            Cornerstone PM&trade;&apos;s{" "}
+            Cornerstone PM™&apos;s{" "}
             <Link
               href="/design"
               className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
@@ -290,7 +290,7 @@ export default function ClickupMondayHomeBuildersPage() {
             gives buyers a portal where they select from curated categories. 64 Designer
             Packages auto-lock category choices when a package is picked. Design-center
             exclusion groups let a buyer select Tile flooring and mark the entire flooring
-            category complete &mdash; they don&apos;t get asked about Carpet, LVP, and Hardwood
+            category complete — they don&apos;t get asked about Carpet, LVP, and Hardwood
             too. When selections are complete, they flow directly into purchasing. No re-entry.
             No separate spreadsheet. No selection that gets lost between the showroom and the
             purchase order.
@@ -301,18 +301,18 @@ export default function ClickupMondayHomeBuildersPage() {
           </h2>
           <p>
             Both ClickUp and monday.com have added AI assistants. These are generic large
-            language models embedded in the UI &mdash; useful for summarizing task descriptions
+            language models embedded in the UI — useful for summarizing task descriptions
             or drafting comments, but completely domain-blind when it comes to construction.
           </p>
           <p>
             Ask ClickUp AI to compare two vendor bids against your scope items. It can&apos;t
-            &mdash; it has no knowledge of your scope model, your vendors, or your pricing
-            structure. Ask it to generate a purchase order from a takeoff. It can&apos;t &mdash;
+            — it has no knowledge of your scope model, your vendors, or your pricing
+            structure. Ask it to generate a purchase order from a takeoff. It can&apos;t —
             it doesn&apos;t understand what a takeoff is in the context of a home builder&apos;s
             workflow.
           </p>
           <p>
-            Cornerstone PM&trade; ships five AI agents bundled at no extra cost on Pro+:
+            Cornerstone PM™ ships five AI agents bundled at no extra cost on Pro+:
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
             <li>
@@ -324,39 +324,39 @@ export default function ClickupMondayHomeBuildersPage() {
                   Foreman AI
                 </Link>
               </strong>{" "}
-              &mdash; 396+ construction skills covering purchasing, scheduling, vendor management,
-              budget analysis, and profitability reporting. Foreman reads AND writes data &mdash; it
+              — 396+ construction skills covering purchasing, scheduling, vendor management,
+              budget analysis, and profitability reporting. Foreman reads AND writes data — it
               takes real actions in the platform, not just answers questions. Two persistent
               memory layers (per-user and company-wide) mean Foreman knows your vendors, your
               build patterns, and your communication style from day one. ChatGPT has 5 tools.
               Foreman has 396.
             </li>
             <li>
-              <strong className="text-white">Blueprint AI</strong> &mdash; parses a floor plan
+              <strong className="text-white">Blueprint AI</strong> — parses a floor plan
               PDF and extracts 130+ material scopes in under 60 seconds.{" "}
               <Link
                 href="/ai-takeoff"
                 className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
               >
-                See Blueprint AI &rarr;
+                See Blueprint AI →
               </Link>
             </li>
             <li>
-              <strong className="text-white">Bid Import AI</strong> &mdash; auto-maps vendor bid
+              <strong className="text-white">Bid Import AI</strong> — auto-maps vendor bid
               spreadsheets to your scope items. No manual column matching.
             </li>
             <li>
-              <strong className="text-white">AI MLS Listing Generator</strong> &mdash; generates
+              <strong className="text-white">AI MLS Listing Generator</strong> — generates
               listing copy directly from your floorplan and options data.
             </li>
             <li>
-              <strong className="text-white">AI Support Agent</strong> &mdash; answers
+              <strong className="text-white">AI Support Agent</strong> — answers
               platform questions in context without leaving your workflow.
             </li>
           </ul>
           <p>
             The AI in ClickUp knows what a task is. Foreman AI knows what a purchase order,
-            a vendor scope, a structural option, a floorplan, and a community are &mdash; because
+            a vendor scope, a structural option, a floorplan, and a community are — because
             it was built on top of a platform that models them natively.
           </p>
 
@@ -368,7 +368,7 @@ export default function ClickupMondayHomeBuildersPage() {
             native webhooks). These are genuinely useful for connecting generic tools together.
           </p>
           <p>
-            Cornerstone PM&trade;&apos;s Pro+ plan ships a different kind of integration layer:
+            Cornerstone PM™&apos;s Pro+ plan ships a different kind of integration layer:
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
             <li>
@@ -376,7 +376,7 @@ export default function ClickupMondayHomeBuildersPage() {
               (Anthropic, OpenAI, OpenAPI 3.1)
             </li>
             <li>
-              BYOA (Bring Your Own AI Agent) &mdash; every API endpoint maps to one of
+              BYOA (Bring Your Own AI Agent) — every API endpoint maps to one of
               Foreman&apos;s 396+ skills. Ship a new Foreman skill and your BYOA agent gets it
               automatically, no configuration required
             </li>
@@ -391,7 +391,7 @@ export default function ClickupMondayHomeBuildersPage() {
           </ul>
           <p>
             The Zapier automation you build on top of monday.com for vendor notifications is
-            approximating something that Cornerstone PM&trade; ships as a named webhook event
+            approximating something that Cornerstone PM™ ships as a named webhook event
             with a typed payload. These are different levels of the stack.
           </p>
 
@@ -411,29 +411,29 @@ export default function ClickupMondayHomeBuildersPage() {
                     ClickUp / monday
                   </th>
                   <th className="px-5 py-4 text-cyan-400 font-medium text-center">
-                    Cornerstone PM&trade;
+                    Cornerstone PM™
                   </th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-800/60 text-slate-300">
                 <tr className="hover:bg-slate-900/40 transition-colors">
                   <td className="px-5 py-3.5">Monthly platform fee (10-seat team)</td>
-                  <td className="px-5 py-3.5 text-center">$90&ndash;$200</td>
-                  <td className="px-5 py-3.5 text-center text-cyan-300">$199&ndash;$599</td>
+                  <td className="px-5 py-3.5 text-center">$90–$200</td>
+                  <td className="px-5 py-3.5 text-center text-cyan-300">$199–$599</td>
                 </tr>
                 <tr className="hover:bg-slate-900/40 transition-colors">
                   <td className="px-5 py-3.5">Parallel spreadsheets maintained</td>
-                  <td className="px-5 py-3.5 text-center text-red-400">4&ndash;8 live sheets</td>
+                  <td className="px-5 py-3.5 text-center text-red-400">4–8 live sheets</td>
                   <td className="px-5 py-3.5 text-center text-emerald-400">0</td>
                 </tr>
                 <tr className="hover:bg-slate-900/40 transition-colors">
                   <td className="px-5 py-3.5">Hours/week re-entering selections data</td>
-                  <td className="px-5 py-3.5 text-center text-red-400">3&ndash;6 hrs</td>
+                  <td className="px-5 py-3.5 text-center text-red-400">3–6 hrs</td>
                   <td className="px-5 py-3.5 text-center text-emerald-400">~0</td>
                 </tr>
                 <tr className="hover:bg-slate-900/40 transition-colors">
                   <td className="px-5 py-3.5">Pricing errors per 50 homes (estimated)</td>
-                  <td className="px-5 py-3.5 text-center text-red-400">3&ndash;8 errors</td>
+                  <td className="px-5 py-3.5 text-center text-red-400">3–8 errors</td>
                   <td className="px-5 py-3.5 text-center text-emerald-400">Near 0</td>
                 </tr>
                 <tr className="hover:bg-slate-900/40 transition-colors">
@@ -468,7 +468,7 @@ export default function ClickupMondayHomeBuildersPage() {
           </div>
           <p>
             On a 50-home/year build schedule, a single pricing error on a $400k house costs more
-            than a year of Cornerstone PM&trade; Pro+. The math on purpose-built software
+            than a year of Cornerstone PM™ Pro+. The math on purpose-built software
             changes quickly once you account for what generic tools force you to do manually.
           </p>
 
@@ -481,27 +481,27 @@ export default function ClickupMondayHomeBuildersPage() {
           </p>
           <ol className="space-y-3 text-slate-300 ml-4 list-decimal">
             <li>
-              <strong className="text-white">Native floorplan and plan-repeat model</strong> &mdash;
+              <strong className="text-white">Native floorplan and plan-repeat model</strong> —
               options priced at the plan level, not the job level
             </li>
             <li>
-              <strong className="text-white">Buyer-facing design center</strong> &mdash; not a
+              <strong className="text-white">Buyer-facing design center</strong> — not a
               shared doc or email thread
             </li>
             <li>
-              <strong className="text-white">Auto-quantity scope items</strong> &mdash; sqft-linked
+              <strong className="text-white">Auto-quantity scope items</strong> — sqft-linked
               pricing that updates every plan automatically when rates change
             </li>
             <li>
-              <strong className="text-white">Multi-community vendor management</strong> &mdash;
+              <strong className="text-white">Multi-community vendor management</strong> —
               vendor assignments and bid awards per scope per community
             </li>
             <li>
-              <strong className="text-white">Construction-domain AI</strong> &mdash; not generic
+              <strong className="text-white">Construction-domain AI</strong> — not generic
               chat bolted to a board
             </li>
             <li>
-              <strong className="text-white">API/BYOA layer</strong> &mdash; if automation matters
+              <strong className="text-white">API/BYOA layer</strong> — if automation matters
               to you, check that it maps to your actual construction workflows, not just generic
               task events
             </li>
@@ -515,7 +515,7 @@ export default function ClickupMondayHomeBuildersPage() {
               home builder project management software guide
             </Link>{" "}
             covers these criteria in detail and compares how Buildertrend, NEWSTAR, JobTread,
-            and Cornerstone PM&trade; stack up across each one.
+            and Cornerstone PM™ stack up across each one.
           </p>
 
           <div className="mt-14 rounded-2xl border border-emerald-800/40 bg-emerald-950/20 p-8 text-center not-prose">
@@ -523,15 +523,15 @@ export default function ClickupMondayHomeBuildersPage() {
               Stop rebuilding the same boards. Start building on a model that fits.
             </h2>
             <p className="text-slate-300 mb-6 max-w-xl mx-auto">
-              Cornerstone PM&trade; was built from the ground up for production home builders
-              &mdash; floorplans, design center, auto-quantity scope items, 64 Designer Packages,
+              Cornerstone PM™ was built from the ground up for production home builders
+              — floorplans, design center, auto-quantity scope items, 64 Designer Packages,
               and Foreman AI with 396+ construction skills. No spreadsheet required.
             </p>
             <Link
               href="/beta"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-base transition-colors"
             >
-              Request Early Access &rarr;
+              Request Early Access →
             </Link>
           </div>
         </div>

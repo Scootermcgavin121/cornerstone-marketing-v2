@@ -40,7 +40,7 @@ const purchasingSchema = buildFeatureSchema({
     "Approve-to-pay payables workflow — PO lifecycle Draft → Sent → Acknowledged → Invoiced → Approved → Paid, with invoices held until approved",
     "Change orders with approval workflow, dedicated change-order POs, and full audit trail",
     "Retainage withholding on purchase orders and payment tracking by method (check, ACH, wire, card, cash)",
-    "QuickBooks-ready — qboId fields on vendors, POs, and homes plus PO/payment webhook events to sync via the REST API or Zapier",
+    "Live QuickBooks Online sync — POs, Bills, sales tax, vendors, and job costs push automatically, with payment status flowing back (REST API and Zapier also available)",
     "Auto-generated Excel bid templates with 3 tabs (Base, Structural, Designer)",
     "Scope-filtered templates — vendors only see their trade",
     "Vendor portal — no Cornerstone account required",
@@ -62,7 +62,7 @@ const purchasingSchema = buildFeatureSchema({
 
 export const metadata = {
   title: "Home Builder Purchasing & Cost Control Software | Cornerstone PM™",
-  description: "Cost-code-driven live budgets, vendor bids that drive real pricing, and auto-generated purchase orders. Mark a construction task complete and the matched PO generates and emails the vendor automatically — the closed loop from schedule to vendor payment. Plus change orders, approve-to-pay payables, and QuickBooks-ready sync.",
+  description: "Cost-code-driven live budgets, vendor bids that drive real pricing, and auto-generated purchase orders. Mark a construction task complete and the matched PO generates and emails the vendor automatically — the closed loop from schedule to vendor payment. Plus change orders, approve-to-pay payables, and live QuickBooks Online sync.",
 };
 
 const faqItems: FAQItem[] = [
@@ -84,7 +84,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "How do I manage floorplan elevations and their pricing?",
-    a: "Cornerstone PM&trade; has a dedicated Elevations Manager — a card-based page for managing every exterior style (Elevation A — Colonial, B — Craftsman, C — Modern Farmhouse, etc.) per floorplan. Each elevation has an inline-editable retail price adder that flows into the base home price, plus a code, description, and optional sqft override. Expand any card to manage its material takeoffs — add parts and scope items and edit quantities — while the cost is computed automatically from vendor pricing instead of being typed in. Foreman, the built-in AI assistant, can also create elevations, add parts, and set pricing entirely through natural conversation.",
+    a: "Cornerstone PM™ has a dedicated Elevations Manager — a card-based page for managing every exterior style (Elevation A — Colonial, B — Craftsman, C — Modern Farmhouse, etc.) per floorplan. Each elevation has an inline-editable retail price adder that flows into the base home price, plus a code, description, and optional sqft override. Expand any card to manage its material takeoffs — add parts and scope items and edit quantities — while the cost is computed automatically from vendor pricing instead of being typed in. Foreman, the built-in AI assistant, can also create elevations, add parts, and set pricing entirely through natural conversation.",
   },
   {
     q: "How does the auto-budget feature work?",
@@ -144,7 +144,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Does Cornerstone PM™ integrate with QuickBooks?",
-    a: "Cornerstone PM&trade; is QuickBooks-ready. Every vendor, purchase order, and home carries a QuickBooks ID (qboId) field, and PO and payment lifecycle events (po.created, po.status_changed, payment.created) fire as real-time webhooks. Today you sync to QuickBooks through the REST API or a Zapier connection — map Cornerstone vendors, bills, and payments to QuickBooks entities using those IDs and events. A deeper native two-way QuickBooks integration is on the roadmap; the data model and webhook plumbing are already in place for it.",
+    a: "Yes — Cornerstone PM™ has a live QuickBooks Online integration running in production today. Purchase Orders, Bills, sales tax, vendors, and homes push from Cornerstone into QuickBooks automatically, and it auto-builds a construction-ready Chart of Accounts from your scopes and cost codes. It's a push-based sync — Cornerstone stays your source of truth — with smart read-back on the two things that matter: when a bill is marked paid in QuickBooks the matching PO closes out in Cornerstone, and vendor edits sync back. Requires QuickBooks Online Plus or Advanced (Purchase Orders live in those editions). Prefer to build your own sync? The REST API and Zapier webhooks (qboId fields, po.created, payment.created events) are available too.",
   },
   {
     q: "Does Cornerstone PM™ support cost codes?",
@@ -273,7 +273,7 @@ export default function PurchasingPage() {
                   <p className="text-slate-400 text-sm leading-relaxed">The task gets marked done in one tool. Then someone opens the budget, finds the right line items, types the quantities, builds the PO, exports a PDF, opens email, finds the vendor, attaches the file, and hits send. Every phase. Every home. Things get forgotten.</p>
                 </div>
                 <div className="flex-1 p-5 rounded-xl bg-emerald-500/5 border border-emerald-500/30">
-                  <p className="text-emerald-400 font-semibold text-xs uppercase tracking-widest mb-2">Cornerstone PM&trade;</p>
+                  <p className="text-emerald-400 font-semibold text-xs uppercase tracking-widest mb-2">Cornerstone PM™</p>
                   <p className="text-slate-300 text-sm leading-relaxed">Mark the task complete. The PO is already built — right parts, right quantities, right vendor, right price — and it’s already in the vendor’s inbox. Prefer a checkpoint? Leave the task on <span className="text-white font-semibold">draft-first</span> and the PM reviews before anything sends. Auto-send is a per-task opt-in, so POs only fire where you’ve authorized it.</p>
                 </div>
               </div>
@@ -314,7 +314,7 @@ export default function PurchasingPage() {
                 <div className="text-slate-400 text-xs mb-1">Takeoff quantity</div>
                 <div className="text-white font-bold">PLM-002 Plumbing Rough &middot; 2,400 sqft</div>
               </div>
-              <div className="text-center text-emerald-400 font-black text-xl">&times;</div>
+              <div className="text-center text-emerald-400 font-black text-xl">×</div>
               <div className="p-4 rounded-xl bg-slate-950/60 border border-slate-800">
                 <div className="text-slate-400 text-xs mb-1">Accepted vendor pricing</div>
                 <div className="text-white font-bold">Awarded bid &middot; locked unit cost</div>
@@ -496,15 +496,16 @@ export default function PurchasingPage() {
             <div className="w-12 h-12 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center mb-5">
               <Receipt className="w-6 h-6 text-emerald-400" />
             </div>
-            <h2 className="text-2xl font-black text-white mb-3">QuickBooks-ready</h2>
+            <h2 className="text-2xl font-black text-white mb-3">Live QuickBooks Online sync</h2>
             <p className="text-slate-400 leading-relaxed mb-5">
-              Vendors, purchase orders, and homes each carry a QuickBooks ID, and PO and payment lifecycle events fire as real-time webhooks. Sync to QuickBooks today through the REST API or a Zapier connection — map your bills and payments with those IDs and events.
+              Cornerstone connects directly to QuickBooks Online — live in production today. Purchase Orders, Bills, sales tax, vendors, and homes push to QuickBooks automatically, and when a bill is marked paid in QuickBooks the matching PO closes out in Cornerstone. No double entry, no CSV exports.
             </p>
             <ul className="space-y-2.5">
               {[
-                "qboId fields on vendors, POs, and homes",
-                "po.created, po.status_changed & payment.created webhook events",
-                "Sync via REST API or Zapier — deeper native QuickBooks sync on the roadmap",
+                "POs, Bills, vendors & job costs push straight to QuickBooks",
+                "Auto-builds a construction-ready Chart of Accounts from your scopes",
+                "Payment status flows back — mark a bill paid in QuickBooks, the PO closes in Cornerstone",
+                "Prefer to script it yourself? REST API and Zapier webhooks are available too",
               ].map((b) => (
                 <li key={b} className="flex items-start gap-2.5 text-slate-300">
                   <Check className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
@@ -557,7 +558,7 @@ export default function PurchasingPage() {
               <div className="flex flex-col sm:flex-row gap-4 items-start">
                 <div className="flex-1 p-4 rounded-xl bg-red-500/5 border border-red-500/20">
                   <p className="text-red-400 font-semibold text-xs uppercase tracking-widest mb-2">Without Auto-Quantity</p>
-                  <p className="text-slate-400 text-sm">Add a new floorplan. Open every scope item. Type the sqft for Electrical, Insulation, Drywall, Paint, HVAC, Framing… 40+ scope items &times; every floorplan in your portfolio. One typo and your budget is wrong for months.</p>
+                  <p className="text-slate-400 text-sm">Add a new floorplan. Open every scope item. Type the sqft for Electrical, Insulation, Drywall, Paint, HVAC, Framing… 40+ scope items × every floorplan in your portfolio. One typo and your budget is wrong for months.</p>
                 </div>
                 <div className="flex-1 p-4 rounded-xl bg-cyan-500/5 border border-cyan-500/20">
                   <p className="text-cyan-400 font-semibold text-xs uppercase tracking-widest mb-2">With Auto-Quantity</p>

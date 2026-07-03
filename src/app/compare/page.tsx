@@ -186,14 +186,14 @@ export default function ComparePage() {
             <span className="text-cyan-400">without the price tag.</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10">
-            NEWSTAR and BuildPro were built for large-volume national builders with 6-figure implementation budgets. Cornerstone gives you the same power &mdash; without the implementation nightmare.
+            NEWSTAR and BuildPro were built for large-volume national builders with 6-figure implementation budgets. Cornerstone gives you the same power — without the implementation nightmare.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/beta"
               className="px-8 py-4 rounded-full bg-cyan-400 text-slate-900 font-bold text-lg hover:bg-cyan-300 transition-all duration-200 shadow-lg shadow-cyan-500/30 hover:-translate-y-0.5"
             >
-              Request Early Access &rarr;
+              Request Early Access →
             </Link>
             <Link
               href="/features"
@@ -215,7 +215,7 @@ export default function ComparePage() {
               </div>
               <div>
                 <h2 className="text-xl font-black text-white mb-1">What about JobTread?</h2>
-                <p className="text-slate-400 text-sm">JobTread is great software &mdash; for contractors. It&apos;s not built for home builders.</p>
+                <p className="text-slate-400 text-sm">JobTread is great software — for contractors. It&apos;s not built for home builders.</p>
               </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -239,11 +239,11 @@ export default function ComparePage() {
               <div className="space-y-3">
                 <div className="text-cyan-400 font-bold text-sm uppercase tracking-widest mb-3">Cornerstone PM™</div>
                 {[
-                  "$149/mo flat &mdash; up to 30 users (60 on Pro+), no per-seat fees",
-                  "Full lot, community &amp; multi-community management",
+                  "$149/mo flat — up to 30 users (60 on Pro+), no per-seat fees",
+                  "Full lot, community & multi-community management",
                   "Floorplan base price + options engine = contract price",
-                  "Pre-sale workflow: lead &rarr; options &rarr; contract &rarr; close",
-                  "Design Center selections built into the sale &mdash; not change orders",
+                  "Pre-sale workflow: lead → options → contract → close",
+                  "Design Center selections built into the sale — not change orders",
                   "5 native AI agents — Foreman AI (396+ skills), Blueprint AI, Bid Import AI, MLS Generator, Support (Pro plan, $499/mo flat)",
                   "Built for home builders",
                 ].map((item) => (
@@ -255,7 +255,7 @@ export default function ComparePage() {
               </div>
             </div>
             <div className="mt-6 pt-6 border-t border-slate-800 text-center">
-              <p className="text-slate-500 text-sm italic">&ldquo;JobTread is for contractors. Cornerstone is for home builders. Different business model, different workflow, different software.&rdquo;</p>
+              <p className="text-slate-500 text-sm italic">“JobTread is for contractors. Cornerstone is for home builders. Different business model, different workflow, different software.”</p>
             </div>
           </div>
         </div>
@@ -353,7 +353,7 @@ export default function ComparePage() {
             </div>
             <h2 className="text-3xl sm:text-4xl font-black text-white mb-3">When a buyer upgrades, who remembers the credit?</h2>
             <p className="text-slate-400 max-w-2xl mx-auto">
-              Every platform can generate the purchase order for an upgrade. The real test is the <span className="text-white font-semibold">credit for the standard the buyer walked away from</span> &mdash; and that&apos;s where most software quietly leaves money on the table.
+              Every platform can generate the purchase order for an upgrade. The real test is the <span className="text-white font-semibold">credit for the standard the buyer walked away from</span> — and that&apos;s where most software quietly leaves money on the table.
             </p>
           </div>
 
@@ -364,7 +364,7 @@ export default function ComparePage() {
                 {[
                   "Upgrade PO generates automatically (bulk wizard, no problem)",
                   "But the displaced-standard credit is a separate manual variance PO",
-                  "A human has to remember to create it &mdash; on every swap, on every lot",
+                  "A human has to remember to create it — on every swap, on every lot",
                   "Miss one and you over-charge the buyer or under-credit the trade",
                   "At 40 lots \u00d7 a dozen design-center upgrades each = hundreds of manual credit POs",
                 ].map((item) => (
@@ -376,14 +376,14 @@ export default function ComparePage() {
               </ul>
             </div>
             <div className="rounded-2xl bg-cyan-500/[0.04] border border-cyan-500/25 p-7">
-              <div className="text-cyan-400 font-bold text-sm uppercase tracking-widest mb-4">Cornerstone PM&trade;</div>
+              <div className="text-cyan-400 font-bold text-sm uppercase tracking-widest mb-4">Cornerstone PM™</div>
               <ul className="space-y-3">
                 {[
-                  "Substitution is modeled in the option itself &mdash; not transacted after the fact",
+                  "Substitution is modeled in the option itself — not transacted after the fact",
                   "One selection event fires the upgrade PO <em>and</em> the base credit together",
                   "Both lines route to the right vendors automatically",
-                  "Audit trail is built in &mdash; credits zero out every displaced standard",
-                  "Defined once at catalog setup, reused across every lot &mdash; zero per-swap labor",
+                  "Audit trail is built in — credits zero out every displaced standard",
+                  "Defined once at catalog setup, reused across every lot — zero per-swap labor",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2 text-slate-300 text-sm">
                     <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
@@ -404,7 +404,7 @@ export default function ComparePage() {
 Net to vendor PO                              $6,550.00`}
             </pre>
             <p className="text-slate-500 text-sm mt-4">
-              The credit isn&apos;t a decision someone makes &mdash; it&apos;s a property of the option. That&apos;s the difference between purchasing that scales to production volume and purchasing that breaks one missed variance PO at a time.
+              The credit isn&apos;t a decision someone makes — it&apos;s a property of the option. That&apos;s the difference between purchasing that scales to production volume and purchasing that breaks one missed variance PO at a time.
             </p>
           </div>
         </div>
@@ -462,7 +462,7 @@ Net to vendor PO                              $6,550.00`}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               {[
                 { name: "Fieldwire", slug: "fieldwire", note: "Field management for commercial" },
-                { name: "Raken", slug: "raken", note: "Daily reports &amp; field logs" },
+                { name: "Raken", slug: "raken", note: "Daily reports & field logs" },
               ].map((c) => (
                 <Link key={c.slug} href={`/${c.slug}-alternative`} className="p-4 rounded-xl border border-slate-800 bg-slate-900/40 hover:border-cyan-500/40 hover:bg-slate-900/80 transition-all duration-200 group">
                   <div className="text-white font-bold text-sm group-hover:text-cyan-400 transition-colors">{c.name}</div>
@@ -480,10 +480,10 @@ Net to vendor PO                              $6,550.00`}
               {[
                 { name: "Jobber", slug: "jobber", note: "Field service management" },
                 { name: "Housecall Pro", slug: "housecall-pro", note: "Home services software" },
-                { name: "JobNimbus", slug: "jobnimbus", note: "Roofing &amp; restoration" },
+                { name: "JobNimbus", slug: "jobnimbus", note: "Roofing & restoration" },
                 { name: "Workiz", slug: "workiz", note: "Field service platform" },
                 { name: "Knowify", slug: "knowify", note: "Subcontractor management" },
-                { name: "Houzz Pro", slug: "houzz", note: "Design &amp; remodeling" },
+                { name: "Houzz Pro", slug: "houzz", note: "Design & remodeling" },
               ].map((c) => (
                 <Link key={c.slug} href={`/${c.slug}-alternative`} className="p-4 rounded-xl border border-slate-800 bg-slate-900/40 hover:border-slate-700 hover:bg-slate-900/80 transition-all duration-200 group">
                   <div className="text-white font-bold text-sm group-hover:text-slate-200 transition-colors">{c.name}</div>
@@ -528,7 +528,7 @@ Net to vendor PO                              $6,550.00`}
           href="/beta"
           className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-cyan-400 text-slate-900 font-bold text-lg hover:bg-cyan-300 transition-all duration-200 shadow-lg shadow-cyan-500/30"
         >
-          Request Early Access &rarr;
+          Request Early Access →
         </Link>
       </section>
       <Footer />

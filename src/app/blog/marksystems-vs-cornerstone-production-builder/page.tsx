@@ -265,7 +265,7 @@ export default function MarkSystemsVsCornerstonePage() {
             <li>
               <strong className="text-white">64 Designer Packages</strong> across 7 categories
               that auto-lock category options when a buyer picks a package style — a
-              &ldquo;Coastal&rdquo; pick completes the look instead of leaving a blank checklist.
+              “Coastal” pick completes the look instead of leaving a blank checklist.
             </li>
             <li>
               <strong className="text-white">Exclusion groups</strong> — configure Carpet OR Tile

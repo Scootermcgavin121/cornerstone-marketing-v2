@@ -82,7 +82,7 @@ export default function SpreadsheetsPost() {
             {[
               {
                 title: "Phone calls you shouldn't be making",
-                body: "Every sub update, every schedule change, every &ldquo;are you still coming Thursday?&rdquo; — that's you, personally, spending 20-30 minutes a day on coordination that software should handle.",
+                body: "Every sub update, every schedule change, every “are you still coming Thursday?” — that's you, personally, spending 20-30 minutes a day on coordination that software should handle.",
               },
               {
                 title: "Double-bookings that cost real money",

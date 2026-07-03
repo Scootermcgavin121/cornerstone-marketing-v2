@@ -150,7 +150,7 @@ export default function HouzzProVsCornerstonePage() {
           </p>
 
           <p>
-            Builders sometimes encounter Houzz Pro in &ldquo;best construction software&rdquo; roundups, and
+            Builders sometimes encounter Houzz Pro in “best construction software” roundups, and
             it can look appealing on the surface: project management, client communication, 3D
             visualization, and an enormous consumer network. But when you start mapping Houzz
             Pro&apos;s feature set against the actual workflow of a production builder, the gaps
@@ -231,7 +231,7 @@ export default function HouzzProVsCornerstonePage() {
             The single most important structural difference between Houzz Pro and a production
             builder platform is the absence of a floorplan model. Houzz Pro treats every project
             as a unique job — because for a remodeler, it is. But a production builder who&apos;s
-            selling the &ldquo;Magnolia&rdquo; plan in three communities doesn&apos;t want to re-create that job
+            selling the “Magnolia” plan in three communities doesn&apos;t want to re-create that job
             from scratch 90 times. They want to define the Magnolia once — base price, structural
             options, all 64 Designer Package options, scope items tied to square footage — and
             have that plan repeat automatically.
@@ -264,8 +264,8 @@ export default function HouzzProVsCornerstonePage() {
             Production builders need a structured selections engine, not a mood board. Cornerstone
             PM&apos;s Designer Packages give buyers curated, pre-priced design bundles — 64 packages
             across 7 categories like flooring, cabinetry, countertops, and fixtures. A buyer
-            picks &ldquo;Modern Farmhouse&rdquo; and every category auto-locks to that coordinated package.
-            Exclusion groups enforce &ldquo;pick exactly one flooring type&rdquo; logic so selections complete
+            picks “Modern Farmhouse” and every category auto-locks to that coordinated package.
+            Exclusion groups enforce “pick exactly one flooring type” logic so selections complete
             cleanly instead of leaving open-ended buyer choices. Every package price traces to
             real vendor costs from actual bid rounds — no filler defaults. That&apos;s a production
             design center. Houzz Pro doesn&apos;t have an equivalent.

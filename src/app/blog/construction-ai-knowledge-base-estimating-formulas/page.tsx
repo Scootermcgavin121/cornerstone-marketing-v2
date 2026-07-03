@@ -343,7 +343,7 @@ export default function ForemAiKnowledgeBasePage() {
             experience than a generic AI integration. They are not connecting a chatbot to an
             API — they are connecting an external tool to 396+ grounded, construction-domain
             skills with the full knowledge base behind each one. Ask Claude Desktop to
-            &ldquo;compare the framing bids on the Oakridge community&rdquo; and it calls
+            “compare the framing bids on the Oakridge community” and it calls
             the Foreman skill, gets the structured comparison back, and explains it in the
             context your builder actually uses. That&apos;s the difference domain grounding
             makes.
@@ -372,7 +372,7 @@ export default function ForemAiKnowledgeBasePage() {
           <p>
             Combined with the knowledge base, this means Foreman gets more useful over time.
             A superintendent who always sources plumbing from Ferguson does not have to say
-            &ldquo;use Ferguson&rdquo; on every purchase order request — Foreman already knows.
+            “use Ferguson” on every purchase order request — Foreman already knows.
             An estimator who quotes in finished square footage does not have to specify the
             unit every time. The knowledge base provides the construction reasoning;
             the memory layer provides the business context that makes that reasoning
@@ -436,7 +436,7 @@ export default function ForemAiKnowledgeBasePage() {
               href="/beta"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-base transition-colors"
             >
-              Request Early Access &rarr;
+              Request Early Access →
             </Link>
           </div>
         </div>

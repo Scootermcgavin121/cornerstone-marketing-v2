@@ -17,34 +17,34 @@ export const metadata: Metadata = {
 
 const chapters = [
   { num: "01", title: "Getting Started", desc: "Account setup, role onboarding, navigation primer" },
-  { num: "02", title: "User Roles &amp; Permissions", desc: "Admin, Builder, Sales, Designer, Vendor &mdash; what each can see and do" },
-  { num: "03", title: "Communities &amp; Floorplans", desc: "Data model, plan-level options, multi-community vendor wiring" },
-  { num: "04", title: "Homes &amp; Lifecycle", desc: "Stages from pre-sale through closing, cascading task triggers" },
-  { num: "05", title: "Locations &amp; Rooms", desc: "Floorplan locations, room dimensions, location-aware takeoffs" },
-  { num: "06", title: "Takeoffs &amp; Material Scopes", desc: "How Blueprint AI feeds the parts catalog, room-level part placement" },
+  { num: "02", title: "User Roles & Permissions", desc: "Admin, Builder, Sales, Designer, Vendor — what each can see and do" },
+  { num: "03", title: "Communities & Floorplans", desc: "Data model, plan-level options, multi-community vendor wiring" },
+  { num: "04", title: "Homes & Lifecycle", desc: "Stages from pre-sale through closing, cascading task triggers" },
+  { num: "05", title: "Locations & Rooms", desc: "Floorplan locations, room dimensions, location-aware takeoffs" },
+  { num: "06", title: "Takeoffs & Material Scopes", desc: "How Blueprint AI feeds the parts catalog, room-level part placement" },
   { num: "07", title: "Parts Catalog", desc: "Schema, bulk import, deduplication, smart linking to options" },
   { num: "08", title: "Design Center Architecture", desc: "OptionClasses, options, attribute groups, the multiplication model" },
   { num: "09", title: "Option Attributes", desc: "Door style \u00d7 wood species \u00d7 finish \u00d7 overlay matrix logic" },
-  { num: "10", title: "Spec Levels &amp; Tier Access", desc: "Budget / Standard / Upgrade tiers and access locking" },
+  { num: "10", title: "Spec Levels & Tier Access", desc: "Budget / Standard / Upgrade tiers and access locking" },
   { num: "11", title: "Buyer Configurator", desc: "Live pricing, compatibility rules, real-time selection flow" },
   { num: "12", title: "Designer Packages", desc: "Curated package model, override/unlock behavior" },
   { num: "13", title: "Structural Options", desc: "Patios, bonus rooms, structural upgrades with parts tracking" },
   { num: "14", title: "Allowances", desc: "Budget placeholders for non-bid items, floorplan vs global scope" },
   { num: "15", title: "Vendor Management", desc: "Vendor lifecycle, scorecards, multi-community assignment" },
-  { num: "16", title: "Bid Requests &amp; Templates", desc: "Auto-generated Excel templates, vendor portal flow, attribute pricing" },
-  { num: "17", title: "Bid Comparison &amp; Awards", desc: "Side-by-side comparison, lock-after-accept, community-level awards" },
+  { num: "16", title: "Bid Requests & Templates", desc: "Auto-generated Excel templates, vendor portal flow, attribute pricing" },
+  { num: "17", title: "Bid Comparison & Awards", desc: "Side-by-side comparison, lock-after-accept, community-level awards" },
   { num: "18", title: "Purchasing Workflow", desc: "PO generation, vendor notifications, fulfillment tracking" },
   { num: "19", title: "Scope Items", desc: "Labor / material / mixed buckets, pricing engine integration" },
   { num: "20", title: "Pricing Engine", desc: "Fallback chain: vendor bid \u2192 awarded \u2192 cost code \u2192 default" },
-  { num: "21", title: "Budget &amp; Cost Tracking", desc: "Master cost budget, variance analysis, profitability by home" },
-  { num: "22", title: "Scheduling &amp; Templates", desc: "Template-driven schedules, dependencies, cascade triggers" },
+  { num: "21", title: "Budget & Cost Tracking", desc: "Master cost budget, variance analysis, profitability by home" },
+  { num: "22", title: "Scheduling & Templates", desc: "Template-driven schedules, dependencies, cascade triggers" },
   { num: "23", title: "Sales Pipeline", desc: "Stages, tasks, agent assignment, MLS listing generation" },
   { num: "24", title: "Webhook Catalog", desc: "37+ named events, payload schemas, HMAC signatures" },
   { num: "25", title: "REST API Surface", desc: "Endpoints, auth, response shapes, rate limits" },
-  { num: "26", title: "Notifications &amp; Subscriptions", desc: "Per-user toggles, role subscriptions, email + in-app" },
-  { num: "27", title: "Backup &amp; Export", desc: "CSV / JSON full-database export, nightly snapshots" },
+  { num: "26", title: "Notifications & Subscriptions", desc: "Per-user toggles, role subscriptions, email + in-app" },
+  { num: "27", title: "Backup & Export", desc: "CSV / JSON full-database export, nightly snapshots" },
   { num: "28", title: "Migration Wizard", desc: "AI-assisted import from Buildertrend, JobTread, CoConstruct, CSV" },
-  { num: "29", title: "Permissions &amp; ACL", desc: "Org isolation, role enforcement, audit logging" },
+  { num: "29", title: "Permissions & ACL", desc: "Org isolation, role enforcement, audit logging" },
   { num: "30", title: "Foreman AI Capabilities", desc: "Skill registry, system prompt, memory management, undo" },
 ];
 
@@ -83,18 +83,18 @@ const skillCategoryBreakdown = [
   { name: "Structural Options", count: 27 },
   { name: "Scope Items", count: 26 },
   { name: "Option Attributes", count: 23 },
-  { name: "Locations &amp; Takeoffs", count: 22 },
+  { name: "Locations & Takeoffs", count: 22 },
   { name: "Parts Catalog", count: 21 },
   { name: "Vendor Management", count: 18 },
   { name: "Sales Pipeline", count: 17 },
   { name: "Document Generation", count: 16 },
-  { name: "Budget &amp; Pricing", count: 15 },
+  { name: "Budget & Pricing", count: 15 },
   { name: "Home Management", count: 14 },
-  { name: "Web &amp; Image", count: 13 },
+  { name: "Web & Image", count: 13 },
   { name: "Bid Requests", count: 12 },
   { name: "Notifications", count: 11 },
-  { name: "Backup &amp; Export", count: 10 },
-  { name: "Reports &amp; Analytics", count: 25 },
+  { name: "Backup & Export", count: 10 },
+  { name: "Reports & Analytics", count: 25 },
   { name: "System Intelligence", count: 16 },
   { name: "User Memory", count: 15 },
   { name: "Misc Utilities", count: 16 },
@@ -126,7 +126,7 @@ export default function BrainPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/foreman" className="px-8 py-4 rounded-full bg-amber-400 text-slate-900 font-bold text-lg hover:bg-amber-300 transition-all duration-200 shadow-lg shadow-amber-500/30 hover:-translate-y-0.5">
-              See Foreman in action &rarr;
+              See Foreman in action →
             </Link>
             <Link href="/blog/foreman-ai-75-action-loop" className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200">
               Read the technical deep-dive
@@ -160,7 +160,7 @@ export default function BrainPage() {
             <h2 className="text-3xl sm:text-5xl font-black mb-4">Three memory files. One agent.</h2>
             <p className="text-slate-400 max-w-2xl mx-auto text-lg">
               Every conversation Foreman has starts with all 183KB of this loaded into context.
-              No vector search. No retrieval lag. No &ldquo;let me look that up&rdquo; pauses.
+              No vector search. No retrieval lag. No “let me look that up” pauses.
             </p>
           </div>
 
@@ -177,10 +177,10 @@ export default function BrainPage() {
                   <span className="px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold">30 chapters</span>
                 </div>
                 <p className="text-slate-300 leading-relaxed text-sm">
-                  Every feature, workflow, role guide, and data model in Cornerstone PM &mdash; documented in
-                  prose Foreman can reason over. When you say <em>&ldquo;cascade the schedule when the foundation
-                  inspector confirms,&rdquo;</em> Foreman knows what a cascade is, how scheduling templates
-                  work, which webhook fires, and which downstream tasks unlock. It&apos;s not guessing &mdash;
+                  Every feature, workflow, role guide, and data model in Cornerstone PM — documented in
+                  prose Foreman can reason over. When you say <em>“cascade the schedule when the foundation
+                  inspector confirms,”</em> Foreman knows what a cascade is, how scheduling templates
+                  work, which webhook fires, and which downstream tasks unlock. It&apos;s not guessing —
                   it&apos;s reading the manual.
                 </p>
               </div>
@@ -214,8 +214,8 @@ export default function BrainPage() {
                 </div>
                 <p className="text-slate-300 leading-relaxed text-sm">
                   Construction math, baked into the agent. Give Foreman the dimensions and it returns
-                  accurate quantities and rough cost &mdash; no calculator, no spreadsheet, no
-                  <em>&ldquo;ChatGPT, what&apos;s a board-foot again?&rdquo;</em> detour.
+                  accurate quantities and rough cost — no calculator, no spreadsheet, no
+                  <em>“ChatGPT, what&apos;s a board-foot again?”</em> detour.
                 </p>
               </div>
               <div className="lg:col-span-2">
@@ -245,8 +245,8 @@ export default function BrainPage() {
                 </div>
                 <p className="text-slate-300 leading-relaxed text-sm">
                   Pre-built setup prompts for the design center. Copy a prompt, swap in your vendor and
-                  brand names, hit enter. Foreman builds your entire product catalog &mdash; OptionClasses,
-                  attribute values, pricing modifiers, tier access &mdash; in one conversation turn.
+                  brand names, hit enter. Foreman builds your entire product catalog — OptionClasses,
+                  attribute values, pricing modifiers, tier access — in one conversation turn.
                 </p>
                 <p className="text-amber-400 text-xs font-semibold mt-3">
                   This is what powers the 75-action chain.
@@ -283,7 +283,7 @@ export default function BrainPage() {
             </h2>
             <p className="text-slate-400 max-w-3xl mx-auto text-lg leading-relaxed">
               Not generated code. Not vibe-driven function calling. Every skill is a typed TypeScript function
-              with input validation, ACL checks, and structured returns &mdash; sitting in our codebase
+              with input validation, ACL checks, and structured returns — sitting in our codebase
               waiting to be called.
             </p>
           </div>
@@ -321,8 +321,8 @@ export default function BrainPage() {
               <Cpu className="w-7 h-7 text-amber-400 mb-3" />
               <h3 className="text-white font-bold mb-2">75-action chains</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Generic AI caps at 3&ndash;5 tool calls per turn because it drifts after a few steps.
-                Foreman doesn&apos;t drift &mdash; it knows the system. So we let it run 75.
+                Generic AI caps at 3–5 tool calls per turn because it drifts after a few steps.
+                Foreman doesn&apos;t drift — it knows the system. So we let it run 75.
               </p>
             </div>
             <div className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
@@ -348,7 +348,7 @@ export default function BrainPage() {
               396 skills. 20 categories. 24,500 words of construction expertise. 39 estimating formulas. 3 memory files.
             </p>
             <p className="text-2xl sm:text-3xl font-black text-white">
-              One AI that doesn&apos;t just talk &mdash; <span className="text-violet-400">it builds.</span>
+              One AI that doesn&apos;t just talk — <span className="text-violet-400">it builds.</span>
             </p>
           </div>
         </div>
@@ -364,12 +364,12 @@ export default function BrainPage() {
             See what 183KB of construction knowledge feels like.
           </h2>
           <p className="text-slate-400 mb-8 text-lg">
-            Cornerstone PM&trade; Beta is free for the first 100 builders.
+            Cornerstone PM™ Beta is free for the first 100 builders.
             Foreman AI lives on Pro ($499/mo flat, up to 30 users).
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/beta" className="px-8 py-4 rounded-full bg-amber-400 text-slate-900 font-bold text-lg hover:bg-amber-300 transition-all duration-200 shadow-lg shadow-amber-500/30 hover:-translate-y-0.5">
-              Get Beta Access &rarr;
+              Get Beta Access →
             </Link>
             <Link href="/foreman" className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200">
               See all 396+ skills

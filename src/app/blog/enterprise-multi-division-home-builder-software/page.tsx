@@ -162,8 +162,8 @@ export default function EnterpriseMultiDivisionPage() {
         <div className="prose prose-invert prose-lg max-w-none space-y-6 text-slate-300 leading-relaxed">
 
           <p className="text-xl text-slate-300 font-light">
-            Cornerstone PM&trade; Enterprise gives every division the full Pro+ platform&mdash;REST API,
-            BYOA, all 396+ Foreman skills, 60 seats&mdash;plus a corporate layer with a division
+            Cornerstone PM™ Enterprise gives every division the full Pro+ platform—REST API,
+            BYOA, all 396+ Foreman skills, 60 seats—plus a corporate layer with a division
             switcher, corporate admin, cross-division analytics, and an X-Division-Id scoped API.
             Pricing starts at <strong className="text-white">$500/division/mo</strong> for the first
             five divisions, then $450/division/mo after that.
@@ -178,10 +178,10 @@ export default function EnterpriseMultiDivisionPage() {
               home builder software category
             </Link>{" "}
             generally offers two disappointing options: standalone subscriptions with no shared
-            layer across operating companies, or enterprise &ldquo;call for pricing&rdquo; tiers
+            layer across operating companies, or enterprise “call for pricing” tiers
             that strip out features to justify a custom contract. Cornerstone Enterprise is built
             on a different premise: every division gets the <em>same</em> Pro+ platform it would
-            get as a standalone subscriber, and the corporate layer adds on top of that&mdash;it
+            get as a standalone subscriber, and the corporate layer adds on top of that—it
             never takes anything away.
           </p>
 
@@ -195,7 +195,7 @@ export default function EnterpriseMultiDivisionPage() {
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
             <li>
               <strong className="text-white">Regional home builders</strong> with separate brand
-              names or operating companies per market area&mdash;each with its own community
+              names or operating companies per market area—each with its own community
               pipeline, vendor relationships, and team structure.
             </li>
             <li>
@@ -214,7 +214,7 @@ export default function EnterpriseMultiDivisionPage() {
             </li>
           </ul>
           <p>
-            If you&apos;re a single-division builder building 5&ndash;200 homes per year, the
+            If you&apos;re a single-division builder building 5–200 homes per year, the
             standalone{" "}
             <Link
               href="/pricing"
@@ -231,22 +231,22 @@ export default function EnterpriseMultiDivisionPage() {
           </h2>
           <p>
             Every division in an Enterprise account gets the complete Pro+ platform. There is
-            no stripped-down &ldquo;enterprise division&rdquo; SKU. That means:
+            no stripped-down “enterprise division” SKU. That means:
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
             <li>
-              <strong className="text-white">Full design center</strong>&mdash;64 curated Designer
+              <strong className="text-white">Full design center</strong>—64 curated Designer
               Packages, exclusion groups (pick one from many), per-floorplan option pricing reused
               across every home of that plan in every community.{" "}
               <Link
                 href="/design"
                 className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
               >
-                Design Center &rarr;
+                Design Center →
               </Link>
             </li>
             <li>
-              <strong className="text-white">Foreman AI with 396+ skills</strong>&mdash;the
+              <strong className="text-white">Foreman AI with 396+ skills</strong>—the
               in-platform agent that reads and writes data, runs vendor analysis, generates
               profitability reports, manages purchasing workflows, and carries per-user memory
               across every session.{" "}
@@ -254,11 +254,11 @@ export default function EnterpriseMultiDivisionPage() {
                 href="/foreman"
                 className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
               >
-                Meet Foreman &rarr;
+                Meet Foreman →
               </Link>
             </li>
             <li>
-              <strong className="text-white">Blueprint AI takeoff</strong>&mdash;parses a floor
+              <strong className="text-white">Blueprint AI takeoff</strong>—parses a floor
               plan PDF and extracts 130+ material scopes with 3,284+ parts in under 60 seconds.
             </li>
             <li>
@@ -266,7 +266,7 @@ export default function EnterpriseMultiDivisionPage() {
               across three schema formats: Anthropic, OpenAI, and OpenAPI 3.1.
             </li>
             <li>
-              <strong className="text-white">BYOA (Bring Your Own AI Agent)</strong>&mdash;every
+              <strong className="text-white">BYOA (Bring Your Own AI Agent)</strong>—every
               endpoint maps to one of Foreman&apos;s 396+ skills; ship a new Foreman skill and it
               auto-exposes to BYOA in every division with no configuration changes.
             </li>
@@ -295,7 +295,7 @@ export default function EnterpriseMultiDivisionPage() {
                 Navigate between operating companies from a single login without logging out and
                 back in. The switcher surfaces in the top navigation for any user with corporate
                 admin access, and divisions can be arranged by region, brand, or any custom
-                grouping. No more &ldquo;which account am I logged into?&rdquo;
+                grouping. No more “which account am I logged into?”
               </p>
             </div>
             <div className="rounded-xl border border-slate-800 bg-slate-900/40 p-5">
@@ -313,7 +313,7 @@ export default function EnterpriseMultiDivisionPage() {
                 Compare performance, schedule health, vendor costs, and purchasing data across
                 divisions in a unified dashboard. Identify which division is running the leanest
                 framing budget, which community has the longest schedule slippage, or where
-                vendor bid variance is highest&mdash;without exporting data into a spreadsheet
+                vendor bid variance is highest—without exporting data into a spreadsheet
                 and stitching it together.
               </p>
             </div>
@@ -347,8 +347,8 @@ export default function EnterpriseMultiDivisionPage() {
           </ul>
           <p>
             Standalone Pro+ is $599/division. Enterprise pricing is a real discount from division
-            #1&mdash;you&apos;re not paying more for the corporate layer. For a builder running
-            6 divisions, that&apos;s $2,950/mo versus $3,594/mo at standalone Pro+ rates&mdash;a
+            #1—you&apos;re not paying more for the corporate layer. For a builder running
+            6 divisions, that&apos;s $2,950/mo versus $3,594/mo at standalone Pro+ rates—a
             $644/mo saving, plus the corporate layer on top.
           </p>
           <p>
@@ -396,12 +396,12 @@ export default function EnterpriseMultiDivisionPage() {
           </div>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            Why enterprise tiers usually disappoint&mdash;and why this one is different
+            Why enterprise tiers usually disappoint—and why this one is different
           </h2>
           <p>
             The standard enterprise playbook in construction software is to add a
-            &ldquo;corporate dashboard&rdquo; on top of a crippled base tier, then quote
-            $2,000&ndash;$5,000/mo per division after a six-week sales process. Builders running
+            “corporate dashboard” on top of a crippled base tier, then quote
+            $2,000–$5,000/mo per division after a six-week sales process. Builders running
             5 divisions end up paying more per division for a worse product than a single-division
             subscriber gets.
           </p>
@@ -409,13 +409,13 @@ export default function EnterpriseMultiDivisionPage() {
             Cornerstone Enterprise flips that. The rule is: every division gets Pro+, full stop.
             The corporate layer is the only thing Enterprise adds. The logic behind this is
             straightforward: a multi-division builder&apos;s biggest problem isn&apos;t that each
-            division has too many features&mdash;it&apos;s that the divisions are siloed and
+            division has too many features—it&apos;s that the divisions are siloed and
             there&apos;s no shared visibility layer. The fix is to add corporate visibility, not
             remove division capability.
           </p>
           <p>
             This also means that when Cornerstone ships a new Foreman skill, it&apos;s available
-            in every Enterprise division automatically&mdash;no per-division configuration, no
+            in every Enterprise division automatically—no per-division configuration, no
             feature-gating by tier within the enterprise account. The same denylist permissions
             model that makes BYOA auto-grow applies across the entire corporate account.
           </p>
@@ -434,11 +434,11 @@ export default function EnterpriseMultiDivisionPage() {
             behaves at scale. Each division has its own Foreman context, including company-wide
             memory for that division&apos;s vendor relationships, plan standards, and purchasing
             patterns. But with the X-Division-Id API, a corporate AI agent (BYOA) can query
-            across divisions&mdash;pulling comparative profitability data, normalizing vendor
+            across divisions—pulling comparative profitability data, normalizing vendor
             pricing across markets, or running cross-division schedule analysis.
           </p>
           <p>
-            This is the practical shape of what &ldquo;AI-native construction management&rdquo;
+            This is the practical shape of what “AI-native construction management”
             looks like at the corporate level: not a single chatbot, but a skill catalog of 396+
             purpose-built capabilities available to human users in every division and to external
             AI agents via the corporate API surface.
@@ -461,7 +461,7 @@ export default function EnterpriseMultiDivisionPage() {
               Running more than one division?
             </h2>
             <p className="text-slate-300 mb-6 max-w-xl mx-auto">
-              Every Cornerstone PM Enterprise division gets the full Pro+ platform&mdash;no
+              Every Cornerstone PM Enterprise division gets the full Pro+ platform—no
               stripped-down tiers, no hidden feature gates. Corporate admin, cross-division
               analytics, and volume pricing from $500/division/mo.
             </p>
@@ -469,7 +469,7 @@ export default function EnterpriseMultiDivisionPage() {
               href="/beta"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-base transition-colors"
             >
-              Request Early Access &rarr;
+              Request Early Access →
             </Link>
           </div>
         </div>

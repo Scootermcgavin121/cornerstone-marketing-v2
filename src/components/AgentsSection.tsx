@@ -96,7 +96,7 @@ export function AgentsSection() {
             <span className="text-cyan-400">Zero other platforms have one.</span>
           </h2>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto">
-            ChatGPT doesn&apos;t know what a takeoff scope is. Ours do &mdash; and they&apos;re wired directly to your data. No integrations, no setup, no consultants.
+            ChatGPT doesn&apos;t know what a takeoff scope is. Ours do — and they&apos;re wired directly to your data. No integrations, no setup, no consultants.
           </p>
         </div>
 
@@ -125,7 +125,7 @@ export function AgentsSection() {
                 {agent.prompts.map((p, i) => (
                   <div key={i} className="flex items-start gap-1.5 text-xs">
                     <span className={`font-bold ${agent.color} flex-shrink-0`}>›</span>
-                    <span className="text-slate-500 italic">&ldquo;{p}&rdquo;</span>
+                    <span className="text-slate-500 italic">“{p}”</span>
                   </div>
                 ))}
               </div>
@@ -144,13 +144,13 @@ export function AgentsSection() {
             <span className="text-cyan-400">Cornerstone has agents.</span>
           </p>
           <p className="text-slate-400 max-w-2xl mx-auto mb-6">
-            No other construction platform gives builders natural language access to their own data. This isn&apos;t a chatbot bolted on &mdash; these are purpose-built agents that understand construction workflows, supplier catalogs, and home builder operations.
+            No other construction platform gives builders natural language access to their own data. This isn&apos;t a chatbot bolted on — these are purpose-built agents that understand construction workflows, supplier catalogs, and home builder operations.
           </p>
           <Link
             href="/ai-agents"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-cyan-400 text-slate-900 font-bold hover:bg-cyan-300 transition-all duration-200"
           >
-            See all five agents &rarr;
+            See all five agents →
           </Link>
         </div>
       </div>

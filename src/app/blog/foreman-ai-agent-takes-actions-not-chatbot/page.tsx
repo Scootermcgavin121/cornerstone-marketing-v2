@@ -145,7 +145,7 @@ export default function ForemanAgentActionsPage() {
             AI &amp; Automation
           </span>
           <h1 className="text-4xl sm:text-5xl font-black text-white leading-tight mb-4">
-            It&rsquo;s Not a Chatbot, It&rsquo;s an Agent: AI That Actually Runs Your Build
+            It’s Not a Chatbot, It’s an Agent: AI That Actually Runs Your Build
           </h1>
           <div className="flex items-center gap-3 text-sm text-slate-500">
             <span>June 29, 2026</span>
@@ -158,32 +158,32 @@ export default function ForemanAgentActionsPage() {
 
           <p className="text-xl text-slate-300 font-light">
             Most construction AI just answers questions. Foreman reads and writes your live
-            Cornerstone PM data&mdash;editing design options, updating vendor pricing, and running
+            Cornerstone PM data—editing design options, updating vendor pricing, and running
             multi-step purchasing workflows on your behalf.{" "}
             <Link
               href="/foreman"
               className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
             >
-              That&rsquo;s the difference between a chatbot and an agent.
+              That’s the difference between a chatbot and an agent.
             </Link>
           </p>
 
           <p>
             The construction software market has a habit of calling anything with a text box an
-            &ldquo;AI assistant.&rdquo; A feature that surfaces your next-due task is not an AI agent.
+            “AI assistant.” A feature that surfaces your next-due task is not an AI agent.
             A search box that auto-completes a vendor name is not an AI agent. An AI agent takes
-            real actions inside your system&mdash;reads your actual data, makes changes, and
+            real actions inside your system—reads your actual data, makes changes, and
             confirms what it did. Foreman AI does that across 396+ skills built specifically for
             home building workflows.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            What does &ldquo;reads and writes your data&rdquo; actually mean?
+            What does “reads and writes your data” actually mean?
           </h2>
           <p>
             The most important distinction in construction AI right now is between tools that
-            retrieve information and tools that can change it. Retrieval is useful&mdash;being able
-            to ask &ldquo;which vendor won the framing bid on the Magnolia plan?&rdquo; and get a
+            retrieve information and tools that can change it. Retrieval is useful—being able
+            to ask “which vendor won the framing bid on the Magnolia plan?” and get a
             real answer is better than digging through a report. But the bigger operational
             opportunity is acting on that answer: updating the scope, sending the PO, flagging
             the discrepancy.
@@ -193,7 +193,7 @@ export default function ForemanAgentActionsPage() {
             a design option price, it updates the design option price. When you ask it to generate
             a bid template for a new community, it pulls your current scope items and vendor
             assignments and produces the template. When it runs a profitability report, it reads
-            your live build data&mdash;not a stale export from last Thursday.
+            your live build data—not a stale export from last Thursday.
           </p>
           <p>
             This read-and-write access is what the{" "}
@@ -232,7 +232,7 @@ export default function ForemanAgentActionsPage() {
 
           <p>
             Every one of these is a real write operation into your Cornerstone PM account
-            &mdash;not a suggested next step, not a copy-pasteable template you fill in yourself.
+            —not a suggested next step, not a copy-pasteable template you fill in yourself.
             Foreman completes the action and reports back what it changed.
           </p>
 
@@ -242,16 +242,16 @@ export default function ForemanAgentActionsPage() {
           <p>
             Buildertrend, JobTread, and CoConstruct all have AI features. They share a common
             pattern: they summarize, suggest, or surface. They answer questions about your data.
-            They don&rsquo;t edit the data. The distinction matters operationally: a tool that tells
+            They don’t edit the data. The distinction matters operationally: a tool that tells
             you your bid is missing a line item is helpful; a tool that adds the line item for
             you is a different category of capability.
           </p>
           <p>
-            Beyond the read-vs-write gap, there&rsquo;s the domain depth gap. Foreman runs on a
+            Beyond the read-vs-write gap, there’s the domain depth gap. Foreman runs on a
             24,500-word construction knowledge base, 39 estimating formulas, and a skill catalog
-            built specifically for residential production building&mdash;floorplan-level option
+            built specifically for residential production building—floorplan-level option
             pricing, Structural vs. Designer scope separation, community-assigned vendor wins, and
-            more. Generic AI tools that sit on top of a construction database don&rsquo;t carry
+            more. Generic AI tools that sit on top of a construction database don’t carry
             that domain layer. They answer from the data; Foreman answers from the data plus
             construction expertise.
           </p>
@@ -267,18 +267,18 @@ export default function ForemanAgentActionsPage() {
             The agent capabilities compound over time because Foreman maintains two memory layers.
             Per-user memory stores your name, role, preferred vendors, and communication style.
             Company-wide memory builds vendor scorecards, captures recurring scope patterns, and
-            holds builder-level defaults. Together they mean Foreman isn&rsquo;t starting from zero
+            holds builder-level defaults. Together they mean Foreman isn’t starting from zero
             every time you open a session.
           </p>
           <p>
             Practical examples: a superintendent who always orders plumbing fixtures from Ferguson
-            doesn&rsquo;t need to specify Ferguson every time. A purchasing manager who runs the
-            Magnolia plan 40 times a year doesn&rsquo;t re-explain what the Magnolia plan is. An
+            doesn’t need to specify Ferguson every time. A purchasing manager who runs the
+            Magnolia plan 40 times a year doesn’t re-explain what the Magnolia plan is. An
             owner who wants concise responses gets concise responses without coaching it every
             session.
           </p>
           <p>
-            For more on how Foreman&rsquo;s memory system works, see the{" "}
+            For more on how Foreman’s memory system works, see the{" "}
             <Link
               href="/blog/foreman-ai-memory-construction-software"
               className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
@@ -290,16 +290,16 @@ export default function ForemanAgentActionsPage() {
               href="/blog/construction-ai-context-memory-long-sessions"
               className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
             >
-              why most construction AI forgets&mdash;and how Foreman doesn&rsquo;t
+              why most construction AI forgets—and how Foreman doesn’t
             </Link>
             .
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            The 396+ skill catalog: what&rsquo;s actually in it?
+            The 396+ skill catalog: what’s actually in it?
           </h2>
           <p>
-            The 396+ skill count isn&rsquo;t a marketing number padded with trivial queries. The
+            The 396+ skill count isn’t a marketing number padded with trivial queries. The
             skills span 20 categories and map to real purchasing, design, scheduling, and
             reporting workflows:
           </p>
@@ -332,12 +332,12 @@ export default function ForemanAgentActionsPage() {
           <p>
             Each skill connects to your live data. When Foreman generates a SOW document, it
             pulls your actual scope items. When it runs a profitability report, it reads your
-            real bid numbers. The skill catalog isn&rsquo;t running on examples&mdash;it&rsquo;s running
+            real bid numbers. The skill catalog isn’t running on examples—it’s running
             on your build.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            Foreman is a Pro+ capability&mdash;here&rsquo;s why that matters for ROI
+            Foreman is a Pro+ capability—here’s why that matters for ROI
           </h2>
           <p>
             Foreman AI is available on the{" "}
@@ -371,11 +371,11 @@ export default function ForemanAgentActionsPage() {
 
           <div className="not-prose rounded-xl border border-slate-800 bg-slate-900/40 p-6 my-8">
             <p className="text-slate-400 text-sm italic leading-relaxed border-l-2 border-emerald-500/40 pl-4">
-              &ldquo;The difference between a chatbot and an agent is the difference between advice
+              “The difference between a chatbot and an agent is the difference between advice
               and work. Foreman edits the design option, updates the vendor price, and generates
-              the bid template. You review and approve. That&rsquo;s a fundamentally different
+              the bid template. You review and approve. That’s a fundamentally different
               relationship with software than asking a question and manually doing what it
-              tells you.&rdquo;
+              tells you.”
             </p>
           </div>
 

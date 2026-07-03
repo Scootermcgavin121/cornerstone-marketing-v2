@@ -167,16 +167,16 @@ export default function KnowifyVsCornerstonePage() {
 
           <p className="text-xl text-slate-300 font-light">
             Knowify is a solid job costing and contract management platform built for trade
-            contractors. Cornerstone PM&trade; is a production home builder platform with a
+            contractors. Cornerstone PM™ is a production home builder platform with a
             full design center, AI agents, and multi-community workflows. They are not the
-            same product category &mdash; and if you&apos;re a production builder who found
-            Knowify in a &ldquo;construction management software&rdquo; search, the mismatch
+            same product category — and if you&apos;re a production builder who found
+            Knowify in a “construction management software” search, the mismatch
             is worth understanding before you sign up.
           </p>
 
           <p>
             This is not a teardown. Knowify does what it does well. The question is whether
-            &ldquo;what it does&rdquo; has any overlap with the workflows that define production
+            “what it does” has any overlap with the workflows that define production
             home building. For a full overview of the platforms designed specifically for your
             segment, start at{" "}
             <Link
@@ -197,32 +197,32 @@ export default function KnowifyVsCornerstonePage() {
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
             <li>
-              <strong className="text-white">Job costing</strong> &mdash; track labor, materials,
+              <strong className="text-white">Job costing</strong> — track labor, materials,
               and overhead against a project budget, with real-time cost-to-complete visibility.
             </li>
             <li>
-              <strong className="text-white">AIA progress billing</strong> &mdash; standard
+              <strong className="text-white">AIA progress billing</strong> — standard
               G702/G703 billing workflows for contractors billing owners or GCs on percentage
               complete.
             </li>
             <li>
-              <strong className="text-white">Subcontract management</strong> &mdash; issue
+              <strong className="text-white">Subcontract management</strong> — issue
               subcontracts, track change orders, and manage lien waivers within the project
               financial workflow.
             </li>
             <li>
-              <strong className="text-white">Time tracking and labor costing</strong> &mdash;
+              <strong className="text-white">Time tracking and labor costing</strong> —
               field employees log time, time flows into job cost automatically.
             </li>
             <li>
-              <strong className="text-white">QuickBooks integration</strong> &mdash; two-way sync
+              <strong className="text-white">QuickBooks integration</strong> — two-way sync
               for contractors who run their financials in QuickBooks.
             </li>
           </ul>
           <p>
             For a $3M electrical contractor or a $5M HVAC subcontractor, this is a genuinely
             useful platform. Job costing on contract work, AIA billing cadences, lien waiver
-            tracking &mdash; these are real problems Knowify solves. The issue is that none of
+            tracking — these are real problems Knowify solves. The issue is that none of
             these problems are the primary operational challenge for a production home builder.
           </p>
 
@@ -230,9 +230,9 @@ export default function KnowifyVsCornerstonePage() {
             Why production home builders need a different product category
           </h2>
           <p>
-            A production home builder running 20&ndash;150 homes per year has an entirely
+            A production home builder running 20–150 homes per year has an entirely
             different operational model. The work isn&apos;t defined by projects billed on
-            percentage-complete &mdash; it&apos;s defined by plan repeats, design center
+            percentage-complete — it&apos;s defined by plan repeats, design center
             appointments, and vendor bid cycles that happen the same way for every home of a
             given floorplan across every community.
           </p>
@@ -245,19 +245,19 @@ export default function KnowifyVsCornerstonePage() {
               <strong className="text-white">Floorplan-level pricing:</strong> The Magnolia plan
               sells 80 times this year across four communities. Every home of that plan has the
               same base options and structural variants. Pricing needs to live at the plan level
-              and propagate to every home automatically &mdash; not be re-entered job by job.
+              and propagate to every home automatically — not be re-entered job by job.
               Knowify has no concept of a floorplan.
             </li>
             <li>
               <strong className="text-white">Designer Packages and the design center:</strong>{" "}
-              When a buyer picks the &ldquo;Farmhouse&rdquo; package, it auto-locks flooring,
+              When a buyer picks the “Farmhouse” package, it auto-locks flooring,
               cabinet, and countertop categories to the curated selections for that package,
               and the rest flows directly into purchasing. Knowify has no design center, no
               Designer Packages, no buyer-facing selections portal.
             </li>
             <li>
               <strong className="text-white">Exclusion groups:</strong> When a buyer picks
-              Quartz countertops, the countertop category marks complete &mdash; they
+              Quartz countertops, the countertop category marks complete — they
               don&apos;t also need to pick Granite and Laminate. Pick one from many, category
               done. This is a production design center concept that doesn&apos;t exist in any
               trade contractor tool.
@@ -283,13 +283,13 @@ export default function KnowifyVsCornerstonePage() {
               href="/design"
               className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
             >
-              Cornerstone PM&trade; design center
+              Cornerstone PM™ design center
             </Link>{" "}
             and its purchasing module were built from the ground up for this model.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            Feature comparison: Knowify vs Cornerstone PM&trade;
+            Feature comparison: Knowify vs Cornerstone PM™
           </h2>
 
           <div className="overflow-x-auto rounded-xl border border-slate-800 not-prose">
@@ -299,7 +299,7 @@ export default function KnowifyVsCornerstonePage() {
                   <th className="text-left px-5 py-4 text-slate-400 font-medium">Feature</th>
                   <th className="px-5 py-4 text-slate-400 font-medium text-center">Knowify</th>
                   <th className="px-5 py-4 text-cyan-400 font-medium text-center">
-                    Cornerstone PM&trade;
+                    Cornerstone PM™
                   </th>
                 </tr>
               </thead>
@@ -328,51 +328,51 @@ export default function KnowifyVsCornerstonePage() {
             production home building workflows.
           </p>
           <p>
-            Cornerstone PM&trade; ships five purpose-built AI agents, all bundled at no extra
+            Cornerstone PM™ ships five purpose-built AI agents, all bundled at no extra
             cost on the Pro+ plan:
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
             <li>
-              <strong className="text-white">Blueprint AI</strong> &mdash; parses a floor plan
+              <strong className="text-white">Blueprint AI</strong> — parses a floor plan
               PDF and extracts 130+ material scopes in under 60 seconds.{" "}
               <Link
                 href="/ai-takeoff"
                 className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
               >
-                See Blueprint AI &rarr;
+                See Blueprint AI →
               </Link>
             </li>
             <li>
-              <strong className="text-white">Foreman AI</strong> &mdash; 396+ skills covering
+              <strong className="text-white">Foreman AI</strong> — 396+ skills covering
               purchasing, vendor management, schedule optimization, budget analysis, and
               profitability reporting.{" "}
               <Link
                 href="/foreman"
                 className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
               >
-                Meet Foreman &rarr;
+                Meet Foreman →
               </Link>{" "}
-              Foreman reads AND writes data &mdash; it takes real actions, not just answers
+              Foreman reads AND writes data — it takes real actions, not just answers
               questions. Persistent per-user memory means it knows your vendors, your
               communication style, and your build patterns from day one.
             </li>
             <li>
-              <strong className="text-white">Bid Import AI</strong> &mdash; auto-maps vendor bid
+              <strong className="text-white">Bid Import AI</strong> — auto-maps vendor bid
               spreadsheets to your scope items with no manual column matching.
             </li>
             <li>
-              <strong className="text-white">AI MLS Listing Generator</strong> &mdash; generates
+              <strong className="text-white">AI MLS Listing Generator</strong> — generates
               listing copy from your floorplan and options data.
             </li>
             <li>
-              <strong className="text-white">AI Support Agent</strong> &mdash; answers platform
+              <strong className="text-white">AI Support Agent</strong> — answers platform
               questions in context without leaving your workflow.
             </li>
           </ul>
           <p>
-            Cornerstone PM&trade; also ships a built-in MCP server that lets external AI tools
+            Cornerstone PM™ also ships a built-in MCP server that lets external AI tools
             like Claude Desktop and Cursor connect directly to Foreman&apos;s full 396+ skill
-            catalog. Builders generate API keys and get ready-to-paste config blocks &mdash;
+            catalog. Builders generate API keys and get ready-to-paste config blocks —
             no middleware, no configuration changes when new skills ship.
           </p>
 
@@ -381,7 +381,7 @@ export default function KnowifyVsCornerstonePage() {
           </h2>
           <p>
             Knowify integrates with QuickBooks and a handful of field tools. Cornerstone
-            PM&trade;&apos;s{" "}
+            PM™&apos;s{" "}
             <Link
               href="/api-access"
               className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
@@ -396,7 +396,7 @@ export default function KnowifyVsCornerstonePage() {
               (Anthropic, OpenAI, OpenAPI 3.1)
             </li>
             <li>
-              BYOA (Bring Your Own AI Agent) &mdash; every endpoint maps to one of Foreman&apos;s
+              BYOA (Bring Your Own AI Agent) — every endpoint maps to one of Foreman&apos;s
               396+ skills; new skills auto-expose without configuration changes
             </li>
             <li>
@@ -414,7 +414,7 @@ export default function KnowifyVsCornerstonePage() {
               full platform overview
             </Link>{" "}
             covers how this integration layer compares across Buildertrend, NEWSTAR, JobTread,
-            and Cornerstone PM&trade;.
+            and Cornerstone PM™.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
@@ -423,7 +423,7 @@ export default function KnowifyVsCornerstonePage() {
 
           <div className="grid sm:grid-cols-2 gap-4 not-prose my-6">
             <div className="rounded-xl border border-slate-700 bg-slate-900/40 p-6">
-              <h3 className="text-lg font-bold text-white mb-3">Use Knowify if you are&hellip;</h3>
+              <h3 className="text-lg font-bold text-white mb-3">Use Knowify if you are…</h3>
               <ul className="space-y-2 text-slate-300 text-sm">
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-400 mt-0.5 shrink-0" />A trade
@@ -446,12 +446,12 @@ export default function KnowifyVsCornerstonePage() {
             </div>
             <div className="rounded-xl border border-cyan-800/40 bg-cyan-950/20 p-6">
               <h3 className="text-lg font-bold text-white mb-3">
-                Use Cornerstone PM&trade; if you are&hellip;
+                Use Cornerstone PM™ if you are…
               </h3>
               <ul className="space-y-2 text-slate-300 text-sm">
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-cyan-400 mt-0.5 shrink-0" />A production home
-                  builder (5&ndash;200 homes/year)
+                  builder (5–200 homes/year)
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-cyan-400 mt-0.5 shrink-0" />
@@ -482,8 +482,8 @@ export default function KnowifyVsCornerstonePage() {
           <p>
             Knowify is excellent for trade contractors who need job costing and contract
             management. The audience for this post is the production home builder who found
-            Knowify in a &ldquo;construction software&rdquo; list and is wondering if it
-            stretches to cover whole-home building workflows. It doesn&apos;t &mdash; not
+            Knowify in a “construction software” list and is wondering if it
+            stretches to cover whole-home building workflows. It doesn&apos;t — not
             because Knowify is underpowered, but because production home building is a
             different product segment entirely. If you&apos;re in that segment, start with the{" "}
             <Link
@@ -507,15 +507,15 @@ export default function KnowifyVsCornerstonePage() {
               Built for production builders, not trade contractors
             </h2>
             <p className="text-slate-300 mb-6 max-w-xl mx-auto">
-              See how Cornerstone PM&trade; handles floorplans, 64 Designer Packages,
+              See how Cornerstone PM™ handles floorplans, 64 Designer Packages,
               exclusion groups, auto-quantity scope items, Foreman AI, and multi-community
-              vendor management &mdash; the workflows Knowify was never designed for.
+              vendor management — the workflows Knowify was never designed for.
             </p>
             <Link
               href="/beta"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-base transition-colors"
             >
-              Request Early Access &rarr;
+              Request Early Access →
             </Link>
           </div>
         </div>

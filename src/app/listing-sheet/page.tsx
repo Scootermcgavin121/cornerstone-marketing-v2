@@ -68,14 +68,14 @@ export default function ListingSheetPage() {
             <span className="text-cyan-400">In seconds, not hours.</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-4 leading-relaxed">
-            AI writes the description. Your live data fills the rest. One click to a print-ready PDF &mdash; with real room dimensions, community details, structural upgrades, and branded formatting.
+            AI writes the description. Your live data fills the rest. One click to a print-ready PDF — with real room dimensions, community details, structural upgrades, and branded formatting.
           </p>
           <p className="text-slate-500 max-w-2xl mx-auto mb-10">
             No copy-pasting from Word docs. No calling the PM for room measurements. No separate MLS tools.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/beta" className="px-8 py-4 rounded-full bg-cyan-400 text-slate-900 font-bold text-lg hover:bg-cyan-300 transition-all duration-200 shadow-lg shadow-cyan-500/30 hover:-translate-y-0.5">
-              Request Early Access &rarr;
+              Request Early Access →
             </Link>
             <Link href="/sales" className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200">
               See Sales Pipeline
@@ -114,7 +114,7 @@ export default function ListingSheetPage() {
           <div className="p-8 rounded-2xl bg-cyan-500/5 border border-cyan-500/20">
             <h2 className="text-2xl font-black text-cyan-400 mb-4">The Solution</h2>
             <p className="text-slate-400 leading-relaxed">
-              One click. Cornerstone PM™ pulls every detail from your existing data &mdash; room dimensions, structural upgrades, lot size, community features, floorplan specs &mdash; and generates a polished, branded MLS listing sheet instantly.
+              One click. Cornerstone PM™ pulls every detail from your existing data — room dimensions, structural upgrades, lot size, community features, floorplan specs — and generates a polished, branded MLS listing sheet instantly.
             </p>
           </div>
         </div>
@@ -132,7 +132,7 @@ export default function ListingSheetPage() {
                 </div>
                 <h2 className="text-3xl font-black text-white mb-4">Claude Sonnet writes it.<br />Your data makes it real.</h2>
                 <p className="text-slate-400 leading-relaxed mb-6">
-                  Click &ldquo;Generate with AI&rdquo; on any listing sheet. Claude reads your actual home data &mdash; room dimensions, community character, lot size, structural upgrades &mdash; and writes a compelling 2-3 paragraph description. Not a template. Not a fill-in-the-blank. A real listing description.
+                  Click “Generate with AI” on any listing sheet. Claude reads your actual home data — room dimensions, community character, lot size, structural upgrades — and writes a compelling 2-3 paragraph description. Not a template. Not a fill-in-the-blank. A real listing description.
                 </p>
                 <div className="space-y-3">
                   {[
@@ -152,7 +152,7 @@ export default function ListingSheetPage() {
               <div className="bg-slate-950/60 border-t lg:border-t-0 lg:border-l border-slate-800/60 p-8 sm:p-10 flex flex-col justify-center">
                 <p className="text-slate-500 text-xs font-semibold uppercase tracking-widest mb-4">Example output</p>
                 <div className="rounded-xl bg-slate-900 border border-slate-800 p-5 text-slate-300 text-sm leading-relaxed italic">
-                  &ldquo;Welcome to The Addison at Bayside Preserve &mdash; a masterfully crafted 2,847 sq ft home where thoughtful design meets everyday livability. The open-concept great room flows into a gourmet kitchen featuring quartz countertops and custom cabinetry, while soaring 10-foot ceilings create an airy ambiance throughout. With 4 bedrooms, 3.5 baths, and a dedicated home office, this home is designed for how families actually live...&rdquo;
+                  “Welcome to The Addison at Bayside Preserve — a masterfully crafted 2,847 sq ft home where thoughtful design meets everyday livability. The open-concept great room flows into a gourmet kitchen featuring quartz countertops and custom cabinetry, while soaring 10-foot ceilings create an airy ambiance throughout. With 4 bedrooms, 3.5 baths, and a dedicated home office, this home is designed for how families actually live...”
                 </div>
                 <div className="mt-4 flex items-center gap-2">
                   <div className="px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-slate-400 text-xs">
@@ -221,7 +221,7 @@ export default function ListingSheetPage() {
               </div>
               <h2 className="text-3xl font-black text-white mb-4">One-click PDF download</h2>
               <p className="text-slate-400 leading-relaxed mb-4">
-                No print dialog. No browser settings. Click &ldquo;Download PDF&rdquo; and get a real PDF file &mdash; multi-page support, always renders in light mode for clean printing, with your company logo auto-centered.
+                No print dialog. No browser settings. Click “Download PDF” and get a real PDF file — multi-page support, always renders in light mode for clean printing, with your company logo auto-centered.
               </p>
               <p className="text-slate-400 leading-relaxed">
                 Smart filename format: <code className="text-cyan-400 bg-slate-800 px-2 py-0.5 rounded text-sm">5656_Ocean_Way-MLS-Sheet.pdf</code>
@@ -250,7 +250,7 @@ export default function ListingSheetPage() {
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-black text-center mb-4">Live data. Zero manual entry.</h2>
-          <p className="text-slate-400 text-center mb-12 max-w-xl mx-auto">Every field is pulled from your live project data &mdash; nothing to copy-paste or fill in manually.</p>
+          <p className="text-slate-400 text-center mb-12 max-w-xl mx-auto">Every field is pulled from your live project data — nothing to copy-paste or fill in manually.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {whatItPulls.map((item) => {
               const Icon = item.icon;
@@ -277,7 +277,7 @@ export default function ListingSheetPage() {
               <div className="text-4xl mb-4">🖱️</div>
               <h3 className="text-xl font-black text-white mb-3">One-click in the Sales sidebar</h3>
               <p className="text-slate-400 leading-relaxed mb-4">
-                Open any home, click &ldquo;Listing Sheet,&rdquo; pick a word count, hit &ldquo;Generate with AI.&rdquo; Download the PDF or print directly.
+                Open any home, click “Listing Sheet,” pick a word count, hit “Generate with AI.” Download the PDF or print directly.
               </p>
               <div className="space-y-2">
                 {["Available in Sales & Purchasing sidebars", "Home picker dropdown — any home in your org", "Word count slider (50–1,000 words)", "Regenerate with custom prompt"].map((f) => (
@@ -296,10 +296,10 @@ export default function ListingSheetPage() {
               </p>
               <div className="space-y-3">
                 <div className="p-3 rounded-xl bg-slate-900 border border-amber-500/20 border-l-4 border-l-amber-500">
-                  <p className="text-slate-300 text-sm italic">&ldquo;Write an MLS description for The Addison at Bayside Preserve&rdquo;</p>
+                  <p className="text-slate-300 text-sm italic">“Write an MLS description for The Addison at Bayside Preserve”</p>
                 </div>
                 <div className="p-3 rounded-xl bg-slate-900 border border-amber-500/20 border-l-4 border-l-amber-500">
-                  <p className="text-slate-300 text-sm italic">&ldquo;Generate an MLS listing for 1234 Oak Street, emphasize the pool&rdquo;</p>
+                  <p className="text-slate-300 text-sm italic">“Generate an MLS listing for 1234 Oak Street, emphasize the pool”</p>
                 </div>
               </div>
               <p className="text-slate-500 text-xs mt-3">Foreman AI &middot; Pro plan</p>
@@ -314,9 +314,9 @@ export default function ListingSheetPage() {
           <div className="rounded-2xl bg-slate-900 border border-cyan-500/20 p-8 sm:p-12">
             <h2 className="text-3xl font-black mb-4">Why no one else can do this</h2>
             <p className="text-slate-400 text-lg leading-relaxed mb-4">
-              Sales CRM tools don&apos;t have room dimensions. Construction PM tools don&apos;t have buyer selections. No other platform has Blueprint AI floor plan analysis. Cornerstone has all of it &mdash; which is the only reason this feature is possible.
+              Sales CRM tools don&apos;t have room dimensions. Construction PM tools don&apos;t have buyer selections. No other platform has Blueprint AI floor plan analysis. Cornerstone has all of it — which is the only reason this feature is possible.
             </p>
-            <p className="text-slate-500 text-sm mb-8">Built on 110+ database tables and growing. Every field on this listing sheet exists because we modeled it from day one &mdash; not bolted on later.</p>
+            <p className="text-slate-500 text-sm mb-8">Built on 110+ database tables and growing. Every field on this listing sheet exists because we modeled it from day one — not bolted on later.</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
                 { bad: "Sales CRMs", issue: "No construction data — can't pull room dimensions or structural upgrades" },
@@ -348,7 +348,7 @@ export default function ListingSheetPage() {
           Beta is free for 2 years. Limited to 100 builders. No credit card required.
         </p>
         <Link href="/beta" className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-cyan-400 text-slate-900 font-bold text-lg hover:bg-cyan-300 transition-all duration-200 shadow-lg shadow-cyan-500/30">
-          Request Early Access &rarr;
+          Request Early Access →
         </Link>
       </section>
       <Footer />

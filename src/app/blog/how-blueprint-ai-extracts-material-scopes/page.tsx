@@ -96,7 +96,7 @@ export default function HowBlueprintAIExtractsMaterialScopesPage() {
 
           <p className="text-xl text-slate-300 font-light">
             AI material takeoff works by running a floor plan PDF through a four-stage pipeline: geometry
-            parsing, fixture detection, scope mapping, and vendor pricing lookup &mdash; producing 130+ named
+            parsing, fixture detection, scope mapping, and vendor pricing lookup — producing 130+ named
             material scopes in under 60 seconds.
           </p>
 
@@ -110,21 +110,21 @@ export default function HowBlueprintAIExtractsMaterialScopesPage() {
             </Link>{" "}
             can pull a full material scope list from a floor plan in the time it takes to pour a cup of
             coffee, you might have wondered: how does that actually work? This post walks through the
-            mechanics &mdash; no marketing gloss, just the real pipeline from PDF upload to vendor-ready
+            mechanics — no marketing gloss, just the real pipeline from PDF upload to vendor-ready
             scope list.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            What does &ldquo;130+ material scopes&rdquo; actually mean?
+            What does “130+ material scopes” actually mean?
           </h2>
           <p>
             A material scope is a bucket that maps directly to a trade and a vendor category: Concrete
             Foundation, Framing Lumber, Exterior Windows, Interior Doors, HVAC Equipment, Plumbing Rough,
-            Electrical Rough &mdash; and so on out to 130+ named scopes for a fully specified residential home.
+            Electrical Rough — and so on out to 130+ named scopes for a fully specified residential home.
           </p>
           <p>
             Traditional estimators build this scope list manually: read the plan, cross-reference spec
-            sheets, enter quantities by hand. That process takes 4&ndash;8 hours per floor plan. Blueprint
+            sheets, enter quantities by hand. That process takes 4–8 hours per floor plan. Blueprint
             AI produces the same scope list from the PDF in under 60 seconds. Here&apos;s the step-by-step
             of how it gets there.
           </p>
@@ -133,20 +133,20 @@ export default function HowBlueprintAIExtractsMaterialScopesPage() {
             Step 1: Floor plan ingestion and geometry parsing
           </h2>
           <p>
-            When a builder uploads a floor plan PDF, Blueprint AI starts with geometry &mdash; not text. The
+            When a builder uploads a floor plan PDF, Blueprint AI starts with geometry — not text. The
             AI reads the vector or raster content of the file to detect:
           </p>
           <ul className="list-disc list-inside space-y-2 text-slate-300 ml-2">
-            <li><strong className="text-white">Rooms and their footprint dimensions</strong> &mdash; length, width, and total square footage per space</li>
-            <li><strong className="text-white">Wall segments</strong> &mdash; interior vs. exterior, thickness, and linear footage</li>
-            <li><strong className="text-white">Door and window openings</strong> &mdash; count, size, and position within each wall run</li>
-            <li><strong className="text-white">Ceiling heights</strong> &mdash; pulled from notation layers or standardized defaults when not annotated</li>
+            <li><strong className="text-white">Rooms and their footprint dimensions</strong> — length, width, and total square footage per space</li>
+            <li><strong className="text-white">Wall segments</strong> — interior vs. exterior, thickness, and linear footage</li>
+            <li><strong className="text-white">Door and window openings</strong> — count, size, and position within each wall run</li>
+            <li><strong className="text-white">Ceiling heights</strong> — pulled from notation layers or standardized defaults when not annotated</li>
           </ul>
           <p>
             This geometry pass builds a spatial model of the home before any scope mapping happens. Every
             quantity calculation downstream traces back to this layer. When the lumber scope outputs
-            &ldquo;2,184 linear feet of exterior wall framing,&rdquo; that number is derived from the floor
-            plan geometry &mdash; not from a table of generic assumptions.
+            “2,184 linear feet of exterior wall framing,” that number is derived from the floor
+            plan geometry — not from a table of generic assumptions.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
@@ -162,7 +162,7 @@ export default function HowBlueprintAIExtractsMaterialScopesPage() {
               <h3 className="text-lg font-bold text-white mb-1">Kitchen and bath fixtures</h3>
               <p>
                 Sinks, tubs, showers, toilets, and vanities are detected by label and by geometry
-                pattern. A 5&times;8 wet area adjacent to the primary suite isn&apos;t ambiguous &mdash; the
+                pattern. A 5×8 wet area adjacent to the primary suite isn&apos;t ambiguous — the
                 AI recognizes the footprint and maps it to the correct plumbing and tile scopes.
               </p>
             </div>
@@ -241,7 +241,7 @@ export default function HowBlueprintAIExtractsMaterialScopesPage() {
             >
               vendor bid templates
             </Link>{" "}
-            &mdash; meaning the Framing scope flows directly into bid requests for framing subs, not into
+            — meaning the Framing scope flows directly into bid requests for framing subs, not into
             a separate manual data entry step.
           </p>
 
@@ -265,7 +265,7 @@ export default function HowBlueprintAIExtractsMaterialScopesPage() {
             For builders running multiple plan types across multiple communities, this is the
             multiplier: run the takeoff once per plan type, then apply the pricing structure for
             each community. The Magnolia plan takeoff runs in 60 seconds and inherits Community
-            A&apos;s framing vendor and Community B&apos;s framing vendor automatically &mdash; no re-entry
+            A&apos;s framing vendor and Community B&apos;s framing vendor automatically — no re-entry
             required.
           </p>
 
@@ -274,15 +274,15 @@ export default function HowBlueprintAIExtractsMaterialScopesPage() {
           </h2>
           <p>
             One underrated benefit of AI-driven takeoff is revision handling. When an architect sends
-            a plan revision &mdash; say, the primary bath gets upgraded from a tub/shower combo to a
-            standalone soaker tub &mdash; a manual estimator has to diff the two PDFs by hand and adjust
-            scope quantities individually. That&apos;s 30&ndash;90 minutes of tedious work per revision,
+            a plan revision — say, the primary bath gets upgraded from a tub/shower combo to a
+            standalone soaker tub — a manual estimator has to diff the two PDFs by hand and adjust
+            scope quantities individually. That&apos;s 30–90 minutes of tedious work per revision,
             and it&apos;s a common source of pricing errors when the diff gets missed.
           </p>
           <p>
             Blueprint AI re-runs the full pipeline on the revised PDF. Changed quantities surface
-            automatically. For a builder carrying 8 active plan types and running 10&ndash;15 revisions
-            per year, that&apos;s 40&ndash;80 estimator hours saved on revision tracking alone &mdash; before
+            automatically. For a builder carrying 8 active plan types and running 10–15 revisions
+            per year, that&apos;s 40–80 estimator hours saved on revision tracking alone — before
             counting the initial takeoff time.
           </p>
 
@@ -290,14 +290,14 @@ export default function HowBlueprintAIExtractsMaterialScopesPage() {
             From 8 hours to 60 seconds
           </h2>
           <p>
-            The complete pipeline &mdash; geometry parsing, element detection, scope mapping, quantity
-            calculation, and vendor pricing lookup &mdash; runs in under 60 seconds for a standard
-            2,000&ndash;3,500 sq ft residential floor plan. For a builder carrying 8 active plan types,
-            that&apos;s roughly 40 minutes of total takeoff work where it used to be 32&ndash;64 hours.
+            The complete pipeline — geometry parsing, element detection, scope mapping, quantity
+            calculation, and vendor pricing lookup — runs in under 60 seconds for a standard
+            2,000–3,500 sq ft residential floor plan. For a builder carrying 8 active plan types,
+            that&apos;s roughly 40 minutes of total takeoff work where it used to be 32–64 hours.
           </p>
           <p>
             The scopes are vendor-ready, budget-linked, and revision-safe by default. That&apos;s what
-            purpose-built AI material takeoff actually delivers &mdash; not a smarter spreadsheet, but
+            purpose-built AI material takeoff actually delivers — not a smarter spreadsheet, but
             a pipeline that collapses a multi-day workflow into a single upload. Learn more about
             the full takeoff workflow on the{" "}
             <Link
@@ -317,7 +317,7 @@ export default function HowBlueprintAIExtractsMaterialScopesPage() {
             See Blueprint AI run a takeoff on your floor plans.
           </h3>
           <p className="text-slate-400 text-sm mb-4">
-            Cornerstone PM™ ships with Blueprint AI built-in &mdash; no third-party takeoff subscription,
+            Cornerstone PM™ ships with Blueprint AI built-in — no third-party takeoff subscription,
             no manual scope entry. Upload a PDF and get 130+ material scopes, quantities, and pricing
             in under 60 seconds. Beta access is open and early adopters get two years free.
           </p>

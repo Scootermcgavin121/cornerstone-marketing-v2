@@ -132,8 +132,8 @@ export default function AiMlsListingGeneratorPage() {
 
           <p className="text-xl text-slate-300 font-light">
             Cornerstone PM&apos;s AI MLS Listing Generator creates accurate, compelling home listings
-            from your existing floorplan data&mdash;bedroom count, square footage, designer packages,
-            structural options, and community details&mdash;in under 60 seconds. No copy-paste from
+            from your existing floorplan data—bedroom count, square footage, designer packages,
+            structural options, and community details—in under 60 seconds. No copy-paste from
             spreadsheets. No staring at a blank page. Just give Foreman the plan name and let it
             draft.
           </p>
@@ -157,7 +157,7 @@ export default function AiMlsListingGeneratorPage() {
             What does the MLS Listing Generator actually do?
           </h2>
           <p>
-            The MLS Listing Generator is one of Cornerstone PM&apos;s five native AI agents&mdash;built
+            The MLS Listing Generator is one of Cornerstone PM&apos;s five native AI agents—built
             into the platform alongside Foreman AI, Blueprint AI takeoff, Bid Import AI, and the
             AI Support Agent. When a sales agent opens a home listing, they can invoke the
             generator and Foreman AI drafts the complete listing copy from the data already in
@@ -166,8 +166,8 @@ export default function AiMlsListingGeneratorPage() {
           </p>
           <p>
             The output is ready-to-paste copy for MLS, Zillow, Realtor.com, or your own website.
-            Agents refine it in the same conversation&mdash;&ldquo;make it warmer,&rdquo; &ldquo;shorten it for
-            Zillow,&rdquo; &ldquo;emphasize the bonus room&rdquo;&mdash;without starting over. The draft is a
+            Agents refine it in the same conversation—“make it warmer,” “shorten it for
+            Zillow,” “emphasize the bonus room”—without starting over. The draft is a
             starting point, not the final word; the sales agent owns the last pass.
           </p>
 
@@ -176,7 +176,7 @@ export default function AiMlsListingGeneratorPage() {
           </h2>
           <p>
             Custom builders write one listing per job. Production builders write the same plan
-            dozens of times across multiple communities&mdash;and every listing still has to be
+            dozens of times across multiple communities—and every listing still has to be
             slightly different: different lot premiums, different structural options, different
             designer packages, different community amenities. Generic AI tools like ChatGPT can
             draft a listing, but they require you to paste in all the spec data manually every
@@ -185,7 +185,7 @@ export default function AiMlsListingGeneratorPage() {
             account.
           </p>
           <p>
-            The result is listings that are accurate by default&mdash;not because the sales agent
+            The result is listings that are accurate by default—not because the sales agent
             manually double-checked every square footage number, but because the generator pulled
             it directly from the floorplan record.
           </p>
@@ -209,8 +209,8 @@ export default function AiMlsListingGeneratorPage() {
           <p>
             The critical difference is data sourcing. When a sales agent pastes specs into a
             generic AI tool, they are manually bridging the gap between their construction
-            platform and the AI. Every number has to come from somewhere&mdash;a spreadsheet, a
-            print-out, a text thread&mdash;and every manual transfer is an error opportunity.
+            platform and the AI. Every number has to come from somewhere—a spreadsheet, a
+            print-out, a text thread—and every manual transfer is an error opportunity.
           </p>
           <p>
             Foreman AI reads directly from your Cornerstone PM account. The bedroom count comes
@@ -290,7 +290,7 @@ export default function AiMlsListingGeneratorPage() {
               sales pipeline
             </Link>{" "}
             tracks prospects from first inquiry through contract. The listing sheet is the
-            content layer that feeds that pipeline&mdash;the external-facing copy that gets a
+            content layer that feeds that pipeline—the external-facing copy that gets a
             buyer from a Zillow search to a model home tour. When the listing is wrong or generic,
             it underperforms at the top of the funnel. When it accurately reflects the plan, the
             options, and the community, it qualifies buyers before they walk through the door.
@@ -304,7 +304,7 @@ export default function AiMlsListingGeneratorPage() {
               listing sheet
             </Link>{" "}
             process at scale, the AI generator means every new phase gets polished listings
-            the day lots go on sale&mdash;not two weeks later after the sales team finds bandwidth
+            the day lots go on sale—not two weeks later after the sales team finds bandwidth
             to write them.
           </p>
 
@@ -315,7 +315,7 @@ export default function AiMlsListingGeneratorPage() {
             The MLS Listing Generator is one skill in Foreman AI&apos;s catalog of 396+ construction
             skills across 20 categories. The same agent that generates your listings can also
             compare bids, create purchase orders, analyze jobsite photos, generate scope of work
-            documents, and run profitability reports&mdash;all in one conversation, reading and
+            documents, and run profitability reports—all in one conversation, reading and
             writing your actual Cornerstone PM data.
           </p>
           <p>
@@ -344,10 +344,10 @@ export default function AiMlsListingGeneratorPage() {
 
           <div className="not-prose rounded-xl border border-slate-800 bg-slate-900/40 p-6 my-8">
             <p className="text-slate-400 text-sm italic leading-relaxed border-l-2 border-emerald-500/40 pl-4">
-              &ldquo;Every production builder writes the same plan 40 times and writes the listing
+              “Every production builder writes the same plan 40 times and writes the listing
               from scratch 40 times. The MLS Listing Generator closes that gap: the floorplan
               data you already captured in Cornerstone becomes the listing copy you&apos;d otherwise
-              spend an afternoon writing.&rdquo;
+              spend an afternoon writing.”
             </p>
           </div>
 

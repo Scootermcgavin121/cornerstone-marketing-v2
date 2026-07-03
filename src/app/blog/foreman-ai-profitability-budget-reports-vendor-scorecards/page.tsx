@@ -236,7 +236,7 @@ export default function ForemanProfitabilityReportsPage() {
               Foreman is an agent, not a chatbot
             </Link>
             : it doesn&apos;t just describe what to look at, it goes and looks. A prompt like
-            &ldquo;show me profitability across Community A broken down by scope&rdquo; returns an actual
+            “show me profitability across Community A broken down by scope” returns an actual
             answer using your actual numbers — not a template you fill in yourself.
           </p>
 

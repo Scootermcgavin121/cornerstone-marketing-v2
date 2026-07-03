@@ -287,8 +287,8 @@ export default function TrueCostSpreadsheetBudgetsPage() {
             </li>
             <li>
               <strong className="text-white">Bid Import AI</strong> processes vendor bids,
-              matches scopes accurately with cross-scope penalties (no &ldquo;Drywall&rdquo; landing
-              in &ldquo;Electrical&rdquo;), and replaces instead of duplicating on re-import. When the
+              matches scopes accurately with cross-scope penalties (no “Drywall” landing
+              in “Electrical”), and replaces instead of duplicating on re-import. When the
               framing contractor revises their number, the new bid replaces the old one —
               no double-counting, no hunting for the stale cell to delete.
             </li>
@@ -360,7 +360,7 @@ export default function TrueCostSpreadsheetBudgetsPage() {
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            The migration concern: &ldquo;We have years of historical data in spreadsheets&rdquo;
+            The migration concern: “We have years of historical data in spreadsheets”
           </h2>
 
           <p>
@@ -384,9 +384,9 @@ export default function TrueCostSpreadsheetBudgetsPage() {
           </h2>
 
           <p>
-            The honest TCO calculation isn&apos;t &ldquo;does this software cost more than Excel.&rdquo;
-            It&apos;s &ldquo;how much is my current process costing me per home — in labor, in margin
-            variance, in pricing errors?&rdquo;
+            The honest TCO calculation isn&apos;t “does this software cost more than Excel.”
+            It&apos;s “how much is my current process costing me per home — in labor, in margin
+            variance, in pricing errors?”
           </p>
 
           <p>

@@ -49,8 +49,8 @@ export default function PrivacyPage() {
         <div className="space-y-10">
           <Section id="intro" title="Overview">
             <p>
-              Cornerstone Builder Software LLC (&ldquo;Cornerstone PM,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or
-              &ldquo;our&rdquo;) operates Cornerstone PM&trade; (the &ldquo;Service&rdquo;), a scheduling, CRM, and
+              Cornerstone Builder Software LLC (“Cornerstone PM,” “we,” “us,” or
+              “our”) operates Cornerstone PM™ (the “Service”), a scheduling, CRM, and
               project-management platform for home builders. This Privacy Policy explains what information we collect,
               how we use it, who we share it with, and the choices and rights you have. By using the Service, you agree
               to the practices described here.
@@ -66,7 +66,7 @@ export default function PrivacyPage() {
             </p>
             <p>
               <strong className="text-white">Project &amp; CRM data.</strong> As you use the Service, we store the
-              content you and your organization put into it &mdash; homes and lots, schedules and tasks, buyer/customer
+              content you and your organization put into it — homes and lots, schedules and tasks, buyer/customer
               records, selections and budgets, purchase orders, bids, vendors, documents, photos, and messages. Images
               may be automatically compressed for storage efficiency.
             </p>
@@ -85,7 +85,7 @@ export default function PrivacyPage() {
             </p>
             <p>
               <strong className="text-white">AI interactions.</strong> When you use AI-assisted features (including
-              Foreman AI&trade;, Blueprint AI, and Bid Import AI), the relevant messages or documents are sent to our AI
+              Foreman AI™, Blueprint AI, and Bid Import AI), the relevant messages or documents are sent to our AI
               provider for processing. We do not use your content or AI conversations to train AI models.
             </p>
           </Section>
@@ -109,18 +109,18 @@ export default function PrivacyPage() {
             <p>We share data only with service providers who help us operate the Service, namely:</p>
             <ul className="list-disc pl-5 space-y-2 marker:text-slate-600">
               <li>
-                <strong className="text-white">Hosting &amp; infrastructure providers</strong> &mdash; to host the
+                <strong className="text-white">Hosting &amp; infrastructure providers</strong> — to host the
                 application and database.
               </li>
               <li>
-                <strong className="text-white">AI provider(s)</strong> &mdash; to power AI-assisted features.
+                <strong className="text-white">AI provider(s)</strong> — to power AI-assisted features.
               </li>
               <li>
-                <strong className="text-white">Email / notification provider</strong> &mdash; to deliver transactional
+                <strong className="text-white">Email / notification provider</strong> — to deliver transactional
                 messages.
               </li>
               <li>
-                <strong className="text-white">Intuit / QuickBooks Online</strong> &mdash; to sync accounting records
+                <strong className="text-white">Intuit / QuickBooks Online</strong> — to sync accounting records
                 when your organization connects the integration (see{" "}
                 <Link
                   href="#quickbooks"
@@ -151,15 +151,17 @@ export default function PrivacyPage() {
           <Section id="quickbooks" title="5. QuickBooks Online Integration">
             <p>
               Cornerstone PM offers an optional integration with QuickBooks Online, provided by Intuit Inc. The
-              integration is enabled only when an authorized user in your organization connects it through Intuit&rsquo;s
+              integration is enabled only when an authorized user in your organization connects it through Intuit’s
               OAuth 2.0 authorization flow. We never see or store your Intuit login credentials.
             </p>
             <ul className="list-disc pl-5 space-y-2 marker:text-slate-600">
               <li>
-                <strong className="text-white">One-way sync.</strong> The integration pushes accounting records
-                <em> from Cornerstone PM to QuickBooks Online</em> (for example, vendors, customers, and
-                purchase/expense records). Cornerstone PM is the system of record for your project data; QuickBooks
-                receives the accounting entries.
+                <strong className="text-white">Push-based sync with limited read-back.</strong> The integration
+                primarily pushes accounting records <em>from Cornerstone PM to QuickBooks Online</em> (for example,
+                vendors, customers, and purchase/expense records). Cornerstone PM remains the system of record for your
+                project data. It reads a limited set of data back from QuickBooks — namely bill/payment status (to mark
+                the matching purchase order paid) and vendor field changes — to keep the two systems consistent. It does
+                not perform full two-way accounting mutation.
               </li>
               <li>
                 <strong className="text-white">Accounting scope only.</strong> We request only the accounting scope
@@ -185,7 +187,7 @@ export default function PrivacyPage() {
                 rel="noopener noreferrer"
                 className="text-emerald-400 hover:text-emerald-300 underline underline-offset-2"
               >
-                Intuit&rsquo;s Privacy Statement
+                Intuit’s Privacy Statement
               </a>
               .
             </p>
@@ -204,18 +206,18 @@ export default function PrivacyPage() {
             <p>Depending on your location, you may have the right to:</p>
             <ul className="list-disc pl-5 space-y-2 marker:text-slate-600">
               <li>
-                <strong className="text-white">Access</strong> &mdash; request a copy of the data we hold about you.
+                <strong className="text-white">Access</strong> — request a copy of the data we hold about you.
               </li>
               <li>
-                <strong className="text-white">Correction</strong> &mdash; update inaccurate information in your profile
+                <strong className="text-white">Correction</strong> — update inaccurate information in your profile
                 settings.
               </li>
               <li>
-                <strong className="text-white">Deletion</strong> &mdash; request deletion of your account and associated
+                <strong className="text-white">Deletion</strong> — request deletion of your account and associated
                 data.
               </li>
               <li>
-                <strong className="text-white">Export / portability</strong> &mdash; download your data in a standard
+                <strong className="text-white">Export / portability</strong> — download your data in a standard
                 format (CSV or JSON).
               </li>
             </ul>
@@ -238,7 +240,7 @@ export default function PrivacyPage() {
             </p>
           </Section>
 
-          <Section id="children" title="9. Children&rsquo;s Privacy">
+          <Section id="children" title="9. Children’s Privacy">
             <p>
               Cornerstone PM is a business tool and is not directed to children under 13. We do not knowingly collect
               personal information from children.
@@ -248,7 +250,7 @@ export default function PrivacyPage() {
           <Section id="changes" title="10. Changes to This Policy">
             <p>
               We may update this Privacy Policy from time to time. Material changes will be reflected by updating the
-              &ldquo;Last updated&rdquo; date above and, where appropriate, via in-app or email notice. Continued use of
+              “Last updated” date above and, where appropriate, via in-app or email notice. Continued use of
               the Service after changes take effect constitutes acceptance.
             </p>
           </Section>

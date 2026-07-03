@@ -215,7 +215,7 @@ export default function HiddenCostSwitchingPage() {
           <p>
             The subscription delta between platforms — say, $200/month — looks manageable. But
             add 40 hours of internal staff time at $60/hour, a $4,000 migration consultant, and
-            three weeks of reduced productivity during the transition, and a &ldquo;simple&rdquo; platform
+            three weeks of reduced productivity during the transition, and a “simple” platform
             switch costs $10,000–$20,000 in absorbed costs before any explicit fee is paid.
           </p>
           <p>
@@ -267,7 +267,7 @@ export default function HiddenCostSwitchingPage() {
             format and pre-populates the field mapping before you see the screen.
           </p>
           <p>
-            For any other platform, select &ldquo;CSV / Excel&rdquo; and the AI reads your headers and data
+            For any other platform, select “CSV / Excel” and the AI reads your headers and data
             patterns, builds the mapping, and flags low-confidence matches for your review. The
             manual review step typically takes under five minutes. Then: dry-run to verify record
             counts, confirm, done. Background import completes in under 60 seconds for a typical
@@ -349,7 +349,7 @@ export default function HiddenCostSwitchingPage() {
             export fee, no support ticket, no waiting period.
           </p>
           <p>
-            &ldquo;Your data is always yours&rdquo; should be table stakes in SaaS. In construction software,
+            “Your data is always yours” should be table stakes in SaaS. In construction software,
             it still isn&apos;t. The platforms that make data export painful are explicitly betting that
             you&apos;ll stay because leaving is expensive. Cornerstone PM removes that bet entirely.
           </p>

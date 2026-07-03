@@ -165,10 +165,10 @@ export default function BuildxactVsCornerstonePage() {
 
           <p className="text-xl text-slate-300 font-light">
             Buildxact is an estimating-first platform built for residential builders and
-            remodelers. Cornerstone PM&trade; is a production home builder platform with a
+            remodelers. Cornerstone PM™ is a production home builder platform with a
             plan-level design center, bundled AI agents, and multi-community vendor workflows.
-            The core difference: Buildxact manages selections per job; Cornerstone PM&trade;
-            manages them per floorplan &mdash; and that architectural choice changes everything
+            The core difference: Buildxact manages selections per job; Cornerstone PM™
+            manages them per floorplan — and that architectural choice changes everything
             for a production builder.
           </p>
 
@@ -200,32 +200,32 @@ export default function BuildxactVsCornerstonePage() {
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
             <li>
-              <strong className="text-white">Foundation ($199/mo)</strong> &mdash; estimating,
+              <strong className="text-white">Foundation ($199/mo)</strong> — estimating,
               quoting, and basic job management
             </li>
             <li>
-              <strong className="text-white">Pro ($399/mo)</strong> &mdash; adds client portal,
+              <strong className="text-white">Pro ($399/mo)</strong> — adds client portal,
               selections tracking, and supplier integrations
             </li>
             <li>
-              <strong className="text-white">Master ($599/mo)</strong> &mdash; full feature set
+              <strong className="text-white">Master ($599/mo)</strong> — full feature set
               with advanced reporting and team permissions
             </li>
           </ul>
           <p>
             On top of the base plan, Buildxact sells three AI modules under the
-            &ldquo;Blu&rdquo; brand at $99&ndash;$149/month each:
+            “Blu” brand at $99–$149/month each:
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
-            <li>Blu Estimate Generator &mdash; AI-assisted line-item creation from scope</li>
-            <li>Blu Takeoff Assistant &mdash; AI quantities from floor plans</li>
-            <li>Blu Estimate Reviewer &mdash; flags incomplete or inconsistent estimates</li>
+            <li>Blu Estimate Generator — AI-assisted line-item creation from scope</li>
+            <li>Blu Takeoff Assistant — AI quantities from floor plans</li>
+            <li>Blu Estimate Reviewer — flags incomplete or inconsistent estimates</li>
           </ul>
           <p>
             For a custom builder or remodeler where every job is unique and fast quoting is the
             bottleneck, this stack is genuinely well-designed. The issue arises when production
-            builders &mdash; who repeat the same plans across dozens or hundreds of homes
-            &mdash; ask Buildxact to serve as their design center and vendor bidding platform.
+            builders — who repeat the same plans across dozens or hundreds of homes
+            — ask Buildxact to serve as their design center and vendor bidding platform.
             That&apos;s not what it was built to do.
           </p>
 
@@ -233,7 +233,7 @@ export default function BuildxactVsCornerstonePage() {
             What&apos;s the difference between selections software and a design center?
           </h2>
           <p>
-            This is the question at the heart of the Buildxact vs Cornerstone PM&trade;
+            This is the question at the heart of the Buildxact vs Cornerstone PM™
             comparison, and the distinction matters more than most builders realize before they
             hit it.
           </p>
@@ -248,7 +248,7 @@ export default function BuildxactVsCornerstonePage() {
             <strong className="text-white">A production design center</strong> operates at the
             floorplan level. The Magnolia plan has a kitchen options package. That package is
             priced once, attached to the Magnolia plan, and reused for every Magnolia you sell
-            &mdash; in every community, across every buyer. When vendor pricing changes, you
+            — in every community, across every buyer. When vendor pricing changes, you
             update it once and it propagates everywhere. When a buyer picks the Coastal
             Designer Package in your design appointment, every option in the kitchen category
             auto-locks to that package&apos;s selections. No per-job re-entry.
@@ -256,15 +256,15 @@ export default function BuildxactVsCornerstonePage() {
           <p>
             Buildxact has a selections module. It does not have a production design center.
             Selections in Buildxact are managed per-job as allowance-style budget line items
-            &mdash; the same model that CoConstruct and early Buildertrend used, and the model
+            — the same model that CoConstruct and early Buildertrend used, and the model
             that production builders hit a wall with once they&apos;re repeating plans at scale.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            How Cornerstone PM&trade;&apos;s design center works
+            How Cornerstone PM™&apos;s design center works
           </h2>
           <p>
-            The Cornerstone PM&trade; design center is built around the production workflow
+            The Cornerstone PM™ design center is built around the production workflow
             specifically. Here&apos;s what that means in practice:
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
@@ -277,12 +277,12 @@ export default function BuildxactVsCornerstonePage() {
             <li>
               <strong className="text-white">Per-floorplan options pricing.</strong> The
               Magnolia plan&apos;s options are priced at the plan level. Sell 100 Magnolias
-              across 5 communities and those options follow automatically &mdash; no re-entry
+              across 5 communities and those options follow automatically — no re-entry
               per lot.
             </li>
             <li>
               <strong className="text-white">Structural vs Designer scope separation.</strong>{" "}
-              Bid templates sent to vendors filter scope by trade &mdash; your framing crew
+              Bid templates sent to vendors filter scope by trade — your framing crew
               sees Structural scope only; your interior designer sees Designer scope only.
               Buildxact sends one undifferentiated estimate.
             </li>
@@ -293,7 +293,7 @@ export default function BuildxactVsCornerstonePage() {
             </li>
             <li>
               <strong className="text-white">Zero filler pricing.</strong> Every dollar shown
-              to a buyer traces to actual vendor pricing &mdash; no synthetic splits or
+              to a buyer traces to actual vendor pricing — no synthetic splits or
               estimator fudging.
             </li>
           </ul>
@@ -303,13 +303,13 @@ export default function BuildxactVsCornerstonePage() {
               href="/home-builder-project-management-software"
               className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
             >
-              Cornerstone PM&trade; for production home builders
+              Cornerstone PM™ for production home builders
             </Link>
             .
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            Feature comparison: Buildxact vs Cornerstone PM&trade;
+            Feature comparison: Buildxact vs Cornerstone PM™
           </h2>
 
           <div className="overflow-x-auto rounded-xl border border-slate-800 not-prose">
@@ -321,7 +321,7 @@ export default function BuildxactVsCornerstonePage() {
                     Buildxact
                   </th>
                   <th className="px-5 py-4 text-cyan-400 font-medium text-center">
-                    Cornerstone PM&trade;
+                    Cornerstone PM™
                   </th>
                 </tr>
               </thead>
@@ -345,8 +345,8 @@ export default function BuildxactVsCornerstonePage() {
           </div>
 
           <p className="text-sm text-slate-500 mt-2">
-            &ldquo;Partial&rdquo; for Buildxact AI takeoff reflects the Blu Takeoff Assistant
-            add-on ($99/mo extra). Cornerstone PM&trade;&apos;s Blueprint AI is bundled.
+            “Partial” for Buildxact AI takeoff reflects the Blu Takeoff Assistant
+            add-on ($99/mo extra). Cornerstone PM™&apos;s Blueprint AI is bundled.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
@@ -358,58 +358,58 @@ export default function BuildxactVsCornerstonePage() {
           </p>
           <p>
             Buildxact&apos;s Master plan is $599/month. Add Blu Takeoff Assistant ($99/mo) and
-            Blu Estimate Generator ($149/mo) and you&apos;re at $847/month &mdash; for AI
+            Blu Estimate Generator ($149/mo) and you&apos;re at $847/month — for AI
             features that are estimating-only and don&apos;t touch your design center, vendor
             bidding, or purchasing workflow.
           </p>
           <p>
-            Cornerstone PM&trade;&apos;s Pro+ plan is also $599/month and bundles five AI
+            Cornerstone PM™&apos;s Pro+ plan is also $599/month and bundles five AI
             agents with zero add-on fees:
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
             <li>
-              <strong className="text-white">Blueprint AI</strong> &mdash; parses a floor plan
+              <strong className="text-white">Blueprint AI</strong> — parses a floor plan
               PDF and extracts 130+ material scopes in under 60 seconds.{" "}
               <Link
                 href="/ai-takeoff"
                 className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
               >
-                See Blueprint AI &rarr;
+                See Blueprint AI →
               </Link>
             </li>
             <li>
-              <strong className="text-white">Foreman AI</strong> &mdash; an in-app agent with
+              <strong className="text-white">Foreman AI</strong> — an in-app agent with
               396+ skills covering purchasing workflows, vendor management, schedule
               optimization, budget reports, and profitability analysis. Foreman reads AND
-              writes data &mdash; it takes real actions, not just chat.{" "}
+              writes data — it takes real actions, not just chat.{" "}
               <Link
                 href="/foreman"
                 className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
               >
-                Meet Foreman &rarr;
+                Meet Foreman →
               </Link>
             </li>
             <li>
-              <strong className="text-white">Bid Import AI</strong> &mdash; auto-maps vendor
+              <strong className="text-white">Bid Import AI</strong> — auto-maps vendor
               bid spreadsheets to your scope items, eliminating manual column matching.
             </li>
             <li>
-              <strong className="text-white">AI MLS Listing Generator</strong> &mdash;
+              <strong className="text-white">AI MLS Listing Generator</strong> —
               generates listing copy directly from your floorplan and options data.
             </li>
             <li>
-              <strong className="text-white">AI Support Agent</strong> &mdash; answers
+              <strong className="text-white">AI Support Agent</strong> — answers
               platform questions in context without leaving your workflow.
             </li>
           </ul>
           <p>
-            Buildxact&apos;s AI is estimating-focused by design. Cornerstone PM&trade;&apos;s
-            AI was built around the full production-builder operation &mdash; from takeoff
+            Buildxact&apos;s AI is estimating-focused by design. Cornerstone PM™&apos;s
+            AI was built around the full production-builder operation — from takeoff
             through vendor bid management to buyer-facing design.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            Vendor bidding: where Buildxact stops and Cornerstone PM&trade; continues
+            Vendor bidding: where Buildxact stops and Cornerstone PM™ continues
           </h2>
           <p>
             Buildxact handles quotes and cost estimation well. Once a quote is accepted and
@@ -426,12 +426,12 @@ export default function BuildxactVsCornerstonePage() {
               Excel bid templates scoped to each vendor&apos;s trade
             </li>
             <li>
-              Vendors submit through a token-protected portal &mdash; no Cornerstone account
+              Vendors submit through a token-protected portal — no Cornerstone account
               required
             </li>
             <li>Side-by-side bid comparison when 2+ vendors respond</li>
             <li>
-              Bids lock on acceptance &mdash; protecting awarded pricing from post-award
+              Bids lock on acceptance — protecting awarded pricing from post-award
               edits
             </li>
             <li>
@@ -457,7 +457,7 @@ export default function BuildxactVsCornerstonePage() {
           <div className="grid sm:grid-cols-2 gap-4 not-prose my-6">
             <div className="rounded-xl border border-slate-700 bg-slate-900/40 p-6">
               <h3 className="text-lg font-bold text-white mb-3">
-                Use Buildxact if you are&hellip;
+                Use Buildxact if you are…
               </h3>
               <ul className="space-y-2 text-slate-300 text-sm">
                 <li className="flex items-start gap-2">
@@ -480,12 +480,12 @@ export default function BuildxactVsCornerstonePage() {
             </div>
             <div className="rounded-xl border border-cyan-800/40 bg-cyan-950/20 p-6">
               <h3 className="text-lg font-bold text-white mb-3">
-                Use Cornerstone PM&trade; if you are&hellip;
+                Use Cornerstone PM™ if you are…
               </h3>
               <ul className="space-y-2 text-slate-300 text-sm">
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-cyan-400 mt-0.5 shrink-0" />
-                  A production home builder (5&ndash;200 homes/year)
+                  A production home builder (5–200 homes/year)
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-cyan-400 mt-0.5 shrink-0" />
@@ -509,7 +509,7 @@ export default function BuildxactVsCornerstonePage() {
 
           <p>
             Buildxact does estimating well. The problem isn&apos;t that it&apos;s weak
-            &mdash; it&apos;s that production home building requires a different product
+            — it&apos;s that production home building requires a different product
             category. If you&apos;re a production builder evaluating platforms, compare options
             on the{" "}
             <Link
@@ -533,15 +533,15 @@ export default function BuildxactVsCornerstonePage() {
               Built for production builders, not estimating tools
             </h2>
             <p className="text-slate-300 mb-6 max-w-xl mx-auto">
-              See how Cornerstone PM&trade; handles Designer Packages, per-floorplan options
-              pricing, AI takeoff, and multi-community vendor management &mdash; the workflows
+              See how Cornerstone PM™ handles Designer Packages, per-floorplan options
+              pricing, AI takeoff, and multi-community vendor management — the workflows
               Buildxact wasn&apos;t designed for.
             </p>
             <Link
               href="/beta"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-base transition-colors"
             >
-              Request Early Access &rarr;
+              Request Early Access →
             </Link>
           </div>
         </div>

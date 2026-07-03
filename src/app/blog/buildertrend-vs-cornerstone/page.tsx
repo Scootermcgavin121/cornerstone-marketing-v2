@@ -101,7 +101,7 @@ export default function BuildertrendPost() {
             makes it powerful for a national builder makes it overwhelming for a 15-home-a-year shop.
             We&apos;ve talked to dozens of builders who are paying $499/mo and using maybe 20% of the
             features — while still managing their subs via text and tracking POs in Excel because
-            &ldquo;it&apos;s just easier.&rdquo;
+            “it&apos;s just easier.”
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">What you get with Cornerstone PM™</h2>
@@ -119,7 +119,7 @@ export default function BuildertrendPost() {
             onto your construction software.
           </p>
           <p>
-            And here&apos;s the part the old &ldquo;cheaper but lighter&rdquo; story gets wrong: on the features
+            And here&apos;s the part the old “cheaper but lighter” story gets wrong: on the features
             residential builders actually use, Cornerstone PM™ doesn&apos;t just match BuilderTrend — it
             goes further. AI blueprint takeoffs, the Foreman AI agent that reads <em>and writes</em> your
             data, a punch-list generator, an AI MLS listing generator, jobsite QR codes, a community/lot
@@ -131,7 +131,7 @@ export default function BuildertrendPost() {
             models the displacement <em>in the option itself</em> — so the upgrade PO and the credit for
             the displaced standard fire from the same selection event. BuilderTrend automates the upgrade
             PO, but the offsetting credit is a separate manual variance PO a human has to remember to
-            create, on every swap, on every lot. Multiply that across a community and the &ldquo;cheaper&rdquo;
+            create, on every swap, on every lot. Multiply that across a community and the “cheaper”
             software is quietly leaking margin.
           </p>
           <p>

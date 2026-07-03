@@ -149,7 +149,7 @@ export default function AiConstructionPurchasingPage() {
               href="/beta"
               className="px-8 py-4 rounded-full bg-amber-400 text-slate-900 font-bold text-lg hover:bg-amber-300 transition-all duration-200 shadow-lg shadow-amber-500/30 hover:-translate-y-0.5"
             >
-              Get Beta Access &rarr;
+              Get Beta Access →
             </Link>
             <a
               href="#purchasing"
@@ -234,7 +234,7 @@ export default function AiConstructionPurchasingPage() {
                 <div className="p-5 border-b border-slate-800/60">
                   <div className="flex items-start gap-3 mb-3">
                     <span className="text-amber-400 font-black text-lg leading-none flex-shrink-0 mt-0.5">You:</span>
-                    <p className="text-white font-medium italic">&ldquo;{ex.prompt}&rdquo;</p>
+                    <p className="text-white font-medium italic">“{ex.prompt}”</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <img src="/foreman-mascot.png" alt="Foreman" className="h-5 w-5 object-contain flex-shrink-0 mt-0.5" />
@@ -251,7 +251,7 @@ export default function AiConstructionPurchasingPage() {
               <div className="p-5 border-b border-slate-800/60">
                 <div className="flex items-start gap-3 mb-3">
                   <span className="text-amber-400 font-black text-lg leading-none flex-shrink-0 mt-0.5">You:</span>
-                  <p className="text-white font-medium italic">&ldquo;{prompts[4]?.prompt}&rdquo;</p>
+                  <p className="text-white font-medium italic">“{prompts[4]?.prompt}”</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <img src="/foreman-mascot.png" alt="Foreman" className="h-5 w-5 object-contain flex-shrink-0 mt-0.5" />
@@ -355,7 +355,7 @@ export default function AiConstructionPurchasingPage() {
               </div>
             </div>
             <p className="text-slate-400 text-lg leading-relaxed mb-6">
-              Cornerstone PM is building the first construction management platform where your AI assistant has <strong className="text-white">direct access to supplier catalogs</strong>. Foreman connects to supplier APIs to pull real-time product data, live pricing, and official product images &mdash; straight into your parts catalog and design center.
+              Cornerstone PM is building the first construction management platform where your AI assistant has <strong className="text-white">direct access to supplier catalogs</strong>. Foreman connects to supplier APIs to pull real-time product data, live pricing, and official product images — straight into your parts catalog and design center.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
               {[
@@ -426,7 +426,7 @@ export default function AiConstructionPurchasingPage() {
               href="/api-access"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-cyan-500/30 text-cyan-400 font-semibold text-sm hover:bg-cyan-500/10 transition-all duration-200"
             >
-              See the full BYOA platform &rarr;
+              See the full BYOA platform →
             </Link>
           </div>
         </div>

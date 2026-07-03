@@ -164,7 +164,7 @@ export default function CoConstructVsCornerstonePage() {
 
           <p className="text-xl text-slate-300 font-light">
             CoConstruct was built for custom home builders managing one-of-a-kind projects with
-            negotiated allowances and job-level selections. Cornerstone PM&trade; is built for
+            negotiated allowances and job-level selections. Cornerstone PM™ is built for
             production home builders selling plan repeats across communities with a buyer-facing
             design center and 64 Designer Packages. These are different product categories
             solving different problems.
@@ -172,7 +172,7 @@ export default function CoConstructVsCornerstonePage() {
 
           <p>
             CoConstruct&apos;s homepage now redirects to a Buildertrend migration landing page
-            &mdash; the platform was acquired and customers are being moved to Buildertrend.
+            — the platform was acquired and customers are being moved to Buildertrend.
             If you&apos;re a production builder evaluating your next platform and CoConstruct
             came up in your search, this is the right time to ask whether either product was
             ever built for your business model. For the full category overview, start at{" "}
@@ -211,7 +211,7 @@ export default function CoConstructVsCornerstonePage() {
           </h2>
           <p>
             Production home building runs on a different set of economics. You sell plan
-            repeats &mdash; the Magnolia plan gets sold 80 times across five communities. The
+            repeats — the Magnolia plan gets sold 80 times across five communities. The
             kitchen upgrade package is the same product in Community A as it is in Community D.
             You configure it once; it should sell everywhere without re-entry.
           </p>
@@ -223,15 +223,15 @@ export default function CoConstructVsCornerstonePage() {
           </p>
           <p>
             Every home you sell under a job-level model is manual overhead. That overhead scales
-            linearly with home count &mdash; which is exactly the wrong direction for a
+            linearly with home count — which is exactly the wrong direction for a
             production builder trying to grow.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            How does the Cornerstone PM&trade; design center actually work?
+            How does the Cornerstone PM™ design center actually work?
           </h2>
           <p>
-            Cornerstone PM&trade; is built around a plan-level options model. Here is how it
+            Cornerstone PM™ is built around a plan-level options model. Here is how it
             works in practice:
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
@@ -251,7 +251,7 @@ export default function CoConstructVsCornerstonePage() {
             </li>
             <li>
               <strong className="text-white">Structural vs Designer scope separation:</strong>{" "}
-              Bid templates sent to vendors automatically filter by scope type &mdash; structural
+              Bid templates sent to vendors automatically filter by scope type — structural
               subs see structural scopes, designer vendors see designer scopes. No manual
               filtering, no irrelevant line items cluttering vendor bids.
             </li>
@@ -268,12 +268,12 @@ export default function CoConstructVsCornerstonePage() {
             </li>
           </ul>
           <p>
-            None of these concepts exist in CoConstruct. They are not missing features &mdash;
+            None of these concepts exist in CoConstruct. They are not missing features —
             they are a different product model entirely.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            Feature comparison: CoConstruct vs Cornerstone PM&trade;
+            Feature comparison: CoConstruct vs Cornerstone PM™
           </h2>
 
           <div className="overflow-x-auto rounded-xl border border-slate-800 not-prose">
@@ -283,7 +283,7 @@ export default function CoConstructVsCornerstonePage() {
                   <th className="text-left px-5 py-4 text-slate-400 font-medium">Feature</th>
                   <th className="px-5 py-4 text-slate-400 font-medium text-center">CoConstruct</th>
                   <th className="px-5 py-4 text-cyan-400 font-medium text-center">
-                    Cornerstone PM&trade;
+                    Cornerstone PM™
                   </th>
                 </tr>
               </thead>
@@ -313,7 +313,7 @@ export default function CoConstructVsCornerstonePage() {
             leaving?
           </p>
           <p>
-            Buildertrend was built for the same market as CoConstruct &mdash; custom builders,
+            Buildertrend was built for the same market as CoConstruct — custom builders,
             remodelers, and single-project GCs. It has better tooling and a larger ecosystem
             than CoConstruct, but its core model is still job-level selections, not
             plan-level production. The community/lot/model abstraction production builders need
@@ -330,7 +330,7 @@ export default function CoConstructVsCornerstonePage() {
           </h2>
           <p>
             The design center is the highest-margin interaction in a home sale. Buyers who
-            engage with a well-designed options process spend more on upgrades &mdash; and
+            engage with a well-designed options process spend more on upgrades — and
             they feel better about the purchase because they were in control of the choices.
           </p>
           <p>
@@ -341,7 +341,7 @@ export default function CoConstructVsCornerstonePage() {
             revenue conversation.
           </p>
           <p>
-            Cornerstone PM&trade; also eliminates filler pricing entirely &mdash; every dollar
+            Cornerstone PM™ also eliminates filler pricing entirely — every dollar
             shown to a buyer traces back to real vendor pricing. Material costs come from AI
             takeoff parts matched to vendor quotes; labor costs come from accepted vendor bids.
             There are no synthetic estimates, no estimator-inserted placeholders, no defaults
@@ -359,16 +359,16 @@ export default function CoConstructVsCornerstonePage() {
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            AI capabilities: what Cornerstone PM&trade; adds to the design center workflow
+            AI capabilities: what Cornerstone PM™ adds to the design center workflow
           </h2>
           <p>
-            CoConstruct has no AI agents. Cornerstone PM&trade; ships five purpose-built AI
+            CoConstruct has no AI agents. Cornerstone PM™ ships five purpose-built AI
             agents for residential production, with the design center workflow benefiting from
             three of them directly:
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
             <li>
-              <strong className="text-white">Blueprint AI</strong> &mdash; parses a floor plan
+              <strong className="text-white">Blueprint AI</strong> — parses a floor plan
               PDF and extracts 130+ material scopes in under 60 seconds. Takeoff output flows
               directly into scope items and design option pricing, eliminating the manual
               estimation step that creates filler pricing.{" "}
@@ -376,11 +376,11 @@ export default function CoConstructVsCornerstonePage() {
                 href="/ai-takeoff"
                 className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
               >
-                See Blueprint AI &rarr;
+                See Blueprint AI →
               </Link>
             </li>
             <li>
-              <strong className="text-white">Foreman AI</strong> &mdash; an in-app agent with
+              <strong className="text-white">Foreman AI</strong> — an in-app agent with
               396+ skills that reads AND writes data. In the design center context, Foreman can
               generate scope-of-work documents, run profitability analysis on option pricing,
               detect gaps between options and scope coverage, and produce vendor scorecards for
@@ -389,11 +389,11 @@ export default function CoConstructVsCornerstonePage() {
                 href="/foreman"
                 className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
               >
-                Meet Foreman &rarr;
+                Meet Foreman →
               </Link>
             </li>
             <li>
-              <strong className="text-white">Bid Import AI</strong> &mdash; auto-maps vendor
+              <strong className="text-white">Bid Import AI</strong> — auto-maps vendor
               bid spreadsheets to your scope items. No manual column matching. Bids from
               cabinet vendors, countertop suppliers, and fixture distributors flow directly
               into option pricing.
@@ -405,13 +405,13 @@ export default function CoConstructVsCornerstonePage() {
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            Who should use CoConstruct/Buildertrend, and who should use Cornerstone PM&trade;?
+            Who should use CoConstruct/Buildertrend, and who should use Cornerstone PM™?
           </h2>
 
           <div className="grid sm:grid-cols-2 gap-4 not-prose my-6">
             <div className="rounded-xl border border-slate-700 bg-slate-900/40 p-6">
               <h3 className="text-lg font-bold text-white mb-3">
-                CoConstruct / Buildertrend fits if you are&hellip;
+                CoConstruct / Buildertrend fits if you are…
               </h3>
               <ul className="space-y-2 text-slate-300 text-sm">
                 <li className="flex items-start gap-2">
@@ -434,12 +434,12 @@ export default function CoConstructVsCornerstonePage() {
             </div>
             <div className="rounded-xl border border-cyan-800/40 bg-cyan-950/20 p-6">
               <h3 className="text-lg font-bold text-white mb-3">
-                Cornerstone PM&trade; fits if you are&hellip;
+                Cornerstone PM™ fits if you are…
               </h3>
               <ul className="space-y-2 text-slate-300 text-sm">
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-cyan-400 mt-0.5 shrink-0" />
-                  A production builder doing 5&ndash;200 homes/year
+                  A production builder doing 5–200 homes/year
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-cyan-400 mt-0.5 shrink-0" />
@@ -464,7 +464,7 @@ export default function CoConstructVsCornerstonePage() {
           <p>
             The bottom line: CoConstruct was a capable platform for custom builders, and
             Buildertrend continues that model. Neither was designed for production home building
-            &mdash; the plan-level options engine, Designer Packages, multi-community vendor
+            — the plan-level options engine, Designer Packages, multi-community vendor
             management, and AI takeoff are not missing features waiting to be added. They
             require a fundamentally different data model. If you are a production builder being
             pushed to migrate from CoConstruct, this is the moment to ask whether you want to
@@ -483,15 +483,15 @@ export default function CoConstructVsCornerstonePage() {
               Built for production, not custom builds
             </h2>
             <p className="text-slate-300 mb-6 max-w-xl mx-auto">
-              See how Cornerstone PM&trade; handles plan-level options, Designer Packages, AI
-              takeoff, and multi-community vendor management &mdash; the workflows CoConstruct
+              See how Cornerstone PM™ handles plan-level options, Designer Packages, AI
+              takeoff, and multi-community vendor management — the workflows CoConstruct
               and Buildertrend were never designed for.
             </p>
             <Link
               href="/beta"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-base transition-colors"
             >
-              Request Early Access &rarr;
+              Request Early Access →
             </Link>
           </div>
         </div>

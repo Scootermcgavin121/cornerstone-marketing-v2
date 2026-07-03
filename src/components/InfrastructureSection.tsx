@@ -22,7 +22,7 @@ export function InfrastructureSection() {
             </span>
           </h2>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
-            When a task date moves, every affected vendor gets an email in under a second &mdash; not
+            When a task date moves, every affected vendor gets an email in under a second — not
             minutes later. Entire batches of cascade notifications land within the same minute,
             powered by Cloudflare&apos;s global edge network.
           </p>
@@ -37,7 +37,7 @@ export function InfrastructureSection() {
             <h3 className="font-bold text-white text-lg mb-2">Sub-second delivery</h3>
             <p className="text-sm text-slate-400 leading-relaxed">
               Schedule changes trigger instant vendor emails. No queue delays, no batch
-              processing &mdash; notifications arrive before your PM closes the tab.
+              processing — notifications arrive before your PM closes the tab.
             </p>
           </div>
 
@@ -48,7 +48,7 @@ export function InfrastructureSection() {
             <h3 className="font-bold text-white text-lg mb-2">Inbox, not spam</h3>
             <p className="text-sm text-slate-400 leading-relaxed">
               Full SPF, DKIM, and DMARC authentication on every email. Enterprise-grade DNS
-              configuration means your vendor notifications land where they should &mdash; the inbox.
+              configuration means your vendor notifications land where they should — the inbox.
             </p>
           </div>
 

@@ -165,14 +165,14 @@ export default function FieldwireVsCornerstonePage() {
 
           <p className="text-xl text-slate-300 font-light">
             Fieldwire is a leading field-management app for punch lists, plan markups, and RFI
-            workflows. Cornerstone PM&trade; is a production home builder platform with a full
+            workflows. Cornerstone PM™ is a production home builder platform with a full
             design center, AI agents, and multi-community workflows. They solve different
             problems for different types of construction businesses.
           </p>
 
           <p>
-            If you&apos;re a production home builder who found Fieldwire in a &ldquo;construction
-            software&rdquo; search, this post explains exactly where that tool ends and where a
+            If you&apos;re a production home builder who found Fieldwire in a “construction
+            software” search, this post explains exactly where that tool ends and where a
             purpose-built production builder platform begins. For the full platform category
             overview, start at{" "}
             <Link
@@ -214,21 +214,21 @@ export default function FieldwireVsCornerstonePage() {
             center selections, coordinating vendor bids across 20+ scopes, and repeating the
             same plan efficiently across multiple communities. Fieldwire has no data model for
             any of these. A floorplan, a Designer Package, a lot, a community, an options
-            pricing engine &mdash; none of these concepts exist in the product.
+            pricing engine — none of these concepts exist in the product.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
             What does a production home builder actually need?
           </h2>
           <p>
-            A production builder running 20&ndash;150 homes per year faces a completely different
+            A production builder running 20–150 homes per year faces a completely different
             operational challenge than a field superintendent:
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
             <li>
               <strong className="text-white">Plan repeats:</strong> The Magnolia floorplan sells
               50 times this year across four communities. Options need to be priced at the plan
-              level &mdash; once &mdash; and reused for every home of that plan. Re-entering sqft
+              level — once — and reused for every home of that plan. Re-entering sqft
               per job is a workflow that shouldn&apos;t exist.
             </li>
             <li>
@@ -239,12 +239,12 @@ export default function FieldwireVsCornerstonePage() {
             </li>
             <li>
               <strong className="text-white">Exclusion groups:</strong> When a buyer picks Tile
-              flooring, the flooring category marks complete &mdash; they don&apos;t also need
+              flooring, the flooring category marks complete — they don&apos;t also need
               to pick Carpet, LVP, and Hardwood. Pick one from many, and you&apos;re done.
             </li>
             <li>
               <strong className="text-white">Auto-quantity scope items:</strong> Frame labor
-              priced at $4.25/sqft links to Total Sqft &mdash; every floorplan and every
+              priced at $4.25/sqft links to Total Sqft — every floorplan and every
               structural option reprices automatically. Change the rate once and 60 line items
               update.
             </li>
@@ -255,12 +255,12 @@ export default function FieldwireVsCornerstonePage() {
             </li>
           </ul>
           <p>
-            These are not features Fieldwire is missing &mdash; they are concepts that exist in a
+            These are not features Fieldwire is missing — they are concepts that exist in a
             completely different product category.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            Feature comparison: Fieldwire vs Cornerstone PM&trade;
+            Feature comparison: Fieldwire vs Cornerstone PM™
           </h2>
 
           <div className="overflow-x-auto rounded-xl border border-slate-800 not-prose">
@@ -270,7 +270,7 @@ export default function FieldwireVsCornerstonePage() {
                   <th className="text-left px-5 py-4 text-slate-400 font-medium">Feature</th>
                   <th className="px-5 py-4 text-slate-400 font-medium text-center">Fieldwire</th>
                   <th className="px-5 py-4 text-cyan-400 font-medium text-center">
-                    Cornerstone PM&trade;
+                    Cornerstone PM™
                   </th>
                 </tr>
               </thead>
@@ -291,7 +291,7 @@ export default function FieldwireVsCornerstonePage() {
           </div>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            What about Cornerstone PM&trade;&apos;s AI capabilities?
+            What about Cornerstone PM™&apos;s AI capabilities?
           </h2>
           <p>
             Fieldwire has added AI-assisted features around task management and field reporting.
@@ -299,52 +299,52 @@ export default function FieldwireVsCornerstonePage() {
             to a whole-home builder&apos;s production workflows.
           </p>
           <p>
-            Cornerstone PM&trade; ships five purpose-built AI agents, all bundled at no extra cost
+            Cornerstone PM™ ships five purpose-built AI agents, all bundled at no extra cost
             on the Pro+ plan:
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
             <li>
-              <strong className="text-white">Blueprint AI</strong> &mdash; parses a floor plan PDF
+              <strong className="text-white">Blueprint AI</strong> — parses a floor plan PDF
               and extracts 130+ material scopes in under 60 seconds.{" "}
               <Link
                 href="/ai-takeoff"
                 className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
               >
-                See Blueprint AI &rarr;
+                See Blueprint AI →
               </Link>
             </li>
             <li>
-              <strong className="text-white">Foreman AI</strong> &mdash; 396+ skills covering
+              <strong className="text-white">Foreman AI</strong> — 396+ skills covering
               purchasing, vendor management, schedule optimization, budget analysis, and
-              profitability reporting. Foreman reads AND writes data &mdash; it takes real actions,
+              profitability reporting. Foreman reads AND writes data — it takes real actions,
               not just answers questions. Persistent per-user and company-wide memory means it
               knows your vendors, your communication style, and your build patterns from day one.{" "}
               <Link
                 href="/foreman"
                 className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
               >
-                Meet Foreman &rarr;
+                Meet Foreman →
               </Link>
             </li>
             <li>
-              <strong className="text-white">Bid Import AI</strong> &mdash; auto-maps vendor bid
+              <strong className="text-white">Bid Import AI</strong> — auto-maps vendor bid
               spreadsheets to your scope items with no manual column matching.
             </li>
             <li>
-              <strong className="text-white">AI MLS Listing Generator</strong> &mdash; generates
+              <strong className="text-white">AI MLS Listing Generator</strong> — generates
               listing copy directly from your floorplan and options data.
             </li>
             <li>
-              <strong className="text-white">AI Support Agent</strong> &mdash; answers platform
+              <strong className="text-white">AI Support Agent</strong> — answers platform
               questions in context without leaving your workflow.
             </li>
           </ul>
           <p>
-            Cornerstone PM&trade; also ships a built-in MCP server (in app settings) that lets
+            Cornerstone PM™ also ships a built-in MCP server (in app settings) that lets
             external AI tools like Claude Desktop and Cursor connect directly to Foreman&apos;s
             396+ skill catalog. Builders generate API keys and get ready-to-paste config blocks.
             It&apos;s the only construction management platform to offer MCP integration as a
-            first-class feature &mdash; and it means every new Foreman skill you ship is
+            first-class feature — and it means every new Foreman skill you ship is
             instantly available to your external AI tools without any configuration changes.
           </p>
 
@@ -353,7 +353,7 @@ export default function FieldwireVsCornerstonePage() {
           </h2>
           <p>
             Fieldwire offers integrations via Zapier and a public API for field data. Cornerstone
-            PM&trade;&apos;s{" "}
+            PM™&apos;s{" "}
             <Link
               href="/api-access"
               className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
@@ -368,7 +368,7 @@ export default function FieldwireVsCornerstonePage() {
               (Anthropic, OpenAI, OpenAPI 3.1)
             </li>
             <li>
-              BYOA (Bring Your Own AI Agent) &mdash; every endpoint maps to one of Foreman&apos;s
+              BYOA (Bring Your Own AI Agent) — every endpoint maps to one of Foreman&apos;s
               396+ skills. Ship a new Foreman skill and your BYOA agent gets it automatically
             </li>
             <li>
@@ -376,7 +376,7 @@ export default function FieldwireVsCornerstonePage() {
               auto-retry
             </li>
             <li>
-              Direct integration with external AI tools via MCP &mdash; no middleware required
+              Direct integration with external AI tools via MCP — no middleware required
             </li>
           </ul>
           <p>
@@ -392,12 +392,12 @@ export default function FieldwireVsCornerstonePage() {
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            Who should use Fieldwire, and who should use Cornerstone PM&trade;?
+            Who should use Fieldwire, and who should use Cornerstone PM™?
           </h2>
 
           <div className="grid sm:grid-cols-2 gap-4 not-prose my-6">
             <div className="rounded-xl border border-slate-700 bg-slate-900/40 p-6">
-              <h3 className="text-lg font-bold text-white mb-3">Use Fieldwire if you are&hellip;</h3>
+              <h3 className="text-lg font-bold text-white mb-3">Use Fieldwire if you are…</h3>
               <ul className="space-y-2 text-slate-300 text-sm">
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-400 mt-0.5 shrink-0" />A commercial GC
@@ -419,12 +419,12 @@ export default function FieldwireVsCornerstonePage() {
             </div>
             <div className="rounded-xl border border-cyan-800/40 bg-cyan-950/20 p-6">
               <h3 className="text-lg font-bold text-white mb-3">
-                Use Cornerstone PM&trade; if you are&hellip;
+                Use Cornerstone PM™ if you are…
               </h3>
               <ul className="space-y-2 text-slate-300 text-sm">
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-cyan-400 mt-0.5 shrink-0" />A production home
-                  builder (5&ndash;200 homes/year)
+                  builder (5–200 homes/year)
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-cyan-400 mt-0.5 shrink-0" />
@@ -453,7 +453,7 @@ export default function FieldwireVsCornerstonePage() {
           <p>
             Fieldwire is excellent for what it was designed to do: field coordination on complex
             commercial and remodel projects. If you&apos;re a production home builder who found it
-            in a &ldquo;construction software&rdquo; search, you&apos;ve hit a segment mismatch.
+            in a “construction software” search, you&apos;ve hit a segment mismatch.
             Fieldwire&apos;s strengths have no overlap with the workflows that define production
             home building. Start with the{" "}
             <Link
@@ -471,15 +471,15 @@ export default function FieldwireVsCornerstonePage() {
               Built for production builders, not field apps
             </h2>
             <p className="text-slate-300 mb-6 max-w-xl mx-auto">
-              See how Cornerstone PM&trade; handles floorplans, Designer Packages, auto-quantity
-              scope items, Foreman AI, and multi-community vendor management &mdash; the workflows
+              See how Cornerstone PM™ handles floorplans, Designer Packages, auto-quantity
+              scope items, Foreman AI, and multi-community vendor management — the workflows
               Fieldwire was never designed for.
             </p>
             <Link
               href="/beta"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-base transition-colors"
             >
-              Request Early Access &rarr;
+              Request Early Access →
             </Link>
           </div>
         </div>

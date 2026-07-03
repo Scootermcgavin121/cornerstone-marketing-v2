@@ -68,7 +68,7 @@ export function InfiniteMovingCards({
           >
             <blockquote>
               <div className="relative z-20 mb-4 leading-relaxed text-slate-300 text-sm italic">
-                &ldquo;{item.quote}&rdquo;
+                “{item.quote}”
               </div>
               <div className="relative z-20 mt-4 flex flex-row items-center">
                 <div className="w-8 h-8 rounded-full bg-gradient-to-br from-cyan-500 to-teal-600 flex items-center justify-center text-white text-xs font-bold mr-3">

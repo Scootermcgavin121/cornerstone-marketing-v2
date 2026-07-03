@@ -176,7 +176,7 @@ export default function ProductionBuilderVsCustomBuilderSoftwarePage() {
               <h3 className="text-lg font-bold text-white">Production builder using custom builder software</h3>
               <p>
                 You spend hours manually building schedule templates that should be auto-generated from your
-                floor plan library. There&apos;s no concept of &ldquo;communities&rdquo; — just a flat list of jobs. Your design
+                floor plan library. There&apos;s no concept of “communities” — just a flat list of jobs. Your design
                 center selections live in a spreadsheet because the software has no options engine. Material
                 takeoffs are either manual or non-existent. Vendor relationships are tracked per job instead
                 of per community.

@@ -187,12 +187,12 @@ export default function DataExportBackupPage() {
             Why does construction software hold your data hostage?
           </h2>
           <p>
-            The word &ldquo;hostage&rdquo; sounds harsh, but it describes the dynamic accurately. When
+            The word “hostage” sounds harsh, but it describes the dynamic accurately. When
             switching costs are high, renewal rates stay high — even for customers who are
             dissatisfied. Data lock-in is the highest-leverage switching cost a software company
-            can manufacture, because the alternative to staying isn&apos;t just &ldquo;try a new platform,&rdquo;
-            it&apos;s &ldquo;try a new platform and somehow recreate five years of vendor pricing, project
-            history, and buyer records.&rdquo;
+            can manufacture, because the alternative to staying isn&apos;t just “try a new platform,”
+            it&apos;s “try a new platform and somehow recreate five years of vendor pricing, project
+            history, and buyer records.”
           </p>
           <p>
             The tactics vary, but the goal is the same: make your data technically accessible but
@@ -317,7 +317,7 @@ export default function DataExportBackupPage() {
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            What &ldquo;your data is always yours&rdquo; actually means in practice
+            What “your data is always yours” actually means in practice
           </h2>
           <p>
             Let&apos;s be concrete. You&apos;re a 75-home/year production builder. You&apos;ve been on

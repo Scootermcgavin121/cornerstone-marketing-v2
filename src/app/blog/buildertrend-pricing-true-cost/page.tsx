@@ -135,9 +135,9 @@ export default function BuildertrendPricingTrueCostPage() {
             production builder running 50 homes a year has:
           </p>
           <ul className="list-disc list-inside space-y-2 text-slate-300 ml-2">
-            <li>2&ndash;4 project managers or supers in the field</li>
-            <li>1&ndash;2 purchasing/estimating staff</li>
-            <li>1&ndash;2 sales reps managing the pipeline</li>
+            <li>2–4 project managers or supers in the field</li>
+            <li>1–2 purchasing/estimating staff</li>
+            <li>1–2 sales reps managing the pipeline</li>
             <li>An owner or operations manager who needs visibility</li>
           </ul>
           <p>
@@ -163,7 +163,7 @@ export default function BuildertrendPricingTrueCostPage() {
           <div className="bg-slate-900/60 border border-slate-700 rounded-xl p-6 space-y-3 font-mono text-sm">
             <div className="flex justify-between text-slate-300">
               <span>Buildertrend base plan (1 seat)</span>
-              <span className="text-white">$499&ndash;$599/mo</span>
+              <span className="text-white">$499–$599/mo</span>
             </div>
             <div className="flex justify-between text-slate-300">
               <span>Additional user seats (est. 6 @ $75/mo)</span>
@@ -171,29 +171,29 @@ export default function BuildertrendPricingTrueCostPage() {
             </div>
             <div className="flex justify-between text-slate-300">
               <span>Third-party takeoff tool (PlanSwift, Bluebeam, etc.)</span>
-              <span className="text-white">$100&ndash;$200/mo</span>
+              <span className="text-white">$100–$200/mo</span>
             </div>
             <div className="flex justify-between text-slate-300">
               <span>Selections/design center workaround tools</span>
-              <span className="text-white">$100&ndash;$300/mo</span>
+              <span className="text-white">$100–$300/mo</span>
             </div>
             <div className="flex justify-between text-slate-300">
               <span>QuickBooks integration and sync tools</span>
-              <span className="text-white">$50&ndash;$100/mo</span>
+              <span className="text-white">$50–$100/mo</span>
             </div>
             <div className="border-t border-slate-600 pt-3 flex justify-between font-bold">
               <span className="text-white">Monthly total (mid estimate)</span>
-              <span className="text-amber-400">$1,400&ndash;$1,750/mo</span>
+              <span className="text-amber-400">$1,400–$1,750/mo</span>
             </div>
             <div className="flex justify-between font-bold">
               <span className="text-white">Annual total</span>
-              <span className="text-amber-400">$16,800&ndash;$21,000/yr</span>
+              <span className="text-amber-400">$16,800–$21,000/yr</span>
             </div>
           </div>
 
           <p>
             Across 50 closings, that&apos;s $336 to $420 per home in software cost alone. For a builder
-            with 18&ndash;22% margins on a $350,000 home, that&apos;s a meaningful and growing line item
+            with 18–22% margins on a $350,000 home, that&apos;s a meaningful and growing line item
             year over year.
           </p>
 
@@ -210,8 +210,8 @@ export default function BuildertrendPricingTrueCostPage() {
               <h3 className="text-lg font-bold text-white mb-1">Manual material takeoff</h3>
               <p>
                 Buildertrend doesn&apos;t natively parse a floor plan PDF into a material list. A
-                production builder doing a new plan has an estimator spending 4&ndash;8 hours on takeoff
-                manually. At $40&ndash;$70/hour, that&apos;s $160 to $560 per plan — and production builders
+                production builder doing a new plan has an estimator spending 4–8 hours on takeoff
+                manually. At $40–$70/hour, that&apos;s $160 to $560 per plan — and production builders
                 don&apos;t run a single plan. Ten plan types times 3 revisions a year is 30 takeoff events
                 annually. That&apos;s $4,800 to $16,800 in estimator labor that platform-native AI
                 eliminates.
@@ -222,7 +222,7 @@ export default function BuildertrendPricingTrueCostPage() {
               <h3 className="text-lg font-bold text-white mb-1">Bid management in email</h3>
               <p>
                 Buildertrend has a basic bid management tool, but production builders sending scope-specific
-                bid templates to 8&ndash;10 vendors per trade, tracking status across Invited / Viewed /
+                bid templates to 8–10 vendors per trade, tracking status across Invited / Viewed /
                 Submitted / Declined, and comparing side-by-side typically end up back in email or
                 spreadsheets. That manual coordination is a time tax on purchasing staff — every bid
                 cycle, every community, every trade.
@@ -249,11 +249,11 @@ export default function BuildertrendPricingTrueCostPage() {
           <div className="bg-slate-900/60 border border-slate-700 rounded-xl p-6 space-y-3 font-mono text-sm">
             <div className="flex justify-between text-slate-300">
               <span>Buildertrend subscription (annual, all seats)</span>
-              <span className="text-white">$11,400&ndash;$14,400</span>
+              <span className="text-white">$11,400–$14,400</span>
             </div>
             <div className="flex justify-between text-slate-300">
               <span>Add-on integrations (takeoff, design, QB sync)</span>
-              <span className="text-white">$3,000&ndash;$7,200</span>
+              <span className="text-white">$3,000–$7,200</span>
             </div>
             <div className="flex justify-between text-slate-300">
               <span>Estimator labor: manual takeoff (30 events @ $300 avg)</span>
@@ -261,21 +261,21 @@ export default function BuildertrendPricingTrueCostPage() {
             </div>
             <div className="flex justify-between text-slate-300">
               <span>Staff hours: bid coordination + design center upkeep</span>
-              <span className="text-white">$4,000&ndash;$8,000</span>
+              <span className="text-white">$4,000–$8,000</span>
             </div>
             <div className="border-t border-slate-600 pt-3 flex justify-between font-bold">
               <span className="text-white">True annual cost (50 homes/yr)</span>
-              <span className="text-amber-400">$27,400&ndash;$38,600</span>
+              <span className="text-amber-400">$27,400–$38,600</span>
             </div>
             <div className="flex justify-between text-slate-300">
               <span>Cost per closing</span>
-              <span className="text-amber-400">$548&ndash;$772</span>
+              <span className="text-amber-400">$548–$772</span>
             </div>
           </div>
 
           <p>
             That&apos;s the number worth putting in a budget conversation. Not $499/month. Not even
-            $6,000/year. Closer to $30,000&ndash;$38,000 when you account for what the platform
+            $6,000/year. Closer to $30,000–$38,000 when you account for what the platform
             doesn&apos;t do and the staff time to compensate.
           </p>
 
@@ -285,7 +285,7 @@ export default function BuildertrendPricingTrueCostPage() {
           <p>
             Platforms built specifically for production home builders can collapse most of those
             line items. When material takeoff is AI-native (under 60 seconds per plan instead
-            of 4&ndash;8 hours), bid management is built-in with scope-filtered vendor templates
+            of 4–8 hours), bid management is built-in with scope-filtered vendor templates
             and side-by-side comparison, and the design center runs plan-level option packages
             across every community without manual upkeep — the $30,000+ total shrinks fast.
           </p>

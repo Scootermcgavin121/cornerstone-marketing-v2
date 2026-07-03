@@ -203,7 +203,7 @@ export default function QRPage() {
             kicks off. Every audience, every event, every community — streaming to your phone.
           </p>
           <p className="text-base text-slate-500 italic max-w-2xl mx-auto mb-6">
-            One builder put it best: <span className="text-white not-italic font-semibold">&ldquo;It&apos;s like some shit the military would use.&rdquo;</span> Yeah. Kind of the point.
+            One builder put it best: <span className="text-white not-italic font-semibold">“It&apos;s like some shit the military would use.”</span> Yeah. Kind of the point.
           </p>
           <p className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-300 text-sm font-semibold">
             <Plane className="w-4 h-4" />
@@ -340,10 +340,10 @@ export default function QRPage() {
               Same live map architecture, different cast. Every sales rep check-in at the model becomes a pin.
               Every buyer QR scan becomes a lead pinned to the model address. Managers see who&apos;s actually
               <span className="text-white font-semibold"> at the model</span>, who&apos;s closing, and which
-              communities are heating up &mdash; in one screen.
+              communities are heating up — in one screen.
             </p>
             <p className="text-rose-300/90 text-sm font-semibold">
-              Sales reps check in at the <span className="underline decoration-rose-400/40 underline-offset-4">model</span>, not &ldquo;the lot.&rdquo; The model is the furnished show home where buyers walk in. The lot is dirt.
+              Sales reps check in at the <span className="underline decoration-rose-400/40 underline-offset-4">model</span>, not “the lot.” The model is the furnished show home where buyers walk in. The lot is dirt.
             </p>
           </div>
 
@@ -384,7 +384,7 @@ export default function QRPage() {
           <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto text-sm text-slate-300">
             <li className="flex items-start gap-2.5">
               <CheckCircle2 className="w-4 h-4 mt-0.5 text-rose-400 flex-shrink-0" />
-              Sales rep check-ins pinned to the model &mdash; not GPS, not honor system
+              Sales rep check-ins pinned to the model — not GPS, not honor system
             </li>
             <li className="flex items-start gap-2.5">
               <CheckCircle2 className="w-4 h-4 mt-0.5 text-rose-400 flex-shrink-0" />
@@ -646,7 +646,7 @@ export default function QRPage() {
               Every other construction platform asks <span className="text-white italic">somebody</span> to remember to flip the task to In Progress. Cornerstone doesn&apos;t. The moment a vendor scans the jobsite QR, the scheduled task auto-flips to <span className="text-emerald-400 font-bold">In Progress</span> — downstream tasks cascade, the PM gets pinged, the homeowner portal updates, and the activity feed lights up. <span className="text-white font-semibold">Zero clicks. Zero forgotten updates. Zero stale schedules.</span>
             </p>
             <p className="text-emerald-300/90 leading-relaxed text-base font-semibold">
-              And the vendor up next? They see it <span className="text-white">the instant it happens.</span> No calls, no texts, no &ldquo;hey when do you think you&apos;ll be done?&rdquo; — just a live schedule that tells every trade partner exactly where they stand. <span className="text-white">Better odds the job will actually be ready when their crew rolls up.</span>
+              And the vendor up next? They see it <span className="text-white">the instant it happens.</span> No calls, no texts, no “hey when do you think you&apos;ll be done?” — just a live schedule that tells every trade partner exactly where they stand. <span className="text-white">Better odds the job will actually be ready when their crew rolls up.</span>
             </p>
           </div>
           {/* The cascade chain */}
@@ -723,7 +723,7 @@ export default function QRPage() {
                   <TrendingUp className="w-3.5 h-3.5 text-emerald-400" />
                 </div>
                 <div className="text-white font-semibold text-sm mb-1">Drywall checks the schedule</div>
-                <div className="text-slate-300 text-xs">Sees the prior trade is <span className="text-emerald-400 font-bold">live on-site</span>, not just &ldquo;scheduled.&rdquo; Loads the truck with confidence.</div>
+                <div className="text-slate-300 text-xs">Sees the prior trade is <span className="text-emerald-400 font-bold">live on-site</span>, not just “scheduled.” Loads the truck with confidence.</div>
               </div>
             </div>
             <p className="text-slate-500 text-xs italic text-center mt-6">

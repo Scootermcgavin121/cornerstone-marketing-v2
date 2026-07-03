@@ -79,7 +79,7 @@ export default function JobsiteAIPage() {
             The plumber rolls onto the jobsite. Your schedule already knows.
           </p>
           <p className="text-lg text-slate-400 max-w-3xl mx-auto mb-8 leading-relaxed">
-            Detect a vendor on site &mdash; from any camera, any sensor, any access system &mdash; and Cornerstone
+            Detect a vendor on site — from any camera, any sensor, any access system — and Cornerstone
             instantly flips the matching task to <span className="text-emerald-400 font-semibold">In&nbsp;Progress</span>{" "}
             on the construction schedule. No phone calls. No manual check-ins.
           </p>
@@ -99,7 +99,7 @@ export default function JobsiteAIPage() {
                     Arrival event starts the clock. Departure event stops it.
                   </p>
                   <p className="text-slate-300 text-sm sm:text-base leading-relaxed mt-1">
-                    Every vendor and trade gets logged hours on the job &mdash; automatically. No timecards. No “how long were you here?”
+                    Every vendor and trade gets logged hours on the job — automatically. No timecards. No “how long were you here?”
                     Real data feeding vendor scorecards, labor budget actuals, and bid-award decisions.
                   </p>
                 </div>
@@ -112,7 +112,7 @@ export default function JobsiteAIPage() {
               href="/beta"
               className="px-8 py-4 rounded-full bg-emerald-400 text-slate-900 font-bold text-lg hover:bg-emerald-300 transition-all duration-200 shadow-xl shadow-emerald-500/30 hover:-translate-y-0.5"
             >
-              Request Beta Access &rarr;
+              Request Beta Access →
             </Link>
             <Link
               href="/api-docs"
@@ -122,7 +122,7 @@ export default function JobsiteAIPage() {
             </Link>
           </div>
           <p className="text-slate-500 text-sm mt-6 italic">
-            We&rsquo;re the brain, not the eyes. Bring whatever you already have.
+            We’re the brain, not the eyes. Bring whatever you already have.
           </p>
         </div>
       </section>
@@ -175,8 +175,8 @@ export default function JobsiteAIPage() {
                 <div className="flex items-center gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800">
                   <div className="w-2 h-2 rounded-full bg-slate-600" />
                   <div className="flex-1 min-w-0">
-                    <div className="text-white text-sm font-semibold truncate">Plumbing Rough-In &mdash; Lot 14</div>
-                    <div className="text-slate-500 text-xs truncate">Tom&rsquo;s Plumbing &middot; Scheduled today</div>
+                    <div className="text-white text-sm font-semibold truncate">Plumbing Rough-In — Lot 14</div>
+                    <div className="text-slate-500 text-xs truncate">Tom’s Plumbing &middot; Scheduled today</div>
                   </div>
                   <span className="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700 text-slate-400 text-[11px] font-black uppercase tracking-wider flex-shrink-0">Scheduled</span>
                 </div>
@@ -186,8 +186,8 @@ export default function JobsiteAIPage() {
                 <div className="flex items-center gap-3 p-3 rounded-xl bg-slate-900/60 border border-emerald-500/30">
                   <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
                   <div className="flex-1 min-w-0">
-                    <div className="text-white text-sm font-semibold truncate">Plumbing Rough-In &mdash; Lot 14</div>
-                    <div className="text-emerald-300/80 text-xs truncate">Tom&rsquo;s Plumbing &middot; Started 8:42 AM &middot; Auto-detected</div>
+                    <div className="text-white text-sm font-semibold truncate">Plumbing Rough-In — Lot 14</div>
+                    <div className="text-emerald-300/80 text-xs truncate">Tom’s Plumbing &middot; Started 8:42 AM &middot; Auto-detected</div>
                   </div>
                   <span className="px-2.5 py-1 rounded-md bg-emerald-500/15 border border-emerald-500/40 text-emerald-300 text-[11px] font-black uppercase tracking-wider flex-shrink-0">In Progress</span>
                 </div>
@@ -211,7 +211,7 @@ export default function JobsiteAIPage() {
               <span className="text-violet-400">Any sensor. Any access system.</span>
             </h2>
             <p className="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">
-              We&rsquo;re the brain, not the eyes. If it can fire a webhook, Cornerstone can turn it into a task update.
+              We’re the brain, not the eyes. If it can fire a webhook, Cornerstone can turn it into a task update.
             </p>
           </div>
 
@@ -232,8 +232,8 @@ export default function JobsiteAIPage() {
 
           <div className="mt-8 p-5 rounded-2xl bg-slate-900/60 border border-dashed border-slate-700 text-center">
             <p className="text-slate-300 text-sm">
-              <span className="text-violet-400 font-bold">Don&rsquo;t see your stack?</span>{" "}
-              If it can POST a webhook, it works. <Link href="/api-docs" className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2">See the API &rarr;</Link>
+              <span className="text-violet-400 font-bold">Don’t see your stack?</span>{" "}
+              If it can POST a webhook, it works. <Link href="/api-docs" className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2">See the API →</Link>
             </p>
           </div>
         </div>
@@ -281,8 +281,8 @@ export default function JobsiteAIPage() {
                 <span className="text-emerald-400">stops being a guess.</span>
               </h2>
               <p className="text-slate-400 text-lg leading-relaxed mb-6">
-                Today, &ldquo;is the framer there yet?&rdquo; is a phone call. Tomorrow, it&rsquo;s a notification.
-                Schedule status reflects what&rsquo;s actually happening on the lot &mdash; in real time, with photo
+                Today, “is the framer there yet?” is a phone call. Tomorrow, it’s a notification.
+                Schedule status reflects what’s actually happening on the lot — in real time, with photo
                 evidence, with no extra work for your supers or your subs.
               </p>
               <div className="space-y-3">
@@ -359,7 +359,7 @@ export default function JobsiteAIPage() {
               <h3 className="text-white text-xl font-black">Register a camera to a home</h3>
             </div>
             <p className="text-slate-400 text-sm mb-4 ml-11">
-              One-time setup. After this, every event from this camera auto-resolves to the right home &mdash;
+              One-time setup. After this, every event from this camera auto-resolves to the right home —
               <span className="text-emerald-400"> no <code className="text-emerald-300 bg-emerald-500/10 px-1 rounded">homeId</code> needed in webhook calls.</span>
             </p>
             <div className="rounded-2xl bg-slate-900/80 border border-slate-800 overflow-hidden">
@@ -511,7 +511,7 @@ Content-Type: application/json
                 <h3 className="text-white font-black text-xl mb-2">How Cornerstone resolves the home</h3>
                 <p className="text-slate-400 text-sm leading-relaxed">
                   Every event runs through a 4-level fallback chain. The matching engine tries each in order until
-                  it locks onto the right home &mdash; so partial data still works, and registered cameras work hands-free.
+                  it locks onto the right home — so partial data still works, and registered cameras work hands-free.
                 </p>
               </div>
             </div>

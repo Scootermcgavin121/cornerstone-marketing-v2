@@ -127,7 +127,7 @@ export default function WhySmallBuildersCannotAffordNewstarPage() {
           </p>
           <p>
             The problem is that NEWSTAR is often the first name that comes up when a growing production
-            builder starts Googling &ldquo;home builder software.&rdquo; The brand recognition sends mid-size builders
+            builder starts Googling “home builder software.” The brand recognition sends mid-size builders
             into a sales process that was designed for a buyer ten times their size.
           </p>
 
@@ -177,7 +177,7 @@ export default function WhySmallBuildersCannotAffordNewstarPage() {
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            Why can&apos;t small builders just use a &ldquo;smaller&rdquo; NEWSTAR configuration?
+            Why can&apos;t small builders just use a “smaller” NEWSTAR configuration?
           </h2>
           <p>
             This is the most common misconception. Builders assume they can buy fewer seats, skip some

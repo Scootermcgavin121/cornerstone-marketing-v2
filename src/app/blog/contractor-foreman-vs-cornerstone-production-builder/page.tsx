@@ -164,14 +164,14 @@ export default function ContractorForemanVsCornerstonePage() {
 
           <p className="text-xl text-slate-300 font-light">
             Contractor Foreman is a capable project management tool for small GCs starting at
-            $49/month. Cornerstone PM&trade; is a production home builder platform with a full
+            $49/month. Cornerstone PM™ is a production home builder platform with a full
             design center, AI agents, and multi-community workflows. They are different product
-            categories &mdash; not competing price tiers of the same tool.
+            categories — not competing price tiers of the same tool.
           </p>
 
           <p>
-            If you landed here from a &ldquo;construction PM software&rdquo; search and
-            you&apos;re a production home builder running 20&ndash;150 homes per year, the short
+            If you landed here from a “construction PM software” search and
+            you&apos;re a production home builder running 20–150 homes per year, the short
             answer is: Contractor Foreman wasn&apos;t built for your business model. This post
             explains exactly why, and what a purpose-built production builder platform actually
             looks like. For the full platform overview, start at{" "}
@@ -219,7 +219,7 @@ export default function ContractorForemanVsCornerstonePage() {
             contractor needs.
           </p>
           <p>
-            The problem isn&apos;t that Contractor Foreman is weak &mdash; it&apos;s that it
+            The problem isn&apos;t that Contractor Foreman is weak — it&apos;s that it
             was designed around a different business model. A production home builder running
             plan repeats, multi-community vendor assignments, and a buyer-facing design center
             needs infrastructure that Contractor Foreman simply doesn&apos;t have a concept of.
@@ -229,14 +229,14 @@ export default function ContractorForemanVsCornerstonePage() {
             What does a production home builder actually need?
           </h2>
           <p>
-            Production building is not &ldquo;construction PM at higher volume.&rdquo; It&apos;s
+            Production building is not “construction PM at higher volume.” It&apos;s
             a fundamentally different operational model. The complexity drivers are:
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
             <li>
               <strong className="text-white">Plan repeats:</strong> The Magnolia floorplan sells
               80 times across four communities. Options need to be priced once at the plan level
-              and reused &mdash; not re-entered per job.
+              and reused — not re-entered per job.
             </li>
             <li>
               <strong className="text-white">Design center:</strong> Buyers make upgrade
@@ -261,13 +261,13 @@ export default function ContractorForemanVsCornerstonePage() {
           </ul>
           <p>
             Contractor Foreman addresses none of these. There is no floorplan model in the
-            product &mdash; no concept of a community, lot, or model home. Every project is an
+            product — no concept of a community, lot, or model home. Every project is an
             independent job, which is exactly right for a small GC and entirely wrong for a
             builder selling the same plan 80 times.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            Feature comparison: Contractor Foreman vs Cornerstone PM&trade;
+            Feature comparison: Contractor Foreman vs Cornerstone PM™
           </h2>
 
           <div className="overflow-x-auto rounded-xl border border-slate-800 not-prose">
@@ -279,7 +279,7 @@ export default function ContractorForemanVsCornerstonePage() {
                     Contractor Foreman
                   </th>
                   <th className="px-5 py-4 text-cyan-400 font-medium text-center">
-                    Cornerstone PM&trade;
+                    Cornerstone PM™
                   </th>
                 </tr>
               </thead>
@@ -307,18 +307,18 @@ export default function ContractorForemanVsCornerstonePage() {
           </h2>
           <p>
             Contractor Foreman&apos;s $49/month entry price looks dramatically lower than
-            Cornerstone PM&trade;&apos;s $199/month Starter plan. But that comparison
+            Cornerstone PM™&apos;s $199/month Starter plan. But that comparison
             obscures two important realities.
           </p>
           <p>
             First, the per-user model compounds quickly. Contractor Foreman charges per user
-            at most tiers. A team of 8 people hits their unlimited plan at $249/month &mdash;
-            comparable to Cornerstone PM&trade;&apos;s Starter plan, without any of the
+            at most tiers. A team of 8 people hits their unlimited plan at $249/month —
+            comparable to Cornerstone PM™&apos;s Starter plan, without any of the
             production-builder infrastructure.
           </p>
           <p>
-            Second, what you&apos;re getting at Cornerstone PM&trade;&apos;s $199/month is
-            fundamentally different. You&apos;re not buying &ldquo;more construction PM.&rdquo;
+            Second, what you&apos;re getting at Cornerstone PM™&apos;s $199/month is
+            fundamentally different. You&apos;re not buying “more construction PM.”
             You&apos;re buying a platform with a design center, per-floorplan options engine,
             multi-community lot management, and AI agents that don&apos;t exist in Contractor
             Foreman at any price tier. Contractor Foreman + Kreo Takeoff + a separate design
@@ -326,18 +326,18 @@ export default function ContractorForemanVsCornerstonePage() {
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            How does the design center work in Cornerstone PM&trade;?
+            How does the design center work in Cornerstone PM™?
           </h2>
           <p>
             The design center is often the highest-margin touchpoint in a home sale. A buyer
             choosing between a standard kitchen and a Designer Package upgrade is a revenue
-            moment &mdash; and the software handling that moment determines whether you capture
+            moment — and the software handling that moment determines whether you capture
             that revenue cleanly or lose it in spreadsheets.
           </p>
           <p>
-            Cornerstone PM&trade; ships 64 curated Designer Packages across 7 categories. When
+            Cornerstone PM™ ships 64 curated Designer Packages across 7 categories. When
             a buyer selects a package, all options in that category automatically lock to the
-            package&apos;s selections &mdash; no manual per-option configuration. If the buyer
+            package&apos;s selections — no manual per-option configuration. If the buyer
             wants to customize further, they can unlock individual options and make &agrave; la
             carte selections.
           </p>
@@ -358,53 +358,53 @@ export default function ContractorForemanVsCornerstonePage() {
           <p>
             Contractor Foreman integrates with Kreo Takeoff as a third-party add-on for
             AI-assisted estimating. This requires a separate Kreo subscription and is focused
-            on quantity takeoff from drawings &mdash; useful for estimating, but distinct from
+            on quantity takeoff from drawings — useful for estimating, but distinct from
             the full scope of AI you need to run a production operation.
           </p>
           <p>
-            Cornerstone PM&trade; ships five purpose-built AI agents, all bundled at no extra
+            Cornerstone PM™ ships five purpose-built AI agents, all bundled at no extra
             cost on the Pro+ plan:
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
             <li>
-              <strong className="text-white">Blueprint AI</strong> &mdash; parses a floor plan
+              <strong className="text-white">Blueprint AI</strong> — parses a floor plan
               PDF and extracts 130+ material scopes in under 60 seconds.{" "}
               <Link
                 href="/ai-takeoff"
                 className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
               >
-                See Blueprint AI &rarr;
+                See Blueprint AI →
               </Link>
             </li>
             <li>
-              <strong className="text-white">Foreman AI</strong> &mdash; an in-app agent with
+              <strong className="text-white">Foreman AI</strong> — an in-app agent with
               396+ skills covering purchasing workflows, vendor management, schedule
               optimization, budget reports, and profitability analysis. Foreman reads AND
-              writes data &mdash; it takes real actions, not just chat.{" "}
+              writes data — it takes real actions, not just chat.{" "}
               <Link
                 href="/foreman"
                 className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
               >
-                Meet Foreman &rarr;
+                Meet Foreman →
               </Link>
             </li>
             <li>
-              <strong className="text-white">Bid Import AI</strong> &mdash; auto-maps vendor
+              <strong className="text-white">Bid Import AI</strong> — auto-maps vendor
               bid spreadsheets to your scope items. No manual column matching.
             </li>
             <li>
-              <strong className="text-white">AI MLS Listing Generator</strong> &mdash;
+              <strong className="text-white">AI MLS Listing Generator</strong> —
               generates listing copy from your floorplan and options data.
             </li>
             <li>
-              <strong className="text-white">AI Support Agent</strong> &mdash; answers
+              <strong className="text-white">AI Support Agent</strong> — answers
               platform questions in context without leaving your workflow.
             </li>
           </ul>
           <p>
             The difference isn&apos;t just feature count. It&apos;s that Cornerstone
-            PM&trade;&apos;s AI was built around production home builder workflows specifically
-            &mdash; not bolted onto a general-purpose PM tool as an afterthought.
+            PM™&apos;s AI was built around production home builder workflows specifically
+            — not bolted onto a general-purpose PM tool as an afterthought.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
@@ -417,7 +417,7 @@ export default function ContractorForemanVsCornerstonePage() {
           </p>
           <p>
             Production home building involves structurally more complex vendor workflows.
-            Cornerstone PM&trade;&apos;s purchasing module manages multi-trade bid requests
+            Cornerstone PM™&apos;s purchasing module manages multi-trade bid requests
             across dozens of vendors:
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
@@ -426,12 +426,12 @@ export default function ContractorForemanVsCornerstonePage() {
               Excel templates scoped to each vendor&apos;s trade
             </li>
             <li>
-              Vendors respond through a token-protected portal &mdash; no Cornerstone account
+              Vendors respond through a token-protected portal — no Cornerstone account
               required
             </li>
             <li>Side-by-side bid comparison when 2+ vendors submit</li>
             <li>
-              Bids lock on acceptance &mdash; no last-minute edits from either side
+              Bids lock on acceptance — no last-minute edits from either side
             </li>
             <li>
               Community-assigned vendor wins: the awarded framing crew for Community A can
@@ -456,7 +456,7 @@ export default function ContractorForemanVsCornerstonePage() {
           <div className="grid sm:grid-cols-2 gap-4 not-prose my-6">
             <div className="rounded-xl border border-slate-700 bg-slate-900/40 p-6">
               <h3 className="text-lg font-bold text-white mb-3">
-                Use Contractor Foreman if you are&hellip;
+                Use Contractor Foreman if you are…
               </h3>
               <ul className="space-y-2 text-slate-300 text-sm">
                 <li className="flex items-start gap-2">
@@ -479,12 +479,12 @@ export default function ContractorForemanVsCornerstonePage() {
             </div>
             <div className="rounded-xl border border-cyan-800/40 bg-cyan-950/20 p-6">
               <h3 className="text-lg font-bold text-white mb-3">
-                Use Cornerstone PM&trade; if you are&hellip;
+                Use Cornerstone PM™ if you are…
               </h3>
               <ul className="space-y-2 text-slate-300 text-sm">
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-cyan-400 mt-0.5 shrink-0" />
-                  A production home builder (5&ndash;200 homes/year)
+                  A production home builder (5–200 homes/year)
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-cyan-400 mt-0.5 shrink-0" />
@@ -509,7 +509,7 @@ export default function ContractorForemanVsCornerstonePage() {
           <p>
             The bottom line: Contractor Foreman is a well-built tool for the segment it was
             designed for. Production home building is simply a different product category
-            &mdash; not a bigger version of small-GC PM. If you&apos;re evaluating home builder
+            — not a bigger version of small-GC PM. If you&apos;re evaluating home builder
             platforms, start with the{" "}
             <Link
               href="/home-builder-project-management-software"
@@ -518,7 +518,7 @@ export default function ContractorForemanVsCornerstonePage() {
               full home builder software category comparison
             </Link>{" "}
             to find platforms purpose-built for your business model. You can also see how
-            Cornerstone PM&trade; stacks up against other general-purpose tools on the{" "}
+            Cornerstone PM™ stacks up against other general-purpose tools on the{" "}
             <Link
               href="/compare"
               className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
@@ -533,15 +533,15 @@ export default function ContractorForemanVsCornerstonePage() {
               Built for production builders, not general contractors
             </h2>
             <p className="text-slate-300 mb-6 max-w-xl mx-auto">
-              See how Cornerstone PM&trade; handles floorplans, Designer Packages, AI takeoff,
-              and multi-community vendor management &mdash; the workflows Contractor Foreman
+              See how Cornerstone PM™ handles floorplans, Designer Packages, AI takeoff,
+              and multi-community vendor management — the workflows Contractor Foreman
               was never designed for.
             </p>
             <Link
               href="/beta"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-base transition-colors"
             >
-              Request Early Access &rarr;
+              Request Early Access →
             </Link>
           </div>
         </div>

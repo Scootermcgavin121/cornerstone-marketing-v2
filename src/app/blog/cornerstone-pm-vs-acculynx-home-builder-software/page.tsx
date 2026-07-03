@@ -154,14 +154,14 @@ export default function AccuLynxVsCornerstonePage() {
         <div className="prose prose-invert prose-lg max-w-none space-y-6 text-slate-300 leading-relaxed">
 
           <p className="text-xl text-slate-300 font-light">
-            AccuLynx is the leading CRM for roofing contractors. Cornerstone PM&trade; is a
+            AccuLynx is the leading CRM for roofing contractors. Cornerstone PM™ is a
             production home builder platform with a full design center, AI agents, and
-            multi-community workflows. They are not competing products &mdash; they serve
+            multi-community workflows. They are not competing products — they serve
             completely different business models.
           </p>
 
           <p>
-            If you landed here from a &ldquo;construction CRM&rdquo; search and you&apos;re a
+            If you landed here from a “construction CRM” search and you&apos;re a
             whole-home builder, the short answer is: AccuLynx wasn&apos;t built for you. This post
             explains exactly why, and what a purpose-built production builder platform actually
             looks like. For the full platform overview, start at{" "}
@@ -178,14 +178,14 @@ export default function AccuLynxVsCornerstonePage() {
             What is AccuLynx built for?
           </h2>
           <p>
-            AccuLynx is the self-described &ldquo;#1 Software for Roofing Contractors,&rdquo;
+            AccuLynx is the self-described “#1 Software for Roofing Contractors,”
             trusted by thousands of roofing businesses. Its product stack centers on:
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
             <li>Lead management and follow-up automation for roofing sales teams</li>
             <li>Roofing proposals with integrated measurement data (EagleView, RoofSnap)</li>
             <li>
-              Direct ordering from ABC Supply, QXO, and SRS Distribution &mdash; the major roofing
+              Direct ordering from ABC Supply, QXO, and SRS Distribution — the major roofing
               material distributors
             </li>
             <li>Job board and production tracking for roofing crews</li>
@@ -199,7 +199,7 @@ export default function AccuLynxVsCornerstonePage() {
           <p>
             The issue is that AccuLynx has no concept of a floorplan. No concept of a model home.
             No lot management. No community-level vendor assignment. No design center. No options
-            pricing engine. These aren&apos;t missing features &mdash; they&apos;re concepts that
+            pricing engine. These aren&apos;t missing features — they&apos;re concepts that
             simply don&apos;t exist in the product&apos;s data model, because AccuLynx was built
             for a different type of contractor entirely.
           </p>
@@ -208,14 +208,14 @@ export default function AccuLynxVsCornerstonePage() {
             What does a production home builder actually need?
           </h2>
           <p>
-            A production builder doing 20&ndash;150 homes per year runs a fundamentally different
+            A production builder doing 20–150 homes per year runs a fundamentally different
             operation than a roofing contractor. The workflows that create complexity are:
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
             <li>
               <strong className="text-white">Plan repeats:</strong> The same Magnolia floorplan
               sells 80 times across three communities. Options need to be priced once at the plan
-              level and reused &mdash; not re-entered per job.
+              level and reused — not re-entered per job.
             </li>
             <li>
               <strong className="text-white">Design center:</strong> Buyers select finishes,
@@ -239,11 +239,11 @@ export default function AccuLynxVsCornerstonePage() {
             </li>
           </ul>
           <p>
-            AccuLynx addresses none of these. Cornerstone PM&trade; was built around them.
+            AccuLynx addresses none of these. Cornerstone PM™ was built around them.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            Feature comparison: AccuLynx vs Cornerstone PM&trade;
+            Feature comparison: AccuLynx vs Cornerstone PM™
           </h2>
 
           <div className="overflow-x-auto rounded-xl border border-slate-800 not-prose">
@@ -252,7 +252,7 @@ export default function AccuLynxVsCornerstonePage() {
                 <tr className="border-b border-slate-800 bg-slate-900/60">
                   <th className="text-left px-5 py-4 text-slate-400 font-medium">Feature</th>
                   <th className="px-5 py-4 text-slate-400 font-medium text-center">AccuLynx</th>
-                  <th className="px-5 py-4 text-cyan-400 font-medium text-center">Cornerstone PM&trade;</th>
+                  <th className="px-5 py-4 text-cyan-400 font-medium text-center">Cornerstone PM™</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-800/60">
@@ -272,18 +272,18 @@ export default function AccuLynxVsCornerstonePage() {
           </div>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            How does Cornerstone PM&trade;&rsquo;s design center work?
+            How does Cornerstone PM™’s design center work?
           </h2>
           <p>
             The design center is one of the highest-margin touchpoints in a home sale. A buyer
             choosing between a standard kitchen and a Designer Package upgrade is a revenue moment
-            &mdash; and how you handle it determines whether you capture that revenue or leave it
+            — and how you handle it determines whether you capture that revenue or leave it
             on the table.
           </p>
           <p>
-            Cornerstone PM&trade; ships 64 curated Designer Packages across 7 categories. When a
+            Cornerstone PM™ ships 64 curated Designer Packages across 7 categories. When a
             buyer selects a package, all options in that category automatically lock to the
-            package&apos;s selections &mdash; no manual per-option configuration required. If the
+            package&apos;s selections — no manual per-option configuration required. If the
             buyer wants to customize further, they can unlock individual options from the package
             and make &agrave; la carte selections.
           </p>
@@ -295,7 +295,7 @@ export default function AccuLynxVsCornerstonePage() {
           <p>
             This is a structural product difference from AccuLynx, Buildertrend, and most CRM
             tools that treat selections as job-level allowances. For a production builder selling
-            the same plans repeatedly, the plan-level model is not a nice-to-have &mdash;
+            the same plans repeatedly, the plan-level model is not a nice-to-have —
             it&apos;s the difference between a scalable design process and one that breaks down
             at 40 homes per year.
           </p>
@@ -309,41 +309,41 @@ export default function AccuLynxVsCornerstonePage() {
             whole-home builder&apos;s workflow.
           </p>
           <p>
-            Cornerstone PM&trade; ships five purpose-built AI agents:
+            Cornerstone PM™ ships five purpose-built AI agents:
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
             <li>
-              <strong className="text-white">Blueprint AI</strong> &mdash; parses a floor plan PDF
+              <strong className="text-white">Blueprint AI</strong> — parses a floor plan PDF
               and extracts 130+ material scopes in under 60 seconds.{" "}
               <Link
                 href="/ai-takeoff"
                 className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
               >
-                See Blueprint AI &rarr;
+                See Blueprint AI →
               </Link>
             </li>
             <li>
-              <strong className="text-white">Foreman AI</strong> &mdash; an in-app agent with
+              <strong className="text-white">Foreman AI</strong> — an in-app agent with
               396+ skills covering purchasing workflows, vendor management, schedule optimization,
-              budget reports, and profitability analysis. Foreman reads AND writes data &mdash;
+              budget reports, and profitability analysis. Foreman reads AND writes data —
               it takes real actions, not just chat.{" "}
               <Link
                 href="/foreman"
                 className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
               >
-                Meet Foreman &rarr;
+                Meet Foreman →
               </Link>
             </li>
             <li>
-              <strong className="text-white">Bid Import AI</strong> &mdash; auto-maps vendor bid
+              <strong className="text-white">Bid Import AI</strong> — auto-maps vendor bid
               spreadsheets to your scope items. No manual column matching.
             </li>
             <li>
-              <strong className="text-white">AI MLS Listing Generator</strong> &mdash; generates
+              <strong className="text-white">AI MLS Listing Generator</strong> — generates
               listing copy from your floorplan and options data.
             </li>
             <li>
-              <strong className="text-white">AI Support Agent</strong> &mdash; answers platform
+              <strong className="text-white">AI Support Agent</strong> — answers platform
               questions in context without leaving your workflow.
             </li>
           </ul>
@@ -360,7 +360,7 @@ export default function AccuLynxVsCornerstonePage() {
             ordering from a small number of major distributors. This is appropriate for a roofer.
           </p>
           <p>
-            Cornerstone PM&trade;&apos;s purchasing module manages multi-trade bid requests across
+            Cornerstone PM™&apos;s purchasing module manages multi-trade bid requests across
             dozens of vendors:
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
@@ -369,14 +369,14 @@ export default function AccuLynxVsCornerstonePage() {
               Excel templates covering each vendor&apos;s relevant trade
             </li>
             <li>
-              Vendors respond through a token-protected portal &mdash; no Cornerstone account
+              Vendors respond through a token-protected portal — no Cornerstone account
               required
             </li>
             <li>
               Side-by-side bid comparison when 2+ vendors submit
             </li>
             <li>
-              Bids lock on acceptance &mdash; no last-minute edits from either side
+              Bids lock on acceptance — no last-minute edits from either side
             </li>
             <li>
               Community-assigned vendor wins: the awarded vendor for Community A can differ from
@@ -395,12 +395,12 @@ export default function AccuLynxVsCornerstonePage() {
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            So who should use AccuLynx, and who should use Cornerstone PM&trade;?
+            So who should use AccuLynx, and who should use Cornerstone PM™?
           </h2>
 
           <div className="grid sm:grid-cols-2 gap-4 not-prose my-6">
             <div className="rounded-xl border border-slate-700 bg-slate-900/40 p-6">
-              <h3 className="text-lg font-bold text-white mb-3">Use AccuLynx if you are&hellip;</h3>
+              <h3 className="text-lg font-bold text-white mb-3">Use AccuLynx if you are…</h3>
               <ul className="space-y-2 text-slate-300 text-sm">
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-400 mt-0.5 shrink-0" />
@@ -421,11 +421,11 @@ export default function AccuLynxVsCornerstonePage() {
               </ul>
             </div>
             <div className="rounded-xl border border-cyan-800/40 bg-cyan-950/20 p-6">
-              <h3 className="text-lg font-bold text-white mb-3">Use Cornerstone PM&trade; if you are&hellip;</h3>
+              <h3 className="text-lg font-bold text-white mb-3">Use Cornerstone PM™ if you are…</h3>
               <ul className="space-y-2 text-slate-300 text-sm">
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-cyan-400 mt-0.5 shrink-0" />
-                  A production home builder (5&ndash;200 homes/year)
+                  A production home builder (5–200 homes/year)
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-cyan-400 mt-0.5 shrink-0" />
@@ -466,15 +466,15 @@ export default function AccuLynxVsCornerstonePage() {
               Built for production builders, not roofers
             </h2>
             <p className="text-slate-300 mb-6 max-w-xl mx-auto">
-              See how Cornerstone PM&trade; handles floorplans, Designer Packages, AI takeoff,
-              and multi-community vendor management &mdash; the workflows AccuLynx was never
+              See how Cornerstone PM™ handles floorplans, Designer Packages, AI takeoff,
+              and multi-community vendor management — the workflows AccuLynx was never
               designed for.
             </p>
             <Link
               href="/beta"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-base transition-colors"
             >
-              Request Early Access &rarr;
+              Request Early Access →
             </Link>
           </div>
 

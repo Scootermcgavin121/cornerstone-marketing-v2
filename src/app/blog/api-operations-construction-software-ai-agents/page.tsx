@@ -197,7 +197,7 @@ export default function ApiOperationsPage() {
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            Why &ldquo;operations,&rdquo; not just &ldquo;endpoints&rdquo;?
+            Why “operations,” not just “endpoints”?
           </h2>
           <p>
             Most software brags about endpoint counts. An endpoint is a route \u2014 a URL your code can
@@ -291,7 +291,7 @@ export default function ApiOperationsPage() {
                     Most platforms
                   </th>
                   <th className="px-5 py-4 text-cyan-400 font-medium text-center">
-                    Cornerstone PM&trade;
+                    Cornerstone PM™
                   </th>
                 </tr>
               </thead>
@@ -321,7 +321,7 @@ export default function ApiOperationsPage() {
                 </tr>
                 <tr className="hover:bg-slate-900/40 transition-colors">
                   <td className="px-5 py-3.5">Typed, signed webhook catalog</td>
-                  <td className="px-5 py-3.5 text-center text-red-400">1&ndash;3 generic</td>
+                  <td className="px-5 py-3.5 text-center text-red-400">1–3 generic</td>
                   <td className="px-5 py-3.5 text-center text-emerald-400">
                     {WEBHOOK_EVENT_COUNT}+ named
                   </td>
@@ -349,8 +349,8 @@ export default function ApiOperationsPage() {
           </div>
 
           <p>
-            JobTread, Buildertrend, and CoConstruct tell you &ldquo;webhooks exist&rdquo; and maybe
-            &ldquo;an API is available.&rdquo; Cornerstone PM ships the full skill catalog as
+            JobTread, Buildertrend, and CoConstruct tell you “webhooks exist” and maybe
+            “an API is available.” Cornerstone PM ships the full skill catalog as
             endpoints, in three agent-readable formats, with a webhook catalog on the outbound side
             and an MCP server for no-code connection. The difference is the difference between a
             checkbox and a platform your AI agent can actually run.
@@ -386,7 +386,7 @@ export default function ApiOperationsPage() {
               href="/beta"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-base transition-colors"
             >
-              Request Early Access &rarr;
+              Request Early Access →
             </Link>
           </div>
         </div>

@@ -199,7 +199,7 @@ export default function ForemanAIProductImagePage() {
           </div>
 
           <p>
-            The key step is the second one. Most AI tools stop at &ldquo;here is a URL.&rdquo; Foreman saves
+            The key step is the second one. Most AI tools stop at “here is a URL.” Foreman saves
             the image to Vercel Blob storage and hands you a hosted URL that lives under your
             account. The source URL goes stale; the hosted URL doesn&apos;t. Your design center images
             are stable because they&apos;re hosted on infrastructure you control, not borrowed from a
@@ -314,17 +314,17 @@ export default function ForemanAIProductImagePage() {
           </p>
           <p>
             Foreman&apos;s approach converts the image-management problem from a recurring manual task
-            to a one-sentence instruction: &ldquo;Find the image for the Kohler Memoirs pedestal sink in
-            white and add it to the Classic Bath option.&rdquo; Foreman searches, saves to permanent
+            to a one-sentence instruction: “Find the image for the Kohler Memoirs pedestal sink in
+            white and add it to the Classic Bath option.” Foreman searches, saves to permanent
             storage, and attaches. The URL it writes never breaks because it&apos;s not borrowed from
             Kohler&apos;s CDN.
           </p>
 
           <div className="not-prose rounded-xl border border-slate-800 bg-slate-900/40 p-6 my-8">
             <p className="text-slate-400 text-sm italic leading-relaxed border-l-2 border-violet-500/40 pl-4">
-              &ldquo;Foreman AI doesn&apos;t just search the web — it grabs the image, hosts it, and attaches
+              “Foreman AI doesn&apos;t just search the web — it grabs the image, hosts it, and attaches
               it to your design option in one breath. Tell it what you want; it handles the URL
-              management so you don&apos;t have to.&rdquo;
+              management so you don&apos;t have to.”
             </p>
           </div>
 

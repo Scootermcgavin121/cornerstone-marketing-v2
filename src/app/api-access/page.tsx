@@ -629,7 +629,7 @@ export default function ApiAccessPage() {
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-xs font-semibold mb-6">
             <Code className="w-3.5 h-3.5" />
-            BYOA &mdash; BRING YOUR OWN AGENT &mdash; INDUSTRY FIRST
+            BYOA — BRING YOUR OWN AGENT — INDUSTRY FIRST
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-8xl font-black mb-6 leading-tight tracking-tight">
             Your AI agent handles<br />
@@ -637,14 +637,14 @@ export default function ApiAccessPage() {
           </h1>
           <p className="text-2xl text-slate-300 font-semibold mb-4">And schedules construction tasks by text.</p>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
-            REST API + webhooks that let any AI agent run the full subcontractor lifecycle &mdash; cold-call vendors, send bid requests, and schedule the framers, drywallers, and masons who never open their inbox. Text the sub: <em className="text-slate-300 not-italic">&ldquo;Lot 14 framing ready Mon 7am, confirm?&rdquo;</em> &mdash; they reply <em className="text-slate-300 not-italic">&ldquo;yes&rdquo;</em>, your agent parses it and PATCHes the task. Wire Twilio, Bland, or Retell. Bring your own provider. No lock-in.
+            REST API + webhooks that let any AI agent run the full subcontractor lifecycle — cold-call vendors, send bid requests, and schedule the framers, drywallers, and masons who never open their inbox. Text the sub: <em className="text-slate-300 not-italic">“Lot 14 framing ready Mon 7am, confirm?”</em> — they reply <em className="text-slate-300 not-italic">“yes”</em>, your agent parses it and PATCHes the task. Wire Twilio, Bland, or Retell. Bring your own provider. No lock-in.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
             <Link
               href="/beta"
               className="px-8 py-4 rounded-full bg-cyan-400 text-slate-900 font-bold text-lg hover:bg-cyan-300 transition-all duration-200 shadow-lg shadow-cyan-500/30 hover:-translate-y-0.5"
             >
-              Request API Access &rarr;
+              Request API Access →
             </Link>
             <a
               href="#mcp"
@@ -666,7 +666,7 @@ export default function ApiAccessPage() {
                 <Code className="w-4 h-4 text-cyan-400" />
               </div>
               <div>
-                <div className="text-white font-bold text-sm group-hover:text-cyan-400 transition-colors">Live API Reference &rarr;</div>
+                <div className="text-white font-bold text-sm group-hover:text-cyan-400 transition-colors">Live API Reference →</div>
                 <div className="text-slate-500 text-xs">app.cornerstonepm.ai/developers</div>
               </div>
             </a>
@@ -675,7 +675,7 @@ export default function ApiAccessPage() {
                 <Zap className="w-4 h-4 text-violet-400" />
               </div>
               <div>
-                <div className="text-white font-bold text-sm group-hover:text-violet-400 transition-colors">Foreman Skill Catalog &rarr;</div>
+                <div className="text-white font-bold text-sm group-hover:text-violet-400 transition-colors">Foreman Skill Catalog →</div>
                 <div className="text-slate-500 text-xs">app.cornerstonepm.ai/skills</div>
               </div>
             </a>
@@ -706,7 +706,7 @@ export default function ApiAccessPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <h2 className="text-3xl sm:text-5xl font-black mb-4">Build AI agent workflows<br />with APIs and webhooks.</h2>
-            <p className="text-slate-400 max-w-xl mx-auto">Bearer token auth. JSON responses. Standard REST + webhooks. Schedule subs by text, send bid requests, track responses, push every in-app message to SMS, and ping the homebuyer the moment a milestone completes &mdash; pair with Twilio, Bland, or Retell. Works with any agent: custom-built, third-party, or Cornerstone&apos;s Foreman AI.</p>
+            <p className="text-slate-400 max-w-xl mx-auto">Bearer token auth. JSON responses. Standard REST + webhooks. Schedule subs by text, send bid requests, track responses, push every in-app message to SMS, and ping the homebuyer the moment a milestone completes — pair with Twilio, Bland, or Retell. Works with any agent: custom-built, third-party, or Cornerstone&apos;s Foreman AI.</p>
           </div>
           <div className="space-y-6">
             {endpoints.map((ep, idx) => {
@@ -729,7 +729,7 @@ export default function ApiAccessPage() {
                         REAL-TIME WEBHOOKS
                       </div>
                       <h3 className="text-2xl sm:text-3xl font-black text-white mb-2">37+ HMAC-signed events. Fire to Twilio, Bland, or Retell the moment something happens.</h3>
-                      <p className="text-slate-400 max-w-2xl mx-auto">Other platforms say &ldquo;webhooks exist.&rdquo; We give you 37+ named events and counting — typed payloads, HMAC signatures, delivery logs, and auto-retry. New events ship as the platform grows.</p>
+                      <p className="text-slate-400 max-w-2xl mx-auto">Other platforms say “webhooks exist.” We give you 37+ named events and counting — typed payloads, HMAC signatures, delivery logs, and auto-retry. New events ship as the platform grows.</p>
                     </div>
                   )}
                   {showGroupLabel && !showDivider && (
@@ -827,14 +827,14 @@ export default function ApiAccessPage() {
           <div className="text-center mb-14">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-violet-500/30 bg-violet-500/10 text-violet-400 text-xs font-semibold mb-6">
               <Brain className="w-3.5 h-3.5" />
-              PRO+ ONLY &mdash; NEW
+              PRO+ ONLY — NEW
             </div>
             <h2 className="text-3xl sm:text-5xl font-black mb-4">
               Not just an API.<br />
               <span className="text-violet-400">The intelligence layer.</span>
             </h2>
             <p className="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
-              Pro+ users get access to Foreman AI&apos;s complete skill definitions &mdash; the actual tool schemas that make any AI agent instantly fluent in construction workflows. One endpoint. 396+ skills. Ready to drop into any agent framework.
+              Pro+ users get access to Foreman AI&apos;s complete skill definitions — the actual tool schemas that make any AI agent instantly fluent in construction workflows. One endpoint. 396+ skills. Ready to drop into any agent framework.
             </p>
           </div>
 
@@ -844,7 +844,7 @@ export default function ApiAccessPage() {
             <div className="flex-1">
               <h3 className="text-white font-black text-xl mb-2">One URL. Your agent becomes a Cornerstone expert.</h3>
               <p className="text-slate-400 leading-relaxed mb-4">
-                Think of it as a knowledge file for your AI. Point any agent at our developer docs and it instantly understands every endpoint, every workflow, every skill in Cornerstone &mdash; before you&apos;ve even signed up.
+                Think of it as a knowledge file for your AI. Point any agent at our developer docs and it instantly understands every endpoint, every workflow, every skill in Cornerstone — before you&apos;ve even signed up.
               </p>
               <a
                 href="https://app.cornerstonepm.ai/developers"
@@ -853,7 +853,7 @@ export default function ApiAccessPage() {
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-violet-500/20 border border-violet-500/40 text-violet-300 font-bold text-sm hover:bg-violet-500/30 transition-all duration-200"
               >
                 <Code className="w-4 h-4" />
-                app.cornerstonepm.ai/developers &rarr;
+                app.cornerstonepm.ai/developers →
               </a>
             </div>
           </div>
@@ -872,7 +872,7 @@ export default function ApiAccessPage() {
                 </p>
                 <div className="flex items-center gap-2 text-sm text-slate-400">
                   <RefreshCw className="w-4 h-4 text-violet-400 flex-shrink-0" />
-                  <span>Auto-syncs &mdash; when we add new skills to Foreman, your spec updates automatically.</span>
+                  <span>Auto-syncs — when we add new skills to Foreman, your spec updates automatically.</span>
                 </div>
               </div>
               <div className="bg-slate-950/80 border-t lg:border-t-0 lg:border-l border-violet-500/20 p-6">
@@ -947,14 +947,14 @@ export default function ApiAccessPage() {
           <div className="text-center mb-14">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-violet-500/30 bg-violet-500/10 text-violet-400 text-xs font-semibold mb-6">
               <Plug className="w-3.5 h-3.5" />
-              MCP SERVER &mdash; THE NO-CODE ON-RAMP
+              MCP SERVER — THE NO-CODE ON-RAMP
             </div>
             <h2 className="text-3xl sm:text-5xl font-black mb-4">
               Point Claude Desktop at your<br />
               <span className="text-violet-400">construction data in 30 seconds.</span>
             </h2>
             <p className="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
-              Cornerstone PM ships a built-in <strong className="text-slate-200">Model Context Protocol (MCP) server</strong>. Generate an API key in settings, paste the ready-made config block into Claude Desktop, Cursor, or Windsurf, and your AI tool can run any of the 396+ Foreman skills directly. No code, no middleware, no server to host. Most construction software has no AI integration at all &mdash; we ship a full MCP server.
+              Cornerstone PM ships a built-in <strong className="text-slate-200">Model Context Protocol (MCP) server</strong>. Generate an API key in settings, paste the ready-made config block into Claude Desktop, Cursor, or Windsurf, and your AI tool can run any of the 396+ Foreman skills directly. No code, no middleware, no server to host. Most construction software has no AI integration at all — we ship a full MCP server.
             </p>
           </div>
 
@@ -1031,11 +1031,11 @@ export default function ApiAccessPage() {
                 </div>
                 <h3 className="text-2xl font-black text-violet-400 mb-3">Paste, save, done.</h3>
                 <p className="text-slate-400 leading-relaxed mb-6">
-                  In <code className="text-violet-300 bg-violet-500/10 px-1.5 py-0.5 rounded text-xs">Settings &rarr; MCP</code>, generate an API key. Cornerstone hands you a config block formatted for Claude Desktop, Cursor, or Windsurf. Paste it into your tool&apos;s MCP settings, restart, and the agent can search, create, and manage your construction data through natural language.
+                  In <code className="text-violet-300 bg-violet-500/10 px-1.5 py-0.5 rounded text-xs">Settings → MCP</code>, generate an API key. Cornerstone hands you a config block formatted for Claude Desktop, Cursor, or Windsurf. Paste it into your tool&apos;s MCP settings, restart, and the agent can search, create, and manage your construction data through natural language.
                 </p>
                 <div className="flex items-center gap-2 text-sm text-slate-400">
                   <RefreshCw className="w-4 h-4 text-violet-400 flex-shrink-0" />
-                  <span>New Foreman skills appear in your MCP tools automatically &mdash; no config changes.</span>
+                  <span>New Foreman skills appear in your MCP tools automatically — no config changes.</span>
                 </div>
               </div>
               <div className="bg-slate-950/80 border-t lg:border-t-0 lg:border-l border-violet-500/20 p-6">
@@ -1070,7 +1070,7 @@ export default function ApiAccessPage() {
               Cold call to signed contract.<br />
               <span className="text-cyan-400">Zero human touches.</span>
             </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">Your AI agent runs all 7 waves automatically. Cornerstone tracks every interaction, every bid, every vendor &mdash; in real time.</p>
+            <p className="text-slate-400 max-w-2xl mx-auto">Your AI agent runs all 7 waves automatically. Cornerstone tracks every interaction, every bid, every vendor — in real time.</p>
           </div>
 
           <div className="relative">
@@ -1255,7 +1255,7 @@ export default function ApiAccessPage() {
               href="/beta"
               className="block w-full text-center px-6 py-4 rounded-xl bg-cyan-400 text-slate-900 font-bold text-lg hover:bg-cyan-300 transition-all duration-200"
             >
-              Request API Access &rarr;
+              Request API Access →
             </Link>
             <p className="text-slate-500 text-xs mt-3">Beta limited to 100 builders &middot; No credit card required</p>
           </div>
@@ -1275,7 +1275,7 @@ export default function ApiAccessPage() {
           href="/beta"
           className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-cyan-400 text-slate-900 font-bold text-xl hover:bg-cyan-300 transition-all duration-200 shadow-xl shadow-cyan-500/30"
         >
-          Request Early Access &rarr;
+          Request Early Access →
         </Link>
       </section>
       <Footer />

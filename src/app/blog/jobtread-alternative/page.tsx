@@ -16,9 +16,9 @@ const blogSchema = buildBlogPostSchema({
 });
 
 export const metadata: Metadata = {
-  title: "JobTread Alternative for Home Builders &mdash; Cornerstone PM™ Blog",
+  title: "JobTread Alternative for Home Builders — Cornerstone PM™ Blog",
   description:
-    "JobTread is built for general contractors. Cornerstone PM™ is built for home builders. Here's the honest difference &mdash; lot management, design center, sales pipeline, and AI that actually works with your data.",
+    "JobTread is built for general contractors. Cornerstone PM™ is built for home builders. Here's the honest difference — lot management, design center, sales pipeline, and AI that actually works with your data.",
   openGraph: {
     images: [{ url: "https://www.cornerstonepm.ai/blog/production-builder-software.png", width: 1960,
           height: 1380, alt: "JobTread alternative home builder software with options pricing engine for production builders" }],
@@ -68,18 +68,18 @@ export default function JobtreadAlternativePost() {
           </h1>
           <div className="flex items-center gap-3 text-sm text-slate-500">
             <span>April 1, 2026</span>
-            <span>&mdash;·</span>
+            <span>—·</span>
             <span>6 min read</span>
           </div>
         </div>
 
         <div className="prose prose-invert prose-lg max-w-none space-y-6 text-slate-300 leading-relaxed">
           <p className="text-xl text-slate-300 font-light">
-            JobTread has built a solid reputation in the general contractor space. Good scheduling, decent financials, reasonable price. But a growing number of home builders are searching for alternatives &mdash; and the reason is almost always the same: JobTread is built for contractors, not home builders.
+            JobTread has built a solid reputation in the general contractor space. Good scheduling, decent financials, reasonable price. But a growing number of home builders are searching for alternatives — and the reason is almost always the same: JobTread is built for contractors, not home builders.
           </p>
 
           <p>
-            That distinction matters more than it sounds. General contractors work on custom remodels, commercial projects, and one-off builds. Home builders work on communities &mdash; multiple lots, repeatable floorplans, sales pipelines, design center options, and buyer journeys that start before a shovel goes in the ground. Those workflows don&apos;t exist in JobTread.
+            That distinction matters more than it sounds. General contractors work on custom remodels, commercial projects, and one-off builds. Home builders work on communities — multiple lots, repeatable floorplans, sales pipelines, design center options, and buyer journeys that start before a shovel goes in the ground. Those workflows don&apos;t exist in JobTread.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">What JobTread does well</h2>
@@ -103,7 +103,7 @@ export default function JobtreadAlternativePost() {
               },
               {
                 title: "No design center / options engine",
-                desc: "Managing buyer selections &mdash; Good/Better/Best options, design center appointments, upgrade pricing &mdash; requires purpose-built tooling. JobTread has none of this.",
+                desc: "Managing buyer selections — Good/Better/Best options, design center appointments, upgrade pricing — requires purpose-built tooling. JobTread has none of this.",
               },
               {
                 title: "No lot or community management",
@@ -115,7 +115,7 @@ export default function JobtreadAlternativePost() {
               },
               {
                 title: "AI is bring-your-own-ChatGPT",
-                desc: "JobTread&apos;s &ldquo;AI&rdquo; is middleware that connects to ChatGPT. It doesn&apos;t read your actual data, it doesn&apos;t write to your database, and it doesn&apos;t understand construction workflows.",
+                desc: "JobTread&apos;s “AI” is middleware that connects to ChatGPT. It doesn&apos;t read your actual data, it doesn&apos;t write to your database, and it doesn&apos;t understand construction workflows.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-xl bg-slate-900/60 border border-red-500/10 p-5 not-prose">
@@ -169,13 +169,13 @@ export default function JobtreadAlternativePost() {
         <div className="prose prose-invert prose-lg max-w-none space-y-6 text-slate-300 leading-relaxed">
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">The AI difference: 100+ chained skills vs. ~35 basic CRUD calls</h2>
           <p>
-            Cornerstone PM™ includes Foreman AI &mdash; a 396+ skill construction agent that reads and writes your real data and chains skills together intelligently. Not a general-purpose chatbot. An agent that knows your parts catalog, your vendor bids, your homes, your sales pipeline, and your budget data.
+            Cornerstone PM™ includes Foreman AI — a 396+ skill construction agent that reads and writes your real data and chains skills together intelligently. Not a general-purpose chatbot. An agent that knows your parts catalog, your vendor bids, your homes, your sales pipeline, and your budget data.
           </p>
           <p>
-            JobTread&apos;s AI Connector exposes around 35 mostly basic CRUD skills (list homes, create vendor, search parts) and routes the actual thinking back to a third-party LLM (ChatGPT, Claude). Cornerstone&apos;s 396+ Foreman skills are different: they chain into real workflows. One prompt can read a blueprint, learn your fixture preferences from past takeoffs, build a complete fixture-by-fixture lighting package, and tag everything with option classes for the design center &mdash; all in a single call.
+            JobTread&apos;s AI Connector exposes around 35 mostly basic CRUD skills (list homes, create vendor, search parts) and routes the actual thinking back to a third-party LLM (ChatGPT, Claude). Cornerstone&apos;s 396+ Foreman skills are different: they chain into real workflows. One prompt can read a blueprint, learn your fixture preferences from past takeoffs, build a complete fixture-by-fixture lighting package, and tag everything with option classes for the design center — all in a single call.
           </p>
           <p>
-            You can ask it things like: <em>&ldquo;Flag homes where actual costs are over 10% of budget&rdquo;</em>, <em>&ldquo;Set up a complete lighting package for The Addison&rdquo;</em> (Foreman knows recessed cans go in living areas, vanity bars over bathroom sinks, pendants over kitchen islands &mdash; and which fixtures YOU prefer based on your past floorplans), or <em>&ldquo;Write an MLS description for The Addison at Bayside Preserve.&rdquo;</em>
+            You can ask it things like: <em>“Flag homes where actual costs are over 10% of budget”</em>, <em>“Set up a complete lighting package for The Addison”</em> (Foreman knows recessed cans go in living areas, vanity bars over bathroom sinks, pendants over kitchen islands — and which fixtures YOU prefer based on your past floorplans), or <em>“Write an MLS description for The Addison at Bayside Preserve.”</em>
           </p>
           <p>
             And the kill shot: Foreman&apos;s <code className="text-amber-300">learnBuilderPreferences</code> skill reads your existing floorplan takeoffs and figures out YOUR build defaults automatically. Every other Foreman skill checks learned preferences before falling back to hardcoded values. JobTread&apos;s AI stays static. Foreman gets smarter every time you build a floorplan.
@@ -183,7 +183,7 @@ export default function JobtreadAlternativePost() {
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">Who should look at Cornerstone PM™</h2>
           <p>
-            Cornerstone PM™ is the right call if you&apos;re a home builder managing 5&ndash;50 homes a year and you need:
+            Cornerstone PM™ is the right call if you&apos;re a home builder managing 5–50 homes a year and you need:
           </p>
           <ul className="space-y-2 my-4">
             {[
@@ -201,7 +201,7 @@ export default function JobtreadAlternativePost() {
           </ul>
 
           <p>
-            If you&apos;re a general contractor doing custom remodels, JobTread is probably fine. If you&apos;re building homes in communities, selling to buyers before construction starts, and managing design center options &mdash; you need a tool built for that workflow, not adapted from it.
+            If you&apos;re a general contractor doing custom remodels, JobTread is probably fine. If you&apos;re building homes in communities, selling to buyers before construction starts, and managing design center options — you need a tool built for that workflow, not adapted from it.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">The bottom line</h2>

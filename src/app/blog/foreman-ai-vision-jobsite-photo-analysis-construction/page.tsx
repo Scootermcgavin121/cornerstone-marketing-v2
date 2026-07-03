@@ -131,8 +131,8 @@ export default function ForemanVisionPage() {
         <div className="prose prose-invert prose-lg max-w-none space-y-6 text-slate-300 leading-relaxed">
 
           <p className="text-xl text-slate-300 font-light">
-            Foreman AI reads the photos you already take&mdash;jobsite conditions, product spec
-            sheets, floor plans, delivery receipts&mdash;and turns them into structured
+            Foreman AI reads the photos you already take—jobsite conditions, product spec
+            sheets, floor plans, delivery receipts—and turns them into structured
             construction data and real actions inside Cornerstone PM. Paste or drag-drop an image
             and Foreman analyzes the content, not just stores it.
           </p>
@@ -141,7 +141,7 @@ export default function ForemanVisionPage() {
             Builders are already living in photos. Every superintendent has a phone full of jobsite
             shots. Every purchasing manager has emailed a product spec sheet. Every project manager
             has a folder of floor plan PDFs. The gap is that most construction software treats these
-            as dumb attachments&mdash;files to be stored, not information to be read. Your{" "}
+            as dumb attachments—files to be stored, not information to be read. Your{" "}
             <Link
               href="/foreman"
               className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
@@ -176,7 +176,7 @@ export default function ForemanVisionPage() {
 
           <p>
             The key distinction from simple file storage: Foreman is reading the image the way a
-            knowledgeable colleague would read it&mdash;looking for meaning, pulling out specifics,
+            knowledgeable colleague would read it—looking for meaning, pulling out specifics,
             and connecting what it sees to your active jobs, options, and vendors.
           </p>
 
@@ -186,7 +186,7 @@ export default function ForemanVisionPage() {
           <p>
             Construction is a uniquely visual business. Decisions that in other industries happen
             over spreadsheets happen in construction over photos, drawings, and physical samples.
-            A tile selection isn&apos;t a SKU number to most builders&mdash;it&apos;s a photo on a phone
+            A tile selection isn&apos;t a SKU number to most builders—it&apos;s a photo on a phone
             that gets texted to the superintendent and the homebuyer simultaneously.
           </p>
           <p>
@@ -199,7 +199,7 @@ export default function ForemanVisionPage() {
           <p>
             Other construction platforms have attachment fields. Some have photo galleries. What
             they don&apos;t have is an AI that reads the content of the attachment and acts on it. The
-            difference isn&apos;t cosmetic&mdash;it&apos;s whether your software is passively filing photos
+            difference isn&apos;t cosmetic—it&apos;s whether your software is passively filing photos
             or actively working with them.
           </p>
 
@@ -215,7 +215,7 @@ export default function ForemanVisionPage() {
             >
               Foreman reads <em>and</em> writes your data
             </Link>
-            &mdash;it doesn&apos;t just return an answer, it takes the next step.
+            —it doesn&apos;t just return an answer, it takes the next step.
           </p>
 
           <div className="not-prose space-y-4 my-8">
@@ -269,7 +269,7 @@ export default function ForemanVisionPage() {
 
           <p>
             Each of these workflows ends with a real write operation in your Cornerstone PM
-            account&mdash;a new option, a flagged task, an updated PO. The vision capability is
+            account—a new option, a flagged task, an updated PO. The vision capability is
             the input layer; Foreman&apos;s 396+ action skills are what execute the output.
           </p>
 
@@ -295,7 +295,7 @@ export default function ForemanVisionPage() {
           </p>
           <p>
             The vision capability (what this post is about) works inbound: you give Foreman an
-            image&mdash;any image you already have&mdash;and it reads and interprets the content.
+            image—any image you already have—and it reads and interprets the content.
             No product name required. No model number to look up. Just the image.
           </p>
           <p>
@@ -309,15 +309,15 @@ export default function ForemanVisionPage() {
             What competitors get wrong about construction photos
           </h2>
           <p>
-            Most construction software vendors treat photo storage as a feature. &ldquo;Upload and
-            organize jobsite photos.&rdquo; &ldquo;Attach images to tasks.&rdquo; &ldquo;Share photos with your
-            team.&rdquo; These are file management features, not AI features. The photo gets stored;
+            Most construction software vendors treat photo storage as a feature. “Upload and
+            organize jobsite photos.” “Attach images to tasks.” “Share photos with your
+            team.” These are file management features, not AI features. The photo gets stored;
             nothing reads it.
           </p>
           <p>
             Buildertrend, CoConstruct, and JobTread all have photo galleries. None of them have an
             AI that reads the content of a photo and takes action on it. This isn&apos;t a minor
-            feature gap&mdash;it&apos;s a fundamentally different conception of what construction software
+            feature gap—it&apos;s a fundamentally different conception of what construction software
             should do with the visual information that builders generate every day.
           </p>
           <p>
@@ -327,12 +327,12 @@ export default function ForemanVisionPage() {
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            Vision is available on Pro+&mdash;and it ships with every new Foreman skill
+            Vision is available on Pro+—and it ships with every new Foreman skill
           </h2>
           <p>
             Foreman AI&apos;s vision capability is part of the Pro+ plan alongside the full 396+ skill
             catalog, per-user memory, company-wide memory, and REST API / BYOA access. Every time
-            the Foreman skill catalog expands, vision gets more useful&mdash;because the AI that
+            the Foreman skill catalog expands, vision gets more useful—because the AI that
             reads your photos gets better at connecting what it sees to the actions your account
             can take.
           </p>
@@ -340,7 +340,7 @@ export default function ForemanVisionPage() {
             If you&apos;re using the MCP server on Claude Desktop, Cursor, or Windsurf, vision
             capability is available through the MCP connection as well. The same Foreman agent
             that reads a jobsite photo inside Cornerstone PM can read it from your external AI
-            tool&mdash;no context switching required.
+            tool—no context switching required.
           </p>
           <p>
             For a full overview of the Foreman AI skill catalog and plan availability, see the{" "}
@@ -362,11 +362,11 @@ export default function ForemanVisionPage() {
 
           <div className="not-prose rounded-xl border border-slate-800 bg-slate-900/40 p-6 my-8">
             <p className="text-slate-400 text-sm italic leading-relaxed border-l-2 border-emerald-500/40 pl-4">
-              &ldquo;Every other construction platform files your photos. Foreman reads them. Drop
+              “Every other construction platform files your photos. Foreman reads them. Drop
               a product image into the chat and it identifies the product, pulls the specs, and
               creates the design option. Point it at a jobsite photo and it tells you what it
               sees and logs the issue. The gap between storing a photo and acting on one is where
-              the work actually happens.&rdquo;
+              the work actually happens.”
             </p>
           </div>
 

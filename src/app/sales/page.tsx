@@ -38,15 +38,15 @@ export const metadata = {
 const faqItems: FAQItem[] = [
   {
     q: "What is home builder sales pipeline software?",
-    a: "Home builder sales pipeline software is a system that tracks prospective buyers from first contact through contract, with built-in floorplan selection, structural options, incentives, and lot inventory. Cornerstone PM™'s sales pipeline is built specifically for home builders &mdash; new home sale in under 60 seconds, auto-generated 9-step sales checklist, and auto-budget generation the moment structural options are locked.",
+    a: "Home builder sales pipeline software is a system that tracks prospective buyers from first contact through contract, with built-in floorplan selection, structural options, incentives, and lot inventory. Cornerstone PM™'s sales pipeline is built specifically for home builders — new home sale in under 60 seconds, auto-generated 9-step sales checklist, and auto-budget generation the moment structural options are locked.",
   },
   {
     q: "How is new home sales software different from a generic CRM?",
-    a: "Generic CRMs (Salesforce, HubSpot, Pipedrive) track leads but don't understand homebuilding workflows: floorplan pricing matrix, options engine, lot status, design center allowances, or auto-budget generation when a buyer locks structurals. Cornerstone PM™'s sales module knows all of those because it's connected to your live build data &mdash; buyers, lots, plans, and budgets stay in sync automatically.",
+    a: "Generic CRMs (Salesforce, HubSpot, Pipedrive) track leads but don't understand homebuilding workflows: floorplan pricing matrix, options engine, lot status, design center allowances, or auto-budget generation when a buyer locks structurals. Cornerstone PM™'s sales module knows all of those because it's connected to your live build data — buyers, lots, plans, and budgets stay in sync automatically.",
   },
   {
     q: "What is a structural options engine?",
-    a: "A structural options engine is the rules-based system that prices add-ons (3-car garage, bonus room, finished basement) per floorplan and per community. Cornerstone PM™'s options engine handles dependencies (you can't pick the gourmet kitchen without the larger pantry), incompatibilities, and per-community pricing &mdash; with real-time price rollup as the buyer makes selections.",
+    a: "A structural options engine is the rules-based system that prices add-ons (3-car garage, bonus room, finished basement) per floorplan and per community. Cornerstone PM™'s options engine handles dependencies (you can't pick the gourmet kitchen without the larger pantry), incompatibilities, and per-community pricing — with real-time price rollup as the buyer makes selections.",
   },
   {
     q: "Can I create a new home sale in 60 seconds?",
@@ -54,7 +54,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Does Cornerstone PM™ replace BuildPro or NEWSTAR for sales?",
-    a: "Yes. Cornerstone PM™ is built as a modern alternative to NEWSTAR and BuildPro for small-to-mid production home builders. It includes the same core sales features &mdash; floorplan pricing matrix, options engine, lot inventory, incentive management &mdash; without the 6-figure implementation budget. Starts at $299/mo on the Builder plan.",
+    a: "Yes. Cornerstone PM™ is built as a modern alternative to NEWSTAR and BuildPro for small-to-mid production home builders. It includes the same core sales features — floorplan pricing matrix, options engine, lot inventory, incentive management — without the 6-figure implementation budget. Starts at $299/mo on the Builder plan.",
   },
   {
     q: "How does the sales pipeline connect to construction?",
@@ -104,12 +104,12 @@ const steps = [
   {
     num: "04",
     title: "Review & Submit",
-    desc: "Full summary &mdash; buyer, lot, floorplan, options, incentive, total contract price. One button to create.",
+    desc: "Full summary — buyer, lot, floorplan, options, incentive, total contract price. One button to create.",
   },
   {
     num: "05",
     title: "Workflow Auto-Generated",
-    desc: "The moment the home is created, 16+ tasks auto-fire across Sales, Permitting, and Design Center &mdash; contract, deposit, structural approvals, budget, permits, design selections.",
+    desc: "The moment the home is created, 16+ tasks auto-fire across Sales, Permitting, and Design Center — contract, deposit, structural approvals, budget, permits, design selections.",
   },
 ];
 
@@ -139,7 +139,7 @@ export default function SalesPage() {
               href="/beta"
               className="px-8 py-4 rounded-full bg-cyan-400 text-slate-900 font-bold text-lg hover:bg-cyan-300 transition-all duration-200 shadow-lg shadow-cyan-500/30 hover:-translate-y-0.5"
             >
-              Request Early Access &rarr; 
+              Request Early Access → 
             </Link>
             <Link
               href="/features"
@@ -171,14 +171,14 @@ export default function SalesPage() {
               <div>
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/30 text-violet-400 text-xs font-bold uppercase tracking-widest mb-4">
                   <QrCode className="w-3.5 h-3.5" />
-                  Industry First &mdash; Lead Capture at the Model Home
+                  Industry First — Lead Capture at the Model Home
                 </div>
                 <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">
                   Goodbye, paper sign-in sheet.<br />
                   <span className="text-violet-400">Every walk-in becomes a Lead.</span>
                 </h2>
                 <p className="text-slate-300 leading-relaxed mb-4">
-                  One QR code at every model home entrance. Walk-in buyers self-register on their own phone &mdash; no app install, no clipboard, no Monday-morning retyping. Returning visitors get a &ldquo;Welcome back&rdquo; flow; every scan auto-creates a <strong className="text-white">Lead record</strong> tied to the community and assigned to the model&apos;s sales agent.
+                  One QR code at every model home entrance. Walk-in buyers self-register on their own phone — no app install, no clipboard, no Monday-morning retyping. Returning visitors get a “Welcome back” flow; every scan auto-creates a <strong className="text-white">Lead record</strong> tied to the community and assigned to the model&apos;s sales agent.
                 </p>
                 <p className="text-slate-400 leading-relaxed mb-6">
                   Sales agent gets an instant in-app + email notification the moment a prospect scans. Foundation for nurture sequences and follow-up automation downstream.
@@ -187,7 +187,7 @@ export default function SalesPage() {
                   href="/qr"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-violet-400 text-slate-900 font-bold hover:bg-violet-300 transition-all duration-200"
                 >
-                  See the full QR ecosystem &rarr;
+                  See the full QR ecosystem →
                 </Link>
               </div>
               <div className="space-y-3">
@@ -241,13 +241,13 @@ export default function SalesPage() {
               </div>
               <h2 className="text-3xl font-black text-white mb-4">AI-Powered MLS Listing Generator</h2>
               <p className="text-slate-400 leading-relaxed mb-4">
-                One click. Cornerstone pulls community info, room dimensions (from Blueprint AI), lot size, structural upgrades, and design selections &mdash; then AI writes a polished, MLS-ready listing description.
+                One click. Cornerstone pulls community info, room dimensions (from Blueprint AI), lot size, structural upgrades, and design selections — then AI writes a polished, MLS-ready listing description.
               </p>
               <p className="text-slate-400 leading-relaxed mb-6">
                 No other builder platform can do this. Sales CRMs don&apos;t have construction data. Construction PM tools don&apos;t have sales data. We have both.
               </p>
               <Link href="/listing-sheet" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-cyan-400 text-slate-900 font-bold hover:bg-cyan-300 transition-all duration-200">
-                See how it works &rarr;
+                See how it works →
               </Link>
             </div>
             <div className="space-y-3">
@@ -305,7 +305,7 @@ export default function SalesPage() {
               href="/beta"
               className="block w-full text-center px-6 py-3.5 rounded-xl bg-cyan-400 text-slate-900 font-bold hover:bg-cyan-300 transition-all duration-200"
             >
-              Get Early Access &rarr; 
+              Get Early Access → 
             </Link>
             <p className="text-center text-slate-500 text-xs">
               Beta limited to 100 builders &middot; No credit card required
@@ -330,7 +330,7 @@ export default function SalesPage() {
           href="/beta"
           className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-cyan-400 text-slate-900 font-bold text-lg hover:bg-cyan-300 transition-all duration-200 shadow-lg shadow-cyan-500/30"
         >
-          Request Early Access &rarr; 
+          Request Early Access → 
         </Link>
       </section>
       <Footer />

@@ -123,7 +123,7 @@ export default function ExclusionGroupsPage() {
               Product Update
             </span>
             <span className="text-xs text-slate-500">May 29, 2026</span>
-            <span className="text-xs text-slate-600">&mdash;·</span>
+            <span className="text-xs text-slate-600">—·</span>
             <span className="text-xs text-slate-500">6 min read</span>
           </div>
 
@@ -136,9 +136,9 @@ export default function ExclusionGroupsPage() {
           <p className="text-xl text-slate-300 leading-relaxed mb-8">
             Exclusion groups in{" "}
             <Link href="/design" className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2">
-              Cornerstone PM&rsquo;s design center
+              Cornerstone PM’s design center
             </Link>{" "}
-            solve a specific problem that every builder hits when marking selections required: buyers shouldn&rsquo;t have to pick Carpet AND Tile AND LVP AND Hardwood — they pick one flooring type, and the category is done. One pick. Category complete. No more &ldquo;incomplete&rdquo; flags on every plan.
+            solve a specific problem that every builder hits when marking selections required: buyers shouldn’t have to pick Carpet AND Tile AND LVP AND Hardwood — they pick one flooring type, and the category is done. One pick. Category complete. No more “incomplete” flags on every plan.
           </p>
 
           {/* Hero image */}
@@ -158,15 +158,15 @@ export default function ExclusionGroupsPage() {
             Why Does This Problem Exist in the First Place?
           </h2>
           <p className="text-slate-300 leading-relaxed mb-4">
-            Most design center software treats &ldquo;required&rdquo; as a binary: either a selection is required or it isn&rsquo;t. That works fine when there&rsquo;s exactly one option per category. But real design centers have mutually exclusive choices — flooring types, roofing materials, countertop finishes. A buyer who picks Tile doesn&rsquo;t also need to pick Carpet, LVP, and Hardwood.
+            Most design center software treats “required” as a binary: either a selection is required or it isn’t. That works fine when there’s exactly one option per category. But real design centers have mutually exclusive choices — flooring types, roofing materials, countertop finishes. A buyer who picks Tile doesn’t also need to pick Carpet, LVP, and Hardwood.
           </p>
           <p className="text-slate-300 leading-relaxed mb-4">
             Without exclusion group logic, builders face two bad options:
           </p>
           <ul className="space-y-3 mb-6">
             {[
-              "Mark all flooring options as required → buyer must &ldquo;select&rdquo; every type to satisfy the completion check (broken UX, nonsensical selections)",
-              "Leave flooring options as optional → the selection progress dashboard permanently shows &ldquo;incomplete&rdquo; for Carpet, LVP, and Hardwood even after the buyer chose Tile (useless progress tracking)",
+              "Mark all flooring options as required → buyer must “select” every type to satisfy the completion check (broken UX, nonsensical selections)",
+              "Leave flooring options as optional → the selection progress dashboard permanently shows “incomplete” for Carpet, LVP, and Hardwood even after the buyer chose Tile (useless progress tracking)",
             ].map((item, i) => (
               <li key={i} className="flex items-start gap-3">
                 <span className="mt-1.5 w-2 h-2 rounded-full bg-red-400 shrink-0" />
@@ -175,7 +175,7 @@ export default function ExclusionGroupsPage() {
             ))}
           </ul>
           <p className="text-slate-300 leading-relaxed mb-6">
-            Neither approach gives builders clean selection-progress reporting or buyers a sensible experience. Buildertrend, JobTread, and NEWSTAR all handle this the same way — per-item required flags with no option-class exclusivity modeling. The concept of &ldquo;pick exactly one from this set&rdquo; doesn&rsquo;t exist natively in any of those platforms.
+            Neither approach gives builders clean selection-progress reporting or buyers a sensible experience. Buildertrend, JobTread, and NEWSTAR all handle this the same way — per-item required flags with no option-class exclusivity modeling. The concept of “pick exactly one from this set” doesn’t exist natively in any of those platforms.
           </p>
 
           {/* Section 2 */}
@@ -186,7 +186,7 @@ export default function ExclusionGroupsPage() {
             An exclusion group links multiple option classes under a single pick-one rule. When a buyer selects any option within any class in the group, all other classes in that group are automatically satisfied — no further input is needed from the buyer for that decision.
           </p>
           <p className="text-slate-300 leading-relaxed mb-6">
-            Here&rsquo;s what that looks like in practice for three common design center categories:
+            Here’s what that looks like in practice for three common design center categories:
           </p>
 
           <div className="grid gap-4 mb-8">
@@ -251,7 +251,7 @@ export default function ExclusionGroupsPage() {
             <Link href="/design" className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2">
               design center
             </Link>{" "}
-            setup. Here&rsquo;s the exact flow:
+            setup. Here’s the exact flow:
           </p>
 
           <div className="space-y-6 mb-10">
@@ -299,21 +299,21 @@ export default function ExclusionGroupsPage() {
             What Changes in Reporting and Buyer Experience?
           </h2>
           <p className="text-slate-300 leading-relaxed mb-4">
-            The downstream effect on reporting is immediate. Before exclusion groups, a builder with four flooring option classes would see four separate &ldquo;incomplete&rdquo; entries in selection progress for every buyer who made any flooring choice. After configuring the exclusion group, a single flooring selection resolves all four — one completed entry, three auto-satisfied, zero noise.
+            The downstream effect on reporting is immediate. Before exclusion groups, a builder with four flooring option classes would see four separate “incomplete” entries in selection progress for every buyer who made any flooring choice. After configuring the exclusion group, a single flooring selection resolves all four — one completed entry, three auto-satisfied, zero noise.
           </p>
           <p className="text-slate-300 leading-relaxed mb-4">
-            For buyers, the experience is cleaner and more intuitive. They&rsquo;re not asked to interact with options they have no intention of choosing. The progress meter moves correctly when they make their pick, instead of stalling at &ldquo;3 of 7 complete&rdquo; because the system is waiting for them to also &ldquo;select&rdquo; three flooring types they&rsquo;ve already implicitly rejected.
+            For buyers, the experience is cleaner and more intuitive. They’re not asked to interact with options they have no intention of choosing. The progress meter moves correctly when they make their pick, instead of stalling at “3 of 7 complete” because the system is waiting for them to also “select” three flooring types they’ve already implicitly rejected.
           </p>
           <p className="text-slate-300 leading-relaxed mb-4">
-            For builders reviewing selection progress across a 50-home community, the dashboard difference is significant. Instead of scanning through 200+ &ldquo;incomplete&rdquo; flags that are really just &ldquo;buyer picked Tile instead of Carpet,&rdquo; you see actual incompletions — decisions the buyer genuinely hasn&rsquo;t made yet.
+            For builders reviewing selection progress across a 50-home community, the dashboard difference is significant. Instead of scanning through 200+ “incomplete” flags that are really just “buyer picked Tile instead of Carpet,” you see actual incompletions — decisions the buyer genuinely hasn’t made yet.
           </p>
 
           {/* What Competitors Don't Do */}
           <h2 className="text-2xl sm:text-3xl font-bold text-white mt-10 mb-4">
-            Why Don&rsquo;t Buildertrend and JobTread Do This?
+            Why Don’t Buildertrend and JobTread Do This?
           </h2>
           <p className="text-slate-300 leading-relaxed mb-4">
-            Both Buildertrend and JobTread were built primarily for custom builders, where design selections are negotiated job-by-job with individual allowances. In that workflow, the concept of &ldquo;option classes that are mutually exclusive at the category level&rdquo; rarely comes up — you&rsquo;re managing one buyer&rsquo;s unique selections, not a repeating design center with plan-level option logic.
+            Both Buildertrend and JobTread were built primarily for custom builders, where design selections are negotiated job-by-job with individual allowances. In that workflow, the concept of “option classes that are mutually exclusive at the category level” rarely comes up — you’re managing one buyer’s unique selections, not a repeating design center with plan-level option logic.
           </p>
           <p className="text-slate-300 leading-relaxed mb-4">
             Production builders have a fundamentally different structure: the same Magnolia plan sells 80 times across four communities, and buyers are choosing from a curated menu of option classes that were defined once at the plan level. That structure requires group-level exclusivity logic — not just per-item required flags.
@@ -357,7 +357,7 @@ export default function ExclusionGroupsPage() {
             that includes Designer Packages, option-scope linking, Structural vs. Designer scope separation in bid templates, and per-floorplan options reused across every home of that plan in every community.
           </p>
           <p className="text-slate-300 leading-relaxed mb-4">
-            If you&rsquo;re comparing platforms, see how Cornerstone PM stacks up against the tools production builders typically consider on our{" "}
+            If you’re comparing platforms, see how Cornerstone PM stacks up against the tools production builders typically consider on our{" "}
             <Link href="/home-builder-project-management-software" className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2">
               home builder project management software
             </Link>{" "}

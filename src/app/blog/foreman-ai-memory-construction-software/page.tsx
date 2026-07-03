@@ -116,7 +116,7 @@ export default function ForemanAIMemoryPage() {
             AI &amp; Automation
           </span>
           <h1 className="text-4xl sm:text-5xl font-black text-white leading-tight mb-4">
-            Foreman AI Memory: The First Construction AI That Doesn&rsquo;t Forget
+            Foreman AI Memory: The First Construction AI That Doesn’t Forget
           </h1>
           <div className="flex items-center gap-3 text-sm text-slate-500">
             <span>May 27, 2026</span>
@@ -129,16 +129,16 @@ export default function ForemanAIMemoryPage() {
 
           <p className="text-xl text-slate-300 font-light">
             Foreman AI remembers who you are, which vendors you prefer, and how you like to work
-            &mdash; and it carries that knowledge into every conversation, every time. It&rsquo;s
+            — and it carries that knowledge into every conversation, every time. It’s
             the only construction AI built with persistent per-user and company-wide memory.
           </p>
 
           <p>
-            Every other AI tool you&rsquo;ve tried &mdash; whether it&rsquo;s a generic chatbot
-            bolted onto construction software or a general-purpose assistant you&rsquo;ve tried to
-            adapt &mdash; starts each session with a blank slate. You re-explain your role. You
+            Every other AI tool you’ve tried — whether it’s a generic chatbot
+            bolted onto construction software or a general-purpose assistant you’ve tried to
+            adapt — starts each session with a blank slate. You re-explain your role. You
             remind it which vendor you prefer for plumbing. You specify again that you want short
-            answers. Foreman AI&rsquo;s memory architecture eliminates all of that. To see the
+            answers. Foreman AI’s memory architecture eliminates all of that. To see the
             full picture of what Foreman can do,{" "}
             <Link
               href="/foreman"
@@ -153,16 +153,16 @@ export default function ForemanAIMemoryPage() {
             Why does AI memory matter for home builders?
           </h2>
           <p>
-            Construction is a relationship business. The superintendent who&rsquo;s been working
-            with Ferguson for fifteen years doesn&rsquo;t want to specify &ldquo;prefer Ferguson
-            for plumbing&rdquo; in every prompt. The sales agent who quotes in finished square
-            footage doesn&rsquo;t want to re-explain their vocabulary every morning. The owner
-            who hates lengthy reports doesn&rsquo;t want to ask for brevity each time.
+            Construction is a relationship business. The superintendent who’s been working
+            with Ferguson for fifteen years doesn’t want to specify “prefer Ferguson
+            for plumbing” in every prompt. The sales agent who quotes in finished square
+            footage doesn’t want to re-explain their vocabulary every morning. The owner
+            who hates lengthy reports doesn’t want to ask for brevity each time.
           </p>
           <p>
             Generic AI tools have no way to hold that context. They treat each conversation as a
             completely isolated event. The result: every session feels like meeting the AI for the
-            first time. That friction isn&rsquo;t just annoying &mdash; it&rsquo;s the reason most
+            first time. That friction isn’t just annoying — it’s the reason most
             builders try an AI tool twice and give up. The cognitive overhead of re-establishing
             context cancels out the time savings.
           </p>
@@ -266,9 +266,9 @@ export default function ForemanAIMemoryPage() {
                   </h3>
                   <p className="text-slate-300 text-sm leading-relaxed">
                     Without memory: every time Mike opens Foreman and asks for a plumbing PO, he
-                    types &ldquo;use Ferguson as the vendor.&rdquo; With memory: Foreman already
+                    types “use Ferguson as the vendor.” With memory: Foreman already
                     knows Mike prefers Ferguson for all plumbing scopes. The PO drafts with Ferguson
-                    pre-selected. If Ferguson&rsquo;s bid wasn&rsquo;t the awarded price, Foreman
+                    pre-selected. If Ferguson’s bid wasn’t the awarded price, Foreman
                     flags it rather than silently overriding the awarded vendor.
                   </p>
                 </div>
@@ -286,9 +286,9 @@ export default function ForemanAIMemoryPage() {
                   </h3>
                   <p className="text-slate-300 text-sm leading-relaxed">
                     Sarah works in finished square footage, not total square footage. Without memory:
-                    she corrects Foreman&rsquo;s outputs to the right unit every session. With
-                    memory: Foreman learned during their first conversation that Sarah&rsquo;s
-                    vocabulary is &ldquo;under air sqft.&rdquo; Every report, every quote, every
+                    she corrects Foreman’s outputs to the right unit every session. With
+                    memory: Foreman learned during their first conversation that Sarah’s
+                    vocabulary is “under air sqft.” Every report, every quote, every
                     comparison comes back in her units. No correction needed.
                   </p>
                 </div>
@@ -320,7 +320,7 @@ export default function ForemanAIMemoryPage() {
             What is the context health meter?
           </h2>
           <p>
-            Long working sessions are normal in construction &mdash; a 90-minute design center
+            Long working sessions are normal in construction — a 90-minute design center
             cleanup, a full catalog repricing run, a multi-step purchasing workflow that spans
             dozens of scope items. Generic AI tools quietly fail during long sessions: they hit
             their context limit, forget the first half of the conversation, and start giving
@@ -328,20 +328,20 @@ export default function ForemanAIMemoryPage() {
           </p>
           <p>
             Foreman AI ships a built-in{" "}
-            <strong className="text-white">context health meter</strong> &mdash; a green/yellow/red
+            <strong className="text-white">context health meter</strong> — a green/yellow/red
             indicator visible in the UI that tells you how much working memory the current session
-            has consumed. When the meter turns yellow or red, Foreman&rsquo;s{" "}
+            has consumed. When the meter turns yellow or red, Foreman’s{" "}
             <strong className="text-white">automatic memory compaction</strong> kicks in: it
             intelligently summarizes older parts of the conversation, compresses them into a compact
             representation, and continues the session without losing any critical context.
           </p>
           <p>
-            The result: Foreman can run through marathon sessions &mdash; 200+ option cleanups,
-            full catalog imports, multi-step workflows spanning hours &mdash; without hitting a
+            The result: Foreman can run through marathon sessions — 200+ option cleanups,
+            full catalog imports, multi-step workflows spanning hours — without hitting a
             wall or forgetting what happened at the start. No other construction AI does this.
           </p>
           <p>
-            For a deeper look at the technical architecture behind Foreman&rsquo;s agentic loop
+            For a deeper look at the technical architecture behind Foreman’s agentic loop
             and long-session handling, read{" "}
             <Link
               href="/blog/foreman-ai-75-action-loop"
@@ -357,20 +357,20 @@ export default function ForemanAIMemoryPage() {
           </h2>
           <p>
             ChatGPT has a memory feature. It stores a few bullet points about you globally and
-            surfaces them at the start of new conversations. It&rsquo;s better than nothing, but
-            it doesn&rsquo;t know what framing labor costs in your market, which vendor won your
-            last concrete bid, or how your design center is organized. It&rsquo;s a generic
+            surfaces them at the start of new conversations. It’s better than nothing, but
+            it doesn’t know what framing labor costs in your market, which vendor won your
+            last concrete bid, or how your design center is organized. It’s a generic
             notebook, not a construction brain.
           </p>
           <p>
-            Foreman AI&rsquo;s memory is backed by a{" "}
+            Foreman AI’s memory is backed by a{" "}
             <strong className="text-white">24,500-word construction knowledge base</strong>,{" "}
             <strong className="text-white">396+ purpose-built skills</strong> for home building
             workflows, and{" "}
             <strong className="text-white">direct database access</strong> to your actual
             Cornerstone PM data. When Foreman remembers that you prefer Ferguson, it can pull
-            Ferguson&rsquo;s current bids from your database and draft a real purchase order
-            against real awarded pricing. That&rsquo;s not note-taking &mdash; that&rsquo;s an
+            Ferguson’s current bids from your database and draft a real purchase order
+            against real awarded pricing. That’s not note-taking — that’s an
             agent that knows your business.
           </p>
 
@@ -409,7 +409,7 @@ export default function ForemanAIMemoryPage() {
             What else can Foreman AI do?
           </h2>
           <p>
-            Memory is the foundation, but it&rsquo;s one layer of a much deeper system. Foreman
+            Memory is the foundation, but it’s one layer of a much deeper system. Foreman
             AI ships with 396+ skills covering the full spectrum of home builder operations:
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
@@ -435,7 +435,7 @@ export default function ForemanAIMemoryPage() {
             </li>
           </ul>
           <p>
-            Foreman reads AND writes data &mdash; it doesn&rsquo;t just answer questions, it takes
+            Foreman reads AND writes data — it doesn’t just answer questions, it takes
             real actions in your platform. Combined with memory that knows your preferences and
             your business, it operates more like a knowledgeable colleague than a search engine.
             Explore everything Foreman can do at{" "}
@@ -459,25 +459,25 @@ export default function ForemanAIMemoryPage() {
             >
               Pro+ plan at $599/month
             </Link>
-            , which also includes the REST API and BYOA (Bring Your Own Agent) access &mdash;
+            , which also includes the REST API and BYOA (Bring Your Own Agent) access —
             every Foreman skill is exposed as an API endpoint, so your external automation tools
             get the same memory-aware intelligence. There are no add-ons or per-seat charges for
             Foreman features.
           </p>
           <p>
-            For builders running 20&ndash;200 homes per year, the math is straightforward: if
+            For builders running 20–200 homes per year, the math is straightforward: if
             Foreman saves one hour of purchasing work per day across a three-person team, the
             tool pays for itself before the end of the first week.
           </p>
 
           <p>
-            If you&rsquo;re evaluating construction AI tools and want to understand the full
+            If you’re evaluating construction AI tools and want to understand the full
             production home builder platform,{" "}
             <Link
               href="/ai-construction-management"
               className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
             >
-              see how AI fits into Cornerstone PM&rsquo;s full construction management stack
+              see how AI fits into Cornerstone PM’s full construction management stack
             </Link>
             .
           </p>
@@ -487,15 +487,15 @@ export default function ForemanAIMemoryPage() {
               Meet the AI that actually knows your business
             </h2>
             <p className="text-slate-300 mb-6 max-w-xl mx-auto">
-              Foreman AI remembers your vendors, your preferences, and your workflow &mdash;
+              Foreman AI remembers your vendors, your preferences, and your workflow —
               and it has 396+ skills to put that knowledge to work. The first construction AI
-              that doesn&rsquo;t start from scratch every time.
+              that doesn’t start from scratch every time.
             </p>
             <Link
               href="/beta"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-base transition-colors"
             >
-              Request Early Access &rarr;
+              Request Early Access →
             </Link>
           </div>
         </div>

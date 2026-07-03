@@ -174,7 +174,7 @@ export default function AsanaVsHomeBuildersPage() {
           </p>
 
           <p>
-            If you landed here from a &ldquo;construction project management software&rdquo;
+            If you landed here from a “construction project management software”
             search and Asana showed up in the results, start with the category overview at{" "}
             <Link
               href="/home-builder-project-management-software"
@@ -291,8 +291,8 @@ export default function AsanaVsHomeBuildersPage() {
               design center
             </Link>{" "}
             gives buyers a portal where they select from curated categories. 64 Designer Packages
-            auto-lock category choices when a package is picked — the buyer selects &ldquo;Modern
-            Farmhouse&rdquo; and every flooring, countertop, and cabinet choice in that category
+            auto-lock category choices when a package is picked — the buyer selects “Modern
+            Farmhouse” and every flooring, countertop, and cabinet choice in that category
             locks to the coordinated package. Design-center exclusion groups let a buyer select
             Tile and mark the entire flooring category complete without being asked about Carpet,
             LVP, and Hardwood separately. Completed selections flow directly into purchasing with
@@ -514,7 +514,7 @@ export default function AsanaVsHomeBuildersPage() {
           <p>
             Asana is a strong tool. If your team uses it for marketing campaigns, HR
             onboarding, or non-build administration, there&apos;s no reason to rip it out.
-            The recommendation is not &ldquo;stop using Asana.&rdquo; The recommendation is:
+            The recommendation is not “stop using Asana.” The recommendation is:
             don&apos;t use it for the build.
           </p>
           <p>
@@ -556,7 +556,7 @@ export default function AsanaVsHomeBuildersPage() {
               href="/beta"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-base transition-colors"
             >
-              Request Early Access &rarr;
+              Request Early Access →
             </Link>
           </div>
         </div>

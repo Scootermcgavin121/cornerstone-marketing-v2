@@ -54,7 +54,7 @@ export default function AutoQuantityBlogPost() {
           <p className="text-xl text-slate-400 leading-relaxed">
             Purchasing agents spend hours entering square footage across dozens
             of scope items for every new floorplan. Auto-Quantity eliminates that
-            entirely. Set the quantity source once on the scope item &mdash;
+            entirely. Set the quantity source once on the scope item —
             every floorplan auto-calculates from its dimensions.
           </p>
         </div>
@@ -63,7 +63,7 @@ export default function AutoQuantityBlogPost() {
         <div className="rounded-2xl overflow-hidden border border-slate-800 mb-12 bg-slate-900/60 p-8 text-center">
           <div className="text-6xl mb-4">&#x1F4D0;</div>
           <div className="text-2xl font-black text-white mb-2">
-            Electrical Rough &rarr; Under Air Sqft
+            Electrical Rough → Under Air Sqft
           </div>
           <div className="flex justify-center gap-8 text-slate-400">
             <div>
@@ -86,10 +86,10 @@ export default function AutoQuantityBlogPost() {
 
         {/* Body */}
         <div className="prose prose-invert prose-lg max-w-none prose-headings:font-black prose-headings:tracking-tight prose-p:text-slate-300 prose-p:leading-relaxed prose-li:text-slate-300 prose-strong:text-white">
-          <h2>The Problem: 40+ Scope Items &times; Every Floorplan</h2>
+          <h2>The Problem: 40+ Scope Items × Every Floorplan</h2>
           <p>
-            Every scope item in your purchasing system &mdash; Electrical Rough,
-            Insulation, Drywall, Paint Labor, HVAC, Framing &mdash; needs a
+            Every scope item in your purchasing system — Electrical Rough,
+            Insulation, Drywall, Paint Labor, HVAC, Framing — needs a
             quantity. For most builders, that quantity is square footage. And for
             most builders, entering that square footage is a manual process.
           </p>
@@ -102,7 +102,7 @@ export default function AutoQuantityBlogPost() {
           </p>
           <p>
             Multiply this across 10, 20, 50 floorplans. It&apos;s not
-            complicated work &mdash; it&apos;s tedious, error-prone, and
+            complicated work — it&apos;s tedious, error-prone, and
             completely avoidable.
           </p>
 
@@ -113,28 +113,28 @@ export default function AutoQuantityBlogPost() {
           </p>
           <ul>
             <li>
-              <strong>Manual</strong> &mdash; enter the quantity by hand (the
+              <strong>Manual</strong> — enter the quantity by hand (the
               old way, still available when you need it)
             </li>
             <li>
-              <strong>Under Air Sqft</strong> &mdash; conditioned living space,
+              <strong>Under Air Sqft</strong> — conditioned living space,
               excluding garage and porch
             </li>
             <li>
-              <strong>Total Sqft (Under Roof)</strong> &mdash; everything under
+              <strong>Total Sqft (Under Roof)</strong> — everything under
               the roof, including garage and porch
             </li>
             <li>
-              <strong>Exterior Perimeter</strong> &mdash; exterior perimeter in
+              <strong>Exterior Perimeter</strong> — exterior perimeter in
               linear feet
             </li>
             <li>
-              <strong>Roof Squares</strong> &mdash; roof area measured in
+              <strong>Roof Squares</strong> — roof area measured in
               roofing squares
             </li>
           </ul>
           <p>
-            Set &ldquo;Electrical Rough &rarr; Under Air Sqft&rdquo; <em>once</em> on the
+            Set “Electrical Rough → Under Air Sqft” <em>once</em> on the
             scope item. From that point forward, The Addison automatically gets
             2,400 sqft, The Magnolia gets 1,800 sqft, The Oakmont gets 3,200
             sqft. You never type those numbers again.
@@ -143,14 +143,14 @@ export default function AutoQuantityBlogPost() {
           <h2>It Works with Structural Options</h2>
           <p>
             This is where it gets powerful. When a home has structural options
-            &mdash; a finished basement, a bonus room, an extended garage &mdash;
+            — a finished basement, a bonus room, an extended garage —
             the auto-quantity doesn&apos;t just use the base house dimensions. It
             <strong> aggregates</strong>.
           </p>
           <p>
             Base house: 2,400 sqft under air. Finished basement option: +800
             sqft. The PO for Electrical Rough automatically shows 3,200 sqft
-            &mdash; the combined total. No manual addition, no separate line
+            — the combined total. No manual addition, no separate line
             items to reconcile.
           </p>
           <p>
@@ -162,9 +162,9 @@ export default function AutoQuantityBlogPost() {
           <h2>ANSI Z765 Compliant</h2>
           <p>
             The measurement calculations follow{" "}
-            <strong>ANSI Z765</strong> standards &mdash; the same standard used
-            by appraisers and real estate professionals. &ldquo;Under Air&rdquo;
-            means conditioned living space. &ldquo;Total Sqft&rdquo; means
+            <strong>ANSI Z765</strong> standards — the same standard used
+            by appraisers and real estate professionals. “Under Air”
+            means conditioned living space. “Total Sqft” means
             everything under the roof. No ambiguity about what&apos;s included or
             excluded.
           </p>
@@ -196,28 +196,28 @@ export default function AutoQuantityBlogPost() {
           </p>
           <ul>
             <li>
-              <strong>Multi-Tab Excel Import/Export</strong> &mdash; export an
+              <strong>Multi-Tab Excel Import/Export</strong> — export an
               entire floorplan as a single multi-tab workbook (base house,
               locations, structural options, elevations). Import works the same
               way. One file, complete data.
             </li>
             <li>
-              <strong>Exclusion Groups</strong> &mdash; &ldquo;Pick One&rdquo;
+              <strong>Exclusion Groups</strong> — “Pick One”
               rules in the design center. Set flooring as an exclusion group:
               buyer picks hardwood, carpet auto-locks. No conflicting
               selections.
             </li>
             <li>
-              <strong>Design Center Settings</strong> &mdash; full admin control
+              <strong>Design Center Settings</strong> — full admin control
               over selection rules, deadlines, and the buyer experience.
             </li>
             <li>
-              <strong>100% Selection Confetti</strong> &mdash; when a buyer
+              <strong>100% Selection Confetti</strong> — when a buyer
               completes all design selections, they get a confetti celebration.
               Small touch, big moment.
             </li>
             <li>
-              <strong>Neon Database Branching</strong> &mdash; instant
+              <strong>Neon Database Branching</strong> — instant
               full-copy demo environments for testing and staging. Deploy a
               complete copy of your production database in seconds.
             </li>
@@ -226,7 +226,7 @@ export default function AutoQuantityBlogPost() {
           <h2>Get Started</h2>
           <p>
             Auto-Quantity is live now for all Cornerstone PM users. Set your
-            quantity sources from the Scope Items page &mdash; the change takes
+            quantity sources from the Scope Items page — the change takes
             effect immediately across every floorplan in your portfolio.
           </p>
         </div>
@@ -244,7 +244,7 @@ export default function AutoQuantityBlogPost() {
             href="/beta"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-emerald-400 text-slate-900 font-bold text-lg hover:bg-emerald-300 transition-all duration-200 shadow-lg shadow-emerald-500/30"
           >
-            Request Early Access &rarr;
+            Request Early Access →
           </Link>
         </div>
 

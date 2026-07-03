@@ -164,7 +164,7 @@ export default function HowToChoomeHomeBuilderSoftwarePage() {
             Why most builder software evaluations go wrong
           </h2>
           <p>
-            Most builders start by Googling &ldquo;best home builder software&rdquo; and ending up on a review site that
+            Most builders start by Googling “best home builder software” and ending up on a review site that
             ranks Buildertrend #1 for every category. They book demos, get impressed by feature lists, and
             sign a contract — then spend the first three months fighting against a tool that was clearly built
             for a different workflow.
@@ -220,7 +220,7 @@ export default function HowToChoomeHomeBuilderSoftwarePage() {
             <p className="text-sm font-semibold text-emerald-400 uppercase tracking-wide">Step 3</p>
             <h3 className="text-xl font-bold text-white">Check AI capabilities — real ones, not marketing</h3>
             <p>
-              Every platform has &ldquo;AI&rdquo; in the marketing deck right now. The question is whether it actually
+              Every platform has “AI” in the marketing deck right now. The question is whether it actually
               does anything in your workflow. Ask each vendor: does the AI read and write live data, or does it
               just chat about things you already know?
             </p>
@@ -312,8 +312,8 @@ export default function HowToChoomeHomeBuilderSoftwarePage() {
             </p>
             <p>
               How a platform handles <em>your</em> data in a 45-minute demo is exactly how it will handle
-              your data in production. If the sales rep deflects — &ldquo;let&apos;s circle back to that in
-              implementation&rdquo; — that&apos;s your answer.
+              your data in production. If the sales rep deflects — “let&apos;s circle back to that in
+              implementation” — that&apos;s your answer.
             </p>
           </div>
 

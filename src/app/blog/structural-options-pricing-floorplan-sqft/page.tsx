@@ -80,7 +80,7 @@ export default function StructuralOptionsPricingPage() {
               Product Update
             </span>
             <span className="text-xs text-slate-500">May 30, 2026</span>
-            <span className="text-xs text-slate-600">&mdash;·</span>
+            <span className="text-xs text-slate-600">—·</span>
             <span className="text-xs text-slate-500">6 min read</span>
           </div>
 
@@ -92,7 +92,7 @@ export default function StructuralOptionsPricingPage() {
 
           {/* Lead paragraph */}
           <p className="text-xl text-slate-300 leading-relaxed mb-8">
-            With Cornerstone PM&rsquo;s sqft-linked auto-quantity scope items,
+            With Cornerstone PM’s sqft-linked auto-quantity scope items,
             you define frame labor cost per square foot once — and every
             floorplan, every elevation, and every structural option reprices
             itself automatically. Change the rate, and 60 line items update in
@@ -114,10 +114,10 @@ export default function StructuralOptionsPricingPage() {
 
           {/* Section 1 */}
           <h2 className="text-2xl sm:text-3xl font-bold text-white mt-10 mb-4">
-            What Does &ldquo;Structural Options Pricing&rdquo; Actually Mean?
+            What Does “Structural Options Pricing” Actually Mean?
           </h2>
           <p className="text-slate-300 leading-relaxed mb-4">
-            If you&rsquo;re a production builder, structural options are the
+            If you’re a production builder, structural options are the
             footprint-altering upgrades buyers can add to a base floorplan:
             a finished bonus room over the garage, a 3rd-car garage bay, a
             finished basement, a sunroom addition, a covered rear porch with
@@ -127,7 +127,7 @@ export default function StructuralOptionsPricingPage() {
           <p className="text-slate-300 leading-relaxed mb-4">
             The problem: a production builder with 12 floorplans and 5
             structural options per plan has 60 distinct footprint combinations to
-            price. That&rsquo;s 60 separate entries for frame labor. 60 for slab
+            price. That’s 60 separate entries for frame labor. 60 for slab
             mason. 60 for paint. 60 for cleaning. Every time a trade changes
             their rate, every one of those 240+ scope line items needs updating.
           </p>
@@ -171,7 +171,7 @@ export default function StructuralOptionsPricingPage() {
               href="/purchasing"
               className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
             >
-              Cornerstone PM&rsquo;s purchasing system
+              Cornerstone PM’s purchasing system
             </Link>
             , auto-quantity scope items link directly to floorplan measurements
             instead of holding a static number. You set the quantity source to
@@ -339,7 +339,7 @@ export default function StructuralOptionsPricingPage() {
             When a buyer adds a structural option — say, a finished bonus room —
             that option has its own sqft delta defined in the floorplan record.
             The Magnolia base is 1,850 sqft. The Bonus Room option adds 290 sqft.
-            Cornerstone stores 2,140 as the structural option&rsquo;s Total Sqft.
+            Cornerstone stores 2,140 as the structural option’s Total Sqft.
           </p>
           <p className="text-slate-300 leading-relaxed mb-4">
             Every sqft-linked scope item tied to that floorplan picks up the
@@ -382,25 +382,25 @@ export default function StructuralOptionsPricingPage() {
           </h2>
           <p className="text-slate-300 leading-relaxed mb-4">
             Both Buildertrend and JobTread are built primarily for custom
-            builders, where each job is a unique estimate. There&rsquo;s no
+            builders, where each job is a unique estimate. There’s no
             concept of a shared floorplan record whose measurements propagate
             into scope items. Structural options are treated as separate line
             items negotiated job-by-job — the builder manually enters quantities
             each time.
           </p>
           <p className="text-slate-300 leading-relaxed mb-4">
-            That works fine if you&rsquo;re building 8 one-off custom homes a
-            year. It collapses when you&rsquo;re running 80 homes across five
+            That works fine if you’re building 8 one-off custom homes a
+            year. It collapses when you’re running 80 homes across five
             communities with 12 floorplans and structural options on every plan.
-            You don&rsquo;t want your purchasing manager doing takeoff math every
+            You don’t want your purchasing manager doing takeoff math every
             time a buyer adds a bonus room to a Magnolia.
           </p>
           <p className="text-slate-300 leading-relaxed mb-6">
             NEWSTAR handles plan-level scope items, but the UI layer is dated and
-            there&rsquo;s no native web interface for the auto-quantity
+            there’s no native web interface for the auto-quantity
             configuration Cornerstone exposes in a few clicks. BuildPro has
             similar structural primitives but requires Citrix desktop access and
-            lacks the modern API layer. The gap is real — and it&rsquo;s widest
+            lacks the modern API layer. The gap is real — and it’s widest
             for builders in the 30–200 homes/year range where the spreadsheet
             starts breaking and enterprise ERP is overkill.
           </p>
@@ -417,7 +417,7 @@ export default function StructuralOptionsPricingPage() {
                 href="/design"
                 className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
               >
-                Cornerstone&rsquo;s design center
+                Cornerstone’s design center
               </Link>
               :
             </p>
@@ -441,14 +441,14 @@ export default function StructuralOptionsPricingPage() {
             Is This the Right Fit for Your Operation?
           </h2>
           <p className="text-slate-300 leading-relaxed mb-4">
-            If you&rsquo;re a production builder running more than one floorplan
+            If you’re a production builder running more than one floorplan
             and offering structural options to buyers, sqft-linked auto-quantity
             scope items will save your estimating and purchasing team material
             time — every time a trade rate changes, every time you add a
             floorplan, every time you launch a new community.
           </p>
           <p className="text-slate-300 leading-relaxed mb-4">
-            If you&rsquo;re a custom builder with unique scopes on every job,
+            If you’re a custom builder with unique scopes on every job,
             this system is more structure than you need. Cornerstone PM is
             purpose-built for{" "}
             <Link

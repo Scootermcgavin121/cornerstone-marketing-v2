@@ -17,7 +17,7 @@ const blogSchema = buildBlogPostSchema({
 });
 
 export const metadata: Metadata = {
-  title: "Subcontractor Scheduling Software for Home Builders &mdash; Cornerstone PM™ Blog",
+  title: "Subcontractor Scheduling Software for Home Builders — Cornerstone PM™ Blog",
   description:
     "The best subcontractors have options. If your scheduling is chaotic and your communication is reactive, they'll prioritize builders who make their lives easier. Here's how to be that builder.",
   openGraph: {
@@ -55,7 +55,7 @@ export default function SubcontractorSchedulingSoftwarePost() {
           </h1>
           <div className="flex items-center gap-3 text-sm text-slate-500">
             <span>March 25, 2026</span>
-            <span>&mdash;·</span>
+            <span>—·</span>
             <span>6 min read</span>
           </div>
         </div>
@@ -66,7 +66,7 @@ export default function SubcontractorSchedulingSoftwarePost() {
           </p>
 
           <p>
-            Most builders manage subcontractor schedules through a combination of group texts, phone calls, and a master schedule in Excel that&apos;s usually a week out of date. It works &mdash; until it doesn&apos;t. A permit delay cascades into a framing delay into a plumbing delay, and suddenly you&apos;re three weeks behind and your best subs have filled their calendars with other builders&apos; work.
+            Most builders manage subcontractor schedules through a combination of group texts, phone calls, and a master schedule in Excel that&apos;s usually a week out of date. It works — until it doesn&apos;t. A permit delay cascades into a framing delay into a plumbing delay, and suddenly you&apos;re three weeks behind and your best subs have filled their calendars with other builders&apos; work.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">The subcontractor&apos;s perspective</h2>
@@ -79,13 +79,13 @@ export default function SubcontractorSchedulingSoftwarePost() {
 
           <ul className="space-y-3 my-6">
             {[
-              "Schedules change without notice &mdash; they show up and the site isn't ready",
-              "Scope isn't clear &mdash; they have to call the PM to get basic specs",
+              "Schedules change without notice — they show up and the site isn't ready",
+              "Scope isn't clear — they have to call the PM to get basic specs",
               "Payment is slow because POs and invoices are a mess",
               "They can't see the full project schedule, so they can't plan their own crews",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3">
-                <span className="text-red-400 font-bold flex-shrink-0 mt-0.5">&mdash;œ—</span>
+                <span className="text-red-400 font-bold flex-shrink-0 mt-0.5">—œ—</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -97,14 +97,14 @@ export default function SubcontractorSchedulingSoftwarePost() {
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">What subcontractor scheduling software needs to do</h2>
           <p>
-            The baseline features are table stakes &mdash; most tools have them. The differentiators are where builders usually get burned:
+            The baseline features are table stakes — most tools have them. The differentiators are where builders usually get burned:
           </p>
 
           <div className="space-y-5 my-6">
             {[
               {
                 title: "Milestone-linked notifications",
-                desc: "When framing is marked complete, plumbing should get automatic notice that they&apos;re up next. Not a text from your PM &mdash; an automated, reliable notification. This is the single biggest schedule protection you can buy.",
+                desc: "When framing is marked complete, plumbing should get automatic notice that they&apos;re up next. Not a text from your PM — an automated, reliable notification. This is the single biggest schedule protection you can buy.",
               },
               {
                 title: "Scope clarity at scheduling time",
@@ -116,7 +116,7 @@ export default function SubcontractorSchedulingSoftwarePost() {
               },
               {
                 title: "Delay propagation",
-                desc: "When one trade slips, everything downstream needs to adjust. Good scheduling software re-sequences automatically and flags conflicts &mdash; instead of leaving you to manually update 40 tasks.",
+                desc: "When one trade slips, everything downstream needs to adjust. Good scheduling software re-sequences automatically and flags conflicts — instead of leaving you to manually update 40 tasks.",
               },
               {
                 title: "AI-assisted schedule analysis",
@@ -141,7 +141,7 @@ export default function SubcontractorSchedulingSoftwarePost() {
           <div className="rounded-xl bg-slate-900 border border-slate-700 p-6 my-6 not-prose space-y-4">
             <div>
               <p className="text-amber-400 font-bold text-sm mb-1">You:</p>
-              <p className="text-white italic text-sm">&ldquo;Which homes have construction that started more than 90 days ago and are still in progress?&rdquo;</p>
+              <p className="text-white italic text-sm">“Which homes have construction that started more than 90 days ago and are still in progress?”</p>
             </div>
             <div>
               <p className="text-slate-400 font-bold text-sm mb-1">🪖 Foreman:</p>
@@ -150,7 +150,7 @@ export default function SubcontractorSchedulingSoftwarePost() {
           </div>
 
           <p>
-            That kind of cross-portfolio visibility &mdash; answered in seconds, in plain English &mdash; is what separates AI scheduling tools from traditional schedule management.
+            That kind of cross-portfolio visibility — answered in seconds, in plain English — is what separates AI scheduling tools from traditional schedule management.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">What to look for when evaluating</h2>
@@ -160,15 +160,15 @@ export default function SubcontractorSchedulingSoftwarePost() {
 
           <ul className="space-y-3 my-6">
             {[
-              "Designed for production home building &mdash; repeatable floorplans, community-based scheduling",
-              "Subcontractor portal or access &mdash; subs see their schedule without you CC&apos;ing them on emails",
-              "Integrated with purchasing &mdash; schedule milestones trigger bid requests and POs automatically",
-              "Permit milestone tracking &mdash; the biggest wildcard in residential construction",
-              "Flat-rate pricing &mdash; per-seat tools penalize you for including your subs and PMs",
-              "AI that acts on your data &mdash; not just a chatbot that gives generic answers",
+              "Designed for production home building — repeatable floorplans, community-based scheduling",
+              "Subcontractor portal or access — subs see their schedule without you CC&apos;ing them on emails",
+              "Integrated with purchasing — schedule milestones trigger bid requests and POs automatically",
+              "Permit milestone tracking — the biggest wildcard in residential construction",
+              "Flat-rate pricing — per-seat tools penalize you for including your subs and PMs",
+              "AI that acts on your data — not just a chatbot that gives generic answers",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3">
-                <span className="text-cyan-400 font-bold flex-shrink-0 mt-0.5">&mdash;†’</span>
+                <span className="text-cyan-400 font-bold flex-shrink-0 mt-0.5">—†’</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -176,20 +176,20 @@ export default function SubcontractorSchedulingSoftwarePost() {
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">The bottom line</h2>
           <p>
-            Your best subcontractors are evaluating you as a client the same way you evaluate vendors. Clear schedules, advance notice, and clean communication aren&apos;t just nice to have &mdash; they&apos;re how you keep the crews that keep your builds on schedule.
+            Your best subcontractors are evaluating you as a client the same way you evaluate vendors. Clear schedules, advance notice, and clean communication aren&apos;t just nice to have — they&apos;re how you keep the crews that keep your builds on schedule.
           </p>
           <p>
             Subcontractor scheduling software is only valuable if it makes your subs&apos; lives easier and gives you the visibility to prevent problems before they cascade. That means milestone-linked notifications, integrated purchasing, AI-powered schedule analysis, and flat-rate pricing that doesn&apos;t punish you for including your whole team.
           </p>
           <p>
-            Cornerstone PM™ is in beta now, and early adopters get 2 years free. If you&apos;re building 5&ndash;50 homes a year and managing subcontractors via text message, this is worth a look.
+            Cornerstone PM™ is in beta now, and early adopters get 2 years free. If you&apos;re building 5–50 homes a year and managing subcontractors via text message, this is worth a look.
           </p>
         </div>
 
         <div className="mt-12 p-6 rounded-2xl border border-cyan-500/20 bg-cyan-500/5">
           <h3 className="text-lg font-bold text-white mb-2">See scheduling in Cornerstone PM™</h3>
           <p className="text-slate-400 text-sm mb-4">
-            Beta access is open now. Includes scheduling, purchasing, AI, and the full platform &mdash; free for 2 years.
+            Beta access is open now. Includes scheduling, purchasing, AI, and the full platform — free for 2 years.
           </p>
           <Link
             href="/beta"

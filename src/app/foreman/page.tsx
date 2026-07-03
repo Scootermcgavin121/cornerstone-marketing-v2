@@ -232,7 +232,7 @@ export default function ForemanPage() {
             </h1>
             <p className="text-2xl sm:text-3xl text-amber-400 font-black mb-6">Not a chatbot. A construction agent.</p>
             <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed">
-              Type what you need in plain English. Foreman executes it against your real data &mdash; parts, vendors, homes, budgets, schedules, selections, bids, and more.
+              Type what you need in plain English. Foreman executes it against your real data — parts, vendors, homes, budgets, schedules, selections, bids, and more.
             </p>
           </div>
 
@@ -262,7 +262,7 @@ export default function ForemanPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/beta" className="px-10 py-4 rounded-full bg-amber-400 text-slate-900 font-bold text-lg hover:bg-amber-300 transition-all duration-200 shadow-lg shadow-amber-500/30 hover:-translate-y-0.5 text-center">
-              Get Beta Access &rarr;
+              Get Beta Access →
             </Link>
             <a href="#skills" className="px-10 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-amber-500/40 hover:text-white transition-all duration-200 text-center">
               See all 396+ skills
@@ -272,7 +272,7 @@ export default function ForemanPage() {
           {/* Powered by Claude — caption only */}
           <div className="mt-10 flex justify-center">
             <p className="text-slate-500 text-xs max-w-sm text-center leading-relaxed">
-              Foreman runs on Anthropic&apos;s Claude &mdash; the most capable AI for complex, multi-step construction workflows.
+              Foreman runs on Anthropic&apos;s Claude — the most capable AI for complex, multi-step construction workflows.
             </p>
           </div>
         </div>
@@ -288,7 +288,7 @@ export default function ForemanPage() {
               Live demo &middot; Real-time. Not sped up.
             </div>
             <h2 className="text-2xl sm:text-3xl font-black mb-2">
-              Watch Foreman image <span className="text-emerald-400">5 countertop options</span> &mdash; in one prompt.
+              Watch Foreman image <span className="text-emerald-400">5 countertop options</span> — in one prompt.
             </h2>
             <p className="text-slate-400 text-sm max-w-2xl mx-auto">
               Granite Level 1 through Level 5 Exotic. Foreman runs 5 image searches in parallel, downloads each photo, saves them to your server (no broken hot-links), and attaches the right image to each Design Options spec level. Zero clicks of yours.
@@ -320,7 +320,7 @@ export default function ForemanPage() {
               Foreman&apos;s Brain
             </h2>
             <p className="text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
-              Not a wrapper on ChatGPT. A <span className="text-white font-semibold">183KB construction knowledge base</span> with 24,500+ words across 30 chapters &mdash; from estimating formulas to design center architecture.
+              Not a wrapper on ChatGPT. A <span className="text-white font-semibold">183KB construction knowledge base</span> with 24,500+ words across 30 chapters — from estimating formulas to design center architecture.
             </p>
           </div>
 
@@ -387,12 +387,12 @@ export default function ForemanPage() {
                   <div className="text-violet-400 text-xs font-bold uppercase tracking-widest mb-1.5">Want to go deeper?</div>
                   <h3 className="text-xl sm:text-2xl font-black text-white mb-1">Explore Foreman&apos;s full brain</h3>
                   <p className="text-slate-400 text-sm leading-relaxed max-w-2xl">
-                    All 30 chapters, 39 estimating formulas, and 10 prompt-library categories &mdash; broken down on one page.
+                    All 30 chapters, 39 estimating formulas, and 10 prompt-library categories — broken down on one page.
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-3 shrink-0">
                   <Link href="/brain" className="px-5 py-2.5 rounded-full bg-violet-500 text-white font-bold text-sm hover:bg-violet-400 transition-all duration-200 shadow-lg shadow-violet-500/30 hover:-translate-y-0.5 whitespace-nowrap">
-                    See Foreman&apos;s Brain &rarr;
+                    See Foreman&apos;s Brain →
                   </Link>
                   <Link href="/blog/foreman-ai-75-action-loop" className="px-5 py-2.5 rounded-full border border-slate-700 text-slate-300 font-semibold text-sm hover:border-slate-500 hover:text-white transition-all duration-200 whitespace-nowrap">
                     The 75-action loop
@@ -695,7 +695,7 @@ export default function ForemanPage() {
                       <span className="text-2xl flex-shrink-0">{ex.icon}</span>
                       <div>
                         <div className="text-amber-400/60 text-xs font-bold uppercase tracking-widest mb-2">{ex.category}</div>
-                        <p className="text-white font-medium leading-relaxed">&ldquo;{ex.prompt}&rdquo;</p>
+                        <p className="text-white font-medium leading-relaxed">“{ex.prompt}”</p>
                       </div>
                     </div>
                   </div>
@@ -784,7 +784,7 @@ export default function ForemanPage() {
                   No more switching between your PM tool and supplier websites. Foreman is connecting directly to supplier APIs to pull <strong className="text-white">real-time product data, live pricing, and official product images</strong> — straight into your parts catalog and design center.
                 </p>
                 <p className="text-slate-300 text-lg leading-relaxed mb-6">
-                  Ask Foreman &ldquo;find me a brushed nickel kitchen faucet under $300&rdquo; and get real results from actual supplier catalogs with current MSRPs. No stale spreadsheet pricing. No manual data entry.
+                  Ask Foreman “find me a brushed nickel kitchen faucet under $300” and get real results from actual supplier catalogs with current MSRPs. No stale spreadsheet pricing. No manual data entry.
                 </p>
                 <div className="space-y-3">
                   {[
@@ -817,7 +817,7 @@ export default function ForemanPage() {
                   <div className="p-5 space-y-4">
                     <div className="p-3 rounded-xl bg-amber-500/5 border border-amber-500/10">
                       <div className="text-amber-400 text-xs font-bold mb-1">You:</div>
-                      <div className="text-white text-sm italic">&ldquo;Find me a brushed nickel kitchen faucet under $300&rdquo;</div>
+                      <div className="text-white text-sm italic">“Find me a brushed nickel kitchen faucet under $300”</div>
                     </div>
                     <div className="space-y-3">
                       {[
@@ -907,7 +907,7 @@ export default function ForemanPage() {
                   <span className="text-emerald-400">doesn&apos;t forget what you said 5 minutes ago.</span>
                 </h2>
                 <p className="text-slate-300 text-lg leading-relaxed mb-5">
-                  Every other AI chatbot hits a wall. After 50+ messages, ChatGPT, Copilot, and the half-baked &ldquo;AI features&rdquo; bolted onto competing platforms either crash, freeze, or start hallucinating &mdash; right when you&apos;re deep into the work.
+                  Every other AI chatbot hits a wall. After 50+ messages, ChatGPT, Copilot, and the half-baked “AI features” bolted onto competing platforms either crash, freeze, or start hallucinating — right when you&apos;re deep into the work.
                 </p>
                 <p className="text-slate-300 text-lg leading-relaxed mb-6">
                   Foreman is different. <strong className="text-white">Automatic memory compaction</strong>{" "}intelligently summarizes older messages in the background while recent messages stay word-for-word intact. You don&apos;t notice it. Foreman just keeps working.
@@ -1046,7 +1046,7 @@ export default function ForemanPage() {
                   ))}
                 </div>
                 <Link href="/beta" className="block w-full text-center px-6 py-3.5 rounded-xl bg-amber-400 text-slate-900 font-bold hover:bg-amber-300 transition-all duration-200">
-                  Get Beta Access &rarr;
+                  Get Beta Access →
                 </Link>
               </div>
             </div>
@@ -1081,14 +1081,14 @@ export default function ForemanPage() {
                   ))}
                 </div>
                 <Link href="/beta" className="block w-full text-center px-6 py-3.5 rounded-xl bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white font-bold hover:from-violet-400 hover:to-fuchsia-400 transition-all duration-200 shadow-lg shadow-violet-500/30">
-                  Get Beta Access &rarr;
+                  Get Beta Access →
                 </Link>
               </div>
             </div>
           </div>
 
           <p className="text-center text-slate-500 text-xs mt-8">
-            Beta is free for 2 years &middot; Limited to 100 builders &middot; <Link href="/pricing" className="text-amber-400 hover:text-amber-300 underline-offset-2 hover:underline">See full pricing &amp; all plans &rarr;</Link>
+            Beta is free for 2 years &middot; Limited to 100 builders &middot; <Link href="/pricing" className="text-amber-400 hover:text-amber-300 underline-offset-2 hover:underline">See full pricing &amp; all plans →</Link>
           </p>
         </div>
       </section>

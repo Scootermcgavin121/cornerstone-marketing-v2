@@ -230,8 +230,8 @@ export default function McpServerConstructionPage() {
           <p>
             Model Context Protocol is an open standard developed by Anthropic that lets AI clients
             securely call actions inside connected applications. Think of it as a universal
-            translation layer: your AI assistant says &ldquo;I need to look up vendor pricing for
-            framing on the Magnolia plan&rdquo; and MCP routes that request to exactly the right Foreman
+            translation layer: your AI assistant says “I need to look up vendor pricing for
+            framing on the Magnolia plan” and MCP routes that request to exactly the right Foreman
             skill, executes it against your real construction data, and returns the result — all
             within the conversation.
           </p>
@@ -447,7 +447,7 @@ export default function McpServerConstructionPage() {
             </li>
           </ul>
           <p>
-            This is the &ldquo;AI-agent-first&rdquo; design principle made concrete. Cornerstone PM doesn&apos;t
+            This is the “AI-agent-first” design principle made concrete. Cornerstone PM doesn&apos;t
             just run AI inside its own UI — it exposes that AI capability to every agent and
             tool in your ecosystem.
           </p>

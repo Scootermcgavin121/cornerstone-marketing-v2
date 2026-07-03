@@ -436,7 +436,7 @@ export default function CrmMigrationWizardPage() {
           </div>
 
           <p>
-            &ldquo;Your data is always yours&rdquo; is a phrase that should be table stakes in software — but
+            “Your data is always yours” is a phrase that should be table stakes in software — but
             it isn&apos;t. Platforms that make exit painful can do so because builders accepted that
             migration and data portability are hard. They&apos;re not. The difficulty is manufactured,
             and it&apos;s manufactured in the vendor&apos;s interest.

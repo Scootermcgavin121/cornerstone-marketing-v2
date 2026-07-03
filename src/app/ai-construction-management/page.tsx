@@ -135,7 +135,7 @@ export default function AiConstructionManagementPage() {
               href="/beta"
               className="px-8 py-4 rounded-full bg-amber-400 text-slate-900 font-bold text-lg hover:bg-amber-300 transition-all duration-200 shadow-lg shadow-amber-500/30 hover:-translate-y-0.5"
             >
-              Get Beta Access &rarr;
+              Get Beta Access →
             </Link>
             <Link
               href="/foreman"
@@ -152,10 +152,10 @@ export default function AiConstructionManagementPage() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-black mb-4">
-              What &ldquo;AI construction management&rdquo; actually means
+              What “AI construction management” actually means
             </h2>
             <p className="text-slate-400 max-w-2xl mx-auto">
-              Most tools calling themselves &ldquo;AI construction management software&rdquo; are generic project management platforms with a ChatGPT button stapled to the side. That&apos;s not AI construction management — that&apos;s AI theater.
+              Most tools calling themselves “AI construction management software” are generic project management platforms with a ChatGPT button stapled to the side. That&apos;s not AI construction management — that&apos;s AI theater.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
@@ -180,7 +180,7 @@ export default function AiConstructionManagementPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-red-500 mt-0.5">×</span>
-                  &ldquo;Smart Gantt chart&rdquo; that still requires manual updates
+                  “Smart Gantt chart” that still requires manual updates
                 </li>
               </ul>
             </div>
@@ -317,7 +317,7 @@ export default function AiConstructionManagementPage() {
                 <div className="p-5 border-b border-slate-800/60">
                   <div className="flex items-start gap-3 mb-3">
                     <span className="text-amber-400 font-black text-lg leading-none flex-shrink-0 mt-0.5">You:</span>
-                    <p className="text-white font-medium italic">&ldquo;{ex.prompt}&rdquo;</p>
+                    <p className="text-white font-medium italic">“{ex.prompt}”</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <img src="/foreman-mascot.png" alt="Foreman" className="h-5 w-5 object-contain flex-shrink-0 mt-0.5" />
@@ -354,7 +354,7 @@ export default function AiConstructionManagementPage() {
       {/* CTA */}
       <section className="py-20 px-4 text-center border-t border-slate-800/60">
         <h2 className="text-4xl font-black mb-4">
-          Stop searching for &ldquo;AI construction management software.&rdquo;<br />
+          Stop searching for “AI construction management software.”<br />
           <span className="text-amber-400">You found it.</span>
         </h2>
         <p className="text-slate-400 text-lg mb-10 max-w-xl mx-auto">

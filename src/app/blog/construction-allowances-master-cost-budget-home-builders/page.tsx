@@ -230,8 +230,8 @@ export default function ConstructionAllowancesPage() {
           <ol className="list-decimal list-inside space-y-3 text-slate-300 my-4">
             <li>
               <strong className="text-white">Name the allowance and set the amount.</strong>{" "}
-              Give it a clear label (e.g., &ldquo;Appliance Package Allowance,&rdquo; &ldquo;Landscaping Allowance —
-              Standard Lot&rdquo;) and the dollar amount that reflects your best current estimate or
+              Give it a clear label (e.g., “Appliance Package Allowance,” “Landscaping Allowance —
+              Standard Lot”) and the dollar amount that reflects your best current estimate or
               your standard budget target.
             </li>
             <li>

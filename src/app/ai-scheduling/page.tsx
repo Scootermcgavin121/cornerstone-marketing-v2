@@ -29,7 +29,7 @@ const aiSchedulingSchema = buildFeatureSchema({
 export const metadata = {
   title: "AI Construction Scheduling for Home Builders | Cornerstone PM™",
   description:
-    "AI construction scheduling for home builders. Auto-cascading dependencies, vendor email confirmations, and Foreman AI scheduling agent &mdash; built for home builders.",
+    "AI construction scheduling for home builders. Auto-cascading dependencies, vendor email confirmations, and Foreman AI scheduling agent — built for home builders.",
   alternates: { canonical: "https://www.cornerstonepm.ai/ai-scheduling" },
 };
 
@@ -97,7 +97,7 @@ export default function AiSchedulingPage() {
               href="/beta"
               className="px-8 py-4 rounded-full bg-amber-400 text-slate-900 font-bold text-lg hover:bg-amber-300 transition-all duration-200 shadow-lg shadow-amber-500/30 hover:-translate-y-0.5"
             >
-              Get Beta Access &rarr;
+              Get Beta Access →
             </Link>
             <Link
               href="/foreman"
@@ -263,7 +263,7 @@ export default function AiSchedulingPage() {
                 <div className="p-5">
                   <div className="flex items-start gap-3 mb-3">
                     <span className="text-amber-400 font-black text-lg leading-none flex-shrink-0 mt-0.5">You:</span>
-                    <p className="text-white font-medium italic">&ldquo;{ex.prompt}&rdquo;</p>
+                    <p className="text-white font-medium italic">“{ex.prompt}”</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <span className="font-black text-sm leading-none flex-shrink-0 mt-0.5">🤖</span>

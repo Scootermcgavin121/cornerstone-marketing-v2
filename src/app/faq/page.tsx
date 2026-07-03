@@ -199,7 +199,7 @@ const pricing: Category = {
         "Yes. Annual billing is available for Builder, Pro, and Pro+ plans at a discount vs monthly. For corporate / multi-division builders, the Enterprise tier is $500/division/mo for your first 5 divisions, then $450/division/mo - every division gets the full Pro+ platform plus a corporate admin layer. Contact us for annual quotes and Enterprise / multi-division pricing.",
       a: (
         <>
-          Yes. Annual billing is available for Builder, Pro, and Pro+ plans at a discount vs monthly. For corporate / multi-division builders, the <strong>Enterprise</strong> tier is <strong>$500/division/mo</strong> for your first 5 divisions, then <strong>$450/division/mo</strong> &mdash; every division gets the full Pro+ platform plus a corporate admin layer. <A href="/contact">Contact us</A>{" "}
+          Yes. Annual billing is available for Builder, Pro, and Pro+ plans at a discount vs monthly. For corporate / multi-division builders, the <strong>Enterprise</strong> tier is <strong>$500/division/mo</strong> for your first 5 divisions, then <strong>$450/division/mo</strong> — every division gets the full Pro+ platform plus a corporate admin layer. <A href="/contact">Contact us</A>{" "}
           for annual quotes and Enterprise / multi-division pricing.
         </>
       ),
@@ -249,7 +249,7 @@ const pricing: Category = {
         "Yes, each organization's active customer (buyer) record limit is based on its plan: Starter and Builder include up to 500, Pro up to 1,000, Pro+ up to 3,000, and Enterprise up to 5,000. You'll receive an in-app warning as you approach your limit (at 90%), and once you reach 100% you'll need to delete existing records before adding new ones. If you need more capacity, contact us about our Enterprise plan or higher custom limits.",
       a: (
         <>
-          Yes, each organization&rsquo;s active customer (buyer) record limit is based on its plan:{" "}
+          Yes, each organization’s active customer (buyer) record limit is based on its plan:{" "}
           <strong>Starter and Builder up to 500</strong>, <strong>Pro up to 1,000</strong>,{" "}
           <strong>Pro+ up to 3,000</strong>, and <strong>Enterprise up to 5,000</strong>. You'll receive an in-app
           warning as you approach your limit (at 90%), and once you reach 100% you'll need to delete existing records
@@ -906,10 +906,10 @@ const design: Category = {
         <>
           <strong>Options Attributes</strong> let you define attribute groups (Door Style, Wood Species, Finish, Overlay,
           Door Treatment) for a product category and manage every possible combination through multiplication instead of
-          manual data entry. 5 cabinet series &times; 23 door styles &times; 8 wood species &times; 38 finishes &times; 2
-          overlays &times; 3 door treatments = <strong>over 7,000 variations</strong> managed through just 5 options and
+          manual data entry. 5 cabinet series × 23 door styles × 8 wood species × 38 finishes × 2
+          overlays × 3 door treatments = <strong>over 7,000 variations</strong> managed through just 5 options and
           5 attribute groups. <strong>Compatibility rules</strong> prevent invalid combinations. Per-value pricing
-          modifiers, visual image catalogs, and auto-generated vendor bid templates (Excel) &mdash; vendors fill in
+          modifiers, visual image catalogs, and auto-generated vendor bid templates (Excel) — vendors fill in
           pricing per attribute value and upload, and every modifier imports back as real cost data.
         </>
       ),
@@ -921,9 +921,9 @@ const design: Category = {
       a: (
         <>
           The <strong>Product Configurator</strong> is a step-by-step guided configuration tool for complex design
-          selections like cabinets and countertops. Buyers walk through each attribute (door style &rarr; wood species
-          &rarr; finish) with <strong>smart compatibility rules</strong> ensuring only valid combinations are shown.
-          Pricing uses base price plus attribute modifiers from vendor bids &mdash; no manual 7,000-row spreadsheet
+          selections like cabinets and countertops. Buyers walk through each attribute (door style → wood species
+          → finish) with <strong>smart compatibility rules</strong> ensuring only valid combinations are shown.
+          Pricing uses base price plus attribute modifiers from vendor bids — no manual 7,000-row spreadsheet
           matrix needed. <strong>Spec-level tier gating</strong> controls which options are available at each upgrade
           level. Works for production builders (curate a few options) and custom builders (full catalog).
         </>
@@ -1167,9 +1167,9 @@ const api: Category = {
         "Yes. Cornerstone PM ships a built-in MCP server in app settings (Settings → MCP). Generate an API key, paste the ready-made config block into Claude Desktop, Cursor, or Windsurf, and your AI tool can run any of Foreman's 396+ skills directly - no code, no middleware. It's the no-code on-ramp to AI-native construction management; the REST API + BYOA is the full-control path. Both hit the same skill catalog. Included on Pro+ ($599/mo). Most construction software has no AI integration at all.",
       a: (
         <>
-          Yes. Cornerstone ships a <strong>built-in MCP server</strong> in app settings (Settings &rarr; MCP).
+          Yes. Cornerstone ships a <strong>built-in MCP server</strong> in app settings (Settings → MCP).
           Generate an API key, paste the ready-made config block into <strong>Claude Desktop, Cursor, or Windsurf</strong>,
-          and your AI tool can run any of Foreman&apos;s 396+ skills directly &mdash; no code, no middleware. It&apos;s the
+          and your AI tool can run any of Foreman&apos;s 396+ skills directly — no code, no middleware. It&apos;s the
           no-code on-ramp; the <A href="/api-access">REST API + BYOA</A> is the full-control path, and both hit the same
           skill catalog. Included on Pro+ ($599/mo). Most construction software has no AI integration at all.
         </>
@@ -1447,7 +1447,7 @@ const security: Category = {
         <>
           <strong>You do.</strong> Cornerstone PM™ operates on a &quot;your data is always yours&quot; principle:
           one-click full database export in CSV or JSON anytime, no exit fees, no support ticket, no waiting
-          period. If you ever leave, you leave with everything &mdash; vendors, homes, schedules, options,
+          period. If you ever leave, you leave with everything — vendors, homes, schedules, options,
           budgets, every line. No strings attached. The{" "}
           <A href="/api-access">REST API on Pro+</A> also gives you full programmatic access to every record.
         </>

@@ -83,7 +83,7 @@ export default function ConstructionAIContextMemoryPage() {
             AI &amp; Automation
           </span>
           <h1 className="text-4xl sm:text-5xl font-black text-white leading-tight mb-4">
-            Why Most Construction AI Forgets&mdash;and How Foreman Doesn&rsquo;t
+            Why Most Construction AI Forgets—and How Foreman Doesn’t
           </h1>
           <div className="flex items-center gap-3 text-sm text-slate-500">
             <span>June 10, 2026</span>
@@ -96,17 +96,17 @@ export default function ConstructionAIContextMemoryPage() {
 
           <p className="text-xl text-slate-300 font-light">
             Most construction AI tools hit a context wall mid-task and start forgetting what
-            you said five minutes ago&mdash;or crash entirely. Foreman AI uses built-in memory
+            you said five minutes ago—or crash entirely. Foreman AI uses built-in memory
             compaction to keep working through 200+ option cleanups, full catalog imports, and
-            multi-step purchasing workflows without losing the thread. It&rsquo;s the only
-            construction AI that doesn&rsquo;t forget.
+            multi-step purchasing workflows without losing the thread. It’s the only
+            construction AI that doesn’t forget.
           </p>
 
           <p>
-            If you&rsquo;ve tried using a general-purpose AI tool for a complex construction
-            workflow, you&rsquo;ve run into the wall. You&rsquo;re deep into a purchasing session
-            &mdash;cleaning up 200+ option SKUs, bulk-reassigning vendor bids across three
-            communities, or running a full cost-budget reconciliation&mdash;and then the AI either
+            If you’ve tried using a general-purpose AI tool for a complex construction
+            workflow, you’ve run into the wall. You’re deep into a purchasing session
+            —cleaning up 200+ option SKUs, bulk-reassigning vendor bids across three
+            communities, or running a full cost-budget reconciliation—and then the AI either
             stops making sense, starts contradicting what it said earlier, or flat-out crashes the
             session. You lose your place and have to start over.
           </p>
@@ -128,7 +128,7 @@ export default function ConstructionAIContextMemoryPage() {
             What happens when construction AI hits the context wall
           </h2>
           <p>
-            The context wall doesn&rsquo;t announce itself. Here&rsquo;s how it typically plays
+            The context wall doesn’t announce itself. Here’s how it typically plays
             out in a construction workflow:
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
@@ -145,18 +145,18 @@ export default function ConstructionAIContextMemoryPage() {
               questions you already answered.
             </li>
             <li>
-              You&rsquo;re doing a line-by-line design center audit with a sales agent and the
+              You’re doing a line-by-line design center audit with a sales agent and the
               AI can no longer recall the spec-level decisions made in the first half of the
               call.
             </li>
           </ul>
           <p>
-            This isn&rsquo;t theoretical. It&rsquo;s the daily experience of builders trying to
+            This isn’t theoretical. It’s the daily experience of builders trying to
             use generic AI tools for long-session construction workflows.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            How Foreman&rsquo;s memory compaction solves it
+            How Foreman’s memory compaction solves it
           </h2>
           <p>
             Foreman AI is built on{" "}
@@ -191,8 +191,8 @@ export default function ConstructionAIContextMemoryPage() {
           </h2>
           <p>
             Even with memory compaction, context is a finite resource. Foreman surfaces a
-            real-time <strong className="text-white">context health meter</strong>&mdash;a
-            green/yellow/red indicator that tells you exactly where you are in the session&rsquo;s
+            real-time <strong className="text-white">context health meter</strong>—a
+            green/yellow/red indicator that tells you exactly where you are in the session’s
             capacity before you hit any degradation.
           </p>
 
@@ -200,7 +200,7 @@ export default function ConstructionAIContextMemoryPage() {
             <div className="flex items-start gap-4 rounded-xl border border-slate-800 bg-slate-900/40 p-5">
               <div className="w-3 h-3 rounded-full bg-emerald-400 mt-1 shrink-0" />
               <div>
-                <p className="text-base font-bold text-white mb-1">Green &mdash; full capacity</p>
+                <p className="text-base font-bold text-white mb-1">Green — full capacity</p>
                 <p className="text-slate-400 text-sm leading-relaxed">
                   The session is fresh or well-compacted. Foreman has full access to everything
                   discussed and is operating at peak accuracy. This is where you want to be for
@@ -212,7 +212,7 @@ export default function ConstructionAIContextMemoryPage() {
             <div className="flex items-start gap-4 rounded-xl border border-slate-800 bg-slate-900/40 p-5">
               <div className="w-3 h-3 rounded-full bg-amber-400 mt-1 shrink-0" />
               <div>
-                <p className="text-base font-bold text-white mb-1">Yellow &mdash; compaction active</p>
+                <p className="text-base font-bold text-white mb-1">Yellow — compaction active</p>
                 <p className="text-slate-400 text-sm leading-relaxed">
                   The session is long. Memory compaction is running and keeping Foreman
                   productive, but this is a good time to wrap up exploratory work and move to
@@ -223,10 +223,10 @@ export default function ConstructionAIContextMemoryPage() {
             <div className="flex items-start gap-4 rounded-xl border border-slate-800 bg-slate-900/40 p-5">
               <div className="w-3 h-3 rounded-full bg-red-400 mt-1 shrink-0" />
               <div>
-                <p className="text-base font-bold text-white mb-1">Red &mdash; start fresh</p>
+                <p className="text-base font-bold text-white mb-1">Red — start fresh</p>
                 <p className="text-slate-400 text-sm leading-relaxed">
                   The session has hit its useful limit. Foreman tells you directly: start a new
-                  session to maintain full accuracy. You won&rsquo;t get surprised mid-task by a
+                  session to maintain full accuracy. You won’t get surprised mid-task by a
                   silent quality drop.
                 </p>
               </div>
@@ -234,9 +234,9 @@ export default function ConstructionAIContextMemoryPage() {
           </div>
 
           <p>
-            The meter is not a warning you have to hunt for. It&rsquo;s surfaced inline in the
-            Foreman interface so that anyone using it&mdash;superintendent, sales agent,
-            purchasing manager&mdash;can see the session health at a glance and make an informed
+            The meter is not a warning you have to hunt for. It’s surfaced inline in the
+            Foreman interface so that anyone using it—superintendent, sales agent,
+            purchasing manager—can see the session health at a glance and make an informed
             decision about whether to continue or start fresh.
           </p>
 
@@ -250,21 +250,21 @@ export default function ConstructionAIContextMemoryPage() {
           <p>
             Most AI tools treat every new conversation as a blank slate. You have to re-explain
             your role, your preferred vendors, your naming conventions, and your workflows every
-            single time. That&rsquo;s not an agent&mdash;that&rsquo;s a very fast search engine.
+            single time. That’s not an agent—that’s a very fast search engine.
           </p>
           <p>
             Foreman AI carries two memory layers:
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
             <li>
-              <strong className="text-white">Per-user memory</strong>&mdash;your name, role,
+              <strong className="text-white">Per-user memory</strong>—your name, role,
               preferred vendors, communication style, and workflow preferences. Tell Foreman once
-              that you always quote in &ldquo;finished square footage&rdquo; and it uses that
+              that you always quote in “finished square footage” and it uses that
               vocabulary back in every future session. Tell it you hate lengthy responses and
               it stays concise.
             </li>
             <li>
-              <strong className="text-white">Company-wide memory</strong>&mdash;your vendor
+              <strong className="text-white">Company-wide memory</strong>—your vendor
               scorecards, recurring scope patterns, community-specific pricing defaults, and
               builder standards. Every user on your team benefits from the shared institutional
               knowledge Foreman has built up.
@@ -293,24 +293,24 @@ export default function ConstructionAIContextMemoryPage() {
               href="/blog/foreman-ai-memory-construction-software"
               className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
             >
-              Foreman&rsquo;s per-user memory works in practice
+              Foreman’s per-user memory works in practice
             </Link>
             .
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            Why &ldquo;construction AI&rdquo; without memory isn&rsquo;t a construction AI
+            Why “construction AI” without memory isn’t a construction AI
           </h2>
           <p>
-            The real work in construction is not a five-minute task. It&rsquo;s a two-hour
+            The real work in construction is not a five-minute task. It’s a two-hour
             purchasing session that spans bid collection, comparison, scope clarification, award,
-            and PO generation. It&rsquo;s a full-day design center audit for a new plan launch.
-            It&rsquo;s a multi-week vendor re-bid cycle that runs in parallel with active builds.
+            and PO generation. It’s a full-day design center audit for a new plan launch.
+            It’s a multi-week vendor re-bid cycle that runs in parallel with active builds.
           </p>
           <p>
             An AI tool that forgets at minute 10 is not a workable co-pilot for any of those
-            scenarios. It&rsquo;s a toy. Foreman is built to match the actual tempo of
-            construction work&mdash;long sessions, complex workflows, and the expectation that
+            scenarios. It’s a toy. Foreman is built to match the actual tempo of
+            construction work—long sessions, complex workflows, and the expectation that
             the agent remembers everything it learned yesterday.
           </p>
           <p>
@@ -349,7 +349,7 @@ export default function ConstructionAIContextMemoryPage() {
 
           <div className="mt-14 rounded-2xl border border-emerald-800/40 bg-emerald-950/20 p-8 text-center not-prose">
             <h2 className="text-2xl font-bold text-white mb-3">
-              Try the construction AI that doesn&rsquo;t forget
+              Try the construction AI that doesn’t forget
             </h2>
             <p className="text-slate-300 mb-6 max-w-xl mx-auto">
               Foreman AI runs 396+ purpose-built skills with persistent per-user memory,
@@ -360,7 +360,7 @@ export default function ConstructionAIContextMemoryPage() {
               href="/beta"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-base transition-colors"
             >
-              Request Early Access &rarr;
+              Request Early Access →
             </Link>
           </div>
         </div>

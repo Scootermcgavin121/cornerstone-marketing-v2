@@ -143,7 +143,7 @@ export default function PromoteStandardFinishToUpgradePage() {
         <div className="prose prose-invert prose-lg max-w-none space-y-6 text-slate-300 leading-relaxed">
 
           <p className="text-xl text-slate-300 font-light">
-            Cornerstone PM&rsquo;s{" "}
+            Cornerstone PM’s{" "}
             <Link
               href="/design"
               className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
@@ -151,26 +151,26 @@ export default function PromoteStandardFinishToUpgradePage() {
               Design Center
             </Link>{" "}
             lets builders control included-vs-upgrade pricing down to a single
-            option&mdash;not just whole categories. To promote any standard
-            finish to a paid upgrade, open the option under Purchasing &rarr;
+            option—not just whole categories. To promote any standard
+            finish to a paid upgrade, open the option under Purchasing →
             Options, change its Spec Level to Upgrade I, II, or Premium, and
-            save. That&rsquo;s it.
+            save. That’s it.
           </p>
 
           <p>
             Most design-center tools give you a binary choice: a category is
-            either included in the base price or it&rsquo;s an upgrade. If you
+            either included in the base price or it’s an upgrade. If you
             want to offer one specific cabinet pull as a paid upgrade while
-            every other hardware option stays included, you&rsquo;re out of
-            luck&mdash;unless you&rsquo;re on Cornerstone PM.
+            every other hardware option stays included, you’re out of
+            luck—unless you’re on Cornerstone PM.
           </p>
 
           <p>
             Cornerstone operates at the individual option level. You can
             mark a single Level&nbsp;1 (Standard) finish as a paid upgrade
-            without touching anything else in that category. It&rsquo;s the
+            without touching anything else in that category. It’s the
             kind of granular margin control that production builders have
-            wanted for years, and it&rsquo;s built directly into the{" "}
+            wanted for years, and it’s built directly into the{" "}
             <Link
               href="/design"
               className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
@@ -187,22 +187,22 @@ export default function PromoteStandardFinishToUpgradePage() {
             When builders set base prices, they make assumptions about which
             finishes buyers will accept as standard. But markets shift.
             Material costs change. A cabinet pull that cost $4 two years ago
-            now costs $11&mdash;and it no longer makes sense to include it in
+            now costs $11—and it no longer makes sense to include it in
             the base.
           </p>
           <p>
             With most design-center platforms, your only option is to move the
-            entire hardware category to &ldquo;upgrade,&rdquo; which forces
+            entire hardware category to “upgrade,” which forces
             buyers to pay for even the most basic pull. That creates friction
             in the sales process. Buyers who expected hardware to be included
             now feel nickel-and-dimed.
           </p>
           <p>
-            Cornerstone&rsquo;s spec-level system solves this by letting you
+            Cornerstone’s spec-level system solves this by letting you
             promote the expensive pull to Upgrade I (a paid add-on) while
             keeping the standard pull included in the base. The buyer still
-            gets a clean experience&mdash;a default included option plus clear
-            upgrade pricing for the premium version&mdash;and you protect your
+            gets a clean experience—a default included option plus clear
+            upgrade pricing for the premium version—and you protect your
             margin on the items that have gotten expensive.
           </p>
 
@@ -254,16 +254,16 @@ export default function PromoteStandardFinishToUpgradePage() {
           </h2>
           <p>
             If your goal is to exclude a whole option class from the base
-            budget&mdash;say, countertops are never included, every selection
-            is a paid upgrade&mdash;there&rsquo;s a faster path: the
+            budget—say, countertops are never included, every selection
+            is a paid upgrade—there’s a faster path: the
             Standard/Upgrade toggle on the{" "}
             <strong className="text-white">Spec Levels page</strong>.
           </p>
           <p>
-            Navigate to Settings &rarr; Spec Levels, find the option class you
+            Navigate to Settings → Spec Levels, find the option class you
             want to exclude, and flip the toggle from Standard to Upgrade. Every
             option in that class instantly moves out of the base budget and
-            becomes a paid selection. You don&rsquo;t have to touch each
+            becomes a paid selection. You don’t have to touch each
             individual option.
           </p>
           <p>
@@ -322,8 +322,8 @@ export default function PromoteStandardFinishToUpgradePage() {
           <p>
             Before the change: all four options were Standard, all included in
             the base price. You were giving away the Matte Black and Brushed
-            Gold pulls&mdash;options that now cost significantly more to
-            supply&mdash;for free.
+            Gold pulls—options that now cost significantly more to
+            supply—for free.
           </p>
           <p>
             After three spec-level changes: the Satin Nickel pull stays
@@ -337,9 +337,9 @@ export default function PromoteStandardFinishToUpgradePage() {
             Community-based upgrade pricing
           </h2>
           <p>
-            The spec-level system pairs with Cornerstone&rsquo;s
-            community-based upgrade pricing. Upgrade prices aren&rsquo;t
-            global&mdash;you can set different +$X amounts per community. The
+            The spec-level system pairs with Cornerstone’s
+            community-based upgrade pricing. Upgrade prices aren’t
+            global—you can set different +$X amounts per community. The
             Matte Black pull might be a +$420 upgrade in Meadowbrook but a
             +$380 upgrade in Riverstone, reflecting different community price
             points and buyer profiles.
@@ -358,19 +358,19 @@ export default function PromoteStandardFinishToUpgradePage() {
             Neither Buildertrend nor JobTread has a concept of option-level
             spec tiers for production builders. Their selection models are
             designed for custom and semi-custom builders where every job is
-            negotiated individually from scratch&mdash;allowances per job, not
+            negotiated individually from scratch—allowances per job, not
             a repeatable options engine.
           </p>
           <p>
             In those tools, promoting a single standard finish to a paid
             upgrade means editing your allowance template for every active job.
             On a production builder running 50 homes across 3 communities,
-            that&rsquo;s manual work at scale. On Cornerstone, you make the
+            that’s manual work at scale. On Cornerstone, you make the
             spec-level change once, and it propagates to every plan in every
             community instantly.
           </p>
           <p>
-            That&rsquo;s the core difference between a tool built for custom
+            That’s the core difference between a tool built for custom
             builders and a platform built for{" "}
             <Link
               href="/home-builder-project-management-software"
@@ -390,26 +390,26 @@ export default function PromoteStandardFinishToUpgradePage() {
           </p>
           <ul className="space-y-2 text-slate-300 ml-4 list-disc">
             <li>
-              <strong className="text-white">Material cost increases</strong>&mdash;a supplier
+              <strong className="text-white">Material cost increases</strong>—a supplier
               raises prices on a previously inexpensive finish. Rather than raising the base
               price, pull that finish out and make it a paid upgrade. The included option
               stays budget-friendly; the upgraded version has the right price attached.
             </li>
             <li>
-              <strong className="text-white">Community-specific positioning</strong>&mdash;a
+              <strong className="text-white">Community-specific positioning</strong>—a
               finish that makes sense as standard in a value community is a reasonable upgrade
               in a move-up community. Use spec level to differentiate without maintaining
               separate plan sets.
             </li>
             <li>
-              <strong className="text-white">New year pricing resets</strong>&mdash;at the
+              <strong className="text-white">New year pricing resets</strong>—at the
               start of each model year, review your standard finishes and move anything that
               no longer fits your margin targets into an upgrade tier. It takes minutes, not
               days.
             </li>
             <li>
               <strong className="text-white">Responding to competitor design center
-              changes</strong>&mdash;if a competitor is advertising a feature as &ldquo;included&rdquo;
+              changes</strong>—if a competitor is advertising a feature as “included”
               that you currently charge for, quickly reassign those options to Standard to
               match without opening the base price more broadly.
             </li>
@@ -429,12 +429,12 @@ export default function PromoteStandardFinishToUpgradePage() {
           </p>
 
           <p>
-            This level of control&mdash;down to a single option, not just
-            entire categories&mdash;is part of what separates a purpose-built
+            This level of control—down to a single option, not just
+            entire categories—is part of what separates a purpose-built
             production builder platform from tools that were designed for
             custom work and retrofitted for volume. If your current design
             center software requires a manual update for every active job every
-            time pricing changes, it&rsquo;s worth taking a look at how{" "}
+            time pricing changes, it’s worth taking a look at how{" "}
             <Link
               href="/purchasing"
               className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2"
@@ -451,14 +451,14 @@ export default function PromoteStandardFinishToUpgradePage() {
             <p className="text-slate-300 mb-6 max-w-xl mx-auto">
               Promote any standard finish to a paid upgrade in seconds.
               Cornerstone PM gives production builders granular included-vs-upgrade
-              control down to the individual option&mdash;across every plan and every
+              control down to the individual option—across every plan and every
               community, all at once.
             </p>
             <Link
               href="/beta"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-base transition-colors"
             >
-              Request Early Access &rarr;
+              Request Early Access →
             </Link>
           </div>
         </div>

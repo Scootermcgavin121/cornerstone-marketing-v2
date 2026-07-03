@@ -292,7 +292,7 @@ export default function VendorBidRequestsPortalPage() {
             Why doesn&apos;t the vendor portal require a login?
           </h2>
           <p>
-            Every extra step between &ldquo;vendor receives email&rdquo; and &ldquo;bid submitted&rdquo; is a drop-off
+            Every extra step between “vendor receives email” and “bid submitted” is a drop-off
             risk. Asking a subcontractor to create an account, verify an email, and set a password
             before they can submit a bid introduces friction that kills response rates — especially
             from smaller trade contractors who aren&apos;t going to manage yet another software login.
@@ -460,7 +460,7 @@ export default function VendorBidRequestsPortalPage() {
             your floorplan cost breakdowns, your design option pricing, and your master cost budget.
           </p>
           <p>
-            That&apos;s the version of &ldquo;frictionless bidding&rdquo; worth building: not just a faster email,
+            That&apos;s the version of “frictionless bidding” worth building: not just a faster email,
             but a connected purchasing system where awarded pricing propagates through the platform
             instead of living in a spreadsheet your team maintains manually.
           </p>

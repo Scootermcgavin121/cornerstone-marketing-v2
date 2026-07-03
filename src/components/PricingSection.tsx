@@ -32,7 +32,7 @@ export function PricingSection() {
             <span className="text-amber-400">Not enterprise pricing.</span>
           </h2>
           <p className="text-lg text-slate-400 max-w-xl mx-auto mb-8">
-            NEWSTAR and BuildPro cost $50K&ndash;150K to implement and $2K&ndash;5K/mo to run.
+            NEWSTAR and BuildPro cost $50K–150K to implement and $2K–5K/mo to run.
             Cornerstone starts at $149/mo. No implementation fee. No per-seat surprises.
           </p>
 
@@ -154,7 +154,7 @@ export function PricingSection() {
                     </div>
                     {annual && (
                       <p className="text-xs text-emerald-400 mb-4">
-                        {annualTotal(plan.price)}/yr &mdash; save {`$${plan.price * 2}`}
+                        {annualTotal(plan.price)}/yr — save {`$${plan.price * 2}`}
                       </p>
                     )}
                     {!annual && <div className="mb-4" />}
@@ -214,7 +214,7 @@ export function PricingSection() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
           <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-700 bg-slate-800/60 text-slate-300 text-sm font-semibold">
             <Zap className="w-4 h-4 text-amber-400" />
-            <span>{ADDONS.powerUserSeat.label}: +${ADDONS.powerUserSeat.monthly}/seat/mo &mdash; elevated AI limits (Pro &amp; Pro+ only)</span>
+            <span>{ADDONS.powerUserSeat.label}: +${ADDONS.powerUserSeat.monthly}/seat/mo — elevated AI limits (Pro &amp; Pro+ only)</span>
           </div>
         </div>
 
@@ -227,7 +227,7 @@ export function PricingSection() {
               <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-5">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/15 border border-cyan-500/30 text-cyan-300 text-[11px] font-black uppercase tracking-widest w-fit">
                   <Zap className="w-3.5 h-3.5" />
-                  BYOA &mdash; Bring Your Own Agent
+                  BYOA — Bring Your Own Agent
                 </div>
                 <span className="text-slate-500 text-xs">Included with Pro+ ($599/mo) &middot; Not available on lower tiers</span>
               </div>
@@ -239,7 +239,7 @@ export function PricingSection() {
                 Already running Claude, ChatGPT, n8n, Make, or Zapier? Use a voice provider like Twilio,
                 Bland, or Retell to text and call subs? <span className="text-white font-semibold">Point them at Cornerstone.</span>{" "}
                 Connect <span className="text-cyan-300 font-semibold">Claude Desktop, Cursor, or Windsurf</span> to the built-in MCP server in ~30 seconds (the no-code on-ramp), or drive the full REST API for total control.{" "}
-                Pro+ unlocks <span className="text-cyan-300 font-semibold">the same toolbox Foreman AI uses internally</span> &mdash;
+                Pro+ unlocks <span className="text-cyan-300 font-semibold">the same toolbox Foreman AI uses internally</span> —
                 every one of <span className="text-white font-semibold">Foreman&apos;s {FOREMAN_SKILL_COUNT}+ skills</span> is exposed as a REST endpoint, plus {WEBHOOK_EVENT_COUNT}+ named webhook events.
                 We built the API on top of Foreman: every time we ship a new skill, your BYOA agent gets it automatically.
                 Read homes, schedule tasks, send bid requests, update POs, fire SMS to subs, notify homebuyers the moment a milestone hits.
@@ -285,8 +285,8 @@ export function PricingSection() {
 
               <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-5 max-w-3xl">
                 <span className="text-white font-semibold">Why this matters:</span> JobTread, Buildertrend, and CoConstruct
-                will tell you &ldquo;webhooks exist.&rdquo; We ship the full event catalog with typed payloads <em>and</em> the
-                full skill catalog as endpoints &mdash; <span className="text-white">your agent inherits everything Foreman can do, and grows automatically as we ship new skills.</span>
+                will tell you “webhooks exist.” We ship the full event catalog with typed payloads <em>and</em> the
+                full skill catalog as endpoints — <span className="text-white">your agent inherits everything Foreman can do, and grows automatically as we ship new skills.</span>
                 Nobody else in homebuilder software does this.
               </p>
 
@@ -315,7 +315,7 @@ export function PricingSection() {
             <div className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl border border-emerald-500/30 bg-emerald-500/10 text-emerald-400">
               <Zap className="w-4 h-4" />
               <span className="text-sm font-semibold">
-                Free during beta &mdash; limited to 100 builders
+                Free during beta — limited to 100 builders
               </span>
             </div>
             <p className="text-xs text-slate-500">
@@ -331,7 +331,7 @@ export function PricingSection() {
           </h3>
           <p className="text-center text-sm text-slate-500 mb-6">
             We&apos;re not a Buildertrend alternative. We&apos;re a NEWSTAR/BuildPro
-            alternative &mdash; at 1/20th the price.
+            alternative — at 1/20th the price.
           </p>
           <div className="rounded-2xl overflow-hidden border border-slate-800">
             {COMPETITORS.map((c, i) => (

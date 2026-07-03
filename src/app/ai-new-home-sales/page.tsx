@@ -152,14 +152,14 @@ export default function AiNewHomeSalesPage() {
             <span className="text-violet-400">New Home Sales Pipeline</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
-            Most builders track their sales pipeline on a whiteboard or in Excel. They lose buyers in negotiation, miss follow-ups, and can&apos;t answer &ldquo;where are we with the Johnsons?&rdquo; without making three calls. Foreman AI fixes that.
+            Most builders track their sales pipeline on a whiteboard or in Excel. They lose buyers in negotiation, miss follow-ups, and can&apos;t answer “where are we with the Johnsons?” without making three calls. Foreman AI fixes that.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/beta"
               className="px-8 py-4 rounded-full bg-violet-500 text-white font-bold text-lg hover:bg-violet-400 transition-all duration-200 shadow-lg shadow-violet-500/30 hover:-translate-y-0.5"
             >
-              Get Beta Access &rarr;
+              Get Beta Access →
             </Link>
             <a
               href="#pipeline"
@@ -227,7 +227,7 @@ export default function AiNewHomeSalesPage() {
                 <div className="p-5 border-b border-slate-800/60">
                   <div className="flex items-start gap-3 mb-3">
                     <span className="text-violet-400 font-black text-lg leading-none flex-shrink-0 mt-0.5">You:</span>
-                    <p className="text-white font-medium italic">&ldquo;{ex.prompt}&rdquo;</p>
+                    <p className="text-white font-medium italic">“{ex.prompt}”</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <img src="/foreman-mascot.png" alt="Foreman" className="h-5 w-5 object-contain flex-shrink-0 mt-0.5" />

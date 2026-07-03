@@ -66,7 +66,7 @@ export default function HomeSalePost() {
             The average custom home buyer calls or texts their builder&apos;s team 2–3 times per week
             during construction. Each of those calls takes 15–20 minutes to handle properly. Do the
             math: for a builder closing 20 homes a year, that&apos;s potentially 400+ hours annually
-            spent answering &ldquo;what&apos;s happening with our house?&rdquo;
+            spent answering “what&apos;s happening with our house?”
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
@@ -87,9 +87,9 @@ export default function HomeSalePost() {
 
           <div className="my-8 p-6 rounded-2xl bg-slate-900 border border-slate-800">
             <div className="text-slate-400 text-base italic mb-3">
-              &ldquo;Our buyers used to call us twice a week asking for updates. Now they log into the
+              “Our buyers used to call us twice a week asking for updates. Now they log into the
               portal and see exactly where their home is. It&apos;s cut our call volume in half and made
-              us look way more professional.&rdquo;
+              us look way more professional.”
             </div>
             <div className="text-slate-500 text-sm">— Sarah K., Sales Director, Premier Custom Builders</div>
           </div>

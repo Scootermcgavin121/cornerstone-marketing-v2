@@ -48,39 +48,39 @@ export const metadata = {
 const faqItems: FAQItem[] = [
   {
     q: "What is design center software for home builders?",
-    a: "Design center software lets homebuyers select finishes, fixtures, and upgrades for their new home while builders track allowances, upgrade pricing, and margin per home. Cornerstone PM™'s Design Center is built as a first-class module integrated with sales, purchasing, and the construction budget &mdash; every selection updates pricing and PO line items automatically. The built-in Product Configurator handles complex multi-attribute selections like cabinets and countertops with step-by-step guided flows.",
+    a: "Design center software lets homebuyers select finishes, fixtures, and upgrades for their new home while builders track allowances, upgrade pricing, and margin per home. Cornerstone PM™'s Design Center is built as a first-class module integrated with sales, purchasing, and the construction budget — every selection updates pricing and PO line items automatically. The built-in Product Configurator handles complex multi-attribute selections like cabinets and countertops with step-by-step guided flows.",
   },
   {
     q: "What is an options engine?",
-    a: "An options engine is the rules system that prices structural and design options per floorplan and per community. Cornerstone PM™'s options engine handles dependencies, incompatibilities, allowance overages, and per-community pricing &mdash; with real-time price rollup as the buyer makes selections. Foreman AI's Design Center domain (8 skills) can configure options, track allowances, and generate selection packages on request.",
+    a: "An options engine is the rules system that prices structural and design options per floorplan and per community. Cornerstone PM™'s options engine handles dependencies, incompatibilities, allowance overages, and per-community pricing — with real-time price rollup as the buyer makes selections. Foreman AI's Design Center domain (8 skills) can configure options, track allowances, and generate selection packages on request.",
   },
   {
     q: "How do design center allowances work?",
-    a: "When a buyer locks structural options on a sale, Cornerstone PM™ auto-generates a per-room allowance schedule based on community spec levels (Standard, Premium, Luxury, etc.). The buyer's selections debit the allowance, overages flow to a change order, and savings can be applied as buyer credits &mdash; all tracked in real time.",
+    a: "When a buyer locks structural options on a sale, Cornerstone PM™ auto-generates a per-room allowance schedule based on community spec levels (Standard, Premium, Luxury, etc.). The buyer's selections debit the allowance, overages flow to a change order, and savings can be applied as buyer credits — all tracked in real time.",
   },
   {
     q: "How does upgrade pricing work across different communities?",
-    a: "Each community has a base spec level (Standard, Upgrade I, Upgrade II, Premium, etc.) baked into the home price. Buyers only see options at or above their community&apos;s included level &mdash; they can&apos;t downgrade. Upgrade cost is calculated automatically as selected option price minus community-included option price. Options at the community&apos;s included level show an INCLUDED badge; everything above shows a real-time +$X delta. Builder sets the included level per community once, and the math flows automatically &mdash; no per-community pricing tables to maintain, no cloned option libraries.",
+    a: "Each community has a base spec level (Standard, Upgrade I, Upgrade II, Premium, etc.) baked into the home price. Buyers only see options at or above their community&apos;s included level — they can&apos;t downgrade. Upgrade cost is calculated automatically as selected option price minus community-included option price. Options at the community&apos;s included level show an INCLUDED badge; everything above shows a real-time +$X delta. Builder sets the included level per community once, and the math flows automatically — no per-community pricing tables to maintain, no cloned option libraries.",
   },
   {
     q: "Can different communities start at different spec levels?",
-    a: "Yes. Community A can include Standard, Community B can include Upgrade I, Community C can include Premium &mdash; all sharing the same option library and the same floorplans. Cornerstone PM™ keeps one source of truth for options and pricing; each community simply points at its included spec level and the design center automatically filters available options and recalculates upgrade deltas per buyer. Most competitor design centers force builders to clone the entire option library per community to do this &mdash; that&apos;s where pricing drifts and margin leaks.",
+    a: "Yes. Community A can include Standard, Community B can include Upgrade I, Community C can include Premium — all sharing the same option library and the same floorplans. Cornerstone PM™ keeps one source of truth for options and pricing; each community simply points at its included spec level and the design center automatically filters available options and recalculates upgrade deltas per buyer. Most competitor design centers force builders to clone the entire option library per community to do this — that&apos;s where pricing drifts and margin leaks.",
   },
   {
     q: "What about product attributes like Pattern, Size, or Grout Color?",
-    a: "Product attributes (Collection, Size, Pattern, Grout Color, Door Style, Wood Species, Finish, etc.) are cosmetic spec selectors, not pricing drivers &mdash; but their availability can be tier-gated. Want Herringbone pattern only at Upgrade I and above? 12x24 tile only at Premium? Configure it once and buyers in lower-tier communities won&apos;t see those choices at all. No “why can&apos;t I pick that?” sales calls.",
+    a: "Product attributes (Collection, Size, Pattern, Grout Color, Door Style, Wood Species, Finish, etc.) are cosmetic spec selectors, not pricing drivers — but their availability can be tier-gated. Want Herringbone pattern only at Upgrade I and above? 12x24 tile only at Premium? Configure it once and buyers in lower-tier communities won&apos;t see those choices at all. No “why can&apos;t I pick that?” sales calls.",
   },
   {
     q: "Does the design center connect to purchasing?",
-    a: "Yes. The moment a design selection is locked, Cornerstone PM™ updates the purchasing line items and the construction budget. There's no separate spec sheet to reconcile and no risk of ordering the wrong fixture &mdash; design, purchasing, and the budget share one data source.",
+    a: "Yes. The moment a design selection is locked, Cornerstone PM™ updates the purchasing line items and the construction budget. There's no separate spec sheet to reconcile and no risk of ordering the wrong fixture — design, purchasing, and the budget share one data source.",
   },
   {
     q: "What are Options Attributes?",
-    a: "Options Attributes let you define attribute groups (like Door Style, Wood Species, Finish) for a product category and then manage them independently instead of creating individual options for every combination. Five cabinet series with 23 door styles × 8 wood species × 38 finishes × 2 overlays × 3 door treatments = over 7,000 possible variations &mdash; all managed through just 5 options and 5 attribute groups. Compatibility rules prevent invalid combinations, and pricing modifiers are set per attribute value.",
+    a: "Options Attributes let you define attribute groups (like Door Style, Wood Species, Finish) for a product category and then manage them independently instead of creating individual options for every combination. Five cabinet series with 23 door styles × 8 wood species × 38 finishes × 2 overlays × 3 door treatments = over 7,000 possible variations — all managed through just 5 options and 5 attribute groups. Compatibility rules prevent invalid combinations, and pricing modifiers are set per attribute value.",
   },
   {
     q: "How is this different from a generic configurator?",
-    a: "Generic configurators (Hubspot CRM add-ons, standalone selection apps) collect buyer preferences but don't update your budget or purchasing system. Cornerstone PM™'s Design Center is wired to live builder data &mdash; selections immediately become PO line items, change orders, and budget updates with no double entry. Plus, the built-in Product Configurator lets buyers walk through complex selections (cabinets, countertops) step by step with smart compatibility rules, so only valid combinations are shown.",
+    a: "Generic configurators (Hubspot CRM add-ons, standalone selection apps) collect buyer preferences but don't update your budget or purchasing system. Cornerstone PM™'s Design Center is wired to live builder data — selections immediately become PO line items, change orders, and budget updates with no double entry. Plus, the built-in Product Configurator lets buyers walk through complex selections (cabinets, countertops) step by step with smart compatibility rules, so only valid combinations are shown.",
   },
   {
     q: "Can buyers see their selections in their portal?",
@@ -88,11 +88,11 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Can I give subcontractors a selection sheet without showing pricing?",
-    a: "Yes &mdash; that&apos;s exactly what the Trade Copy is for. Alongside the buyer/office Selection Sheet (which includes pricing), Cornerstone PM&trade; generates a separate Trade Copy with every dollar figure stripped out &mdash; no price columns, no subtotals, no totals &mdash; stamped &lsquo;TRADE COPY &mdash; NO PRICING&rsquo; in the header. Hand it to your trades to tape up in the home so they see exactly what finishes go where, with photos, while your pricing and margins stay private. Both versions can be grouped By Category or By Room.",
+    a: "Yes — that&apos;s exactly what the Trade Copy is for. Alongside the buyer/office Selection Sheet (which includes pricing), Cornerstone PM™ generates a separate Trade Copy with every dollar figure stripped out — no price columns, no subtotals, no totals — stamped ‘TRADE COPY — NO PRICING’ in the header. Hand it to your trades to tape up in the home so they see exactly what finishes go where, with photos, while your pricing and margins stay private. Both versions can be grouped By Category or By Room.",
   },
   {
     q: "Do I have to export a trade copy every time selections change?",
-    a: "No. The Trade Copy auto-saves into the home&apos;s Documents every time selections are locked or approved, and it replaces the previous one so duplicates never pile up &mdash; it&apos;s just always there in the home&apos;s documents, current. There&apos;s also a manual &lsquo;Save Trade Copy to Home Docs&rsquo; button to push an updated copy on demand.",
+    a: "No. The Trade Copy auto-saves into the home&apos;s Documents every time selections are locked or approved, and it replaces the previous one so duplicates never pile up — it&apos;s just always there in the home&apos;s documents, current. There&apos;s also a manual ‘Save Trade Copy to Home Docs’ button to push an updated copy on demand.",
   },
   {
     q: "What does design center software cost?",
@@ -100,38 +100,38 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Is this a NEWSTAR / BuildPro design center alternative?",
-    a: "Yes. Cornerstone PM™ offers the same core options engine and design center capabilities as NEWSTAR and BuildPro &mdash; structured options, allowances, spec levels, change orders &mdash; without the 6-figure implementation cost. Built specifically for small-to-mid home builders.",
+    a: "Yes. Cornerstone PM™ offers the same core options engine and design center capabilities as NEWSTAR and BuildPro — structured options, allowances, spec levels, change orders — without the 6-figure implementation cost. Built specifically for small-to-mid home builders.",
   },
 ];
 
 const features = [
   { title: "Cross-Class Upgrades", desc: "Buyers can switch from carpet to hardwood, recessed lights to pendants, or any option to any other within the same category. One click, real-time price delta shown instantly." },
-  { title: "Per-Room Selections with Sqft", desc: "'Pick your Kitchen flooring (180 sqft)' &mdash; upgrade pricing shown per room based on actual takeoff quantities. No manual area calculations." },
-  { title: "Options Grouped by Type", desc: "Carpet, Hardwood, LVP, and Tile shown as collapsible groups &mdash; not a flat dropdown. Buyers see the full picture before choosing." },
+  { title: "Per-Room Selections with Sqft", desc: "'Pick your Kitchen flooring (180 sqft)' — upgrade pricing shown per room based on actual takeoff quantities. No manual area calculations." },
+  { title: "Options Grouped by Type", desc: "Carpet, Hardwood, LVP, and Tile shown as collapsible groups — not a flat dropdown. Buyers see the full picture before choosing." },
   { title: "Real-Time Upgrade Pricing", desc: "Shows exact cost delta from base: '+$684 upgrade' or '-$200 credit'. Price flows from takeoff quantities automatically." },
   { title: "Designer Collections", desc: "64+ curated packages across 7 categories. Pick a package and all category options auto-lock to that collection. Remove the package to unlock individual picks." },
   { title: "Product Configurator", desc: "Step-by-step guided configuration for complex selections like cabinets and countertops. Buyers pick door style → wood species → finish with smart compatibility rules ensuring only valid combinations. Pricing uses base price + attribute modifiers from vendor bids — no manual spreadsheet matrix needed." },
   { title: "Spec-Level Tier Gating", desc: "Control which product options — and which product attributes (Collection, Size, Pattern, Grout Color) — are available at each upgrade level. Herringbone pattern only at Upgrade I+? Done. Standard buyers see the curated list, Premium buyers unlock more." },
   { title: "Community-Based Upgrade Pricing", desc: "Every community has its own included spec level baked into the home price. Buyers only see options at or above that level — no accidental downgrades — and every upgrade shows the exact delta from what's already included. Builder sets the level per community once. The math handles itself." },
   { title: "INCLUDED Badges + Live Deltas", desc: "Options at the community's included level show an INCLUDED badge. Everything above shows '+$X' calculated as selected option price minus community included option price — automatically, per community, no manual pricing tables." },
-  { title: "Driven by Takeoffs", desc: "Quantities flow directly from takeoff data &mdash; zero double-entry. Change a room size in the takeoff and the design center pricing updates automatically." },
-  { title: "Room-by-Room Selections", desc: "Organize all buyer selections by room &mdash; kitchen, baths, flooring, fixtures, paint." },
-  { title: "Spec Level Management", desc: "Community Standard, Premium, Luxury &mdash; unlimited levels with included/upgrade pricing." },
+  { title: "Driven by Takeoffs", desc: "Quantities flow directly from takeoff data — zero double-entry. Change a room size in the takeoff and the design center pricing updates automatically." },
+  { title: "Room-by-Room Selections", desc: "Organize all buyer selections by room — kitchen, baths, flooring, fixtures, paint." },
+  { title: "Spec Level Management", desc: "Community Standard, Premium, Luxury — unlimited levels with included/upgrade pricing." },
   { title: "Options Engine", desc: "Structural and design options with real-time pricing, tied to budget automatically." },
-  { title: "Buyer Selection Portal", desc: "Buyers make selections online, builder approves &mdash; no email chains." },
-  { title: "Selections PDF Export", desc: "Generate a clean, branded selection sheet PDF for every home &mdash; grouped By Category or By Room." },
-  { title: "Pricing-Free Trade Copy", desc: "Hand trades a clean spec sheet to tape up in the home &mdash; every finish and photo, zero pricing. The Trade Copy strips every dollar (no price columns, subtotals, or totals) and stamps &lsquo;TRADE COPY &mdash; NO PRICING&rsquo; in the header. Protect your margins: trades see the finishes, never the prices." },
-  { title: "Auto-Saved to Home Docs", desc: "The Trade Copy auto-saves into the home&rsquo;s Documents every time selections are locked or approved &mdash; replacing the old one so duplicates never pile up. No manual exporting; it&rsquo;s always there, always current. A manual &lsquo;Save Trade Copy to Home Docs&rsquo; button is there too." },
+  { title: "Buyer Selection Portal", desc: "Buyers make selections online, builder approves — no email chains." },
+  { title: "Selections PDF Export", desc: "Generate a clean, branded selection sheet PDF for every home — grouped By Category or By Room." },
+  { title: "Pricing-Free Trade Copy", desc: "Hand trades a clean spec sheet to tape up in the home — every finish and photo, zero pricing. The Trade Copy strips every dollar (no price columns, subtotals, or totals) and stamps ‘TRADE COPY — NO PRICING’ in the header. Protect your margins: trades see the finishes, never the prices." },
+  { title: "Auto-Saved to Home Docs", desc: "The Trade Copy auto-saves into the home’s Documents every time selections are locked or approved — replacing the old one so duplicates never pile up. No manual exporting; it’s always there, always current. A manual ‘Save Trade Copy to Home Docs’ button is there too." },
   { title: "Upgrade Tracking", desc: "Track every upgrade from selection to install with status updates." },
   { title: "Change Order Integration", desc: "Design changes flow directly into purchasing and budget." },
   { title: "Community-Level Pricing", desc: "Set base included items per community, overrides per floorplan. Different communities can start at different spec levels — Standard in one, Upgrade I in another — with zero extra configuration." },
   { title: "Approval Workflow", desc: "Builder approves all selections before they're locked." },
   { title: "Revision History", desc: "Full audit trail of every selection change with timestamps." },
-  { title: "Integration with Purchasing", desc: "Every selection ties to a line item &mdash; no manual entry." },
+  { title: "Integration with Purchasing", desc: "Every selection ties to a line item — no manual entry." },
   { title: "Mobile-Friendly", desc: "Buyers can make selections from any device." },
-  { title: "Margin Lock-In", desc: "Lock options pricing before presenting to buyer &mdash; protect your margin." },
-  { title: "Exclusion Groups", desc: "&ldquo;Pick One&rdquo; rules for flooring, countertops, and other either/or categories. Buyer picks hardwood? Carpet auto-locks. No conflicting selections, no manual cleanup." },
-  { title: "100% Selection Confetti", desc: "Celebration animation when all design selections are complete. Small touch, big buyer moment &mdash; turns a mundane checklist into a milestone." },
+  { title: "Margin Lock-In", desc: "Lock options pricing before presenting to buyer — protect your margin." },
+  { title: "Exclusion Groups", desc: "“Pick One” rules for flooring, countertops, and other either/or categories. Buyer picks hardwood? Carpet auto-locks. No conflicting selections, no manual cleanup." },
+  { title: "100% Selection Confetti", desc: "Celebration animation when all design selections are complete. Small touch, big buyer moment — turns a mundane checklist into a milestone." },
   { title: "Design Center Settings", desc: "Full admin control over selection rules, deadlines, and the buyer experience. Configure which categories require selections, set cutoff dates, and control the buyer portal flow." },
 ];
 
@@ -153,7 +153,7 @@ export default function DesignPage() {
             Cross-class upgrades, per-room pricing from real takeoff quantities, 64+ designer packages, and a step-by-step Product Configurator for complex selections like cabinets and countertops. Every selection tracked, priced, and connected to your budget.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/beta" className="px-8 py-4 rounded-full bg-violet-400 text-slate-900 font-bold text-lg hover:bg-violet-300 transition-all duration-200 shadow-lg shadow-violet-500/30 hover:-translate-y-0.5">Request Early Access &rarr;</Link>
+            <Link href="/beta" className="px-8 py-4 rounded-full bg-violet-400 text-slate-900 font-bold text-lg hover:bg-violet-300 transition-all duration-200 shadow-lg shadow-violet-500/30 hover:-translate-y-0.5">Request Early Access →</Link>
             <Link href="/features" className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200">See All Features</Link>
           </div>
         </div>
@@ -193,7 +193,7 @@ export default function DesignPage() {
               </span>
             </h2>
             <p className="text-xl text-slate-400 max-w-3xl mx-auto">
-              Stop creating thousands of individual SKUs. Options Attributes let you define attribute groups once and manage every possible combination through simple multiplication &mdash; not manual data entry.
+              Stop creating thousands of individual SKUs. Options Attributes let you define attribute groups once and manage every possible combination through simple multiplication — not manual data entry.
             </p>
           </div>
 
@@ -230,7 +230,7 @@ export default function DesignPage() {
               </div>
             </div>
             <p className="text-center text-slate-500 text-sm">
-              All managed through just <span className="text-violet-400 font-semibold">5 options</span> and <span className="text-violet-400 font-semibold">5 attribute groups</span> &mdash; not 7,000 individual line items.
+              All managed through just <span className="text-violet-400 font-semibold">5 options</span> and <span className="text-violet-400 font-semibold">5 attribute groups</span> — not 7,000 individual line items.
             </p>
           </div>
 
@@ -255,7 +255,7 @@ export default function DesignPage() {
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-black mb-4">Organize by spec level, not spreadsheet rows</h3>
                 <p className="text-slate-400 leading-relaxed mb-4">
-                  Five cabinet series &mdash; Standard through Premium &mdash; each with color-coded tier badges. Buyers see their included option and every upgrade path at a glance. Builders control which series each tier unlocks.
+                  Five cabinet series — Standard through Premium — each with color-coded tier badges. Buyers see their included option and every upgrade path at a glance. Builders control which series each tier unlocks.
                 </p>
                 <p className="text-slate-500 text-sm leading-relaxed">
                   Create options from scope items or your parts catalog in one click. Import/export for bulk management.
@@ -271,7 +271,7 @@ export default function DesignPage() {
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-black mb-4">Define once, multiply everywhere</h3>
                 <p className="text-slate-400 leading-relaxed mb-4">
-                  Five attribute groups &mdash; Door Style (23), Wood Species (8), Finish (38), Overlay (2), Door Treatment (3) &mdash; each marked Required so buyers can&apos;t skip a step. Every group expands to show values, images, and status.
+                  Five attribute groups — Door Style (23), Wood Species (8), Finish (38), Overlay (2), Door Treatment (3) — each marked Required so buyers can&apos;t skip a step. Every group expands to show values, images, and status.
                 </p>
                 <p className="text-slate-500 text-sm leading-relaxed">
                   Add, reorder, or deactivate values without touching the options themselves. The math updates automatically.
@@ -309,10 +309,10 @@ export default function DesignPage() {
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-black mb-4">What your buyer actually sees</h3>
                 <p className="text-slate-400 leading-relaxed mb-4">
-                  Every attribute group rendered as a visual swatch grid with photos, descriptions, and a live price delta per choice. The buyer picks Door Style, Wood Species, Finish, Overlay, and Door Treatment &mdash; the running total updates instantly at the bottom.
+                  Every attribute group rendered as a visual swatch grid with photos, descriptions, and a live price delta per choice. The buyer picks Door Style, Wood Species, Finish, Overlay, and Door Treatment — the running total updates instantly at the bottom.
                 </p>
                 <p className="text-slate-500 text-sm leading-relaxed">
-                  No spreadsheets emailed back and forth. No &ldquo;let me get back to you on pricing.&rdquo; The buyer configures the upgrade, sees the exact dollar impact, and saves the selection &mdash; all in one flow.
+                  No spreadsheets emailed back and forth. No “let me get back to you on pricing.” The buyer configures the upgrade, sees the exact dollar impact, and saves the selection — all in one flow.
                 </p>
               </div>
             </div>
@@ -325,7 +325,7 @@ export default function DesignPage() {
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-black mb-4">Invalid combos never reach production</h3>
                 <p className="text-slate-400 leading-relaxed mb-4">
-                  Set per-value restrictions: &ldquo;Bressler door style is compatible with these wood species and these finishes.&rdquo; Unchecked values are blocked at selection time. No restrictions? Leave the group open.
+                  Set per-value restrictions: “Bressler door style is compatible with these wood species and these finishes.” Unchecked values are blocked at selection time. No restrictions? Leave the group open.
                 </p>
                 <p className="text-slate-500 text-sm leading-relaxed">
                   No more field orders because someone picked Thermofoil with a stain finish. Compatibility rules catch it before the PO is cut.
@@ -363,13 +363,13 @@ export default function DesignPage() {
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-black mb-4">Send vendors an Excel template. Get real cost data back.</h3>
                 <p className="text-slate-400 leading-relaxed mb-4">
-                  Cornerstone auto-generates an Excel bid template for every attribute group &mdash; one tab per scope (Cabinets - Kitchen, Cabinets - Pantry, Cabinets - Laundry, etc.) with every door style, wood species, and finish pre-populated. Your vendor just fills the yellow <em className="text-amber-300 not-italic font-semibold">Price (+/-)</em> column.
+                  Cornerstone auto-generates an Excel bid template for every attribute group — one tab per scope (Cabinets - Kitchen, Cabinets - Pantry, Cabinets - Laundry, etc.) with every door style, wood species, and finish pre-populated. Your vendor just fills the yellow <em className="text-amber-300 not-italic font-semibold">Price (+/-)</em> column.
                 </p>
                 <p className="text-slate-400 leading-relaxed mb-4">
-                  Upload their completed sheet and every modifier imports back as a real cost &mdash; per attribute value, per scope item. The buyer-facing configurator on the previous screen pulls from <span className="text-violet-400 font-semibold">this exact data</span>. No price matrix in your head. No double-entry.
+                  Upload their completed sheet and every modifier imports back as a real cost — per attribute value, per scope item. The buyer-facing configurator on the previous screen pulls from <span className="text-violet-400 font-semibold">this exact data</span>. No price matrix in your head. No double-entry.
                 </p>
                 <p className="text-slate-500 text-sm leading-relaxed">
-                  Multiple vendors bidding the same scope? Compare side-by-side and award the winning quote per community &mdash; pricing flows straight into your design center and budget.
+                  Multiple vendors bidding the same scope? Compare side-by-side and award the winning quote per community — pricing flows straight into your design center and budget.
                 </p>
               </div>
             </div>
@@ -380,12 +380,12 @@ export default function DesignPage() {
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-widest mb-4">
                   <Refrigerator className="w-3.5 h-3.5" /> Tiered Appliance Packages
                 </div>
-                <h3 className="text-2xl sm:text-3xl font-black mb-4">Standard, Upgrade I, II, Premium &mdash; in one screen</h3>
+                <h3 className="text-2xl sm:text-3xl font-black mb-4">Standard, Upgrade I, II, Premium — in one screen</h3>
                 <p className="text-slate-400 leading-relaxed mb-4">
-                  Microwave, dishwasher, range, refrigerator &mdash; every appliance category rendered as a four-tier card grid. Buyers see the included model, every upgrade path, and the exact incremental cost without clicking through screens.
+                  Microwave, dishwasher, range, refrigerator — every appliance category rendered as a four-tier card grid. Buyers see the included model, every upgrade path, and the exact incremental cost without clicking through screens.
                 </p>
                 <p className="text-slate-500 text-sm leading-relaxed">
-                  Model numbers, photos, and pricing flow from your parts catalog and vendor bids &mdash; not a static brochure. Swap an entire appliance line across a community in minutes, not days.
+                  Model numbers, photos, and pricing flow from your parts catalog and vendor bids — not a static brochure. Swap an entire appliance line across a community in minutes, not days.
                 </p>
               </div>
               <div>
@@ -440,7 +440,7 @@ export default function DesignPage() {
               </span>
             </h2>
             <p className="text-xl text-slate-400 max-w-3xl mx-auto">
-              Standard included in Community A. Upgrade I included in Community B. Same options, same floorplans, same design center &mdash; and every buyer sees the right upgrade math for their community. Automatically.
+              Standard included in Community A. Upgrade I included in Community B. Same options, same floorplans, same design center — and every buyer sees the right upgrade math for their community. Automatically.
             </p>
           </div>
 
@@ -453,7 +453,7 @@ export default function DesignPage() {
               </div>
               <h3 className="text-lg font-black mb-2">Set the included spec level per community</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Community A includes Standard. Community B includes Upgrade I. Community C includes Premium. Set it once on the community &mdash; that&apos;s the option tier baked into the home price for every buyer there.
+                Community A includes Standard. Community B includes Upgrade I. Community C includes Premium. Set it once on the community — that&apos;s the option tier baked into the home price for every buyer there.
               </p>
             </div>
             <div className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
@@ -494,7 +494,7 @@ export default function DesignPage() {
                 <div className="text-xs uppercase tracking-widest text-cyan-400 font-bold mb-2">Community B &middot; Upgrade I included</div>
                 <div className="text-sm text-slate-400 mb-4">Buyer picks the same Upgrade I tile ($1,400):</div>
                 <div className="text-2xl font-black text-emerald-400">INCLUDED</div>
-                <div className="text-xs text-slate-500 mt-2">Tier matches community base &mdash; no upgrade charge</div>
+                <div className="text-xs text-slate-500 mt-2">Tier matches community base — no upgrade charge</div>
               </div>
               <div className="p-5 rounded-xl bg-slate-900/70 border border-slate-800">
                 <div className="text-xs uppercase tracking-widest text-violet-400 font-bold mb-2">Community B &middot; Upgrade I included</div>
@@ -516,7 +516,7 @@ export default function DesignPage() {
               </div>
               <h3 className="text-xl font-black mb-3">Pattern, Size, and Grout Color are tier-gated too</h3>
               <p className="text-slate-400 text-sm leading-relaxed mb-2">
-                Product attributes &mdash; Collection, Size, Pattern, Grout Color &mdash; are cosmetic spec selectors, not pricing drivers. But their <em>availability</em> can be tier-gated. Herringbone pattern only at Upgrade I+? 12x24 size only at Premium+? Done.
+                Product attributes — Collection, Size, Pattern, Grout Color — are cosmetic spec selectors, not pricing drivers. But their <em>availability</em> can be tier-gated. Herringbone pattern only at Upgrade I+? 12x24 size only at Premium+? Done.
               </p>
               <p className="text-slate-500 text-xs leading-relaxed">
                 Buyers in lower-tier communities don&apos;t see the gated choices at all. No “why can&apos;t I pick that?” phone calls.
@@ -550,12 +550,12 @@ export default function DesignPage() {
               <div className="flex justify-between"><span>Buildertrend Design</span><span className="line-through text-slate-600">$499+/mo</span></div>
               <div className="flex justify-between"><span>Cornerstone PM™</span><span className="text-violet-400 font-bold">Free during beta</span></div>
             </div>
-            <Link href="/beta" className="block w-full text-center px-6 py-3.5 rounded-xl bg-violet-400 text-slate-900 font-bold hover:bg-violet-300 transition-all duration-200">Get Early Access &rarr;</Link>
-            <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders &mdash;· No credit card required</p>
+            <Link href="/beta" className="block w-full text-center px-6 py-3.5 rounded-xl bg-violet-400 text-slate-900 font-bold hover:bg-violet-300 transition-all duration-200">Get Early Access →</Link>
+            <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders —· No credit card required</p>
           </div>
           <div className="space-y-4">
             <h2 className="text-3xl font-black">Why builders choose Cornerstone for design</h2>
-            <p className="text-slate-400 leading-relaxed">Most design center tools are bolt-ons that don't talk to your budget or purchasing system. Cornerstone's Design Center was built as a first-class module &mdash; every selection automatically updates the budget and purchasing line items.</p>
+            <p className="text-slate-400 leading-relaxed">Most design center tools are bolt-ons that don't talk to your budget or purchasing system. Cornerstone's Design Center was built as a first-class module — every selection automatically updates the budget and purchasing line items.</p>
             <p className="text-slate-400 leading-relaxed">Lock your options pricing before the buyer presentation and protect your margin every single time. No spreadsheets, no manual reconciliation, no surprises at closing.</p>
           </div>
         </div>
@@ -570,7 +570,7 @@ export default function DesignPage() {
       <section className="py-20 px-4 text-center border-t border-slate-800/60">
         <h2 className="text-4xl font-black mb-4">Ready to protect your margin?</h2>
         <p className="text-slate-400 text-lg mb-8 max-w-xl mx-auto">Join the beta and get 2 years free. Limited to 100 builders.</p>
-        <Link href="/beta" className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-violet-400 text-slate-900 font-bold text-lg hover:bg-violet-300 transition-all duration-200 shadow-lg shadow-violet-500/30">Request Early Access &rarr;</Link>
+        <Link href="/beta" className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-violet-400 text-slate-900 font-bold text-lg hover:bg-violet-300 transition-all duration-200 shadow-lg shadow-violet-500/30">Request Early Access →</Link>
       </section>
       <Footer />
     </div>

@@ -178,7 +178,7 @@ export default function RealVendorPricingPage() {
           <ul className="list-disc list-inside space-y-2 text-slate-300 my-4">
             <li>
               <strong className="text-white">Placeholder totals</strong> — a scope line where the
-              estimator typed &ldquo;$12,000 framing&rdquo; because that&apos;s roughly what it was last time
+              estimator typed “$12,000 framing” because that&apos;s roughly what it was last time
             </li>
             <li>
               <strong className="text-white">Synthetic labor splits</strong> — a tool requiring
@@ -430,8 +430,8 @@ export default function RealVendorPricingPage() {
           </ol>
 
           <p>
-            The result is a budget where you can click any line item and answer &ldquo;where did this
-            number come from?&rdquo; — every time, with a real answer.
+            The result is a budget where you can click any line item and answer “where did this
+            number come from?” — every time, with a real answer.
           </p>
 
           <div className="mt-14 rounded-2xl border border-emerald-800/40 bg-emerald-950/20 p-8 text-center not-prose">

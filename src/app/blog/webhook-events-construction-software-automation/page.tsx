@@ -215,7 +215,7 @@ export default function WebhookEventsAutomationPage() {
 
           <p className="text-xl text-slate-300 font-light">
             Cornerstone PM ships 37 named webhook events with typed payloads, HMAC-SHA256 signatures,
-            delivery logs, and automatic retry — not a checkbox that says &ldquo;webhooks: yes.&rdquo; That
+            delivery logs, and automatic retry — not a checkbox that says “webhooks: yes.” That
             distinction matters when you&apos;re wiring Twilio SMS to a task assignment, routing a bid
             submission to your CRM, or triggering a voice call the moment a deadline slips. The
             automation layer is only as useful as the events it can listen to.
@@ -235,11 +235,11 @@ export default function WebhookEventsAutomationPage() {
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            Why does &ldquo;webhooks exist&rdquo; mean almost nothing?
+            Why does “webhooks exist” mean almost nothing?
           </h2>
           <p>
-            When enterprise software says &ldquo;we have webhooks,&rdquo; that typically means one or two
-            generic events — maybe a &ldquo;record updated&rdquo; trigger — with no documentation on what fields
+            When enterprise software says “we have webhooks,” that typically means one or two
+            generic events — maybe a “record updated” trigger — with no documentation on what fields
             the payload includes, no way to verify the request actually came from the platform, and no
             visibility into whether delivery succeeded or failed.
           </p>
@@ -354,8 +354,8 @@ export default function WebhookEventsAutomationPage() {
           <p>
             When <code className="bg-slate-800 px-1 rounded text-sm">task.assigned</code> fires,
             a lightweight receiver pulls the vendor phone number from the payload and fires a Twilio
-            SMS: &ldquo;You&apos;ve been assigned framing on Lot 14 — Magnolia Plan. Start date: June 10.
-            Questions? Reply here.&rdquo; No app login required for the sub, no manual notification from
+            SMS: “You&apos;ve been assigned framing on Lot 14 — Magnolia Plan. Start date: June 10.
+            Questions? Reply here.” No app login required for the sub, no manual notification from
             the super. The event fires when the task is assigned; the text arrives in seconds.
           </p>
 
@@ -383,7 +383,7 @@ export default function WebhookEventsAutomationPage() {
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            How this compares to &ldquo;webhooks exist&rdquo; in other construction software
+            How this compares to “webhooks exist” in other construction software
           </h2>
 
           <div className="not-prose overflow-x-auto rounded-xl border border-slate-800 my-6">
@@ -473,7 +473,7 @@ export default function WebhookEventsAutomationPage() {
             function-call format, and OpenAPI 3.1. BYOA (Bring Your Own AI Agent) means every
             endpoint maps directly to a Foreman skill: when Foreman ships a new skill, your BYOA
             agent gets it automatically with no configuration required. JobTread and Buildertrend
-            say &ldquo;webhooks exist&rdquo; and &ldquo;API available.&rdquo; Cornerstone PM ships the full skill
+            say “webhooks exist” and “API available.” Cornerstone PM ships the full skill
             catalog as endpoints.
           </p>
           <p>
@@ -492,17 +492,17 @@ export default function WebhookEventsAutomationPage() {
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            What &ldquo;automation-friendly&rdquo; actually means for a home builder
+            What “automation-friendly” actually means for a home builder
           </h2>
           <p>
-            The construction software market uses &ldquo;automation-friendly&rdquo; as a marketing phrase.
+            The construction software market uses “automation-friendly” as a marketing phrase.
             What it means in practice depends entirely on the depth of the event catalog and the
             reliability of delivery.
           </p>
           <p>
             A platform with three generic webhooks and no HMAC verification is not automation-friendly.
             It&apos;s a platform where you can technically wire a Zapier automation that fires on
-            &ldquo;record updated&rdquo; — and then spend the next hour debugging whether it was a task update,
+            “record updated” — and then spend the next hour debugging whether it was a task update,
             a vendor update, or a home record update, because the payload doesn&apos;t tell you.
           </p>
           <p>
@@ -525,7 +525,7 @@ export default function WebhookEventsAutomationPage() {
               href="/beta"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-base transition-colors"
             >
-              Request Early Access &rarr;
+              Request Early Access →
             </Link>
           </div>
         </div>

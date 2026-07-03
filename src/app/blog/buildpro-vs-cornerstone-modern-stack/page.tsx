@@ -115,7 +115,7 @@ export default function BuildproVsCornerstonePage() {
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            What does &ldquo;Windows-Citrix&rdquo; actually mean for your team?
+            What does “Windows-Citrix” actually mean for your team?
           </h2>
           <p>
             BuildPro runs as a Windows desktop application typically deployed through a Citrix or
@@ -214,7 +214,7 @@ export default function BuildproVsCornerstonePage() {
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            What about the production builder&ndash;specific workflow?
+            What about the production builder–specific workflow?
           </h2>
           <p>
             BuildPro was built for production home builders and does handle the core of that

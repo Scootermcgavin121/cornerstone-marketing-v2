@@ -118,7 +118,7 @@ export default function SubcontractorManagementPost() {
           </div>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            What &ldquo;sub-friendly&rdquo; scheduling actually looks like
+            What “sub-friendly” scheduling actually looks like
           </h2>
 
           <p>

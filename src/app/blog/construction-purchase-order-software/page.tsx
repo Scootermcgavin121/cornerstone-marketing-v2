@@ -17,9 +17,9 @@ const blogSchema = buildBlogPostSchema({
 });
 
 export const metadata: Metadata = {
-  title: "Construction Purchase Order Software for Home Builders (2026 Guide) &mdash; Cornerstone PM™ Blog",
+  title: "Construction Purchase Order Software for Home Builders (2026 Guide) — Cornerstone PM™ Blog",
   description:
-    "Managing construction POs in Excel is costing home builders time and margin. Here's what modern purchase order software should actually do &mdash; and how AI is changing the equation.",
+    "Managing construction POs in Excel is costing home builders time and margin. Here's what modern purchase order software should actually do — and how AI is changing the equation.",
   openGraph: {
     images: [{ url: "https://www.cornerstonepm.ai/blog/purchase-order-software.png", width: 1024, height: 1024, alt: "Construction purchase order software workflow for residential home builders" }],
   }
@@ -51,18 +51,18 @@ export default function ConstructionPurchaseOrderSoftwarePost() {
           </h1>
           <div className="flex items-center gap-3 text-sm text-slate-500">
             <span>April 8, 2026</span>
-            <span>&mdash;·</span>
+            <span>—·</span>
             <span>6 min read</span>
           </div>
         </div>
 
         <div className="prose prose-invert prose-lg max-w-none space-y-6 text-slate-300 leading-relaxed">
           <p className="text-xl text-slate-300 font-light">
-            Searches for &ldquo;construction purchase order software&rdquo; have surged dramatically in the past year. That&apos;s not a coincidence. It&apos;s home builders and contractors finally getting fed up with managing POs in Excel &mdash; and looking for something better.
+            Searches for “construction purchase order software” have surged dramatically in the past year. That&apos;s not a coincidence. It&apos;s home builders and contractors finally getting fed up with managing POs in Excel — and looking for something better.
           </p>
 
           <p>
-            The good news: the market has caught up. There are now purpose-built tools that handle the full purchasing cycle &mdash; from vendor bids to PO generation to budget tracking. The challenge is knowing what to actually look for, and which tools are built for residential home builders versus generic commercial contractors.
+            The good news: the market has caught up. There are now purpose-built tools that handle the full purchasing cycle — from vendor bids to PO generation to budget tracking. The challenge is knowing what to actually look for, and which tools are built for residential home builders versus generic commercial contractors.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">Why spreadsheets break down for construction POs</h2>
@@ -78,7 +78,7 @@ export default function ConstructionPurchaseOrderSoftwarePost() {
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">What construction PO software should actually do</h2>
           <p>
-            Not all PO software is created equal. Generic small-business tools like QuickBooks or FreshBooks can generate purchase orders &mdash; but they don&apos;t understand construction workflows, don&apos;t connect to your schedule, and don&apos;t handle the bid process.
+            Not all PO software is created equal. Generic small-business tools like QuickBooks or FreshBooks can generate purchase orders — but they don&apos;t understand construction workflows, don&apos;t connect to your schedule, and don&apos;t handle the bid process.
           </p>
           <p>Here&apos;s what purpose-built construction PO software should handle:</p>
 
@@ -94,19 +94,19 @@ export default function ConstructionPurchaseOrderSoftwarePost() {
               "Export to Excel or PDF for field teams and subs who need offline access",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3">
-                <span className="text-amber-400 font-bold flex-shrink-0 mt-0.5">&mdash;†’</span>
+                <span className="text-amber-400 font-bold flex-shrink-0 mt-0.5">—†’</span>
                 <span>{item}</span>
               </li>
             ))}
           </ul>
 
           <p>
-            If a tool is missing two or more of those, you&apos;re going to end up filling the gaps with &mdash; you guessed it &mdash; spreadsheets.
+            If a tool is missing two or more of those, you&apos;re going to end up filling the gaps with — you guessed it — spreadsheets.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">The AI shift: plain English purchasing</h2>
           <p>
-            The biggest change in 2025&ndash;2026 is AI integration that actually does something useful. Not a chatbot that answers generic questions about construction &mdash; an agent that reads and writes your real data.
+            The biggest change in 2025–2026 is AI integration that actually does something useful. Not a chatbot that answers generic questions about construction — an agent that reads and writes your real data.
           </p>
           <p>
             With Foreman AI (Cornerstone PM™&apos;s built-in AI agent), a builder can type:
@@ -114,19 +114,19 @@ export default function ConstructionPurchaseOrderSoftwarePost() {
 
           <div className="rounded-xl bg-slate-900 border border-slate-700 p-6 my-6 not-prose">
             <p className="text-amber-400 font-bold text-sm mb-2">You say:</p>
-            <p className="text-white italic mb-4">&ldquo;Create a bid request for all Plumbing vendors for Bayshore Commons and send portal invites&rdquo;</p>
+            <p className="text-white italic mb-4">“Create a bid request for all Plumbing vendors for Bayshore Commons and send portal invites”</p>
             <p className="text-slate-400 font-bold text-sm mb-2">🪖 Foreman does:</p>
             <p className="text-slate-300 text-sm">Bid request drafted with community specs, scope details, plan references, and submission deadline. Portal invites sent to 8 active plumbing vendors in your system. Responses trackable in your dashboard.</p>
           </div>
 
           <p>
-            Or: <em>&ldquo;Flag any homes where actual costs are more than 10% over budget.&rdquo;</em> Foreman scans every active home and returns a variance report in seconds &mdash; something that would take a PM an hour to pull manually.
+            Or: <em>“Flag any homes where actual costs are more than 10% over budget.”</em> Foreman scans every active home and returns a variance report in seconds — something that would take a PM an hour to pull manually.
           </p>
           <p>
-            Or: <em>&ldquo;Scrape Home Depot for GE Profile refrigerators and add them to our parts catalog.&rdquo;</em> Foreman fetches current pricing, creates the parts, and links them to your design center options.
+            Or: <em>“Scrape Home Depot for GE Profile refrigerators and add them to our parts catalog.”</em> Foreman fetches current pricing, creates the parts, and links them to your design center options.
           </p>
           <p>
-            This is genuinely new. Traditional construction PO software requires you to do the data entry. AI-driven tools can handle the routine work &mdash; leaving you to manage the exceptions.
+            This is genuinely new. Traditional construction PO software requires you to do the data entry. AI-driven tools can handle the routine work — leaving you to manage the exceptions.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">What to look for in 2026</h2>
@@ -140,18 +140,18 @@ export default function ConstructionPurchaseOrderSoftwarePost() {
               "Does it connect purchasing to your schedule and budget?",
               "Can you track vendor performance over time, not just per-project?",
               "Does AI actually read and write your data, or just answer generic questions?",
-              "What does implementation actually look like &mdash; days or months?",
+              "What does implementation actually look like — days or months?",
               "Is pricing per-seat (penalizes team growth) or flat?",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3">
-                <span className="text-amber-400 font-bold flex-shrink-0 mt-0.5">&mdash;†’</span>
+                <span className="text-amber-400 font-bold flex-shrink-0 mt-0.5">—†’</span>
                 <span>{item}</span>
               </li>
             ))}
           </ul>
 
           <p>
-            On the last point: most enterprise construction software charges per user. That&apos;s a problem for builders who want their PMs, admins, and field leads all in the system. Cornerstone PM™ is flat-rate &mdash; up to 30 users on Starter/Builder/Pro and 60 on Pro+.
+            On the last point: most enterprise construction software charges per user. That&apos;s a problem for builders who want their PMs, admins, and field leads all in the system. Cornerstone PM™ is flat-rate — up to 30 users on Starter/Builder/Pro and 60 on Pro+.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">The bottom line</h2>
@@ -159,7 +159,7 @@ export default function ConstructionPurchaseOrderSoftwarePost() {
             If you&apos;re still managing POs in Excel, the cost isn&apos;t just the time your PM spends on data entry. It&apos;s the budget overruns you don&apos;t catch until closeout, the bids that fall through the cracks, and the vendor relationships you can&apos;t measure.
           </p>
           <p>
-            Modern construction PO software &mdash; especially AI-integrated platforms &mdash; has made this a solvable problem for builders of any size. The question is whether you want to keep paying for it in margin erosion, or invest in tooling that pays for itself on the first budget variance it catches.
+            Modern construction PO software — especially AI-integrated platforms — has made this a solvable problem for builders of any size. The question is whether you want to keep paying for it in margin erosion, or invest in tooling that pays for itself on the first budget variance it catches.
           </p>
           <p>
             Cornerstone PM™ is in beta right now. The purchasing module, Foreman AI, and the full platform are free for 2 years for early adopters. No credit card required.

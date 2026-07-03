@@ -188,7 +188,7 @@ export default function UsageRatesPage() {
             <span className="text-cyan-400">&amp; AI Limits</span>
           </h1>
           <p className="text-lg text-white/70 max-w-2xl mx-auto">
-            Transparent monthly limits for every AI feature, by plan. No surprises, no hidden caps. Monthly limits give you flexibility &mdash; burst when you need it on heavy setup days, use less on quiet days. No daily caps holding you back.
+            Transparent monthly limits for every AI feature, by plan. No surprises, no hidden caps. Monthly limits give you flexibility — burst when you need it on heavy setup days, use less on quiet days. No daily caps holding you back.
           </p>
         </div>
       </section>
@@ -366,12 +366,12 @@ export default function UsageRatesPage() {
                 </span>
               </div>
               <h3 className="text-xl font-bold text-white mb-2">
-                3&times; monthly limits for 30 days
+                3× monthly limits for 30 days
               </h3>
               <p className="text-sm text-slate-400">
                 Every AI feature runs at triple its normal monthly limit for your
                 first 60 days. Import your data, train your team, set up your
-                workflows &mdash; without hitting caps during the most
+                workflows — without hitting caps during the most
                 critical window.
               </p>
             </div>
@@ -382,11 +382,11 @@ export default function UsageRatesPage() {
                 </span>
               </div>
               <h3 className="text-xl font-bold text-white mb-2">
-                3&times; monthly limits for 60 days
+                3× monthly limits for 60 days
               </h3>
               <p className="text-sm text-slate-400">
                 Double the onboarding runway. Volume builders migrating
-                thousands of records get the full 60 days at 3&times; monthly limits.
+                thousands of records get the full 60 days at 3× monthly limits.
                 Our CRM Migration Wizard pairs perfectly with the
                 extended boost.
               </p>
@@ -409,7 +409,7 @@ export default function UsageRatesPage() {
               <div className="flex-1">
                 <p className="text-sm text-slate-300 mb-4">
                   For the person who lives in the app all day. The Power User
-                  add-on gives one seat dramatically elevated AI limits &mdash;
+                  add-on gives one seat dramatically elevated AI limits —
                   3,100 Foreman AI conversations/month, 2,000/mo Blueprint AI,
                   2,000/mo Bid Import AI, and 2,000/mo each for Punchlist &amp; MLS Listing AI.
                 </p>
@@ -424,11 +424,11 @@ export default function UsageRatesPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-violet-400 mt-0.5">&#10003;</span>
-                    Stacks with onboarding boost (3&times; even the elevated limits)
+                    Stacks with onboarding boost (3× even the elevated limits)
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-violet-400 mt-0.5">&#10003;</span>
-                    Org-wide pools (Support Agent, REST API) are shared &mdash; not per-seat
+                    Org-wide pools (Support Agent, REST API) are shared — not per-seat
                   </li>
                 </ul>
               </div>
@@ -454,7 +454,7 @@ export default function UsageRatesPage() {
           </div>
           <p className="text-sm text-slate-400 mb-8 max-w-2xl">
             Not every role needs every AI feature. Access is tiered by role so
-            your team gets exactly what they need &mdash; and nothing they
+            your team gets exactly what they need — and nothing they
             don&apos;t.
           </p>
 
@@ -500,7 +500,7 @@ export default function UsageRatesPage() {
           </div>
           <p className="text-sm text-slate-400 mb-8 max-w-2xl">
             Every AI feature runs on a specific model. We publish the approximate cost per use so you know
-            exactly what powers your workflows. <strong className="text-white">You are never billed per use</strong> &mdash;
+            exactly what powers your workflows. <strong className="text-white">You are never billed per use</strong> —
             your subscription covers everything within your daily limits.
           </p>
 
@@ -531,7 +531,7 @@ export default function UsageRatesPage() {
           </div>
 
           <p className="text-xs text-slate-600 text-center mt-6">
-            Cost per use reflects our approximate infrastructure cost. Users pay only their subscription fee plus optional add-ons &mdash; never per-action charges.
+            Cost per use reflects our approximate infrastructure cost. Users pay only their subscription fee plus optional add-ons — never per-action charges.
           </p>
         </div>
       </section>

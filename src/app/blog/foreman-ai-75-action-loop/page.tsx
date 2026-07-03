@@ -20,7 +20,7 @@ const blogSchema = buildBlogPostSchema({
 });
 
 export const metadata: Metadata = {
-  title: "How We Let Foreman AI Chain 75 Actions in One Prompt (And Why Your AI Can't) | Cornerstone PM&trade; Blog",
+  title: "How We Let Foreman AI Chain 75 Actions in One Prompt (And Why Your AI Can't) | Cornerstone PM™ Blog",
   description:
     "Most AI chatbots cap at 3-5 tool calls per turn because generic AI goes off the rails after a few steps. Foreman AI chains 75 actions in a single prompt. Here's the four-part technical architecture that makes it possible: custom agentic loop, 24,500-word knowledge base, typed-function skills, and direct database access.",
   openGraph: {
@@ -69,21 +69,21 @@ export default function Foreman75ActionLoopPost() {
           </h1>
           <div className="flex items-center gap-3 text-sm text-slate-500">
             <span>May 18, 2026</span>
-            <span>&mdash;</span>
+            <span>—</span>
             <span>9 min read</span>
           </div>
         </div>
 
         <div className="prose prose-invert prose-lg max-w-none space-y-6 text-slate-300 leading-relaxed">
           <p className="text-xl text-slate-300 font-light">
-            Most AI chatbots cap at <strong className="text-white">3&ndash;5 tool calls</strong> per
+            Most AI chatbots cap at <strong className="text-white">3–5 tool calls</strong> per
             conversation turn. ChatGPT does. Claude.ai does. The shiny new agent demos you saw
             on Twitter last week? They do too. Hit the cap, the model stops, hands back a
             partial result, and asks you to continue.
           </p>
 
           <p>
-            Foreman AI &mdash; the construction agent built into Cornerstone PM&trade; &mdash;
+            Foreman AI — the construction agent built into Cornerstone PM™ —
             chains <strong className="text-amber-400">75 actions</strong> per turn. One prompt
             can spin up an entire design center category: create the OptionClasses, seed every
             attribute value, attach pricing modifiers, set tier access, lock buyer
@@ -108,7 +108,7 @@ export default function Foreman75ActionLoopPost() {
               <li>We wrote our own tool-execution loop in our app code. We set the iteration cap.</li>
               <li>A 24,500-word construction knowledge base keeps the model from drifting.</li>
               <li>Every skill is a typed function with input validation, not generated code.</li>
-              <li>Skills hit Postgres directly &mdash; no HTTP round-trip, no rate limit.</li>
+              <li>Skills hit Postgres directly — no HTTP round-trip, no rate limit.</li>
             </ol>
             <p className="text-slate-400 text-sm mt-4 mb-0">
               Result: 75 calls at ~50ms each = under 4 seconds of real execution. The model
@@ -122,7 +122,7 @@ export default function Foreman75ActionLoopPost() {
             When you chat with ChatGPT or Claude.ai, you&apos;re talking to a generic agentic
             loop that lives on OpenAI&apos;s or Anthropic&apos;s servers. They send the model
             a prompt, get back a tool call request, execute it, feed the result back, and
-            iterate. That loop has a conservative cap &mdash; usually 3 to 5 rounds &mdash;
+            iterate. That loop has a conservative cap — usually 3 to 5 rounds —
             because OpenAI and Anthropic are protecting their own infrastructure and the
             general public from runaway agents.
           </p>
@@ -137,7 +137,7 @@ export default function Foreman75ActionLoopPost() {
             {" "}<code className="text-amber-300 bg-slate-950/60 px-1.5 py-0.5 rounded text-sm">app/api/agent/route.ts</code>{" "}
             in the Cornerstone codebase. It calls Anthropic&apos;s Messages API to get the
             model&apos;s next step, executes the requested skill against our own database,
-            feeds the result back as the next message, and loops &mdash; up to 75 rounds.
+            feeds the result back as the next message, and loops — up to 75 rounds.
           </p>
 
           <div className="not-prose my-8 p-6 rounded-xl bg-slate-900/60 border border-slate-800">
@@ -194,7 +194,7 @@ for (let i = 0; i < MAX_ITERATIONS; i++) {
 
           <p>
             <em>That&apos;s</em> why the public agents cap at 3-5. Not because the model is
-            incapable of more &mdash; because the model is incapable of more <strong className="text-white">without
+            incapable of more — because the model is incapable of more <strong className="text-white">without
             domain knowledge</strong>.
           </p>
 
@@ -246,8 +246,8 @@ for (let i = 0; i < MAX_ITERATIONS; i++) {
 
           <p>
             There&apos;s a tempting alternative architecture floating around right now: have
-            the model write code, then execute the code in a sandbox. <em>&ldquo;Code is the
-            universal tool.&rdquo;</em> You&apos;ve seen the demos.
+            the model write code, then execute the code in a sandbox. <em>“Code is the
+            universal tool.”</em> You&apos;ve seen the demos.
           </p>
 
           <p>
@@ -299,7 +299,7 @@ export async function createMultipleAttributeValues(input: {
           <p>
             When the model calls{" "}
             <code className="text-emerald-300 bg-slate-950/60 px-1.5 py-0.5 rounded text-sm">createMultipleAttributeValues</code>,
-            it&apos;s not asking us to generate code &mdash; it&apos;s passing structured
+            it&apos;s not asking us to generate code — it&apos;s passing structured
             JSON to a function that&apos;s been audited, type-checked, and battle-tested in
             production. Deterministic. Safe. Repeatable.
           </p>
@@ -307,9 +307,9 @@ export async function createMultipleAttributeValues(input: {
           <p>
             That&apos;s why we can let the loop run 75 times without losing sleep. Worst-case,
             a skill fails its input validation and returns a typed error message that the
-            model reads and adjusts. There&apos;s no &ldquo;the AI wrote
+            model reads and adjusts. There&apos;s no “the AI wrote
             <code className="text-slate-400 mx-1">DELETE FROM homes</code> and now we have
-            a problem.&rdquo;
+            a problem.”
           </p>
 
           <h2 className="text-3xl font-black text-white mt-12">4. Direct database access (no HTTP middleman)</h2>
@@ -327,7 +327,7 @@ export async function createMultipleAttributeValues(input: {
           </ul>
 
           <p>
-            Every one of those hops adds latency (50&ndash;500ms per call), introduces a rate
+            Every one of those hops adds latency (50–500ms per call), introduces a rate
             limit, and burns an API key quota. Multiply by 75 iterations and you&apos;re
             looking at minutes of wall-clock time and a $10 OpenAI bill per prompt.
           </p>
@@ -385,10 +385,10 @@ export async function createMultipleAttributeValues(input: {
             <p className="text-slate-300 text-sm mb-3 leading-relaxed">
               You type:{" "}
               <em>
-                &ldquo;Hey Foreman, set up Countertops with three material types: Granite,
+                “Hey Foreman, set up Countertops with three material types: Granite,
                 Quartz, and Laminate. Create separate OptionClasses for each. Add 5 options
                 per class. Create attributes with real brand names. Set tier access so budget
-                is Standard, premium is Upgrade III+.&rdquo;
+                is Standard, premium is Upgrade III+.”
               </em>
             </p>
             <p className="text-slate-300 text-sm mb-0 leading-relaxed">
@@ -402,13 +402,13 @@ export async function createMultipleAttributeValues(input: {
 
           <p>
             This is the difference between an AI that <em>helps you do work</em> and an AI
-            that <em>does the work for you</em>. A 3-call cap means &ldquo;summarize this
-            home&rsquo;s budget.&rdquo; A 75-call cap means &ldquo;rebuild my entire design
-            center from scratch using the Bayshore vendor list.&rdquo;
+            that <em>does the work for you</em>. A 3-call cap means “summarize this
+            home’s budget.” A 75-call cap means “rebuild my entire design
+            center from scratch using the Bayshore vendor list.”
           </p>
 
           <p>
-            That&apos;s why our marketing copy says <em>Foreman doesn&apos;t talk &mdash;
+            That&apos;s why our marketing copy says <em>Foreman doesn&apos;t talk —
             it builds</em>. It&apos;s not a slogan. It&apos;s the architecture.
           </p>
 
@@ -416,7 +416,7 @@ export async function createMultipleAttributeValues(input: {
 
           <p>
             We&apos;ll keep raising the cap. Today it&apos;s 75. The knowledge base keeps
-            growing. The skill registry keeps growing &mdash; we crossed 396 skills across
+            growing. The skill registry keeps growing — we crossed 396 skills across
             20 categories last week, with more shipping every release. As both grow, the
             ceiling moves with them.
           </p>
@@ -431,7 +431,7 @@ export async function createMultipleAttributeValues(input: {
           <div className="not-prose my-12 p-8 rounded-2xl bg-gradient-to-br from-amber-500/10 via-amber-500/5 to-transparent border border-amber-500/30 text-center">
             <h3 className="text-2xl font-black text-white mb-3">Want to see the 75-action loop in action?</h3>
             <p className="text-slate-300 mb-6">
-              Cornerstone PM&trade; Beta access is free for the first 100 builders. Foreman
+              Cornerstone PM™ Beta access is free for the first 100 builders. Foreman
               AI lives on the Pro plan ($499/mo flat, up to 30 users).
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -439,7 +439,7 @@ export async function createMultipleAttributeValues(input: {
                 href="/beta"
                 className="px-6 py-3 rounded-full bg-amber-400 text-slate-900 font-bold hover:bg-amber-300 transition-all duration-200 shadow-lg shadow-amber-500/30 hover:-translate-y-0.5"
               >
-                Get Beta Access &rarr;
+                Get Beta Access →
               </Link>
               <Link
                 href="/foreman"

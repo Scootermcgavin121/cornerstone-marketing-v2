@@ -104,7 +104,7 @@ export default function PricingPage() {
           </h1>
           <p className="text-lg sm:text-xl text-white/70 max-w-2xl mx-auto mb-8">
             Home builder software from $149/mo. Plans that scale with your
-            business &mdash; from scheduling-focused Starter to the full AI
+            business — from scheduling-focused Starter to the full AI
             platform on Pro+, plus a custom Enterprise tier for multi-division
             builders. Zero implementation cost. Annual billing saves 2
             months.
@@ -136,8 +136,8 @@ export default function PricingPage() {
             What every plan includes
           </h2>
           <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
-            Home-builder fundamentals on every tier &mdash; no &ldquo;upgrade to
-            unlock the basics&rdquo; pricing tricks.
+            Home-builder fundamentals on every tier — no “upgrade to
+            unlock the basics” pricing tricks.
           </p>
           <div className="grid sm:grid-cols-2 gap-6">
             {[
@@ -206,7 +206,7 @@ export default function PricingPage() {
                 href={href}
                 className="px-5 py-3 rounded-full border border-white/15 bg-white/[0.04] hover:bg-white/[0.08] text-white/90 hover:text-white transition text-sm font-semibold"
               >
-                vs {name} &rarr;
+                vs {name} →
               </Link>
             ))}
           </div>

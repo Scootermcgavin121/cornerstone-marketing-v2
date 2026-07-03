@@ -168,7 +168,7 @@ export default function AiForHomeBuildersPage() {
               href="/beta"
               className="px-8 py-4 rounded-full bg-amber-400 text-slate-900 font-bold text-lg hover:bg-amber-300 transition-all duration-200 shadow-lg shadow-amber-500/30 hover:-translate-y-0.5"
             >
-              Get Beta Access &rarr;
+              Get Beta Access →
             </Link>
             <Link
               href="/foreman"
@@ -192,7 +192,7 @@ export default function AiForHomeBuildersPage() {
             {[
               {
                 problem: "No construction vocabulary",
-                detail: "Generic AI doesn&apos;t know what a spec level is, what a punch list covers, or what &ldquo;under contract&rdquo; means in a home builder context. You spend more time explaining than working.",
+                detail: "Generic AI doesn&apos;t know what a spec level is, what a punch list covers, or what “under contract” means in a home builder context. You spend more time explaining than working.",
               },
               {
                 problem: "No access to your data",
@@ -281,7 +281,7 @@ export default function AiForHomeBuildersPage() {
                 <div className="p-5 border-b border-slate-800/60">
                   <div className="flex items-start gap-3 mb-3">
                     <span className="text-amber-400 font-black text-lg leading-none flex-shrink-0 mt-0.5">You:</span>
-                    <p className="text-white font-medium italic">&ldquo;{ex.prompt}&rdquo;</p>
+                    <p className="text-white font-medium italic">“{ex.prompt}”</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <img src="/foreman-mascot.png" alt="Foreman" className="h-5 w-5 object-contain flex-shrink-0 mt-0.5" />

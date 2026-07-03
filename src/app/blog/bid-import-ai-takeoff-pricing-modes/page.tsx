@@ -182,14 +182,14 @@ export default function BidImportAiTakeoffPricingModesPage() {
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            How does AI scope matching prevent &ldquo;Drywall&rdquo; landing in &ldquo;Electrical&rdquo;?
+            How does AI scope matching prevent “Drywall” landing in “Electrical”?
           </h2>
           <p>
             Cross-scope contamination — where a line item from one trade ends up categorized
             under another trade — is one of the most common errors in manual bid entry and
             in naive import tools that rely purely on keyword matching. A bid template that
-            lists &ldquo;Drywall finishing&rdquo; can be misread as a finish carpenter line if the
-            matcher only looks at the word &ldquo;finishing.&rdquo;
+            lists “Drywall finishing” can be misread as a finish carpenter line if the
+            matcher only looks at the word “finishing.”
           </p>
           <p>
             Cornerstone PM&apos;s Bid Import AI uses cross-scope penalty scoring. When the AI is
@@ -197,7 +197,7 @@ export default function BidImportAiTakeoffPricingModesPage() {
             globally — it penalizes matches that would land the item in a trade category that
             doesn&apos;t fit the surrounding context. A drywall line surrounded by other drywall
             and insulation items scores much higher against the Drywall scope category than
-            against Electrical, even if both categories technically contain the word &ldquo;finish.&rdquo;
+            against Electrical, even if both categories technically contain the word “finish.”
           </p>
 
           <div className="not-prose rounded-xl border border-amber-500/20 bg-amber-500/5 p-5 my-6">
@@ -209,7 +209,7 @@ export default function BidImportAiTakeoffPricingModesPage() {
                 </p>
                 <p className="text-slate-400 text-sm leading-relaxed">
                   Legacy import tools match line items to scope categories based on surface-level
-                  keyword overlap. &ldquo;Finish&rdquo; matches Finish Carpentry, Paint, and Drywall
+                  keyword overlap. “Finish” matches Finish Carpentry, Paint, and Drywall
                   simultaneously. Without penalty scoring, the highest raw match wins — and it&apos;s
                   often wrong. Cornerstone&apos;s contextual matching with cross-scope penalties
                   uses the surrounding trade cluster to resolve ambiguity instead of guessing
@@ -227,7 +227,7 @@ export default function BidImportAiTakeoffPricingModesPage() {
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">
-            Why does &ldquo;replace instead of duplicate&rdquo; matter for your Master Cost Budget?
+            Why does “replace instead of duplicate” matter for your Master Cost Budget?
           </h2>
           <p>
             The Master Cost Budget is a live document in Cornerstone PM. It aggregates scope

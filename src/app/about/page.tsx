@@ -69,8 +69,8 @@ export default function AboutPage() {
 
           <div className="my-10 p-6 rounded-2xl border border-cyan-500/20 bg-cyan-500/5">
             <p className="text-white text-xl font-semibold italic">
-              &ldquo;Builders first, software makers second. We&apos;re building the tool
-              we always wished existed.&rdquo;
+              “Builders first, software makers second. We&apos;re building the tool
+              we always wished existed.”
             </p>
             <p className="text-slate-500 text-sm mt-3">— Scott Alan Homes, Founder</p>
           </div>

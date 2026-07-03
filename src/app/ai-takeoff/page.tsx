@@ -35,7 +35,7 @@ const blueprintAiSchema = buildFeatureSchema({
 export const metadata = {
   title: "AI Material Takeoff for Home Builders | Cornerstone PM™",
   description:
-    "AI material takeoff for home builders. Upload a PDF floor plan and get 130+ material scopes &mdash; rooms, fixtures, flooring, drywall, roofing &mdash; extracted in under 60 seconds.",
+    "AI material takeoff for home builders. Upload a PDF floor plan and get 130+ material scopes — rooms, fixtures, flooring, drywall, roofing — extracted in under 60 seconds.",
   alternates: { canonical: "https://www.cornerstonepm.ai/ai-takeoff" },
 };
 
@@ -112,7 +112,7 @@ export default function AiTakeoffPage() {
               href="/beta"
               className="px-8 py-4 rounded-full bg-violet-500 text-white font-bold text-lg hover:bg-violet-400 transition-all duration-200 shadow-lg shadow-violet-500/30 hover:-translate-y-0.5"
             >
-              Request Early Access &rarr;
+              Request Early Access →
             </Link>
             <Link
               href="/features"
@@ -223,15 +223,15 @@ export default function AiTakeoffPage() {
               <div className="text-2xl font-black text-white">Pro plan</div>
               <div className="text-4xl font-black text-violet-400 mt-1">$499<span className="text-lg text-slate-400 font-normal">/mo</span></div>
               <div className="mt-2 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-400 text-xs font-semibold">
-                Full AI suite included &mdash; no add-on fees
+                Full AI suite included — no add-on fees
               </div>
             </div>
             <div className="border-t border-slate-800 pt-6 space-y-3 text-sm text-slate-400">
-              <div className="flex justify-between"><span>Traditional takeoff software</span><span className="line-through text-slate-600">$200&ndash;500/mo</span></div>
-              <div className="flex justify-between"><span>Manual takeoff (labor)</span><span className="line-through text-slate-600">4&ndash;8 hrs/plan</span></div>
+              <div className="flex justify-between"><span>Traditional takeoff software</span><span className="line-through text-slate-600">$200–500/mo</span></div>
+              <div className="flex justify-between"><span>Manual takeoff (labor)</span><span className="line-through text-slate-600">4–8 hrs/plan</span></div>
               <div className="flex justify-between"><span>Cornerstone Blueprint AI</span><span className="text-violet-400 font-bold">Included on Pro &amp; Pro+</span></div>
             </div>
-            <Link href="/beta" className="block w-full text-center px-6 py-3.5 rounded-xl bg-violet-500 text-white font-bold hover:bg-violet-400 transition-all duration-200">Get Early Access &rarr;</Link>
+            <Link href="/beta" className="block w-full text-center px-6 py-3.5 rounded-xl bg-violet-500 text-white font-bold hover:bg-violet-400 transition-all duration-200">Get Early Access →</Link>
             <p className="text-center text-slate-500 text-xs">Beta limited to 100 builders &middot; No credit card required</p>
           </div>
 
@@ -265,7 +265,7 @@ export default function AiTakeoffPage() {
           href="/beta"
           className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-violet-500 text-white font-bold text-lg hover:bg-violet-400 transition-all duration-200 shadow-lg shadow-violet-500/30"
         >
-          Request Early Access &rarr;
+          Request Early Access →
         </Link>
       </section>
       <Footer />

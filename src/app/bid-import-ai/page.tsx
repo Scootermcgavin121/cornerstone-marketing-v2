@@ -134,7 +134,7 @@ export default function BidImportAiPage() {
             <span className="text-orange-400">Any format. Seconds.</span>
           </h1>
           <p className="text-xl sm:text-2xl text-slate-300 font-semibold max-w-3xl mx-auto mb-3">
-            Upload a vendor bid &mdash; any format, even a photo of a handwritten quote.
+            Upload a vendor bid — any format, even a photo of a handwritten quote.
           </p>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-10">
             AI extracts every line item, matches your parts catalog, and imports in seconds. Not hours. Seconds.
