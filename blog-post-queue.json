@@ -730,8 +730,9 @@
       "wordCount": 1150,
       "heroImage": "/blog/marksystems-vs-cornerstone.png",
       "heroImageAlt": "MarkSystems alternative — Cornerstone PM production builder software comparison",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "c4dabd4",
+      "publishedAt": "2026-07-03T14:07:47.533Z"
     },
     {
       "slug": "home-builder-sales-pipeline-crm-software",
