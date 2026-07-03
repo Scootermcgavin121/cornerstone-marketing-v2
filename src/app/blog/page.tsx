@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "marksystems-vs-cornerstone-production-builder",
+    title: "MarkSystems vs. Cornerstone PM: Production Builder Software Compared",
+    excerpt:
+      "MarkSystems is a long-established production home builder ERP — but it carries the implementation timeline, enterprise pricing, and legacy-stack overhead that comes with that territory. Here's an honest comparison across the dimensions that matter most for 20–200 home-per-year builders: implementation speed, AI capabilities, design center depth, and pricing transparency.",
+    date: "July 3, 2026",
+    readTime: "8 min read",
+    tag: "Comparison",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/marksystems-vs-cornerstone.png",
+  },
+  {
     slug: "foreman-ai-profitability-budget-reports-vendor-scorecards",
     title: "AI Job Costing: Profitability Reports and Vendor Scorecards on Demand",
     excerpt:
