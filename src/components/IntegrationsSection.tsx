@@ -1,5 +1,5 @@
 import {
-  FlaskConical,
+  CheckCircle2,
   ShieldCheck,
   Plug,
   Landmark,
@@ -32,7 +32,7 @@ const syncPoints = [
   {
     icon: BarChart3,
     title: "Job costing QuickBooks can't do alone",
-    desc: "Every PO and Bill carries the home as the customer/job and the community or division as a class — so you get true per-job, per-community, and per-division P&L in QuickBooks, not just a lump sum.",
+    desc: "Each Community syncs as a QuickBooks Customer and each Home nests under it as a Project (or a sub-customer job on plans without Projects) — so you get true per-home and per-community P&L in QuickBooks, not just a lump sum.",
   },
   {
     icon: ReceiptText,
@@ -70,8 +70,8 @@ export function IntegrationsSection() {
               border: "1px solid rgba(44,160,28,0.3)",
             }}
           >
-            <FlaskConical className="w-3.5 h-3.5" />
-            Now in Beta — QuickBooks Online
+            <CheckCircle2 className="w-3.5 h-3.5" />
+            Now Live — QuickBooks Online
           </div>
 
           {/* QuickBooks badge */}
@@ -143,7 +143,7 @@ export function IntegrationsSection() {
           })}
         </div>
 
-        {/* CTA — beta / early access */}
+        {/* CTA — connect / early access */}
         <div className="mt-10 flex justify-center">
           <Link
             href="/beta"

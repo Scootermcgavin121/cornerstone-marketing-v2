@@ -54,8 +54,6 @@ import { ChevronDown } from "lucide-react";
  future content work):
    - "Is Cornerstone PM™ SOC 2 compliant?" (security)
    - "Where is data hosted? (AWS region/provider)" (security)
-   - "Does Cornerstone PM™ integrate with QuickBooks/Sage/Xero today?"
-     (integrations - only mentioned aspirationally)
    - "Is there a mobile app, or just responsive web?" (we say
      "mobile-friendly" but no native app claimed/disclaimed)
    - "Can buyers e-sign contracts inside Cornerstone?" (sales)
