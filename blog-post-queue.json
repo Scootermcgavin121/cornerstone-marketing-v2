@@ -745,8 +745,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/home-builder-sales-pipeline.png",
       "heroImageAlt": "Home builder sales pipeline software — Cornerstone CRM connected to lots and scheduling",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "b42207e",
+      "publishedAt": "2026-07-04T14:04:05.105Z"
     }
   ]
 }
