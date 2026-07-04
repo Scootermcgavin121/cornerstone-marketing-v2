@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "home-builder-sales-pipeline-crm-software",
+    title: "From Lead to Locked Lot: A Sales Pipeline Built for Home Builders",
+    excerpt:
+      "Generic CRMs don't know what a lot, a spec home, or a buyer selection is. Cornerstone PM's sales pipeline is wired directly into lots, floorplans, and communities — so a locked lot automatically becomes an active home in the build pipeline, buyer data flows to the Design Center, and scheduling starts without anyone re-keying a field.",
+    date: "July 4, 2026",
+    readTime: "6 min read",
+    tag: "Sales",
+    tagColor: "text-sky-400 bg-sky-500/10 border-sky-500/20",
+    heroImage: "/blog/home-builder-sales-pipeline.png",
+  },
+  {
     slug: "marksystems-vs-cornerstone-production-builder",
     title: "MarkSystems vs. Cornerstone PM: Production Builder Software Compared",
     excerpt:
