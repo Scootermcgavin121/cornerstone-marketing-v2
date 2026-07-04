@@ -8,6 +8,7 @@ import {
   Gauge,
   CalendarClock,
   FileCheck2,
+  BadgeCheck,
   ArrowRight,
 } from "lucide-react";
 import Link from "next/link";
@@ -50,6 +51,11 @@ const syncPoints = [
     icon: CalendarClock,
     title: "AP payment terms — batch-pay on one payday",
     desc: "Set how each bill comes due — Net-X days, weekly on any weekday, monthly on the Nth (or last) weekday, or bi-weekly anchored to a payday. Cornerstone computes the due date and carries it into QuickBooks, so you can pay every vendor in one run instead of chasing invoices.",
+  },
+  {
+    icon: BadgeCheck,
+    title: "Pay in QuickBooks — the PO marks itself Paid",
+    desc: "One-way sync plus one inbound signal: pay a vendor Bill in QuickBooks and that paid status flows back on its own — Cornerstone marks the linked purchase order Paid, stamped with the QuickBooks payment date and amount. Partial payments are tracked; the PO only flips to Paid once the bill balance hits $0. It's a read-only status reflection, not two-way sync — Cornerstone never pushes edits or money into QuickBooks, and never auto-pays.",
   },
   {
     icon: Gauge,
@@ -171,7 +177,7 @@ export function IntegrationsSection() {
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-2 text-sm text-slate-500">
           <span className="inline-flex items-center gap-2">
             <ShieldCheck className="w-4 h-4" style={{ color: QB_GREEN }} />
-            One-way sync — QuickBooks never overwrites Cornerstone
+            One-way sync plus inbound paid status — QuickBooks never edits your project data
           </span>
           <span className="hidden sm:inline text-slate-700">•</span>
           <span>Admin &amp; Accounting Admin only</span>
