@@ -6,6 +6,8 @@ import {
   BarChart3,
   ReceiptText,
   Gauge,
+  CalendarClock,
+  FileCheck2,
   ArrowRight,
 } from "lucide-react";
 import Link from "next/link";
@@ -38,6 +40,16 @@ const syncPoints = [
     icon: ReceiptText,
     title: "POs, Bills, Vendors & sales tax",
     desc: "Vendors upsert, Purchase Orders create/approve/update (voids close them out), and vendor invoices post as Bills — the moment they happen in Cornerstone. Sales tax carries through on sync, with a live progress bar as it runs.",
+  },
+  {
+    icon: FileCheck2,
+    title: "Auto-create the Bill when a PO is complete",
+    desc: "Optional: mark a purchase order received and Cornerstone creates the matching Bill in QuickBooks, linked to the PO, so the PO closes out with no duplicate. Payment always stays a manual approval in QuickBooks — we never auto-pay a vendor. The human pay gate is yours.",
+  },
+  {
+    icon: CalendarClock,
+    title: "AP payment terms — batch-pay on one payday",
+    desc: "Set how each bill comes due — Net-X days, weekly on any weekday, monthly on the Nth (or last) weekday, or bi-weekly anchored to a payday. Cornerstone computes the due date and carries it into QuickBooks, so you can pay every vendor in one run instead of chasing invoices.",
   },
   {
     icon: Gauge,

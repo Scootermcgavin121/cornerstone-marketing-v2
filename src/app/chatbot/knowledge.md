@@ -549,6 +549,13 @@ Full end-to-end bidding from request → vendor submission → review → award 
 - **Real job costing, not guesswork.** Each Community becomes a QuickBooks **Customer** and each Home becomes a **Project**, so you get true per-home and per-community profit & loss right inside QuickBooks — something QuickBooks alone can't produce. Change orders and their revisions roll up to the job, so cost tracking always reflects the latest scope.
 - **One-click, construction-ready Chart of Accounts.** On connect, Cornerstone builds a clean Chart of Accounts and cost-code items from your existing data — no accountant setup marathon. You get a full preview before anything is created, and existing accounts are reused by name, never renamed.
 - **One-way sync that keeps your books safe.** POs, change orders, bills, vendors, homes, and cost codes flow one direction: **Cornerstone → QuickBooks**. Changes you make in QuickBooks never overwrite your Cornerstone records, so an edit in your accounting software can't accidentally break your project data — Cornerstone stays the source of truth.
+- **Auto-create the matching Bill when a PO is complete (optional).** Flip on the toggle and when you mark a purchase order received/complete, Cornerstone automatically creates the matching Bill in QuickBooks and **links it to the PO** — so the PO closes out cleanly with no duplicate entry and no orphaned bill. It stops there on purpose: **payment always requires your manual approval in QuickBooks.** Cornerstone never auto-pays a vendor — the human pay gate stays in your hands.
+- **AP payment terms & automatic due dates — batch-pay on one payday.** Set how each bill comes due and Cornerstone computes the due date for you, then carries it into QuickBooks so you can pay everything in one run. Supported schedules:
+  - **Net-X days** — due X days after the bill date (Net-15, Net-30, Net-45, whatever you set).
+  - **Weekly** — due on a chosen weekday every week.
+  - **Monthly** — due on the Nth weekday of the month, including "Last" (e.g. "last Friday").
+  - **Bi-weekly** — every two weeks, anchored to a payday you pick.
+  - The computed due date rides along to QuickBooks, so a builder can **batch-pay all vendors on a single payday** instead of chasing invoices one at a time.
 - **Works with the QuickBooks you already have.** Cornerstone reuses your existing accounts, items, vendors, and customers so it matches the lists you already use — it never restructures your books.
 - **Plan-tier aware:** auto-detects whether the builder's QBO plan supports POs (Plus/Advanced) or Bills (Essentials+), warns clearly, and re-enables automatically on upgrade — no reconnect. **Role-gated:** Admin and Accounting Admin only. A **live progress bar** shows sync status.
 - **Sales tax is calculated in-app (live) and carried through on QuickBooks sync.** Cornerstone's sales-tax calculation and display is a shipped, live in-app feature; the tax then flows through to QuickBooks on sync, carried on the QuickBooks tax detail of the synced transaction. How it works:
@@ -559,6 +566,7 @@ Full end-to-end bidding from request → vendor submission → review → award 
 - **Already a QuickBooks user?** Cornerstone pulls your existing reference data (accounts, items, vendors, customers) so it matches the lists you already use — it never restructures your books.
 - Gracefully handles QuickBooks plan changes (e.g. PO support turning on when you upgrade) — no reconnect needed.
 - **Requires QuickBooks Online Plus or Advanced** (Purchase Orders live in those editions).
+- **The end-to-end AP loop:** a construction task completes → the matching PO auto-generates and emails the vendor → the PO syncs to QuickBooks → (optionally) the Bill auto-creates in QuickBooks on completion, linked to the PO → the builder batch-pays everything on payday using the computed due dates. The vendor's only job is to send an invoice. Every dollar rolls up per home (each Home a QuickBooks Project) for true profit-per-house.
 - Builders who want to script their own sync can also use the REST API or Zapier webhooks.
 
 ### Retainage Support
