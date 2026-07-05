@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "quickbooks-online-home-builder-auto-sync",
+    title: "QuickBooks Online for Home Builders: Auto-Sync, Auto-Bill, and Real Job Costing",
+    excerpt:
+      "Cornerstone PM syncs to QuickBooks Online automatically — one-way. Approved POs, change orders, bills, and vendors post to QBO without manual entry. Real job costing maps each Community to a QBO Customer and each Home to a Project, so per-home P&L lives in QuickBooks without setup.",
+    date: "July 5, 2026",
+    readTime: "7 min read",
+    tag: "Purchasing",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/quickbooks-home-builder-integration.png",
+  },
+  {
     slug: "home-builder-sales-pipeline-crm-software",
     title: "From Lead to Locked Lot: A Sales Pipeline Built for Home Builders",
     excerpt:
