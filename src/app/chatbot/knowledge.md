@@ -12,6 +12,27 @@
 
 ---
 
+## New Features (July 5, 2026) - Scope-First Area Costs + Foreman AI Builds Them
+
+### Scope-First Area Costs (NEW)
+Area Costs — the community-level extras like lot premiums, basement finishes, structural add-ons — are now built **scope-first**. You start by picking (or creating) a **scope**, then add your line items underneath it: **Parts** and **Scope Items** (filtered to that scope so you only see what belongs), or an **Allowance**. Each area cost bucket maps to exactly one scope, and the scope IS the bucket's title — so the cost breakdown reads like your actual construction scopes, not a pile of loose line items.
+
+**Why it's better:**
+- **Organized the way you build.** One bucket per scope means every extra is filed under the trade/scope it belongs to, so budgets stay legible and roll up cleanly.
+- **Filtered, not free-form.** When you add parts or scope items, you only see the ones that belong to the scope you chose — less scrolling, fewer miskeys.
+- **Real prices, not guesses.** Part and scope-item lines are priced **only from accepted vendor pricing** — there are no manual or default costs hiding in the numbers. If a line has no accepted vendor price yet, it shows as **$0 / needs pricing** so it's obvious what still needs a bid. (A true **Allowance** is the one place you can carry a direct dollar figure on purpose — for a budget placeholder before real pricing comes in.)
+
+### Foreman AI Can Now Build Area Costs by Chat (NEW)
+Cornerstone's in-app AI agent, **Foreman AI**, can now create area costs and add parts or scope items to them **just by chatting**. Tell it what community extra you want to set up and it follows the same scope-first, vendor-priced flow automatically — picks the scope, adds the right scope-filtered lines, and pulls pricing from accepted vendor bids. No clicking through forms; the same disciplined result.
+
+### The Hard Cost Rule (how Cornerstone stays honest)
+Across the whole platform, **nothing carries a stored or default cost.** Every dollar flows from **accepted vendor pricing** — the actual bids you've awarded. Any line without an accepted price surfaces as **$0 / needs pricing** instead of a made-up number, so your budgets never quietly inflate on estimates. This is why the numbers you see trace back to real, awarded prices every time.
+
+**Q: How do I set up a community extra like a lot premium or basement option in Cornerstone?**
+A: You build it as a scope-first Area Cost: pick or create the scope, then add the parts and scope items that belong to it (they're filtered to that scope) or set an allowance. Part and scope-item lines price automatically from your accepted vendor bids — no manual cost entry — and anything without a bid yet shows as $0 / needs pricing so you know what's left to price. You can even ask Foreman AI to set the whole thing up by chat.
+
+---
+
 ## New Features (June 29, 2026) - Auto-Send PO on Task Completion (End-to-End Loop)
 
 ### Automatic Purchase Order + Vendor Email on Task Completion (NEW)
@@ -489,7 +510,7 @@ Full end-to-end bidding from request → vendor submission → review → award 
 ### Area Cost Pricing (Apr 2026)
 - Community-level extras (lot premiums, basement options, etc.) now support full takeoff integration
 - Add parts and scope items to area costs and sub-options - pricing rolls up via the same vendor bid flow
-- Backward compatible with flat-fee area costs (cost falls back to direct AreaCost.costPrice when no takeoffs exist)
+- (Updated July 2026: area costs are now **scope-first** — pick a scope, then add scope-filtered parts/scope items or an allowance. Part & scope-item lines price only from accepted vendor pricing; only a true allowance carries a direct dollar. See "Scope-First Area Costs" at the top of this file.)
 
 ### Custom Fields
 - Admin > Custom Fields
