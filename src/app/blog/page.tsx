@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "quickbooks-online-sync-home-builder-construction",
+    title: "How Cornerstone Syncs to QuickBooks Online — Automatically, One Direction",
+    excerpt:
+      "Approved POs, change orders, bills, and vendors post themselves to QuickBooks Online automatically — no manual entry, no CSV exports. One-way sync keeps Cornerstone as your source of truth while real job costing maps each Community to a QBO Customer and each Home to a Project for per-home P&L.",
+    date: "July 6, 2026",
+    readTime: "7 min read",
+    tag: "Purchasing",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/quickbooks-online-sync-construction.png",
+  },
+  {
     slug: "quickbooks-online-home-builder-auto-sync",
     title: "QuickBooks Online for Home Builders: Auto-Sync, Auto-Bill, and Real Job Costing",
     excerpt:

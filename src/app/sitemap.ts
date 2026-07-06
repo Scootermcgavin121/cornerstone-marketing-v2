@@ -115,6 +115,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/marksystems-vs-cornerstone-production-builder", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/quickbooks-online-home-builder-auto-sync", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/home-builder-sales-pipeline-crm-software", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/quickbooks-online-sync-home-builder-construction", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({
