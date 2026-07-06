@@ -9,6 +9,7 @@ import {
   CalendarClock,
   FileCheck2,
   BadgeCheck,
+  History,
   ArrowRight,
 } from "lucide-react";
 import Link from "next/link";
@@ -50,7 +51,12 @@ const syncPoints = [
   {
     icon: CalendarClock,
     title: "AP payment terms — batch-pay on one payday",
-    desc: "Set how each bill comes due — Net-X days, weekly on any weekday, monthly on the Nth (or last) weekday, or bi-weekly anchored to a payday. Cornerstone computes the due date and carries it into QuickBooks, so you can pay every vendor in one run instead of chasing invoices.",
+    desc: "Set how each bill comes due — Net-X days, weekly on any weekday, semi-monthly on two paydays a month, monthly on the Nth (or last) weekday, or bi-weekly anchored to a payday. Cornerstone computes the due date off the invoice date and carries it into QuickBooks, so you can pay every vendor in one run instead of chasing invoices.",
+  },
+  {
+    icon: History,
+    title: "Full sync visibility — a Sync Events log",
+    desc: "Every push to QuickBooks lands in an Accounting → Sync Events log, so you can see exactly what synced, when, and whether it succeeded — and retry anything that needs it. Each transaction carries a clean memo (community, lot, address, PO#, cost code) so your accountant knows what every line is.",
   },
   {
     icon: BadgeCheck,
