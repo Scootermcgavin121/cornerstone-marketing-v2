@@ -760,8 +760,9 @@
       "wordCount": 1100,
       "heroImage": "/blog/quickbooks-online-sync-construction.png",
       "heroImageAlt": "QuickBooks Online construction sync — Cornerstone posts POs, bills, and vendors to QuickBooks automatically",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "00383c7",
+      "publishedAt": "2026-07-06T14:04:58.696Z"
     },
     {
       "slug": "auto-bill-batch-pay-construction-accounts-payable",
