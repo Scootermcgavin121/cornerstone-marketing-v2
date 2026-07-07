@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "auto-bill-batch-pay-construction-accounts-payable",
+    title: "Auto-Bill on Completion, Then Batch-Pay on Payday: The AP Loop for Builders",
+    excerpt:
+      "Mark a PO received in Cornerstone and it automatically creates the matching bill in QuickBooks, closes the PO, and sets the due date by your AP schedule — so on payday you batch-pay everyone in one approval run inside QuickBooks, not twelve separate bills. Five schedule types, clean memos, and a permanent human pay gate.",
+    date: "July 7, 2026",
+    readTime: "7 min read",
+    tag: "Purchasing",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/auto-bill-batch-pay-ap.png",
+  },
+  {
     slug: "quickbooks-online-sync-home-builder-construction",
     title: "How Cornerstone Syncs to QuickBooks Online — Automatically, One Direction",
     excerpt:
