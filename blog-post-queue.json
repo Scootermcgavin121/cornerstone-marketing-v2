@@ -775,8 +775,9 @@
       "wordCount": 1150,
       "heroImage": "/blog/auto-bill-batch-pay-ap.png",
       "heroImageAlt": "Construction accounts payable automation — auto-bill on completion and batch-pay on payday with Cornerstone and QuickBooks",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "1c698f8",
+      "publishedAt": "2026-07-07T14:04:07.581Z"
     },
     {
       "slug": "stop-double-entering-pos-quickbooks-home-builders",
