@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "stop-double-entering-pos-quickbooks-home-builders",
+    title: "Stop Double-Entering POs into QuickBooks: The Hidden Cost of Manual AP",
+    excerpt:
+      "Re-keying every PO, bill, and vendor into QuickBooks by hand costs home builders 300+ hours per year in pure overhead — and that's before you count the errors. Cornerstone PM's one-way QuickBooks sync ends the loop: approved POs, change orders, bills, and vendors post automatically with clean memos and zero re-keying.",
+    date: "July 8, 2026",
+    readTime: "6 min read",
+    tag: "Purchasing",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/stop-double-entry-quickbooks.png",
+  },
+  {
     slug: "auto-bill-batch-pay-construction-accounts-payable",
     title: "Auto-Bill on Completion, Then Batch-Pay on Payday: The AP Loop for Builders",
     excerpt:
