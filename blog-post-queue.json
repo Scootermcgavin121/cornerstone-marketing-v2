@@ -790,8 +790,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/stop-double-entry-quickbooks.png",
       "heroImageAlt": "Double entry QuickBooks construction — end manual PO and bill re-keying with Cornerstone one-way sync",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "44fad59",
+      "publishedAt": "2026-07-08T14:04:20.191Z"
     },
     {
       "slug": "sage-300-cre-vs-cornerstone-home-builder-software",
