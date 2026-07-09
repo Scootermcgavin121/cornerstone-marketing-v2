@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "sage-300-cre-vs-cornerstone-home-builder-software",
+    title: "Sage 300 CRE vs. Cornerstone: When You Don't Need a Construction ERP",
+    excerpt:
+      "Sage 300 CRE is powerful accounting-first ERP built for large commercial GCs — but for production home builders running 20–200 homes per year, it's the wrong tool. No design center, no floorplan model, and an 18-month implementation timeline. Here's an honest comparison, including where Sage still wins.",
+    date: "July 9, 2026",
+    readTime: "7 min read",
+    tag: "Comparison",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/sage-300-cre-vs-cornerstone.png",
+  },
+  {
     slug: "stop-double-entering-pos-quickbooks-home-builders",
     title: "Stop Double-Entering POs into QuickBooks: The Hidden Cost of Manual AP",
     excerpt:
