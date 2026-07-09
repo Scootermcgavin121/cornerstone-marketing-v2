@@ -805,8 +805,9 @@
       "wordCount": 1100,
       "heroImage": "/blog/sage-300-cre-vs-cornerstone.png",
       "heroImageAlt": "Sage 300 CRE alternative for home builders — Cornerstone modern job costing versus construction ERP comparison",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "32fb831",
+      "publishedAt": "2026-07-09T14:03:41.022Z"
     },
     {
       "slug": "hard-cost-rule-vendor-priced-budgets-no-fudging",
