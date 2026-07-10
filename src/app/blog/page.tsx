@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "hard-cost-rule-vendor-priced-budgets-no-fudging",
+    title: "Every Dollar Traces Back to an Awarded Bid: The Hard-Cost Rule",
+    excerpt:
+      "Cornerstone PM stores no default or made-up costs. Every line in the Master Cost Budget is priced from accepted vendor pricing — and a line with no awarded bid shows $0 / needs pricing instead of a fabricated number. Here's why that matters for margin protection, lender draws, and buyer trust.",
+    date: "July 10, 2026",
+    readTime: "7 min read",
+    tag: "Purchasing",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/hard-cost-rule-vendor-priced.png",
+  },
+  {
     slug: "sage-300-cre-vs-cornerstone-home-builder-software",
     title: "Sage 300 CRE vs. Cornerstone: When You Don't Need a Construction ERP",
     excerpt:

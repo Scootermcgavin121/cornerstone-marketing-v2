@@ -119,6 +119,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/auto-bill-batch-pay-construction-accounts-payable", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/stop-double-entering-pos-quickbooks-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/sage-300-cre-vs-cornerstone-home-builder-software", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/hard-cost-rule-vendor-priced-budgets-no-fudging", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({
