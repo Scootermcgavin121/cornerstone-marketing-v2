@@ -820,8 +820,9 @@
       "wordCount": 1050,
       "heroImage": "/blog/hard-cost-rule-vendor-priced.png",
       "heroImageAlt": "Vendor-priced construction budgets — Cornerstone hard-cost rule ties every dollar to an awarded vendor bid",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "63ddeff",
+      "publishedAt": "2026-07-10T14:05:08.343Z"
     },
     {
       "slug": "foreman-ai-build-area-costs-by-chat-construction",
