@@ -835,8 +835,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/foreman-ai-area-costs-by-chat.png",
       "heroImageAlt": "AI construction budget builder — Foreman AI creates scope-first area costs by chat in Cornerstone",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "a48fce6",
+      "publishedAt": "2026-07-11T14:03:35.489Z"
     }
   ]
 }
