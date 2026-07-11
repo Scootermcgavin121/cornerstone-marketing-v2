@@ -10,6 +10,7 @@ import { Menu, X } from "lucide-react";
 const navLinks = [
   { label: "Home", href: "/", hasDropdown: false },
   { label: "Features", href: "/features", hasDropdown: true },
+  { label: "AI Features", href: "/ai-features", hasDropdown: false },
   { label: "Foreman AI", href: "/foreman", hasDropdown: false, accent: true },
   { label: "AI Agents", href: "/ai-agents", hasDropdown: false },
   { label: "API Access", href: "/api-access", hasDropdown: false },
