@@ -4,7 +4,7 @@
 - **37+ named webhook event types and growing** — typed payloads, HMAC signatures, delivery logs, and auto-retry. New events ship as the platform grows. Industry-leading depth (most competitors just say "webhooks exist")
 - **Built-in MCP server** (Settings → MCP) — connect Claude Desktop, Cursor, or Windsurf to all 396+ Foreman skills in ~30 seconds. The no-code on-ramp to AI-native construction management; most construction software has no AI integration at all. Pro+ ($599/mo).
 - **238 total API operations** available to external agents — 150+ external REST API endpoints (84 dedicated routes + generic execute for 396+ Foreman skills). This is the most complete "how much can my agent do" figure; the endpoint count is the route-level number.
-- 7 built-in AI features: Foreman AI (396+ skills), Blueprint AI, MLS Listing Agent, AI Support Agent, Punchlist AI (voice-to-punch-list, industry first), Bid Import AI (AI-powered vendor bid parsing), AI Jobsite Camera Events (webhook-driven, source-agnostic camera/sensor integration)
+- 7 built-in AI features: Foreman AI (396+ skills), Blueprint AI, MLS Listing Agent, AI Support Agent, Punchlist AI (walkthrough video OR home inspection PDF → auto-assigned, photo-attached punch list, industry first), Bid Import AI (AI-powered vendor bid parsing), AI Jobsite Camera Events (webhook-driven, source-agnostic camera/sensor integration)
 - **Triple QR Code Ecosystem** - vendor jobsite check-in, community/PM check-in (timesheet-validated), and sales model home lead capture. Three QR codes, three audiences, one platform.
 - **Vendor Activity Map** - Google Maps view of every vendor check-in across every community, real-time (30-second refresh)
 - AI-powered CRM Migration Wizard (import from Buildertrend, JobTread, CoConstruct in one click - practically free at ~$0.01 per migration)
@@ -794,27 +794,34 @@ Foreman ships with 23+ standard operating procedures for common multi-step const
 Available to: Admin, Purchasing Manager, Sales Manager roles
 Pricing: Pro plan ($499/mo) - Claude Sonnet 4, 620 Foreman AI conversations/month. Pro+ ($599/mo) - Claude Sonnet 4, 930 conversations/month. Power User Seat add-on (+$149/seat/mo) on Pro and Pro+ raises a user's limit to 3,100 Foreman AI conversations/month.
 
-### 2. Punchlist AI - "Walk. Talk. Done."
-An industry-first AI-powered punch list feature. No other construction PM software has this.
+### 2. Punchlist AI - "Walk the house or upload the inspection PDF. Done."
+An industry-first AI-powered punch list feature. No other construction PM software has this. **Two ways to build a punch list fast — record a walkthrough video, OR upload a home inspector's PDF report.** Same AI engine, same sorted and vendor-assigned punch list.
 
-**How it works:**
-1. Walk through the jobsite with your phone recording audio
-2. AI transcribes your walkthrough and extracts individual punch items automatically
-3. Each item gets: room, description, trade/scope, severity, and suggested vendor
-4. Review, edit, confirm — done. Vendors get notified instantly.
+**Two inputs, one flow:**
+- **Record a walkthrough video** — walk the house with your phone and talk through what you see. The AI watches the footage and transcribes your callouts into punch items.
+- **Upload a home inspection PDF** — got a home inspector's report? On the home's punch-list page click "Inspection PDF" and upload it (client-side upload, up to 20MB, so big 40–60 page multi-page reports work). The AI reads every page and extracts each genuine defect/finding — no manual re-typing a 30-page report.
+
+**How the inspection-PDF path works:**
+1. Upload the inspector's PDF report.
+2. AI (Claude Sonnet 4.6, native PDF reading) reads EVERY page and extracts each real defect/deficiency/repair as a structured finding: page #, room/location, trade/scope, description, and **severity** — auto-classified as **Critical** (safety/structural/electrical/gas/major water), **High** (prompt repair/code), **Normal** (standard repair), or **Low** (cosmetic/monitor). It skips boilerplate ("no deficiencies observed", appliance ages, general home description), splits multi-issue paragraphs into separate items, and stays faithful — it never invents issues.
+3. **Real inspector photos attached** — it pulls the inspector's ACTUAL embedded photos off each finding's page (cropped defect photos) and attaches them to the matching punch item. Photos are org-scoped and secure.
+4. **Auto-assigns a vendor** to each finding by matching the trade to your vendors (the home's existing task vendor → community scope default → scope's preferred vendor), with manual override.
+5. **Review modal** — sort by trade, edit/remove findings, confirm vendor assignments before committing.
+6. **Commit + email** — creates the punch items (with photos), then the assigned vendors get emailed their items with the defect photos embedded.
 
 **Why it's a game-changer:**
-- **No clipboard, no typing, no going back to the office** — talk into your phone and your punch list writes itself
-- **AI matches items to the right trades automatically** — says "drywall patch needed in master bath" and it routes to your drywall sub
-- **Vendor notifications with photos inline** — vendors receive instant email notifications powered by Cloudflare's global edge network. Photos are embedded directly in the email, not buried in attachments.
-- **Less than $0.01 per walkthrough** — essentially free. A 30-minute walkthrough that used to take 2 hours of office time to transcribe now costs a fraction of a penny.
+- **No clipboard, no typing, no going back to the office** — talk into your phone (or upload the PDF) and your punch list writes itself
+- **Turn a 40–60 page home inspection report into a fully-assigned, photo-attached punch list in about a minute**
+- **AI matches items to the right trades automatically** — "drywall patch needed in master bath" routes to your drywall sub
+- **Real inspector photos flow all the way through** — the actual defect photo from the report lands on the item and in the vendor's email, not buried in an attachment
+- **Closes the loop** — auto-assigns the vendor AND emails them the work with photos
 - **Works with your existing scopes and vendors** — no setup required beyond what you already have in Cornerstone
 
 **What competitors offer:** Manual punch list entry. Type each item. Assign each vendor. One at a time. Or worse — paper checklists that get lost in the truck.
 
-**What Cornerstone offers:** Walk through the house, narrate what you see, and AI does the rest. It's the difference between 2 hours of admin work and 2 minutes of review.
+**What Cornerstone offers:** Walk through the house or hand it the inspector's PDF, and AI does the rest. It's the difference between 2 hours of admin work and 2 minutes of review.
 
-Available on: Builder plan and above.
+Available on: Builder plan and above (AI-powered, rate-limited per plan).
 
 ### 3. Blueprint AI - "AI Floor Plan Reader"
 Upload a floor plan PDF (up to 25MB, digital CAD only) and Blueprint AI extracts:

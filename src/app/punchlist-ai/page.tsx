@@ -58,7 +58,7 @@ const howItWorks = [
     step: "02",
     icon: Sparkles,
     title: "Punchlist AI extracts",
-    desc: "From video, the AI ingests the footage and audio and transcribes your callouts. From a PDF inspection report, it reads every finding line by line — and pulls the inspector's own embedded photos straight out of the PDF, attaching each one to the matching item. Either way it identifies each issue, infers severity (critical / high / normal), pins the location (Kitchen, Office, Master Bath), and links it to the right trade (Electrical, Plumbing, Roofing, HVAC, Structural, Cosmetic).",
+    desc: "From video, the AI ingests the footage and audio and transcribes your callouts. From a PDF inspection report, it reads every finding line by line — and pulls the inspector's own embedded photos straight out of the PDF, attaching each one to the matching item. Either way it identifies each issue, infers severity (critical / high / normal / low), pins the location (Kitchen, Office, Master Bath), and links it to the right trade (Electrical, Plumbing, Roofing, HVAC, Structural, Cosmetic).",
   },
   {
     step: "03",
@@ -335,9 +335,10 @@ export default function PunchlistAIPage() {
               </div>
               <h3 className="text-xl font-semibold mb-3">Upload a home inspection PDF</h3>
               <p className="text-slate-300 text-sm leading-relaxed mb-4">
-                Got a home inspector&apos;s report? Stop manually re-typing a 30-page PDF into your
-                punch list. Upload it and Punchlist AI extracts every defect/finding into items —
-                sorted by trade, vendor-assigned, <span className="font-semibold text-amber-300">with the inspector&apos;s own photos attached</span> — in seconds.
+                Got a home inspector&apos;s report? Stop manually re-typing it into your punch list.
+                Upload the PDF (big 40&ndash;60 page reports work — up to 20MB) and Punchlist AI reads
+                every page, extracts each defect/finding into items — sorted by trade, vendor-assigned,
+                <span className="font-semibold text-amber-300"> with the inspector&apos;s own photos attached</span> — in about a minute.
               </p>
               <ul className="space-y-2.5">
                 <li className="flex items-start gap-2.5 text-slate-200 text-sm"><Check className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" /> AI extracts location/room, trade, description, and severity from each finding</li>
