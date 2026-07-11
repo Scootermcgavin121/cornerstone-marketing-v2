@@ -14,7 +14,6 @@ const navLinks = [
   { label: "Foreman AI", href: "/foreman", hasDropdown: false, accent: true },
   { label: "AI Agents", href: "/ai-agents", hasDropdown: false },
   { label: "API Access", href: "/api-access", hasDropdown: false },
-  { label: "Developers", href: "/api-docs", hasDropdown: false },
   { label: "Compare", href: "/compare", hasDropdown: false },
   { label: "Alternatives", href: "/alternatives", hasDropdown: false },
   { label: "Blog", href: "/blog", hasDropdown: false },
