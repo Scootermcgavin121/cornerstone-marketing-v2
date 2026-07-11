@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/pricing", priority: 0.9, changeFrequency: "monthly" as const },
     { url: "/usage-rates", priority: 0.8, changeFrequency: "monthly" as const },
     { url: "/beta", priority: 0.9, changeFrequency: "monthly" as const },
+    { url: "/ai-features", priority: 0.9, changeFrequency: "weekly" as const },
     { url: "/ai-agents", priority: 0.8, changeFrequency: "weekly" as const },
     { url: "/foreman", priority: 0.8, changeFrequency: "weekly" as const },
     { url: "/brain", priority: 0.8, changeFrequency: "weekly" as const },

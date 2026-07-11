@@ -36,6 +36,7 @@ const featureLinks = [
 
 // AI features (right column of dropdown — all violet, grouped together)
 const aiLinks = [
+  { label: "AI Features Overview", href: "/ai-features", desc: "Every AI capability in one place" },
   { label: "AI Agents Overview", href: "/ai-agents", desc: "Five AI agents built for builders" },
   { label: "Foreman AI™", href: "/foreman", desc: "396+ skill AI agent, natural language commands" },
   { label: "AI Blueprint Takeoff", href: "/ai-takeoff", desc: "Upload PDF — instant material takeoff" },
