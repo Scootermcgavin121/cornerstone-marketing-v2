@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "foreman-ai-build-area-costs-by-chat-construction",
+    title: "Ask Foreman AI to Build Your Budget: Area Costs by Chat",
+    excerpt:
+      "Foreman AI creates scope-first area costs by chat — picking the right trade, adding scope-filtered Parts and Scope Items, and leaving everything at $0 / needs pricing until real vendor bids arrive. The hard-cost rule holds whether a human or Foreman builds the structure.",
+    date: "July 11, 2026",
+    readTime: "6 min read",
+    tag: "AI",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/foreman-ai-area-costs-by-chat.png",
+  },
+  {
     slug: "hard-cost-rule-vendor-priced-budgets-no-fudging",
     title: "Every Dollar Traces Back to an Awarded Bid: The Hard-Cost Rule",
     excerpt:
