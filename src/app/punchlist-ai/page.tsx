@@ -351,6 +351,95 @@ export default function PunchlistAIPage() {
         </div>
       </section>
 
+      {/* Inspection PDF flow — real screenshots */}
+      <section className="py-20 px-4 border-t border-slate-800/60">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-amber-500/10 border border-amber-500/30 rounded-full text-amber-300 text-xs font-medium uppercase tracking-wider mb-6">
+              <FileText className="w-3.5 h-3.5" />
+              <span>Inspection report → punch list</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+              From PDF to assigned punch list — in about a minute.
+            </h2>
+            <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+              Drop in the inspector&apos;s report and watch it become a sorted,
+              vendor-assigned punch list — with the inspector&apos;s own photos carried
+              all the way through to the vendor email.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 gap-6">
+            {[
+              {
+                src: "/mockups/inspection-analyzing.png",
+                w: 1910,
+                h: 887,
+                step: "1",
+                title: "AI reads the report",
+                caption:
+                  "Upload the inspector’s PDF — Punchlist AI extracts every defect, page by page.",
+              },
+              {
+                src: "/mockups/inspection-review.png",
+                w: 779,
+                h: 815,
+                step: "2",
+                title: "Review every finding",
+                caption:
+                  "Each item returns with room, trade, severity, the inspector’s photos, and a suggested vendor — edit before you import.",
+              },
+              {
+                src: "/mockups/inspection-punchlist.png",
+                w: 702,
+                h: 865,
+                step: "3",
+                title: "Sorted & vendor-assigned",
+                caption:
+                  "Findings land on the punch list grouped by trade, each routed to the right vendor.",
+              },
+              {
+                src: "/mockups/inspection-email.png",
+                w: 1062,
+                h: 754,
+                step: "4",
+                title: "Vendors get the photos",
+                caption:
+                  "Send to vendors — each gets their items with the inspector’s photos attached.",
+              },
+            ].map((s) => (
+              <figure
+                key={s.src}
+                className="bg-slate-900/50 border border-slate-800 rounded-2xl p-4 flex flex-col"
+              >
+                <div className="rounded-xl overflow-hidden border border-slate-800 bg-slate-950">
+                  <Image
+                    src={s.src}
+                    alt={`${s.title} — Punchlist AI inspection report import in Cornerstone PM`}
+                    width={s.w}
+                    height={s.h}
+                    className="w-full h-auto"
+                  />
+                </div>
+                <figcaption className="mt-4 flex items-start gap-3">
+                  <span className="flex-shrink-0 inline-flex items-center justify-center w-7 h-7 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-300 text-sm font-bold">
+                    {s.step}
+                  </span>
+                  <span>
+                    <span className="block font-semibold text-white">
+                      {s.title}
+                    </span>
+                    <span className="block text-sm text-slate-400 leading-relaxed">
+                      {s.caption}
+                    </span>
+                  </span>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Auto-vendor-assign showcase */}
       <section className="py-20 px-4 border-t border-slate-800/60">
         <div className="max-w-7xl mx-auto">
