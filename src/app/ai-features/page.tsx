@@ -38,7 +38,7 @@ const aiFeaturesSchema = buildFeatureSchema({
     `Foreman AI — ${FOREMAN_SKILL_COUNT}+ skill construction agent with real read/write`,
     "AI Blueprint Takeoff — PDF floor plan to 134+ material scopes in under 60 seconds",
     "Bid Import AI — parses Excel, PDF, scans, and handwritten quote photos",
-    "Punchlist AI — walkthrough video to a structured punch list",
+    "Punchlist AI — walkthrough video OR home inspection PDF to a structured, vendor-assigned punch list",
     "AI MLS Listing Generator — print-ready listing PDF in one click",
     "AI Support Agent — 24/7 in-app answers on every feature and workflow",
     "CRM Migration Wizard — AI maps a Buildertrend / JobTread export to Cornerstone",
@@ -115,18 +115,18 @@ const capabilities: Capability[] = [
   },
   {
     name: "Punchlist AI",
-    tagline: "Walk the house, get the list",
+    tagline: "Walkthrough video OR inspection PDF",
     description:
-      "Record a phone walkthrough and Punchlist AI turns the video into a structured punch list — findings sorted by trade, auto-assigned to the right vendor, with photo evidence pulled from the footage.",
+      "Two ways to build a punch list fast: record a phone walkthrough, or upload a home inspector's PDF report. AI reads every page, extracts each finding — room, trade, and severity — pulls the inspector's embedded photos, and auto-assigns each item to the right vendor.",
     icon: <ClipboardCheck className="w-7 h-7" />,
     color: "cyan",
     href: "/punchlist-ai",
     badge: "New",
     highlights: [
-      "Video walkthrough → punch list in seconds",
-      "Auto-sorted by trade, auto-assigned by vendor",
-      "Photo evidence captured from the footage",
-      "No special hardware — just your phone",
+      "Walkthrough video → punch list in seconds",
+      "Upload a 40–60 page inspection PDF → assigned list in ~a minute",
+      "4-level severity + embedded inspector photos extracted",
+      "Auto-assigned by trade — one email per vendor",
     ],
   },
   {
@@ -262,7 +262,7 @@ const colorMap: Record<
 const faqItems: FAQItem[] = [
   {
     q: "What AI features does Cornerstone PM include?",
-    a: `Cornerstone PM ships AI across the whole build: Foreman AI (a ${FOREMAN_SKILL_COUNT}+ skill agent that reads and writes your real data), AI Blueprint Takeoff, Bid Import AI, Punchlist AI, the AI MLS Listing Generator, an AI Support Agent, and a CRM Migration Wizard. Pro+ also opens a built-in MCP server and REST API so you can plug in Claude, ChatGPT, or your own agent.`,
+    a: `Cornerstone PM ships AI across the whole build: Foreman AI (a ${FOREMAN_SKILL_COUNT}+ skill agent that reads and writes your real data), AI Blueprint Takeoff, Bid Import AI, Punchlist AI (from a walkthrough video or a home inspection PDF), the AI MLS Listing Generator, an AI Support Agent, and a CRM Migration Wizard. Pro+ also opens a built-in MCP server and REST API so you can plug in Claude, ChatGPT, or your own agent.`,
   },
   {
     q: "Is the AI actually built in, or bolted on?",
