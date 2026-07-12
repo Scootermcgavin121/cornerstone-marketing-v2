@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "jobtread-vs-cornerstone-pm-production-home-builders",
+    title: "JobTread vs Cornerstone PM: Which Is Built for Production Home Builders?",
+    excerpt:
+      "JobTread is a polished tool for custom builders and remodelers — but it has no floorplan model, no plan-repeat engine, no community/lot hierarchy, and no buyer-facing design center. Here's an honest comparison of where each platform fits, and why the data model is the deciding factor.",
+    date: "July 12, 2026",
+    readTime: "7 min read",
+    tag: "Comparison",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/jobtread-vs-cornerstone.png",
+  },
+  {
     slug: "foreman-ai-build-area-costs-by-chat-construction",
     title: "Ask Foreman AI to Build Your Budget: Area Costs by Chat",
     excerpt:

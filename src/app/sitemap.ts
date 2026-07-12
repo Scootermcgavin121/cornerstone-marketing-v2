@@ -65,6 +65,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/design-center-home-builder", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/new-home-sales-pipeline", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/buildertrend-vs-cornerstone-feature-comparison", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/jobtread-vs-cornerstone-pm-production-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/ai-takeoff-vs-manual-takeoff-cost", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/buildpro-vs-cornerstone-modern-stack", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/how-to-choose-home-builder-software", priority: 0.7, changeFrequency: "monthly" as const },
