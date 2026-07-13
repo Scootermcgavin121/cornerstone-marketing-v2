@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "quickbooks-purchase-order-bill-accrual-home-builders",
+    title: "Two-Stage QuickBooks Sync: How POs Become Bills Automatically",
+    excerpt:
+      "When a PO is sent in Cornerstone, it posts to QuickBooks as a Purchase Order commitment. When the PO is marked received, the matching Bill auto-creates, links to the PO, and closes it — a complete accrual lifecycle with zero manual steps and no dangling open POs.",
+    date: "July 13, 2026",
+    readTime: "7 min read",
+    tag: "Purchasing",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/quickbooks-purchase-order-bill-accrual.png",
+  },
+  {
     slug: "jobtread-vs-cornerstone-pm-production-home-builders",
     title: "JobTread vs Cornerstone PM: Which Is Built for Production Home Builders?",
     excerpt:
