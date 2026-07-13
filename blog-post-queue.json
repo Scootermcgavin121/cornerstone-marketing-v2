@@ -838,6 +838,76 @@
       "status": "published",
       "publishedCommit": "a48fce6",
       "publishedAt": "2026-07-11T14:03:35.489Z"
+    },
+    {
+      "slug": "quickbooks-purchase-order-bill-accrual-home-builders",
+      "title": "Two-Stage QuickBooks Sync: How POs Become Bills Automatically",
+      "metaDescription": "A sent PO posts to QuickBooks as a commitment, then the matching Bill auto-creates and closes it on receipt — no dangling POs and no duplicate data entry.",
+      "primaryKeyword": "QuickBooks purchase order sync",
+      "hub": "/purchasing",
+      "angle": "Feature deep-dive on Cornerstone's two-stage accrual accounting flow into QuickBooks Online. When a PO is sent, it posts to QBO as a Purchase Order (a commitment) — so committed cost shows up in the books immediately. On receipt or invoice, the matching Bill auto-creates and is linked to the PO so the PO closes automatically: no dangling open POs, no duplicate entry, a full accrual lifecycle. Stress that the sync is ONE-WAY (Cornerstone stays source of truth) and that Cornerstone NEVER auto-pays — pay approval always stays manual in QuickBooks. Highlight the Accounting → Sync Events log that shows every push to QBO plus retries, and the clean memos (community, lot, address, PO#, cost code) on every synced transaction. Requires QBO Plus/Advanced for POs. Link to /purchasing and the QuickBooks integration story.",
+      "schema": "FAQPage",
+      "wordCount": 1100,
+      "heroImage": "/blog/quickbooks-purchase-order-bill-accrual.png",
+      "heroImageAlt": "QuickBooks purchase order sync — a Cornerstone PO becomes a linked Bill that auto-closes in QuickBooks Online",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "automatic-sales-tax-materials-labor-exempt-construction",
+      "title": "Automatic Sales Tax on Materials (Labor Stays Exempt)",
+      "metaDescription": "Cornerstone applies sales tax to materials only and keeps labor exempt across every PO and change order, then carries the exact sales tax into QuickBooks.",
+      "primaryKeyword": "construction sales tax on materials",
+      "hub": "/purchasing",
+      "angle": "Feature explainer on Cornerstone's automatic material sales tax. Most construction jurisdictions tax materials but exempt labor — getting that split right by hand is tedious and error-prone. Cornerstone applies sales tax to material lines only, leaves labor exempt, and does it automatically on both purchase orders and change orders. The calculated tax then carries into QuickBooks Online with the synced PO/Bill/CO, so the books match the field paperwork exactly. Tie this to the hard-cost rule (every dollar traces back to accepted vendor pricing) and to accurate job costing — builders stop under- or over-stating tax on committed costs. Keep it capability-focused; do NOT publish pricing. Link to /purchasing and the QuickBooks sync story.",
+      "schema": null,
+      "wordCount": 950,
+      "heroImage": "/blog/automatic-sales-tax-materials.png",
+      "heroImageAlt": "Construction sales tax on materials — Cornerstone taxes materials and exempts labor on POs and change orders",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "scope-first-budgeting-organize-costs-by-trade-home-builders",
+      "title": "Scope-First Budgeting: Every Cost Filed Under Its Trade",
+      "metaDescription": "Area Costs in Cornerstone are scope-first: every part, scope item, and allowance is filed under the trade it belongs to, so nothing gets miskeyed or lost.",
+      "primaryKeyword": "scope-first construction budgeting",
+      "hub": "/purchasing",
+      "angle": "Pain-point / how-to on Cornerstone's scope-first Area Costs structure. In spreadsheet budgets, costs get dumped into a flat list and it's easy to miskey a line or lose track of what trade it belongs to. Cornerstone flips it: you pick or create a scope FIRST, then add scope-filtered Parts, Scope Items, or an Allowance under it — one bucket per scope, and the bucket title IS the scope. Because the pickers are scope-filtered, you can only add parts that belong to that trade, which kills miskeying. Explain the honesty angle: Part and Scope Item lines are priced ONLY from accepted vendor pricing (no default or manual costs), and only a true Allowance can carry a direct dollar as a budget placeholder — a line with no accepted price shows as $0 / needs pricing. Capability/feature framing only, no pricing numbers. Link to /purchasing and /construction budgeting concepts.",
+      "schema": "HowTo",
+      "wordCount": 1050,
+      "heroImage": "/blog/scope-first-budgeting.png",
+      "heroImageAlt": "Scope-first construction budgeting — Cornerstone Area Costs filed by trade with scope-filtered parts and allowances",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "buildermt-vs-cornerstone-production-home-builder",
+      "title": "BuilderMT vs Cornerstone PM: Production Home Builder Software",
+      "metaDescription": "BuilderMT vs Cornerstone PM: how a modern all-in-one platform with AI takeoff and QuickBooks sync compares to a legacy production-builder ERP software stack.",
+      "primaryKeyword": "BuilderMT alternative",
+      "hub": "/home-builder-project-management-software",
+      "angle": "Competitor / segment comparison: BuilderMT (Constellation's production-builder suite, typically paired with MarkSystems and a separate accounting system) versus Cornerstone PM. Position Cornerstone as a modern, all-in-one platform where AI takeoff, a production design center with community-based upgrade pricing, automated vendor bidding, purchasing, scheduling, sales CRM, and one-way QuickBooks Online sync live in a single system — versus a stitched-together legacy ERP stack that needs integrators, long implementations, and per-module licensing. Emphasize differentiators competitors lack: Foreman AI (396+ skills that take actions, not just answer), Blueprint AI takeoff, the hard-cost rule (every dollar traces to accepted vendor pricing), and no vendor lock-in (full CSV/JSON data export anytime). Be accurate and fair about BuilderMT's production-builder heritage; compete on modern stack, speed to value, and AI. No invented pricing. Link back to /home-builder-project-management-software.",
+      "schema": "FAQPage",
+      "wordCount": 1150,
+      "heroImage": "/blog/buildermt-vs-cornerstone.png",
+      "heroImageAlt": "BuilderMT alternative — Cornerstone PM modern all-in-one production home builder software vs a legacy ERP stack",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "home-builder-accounting-project-management-one-platform",
+      "title": "One Platform for Home Builder Accounting and Project Management",
+      "metaDescription": "See how Cornerstone unites AI takeoff, design center, purchasing, and QuickBooks sync so home builder accounting and project management share one system.",
+      "primaryKeyword": "home builder project management software",
+      "hub": "/home-builder-project-management-software",
+      "angle": "Hub-cluster reinforcement on /home-builder-project-management-software. Tell the end-to-end story of one platform instead of a patchwork: Blueprint AI extracts scopes from plans, the production design center prices options by community, automated bid requests award real vendor pricing, purchasing generates POs, and approved POs, change orders, bills, and vendors sync one-way to QuickBooks Online for real per-home and per-community job costing (Community = QBO Customer, Home = Project). Reinforce that Cornerstone stays the source of truth and never auto-pays. Frame the value as fewer systems, no double entry, and one honest set of numbers governed by the hard-cost rule. Link outward to /ai-takeoff, /design, /purchasing, /sales, and /foreman as the cluster spokes.",
+      "schema": null,
+      "wordCount": 1000,
+      "heroImage": "/blog/home-builder-accounting-project-management.png",
+      "heroImageAlt": "Home builder project management software — Cornerstone unifies takeoff, design, purchasing, and QuickBooks accounting",
+      "status": "pending",
+      "publishedCommit": null
     }
   ]
 }
