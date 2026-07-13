@@ -850,8 +850,9 @@
       "wordCount": 1100,
       "heroImage": "/blog/quickbooks-purchase-order-bill-accrual.png",
       "heroImageAlt": "QuickBooks purchase order sync — a Cornerstone PO becomes a linked Bill that auto-closes in QuickBooks Online",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "95a9441",
+      "publishedAt": "2026-07-13T14:05:34.516Z"
     },
     {
       "slug": "automatic-sales-tax-materials-labor-exempt-construction",
