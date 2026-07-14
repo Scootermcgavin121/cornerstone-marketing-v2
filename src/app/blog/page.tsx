@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "automatic-sales-tax-materials-labor-exempt-construction",
+    title: "Automatic Sales Tax on Materials (Labor Stays Exempt)",
+    excerpt:
+      "Cornerstone PM automatically applies sales tax to material lines and keeps labor exempt on every purchase order and change order — then carries the exact tax amount into QuickBooks with the synced transaction. No manual splits, no re-keying, no month-end cleanup.",
+    date: "July 14, 2026",
+    readTime: "6 min read",
+    tag: "Purchasing",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/automatic-sales-tax-materials.png",
+  },
+  {
     slug: "quickbooks-purchase-order-bill-accrual-home-builders",
     title: "Two-Stage QuickBooks Sync: How POs Become Bills Automatically",
     excerpt:
