@@ -865,8 +865,9 @@
       "wordCount": 950,
       "heroImage": "/blog/automatic-sales-tax-materials.png",
       "heroImageAlt": "Construction sales tax on materials — Cornerstone taxes materials and exempts labor on POs and change orders",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "9ba88fe",
+      "publishedAt": "2026-07-14T23:13:30.960Z"
     },
     {
       "slug": "scope-first-budgeting-organize-costs-by-trade-home-builders",
