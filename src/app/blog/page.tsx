@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "scope-first-budgeting-organize-costs-by-trade-home-builders",
+    title: "Scope-First Budgeting: Every Cost Filed Under Its Trade",
+    excerpt:
+      "In Cornerstone PM, you pick the trade first — then add costs to it. Scope-filtered pickers prevent miskeying, every Part and Scope Item is priced from accepted vendor bids, and Allowances serve as honest placeholders for un-bid line items. Every dollar traces to a real source.",
+    date: "July 20, 2026",
+    readTime: "7 min read",
+    tag: "Purchasing",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/scope-first-budgeting.png",
+  },
+  {
     slug: "automatic-sales-tax-materials-labor-exempt-construction",
     title: "Automatic Sales Tax on Materials (Labor Stays Exempt)",
     excerpt:
