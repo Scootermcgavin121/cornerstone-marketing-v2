@@ -880,8 +880,9 @@
       "wordCount": 1050,
       "heroImage": "/blog/scope-first-budgeting.png",
       "heroImageAlt": "Scope-first construction budgeting — Cornerstone Area Costs filed by trade with scope-filtered parts and allowances",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "c7b8332",
+      "publishedAt": "2026-07-20T14:06:38.860Z"
     },
     {
       "slug": "buildermt-vs-cornerstone-production-home-builder",
