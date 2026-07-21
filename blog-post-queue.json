@@ -895,8 +895,9 @@
       "wordCount": 1150,
       "heroImage": "/blog/buildermt-vs-cornerstone.png",
       "heroImageAlt": "BuilderMT alternative — Cornerstone PM modern all-in-one production home builder software vs a legacy ERP stack",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "cb7f860",
+      "publishedAt": "2026-07-21T14:05:36.673Z"
     },
     {
       "slug": "home-builder-accounting-project-management-one-platform",
