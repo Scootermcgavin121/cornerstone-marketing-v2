@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "buildermt-vs-cornerstone-production-home-builder",
+    title: "BuilderMT vs Cornerstone PM: Production Home Builder Software",
+    excerpt:
+      "BuilderMT is a production home builder ERP suite that requires consultants, integrators, and months to implement. Cornerstone PM is the modern all-in-one alternative — AI takeoff, a buyer-facing design center, automated vendor bidding, and native QuickBooks sync in a single platform that goes live in days, not months.",
+    date: "July 21, 2026",
+    readTime: "8 min read",
+    tag: "Comparison",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/buildermt-vs-cornerstone.png",
+  },
+  {
     slug: "scope-first-budgeting-organize-costs-by-trade-home-builders",
     title: "Scope-First Budgeting: Every Cost Filed Under Its Trade",
     excerpt:

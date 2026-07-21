@@ -126,6 +126,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/quickbooks-purchase-order-bill-accrual-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/automatic-sales-tax-materials-labor-exempt-construction", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/scope-first-budgeting-organize-costs-by-trade-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/buildermt-vs-cornerstone-production-home-builder", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({
