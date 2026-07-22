@@ -910,8 +910,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/home-builder-accounting-project-management.png",
       "heroImageAlt": "Home builder project management software — Cornerstone unifies takeoff, design, purchasing, and QuickBooks accounting",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "12fbe0a",
+      "publishedAt": "2026-07-22T14:05:07.103Z"
     },
     {
       "slug": "vendor-payment-schedules-net-terms-semi-monthly-home-builders",
