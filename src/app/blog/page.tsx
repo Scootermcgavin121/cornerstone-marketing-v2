@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "home-builder-accounting-project-management-one-platform",
+    title: "One Platform for Home Builder Accounting and Project Management",
+    excerpt:
+      "Most production builders run takeoff, design, purchasing, and accounting across four separate systems that never agree at month-end. Cornerstone PM unites all of it — Blueprint AI takeoff, a buyer-facing design center, automated vendor bidding, and one-way QuickBooks sync — so every dollar traces from blueprint to bookkeeper in a single source of truth.",
+    date: "July 22, 2026",
+    readTime: "6 min read",
+    tag: "Platform",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/home-builder-accounting-project-management.png",
+  },
+  {
     slug: "buildermt-vs-cornerstone-production-home-builder",
     title: "BuilderMT vs Cornerstone PM: Production Home Builder Software",
     excerpt:
