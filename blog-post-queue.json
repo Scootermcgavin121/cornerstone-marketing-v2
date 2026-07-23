@@ -925,8 +925,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/vendor-payment-schedules-home-builders.png",
       "heroImageAlt": "Vendor payment schedule construction software — five AP schedule types including semi-monthly paydays in Cornerstone",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "2d2a610",
+      "publishedAt": "2026-07-23T14:06:53.068Z"
     },
     {
       "slug": "quickbooks-sync-audit-trail-construction-accounting",
