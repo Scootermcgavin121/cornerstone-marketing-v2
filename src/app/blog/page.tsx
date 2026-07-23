@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "vendor-payment-schedules-net-terms-semi-monthly-home-builders",
+    title: "Vendor Payment Schedules for Home Builders: Net Terms to Semi-Monthly",
+    excerpt:
+      "Set a payment schedule per vendor — Net-X, weekly, bi-weekly, monthly, or semi-monthly — and every bill that syncs to QuickBooks gets its due date computed automatically. One batch-pay run on payday replaces a pile of individual invoice approvals.",
+    date: "July 23, 2026",
+    readTime: "6 min read",
+    tag: "Purchasing",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/vendor-payment-schedules-home-builders.png",
+  },
+  {
     slug: "home-builder-accounting-project-management-one-platform",
     title: "One Platform for Home Builder Accounting and Project Management",
     excerpt:
