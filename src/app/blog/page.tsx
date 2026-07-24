@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "quickbooks-sync-audit-trail-construction-accounting",
+    title: "A QuickBooks Sync You Can Audit: Sync Events and Clean Transaction Memos",
+    excerpt:
+      "Most accounting integrations are a black box — data goes in and bookkeepers pray. Cornerstone PM logs every QuickBooks push in a real-time Sync Events audit trail and stamps each PO, bill, and change order with community, lot, PO number, and cost code so any transaction is traceable in seconds.",
+    date: "July 24, 2026",
+    readTime: "6 min read",
+    tag: "Purchasing",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/quickbooks-sync-audit-trail.png",
+  },
+  {
     slug: "vendor-payment-schedules-net-terms-semi-monthly-home-builders",
     title: "Vendor Payment Schedules for Home Builders: Net Terms to Semi-Monthly",
     excerpt:
