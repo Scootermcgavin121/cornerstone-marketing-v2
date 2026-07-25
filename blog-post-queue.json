@@ -955,8 +955,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/cascade-scheduling-home-builders.png",
       "heroImageAlt": "Construction scheduling software for home builders — cascade scheduling adjusts downstream trades after a delay",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "02a31bb",
+      "publishedAt": "2026-07-25T14:04:09.846Z"
     },
     {
       "slug": "jobtread-vs-cornerstone-production-home-builder",
