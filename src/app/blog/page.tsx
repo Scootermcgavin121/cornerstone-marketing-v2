@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "cascade-scheduling-construction-delays-home-builders",
+    title: "When One Trade Slips: Cascade Scheduling for Home Builders",
+    excerpt:
+      "When framing runs three days late, every downstream trade is now on the wrong date. Cornerstone PM's cascade scheduling auto-adjusts the full dependency chain and notifies affected vendors automatically — so one delay doesn't become a morning of phone calls.",
+    date: "July 25, 2026",
+    readTime: "6 min read",
+    tag: "Scheduling",
+    tagColor: "text-sky-400 bg-sky-500/10 border-sky-500/20",
+    heroImage: "/blog/cascade-scheduling-home-builders.png",
+  },
+  {
     slug: "quickbooks-sync-audit-trail-construction-accounting",
     title: "A QuickBooks Sync You Can Audit: Sync Events and Clean Transaction Memos",
     excerpt:

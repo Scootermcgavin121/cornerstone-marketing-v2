@@ -130,6 +130,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/home-builder-accounting-project-management-one-platform", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/vendor-payment-schedules-net-terms-semi-monthly-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/quickbooks-sync-audit-trail-construction-accounting", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/cascade-scheduling-construction-delays-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({
