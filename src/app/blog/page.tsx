@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "home-builder-design-center-software-what-it-should-do",
+    title: "What Home Builder Design Center Software Should Actually Do",
+    excerpt:
+      "A buyer-facing selections list is not a design center. The real bar: spec-level control down to a single option, exclusion groups that make conflicting picks impossible, 64 Designer Packages that auto-lock coordinated finishes, and upgrade prices that trace back to accepted vendor bids — not estimator guesses.",
+    date: "July 27, 2026",
+    readTime: "6 min read",
+    tag: "Design Center",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/home-builder-design-center-software.png",
+  },
+  {
     slug: "jobtread-vs-cornerstone-production-home-builder",
     title: "JobTread vs Cornerstone: Job-by-Job Estimating vs Production Building",
     excerpt:
