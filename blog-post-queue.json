@@ -970,8 +970,8 @@
       "wordCount": 1100,
       "heroImage": "/blog/jobtread-vs-cornerstone.png",
       "heroImageAlt": "JobTread alternative for home builders — JobTread vs Cornerstone production home builder software comparison",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "a2b30e1"
     },
     {
       "slug": "home-builder-design-center-software-what-it-should-do",
