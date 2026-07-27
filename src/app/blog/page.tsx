@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "jobtread-vs-cornerstone-production-home-builder",
+    title: "JobTread vs Cornerstone: Job-by-Job Estimating vs Production Building",
+    excerpt:
+      "JobTread is a solid estimating tool for custom builders and GCs — but production home builders need a fundamentally different data model. Cornerstone PM is built around plan repeats, community-assigned vendor awards, auto-generated POs, and a full buyer design center that job-by-job tools can't match.",
+    date: "July 26, 2026",
+    readTime: "7 min read",
+    tag: "Comparison",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/jobtread-vs-cornerstone.png",
+  },
+  {
     slug: "cascade-scheduling-construction-delays-home-builders",
     title: "When One Trade Slips: Cascade Scheduling for Home Builders",
     excerpt:
