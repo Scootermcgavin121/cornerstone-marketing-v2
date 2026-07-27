@@ -986,6 +986,76 @@
       "heroImageAlt": "Home builder design center software — spec levels, designer packages, and vendor-priced upgrades in Cornerstone",
       "status": "pending",
       "publishedCommit": null
+    },
+    {
+      "slug": "change-order-management-production-home-builders",
+      "title": "Change Order Management for Production Home Builders",
+      "metaDescription": "Change orders shouldn't live in email threads. How production builders price, approve, and sync change orders to QuickBooks without re-keying a single line.",
+      "primaryKeyword": "construction change order management",
+      "hub": "/purchasing",
+      "angle": "Feature deep-dive on the change order lifecycle, aimed at builders who currently run COs through email and a spreadsheet. Walk the real flow: a change order is priced off accepted vendor pricing (the hard cost rule — nothing carries a stored or default cost, so a line with no accepted bid shows as $0 / needs pricing instead of an invented number), sales tax applies automatically to materials while labor stays exempt, and once approved the CO posts itself to QuickBooks Online carrying community, lot, address, PO number, and cost code in the memo. Because each Community maps to a QuickBooks Customer and each Home to a Project, change orders roll up to the right job automatically and show in per-home P&L — no journal entries, no re-keying. Emphasize that sync is one-way (Cornerstone to QuickBooks); QuickBooks never overwrites Cornerstone, so there is exactly one source of truth for what was approved. Close on the honesty angle: every change order dollar traces back to an awarded bid, which is what makes the number defensible when the buyer asks.",
+      "schema": "FAQPage",
+      "wordCount": 1050,
+      "heroImage": "/blog/change-order-management-home-builders.png",
+      "heroImageAlt": "Construction change order management — approved change orders syncing to QuickBooks with vendor-priced line items in Cornerstone",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "punch-list-management-home-builders-ai",
+      "title": "Punch Lists Without the Clipboard: AI Punch List Management",
+      "metaDescription": "Walking a home with a clipboard and a phone camera? See how AI punch list software turns jobsite photos into assigned, tracked items for home builders.",
+      "primaryKeyword": "construction punch list software",
+      "hub": "/foreman",
+      "angle": "Feature deep-dive on punch lists as a Foreman AI capability rather than a standalone module. The pain: a superintendent walks a house, snaps twenty photos, and the list dies in their camera roll until someone retypes it. In Cornerstone, punch list generation is one of Foreman's 396+ skills across 20 categories, and Foreman has AI vision — drop in jobsite photos and it reads what it is looking at, drafts the punch items, and assigns them to the right trade. Stress that Foreman is an agent, not a chatbot: it writes data and takes actions, so the punch list it produces is real records in the app, not a chat transcript you copy out. Tie it to the rest of the loop — punch items land against the home's tasks, and completed work feeds the same PO and vendor flow the rest of the platform runs on. Link outward to /foreman as the hub and /construction for the scheduling side.",
+      "schema": "HowTo",
+      "wordCount": 950,
+      "heroImage": "/blog/punch-list-management-ai.png",
+      "heroImageAlt": "Construction punch list software — AI reading jobsite photos and generating assigned punch items in Cornerstone",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "construction-chart-of-accounts-cost-codes-home-builders",
+      "title": "A Construction Chart of Accounts That Ties to Your Cost Codes",
+      "metaDescription": "Most builders inherit a generic chart of accounts and fight it forever. How to structure a construction chart of accounts that maps cleanly to cost codes.",
+      "primaryKeyword": "construction chart of accounts",
+      "hub": "/purchasing",
+      "angle": "Evergreen how-to for builders whose books were set up by a general-practice bookkeeper and never matched how they actually build. Explain the structural problem: a generic chart of accounts has no place to put a framing labor commitment separately from framing material, so job costing degrades into one big COGS bucket and per-home margin becomes a guess. Lay out the principles — accounts for financial reporting, cost codes for operational detail, and a one-to-one line between the cost code a PO is written against and the item it hits in the books. Then show the shortcut: connecting Cornerstone to QuickBooks Online builds a construction-ready chart of accounts plus cost-code items in one click, reusing existing accounts by name so it never restructures books a builder already trusts. From there every synced purchase order, bill, and change order carries community, lot, address, PO number, and cost code in the memo, so the detail survives the trip into accounting. Keep it practical and vendor-neutral for most of the piece, then land on the Cornerstone shortcut.",
+      "schema": "HowTo",
+      "wordCount": 1150,
+      "heroImage": "/blog/construction-chart-of-accounts.png",
+      "heroImageAlt": "Construction chart of accounts — cost codes mapping to QuickBooks accounts for home builder job costing",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "premier-construction-software-vs-cornerstone-home-builders",
+      "title": "Premier Construction Software vs Cornerstone: Accounting-First vs Build-First",
+      "metaDescription": "Premier is an accounting-first ERP for commercial contractors. Compare it with Cornerstone, built for production home builders who already run QuickBooks.",
+      "primaryKeyword": "Premier Construction Software alternative",
+      "hub": "/home-builder-project-management-software",
+      "angle": "Respectful segment-mismatch comparison. Premier Construction Software is a genuine construction ERP with accounting at its core, aimed at commercial contractors and developers who want to replace their general ledger outright — that is a real need, and for those firms it is a fair choice. Production home builders are a different animal: they already run QuickBooks Online, they build the same floorplans across communities, and they need a buyer-facing design center and vendor purchasing far more than they need to migrate their GL. Cornerstone stays build-first and connects to the books instead of replacing them — one-way sync sends approved POs, bills, change orders, and vendors to QuickBooks with Community mapped to Customer and Home to Project for real per-home P&L. Contrast automation depth honestly: full-ERP vendors gate integration work behind implementation consultants, while Cornerstone ships 37 webhook events and 150+ REST API endpoints where every endpoint maps to one of Foreman's 396+ skills. Note that the REST API and bring-your-own-agent access are Pro+ exclusive. Close with the honest split: replacing your accounting system is a Premier conversation; building the same plans repeatedly is a Cornerstone one.",
+      "schema": "FAQPage",
+      "wordCount": 1150,
+      "heroImage": "/blog/premier-vs-cornerstone.png",
+      "heroImageAlt": "Premier Construction Software alternative — Premier vs Cornerstone comparison for production home builders",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "construction-schedule-templates-home-builders",
+      "title": "Schedule Templates: Build the Plan Once, Run It on Every Home",
+      "metaDescription": "Production builders repeat the same floorplans, so why rebuild the schedule from scratch? See how construction schedule templates work for home builders.",
+      "primaryKeyword": "construction schedule template",
+      "hub": "/construction",
+      "angle": "Hub-cluster reinforcement for /construction. The premise is repetition: a production builder pours the same slab and hangs the same drywall on plan after plan, so rebuilding a 120-task schedule by hand for every start is pure waste. Explain templates as the answer — define the task sequence, durations, and trade assignments once, then apply it to every home so day one of a new start already has a full critical path. Then explain what makes the template live rather than static: when one trade slips, cascade scheduling pushes every dependent task automatically and notifies the affected vendors, and when a task completes the purchase order generates and emails itself to the vendor without anyone opening the purchasing screen. Point out that templates only pay off when the schedule is wired to purchasing and vendors, which is the whole argument for a single platform. Link outward to /construction as the hub, plus /purchasing for the PO side and /foreman for AI schedule work.",
+      "schema": "HowTo",
+      "wordCount": 1000,
+      "heroImage": "/blog/construction-schedule-templates.png",
+      "heroImageAlt": "Construction schedule template — reusable task templates and Gantt schedule applied across home builder floorplans",
+      "status": "pending",
+      "publishedCommit": null
     }
   ]
 }
