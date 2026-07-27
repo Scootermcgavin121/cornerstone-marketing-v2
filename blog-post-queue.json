@@ -984,8 +984,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/home-builder-design-center-software.png",
       "heroImageAlt": "Home builder design center software — spec levels, designer packages, and vendor-priced upgrades in Cornerstone",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "61d763a",
+      "publishedAt": "2026-07-27T14:05:00.642Z"
     },
     {
       "slug": "change-order-management-production-home-builders",
