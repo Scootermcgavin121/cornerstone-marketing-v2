@@ -81,38 +81,38 @@ const coSteps = [
 
 const faqs: FAQItem[] = [
   {
-    question: "What is construction change order management software?",
-    answer:
+    q: "What is construction change order management software?",
+    a:
       "Construction change order management software tracks scope changes to a home or project — pricing them against accepted vendor bids, routing them for approval, and syncing the approved numbers into accounting. The goal is a single source of truth where every approved dollar is traceable and the books match the field paperwork without manual re-entry.",
   },
   {
-    question: "How does Cornerstone price change orders?",
-    answer:
+    q: "How does Cornerstone price change orders?",
+    a:
       "Cornerstone follows the hard-cost rule platform-wide: every line item in a change order is priced from accepted vendor pricing only. A line with no awarded bid shows as $0 / needs pricing rather than pulling a stored default. This means every change order dollar is defensible — it traces back to an actual bid a vendor submitted and you accepted.",
   },
   {
-    question: "Does Cornerstone sync change orders to QuickBooks?",
-    answer:
+    q: "Does Cornerstone sync change orders to QuickBooks?",
+    a:
       "Yes, one direction only: Cornerstone → QuickBooks. Approved change orders post automatically to QuickBooks Online carrying community, lot, address, PO number, and cost code in the memo. Each Community maps to a QuickBooks Customer and each Home to a Project, so change orders roll into per-home and per-community P&L without a journal entry. Changes made in QuickBooks never overwrite Cornerstone — Cornerstone is always the source of truth.",
   },
   {
-    question: "Does Cornerstone auto-pay change orders?",
-    answer:
+    q: "Does Cornerstone auto-pay change orders?",
+    a:
       "No. Cornerstone never auto-pays anything. The sync posts the approved change order to QuickBooks as a Bill, but payment approval always stays a manual step inside QuickBooks. The human pay gate is permanent by design.",
   },
   {
-    question: "How is sales tax handled on change orders?",
-    answer:
+    q: "How is sales tax handled on change orders?",
+    a:
       "Cornerstone applies sales tax to material lines only and keeps labor exempt — automatically, on every PO and change order. The calculated tax carries into the QuickBooks sync, so the books match the field paperwork exactly without manual tax splits.",
   },
   {
-    question: "What information appears in the QuickBooks memo for a change order?",
-    answer:
+    q: "What information appears in the QuickBooks memo for a change order?",
+    a:
       "Every synced change order memo includes community name, lot number, address, PO number, and cost code. A bookkeeper can trace any QuickBooks transaction back to the exact home and trade without leaving QBO.",
   },
   {
-    question: "Can I see which change orders have synced to QuickBooks?",
-    answer:
+    q: "Can I see which change orders have synced to QuickBooks?",
+    a:
       "Yes. The Accounting → Sync Events log in Cornerstone shows every push to QuickBooks Online, including the status of each sync and any retries. Builders can verify exactly what synced and when, so there's no black-box guessing about whether the books are current.",
   },
 ];
@@ -466,7 +466,7 @@ export default function ChangeOrderManagementPage() {
             close that reconciles cleanly and a month-end scramble.
           </p>
 
-          <FAQSection faqs={faqs} />
+          <FAQSection items={faqs} />
 
           <div className="mt-14 rounded-2xl border border-emerald-800/40 bg-emerald-950/20 p-8 text-center not-prose">
             <h2 className="text-2xl font-bold text-white mb-3">
