@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "change-order-management-production-home-builders",
+    title: "Change Order Management for Production Home Builders",
+    excerpt:
+      "Change orders priced from accepted vendor bids, approved in-platform, and synced one-way to QuickBooks automatically — with community, lot, address, PO number, and cost code in every memo. No re-keying, no CSV exports, and one honest source of truth.",
+    date: "July 28, 2026",
+    readTime: "7 min read",
+    tag: "Purchasing",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/change-order-management-home-builders.png",
+  },
+  {
     slug: "home-builder-design-center-software-what-it-should-do",
     title: "What Home Builder Design Center Software Should Actually Do",
     excerpt:

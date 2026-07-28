@@ -133,6 +133,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/cascade-scheduling-construction-delays-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/jobtread-vs-cornerstone-production-home-builder", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/home-builder-design-center-software-what-it-should-do", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/change-order-management-production-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({
