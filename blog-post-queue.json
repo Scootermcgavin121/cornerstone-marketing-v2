@@ -999,8 +999,9 @@
       "wordCount": 1050,
       "heroImage": "/blog/change-order-management-home-builders.png",
       "heroImageAlt": "Construction change order management — approved change orders syncing to QuickBooks with vendor-priced line items in Cornerstone",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "47c5616",
+      "publishedAt": "2026-07-28T14:04:57.368Z"
     },
     {
       "slug": "punch-list-management-home-builders-ai",
