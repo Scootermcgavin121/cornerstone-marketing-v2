@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "punch-list-management-home-builders-ai",
+    title: "Punch Lists Without the Clipboard: AI Punch List Management",
+    excerpt:
+      "A superintendent walks a home, snaps twenty photos, and the punch list dies in the camera roll. Foreman AI reads your jobsite photos, drafts the punch items, assigns them to the right trade, and writes real task records in the platform — no clipboard, no re-keying.",
+    date: "July 29, 2026",
+    readTime: "6 min read",
+    tag: "Foreman AI",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/punch-list-management-ai.png",
+  },
+  {
     slug: "change-order-management-production-home-builders",
     title: "Change Order Management for Production Home Builders",
     excerpt:
