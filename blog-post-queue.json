@@ -1014,8 +1014,9 @@
       "wordCount": 950,
       "heroImage": "/blog/punch-list-management-ai.png",
       "heroImageAlt": "Construction punch list software — AI reading jobsite photos and generating assigned punch items in Cornerstone",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "83d0b2f",
+      "publishedAt": "2026-07-29T14:06:11.856Z"
     },
     {
       "slug": "construction-chart-of-accounts-cost-codes-home-builders",
