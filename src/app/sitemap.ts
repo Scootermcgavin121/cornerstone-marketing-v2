@@ -135,6 +135,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/home-builder-design-center-software-what-it-should-do", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/punch-list-management-home-builders-ai", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/change-order-management-production-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/construction-chart-of-accounts-cost-codes-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({

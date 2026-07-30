@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "construction-chart-of-accounts-cost-codes-home-builders",
+    title: "A Construction Chart of Accounts That Ties to Your Cost Codes",
+    excerpt:
+      "Most builders inherit a generic chart of accounts from a generalist bookkeeper — one big COGS bucket and a stack of journal entries every month. The fix: a COA that maps one-to-one with your cost codes, wired to your purchasing workflow, so every PO and bill routes to the right account with community, lot, and cost code in the memo.",
+    date: "July 30, 2026",
+    readTime: "7 min read",
+    tag: "Purchasing",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/construction-chart-of-accounts.png",
+  },
+  {
     slug: "punch-list-management-home-builders-ai",
     title: "Punch Lists Without the Clipboard: AI Punch List Management",
     excerpt:
