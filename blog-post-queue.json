@@ -1029,8 +1029,9 @@
       "wordCount": 1150,
       "heroImage": "/blog/construction-chart-of-accounts.png",
       "heroImageAlt": "Construction chart of accounts — cost codes mapping to QuickBooks accounts for home builder job costing",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "08c8f84",
+      "publishedAt": "2026-07-30T14:05:17.657Z"
     },
     {
       "slug": "premier-construction-software-vs-cornerstone-home-builders",
