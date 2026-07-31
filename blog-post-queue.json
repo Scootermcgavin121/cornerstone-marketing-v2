@@ -1044,8 +1044,9 @@
       "wordCount": 1150,
       "heroImage": "/blog/premier-vs-cornerstone.png",
       "heroImageAlt": "Premier Construction Software alternative — Premier vs Cornerstone comparison for production home builders",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "381dddf",
+      "publishedAt": "2026-07-31T14:07:35.181Z"
     },
     {
       "slug": "construction-schedule-templates-home-builders",
