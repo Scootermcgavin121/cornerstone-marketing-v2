@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "premier-construction-software-vs-cornerstone-home-builders",
+    title: "Premier Construction Software vs Cornerstone: Accounting-First vs Build-First",
+    excerpt:
+      "Premier is a genuine accounting-first ERP built for commercial GCs who want to replace their general ledger. Production home builders already run QuickBooks — they need a design center, AI takeoff, and vendor bidding. Cornerstone connects to the books instead of replacing them.",
+    date: "July 31, 2026",
+    readTime: "7 min read",
+    tag: "Comparisons",
+    tagColor: "text-blue-400 bg-blue-500/10 border-blue-500/20",
+    heroImage: "/blog/premier-vs-cornerstone.png",
+  },
+  {
     slug: "construction-chart-of-accounts-cost-codes-home-builders",
     title: "A Construction Chart of Accounts That Ties to Your Cost Codes",
     excerpt:
