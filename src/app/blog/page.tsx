@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "construction-schedule-templates-home-builders",
+    title: "Schedule Templates: Build the Plan Once, Run It on Every Home",
+    excerpt:
+      "Production builders repeat the same floorplans — so rebuilding a 120-task schedule from scratch for every start is pure waste. Define a schedule template once per floorplan, apply it to every home, and let cascade scheduling and auto-generated POs handle the rest.",
+    date: "August 1, 2026",
+    readTime: "6 min read",
+    tag: "Scheduling",
+    tagColor: "text-sky-400 bg-sky-500/10 border-sky-500/20",
+    heroImage: "/blog/construction-schedule-templates.png",
+  },
+  {
     slug: "premier-construction-software-vs-cornerstone-home-builders",
     title: "Premier Construction Software vs Cornerstone: Accounting-First vs Build-First",
     excerpt:

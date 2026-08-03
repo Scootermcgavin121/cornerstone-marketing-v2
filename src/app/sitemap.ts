@@ -137,6 +137,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/change-order-management-production-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/construction-chart-of-accounts-cost-codes-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/premier-construction-software-vs-cornerstone-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/construction-schedule-templates-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({
