@@ -1059,8 +1059,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/construction-schedule-templates.png",
       "heroImageAlt": "Construction schedule template — reusable task templates and Gantt schedule applied across home builder floorplans",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "4ac8bfe",
+      "publishedAt": "2026-08-03T14:04:06.576Z"
     },
     {
       "slug": "bid-leveling-side-by-side-vendor-comparison-home-builders",
