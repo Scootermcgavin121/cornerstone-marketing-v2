@@ -1074,8 +1074,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/bid-leveling-vendor-comparison.png",
       "heroImageAlt": "Bid leveling — side-by-side vendor bid comparison on matching scope-item lines for home builders",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "81be992",
+      "publishedAt": "2026-08-04T14:06:09.631Z"
     },
     {
       "slug": "ai-scope-of-work-generation-subcontractors-home-builders",
