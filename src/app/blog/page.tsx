@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "bid-leveling-side-by-side-vendor-comparison-home-builders",
+    title: "Bid Leveling: How to Compare Vendor Quotes Apples-to-Apples",
+    excerpt:
+      "One vendor quotes a lump sum. One breaks out labor and material differently. One attaches a PDF with assumptions you can't decode. Bid leveling ends the two-hour spreadsheet reconciliation by putting every quote on the same scope-item lines — side-by-side, with locked pricing once you award.",
+    date: "August 4, 2026",
+    readTime: "6 min read",
+    tag: "Purchasing",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/bid-leveling-vendor-comparison.png",
+  },
+  {
     slug: "construction-schedule-templates-home-builders",
     title: "Schedule Templates: Build the Plan Once, Run It on Every Home",
     excerpt:
