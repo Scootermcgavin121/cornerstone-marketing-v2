@@ -139,6 +139,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/premier-construction-software-vs-cornerstone-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/construction-schedule-templates-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/bid-leveling-side-by-side-vendor-comparison-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/ai-scope-of-work-generation-subcontractors-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({

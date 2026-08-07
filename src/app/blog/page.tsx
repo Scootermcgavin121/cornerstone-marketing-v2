@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "ai-scope-of-work-generation-subcontractors-home-builders",
+    title: "Stop Writing Scopes of Work From Scratch: AI-Generated SOWs",
+    excerpt:
+      "A vague scope of work is a change order waiting to happen. Foreman AI generates trade-specific SOWs from the scope items and awarded vendor pricing you already have — so the inclusions and exclusions match what was actually bid, not a copied template.",
+    date: "August 7, 2026",
+    readTime: "6 min read",
+    tag: "Foreman AI",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/ai-scope-of-work-generation.png",
+  },
+  {
     slug: "bid-leveling-side-by-side-vendor-comparison-home-builders",
     title: "Bid Leveling: How to Compare Vendor Quotes Apples-to-Apples",
     excerpt:
