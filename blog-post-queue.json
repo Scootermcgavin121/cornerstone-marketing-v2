@@ -1104,8 +1104,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/subcontractors-ignore-bid-requests.png",
       "heroImageAlt": "Subcontractor bid request tracking — vendor invite status from invited to viewed to submitted for home builders",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "8d375cd",
+      "publishedAt": "2026-08-08T15:05:00.000Z"
     },
     {
       "slug": "uda-constructiononline-vs-cornerstone-production-home-builder",
