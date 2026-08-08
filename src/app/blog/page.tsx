@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "why-subcontractors-ignore-bid-requests-home-builders",
+    title: "Why Your Subcontractors Ignore Your Bid Requests",
+    excerpt:
+      "If half your bid invites go unanswered, the problem is almost always friction — not the vendors. Five specific reasons subs skip your requests (account creation, unsorted plan sets, blank spreadsheets, no tracking, fuzzy deadlines) and how removing each one lifts response rates without a single phone call.",
+    date: "August 8, 2026",
+    readTime: "6 min read",
+    tag: "Purchasing",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/subcontractors-ignore-bid-requests.png",
+  },
+  {
     slug: "ai-scope-of-work-generation-subcontractors-home-builders",
     title: "Stop Writing Scopes of Work From Scratch: AI-Generated SOWs",
     excerpt:
