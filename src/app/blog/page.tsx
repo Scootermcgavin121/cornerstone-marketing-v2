@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "uda-constructiononline-vs-cornerstone-production-home-builder",
+    title: "UDA ConstructionOnline vs Cornerstone PM for Production Builders",
+    excerpt:
+      "UDA ConstructionOnline is a mature platform for custom builders and remodelers. Production home builders who repeat the same floorplans across communities need plan-level option pricing, a production design center with Designer Packages, community vendor awards, and one-way QuickBooks sync — a different architecture entirely.",
+    date: "August 9, 2026",
+    readTime: "7 min read",
+    tag: "Comparisons",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/uda-constructiononline-vs-cornerstone.png",
+  },
+  {
     slug: "why-subcontractors-ignore-bid-requests-home-builders",
     title: "Why Your Subcontractors Ignore Your Bid Requests",
     excerpt:
