@@ -1119,8 +1119,9 @@
       "wordCount": 1100,
       "heroImage": "/blog/uda-constructiononline-vs-cornerstone.png",
       "heroImageAlt": "UDA ConstructionOnline vs Cornerstone PM — custom builder software compared to production home builder software",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "a9ebd7f",
+      "publishedAt": "2026-08-10T14:02:56.246Z"
     },
     {
       "slug": "construction-notification-preferences-role-based-alerts-home-builders",
