@@ -1134,8 +1134,9 @@
       "wordCount": 900,
       "heroImage": "/blog/construction-notification-preferences.png",
       "heroImageAlt": "Construction notification preferences — role-based alert subscriptions for superintendents, purchasing, and sales teams",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "4c0ff17",
+      "publishedAt": "2026-08-11T14:06:15.769Z"
     },
     {
       "slug": "construction-software-user-seats-who-needs-a-login",
