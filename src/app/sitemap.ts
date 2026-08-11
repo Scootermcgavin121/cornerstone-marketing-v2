@@ -142,6 +142,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/ai-scope-of-work-generation-subcontractors-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/why-subcontractors-ignore-bid-requests-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/uda-constructiononline-vs-cornerstone-production-home-builder", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/construction-notification-preferences-role-based-alerts-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({

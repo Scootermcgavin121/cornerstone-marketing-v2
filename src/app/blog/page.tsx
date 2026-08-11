@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "construction-notification-preferences-role-based-alerts-home-builders",
+    title: "Notification Overload: Role-Based Alerts for Construction Teams",
+    excerpt:
+      "When everyone gets every alert, nobody reads any of them. The fix is per-user notification preferences and role subscriptions — superintendents see schedule cascades, purchasing sees bid activity, sales sees leads, and vendors only get emails about their own changed dates.",
+    date: "August 11, 2026",
+    readTime: "6 min read",
+    tag: "Scheduling",
+    tagColor: "text-sky-400 bg-sky-500/10 border-sky-500/20",
+    heroImage: "/blog/construction-notification-preferences.png",
+  },
+  {
     slug: "uda-constructiononline-vs-cornerstone-production-home-builder",
     title: "UDA ConstructionOnline vs Cornerstone PM for Production Builders",
     excerpt:
