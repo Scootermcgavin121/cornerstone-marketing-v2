@@ -1149,8 +1149,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/construction-software-user-seats.png",
       "heroImageAlt": "Construction software per-user pricing — which home builder team members need a paid seat and which vendors do not",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "a97c2dd",
+      "publishedAt": "2026-08-12T14:06:07.533Z"
     },
     {
       "slug": "vendor-jobsite-qr-check-in-gps-weather-home-builders",
