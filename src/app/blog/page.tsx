@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "construction-software-user-seats-who-needs-a-login",
+    title: "Who Actually Needs a Login? Rethinking Construction Software Seats",
+    excerpt:
+      "Per-seat pricing punishes you for looping in your trades. Subcontractors submit bids through a token portal with no account, vendors receive POs by email, and buyers move through the design center without a license — so seat costs stay limited to the five internal roles that open the app every day.",
+    date: "August 12, 2026",
+    readTime: "6 min read",
+    tag: "Platform",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/construction-software-user-seats.png",
+  },
+  {
     slug: "construction-notification-preferences-role-based-alerts-home-builders",
     title: "Notification Overload: Role-Based Alerts for Construction Teams",
     excerpt:
