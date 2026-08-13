@@ -92,7 +92,12 @@ const compareRows: CompareRow[] = [
   { feature: "Foreman AI (396+ skills, persistent memory)", fieldwire: false, cornerstone: true },
   { feature: "REST API + BYOA (Pro+)", fieldwire: false, cornerstone: true },
   { feature: "MCP server for AI tool integration", fieldwire: false, cornerstone: true },
-  { feature: "Field punch list & task management", fieldwire: true, cornerstone: "partial" },
+  { feature: "Field punch list & task management", fieldwire: true, cornerstone: true },
+  { feature: "AI punch list from walkthrough video or inspection PDF", fieldwire: false, cornerstone: true },
+  { feature: "Auto vendor assignment by trade, one grouped email per vendor", fieldwire: false, cornerstone: true },
+  { feature: "Punch items pinned to a location on a drawing sheet", fieldwire: true, cornerstone: false },
+  { feature: "Offline field mode", fieldwire: true, cornerstone: false },
+  { feature: "Native iOS / Android field app", fieldwire: true, cornerstone: false },
   { feature: "Plan markup & RFI workflows", fieldwire: true, cornerstone: false },
   { feature: "Sheet management & version control", fieldwire: true, cornerstone: false },
 ];
@@ -208,7 +213,17 @@ export default function FieldwireVsCornerstonePage() {
             result is a polished experience for that use case.
           </p>
           <p>
-            The problem is that field punch lists and plan markups are not the core workflow
+            Cornerstone PM&trade; ships a full punch list of its own — items with severity,
+            room, and trade, up to five photos each, vendor assignment, and an
+            OPEN&nbsp;&rarr;&nbsp;IN&nbsp;PROGRESS&nbsp;&rarr;&nbsp;RESOLVED lifecycle — plus
+            Punchlist&nbsp;AI, which builds that list for you from a walkthrough video or a
+            home inspector&apos;s PDF and auto-assigns each item to the right vendor. What
+            Cornerstone deliberately does not do is the sheet-centric half of Fieldwire&apos;s
+            product: pinning a punch item to an X/Y coordinate on a drawing, offline sync, and
+            a native field app.
+          </p>
+          <p>
+            The bigger point is that plan markups and sheet-level RFIs are not the core workflow
             bottleneck for a production home builder doing 50 homes a year. A production
             builder&apos;s biggest operational surface is pricing floorplans, managing design
             center selections, coordinating vendor bids across 20+ scopes, and repeating the
