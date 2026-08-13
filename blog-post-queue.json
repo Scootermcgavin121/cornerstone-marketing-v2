@@ -1164,8 +1164,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/vendor-jobsite-qr-checkin.png",
       "heroImageAlt": "Jobsite check in software for home builders — vendor scans a lot QR code and the visit is logged with GPS and weather",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "6d2867f",
+      "publishedAt": "2026-08-13T14:06:40.474Z"
     },
     {
       "slug": "model-home-qr-lead-capture-home-builder-sales",
