@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "vendor-jobsite-qr-check-in-gps-weather-home-builders",
+    title: "Vendor Jobsite QR Check-In: Proof of Who Was on the Lot, and When",
+    excerpt:
+      "A QR code on the lot turns every vendor visit into a GPS-stamped, weather-logged, timestamped record — no app download, no Cornerstone login, and no way to scan from three miles away. The framer-swears-he-was-there argument ends with a permanent record that proves it.",
+    date: "August 13, 2026",
+    readTime: "6 min read",
+    tag: "Scheduling",
+    tagColor: "text-sky-400 bg-sky-500/10 border-sky-500/20",
+    heroImage: "/blog/vendor-jobsite-qr-checkin.png",
+  },
+  {
     slug: "construction-software-user-seats-who-needs-a-login",
     title: "Who Actually Needs a Login? Rethinking Construction Software Seats",
     excerpt:
