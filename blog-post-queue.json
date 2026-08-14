@@ -1179,8 +1179,9 @@
       "wordCount": 900,
       "heroImage": "/blog/model-home-qr-lead-capture.png",
       "heroImageAlt": "Home builder lead capture at a model home — buyer scans a QR code and a tracked lead appears in the builder sales pipeline",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "0a9e2d7",
+      "publishedAt": "2026-08-14T14:05:52.227Z"
     },
     {
       "slug": "bulk-create-design-options-parts-catalog-home-builders",
