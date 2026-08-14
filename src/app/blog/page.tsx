@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "model-home-qr-lead-capture-home-builder-sales",
+    title: "The Model Home Sign-In Sheet Is Costing You Leads",
+    excerpt:
+      "A QR code at the model home entrance captures every walk-in as a named, attributed lead the moment they scan — community, floorplan, date, and rep assignment included. No clipboard, no transcription delay, no cold call two days later when the buyer has already moved on.",
+    date: "August 14, 2026",
+    readTime: "5 min read",
+    tag: "Sales",
+    tagColor: "text-sky-400 bg-sky-500/10 border-sky-500/20",
+    heroImage: "/blog/model-home-qr-lead-capture.png",
+  },
+  {
     slug: "vendor-jobsite-qr-check-in-gps-weather-home-builders",
     title: "Vendor Jobsite QR Check-In: Proof of Who Was on the Lot, and When",
     excerpt:

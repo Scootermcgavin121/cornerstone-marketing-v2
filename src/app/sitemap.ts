@@ -145,6 +145,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/construction-notification-preferences-role-based-alerts-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/construction-software-user-seats-who-needs-a-login", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/vendor-jobsite-qr-check-in-gps-weather-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/model-home-qr-lead-capture-home-builder-sales", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({
