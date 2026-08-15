@@ -1194,8 +1194,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/bulk-create-design-options.png",
       "heroImageAlt": "Design center option catalog software — bulk creating design options from a parts catalog for a production home builder",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "5cfd13e",
+      "publishedAt": "2026-08-15T14:06:42.225Z"
     },
     {
       "slug": "plan-set-to-purchase-order-ai-takeoff-home-builders",
