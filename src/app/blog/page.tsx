@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "bulk-create-design-options-parts-catalog-home-builders",
+    title: "Building a 400-Option Design Center Without Typing 400 Options",
+    excerpt:
+      "Hand-keying several hundred options across flooring, cabinets, countertops, and plumbing is the reason most builders stall before the design center goes live. Bulk-create options straight from the parts catalog or scope items in one step — the option inherits its name, unit, scope, and real vendor pricing automatically.",
+    date: "August 15, 2026",
+    readTime: "6 min read",
+    tag: "Design Center",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/bulk-create-design-options.png",
+  },
+  {
     slug: "model-home-qr-lead-capture-home-builder-sales",
     title: "The Model Home Sign-In Sheet Is Costing You Leads",
     excerpt:
