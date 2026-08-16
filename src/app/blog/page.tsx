@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "plan-set-to-purchase-order-ai-takeoff-home-builders",
+    title: "From Plan Set to Purchase Order: The Five Handoffs That Break",
+    excerpt:
+      "Between a floor plan PDF and a paid vendor there are five handoffs — takeoff, budget, bid, award, PO — and each one is a place where a number gets retyped by hand. Every retype is an opportunity to lose money. AI takeoff and purchasing automation that carry quantities all the way through without asking anyone to type them again.",
+    date: "August 16, 2026",
+    readTime: "7 min read",
+    tag: "Purchasing",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/plan-set-to-purchase-order.png",
+  },
+  {
     slug: "bulk-create-design-options-parts-catalog-home-builders",
     title: "Building a 400-Option Design Center Without Typing 400 Options",
     excerpt:
