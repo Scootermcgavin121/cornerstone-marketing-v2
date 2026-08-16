@@ -1209,8 +1209,9 @@
       "wordCount": 1200,
       "heroImage": "/blog/plan-set-to-purchase-order.png",
       "heroImageAlt": "Construction takeoff to purchase order workflow for home builders — plan set, quantities, vendor bid, award, and PO",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "a2dbef2",
+      "publishedAt": "2026-08-16T14:05:50.688Z"
     },
     {
       "slug": "smartsheet-vs-cornerstone-home-builder-construction",
