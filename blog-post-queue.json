@@ -1224,8 +1224,9 @@
       "wordCount": 1100,
       "heroImage": "/blog/smartsheet-vs-cornerstone.png",
       "heroImageAlt": "Smartsheet construction alternative for home builders — spreadsheet grid compared with a purpose-built home building platform",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "4016a38",
+      "publishedAt": "2026-08-17T14:05:00.000Z"
     },
     {
       "slug": "same-floorplan-two-communities-different-costs-home-builders",
