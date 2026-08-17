@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "smartsheet-vs-cornerstone-home-builder-construction",
+    title: "Smartsheet vs Cornerstone PM: A Grid Is Not a Building System",
+    excerpt:
+      "Smartsheet is better than a shared Excel file — shared views, real-time updates, automations, dashboards. But a grid stores rows; it doesn't know what a floorplan is, what a spec level means, or that picking Carpet excludes Tile. Six specific places where the spreadsheet-grid approach runs out for production home builders, and what purpose-built looks like instead.",
+    date: "August 17, 2026",
+    readTime: "7 min read",
+    tag: "Comparisons",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/smartsheet-vs-cornerstone.png",
+  },
+  {
     slug: "plan-set-to-purchase-order-ai-takeoff-home-builders",
     title: "From Plan Set to Purchase Order: The Five Handoffs That Break",
     excerpt:
