@@ -149,6 +149,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/bulk-create-design-options-parts-catalog-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/plan-set-to-purchase-order-ai-takeoff-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/smartsheet-vs-cornerstone-home-builder-construction", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/same-floorplan-two-communities-different-costs-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({

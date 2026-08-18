@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "same-floorplan-two-communities-different-costs-home-builders",
+    title: "Same Floorplan, Two Communities, Two Different Costs",
+    excerpt:
+      "The framer who won Riverdale lost Oakmont, the lots are different sizes, and the sales tax rates are not the same. A single global cost per plan is wrong in at least two of every three communities. How production builders price one floorplan correctly across many communities with community-assigned vendor awards, scope-first area costs, and per-community design center pricing.",
+    date: "August 18, 2026",
+    readTime: "6 min read",
+    tag: "Design Center",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/same-floorplan-two-communities.png",
+  },
+  {
     slug: "smartsheet-vs-cornerstone-home-builder-construction",
     title: "Smartsheet vs Cornerstone PM: A Grid Is Not a Building System",
     excerpt:
