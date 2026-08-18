@@ -1239,8 +1239,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/same-floorplan-two-communities.png",
       "heroImageAlt": "Community based pricing home builder software — the same floorplan priced differently across two communities",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "90f9da5",
+      "publishedAt": "2026-08-18T14:06:46.906Z"
     },
     {
       "slug": "quickbooks-transaction-memos-job-costing-detail-home-builders",
