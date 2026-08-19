@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "quickbooks-transaction-memos-job-costing-detail-home-builders",
+    title: 'Your QuickBooks Register Says "Purchase Order 4471." That Tells You Nothing.',
+    excerpt:
+      "Most construction tools push a bare dollar total to QuickBooks and leave the context behind — so month-end becomes a reconstruction project. How community, lot, address, PO number, and cost code on every synced transaction make job costing traceable from inside QBO without opening Cornerstone.",
+    date: "August 19, 2026",
+    readTime: "6 min read",
+    tag: "Purchasing",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/quickbooks-transaction-memos.png",
+  },
+  {
     slug: "same-floorplan-two-communities-different-costs-home-builders",
     title: "Same Floorplan, Two Communities, Two Different Costs",
     excerpt:
