@@ -1254,8 +1254,9 @@
       "wordCount": 950,
       "heroImage": "/blog/quickbooks-transaction-memos.png",
       "heroImageAlt": "QuickBooks job costing for home builders — synced transaction memo showing community, lot, address, PO number, and cost code",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "26c6f78",
+      "publishedAt": "2026-08-19T14:06:00.463Z"
     },
     {
       "slug": "floorplan-locations-room-by-room-takeoff-home-builders",
