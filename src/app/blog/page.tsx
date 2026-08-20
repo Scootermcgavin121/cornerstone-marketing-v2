@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "floorplan-locations-room-by-room-takeoff-home-builders",
+    title: "A Takeoff That Knows Which Room the Material Goes In",
+    excerpt:
+      "Most takeoffs hand you one flooring number for the entire house. The moment a buyer picks tile in the baths, LVP in the great room, and carpet in the bedrooms, that number is useless. Room-level floorplan locations attach quantities to actual rooms so every design center selection, structural option, and purchase order resolves to the right place automatically.",
+    date: "August 20, 2026",
+    readTime: "6 min read",
+    tag: "AI Takeoff",
+    tagColor: "text-sky-400 bg-sky-500/10 border-sky-500/20",
+    heroImage: "/blog/floorplan-locations-takeoff.png",
+  },
+  {
     slug: "quickbooks-transaction-memos-job-costing-detail-home-builders",
     title: 'Your QuickBooks Register Says "Purchase Order 4471." That Tells You Nothing.',
     excerpt:
