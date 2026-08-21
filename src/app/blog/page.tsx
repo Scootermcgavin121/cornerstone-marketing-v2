@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "estimator-leaves-tribal-knowledge-home-builder-software",
+    title: "What Happens to Your Budgets When Your Estimator Quits",
+    excerpt:
+      "One veteran holds the pricing logic, the vendor relationships, the waste factors, and the reason cell G47 has a hardcoded number nobody touches. Their notice period is two weeks and the knowledge is not in the file. How builders de-risk estimating tribal knowledge with a structural system that outlasts any one person.",
+    date: "August 21, 2026",
+    readTime: "7 min read",
+    tag: "Purchasing",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/estimator-tribal-knowledge.png",
+  },
+  {
     slug: "floorplan-locations-room-by-room-takeoff-home-builders",
     title: "A Takeoff That Knows Which Room the Material Goes In",
     excerpt:

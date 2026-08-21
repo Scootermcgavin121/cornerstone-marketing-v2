@@ -152,6 +152,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/same-floorplan-two-communities-different-costs-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/quickbooks-transaction-memos-job-costing-detail-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/floorplan-locations-room-by-room-takeoff-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/estimator-leaves-tribal-knowledge-home-builder-software", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({
