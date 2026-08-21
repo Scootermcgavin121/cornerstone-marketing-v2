@@ -1284,8 +1284,9 @@
       "wordCount": 1050,
       "heroImage": "/blog/estimator-tribal-knowledge.png",
       "heroImageAlt": "Construction estimating tribal knowledge — home builder budget system that survives staff turnover",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "053cfec",
+      "publishedAt": "2026-08-21T14:06:10.755Z"
     },
     {
       "slug": "design-center-appointment-process-home-builders",
