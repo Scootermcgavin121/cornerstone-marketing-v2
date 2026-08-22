@@ -196,15 +196,26 @@ export default function DesignPage() {
                   StyleSmith AI<sup className="text-lg align-super">™</sup> designs the whole house.
                 </h2>
                 <p className="text-slate-300 leading-relaxed mb-4">
-                  Name a home. Name a look. StyleSmith AI™ fills every open design slot in that house — flooring, tile, cabinets, counters, plumbing, lighting, hardware — from your own catalog, at your own retail pricing, in one coherent palette and one finish family. Then it writes the set into the home&apos;s real selections on your say-so.
+                  Name a home. Name a look. StyleSmith AI™ composes the whole house from{" "}
+                  <span className="text-white font-semibold">real live data</span> — your
+                  actual product catalog right here in the Design Center, at your own retail
+                  pricing, steered by the inspiration photography your design team curates and
+                  by your buyer&apos;s own style profile.
+                </p>
+                <p className="text-slate-300 leading-relaxed mb-4">
+                  Every pick is a product you already sell, chosen inside your style guidelines
+                  and held to one palette and one finish family. Say{" "}
+                  <span className="text-white font-semibold">&ldquo;cap it at Upgrade II&rdquo;</span>{" "}
+                  and the whole look stays there. Then it writes the set into the home&apos;s
+                  real selections — on your say-so.
                 </p>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mb-6 text-sm text-slate-400">
                   {[
+                    "Real products from your own catalog — not stock imagery",
                     "10 style themes, every option scored nightly",
                     "Flooring continuity room to room",
-                    "Never selects below the included spec level",
+                    "Holds your spec band — the included floor and your ceiling",
                     "Honest gaps instead of silent upgrades",
-                    "Buyer style quiz feeds the composition",
                     "Drafts full Design Packages for review",
                   ].map((li) => (
                     <li key={li} className="flex items-start gap-2">
