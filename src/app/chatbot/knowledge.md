@@ -4,11 +4,91 @@
 - **37+ named webhook event types and growing** — typed payloads, HMAC signatures, delivery logs, and auto-retry. New events ship as the platform grows. Industry-leading depth (most competitors just say "webhooks exist")
 - **Built-in MCP server** (Settings → MCP) — connect Claude Desktop, Cursor, or Windsurf to all 396+ Foreman skills in ~30 seconds. The no-code on-ramp to AI-native construction management; most construction software has no AI integration at all. Pro+ ($599/mo).
 - **238 total API operations** available to external agents — 150+ external REST API endpoints (84 dedicated routes + generic execute for 396+ Foreman skills). This is the most complete "how much can my agent do" figure; the endpoint count is the route-level number.
-- 7 built-in AI features: Foreman AI (396+ skills), Blueprint AI, MLS Listing Agent, AI Support Agent, Punchlist AI (walkthrough video OR home inspection PDF → auto-assigned, photo-attached punch list, industry first), Bid Import AI (AI-powered vendor bid parsing), AI Jobsite Camera Events (webhook-driven, source-agnostic camera/sensor integration)
+- 8 built-in AI features: Foreman AI (396+ skills), **StyleSmith AI™** (in-app AI interior design agent that composes a whole-home design-selection set by style theme — **Pro+ and Enterprise only**), Blueprint AI, MLS Listing Agent, AI Support Agent, Punchlist AI (walkthrough video OR home inspection PDF → auto-assigned, photo-attached punch list, industry first), Bid Import AI (AI-powered vendor bid parsing), AI Jobsite Camera Events (webhook-driven, source-agnostic camera/sensor integration)
 - **Triple QR Code Ecosystem** - vendor jobsite check-in, community/PM check-in (timesheet-validated), and sales model home lead capture. Three QR codes, three audiences, one platform.
 - **Vendor Activity Map** - Google Maps view of every vendor check-in across every community, real-time (30-second refresh)
 - AI-powered CRM Migration Wizard (import from Buildertrend, JobTread, CoConstruct in one click - practically free at ~$0.01 per migration)
 - 4 pricing tiers: Starter $149, Builder $299, Pro $499, Pro+ $599
+
+---
+
+## New Features (August 21, 2026) — StyleSmith AI™, the AI Interior Design Agent
+
+### What StyleSmith AI™ is
+**StyleSmith AI™** is Cornerstone PM's in-app **AI interior design agent** — think Foreman AI, but for design selections. A builder's design and sales staff open a chat page, name a home and a style theme, and StyleSmith AI™ **composes a complete, coherent design-selection set for that specific home** — flooring, tile, cabinets, countertops, plumbing, lighting, hardware — then, on command, writes it into the home's **real Design Center selections**.
+
+It is not a mood board and not a style filter. It reasons over the builder's own catalog, at the builder's own retail pricing, inside the builder's own spec-level rules.
+
+**Availability: Pro+ ($599/mo) and Enterprise only.** Not included on Starter, Builder, or Pro. Enterprise gets StyleSmith AI™ in every division, because every Enterprise division is a full Pro+ platform.
+
+**Always write the name as StyleSmith AI™** — with the ™ symbol, never ®, and never as bare "StyleSmith".
+
+### The 10 style themes ("Looks")
+Every design option in the catalog is style-scored against all ten, so one catalog can compose ten genuinely different houses. Each theme carries its own signature finish language:
+1. **Modern Farmhouse** — matte black hardware and plumbing, warm light oak
+2. **Coastal** — brushed nickel and polished chrome, light/whitewashed woods
+3. **Contemporary** — polished chrome and matte black, high-gloss and true-flat surfaces
+4. **Organic Modern** — unlacquered brass and aged bronze, honed stone, natural wood
+5. **Scandinavian** — matte black or matte white hardware, pale blond woods
+6. **Industrial Loft** — blackened metal and oiled steel, concrete tones
+7. **Classic Traditional** — brushed nickel and chrome with polished/antique brass accents
+8. **Transitional** — brushed nickel throughout (its flagship finish)
+9. **Mid-Century Modern** — brass and warm gold, walnut and teak
+10. **Craftsman** — oil-rubbed bronze, stained wood, hammered/antique metals
+
+### AI-tagged catalog — zero manual upkeep
+An automated tagging pipeline scores **every design option against all 10 themes** with a style affinity value, and it runs **every night**. Add a hundred new options today and they're style-scored by tomorrow morning with nobody tagging anything by hand. If a designer hand-corrects a tag, the nightly pass **leaves that human edit alone** — human judgment always outranks the model.
+
+### What the composer actually guarantees
+- **Whole-home coherence** — one palette family and one metal/finish family for the entire house, so the hardware never fights the lighting.
+- **Flooring continuity** — flooring carries room to room by rule, not by habit.
+- **Spec-level guardrails** — the home's included spec level is a **hard floor**; StyleSmith AI™ never proposes a downgrade below what the buyer already paid for. Give it a **ceiling** too (e.g. "stay at or below Upgrade II") and it holds that band strictly.
+- **Honest gaps, not substitutions** — if a slot has no candidate inside the allowed band, it reports **"no in-spec candidate"** and leaves the slot open rather than quietly reaching up a tier. An AI-composed look can never create a surprise upgrade overage.
+- **Live retail pricing on every line** — pulled from the builder's own catalog. Consistent with Cornerstone's platform-wide **hard cost rule**: nothing carries a stored or default cost, and unpriced lines read as unpriced instead of being guessed.
+
+### Applying a look to a home (the safety story)
+Composing is **read-only** — the builder sees the entire priced set before anything happens. Applying is an **explicit command**, and it writes through the **same guarded selection path a person uses**:
+- **Approved and locked selections are refused, never overwritten.**
+- **Structural options are never in scope** — design slots only.
+- **Nothing is auto-approved and nothing is auto-locked.** The builder's normal approval workflow remains the only way a selection locks.
+
+The StyleSmith AI™ page is **staff-only** (admin, design center, sales, and purchasing roles). Buyers do not have access to it.
+
+### Buyer style quiz (LIVE, in the homeowner portal)
+Buyers can take a style quiz in the homeowner portal before their design appointment:
+- **12 photo "this-or-that" rounds** — two rooms, pick the one you like
+- **3 style sliders** — warm↔cool, light↔dark, classic↔modern
+- **The pairs are blind on purpose** — no style labels are shown, so buyers answer with what they actually like rather than what they think they're supposed to pick
+- Result: a **personal style profile**, a weighted blend across all 10 looks — not a single bucket
+- That profile then **biases StyleSmith AI™'s composition** toward that buyer's taste, so the designer opens the appointment with a house already leaning the buyer's direction
+- The quiz records a preference only — **it never picks, prices, or changes a selection**
+
+### Other StyleSmith AI™ surfaces
+- **Drafts full builder Design Packages** — give it a theme and a spec level and it drafts a complete Design Package. It arrives as a **draft** that buyers can't use until a human publishes it, and it deliberately **leaves the bundle price to the builder**. StyleSmith AI™ composes the design; the builder prices it.
+- **Available as Foreman AI™ tools** — teams already working in Foreman can list style themes, compose a look for a home, and apply it without switching pages.
+- **Explains itself** — ask why a look works and it walks through the palette family, the finish family, and the flooring logic. Individual selections can be swapped without disturbing the rest of the composition, and the whole thing can be started over clean.
+
+### Trend backbone
+The builder's **own uploaded inspiration images** are vision-tagged and aggregated into per-theme trend signals — the builder's own design direction is the backbone. That's supplemented by a **weekly refresh** from design-press RSS feeds and general search-trend signals. **There are no social-media API dependencies** (no Instagram, no Pinterest), so nothing breaks when a platform changes its terms.
+
+### Coming soon (NOT available today — do not describe these as live)
+- **AI concept renderings** of a composed look
+- **Buyer self-serve "Design My Home"** pre-appointment flow
+
+**Q: Can AI do the design selections for a home?**
+A: Yes — that's StyleSmith AI™. Name a home and a style theme and it composes the complete selection set for that specific house (flooring, tile, cabinets, counters, plumbing, lighting, hardware) from your own catalog at your own retail pricing, holding the whole home to one palette and one finish family with continuous flooring. On command it writes the set into the home's real Design Center selections — never overwriting approved or locked selections, never touching structural options, and never auto-approving anything. It's included with Pro+ and Enterprise.
+
+**Q: Which plan do I need for StyleSmith AI™?**
+A: Pro+ ($599/mo) or Enterprise. It is not available on Starter, Builder, or Pro. Enterprise includes it in every division.
+
+**Q: Will StyleSmith AI™ pick something outside my buyer's spec level?**
+A: No. The included spec level is a hard floor, so it can't propose a downgrade below what the buyer already paid for, and you can give it a ceiling that it holds strictly. When nothing fits inside the allowed band it reports an honest gap instead of substituting from a higher tier — so it can't create a surprise upgrade overage.
+
+**Q: Do we have to tag our catalog by style first?**
+A: No. An automated pipeline style-scores every design option against all 10 themes every night, including options you added that day. Hand-corrected tags are never overwritten.
+
+**Q: Does StyleSmith AI™ create renderings of the design?**
+A: Not yet — AI concept renderings are coming, along with a buyer self-serve "Design My Home" flow. Today it works from your real catalog options, their real photos, and their real retail pricing.
 
 ---
 

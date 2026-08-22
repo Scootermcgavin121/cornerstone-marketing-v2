@@ -33,6 +33,20 @@ export const API_SCHEMA_FORMATS = 3; // Anthropic, OpenAI function calling, Open
  */
 export const API_OPERATION_COUNT = 238;
 
+/**
+ * StyleSmith AI™ — the in-app AI interior-design agent.
+ * Number of curated style themes every design option is scored against.
+ */
+export const STYLESMITH_THEME_COUNT = 10;
+/** Rounds in the buyer-facing photo style quiz (this-or-that). */
+export const STYLESMITH_QUIZ_ROUNDS = 12;
+/**
+ * Tier availability for StyleSmith AI™ — Pro+ and Enterprise only
+ * (Enterprise is full Pro+ per division, so it inherits it).
+ * Decided by Scooter 2026-08-21.
+ */
+export const STYLESMITH_TIERS = ["proPlus", "enterprise"] as const;
+
 // ----------------------------------------------------------------
 // Plan tier shape
 // ----------------------------------------------------------------
@@ -112,6 +126,7 @@ export const PLANS: Plan[] = [
       "Design Center",
       "Foreman AI\u2122",
       "Blueprint AI",
+      "StyleSmith AI\u2122",
       "REST API + BYOA",
     ],
     cta: "Get Beta Access",
@@ -146,6 +161,7 @@ export const PLANS: Plan[] = [
       "Foreman AI\u2122",
       "Blueprint AI",
       "Bid Import AI",
+      "StyleSmith AI\u2122",
       "REST API + BYOA",
     ],
     cta: "Get Beta Access",
@@ -175,6 +191,7 @@ export const PLANS: Plan[] = [
     ],
     notIncluded: [
       "REST API + BYOA (Pro+ only)",
+      "StyleSmith AI™ (Pro+ only)",
     ],
     cta: "Start Free Beta",
     ctaHref: "/beta",
@@ -192,6 +209,7 @@ export const PLANS: Plan[] = [
     features: [
       "Everything in Pro, plus:",
       "REST API (238 total operations \u2014 150+ endpoints) + 37+ webhooks + BYOA INCLUDED \u2014 84 dedicated RESTful routes + generic execute endpoint for all 396+ Foreman skills. 3 schema formats (Anthropic, OpenAI, OpenAPI 3.1). Claude, ChatGPT, n8n, Twilio, Bland & Retell get the same toolbox Foreman uses",
+      "StyleSmith AI\u2122 \u2014 AI interior-design agent. 10 style themes, composes a whole-home selection set for any home and writes it into the Design Center. Pro+ exclusive",
       "Foreman AI\u2122 (930/mo, Claude Sonnet 4)",
       "Blueprint AI (310/mo)",
       "Bid Import AI (1,240/mo)",
@@ -225,7 +243,8 @@ export const PLANS: Plan[] = [
     bonusBadge: "Multi-division platform",
     maxUsers: 60,
     features: [
-      "Full Pro+ platform for every division — REST API, BYOA, all 396+ Foreman skills, 60 seats per division",
+      "Full Pro+ platform for every division — REST API, BYOA, StyleSmith AI™, all 396+ Foreman skills, 60 seats per division",
+      "StyleSmith AI™ in every division — AI interior-design agent, 10 style themes, whole-home selection sets",
       "$500/division/mo for your first 5 divisions",
       "$450/division/mo for every division after that",
       "Corporate admin with cross-division access",

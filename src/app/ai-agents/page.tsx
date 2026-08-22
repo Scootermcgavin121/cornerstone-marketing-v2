@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Bot, FileText, MessageCircle, Check, Zap, ArrowRight, Brain, Eye, Plug } from "lucide-react";
+import { Bot, FileText, MessageCircle, Check, Zap, ArrowRight, Brain, Eye, Plug, Palette } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import type { Metadata } from "next";
@@ -11,7 +11,7 @@ const aiAgentsSchema = buildFeatureSchema({
   pageName: "AI Agents for Home Builders — Cornerstone PM",
   pagePath: "/ai-agents",
   description:
-    "Cornerstone PM ships six purpose-built AI agents for home builders: Foreman AI (396+ skills), Blueprint AI (PDF floor plan takeoffs), Bid Import AI (parses any vendor bid format), AI MLS Listing Generator, AI Support Agent, and Jobsite AI (vendor arrival detection). Native AI built into the platform, not bolted on.",
+    "Cornerstone PM ships seven purpose-built AI agents for home builders: Foreman AI (396+ skills), Blueprint AI (PDF floor plan takeoffs), StyleSmith AI™ (AI interior design agent), Bid Import AI (parses any vendor bid format), AI MLS Listing Generator, AI Support Agent, and Jobsite AI (vendor arrival detection). Native AI built into the platform, not bolted on.",
   applicationSubCategory: "AI Agents for Home Builders",
   keywords:
     "AI agents home builders, construction AI agents, AI for builders, native construction AI, AI-native construction management, MCP server, MCP server construction, Claude Desktop integration, Cursor construction integration, Foreman AI, Blueprint AI, Bid Import AI, AI MLS generator, AI support agent, Jobsite AI, builder AI suite, construction AI platform",
@@ -19,6 +19,7 @@ const aiAgentsSchema = buildFeatureSchema({
     "Built-in MCP server — connect Claude Desktop, Cursor, or Windsurf to all 396+ Foreman skills",
     "Foreman AI — 396+ skill construction agent with memory compaction",
     "Blueprint AI — 130+ material scopes extracted from PDF floor plans in under 60 seconds",
+    "StyleSmith AI™ — AI interior design agent: 10 style themes, composes a whole-home selection set and writes it into the Design Center",
     "Bid Import AI — parses Excel, PDF, scans, photos, and handwritten quotes",
     "AI MLS Listing Generator — print-ready PDF in one click",
     "AI Support Agent — 24/7 in-app knowledge agent",
@@ -31,7 +32,7 @@ const aiAgentsSchema = buildFeatureSchema({
 export const metadata: Metadata = {
   title: "AI Agents for Home Builders | Cornerstone PM™",
   description:
-    "6 AI agents for home builders: Foreman AI (396+ skills), Blueprint AI (PDF takeoffs), Bid Import AI (parses any vendor bid), AI MLS Listing Generator, AI Support Agent, plus Jobsite AI (coming soon). Native AI built into the platform — not bolted on.",
+    "7 AI agents for home builders: Foreman AI (396+ skills), Blueprint AI (PDF takeoffs), StyleSmith AI™ (AI interior designer), Bid Import AI (parses any vendor bid), AI MLS Listing Generator, AI Support Agent, plus Jobsite AI (coming soon). Native AI built into the platform — not bolted on.",
   alternates: { canonical: "https://www.cornerstonepm.ai/ai-agents" },
 };
 
@@ -67,6 +68,22 @@ const agents = [
       "Review and adjust before committing",
     ],
     badge: "Pro Plan",
+  },
+  {
+    name: "StyleSmith AI™",
+    tagline: "Your AI Interior Designer",
+    description:
+      "Name a home and a look. StyleSmith AI™ composes the complete design-selection set for that house — flooring, tile, cabinets, counters, plumbing, lighting, hardware — from your own catalog at your own retail pricing, then writes it into the Design Center on command.",
+    icon: <Palette className="w-8 h-8" />,
+    color: "violet",
+    href: "/stylesmith",
+    highlights: [
+      "10 style themes — every design option auto-scored nightly",
+      "One palette + one metal finish family for the whole house",
+      "Spec-level guardrails — honest gaps, never a silent upgrade",
+      "Buyer style quiz feeds the look before the appointment",
+    ],
+    badge: "Pro+ Plan",
   },
   {
     name: "AI MLS Listing Generator",
@@ -203,7 +220,7 @@ const pricingTiers = [
   {
     name: "Pro+",
     price: "$599",
-    agents: ["All agents", "Bid Import AI", "BYOA API Access", "7-wave bidding pipeline", "Claude Sonnet 4", "930 Foreman conversations/mo"],
+    agents: ["All agents", "StyleSmith AI™", "Bid Import AI", "BYOA API Access", "7-wave bidding pipeline", "Claude Sonnet 4", "930 Foreman conversations/mo"],
     color: "text-cyan-400",
     note: "Full API + automation",
   },
@@ -223,7 +240,7 @@ export default function AiAgentsPage() {
             AI AGENTS FOR HOME BUILDERS
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight">
-            6 AI agents for home builders.
+            7 AI agents for home builders.
             <br />
             <span className="text-white">Zero setup.</span>
             <br />

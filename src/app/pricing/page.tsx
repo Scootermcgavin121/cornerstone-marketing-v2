@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const faqs: FAQItem[] = [
   {
     q: "How much does Cornerstone PM\u2122 cost?",
-    a: "Cornerstone PM\u2122 starts at $149/mo for the Starter plan (scheduling, permitting, homeowner portal). Builder is $299/mo and adds the full purchasing module with sales pipeline and design center. Pro is $499/mo and unlocks the entire AI suite \u2014 Foreman AI\u2122, Blueprint AI, and Bid Import AI. Pro+ is $599/mo with the MCP server, REST API + Webhooks included and 60 user seats. For builders running multiple divisions, regions, or brands, the Enterprise tier adds multi-division management and corporate-level access at custom pricing \u2014 contact us. Annual billing saves 2 months.",
+    a: "Cornerstone PM\u2122 starts at $149/mo for the Starter plan (scheduling, permitting, homeowner portal). Builder is $299/mo and adds the full purchasing module with sales pipeline and design center. Pro is $499/mo and unlocks the AI suite \u2014 Foreman AI\u2122, Blueprint AI, and Bid Import AI. Pro+ is $599/mo and adds StyleSmith AI\u2122 (the AI interior design agent), the MCP server, REST API + Webhooks, and 60 user seats. For builders running multiple divisions, regions, or brands, the Enterprise tier adds multi-division management and corporate-level access at custom pricing \u2014 contact us. Annual billing saves 2 months.",
   },
   {
     q: "How many users can I have?",

@@ -39,6 +39,7 @@ const aiLinks = [
   { label: "AI Features Overview", href: "/ai-features", desc: "Every AI capability in one place" },
   { label: "AI Agents Overview", href: "/ai-agents", desc: "Five AI agents built for builders" },
   { label: "Foreman AI™", href: "/foreman", desc: "396+ skill AI agent, natural language commands" },
+  { label: "StyleSmith AI™ · New", href: "/stylesmith", desc: "AI interior designer — a whole-home selection set in one pass" },
   { label: "AI Blueprint Takeoff", href: "/ai-takeoff", desc: "Upload PDF — instant material takeoff" },
   { label: "Bid Import AI", href: "/bid-import-ai", desc: "Upload any vendor bid — AI extracts every line item" },
   { label: "Jobsite AI™", href: "/jobsite-ai", desc: "Vendor arrival detection — any camera, doorbell, gate, or GPS" },

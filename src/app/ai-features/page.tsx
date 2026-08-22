@@ -10,6 +10,7 @@ import {
   RefreshCw,
   Eye,
   Plug,
+  Palette,
   Check,
   ArrowRight,
   Sparkles,
@@ -24,6 +25,7 @@ import {
   FOREMAN_SKILL_COUNT,
   WEBHOOK_EVENT_COUNT,
   API_ENDPOINT_COUNT,
+  STYLESMITH_THEME_COUNT,
 } from "@/lib/pricing";
 
 const aiFeaturesSchema = buildFeatureSchema({
@@ -39,6 +41,7 @@ const aiFeaturesSchema = buildFeatureSchema({
     "AI Blueprint Takeoff — PDF floor plan to 134+ material scopes in under 60 seconds",
     "Bid Import AI — parses Excel, PDF, scans, and handwritten quote photos",
     "Punchlist AI — walkthrough video OR home inspection PDF to a structured, vendor-assigned punch list",
+    `StyleSmith AI™ — AI interior design agent that composes a whole-home selection set across ${STYLESMITH_THEME_COUNT} style themes`,
     "AI MLS Listing Generator — print-ready listing PDF in one click",
     "AI Support Agent — 24/7 in-app answers on every feature and workflow",
     "CRM Migration Wizard — AI maps a Buildertrend / JobTread export to Cornerstone",
@@ -79,6 +82,22 @@ const capabilities: Capability[] = [
       "Drag-drop PDFs, Excel & images into chat",
       "Full undo + dry-run on every write",
       "Builds profitability & vendor reports on demand",
+    ],
+  },
+  {
+    name: "StyleSmith AI™",
+    tagline: "Your AI interior designer",
+    description:
+      `Name a home and a look, and StyleSmith AI™ composes the complete design-selection set for that house — flooring, tile, cabinets, counters, plumbing, lighting, hardware — from your own catalog at your own retail pricing, then writes it into the Design Center on command.`,
+    icon: <Palette className="w-7 h-7" />,
+    color: "violet",
+    href: "/stylesmith",
+    badge: "New · Pro+",
+    highlights: [
+      `${STYLESMITH_THEME_COUNT} style themes, every option auto-scored nightly`,
+      "One palette + one finish family for the whole house",
+      "Spec-level guardrails — honest gaps, never silent upgrades",
+      "Buyer style quiz feeds the look before the appointment",
     ],
   },
   {
@@ -262,7 +281,7 @@ const colorMap: Record<
 const faqItems: FAQItem[] = [
   {
     q: "What AI features does Cornerstone PM include?",
-    a: `Cornerstone PM ships AI across the whole build: Foreman AI (a ${FOREMAN_SKILL_COUNT}+ skill agent that reads and writes your real data), AI Blueprint Takeoff, Bid Import AI, Punchlist AI (from a walkthrough video or a home inspection PDF), the AI MLS Listing Generator, an AI Support Agent, and a CRM Migration Wizard. Pro+ also opens a built-in MCP server and REST API so you can plug in Claude, ChatGPT, or your own agent.`,
+    a: `Cornerstone PM ships AI across the whole build: Foreman AI (a ${FOREMAN_SKILL_COUNT}+ skill agent that reads and writes your real data), StyleSmith AI™ (an interior design agent that composes a whole-home selection set), AI Blueprint Takeoff, Bid Import AI, Punchlist AI (from a walkthrough video or a home inspection PDF), the AI MLS Listing Generator, an AI Support Agent, and a CRM Migration Wizard. Pro+ also opens a built-in MCP server and REST API so you can plug in Claude, ChatGPT, or your own agent.`,
   },
   {
     q: "Is the AI actually built in, or bolted on?",
@@ -270,7 +289,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Which plans include the AI features?",
-    a: "The AI Support Agent is on every plan. AI MLS Listing generation comes with Builder. Foreman AI and AI Blueprint Takeoff come with Pro. Bid Import AI and Bring-Your-Own-AI (REST API + MCP server) are Pro+. See the pricing page for the full breakdown.",
+    a: "The AI Support Agent is on every plan. AI MLS Listing generation comes with Builder. Foreman AI and AI Blueprint Takeoff come with Pro. Bid Import AI, StyleSmith AI™, and Bring-Your-Own-AI (REST API + MCP server) are Pro+ — and Enterprise includes all of it in every division. See the pricing page for the full breakdown.",
   },
   {
     q: "Can I use my own AI agent with Cornerstone?",

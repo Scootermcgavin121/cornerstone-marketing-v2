@@ -169,13 +169,15 @@ const pricing: Category = {
     {
       q: "Which plan includes the AI agents?",
       aText:
-        "Cornerstone PM™ ships 5 native AI agents. AI Support Agent is on every plan from Starter ($149/mo). AI MLS Listing Generator is on Builder ($299/mo) and above. Foreman AI (396+ skills) and Blueprint AI are on Pro ($499/mo). Bid Import AI and BYOA are on Pro+ ($599/mo).",
+        "Cornerstone PM™ ships 6 native AI agents. AI Support Agent is on every plan from Starter ($149/mo). AI MLS Listing Generator is on Builder ($299/mo) and above. Foreman AI (396+ skills) and Blueprint AI are on Pro ($499/mo). Bid Import AI, StyleSmith AI™ (the AI interior design agent), and BYOA are on Pro+ ($599/mo) — and Enterprise includes all of it in every division.",
       a: (
         <>
-          Cornerstone PM™ ships <strong>5 native AI agents</strong>. <A href="/support-ai">AI Support Agent</A> is on
+          Cornerstone PM™ ships <strong>6 native AI agents</strong>. <A href="/support-ai">AI Support Agent</A> is on
           every plan from Starter ($149/mo). <A href="/listing-sheet">AI MLS Listing Generator</A> is on Builder
           ($299/mo) and above. <A href="/foreman">Foreman AI</A> (396+ skills) and <A href="/ai-takeoff">Blueprint AI</A>{" "}
-          are on Pro ($499/mo). <A href="/bid-import-ai">Bid Import AI</A> and BYOA are on Pro+ ($599/mo).
+          are on Pro ($499/mo). <A href="/bid-import-ai">Bid Import AI</A>,{" "}
+          <A href="/stylesmith">StyleSmith AI™</A> (the AI interior design agent), and BYOA are on Pro+ ($599/mo) —
+          and Enterprise includes all of it in every division.
         </>
       ),
     },
@@ -230,10 +232,12 @@ const pricing: Category = {
     {
       q: "What's included on Pro+ that Pro doesn't have?",
       aText:
-        "Pro+ ($599/mo) adds a built-in MCP server (connect Claude Desktop, Cursor, or Windsurf), the full REST API (150+ API endpoints), 37+ named webhook event types (catalog growing weekly), Bring Your Own Agent (BYOA) so you can plug Claude or ChatGPT into live builder data, Bid Import AI (drag any vendor PDF/Excel/photo and AI extracts every line), the 7-wave automated bidding pipeline, and uncapped active home count.",
+        "Pro+ ($599/mo) adds StyleSmith AI™ — the AI interior design agent that composes a whole-home design-selection set across 10 style themes and writes it into your Design Center — plus a built-in MCP server (connect Claude Desktop, Cursor, or Windsurf), the full REST API (150+ API endpoints), 37+ named webhook event types (catalog growing weekly), Bring Your Own Agent (BYOA) so you can plug Claude or ChatGPT into live builder data, Bid Import AI (drag any vendor PDF/Excel/photo and AI extracts every line), the 7-wave automated bidding pipeline, and uncapped active home count.",
       a: (
         <>
-          Pro+ ($599/mo) adds a built-in <A href="/api-access">MCP server</A> (connect Claude Desktop, Cursor, or Windsurf),
+          Pro+ ($599/mo) adds <A href="/stylesmith">StyleSmith AI™</A> — the AI interior design agent that composes a
+          whole-home design-selection set across 10 style themes and writes it into your Design Center — plus a built-in{" "}
+          <A href="/api-access">MCP server</A> (connect Claude Desktop, Cursor, or Windsurf),
           the full <A href="/api-access">REST API (150+ API endpoints)</A>, 37+ named webhook event types (catalog growing),
           Bring Your Own Agent (BYOA) so you can plug Claude or ChatGPT into live builder data,{" "}
           <A href="/bid-import-ai">Bid Import AI</A> (drag any vendor PDF/Excel/photo and AI extracts every line), the
@@ -415,21 +419,59 @@ const migration: Category = {
 const ai: Category = {
   slug: "ai-agents",
   title: "AI Agents & Automation",
-  blurb: "Foreman AI, Blueprint AI, Bid Import AI, AI Migration Wizard, AI Support Agent, and BYOA.",
+  blurb: "Foreman AI, StyleSmith AI™, Blueprint AI, Bid Import AI, AI Migration Wizard, AI Support Agent, and BYOA.",
   accent: "text-violet-400",
   items: [
     {
       q: "What AI agents does Cornerstone PM™ include?",
       aText:
-        "Five native AI agents: Foreman AI (396+ skills across scheduling, sales, purchasing, design center, bids, vendors, reporting), Blueprint AI (PDF floor plan reader extracting 130+ material scopes per plan), Bid Import AI (extracts line items from any vendor PDF/Excel/photo), AI MLS Listing Generator, and AI Support Agent.",
+        "Six native AI agents: Foreman AI (396+ skills across scheduling, sales, purchasing, design center, bids, vendors, reporting), StyleSmith AI™ (the AI interior design agent — composes a complete whole-home design-selection set across 10 style themes and writes it into the Design Center, Pro+ and Enterprise), Blueprint AI (PDF floor plan reader extracting 130+ material scopes per plan), Bid Import AI (extracts line items from any vendor PDF/Excel/photo), AI MLS Listing Generator, and AI Support Agent.",
       a: (
         <>
-          Five native AI agents: <A href="/foreman">Foreman AI</A> (396+ skills across scheduling, sales, purchasing,
-          design center, bids, vendors, reporting), <A href="/ai-takeoff">Blueprint AI</A> (PDF floor plan reader
+          Six native AI agents: <A href="/foreman">Foreman AI</A> (396+ skills across scheduling, sales, purchasing,
+          design center, bids, vendors, reporting), <A href="/stylesmith">StyleSmith AI™</A> (the AI interior design
+          agent — composes a complete whole-home design-selection set across{" "}
+          <strong>10 style themes</strong> and writes it into the Design Center; Pro+ and Enterprise),{" "}
+          <A href="/ai-takeoff">Blueprint AI</A> (PDF floor plan reader
           extracting <strong>130+ material scopes</strong> per plan), <A href="/bid-import-ai">Bid Import AI</A>{" "}
           (extracts line items from any vendor PDF/Excel/photo),{" "}
           <A href="/listing-sheet">AI MLS Listing Generator</A>, and <A href="/support-ai">AI Support Agent</A>. Full
           overview at <A href="/ai-agents">/ai-agents</A>.
+        </>
+      ),
+    },
+    {
+      q: "What is StyleSmith AI™?",
+      aText:
+        "StyleSmith AI™ is Cornerstone PM™'s in-app AI interior design agent — Foreman AI, but for design selections. Design and sales staff name a home and one of 10 style themes, and StyleSmith AI™ composes a complete, coherent selection set for that specific house (flooring, tile, cabinets, counters, plumbing, lighting, hardware) from your own catalog at your own retail pricing, holding the whole home to one palette family, one metal finish family, and continuous flooring room to room. On command it writes the set into the home's real Design Center selections through the same guarded path a person uses: approved and locked selections are refused rather than overwritten, structural options are out of scope, and nothing is auto-approved. The included spec level is a hard floor and it reports honest gaps instead of substituting from a higher tier. Included with Pro+ ($599/mo) and Enterprise.",
+      a: (
+        <>
+          <A href="/stylesmith">StyleSmith AI™</A> is Cornerstone PM™&apos;s in-app{" "}
+          <strong>AI interior design agent</strong> — Foreman AI, but for design selections. Design and sales staff name
+          a home and one of <strong>10 style themes</strong>, and StyleSmith AI™ composes a complete, coherent selection
+          set for that specific house (flooring, tile, cabinets, counters, plumbing, lighting, hardware) from your own
+          catalog at your own retail pricing — holding the whole home to one palette family, one metal finish family,
+          and continuous flooring room to room. On command it writes the set into the home&apos;s real{" "}
+          <A href="/design">Design Center</A> selections through the same guarded path a person uses: approved and
+          locked selections are refused rather than overwritten, structural options are out of scope, and nothing is
+          auto-approved. The included spec level is a hard floor, and it reports honest gaps instead of substituting
+          from a higher tier. Included with <strong>Pro+ ($599/mo) and Enterprise</strong>.
+        </>
+      ),
+    },
+    {
+      q: "Can buyers tell us their design style before the appointment?",
+      aText:
+        "Yes. The homeowner portal includes a StyleSmith AI™ style quiz: 12 photo this-or-that rounds plus three sliders (warm to cool, light to dark, classic to modern). The pairs are blind — no style labels are shown — so buyers answer with what they actually like. The result is a personal style profile, a weighted blend across all 10 looks, which then biases StyleSmith AI™'s composition toward that buyer's taste. Your designer opens the appointment with a house already leaning the right direction instead of a blank slate. The quiz records a preference only — it never picks, prices, or changes a selection.",
+      a: (
+        <>
+          Yes. The homeowner portal includes a <A href="/stylesmith">StyleSmith AI™</A> style quiz:{" "}
+          <strong>12 photo this-or-that rounds</strong> plus three sliders (warm↔cool, light↔dark, classic↔modern). The
+          pairs are blind — no style labels are shown — so buyers answer with what they actually like. The result is a
+          personal style profile, a weighted blend across all 10 looks, which then biases StyleSmith AI™&apos;s
+          composition toward that buyer&apos;s taste. Your designer opens the appointment with a house already leaning
+          the right direction instead of a blank slate. The quiz records a preference only — it never picks, prices, or
+          changes a selection.
         </>
       ),
     },

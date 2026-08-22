@@ -1,4 +1,4 @@
-import { Check, Grid3X3, ShieldCheck, FileSpreadsheet, Image as ImageIcon, DollarSign, Layers, Refrigerator, Sparkles, Building2, Calculator, Lock } from "lucide-react";
+import { Check, Grid3X3, ShieldCheck, FileSpreadsheet, Image as ImageIcon, DollarSign, Layers, Refrigerator, Sparkles, Building2, Calculator, Lock, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
@@ -37,6 +37,8 @@ const designSchema = buildFeatureSchema({
     "PDF design center summary with buyer signature line",
     "Selection Sheet PDF (grouped By Category or By Room) for buyers and office",
     "Trade Copy selection sheet with zero pricing — auto-saved to the home's Documents",
+    "StyleSmith AI™ — AI interior design agent that composes a complete whole-home selection set across 10 style themes and writes it into the Design Center (Pro+ and Enterprise)",
+    "Buyer style quiz in the homeowner portal — photo this-or-that rounds produce a personal style profile before the design appointment",
   ],
 });
 
@@ -93,6 +95,18 @@ const faqItems: FAQItem[] = [
   {
     q: "Do I have to export a trade copy every time selections change?",
     a: "No. The Trade Copy auto-saves into the home&apos;s Documents every time selections are locked or approved, and it replaces the previous one so duplicates never pile up — it&apos;s just always there in the home&apos;s documents, current. There&apos;s also a manual ‘Save Trade Copy to Home Docs’ button to push an updated copy on demand.",
+  },
+  {
+    q: "Can AI make the design selections for a home?",
+    a: "Yes — that's StyleSmith AI™, Cornerstone PM™'s in-app interior design agent. Your design or sales staff name a home and a style theme, and StyleSmith AI™ composes a complete selection set for that specific house — flooring, tile, cabinets, countertops, plumbing, lighting, and hardware — holding the whole home to one palette family, one metal finish family, and continuous flooring room to room. Every proposed line carries live retail pricing from your own catalog. On command it writes the set into the home's real Design Center selections through the same guarded path a person uses: it never overwrites approved or locked selections, never touches structural options, and never auto-approves anything. StyleSmith AI™ is included with Pro+ and Enterprise.",
+  },
+  {
+    q: "Will an AI-composed design ever pick something outside the buyer's spec level?",
+    a: "No. The home's included spec level is a hard floor, so StyleSmith AI™ can't propose a downgrade below what the buyer already paid for. You can also hand it a ceiling — for example, stay at or below Upgrade II — and it holds that band strictly. If a slot has no candidate inside the allowed band, it reports an honest gap rather than quietly substituting from a higher tier, so an AI-composed look can never create a surprise upgrade overage.",
+  },
+  {
+    q: "Can buyers tell us their style before the design appointment?",
+    a: "Yes. The homeowner portal includes a style quiz: 12 photo this-or-that rounds plus three sliders (warm to cool, light to dark, classic to modern). The pairs are blind — no style labels are shown — so buyers answer with what they actually like. The result is a personal style profile that biases StyleSmith AI™'s composition toward that buyer's taste, so your designer starts the appointment with a house already leaning the right direction instead of a blank slate.",
   },
   {
     q: "What does design center software cost?",
@@ -155,6 +169,59 @@ export default function DesignPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/beta" className="px-8 py-4 rounded-full bg-violet-400 text-slate-900 font-bold text-lg hover:bg-violet-300 transition-all duration-200 shadow-lg shadow-violet-500/30 hover:-translate-y-0.5">Request Early Access →</Link>
             <Link href="/features" className="px-8 py-4 rounded-full border border-slate-700 text-slate-300 font-semibold text-lg hover:border-slate-500 hover:text-white transition-all duration-200">See All Features</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ STYLESMITH AI ═══════════ */}
+      <section className="py-16 px-4 border-t border-slate-800/60">
+        <div className="max-w-6xl mx-auto">
+          <div className="relative rounded-3xl bg-gradient-to-br from-violet-950/50 via-slate-900/80 to-amber-950/20 border border-violet-500/30 p-7 sm:p-10 overflow-hidden">
+            <div className="absolute top-0 right-0 w-72 h-72 bg-violet-500/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-[0.85fr_1.15fr] gap-8 items-center">
+              <div className="flex justify-center order-1 lg:order-none">
+                <Image
+                  src="/stylesmith-mascot.png"
+                  alt="StyleSmith AI™ mascot — a bearded craftsman in a leather apron holding material rolls, with a paint brush and color swatch palette"
+                  width={560}
+                  height={845}
+                  className="w-full max-w-[220px] lg:max-w-[280px] h-auto drop-shadow-2xl"
+                />
+              </div>
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/15 border border-violet-500/30 text-violet-300 text-[11px] font-black uppercase tracking-widest mb-5">
+                  <Sparkles className="w-3.5 h-3.5" /> New · Pro+ &amp; Enterprise
+                </div>
+                <h2 className="text-3xl sm:text-4xl font-black tracking-tight mb-4">
+                  StyleSmith AI<sup className="text-lg align-super">™</sup> designs the whole house.
+                </h2>
+                <p className="text-slate-300 leading-relaxed mb-4">
+                  Name a home. Name a look. StyleSmith AI™ fills every open design slot in that house — flooring, tile, cabinets, counters, plumbing, lighting, hardware — from your own catalog, at your own retail pricing, in one coherent palette and one finish family. Then it writes the set into the home&apos;s real selections on your say-so.
+                </p>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mb-6 text-sm text-slate-400">
+                  {[
+                    "10 style themes, every option scored nightly",
+                    "Flooring continuity room to room",
+                    "Never selects below the included spec level",
+                    "Honest gaps instead of silent upgrades",
+                    "Buyer style quiz feeds the composition",
+                    "Drafts full Design Packages for review",
+                  ].map((li) => (
+                    <li key={li} className="flex items-start gap-2">
+                      <Check className="w-4 h-4 text-violet-400 flex-shrink-0 mt-0.5" />
+                      <span>{li}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="/stylesmith"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-violet-400 text-slate-900 text-sm font-bold hover:bg-violet-300 transition-all shadow-lg shadow-violet-500/20"
+                >
+                  Meet StyleSmith AI™
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
