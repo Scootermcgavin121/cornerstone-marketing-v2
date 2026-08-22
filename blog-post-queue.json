@@ -1299,8 +1299,9 @@
       "wordCount": 1100,
       "heroImage": "/blog/design-center-appointment.png",
       "heroImageAlt": "Design center appointment process for home builders — selection sheet with packages, upgrades, and running budget total",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "5bf39a5",
+      "publishedAt": "2026-08-22T14:08:54.174Z"
     },
     {
       "slug": "planswift-stack-takeoff-vs-cornerstone-ai-takeoff",
