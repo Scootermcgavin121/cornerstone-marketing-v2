@@ -219,16 +219,30 @@ export default function StyleSmithPage() {
                 designs the whole house.
               </span>
             </h1>
-            <p className="text-xl text-slate-300 font-semibold mb-4">
+            <p className="text-xl text-slate-300 font-semibold mb-5">
               Not a mood board. A finished selection set.
             </p>
-            <p className="text-lg text-slate-400 leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
-              Name a home. Name a look. StyleSmith AI™ fills every open design
-              slot in that house — flooring, tile, cabinets, counters, plumbing,
-              lighting, hardware — from your own catalog, at your own retail
-              pricing, in one coherent palette. Then it writes it into your
-              Design Center on your say-so.
-            </p>
+            <div className="text-lg text-slate-400 leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0 space-y-4">
+              <p>
+                Name a home. Name a look. StyleSmith AI™ composes the whole house
+                from{" "}
+                <span className="text-white font-semibold">real live data</span> —
+                your actual product catalog in the Design Center, at your own
+                retail pricing, steered by the inspiration photography your design
+                team curates and by your buyer&apos;s own style profile.
+              </p>
+              <p>
+                Every pick is a product you already sell, chosen inside your style
+                guidelines and held to one palette. Say{" "}
+                <span className="text-white font-semibold">
+                  &ldquo;cap it at Upgrade II&rdquo;
+                </span>{" "}
+                and the entire look stays there.
+              </p>
+              <p>
+                Then it writes the set into your Design Center — on your say-so.
+              </p>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link
                 href="/beta"
