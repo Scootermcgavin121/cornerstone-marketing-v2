@@ -4,10 +4,10 @@ import { Navbar } from "@/components/Navbar";
 export const metadata: Metadata = {
   title: "Cornerstone PM™ — Home Builder Software with AI Agents",
   description:
-    "The complete platform for home builders. AI scheduling, sales pipeline, purchasing, design center, Blueprint AI material takeoffs, Foreman AI agent, MLS listing generator, and REST API. Starting at $149/mo. No implementation fees.",
+    "The complete platform for home builders. AI scheduling, sales pipeline, purchasing, design center, Blueprint AI material takeoffs, Foreman AI agent, StyleSmith AI™ interior designer, MLS listing generator, and REST API. Starting at $149/mo. No implementation fees.",
   openGraph: {
     title: "Cornerstone PM™ — Home Builder Software with AI Agents",
-    description: "Scheduling, sales, purchasing, design center, AI agents, Blueprint AI takeoffs, and REST API. Built for home builders. Starting at $149/mo.",
+    description: "Scheduling, sales, purchasing, design center, AI agents, Blueprint AI takeoffs, StyleSmith AI™, and REST API. Built for home builders. Starting at $149/mo.",
     url: "https://cornerstonepm.ai",
   },
   alternates: { canonical: "https://cornerstonepm.ai" },

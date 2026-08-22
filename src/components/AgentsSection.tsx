@@ -36,6 +36,22 @@ const agents = [
     ],
   },
   {
+    emoji: "🎨",
+    image: "/stylesmith-mascot.png",
+    name: "StyleSmith AI™",
+    tagline: "Your AI Interior Designer",
+    desc: "Name a home and a look. Composes the whole selection set — flooring, cabinets, counters, fixtures — from your own catalog.",
+    href: "/stylesmith",
+    color: "text-violet-400",
+    border: "border-violet-500/20 hover:border-violet-500/50",
+    badge: "Pro+",
+    badgeColor: "bg-violet-500/20 text-violet-400 border-violet-500/30",
+    prompts: [
+      "Warm modern farmhouse for Lot 14",
+      "Same look, but cap it at Upgrade II",
+    ],
+  },
+  {
     emoji: "📄",
     name: "AI MLS Listing Generator",
     tagline: "AI Real Estate Listing Writer",
@@ -92,7 +108,7 @@ export function AgentsSection() {
             Industry First
           </div>
           <h2 className="text-4xl sm:text-6xl font-black mb-6">
-            Five AI agents.<br />
+            Six AI agents.<br />
             <span className="text-cyan-400">Zero other platforms have one.</span>
           </h2>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto">
@@ -100,7 +116,7 @@ export function AgentsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
           {agents.map((agent) => (
             <Link
               key={agent.name}
@@ -150,7 +166,7 @@ export function AgentsSection() {
             href="/ai-agents"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-cyan-400 text-slate-900 font-bold hover:bg-cyan-300 transition-all duration-200"
           >
-            See all five agents →
+            See all seven agents →
           </Link>
         </div>
       </div>
