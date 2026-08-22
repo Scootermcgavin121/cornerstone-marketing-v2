@@ -8,9 +8,13 @@ const nextConfig: NextConfig = {
       // standalone StyleSmith AI™ microsite exists (P4c), every path on the
       // domain lands on the feature page on the main marketing site.
       //
-      // TEMPORARY (307) on purpose — do NOT change to `permanent: true`.
-      // A 308 would be cached by browsers and Google, and would have to be
-      // un-taught when the microsite ships on this domain.
+      // PERMANENT (308) as of 2026-08-22 — Scooter approved flipping this from
+      // the original 307 so the redirect passes link equity to /stylesmith for
+      // SEO. This reverses the earlier "keep it temporary" note: the tradeoff
+      // is that browsers and Google cache a 308 aggressively, so if the
+      // standalone microsite (P4c) later ships ON this domain it will have to
+      // be un-taught (serve a 200 here and expect a long tail of cached
+      // redirects). Accepted deliberately in exchange for the SEO value now.
       //
       // Unnamed `(.*)` catch-all rather than `/:path*`: Next.js appends any
       // path param that the destination doesn't consume onto the query
@@ -20,13 +24,13 @@ const nextConfig: NextConfig = {
         source: "/(.*)",
         has: [{ type: "host", value: "stylesmith.ai" }],
         destination: "https://www.cornerstonepm.ai/stylesmith",
-        permanent: false,
+        permanent: true, // 308
       },
       {
         source: "/(.*)",
         has: [{ type: "host", value: "www.stylesmith.ai" }],
         destination: "https://www.cornerstonepm.ai/stylesmith",
-        permanent: false,
+        permanent: true, // 308
       },
       // --- legacy path redirects (SEO 308s) ------------------------------
       {
