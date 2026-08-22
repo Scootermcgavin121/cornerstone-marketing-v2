@@ -15,6 +15,8 @@ import {
   MessageSquare,
   Clock,
   Home as HomeIcon,
+  Database,
+  Ruler,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -37,6 +39,9 @@ const styleSmithSchema = buildFeatureSchema({
     "Included with Cornerstone PM Pro+ ($599/mo) and Enterprise. Not available on Starter, Builder, or Pro.",
   featureList: [
     `${STYLESMITH_THEME_COUNT} curated style themes — Modern Farmhouse, Coastal, Contemporary, Organic Modern, Scandinavian, Industrial Loft, Classic Traditional, Transitional, Mid-Century Modern, Craftsman`,
+    "Composes only from the builder's own live design-center catalog — every suggestion is a real, orderable product the builder already sells, never stock imagery or a generic AI mood board",
+    "Second live source: the builder's curated Style Inspiration library, vision-tagged automatically",
+    "Upgrade-level ceiling — 'cap it at Upgrade II' constrains the entire composed look before it composes",
     "Composes a complete whole-home selection set for a specific home in one pass",
     "One palette family and one metal/finish family per home — no mismatched hardware",
     "Flooring continuity room to room",
@@ -59,7 +64,7 @@ const styleSmithSchema = buildFeatureSchema({
 export const metadata = {
   title: "StyleSmith AI™ — AI Interior Design Agent | Cornerstone PM™",
   description:
-    "StyleSmith AI™ composes a complete, coherent design-selection set for any home — 10 style themes, one palette, one finish family, real retail pricing — then writes it into your Design Center. Included with Pro+ and Enterprise.",
+    "StyleSmith AI™ composes a complete design-selection set for any home from your own live product catalog — real orderable products, not stock imagery or a generic mood board. 10 style themes, capped to any upgrade level, written straight into your Design Center. Pro+ and Enterprise.",
 };
 
 const themes = [
@@ -137,6 +142,14 @@ const faqItems: FAQItem[] = [
   {
     q: "What is StyleSmith AI™?",
     a: "StyleSmith AI™ is Cornerstone PM™'s in-app AI interior design agent. Your design and sales staff open a chat page, name a home and a style theme, and StyleSmith AI™ composes a complete, coherent design-selection set for that specific home — flooring, tile, cabinets, countertops, plumbing, lighting and hardware — then writes it into the home's real Design Center selections on command. Think Foreman AI™, but for design selections.",
+  },
+  {
+    q: "Where do StyleSmith AI™'s suggestions actually come from?",
+    a: "From your live data, and only your live data. It composes from two sources inside your own Cornerstone account: your design-center product catalog — your real options, categories, spec levels and live retail pricing — and your curated Style Inspiration library, which StyleSmith AI™ vision-tags automatically so nobody has to label images by hand. That means every single suggestion is a real product you already sell, in your catalog, at your price, orderable today. It is not stock imagery, it is not a generic AI mood board you then have to go source, and it is not a scraped social feed. A mood board hands your designer a research project; StyleSmith AI™ hands them a priced, in-spec, orderable selection set — because it was never able to imagine a product in the first place.",
+  },
+  {
+    q: "Can I cap it at a specific upgrade level?",
+    a: "Yes, and that's the point. Say “cap it at Upgrade II” and the entire composed look stays at Upgrade II — every room, every category, every line. The ceiling is applied before it composes, so nothing above your line ever enters the set; it isn't a filter you run afterward or a warning you get at the end. The home's included spec level acts as a floor at the same time, so it never proposes a downgrade below what the buyer already paid for. If a slot has no candidate inside the band, you get an honest “no in-spec candidate” and an open slot rather than a quiet reach up a tier. Net effect: an AI-composed look cannot produce a surprise upgrade overage.",
   },
   {
     q: "Which plans include StyleSmith AI™?",
@@ -324,6 +337,102 @@ export default function StyleSmithPage() {
         </div>
       </section>
 
+      {/* ═══════════ REAL LIVE DATA ═══════════ */}
+      <section className="py-20 px-4 border-t border-slate-800/60">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-xs font-bold uppercase tracking-widest mb-6">
+              <Database className="w-3.5 h-3.5" /> Real live data
+            </div>
+            <h2 className="text-4xl sm:text-5xl font-black tracking-tight mb-5">
+              AI-generated looks, built on{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-violet-400">
+                your live data
+              </span>
+              .
+            </h2>
+            <p className="text-slate-400 text-lg max-w-3xl mx-auto leading-relaxed">
+              Every single thing StyleSmith AI™ suggests is a real product you
+              already sell. It composes from two live sources inside your own
+              Cornerstone account — and nothing else.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+            <div className="p-7 rounded-2xl bg-slate-900/60 border border-slate-800">
+              <Package className="w-6 h-6 text-emerald-300 mb-4" />
+              <div className="text-xs uppercase tracking-widest text-emerald-300/80 font-bold mb-2">
+                Source 1
+              </div>
+              <h3 className="text-xl font-black mb-3">
+                Your design-center product catalog
+              </h3>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                Your actual options, your option categories, your spec levels,
+                your live retail pricing — read straight out of your Cornerstone
+                Design Center. When StyleSmith AI™ proposes a faucet, that faucet
+                is <span className="text-white font-semibold">in your catalog, at your price, orderable today</span>.
+                It cannot suggest something you don&apos;t carry, because it has
+                nothing else to suggest from.
+              </p>
+            </div>
+            <div className="p-7 rounded-2xl bg-slate-900/60 border border-slate-800">
+              <ImageIcon className="w-6 h-6 text-emerald-300 mb-4" />
+              <div className="text-xs uppercase tracking-widest text-emerald-300/80 font-bold mb-2">
+                Source 2
+              </div>
+              <h3 className="text-xl font-black mb-3">
+                Your curated Style Inspiration library
+              </h3>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">
+                Your design team uploads the inspiration photography they&apos;re
+                already collecting, and StyleSmith AI™{" "}
+                <span className="text-white font-semibold">vision-tags every image automatically</span> —
+                colors, materials, finishes, motifs. Nobody sits there labeling
+                photos. Those tags roll up into per-theme style signals that
+                weight the composition, so the looks come out sounding like your
+                brand instead of like a generic algorithm.
+              </p>
+              <p className="text-slate-500 text-xs leading-relaxed border-t border-slate-800 pt-4">
+                <span className="text-slate-400 font-semibold">To be precise about how this works:</span>{" "}
+                inspiration photos shape the style direction at the theme level.
+                Matching an individual reference photo to a specific room is on
+                the roadmap, not shipped — and the library is curated by your
+                staff, not uploaded by buyers.
+              </p>
+            </div>
+          </div>
+
+          <div className="p-7 rounded-2xl bg-gradient-to-br from-violet-500/10 to-emerald-500/5 border border-violet-500/25">
+            <div className="text-sm font-black text-white mb-4">
+              What it is emphatically not:
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-5">
+              {[
+                "Stock imagery of somebody else's house",
+                "A generic AI mood board you then have to go source",
+                "A scraped social feed that breaks when the terms change",
+              ].map((n) => (
+                <div key={n} className="flex gap-3 items-start">
+                  <X className="w-4 h-4 text-slate-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-slate-400 text-sm leading-relaxed">{n}</span>
+                </div>
+              ))}
+            </div>
+            <p className="text-slate-300 text-sm leading-relaxed border-t border-slate-700/50 pt-5">
+              The difference is what happens after the buyer says yes. A mood
+              board hands your designer a research project. StyleSmith AI™ hands
+              them a{" "}
+              <span className="text-white font-semibold">
+                priced, in-spec, orderable selection set
+              </span>{" "}
+              — because it was never allowed to imagine a product in the first
+              place.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* ═══════════ HOW IT WORKS ═══════════ */}
       <section className="py-20 px-4 border-t border-slate-800/60">
         <div className="max-w-6xl mx-auto">
@@ -422,6 +531,94 @@ export default function StyleSmithPage() {
         </div>
       </section>
 
+      {/* ═══════════ INTO THE DESIGN CENTER ═══════════ */}
+      <section className="py-20 px-4 border-t border-slate-800/60">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-300 text-xs font-bold uppercase tracking-widest mb-6">
+              <HomeIcon className="w-3.5 h-3.5" /> Design Center
+            </div>
+            <h2 className="text-4xl sm:text-5xl font-black tracking-tight mb-5">
+              It doesn&apos;t stop at inspiration.
+              <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-violet-400">
+                It fills the Design Center.
+              </span>
+            </h2>
+            <p className="text-slate-400 text-lg max-w-3xl mx-auto leading-relaxed">
+              The gap between &ldquo;here&apos;s a nice look&rdquo; and
+              &ldquo;here&apos;s this buyer&apos;s house, priced&rdquo; is exactly
+              where design tools usually quit and hand the work back to your
+              designer. StyleSmith AI™ closes it.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            {[
+              {
+                icon: Palette,
+                title: "It picks inside your style guidelines",
+                body:
+                  "It composes within the rules you already set up — your option categories, your spec levels, and what counts as standard versus an upgrade in that specific community. You are not handing the AI a blank canvas; you are handing it your rulebook.",
+              },
+              {
+                icon: Layers,
+                title: "Real selections, not a PDF",
+                body:
+                  "It writes to the home's actual Design Center selection records — the very same rows your designer edits by hand. There's no export step, no re-keying a mood board into the system, and no second source of truth to reconcile later.",
+              },
+              {
+                icon: Lock,
+                title: "Through the same guarded path a person uses",
+                body:
+                  "Approved and locked selections are refused rather than overwritten. Structural options are never in scope. Nothing is auto-approved and nothing is auto-locked — it writes only to open design slots.",
+              },
+              {
+                icon: Sparkles,
+                title: "Priced as it goes",
+                body:
+                  "Every line carries live retail pricing out of your own catalog, so the buyer sees the number in the same moment they see the look. No stored costs, no invented numbers — the same hard-cost rule as the rest of Cornerstone.",
+              },
+            ].map((c) => (
+              <div
+                key={c.title}
+                className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-amber-500/30 transition-all duration-300"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center flex-shrink-0">
+                    <c.icon className="w-5 h-5 text-amber-300" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-black mb-2">{c.title}</h3>
+                    <p className="text-slate-400 text-sm leading-relaxed">
+                      {c.body}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="p-7 rounded-2xl bg-slate-900/50 border border-slate-800 text-center">
+            <p className="text-slate-300 leading-relaxed max-w-3xl mx-auto">
+              From there your normal process takes over, completely unchanged —
+              buyer approval, change orders, purchasing, POs. StyleSmith AI™ gets
+              the house to{" "}
+              <span className="text-white font-semibold">80% designed and fully priced</span>{" "}
+              before the appointment starts. It does not try to be the rest of
+              your workflow.
+            </p>
+            <Link
+              href="/design"
+              className="inline-flex items-center gap-2 mt-6 px-6 py-3 rounded-full border border-slate-700 text-slate-300 font-semibold hover:border-amber-500/40 hover:text-white transition-all duration-200"
+            >
+              See how the Design Center works
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ═══════════ GUARDRAILS ═══════════ */}
       <section className="py-20 px-4 border-t border-slate-800/60">
         <div className="max-w-6xl mx-auto">
@@ -440,6 +637,68 @@ export default function StyleSmithPage() {
               the interesting part of StyleSmith AI™ isn&apos;t what it can do — it&apos;s
               what it refuses to do.
             </p>
+          </div>
+
+          {/* Spec-level ceiling — the budget-trust feature */}
+          <div className="mb-8 p-7 sm:p-9 rounded-2xl bg-gradient-to-br from-emerald-500/12 to-cyan-500/5 border border-emerald-500/30">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-8 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-xs font-bold uppercase tracking-widest mb-5">
+                  <Ruler className="w-3.5 h-3.5" /> Upgrade-level control
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-black tracking-tight mb-4 leading-tight">
+                  Say &ldquo;cap it at Upgrade II.&rdquo;
+                  <br />
+                  <span className="text-emerald-300">It stays at Upgrade II.</span>
+                </h3>
+                <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
+                  Tell StyleSmith AI™ the ceiling in plain English and the entire
+                  composed look respects it — every room, every category, every
+                  line. The ceiling is set{" "}
+                  <span className="text-white font-semibold">before it composes</span>,
+                  so nothing above your line ever enters the set. It is not a
+                  filter you apply afterward, and it is not a warning you get at
+                  the end.
+                </p>
+                <p className="text-slate-400 text-sm leading-relaxed">
+                  That&apos;s the difference between an AI your design team can
+                  actually run with and one somebody has to audit line by line.
+                  An AI-composed look{" "}
+                  <span className="text-white font-semibold">
+                    cannot produce a surprise upgrade overage
+                  </span>
+                  .
+                </p>
+              </div>
+              <div className="space-y-3">
+                {[
+                  {
+                    k: "The floor",
+                    v: "The home's included spec level. It will never propose a downgrade below the tier the buyer already paid for.",
+                  },
+                  {
+                    k: "The ceiling",
+                    v: "Whatever you say it is. “Stay at or below Upgrade II” holds strictly across the whole house.",
+                  },
+                  {
+                    k: "Nothing fits the band?",
+                    v: "You get an honest “no in-spec candidate” and an open slot — never a quiet reach up a tier to look complete.",
+                  },
+                ].map((r) => (
+                  <div
+                    key={r.k}
+                    className="p-4 rounded-xl bg-slate-950/50 border border-emerald-500/15"
+                  >
+                    <div className="text-sm font-black text-emerald-300 mb-1">
+                      {r.k}
+                    </div>
+                    <div className="text-xs text-slate-400 leading-relaxed">
+                      {r.v}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -611,6 +870,16 @@ export default function StyleSmithPage() {
                 <span className="text-white font-semibold">Buyer self-serve “Design My Home”</span> —
                 a pre-appointment flow where the buyer explores looks on their own
                 before they ever come in.
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <ArrowRight className="w-4 h-4 text-slate-500 flex-shrink-0 mt-1" />
+              <span>
+                <span className="text-white font-semibold">Per-room photo references</span> —
+                point at one specific inspiration photo for one specific room and
+                have the composer match products to that image. Today inspiration
+                photography steers the look at the theme level; per-photo,
+                per-room matching is not shipped yet.
               </span>
             </li>
           </ul>

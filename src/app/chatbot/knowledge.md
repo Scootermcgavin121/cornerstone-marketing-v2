@@ -39,6 +39,38 @@ Every design option in the catalog is style-scored against all ten, so one catal
 ### AI-tagged catalog — zero manual upkeep
 An automated tagging pipeline scores **every design option against all 10 themes** with a style affinity value, and it runs **every night**. Add a hundred new options today and they're style-scored by tomorrow morning with nobody tagging anything by hand. If a designer hand-corrects a tag, the nightly pass **leaves that human edit alone** — human judgment always outranks the model.
 
+### AI-generated Looks are built on REAL LIVE DATA (the key differentiator)
+StyleSmith AI™ composes from **two live sources inside the builder's own Cornerstone account, and nothing else**:
+1. **The builder's own design-center product catalog** — their actual options, option categories, spec levels, and live retail pricing. If StyleSmith AI™ proposes a faucet, that faucet is **in their catalog, at their price, orderable today**. It cannot suggest a product the builder doesn't carry, because it has nothing else to compose from.
+2. **The builder's curated Style Inspiration library** — the inspiration photography their design team uploads, which StyleSmith AI™ **auto-tags with vision** on upload (colors, materials, finishes, motifs — nobody hand-labels images) and rolls up into per-theme style signals that weight the composition. The builder's own design direction steers the look.
+
+**⚠️ ACCURACY GUARDRAIL on inspiration photos — do NOT overclaim (verified in app code 2026-08-22):**
+- Inspiration photos influence the composition at the **THEME level** (aggregated trend signals). There is **NO per-room photo-reference matching** — you cannot point at one photo for one room and have the composer match products to that image. The data column for it exists but is unused; the composer receives no image input, and option images are display-only and never affect ranking.
+- The Style Inspiration library is **curated by builder STAFF** (admin, superadmin, purchasing, sales). There is **no buyer-facing photo upload** — buyers cannot upload inspiration images. The only buyer-facing surface is the style quiz.
+- Per-room photo references are **roadmap, not shipped**. Say so plainly if asked.
+
+**Hammer this contrast — it is NOT:**
+- stock imagery of somebody else's house
+- a generic AI mood board the designer then has to go source
+- a scraped social feed (no Instagram/Pinterest APIs — nothing breaks when a platform changes its terms)
+
+**Why it matters:** a mood board hands the designer a research project. StyleSmith AI™ hands them a **priced, in-spec, orderable selection set**, because it was never able to imagine a product in the first place. Every suggestion is a real product the builder already sells.
+
+### It fills the Design Center — not inspiration-only
+The AI picks from the builder's **real product catalog within their own style guidelines** (their option categories, their spec levels, and what counts as standard vs. an upgrade in that specific community), and the output is **actual Design Center selections**, not a document:
+- It writes to the home's **real Design Center selection records** — the same rows a designer edits by hand. No export step, no re-keying a mood board into the system, no second source of truth.
+- Same **guarded write path** a person uses: approved/locked selections refused rather than overwritten, structural options never in scope, nothing auto-approved or auto-locked.
+- **Priced as it goes** — live retail pricing per line, so the buyer sees the number at the same moment they see the look.
+- From there the builder's **normal process is unchanged** — buyer approval, change orders, purchasing, POs. StyleSmith AI™ gets the house ~80% designed and fully priced before the appointment; it doesn't try to be the rest of the workflow.
+
+### Upgrade-level guardrails — the budget-trust feature (sell this hard)
+Plain version: **say "cap it at Upgrade II" and the whole composed Look stays at Upgrade II.** Every room, every category, every line.
+- The ceiling is applied **before it composes**, so nothing above the line ever enters the set. It is not a filter applied afterward and not a warning at the end.
+- **The floor** is the home's included spec level — it never proposes a downgrade below the tier the buyer already paid for.
+- **The ceiling** is whatever the builder says. "Stay at or below Upgrade II" holds strictly across the whole house.
+- **Nothing fits the band?** Honest "no in-spec candidate" and an open slot — never a quiet reach up a tier to look complete.
+- Net effect: an AI-composed look **cannot produce a surprise upgrade overage**. That's what makes it safe to let design staff run with unattended.
+
 ### What the composer actually guarantees
 - **Whole-home coherence** — one palette family and one metal/finish family for the entire house, so the hardware never fights the lighting.
 - **Flooring continuity** — flooring carries room to room by rule, not by habit.
@@ -52,7 +84,7 @@ Composing is **read-only** — the builder sees the entire priced set before any
 - **Structural options are never in scope** — design slots only.
 - **Nothing is auto-approved and nothing is auto-locked.** The builder's normal approval workflow remains the only way a selection locks.
 
-The StyleSmith AI™ page is **staff-only** (admin, design center, sales, and purchasing roles). Buyers do not have access to it.
+The StyleSmith AI™ page is **staff-only** — access roles are **admin, design, design center, and sales**. Buyers do not have access to it. (Corrected 2026-08-22 against the app's access check; "purchasing" is a *Style Inspiration curator* role, not a StyleSmith page role.)
 
 ### Buyer style quiz (LIVE, in the homeowner portal)
 Buyers can take a style quiz in the homeowner portal before their design appointment:
