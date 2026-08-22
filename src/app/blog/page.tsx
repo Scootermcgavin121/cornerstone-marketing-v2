@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "design-center-appointment-process-home-builders",
+    title: "How to Run a Design Center Appointment Without Losing the Budget",
+    excerpt:
+      "A design center appointment should end with a signed selection sheet that flows into the budget — not a PDF someone re-keys two days later. The step-by-step process: prep with community spec levels, anchor on designer packages, use exclusion groups to prevent impossible selections, promote standard finishes to paid upgrades with one spec-level change, and close with real vendor pricing in the running total.",
+    date: "August 22, 2026",
+    readTime: "7 min read",
+    tag: "Design Center",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/design-center-appointment.png",
+  },
+  {
     slug: "estimator-leaves-tribal-knowledge-home-builder-software",
     title: "What Happens to Your Budgets When Your Estimator Quits",
     excerpt:
