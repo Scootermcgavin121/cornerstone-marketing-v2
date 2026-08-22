@@ -17,6 +17,7 @@ import {
   Home as HomeIcon,
   Database,
   Ruler,
+  Fingerprint,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -49,7 +50,9 @@ const styleSmithSchema = buildFeatureSchema({
     "Honest gaps: reports 'no in-spec candidate' instead of substituting out of band",
     "Live retail pricing on every proposed selection — no cost data, no invented numbers",
     "AI-tagged catalog: every design option style-scored across all 10 themes, re-tagged automatically every night",
-    `Buyer style quiz — ${STYLESMITH_QUIZ_ROUNDS} photo this-or-that rounds plus style sliders, in the homeowner portal`,
+    `Buyer style quiz — ${STYLESMITH_QUIZ_ROUNDS} photo this-or-that rounds plus style sliders, in the homeowner portal (early access, enabled per account)`,
+    "Tailored per buyer rather than a fixed bundle — two buyers on the same street don't end up with the same house",
+    "Also drafts static Design Packages on demand, so builders get both bespoke composition and a package factory",
     "Buyer style profile biases the composition toward the buyer's taste before the design appointment",
     "Explains why a look works, swaps individual selections, starts over clean",
     "Applies to the home's real Design Center selections through the same guarded write path as manual selection",
@@ -177,11 +180,15 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Can buyers tell you their style before the design appointment?",
-    a: `Yes. There's a style quiz in the homeowner portal: ${STYLESMITH_QUIZ_ROUNDS} photo this-or-that rounds plus a few style sliders (warm to cool, light to dark, classic to modern). The pairs are blind — the buyer just picks the room they like. The result is a personal style profile that biases StyleSmith AI™'s composition toward that buyer's taste, so your designer walks into the appointment already knowing where to start.`,
+    a: `Yes. There's a style quiz in the homeowner portal: ${STYLESMITH_QUIZ_ROUNDS} photo this-or-that rounds plus a few style sliders (warm to cool, light to dark, classic to modern). The pairs are blind — the buyer just picks the room they like. The result is a personal style profile that biases StyleSmith AI™'s composition toward that buyer's taste, so your designer walks into the appointment already knowing where to start. On availability: the quiz is part of the StyleSmith AI™ early-access rollout and is switched on per account, so it isn't enabled for every Pro+ and Enterprise org by default yet — ask us where your account sits.`,
+  },
+  {
+    q: "How is this different from just offering design packages?",
+    a: "A fixed package solves your problem, not the buyer's. Three families on the same street pick “Package B” and end up with the same kitchen, the same floors, the same everything — and they all notice. StyleSmith AI™ composes against that specific buyer instead: their style profile, their spec level, their upgrade ceiling, the look they keep coming back to. Same catalog and the same guidelines every time, but a genuinely different house each time — and the palette still holds together, because it was composed as one house rather than assembled from à la carte swaps that quietly break it.",
   },
   {
     q: "Can it build our Design Packages too?",
-    a: "Yes. Give it a theme and a spec level and StyleSmith AI™ drafts a full builder Design Package for review. It comes in as a draft — it can't be used by buyers until a human publishes it — and it deliberately leaves the package price to you. StyleSmith AI™ composes the design; the builder prices the bundle.",
+    a: "Yes — you don't have to choose between bespoke and packages. Plenty of builders want curated bundles anyway, for spec homes, quick-move-in programs, or the buyer who would rather not decide. Give StyleSmith AI™ a theme and a spec level and it drafts a full builder Design Package for review. It arrives as a draft — buyers can't use it until a human publishes it — and it deliberately leaves the bundle price to you. StyleSmith AI™ composes the design; the builder prices it. So the same agent gives you bespoke composition per buyer and a package factory when you want a shelf of ready-made looks.",
   },
   {
     q: "Where do the style trends come from?",
@@ -545,6 +552,99 @@ export default function StyleSmithPage() {
         </div>
       </section>
 
+      {/* ═══════════ BESPOKE, NOT BOILERPLATE ═══════════ */}
+      <section className="py-20 px-4 border-t border-slate-800/60">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rose-500/10 border border-rose-500/20 text-rose-300 text-xs font-bold uppercase tracking-widest mb-6">
+              <Fingerprint className="w-3.5 h-3.5" /> Bespoke, not boilerplate
+            </div>
+            <h2 className="text-4xl sm:text-5xl font-black tracking-tight mb-5">
+              Your buyer doesn&apos;t get{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-300 to-violet-400">
+                the neighbor&apos;s house.
+              </span>
+            </h2>
+            <p className="text-slate-400 text-lg max-w-3xl mx-auto leading-relaxed">
+              A fixed design package solves the builder&apos;s problem, not the
+              buyer&apos;s. Three families on the same street all pick
+              &ldquo;Package B&rdquo; and end up with the same kitchen, the same
+              floors, the same everything — and every one of them notices at the
+              block party.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+            <div className="p-7 rounded-2xl bg-slate-900/60 border border-slate-800">
+              <div className="text-xs uppercase tracking-widest text-slate-500 font-bold mb-4">
+                A static package
+              </div>
+              <ul className="space-y-3 text-slate-400 text-sm leading-relaxed">
+                {[
+                  "One of three or four fixed bundles, take it or leave it.",
+                  "The buyer bends their taste to fit a package somebody wrote last year.",
+                  "Personalization means à la carte swaps that quietly break the palette.",
+                  "Identical houses, three doors apart.",
+                ].map((t) => (
+                  <li key={t} className="flex gap-3">
+                    <X className="w-4 h-4 text-slate-600 flex-shrink-0 mt-0.5" />
+                    <span>{t}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="p-7 rounded-2xl bg-gradient-to-br from-rose-500/10 to-violet-500/5 border border-rose-500/25">
+              <div className="text-xs uppercase tracking-widest text-rose-300 font-bold mb-4">
+                With StyleSmith AI™
+              </div>
+              <ul className="space-y-3 text-slate-300 text-sm leading-relaxed">
+                {[
+                  "You feed it this buyer's specifics — their style profile, their spec level, their ceiling, the look they keep coming back to.",
+                  "It composes for that house, from your catalog, against your guidelines.",
+                  "The palette holds together because it was composed as one house, not assembled from swaps.",
+                  "Same catalog, same rules, genuinely different result every time.",
+                ].map((t) => (
+                  <li key={t} className="flex gap-3">
+                    <Check className="w-4 h-4 text-rose-300 flex-shrink-0 mt-0.5" />
+                    <span>{t}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* …and it builds your packages too */}
+          <div className="p-7 sm:p-9 rounded-2xl bg-slate-900/50 border border-slate-800">
+            <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-6 items-start">
+              <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center flex-shrink-0">
+                <Package className="w-6 h-6 text-amber-300" />
+              </div>
+              <div>
+                <h3 className="text-xl sm:text-2xl font-black mb-3">
+                  Still want packages? It builds those for you too.
+                </h3>
+                <p className="text-slate-400 leading-relaxed mb-4">
+                  Plenty of builders want curated packages anyway — for spec homes,
+                  for a quick-move-in program, for the buyer who would genuinely
+                  rather not decide. StyleSmith AI™ drafts those as well: hand it a
+                  theme and a spec level and it composes a complete Design Package
+                  for your review.
+                </p>
+                <p className="text-slate-300 leading-relaxed">
+                  So you don&apos;t have to choose.{" "}
+                  <span className="text-white font-semibold">
+                    Bespoke for the buyer who wants their own house, and a package
+                    factory for when you want a shelf of ready-made looks
+                  </span>{" "}
+                  — out of the same catalog, under the same guidelines, from the
+                  same agent.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ═══════════ INTO THE DESIGN CENTER ═══════════ */}
       <section className="py-20 px-4 border-t border-slate-800/60">
         <div className="max-w-6xl mx-auto">
@@ -743,7 +843,7 @@ export default function StyleSmithPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-sm font-semibold uppercase tracking-widest mb-6">
-              <ImageIcon className="w-4 h-4" /> Buyer style quiz · Live
+              <ImageIcon className="w-4 h-4" /> Buyer style quiz · Early access
             </div>
             <h2 className="text-3xl sm:text-4xl font-black tracking-tight mb-5">
               Know their taste before they sit down.
@@ -763,11 +863,20 @@ export default function StyleSmithPage() {
               like. What comes out is a real style profile — a personal blend
               across the {STYLESMITH_THEME_COUNT} looks.
             </p>
-            <p className="text-slate-400 leading-relaxed">
+            <p className="text-slate-400 leading-relaxed mb-6">
               That profile then biases StyleSmith AI™&apos;s composition. Your designer
               opens the appointment with a house already leaning the buyer&apos;s
               direction — which is a very different conversation from &ldquo;so, what
               are you thinking?&rdquo;
+            </p>
+            <p className="text-slate-500 text-sm leading-relaxed p-4 rounded-xl bg-slate-900/50 border border-slate-800">
+              <span className="text-slate-300 font-semibold">Availability:</span> the
+              buyer style quiz is part of the StyleSmith AI™{" "}
+              <Link href="/beta" className="text-cyan-400 hover:text-cyan-300 font-semibold">
+                early-access rollout
+              </Link>{" "}
+              and is switched on per account — it is not yet turned on for every
+              Pro+ and Enterprise org by default. Ask us where your account sits.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

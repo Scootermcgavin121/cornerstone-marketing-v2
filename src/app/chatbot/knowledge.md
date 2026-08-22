@@ -63,6 +63,13 @@ The AI picks from the builder's **real product catalog within their own style gu
 - **Priced as it goes** — live retail pricing per line, so the buyer sees the number at the same moment they see the look.
 - From there the builder's **normal process is unchanged** — buyer approval, change orders, purchasing, POs. StyleSmith AI™ gets the house ~80% designed and fully priced before the appointment; it doesn't try to be the rest of the workflow.
 
+### Bespoke, not boilerplate — vs. static design packages (the emotional hook)
+**The differentiator:** a fixed design package solves the *builder's* problem, not the buyer's. Three families on the same street pick "Package B" and end up with the same kitchen, same floors, same everything — and they all notice.
+
+StyleSmith AI™ composes against **that specific buyer** instead: their style profile (from the quiz), their spec level, their upgrade ceiling, and the look they keep coming back to. Same catalog and same guidelines every time, but a genuinely different house each time. The palette still holds together because it was **composed as one house**, not assembled from à la carte swaps that quietly break it.
+
+**AND it builds static packages too — it's both, not either/or.** Plenty of builders still want curated bundles (spec homes, quick-move-in programs, buyers who'd rather not decide). Hand StyleSmith AI™ a theme and a spec level and it **drafts a complete Design Package** for review — arriving as a draft buyers can't use until a human publishes it, with the bundle price deliberately left to the builder. So: **bespoke per buyer AND a package factory**, out of the same catalog, under the same guidelines, from the same agent.
+
 ### Upgrade-level guardrails — the budget-trust feature (sell this hard)
 Plain version: **say "cap it at Upgrade II" and the whole composed Look stays at Upgrade II.** Every room, every category, every line.
 - The ceiling is applied **before it composes**, so nothing above the line ever enters the set. It is not a filter applied afterward and not a warning at the end.
@@ -86,7 +93,9 @@ Composing is **read-only** — the builder sees the entire priced set before any
 
 The StyleSmith AI™ page is **staff-only** — access roles are **admin, design, design center, and sales**. Buyers do not have access to it. (Corrected 2026-08-22 against the app's access check; "purchasing" is a *Style Inspiration curator* role, not a StyleSmith page role.)
 
-### Buyer style quiz (LIVE, in the homeowner portal)
+### Buyer style quiz (EARLY ACCESS — enabled per account, in the homeowner portal)
+⚠️ **Availability framing (corrected 2026-08-22):** the quiz is **feature-gated per organization** in the app, not switched on for every Pro+/Enterprise org by default. Frame it as part of the StyleSmith AI™ **early-access rollout** — describe it as part of the product, but **do NOT promise general availability**. If asked, say it's enabled per account and point them at Request Early Access.
+
 Buyers can take a style quiz in the homeowner portal before their design appointment:
 - **12 photo "this-or-that" rounds** — two rooms, pick the one you like
 - **3 style sliders** — warm↔cool, light↔dark, classic↔modern

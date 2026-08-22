@@ -38,7 +38,8 @@ const designSchema = buildFeatureSchema({
     "Selection Sheet PDF (grouped By Category or By Room) for buyers and office",
     "Trade Copy selection sheet with zero pricing — auto-saved to the home's Documents",
     "StyleSmith AI™ — AI interior design agent that composes a complete whole-home selection set across 10 style themes and writes it into the Design Center (Pro+ and Enterprise)",
-    "Buyer style quiz in the homeowner portal — photo this-or-that rounds produce a personal style profile before the design appointment",
+    "Buyer style quiz in the homeowner portal — photo this-or-that rounds produce a personal style profile before the design appointment (early access, enabled per account)",
+    "Tailored per buyer instead of a fixed bundle — and it drafts static Design Packages too, so builders get both",
   ],
 });
 
@@ -106,7 +107,7 @@ const faqItems: FAQItem[] = [
   },
   {
     q: "Can buyers tell us their style before the design appointment?",
-    a: "Yes. The homeowner portal includes a style quiz: 12 photo this-or-that rounds plus three sliders (warm to cool, light to dark, classic to modern). The pairs are blind — no style labels are shown — so buyers answer with what they actually like. The result is a personal style profile that biases StyleSmith AI™'s composition toward that buyer's taste, so your designer starts the appointment with a house already leaning the right direction instead of a blank slate.",
+    a: "Yes. The homeowner portal includes a style quiz: 12 photo this-or-that rounds plus three sliders (warm to cool, light to dark, classic to modern). The pairs are blind — no style labels are shown — so buyers answer with what they actually like. The result is a personal style profile that biases StyleSmith AI™'s composition toward that buyer's taste, so your designer starts the appointment with a house already leaning the right direction instead of a blank slate. The quiz is part of the StyleSmith AI™ early-access rollout and is enabled per account rather than switched on for every Pro+ and Enterprise org by default.",
   },
   {
     q: "What does design center software cost?",
@@ -209,13 +210,22 @@ export default function DesignPage() {
                   and the whole look stays there. Then it writes the set into the home&apos;s
                   real selections — on your say-so.
                 </p>
+                <p className="text-slate-300 leading-relaxed mb-4">
+                  Because it composes against{" "}
+                  <span className="text-white font-semibold">that buyer</span> — their style
+                  profile, their spec level, their ceiling — two families on the same street
+                  don&apos;t end up with the same kitchen. And when you do want fixed bundles,
+                  StyleSmith AI™ drafts those too: bespoke per buyer{" "}
+                  <span className="text-white font-semibold">and</span> a package factory, from
+                  the same catalog.
+                </p>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mb-6 text-sm text-slate-400">
                   {[
                     "Real products from your own catalog — not stock imagery",
                     "10 style themes, every option scored nightly",
                     "Flooring continuity room to room",
                     "Holds your spec band — the included floor and your ceiling",
-                    "Honest gaps instead of silent upgrades",
+                    "Buyer style quiz feeds the composition (early access)",
                     "Drafts full Design Packages for review",
                   ].map((li) => (
                     <li key={li} className="flex items-start gap-2">
