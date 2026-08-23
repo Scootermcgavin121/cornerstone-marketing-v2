@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "planswift-stack-takeoff-vs-cornerstone-ai-takeoff",
+    title: "PlanSwift and STACK vs Cornerstone: A Takeoff Tool Is Not a Build System",
+    excerpt:
+      "PlanSwift and STACK are mature, precise measuring tools — and that is exactly the limit. A quantity list is where the job starts, not where it ends. For production home builders, the gap between a measure and a purchase order in QuickBooks runs through vendor bids, community-level awards, a design center, and auto-generated POs. None of those live in a takeoff tool.",
+    date: "August 23, 2026",
+    readTime: "7 min read",
+    tag: "AI Takeoff",
+    tagColor: "text-sky-400 bg-sky-500/10 border-sky-500/20",
+    heroImage: "/blog/planswift-stack-vs-cornerstone.png",
+  },
+  {
     slug: "design-center-appointment-process-home-builders",
     title: "How to Run a Design Center Appointment Without Losing the Budget",
     excerpt:
