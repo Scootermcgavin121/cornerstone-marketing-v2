@@ -1314,8 +1314,9 @@
       "wordCount": 1150,
       "heroImage": "/blog/planswift-stack-vs-cornerstone.png",
       "heroImageAlt": "PlanSwift STACK takeoff alternative for home builders — digital measuring tool compared with an end-to-end AI takeoff and purchasing platform",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "8fa5385",
+      "publishedAt": "2026-08-23T14:05:17.265Z"
     },
     {
       "slug": "home-builder-software-implementation-timeline-week-one",
