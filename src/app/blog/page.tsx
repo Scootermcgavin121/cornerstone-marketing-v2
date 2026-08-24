@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "home-builder-software-implementation-timeline-week-one",
+    title: "What Week One on New Home Builder Software Actually Looks Like",
+    excerpt:
+      "The fear of a six-month implementation is the single biggest reason builders stay on software they already dislike. A realistic day-by-day look at what week one on modern home builder software actually involves: AI data import, community setup, schedule templates, bid requests out to vendors, QuickBooks connected, and the design center live — before week two starts.",
+    date: "August 24, 2026",
+    readTime: "7 min read",
+    tag: "Getting Started",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/implementation-timeline-week-one.png",
+  },
+  {
     slug: "planswift-stack-takeoff-vs-cornerstone-ai-takeoff",
     title: "PlanSwift and STACK vs Cornerstone: A Takeoff Tool Is Not a Build System",
     excerpt:
