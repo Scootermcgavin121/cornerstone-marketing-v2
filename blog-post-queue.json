@@ -1329,8 +1329,9 @@
       "wordCount": 1100,
       "heroImage": "/blog/implementation-timeline-week-one.png",
       "heroImageAlt": "Home builder software implementation timeline — week one setup checklist for communities, floorplans, vendors, and bids",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "4f0ab2d",
+      "publishedAt": "2026-08-24T14:06:22.647Z"
     },
     {
       "slug": "stylesmith-ai-interior-design-agent-home-builders",
