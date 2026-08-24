@@ -1334,34 +1334,6 @@
       "publishedAt": "2026-08-24T14:06:22.647Z"
     },
     {
-      "slug": "stylesmith-ai-interior-design-agent-home-builders",
-      "title": "AI Interior Design for Home Builders: How StyleSmith AI™ Composes a Whole House",
-      "metaDescription": "StyleSmith AI composes a complete, priced design selection set for one specific home from your own catalog, then writes it into the real Design Center.",
-      "primaryKeyword": "AI interior design for home builders",
-      "hub": "/stylesmith",
-      "angle": "Feature deep-dive on StyleSmith AI™ — Cornerstone's in-app AI interior design agent, available on Pro+ and Enterprise. Open with the designer's actual job: turning a buyer's vague \"I like warm and modern\" into flooring, tile, cabinets, counters, plumbing, lighting, and hardware that hold together across the whole house. Explain what the agent does — name a home and one of ten style themes (Modern Farmhouse, Coastal, Contemporary, Organic Modern, Scandinavian, Industrial Loft, Classic Traditional, Transitional, Mid-Century Modern, Craftsman) and it composes the complete set, priced line by line at the builder's own retail pricing. Emphasize the four guarantees: one palette family and one metal-and-finish family for the entire house so hardware never fights lighting, flooring continuity by rule rather than habit, the home's included spec level as a hard floor, and honest gaps that report \"no in-spec candidate\" instead of quietly reaching up a tier. Cover the write path carefully — composing is read-only, applying is an explicit command, approved and locked selections are refused rather than overwritten, structural options are never in scope, and nothing is auto-approved or auto-locked. Note that catalog style-tagging is automated nightly against all ten themes and that hand-corrected tags are never overwritten. Be explicit that AI concept renderings and the buyer self-serve \"Design My Home\" flow are not available yet. Link to /stylesmith and /design.",
-      "schema": "FAQPage",
-      "wordCount": 1200,
-      "heroImage": "/blog/stylesmith-ai-interior-design-agent.png",
-      "heroImageAlt": "AI interior design for home builders — StyleSmith AI composing a whole-home selection set across ten style themes",
-      "status": "pending",
-      "publishedCommit": null
-    },
-    {
-      "slug": "ai-design-tools-suggest-products-you-dont-sell",
-      "title": "Why Most AI Design Tools Suggest Products You Don't Even Sell",
-      "metaDescription": "Generic AI mood boards hand designers a sourcing project. Here is why composing from your own live catalog and retail pricing changes the entire workflow.",
-      "primaryKeyword": "AI design tool home builder catalog",
-      "hub": "/stylesmith",
-      "angle": "Pain-point post aimed at builders who have already tried a generic AI design tool and quietly stopped using it. The failure mode is always the same: the tool produces a beautiful board full of products the builder does not carry, at prices that are not theirs, and the designer now has a research project instead of a selection set. Diagnose why — general-purpose models compose from the open internet, so sourcing, pricing, spec-level checking, and re-keying all land on a human afterward. Contrast with the Cornerstone approach, where StyleSmith AI composes from exactly two live sources inside the builder's own account: their design-center catalog with its real option categories, spec levels, and live retail pricing, and their staff-curated Style Inspiration library, which is vision-tagged on upload and rolled into per-theme signals. The consequence is the headline: it cannot propose a product the builder does not sell, because it has nothing else to compose from. Every line is orderable today at the builder's own price. Be precise about the limits — inspiration photos influence composition at the theme level only, there is no per-room photo matching, that is roadmap and not shipped, and there is no buyer-facing photo upload. Also note there are no Instagram or Pinterest API dependencies, so nothing breaks when a platform changes its terms. Tie back to the platform-wide hard cost rule: unpriced lines read as unpriced rather than getting a guessed number. Link to /stylesmith and /design.",
-      "schema": null,
-      "wordCount": 1000,
-      "heroImage": "/blog/ai-design-tools-real-catalog.png",
-      "heroImageAlt": "AI design tool for home builders composing from a real product catalog with live retail pricing instead of stock mood board imagery",
-      "status": "pending",
-      "publishedCommit": null
-    },
-    {
       "slug": "vendor-insurance-coi-expiration-tracking-home-builders",
       "title": "Vendor Insurance Tracking: How to Stop Letting Expired COIs Onto Your Jobsite",
       "metaDescription": "A practical system for tracking subcontractor COIs, W-9s, and license expiration dates so an uninsured trade never frames a house that you are liable for.",
@@ -1416,6 +1388,36 @@
       "heroImageAlt": "MLS listing generator for home builders — AI-written spec home listing sheet built from live room dimensions, upgrades, and design selections",
       "status": "pending",
       "publishedCommit": null
+    },
+    {
+      "slug": "stylesmith-ai-interior-design-agent-home-builders",
+      "title": "AI Interior Design for Home Builders: How StyleSmith AI™ Composes a Whole House",
+      "metaDescription": "StyleSmith AI composes a complete, priced design selection set for one specific home from your own catalog, then writes it into the real Design Center.",
+      "primaryKeyword": "AI interior design for home builders",
+      "hub": "/stylesmith",
+      "angle": "Feature deep-dive on StyleSmith AI™ — Cornerstone's in-app AI interior design agent, available on Pro+ and Enterprise. Open with the designer's actual job: turning a buyer's vague \"I like warm and modern\" into flooring, tile, cabinets, counters, plumbing, lighting, and hardware that hold together across the whole house. Explain what the agent does — name a home and one of ten style themes (Modern Farmhouse, Coastal, Contemporary, Organic Modern, Scandinavian, Industrial Loft, Classic Traditional, Transitional, Mid-Century Modern, Craftsman) and it composes the complete set, priced line by line at the builder's own retail pricing. Emphasize the four guarantees: one palette family and one metal-and-finish family for the entire house so hardware never fights lighting, flooring continuity by rule rather than habit, the home's included spec level as a hard floor, and honest gaps that report \"no in-spec candidate\" instead of quietly reaching up a tier. Cover the write path carefully — composing is read-only, applying is an explicit command, approved and locked selections are refused rather than overwritten, structural options are never in scope, and nothing is auto-approved or auto-locked. Note that catalog style-tagging is automated nightly against all ten themes and that hand-corrected tags are never overwritten. Be explicit that AI concept renderings and the buyer self-serve \"Design My Home\" flow are not available yet. Link to /stylesmith and /design.",
+      "schema": "FAQPage",
+      "wordCount": 1200,
+      "heroImage": "/blog/stylesmith-ai-interior-design-agent.png",
+      "heroImageAlt": "AI interior design for home builders — StyleSmith AI composing a whole-home selection set across ten style themes",
+      "status": "on-hold-patent",
+      "publishedCommit": null,
+      "holdReason": "HOLD until StyleSmith provisional patent is filed. Angle describes claim mechanisms; publishing creates prior art against our own filing. See agents/website-builder/patent-filing/00-DISCLOSURE-CLOCK.md"
+    },
+    {
+      "slug": "ai-design-tools-suggest-products-you-dont-sell",
+      "title": "Why Most AI Design Tools Suggest Products You Don't Even Sell",
+      "metaDescription": "Generic AI mood boards hand designers a sourcing project. Here is why composing from your own live catalog and retail pricing changes the entire workflow.",
+      "primaryKeyword": "AI design tool home builder catalog",
+      "hub": "/stylesmith",
+      "angle": "Pain-point post aimed at builders who have already tried a generic AI design tool and quietly stopped using it. The failure mode is always the same: the tool produces a beautiful board full of products the builder does not carry, at prices that are not theirs, and the designer now has a research project instead of a selection set. Diagnose why — general-purpose models compose from the open internet, so sourcing, pricing, spec-level checking, and re-keying all land on a human afterward. Contrast with the Cornerstone approach, where StyleSmith AI composes from exactly two live sources inside the builder's own account: their design-center catalog with its real option categories, spec levels, and live retail pricing, and their staff-curated Style Inspiration library, which is vision-tagged on upload and rolled into per-theme signals. The consequence is the headline: it cannot propose a product the builder does not sell, because it has nothing else to compose from. Every line is orderable today at the builder's own price. Be precise about the limits — inspiration photos influence composition at the theme level only, there is no per-room photo matching, that is roadmap and not shipped, and there is no buyer-facing photo upload. Also note there are no Instagram or Pinterest API dependencies, so nothing breaks when a platform changes its terms. Tie back to the platform-wide hard cost rule: unpriced lines read as unpriced rather than getting a guessed number. Link to /stylesmith and /design.",
+      "schema": null,
+      "wordCount": 1000,
+      "heroImage": "/blog/ai-design-tools-real-catalog.png",
+      "heroImageAlt": "AI design tool for home builders composing from a real product catalog with live retail pricing instead of stock mood board imagery",
+      "status": "on-hold-patent",
+      "publishedCommit": null,
+      "holdReason": "HOLD until StyleSmith provisional patent is filed. Angle describes claim mechanisms; publishing creates prior art against our own filing. See agents/website-builder/patent-filing/00-DISCLOSURE-CLOCK.md"
     }
   ]
 }
