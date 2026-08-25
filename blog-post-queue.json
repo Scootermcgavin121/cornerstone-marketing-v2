@@ -1344,8 +1344,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/vendor-insurance-coi-tracking.png",
       "heroImageAlt": "Vendor insurance tracking for home builders — subcontractor COI expiration dashboard with 30-day renewal notifications",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "3633123",
+      "publishedAt": "2026-08-25T14:05:58.314Z"
     },
     {
       "slug": "permitting-pipeline-sales-to-construction-handoff-home-builders",
