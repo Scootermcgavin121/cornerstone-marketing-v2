@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "vendor-insurance-coi-expiration-tracking-home-builders",
+    title: "Vendor Insurance Tracking: How to Stop Letting Expired COIs Onto Your Jobsite",
+    excerpt:
+      "Most builders discover that a subcontractor's COI lapsed either during a random audit or after an incident — neither is a good system. Automated 30-day expiration notices, a no-login vendor portal for certificate uploads, and an admin dashboard that surfaces non-compliant trades before scheduling decisions remove the spreadsheet entirely.",
+    date: "August 25, 2026",
+    readTime: "6 min read",
+    tag: "Scheduling",
+    tagColor: "text-sky-400 bg-sky-500/10 border-sky-500/20",
+    heroImage: "/blog/vendor-insurance-coi-tracking.png",
+  },
+  {
     slug: "home-builder-software-implementation-timeline-week-one",
     title: "What Week One on New Home Builder Software Actually Looks Like",
     excerpt:
