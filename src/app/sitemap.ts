@@ -158,6 +158,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/planswift-stack-takeoff-vs-cornerstone-ai-takeoff", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/vendor-insurance-coi-expiration-tracking-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/home-builder-software-implementation-timeline-week-one", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/permitting-pipeline-sales-to-construction-handoff-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({

@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "permitting-pipeline-sales-to-construction-handoff-home-builders",
+    title: "The Sales-to-Construction Handoff Is Where Home Builders Lose Two Weeks",
+    excerpt:
+      "Sales marks a home sold and considers the deal closed. Construction isn't yet aware — and a signed contract sits while nobody builds the schedule. How a permitting pipeline with an auto-transition trigger, urgency badges, and one-click template setup closes the gap between contract and first trade on the lot.",
+    date: "August 26, 2026",
+    readTime: "7 min read",
+    tag: "Scheduling",
+    tagColor: "text-sky-400 bg-sky-500/10 border-sky-500/20",
+    heroImage: "/blog/permitting-pipeline-handoff.png",
+  },
+  {
     slug: "vendor-insurance-coi-expiration-tracking-home-builders",
     title: "Vendor Insurance Tracking: How to Stop Letting Expired COIs Onto Your Jobsite",
     excerpt:
