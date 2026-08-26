@@ -1359,8 +1359,9 @@
       "wordCount": 1100,
       "heroImage": "/blog/permitting-pipeline-handoff.png",
       "heroImageAlt": "Sales to construction handoff for home builders — permitting pipeline dashboard tracking template setup and permit approval status",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "415c183",
+      "publishedAt": "2026-08-26T22:53:24.230Z"
     },
     {
       "slug": "notion-airtable-vs-cornerstone-home-builder-software",
