@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "notion-airtable-vs-cornerstone-home-builder-software",
+    title: "Notion and Airtable vs. Purpose-Built Home Builder Software",
+    excerpt:
+      "Notion and Airtable can model almost anything — communities, lots, vendors, tasks. And then the framing trade slips three days, nobody downstream is notified, and the purchase order still has to be typed by hand into QuickBooks. What flexible workspaces cannot do for production home builders, no matter how the database is structured.",
+    date: "August 27, 2026",
+    readTime: "7 min read",
+    tag: "Comparisons",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/notion-airtable-vs-builder-software.png",
+  },
+  {
     slug: "permitting-pipeline-sales-to-construction-handoff-home-builders",
     title: "The Sales-to-Construction Handoff Is Where Home Builders Lose Two Weeks",
     excerpt:
