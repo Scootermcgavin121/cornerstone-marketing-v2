@@ -1374,8 +1374,9 @@
       "wordCount": 1100,
       "heroImage": "/blog/notion-airtable-vs-builder-software.png",
       "heroImageAlt": "Notion vs home builder software comparison — flexible workspace tables versus purpose-built construction scheduling and takeoff",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "79b0439",
+      "publishedAt": "2026-08-27T14:08:10.098Z"
     },
     {
       "slug": "ai-mls-listing-sheet-spec-homes-home-builders",
