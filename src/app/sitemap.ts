@@ -160,6 +160,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/home-builder-software-implementation-timeline-week-one", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/permitting-pipeline-sales-to-construction-handoff-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/notion-airtable-vs-cornerstone-home-builder-software", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/ai-mls-listing-sheet-spec-homes-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({

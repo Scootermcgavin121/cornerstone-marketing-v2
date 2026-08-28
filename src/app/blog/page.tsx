@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "ai-mls-listing-sheet-spec-homes-home-builders",
+    title: "Your Spec Home Already Wrote Its Own MLS Listing",
+    excerpt:
+      "Room dimensions, structural upgrades, and design selections already live in your build data. A one-click AI listing sheet pulls all of it — Blueprint AI room dimensions, community info, design center selections by category — and writes unique MLS copy for every spec home, with a word-count slider from 50 to 1,000 words. No re-keying, no research task, no calls to the design coordinator.",
+    date: "August 28, 2026",
+    readTime: "6 min read",
+    tag: "Sales",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/ai-mls-listing-sheet.png",
+  },
+  {
     slug: "notion-airtable-vs-cornerstone-home-builder-software",
     title: "Notion and Airtable vs. Purpose-Built Home Builder Software",
     excerpt:
