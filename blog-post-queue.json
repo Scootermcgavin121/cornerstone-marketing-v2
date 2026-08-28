@@ -1389,8 +1389,9 @@
       "wordCount": 950,
       "heroImage": "/blog/ai-mls-listing-sheet.png",
       "heroImageAlt": "MLS listing generator for home builders — AI-written spec home listing sheet built from live room dimensions, upgrades, and design selections",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "2768bdc",
+      "publishedAt": "2026-08-28T14:07:08.444Z"
     },
     {
       "slug": "stylesmith-ai-interior-design-agent-home-builders",
