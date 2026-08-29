@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "what-is-a-production-home-builder",
+    title: "What Is a Production Home Builder? The Five Workflows That Set Them Apart",
+    excerpt:
+      "A production home builder sells homes from a fixed catalog of floorplans and builds the same designs repeatedly across communities. Understanding the five defining workflows — plan repeats, community management, buyer design center, vendor bidding, and template scheduling — is the starting point for choosing software that actually fits the business model.",
+    date: "August 29, 2026",
+    readTime: "6 min read",
+    tag: "Getting Started",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/production-builder-software.png",
+  },
+  {
     slug: "ai-mls-listing-sheet-spec-homes-home-builders",
     title: "Your Spec Home Already Wrote Its Own MLS Listing",
     excerpt:
