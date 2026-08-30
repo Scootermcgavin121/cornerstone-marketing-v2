@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "auto-po-task-completion-construction-purchasing",
+    title: "Task Complete, PO Sent: How Production Builders Automate Their Purchasing Loop",
+    excerpt:
+      "When a schedule task is marked complete in Cornerstone, the purchase order generates itself, emails the vendor, and posts to QuickBooks as a commitment — without anyone opening the purchasing screen. How auto-POs eliminate the hand-off gap between scheduling and purchasing.",
+    date: "August 30, 2026",
+    readTime: "6 min read",
+    tag: "Purchasing",
+    tagColor: "text-amber-400 bg-amber-500/10 border-amber-500/20",
+    heroImage: "/blog/auto-po-task-completion-construction-purchasing.png",
+  },
+  {
     slug: "what-is-a-production-home-builder",
     title: "What Is a Production Home Builder? The Five Workflows That Set Them Apart",
     excerpt:
