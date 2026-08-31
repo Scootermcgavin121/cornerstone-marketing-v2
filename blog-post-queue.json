@@ -1434,8 +1434,9 @@
       "wordCount": 900,
       "heroImage": "/blog/lock-awarded-vendor-bids-home-builders.png",
       "heroImageAlt": "Lock awarded vendor bids dashboard for production home builders",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "3dae7ab",
+      "publishedAt": "2026-08-31T14:06:02.102Z"
     },
     {
       "slug": "subcontractor-bid-status-tracking-home-builders",
