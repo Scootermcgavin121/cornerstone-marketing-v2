@@ -1422,6 +1422,76 @@
       "status": "on-hold-patent",
       "publishedCommit": null,
       "holdReason": "HOLD until StyleSmith provisional patent is filed. Angle describes claim mechanisms; publishing creates prior art against our own filing. See agents/website-builder/patent-filing/00-DISCLOSURE-CLOCK.md"
+    },
+    {
+      "slug": "lock-awarded-vendor-bids-home-builders",
+      "title": "Lock the Price After Award: Protecting Vendor Bids From Cost Drift",
+      "metaDescription": "Protect awarded vendor pricing from last-minute edits with locked bids, traceable decisions, and community-specific cost control for production home builders.",
+      "primaryKeyword": "lock awarded vendor bids",
+      "hub": "/purchasing",
+      "angle": "Explain why an accepted quote should become a durable purchasing record instead of remaining an editable spreadsheet. Show how Cornerstone locks awarded bids so neither the builder nor vendor can quietly change pricing after acceptance. Connect the lock to community-specific vendor awards, accepted-vendor pricing, and budgets where every dollar traces to a real bid. Position this as protection against cost drift, disputes, and broken audit trails.",
+      "schema": "FAQPage",
+      "wordCount": 900,
+      "heroImage": "/blog/lock-awarded-vendor-bids-home-builders.png",
+      "heroImageAlt": "Lock awarded vendor bids dashboard for production home builders",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "subcontractor-bid-status-tracking-home-builders",
+      "title": "Invited, Viewed, Submitted, Declined: Track Every Subcontractor Bid",
+      "metaDescription": "Track every subcontractor bid from invitation through viewed, submitted, or declined, so purchasing teams know exactly who needs a follow-up and when.",
+      "primaryKeyword": "subcontractor bid tracking",
+      "hub": "/purchasing",
+      "angle": "Turn the common question of whether a vendor ever opened the bid request into a practical workflow. Walk through the invited, viewed, submitted, and declined states and show how each status changes the purchasing team's next action. Explain how Cornerstone pairs status visibility with deadline tracking and a no-login vendor portal. Emphasize fewer blind follow-ups and a faster path to a complete comparison set.",
+      "schema": "HowTo",
+      "wordCount": 850,
+      "heroImage": "/blog/subcontractor-bid-status-tracking-home-builders.png",
+      "heroImageAlt": "Subcontractor bid tracking statuses for home builders",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "scope-filtered-excel-bid-templates-home-builders",
+      "title": "Stop Cleaning Up Vendor Quotes: Scope-Filtered Excel Bid Templates",
+      "metaDescription": "Give every vendor a scope-filtered Excel bid template that standardizes quotes, reduces missing line items, and makes side-by-side comparisons faster.",
+      "primaryKeyword": "construction bid template Excel",
+      "hub": "/purchasing",
+      "angle": "Show why quote comparison breaks when every subcontractor returns a different spreadsheet format. Explain how Cornerstone creates scope-filtered Excel templates with separate Base, Structural, and Designer tabs, then sends the right content to each trade. Follow the vendor's no-login download, upload, and submission experience. Tie standardized inputs to cleaner bid leveling without claiming that the platform automatically chooses the lowest bidder.",
+      "schema": "HowTo",
+      "wordCount": 1000,
+      "heroImage": "/blog/scope-filtered-excel-bid-templates-home-builders.png",
+      "heroImageAlt": "Construction bid template Excel workbook filtered by vendor scope",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "bluebeam-vs-cornerstone-home-builder-software",
+      "title": "Bluebeam vs Cornerstone PM: Plan Markup Tool or Home Builder Platform?",
+      "metaDescription": "Compare Bluebeam plan-review and markup tools with Cornerstone PM connected purchasing, scheduling, design, sales, and accounting workflows for builders.",
+      "primaryKeyword": "Bluebeam vs home builder software",
+      "hub": "/home-builder-project-management-software",
+      "angle": "Frame Bluebeam as a capable plan-review and document-markup tool rather than an end-to-end production home builder operating system. Contrast that category with Cornerstone's connected takeoff, bidding, purchasing, scheduling, design, sales, and one-way QuickBooks workflows. Help readers decide whether they need document collaboration, operational management, or both tools side by side. Keep the comparison factual and avoid implying that markup software is designed to replace the builder's full workflow.",
+      "schema": "FAQPage",
+      "wordCount": 1100,
+      "heroImage": "/blog/bluebeam-vs-cornerstone-home-builder-software.png",
+      "heroImageAlt": "Bluebeam vs home builder software workflow comparison",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "construction-purchasing-workflow-bid-to-purchase-order",
+      "title": "From Bid Request to Purchase Order: One Connected Purchasing Workflow",
+      "metaDescription": "Follow a construction purchase from bid request to vendor award and purchase order without rekeying scope, pricing, community, or floorplan data again.",
+      "primaryKeyword": "construction purchasing workflow",
+      "hub": "/purchasing",
+      "angle": "Map the handoffs between bid request, vendor response, comparison, award, accepted pricing, and purchase order. Highlight where disconnected tools force buyers to retype scopes, floorplans, community assignments, and prices. Show how Cornerstone carries awarded vendor pricing forward and keeps budgets grounded in accepted bids. Reinforce the purchasing hub with a practical end-to-end explanation focused on fewer handoff errors and stronger cost traceability.",
+      "schema": "HowTo",
+      "wordCount": 1050,
+      "heroImage": "/blog/construction-purchasing-workflow-bid-to-purchase-order.png",
+      "heroImageAlt": "Construction purchasing workflow from bid request to purchase order",
+      "status": "pending",
+      "publishedCommit": null
     }
   ]
 }
