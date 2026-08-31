@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "lock-awarded-vendor-bids-home-builders",
+    title: "Lock the Price After Award: Protecting Vendor Bids From Cost Drift",
+    excerpt:
+      "Once a vendor accepts an award, the price should be a record — not a suggestion. Locked bids in Cornerstone PM freeze the agreed number so neither the builder nor the vendor can revise it after acceptance, turning an awarded quote into a durable cost basis for every downstream budget line and purchase order.",
+    date: "August 31, 2026",
+    readTime: "6 min read",
+    tag: "Purchasing",
+    tagColor: "text-amber-400 bg-amber-500/10 border-amber-500/20",
+    heroImage: "/blog/lock-awarded-vendor-bids-home-builders.png",
+  },
+  {
     slug: "auto-po-task-completion-construction-purchasing",
     title: "Task Complete, PO Sent: How Production Builders Automate Their Purchasing Loop",
     excerpt:

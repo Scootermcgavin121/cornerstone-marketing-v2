@@ -163,6 +163,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/what-is-a-production-home-builder", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/ai-mls-listing-sheet-spec-homes-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/auto-po-task-completion-construction-purchasing", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/lock-awarded-vendor-bids-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({
