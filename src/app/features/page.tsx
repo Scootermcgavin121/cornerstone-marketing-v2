@@ -69,7 +69,7 @@ const featureDetails = [
       "200+ part catalog with multiple unit types",
       "3-level budget hierarchy: Scope → Task → Parts",
       "Auto-budget generation from floorplan takeoffs (~97 lines)",
-      "Structural options pricing (Bonus Room, Finished Basement, and 12+ more)",
+      "Room-aware structural options - model added rooms and multi-room zones, replace base-plan rooms, or carve space from a larger room; quantities net automatically so budgets and POs reflect what will actually be built without double-counting",
       "Global structural options - mark an option global to share identical takeoffs and one retail price across every floorplan; edit takeoffs once and the change syncs everywhere, no duplicate data entry",
       "Dedicated Elevations Manager - manage exterior styles (Colonial, Craftsman, Modern Farmhouse) per floorplan with inline-editable retail price adders and expandable material takeoffs; elevation cost is computed from vendor pricing, and Foreman can create elevations and set pricing through natural conversation",
       "Full bid management: send to bid → compare → award",

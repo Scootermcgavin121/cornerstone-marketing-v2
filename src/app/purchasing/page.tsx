@@ -58,6 +58,7 @@ const purchasingSchema = buildFeatureSchema({
     "Task-completion PO generation — when a construction task is marked complete, auto-generate the PO pre-filled via cost codes; choose draft-first (PM reviews before sending) or auto-send (PO emailed to the vendor's scheduling email with PDF attached, hands-free)",
     "Cost type classifications (labor, material, lump sum, mixed)",
     "Auto-Quantity Scope Items — quantities auto-calculate from floorplan dimensions (Under Air Sqft, Total Sqft, Exterior Perimeter, Roof Squares)",
+    "Room-aware structural options — model added rooms, multi-room zones, base-room replacements, and carved-out spaces so budgets and POs reflect the home being built without duplicate quantities",
     "Multi-tab Excel import/export — entire floorplan in one workbook",
     "Full database export (CSV or JSON) — no vendor lock-in",
   ],
@@ -84,6 +85,10 @@ const faqItems: FAQItem[] = [
   {
     q: "Can I share the same structural option across all my floorplans?",
     a: "Yes — mark a structural option as global. A global option keeps identical takeoffs (parts and scope items) and a single retail price across every floorplan, so options like Finished Basement or Garage Extension that don't vary by plan only need to be set up once. Edit the takeoffs in one place and the change automatically syncs to every floorplan. When takeoffs differ between floorplans, a source picker lets you choose which floorplan's takeoffs to standardize on, and the retail price is editable inline. It eliminates hours of duplicate data entry and the errors that come with it.",
+  },
+  {
+    q: "Can a structural option replace or carve space from a base-plan room?",
+    a: "Yes. Cornerstone PM™ models structural options as real rooms or multi-room zones, not just price adders. An option can replace a standard room or carve a new space from a larger room. When the buyer commits it, Cornerstone uses the selected room configuration across the Design Center, live budget, cost codes, purchase orders, and delivery tickets. Removed base quantities drop out automatically, and carved-out space is netted so the same flooring or material quantity is not counted twice.",
   },
   {
     q: "How do I manage floorplan elevations and their pricing?",
@@ -172,7 +177,7 @@ const features = [
   { title: "Budget Hierarchy", desc: "Builder — Community — Floorplan — Home — budgets cascade and override at each level." },
   { title: "Base Budgets", desc: "Pre-built budget templates per floorplan, ready to apply at sale." },
   { title: "Auto-Budget Generation", desc: "When a home sale is created with structural options, the budget auto-generates instantly." },
-  { title: "Structural Options Pricing", desc: "Every structural option tied to a line-item budget impact — no manual entry." },
+  { title: "Room-Aware Structural Options", desc: "Model an option as a room or multi-room zone, replace a base-plan room, or carve space from a larger room. Cornerstone nets the quantities automatically so the budget and POs reflect what will actually be built — without charging for the same square foot twice." },
   { title: "Global Structural Options", desc: "Mark an option as global and its takeoffs and retail price stay identical across every floorplan. Edit takeoffs once and the change syncs everywhere — no more duplicating the same option data on floorplan after floorplan. One source of truth, fewer errors, hours saved." },
   { title: "Dedicated Elevations Manager", desc: "A dedicated page for managing exterior styles per floorplan — Colonial, Craftsman, Modern Farmhouse, and more. Card-based layout with inline-editable retail price adders, expandable takeoffs (add parts, scope items, edit quantities), and per-elevation sqft overrides. Cost is computed from real vendor pricing, never set by hand." },
   { title: "Active Homes Dashboard", desc: "All homes, budget status, and variance at a glance." },
