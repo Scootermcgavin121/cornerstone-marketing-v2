@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, CheckCircle2, RefreshCcw, Scissors, Workflow } from "lucide-react";
+import { ArrowLeft, ArrowRight, CheckCircle2, RefreshCcw, Scissors, ShieldCheck, Workflow } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { FAQSection } from "@/components/FAQSection";
@@ -37,6 +37,10 @@ export const metadata: Metadata = {
 };
 
 const faqItems: FAQItem[] = [
+  {
+    q: "How do structural-option compatibility rules work?",
+    a: "Builders can connect options with Requires, Conflicts, and Includes rules. Requires enforces prerequisites, Conflicts blocks mutually exclusive choices, and Includes automatically adds a bundled option. The rules are enforced when buyers make selections, before an impossible combination can reach a contract, budget, or purchase order.",
+  },
   {
     q: "Can a structural option have its own design selections?",
     a: "Yes. A structural option can act as a selectable location itself or add multiple rooms and zones. Buyers can then choose finishes for each option room in the Design Center, with the same spec levels, room quantities, and retail pricing used elsewhere in the home.",
@@ -121,12 +125,28 @@ export default function StructuralOptionsAsRoomsPage() {
             <p className="text-sm leading-relaxed text-slate-300">Cornerstone nets the flex-room footprint from the basement at pricing time, class by class. Basement carpet and pad drop by exactly that footprint; tile, hardwood, and other alternates follow the same room relationship. Both rooms remain independently selectable without duplicate quantity.</p>
           </div>
 
-          <h2>4. Carry the decision all the way to the vendor</h2>
+          <h2>4. Add guardrails with option compatibility rules</h2>
+          <p>
+            Room-aware modeling and carve-out pricing make structural options powerful. Compatibility rules make that catalog safe to hand to buyers and sales teams. Every option can declare a relationship to another option, and Cornerstone enforces it where selections are made.
+          </p>
+          <div className="not-prose my-7 rounded-2xl border border-amber-500/20 bg-amber-500/5 p-6">
+            <div className="mb-4 flex items-center gap-3"><ShieldCheck className="h-6 w-6 text-amber-400" /><h3 className="font-bold text-white">Requires, Conflicts, and Includes</h3></div>
+            <ul className="space-y-3 text-sm leading-relaxed text-slate-300">
+              <li><strong className="text-white">Requires:</strong> a Flex Space can require the Finished Basement that creates the space where it is framed.</li>
+              <li><strong className="text-white">Conflicts:</strong> a Luxury Owner&apos;s Bath designed for 10-foot ceilings can conflict with the standard ceiling-height option, steering the buyer to the correct variant.</li>
+              <li><strong className="text-white">Includes:</strong> selecting one option can automatically bring its bundled option along.</li>
+            </ul>
+          </div>
+          <p>
+            Setup is a simple rule picker: search for the related option, choose Requires, Conflicts, or Includes, and add an optional note. Impossible combinations are stopped before they reach a contract, budget, or purchase order. The same options engine that keeps replacement and carve-out pricing honest also keeps the catalog internally consistent.
+          </p>
+
+          <h2>5. Carry the decision all the way to the vendor</h2>
           <p>
             The structural-option decision should not die at the sales desk. Once committed, it updates the live home budget, rolls costs up by cost code, and changes the quantities that feed purchasing. When the related construction task fires, Cornerstone can generate the purchase orders and delivery tickets and email them to the assigned vendors.
           </p>
           <p>
-            Each option can also carry its under-air and under-roof square-footage impact. Requires and Conflicts rules keep impossible combinations out of the buyer&apos;s hands—a flex space can require a finished basement, while a ceiling-height upgrade can conflict with the standard ceiling configuration.
+            Each option can also carry its under-air and under-roof square-footage impact, keeping the sales choice and the construction record connected.
           </p>
           <div className="not-prose my-8 grid gap-4 sm:grid-cols-3">
             {["Buyer commits option", "Budget recomputes live", "POs reflect real rooms"].map((label, index) => <div key={label} className="rounded-xl border border-slate-800 bg-slate-900/50 p-5 text-center"><Workflow className="mx-auto mb-3 h-6 w-6 text-emerald-400" /><p className="text-xs text-slate-500">Step {index + 1}</p><p className="mt-1 text-sm font-semibold text-white">{label}</p></div>)}

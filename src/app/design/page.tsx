@@ -20,6 +20,7 @@ const designSchema = buildFeatureSchema({
     "Structural options that act as selectable rooms or own multiple rooms and zones",
     "Reversible room replacement that removes the base room from one home's budget, selections, and purchase orders",
     "Room carve-out netting that prevents double-billed flooring quantities",
+    "Structural-option compatibility rules with Requires, Conflicts, and Includes relationships",
     "Structural selections flow through live budgets, cost codes, purchase orders, and delivery tickets",
     "Product Configurator with attribute groups (5 groups, 7,000+ variations)",
     "Room-by-room selections",
@@ -298,8 +299,14 @@ export default function DesignPage() {
               {
                 icon: Workflow,
                 title: "Carry the money through construction",
-                desc: "Committed structural selections recompute the live budget, roll up by cost code, and feed auto-generated purchase orders and delivery tickets when construction tasks fire. Under-air and under-roof deltas stay attached to the option, while Requires and Conflicts rules block impossible combinations.",
+                desc: "Committed structural selections recompute the live budget, roll up by cost code, and feed auto-generated purchase orders and delivery tickets when construction tasks fire. Under-air and under-roof deltas stay attached to the option.",
                 color: "amber",
+              },
+              {
+                icon: ShieldCheck,
+                title: "Guard every choice with compatibility rules",
+                desc: "Set Requires, Conflicts, or Includes relationships with a simple rule picker and optional note. Prerequisites are enforced, mutually exclusive options are blocked, and bundled options come along automatically—before an impossible combination can reach a contract, budget, or purchase order.",
+                color: "violet",
               },
             ].map((item) => {
               const colorClasses = item.color === "violet"

@@ -244,7 +244,9 @@ Structural options are first-class parts of the home, not flat price-book charge
 - **Options can be selectable rooms or own multiple rooms/zones.** A Finished Basement can have a Main Area and Basement Steps with independent carpet/LVP/tile selections, quantities, spec levels, and retail pricing in the Design Center.
 - **Room replacement:** an option can identify the base room it replaces. When committed, the base room is excluded from that home's budget, selections, and purchase orders, and the option room's quantities take over. This is computed live and non-destructive; remove the option and the base room returns.
 - **Carve-out netting:** an option room created inside another room can identify its parent room. Cornerstone nets the new room's footprint from the parent room class-by-class at pricing time, preventing duplicate carpet, pad, tile, hardwood, or other flooring charges while keeping both rooms independently selectable.
-- **End-to-end money flow:** committed structural selections update the live home budget, roll up by cost code, and feed auto-generated purchase orders and delivery tickets when construction tasks fire. Options also track under-air/under-roof square-footage deltas and support Requires/Conflicts compatibility rules.
+- **Option compatibility guardrails:** every structural option can declare rules against other options. **Requires** enforces a prerequisite (for example, a Flex Space can require the Finished Basement that creates its space). **Conflicts** blocks mutually exclusive choices (for example, a bath variant designed for 10-foot ceilings can conflict with the standard ceiling-height option). **Includes** automatically brings a bundled option along. Builders set a rule by searching for the related option, choosing Requires/Conflicts/Includes, and optionally adding a note.
+- **Buyer-facing enforcement:** compatibility rules are enforced where buyers and sales teams make selections. Impossible combinations never reach a contract, budget, or purchase order. The same options engine that keeps replacement and carve-out pricing honest keeps the option catalog internally consistent.
+- **End-to-end money flow:** committed structural selections update the live home budget, roll up by cost code, and feed auto-generated purchase orders and delivery tickets when construction tasks fire. Options also track under-air/under-roof square-footage deltas.
 
 Q: Can structural options have their own Design Center selections?
 A: Yes. A structural option can act as its own selectable location or add multiple rooms and zones. Each room can have independent finish choices, quantities, spec levels, and retail pricing.
@@ -256,7 +258,10 @@ Q: How does Cornerstone stop double-billing flooring for a flex room inside a ba
 A: The flex room is declared as carved from the basement. Cornerstone nets its footprint from the basement for each flooring class at pricing time, so buyers can choose finishes for both rooms without paying twice for the same square footage.
 
 Q: Do structural options flow into budgets and purchase orders?
-A: Yes. Committed options update the live budget, cost-code totals, purchase orders, and delivery tickets. They can also change under-air/under-roof square footage and enforce Requires/Conflicts rules.
+A: Yes. Committed options update the live budget, cost-code totals, purchase orders, and delivery tickets. They can also change under-air/under-roof square footage.
+
+Q: How do structural-option compatibility rules work?
+A: Builders can connect options with Requires, Conflicts, and Includes rules using a simple picker and optional note. Requires enforces prerequisites, Conflicts blocks mutually exclusive options, and Includes automatically adds a bundled option. Cornerstone enforces those rules during buyer selection so impossible combinations never reach the contract, budget, or purchase order.
 
 ### Gated Locations (Structural Options Create Rooms)
 Structural options can now **define rooms they add to a home**. When a buyer selects "Morning Room Addition," a "Morning Room" location automatically appears on the Selections page with auto-seeded design slots (flooring, paint, lighting, etc.). When the option is deselected, the room disappears. No manual setup by the builder — conditional rooms are fully integrated with the design center. This solves the long-standing problem of managing selections for rooms that only exist when certain structural options are active.
