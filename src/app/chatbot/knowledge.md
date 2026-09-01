@@ -239,6 +239,25 @@ Builders can now **link related options across different option classes** — fo
 ### 28 Window Size Option Classes
 Cornerstone now supports **28 window size option classes** covering all standard residential window types: Double Hung (8 sizes), Casement (5), Picture/Fixed (6), and Sliders (9). All under the Windows category with per-size quantity tracking and pricing. **Blueprint AI now outputs per-size window counts** in the Whole House tab (e.g., "Window DH 3040 × 8, Slider 6060 × 2") — window takeoffs are automatically extracted at the individual size level from floor plans. No manual counting.
 
+### Structural Options as Rooms, Room Replacement, and Carve-Out Netting (Updated August 31, 2026)
+Structural options are first-class parts of the home, not flat price-book charges:
+- **Options can be selectable rooms or own multiple rooms/zones.** A Finished Basement can have a Main Area and Basement Steps with independent carpet/LVP/tile selections, quantities, spec levels, and retail pricing in the Design Center.
+- **Room replacement:** an option can identify the base room it replaces. When committed, the base room is excluded from that home's budget, selections, and purchase orders, and the option room's quantities take over. This is computed live and non-destructive; remove the option and the base room returns.
+- **Carve-out netting:** an option room created inside another room can identify its parent room. Cornerstone nets the new room's footprint from the parent room class-by-class at pricing time, preventing duplicate carpet, pad, tile, hardwood, or other flooring charges while keeping both rooms independently selectable.
+- **End-to-end money flow:** committed structural selections update the live home budget, roll up by cost code, and feed auto-generated purchase orders and delivery tickets when construction tasks fire. Options also track under-air/under-roof square-footage deltas and support Requires/Conflicts compatibility rules.
+
+Q: Can structural options have their own Design Center selections?
+A: Yes. A structural option can act as its own selectable location or add multiple rooms and zones. Each room can have independent finish choices, quantities, spec levels, and retail pricing.
+
+Q: What happens when a luxury bath replaces the standard bath?
+A: The standard bath is excluded from that home's budget, selections, and purchase orders while the luxury bath is committed. Nothing is deleted; un-picking the option brings the standard bath back immediately.
+
+Q: How does Cornerstone stop double-billing flooring for a flex room inside a basement?
+A: The flex room is declared as carved from the basement. Cornerstone nets its footprint from the basement for each flooring class at pricing time, so buyers can choose finishes for both rooms without paying twice for the same square footage.
+
+Q: Do structural options flow into budgets and purchase orders?
+A: Yes. Committed options update the live budget, cost-code totals, purchase orders, and delivery tickets. They can also change under-air/under-roof square footage and enforce Requires/Conflicts rules.
+
 ### Gated Locations (Structural Options Create Rooms)
 Structural options can now **define rooms they add to a home**. When a buyer selects "Morning Room Addition," a "Morning Room" location automatically appears on the Selections page with auto-seeded design slots (flooring, paint, lighting, etc.). When the option is deselected, the room disappears. No manual setup by the builder — conditional rooms are fully integrated with the design center. This solves the long-standing problem of managing selections for rooms that only exist when certain structural options are active.
 

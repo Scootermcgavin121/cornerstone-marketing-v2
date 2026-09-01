@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "structural-options-as-rooms-home-builders",
+    title: "How Production Builders Should Model Structural Options",
+    excerpt:
+      "A finished basement, luxury bath, or flex room is more than a price-book line item. See how room-aware structural options prevent double-billed flooring, replace base rooms cleanly, and carry buyer choices into budgets and purchase orders.",
+    date: "August 31, 2026",
+    readTime: "7 min read",
+    tag: "Design Center",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/structural-options-as-rooms-home-builders.png",
+  },
+  {
     slug: "lock-awarded-vendor-bids-home-builders",
     title: "Lock the Price After Award: Protecting Vendor Bids From Cost Drift",
     excerpt:
