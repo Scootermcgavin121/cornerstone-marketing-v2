@@ -1,4 +1,4 @@
-import { Check, Grid3X3, ShieldCheck, FileSpreadsheet, Image as ImageIcon, DollarSign, Layers, Refrigerator, Sparkles, Building2, Calculator, Lock, ArrowRight } from "lucide-react";
+import { Check, Grid3X3, ShieldCheck, FileSpreadsheet, Image as ImageIcon, DollarSign, Layers, Refrigerator, Sparkles, Building2, Calculator, Lock, ArrowRight, House, RefreshCcw, Scissors, Workflow } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
@@ -17,6 +17,10 @@ const designSchema = buildFeatureSchema({
     "design center software, home builder design center, options engine, structural options software, product configurator, room-by-room selections, design center home builder, allowance tracking, builder design software, residential design center, design packages, structured options",
   featureList: [
     "Structured options engine with real-time price rollup",
+    "Structural options that act as selectable rooms or own multiple rooms and zones",
+    "Reversible room replacement that removes the base room from one home's budget, selections, and purchase orders",
+    "Room carve-out netting that prevents double-billed flooring quantities",
+    "Structural selections flow through live budgets, cost codes, purchase orders, and delivery tickets",
     "Product Configurator with attribute groups (5 groups, 7,000+ variations)",
     "Room-by-room selections",
     "Community-based upgrade pricing — buyers see deltas from each community's included spec level automatically",
@@ -49,6 +53,14 @@ export const metadata = {
 };
 
 const faqItems: FAQItem[] = [
+  {
+    q: "Can a structural option have its own rooms and Design Center selections?",
+    a: "Yes. A structural option can act as a selectable room itself or own multiple rooms and zones. A Finished Basement, for example, can contain a Main Area and Basement Steps, each with independent flooring choices, takeoff quantities, spec levels, and retail pricing in the Design Center.",
+  },
+  {
+    q: "How does Cornerstone prevent duplicate costs when a structural option replaces or carves space from another room?",
+    a: "For a replacement, the base room is excluded from that home's budget, selections, and purchase orders while the option is committed; removing the option restores it because nothing was deleted. For a room carved inside another space, Cornerstone nets the carved room's footprint from the parent room class-by-class at pricing time, preventing duplicate flooring and pad quantities while both rooms remain independently selectable.",
+  },
   {
     q: "What is design center software for home builders?",
     a: "Design center software lets homebuyers select finishes, fixtures, and upgrades for their new home while builders track allowances, upgrade pricing, and margin per home. Cornerstone PM™'s Design Center is built as a first-class module integrated with sales, purchasing, and the construction budget — every selection updates pricing and PO line items automatically. The built-in Product Configurator handles complex multi-attribute selections like cabinets and countertops with step-by-step guided flows.",
@@ -243,6 +255,74 @@ export default function DesignPage() {
                 </Link>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* STRUCTURAL OPTIONS AS FIRST-CLASS ROOMS */}
+      <section className="border-t border-slate-800/60 px-4 py-20">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-14 text-center">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-violet-500/20 bg-violet-500/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-widest text-violet-400">
+              <House className="h-4 w-4" /> Structural Options
+            </div>
+            <h2 className="mb-6 text-4xl font-black tracking-tight sm:text-5xl">
+              Options that change the home should be{" "}
+              <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">part of the home.</span>
+            </h2>
+            <p className="mx-auto max-w-3xl text-xl text-slate-400">
+              Finished basements, luxury baths, flex rooms, and gourmet kitchens are more than price-book charges. Cornerstone models their rooms, finish selections, quantities, budget impact, and vendor work from the buyer&apos;s choice through construction.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+            {[
+              {
+                icon: House,
+                title: "Options become selectable rooms",
+                desc: "An option can act as its own Design Center location or own multiple rooms and zones. A Finished Basement can contain a Main Area and Basement Steps, each with independent carpet, LVP, or tile selections, per-class quantities, spec levels, and retail pricing.",
+                color: "violet",
+              },
+              {
+                icon: RefreshCcw,
+                title: "Replace a base room—reversibly",
+                desc: "A Luxury Owner's Bath can replace the Standard Owner's Bath on one home. The base room drops out of that home's budget, purchase orders, selection counts, and selections PDF while the option is committed. Remove the option and everything returns; the floorplan template was never deleted or duplicated.",
+                color: "emerald",
+              },
+              {
+                icon: Scissors,
+                title: "Net carve-outs without double billing",
+                desc: "When a Flex Room is framed inside a Finished Basement, Cornerstone nets its footprint from the parent room class-by-class at pricing time. Carpet, pad, tile, hardwood, and alternates all follow the same room relationship while buyers still select finishes for both spaces independently.",
+                color: "cyan",
+              },
+              {
+                icon: Workflow,
+                title: "Carry the money through construction",
+                desc: "Committed structural selections recompute the live budget, roll up by cost code, and feed auto-generated purchase orders and delivery tickets when construction tasks fire. Under-air and under-roof deltas stay attached to the option, while Requires and Conflicts rules block impossible combinations.",
+                color: "amber",
+              },
+            ].map((item) => {
+              const colorClasses = item.color === "violet"
+                ? "border-violet-500/20 bg-violet-500/5 text-violet-400"
+                : item.color === "emerald"
+                  ? "border-emerald-500/20 bg-emerald-500/5 text-emerald-400"
+                  : item.color === "cyan"
+                    ? "border-cyan-500/20 bg-cyan-500/5 text-cyan-400"
+                    : "border-amber-500/20 bg-amber-500/5 text-amber-400";
+              return (
+                <div key={item.title} className={`rounded-2xl border p-7 ${colorClasses}`}>
+                  <item.icon className="mb-5 h-7 w-7" />
+                  <h3 className="mb-3 text-xl font-black text-white">{item.title}</h3>
+                  <p className="text-sm leading-relaxed text-slate-400">{item.desc}</p>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="mt-10 text-center">
+            <Link href="/blog/structural-options-as-rooms-home-builders" className="inline-flex items-center gap-2 rounded-xl border border-violet-500/30 bg-violet-500/10 px-6 py-3 font-bold text-violet-300 transition-colors hover:bg-violet-500/20">
+              See how room-aware structural options work <ArrowRight className="h-4 w-4" />
+            </Link>
           </div>
         </div>
       </section>
