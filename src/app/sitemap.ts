@@ -164,6 +164,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/ai-mls-listing-sheet-spec-homes-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/auto-po-task-completion-construction-purchasing", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/lock-awarded-vendor-bids-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/subcontractor-bid-status-tracking-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({

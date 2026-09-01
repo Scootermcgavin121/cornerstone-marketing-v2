@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "subcontractor-bid-status-tracking-home-builders",
+    title: "Invited, Viewed, Submitted, Declined: Track Every Subcontractor Bid",
+    excerpt:
+      "Every bid invitation moves through four states — Invited, Viewed, Submitted, and Declined. Knowing which state each vendor is in tells your purchasing team exactly who to follow up with, who is on track, and who needs to be replaced before the deadline. A practical guide to turning bid status visibility into a faster, more complete comparison set.",
+    date: "September 1, 2026",
+    readTime: "5 min read",
+    tag: "Purchasing",
+    tagColor: "text-amber-400 bg-amber-500/10 border-amber-500/20",
+    heroImage: "/blog/subcontractor-bid-status-tracking-home-builders.png",
+  },
+  {
     slug: "structural-options-as-rooms-home-builders",
     title: "How Production Builders Should Model Structural Options",
     excerpt:
