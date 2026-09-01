@@ -1449,8 +1449,9 @@
       "wordCount": 850,
       "heroImage": "/blog/subcontractor-bid-status-tracking-home-builders.png",
       "heroImageAlt": "Subcontractor bid tracking statuses for home builders",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "e3e2f9c",
+      "publishedAt": "2026-09-01T14:11:40.310Z"
     },
     {
       "slug": "scope-filtered-excel-bid-templates-home-builders",
