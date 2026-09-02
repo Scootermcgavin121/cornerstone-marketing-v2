@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "scope-filtered-excel-bid-templates-home-builders",
+    title: "Stop Cleaning Up Vendor Quotes: Scope-Filtered Excel Bid Templates",
+    excerpt:
+      "Quote comparison breaks down the moment every subcontractor returns a different spreadsheet. See how auto-generated Base, Structural, and Designer tabs give every vendor a template already filtered to their scope — so submissions come back in one consistent shape, ready to compare.",
+    date: "September 2, 2026",
+    readTime: "6 min read",
+    tag: "Purchasing",
+    tagColor: "text-amber-400 bg-amber-500/10 border-amber-500/20",
+    heroImage: "/blog/scope-filtered-excel-bid-templates-home-builders.png",
+  },
+  {
     slug: "subcontractor-bid-status-tracking-home-builders",
     title: "Invited, Viewed, Submitted, Declined: Track Every Subcontractor Bid",
     excerpt:
