@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "bluebeam-vs-cornerstone-home-builder-software",
+    title: "Bluebeam vs Cornerstone PM: Plan Markup Tool or Home Builder Platform?",
+    excerpt:
+      "Bluebeam is a capable PDF plan-review and markup tool, not an end-to-end home builder platform. See how it compares to Cornerstone PM's connected purchasing, scheduling, design, sales, and accounting workflows — and when you might use both.",
+    date: "September 3, 2026",
+    readTime: "7 min read",
+    tag: "Comparison",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/bluebeam-vs-cornerstone-home-builder-software.png",
+  },
+  {
     slug: "scope-filtered-excel-bid-templates-home-builders",
     title: "Stop Cleaning Up Vendor Quotes: Scope-Filtered Excel Bid Templates",
     excerpt:
