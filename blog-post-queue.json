@@ -1479,8 +1479,9 @@
       "wordCount": 1100,
       "heroImage": "/blog/bluebeam-vs-cornerstone-home-builder-software.png",
       "heroImageAlt": "Bluebeam vs home builder software workflow comparison",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "1de3851",
+      "publishedAt": "2026-09-03T14:04:48.718Z"
     },
     {
       "slug": "construction-purchasing-workflow-bid-to-purchase-order",
