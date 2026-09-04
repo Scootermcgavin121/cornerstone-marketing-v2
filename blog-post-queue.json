@@ -1494,8 +1494,9 @@
       "wordCount": 1050,
       "heroImage": "/blog/construction-purchasing-workflow-bid-to-purchase-order.png",
       "heroImageAlt": "Construction purchasing workflow from bid request to purchase order",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "3b20ee1",
+      "publishedAt": "2026-09-04T14:05:50.005Z"
     }
   ]
 }
