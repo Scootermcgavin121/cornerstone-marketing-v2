@@ -167,6 +167,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/subcontractor-bid-status-tracking-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/scope-filtered-excel-bid-templates-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/bluebeam-vs-cornerstone-home-builder-software", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/construction-purchasing-workflow-bid-to-purchase-order", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({

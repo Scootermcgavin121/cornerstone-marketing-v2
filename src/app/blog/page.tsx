@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "construction-purchasing-workflow-bid-to-purchase-order",
+    title: "From Bid Request to Purchase Order: One Connected Purchasing Workflow",
+    excerpt:
+      "Follow a construction purchase from bid request to vendor award and purchase order without rekeying scope, pricing, community, or floorplan data at any handoff along the way.",
+    date: "September 4, 2026",
+    readTime: "7 min read",
+    tag: "Purchasing",
+    tagColor: "text-amber-400 bg-amber-500/10 border-amber-500/20",
+    heroImage: "/blog/construction-purchasing-workflow-bid-to-purchase-order.png",
+  },
+  {
     slug: "bluebeam-vs-cornerstone-home-builder-software",
     title: "Bluebeam vs Cornerstone PM: Plan Markup Tool or Home Builder Platform?",
     excerpt:
