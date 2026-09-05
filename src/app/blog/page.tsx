@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "warranty-walkthrough-punch-list-home-builders",
+    title: "The 11-Month Warranty Walk Doesn't Have to Start From a Blank Legal Pad",
+    excerpt:
+      "Homeowner warranty items called out during the 11-month walk get lost between the truck and the office more often than builders admit. See how recording the walk turns it straight into a tracked, vendor-assigned punch list.",
+    date: "September 5, 2026",
+    readTime: "6 min read",
+    tag: "Customer Care",
+    tagColor: "text-amber-400 bg-amber-500/10 border-amber-500/20",
+    heroImage: "/blog/warranty-walkthrough-punch-list-home-builders.png",
+  },
+  {
     slug: "construction-purchasing-workflow-bid-to-purchase-order",
     title: "From Bid Request to Purchase Order: One Connected Purchasing Workflow",
     excerpt:
