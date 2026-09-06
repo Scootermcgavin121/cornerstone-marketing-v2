@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "construction-draw-requests-lender-draws-home-builders",
+    title: "Construction Draw Requests: How Production Home Builders Get Paid Without Slowing the Schedule",
+    excerpt:
+      "Draw packages slow down when budget, purchase order, and invoice data live in separate systems that need to be manually reconciled before a lender will release funds. See how tying draws to live job cost data keeps disbursements moving on schedule.",
+    date: "September 6, 2026",
+    readTime: "7 min read",
+    tag: "Budgeting",
+    tagColor: "text-green-400 bg-green-500/10 border-green-500/20",
+    heroImage: "/blog/construction-draw-requests-lender-draws-home-builders.png",
+  },
+  {
     slug: "warranty-walkthrough-punch-list-home-builders",
     title: "The 11-Month Warranty Walk Doesn't Have to Start From a Blank Legal Pad",
     excerpt:
