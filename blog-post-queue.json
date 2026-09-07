@@ -1497,6 +1497,76 @@
       "status": "published",
       "publishedCommit": "3b20ee1",
       "publishedAt": "2026-09-04T14:05:50.005Z"
+    },
+    {
+      "slug": "community-specific-vendor-awards-production-builders",
+      "title": "One Trade, Different Communities: Assigning the Right Vendor to Every Job",
+      "metaDescription": "Assign different awarded vendors by community while preserving accepted pricing, purchasing accuracy, and long-term trade relationships across every home.",
+      "primaryKeyword": "community vendor assignment home builders",
+      "hub": "/purchasing",
+      "angle": "Feature deep-dive on a production-building reality that lowest-bid systems flatten: the best trade partner can differ by community. Explain how Cornerstone supports multiple accepted bids for the same scope and assigns each award to the communities that vendor actually serves. Show how the accepted price then follows the correct community into budgets and purchase orders without manual overrides. Position the workflow as a way to protect local trade relationships, avoid awarding work outside a vendor's service area, and keep every cost tied to a real accepted bid.",
+      "schema": "FAQPage",
+      "wordCount": 950,
+      "heroImage": "/blog/community-specific-vendor-awards-production-builders.png",
+      "heroImageAlt": "Community vendor assignment for home builders showing different awarded trade partners and accepted pricing by neighborhood",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "construction-scope-items-labor-material-lump-sum",
+      "title": "Labor, Material, Mixed, or Lump Sum: Scope Items That Match Real Vendor Quotes",
+      "metaDescription": "Model labor, material, mixed, and lump-sum vendor quotes without forcing every construction scope into a rigid parts-only estimating structure at scale.",
+      "primaryKeyword": "construction scope items",
+      "hub": "/purchasing",
+      "angle": "Feature deep-dive on why every trade does not quote work in the same unit structure. Distinguish flexible scope items from catalog parts and show how a scope can represent labor, material, a mixed package, or a lump-sum obligation. Explain how this flexibility keeps vendor bid templates aligned with the way subcontractors actually price work while still supporting comparison, award, and downstream purchasing. Tie it to Cornerstone's hard-cost rule: costs come from accepted vendor pricing, and missing prices remain visibly unpriced instead of being filled with defaults.",
+      "schema": "FAQPage",
+      "wordCount": 900,
+      "heroImage": "/blog/construction-scope-items-labor-material-lump-sum.png",
+      "heroImageAlt": "Construction scope items dashboard comparing labor, material, mixed, and lump-sum vendor quote structures",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "community-based-design-upgrade-pricing-home-builders",
+      "title": "Why the Same Design Upgrade Should Not Cost the Same in Every Community",
+      "metaDescription": "Set community-specific design upgrade pricing so buyer selections reflect local vendor costs, margins, and included specifications without duplicate catalogs.",
+      "primaryKeyword": "community based design upgrade pricing",
+      "hub": "/design",
+      "angle": "Pain-point post for design teams maintaining duplicate price sheets because the same finish carries different costs or margins across communities. Explain how community-based upgrade pricing lets builders keep one organized option catalog while controlling what is included and what buyers pay in each neighborhood. Include the granular control to move one standard option into an upgrade tier without excluding an entire option class. Connect selections to scope-linked budget tracking so design revenue and construction cost stay aligned instead of drifting in separate spreadsheets.",
+      "schema": "HowTo",
+      "wordCount": 1000,
+      "heroImage": "/blog/community-based-design-upgrade-pricing-home-builders.png",
+      "heroImageAlt": "Community based design upgrade pricing for home builders with neighborhood-specific option prices and spec levels",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "trello-vs-cornerstone-home-builder-software",
+      "title": "Trello vs Cornerstone PM: A Kanban Board Is Not a Home Builder Operating System",
+      "metaDescription": "Compare Trello boards with purpose-built home builder software for scheduling, vendor bidding, takeoffs, design selections, purchasing, and job costing.",
+      "primaryKeyword": "Trello vs home builder software",
+      "hub": "/home-builder-project-management-software",
+      "angle": "Segment-mismatch comparison that gives Trello credit for simple visual task management while defining where a card-based workflow stops serving a production builder. Contrast manually maintained boards with linked home schedules, cascade date changes, vendor notifications, takeoffs, bid awards, design selections, purchase orders, and one-way QuickBooks synchronization. Explain that Trello may remain useful for internal checklists, but it does not carry accepted vendor pricing or community and lot context through the build. Help readers decide whether they need a team board, a builder operating system, or both.",
+      "schema": "FAQPage",
+      "wordCount": 1100,
+      "heroImage": "/blog/trello-vs-cornerstone-home-builder-software.png",
+      "heroImageAlt": "Trello vs home builder software comparison showing a Kanban board beside connected construction operations",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "awarded-bid-to-job-cost-budget-home-builders",
+      "title": "From Awarded Bid to Job-Cost Budget: Where Construction Costs Lose Their Source",
+      "metaDescription": "Trace accepted vendor pricing from bid award into community budgets and purchase orders without hidden defaults, rekeying, or unexplained cost drift today.",
+      "primaryKeyword": "construction job cost budget",
+      "hub": "/purchasing",
+      "angle": "Hub-cluster reinforcement for purchasing teams that can see a total but cannot explain where it came from. Map the cost chain from vendor response to comparison, community-specific award, accepted pricing, scope-first area costs, the home budget, and the purchase order. Identify the common breakpoints created by spreadsheets and manual rekeying, including stale quotes and default costs that look authoritative but have no awarded source. Show how Cornerstone leaves missing prices at $0 with a needs-pricing state and preserves traceability so purchasing can answer which vendor, scope, community, and award produced every dollar.",
+      "schema": "HowTo",
+      "wordCount": 1050,
+      "heroImage": "/blog/awarded-bid-to-job-cost-budget-home-builders.png",
+      "heroImageAlt": "Construction job cost budget tracing accepted vendor bids through community awards and purchase orders",
+      "status": "pending",
+      "publishedCommit": null
     }
   ]
 }
