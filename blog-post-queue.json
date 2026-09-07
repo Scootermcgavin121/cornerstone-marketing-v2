@@ -1509,8 +1509,9 @@
       "wordCount": 950,
       "heroImage": "/blog/community-specific-vendor-awards-production-builders.png",
       "heroImageAlt": "Community vendor assignment for home builders showing different awarded trade partners and accepted pricing by neighborhood",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "b6e1f6a",
+      "publishedAt": "2026-09-07T14:05:10.592Z"
     },
     {
       "slug": "construction-scope-items-labor-material-lump-sum",
