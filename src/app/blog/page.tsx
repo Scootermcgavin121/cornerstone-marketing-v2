@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "community-specific-vendor-awards-production-builders",
+    title: "One Trade, Different Communities: Assigning the Right Vendor to Every Job",
+    excerpt:
+      "The best vendor for one community isn't always the best vendor for another. See how holding multiple accepted bids per scope, each tied to its own community, keeps pricing and purchase orders accurate without manual overrides.",
+    date: "September 7, 2026",
+    readTime: "6 min read",
+    tag: "Purchasing",
+    tagColor: "text-amber-400 bg-amber-500/10 border-amber-500/20",
+    heroImage: "/blog/community-specific-vendor-awards-production-builders.png",
+  },
+  {
     slug: "construction-draw-requests-lender-draws-home-builders",
     title: "Construction Draw Requests: How Production Home Builders Get Paid Without Slowing the Schedule",
     excerpt:
