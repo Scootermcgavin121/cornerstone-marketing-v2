@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "construction-scope-items-labor-material-lump-sum",
+    title: "Labor, Material, Mixed, or Lump Sum: Scope Items That Match Real Vendor Quotes",
+    excerpt:
+      "Not every trade quotes work the same way. See how Cornerstone PM models labor, material, mixed, and lump-sum vendor quotes without forcing every scope into one rigid parts-only structure.",
+    date: "September 8, 2026",
+    readTime: "6 min read",
+    tag: "Purchasing",
+    tagColor: "text-amber-400 bg-amber-500/10 border-amber-500/20",
+    heroImage: "/blog/construction-scope-items-labor-material-lump-sum.png",
+  },
+  {
     slug: "community-specific-vendor-awards-production-builders",
     title: "One Trade, Different Communities: Assigning the Right Vendor to Every Job",
     excerpt:
