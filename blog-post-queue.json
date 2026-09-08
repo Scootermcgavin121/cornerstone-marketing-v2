@@ -1524,8 +1524,9 @@
       "wordCount": 900,
       "heroImage": "/blog/construction-scope-items-labor-material-lump-sum.png",
       "heroImageAlt": "Construction scope items dashboard comparing labor, material, mixed, and lump-sum vendor quote structures",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "2bf0a72",
+      "publishedAt": "2026-09-08T14:06:06.264Z"
     },
     {
       "slug": "community-based-design-upgrade-pricing-home-builders",
