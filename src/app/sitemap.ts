@@ -172,6 +172,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/construction-draw-requests-lender-draws-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/community-specific-vendor-awards-production-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/construction-scope-items-labor-material-lump-sum", priority: 0.7, changeFrequency: "monthly" as const },
+    { url: "/blog/community-based-design-upgrade-pricing-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({

@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "community-based-design-upgrade-pricing-home-builders",
+    title: "Why the Same Design Upgrade Should Not Cost the Same in Every Community",
+    excerpt:
+      "Vendor costs and margin targets differ by community, but most design-center tools force one price sheet or a duplicate catalog per market. See how Cornerstone keeps one option catalog while controlling included-vs-upgrade status and pricing per community.",
+    date: "September 9, 2026",
+    readTime: "6 min read",
+    tag: "Design",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/community-based-design-upgrade-pricing-home-builders.png",
+  },
+  {
     slug: "construction-scope-items-labor-material-lump-sum",
     title: "Labor, Material, Mixed, or Lump Sum: Scope Items That Match Real Vendor Quotes",
     excerpt:
