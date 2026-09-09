@@ -1539,8 +1539,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/community-based-design-upgrade-pricing-home-builders.png",
       "heroImageAlt": "Community based design upgrade pricing for home builders with neighborhood-specific option prices and spec levels",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "5d27f23",
+      "publishedAt": "2026-09-09T14:05:00.253Z"
     },
     {
       "slug": "trello-vs-cornerstone-home-builder-software",
