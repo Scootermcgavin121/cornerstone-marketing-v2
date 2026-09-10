@@ -1554,8 +1554,9 @@
       "wordCount": 1100,
       "heroImage": "/blog/trello-vs-cornerstone-home-builder-software.png",
       "heroImageAlt": "Trello vs home builder software comparison showing a Kanban board beside connected construction operations",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "156fdab",
+      "publishedAt": "2026-09-10T14:07:40.717Z"
     },
     {
       "slug": "awarded-bid-to-job-cost-budget-home-builders",
