@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "trello-vs-cornerstone-home-builder-software",
+    title: "Trello vs Cornerstone PM: A Kanban Board Is Not a Home Builder Operating System",
+    excerpt:
+      "Trello is fine for checklists, but it has no model for construction dependencies, vendor bids, design selections, or job costing. See where a Kanban board breaks for growing home builders and what a connected operating system looks like instead.",
+    date: "September 10, 2026",
+    readTime: "8 min read",
+    tag: "Comparison",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/trello-vs-cornerstone-home-builder-software.png",
+  },
+  {
     slug: "community-based-design-upgrade-pricing-home-builders",
     title: "Why the Same Design Upgrade Should Not Cost the Same in Every Community",
     excerpt:
