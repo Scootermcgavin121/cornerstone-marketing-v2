@@ -6,6 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const routes = [
     { url: "/", priority: 1.0, changeFrequency: "weekly" as const },
+    { url: "/blog/awarded-bid-to-job-cost-budget-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/trello-vs-cornerstone-home-builder-software", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/features", priority: 0.9, changeFrequency: "weekly" as const },
     { url: "/pricing", priority: 0.9, changeFrequency: "monthly" as const },

@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "awarded-bid-to-job-cost-budget-home-builders",
+    title: "From Awarded Bid to Job-Cost Budget: Where Construction Costs Lose Their Source",
+    excerpt:
+      "Trace accepted vendor pricing from bid award into community budgets and purchase orders without hidden defaults, rekeying, or unexplained cost drift.",
+    date: "September 11, 2026",
+    readTime: "7 min read",
+    tag: "Purchasing",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/awarded-bid-to-job-cost-budget-home-builders.png",
+  },
+  {
     slug: "trello-vs-cornerstone-home-builder-software",
     title: "Trello vs Cornerstone PM: A Kanban Board Is Not a Home Builder Operating System",
     excerpt:
