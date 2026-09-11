@@ -1569,8 +1569,9 @@
       "wordCount": 1050,
       "heroImage": "/blog/awarded-bid-to-job-cost-budget-home-builders.png",
       "heroImageAlt": "Construction job cost budget tracing accepted vendor bids through community awards and purchase orders",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "baf8a95",
+      "publishedAt": "2026-09-11T14:04:51.065Z"
     }
   ]
 }
