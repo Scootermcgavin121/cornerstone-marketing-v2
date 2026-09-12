@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "homeowner-portal-software-production-home-builders",
+    title: "Why Buyers Call You for Updates You Already Have",
+    excerpt:
+      "Every 'just checking in' call from a buyer means the update already exists somewhere in your system — it just never reached them. How a homeowner portal closes that gap.",
+    date: "September 12, 2026",
+    readTime: "6 min read",
+    tag: "Sales",
+    tagColor: "text-sky-400 bg-sky-500/10 border-sky-500/20",
+    heroImage: "/blog/homeowner-portal-software-production-home-builders.png",
+  },
+  {
     slug: "awarded-bid-to-job-cost-budget-home-builders",
     title: "From Awarded Bid to Job-Cost Budget: Where Construction Costs Lose Their Source",
     excerpt:
