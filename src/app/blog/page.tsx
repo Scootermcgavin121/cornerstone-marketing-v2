@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "jobsite-ai-vendor-presence-detection-home-builders",
+    title: "The Vendor Showed Up. Does Your Schedule Know Yet?",
+    excerpt:
+      "Most schedules only update when someone remembers to log in. See how Jobsite AI's vendor presence detection auto-starts the matching task the moment a trade arrives on site — no phone call required.",
+    date: "September 13, 2026",
+    readTime: "6 min read",
+    tag: "Scheduling",
+    tagColor: "text-sky-400 bg-sky-500/10 border-sky-500/20",
+    heroImage: "/blog/jobsite-ai-vendor-presence-detection-home-builders.png",
+  },
+  {
     slug: "homeowner-portal-software-production-home-builders",
     title: "Why Buyers Call You for Updates You Already Have",
     excerpt:
