@@ -1584,8 +1584,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/global-retail-markup-design-options-home-builders.png",
       "heroImageAlt": "global retail markup for design options illustrated in a Cornerstone PM home builder workflow dashboard",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "52c0ab6",
+      "publishedAt": "2026-09-14T14:07:42.661Z"
     },
     {
       "slug": "separate-roof-labor-supplier-bids-home-builders",
