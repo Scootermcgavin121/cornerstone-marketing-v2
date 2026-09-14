@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "global-retail-markup-design-options-home-builders",
+    title: "Global Retail Markup: Set a Design Center Pricing Policy Without Editing Every Option",
+    excerpt:
+      "Set a global retail markup policy for design options while keeping vendor costs separate, reducing repetitive edits and checking buyer pricing before rollout.",
+    date: "September 14, 2026",
+    readTime: "6 min read",
+    tag: "Design Center",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/global-retail-markup-design-options-home-builders.png",
+  },
+  {
     slug: "jobsite-ai-vendor-presence-detection-home-builders",
     title: "The Vendor Showed Up. Does Your Schedule Know Yet?",
     excerpt:
