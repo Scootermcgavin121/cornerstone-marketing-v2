@@ -1572,6 +1572,76 @@
       "status": "published",
       "publishedCommit": "baf8a95",
       "publishedAt": "2026-09-11T14:04:51.065Z"
+    },
+    {
+      "slug": "global-retail-markup-design-options-home-builders",
+      "title": "Global Retail Markup: Set a Design Center Pricing Policy Without Editing Every Option",
+      "metaDescription": "Set a global retail markup policy for design options while keeping vendor costs separate, reducing repetitive edits and checking buyer pricing before rollout.",
+      "primaryKeyword": "global retail markup for design options",
+      "hub": "/design",
+      "angle": "Feature deep-dive on the shipped global retail pricing mode noted in AGENTS.md, not another community-price comparison. Explain how an organization-wide retail markup reduces repetitive per-option maintenance while keeping accepted vendor costs distinct from buyer-facing prices. Walk through reviewing the current catalog, choosing the global policy, and spot-checking representative options and included selections afterward. Verify the current settings and precedence rules against app knowledge before writing procedural details; do not invent override behavior or imply retail markup changes vendor costs.",
+      "schema": "HowTo",
+      "wordCount": 1000,
+      "heroImage": "/blog/global-retail-markup-design-options-home-builders.png",
+      "heroImageAlt": "global retail markup for design options illustrated in a Cornerstone PM home builder workflow dashboard",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "separate-roof-labor-supplier-bids-home-builders",
+      "title": "One Roof, Two Vendors: Separate Roofing Labor From Material Supply",
+      "metaDescription": "Separate roof labor and roof supplier bids so each trade has a clear scope, community vendor assignment, and accepted pricing without duplicate budget costs.",
+      "primaryKeyword": "roof labor and supplier bids",
+      "hub": "/purchasing",
+      "angle": "Feature deep-dive on the shipped Roof Labor and Roof Supplier scope split documented in AGENTS.md. Use a roofing example to explain why installation and supply can need separate bid requests and community vendor assignments even though they serve the same roof. Show how scope-filtered bidding and accepted vendor pricing keep each responsibility and budget contribution identifiable. Include a review checklist for freight, accessories, and installation exclusions without claiming the software automatically detects gaps or enforces contract responsibility.",
+      "schema": "FAQPage",
+      "wordCount": 1000,
+      "heroImage": "/blog/separate-roof-labor-supplier-bids-home-builders.png",
+      "heroImageAlt": "roof labor and supplier bids illustrated in a Cornerstone PM home builder workflow dashboard",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "vendor-quote-unit-mismatch-sqft-lump-sum-home-builders",
+      "title": "Square Feet or Whole-House Price? Catch Unit Mismatches Before Awarding a Bid",
+      "metaDescription": "Catch vendor quote unit mismatches before award by checking square-foot, linear-foot, and lump-sum pricing against takeoff quantities and scope descriptions.",
+      "primaryKeyword": "vendor quote unit mismatches",
+      "hub": "/purchasing",
+      "angle": "Pain-point how-to focused specifically on quantity units, not a repeat of the general bid-leveling or scope-item-type guides. Walk a purchasing coordinator through comparing the vendor's quoted unit with the takeoff unit before accepting a bid, using square-foot flooring, linear-foot trim, and whole-house cabinetry examples. Explain the documented distinction between quantity-multiplied lines and lump-sum items that should not multiply again. Use clearly labeled hypothetical arithmetic, request vendor clarification when units disagree, and connect the review to Cornerstone's accepted-price budgets without claiming automatic unit conversion or error detection.",
+      "schema": "HowTo",
+      "wordCount": 1050,
+      "heroImage": "/blog/vendor-quote-unit-mismatch-sqft-lump-sum-home-builders.png",
+      "heroImageAlt": "vendor quote unit mismatches illustrated in a Cornerstone PM home builder workflow dashboard",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "wrike-vs-cornerstone-production-home-builder",
+      "title": "Wrike vs Cornerstone PM: Configurable Work Management or a Homebuilding Workflow?",
+      "metaDescription": "Compare Wrike and Cornerstone PM for production homebuilding, from project coordination to community vendor awards, buyer selections, budgets, and purchasing.",
+      "primaryKeyword": "Wrike vs Cornerstone PM",
+      "hub": "/home-builder-project-management-software",
+      "angle": "Segment-mismatch comparison for builders evaluating configurable work management against a connected homebuilding workflow. Credit Wrike's construction positioning and project coordination features, using https://www.wrike.com/industries/construction/ as a primary source and rechecking current capabilities before publication. Evaluate the configuration and integrations a builder would need to connect community vendor awards, accepted bid pricing, buyer selections, and purchase orders, rather than asserting Wrike lacks scheduling or automation. Contrast that evaluation with Cornerstone's linked builder workflows and one-way outbound QuickBooks sync, without unsupported savings claims or competitor pricing.",
+      "schema": "FAQPage",
+      "wordCount": 1100,
+      "heroImage": "/blog/wrike-vs-cornerstone-production-home-builder.png",
+      "heroImageAlt": "Wrike vs Cornerstone PM illustrated in a Cornerstone PM home builder workflow dashboard",
+      "status": "pending",
+      "publishedCommit": null
+    },
+    {
+      "slug": "weekly-production-meeting-agenda-home-builders",
+      "title": "A Weekly Production Meeting Agenda That Ends With Decisions, Not Status Updates",
+      "metaDescription": "Run a weekly home builder production meeting around schedule exceptions, missing vendor prices, purchasing decisions, and clear owners for next steps on site.",
+      "primaryKeyword": "home builder production meeting agenda",
+      "hub": "/construction",
+      "angle": "Hub-cluster how-to centered on a weekly decision-making routine rather than a software buying guide or schedule-template tutorial. Organize the agenda around delayed tasks, downstream trade impacts, unresolved vendor pricing, and purchase-order follow-ups, with an owner and next step for each exception. Show how Cornerstone's linked home schedules, cascade scheduling, purchasing records, and Foreman budget reports provide context for the discussion. Link back to /construction and the purchasing and Foreman hubs, presenting the agenda as a recommended human workflow rather than claiming automated meetings, minutes, or a dedicated meeting module.",
+      "schema": "HowTo",
+      "wordCount": 1000,
+      "heroImage": "/blog/weekly-production-meeting-agenda-home-builders.png",
+      "heroImageAlt": "home builder production meeting agenda illustrated in a Cornerstone PM home builder workflow dashboard",
+      "status": "pending",
+      "publishedCommit": null
     }
   ]
 }
