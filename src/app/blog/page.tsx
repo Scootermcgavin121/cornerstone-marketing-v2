@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "separate-roof-labor-supplier-bids-home-builders",
+    title: "One Roof, Two Vendors: Separate Roofing Labor From Material Supply",
+    excerpt:
+      "Separate roof labor and roof supplier bids so each trade has a clear scope, community vendor assignment, and accepted pricing without duplicate budget costs.",
+    date: "September 15, 2026",
+    readTime: "6 min read",
+    tag: "Purchasing",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/separate-roof-labor-supplier-bids-home-builders.png",
+  },
+  {
     slug: "global-retail-markup-design-options-home-builders",
     title: "Global Retail Markup: Set a Design Center Pricing Policy Without Editing Every Option",
     excerpt:
