@@ -1599,8 +1599,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/separate-roof-labor-supplier-bids-home-builders.png",
       "heroImageAlt": "roof labor and supplier bids illustrated in a Cornerstone PM home builder workflow dashboard",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "7f827c4",
+      "publishedAt": "2026-09-15T14:04:23.319Z"
     },
     {
       "slug": "vendor-quote-unit-mismatch-sqft-lump-sum-home-builders",
