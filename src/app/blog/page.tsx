@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "vendor-quote-unit-mismatch-sqft-lump-sum-home-builders",
+    title: "Square Feet or Whole-House Price? Catch Unit Mismatches Before Awarding a Bid",
+    excerpt:
+      "Catch vendor quote unit mismatches before award by checking square-foot, linear-foot, and lump-sum pricing against takeoff quantities and scope descriptions.",
+    date: "September 16, 2026",
+    readTime: "6 min read",
+    tag: "Purchasing",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/vendor-quote-unit-mismatch-sqft-lump-sum-home-builders.png",
+  },
+  {
     slug: "separate-roof-labor-supplier-bids-home-builders",
     title: "One Roof, Two Vendors: Separate Roofing Labor From Material Supply",
     excerpt:
