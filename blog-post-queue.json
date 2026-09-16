@@ -1614,8 +1614,9 @@
       "wordCount": 1050,
       "heroImage": "/blog/vendor-quote-unit-mismatch-sqft-lump-sum-home-builders.png",
       "heroImageAlt": "vendor quote unit mismatches illustrated in a Cornerstone PM home builder workflow dashboard",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "f8e5eb0",
+      "publishedAt": "2026-09-16T14:05:13.564Z"
     },
     {
       "slug": "wrike-vs-cornerstone-production-home-builder",
