@@ -6,6 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const routes = [
     { url: "/", priority: 1.0, changeFrequency: "weekly" as const },
+    { url: "/blog/wrike-vs-cornerstone-production-home-builder", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/vendor-quote-unit-mismatch-sqft-lump-sum-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/separate-roof-labor-supplier-bids-home-builders", priority: 0.7, changeFrequency: "monthly" as const },
     { url: "/blog/global-retail-markup-design-options-home-builders", priority: 0.7, changeFrequency: "monthly" as const },

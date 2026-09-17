@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "wrike-vs-cornerstone-production-home-builder",
+    title: "Wrike vs Cornerstone PM: Configurable Work Management or a Homebuilding Workflow?",
+    excerpt:
+      "Compare Wrike and Cornerstone PM for production homebuilding, from project coordination to community vendor awards, buyer selections, budgets, and purchasing.",
+    date: "September 17, 2026",
+    readTime: "7 min read",
+    tag: "Comparison",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/wrike-vs-cornerstone-production-home-builder.png",
+  },
+  {
     slug: "vendor-quote-unit-mismatch-sqft-lump-sum-home-builders",
     title: "Square Feet or Whole-House Price? Catch Unit Mismatches Before Awarding a Bid",
     excerpt:
