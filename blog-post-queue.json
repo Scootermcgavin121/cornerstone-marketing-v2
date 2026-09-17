@@ -1629,8 +1629,9 @@
       "wordCount": 1100,
       "heroImage": "/blog/wrike-vs-cornerstone-production-home-builder.png",
       "heroImageAlt": "Wrike vs Cornerstone PM illustrated in a Cornerstone PM home builder workflow dashboard",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "6a65139",
+      "publishedAt": "2026-09-17T14:04:23.736Z"
     },
     {
       "slug": "weekly-production-meeting-agenda-home-builders",
