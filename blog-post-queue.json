@@ -1644,8 +1644,9 @@
       "wordCount": 1000,
       "heroImage": "/blog/weekly-production-meeting-agenda-home-builders.png",
       "heroImageAlt": "home builder production meeting agenda illustrated in a Cornerstone PM home builder workflow dashboard",
-      "status": "pending",
-      "publishedCommit": null
+      "status": "published",
+      "publishedCommit": "6027aef",
+      "publishedAt": "2026-09-18T14:03:41.181Z"
     }
   ]
 }
