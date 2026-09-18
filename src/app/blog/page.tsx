@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "weekly-production-meeting-agenda-home-builders",
+    title: "A Weekly Production Meeting Agenda That Ends With Decisions, Not Status Updates",
+    excerpt:
+      "Run a weekly home builder production meeting around schedule exceptions, missing vendor prices, purchasing decisions, and clear owners for next steps on site.",
+    date: "September 18, 2026",
+    readTime: "6 min read",
+    tag: "Construction",
+    tagColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    heroImage: "/blog/weekly-production-meeting-agenda-home-builders.png",
+  },
+  {
     slug: "wrike-vs-cornerstone-production-home-builder",
     title: "Wrike vs Cornerstone PM: Configurable Work Management or a Homebuilding Workflow?",
     excerpt:
