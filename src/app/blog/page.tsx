@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "kova-vs-cornerstone-home-builder-software",
+    title: "MiTek KOVA vs Cornerstone PM: Enterprise ERP or Builder-Sized Platform?",
+    excerpt:
+      "MiTek KOVA is genuine enterprise ERP software for top-30 production builders, with consult-only pricing and MiTek Services implementation. Compare it to Cornerstone PM's flat, published pricing for 5–200 homes/yr builders.",
+    date: "September 19, 2026",
+    readTime: "6 min read",
+    tag: "Comparison",
+    tagColor: "text-violet-400 bg-violet-500/10 border-violet-500/20",
+    heroImage: "/blog/kova-vs-cornerstone-home-builder-software.png",
+  },
+  {
     slug: "weekly-production-meeting-agenda-home-builders",
     title: "A Weekly Production Meeting Agenda That Ends With Decisions, Not Status Updates",
     excerpt:
